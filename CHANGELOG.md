@@ -420,3 +420,16 @@ The user asked to pull real data and run the real backend for Rumors & attacks. 
 - **Cost:** USD 0 more (the second search only returned posts already found). Apify's usage reads USD 3.84 of 5.
 - **Files:** `V7_Pulse_Dashboard.html` (Version 17 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v17.html`). In `data/raw/social/rumors_11oct/`: `collect.py`, `normalize.py`, `labels.json`, `build_rumors.py`, `posts.json`, `rumors_dashboard.json`. Also `DESIGN.md`. Published as artifact Version 18.
 
+### The whole project on GitHub (11 Oct 2026)
+At the user's request, for a collaborator: everything is pushed to https://github.com/mohanadabouserie/v7-pulse (public), with a CLAUDE.md for other Claude sessions.
+- **Repo:** the project folder is now a git repo on top of the existing Pages history (commits e08290e and 9cf4de4, then 922b6a7).
+  - Included: the dashboard, calculator and proposal; `data/` (collectors and all raw data); `tests/`; `archive/`; `Ask_V7_Pulse/`; `scripts/`; the tracking files.
+  - Not included (`.gitignore`): `.env.*`, `apify_key`, `data/.venv/`, test screenshots, the local Pages clones in `deploy/`, and `Reference docs/` (third-party PDFs).
+  - A full secret scan found the Apify token only in the two ignored key files.
+- **Public site:** GitHub Pages now serves `docs/` instead of the repo root. `deploy/build_sites.py dashboard` writes `docs/index.html` and `docs/.nojekyll`.
+  - The switch was done in two pushes, so the site never went down.
+  - The live copy now shows Version 18.
+- **Path-independent:** tests find the dashboard relative to `tests/`. `DASH_SRC` (and `COSTS_SRC` for the calculator) runs them on a public copy.
+- **CLAUDE.md** was rewritten for any Claude session: repository map, machine setup (Playwright, the venv, which `.env` files to create), code map, tests, publishing, data pipelines, secrets, known quirks. `README.md` was added.
+- **Files:** `.gitignore`, `deploy/build_sites.py`, `tests/*.py` (source paths), `CLAUDE.md`, `README.md`, `docs/`.
+
