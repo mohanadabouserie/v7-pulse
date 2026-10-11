@@ -1,0 +1,438 @@
+{
+ "act": {
+  "title": "YouTube Scraper",
+  "users30d": 12628,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What does YouTube Scraper do?\n\nYouTube Scraper extracts public data from YouTube pages, beyond what the [YouTube Data API](https://developers.google.com/youtube/v3) allows.\n\n- Find **all kinds of data points** in bulk, from video titles to their description to the metadata associated with them\n- Quickly **discover vital points** such as view count, number of comments, and snapshot the like counter\n- Can also break down **playlists, streams, and search results**\n- Export data in multiple formats: **JSON, CSV, Excel, or HTML**\n- Export via SDKs (Python & Node.js), use **API Endpoints**, **webhooks**, or integrate with workflows\n\n## Use cases for YouTube data\n\nYou can use this YouTube API to scrape data in order to:\n\n- **[Monitor your brand on YouTube](https://apify.com/use-cases/youtube-brand-monitoring)**: [track YouTube mentions](https://blog.apify.com/youtube-brand-monitoring/) of your brand in video titles, descriptions, comments, and transcripts\n- Use scraped profile data for **lead generation**, finding new opportunities your competitors haven't discovered yet\n- Find **[YouTube trending topics](https://blog.apify.com/youtube-trending-topics/)** and **opinions** shared by content creators and commenting users\n- **Analyze [YouTube competitors](https://apify.com/use-cases/youtube-competitor-analysis)**: get insights into [competitors' activity](https://blog.apify.com/ai-driven-youtube-growth-strategy/), comments, and engagement metrics\n- **Identify harmful** or **illegal** content\n- Scrape subtitles which can be fed to AI and used to make your own scripts\n- Accumulate **information on products** and **services** from video reviews and automate your buying decisions\n- **Filter** your **search results** based on more advanced criteria\n\n## What data can you scrape from YouTube?\n\n<table>\n<tr>\n<td>📺 Channel name</td>\n<td>👍 Number of likes</td>\n</tr>\n<tr>\n<td>📱 Social media links</td>\n<td>💬 Comments count</td>\n</tr>\n<tr>\n<td>📝 Video title</td>\n<td>🔗 Video URL</td>\n</tr>\n<tr>\n<td>🖍 Subtitles</td>\n<td>📍 Channel location</td>\n</tr>\n<tr>\n<td>📼 Total videos</td>\n<td>🌐 Channel URL</td>\n</tr>\n<tr>\n<td>👀 Number of views</td>\n<td>👁️ Video view count</td>\n</tr>\n<tr>\n<td>🧿 Total views</td>\n<td>📈 Number of subscribers</td>\n</tr>\n<tr>\n<td>⏱️ Duration</td>\n<td>📅 Release date</td>\n</tr>\n<tr>\n<td>#️⃣ Hashtags</td>\n<td>📽️ Thumbnails</td>\n</tr>\n</table>\n\n## How to scrape YouTube data\n\nYouTube Scraper is designed with users in mind. This means anybody can get started in just minutes, even if they’ve never scraped data before.\n\n1. [Create](https://console.apify.com/sign-up) a free Apify account using your email.\n2. Open [YouTube Scraper.](https://apify.com/streamers/youtube-scraper)\n3. Add one or more YouTube URLs or search terms\n4. Click the “Start” button and wait for the data to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nFor more information, watch our [short video tutorial](https://www.youtube.com/watch?v=RjHzznQy6hI).\n\nhttps://www.youtube.com/watch?v=RjHzznQy6hI\n\n## ⬇️ Input example\n\nFor input, you can either use the fields in Apify Console or enter it directly via JSON. You can also use this scraper locally — head over to the [input schema](https://apify.com/streamers/youtube-scraper/input-schema) tab for technical details.\n\nYou can scrape YouTube by search term or by direct URL and further refine your search by specifying whether you want to scrape full videos, shorts, or streams. You can also scrape subtitles from videos (this is done in a separate tab). Finally, it’s possible to also add filters and date ranges to searches.\n\n<a href=\"https://console.apify.com/actors/h7sDV53CddomktSi5/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-scraper-input-options.png?raw=true\" alt=\"YouTube Scraper input\" style=\"width:70%;\">\n</a>\n\n### 🔗 How to scrape YouTube by URL or search term\n\n1. Scraping **by URL 🔗** will get you data from any video, channel, playlist, or search results. You can add as many URLs as you want.\n2. Scraping **by search term** 🔑 will get you data from YouTube search results. You can add as many search terms as you want.\n\n<table>\n<tr>\n<td>Scraping by URL</td>\n<td><p>Paste a YouTube link to a <a href=\"[https://www.youtube.com/watch?v=RjHzznQy6hI](https://www.youtube.com/watch?v=RjHzznQy6hI)\">YouTube video</a>, <a href=\"[https://www.youtube.com/c/Apify](https://www.youtube.com/c/Apify)\">channel</a>, <a href=\"[https://www.youtube.com/playlist?list=PLObrtcm1Kw6PmbXg8bmfJN-o2Hgx8sidf](https://www.youtube.com/playlist?list=PLObrtcm1Kw6PmbXg8bmfJN-o2Hgx8sidf)\">playlist</a>, or <a href=\"[https://www.youtube.com/results?search_query=crawlee](https://www.youtube.com/results?search_query=crawlee)\">search results page</a>. You can also import a CSV file or Google Sheet with a prepared list of URLs. Then choose how many results you would like to extract and click Start.</p>\n</td>\n</tr>\n<tr>\n<td>Scraping using search term</td>\n<td>Type in keywords as you would normally do it in the YouTube search bar. Then choose how many results you would like to extract and click Start.</td>\n</tr>\n</table>\n\n### How to scrape YouTube shorts and streams\n\nYou determine the type of video you want to scrape through the main interface. In the fields that state the maximum number of each video type (regular videos, shorts, and streams), type 0 for each type you do _not_ want to include. This also allows you to determine how many videos of each type to include in your search.\n\n⚠️ Note that this filter only works when scraping by search term, _not_ when scraping by URL.\n\n<a href=\"https://console.apify.com/actors/h7sDV53CddomktSi5/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-scraper-input-video-types.png?raw=true\" alt=\"YouTube Scraper video type\" style=\"width:70%;\">\n</a>\n\n### How to filter YouTube videos by date\n\nThere are two ways to filter by date, depending on whether you’re scraping videos by URL or by search term.\n\n**When scraping by search term**\n\nTo filter videos by date when using search terms, go to the “Add filters” section, and then under “Sorting order” choose “Upload date.”\n\nAlternatively, you can also select videos published in the last hour, day, week, month, or year by selecting the appropriate option under the “Date filter” menu.\n\n<a href=\"https://console.apify.com/actors/h7sDV53CddomktSi5/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-scraper-date-search-term.png?raw=true\" alt=\"YouTube Scraper date filter by search term\" style=\"width:70%;\">\n</a>\n\n**When scraping by URL**\n\nWhen scraping by URL, go to the input field that says “Date range (applicable only to scraping by channels URL).” There, type in (in absolute or relative numbers) by which date you want to filter the data and whether you want to sort the videos by newest, most popular, or oldest.\n\n<a href=\"https://console.apify.com/actors/h7sDV53CddomktSi5/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-scraper-date-search-url.png?raw=true\" alt=\"YouTube Scraper date filter by URL\" style=\"width:70%;\">\n</a>\n\n### How to scrape YouTube transcript and subtitles\n\nTo get text for a video, use the **Transcription & subtitles** dropdown in the input. It has three options:\n\n- **Only download subtitles (when present on the video)** – downloads the video's existing subtitles (the ones YouTube already provides). Subtitles are added to each dataset item under the `subtitles` field. Videos without subtitles get none.\n- **Download subtitles + transcribe videos without subtitles ($)** – downloads existing subtitles when available, and for videos that have none, generates a transcript using speech-to-text AI. The generated transcript is stored in the key-value store and linked from the dataset item via `transcriptionUrl`.\n- **Always transcribe ($)** – ignores any existing subtitles and always generates a transcript with speech-to-text AI, linked via `transcriptionUrl`.\n\nLeave the dropdown empty to skip subtitles and transcription entirely.\n\n<a href=\"https://console.apify.com/actors/h7sDV53CddomktSi5/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-scraper-subtitles.png?raw=true\" alt=\"YouTube Scraper subtitles\" style=\"width:70%;\">\n</a>\n\n## ⬆️ Output example\n\nThe scraped results will be shown as a dataset which you can find in the **Storage** tab. Note that the output is organized as a table for viewing convenience, but it doesn’t show **all the fields**:\n\n<a href=\"https://console.apify.com/actors/h7sDV53CddomktSi5/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-scraper-output.png?raw=true\" alt=\"YouTube Scraper output\" style=\"width:100%;\">\n</a>\n\nYou can preview all the fields and **download the file with YouTube data in various formats** (JSON, CSV, Excel, and more). Here’s a few JSON examples of different YouTube scraping cases:\n\n### 💁‍♂️ Channel info\n\n```json\n{\n  \"id\": \"HV6OlMPn5sI\",\n  \"title\": \"Raimu - The Spirit Within 🍃 [lofi hip hop/relaxing beats]\",\n  \"duration\": \"29:54\",\n  \"channelName\": \"Lofi Girl\",\n  \"channelUrl\": \"<https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow>\",\n  \"date\": \"10 months ago\",\n  \"url\": \"<https://www.youtube.com/watch?v=HV6OlMPn5sI>\",\n  \"viewCount\": 410458,\n  \"fromYTUrl\": \"<https://www.youtube.com/@LofiGirl/videos>\",\n  \"channelDescription\": \"\\\\\"That girl studying by the window non-stop\\\\\"\\\\n\\\\n🎧 | Listen on Spotify, Apple music and more\\\\n→   <https://bit.ly/lofigirl-playlists\\\\n\\\\n💬> | Join the Lofi Girl community \\\\n→   <https://bit.ly/lofigirl-discord\\\\n→>   <https://bit.ly/lofigirl-reddit\\\\n\\\\n🌎> | Lofi Girl on all social media\\\\n→   <https://bit.ly/lofigirl-sociaI>\",\n  \"channelDescriptionLinks\": [\n    {\n        \"text\": \"Discord\",\n        \"url\": \"<https://discord.com/invite/hUKvJnw>\"\n    },\n\n  ],\n  \"channelJoinedDate\": \"Mar 18, 2015\",\n  \"channelLocation\": \"France\",\n  \"channelTotalVideos\": 409,\n  \"channelTotalViews\": \"1,710,167,563\",\n  \"numberOfSubscribers\": 13100000,\n  \"isMonetized\": true,\n  \"inputChannelUrl\": \"<https://www.youtube.com/@LofiGirl/about>\"\n}\n\n```\n\n### 📹 A single video\n\n```json\n{\n  \"title\": \"Stromae - Santé (Live From The Tonight Show Starring Jimmy Fallon)\",\n  \"id\": \"CW7gfrTlr0Y\",\n  \"url\": \"<https://www.youtube.com/watch?v=CW7gfrTlr0Y>\",\n  \"thumbnailUrl\": \"<https://i.ytimg.com/vi/CW7gfrTlr0Y/maxresdefault.jpg>\",\n  \"viewCount\": 35582192,\n  \"date\": \"2021-12-21\",\n  \"likes\": 512238,\n  \"location\": null,\n  \"channelName\": \"StromaeVEVO\",\n  \"channelUrl\": \"<http://www.youtube.com/@StromaeVEVO>\",\n  \"numberOfSubscribers\": 6930000,\n  \"duration\": \"00:03:17\",\n  \"commentsCount\": 14,\n  \"text\": \"Stromae - Santé (Live From The Tonight Show Starring Jimmy Fallon on NBC)\\\\nListen to \\\\\"La solassitude\\\\\" here: <https://stromae.lnk.to/la-solassitude\\\\nOrder> my new album \\\\\"Multitude\\\\\" here: <https://stromae.lnk.to/multitudeID\\\\n--\\\\nhttps://www.stromae.com/fr/\\\\nhttps://www.tiktok.com/@stromae\\\\nhttps://www.facebook.com/stromae\\\\nhttps://www.instagram.com/stromae\\\\nhttps://twitter.com/stromae\\\\n> \",\n  \"descriptionLinks\": [\n    {\n      \"url\": \"<https://stromae.lnk.to/la-solassitude>\",\n      \"text\": \"<https://stromae.lnk.to/la-solassitude>\"\n    },\n\n  ],\n  \"subtitles\": null,\n  \"comments\": null,\n  \"isMonetized\": true,\n  \"commentsTurnedOff\": false\n}\n\n```\n\n### 🎧 YouTube playlist\n\n```json\n{\n  \"id\": \"CdgDLaxe2Q4\",\n  \"title\": \"Lecture 4 | String Theory and M-Theory\",\n  \"duration\": \"1:23:37\",\n  \"channelName\": \"Stanford\",\n  \"channelUrl\": \"<https://www.youtube.com/@stanford>\",\n  \"date\": \"12 years ago\",\n  \"url\": \"<https://www.youtube.com/watch?v=CdgDLaxe2Q4&list=PL6i60qoDQhQGaGbbg-4aSwXJvxOqO6o5e&index=100>\",\n  \"viewCount\": 106000,\n  \"fromYTUrl\": \"<https://www.youtube.com/playlist?list=PL6i60qoDQhQGaGbbg-4aSwXJvxOqO6o5e>\"\n},\n\n```\n\n### 🔎 YouTube search results\n\n```json\n{\n  \"id\": \"CwRMBKk8St0\",\n  \"title\": \"LET'S ARGUE: Beyoncé Fails the Bechdel Test!\",\n  \"duration\": \"13:48\",\n  \"channelName\": \"fantano\",\n  \"channelUrl\": \"<https://www.youtube.com/@fantano>\",\n  \"date\": \"5 years ago\",\n  \"url\": \"<https://www.youtube.com/watch?v=CwRMBKk8St0>\",\n  \"viewCount\": 635379,\n  \"fromYTUrl\": \"<https://www.youtube.com/results?search_query=bechdel+test>\"\n},\n\n```\n\n### YouTube subtitles\n\n```json\n\"subtitles\": [\n      {\n        \"srtUrl\": \"https://api.apify.com/v2/key-value-stores/WBeaA5MIHCBAR79Jy/records/subtitles_YmVqWiFEohY_en_auto_generated\",\n        \"type\": \"auto_generated\",\n        \"language\": \"en\",\n        \"srt\": \"1\\n00:00:0,320 --> 00:00:4,960\\nEver feel like you've been chasing the\\n\\n2\\n00:00:1,990 --> 00:00:4,960\\n \\n\\n3\\n00:00:2,000 --> 00:00:6,960\\nwrong AI path? Look, I get it. I wasted\\n\\n4\\n00:00:4,950 --> 00:00:6,960\\n \\n\\n5\\n00:00:4,960 --> 00:00:9,440\\nmonths jumping from one trend to the\\n\\n6\\n00:00:6,950 --> 00:00:9,440\\n \\n\\n7\\n00:00:6,960 --> 00:00:11,440\\nnext, following outdated advice that\\n\\n8\\n00:00:9,430 --> 00:00:11,440\\n \\n\\n9\\n00:00:9,440 --> 00:00:14,719\\npromised quick results, but only left me\\n\\n10\\n00:00:11,430 --> 00:00:14,719\\n \\n\\n11\\n00:00:11,440 --> 00:00:16,320\\nstuck. In 2025, AI isn't about just\\n\\n12\\n00:00:14,709 --> 00:00:16,320\\n \\n\\n13\\n00:00:14,719 --> 00:00:18,000\\nlearning the basics. It's about\\n\\n14\\n00:00:16,310 --> 00:00:18,000\\n \\n\\n15\\n00:00:16,320 --> 00:00:20,000\\nmastering the skills companies are\\n\\n16\\n00:00:17,990 --> 00:00:20,000\\n \\n\\n17\\n00:00:18,000 --> 00:00:22,240\\ncrying out for right now. If I had to\\n\\n18\\n00:00:19,990 --> 00:00:22,240\\n \\n\\n19\\n00:00:20,000 --> 00:00:24,960\\nstart my AI journey over, I'd do it\\n\\n20\\n00:00:22,230 --> 00:00:24,960\\n \\n\\n21\\n00:00:22,240 --> 00:00:26,640\\ndifferently. I'd skip the fluff and dive\\n\\n22\\n00:00:24,950 --> 00:00:26,640\\n \\n\\n23\\n00:00:24,960 --> 00:00:28,640\\nstraight into what works in today's\\n\\n24\\n00:00:26,630 --> 00:00:28,640\\n \\n\\n25\\n00:00:26,640 --> 00:00:31,480\\nworld. And in this video, I'm sharing\\n\\n26\\n00:00:28,630 --> 00:00:31,480\\n \\n\\n27\\n00:00:28,640 --> 00:00:34,239\\nexactly how I'd learn AI from scratch in\\n\\n28\\n00:00:31,470 --> 00:00:34,239\\n \\n\\n29\\n00:00:31,480 --> 00:00:36,160\\n2025. No gimmicks, just actionable\\n\\\"\n      }\n    ]\n```\n\n## Need to scrape YouTube comments or Shorts?\n\nIf you want to extract specific YouTube data, you can use one of the specialized scrapers below:\n\n- 💬 [YouTube Comments Scraper](https://apify.com/streamers/youtube-comments-scraper)\n- 🏎 [Fast YouTube Channel Scraper](https://apify.com/streamers/youtube-channel-scraper)\n- ▶️ [YouTube Shorts Scraper](https://apify.com/streamers/youtube-shorts-scraper)\n- 📽️ [YouTube Video Scraper by Hashtag](https://apify.com/streamers/youtube-video-scraper-by-hashtag)\n- 📹 [YouTube Video Downloader](https://apify.com/pocesar/download-youtube-video).\n\nYou can also combine YouTube data with that from other social networks. For example you can gather data with our other [social media scrapers](https://apify.com/store?category=SOCIAL_MEDIA):\n\n- [TikTok scrapers](https://apify.com/clockworks)\n- [Instagram scrapers](https://apify.com/store/categories?search=instagram&managedBy=APIFY)\n- [Facebook scrapers](https://apify.com/store/categories?search=facebook&managedBy=APIFY)\n\nYou can also use AI agents to do multiple tasks at one. For example, our [Comments Analyzer Agent](https://apify.com/apify/comments-analyzer-agent) can perform sentiment analysis of YouTube videos, or you could try our [Influencer Discovery Agent](https://apify.com/apify/influencer-discovery-agent) for lead generation on TikTok videos.\n\n## Error items\n\nWhen the scraper cannot retrieve data for a given input — for example a video is unavailable or a channel does not exist — it pushes an **error item** to the dataset instead of silently skipping it. Normal output items are never affected; you can tell them apart by the presence of an `error` field.\n\n### Error item structure\n\n```json\n{\n    \"url\": \"https://www.youtube.com/@somechannel\",\n    \"input\": \"somechannel\",\n    \"error\": \"CHANNEL_DOES_NOT_EXIST\",\n    \"note\": \"Channel does not exist\"\n}\n```\n\n### Error codes reference\n\n| `error`                      | Meaning                                                             |\n| ---------------------------- | ------------------------------------------------------------------- |\n| `CHANNEL_DOES_NOT_EXIST`     | Channel URL points to a channel that does not exist                 |\n| `NOT_FOUND`                  | Page was not found                                                  |\n| `VIDEO_UNAVAILABLE`          | Video is not available (deleted, region-blocked, etc.)              |\n| `AGE_RESTRICTED`             | Channel is age-restricted and cannot be accessed without login      |\n| `CHANNEL_HAS_NO_VIDEOS`      | Channel exists but has no uploaded videos                           |\n| `CHANNEL_HAS_NO_LIVE_VIDEOS` | Channel exists but has no live videos                               |\n| `CHANNEL_HAS_NO_SHORTS`      | Channel exists but has no Shorts                                    |\n| `DATE_FILTER_TOO_STRICT`     | Videos exist but none match the active date filter                  |\n| `NO_VIDEOS`                  | No videos found on the page                                         |\n| `NO_RESULTS`                 | No results collected — check that video-type limits are set above 0 |\n| `NO_VALID_START_URLS`        | All provided start URLs were invalid or malformed                   |\n| `INVALID_INPUT`              | Actor failed due to bad configuration (run is also terminated)      |\n| `NO_COMMENTS`                | No comments found for the video                                     |\n\n---\n\n## ❓FAQ\n\n### Can I scrape dislikes from YouTube videos?\n\nNo. Both `dislike` and `details` properties have been removed altogether from new versions. Dislikes are not public info so you cannot scrape them.\n\n### Can I scrape subtitles from YouTube videos?\n\nYes. You can scrape all publicly available data from YouTube using a web scraper, including subtitles. Using this scraping tool, you can extract both autogenerated and added subtitles in SRT, WEBVTT, XML, or plain text format.\n\n### How much will scraping YouTube cost you?\n\nYouTube Scraper uses our price-per-result model. Currently, it costs $5.00 for 1,000 videos, giving you a price of $0.005 per result. For more information, visit the [pricing tab](https://apify.com/streamers/youtube-scraper/pricing).\n\n### How many videos can you scrape with YouTube Scraper?\n\nYouTube Scraper **can extract up to 20,000 videos per URL**. However, you have to keep in mind that scraping [youtube.com](http://youtube.com/) has many variables to it and may cause the results to fluctuate case by case. There’s no one-size-fits-all-use-cases number. The maximum number of results may vary depending on the complexity of the input, location, and other factors.\n\nTherefore, while we regularly run scraper tests to keep the benchmarks in check, the results may also fluctuate without our knowing. **The best way to know for sure for your particular use case is to do a test run yourself**\n\n### Can I integrate this YouTube scraper with other apps?\n\nYouTube Scraper can be connected with almost any cloud service or web app thanks to [integrations](https://apify.com/integrations) on the Apify platform. These include [Make](https://docs.apify.com/platform/integrations/make), [Zapier](https://docs.apify.com/platform/integrations/zapier), [Slack](https://docs.apify.com/platform/integrations/slack), [Airbyte](https://docs.apify.com/platform/integrations/airbyte), [GitHub](https://docs.apify.com/platform/integrations/github), [Google Drive](https://docs.apify.com/platform/integrations/drive), and [plenty more](https://docs.apify.com/platform/integrations).\n\nAlternatively, you can use [webhooks](https://docs.apify.com/platform/integrations/webhooks) to carry out an action whenever an event occurs, e.g. get a notification whenever YouTube Scraper successfully finishes a run, or initiate a new process, like ordering your data.\n\n### Can I use YouTube Scraper with the API?\n\nThe Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` NPM package. To access the API using Python, use the `apify-client` PyPI package.\nCheck out the <a href=\"[https://docs.apify.com/api/v2](https://docs.apify.com/api/v2)\"  target=\"_blank\"> Apify API reference</a> docs for full details or click on the <a href=\"[https://apify.com/streamers/youtube-scraper/api](https://apify.com/streamers/youtube-scraper/api)\"  target=\"_blank\"> API tab</a> for code examples.\n\n### Can I use YouTube Scraper through an MCP Server?\n\nWith Apify API, you can use almost any Actor in conjunction with an MCP server. You can connect to the MCP server using clients like ClaudeDesktop and LibreChat, or even build your own. Read all about how you can [set up Apify Actors with MCP](https://blog.apify.com/how-to-use-mcp/).\n\nFor YouTube Scraper, go to the [MCP tab](https://apify.com/streamers/youtube-scraper/api/mcp) and then go through the following steps:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`\n2. Send API messages using that `sessionId` to trigger the scraper\n3. The message starts the Amazon ASINs Scraper with the provided input\n4. The response should be: `Accepted`\n\n### Should I use a proxy when scraping YouTube?\n\nJust like with other social media-related actors, using a proxy is essential if you want your scraper to run properly. You can either use your own proxy or stick to the default [Apify Proxy](https://docs.apify.com/proxy) servers. Datacenter proxies are recommended for use with this Actor.\n\n### Is it legal to scrape data from YouTube?\n\nScraping YouTube is legal as long as you adhere to regulations concerning copyright and personal data.\n\nPersonal data is protected by GDPR ([EU Regulation 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj)), and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, please consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).\n\n### Your feedback\n\nWe're always working on improving the performance of our Actors. If you've got any technical feedback on YouTube Scraper, or simply found a bug, please create an issue on the Actor's [Issues tab](https://apify.com/streamers/youtube-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "title": {
+     "type": "string",
+     "description": "The title of the YouTube video",
+     "nullable": true,
+     "example": "Amazing Tutorial Video"
+    },
+    "id": {
+     "type": "string",
+     "description": "The unique YouTube video ID",
+     "nullable": false,
+     "example": "dQw4w9WgXcQ"
+    },
+    "url": {
+     "type": "string",
+     "description": "The full URL of the video",
+     "nullable": false,
+     "example": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    "viewCount": {
+     "type": "number",
+     "description": "The number of views on the video",
+     "nullable": true,
+     "example": 100
+    },
+    "date": {
+     "type": "string",
+     "description": "The publish date of the video",
+     "nullable": true,
+     "example": "2024-08-27T07:47:39.000Z"
+    },
+    "duration": {
+     "type": "string",
+     "description": "The length of the video in time format",
+     "nullable": true,
+     "example": "00:03:27"
+    },
+    "type": {
+     "type": "string",
+     "enum": [
+      "video",
+      "shorts",
+      "stream"
+     ],
+     "description": "The type of video content",
+     "nullable": false,
+     "example": "video"
+    },
+    "thumbnailUrl": {
+     "type": "string",
+     "description": "URL of the video thumbnail image",
+     "nullable": true,
+     "example": "https://i.ytimg.com/vi/abc/maxresdefault.jpg"
+    },
+    "input": {
+     "type": "string",
+     "description": "The input provided by the user (URL, channel name, or search query)",
+     "nullable": false,
+     "example": "https://www.youtube.com/watch?v=abc123"
+    },
+    "channelName": {
+     "type": "string",
+     "description": "The name of the channel that published the video",
+     "nullable": true,
+     "example": "TechReviewer"
+    },
+    "channelUrl": {
+     "type": "string",
+     "description": "The URL of the channel",
+     "nullable": true,
+     "example": "https://www.youtube.com/@Apify"
+    },
+    "channelUsername": {
+     "type": "string",
+     "description": "The @username handle of the channel",
+     "nullable": true,
+     "example": "Apify"
+    },
+    "translatedTitle": {
+     "type": "string",
+     "description": "The translated title if YouTube provided a translation",
+     "nullable": true,
+     "example": "Increíble Video Tutorial"
+    },
+    "translatedText": {
+     "type": "string",
+     "description": "The translated description if YouTube provided a translation",
+     "nullable": true,
+     "example": "Crawlee te ayuda a crear scrapers confiables. Rápido."
+    },
+    "likes": {
+     "type": "number",
+     "description": "The number of likes on the video",
+     "nullable": true,
+     "example": 15000
+    },
+    "location": {
+     "type": "string",
+     "description": "Geographic location associated with the video",
+     "nullable": true,
+     "example": "United States"
+    },
+    "channelId": {
+     "type": "string",
+     "description": "The unique channel ID",
+     "nullable": true,
+     "example": "UC123456789abcdef"
+    },
+    "commentsCount": {
+     "type": "number",
+     "description": "The total number of comments on the video",
+     "nullable": true,
+     "example": 1250
+    },
+    "text": {
+     "type": "string",
+     "description": "The video description text",
+     "nullable": true,
+     "example": "Crawlee helps you build reliable scrapers. Fast."
+    },
+    "descriptionLinks": {
+     "type": "array",
+     "description": "Links found in the video description",
+     "nullable": true,
+     "example": [
+      {
+       "url": "https://crawlee.dev/",
+       "text": "https://crawlee.dev/"
+      }
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "text": {
+        "type": "string",
+        "nullable": true
+       },
+       "url": {
+        "type": "string",
+        "nullable": true
+       }
+      }
+     }
+    },
+    "subtitles": {
+     "type": "array",
+     "description": "Available subtitles for the video",
+     "nullable": true,
+     "example": [
+      {
+       "srtUrl": null,
+       "type": "user_generated",
+       "language": "en",
+       "srt": "1\n00:00:0,640 --> 00:00:5,674\nExample subtitle text\n"
+      }
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "srtUrl": {
+        "type": "string",
+        "nullable": true
+       },
+       "type": {
+        "type": "string",
+        "nullable": true
+       },
+       "language": {
+        "type": "string",
+        "nullable": true
+       },
+       "srt": {
+        "type": "string",
+        "nullable": true
+       }
+      }
+     }
+    },
+    "aiVideoDescription": {
+     "type": "array",
+     "description": "AI-generated, time-segmented description of the video (only when AI enrichment is enabled)",
+     "nullable": true,
+     "example": [
+      {
+       "startSecond": 0,
+       "endSecond": 12,
+       "displayTime": "0:00 - 0:12",
+       "description": "The host introduces Crawlee and outlines what the tutorial covers."
+      }
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "startSecond": {
+        "type": "integer"
+       },
+       "endSecond": {
+        "type": "integer"
+       },
+       "displayTime": {
+        "type": "string"
+       },
+       "description": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "aiVideoSummary": {
+     "type": "string",
+     "description": "AI-generated summary of the video (only when AI enrichment is enabled)",
+     "nullable": true,
+     "example": "A walkthrough of building a reliable scraper with Crawlee, covering setup, request handling, and data extraction."
+    },
+    "transcriptionUrl": {
+     "type": "string",
+     "description": "URL of the AI-generated transcript stored in the key-value store. Present only when a transcription option is selected in 'Transcription & subtitles'",
+     "nullable": true,
+     "example": "https://api.apify.com/v2/key-value-stores/abc123/records/transcription-dQw4w9WgXcQ"
+    },
+    "fromYTUrl": {
+     "type": "string",
+     "description": "The YouTube URL where this video was found (e.g. search results or channel page)",
+     "nullable": true,
+     "example": "https://www.youtube.com/results?search_query=Crawlee"
+    },
+    "order": {
+     "type": "number",
+     "description": "The position of the video in the list as it appeared on the source page",
+     "nullable": true,
+     "example": 21
+    },
+    "commentsTurnedOff": {
+     "type": "boolean",
+     "description": "Whether comments are disabled on the video",
+     "nullable": true,
+     "example": false
+    },
+    "isMonetized": {
+     "type": "boolean",
+     "description": "Whether the video is monetized",
+     "nullable": true,
+     "example": true
+    },
+    "hashtags": {
+     "type": "array",
+     "description": "Hashtags associated with the video",
+     "nullable": false,
+     "example": [
+      "#tech",
+      "#tutorial"
+     ],
+     "items": {
+      "type": "string"
+     }
+    },
+    "isMembersOnly": {
+     "type": "boolean",
+     "description": "Whether the video is restricted to channel members",
+     "nullable": false,
+     "example": false
+    },
+    "collaborators": {
+     "type": "array",
+     "description": "Collaborators on the video",
+     "nullable": true,
+     "example": [
+      {
+       "name": "Apify",
+       "username": "@Apify",
+       "url": "https://www.youtube.com/@Apify"
+      }
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string",
+        "nullable": true
+       },
+       "username": {
+        "type": "string",
+        "nullable": true
+       },
+       "url": {
+        "type": "string",
+        "nullable": true
+       }
+      }
+     }
+    },
+    "isPaidContent": {
+     "type": "boolean",
+     "description": "Whether the video requires payment to access",
+     "nullable": false,
+     "example": false
+    },
+    "numberOfSubscribers": {
+     "type": "number",
+     "description": "Number of subscribers to the channel",
+     "nullable": true,
+     "example": 500
+    },
+    "channelTotalVideos": {
+     "type": "number",
+     "description": "Total number of videos on the channel",
+     "nullable": true,
+     "example": 1234
+    },
+    "channelDescription": {
+     "type": "string",
+     "description": "The channel's description",
+     "nullable": true,
+     "example": "Apify is the platform where developers build, deploy, share, and monitor web scraping and automation tools."
+    },
+    "channelLocation": {
+     "type": "string",
+     "description": "The channel's location",
+     "nullable": true,
+     "example": "United States"
+    },
+    "channelJoinedDate": {
+     "type": "string",
+     "description": "When the channel was created",
+     "nullable": true,
+     "example": "2015-03-01T00:00:00.000Z"
+    },
+    "channelTotalViews": {
+     "type": "number",
+     "description": "Total views across all channel videos",
+     "nullable": true,
+     "example": 50000000
+    },
+    "isChannelVerified": {
+     "type": "boolean",
+     "description": "Whether the channel is verified",
+     "nullable": true,
+     "example": true
+    },
+    "channelBannerUrl": {
+     "type": "string",
+     "description": "URL of the channel banner",
+     "nullable": true,
+     "example": "https://yt3.googleusercontent.com/abc123/banner.jpg"
+    },
+    "channelAvatarUrl": {
+     "type": "string",
+     "description": "URL of the channel avatar",
+     "nullable": true,
+     "example": "https://yt3.googleusercontent.com/abc123/avatar.jpg"
+    },
+    "isAgeRestricted": {
+     "type": "boolean",
+     "description": "Whether the channel is age-restricted",
+     "nullable": true,
+     "example": false
+    }
+   },
+   "required": [],
+   "additionalProperties": true
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "Overview of scraped YouTube videos with key information",
+    "transformation": {
+     "fields": [
+      "title",
+      "channelName",
+      "viewCount",
+      "likes",
+      "date",
+      "duration",
+      "type",
+      "url",
+      "commentsCount"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "title": {
+       "label": "Video Title",
+       "format": "text"
+      },
+      "channelName": {
+       "label": "Channel",
+       "format": "text"
+      },
+      "viewCount": {
+       "label": "Views",
+       "format": "number"
+      },
+      "likes": {
+       "label": "Likes",
+       "format": "number"
+      },
+      "date": {
+       "label": "Published",
+       "format": "text"
+      },
+      "duration": {
+       "label": "Duration",
+       "format": "text"
+      },
+      "type": {
+       "label": "Type",
+       "format": "text"
+      },
+      "url": {
+       "label": "Video URL",
+       "format": "link"
+      },
+      "commentsCount": {
+       "label": "Comments",
+       "format": "number"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Input schema for the youtube-search-scraper actor\",\n  \"description\": \"Scrape YouTube search results using a search term, or directly input a video, channel, or results page URL. Feel free to try it out with our default settings by hitting &#9655;<b> Start</b>. If you need any help, have a read through <a href='https://blog.apify.com/how-to-scrape-youtube/' target='_blank' rel='noopener'>this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"searchQueries\": {\n      \"title\": \"Search terms\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Enter search terms just like you would enter it in YouTube's search bar.\",\n      \"prefill\": [\n        \"Crawlee\"\n      ],\n      \"example\": [\n        \"web scraping tutorials\"\n      ],\n      \"nullable\": false\n    },\n    \"maxResults\": {\n      \"title\": \"Maximum videos per search term\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of videos you want to crawl. If you scrape a channel, acts as a limit for regular videos.\",\n      \"minimum\": 0,\n      \"default\": 0,\n      \"maximum\": 999999,\n      \"prefill\": 10,\n      \"example\": 10,\n      \"unit\": \"Videos\"\n    },\n    \"maxResultsShorts\": {\n      \"title\": \"Maximum shorts per search term\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of Shorts videos you want to crawl.\",\n      \"minimum\": 0,\n      \"maximum\": 999999,\n      \"default\": 0,\n      \"prefill\": 0,\n      \"example\": 5,\n      \"unit\": \"Videos\"\n    },\n    \"maxResultStreams\": {\n      \"title\": \"Maximum streams per search term\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of Stream videos you want to crawl.\",\n      \"minimum\": 0,\n      \"maximum\": 999999,\n      \"default\": 0,\n      \"prefill\": 0,\n      \"example\": 0,\n      \"unit\": \"Videos\"\n    },\n    \"startUrls\": {\n      \"title\": \"Direct URLs\",\n      \"type\": \"array\",\n      \"description\": \"Enter a link to a <a href='https://www.youtube.com/watch?v=xObhZ0Ga7EQ' target='_blank' rel='noopener'>YouTube video</a>, <a href='https://www.youtube.com/c/Apify' target='_blank' rel='noopener'>channel</a>, <a href='https://www.youtube.com/playlist?list=PLObrtcm1Kw6PmbXg8bmfJN-o2Hgx8sidf' target='_blank' rel='noopener'>playlist</a>, <a href='https://www.youtube.com/hashtag/apify' target='_blank' rel='noopener'>hashtag</a> or <a href='https://www.youtube.com/results?search_query=crawlee' target='_blank' rel='noopener'>search results page</a>. You can also import a CSV file or Google Sheet with a list of URLs.<br><b>Note:</b> Input from <i>Search term</i> will be ignored when using this option. If you only want to scrape shorts/streams, set Maximum search results to 0, otherwise they represented number of regular videos requested\",\n      \"default\": [],\n      \"editor\": \"requestListSources\",\n      \"example\": [\n        {\n          \"url\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n        }\n      ],\n      \"sectionCaption\": \"🔗 Direct URLs\"\n    },\n    \"transcriptionAndSubtitle\": {\n      \"title\": \"Transcription & subtitles\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"default\": \"NONE\",\n      \"description\": \"Choose whether to download subtitles, transcribe the video using speech-to-text AI, or both. Leave empty to skip subtitles and transcription. Subtitles are added to the dataset items, while transcripts are stored in the key-value store\",\n      \"enum\": [\n        \"NONE\",\n        \"ALWAYS_SUBTITLES\",\n        \"TRANSCRIPTION_AS_FALLBACK\",\n        \"ALWAYS_TRANSCRIBE\"\n      ],\n      \"enumTitles\": [\n        \"None\",\n        \"Only download subtitles (when present on the video)\",\n        \"Download subtitles + transcribe videos without subtitles (using speech-to-text models) ($)\",\n        \"Always transcribe ($)\"\n      ],\n      \"sectionCaption\": \"🖹 Download YouTube transcript\",\n      \"nullable\": true\n    },\n    \"subtitlesLanguage\": {\n      \"title\": \"Subtitle language\",\n      \"type\": \"string\",\n      \"description\": \"Language to download subtitles in.<br><b>Note:</b> a subtitle-downloading option must be selected in <i>Transcription & subtitles</i> for this to work.\",\n      \"editor\": \"select\",\n      \"default\": \"en\",\n      \"example\": \"en\",\n      \"enum\": [\n        \"any\",\n        \"en\",\n        \"de\",\n        \"es\",\n        \"fr\",\n        \"it\",\n        \"ja\",\n        \"ko\",\n        \"nl\",\n        \"pt\",\n        \"ru\"\n      ],\n      \"enumTitles\": [\n        \"Any\",\n        \"English\",\n        \"German\",\n        \"Spanish\",\n        \"French\",\n        \"Italian\",\n        \"Japanese\",\n        \"Korean\",\n        \"Holland\",\n        \"Portuguese\",\n        \"Russian\"\n      ]\n    },\n    \"subtitlesFormat\": {\n      \"title\": \"Subtitle format\",\n      \"type\": \"string\",\n      \"description\": \"Select in what format you want to download subtitles\",\n      \"editor\": \"select\",\n      \"default\": \"srt\",\n      \"example\": \"srt\",\n      \"enum\": [\n        \"srt\",\n        \"vtt\",\n        \"xml\",\n        \"plaintext\"\n      ],\n      \"enumTitles\": [\n        \"SRT\",\n        \"WEBVTT\",\n        \"XML\",\n        \"plaintext\"\n      ]\n    },\n    \"sortingOrder\": {\n      \"title\": \"Sorting order\",\n      \"type\": \"string\",\n      \"description\": \"Select Youtube sorting parameter for search\",\n      \"sectionCaption\": \"✅ Add filters\",\n      \"sectionDescription\": \"Specify the parameters you want to sort/filter videos by. They will be applied as if you manually did so on Youtube's search page. Only works if you provide search term, not for the direct URLs.\\n \\n ⚠️ Using YouTube filters may mix Shorts with regular videos. This is a limitation on YouTube's side. We recommend checking it manually.\",\n      \"editor\": \"select\",\n      \"example\": \"relevance\",\n      \"enum\": [\n        \"relevance\",\n        \"rating\",\n        \"date\",\n        \"views\"\n      ],\n      \"enumTitles\": [\n        \"Relevance\",\n        \"Rating\",\n        \"Upload date\",\n        \"View count\"\n      ],\n      \"nullable\": true\n    },\n    \"dateFilter\": {\n      \"title\": \"Date filter\",\n      \"type\": \"string\",\n      \"description\": \"Select Youtube upload date filter for search\",\n      \"editor\": \"select\",\n      \"example\": \"month\",\n      \"enum\": [\n        \"hour\",\n        \"today\",\n        \"week\",\n        \"month\",\n        \"year\"\n      ],\n      \"enumTitles\": [\n        \"Last hour\",\n        \"Today\",\n        \"This week\",\n        \"This month\",\n        \"This year\"\n      ],\n      \"nullable\": true\n    },\n    \"videoType\": {\n      \"title\": \"Video type filter\",\n      \"type\": \"string\",\n      \"description\": \"Select Youtube video type filter for search\",\n      \"editor\": \"select\",\n      \"example\": \"video\",\n      \"enum\": [\n        \"video\",\n        \"movie\"\n      ],\n      \"enumTitles\": [\n        \"Video\",\n        \"Film\"\n      ],\n      \"nullable\": true\n    },\n    \"lengthFilter\": {\n      \"title\": \"Length filter\",\n      \"type\": \"string\",\n      \"description\": \"Select Youtube video length filter for search\",\n      \"editor\": \"select\",\n      \"example\": \"between420\",\n      \"enum\": [\n        \"under4\",\n        \"between420\",\n        \"plus20\"\n      ],\n      \"enumTitles\": [\n        \"Under 4 minutes\",\n        \"4-20 minutes\",\n        \"Over 20 minutes\"\n      ],\n      \"nullable\": true\n    },\n    \"isHD\": {\n      \"title\": \"HD\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the HD filter for search\",\n      \"editor\": \"checkbox\",\n      \"groupCaption\": \"Features\",\n      \"groupDescription\": \"What you could select under the Features section of the Filtering&Sorting menu on Youtube\",\n      \"nullable\": true\n    },\n    \"hasSubtitles\": {\n      \"title\": \"Subtitles/CC\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the Subtitles/CC filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"hasCC\": {\n      \"title\": \"Creative Commons\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the Creative Commons filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"is3D\": {\n      \"title\": \"3D\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the 3D filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"isLive\": {\n      \"title\": \"Live\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the Live filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"isBought\": {\n      \"title\": \"Purchased\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the Purchased filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"is4K\": {\n      \"title\": \"4K\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the 4K filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"is360\": {\n      \"title\": \"360 degrees\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the 360 degrees filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"hasLocation\": {\n      \"title\": \"Location\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the Location filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"isHDR\": {\n      \"title\": \"HDR\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the HDR filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"isVR180\": {\n      \"title\": \"VR180\",\n      \"type\": \"boolean\",\n      \"description\": \"Will apply the VR180 filter for search\",\n      \"editor\": \"checkbox\",\n      \"nullable\": true\n    },\n    \"oldestPostDate\": {\n      \"title\": \"Scrape videos published after [date]\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"description\": \"Only posts uploaded after or on this date will be scraped. Alternatively, specify how old the scraped videos should be in days. Putting <code>1 day</code> will get you only today's posts, <code>2 days</code> - yesterday's and today's, and so on. Note, that if you select this, sorting parameter will be auto-reset to NEWEST\",\n      \"example\": \"2024-01-01\",\n      \"sectionCaption\": \"📅 Date range (applicable only to scraping by channels URL) ($)\"\n    },\n    \"sortVideosBy\": {\n      \"title\": \"Sort by\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"NEWEST\",\n        \"POPULAR\",\n        \"OLDEST\"\n      ],\n      \"description\": \"Maps to the sorting buttons on the top of the channel's 'Videos', 'Shorts' and 'Live' pages.\",\n      \"example\": \"NEWEST\",\n      \"enumTitles\": [\n        \"Newest\",\n        \"Popular\",\n        \"Oldest\"\n      ]\n    },\n    \"aiVideoDescription\": {\n      \"title\": \"Add-on: AI video description ($)\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled, uses AI to generate a time-segmented description of the video, covering both visual and audio content for each segment.\",\n      \"example\": false,\n      \"default\": false,\n      \"sectionCaption\": \"🤖 AI video analysis ($)\"\n    },\n    \"aiVideoSummary\": {\n      \"title\": \"Add-on: AI video summary ($)\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled, uses AI to generate a concise conceptual summary of the video covering both visual and audio content.\",\n      \"example\": false,\n      \"default\": false\n    },\n    \"saveSubsToKVS\": {\n      \"title\": \"Save subtitles to key-value store\",\n      \"type\": \"boolean\",\n      \"description\": \"If set to true, the scraper will save the downloaded subtitles to the key-value store. Transcripts are always saved to the key-value store\",\n      \"example\": false,\n      \"editor\": \"hidden\"\n    },\n    \"preferAutoGeneratedSubtitles\": {\n      \"title\": \"Prefer automatically generated subtitles.\",\n      \"description\": \"If set to true, automatically generated subtitles are preferred to user subtitles.<b> Note:</b> a subtitle language must be selected and a subtitle-downloading option must be selected in <i>Transcription & subtitles</i> for this to work.\",\n      \"type\": \"boolean\",\n      \"example\": false,\n      \"editor\": \"hidden\"\n    }\n  },\n  \"required\": []\n}"
+}

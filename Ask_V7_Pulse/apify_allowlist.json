@@ -1,0 +1,66 @@
+{
+  "apify/facebook-posts-scraper": {
+    "collects": "Posts from public Facebook pages",
+    "price": "see actor page"
+  },
+  "apify/facebook-comments-scraper": {
+    "collects": "Comments on public Facebook posts",
+    "price": "see actor page"
+  },
+  "apify/facebook-groups-scraper": {
+    "collects": "Posts in public Facebook groups",
+    "price": "see actor page"
+  },
+  "apify/instagram-scraper": {
+    "collects": "Instagram posts, profiles, hashtags",
+    "price": "see actor page"
+  },
+  "apify/instagram-comment-scraper": {
+    "collects": "Comments on Instagram posts",
+    "price": "see actor page"
+  },
+  "clockworks/tiktok-scraper": {
+    "collects": "TikTok videos by search, hashtag or profile; minimum charge cap USD 0.50",
+    "price": "see actor page"
+  },
+  "streamers/youtube-scraper": {
+    "collects": "YouTube videos and channels",
+    "price": "see actor page"
+  },
+  "streamers/youtube-comments-scraper": {
+    "collects": "YouTube comments",
+    "price": "see actor page"
+  },
+  "trudax/reddit-scraper-lite": {
+    "collects": "Reddit posts and comments; at least 10 items",
+    "price": "see actor page"
+  },
+  "apidojo/tweet-scraper": {
+    "collects": "Posts on X",
+    "price": "see actor page"
+  },
+  "junglee/Amazon-crawler": {
+    "collects": "Amazon.eg products: price, stock, rating, reviews, 'bought in past month', best-seller ranks. Don't set countryCode (adds USD 0.06 a product)",
+    "price": "USD 0.005 a product"
+  },
+  "junglee/amazon-bestsellers": {
+    "collects": "Amazon best-seller lists by category",
+    "price": "USD 0.0059 an item"
+  },
+  "blackfalcondata/carrefour-maf-scraper": {
+    "collects": "Carrefour Egypt (market mafegy) prices, offers, stock. query is a string; one search per run",
+    "price": "USD 0.01 a run + USD 0.002 a product"
+  },
+  "crawlerbros/noon-scraper": {
+    "collects": "Noon Egypt prices (market egypt, mode search, one searchQuery per run)",
+    "price": "USD 0.005 a run + USD 0.005 an item"
+  },
+  "memo23/talabat-scraper": {
+    "collects": "Talabat restaurants and full menus. Use branchIds for exact restaurants; area listing pagination is unreliable, so page area lists through talabat.com and pass the IDs",
+    "price": "USD 0.001 a restaurant"
+  },
+  "apify/google-trends-scraper": {
+    "collects": "Google Trends interest over time and by governorate for a term (slow; low-volume terms can time out)",
+    "price": "about USD 0.10 a term"
+  }
+}

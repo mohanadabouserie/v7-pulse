@@ -1,0 +1,114 @@
+{
+ "act": {
+  "title": "Facebook Profile Scraper | No Login | Bulk | $4/1K",
+  "users30d": 32,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Facebook Profile Scraper — Public Profiles & Pages, No Login\n\nTurn Facebook profile links, usernames or numeric IDs into clean, structured profile rows without logging in.\nGet the name, category, bio, work, education, city, hometown, relationship, websites, exact follower counts, verified badge, and profile and cover photos of public profiles and Pages. One row per profile, ready for JSON, CSV or Excel.\n\n## Why Use This Scraper?\n\n- ✅ No login, cookies or Facebook account. Paste the profiles and run.\n- ✅ Exact follower counts such as `121350061`, not just the rounded \"121M\" label. Following is filled whether Facebook writes \"92 following\" or \"Following 92\".\n- ✅ Work and education as both the original lines and structured objects (`title`, `organization`, years).\n- ✅ Profiles and Pages in the same run. Every row says which one it is and gives its category.\n- ✅ The full public intro card: work, education, current city, hometown, relationship, websites, emails and phones.\n- ✅ Every common link format works: vanity URLs, `profile.php?id=` links, `/people/` permalinks, mobile hosts, `fb.com`, plain usernames and numeric IDs.\n- ✅ Pay only for delivered profiles. Anything that isn't delivered is listed with its reason and never billed.\n- ✅ Duplicate-safe. The same profile given twice, by username and by ID, is delivered once.\n\n## Overview\n\nFacebook Profile Scraper is built for sales and marketing teams, influencer researchers, recruiters and data teams who already have a list of Facebook profiles or Pages and need structured data about them.\n\nYou give it a list of profiles. It returns one dataset row per profile with what Facebook shows a logged-out visitor on the profile's header and intro card: identity, category, bio, work, education, places, links, audience counts and photos.\n\nPersonal profiles and Pages come back in the same row shape. The `accountType` field tells them apart. The actor reads profiles, not their content: posts, photos, comments, friends lists and follower lists are not scraped.\n\n## Supported Inputs\n\n### Input types\n\n| Input type | Pattern | Example |\n|---|---|---|\n| Profile or Page URL | `facebook.com/<name>` | `https://www.facebook.com/zuck` |\n| Numeric-ID link | `facebook.com/profile.php?id=<id>` | `https://www.facebook.com/profile.php?id=4` |\n| People permalink | `facebook.com/people/<Name>/<id>/` | `https://www.facebook.com/people/<Name>/<id>/` |\n| Legacy Page URL | `facebook.com/pg/<name>/` | `https://www.facebook.com/pg/NASA/` |\n| Mobile and short hosts | `m.`, `mbasic.`, `web.`, `touch.` or `fb.com` | `https://m.facebook.com/BillGates` |\n| Username | letters, digits, dots, `-` and `_`; a leading `@` is fine | `zuck` or `@zuck` |\n| Numeric ID | digits only | `4` |\n\nLinks are normalized before fetching, so `https://m.facebook.com/NASA/?ref=bookmarks` and `NASA` are the same input.\n\n### Copy-pasteable startUrls\n\n```json\n{\n  \"startUrls\": [\n    \"https://www.facebook.com/zuck\",\n    \"https://m.facebook.com/NASA\",\n    \"BillGates\"\n  ]\n}\n```\n\n### Unsupported inputs\n\n- ❌ Groups, events, posts, photos, videos, reels, Marketplace, search and hashtag links (`/groups/`, `/events/`, `/posts/`, `/watch/`, `/marketplace/`, `/search/`, `/hashtag/` and similar). They are rejected before any fetch and listed in `NOT_DELIVERED` with the reason.\n- ❌ Links that are not on facebook.com or fb.com, including shortened links such as bit.ly.\n- ❌ Anything behind the Facebook login: friends-only details, private profiles, friends lists.\n- ❌ Keyword or name search. This actor reads a list of profiles you already have. To find profiles by keyword, run [Facebook Search Scraper](https://apify.com/memo23/facebook-search-scraper) first and feed its URLs in here.\n\n## Use Cases\n\n| Audience | Use case |\n|---|---|\n| **Sales & lead generation** | Enrich a list of business Pages with category, website, email and phone before outreach |\n| **Influencer marketing** | Compare creators and public figures by exact follower count and verified status |\n| **Brand & competitor monitoring** | Schedule a run over competitor Pages and track their follower counts over time |\n| **Recruiting & research** | Read the public work and education lines of profiles you already have links for |\n| **Data teams & agencies** | Turn a column of Facebook links in a CRM or spreadsheet into clean, typed fields |\n\n## How It Works\n\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/muhamed-didovic/muhamed-didovic.github.io/main/assets/how-it-works-facebook-profile.png\" alt=\"How Facebook Profile Scraper works\" />\n</p>\n\n1. **Paste profiles.** URLs, usernames or numeric IDs, in any mix.\n2. **Normalize and dedupe.** Every input becomes one canonical profile link. Duplicates are fetched once, and links that are not profiles are set aside.\n3. **Fetch the public page.** Each profile is loaded as a logged-out visitor through residential IPs, with up to three attempts.\n4. **Parse the header and intro card.** Name, category, bio, work, education, places, links, audience counts and photos.\n5. **Export.** One row per profile in JSON, CSV or Excel. Every input that gets no row, other than a duplicate of a delivered profile, is listed in the `NOT_DELIVERED` record with its reason.\n\n## Input Configuration\n\n### Input fields\n\n| Field | Type | Required | Default | Notes |\n|---|---|---|---|---|\n| `startUrls` | array of strings | yes | – | Profile or Page URLs, usernames or numeric IDs, one per line. Objects of the form `{\"url\": \"...\"}` are accepted too. Duplicates are fetched once. |\n| `maxItems` | integer | no | `1000` | Stop after this many profile rows. |\n| `maxConcurrency` | integer (1–10) | no | `4` | How many profiles are fetched at the same time. |\n| `proxy` | object | no | built-in residential pool | Leave empty for most runs. Facebook shows a login page to datacenter IPs, so if you set your own proxy, make it residential. |\n\n### Common scenarios\n\n**1. A few profiles**\n\n```json\n{\n  \"startUrls\": [\"https://www.facebook.com/zuck\", \"BillGates\"],\n  \"maxItems\": 10\n}\n```\n\n**2. A mixed column from a spreadsheet**\n\n```json\n{\n  \"startUrls\": [\n    \"https://m.facebook.com/NASA\",\n    \"https://www.facebook.com/profile.php?id=4\",\n    \"@BillGates\"\n  ],\n  \"maxConcurrency\": 6\n}\n```\n\n**3. Your own residential proxy**\n\n```json\n{\n  \"startUrls\": [\"https://www.facebook.com/NASA\"],\n  \"proxy\": { \"useApifyProxy\": true, \"apifyProxyGroups\": [\"RESIDENTIAL\"] }\n}\n```\n\n## Output Overview\n\nEach dataset item is one profile or Page:\n\n- **Identity:** profile ID, username, name, canonical URL, account type (`profile` or `page`), category, verified badge, memorialized flag\n- **About:** bio, work and education lines plus `workHistory` / `educationHistory` (title, organization, years), current city, hometown, relationship\n- **Contact and links:** websites, emails and phones, when the intro card shows them publicly\n- **Audience:** exact follower count with Facebook's rounded label, following, friends, \"talking about this\", likes\n- **Media:** profile picture and cover photo URLs\n- **Raw intro:** `introItems`, every intro line with its link, for anything the named fields don't cover\n- **Run metadata:** the input you gave (`inputUrl`) and `scrapedAt`\n\nProfiles and Pages share one shape. A field the profile doesn't show is `null`, and an empty list is `[]`. Pages usually have a category, websites and a \"talking about this\" count but no work or education. Personal profiles are often the other way round.\n\n## Output Samples\n\n### Personal profile, input `https://www.facebook.com/zuck` (trimmed)\n\n```json\n{\n  \"profileId\": \"4\",\n  \"username\": \"zuck\",\n  \"name\": \"Mark Zuckerberg\",\n  \"alternateName\": null,\n  \"url\": \"https://www.facebook.com/zuck\",\n  \"accountType\": \"profile\",\n  \"category\": \"Public figure\",\n  \"verified\": true,\n  \"bio\": \"Bringing the world closer together.\",\n  \"work\": [\"Founder and CEO at Meta\", \"Works at Biohub\"],\n  \"education\": [\"Studied Computer Science and Psychology at Harvard University\"],\n  \"workHistory\": [\n    { \"text\": \"Founder and CEO at Meta\", \"title\": \"Founder and CEO\", \"organization\": \"Meta\", \"url\": \"https://www.facebook.com/Meta\", \"startYear\": null, \"endYear\": null, \"current\": false }\n  ],\n  \"educationHistory\": [\n    { \"text\": \"Studied Computer Science and Psychology at Harvard University\", \"title\": \"Computer Science and Psychology\", \"organization\": \"Harvard University\", \"url\": null, \"startYear\": null, \"endYear\": null, \"current\": false }\n  ],\n  \"currentCity\": \"Palo Alto, California\",\n  \"hometown\": \"Dobbs Ferry, New York\",\n  \"relationship\": \"Married to Priscilla Chan\",\n  \"websites\": [],\n  \"followers\": 121350061,\n  \"followersText\": \"121M followers\",\n  \"following\": 92,\n  \"followingText\": \"Following 92\",\n  \"talkingAbout\": 1167169,\n  \"profilePictureUrl\": \"https://scontent.fdel26-1.fna.fbcdn.net/v/t39.30808-1/798035993_...jpg?...\",\n  \"coverPhotoUrl\": \"https://scontent.fdel26-1.fna.fbcdn.net/v/t39.30808-6/632550896_...png?...\",\n  \"isMemorialized\": false,\n  \"introItems\": [\n    { \"text\": \"Founder and CEO at Meta\", \"url\": \"https://www.facebook.com/Meta\" },\n    { \"text\": \"Lives in Palo Alto, California\", \"url\": \"https://www.facebook.com/Palo-Alto-California-104022926303756/\" }\n  ],\n  \"inputUrl\": \"https://www.facebook.com/zuck\",\n  \"scrapedAt\": \"2026-09-19T06:41:59.420Z\"\n}\n```\n\n### Page, input `https://www.facebook.com/NASA` (trimmed)\n\n```json\n{\n  \"profileId\": \"100044561550831\",\n  \"username\": \"NASA\",\n  \"name\": \"NASA - National Aeronautics and Space Administration\",\n  \"url\": \"https://www.facebook.com/NASA\",\n  \"accountType\": \"page\",\n  \"category\": \"Government organisation\",\n  \"verified\": true,\n  \"bio\": \"Explore the universe and discover our home planet. ...\",\n  \"work\": [],\n  \"education\": [],\n  \"websites\": [\"https://www.nasa.gov/nasa-app/\", \"https://www.nasa.gov/\"],\n  \"emails\": [\"public-inquiries@hq.nasa.gov\"],\n  \"phones\": [],\n  \"followers\": 28723422,\n  \"followersText\": \"28M followers\",\n  \"following\": 52,\n  \"followingText\": \"52 following\",\n  \"talkingAbout\": 83410,\n  \"linkedPageId\": \"54971236771\",\n  \"inputUrl\": \"https://www.facebook.com/NASA\",\n  \"scrapedAt\": \"2026-09-19T06:41:58.528Z\"\n}\n```\n\nBoth rows come from a test run on the Apify platform on 2026-09-19.\n\n## Key Output Fields\n\n| Group | Fields |\n|---|---|\n| **Identity** | `profileId`, `username`, `name`, `alternateName`, `url`, `accountType`, `category`, `verified`, `isMemorialized`, `linkedPageId` |\n| **About** | `bio`, `work[]`, `education[]`, `workHistory[]`, `educationHistory[]`, `currentCity`, `hometown`, `relationship` |\n| **Status** | `status` (`ok` on delivered rows), `errorCode`, `errorMessage` |\n| **Contact & links** | `websites[]`, `emails[]`, `phones[]` |\n| **Audience** | `followers`, `followersText`, `following`, `followingText`, `friends`, `talkingAbout`, `likes` |\n| **Media** | `profilePictureUrl`, `coverPhotoUrl` |\n| **Raw intro** | `introItems[]` with `text` and `url` |\n| **Run** | `inputUrl`, `scrapedAt` |\n\n## FAQ\n\n### Do I need a Facebook account, cookies or a login?\n\nNo. The actor reads each profile the way a logged-out visitor sees it. You never share credentials, and no account is at risk.\n\n### Which links work?\n\nProfile and Page URLs on www, m, mbasic, web, touch and fb.com hosts, `profile.php?id=` links, `/people/<Name>/<id>/` permalinks, legacy `/pg/<name>/` links, bare usernames (with or without `@`) and numeric IDs. Group, event, post, photo, video, Marketplace and search links are rejected and listed in `NOT_DELIVERED`.\n\n### How exact are the follower counts?\n\n`followers` is the exact number Facebook puts in the page's own metadata, for example `121350061`. `followersText` keeps the rounded label shown on screen, such as \"121M followers\". If a page carries no exact figure, `followers` falls back to the rounded label, so \"121M\" becomes `121000000`.\n\n### Why are some fields empty?\n\nThe actor only returns what a logged-out visitor can see. Many personal profiles hide their work, education, city or relationship, and Pages rarely list work or education. Hidden fields are `null` or `[]`. `friends` and `likes` are filled only when Facebook shows those counts publicly, which is rare today.\n\n### Can it scrape private profiles, friends lists or posts?\n\nNo. Private and friends-only details, friends lists, follower lists, posts, photos and comments are out of scope. For posts, use [Facebook Posts Scraper](https://apify.com/memo23/facebook-page-posts-scraper).\n\n### What happens to profiles that can't be scraped?\n\nThey are listed in the run's `NOT_DELIVERED` record (Storage → Key-value store) with the input, a reason and an `errorCode` (`PROFILE_NOT_FOUND`, `LOGIN_WALL`, `BLOCKED`, `UNPARSED`). They are never pushed to the dataset, so they are never billed.\n\n### Do the photo links expire?\n\nYes. `profilePictureUrl` and `coverPhotoUrl` are signed Facebook CDN links that stop working after a few days. If you need the images, download them soon after the run.\n\n### Do I need a proxy?\n\nNo. Runs use a built-in residential pool by default. If you set your own proxy, use a residential one, because Facebook shows a login page to datacenter IPs.\n\n### How fast is it?\n\nA test run of three profiles took about 9 seconds. Up to 10 profiles are fetched in parallel (`maxConcurrency`), and each one gets up to three attempts before it is set aside.\n\n### Can I find profiles by name or keyword?\n\nNot with this actor. Use [Facebook Search Scraper](https://apify.com/memo23/facebook-search-scraper) to find profiles and Pages by keyword, then paste their URLs here.\n\n## Support\n\n- Issues and feature requests: the **Issues** tab on this actor in Apify Console.\n- Custom work:\n    - Website: [https://muhamed-didovic.github.io/](https://muhamed-didovic.github.io/)\n    - Email: [muhamed.didovic@gmail.com](mailto:muhamed.didovic@gmail.com)\n\n## Additional Services\n\n- Custom fields, bulk profile lists or scheduled monitoring: [muhamed.didovic@gmail.com](mailto:muhamed.didovic@gmail.com)\n- API access (no Apify platform fee, usage fee only): [muhamed.didovic@gmail.com](mailto:muhamed.didovic@gmail.com)\n\n## Explore More Scrapers\n\n- [**Facebook Search Scraper**](https://apify.com/memo23/facebook-search-scraper): find people, Pages and posts by keyword\n- [**Facebook Page Contact Details**](https://apify.com/memo23/facebook-page-contact-detail-scraper): emails, phones and opening hours of business Pages\n- [**Facebook Posts Scraper**](https://apify.com/memo23/facebook-page-posts-scraper): posts from Pages and post URLs, no login\n- [**Facebook URL to ID**](https://apify.com/memo23/facebook-url-to-id): numeric IDs for Page, profile, group and post links\n- [**Facebook Public Group Posts & Comments**](https://apify.com/memo23/facebook-public-group-posts-scraper): posts and comments from public groups\n\nFull list at [apify.com/memo23](https://apify.com/memo23).\n\n## 🤖 For AI Agents & LLM Apps\n\nCompact reference for AI agents calling this actor via the [Apify MCP server](https://mcp.apify.com) or the Apify API (actor: `memo23/facebook-profile-scraper`).\n\n**Purpose:** Scrape public Facebook profiles and Pages without a login: one row per profile with identity, intro card, exact follower count and photos.\n\n**Minimal input:**\n\n```json\n{\n  \"startUrls\": [\"https://www.facebook.com/NASA\"],\n  \"maxItems\": 5\n}\n```\n\n**Output:** one dataset row per profile or Page with `profileId`, `username`, `name`, `alternateName`, `url`, `accountType` (`profile` or `page`), `category`, `verified`, `bio`, `work[]`, `education[]`, `currentCity`, `hometown`, `relationship`, `websites[]`, `emails[]`, `phones[]`, `followers`, `followersText`, `following`, `followingText`, `friends`, `talkingAbout`, `likes`, `profilePictureUrl`, `coverPhotoUrl`, `linkedPageId`, `isMemorialized`, `introItems[] {text, url}`, `inputUrl` and `scrapedAt`.\n\n**Behaviors an agent should know:**\n\n- `startUrls` takes URLs, usernames (`zuck`) or numeric IDs (`4`). Set `maxItems` to cap rows.\n- Inputs are deduplicated by link and by profile ID, so a profile never appears twice.\n- Every input that gets no row (duplicates aside) is listed in the key-value record `NOT_DELIVERED` as `{input, url, reason}`.\n- Billing is pay per event: a start event per run plus one event per profile row. Rejected, not-found, blocked and skipped inputs are never billed.\n- Only data visible to a logged-out visitor is returned. There are no posts, friends lists or private fields, and no keyword search.\n- Photo URLs are signed CDN links that expire after a few days.\n\n---\n\n## ⚠️ Disclaimer\n\nThis Actor is an independent tool and is not affiliated with, endorsed by, or sponsored by Meta Platforms, Inc. or any of its subsidiaries. Facebook is a trademark of Meta Platforms, Inc. All trademarks mentioned are the property of their respective owners.\n\nThe scraper accesses only publicly available Facebook profile and Page information shown to logged-out visitors: no login, cookies, authenticated endpoints, or content behind the facebook.com login wall. Profile data can be personal data. Users are responsible for ensuring their use complies with Facebook's Terms of Service, applicable data-protection law (GDPR, CCPA, etc.), and any contractual obligations of their own organization.\n\n---\n\n## SEO Keywords\n\nfacebook profile scraper, scrape facebook profiles, facebook page scraper, facebook scraper no login, facebook profile API, Apify facebook scraper, fb profile scraper, public profile scraper, social media profile scraper, follower count scraper, verified badge checker, profile bio extractor, lead enrichment data, influencer research data, competitor audience tracking, page contact details, social media intelligence, creator analytics data, B2B lead generation, Meta profile data\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+   "overview": {
+    "title": "Profiles",
+    "transformation": {
+     "fields": [
+      "profilePictureUrl",
+      "name",
+      "username",
+      "accountType",
+      "category",
+      "verified",
+      "followers",
+      "following",
+      "bio",
+      "currentCity",
+      "hometown",
+      "work",
+      "education",
+      "workHistory",
+      "educationHistory",
+      "websites",
+      "url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "profilePictureUrl": {
+       "label": "Picture",
+       "format": "image"
+      },
+      "name": {
+       "label": "Name",
+       "format": "text"
+      },
+      "username": {
+       "label": "Username",
+       "format": "text"
+      },
+      "accountType": {
+       "label": "Type",
+       "format": "text"
+      },
+      "category": {
+       "label": "Category",
+       "format": "text"
+      },
+      "verified": {
+       "label": "Verified",
+       "format": "boolean"
+      },
+      "followers": {
+       "label": "Followers",
+       "format": "number"
+      },
+      "following": {
+       "label": "Following",
+       "format": "number"
+      },
+      "bio": {
+       "label": "Bio",
+       "format": "text"
+      },
+      "currentCity": {
+       "label": "Lives in",
+       "format": "text"
+      },
+      "hometown": {
+       "label": "From",
+       "format": "text"
+      },
+      "work": {
+       "label": "Work",
+       "format": "array"
+      },
+      "education": {
+       "label": "Education",
+       "format": "array"
+      },
+      "workHistory": {
+       "label": "Work (structured)",
+       "format": "array"
+      },
+      "educationHistory": {
+       "label": "Education (structured)",
+       "format": "array"
+      },
+      "websites": {
+       "label": "Websites",
+       "format": "array"
+      },
+      "url": {
+       "label": "Profile URL",
+       "format": "link"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Facebook Profile Scraper\",\n  \"description\": \"Paste public Facebook profile or Page links, usernames or numeric IDs. No login or cookies needed.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Facebook profiles or Pages\",\n      \"type\": \"array\",\n      \"description\": \"One per line: a profile or Page URL (https://www.facebook.com/zuck), a numeric-id link (https://www.facebook.com/profile.php?id=4), a /people/<name>/<id>/ permalink, or just a username (zuck) or numeric ID (4). m.facebook.com, web.facebook.com and fb.com links work too. Duplicates are fetched once. Group, event, post, video and search links are not profiles and are skipped.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://www.facebook.com/zuck\",\n        \"https://www.facebook.com/BillGates\"\n      ]\n    },\n    \"maxItems\": {\n      \"title\": \"Max profiles\",\n      \"type\": \"integer\",\n      \"description\": \"Stop after this many profile rows. Default 1000; use a small number such as 10 for a test. Profiles that could not be delivered are never billed.\",\n      \"minimum\": 1,\n      \"default\": 1000\n    },\n    \"maxConcurrency\": {\n      \"title\": \"Max parallel requests\",\n      \"type\": \"integer\",\n      \"description\": \"How many profiles are fetched at the same time, from 1 to 10. Default 4.\",\n      \"minimum\": 1,\n      \"maximum\": 10,\n      \"default\": 4\n    },\n    \"proxy\": {\n      \"title\": \"Proxy configuration\",\n      \"type\": \"object\",\n      \"description\": \"Optional. Leave empty to use the built-in residential pool. Facebook shows a login page to datacenter IPs, so if you set your own proxy, use a residential one, for example {\\\"useApifyProxy\\\": true, \\\"apifyProxyGroups\\\": [\\\"RESIDENTIAL\\\"]}.\",\n      \"editor\": \"proxy\"\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

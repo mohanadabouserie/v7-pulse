@@ -1,0 +1,406 @@
+{
+ "act": {
+  "title": "Facebook Groups Scraper",
+  "users30d": 5236,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What is Facebook Groups Scraper?\n\nIt's a simple but powerful Facebook data extractor that allows you to scrape posts and comments from public Facebook groups. To get that data, just insert the group URL and click \"Save & Start\" button. With this Facebook scraper tool, you can extract valuable group data beyond the limitations of the Facebook API:\n\n🗂 Scrape multiple Facebook groups **at once**\n\n📝 Extract **key post data from any public Facebook group**: caption, URLs, IDs, authors, timestamps, top comments, and their details\n\n💙 Get top engagement metrics such as **likes, top reactions, reaction breakdowns, shares, and comments count**\n\n⚙️ Get posts pre-sorted before scraping by relevance, time frame or activity\n\n🖼 Access all media assets with thumbnails, image URLs, profile pic URLs, dimensions, and OCR text for deeper analysis\n\n⚡ Get **500 posts for free** in less than 2 minutes\n\n🔓 **No limitations** on requests or number of calls\n\n💾 Export Facebook data in **JSON, CSV, Excel, or HTML**\n\n🔗 Export via SDKs (Python & Node.js), use **API Endpoints**, webhooks, or integrate with apps & AI workflows\n\n🔍 Explore 20+ **other [Facebook scraping tools](#what-is-the-best-facebook-scraper)**\n\nAdd this Facebook Group Extractor to your social media toolkit to help you out with identifying engagement patterns, measuring sentiment, and tracking engagement. Our users already use the extracted groups data to analyze member interactions to discover popular topics, top contributors, and post performance.\n\n## What Facebook group data can I extract?\n\nWith this Facebook API, you will be able to extract the following data from Facebook groups:\n\n<table>\n<tr>\n<td>📝 Post text and URL</td>\n<td>👥 User name and ID</td>\n</tr>\n<tr>\n<td>🕐 Post timestamp</td>\n<td>👍 Likes, reactions, and shares count</td>\n</tr>\n<tr>\n<td>💬 Comments count and top comments</td>\n<td>📎 Attachments (photos, videos, links)</td>\n</tr>\n<tr>\n<td>🆔 Post ID and Feedback ID</td>\n<td>🔗 Group URL and title</td>\n</tr>\n<tr>\n<td>🖼 Media URLs, thumbnails, and dimensions</td>\n<td>📸 Image OCR text</td>\n</tr>\n<tr>\n<td>💭 Comment details (text, author, likes)</td>\n<td>🔢 Reaction breakdowns (like, love, haha, etc.)</td>\n</tr>\n</table>\n\n> 💡 **Tip:** Need to scrape more comments from Facebook Groups? Try our 🔗 [Facebook Comments Scraper](https://apify.com/apify/facebook-comments-scraper). Just add post URLs (for example, the ones you'd scraped with Facebook Groups Scraper) and get all comments, replies, likes, and basic commentator info.\n\n## How do I use Facebook Groups Scraper?\n\nFacebook Groups Scraper was designed to be easy to start with even if you've never extracted data from the web before. Here's how you can scrape Facebook groups data with this tool:\n\n1. [Create](https://console.apify.com/sign-up) a free Apify account using your email.\n1. Open [Facebook Groups Scraper](https://apify.com/apify/facebook-groups-scraper).\n1. Choose Facebook Group URLs to scrape posts from and number of posts to scrape.\n1. Choose additional filters: sorting order (new posts, newest activity, or most relevant) or timeframe of posts.\n1. Click \"Start\" and wait for the data to be extracted.\n1. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nFor a step-by-step guide on how to scrape Facebook Groups, follow our [Facebook Groups Scraper tutorial](https://blog.apify.com/scrape-facebook-groups-data/) 📝 or watch the [video tutorial](https://www.youtube.com/watch?v=xoIc7_T7AHg).\n\nhttps://www.youtube.com/watch?v=xoIc7_T7AHg\n\n## ➡️ Input\n\nThe input for Facebook Groups Scraper should be Facebook Group URLs such as `https://www.facebook.com/groups/groupname/`. You can insert the group URLs one by one, paste a prepared list, or set the input via API. The groups must be public.\n\n<a href=\"https://console.apify.com/actors/2chN8UQcH1CfxLRNE\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20groups%20input.png?raw=true\" alt=\"Facebook group scraping input\" style=\"width:70%;\">\n</a>\n\nClick on the [input tab](https://apify.com/apify/facebook-groups-scraper/input-schema) for a full explanation of an input example in JSON.\n\n## ⬅️ Output\n\nThe results will be wrapped into a dataset which you can find in the **Output** tab. Here's an excerpt from the dataset you'd get when scraping a Facebook group:\n\n<a href=\"https://console.apify.com/actors/2chN8UQcH1CfxLRNE\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20groups%20output.png?raw=true\" alt=\"Facebook group scraping output\" style=\"width:70%;\">\n</a>\n\n### 📘 Extracted Facebook group posts sample\n\n```javascript\n[\n    {\n        facebookUrl: 'https://www.facebook.com/groups/webscrapingandautomation',\n        url: 'https://www.facebook.com/groups/webscrapingandautomation/permalink/1223750702961359/',\n        time: '2025-12-10T04:37:15.000Z',\n        user: {\n            id: '******',\n            name: '******',\n        },\n        text: 'Need Web products data scraper',\n        topReactionsCount: 2,\n        feedbackId: 'ZmVlZGJhY2s6MTIyMzc1MDcwMjk2MTM1OQ==',\n        reactionLikeCount: 10,\n        reactionLoveCount: 2,\n        id: 'UzpfSTEwMDA4NjE1NTM5NjkyOTpWSzoxMjIzNzUwNzAyOTYxMzU5',\n        legacyId: '1223750702961359',\n        likesCount: 12,\n        sharesCount: 0,\n        commentsCount: 34,\n        topComments: [\n            {\n                commentUrl:\n                    'https://www.facebook.com/groups/webscrapingandautomation/permalink/1223750702961359/?comment_id=1223751619627934',\n                id: 'Y29tbWVudDoxMjIzNzUwNzAyOTYxMzU5XzEyMjM3NTE2MTk2Mjc5MzQ=',\n                feedbackId: 'ZmVlZGJhY2s6MTIyMzc1MDcwMjk2MTM1OV8xMjIzNzUxNjE5NjI3OTM0',\n                date: '2025-12-10T04:38:44.000Z',\n                text: 'Available here for scraping',\n                profileUrl: 'https://www.facebook.com/******',\n                profilePicture: 'https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-1/******',\n                profileId: '******',\n                profileName: '******',\n                likesCount: '1',\n                threadingDepth: 0,\n            },\n            {\n                commentUrl:\n                    'https://www.facebook.com/groups/webscrapingandautomation/permalink/1223750702961359/?comment_id=1223835609619535',\n                id: 'Y29tbWVudDoxMjIzNzUwNzAyOTYxMzU5XzEyMjM4MzU2MDk2MTk1MzU=',\n                feedbackId: 'ZmVlZGJhY2s6MTIyMzc1MDcwMjk2MTM1OV8xMjIzODM1NjA5NjE5NTM1',\n                date: '2025-12-10T07:45:18.000Z',\n                text: 'Text me',\n                profilePicture: 'https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/******',\n                profileId: '******',\n                profileName: '******',\n                likesCount: '0',\n                threadingDepth: 0,\n            },\n        ],\n        facebookId: '******',\n        groupTitle: '******',\n        inputUrl: 'https://www.facebook.com/groups/webscrapingandautomation',\n    },\n    {\n        facebookUrl: 'https://www.facebook.com/groups/selftaughtprogrammers/',\n        url: 'https://www.facebook.com/groups/selftaughtprogrammers/permalink/2616394328724285/',\n        time: '2025-12-09T18:20:41.000Z',\n        user: {\n            id: '******',\n            name: '******',\n        },\n        text: \"So I Just Started Programming, understand Basics in depth I started with C ++ as It is In My 1st Semester I gave my mids but I have seen some Ppl who get a job after 1st semester or 2nd So it possible for me? If I Give around 50 to 6 hours Daily? But I have a problem I can't figure Which field should I choose like I started learning ml took a course but then I saw That job opportunities and internships weren't too much as compare to web\\nAnd same issue with Cyber security.I don't Want to Get exposure of other fields cuz I don't have much time as My parents can't afford my Semester fees So Only option I have left is odd job.And that is a dangerous path I think,bcz I have seen so Many ppl who did odd jobs to Pay there semester fee they did manage to pay there fee hit When they Graduated They were not some kind of prodigy And they couldn't really understand this field cuz Most of there time was being invested in odd job.Sp They Either teach programming in schools or Do irrelevant jobs. What should I do?  I have around 6 months how do I utilize These 6 months to become prodigy level in whatever field I choose and hwo should I decide Which field to choose?\",\n        topReactionsCount: 1,\n        feedbackId: 'ZmVlZGJhY2s6MjYxNjM5NDMyODcyNDI4NQ==',\n        reactionLikeCount: 1,\n        id: 'UzpfSTExODg5ODQ3NzAwNTE4MTM6Vks6MjYxNjM5NDMyODcyNDI4NQ==',\n        legacyId: '2616394328724285',\n        likesCount: 1,\n        sharesCount: 0,\n        commentsCount: 0,\n        topComments: [],\n        facebookId: '387875758242831',\n        groupTitle: 'Self-Taught Programmers',\n        inputUrl: 'https://www.facebook.com/groups/selftaughtprogrammers/',\n    },\n    {\n        facebookUrl: 'https://www.facebook.com/groups/dataminers',\n        url: 'https://www.facebook.com/groups/dataminers/permalink/2160479344361035/',\n        time: '2025-11-21T00:00:05.000Z',\n        user: {\n            id: '******',\n            name: '******',\n        },\n        text: 'I want web scraper',\n        topReactionsCount: 1,\n        feedbackId: 'ZmVlZGJhY2s6MjE2MDQ3OTM0NDM2MTAzNQ==',\n        reactionLikeCount: 5,\n        id: 'UzpfSTEzNjk4ODI4OTY6Vks6MjE2MDQ3OTM0NDM2MTAzNQ==',\n        legacyId: '2160479344361035',\n        likesCount: 5,\n        sharesCount: 0,\n        commentsCount: 20,\n        topComments: [\n            {\n                commentUrl:\n                    'https://www.facebook.com/groups/dataminers/permalink/2160479344361035/?comment_id=2162023090873327',\n                id: 'Y29tbWVudDoyMTYwNDc5MzQ0MzYxMDM1XzIxNjIwMjMwOTA4NzMzMjc=',\n                feedbackId: 'ZmVlZGJhY2s6MjE2MDQ3OTM0NDM2MTAzNV8yMTYyMDIzMDkwODczMzI3',\n                date: '2025-11-21T07:26:01.000Z',\n                text: 'You post and never reply \\n\\nDM me',\n                profileUrl: 'https://www.facebook.com/******',\n                profilePicture: 'https://scontent-mia3-1.xx.fbcdn.net/v/t1.30497-1/******',\n                profileId: '******',\n                profileName: '******',\n                likesCount: '0',\n                threadingDepth: 0,\n            },\n            {\n                commentUrl:\n                    'https://www.facebook.com/groups/dataminers/permalink/2160479344361035/?comment_id=2162516160824020',\n                id: 'Y29tbWVudDoyMTYwNDc5MzQ0MzYxMDM1XzIxNjI1MTYxNjA4MjQwMjA=',\n                feedbackId: 'ZmVlZGJhY2s6MjE2MDQ3OTM0NDM2MTAzNV8yMTYyNTE2MTYwODI0MDIw',\n                date: '2025-11-21T20:06:48.000Z',\n                text: \"I'm interested!\",\n                profileUrl: 'https://www.facebook.com/******',\n                profilePicture: 'https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/******',\n                profileId: '******',\n                profileName: '******',\n                likesCount: '0',\n                threadingDepth: 0,\n            },\n        ],\n        facebookId: '536969943378658',\n        groupTitle: 'Web Scraping World',\n        pageAdLibrary: {\n            is_business_page_active: false,\n            id: '664799263393118',\n        },\n        inputUrl: 'https://www.facebook.com/groups/dataminers',\n    },\n];\n```\n\nYou can choose in which format to download your Facebook data: JSON, JSONL, Excel spreadsheet, HTML table, CSV, or XML.\n\n## How much will scraping Facebook Groups cost you?\n\nScraping data from Facebook groups costs approximately $5 for every 1,000 posts, or $0.005 per post. If you're on Apify Free plan, you will be able to scrape up to 1000 posts before needing to upgrade.\n\nFor more frequent or extensive Facebook data scraping, consider upgrading to the $29/month [Starter plan](https://apify.com/pricing), which can get you up to 5,800 Facebook group posts per month. For scalable Facebook group scraping, check out $199/month Scale or $999/month Business plan.\n\n## What is the best Facebook scraper?\n\nYou can use the dedicated scrapers below if you want to scrape specific Facebook data. Each of them is built particularly for the relevant Facebook scraping case be it posts, pages, comments or search. Feel free to browse them:\n\n<table>\n<tr>\n<td>🕵️‍♀️ <a href=\"https://apify.com/apify/facebook-search-scraper\">Facebook Search Scraper</a></td>\n<td>🗓 <a href=\"https://apify.com/apify/facebook-events-scraper\">Facebook Events Scraper</a></td>\n<td>🚩 <a href=\"https://apify.com/apify/facebook-pages-scraper\">Facebook Pages Scraper</a></td>\n</tr>\n<tr>\n<td>🕹 <a href=\"https://apify.com/apify/facebook-games-scraper\">Facebook Games Scraper</a></td>\n<td>👀 <a href=\"https://apify.com/apify/facebook-marketplace-scraper\">Facebook Marketplace Scraper</a></td>\n<td>🎞 <a href=\"https://apify.com/apify/facebook-reels-scraper\">Facebook Reels Scraper</a></td>\n</tr>\n<tr>\n<td>🌟 <a href=\"https://apify.com/apify/facebook-reviews-scraper\">Facebook Reviews Scraper</a></td>\n<td>📝 <a href=\"https://apify.com/apify/facebook-posts-scraper\">Facebook Posts Scraper</a></td>\n<td>📹 <a href=\"https://apify.com/apify/facebook-video-search-scraper\">Facebook Video Search Scraper</a></td>\n</tr>\n<tr>\n<td>💬 <a href=\"https://apify.com/apify/facebook-comments-scraper\">Facebook Comments Scraper</a></td>\n<td>👍 <a href=\"https://apify.com/apify/facebook-likes-scraper\">Facebook Likes and Reactions Scraper</a></td>\n<td>ℹ️ <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Page Contact Information</a></td>\n</tr>\n<tr>\n<td>🏞 <a href=\"https://apify.com/apify/facebook-photos-scraper\">Facebook Photos Scraper</a></td>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Brand Collaboration Scraper</a></td>\n<td>👥 <a href=\"https://apify.com/apify/facebook-followers-following-scraper\">Facebook Followers Following Scraper</a></td>\n</tr>\n<tr>\n<td>🛍️ <a href=\"https://apify.com/apify/facebook-ads-scraper\">Facebook Ads Library Scraper</a></td>\n<td>📱 <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Pages Info Scraper</a></td>\n<td>🧲 <a href=\"https://apify.com/apify/social-media-leads-analyzer\">Social Media Leads Analyzer</a></td>\n</tr>\n</table>\n\n## ❓ FAQ\n\n### What's the difference between a public and a private Facebook group?\n\nA public Facebook group is a group that is visible to anyone on Facebook and anyone can join without needing to be approved by an administrator. Posts made in a public group are also visible to anyone on Facebook. A private Facebook group is a group that is not visible to the general public and only members who have been approved by an administrator can see the group and its posts.\n\nThis Facebook Groups Scraper only works with public groups. Private group scraping would require login credentials, which goes against Facebook's Terms of Service.\n\n### Can I export Facebook Groups data using API?\n\nYes, you can access the extracted Facebook data through the Apify API. You'll need an Apify account and your API token (available under Integrations settings in Console). Apify API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more. To access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/apify/facebook-groups-scraper/api/javascript). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/facebook-groups-scraper/api/python).\n\nClick on the [API tab](https://apify.com/apify/facebook-groups-scraper/api) for code examples or check out the [Apify API reference docs](https://docs.apify.com/api/v2) for full detail.\n\n### Can I use Facebook Groups Scraper through an MCP server?\n\nWith Apify API, you can use Facebook Groups Scraper within your AI workflows. You can connect to the [MCP server](https://apify.com/apify/facebook-groups-scraper/api/mcp) using clients like ClaudeDesktop and LibreChat or build your own. Here's how you can set up Facebook Groups Scraper via Model Context Protocol (MCP) server:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`.\n2. Send API messages using that `sessionId` to trigger the scraper.\n3. The message starts the Facebook Groups Scraper with the provided input.\n4. The response should be: `Accepted`.\n\nThis makes Facebook Groups Scraper compatible with facebook mcp server implementations and allows you to use it as a facebook data extractor within your AI agent workflows.\n\n### Do I need proxies to scrape data from Facebook Groups?\n\nYou need proxies in general but you don't need to do anything extra to apply them if you run the scraper on the Apify platform. For successful Facebook scraping, we run [residential proxies](https://apify.com/proxy?pricing=residential-ip#pricing) in the background which are included in Apify's monthly Starter plan ($29).\n\n### Can I integrate data from Facebook Groups Scraper with other apps?\n\nYes. Facebook Groups Scraper can be connected with almost any cloud service or web app thanks to [integrations on the Apify platform](https://apify.com/integrations). You can integrate with Make, Zapier, ChatGPT, Slack, Airbyte, GitHub, Google Sheets, Asana, Google Drive, Keboola, MCP Servers, and more.\n\nYou can also use [webhooks](https://docs.apify.com/integrations/webhooks) to carry out an action whenever an event occurs, e.g., get a notification whenever Facebook Groups Scraper successfully finishes a run.\n\n### Is it legal to scrape Facebook Groups data?\n\nOur [Facebook scrapers](https://apify.com/store/categories?search=facebook&managedBy=APIFY) are ethical and do not extract any private user data. They only extract what the user has chosen to share publicly. However, you should be aware that your results could contain personal data. You should not scrape personal data unless you have a legitimate reason to do so.\n\nIf you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/).\n\n### Facebook Groups Scraper not working?\n\nWe're always working on improving the performance of our Actors. So if you've got any technical feedback for Facebook Groups Scraper or simply found a bug, please create an issue on the Actor's [Issues tab](https://apify.com/apify/facebook-groups-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "facebookUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook group that was scraped.",
+     "examples": [
+      "https://www.facebook.com/groups/examplegroup"
+     ]
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the post.",
+     "examples": [
+      "https://www.facebook.com/groups/examplegroup/posts/123456789"
+     ]
+    },
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook post ID.",
+     "examples": [
+      "123456789012345"
+     ]
+    },
+    "legacyId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Legacy numeric Facebook post ID.",
+     "examples": [
+      "987654321"
+     ]
+    },
+    "feedbackId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook feedback ID associated with the post.",
+     "examples": [
+      "234567890123456"
+     ]
+    },
+    "time": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Date and time the post was published, in ISO 8601 format.",
+     "examples": [
+      "2025-01-15T12:00:00.000Z"
+     ]
+    },
+    "title": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Title of the post (e.g. for marketplace-style group posts).",
+     "examples": [
+      "Item for sale"
+     ]
+    },
+    "text": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text content of the post.",
+     "examples": [
+      "This is an example group post."
+     ]
+    },
+    "user": {
+     "description": "Author of the post.",
+     "examples": [
+      {
+       "id": "100012345678901",
+       "name": "Example User",
+       "profileUrl": "https://www.facebook.com/exampleuser"
+      }
+     ],
+     "properties": {
+      "id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profileUrl": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profilePic": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "collaborators": {
+     "description": "Collaborators tagged in the post.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "attachments": {
+     "description": "Media attachments of the post.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "likesCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of likes (reactions) on the post.",
+     "examples": [
+      25
+     ]
+    },
+    "sharesCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of times the post was shared.",
+     "examples": [
+      3
+     ]
+    },
+    "commentsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of comments on the post.",
+     "examples": [
+      8
+     ]
+    },
+    "topComments": {
+     "description": "Top comments on the post.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "price": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Price listed in the post (for buy/sell groups).",
+     "examples": [
+      "$50"
+     ]
+    },
+    "location": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Location mentioned in the post.",
+     "examples": [
+      "New York"
+     ]
+    },
+    "link": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "External link included in the post.",
+     "examples": [
+      "https://example.com"
+     ]
+    },
+    "actionLink": {
+     "description": "Call-to-action link object.",
+     "examples": [
+      {
+       "link_display": "example.com",
+       "title": "Learn More",
+       "url": "https://example.com"
+      }
+     ],
+     "properties": {
+      "link_display": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "title": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "previewTitle": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Title of a link preview attached to the post.",
+     "examples": [
+      "Example Link Title"
+     ]
+    },
+    "previewDescription": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Description of a link preview attached to the post.",
+     "examples": [
+      "Example link description."
+     ]
+    },
+    "previewSource": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Source domain of the link preview.",
+     "examples": [
+      "example.com"
+     ]
+    },
+    "previewTarget": {
+     "description": "Target of the link preview.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "textReferences": {
+     "description": "Entities referenced in the post text (pages, profiles).",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "isVideo": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post contains a video.",
+     "examples": [
+      false
+     ]
+    },
+    "viewsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of views on the video post.",
+     "examples": [
+      1200
+     ]
+    },
+    "paidPartnership": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post is marked as a paid partnership.",
+     "examples": [
+      false
+     ]
+    }
+   },
+   "additionalProperties": {}
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "facebookUrl",
+      "text",
+      "attachments",
+      "user",
+      "likesCount",
+      "commentsCount"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "facebookUrl": {
+       "label": "Group url",
+       "format": "link"
+      },
+      "attachments[0].photo_image.uri": {
+       "label": "Post picture",
+       "format": "image"
+      },
+      "text": {
+       "label": "Post text",
+       "format": "text"
+      },
+      "user.name": {
+       "label": "Post author",
+       "format": "text"
+      },
+      "likesCount": {
+       "label": "Number of likes",
+       "format": "number"
+      },
+      "commentsCount": {
+       "label": "Number of comments",
+       "format": "number"
+      }
+     }
+    }
+   }
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"Input schema for the empty project actor.\",\n  \"description\": \"This scraper will get posts, comments and user info from a Facebook group of your choice. To try it out, just paste one or multiple Facebook group URLs and click ▷ Start. If you need any guidance, just <a href='https://blog.apify.com/scrape-facebook-groups-data/' target='_blank' rel='noopener'>follow this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"🔗 Facebook group URLs\",\n      \"type\": \"array\",\n      \"description\": \"Insert a URL of a valid Facebook group. Only <strong>public</strong> Facebook groups can be scraped.\",\n      \"editor\": \"requestListSources\",\n      \"prefill\": [\n        {\n          \"url\": \"https://www.facebook.com/groups/874728723021553\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.facebook.com/groups/874728723021553\"\n        }\n      ]\n    },\n    \"resultsLimit\": {\n      \"title\": \"✍️ Number of posts\",\n      \"type\": \"integer\",\n      \"description\": \"Select the number of posts you want to scrape. If this limit is not set, as many results as possible will be returned.\",\n      \"editor\": \"number\",\n      \"prefill\": 20,\n      \"minimum\": 1,\n      \"example\": 20\n    },\n    \"viewOption\": {\n      \"title\": \"📜 Sorting order\",\n      \"type\": \"string\",\n      \"description\": \"Select sorting order by which the posts should be scraped. Please note that the <strong>Number of results</strong> field will be applied to New posts only. The BuySell items sorting will return results for BuySell groups only.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"CHRONOLOGICAL\",\n        \"RECENT_ACTIVITY\",\n        \"TOP_POSTS\",\n        \"CHRONOLOGICAL_LISTINGS\"\n      ],\n      \"enumTitles\": [\n        \"New posts\",\n        \"Newest activity\",\n        \"Most relevant\",\n        \"BuySell items\"\n      ],\n      \"default\": \"CHRONOLOGICAL\",\n      \"prefill\": \"CHRONOLOGICAL\",\n      \"example\": \"CHRONOLOGICAL\"\n    },\n    \"onlyPostsNewerThan\": {\n      \"title\": \"Posts newer than\",\n      \"type\": \"string\",\n      \"description\": \"Scrapes post from the provided date to the present day. The date should be in YYYY-MM-DD or full ISO absolute format or in relative format e.g. 1 days, 2 months, 3 years. The JSON input also supports adding time units (UTC timezone): Full or partial ISO timestamp (e.g., `2025-09-23T10:02:01`) as absolute time and relative time, e.g., `1 hour` or `2 minutes`.\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"editor\": \"datepicker\",\n      \"sectionCaption\": \"Time frame\",\n      \"sectionDescription\": \"Use this if you only want to scrape posts from a specific period of time.\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"example\": \"2024-01-01\"\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

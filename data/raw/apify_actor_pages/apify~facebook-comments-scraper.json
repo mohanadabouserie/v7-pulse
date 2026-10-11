@@ -1,0 +1,301 @@
+{
+ "act": {
+  "title": "Facebook Comments Scraper",
+  "users30d": 3843,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What is Facebook Comments Scraper?\n\nFacebook Comments Scraper is a simple but powerful tool that lets you **extract comments from Facebook posts, videos, posts with images, and reels**. Just **paste in a post URL and click \"Save & Start\"**. Unlike the limited Facebook API, this scraper gives you access to **publicly visible comments** in bulk:\n\n❖ Scrape thousands of Facebook **comments from a post, photo, reel, and video**\n\n❖ Extract **comment text, replies, likes count, timestamp**, and more\n\n❖ Extract **basic public profile info** of the comment author\n\n❖ Presort comments based on **sorting type** (newest, most relevant, all), filter out comments based on timeframe\n\n❖ Get **2,000 comments for free** in less than 2 minutes\n\n❖ **No limitations** on requests or number of calls\n\n❖ Export to **JSON, CSV, Excel, or HTML**\n\n❖ Export via SDKs (Python & Node.js), use **API Endpoints**, webhooks, or integrate with apps & AI workflows\n\n❖ Combine with **20+ other [Facebook scraping tools](https://apify.com/store/collections/facebook-scrapers)**\n\n## What Facebook comments data can I extract?\n\nWith this Facebook API, you will be able to extract the following data from Facebook posts:\n\n<table>\n  <tr>\n  <td>📝 Post title</td>\n  <td>🔗 Post URL</td>\n  </tr>\n  <tr>\n  <td>💬 Comment text and URL</td>\n  <td>⌨️  Replies count</td>\n  </tr>\n  <tr>\n  <td>🧛 Commenter name and profile ID</td>\n  <td>🖼 Profile picture</td>\n  </tr>\n  <tr>\n  <td>🕐 Timestamp</td>\n  <td>👍 Likes count</td>\n  </tr>\n  <tr>\n  <td>🙋 Replier's name</td>\n  <td>🧵 Threading depth</td>\n  </tr>\n  <tr>\n  <td>🆔 Post, Comment, Facebook ID</td>\n  <td>🛍️  Ad Library activity status</td>\n  </tr>\n  </table>\n\n## How do I use Facebook Comments Scraper?\n\nFacebook Comments Scraper was built to work even if you’ve never scraped data before. Here’s how to get started:\n\n1. [Create](https://console.apify.com/sign-up) a free Apify account.\n2. Open [Facebook Comments Scraper](https://apify.com/apify/facebook-comments-scraper).\n3. Paste in one or more Facebook **post URLs**.\n4. Choose the **number** of comments and **replies** to scrape.\n5. Choose the way the comments are **sorted** (most relevant, newest, or non-filtered)\n6. Click \"Start\" to begin the scrape.\n7. Download your results as JSON, CSV, Excel, HTML, or use the API.\n\nIf you want a walkthrough, check out our [step-by-step tutorial](https://blog.apify.com/scrape-facebook-comments-data/) 🔗.\n\n## ⬇️ Input\n\nThe input for Facebook Comments Scraper should be **Facebook post URLs** **(reels, videos, posts with images, or regular posts)**. Paste them manually, import a list, or set up your own input via API.\n\n<a href=\"https://console.apify.com/actors/us5srxAYnsrkgUv2v\">\n<img src=\"https://raw.githubusercontent.com/apify-projects/actor-readme-images/refs/heads/master/Facebook%20comments%20scraper.png\" alt=\"Facebook comments scraping input\" style=\"width:70%;\">\n</a>\n\nClick on the [input tab](https://apify.com/apify/facebook-comments-scraper/input-schema) for a full explanation of an input example in JSON.\n\n## ⬆️ Output\n\nThe results will be wrapped into a dataset which you can find in the **Storage** tab. Here's an excerpt from the dataset you'd get if you apply the input parameters above:\n\n<a href=\"https://console.apify.com/actors/us5srxAYnsrkgUv2v\">\n<img src=\"https://raw.githubusercontent.com/apify-projects/actor-readme-images/refs/heads/master/Facebook%20comments%20scraped.png\" alt=\"Facebook comments scraping output\" style=\"width:90%;\">\n</a>\n\n### 💬 **Extracted Facebook comments & replies sample**\n\n```json\n[\n    {\n        \"facebookUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl\",\n        \"commentUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl?comment_id=883254471472572\",\n        \"commentId\": \"883254471472572\",\n        \"id\": \"Y29tbWVudDoxNDU4OTI0Mzg5MTMxODc5Xzg4MzI1NDQ3MTQ3MjU3Mg==\",\n        \"feedbackId\": \"ZmVlZGJhY2s6MTQ1ODkyNDM4OTEzMTg3OV84ODMyNTQ0NzE0NzI1NzI=\",\n        \"date\": \"2026-06-05T04:06:45.000Z\",\n        \"text\": \"You're beautiful! 27 is young. Don't be in a hurry. Dating sites prob aren't the answer!\",\n        \"profilePicture\": \"https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-1/464862567_1308754820535790_5748858663920029356_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx720x730&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=lTUbrprb5fUQ7kNvwGCPbX4&_nc_oc=Adqz_11UgWazzeluG-rh33nxZ3xrhlsA9nyQn2c13pbp7nmRr4hY5y-SBTay892Dp8o&_nc_zt=24&_nc_ht=scontent-atl3-3.xx&_nc_gid=sDahnKaxNXx_2cdrHGhHSA&_nc_ss=7c289&oh=00_Af9Yiohg9QT50jB2sW7OjOtnZU46HxAcF6Xsv5oM4YqkOw&oe=6A3097CC\",\n        \"profileId\": \"pfbid02hfdQq8zmFdeQYj7ZNN7qkKumDyyndD8QhF7zd4eGoLFgzB6JfTdXFeiW5i61kJhcl\",\n        \"profileName\": \"Laurie DeHarte\",\n        \"likesCount\": \"0\",\n        \"threadingDepth\": 0,\n        \"facebookId\": \"1458924389131879\",\n        \"postTitle\": \"“I’ve been on forty first dates over the course of three years. And that’s not counting the hundred conversations on dating apps that didn’t go anywhere. So yeah— I thought meeting someone would be a little easier than this. Maybe the city is just a difficult place to date, or maybe it’s just how the apps are designed, but it’s a pretty cold environment, pretty emotionless. People don’t seem to put much emotion into the way they put themselves out there. There’s a lot of ghosting. It happens most often before you even get to the date. You’ll be trying to set something up, and the person falls off. But there are times when the date does happen, and you’ll think it went well, but when you follow up a few days later there’s no response. People seem to have this mentality that if they’ve just met someone online, they don’t owe them anything. And I agree with that to some extent. But I think you owe people the common decency to reject them. I don’t think it’s difficult to say: ‘I’m not interested.’ One time I’d been dating someone for a month-and-a-half. We’d just spent a weekend together in New Jersey, but when I texted him the next day he didn't respond ever again. Maybe I’m just too sensitive. A lot of people seem to be able to say: ‘If the person ghosted me, then they weren’t for me.’  But I end up feeling like I'm not interesting enough, or that there's something missing with me that people can sense, and that's why it never goes anywhere deeper. Maybe that’s my low self-esteem coming out. Maybe if I had higher self-esteem I wouldn’t take ghosting so badly. I’m still only 27, but I’m losing hope of actually finding someone. I'm so fed up with the interactions I’m having that I don't want to put myself out there as much. People keep disappointing me. So it’s like: ‘Is it really worth my peace to keep interacting with people?’ But I feel like I have to keep doing it. Because if I stop, then I'll get into this head space where I don't want to put myself out there again.’”\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"102099916530784\"\n        },\n        \"inputUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl\"\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl\",\n        \"commentUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl?comment_id=2089407168274372\",\n        \"commentId\": \"2089407168274372\",\n        \"id\": \"Y29tbWVudDoxNDU4OTI0Mzg5MTMxODc5XzIwODk0MDcxNjgyNzQzNzI=\",\n        \"feedbackId\": \"ZmVlZGJhY2s6MTQ1ODkyNDM4OTEzMTg3OV8yMDg5NDA3MTY4Mjc0Mzcy\",\n        \"date\": \"2026-05-31T01:10:09.000Z\",\n        \"text\": \"Being hurt by ghosting doesn't make you sensitive it makes you human. The world needs more people who are honest about their feelings and respectful of others emotions\",\n        \"profileUrl\": \"https://www.facebook.com/aichia.chung\",\n        \"profilePicture\": \"https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/710723135_26951122931197054_7103138006659037278_n.jpg?stp=c0.455.1034.1035a_cp0_dst-jpg_tt6&cstp=mx1034x1035&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YCvFfcCgHmQQ7kNvwEyh4it&_nc_oc=AdoAtv4VMfUuayk0FtueYhrF7OVWHY6C4TGVI2oh3PFX8V1LtrgomWC9D0-mEW0uVYY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=sDahnKaxNXx_2cdrHGhHSA&_nc_ss=7c289&oh=00_Af8xZ_x6eG5cKJ7_NTZK4Vxk261uQtCLZzqfc9SpwBmq8w&oe=6A307AB1\",\n        \"profileId\": \"pfbid02UXES35YzTyQorvGeaVBDtac9ELRiSXuuFrrcsiqRM2wGDSJELEEimKg3zaHbpWTkl\",\n        \"profileName\": \"Meera Rajput\",\n        \"likesCount\": \"0\",\n        \"threadingDepth\": 0,\n        \"facebookId\": \"1458924389131879\",\n        \"postTitle\": \"“I’ve been on forty first dates over the course of three years. And that’s not counting the hundred conversations on dating apps that didn’t go anywhere. So yeah— I thought meeting someone would be a little easier than this. Maybe the city is just a difficult place to date, or maybe it’s just how the apps are designed, but it’s a pretty cold environment, pretty emotionless. People don’t seem to put much emotion into the way they put themselves out there. There’s a lot of ghosting. It happens most often before you even get to the date. You’ll be trying to set something up, and the person falls off. But there are times when the date does happen, and you’ll think it went well, but when you follow up a few days later there’s no response. People seem to have this mentality that if they’ve just met someone online, they don’t owe them anything. And I agree with that to some extent. But I think you owe people the common decency to reject them. I don’t think it’s difficult to say: ‘I’m not interested.’ One time I’d been dating someone for a month-and-a-half. We’d just spent a weekend together in New Jersey, but when I texted him the next day he didn't respond ever again. Maybe I’m just too sensitive. A lot of people seem to be able to say: ‘If the person ghosted me, then they weren’t for me.’  But I end up feeling like I'm not interesting enough, or that there's something missing with me that people can sense, and that's why it never goes anywhere deeper. Maybe that’s my low self-esteem coming out. Maybe if I had higher self-esteem I wouldn’t take ghosting so badly. I’m still only 27, but I’m losing hope of actually finding someone. I'm so fed up with the interactions I’m having that I don't want to put myself out there as much. People keep disappointing me. So it’s like: ‘Is it really worth my peace to keep interacting with people?’ But I feel like I have to keep doing it. Because if I stop, then I'll get into this head space where I don't want to put myself out there again.’”\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"102099916530784\"\n        },\n        \"inputUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl\"\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl\",\n        \"commentUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl?comment_id=26766913429643643\",\n        \"commentId\": \"26766913429643643\",\n        \"id\": \"Y29tbWVudDoxNDU4OTI0Mzg5MTMxODc5XzI2NzY2OTEzNDI5NjQzNjQz\",\n        \"feedbackId\": \"ZmVlZGJhY2s6MTQ1ODkyNDM4OTEzMTg3OV8yNjc2NjkxMzQyOTY0MzY0Mw==\",\n        \"date\": \"2026-05-17T03:18:02.000Z\",\n        \"text\": \"Is sad but if you can do not spend a weekend with anybody in any place.Give yourself a little.more respect.You look like a very nice and good woman.Spend time not looking.Wait until God found your perfect match.Let us know if this have good results😘\",\n        \"profileUrl\": \"https://www.facebook.com/lourdes.quintero.77582\",\n        \"profilePicture\": \"https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/673859884_2061771258091941_7418303018882414017_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2048x2042&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=qVL-SG8Juq4Q7kNvwHqGg9D&_nc_oc=Adrmb7UQw112l1CHjOuQksQH8cBKPxcKPxo0W2-v8xrteg7tk59SBpldLwixslJe8Ng&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=sDahnKaxNXx_2cdrHGhHSA&_nc_ss=7c289&oh=00_Af8JCxomSixpkFo7MJhglp8h025ZO_zC9wNsYuiihzQRLw&oe=6A307364\",\n        \"profileId\": \"pfbid0auM5GNtTyzpmc7SRX2cb3HMCmn8T8u5ujdWtwWvBx2gJMCadFPDk8WQuyFigWPfRl\",\n        \"profileName\": \"Lourdes Quintero\",\n        \"likesCount\": \"0\",\n        \"threadingDepth\": 0,\n        \"facebookId\": \"1458924389131879\",\n        \"postTitle\": \"“I’ve been on forty first dates over the course of three years. And that’s not counting the hundred conversations on dating apps that didn’t go anywhere. So yeah— I thought meeting someone would be a little easier than this. Maybe the city is just a difficult place to date, or maybe it’s just how the apps are designed, but it’s a pretty cold environment, pretty emotionless. People don’t seem to put much emotion into the way they put themselves out there. There’s a lot of ghosting. It happens most often before you even get to the date. You’ll be trying to set something up, and the person falls off. But there are times when the date does happen, and you’ll think it went well, but when you follow up a few days later there’s no response. People seem to have this mentality that if they’ve just met someone online, they don’t owe them anything. And I agree with that to some extent. But I think you owe people the common decency to reject them. I don’t think it’s difficult to say: ‘I’m not interested.’ One time I’d been dating someone for a month-and-a-half. We’d just spent a weekend together in New Jersey, but when I texted him the next day he didn't respond ever again. Maybe I’m just too sensitive. A lot of people seem to be able to say: ‘If the person ghosted me, then they weren’t for me.’  But I end up feeling like I'm not interesting enough, or that there's something missing with me that people can sense, and that's why it never goes anywhere deeper. Maybe that’s my low self-esteem coming out. Maybe if I had higher self-esteem I wouldn’t take ghosting so badly. I’m still only 27, but I’m losing hope of actually finding someone. I'm so fed up with the interactions I’m having that I don't want to put myself out there as much. People keep disappointing me. So it’s like: ‘Is it really worth my peace to keep interacting with people?’ But I feel like I have to keep doing it. Because if I stop, then I'll get into this head space where I don't want to put myself out there again.’”\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"102099916530784\"\n        },\n        \"inputUrl\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0tpbAbjJiWV4otqtTkJg94rfM6MceLwQDAyHc2nphpF57nJz72sja8PU9DXQTk6iYl\"\n    }\n]\n```\n\nYou can export this data in JSON, JSONL, CSV, XML, Excel, or HTML.\n\n## How many comments can it scrape?\n\nYou can expect to scrape **2,000–3,000 comments per post**, depending on the structure and visibility of the post. However, results vary due to:\n\n- Post type (e.g. public post vs. private post)\n- Facebook’s dynamic comment loading\n- Pagination structure\n- Geographic or login-based restrictions\n\nThe best way to know how much data you'll get is to **run a test scrape with your actual input**. More details on maximizing your scraping results in the ❓ [FAQ section](https://apify.com/apify/facebook-comments-scraper#faq).\n\n## What is the best Facebook scraper?\n\nNeed to scrape more than comments? These tools are built for different scraping needs across Facebook:\n\n<table>\n<tr>\n<td>🌟 <a href=\"https://apify.com/apify/facebook-reviews-scraper\">Facebook Reviews Scraper</a></td>\n<td>📝 <a href=\"https://apify.com/apify/facebook-posts-scraper\">Facebook Posts Scraper</a></td>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Brand Collaboration Scraper</a></td>\n</tr>\n<tr>\n<td>📘 <a href=\"https://apify.com/apify/facebook-pages-scraper\">Facebook Pages Scraper</a></td>\n<td>👍 <a href=\"https://apify.com/apify/facebook-likes-scraper\">Facebook Likes and Reactions Scraper</a></td>\n<td>ℹ️ <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Page Contact Information</a></td>\n</tr>\n<tr>\n<td>🕵️‍♀️ <a href=\"https://apify.com/apify/facebook-search-scraper\">Facebook Search Scraper</a></td>\n<td>🗓 <a href=\"https://apify.com/apify/facebook-events-scraper\">Facebook Events Scraper</a></td>\n<td>👥 <a href=\"https://apify.com/apify/facebook-groups-scraper\">Facebook Groups Scraper</a></td>\n</tr>\n<tr>\n<td>👀 <a href=\"https://apify.com/apify/facebook-marketplace-scraper\">Facebook Marketplace Scraper</a></td>\n<td>🕹 <a href=\"https://apify.com/apify/facebook-games-scraper\">Facebook Games Scraper</a></td>\n<td>🎞 <a href=\"https://apify.com/apify/facebook-reels-scraper\">Facebook Reels Scraper</a></td>\n</tr>\n<tr>\n<td>👥 <a href=\"https://apify.com/apify/facebook-groups-scraper\">Facebook Groups Scraper</a></td>\n<td>🏞 <a href=\"https://apify.com/apify/facebook-photos-scraper\">Facebook Photos Scraper</a></td>\n<td>🛍️ <a href=\"https://apify.com/apify/facebook-ads-scraper\">Facebook Ads Library Scraper</a></td>\n</tr>\n<tr>\n<td>📹 <a href=\"https://apify.com/apify/facebook-video-search-scraper\">Facebook Video Search Scraper</a></td>\n<td>👩‍💻 <a href=\"https://apify.com/apify/facebook-followers-following-scraper\">Facebook Followers&Following Scraper</a></td>\n<td></td>\n</tr>\n</table>\n\n## ❓ FAQ\n\n### Can I filter Facebook comments by date?\n\nYes. Use `onlyCommentsNewerThan` section to extract only comments newer than a selected date/time.\n\nSupported formats:\n\n- `YYYY-MM-DD`\n- Full or partial ISO absolute timestamp (UTC)\n- Relative values such as `1 day`, `2 months`, `3 years`, `1 hour`, or `2 minutes`\n\nWhen `onlyCommentsNewerThan` is set, the scraper uses newest-first sorting (`RECENT_ACTIVITY`) so the filter works correctly.\n\n### Why do I see fewer comments than is seen on the Facebook post itself?\n\nYou might see fewer comments than what’s shown on the Facebook post itself because the **Actor only gets public comments**. If someone has **privacy settings** that hide their comments from the public, those won’t be scraped. Also, Facebook’s comment counter includes **both top-level comments and all replies**. So, especially on larger threads, it’s normal that the number of comments scraped is lower than the number shown by Facebook.\n\n### Why am I getting way more results than I had set in Results amount?\n\nThe **Results amount** limit covers **both comments and their replies**. The Actor can return up to 3 levels — comments, replies, and nested replies — so the total number of items can be higher than what you set.\n\n### How can I get the most comments possible using the Facebook Comments Scraper?\n\nTo maximize the number of comments scraped, make sure to enable replies (nested comments) and set sorting to \"newest\". Facebook’s total comment count includes public, private comments and replies, but the scraper can only access public ones. So if you’re seeing fewer results than the total shown, it’s likely due to private content you can’t scrape — not a bug or blocking issue.\n\n### Can the scraper get both public and private comments from Facebook, and what's the difference?\n\nYep, there _is_ a difference! Public comments are visible to everyone and can be scraped. But if someone with a private profile leaves a comment, it might only be visible to their friends or followers—and not to the scraper. So if a post has 200 comments but the scraper only grabs 100, it’s likely the rest are from private accounts and can’t be accessed. We just assume those are private ones hiding in the shadows.\n\n### Can I use Facebook Comments Scraper through an MCP Server?\n\nWith Apify API, you can use 💬 Facebook Comments Scraper within your AI workflows. You can connect to the MCP Server using clients like ClaudeDesktop and LibreChat or build your own. Here's you can set up Facebook Scraper via Model Context Protocol (MCP) server, you should:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`.\n2. Send API messages using that `sessionId` to trigger the scraper.\n3. The message starts the 💬 Facebook Comments Scraper with the provided input.\n4. The response should be: `Accepted`.\n\n### Can I integrate Facebook comments data with other apps?\n\nYes, Facebook Comments Scraper can be [integrated](https://apify.com/integrations) with most tools and services via the Apify platform:\n\n- Zapier, Make, Slack, Airbyte, Google Sheets, Asana, GitHub, Keboola, and more\n- MCP for your AI agents and workflows\n- [Webhooks](https://docs.apify.com/integrations/webhooks) to trigger actions on scrape completion\n- [Apify API](https://docs.apify.com/api/v2) for full automation\n\n### Is there a simpler way to get Facebook comments directly on Make?\n\nWe have a dedicated [Facebook scraping App on Make](make.com/en/integrations/apify-facebook-scraper) with a Facebook Comments module, so you don’t need to set up the full Apify integration. It has a regular input schema and a few templates to start from. All you need to set it up is to add your Apify API token.\n\n### Can I export Facebook comments data using API?\n\nYes, you can access the extracted Facebook data through the Apify API. You’ll need an Apify account and your API token (available under Integrations settings in Console). Use your Apify API token to:\n\n- Schedule runs\n- Trigger scrapes on demand\n- Access datasets\n- Monitor runs and logs\n\nYou can access the API from Console or use `apify-client` for [Python](https://apify.com/apify/facebook-comments-scraper/api/python) or [Node.js](https://apify.com/apify/facebook-comments-scraper/api/javascript). Click the [API tab](https://apify.com/apify/facebook-comments-scraper/api) for code snippets.\n\n### Do I need proxies to scrape data from Facebook comments?\n\nYes, Facebook requires proxies for stable scraping. The scraper runs on **Apify Proxy** with **residential IPs** automatically when used on the platform. You don’t need to configure anything. Residential proxies are included with the [Starter plan](https://apify.com/pricing) or higher.\n\n### Is it legal to scrape Facebook comments and replies?\n\nYes, as long as the data is **public**. Facebook Comments Scraper — and Apify's [Facebook scrapers](https://apify.com/store/categories?search=facebook&managedBy=APIFY) in general — only extract publicly available comments. They don’t access private data like DMs or closed groups.\n\nThat said, scraped content may still contain personal data. If you plan to store, process, or reshare that data, make sure you have a legitimate legal basis. Read our take on [legal web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/).\n\n### Facebook Comments Scraper not working\n\nGot a feature request, question, or bug to report? Drop us a note on the [Issues tab](https://apify.com/apify/facebook-comments-scraper/issues/open) — someone from the Apify team will address it shortly.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "facebookUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook post the comment belongs to.",
+     "examples": [
+      "https://www.facebook.com/examplepage/posts/123456789"
+     ]
+    },
+    "postTitle": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Title or subject of the parent post.",
+     "examples": [
+      "Example post title text."
+     ]
+    },
+    "postDescription": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Description or body text of the parent post.",
+     "examples": [
+      "This is an example post description."
+     ]
+    },
+    "commentUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Direct URL to the comment.",
+     "examples": [
+      "https://www.facebook.com/examplepage/posts/123456789?comment_id=987654321"
+     ]
+    },
+    "commentId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook comment ID.",
+     "examples": [
+      "987654321098765"
+     ]
+    },
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Internal numeric ID of the comment.",
+     "examples": [
+      "123456789"
+     ]
+    },
+    "feedbackId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook feedback ID associated with the comment.",
+     "examples": [
+      "234567890"
+     ]
+    },
+    "name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Display name of the comment author.",
+     "examples": [
+      "Example User"
+     ]
+    },
+    "date": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Date and time the comment was posted, in ISO 8601 format.",
+     "examples": [
+      "2025-01-15T12:00:00.000Z"
+     ]
+    },
+    "text": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text content of the comment.",
+     "examples": [
+      "This is an example comment."
+     ]
+    },
+    "attachments": {
+     "description": "Media attachments included in the comment.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "author": {
+     "description": "Raw author object of the comment.",
+     "examples": [
+      {
+       "id": "100012345678901",
+       "name": "Example User",
+       "url": "https://www.facebook.com/exampleuser"
+      }
+     ],
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "profileUrl": {
+     "description": "URL of the commenter's Facebook profile.",
+     "examples": [
+      "https://www.facebook.com/exampleuser"
+     ],
+     "additionalProperties": {},
+     "type": [
+      "string",
+      "object"
+     ]
+    },
+    "profileId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook profile ID of the commenter.",
+     "examples": [
+      "100012345678901"
+     ]
+    },
+    "profileName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Profile name of the commenter.",
+     "examples": [
+      "Example User"
+     ]
+    },
+    "profilePicture": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the commenter's profile picture.",
+     "examples": [
+      "https://example.com/profile-picture.jpg"
+     ]
+    },
+    "likesCount": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Number of likes the comment received.",
+     "examples": [
+      "12"
+     ]
+    },
+    "commentsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of replies to this comment.",
+     "examples": [
+      3
+     ]
+    },
+    "comments": {
+     "description": "Nested replies to this comment.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "threadingDepth": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Nesting depth of the comment (0 for top-level).",
+     "examples": [
+      0
+     ]
+    },
+    "replyToCommentId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ID of the parent comment this is a reply to.",
+     "examples": [
+      "876543210987654"
+     ]
+    },
+    "parentComment": {
+     "description": "Parent comment object if this is a reply.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "parentReply": {
+     "description": "Direct parent reply object if this is a nested reply.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    }
+   },
+   "additionalProperties": {}
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "postTitle",
+      "postDescription",
+      "text",
+      "likesCount",
+      "facebookUrl"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "postTitle": {
+       "label": "Post title",
+       "format": "text"
+      },
+      "postDescription": {
+       "label": "Post description",
+       "format": "text"
+      },
+      "facebookUrl": {
+       "label": "Post url",
+       "format": "link"
+      },
+      "text": {
+       "label": "Comment",
+       "format": "text"
+      },
+      "likesCount": {
+       "label": "Number of likes",
+       "format": "number"
+      }
+     }
+    }
+   }
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"Input schema for the empty project actor.\",\n  \"description\": \"This scraper will get comments from a Facebook post of your choice. To try it out, just paste one or multiple Facebook post URLs and click ▷ Start. If you need any guidance, just <a href='https://blog.apify.com/scrape-facebook-comments-data/' target='_blank' rel='noopener'>follow this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Facebook URLs\",\n      \"type\": \"array\",\n      \"description\": \"Valid facebook URL\",\n      \"editor\": \"requestListSources\",\n      \"prefill\": [\n        {\n          \"url\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl\"\n        }\n      ]\n    },\n    \"resultsLimit\": {\n      \"title\": \"Results amount\",\n      \"type\": \"integer\",\n      \"description\": \"If this limit is not set as many results as possible are returned\",\n      \"editor\": \"number\",\n      \"prefill\": 50,\n      \"minimum\": 1,\n      \"example\": 50\n    },\n    \"includeNestedComments\": {\n      \"title\": \"Include comment replies\",\n      \"description\": \"If checked, the actor will return up to 3 levels of comments/replies for each post. Note that each reply/comment will be returned as a separate result.\",\n      \"default\": false,\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"example\": false\n    },\n    \"viewOption\": {\n      \"title\": \"Comments mode\",\n      \"description\": \"Choose the way the comments are sorted\",\n      \"type\": \"string\",\n      \"default\": \"RANKED_UNFILTERED\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"RANKED_THREADED\",\n        \"RECENT_ACTIVITY\",\n        \"RANKED_UNFILTERED\"\n      ],\n      \"enumTitles\": [\n        \"Most relevant\",\n        \"Newest\",\n        \"All\"\n      ],\n      \"example\": \"RANKED_UNFILTERED\"\n    },\n    \"onlyCommentsNewerThan\": {\n      \"title\": \"📅 Extract comments that are newer than\",\n      \"type\": \"string\",\n      \"description\": \"Limit how far back to the history the scraper should go. The date should be in YYYY-MM-DD or full ISO absolute format or in relative format e.g. 1 year, 2 months, 3 days, 4 hours, or 5 minutes. All time values are taken in UTC timezone. This <a href='https://apify.com/apify/facebook-comments-scraper/pricing' target='_blank' rel='noopener'>add-on feature</a> is billed separately.\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"editor\": \"datepicker\",\n      \"sectionCaption\": \"Time frame\",\n      \"sectionDescription\": \"Use this if you only want to scrape comments from a specific period of time.\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"example\": \"2024-01-01\"\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

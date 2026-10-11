@@ -1,0 +1,21 @@
+.env
+.env.*
+apify_key
+node_modules/
+__pycache__/
+*.pyc
+
+# project Python for the store collector (Anthropic SDK)
+data/.venv/
+
+# local clones of the Pages repos: the dashboard now publishes from docs/ in this repo,
+# the cost calculator from its own repo (mohanadabouserie/v7-pulse-costs)
+deploy/v7-pulse/
+deploy/v7-pulse-costs/
+
+# test screenshots
+shots5/
+tests/shots5/
+
+# third-party reference documents (not ours to publish)
+Reference docs/

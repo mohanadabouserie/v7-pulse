@@ -1,0 +1,717 @@
+{
+ "act": {
+  "title": "Facebook Search Scraper",
+  "users30d": 860,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## 🕵️‍♀️ What is Facebook Search Scraper?\n\nFacebook Search Scraper is an easy-to-use scraping tool that allows you to **scrape Facebook pages by keywords**. This tool will help you extract Facebook page contact information: addresses, email, likes, websites, check-ins, and phone numbers.\n\n### 🔎 What can this Facebook scraper do?\n\nFacebook Search Scraper is a data extraction tool created to go beyond the limitations of Facebook API. If a Facebook page matches your search query, the scraper will extract that page's data. With this scraping tool, you can:\n\n🗝 Scrape a bunch of Facebook pages or profiles **by keyword**\n\n📍 Specify Facebook scraping **by location** (indicate country, city, province)\n\n⬇️ **Download Facebook search data** in Excel, CSV, JSON, and other formats\n\n🦾 Export search data using API or integrate it with apps and platforms\n\n> If you need details from **specific Facebook Pages**, you can use [Facebook Pages Scraper](https://apify.com/apify/facebook-pages-scraper) 🔗, which scrapes available **details from each Facebook page based on its URL**. And if you want to scrape contact details from **specific Facebook Pages by handles or URLs**, you can use [Facebook Pages Contact Info Scraper](https://apify.com/apify/facebook-page-contact-information) 📱.\n\n## 🔑 What data can Facebook Search Scraper extract?\n\nFacebook Search Scraper crawls specified **search queries and locations** and extracts Facebook pages details such as:\n\n<table>\n<tr>\n<td>📇 Page name and URL</td>\n<td>📑 Page categories</td>\n</tr>\n<tr>\n<td>🌐 Website</td>\n<td>📧 Email address</td>\n</tr>\n<tr>\n<td>🏠 Address</td>\n<td>📱 Phone number</td>\n</tr>\n<tr>\n<td>👥 Followers</td>\n<td>👍 Likes</td>\n</tr>\n<tr>\n<td>🔗 Social media links</td>\n<td>⭐ Rating and rating count</td>\n</tr>\n<tr>\n<td>🆔 Facebook ID and page description</td>\n<td>🗣 Messenger link</td>\n</tr>\n<tr>\n<td>📅 Creation date</td>\n<td>📢 Ad status</td>\n</tr>\n</table>\n\n## 🌐 How do I use Facebook Search Scraper?\n\nFacebook Search Scraper is designed to be user-friendly, even for those who have never extracted data from the web before. Here’s how you can use Facebook Search Scraper to extract pages data from Facebook search results:\n\n1. [Create](https://apify.com/sign-up) a free Apify account.\n2. Open [Facebook Search Scraper](https://apify.com/apify/facebook-search-scraper).\n3. Enter your search term and location.\n4. Click the “Start” button and wait for the data to be extracted.\n5. Download your data in JSON, CSV, Excel, XML or HTML.\n\nFor a step-by-step guide on how to scrape pages from Facebook Search, follow our video guide:\n\nhttps://www.youtube.com/watch?v=lhXX20sYTK0\n\n## 💸 How much does it cost to scrape Facebook Search results?\n\nFacebook Search Scraper uses the [Pay-Per-Event](https://docs.apify.com/platform/actors/running/actors-in-store#pay-per-event) model, making it simple to calculate costs. Here’s the breakdown:\n\n- $0.03 for starting the scraper\n- $0.012 for every page or profile\n\nApify's free plan gives you $5 of prepaid credits. That means for that amount of credits you can start the Actor 1x and scrape 416 pages or profiles. Or start the Actor 2x and scrape 332 pages or profiles each time. You get the idea - it’s flexible and transparent.\n\n## ⬇️ Input example\n\nYou can scrape Facebook Search **by search query** and **by location**. If a Facebook page matches your search keyword, the scraper will extract that page's data. You can add as many keywords and locations as you want. For a full explanation of input including an example in JSON, head over to the [input tab](https://apify.com/apify/facebook-search-scraper/input-schema).\n\nYou can set up the input programmatically or use the fields in scraper’s interface:\n\n<img width=\"80%\" src=\"https://raw.githubusercontent.com/apify-projects/actor-readme-images/1978f9824ec706a9ba6d79a10b016f6fded6a2ec/facebook%20search%20scraper%20api.png\" />\n\n## ⬆️ Output example\n\nThe scraped Facebook Search data will be shown as a dataset which you can find in the **Output** tab. Note that the output is organized as a table for viewing convenience:\n\n[![Facebook search dataset](https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20Search%20dataset.png?raw=true)](https://console.apify.com/actors/Us34x9p7VgjCz99H6/console/)\n\nAnd here is the same data but in JSON. You can choose in which format to download your Facebook search data: JSON, JSONL, Excel, HTML table or CSV.\n\n```json\n[\n    {\n        \"facebookUrl\": \"https://www.facebook.com/Jordanmcinnisdesigns/\",\n        \"categories\": [\"Page\", \"Graphic Designer\"],\n        \"info\": [\n            \"Jordan Mcinnis Designs, Montreal, Quebec. 88 likes. I'm Jordan Mcinnis, Montreal based Graphic & Web Designer. I Design Websites, Logo, Apps and Many...\"\n        ],\n        \"likes\": 88,\n        \"messenger\": null,\n        \"title\": \"Jordan Mcinnis Designs | Montreal QC\",\n        \"address\": \"4972 belleville, Montreal, QC, Canada, Quebec https://maps.google.com/maps?q=4972+belleville%2C+Montreal%2C+QC%2C+Canada%2C+Quebec&hl=en\",\n        \"pageId\": \"100068579062225\",\n        \"pageName\": \"Jordanmcinnisdesigns\",\n        \"pageUrl\": \"https://www.facebook.com/Jordanmcinnisdesigns/\",\n        \"phone\": \"+1 514-716-0922\",\n        \"email\": \"mcinnisj.design@gmail.com\",\n        \"website\": \"jordanmcinnis.com\",\n        \"rating\": \"5.0 (6 Reviews)\",\n        \"ratingOverall\": 5,\n        \"ratingCount\": 6,\n        \"followers\": 86,\n        \"creation_date\": \"October 2, 2017\",\n        \"ad_status\": \"This Page is not currently running ads.\",\n        \"facebookId\": \"100068579062225\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"1449158455201923\"\n        }\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/MKDCLangley/\",\n        \"categories\": [\"Page\", \"Kitchen & bathroom contractor\"],\n        \"info\": [\n            \"Merit Kitchens Design Centre Langley, Langley, British Columbia. 324 likes\",\n            \"1 talking about this\",\n            \"10 were here. Along with being an exclusive dealer of...\"\n        ],\n        \"likes\": 324,\n        \"messenger\": null,\n        \"priceRange\": \"££\",\n        \"title\": \"Merit Kitchens Design Centre Langley | Langley BC\",\n        \"address\": \"Unit 150 - 19888 Langley Bypass, Langley, BC, Canada, British Columbia https://maps.google.com/maps?q=Unit+150+-+19888+Langley+Bypass%2C+Langley%2C+BC%2C+Canada%2C+British+Columbia&hl=en\",\n        \"pageId\": \"100063562495135\",\n        \"pageName\": \"MKDCLangley\",\n        \"pageUrl\": \"https://www.facebook.com/MKDCLangley/\",\n        \"phone\": \"+1 604-532-7197\",\n        \"email\": \"langley@merit-kitchens.com\",\n        \"website\": \"meritdesignlangley.com\",\n        \"rating\": \"4.2 (8 reviews)\",\n        \"ratingOverall\": 4.2,\n        \"ratingCount\": 8,\n        \"followers\": 355,\n        \"creation_date\": \"May 15, 2012\",\n        \"ad_status\": \"This Page is not currently running ads.\",\n        \"about_me\": {\n            \"text\": \"Merit Kitchens was founded by craftspeople in Vancouver, British Columbia, Canada in 1971. Since opening, they began providing Western Canada with high-quality standard and customized kitchen cabinets. The company has long since grown into a world-class supplier of beautiful custom made to order cabinetry with many price points to accommodate most budgets. Today, Merit Kitchens products can be found in homes throughout Canada, the United States, and parts of Asia.\\n\\nAt Merit Kitchens, we are committed to researching the latest cabinetry trends and techniques and continually blending them with strong, traditional expert construction.\\n\\nAll our products are manufactured and assembled in our state-of-the-art facility, in British Columbia, where we pair the precision of modern machinery technology with the delicate touch of hand-finishing. \\n\\nMerit Kitchens Design Centre in Langley offers the complete line of Merit Kitchens cabinets and Lectus cabinets. We also work with top suppliers in counter tops, appliances, and other design elements to help you save time and money. With the help from one of expert designers and professional installers, we will help turn your dream kitchen or bathroom into your reality.\",\n            \"urls\": []\n        },\n        \"facebookId\": \"100063562495135\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"236732366428351\"\n        }\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/mmdesignswindsor/\",\n        \"categories\": [\"Page\", \"Screen Printing & Embroidery\"],\n        \"info\": [\n            \"M & M Designs, Windsor, Ontario. 335 likes. We are your premier source for promotional products and custom printing. We offer screen printing, e\"\n        ],\n        \"likes\": 335,\n        \"messenger\": null,\n        \"title\": \"M & M Designs | Windsor ON\",\n        \"address\": \"3395 Howard Ave, Windsor, ON, Canada, Ontario https://maps.google.com/maps?q=3395+Howard+Ave%2C+Windsor%2C+ON%2C+Canada%2C+Ontario&hl=en\",\n        \"pageId\": \"100069457230966\",\n        \"pageName\": \"mmdesignswindsor\",\n        \"pageUrl\": \"https://www.facebook.com/mmdesignswindsor/\",\n        \"phone\": \"+1 519-982-5252\",\n        \"email\": \"mmdesigns@outlook.com\",\n        \"website\": \"gifts-promotions.com\",\n        \"rating\": \"Not yet rated (1 Review)\",\n        \"ratingOverall\": null,\n        \"ratingCount\": 1,\n        \"followers\": 336,\n        \"creation_date\": \"January 31, 2010\",\n        \"ad_status\": \"This Page is not currently running ads.\",\n        \"facebookId\": \"100069457230966\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"279552274420\"\n        }\n    }\n]\n```\n\n## 🚩 Want to try other Facebook scraping tools?\n\nUse the dedicated scrapers below if you want to scrape specific public data from Facebook. Each of them is built particularly for the relevant scraping case be it Facebook comments, posts from Facebook groups, Facebook events, images or page reviews. Feel free to browse them:\n\n<table>\n<tr>\n<td>🚩 <a href=\"https://apify.com/apify/facebook-pages-scraper\">Facebook Pages Scraper</a></td>\n<td>🌟 <a href=\"https://apify.com/apify/facebook-reviews-scraper\">Facebook Reviews Scraper</a></td>\n</tr>\n<tr>\n<td>🗓 <a href=\"https://apify.com/apify/facebook-events-scraper\">Facebook Events Scraper</a></td>\n<td>📝 <a href=\"https://apify.com/apify/facebook-posts-scraper\">Facebook Posts Scraper</a></td>\n</tr>\n<tr>\n<td>🛍️ <a href=\"https://apify.com/apify/facebook-ads-scraper\">Facebook Ad Library Scraper</a></td>\n<td>👍 <a href=\"https://apify.com/apify/facebook-likes-scraper\">Facebook Likes and Reactions Scraper</a></td>\n</tr>\n<tr>\n<td>👥 <a href=\"https://apify.com/apify/facebook-groups-scraper\">Facebook Groups Scraper</a></td>\n<td>🏞 <a href=\"https://apify.com/apify/facebook-photos-scraper\">Facebook Photos Scraper</a></td>\n</tr>\n<tr>\n<td>🕹 <a href=\"https://apify.com/apify/facebook-games-scraper\">Facebook Games Scraper</a></td>\n<td>👀 <a href=\"https://apify.com/apify/facebook-marketplace-scraper\">Facebook Marketplace Scraper</a></td>\n</tr>\n<tr>\n<td>💬 <a href=\"https://apify.com/apify/facebook-comments-scraper\">Facebook Comments Scraper</a></td>\n<td>📱 <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Pages Info Scraper</a></td>\n</tr>\n<tr>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Brand Collaboration Scraper</a></td>\n</tr>\n</table>\n\n## ❓FAQ\n\n### Is there a Facebook Search API?\n\nFacebook search does not offer an official API for public use. This means there isn't a dedicated Application Programming Interface provided by Facebook specifically for Facebook search data. There is a similarly named official [Facebook Pages Search API](https://developers.facebook.com/docs/pages-api/search-pages) which does allow extracting data from Facebook pages under certain conditions (app review approval, user authentication). However, the official Facebook Pages API doesn't allow extracting pages data by keyword. But you can use scrapers and crawlers as a stand-in for a web scraping API to extract details from Facebook Pages by keyword, e.g. 🕵️‍♀️ **[Facebook Search Scraper](https://apify.com/apify/facebook-search-scraper)**.\n\n### Can I use Facebook Search Scraper data with API?\n\nYes, you can do so by using Apify API. It gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors such as this one. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/apify/facebook-search-scraper/api/client/nodejs). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/facebook-search-scraper/api/client/python).\n\nCheck out the <a href=\"https://docs.apify.com/api/v2\"  target=\"_blank\"> Apify API reference</a> docs for full details or click on the <a href=\"https://apify.com/apify/facebook-search-scraper/api\"  target=\"_blank\"> API tab</a> for code examples and API Endpoints.\n\n### Can I create a Facebook search integration using data from this scraper?\n\nYes. Facebook Search Scraper can be connected with almost any cloud service or web app thanks to <a href=\"https://apify.com/integrations\"  target=\"_blank\">integrations on the Apify platform</a>. You can integrate with Zapier, Slack, Make, Airbyte, GitHub, Google Sheets, Google Drive, LangChain <a href=\"https://docs.apify.com/integrations\"  target=\"_blank\">and more</a>.\n\nOr you can use <a href=\"https://docs.apify.com/integrations/webhooks\"  target=\"_blank\">webhooks</a> to carry out an action whenever an event occurs, e.g. get a notification whenever Facebook Search Scraper successfully finishes a run.\n\n### Can I use this Facebook Search API in Python?\n\nYes, by using Apify API. To access the [Facebook Search API using Python](https://apify.com/apify/facebook-search-scraper/api/client/python), use the `apify-client` PyPI package. You can find more details about the client [in our Docs](https://docs.apify.com/api/client/python/).\n\n### Is it legal to scrape data from Facebook search?\n\nIt is legal to scrape publicly available data from Facebook search. However, you should always review and comply with Facebook's terms of service and any applicable laws and regulations regarding web scraping. Additionally, be mindful of any rate limits or restrictions imposed by Facebook to avoid potential issues. You can read more about the legality of web scraping from [our blogpost](https://blog.apify.com/is-web-scraping-legal/).\n\n### Your feedback\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for Facebook Search Scraper or simply found a bug, please create an issue on the Actor’s [Issues tab](https://apify.com/apify/facebook-search-scraper/issues/open) in Apify Console.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "facebookUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the search this result comes from.",
+     "examples": [
+      "https://www.facebook.com/search/top?q=pub"
+     ]
+    },
+    "searchType": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "The search type the run used.",
+     "examples": [
+      "pages"
+     ]
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the result.",
+     "examples": [
+      "https://www.facebook.com/examplepage"
+     ]
+    },
+    "pageId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Unique Facebook page ID.",
+     "examples": [
+      "123456789012345"
+     ]
+    },
+    "pageUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook page.",
+     "examples": [
+      "https://www.facebook.com/examplepage"
+     ]
+    },
+    "title": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Name of the Facebook page.",
+     "examples": [
+      "Example Business"
+     ]
+    },
+    "categories": {
+     "description": "Categories or types associated with the page.",
+     "examples": [
+      [
+       "Restaurant",
+       "Italian Restaurant"
+      ]
+     ],
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "info": {
+     "description": "General information lines about the page (e.g. likes count, description).",
+     "examples": [
+      [
+       "10K likes",
+       "This is an example page."
+      ]
+     ],
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "likes": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of people who like the page.",
+     "examples": [
+      10000
+     ]
+    },
+    "followers": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of followers of the page.",
+     "examples": [
+      12000
+     ]
+    },
+    "rating": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Average star rating of the page.",
+     "examples": [
+      "4.5"
+     ]
+    },
+    "email": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Contact email address of the page.",
+     "examples": [
+      "contact@example.com"
+     ]
+    },
+    "phone": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Contact phone number of the page.",
+     "examples": [
+      "+1 555-123-4567"
+     ]
+    },
+    "address": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Physical address of the business.",
+     "examples": [
+      "123 Example St, Example City, CA 90210"
+     ]
+    },
+    "website": {
+     "description": "Website URL linked on the page.",
+     "examples": [
+      "https://example.com"
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "string",
+      "array"
+     ]
+    },
+    "websites": {
+     "description": "All website URLs linked on the page.",
+     "examples": [
+      [
+       "https://example.com"
+      ]
+     ],
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "messenger": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Messenger URL for the page.",
+     "examples": [
+      "https://m.me/examplepage"
+     ]
+    },
+    "intro": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Short introductory text from the page profile.",
+     "examples": [
+      "Welcome to our example page."
+     ]
+    },
+    "priceRange": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Price range indicator for the business.",
+     "examples": [
+      "$$"
+     ]
+    },
+    "services": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Services offered by the business.",
+     "examples": [
+      "Catering, Dine-in, Delivery"
+     ]
+    },
+    "alternativeSocialMedia": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Links to other social media accounts.",
+     "examples": [
+      "https://instagram.com/examplepage"
+     ]
+    },
+    "payment": {
+     "description": "Accepted payment methods.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "posts": {
+     "description": "Recent posts from the page.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "personalProfile": {
+     "description": "Personal profile data (when the URL is a personal profile, not a page).",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Unique Facebook ID of the page or profile. Facebook search only.",
+     "examples": [
+      "100064836996772"
+     ]
+    },
+    "name": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Name of the page or profile. Facebook search only.",
+     "examples": [
+      "CrossFit"
+     ]
+    },
+    "profilePictureUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the profile picture of the page or profile. Facebook search only.",
+     "examples": [
+      "https://scontent.xx.fbcdn.net/v/t39.30808-1/402097106_754090466762180.jpg"
+     ]
+    },
+    "isVerified": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the page or profile has the Facebook verification badge. Facebook search only.",
+     "examples": [
+      true
+     ]
+    },
+    "description": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text Facebook shows under a page in the search results. Facebook search only.",
+     "examples": [
+      "No matter your fitness level, CrossFit is the best way to improve your fitness."
+     ]
+    },
+    "bio": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text Facebook shows under a profile in the search results. Facebook search only.",
+     "examples": [
+      "Lives in New York, New York"
+     ]
+    },
+    "postId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Unique ID of the post or reel.",
+     "examples": [
+      "1489124423248405"
+     ]
+    },
+    "caption": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text the author attached to the reel. Facebook search only.",
+     "examples": [
+      "Rewatch the Handstand Sprint event at the 2026 CrossFit Games!"
+     ]
+    },
+    "authorId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Unique Facebook ID of the author of the reel. Facebook search only.",
+     "examples": [
+      "100064525846880"
+     ]
+    },
+    "authorName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Name of the author of the reel. Facebook search only.",
+     "examples": [
+      "The CrossFit Games"
+     ]
+    },
+    "createdAt": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Unix time in seconds when the reel was published. Facebook search only.",
+     "examples": [
+      1787594538
+     ]
+    },
+    "durationMs": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Length of the reel in milliseconds. Facebook search only.",
+     "examples": [
+      121020
+     ]
+    },
+    "width": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Width of the reel in pixels. Facebook search only.",
+     "examples": [
+      1080
+     ]
+    },
+    "height": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Height of the reel in pixels. Facebook search only.",
+     "examples": [
+      1350
+     ]
+    },
+    "thumbnailUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the thumbnail image of the reel. Facebook search only.",
+     "examples": [
+      "https://scontent.xx.fbcdn.net/v/t51.71878-10/783351954_1607367541036323.jpg"
+     ]
+    },
+    "viewCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "How many times the reel was viewed. Facebook search only.",
+     "examples": [
+      227400
+     ]
+    },
+    "reactionCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "How many reactions the reel has. Facebook search only.",
+     "examples": [
+      3410
+     ]
+    },
+    "shareCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "How many times the reel was shared. Facebook search only.",
+     "examples": [
+      120
+     ]
+    },
+    "commentCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "How many comments the reel has. Facebook search only.",
+     "examples": [
+      33
+     ]
+    },
+    "commentsDisabled": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether commenting is turned off for the reel. Facebook search only.",
+     "examples": [
+      false
+     ]
+    },
+    "time": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Date and time the post was published, in ISO 8601 format. Facebook search only.",
+     "examples": [
+      "2026-09-07T06:29:08.000Z"
+     ]
+    },
+    "timestamp": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Unix time in seconds when the post was published. Facebook search only.",
+     "examples": [
+      1788762548
+     ]
+    },
+    "text": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text content of the post. Facebook search only.",
+     "examples": [
+      "Our move to our new home is complete."
+     ]
+    },
+    "textReferences": {
+     "description": "Entities referenced in the post text (pages, profiles). Facebook search only.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "user": {
+     "description": "Author of the post. Facebook search only.",
+     "examples": [
+      {
+       "id": "61574397096958",
+       "name": "CrossFit Warfare"
+      }
+     ],
+     "properties": {
+      "id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profileUrl": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profilePic": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "pageName": {
+     "description": "Page or profile name of the post, as a plain string or an object with page details. Facebook search only.",
+     "examples": [
+      "CrossFit Warfare"
+     ],
+     "properties": {
+      "id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profilePic": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "string",
+      "object"
+     ]
+    },
+    "collaborators": {
+     "description": "Collaborators tagged in the post. Facebook search only.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "shares": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of times the post was shared. Facebook search only.",
+     "examples": [
+      10
+     ]
+    },
+    "topReactionsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Total count of top reactions on the post. Facebook search only.",
+     "examples": [
+      4
+     ]
+    },
+    "reactionLikeCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Like reactions on the post. Facebook search only.",
+     "examples": [
+      37
+     ]
+    },
+    "media": {
+     "description": "Media attachments (photos, videos) included in the post. Facebook search only.",
+     "examples": [
+      [
+       {
+        "thumbnail": "https://example.com/post-image.jpg",
+        "__typename": "Photo"
+       }
+      ]
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "thumbnail": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "__typename": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "ocrText": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "feedbackId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook feedback ID associated with the post. Facebook search only.",
+     "examples": [
+      "ZmVlZGJhY2s6MTIyMTc2NzcxNzk2ODEzMjM2"
+     ]
+    },
+    "paidPartnership": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post is a paid partnership. Facebook search only.",
+     "examples": [
+      false
+     ]
+    },
+    "unknownStrategy": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Name of the Facebook renderer this result used, set only when the mapping does not know it yet. Facebook adds result types over time, so a result with this field is a new shape to map.",
+     "examples": [
+      "SearchMarketplaceRenderingStrategy"
+     ]
+    }
+   },
+   "additionalProperties": {},
+   "description": "One search result.\n\nThe fields depend on the `searchType` of the run. `pages-google` fills the page detail fields, because the Actor opens every page it found on Google. The Facebook search types fill only what the search result itself shows: `pages` and `profiles` fill the profile fields, `reels` fills the reel fields, and `posts` fills the same fields as the Facebook Posts Scraper."
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"Input schema for the apify_project actor.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"categories\": {\n      \"title\": \"🔍 Search terms\",\n      \"description\": \"Add one or multiple keywords. You can add the keywords one by one, or use the <b>Bulk edit</b> section to pull them from a prepared list.\",\n      \"default\": [],\n      \"prefill\": [\n        \"Restaurant\"\n      ],\n      \"example\": [\n        \"Restaurant\"\n      ],\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"uniqueItems\": true\n    },\n    \"locations\": {\n      \"title\": \"📍 Location (applied to each search term)\",\n      \"description\": \"Free text location definition. Just add a name of a country, city or province.\",\n      \"default\": [],\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"uniqueItems\": true\n    },\n    \"searchType\": {\n      \"title\": \"🔎 Search type\",\n      \"description\": \"Choose the type of Facebook search data you want to scrape. Posts return both images and reels.\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"pages-google\",\n        \"pages\",\n        \"profiles\",\n        \"posts\",\n        \"reels\"\n      ],\n      \"enumTitles\": [\n        \"Pages - Google search\",\n        \"Pages - Facebook search\",\n        \"Profiles - Facebook search\",\n        \"Posts - Facebook search\",\n        \"Reels - Facebook search\"\n      ],\n      \"default\": \"pages-google\",\n      \"prefill\": \"pages\"\n    },\n    \"resultsLimit\": {\n      \"title\": \"💯 Up to [number] of search results\",\n      \"type\": \"integer\",\n      \"description\": \"Set the number of results you expect for the entire run (if this limit is not set, as many results as possible are returned).\",\n      \"editor\": \"number\",\n      \"prefill\": 20,\n      \"minimum\": 1\n    }\n  },\n  \"required\": [\n    \"categories\"\n  ]\n}"
+}

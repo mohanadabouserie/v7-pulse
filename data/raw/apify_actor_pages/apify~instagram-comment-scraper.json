@@ -1,0 +1,293 @@
+{
+ "act": {
+  "title": "Instagram Comments Scraper",
+  "users30d": 5953,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What can Instagram Comment Scraper do?\n\nOur Instagram Comment Scraper **extracts comments from Instagram posts** quickly and efficiently. Just **add one or more Instagram post URLs**, and you're ready to:\n\n💬 **Scrape Instagram comments and comment replies at scale** from any public post with no limits on requests\n\n📊 Extract **engagement data and sentiment insights** from user comments and replies\n\n👥 Get **commenter profiles** including usernames, verification status, and profile pictures\n\n⏰ Track **comment timestamps** to analyze engagement patterns over time\n\n🔢 Monitor **comment positions** to understand visibility and engagement order\n\n⬇️ **Download Instagram comment data** in JSON, CSV, Excel, or other formats\n\n🦾 Export comment datasets via SDKs (Python & Node.js), use **API Endpoints & webhooks**\n\n🤳 Explore our other [Instagram scrapers](https://apify.com/store/collections/instagram-scrapers)\n\nYou can use Instagram Comment Scraper for sentiment analysis on marketing campaigns, tracking audience engagement, monitoring brand mentions and feedback, detecting misinformation or abuse, and analyzing competitor content performance.\n\n## What data can I scrape from Instagram comments?\n\nUsing this Instagram comment API, you will be able to extract the following data from Instagram comments:\n\n<table>\n<tr>\n<td>🆔 Comment ID</td>\n<td>📮 Post ID</td>\n<td>💬 Comment text</td>\n<td>🔢 Comment position</td>\n</tr>\n<tr>\n<td>⏰ Timestamp</td>\n<td>👤 Owner ID</td>\n<td>✅ Owner verification status</td>\n<td>🏷️ Owner username</td>\n</tr>\n<tr>\n<td>📷 Owner profile picture URL</td>\n<td>↩️ Reply comments (if enabled)</td>\n<td>📊 Engagement metrics</td>\n<td>🔗 Comment URL</td>\n</tr>\n</table>\n\n> If you need to **scrape both posts and comments by profile** in a single run, check out 🔗 [Export Instagram Comments and Posts Tool](https://apify.com/apify/export-instagram-comments-posts). It lets you extract all comments and post content for any public profile at once.\n\n> Want to **track comment trends over time**? Use [webhooks](https://docs.apify.com/integrations/webhooks) to schedule regular scraping runs and monitor how comments evolve on specific posts or campaigns.\n\n## How to scrape Instagram comments?\n\nInstagram Comment Scraper is designed to be fast and easy to use, so there aren't too many parameters or settings. Just follow the steps below:\n\n1. [Create](https://console.apify.com/sign-up) a free Apify account.\n2. Open [Instagram Comment Scraper](https://apify.com/apify/instagram-comment-scraper).\n3. Add **one or multiple Instagram post or reel URLs** to scrape.\n4. Click \"Save & Start\" and wait for the datasets to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nIf you want more guidance on how to use Instagram Comment Scraper, here's a full video that explains it:\n\nhttps://www.youtube.com/watch?v=LY76G1G1_xE\n\nFor more details, check out our tutorial on [how to scrape data from Instagram](https://blog.apify.com/scrape-instagram-posts-comments-and-more-21d05506aeb3/), full of tips and tricks.\n\n> If you need to **get Instagram comments along with post content** in one workflow, try combining this scraper with our 🔗 [Instagram Post Scraper](https://apify.com/apify/instagram-post-scraper). You can use the Post Scraper to find posts, then feed those URLs directly to the Comment Scraper.\n\n## How much will scraping Instagram comments cost you?\n\nInstagram Comment Scraper works on our pay-per-event (PPE) model, meaning you're charged for each result you receive. On the Free plan, the price is $2.60 per 1,000 results ($0.0026 per comment), giving you **over 1,900 Instagram comments for free with the $5 credit.**\n\nOn paid plans, you get more monthly credit for regular data extraction. For example, on the Starter plan ($19/month), the price is $2.30 per 1,000 results and you can scrape **over 8,200 comments per month**. Check the [pricing tab](https://apify.com/apify/instagram-comment-scraper/pricing) for full details.\n\n## ⬇️ Input\n\nTo use this Instagram comment scraper, **enter one or more Instagram post URLs.** You can enter them one by one or all at once using the **Bulk edit** function.\n\n<a href=\"https://console.apify.com/actors/SbK00X0JYCPblD2wp/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Instagram-comments-input.png?raw=true\" alt=\"Instagram Comment Scraper input\" style=\"width:70%;\">\n</a>\n\n## ⬆️ Output\n\nThe results will be wrapped into a dataset, which you can find in the **Storage** tab. Here's an excerpt from the dataset you'd get if you apply the input parameters above:\n\n<a href=\"https://console.apify.com/actors/SbK00X0JYCPblD2wp/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Instagram-comments-output.png?raw=true\" alt=\"Instagram Comment Scraper output\" style=\"width:100%;\">\n</a>\n\nBesides the table view, you can also view your data as JSON, as well as download it as CSV, XML, Excel file, or through an API.\n\n### 💬 Extracted Instagram Comment data sample\n\nYou can export the data in common formats such as JSON, XML, CSV, or Excel. The JSON sample below shows the structure of each comment in the dataset:\n\n```json\n[\n    {\n        \"id\": \"17949788698583607\",\n        \"text\": \"Imagine scrolling to find the end of these comments! 😂\",\n        \"ownerUsername\": \"gabriel2005120\",\n        \"ownerProfilePicUrl\": \"https://scontent-msp1-1.cdninstagram.com/...\",\n        \"timestamp\": \"2021-11-19T13:54:13.000Z\",\n        \"likesCount\": 12,\n        \"repliesCount\": 1,\n        \"replies\": [\n            {\n                \"id\": \"17891234567890123\",\n                \"text\": \"@gabriel2005120 right? It never ends 😅\",\n                \"ownerUsername\": \"maria_adventures\",\n                \"ownerProfilePicUrl\": \"https://scontent-msp1-1.cdninstagram.com/...\",\n                \"timestamp\": \"2021-11-19T14:02:45.000Z\",\n                \"likesCount\": 3,\n                \"repliesCount\": 0,\n                \"replies\": []\n            }\n        ]\n    },\n    {\n        \"id\": \"17856789012345678\",\n        \"text\": \"This is absolutely stunning! 🔥\",\n        \"ownerUsername\": \"photo_enthusiast\",\n        \"ownerProfilePicUrl\": \"https://scontent-msp1-1.cdninstagram.com/...\",\n        \"timestamp\": \"2021-11-18T09:21:07.000Z\",\n        \"likesCount\": 45,\n        \"repliesCount\": 0,\n        \"replies\": []\n    },\n    {\n        \"id\": \"17923456789012345\",\n        \"text\": \"Can someone explain the context?\",\n        \"ownerUsername\": \"curious_user99\",\n        \"ownerProfilePicUrl\": \"https://scontent-msp1-1.cdninstagram.com/...\",\n        \"timestamp\": \"2021-11-20T16:38:22.000Z\",\n        \"likesCount\": 0,\n        \"repliesCount\": 0,\n        \"replies\": []\n    }\n]\n```\n\nYou can manage the results in any language (Python, PHP, Node.js/NPM). See the [Apify API docs](https://docs.apify.com/api/v2) to learn more about getting results from the Instagram comment scraper.\n\n## Want to scrape Instagram hashtags, posts, or profiles?\n\nYou can use the other dedicated scrapers below if you want to scrape specific Instagram data. You'll have fewer settings to change and faster results. Just enter one or more Instagram usernames or URLs and click to scrape. Browse the full [Instagram scrapers collection](https://apify.com/store/collections/instagram-scrapers) for more options.\n\n<table>\n<tr>\n<td>#️⃣ <a href=\"https://apify.com/apify/instagram-hashtag-scraper\">Instagram Hashtag Scraper</a></td>\n<td>📷 <a href=\"https://apify.com/apify/instagram-post-scraper\">Instagram Post Scraper</a></td>\n</tr>\n<tr>\n<td>👤 <a href=\"https://apify.com/apify/instagram-profile-scraper\">Instagram Profile Scraper</a></td>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Instagram Influencer Collaboration Scraper</a></td>\n</tr>\n<tr>\n<td>🏷️ <a href=\"https://apify.com/apify/instagram-tagged-scraper\">Instagram Mentions Scraper</a></td>\n<td>🎞️ <a href=\"https://apify.com/apify/instagram-reel-scraper\">Instagram Reel Scraper</a></td>\n</tr>\n<tr>\n<td>👥 <a href=\"https://apify.com/apify/instagram-followers-count-scraper\">Instagram Followers Count Scraper</a></td>\n<td>📊 <a href=\"https://apify.com/apify/instagram-hashtag-analytics-scraper\">Instagram Hashtag Analytics Scraper</a></td>\n</tr>\n<tr>\n<td>📤 <a href=\"https://apify.com/apify/export-instagram-comments-posts\">Export Instagram Comments and Posts Tool</a></td>\n</tr>\n</table>\n\n> If you're comfortable with more complex settings, use our more advanced 🔗 [Instagram Scraper](https://apify.com/apify/instagram-scraper) or 🔗 [Instagram API Scraper](https://apify.com/apify/instagram-api-scraper). They cover almost all functionalities of the dedicated scrapers.\n\n## Want to scrape comments from other platforms?\n\n<table>\n<tr>\n<td>📘 <a href=\"https://apify.com/apify/facebook-comments-scraper\">Facebook Comments Scraper</a></td>\n<td>🎵 <a href=\"https://apify.com/clockworks/tiktok-comments-scraper\">TikTok Comments Scraper</a></td>\n</tr>\n<tr>\n<td>▶️ <a href=\"https://apify.com/streamers/youtube-comments-scraper\">YouTube Comments Scraper</a></td>\n<td>🤖 <a href=\"https://apify.com/apify/comments-analyzer-agent\">Comments Analyzer Agent</a></td>\n</tr>\n</table>\n\n## ❓FAQ\n\n### How many results can you scrape with Instagram Comment Scraper?\n\nThe scraper extracts only the comments shown to Instagram users who are not logged in. That means the results may differ from what you see when logged in to your Instagram account. To try it out, open an incognito window in your browser and copy the post URL. The comments you see there are the ones this Actor will save to a dataset.\n\nUsually, the scraper delivers as many comments and replies as it can access. However, scraping Instagram is dynamic and subject to change. There's no one-size-fits-all number for all use cases. **The maximum number of results may vary depending on the complexity of the input, location, and other factors.**\n\nWhile we regularly run Actor tests to keep benchmarks in check, results may still fluctuate unexpectedly. The best way to know what to expect for your particular use case is to do a test run yourself.\n\n### Why scrape Instagram comments?\n\nScraping comments on Instagram posts can give you quick insights into how an audience is reacting to marketing campaigns and enable you to spot misinformation or abuse, track audience engagement, or help you monitor how competing content is being received.\n\n### Can I get Instagram comment replies?\n\nYes. Instagram Comment Scraper supports extracting reply comments if you enable the `includeReplies` option in the input settings. This allows you to capture full conversation threads and analyze how users interact with each other in the comments.\n\n### Is it legal to scrape Instagram comments?\n\nOur Instagram scrapers are ethical and do not extract any private user data, such as email addresses, gender, or location. They only extract what the user has chosen to share publicly.\n\nHowever, you should be aware that your results could contain personal data. Personal data is protected by the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).\n\n### Can I use integrations with Instagram Comment Scraper?\n\nYou can integrate comment data scraped from Instagram with almost any cloud service or web app. We offer integrations with **Zapier, n8n, Slack, Make, Airbyte, Gumloop, CrewAI, IFTTT, Lindy, GitHub, Google Sheets, Google Drive**, [and plenty more](https://apify.com/integrations).\n\nAlternatively, you could use [webhooks](https://docs.apify.com/integrations/webhooks) to carry out an action whenever an event occurs, such as getting a notification whenever the Instagram Comment Scraper successfully finishes a run.\n\n### Can I use this Instagram comment API with the Apify API?\n\nYes. The Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors. Meaning the API will let you access any datasets, monitor actor performance, fetch scraped comment results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/apify/instagram-comment-scraper/api/javascript). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/instagram-comment-scraper/api/python). Check out the [Apify API reference](https://docs.apify.com/api/v2) docs for all the details.\n\n### Can I get Instagram comments through an MCP Server?\n\nWith Apify API, you can use almost any Actor in conjunction with an MCP server. You can connect to the MCP server using clients like ClaudeDesktop and LibreChat, or even build your own. Read all about how you can [set up Apify Actors with MCP](https://blog.apify.com/how-to-use-mcp/).\n\nFor Instagram Comment Scraper, go to the [MCP](https://apify.com/apify/instagram-comment-scraper/api/mcp) tab and then go through the following steps:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`\n2. Send API messages using that `sessionId` to trigger the scraper\n3. The message starts the Instagram Comment Scraper with the provided input\n4. The response should be: `Accepted`\n\n### Instagram Comment Scraper not working\n\nWe're always working on improving the performance of our Actors. So if you've got any technical feedback for Instagram Comment Scraper or simply found a bug, please create an issue on the Actor's [Issues tab](https://apify.com/apify/instagram-comment-scraper/issues/open) in Apify Console.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "postUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://www.instagram.com/p/ABCdef1234g/"
+     ],
+     "description": "URL of the Instagram post containing the comment"
+    },
+    "commentUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://www.instagram.com/p/ABCdef1234g/c/17987654321/"
+     ],
+     "description": "Direct URL to the specific comment"
+    },
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "17987654321"
+     ],
+     "description": "Unique identifier of the comment"
+    },
+    "text": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "Great post! Love this content."
+     ],
+     "description": "Text content of the comment"
+    },
+    "ownerUsername": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "exampleuser"
+     ],
+     "description": "Username of the comment author"
+    },
+    "ownerProfilePicUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://example.com/profile/pic/123456.jpg"
+     ],
+     "description": "Profile picture URL of the comment author"
+    },
+    "timestamp": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "2025-01-15T10:30:00.000Z"
+     ],
+     "description": "ISO 8601 timestamp when the comment was posted"
+    },
+    "likesCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      42
+     ],
+     "description": "Number of likes on the comment"
+    },
+    "owner": {
+     "examples": [
+      {
+       "id": "123456789",
+       "username": "exampleuser",
+       "is_verified": false
+      }
+     ],
+     "description": "Detailed information about the comment author",
+     "properties": {
+      "fbid_v2": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "is_verified": {
+       "type": [
+        "boolean",
+        "null"
+       ]
+      },
+      "profile_pic_url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "username": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "full_name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "is_mentionable": {
+       "type": [
+        "boolean",
+        "null"
+       ]
+      },
+      "is_private": {
+       "type": [
+        "boolean",
+        "null"
+       ]
+      },
+      "latest_reel_media": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "profile_pic_id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://www.instagram.com/p/ABCdef1234g/"
+     ],
+     "description": "URL associated with the comment or post"
+    },
+    "parentCommentUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://www.instagram.com/p/ABCdef1234g/c/17987654321/"
+     ],
+     "description": "URL of the parent comment"
+    },
+    "requestErrorMessages": {
+     "examples": [
+      [
+       "HTTP 404 NOT FOUND"
+      ]
+     ],
+     "description": "Array of error messages encountered during scraping",
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "error": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "Failed to load comment data"
+     ],
+     "description": "Error message if comment scraping failed"
+    },
+    "errorDescription": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "The comment may have been deleted or the post is private"
+     ],
+     "description": "Detailed description of the error that occurred"
+    },
+    "repliesCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      5
+     ],
+     "description": "Number of replies to this comment"
+    },
+    "replies": {
+     "examples": [
+      []
+     ],
+     "description": "Replies to this comment",
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    }
+   },
+   "additionalProperties": {}
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "id",
+      "text",
+      "timestamp",
+      "ownerUsername",
+      "ownerProfilePicUrl",
+      "postUrl"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "id": {
+       "label": "Comment ID",
+       "format": "text"
+      },
+      "ownerUsername": {
+       "label": "Commenter",
+       "format": "text"
+      },
+      "ownerProfilePicUrl": {
+       "label": "Commenter profile picture",
+       "format": "image"
+      },
+      "timestamp": {
+       "label": "Commented on",
+       "format": "text"
+      }
+     }
+    }
+   }
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"Input schema for Instagram Comments scraper\",\n  \"type\": \"object\",\n  \"description\": \"To scrape comments from Instagram posts or reels, just paste one or multiple Instagram URLs, choose the number of comments, click on &#9655; <b>Start</b> and your data is on its way! If you need any guidance, just <a href='https://apify.it/44ixxvx' target='_blank' rel='noopener'>follow this video tutorial</a>.<br><br>⚠️ Free usage gets only the top 15 comments, sorted by newest. Upgrade to <a href='https://console.apify.com/billing/subscription' target='_blank' rel='noopener'> Starter plan</a> for full access.<br> 📅 If you need to scrape comments filtered by date, use our <a href='https://console.apify.com/actors/shu8hvrXbJbY3Eb9W/input' target='_blank' rel='noopener'>Instagram Scraper</a> instead.\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"directUrls\": {\n      \"title\": \"🔗 Instagram posts or reels URLs\",\n      \"type\": \"array\",\n      \"description\": \"Add one or multiple URLs to scrape comments from - posts or reels. You can add URLs one by one or upload a list using the <b>Bulk edit</b> option.\",\n      \"editor\": \"stringList\",\n      \"placeholderValue\": \"URL\",\n      \"prefill\": [\n        \"https://www.instagram.com/p/DN8-GjPkgjS\",\n        \"https://www.instagram.com/reel/DDIJAfeyemG\"\n      ],\n      \"items\": {\n        \"type\": \"string\",\n        \"pattern\": \"https?:\\\\/\\\\/(?:www\\\\.)?instagram\\\\.com\\\\/(?!reels\\\\/audio\\\\/)(?:(?:[^!@#$%^&*(){},'\\\"\\\\/\\\\s`\\\\\\\\=-]+\\\\/)?(?:p|reel)|reels)\\\\/[^\\\\/]+\"\n      },\n      \"uniqueItems\": true\n    },\n    \"resultsLimit\": {\n      \"title\": \"💯 Up to [number] of comments\",\n      \"type\": \"integer\",\n      \"description\": \"Set the number of comments you expect to scrape from each post or reel. <br><br> If set to <b>5</b>, you will get <b>5</b> comments per URL. If you add 2 URLs, you will extract <b>10</b> results altogether.<br>❗️ If you choose to scrape replies as well, the total number will be greater than you set for comments.\",\n      \"editor\": \"number\",\n      \"prefill\": 15,\n      \"minimum\": 1\n    },\n    \"includeNestedComments\": {\n      \"title\": \"$ Include replies\",\n      \"type\": \"boolean\",\n      \"description\": \"This feature is for paying users only. If checked, the scraper will extract replies for each comment.<br>⚠️ Note that each reply/comment will be displayed as a separate result, so <b>you'll get more results in total</b> than you set in `resultsLimit` section above.\",\n      \"editor\": \"checkbox\"\n    }\n  },\n  \"required\": [\n    \"directUrls\"\n  ]\n}"
+}

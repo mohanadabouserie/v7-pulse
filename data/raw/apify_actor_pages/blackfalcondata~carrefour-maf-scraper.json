@@ -1,0 +1,452 @@
+{
+ "act": {
+  "title": "Carrefour MAF Scraper [Just 💰$2] — Groceries (7 Markets)",
+  "users30d": 5,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "\r\n## What does Carrefour MAF Scraper do?\r\n\r\nCarrefour MAF Scraper extracts structured product data from Carrefour Majid Al Futtaim markets such as [Carrefour UAE](https://www.carrefouruae.com/mafuae/en), including English or Arabic product text, current prices, currencies, categories, availability, product URLs, images, market metadata, optional detail fields, and basket line totals. It supports keyword search, pasted search/category/product URLs, price filters, sorting, controllable result limits, detail enrichment, incremental tracking, and notifications.\r\n\r\n## How to use this actor\r\n\r\n- 👉 **Register for a free Apify account** — no credit card required.\r\n- 🎉 Just click **[Sign up free on Apify →](https://console.apify.com/sign-up?fpr=1h3gvi)** and complete a quick signup.\r\n- 💰 A free Apify account includes $5 in monthly credits — enough to test this actor.\r\n- ⏳ Scrape during the free trial, with no commitment or upfront payment required.\r\n\r\n## Key features\r\n\r\n<!-- KEY_FEATURES:START -->\r\n- **🔍 Keyword search:** search Carrefour MAF products with `query`; pass a JSON array to run several product searches in one dataset.\r\n- **🌎 7-market coverage:** choose one market with `market` or pass several with `markets` to scrape multiple countries in one run. Pasted Carrefour URLs still define their own market, and `language` requests English or Arabic product text where available.\r\n- **🔗 Paste-mode:** paste Carrefour MAF product, search or category URLs; search/category URLs are fetched with their original filters and paginated with `currentPage`.\r\n- **🛍️ Shopping-basket monitor:** monitor a shopping basket by `productIds` or `productUrls` and optional `quantities`; output includes line totals for basket-level tracking.\r\n- **💰 Current Carrefour MAF prices:** each row includes current price, currency, availability and purchase limits when Carrefour exposes them.\r\n- **🛒 Category filters:** Scope discovery with category URLs, Carrefour MAF category IDs or category text filters.\r\n- **🏷️ Product metadata:** rows include product ID, seller, brand, category path, image, product URL and market metadata when available.\r\n- **📦 Compact product output:** keep only core product, price, availability, basket and image fields.\r\n- **🔔 Notifications:** Send product alerts to Telegram, Discord, Slack, WhatsApp or a generic webhook, with optional change-only notifications.\r\n- **♻️ Incremental mode:** track a product search over time and emit `changeType` rows.\r\n<!-- KEY_FEATURES:END -->\r\n\r\n## What data can you extract from carrefouruae.com?\r\n\r\nEach result includes Core product fields (`listingId`, `productId`, `gtin`, `sku`, `mpn`, `cdbase`, `metiRef`, and `facilityId`, and more) and detail fields when enrichment is enabled (`description`, `descriptionText`, `descriptionHtml`, `descriptionMarkdown`, and `productBenefits`). In standard mode, all fields are always present — unavailable data points are returned as `null`, never omitted. In compact mode, only core fields are returned.\r\n\r\nEnable detail enrichment in the input to get richer fields such as full descriptions where the source provides them.\r\n\r\n## Input\r\n\r\nThe main inputs are a search keyword and a result limit. Additional filters and options are available in the input schema.\r\n\r\nKey parameters:\r\n\r\n- **`productIds`** — Track a basket by GTIN, product ID or product URL. Pair with quantities for line totals. (default: `[]`)\r\n- **`productUrls`** — Carrefour MAF product URLs to scrape directly, e.g. https://www.carrefouruae.com/mafuae/en/p/1872989. (default: `[]`)\r\n- **`categoryUrls`** — Carrefour MAF category or search URLs. Filters and sort parameters are preserved. (default: `[]`)\r\n- **`startUrls`** — Paste product, search or category URLs. Product URLs are scraped directly; search/category URLs keep filters and sort parameters. (default: `[]`)\r\n- **`query`** — Product search keywords. Use one term like \"milk\" or a JSON array such as [\"milk\",\"rice\"]. (default: `\"\"`)\r\n- **`market`** — Single Carrefour MAF market. Use Markets below to scrape several markets in one run. (default: `\"mafuae\"`)\r\n- **`markets`** — Optional list of markets to scrape in one run, e.g. mafuae, mafsau, mafegy. Overrides Market for generated query, category ID and basket scopes. (default: `[]`)\r\n- **`language`** — Request English or Arabic product text. Pasted /en/ or /ar/ URLs override this per URL. (default: `\"en\"`)\r\n- **`categories`** — Local category filter after fetch. Use terms such as \"Dairy\", \"Electronics\", \"Fresh Food\" or \"Baby\". (default: `[]`)\r\n- **`rayonIds`** — Advanced MAF category IDs used as category routes, e.g. F21600000 for Dairy & Eggs on UAE. (default: `[]`)\r\n- **`quantities`** — Optional per-product quantities, e.g. {\"1872989\": 2}. (default: `{}`)\r\n- **`maxResults`** — Maximum product rows to push. Use 0 for all rows in the selected scope. (default: `100`)\r\n- ...and 31 more parameters\r\n\r\n## Input examples\r\n\r\n**Basic search** — Keyword-driven search with a result cap.\r\n\r\n→ Full payload per result — all standard fields populated where the source provides them.\r\n\r\n```json\r\n{\r\n  \"query\": \"milk\",\r\n  \"maxResults\": 50\r\n}\r\n```\r\n\r\n**Incremental tracking** — Only emit products that changed since the previous run with this `stateKey`.\r\n\r\n→ First run builds the baseline state. Subsequent runs emit only records that are new or whose tracked content changed. Set `emitUnchanged: true` to include unchanged records as well.\r\n\r\n```json\r\n{\r\n  \"query\": \"milk\",\r\n  \"maxResults\": 200,\r\n  \"incrementalMode\": true,\r\n  \"stateKey\": \"milk-tracker\"\r\n}\r\n```\r\n\r\n**Compact output for AI agents** — Return only core fields for AI-agent and MCP workflows.\r\n\r\n→ Small payload with the most important fields — ideal for piping into LLMs without token overhead.\r\n\r\n```json\r\n{\r\n  \"query\": \"milk\",\r\n  \"maxResults\": 50,\r\n  \"compact\": true\r\n}\r\n```\r\n\r\n## Output\r\n\r\nEach run produces a dataset of structured product records. Results can be downloaded as JSON, CSV, or Excel from the Dataset tab in Apify Console.\r\n\r\n## Example product record\r\n\r\n```json\r\n{\r\n  \"listingId\": \"f5886984a57d94d173613dde781b8af6ef3fb718cb4e754a9dbd5fc1f118b8bc\",\r\n  \"productId\": \"1872989\",\r\n  \"gtin\": \"1872989\",\r\n  \"sku\": \"1872989\",\r\n  \"facilityId\": \"0000\",\r\n  \"facilityServiceId\": \"SLOTTED\",\r\n  \"title\": \"Savushkin 1% Fat Cottage Cheese 200g\",\r\n  \"name\": \"Savushkin 1% Fat Cottage Cheese 200g\",\r\n  \"brand\": \"savushkin\",\r\n  \"entityName\": \"savushkin\",\r\n  \"breadcrumbs\": [\r\n    \"Home\",\r\n    \"Categories\",\r\n    \"Savushkin 1% Fat Cottage Cheese 200g\"\r\n  ],\r\n  \"location\": \"mafuae\",\r\n  \"description\": \"Shop Savushkin 1% Fat Cottage Cheese 200g online now at Carrefour UAE. Buy Fresh Food in Dubai, & more. Enjoy best prices, FREE & fast delivery, & easy returns\",\r\n  \"descriptionText\": \"Shop Savushkin 1% Fat Cottage Cheese 200g online now at Carrefour UAE. Buy Fresh Food in Dubai, & more. Enjoy best prices, FREE & fast delivery, & easy returns\",\r\n  \"price\": 15.79,\r\n  \"priceText\": \"AED 15.79\",\r\n  \"priceValue\": 15.79,\r\n  \"regularPrice\": 15.79,\r\n  \"regular_price\": 15.79,\r\n  \"priceCurrency\": \"AED\",\r\n  \"currency\": \"AED\",\r\n  \"purchaseMin\": 1,\r\n  \"quantity\": 1,\r\n  \"linePrice\": 15.79,\r\n  \"basketKey\": \"basket\",\r\n  \"listingType\": \"FOOD\",\r\n  \"url\": \"https://www.carrefouruae.com/mafuae/en/soft-cheese-cottage/savushkin-cottage-1-200g/p/1872989\",\r\n  \"portalUrl\": \"https://www.carrefouruae.com/mafuae/en/soft-cheese-cottage/savushkin-cottage-1-200g/p/1872989\",\r\n  \"canonical_url\": \"https://www.carrefouruae.com/mafuae/en/soft-cheese-cottage/savushkin-cottage-1-200g/p/1872989\",\r\n  \"attributes\": {\r\n    \"market\": \"mafuae\",\r\n    \"countryCode\": \"AE\",\r\n    \"countryName\": \"United Arab Emirates\",\r\n    \"offerId\": \"offer_carrefour_\",\r\n    \"sellerName\": \"Carrefour\",\r\n    \"serviceTypes\": [\r\n      \"SLOTTED\"\r\n    ],\r\n    \"isSoldByWeight\": false,\r\n    \"brandCode\": \"04365\"\r\n  },\r\n  \"sellerName\": \"Carrefour\",\r\n  \"searchQuery\": \"product-url\",\r\n  \"contentQuality\": \"full\",\r\n  \"detailFetched\": true,\r\n  \"scrapedAt\": \"2026-07-01T22:57:27.477Z\",\r\n  \"scraped_at\": \"2026-07-01T22:57:27.477Z\",\r\n  \"source\": \"carrefour-maf\",\r\n  \"contentHash\": \"3e4d0a37ce87c6d9bc015f69dbacc08d69896f3174a9617ea906a8c89835d754\"\r\n}\r\n```\r\n\r\n## Incremental fields\r\n\r\nWhen incremental mode is on, each record also carries:\r\n\r\n- `changeType` — one of `NEW`, `UPDATED`, `UNCHANGED`, `REAPPEARED`, `EXPIRED`. Default output covers `NEW` / `UPDATED` / `REAPPEARED`; set `emitUnchanged: true` or `emitExpired: true` to opt into the others.\r\n- `isRepost`, `repostOfId`, `repostDetectedAt` — populated when a new listing matches the tracked content of a previously expired one. Set `skipReposts: true` to drop detected reposts from the output.\r\n\r\n## How to scrape carrefouruae.com\r\n\r\n1. Go to [Carrefour MAF Scraper](https://apify.com/blackfalcondata/carrefour-maf-scraper?fpr=1h3gvi) in Apify Console.\r\n2. Enter a search keyword.\r\n3. Set `maxResults` to control how many results you need.\r\n4. Enable `includeDetails` if you need full descriptions.\r\n5. Click **Start** and wait for the run to finish.\r\n6. Export the dataset as JSON, CSV, or Excel.\r\n\r\n## Use cases\r\n\r\n- Extract product data from carrefouruae.com for market research and competitive analysis.\r\n- Track pricing trends across regions and categories over time.\r\n- Monitor new and changed products on scheduled runs without processing the full dataset every time.\r\n- Feed structured data into AI agents, MCP tools, and automated pipelines using compact mode.\r\n- Export clean, structured data to dashboards, spreadsheets, or data warehouses.\r\n- Benchmark seller / dealer reputation using rating fields.\r\n\r\n## How much does it cost to scrape carrefouruae.com?\r\n\r\nCarrefour MAF Scraper uses [pay-per-event](https://docs.apify.com/platform/actors/paid-actors/pay-per-event) pricing. You pay a small fee when the run starts and then for each result that is actually produced.\r\n\r\n- **Run start:** $0.01 per run\r\n- **Per result:** $0.002 per product record\r\n\r\nExample costs:\r\n\r\n- 10 results: **$0.03**\r\n- 25 results: **$0.06**\r\n- 100 results: **$0.21**\r\n- 200 results: **$0.41**\r\n- 500 results: **$1.01**\r\n\r\n> **Platform usage is billed on top of these prices.** The figures above are Apify event fees only. Compute units and proxy traffic are billed separately by Apify at your actual consumption, and for proxy- or browser-heavy workloads they can exceed the event fees. What you actually pay depends on your own input — how many results you request, whether detail enrichment is on, the run memory you choose, and your proxy settings — so it cannot be stated as a fixed figure here. Every run reports its exact platform usage on the run detail page.\r\n>\r\n> The **Actor Start** event is charged once per GB of run memory (minimum one), so a run configured with 2 GB is charged two start events rather than one.\r\n\r\n\r\n### Example: recurring monitoring savings\r\n\r\nThese examples compare full re-scrapes with incremental runs at different churn rates. Churn is the share of products that are new or whose tracked content changed since the previous run. Actual churn depends on your query breadth, source activity, and polling frequency — the scenarios below are examples, not predictions.\r\n\r\nExample setup: 250 products per run, daily polling (30 runs/month). Costs scale linearly with the number of products.\r\n\r\n| Churn rate | Full re-scrape run cost | Incremental run cost | Savings vs full re-scrape | Monthly cost after baseline |\r\n|---|---:|---:|---:|---:|\r\n| 5% — stable niche query | $0.51 | $0.04 | $0.47 (93%) | $1.05 |\r\n| 15% — moderate broad query | $0.51 | $0.08 | $0.43 (83%) | $2.55 |\r\n| 30% — high-volume aggregator | $0.51 | $0.16 | $0.35 (69%) | $4.80 |\r\n\r\nFull re-scrape monthly cost at the same cadence: $15.30. First month with incremental costs $1.53 / $2.97 / $5.15 for the 5% / 15% / 30% scenarios because the first run builds baseline state at full cost before incremental savings apply.\r\n\r\nPlatform usage (see the note above) also applies to these figures. Incremental runs consume less of it on result processing, though the fixed per-run overhead stays the same.\r\n\r\n<!-- incremental-positioning-meta: {\"pricingHash\":\"sha256:b65fc85198992db3\",\"computedAt\":\"2026-07-01T17:58:03.759Z\",\"version\":1} -->\r\n\r\n## FAQ\r\n\r\n### How many results can I get from carrefouruae.com?\r\n\r\nThe number of results depends on the search query and available products on carrefouruae.com. Use the `maxResults` parameter to control how many results are returned per run.\r\n\r\n### Does Carrefour MAF Scraper support recurring monitoring?\r\n\r\nYes. Enable incremental mode to only receive new or changed products on subsequent runs. This is ideal for scheduled monitoring where you want to track changes over time without re-processing the full dataset.\r\n\r\n### Can I integrate Carrefour MAF Scraper with other apps?\r\n\r\nYes. Carrefour MAF Scraper works with Apify's [integrations](https://apify.com/integrations?fpr=1h3gvi) to connect with tools like Zapier, Make, Google Sheets, Slack, and more. You can also use webhooks to trigger actions when a run completes.\r\n\r\n### Can I use Carrefour MAF Scraper with the Apify API?\r\n\r\nYes. You can start runs, manage inputs, and retrieve results programmatically through the [Apify API](https://docs.apify.com/api/v2). Client libraries are available for JavaScript, Python, and other languages.\r\n\r\n### Can I use Carrefour MAF Scraper through an MCP Server?\r\n\r\nYes. Apify provides an [MCP Server](https://apify.com/apify/actors-mcp-server?fpr=1h3gvi) that lets AI assistants and agents call this actor directly. Use compact mode, `descriptionMaxLength`, a single `descriptionFormat`, and `excludeEmptyFields` to keep payloads manageable for LLM context windows.\r\n\r\n### Is it legal to scrape carrefouruae.com?\r\n\r\nThis actor extracts publicly available data from carrefouruae.com. Web scraping of public information is generally considered legal, but you should always review the target site's terms of service and ensure your use case complies with applicable laws and regulations, including GDPR where relevant.\r\n\r\n### Your feedback\r\n\r\nIf you have questions, need a feature, or found a bug, please [open an issue](https://apify.com/blackfalcondata/carrefour-maf-scraper/issues?fpr=1h3gvi) on the actor's page in Apify Console. Your feedback helps us improve.\r\n\r\n## You might also like\r\n\r\n- [ALDI Scraper — Grocery Prices, 14 Countries](https://apify.com/blackfalcondata/aldi-scraper?fpr=1h3gvi) — Scrape ALDI grocery products and prices across 14 countries — the UK, Ireland, Germany, Austria,.\r\n- [ALDI US Scraper — Grocery Prices by ZIP Code](https://apify.com/blackfalcondata/aldi-us-scraper?fpr=1h3gvi) — Scrape aldi.us grocery products with prices, sizes, brands, categories, per-unit pricing and stock..\r\n- [Bilka Scraper [Just 💰$2] — Danish Grocery Prices](https://apify.com/blackfalcondata/bilka-scraper?fpr=1h3gvi) — 💰 $2 per 1,000 products. Scrape bilka.dk — Salling Group's Danish hypermarket chain — full product.\r\n- [BILLA Scraper — Austrian Grocery Prices & Promotions](https://apify.com/blackfalcondata/billa-scraper?fpr=1h3gvi) — Scrape shop.billa.at (BILLA Austria) for grocery prices, unit prices and promotions. Search by.\r\n- [Carrefour Scraper [Just 💰$2] — France Grocery Prices](https://apify.com/blackfalcondata/carrefour-scraper?fpr=1h3gvi) — 💰 $2 per 1,000 products. Scrape carrefour.fr — Carrefour France groceries with current prices ·.\r\n- [Coop365 Scraper [Just 💰$2] — Danish discount grocery](https://apify.com/blackfalcondata/coop365-scraper?fpr=1h3gvi) — 💰 $2 per 1,000 products. Scrape 365discount.coop.dk — leaflet names & prices · unit quantities &.\r\n- [Føtex Scraper [Just 💰$2] — Danish Grocery Prices](https://apify.com/blackfalcondata/foetex-scraper?fpr=1h3gvi) — 💰 $2 per 1,000 products. Scrape foetex.dk — Salling Group's Danish supermarket chain — full.\r\n- [Kvickly Scraper [Just 💰$2] — Danish grocery deals](https://apify.com/blackfalcondata/kvickly-scraper?fpr=1h3gvi) — 💰 $2 per 1,000 products. Scrape kvickly.dk — leaflet names & prices · unit quantities & per-unit.\r\n\r\n## Getting started with Apify\r\n\r\nNew to Apify? [Create a free account with $5 credit](https://console.apify.com/sign-up?fpr=1h3gvi) — no credit card required.\r\n\r\n1. Sign up — $5 platform credit included\r\n2. Open this actor and configure your input\r\n3. Click **Start** — export results as JSON, CSV, or Excel\r\n\r\nNeed more later? [See Apify pricing](https://apify.com/pricing?fpr=1h3gvi).\r\n\r\n## Disclaimer\r\n\r\nThis actor accesses only publicly available data on carrefouruae.com. You are responsible for how you use the extracted data — in particular any personal information such as names, phone numbers, or email addresses — and for complying with Carrefour MAF's terms of use, applicable data-protection law (including the GDPR where it applies), and the anti-spam rules of your jurisdiction.\r\n\r\nThis actor is not affiliated with, endorsed by, or connected to Carrefour MAF.\r\n\r\n## Search keywords\r\n\r\ncarrefouruae scraper, carrefouruae api, apify carrefouruae, carrefouruae data extraction, carrefour maf scraper, carrefour maf api, apify carrefour maf, carrefour maf data extraction, carrefouruae.com scraper, carrefouruae.com data, carrefouruae.com api, carrefour maf united arab emirates, carrefour maf united arab emirates scraper, carrefour maf saudi arabia, carrefour maf saudi arabia scraper, carrefour maf egypt, carrefour maf egypt scraper, carrefour maf qatar, carrefour maf qatar scraper, carrefour maf pakistan, carrefour maf pakistan scraper, carrefour maf lebanon, carrefour maf lebanon scraper, carrefour maf kenya, carrefour maf kenya scraper, carrefour groceries, carrefour uae, grocery prices gulf, carrefour products, majid al futtaim, mena grocery data.\r\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "views": {
+   "overview": {
+    "title": "Products",
+    "transformation": {
+     "fields": [
+      "listingId",
+      "productId",
+      "gtin",
+      "barcode",
+      "sku",
+      "facilityId",
+      "facilityServiceId",
+      "title",
+      "name",
+      "brand",
+      "packaging",
+      "entityName",
+      "category",
+      "categoryName",
+      "categoryPath",
+      "breadcrumbs",
+      "subcategory",
+      "location",
+      "description",
+      "descriptionText",
+      "ingredients",
+      "storageConditions",
+      "allergens",
+      "nutrition",
+      "price",
+      "priceText",
+      "priceValue",
+      "regularPrice",
+      "regular_price",
+      "priceCurrency",
+      "currency",
+      "priceUsd",
+      "priceEur",
+      "priceGbp",
+      "fxRateDate",
+      "available",
+      "in_stock",
+      "purchasable",
+      "purchaseMin",
+      "purchaseMax",
+      "quantity",
+      "linePrice",
+      "basketKey",
+      "listingType",
+      "url",
+      "portalUrl",
+      "canonical_url",
+      "main_image",
+      "images",
+      "imageUrl",
+      "galleryUrls",
+      "weight",
+      "attributes",
+      "rating_value",
+      "review_count",
+      "searchQuery",
+      "contentQuality",
+      "detailFetched",
+      "scrapedAt",
+      "scraped_at",
+      "source",
+      "contentHash",
+      "sellerName",
+      "changeType"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "listingId": {
+       "label": "Listing ID"
+      },
+      "productId": {
+       "label": "Product ID"
+      },
+      "gtin": {
+       "label": "GTIN"
+      },
+      "barcode": {
+       "label": "Barcode (EAN)"
+      },
+      "sku": {
+       "label": "SKU"
+      },
+      "facilityId": {
+       "label": "Facility ID"
+      },
+      "facilityServiceId": {
+       "label": "Facility service ID"
+      },
+      "title": {
+       "label": "Title"
+      },
+      "name": {
+       "label": "Name"
+      },
+      "brand": {
+       "label": "Brand"
+      },
+      "packaging": {
+       "label": "Packaging"
+      },
+      "entityName": {
+       "label": "Entity name"
+      },
+      "category": {
+       "label": "Category"
+      },
+      "categoryName": {
+       "label": "Category name"
+      },
+      "categoryPath": {
+       "label": "Category path"
+      },
+      "breadcrumbs": {
+       "label": "Breadcrumbs"
+      },
+      "subcategory": {
+       "label": "Subcategory"
+      },
+      "location": {
+       "label": "Market"
+      },
+      "description": {
+       "label": "Description"
+      },
+      "descriptionText": {
+       "label": "Description text"
+      },
+      "ingredients": {
+       "label": "Ingredients"
+      },
+      "storageConditions": {
+       "label": "Storage conditions"
+      },
+      "allergens": {
+       "label": "Allergens"
+      },
+      "nutrition": {
+       "label": "Nutrition"
+      },
+      "price": {
+       "label": "Price"
+      },
+      "priceText": {
+       "label": "Price text"
+      },
+      "priceValue": {
+       "label": "Price value"
+      },
+      "regularPrice": {
+       "label": "Regular price"
+      },
+      "regular_price": {
+       "label": "Regular price alias"
+      },
+      "priceCurrency": {
+       "label": "Price currency"
+      },
+      "currency": {
+       "label": "Currency"
+      },
+      "available": {
+       "label": "Available"
+      },
+      "in_stock": {
+       "label": "In stock"
+      },
+      "purchasable": {
+       "label": "Purchasable"
+      },
+      "purchaseMin": {
+       "label": "Purchase min"
+      },
+      "purchaseMax": {
+       "label": "Purchase max"
+      },
+      "quantity": {
+       "label": "Quantity"
+      },
+      "linePrice": {
+       "label": "Line price"
+      },
+      "basketKey": {
+       "label": "Basket key"
+      },
+      "listingType": {
+       "label": "Listing type"
+      },
+      "url": {
+       "label": "Product URL",
+       "format": "link"
+      },
+      "portalUrl": {
+       "label": "Portal URL",
+       "format": "link"
+      },
+      "canonical_url": {
+       "label": "Canonical URL",
+       "format": "link"
+      },
+      "main_image": {
+       "label": "Main image",
+       "format": "image"
+      },
+      "images": {
+       "label": "Images"
+      },
+      "imageUrl": {
+       "label": "Image URL",
+       "format": "image"
+      },
+      "galleryUrls": {
+       "label": "Gallery URLs"
+      },
+      "weight": {
+       "label": "Weight"
+      },
+      "attributes": {
+       "label": "Attributes"
+      },
+      "rating_value": {
+       "label": "Rating"
+      },
+      "review_count": {
+       "label": "Reviews"
+      },
+      "searchQuery": {
+       "label": "Search query"
+      },
+      "contentQuality": {
+       "label": "Content quality"
+      },
+      "detailFetched": {
+       "label": "Detail fetched"
+      },
+      "scrapedAt": {
+       "label": "Scraped at"
+      },
+      "scraped_at": {
+       "label": "Scraped at alias"
+      },
+      "source": {
+       "label": "Source"
+      },
+      "contentHash": {
+       "label": "Content hash"
+      },
+      "sellerName": {
+       "label": "Seller"
+      },
+      "changeType": {
+       "label": "Change"
+      }
+     }
+    }
+   },
+   "pricing": {
+    "title": "Pricing",
+    "transformation": {
+     "fields": [
+      "main_image",
+      "name",
+      "brand",
+      "price",
+      "regularPrice",
+      "priceCurrency",
+      "available",
+      "purchaseMin",
+      "purchaseMax",
+      "quantity",
+      "linePrice",
+      "url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "main_image": {
+       "label": "Image",
+       "format": "image"
+      },
+      "name": {
+       "label": "Name"
+      },
+      "brand": {
+       "label": "Brand"
+      },
+      "price": {
+       "label": "Price"
+      },
+      "regularPrice": {
+       "label": "Regular price"
+      },
+      "priceCurrency": {
+       "label": "Currency"
+      },
+      "available": {
+       "label": "Available"
+      },
+      "purchaseMin": {
+       "label": "Min qty"
+      },
+      "purchaseMax": {
+       "label": "Max qty"
+      },
+      "quantity": {
+       "label": "Basket qty"
+      },
+      "linePrice": {
+       "label": "Line price"
+      },
+      "url": {
+       "label": "Product URL",
+       "format": "link"
+      }
+     }
+    }
+   },
+   "details": {
+    "title": "Product details",
+    "transformation": {
+     "fields": [
+      "productId",
+      "sku",
+      "barcode",
+      "name",
+      "description",
+      "ingredients",
+      "allergens",
+      "nutrition",
+      "storageConditions",
+      "weight",
+      "attributes",
+      "images",
+      "canonical_url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "productId": {
+       "label": "Product ID"
+      },
+      "sku": {
+       "label": "SKU"
+      },
+      "barcode": {
+       "label": "Barcode"
+      },
+      "name": {
+       "label": "Name"
+      },
+      "description": {
+       "label": "Description"
+      },
+      "ingredients": {
+       "label": "Ingredients"
+      },
+      "allergens": {
+       "label": "Allergens"
+      },
+      "nutrition": {
+       "label": "Nutrition"
+      },
+      "storageConditions": {
+       "label": "Storage"
+      },
+      "weight": {
+       "label": "Weight"
+      },
+      "attributes": {
+       "label": "Attributes"
+      },
+      "images": {
+       "label": "Images"
+      },
+      "canonical_url": {
+       "label": "Canonical URL",
+       "format": "link"
+      }
+     }
+    }
+   },
+   "incremental": {
+    "title": "Incremental",
+    "transformation": {
+     "fields": [
+      "listingId",
+      "productId",
+      "name",
+      "price",
+      "regularPrice",
+      "available",
+      "contentHash",
+      "changeType",
+      "scrapedAt"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "listingId": {
+       "label": "Listing ID"
+      },
+      "productId": {
+       "label": "Product ID"
+      },
+      "name": {
+       "label": "Name"
+      },
+      "price": {
+       "label": "Price"
+      },
+      "regularPrice": {
+       "label": "Regular price"
+      },
+      "available": {
+       "label": "Available"
+      },
+      "contentHash": {
+       "label": "Content hash"
+      },
+      "changeType": {
+       "label": "Change"
+      },
+      "scrapedAt": {
+       "label": "Scraped at"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Carrefour MAF Product Scraper Input\",\n  \"description\": \"Extract Carrefour products from Majid Al Futtaim markets (UAE, Saudi Arabia, Egypt, Qatar, Pakistan, Lebanon and Kenya) with prices, availability, categories, images, product URLs, basket totals, incremental monitoring and notifications.\\n\\nChoose a 🌍 Market, enter 🔍 Search term(s), paste 🔗 Start URLs, or provide Product URLs / IDs. Set 💯 Max Results to control volume (0 = unlimited).\\n\\n♻️ Incremental & Dedup tracks state across runs — only new or changed items are emitted.\\n\\nTo start, enter a 🔍 Search term(s), or provide 🔗 Start URLs to scrape specific pages directly. Set 💯 Max Results to control volume (0 = unlimited).\\n\\n♻️ Incremental & Dedup tracks state across runs, so only new or changed items are emitted.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"productIds\": {\n      \"title\": \"🛍️ Basket — GTINs / product IDs\",\n      \"description\": \"Track a basket by GTIN, product ID or product URL. Pair with quantities for line totals.\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": [],\n      \"sectionCaption\": \"🛒 Scope\"\n    },\n    \"productUrls\": {\n      \"title\": \"🔗 Product URLs\",\n      \"description\": \"Carrefour MAF product URLs to scrape directly, e.g. https://www.carrefouruae.com/mafuae/en/p/1872989.\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": []\n    },\n    \"categoryUrls\": {\n      \"title\": \"📂 Category URLs\",\n      \"description\": \"Carrefour MAF category or search URLs. Filters and sort parameters are preserved.\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": []\n    },\n    \"startUrls\": {\n      \"title\": \"🔗 Start URLs\",\n      \"description\": \"Paste product, search or category URLs. Product URLs are scraped directly; search/category URLs keep filters and sort parameters.\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": []\n    },\n    \"query\": {\n      \"title\": \"🔍 Search term(s)\",\n      \"description\": \"Product search keywords. Use one term like \\\"milk\\\" or a JSON array such as [\\\"milk\\\",\\\"rice\\\"].\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"default\": \"\",\n      \"prefill\": \"milk\"\n    },\n    \"market\": {\n      \"title\": \"🌍 Market\",\n      \"description\": \"Single Carrefour MAF market. Use Markets below to scrape several markets in one run.\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"mafuae\",\n        \"mafsau\",\n        \"mafegy\",\n        \"mafqat\",\n        \"mafpak\",\n        \"maflbn\",\n        \"mafken\"\n      ],\n      \"enumTitles\": [\n        \"United Arab Emirates\",\n        \"Saudi Arabia\",\n        \"Egypt\",\n        \"Qatar\",\n        \"Pakistan\",\n        \"Lebanon\",\n        \"Kenya\"\n      ],\n      \"default\": \"mafuae\",\n      \"prefill\": \"mafuae\"\n    },\n    \"markets\": {\n      \"title\": \"🌍 Markets\",\n      \"description\": \"Optional list of markets to scrape in one run, e.g. mafuae, mafsau, mafegy. Overrides Market for generated query, category ID and basket scopes.\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": []\n    },\n    \"language\": {\n      \"title\": \"🌐 Language\",\n      \"description\": \"Request English or Arabic product text. Pasted /en/ or /ar/ URLs override this per URL.\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"en\",\n        \"ar\"\n      ],\n      \"enumTitles\": [\n        \"English\",\n        \"Arabic\"\n      ],\n      \"default\": \"en\",\n      \"prefill\": \"en\"\n    },\n    \"categories\": {\n      \"title\": \"🗂️ Category terms\",\n      \"description\": \"Local category filter after fetch. Use terms such as \\\"Dairy\\\", \\\"Electronics\\\", \\\"Fresh Food\\\" or \\\"Baby\\\".\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": []\n    },\n    \"rayonIds\": {\n      \"title\": \"🏷️ Carrefour MAF category IDs\",\n      \"description\": \"Advanced MAF category IDs used as category routes, e.g. F21600000 for Dairy & Eggs on UAE.\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"default\": []\n    },\n    \"quantities\": {\n      \"title\": \"🔢 Basket quantities\",\n      \"description\": \"Optional per-product quantities, e.g. {\\\"1872989\\\": 2}.\",\n      \"type\": [\n        \"object\",\n        \"string\"\n      ],\n      \"editor\": \"json\",\n      \"default\": {}\n    },\n    \"maxResults\": {\n      \"title\": \"💯 Max results\",\n      \"description\": \"Maximum product rows to push. Use 0 for all rows in the selected scope.\",\n      \"type\": \"integer\",\n      \"default\": 100,\n      \"minimum\": 0,\n      \"maximum\": 50000,\n      \"prefill\": 100\n    },\n    \"maxResultsPerScrape\": {\n      \"title\": \"💯 Max results per scrape\",\n      \"description\": \"Compatibility alias for maxResults. If maxResults is not set, this value is used.\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"maximum\": 50000\n    },\n    \"usePagination\": {\n      \"title\": \"➡️ Use pagination\",\n      \"description\": \"Whether to fetch additional pages after the first page for query/category runs.\",\n      \"type\": \"boolean\",\n      \"default\": true\n    },\n    \"pageSize\": {\n      \"title\": \"📄 Page size\",\n      \"description\": \"Products requested per page.\",\n      \"type\": \"integer\",\n      \"default\": 60,\n      \"minimum\": 1,\n      \"maximum\": 60,\n      \"sectionCaption\": \"⚙️ Advanced\"\n    },\n    \"priceMin\": {\n      \"title\": \"💰 Min price\",\n      \"description\": \"Only emit products with price greater than or equal to this value.\",\n      \"type\": \"number\",\n      \"minimum\": 0,\n      \"sectionCaption\": \"🎯 Filters\"\n    },\n    \"priceMax\": {\n      \"title\": \"💰 Max price\",\n      \"description\": \"Only emit products with price less than or equal to this value.\",\n      \"type\": \"number\",\n      \"minimum\": 0\n    },\n    \"inStockOnly\": {\n      \"title\": \"📦 In stock only\",\n      \"description\": \"Drop products flagged as unavailable.\",\n      \"type\": \"boolean\",\n      \"default\": false\n    },\n    \"ingredientFilter\": {\n      \"title\": \"🥗 Ingredient filter\",\n      \"description\": \"Case-insensitive substring filter on detailed ingredient text. Use a single term or JSON array of terms that all must match.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\"\n    },\n    \"sortBy\": {\n      \"title\": \"↕️ Sort by\",\n      \"description\": \"Optional ordering before maxResults is applied.\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"price-asc\",\n        \"price-desc\",\n        \"line-asc\",\n        \"line-desc\",\n        \"name-asc\",\n        \"rating-desc\"\n      ],\n      \"enumTitles\": [\n        \"Lowest price first\",\n        \"Highest price first\",\n        \"Basket line total ascending\",\n        \"Basket line total descending\",\n        \"Name A-Z\",\n        \"Highest rating first\"\n      ]\n    },\n    \"includeDetails\": {\n      \"title\": \"📋 Include product details\",\n      \"description\": \"Fetch each product page for extra metadata such as meta description and brand details. Disabled by default because MAF product detail pages are large; enable for smaller runs.\",\n      \"type\": \"boolean\",\n      \"default\": false\n    },\n    \"compact\": {\n      \"title\": \"📦 Compact output\",\n      \"description\": \"Keep only the core product, price, availability, basket and image fields.\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"sectionCaption\": \"🤖 Output\"\n    },\n    \"excludeEmptyFields\": {\n      \"title\": \"🧹 Exclude empty fields\",\n      \"description\": \"Drop null, empty-string and empty-array fields from each record before push.\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"prefill\": false\n    },\n    \"descriptionFormat\": {\n      \"title\": \"📝 Description format\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"description\": \"Pick a single description representation.\",\n      \"enum\": [\n        \"all\",\n        \"text\"\n      ],\n      \"enumTitles\": [\n        \"All variants\",\n        \"Text\"\n      ],\n      \"default\": \"all\",\n      \"prefill\": \"all\"\n    },\n    \"descriptionMaxLength\": {\n      \"title\": \"✂️ Description max length\",\n      \"description\": \"Truncate product description text after this many characters. Use 0 for no truncation.\",\n      \"type\": \"integer\",\n      \"default\": 0,\n      \"minimum\": 0\n    },\n    \"incrementalMode\": {\n      \"title\": \"♻️ Incremental mode\",\n      \"description\": \"Compare against previous runs for the same scope and emit changeType for new, updated, unchanged or expired products.\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"sectionCaption\": \"♻️ Incremental & Dedup\"\n    },\n    \"stateKey\": {\n      \"title\": \"🔑 State key\",\n      \"description\": \"Optional stable ID for the tracked search/basket universe. Leave empty to auto-generate from search inputs.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\"\n    },\n    \"emitUnchanged\": {\n      \"title\": \"📤 Emit unchanged\",\n      \"description\": \"Include products with no detected change in incremental output.\",\n      \"type\": \"boolean\",\n      \"default\": false\n    },\n    \"skipReposts\": {\n      \"title\": \"🚫 Skip reposts\",\n      \"description\": \"When incremental mode is enabled, skip products whose content matches a prior expired row.\",\n      \"type\": \"boolean\",\n      \"default\": false\n    },\n    \"notifyOnlyChanges\": {\n      \"title\": \"🔄 Notify only new/updated\",\n      \"description\": \"When incremental mode is enabled, only send notifications for changed products.\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"sectionCaption\": \"🔔 Notifications\"\n    },\n    \"notificationLimit\": {\n      \"title\": \"📊 Max products per notification\",\n      \"description\": \"Maximum number of products included in each notification message.\",\n      \"type\": \"integer\",\n      \"default\": 5,\n      \"minimum\": 1,\n      \"maximum\": 20\n    },\n    \"telegramToken\": {\n      \"title\": \"🔑 Telegram bot token\",\n      \"description\": \"Telegram bot token from @BotFather.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"isSecret\": true\n    },\n    \"telegramChatId\": {\n      \"title\": \"💬 Telegram chat ID\",\n      \"description\": \"Telegram chat or channel ID.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\"\n    },\n    \"discordWebhookUrl\": {\n      \"title\": \"🎮 Discord webhook URL\",\n      \"description\": \"Discord incoming webhook URL.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"isSecret\": true\n    },\n    \"slackWebhookUrl\": {\n      \"title\": \"💼 Slack webhook URL\",\n      \"description\": \"Slack incoming webhook URL.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"isSecret\": true\n    },\n    \"whatsappAccessToken\": {\n      \"title\": \"📱 WhatsApp access token\",\n      \"description\": \"WhatsApp Cloud API access token.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\",\n      \"isSecret\": true\n    },\n    \"whatsappPhoneNumberId\": {\n      \"title\": \"📞 WhatsApp phone number ID\",\n      \"description\": \"WhatsApp Business phone-number ID.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\"\n    },\n    \"whatsappTo\": {\n      \"title\": \"📲 WhatsApp recipient\",\n      \"description\": \"Recipient phone in E.164 format without +.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\"\n    },\n    \"webhookUrl\": {\n      \"title\": \"🪝 Generic webhook URL\",\n      \"description\": \"Receives a JSON POST with {metadata, items} after each run.\",\n      \"type\": \"string\",\n      \"editor\": \"textfield\"\n    },\n    \"webhookHeaders\": {\n      \"title\": \"📋 Webhook headers\",\n      \"description\": \"Optional JSON object of custom headers.\",\n      \"type\": \"object\",\n      \"editor\": \"json\"\n    },\n    \"appConnector\": {\n      \"title\": \"📤 Send results to Notion (or another connected app)\",\n      \"type\": \"string\",\n      \"description\": \"Optional. Pick a connected app under Settings -> API & Integrations to receive your results. Notion is supported today (a run-summary page); other MCP connectors are best-effort as Apify expands its catalog.\",\n      \"resourceType\": \"mcpConnector\",\n      \"mcpServers\": [\n        {\n          \"url\": \"*\"\n        }\n      ],\n      \"sectionCaption\": \"📤 Send results to your apps\"\n    },\n    \"mcpIssueTeam\": {\n      \"title\": \"🎫 Issue tracker team\",\n      \"type\": \"string\",\n      \"description\": \"Only when the connected app is an issue tracker: the team (name or ID) the summary issue is created under, if that app requires one.\",\n      \"editor\": \"textfield\"\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"🌐 Proxy configuration\",\n      \"description\": \"Network routing for all requests. Automatic routing is recommended and enabled by default; advanced users can select specific groups or a country, or supply their own endpoints.\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"default\": {\n        \"useApifyProxy\": true\n      },\n      \"prefill\": {\n        \"useApifyProxy\": true\n      },\n      \"sectionCaption\": \"🌐 Proxy\"\n    },\n    \"emitExpired\": {\n      \"title\": \"⚰️ Emit Expired Listings\",\n      \"description\": \"When incremental mode is on, also emit listings that were seen before but are no longer found.\",\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"default\": false\n    }\n  }\n}"
+}

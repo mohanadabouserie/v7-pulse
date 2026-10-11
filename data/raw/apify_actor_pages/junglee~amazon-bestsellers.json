@@ -1,0 +1,183 @@
+{
+ "act": {
+  "title": "Amazon Bestsellers Scraper",
+  "users30d": 391,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## ⭐️ What is Amazon Best Sellers Scraper?\n\nThis Amazon Best Sellers Scraper allows you to scrape the 100 top-selling items on Amazon. It extracts data from [Amazon Best Sellers](https://www.amazon.com/Best-Sellers/zgbs) pages in structured formats such as JSON, XML, CSV, or Excel. With this Amazon API, you will be able to:\n\n- extract **data from different domains**: US, GB, DE, FR, ES, and IT.\n- **extract all Amazon Best Seller product details**: name, price, URL, and thumbnail image.\n- **scrape Amazon Best Seller categories** and subcategories.\n- **besides Amazon Best Seller categories**, you can now also scrape the following Amazon categories with this scraper: **Most Wished, Movers and Shakers, New Releases, and Gift Ideas.** For examples of URLs that be scraped, head over to the [Input section](https://apify.com/junglee/amazon-bestsellers#input-parameters).\n\nIf you would prefer a more general Amazon product data scraper, you should try [Amazon Scraper](https://apify.com/junglee/amazon-crawler) instead.\n\n## 📚 How do I scrape Amazon Best Sellers?\n\nAmazon Best Sellers Scraper was designed for an easy start even if you've never extracted data from the web before. Here's how you can scrape bestsellers with this tool:\n\n1. Create a free Apify account using your email.\n2. Open [Amazon Best Sellers Scraper](https://apify.com/junglee/amazon-bestsellers).\n3. Add one or more Amazon URLs to scrape product info.\n4. Click \"Start\" and wait for the data to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nFor a step-by-step guide on how to scrape Amazon Best Seller products, follow our [tutorial](https://blog.apify.com/how-to-scrape-data-from-amazon-best-sellers).\n\n## 📦 How many results can you scrape with Amazon Best Seller scraper?\n\nAmazon Best Sellers scraper can return up to tens of thousands of results **on average**. However, you have to keep in mind that scraping [amazon.com](http://amazon.com/) has many variables to it and may cause the results to fluctuate case by case. There’s no one-size-fits-all-use-cases number. **The maximum number of results may vary** depending on the complexity of the input, location, and other factors. Some of the most frequent cases are:\n\n- website gives a different number of results depending on the type/value of the input\n- website has an internal limit that no scraper can cross\n- scraper has a limit that we are working on improving\n\nTherefore, while we regularly run Actor tests to keep the benchmarks in check, the results may also fluctuate without our knowing. The best way to know for sure for your particular use case is to do a test run yourself.\n\n## 🎯 Need to do product matching between Amazon and another online shop?\n\nUse the [AI Product Matcher](https://apify.com/product-matching-ai). This AI model allows you to compare items from different web stores, identifying exact matches and comparing real-time data obtained via web scraping. With the AI Product Matcher, you can use scraped product data to monitor product matches across the industry, implement dynamic pricing for your website, replace or complement manual mapping, and obtain realistic estimates against your competition for upcoming promo campaigns.\n\nMost importantly, it is relatively easy to get started with (just follow [this guide](https://blog.apify.com/product-matching-ai-pricing-intelligence-web-scraping/)).⬇️\n\n## ⬇️ Input parameters\n\nYou can scrape Amazon Best Sellers **by Amazon URLs** from 6 different Amazon domains: .com, .de. .co.uk, .fr, .es and .it. You can get all the details from a chosen category and its subcategories. You can add as many URLs as you want.\n\nHere's an input example of acceptable Amazon URLs:\n\n- Best Sellers: [https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0](https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0)\n- Movers and Shakers: [https://www.amazon.de/-/en/gp/movers-and-shakers/garden/ref=zg_bsms_nav_garden_0](https://www.amazon.de/-/en/gp/movers-and-shakers/garden/ref=zg_bsms_nav_garden_0)\n- New Releases: [https://www.amazon.co.uk/gp/new-releases/ref=zg_bsms_tab_bsnr](https://www.amazon.co.uk/gp/new-releases/ref=zg_bsms_tab_bsnr)\n- Most Wished: [https://www.amazon.es/gp/most-wished-for/ref=zg_bs_tab_mw](https://www.amazon.es/gp/most-wished-for/ref=zg_bs_tab_mw)\n- Most Gifted: [https://www.amazon.fr/gp/most-gifted/books/ref=zg_mg_nav_books_0](https://www.amazon.fr/gp/most-gifted/books/ref=zg_mg_nav_books_0)\n\n\n<img width=\"75%\" src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Amazon%20Bestsellers%20Scraper%20input.png?raw=true\" />\n\n## ⬆️ Output example\n\nThe scraped Amazon items will be shown as a dataset which you can find in the **Output or Storage tabs**. Note that the output will first be organized as a table for viewing convenience:\n\n![Amazon Bestsellers dataset](https://github.com/apify-projects/actor-readme-images/blob/master/Amazon%20Bestsellers%20dataset.png?raw=true)\n\nYou can preview all the fields and choose in which format to download the data you’ve extracted: JSON, Excel, HTML table, CSV, or XML. Here below is the same dataset in JSON:\n\n```json\n [{\n  \"position\": 1,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Amazon Fire TV Stick 4K, brilliant 4K streaming quality, TV and smart home controls, free and live TV\",\n  \"price\": 22.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/all-new-fire-tv-stick-4k-with-alexa-voice-remote/dp/B08XVYZ1Y5/ref=zg_bs_g_electronics_sccl_1/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/41GYmjbeVSL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 2,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Amazon Fire TV Stick with Alexa Voice Remote (includes TV controls), free &amp; live TV without cable or satellite, HD streaming device\",\n  \"price\": 19.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/fire-tv-stick-with-3rd-gen-alexa-voice-remote/dp/B08C1W5N87/ref=zg_bs_g_electronics_sccl_2/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/51TjJOTfslL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 3,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Amazon Echo Dot (5th Gen) | The helpful assistant with clear vocals, deeper bass, and easy voice controls to assist you | Charcoal\",\n  \"price\": 22.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/All-New-release-Smart-speaker-Charcoal/dp/B09B8V1LZ3/ref=zg_bs_g_electronics_sccl_3/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/518cRYanpbL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 4,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Apple AirTag\",\n  \"price\": 28.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/Apple-MX532AM-A-AirTag/dp/B0933BVK6T/ref=zg_bs_g_electronics_sccl_4/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/713xuNx00oS._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 5,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Apple AirTag 4 Pack\",\n  \"price\": 88.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/Apple-MX542AM-A-AirTag-Pack/dp/B0932QJ2JZ/ref=zg_bs_g_electronics_sccl_5/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/71gY9E+cTaS._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 6,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Blink Video Doorbell | simple setup, two-year battery life, HD video, motion alerts, Works with Alexa — battery or wired (Black)\",\n  \"price\": 29.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/Blink-Video-Doorbell/dp/B08SG2MS3V/ref=zg_bs_g_electronics_sccl_6/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/41te-uzWxDL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 7,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone\",\n  \"price\": 99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/Apple-AirPods-Charging-Latest-Model/dp/B07PXGQC1Q/ref=zg_bs_g_electronics_sccl_7/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/61Zh467pKjL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 8,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"All-new Echo Show 5 (3rd Gen, 2023 release) | Smart display and alarm clock with clearer sound | Charcoal \",\n  \"price\": 39.99,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/All-new-Echo-Show-5/dp/B09B2SBHQK/ref=zg_bs_g_electronics_sccl_8/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/61dIsuhh4AL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 9,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Wall Charger, Surge Protector, QINLIANF 5 Outlet Extender with 4 USB Charging Ports (4.8A Total) 3-Sided 1680J Power Strip Multi Plug Adapter Spaced for Home Travel Office (3U1C)\",\n  \"price\": 15.97,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/Charger-Protector-QINLIANF-Extender-Charging/dp/B08R6S1M1K/ref=zg_bs_g_electronics_sccl_9/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/61Hh-YlfJOL._AC_UL600_SR600,400_.jpg\"\n},\n{\n  \"position\": 10,\n  \"category\": \"Amazon Best Sellers: Best Electronics\",\n  \"categoryUrl\": \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\",\n  \"name\": \"Apple EarPods Headphones with Lightning Connector. Microphone with Built-in Remote to Control Music, Phone Calls, and Volume. Wired Earbuds for iPhone\",\n  \"price\": 16.59,\n  \"currency\": \"$\",\n  \"numberOfOffers\": 1,\n  \"url\": \"https://www.amazon.com/Apple-EarPods-Lightning-Connector-White/dp/B01M0GB8CC/ref=zg_bs_g_electronics_sccl_10/134-0062779-1101052?psc=1\",\n  \"thumbnail\": \"https://images-na.ssl-images-amazon.com/images/I/41-aexp44tL._AC_UL600_SR600,400_.jpg\"\n},\n...\n```\n\n## ☝️ Tips and tricks\n\n- By default, this Amazon scraper extracts the 37 top Best Seller subcategories. A deeper level of extraction can be added to allow you to scrape the top-selling items from the first level of the main categories' sub-divisions.\n- The default depth of the crawl is limited to two subcategories. There is a way around this restriction. Start on the main category, scrape two departments. Then remove duplicate category URLs from there and feed them back into the scraper again.\n\n## Error items\n\nWhen the scraper cannot retrieve data for a given input — for example a bestsellers category page does not exist or a start URL is malformed — it pushes an **error item** to the dataset instead of silently skipping it. Normal output items are never affected; you can tell them apart by the presence of an `error` field.\n\n### Error item structure\n\n```json\n{\n    \"error\": \"product_not_found\",\n    \"errorDescription\": \"Loaded a 404 page. The product does not exist.\",\n    \"input\": \"https://www.amazon.com/dp/B0XXXXXXXX\",\n    \"url\": \"https://www.amazon.com/dp/B0XXXXXXXX\"\n}\n```\n\n### Error codes reference\n\n| `error`                          | Meaning                                                        |\n| -------------------------------- | -------------------------------------------------------------- |\n| `invalid_url`                    | One or more start URLs were malformed or not recognized        |\n| `invalid_input`                  | Actor failed due to bad configuration (run is also terminated) |\n| `product_not_found`              | Product URL returns a 404 page                                 |\n| `shortened_url_invalid`          | Amazon shortened URL could not be resolved                     |\n| `bestsellers_category_not_found` | Bestsellers category page could not be found                   |\n| `no_relevant_reviews_found`      | Reviews exist but none match the active filters                |\n| `no_results_found`               | No results were found for the given input                      |\n\n---\n\n## ❓FAQ\n\n### Do I need proxies to scrape Amazon?\n\nFor the most reliable results of scraping, you will need to use some sort of proxy along with the scraper to prevent its detection by target websites. You can use both [Apify Proxy](https://apify.com/proxy) and custom HTTP or SOCKS5 proxy servers.\n\nTo engage custom proxies specifically, you will need to specify them in the  `scheme://user:password@host:port` format. Multiple proxies should be separated by a space or new line and the URL scheme can be either HTTP or SOCKS5. User and password might be omitted, but the port must always be present.\n\n### \n\n### Can I integrate Amazon Best Sellers Scraper with other apps?\n\nYes. Amazon Best Sellers can be connected with almost any cloud service or web app thanks to <a href=\"https://apify.com/integrations\"  target=\"_blank\"> integrations on the Apify platform</a>. You can integrate with Make, Zapier, LangChain, Slack, Airbyte, GitHub, Google Sheets, Google Drive, <a href=\"https://docs.apify.com/integrations\"  target=\"_blank\"> and more</a>. \n\nOr you can use <a href=\"https://docs.apify.com/integrations/webhooks\"  target=\"_blank\"> webhooks</a> to carry out an action whenever an event occurs, e.g. get a notification whenever this Amazon web scraper successfully finishes a run.\n\n### Can I use Amazon Best Sellers Scraper with API?\n\nYes, you can do so by using Apify API. It gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` NPM package. To access the API using Python, use the `apify-client` PyPI package.\n\nCheck out the <a href=\"https://docs.apify.com/api/v2\"  target=\"_blank\"> Apify API reference</a> docs for full details or click on the <a href=\"https://apify.com/junglee/amazon-bestsellers-scraper/api\"  target=\"_blank\"> API tab</a> for code examples.\n\n### How can you use Amazon Best Sellers data?\n\nIf you're web scraping Amazon for retail or market research, the Amazon [Best Sellers list](https://www.amazon.com/gp/help/customer/display.html?nodeId=525376) can tell you a lot about the top trends in e-commerce. Competing directly against top-selling items across Amazon can be difficult, but it also can be a source of inspiration for new products for e-commerce retailers. Data collected on those top-selling items can help you:\n\n- stay ahead of the competition\n- improve sales for your business\n- track up-and-coming products\n- adjust your product prices to market levels\n\n### Not your cup of tea? Build your own scraper\n\nAmazon Best Sellers Scraper doesn’t exactly do what you need? You can always build your own! We have various [scraper templates](https://apify.com/templates) in Python, JavaScript, and TypeScript to get you started. Alternatively, you can write it from scratch using our [open-source library Crawlee](https://crawlee.dev/). You can keep the scraper to yourself or make it public by adding it to Apify Store (and [find users](https://apify.com/partners/actor-developers) for it). Or let us know if you need a [custom scraping solution](https://apify.com/custom-solutions).\n\n### Resources on how to scrape data from Amazon Best Sellers\n\n1. [Platform pricing page](https://apify.com/pricing/actors) with pricing specifications.\n2. [Video guide ▷](https://www.youtube.com/watch?v=s_89WpOsKRI) on how to choose the right subscription plan.\n3. [Step-by-step guide](https://blog.apify.com/how-to-scrape-data-from-amazon-best-sellers) on how to use Amazon Best Sellers scraper.\n4. [Input tab](https://apify.com/junglee/amazon-bestsellers/input-schema) with all the technical parameters of this scraper.\n5. [Is web scraping legal](https://blog.apify.com/is-web-scraping-legal/) on the legal aspects of web scraping.\n\n### Your feedback\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for Amazon Best Sellers or simply found a bug, please create an issue on the Actor’s [Issues tab](https://console.apify.com/actors/iHaiR8VIUt13olbXg/issues) in Apify Console.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string",
+     "description": "Product name",
+     "nullable": true,
+     "example": "Example Wireless Headphones"
+    },
+    "url": {
+     "type": "string",
+     "description": "URL of the product page",
+     "nullable": true,
+     "example": "https://www.amazon.com/dp/B08EXAMPLE01"
+    },
+    "asin": {
+     "type": "string",
+     "description": "Amazon Standard Identification Number",
+     "nullable": true,
+     "example": "B08EXAMPLE01"
+    },
+    "position": {
+     "type": "number",
+     "description": "Bestseller rank position within the category",
+     "nullable": true,
+     "example": 3
+    },
+    "price": {
+     "type": "object",
+     "description": "Product price",
+     "nullable": true,
+     "properties": {
+      "value": {
+       "type": "number",
+       "nullable": true
+      },
+      "currency": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "value": 29.99,
+      "currency": "USD"
+     }
+    },
+    "currency": {
+     "type": "string",
+     "description": "Currency code of the product price",
+     "nullable": true,
+     "example": "USD"
+    },
+    "numberOfOffers": {
+     "type": "number",
+     "description": "Number of available purchase offers",
+     "nullable": true,
+     "example": 5
+    },
+    "stars": {
+     "type": "number",
+     "description": "Average customer rating out of 5",
+     "nullable": true,
+     "example": 4.5
+    },
+    "reviewsCount": {
+     "type": "number",
+     "description": "Total number of customer reviews",
+     "nullable": true,
+     "example": 1250
+    },
+    "thumbnailUrl": {
+     "type": "string",
+     "description": "URL of the product thumbnail image",
+     "nullable": true,
+     "example": "https://m.media-amazon.com/images/I/exampleimage.jpg"
+    },
+    "categoryUrl": {
+     "type": "string",
+     "description": "URL of the bestseller category page",
+     "nullable": true,
+     "example": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics"
+    },
+    "categoryName": {
+     "type": "string",
+     "description": "Short category name",
+     "nullable": true,
+     "example": "Electronics"
+    },
+    "categoryFullName": {
+     "type": "string",
+     "description": "Full category name as shown on the bestsellers page",
+     "nullable": true,
+     "example": "Best Sellers in Electronics"
+    },
+    "subcategories": {
+     "type": "array",
+     "description": "Subcategories listed under the bestseller category",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "categoryName": "Headphones",
+       "categoryUrl": "https://www.amazon.com/Best-Sellers-Electronics-Headphones/zgbs/electronics/13"
+      }
+     ]
+    },
+    "input": {
+     "type": "string",
+     "description": "Input URL that was used to scrape this bestseller",
+     "nullable": true,
+     "example": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics"
+    }
+   },
+   "required": [],
+   "additionalProperties": true
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "position",
+      "thumbnailUrl",
+      "name",
+      "price",
+      "currency",
+      "categoryName",
+      "url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "position": {
+       "label": "Position",
+       "format": "number"
+      },
+      "thumbnailUrl": {
+       "label": "Picture",
+       "format": "image"
+      },
+      "name": {
+       "label": "Name",
+       "format": "text"
+      },
+      "price.value": {
+       "label": "Price",
+       "format": "text"
+      },
+      "categoryName": {
+       "label": "Category",
+       "format": "text"
+      },
+      "url": {
+       "label": "Url",
+       "format": "link"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Amazon Best Sellers crawler\",\n  \"description\": \"You can scrape Amazon Best Sellers either by <b>Amazon domain</b> or by <b>Amazon category</b>. To try it out, just pick a domain or paste a URL and click &#9655;<b> Start </b> to start scraping. If you need any guidance, just <a href='https://blog.apify.com/how-to-scrape-data-from-amazon-best-sellers/' target='_blank' rel='noopener'>follow this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"categoryUrls\": {\n      \"title\": \"Amazon category URLs\",\n      \"type\": \"array\",\n      \"description\": \"Pick one or a few Best Seller categories to scrape. If you enter a top-level category, all subcategories will be scraped (up to max depth). <br> Category URL has to contain <code>Best-Sellers</code>, <code>best-sellers</code> or <code>bestsellers</code>. To see examples of all accepted URLs, <a href='https://apify.com/junglee/amazon-bestsellers#input-parameters' target='_blank' rel='noopener'>check out the readme</a>.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\"\n      ],\n      \"example\": [\n        \"https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/\"\n      ]\n    },\n    \"maxItemsPerStartUrl\": {\n      \"title\": \"Max results (per start URL)\",\n      \"type\": \"integer\",\n      \"description\": \"Enter the maximum number of results you want to scrape per each star URL. Note that Amazon has a hard limit of 100 bestsellers per category.\",\n      \"minimum\": 0,\n      \"prefill\": 100,\n      \"example\": 100,\n      \"unit\": \"results\",\n      \"nullable\": false\n    },\n    \"depthOfCrawl\": {\n      \"title\": \"How many subcategories do you want to scrape?\",\n      \"type\": \"integer\",\n      \"description\": \"Amazon Best Sellers covers 42 main categories. Each of those have at least one more subcategory level. <br> Setting this field to 2 will get you roughly 550 subcategories, each with 100 results.\",\n      \"prefill\": 1,\n      \"example\": 1,\n      \"default\": 1,\n      \"minimum\": 1,\n      \"editor\": \"number\"\n    },\n    \"language\": {\n      \"sectionCaption\": \"Other Settings\",\n      \"sectionDescription\": \"These settings are not required for the scraper to run, but they can help you get better results.\",\n      \"title\": \"Language\",\n      \"type\": \"string\",\n      \"description\": \"Language to use on Amazon.\\n\\n**Disclaimer**: each Amazon domain has a different set of supported languages. If you choose a language that is not supported by the domain, the scraper will use the default language of the domain.\",\n      \"example\": \"en\",\n      \"nullable\": true,\n      \"enum\": [\n        \"cs\",\n        \"da\",\n        \"de\",\n        \"en\",\n        \"es\",\n        \"fr\",\n        \"nl\",\n        \"pl\",\n        \"pt\",\n        \"sv\",\n        \"tr\",\n        \"he\",\n        \"ar\",\n        \"mrta\",\n        \"hi\",\n        \"bn\",\n        \"ta\",\n        \"te\",\n        \"kn\",\n        \"ml\",\n        \"ko\",\n        \"zh_CN\",\n        \"zh_TW\",\n        \"ja\"\n      ],\n      \"enumTitles\": [\n        \"čeština - CS ('.de')\",\n        \"dansk - DA ('.de')\",\n        \"Deutsch - DE ('.com', '.de')\",\n        \"English - EN ('.ae', '.ca', '.co.jp', '.com.be', '.com', '.de', '.eg', '.in', '.nl', '.sa', '.se')\",\n        \"español - ES ('.com', '.es')\",\n        \"français - FR ('.ca', '.com.be')\",\n        \"Nederlands - NL ('.com.be', '.de', '.nl')\",\n        \"polski - PL ('.de')\",\n        \"português - PT ('.com', '.es')\",\n        \"svenska - SV ('.se')\",\n        \"Türkçe - TR ('.de')\",\n        \"עברית - HE ('.com')\",\n        \"العربية - AR ('.ae', '.com', '.eg', '.sa')\",\n        \"मराठी - MR ('.in')\",\n        \"हिन्दी - HI ('.in')\",\n        \"বাংলা - BN ('.in')\",\n        \"தமிழ் - TA ('.in')\",\n        \"తెలుగు - TE ('.in')\",\n        \"ಕನ್ನಡ - KN ('.in')\",\n        \"മലയാളം - ML ('.in')\",\n        \"한국어 - KO ('.com')\",\n        \"中文 (简体) - ZH ('.co.jp', '.com')\",\n        \"中文 (繁體) - ZH ('.com')\",\n        \"日本語 - JA ('.co.jp')\"\n      ]\n    },\n    \"detailedInformation\": {\n      \"title\": \"Detailed information\",\n      \"type\": \"boolean\",\n      \"description\": \"Check this if you want to get the maximum amount of information about individual products. However, choosing this option means the scraper could take longer, since it is extracting more data.\",\n      \"default\": false,\n      \"example\": false,\n      \"nullable\": false\n    },\n    \"useCaptchaSolver\": {\n      \"title\": \"Use Captcha solver (warning: see description)\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled the scraper will automatically solve captchas thrown by Amazon. This will decrease the amount of request retries and increase the speed of the scraper.<br><br>***IMPORTANT*** - This option works well only for the `'.com'` Amazon domain, but even for that one Amazon doesn't show a few product fields after solving a captcha (specifically: 'attributes', 'manufacturer attributes', and 'bestseller ranks')\",\n      \"default\": false,\n      \"example\": false\n    }\n  },\n  \"required\": [\n    \"categoryUrls\"\n  ]\n}"
+}

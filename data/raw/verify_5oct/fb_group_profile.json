@@ -1,0 +1,49 @@
+{
+ "input": {
+  "findGroupsBy": "url",
+  "groupUrls": [
+   {
+    "url": "https://www.facebook.com/groups/2828301800643081/"
+   }
+  ]
+ },
+ "items": [
+  {
+   "identity": {
+    "groupId": "2828301800643081",
+    "name": "الجاليه المصريه فى قطر",
+    "url": "https://www.facebook.com/groups/2828301800643081/"
+   },
+   "description": "الجاليه المصريه فى قطر",
+   "history": {
+    "createdAt": "2024-01-02",
+    "summary": "Group created on 2 January 2024"
+   },
+   "postingActivity": {
+    "postsPerDay": 789,
+    "postsPerDayDisplay": "789",
+    "postsPerMonth": 10000,
+    "postsPerMonthDisplay": "10000"
+   },
+   "membership": {
+    "memberCountDisplay": "87,840 total members",
+    "memberCount": 87840,
+    "recentMemberGrowth": {
+     "display": "No new members in the last week",
+     "count": 0,
+     "period": "last week"
+    }
+   },
+   "visibility": {
+    "privacy": "Public group",
+    "discoverability": "Visible"
+   },
+   "administrators": [
+    {
+     "name": "وظائف عمان",
+     "profileUrl": "https://www.facebook.com/profile.php?id=100094446384559"
+    }
+   ]
+  }
+ ]
+}

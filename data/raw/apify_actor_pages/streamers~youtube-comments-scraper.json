@@ -1,0 +1,175 @@
+{
+ "act": {
+  "title": "YouTube Comments Scraper",
+  "users30d": 2479,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What is YouTube Comment Scraper?\n\nYouTube Comments Scraper is a data extraction tool created for scraping comments from YouTube that goes beyond the standard YouTube API. As soon as you provide a video URL, you will be able to extract:\n\n- **All comments** from chosen YouTube videos\n- **Comment text**, author name, **date posted**, vote count, reply count\n- Whether it **has been liked** by the video’s creator\n- **Total comment count**\n\n## How to use data extracted from YouTube comments\n\n- **Monitor competitors’ comments** to see mentions of your brand\n- Find **current trends** and **opinions** shared by commenters\n- **Analyze comments** to find potential for expansion\n- Use extracted data for **sentiment analysis**\n- **Identify harmful** or **illegal** comments\n- Get **quick insight** into what your community is doing and he opinions they hold\n\n## How do I use YouTube Comment Scraper?\n\nYouTube Comments Scraper is designed to be user-friendly, even for those who have never extracted data from YouTube before. Here’s how you can use YouTube Comment Scraper to extract YouTube comment data:\n\n1. [Create](https://console.apify.com/actors/p7UMdpQnjKmmpR21D?addFromActorId=p7UMdpQnjKmmpR21D) an Apify account\n2. Open [YouTube Comments Scraper](https://apify.com/streamers/youtube-comments-scraper)\n3. Add one or more YouTube video URLs to scrape comments\n4. Click the “Start” button and wait for the data to be extracted\n5. Download your data in JSON, XML, CSV, Excel, or HTML\n\nFor more information, watch our [short video tutorial](https://www.youtube.com/watch?v=LOmod3V9pZw).\n\nhttps://www.youtube.com/watch?v=LOmod3V9pZw\n\n## ⬇️ Input example\n\nThe input for YouTube Comments Scraper should be a **YouTube video URL.** You can add as many URLs as you want, or even import a CSV file or Google Sheet with a prepared list of URLs.\n\n<a href=\"https://console.apify.com/actors/p7UMdpQnjKmmpR21D/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-comments-scraper-input.png?raw=true\" alt=\"YouTube Comments Scraper input\" style=\"width:70%;\">\n</a>\n\nOnce you’ve entered the URL, you can choose how many results you would like to extract and then click “Start.” Click on the [input tab](https://apify.com/streamers/youtube-comments-scraper/input-schema) for a full explanation of an input example in JSON.\n\n```json\n{\n    \"maxComments\": 300,\n    \"startUrls\": [\n        {\n            \"url\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n            \"method\": \"GET\"\n        }\n    ]\n}\n```\n\n## ⬆️ Output sample\n\nThe scraped YouTube comments will be shown as a dataset which you can find in the **Storage** tab. Note that the output is organized as a table for viewing convenience, but it doesn’t show **all the fields**:\n\n<a href=\"https://console.apify.com/actors/p7UMdpQnjKmmpR21D/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-comments-scraper-output.png?raw=true\" alt=\"YouTube Comments Scraper output\" style=\"width:70%;\">\n</a>\n\nYou can preview all the fields and choose in which format to download the YouTube comments you’ve extracted: JSON, Excel, HTML table, CSV, or XML. Here below is the same dataset in JSON:\n\n```json\n{\n    \"comment\": \"This is up there with their best songs.\",\n    \"cid\": \"UgxRn0_LUxzRP2MybPR4AaABAg\",\n    \"author\": \"@Nonie_Jay\",\n    \"videoId\": \"bJTjJtRPqYE\",\n    \"pageUrl\": \"<https://www.youtube.com/watch?v=bJTjJtRPqYE>\",\n    \"commentsCount\": 171,\n    \"replyCount\": 0,\n    \"voteCount\": 2,\n    \"authorIsChannelOwner\": false,\n    \"hasCreatorHeart\": false,\n    \"type\": \"comment\",\n    \"replyToCid\": null,\n    \"title\": \"Halestorm - Unapologetic [Official Audio]\"\n  },\n\n\n```\n\n## Want to try other YouTube APIs and scrapers?\n\nIf you want to extract specific YouTube data, you can use one of the specialized scrapers below, each built particularly for the relevant YouTube data scraping case, whether it's shorts, comments, or channels:\n\n- ▶️ [YouTube Scraper](https://apify.com/streamers/youtube-scraper)\n- 🏎 [Fast YouTube Channel Scraper](https://apify.com/streamers/youtube-channel-scraper)\n- ▶️ [YouTube Shorts Scraper](https://apify.com/streamers/youtube-shorts-scraper)\n- 📽️ [YouTube Video Scraper by Hashtag](https://apify.com/streamers/youtube-video-scraper-by-hashtag)\n\nIf you need to download scraped YouTube videos, you can use [YouTube Video Downloader](https://apify.com/pocesar/download-youtube-video).\n\nYou can also combine YouTube data with that from other social networks using any of the following scrapers:\n\n- [TikTok scrapers](https://apify.com/clockworks)\n- [Instagram scrapers](https://apify.com/store/categories?search=instagram&managedBy=APIFY)\n- [Facebook scrapers](https://apify.com/store/categories?search=facebook&managedBy=APIFY)\n- Or try our other [social media scrapers](https://apify.com/store?category=SOCIAL_MEDIA).\n\nFurthermore, you can use the power of AI agents to do multiple tasks at one. For example, our [Comments Analyzer Agent](https://apify.com/apify/comments-analyzer-agent) can perform sentiment analysis of YouTube videos, or you could try our [Influencer Discovery Agent](https://apify.com/apify/influencer-discovery-agent) for lead generation on TikTok videos.\n\n## Integrating YouTube Shorts Scraper with other apps\n\nYouTube Scraper can be connected with almost any cloud service or web app thanks to [integrations](https://apify.com/integrations) on the Apify platform. These include [Make](https://docs.apify.com/platform/integrations/make), [Zapier](https://docs.apify.com/platform/integrations/zapier), [Slack](https://docs.apify.com/platform/integrations/slack), [Airbyte](https://docs.apify.com/platform/integrations/airbyte), [GitHub](https://docs.apify.com/platform/integrations/github), [Google Drive](https://docs.apify.com/platform/integrations/drive), and [plenty more](https://docs.apify.com/platform/integrations).\n\nAlternatively, you can use [webhooks](https://docs.apify.com/platform/integrations/webhooks) to carry out an action whenever an event occurs, e.g. get a notification whenever YouTube Scraper successfully finishes a run, or initiate a new process, like ordering your data.\n\n## Error items\n\nWhen the scraper cannot retrieve data for a given input — for example a video is unavailable or has no comments — it pushes an **error item** to the dataset instead of silently skipping it. Normal output items are never affected; you can tell them apart by the presence of an `error` field.\n\n### Error item structure\n\n```json\n{\n    \"url\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"input\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"error\": \"VIDEO_UNAVAILABLE\",\n    \"note\": \"This video is not available\"\n}\n```\n\n### Error codes reference\n\n| `error`                      | Meaning                                                             |\n| ---------------------------- | ------------------------------------------------------------------- |\n| `CHANNEL_DOES_NOT_EXIST`     | Channel URL points to a channel that does not exist                 |\n| `NOT_FOUND`                  | Page was not found                                                  |\n| `VIDEO_UNAVAILABLE`          | Video is not available (deleted, region-blocked, etc.)              |\n| `AGE_RESTRICTED`             | Channel is age-restricted and cannot be accessed without login      |\n| `CHANNEL_HAS_NO_VIDEOS`      | Channel exists but has no uploaded videos                           |\n| `CHANNEL_HAS_NO_LIVE_VIDEOS` | Channel exists but has no live videos                               |\n| `CHANNEL_HAS_NO_SHORTS`      | Channel exists but has no Shorts                                    |\n| `DATE_FILTER_TOO_STRICT`     | Videos exist but none match the active date filter                  |\n| `NO_VIDEOS`                  | No videos found on the page                                         |\n| `NO_RESULTS`                 | No results collected — check that video-type limits are set above 0 |\n| `NO_VALID_START_URLS`        | All provided start URLs were invalid or malformed                   |\n| `INVALID_INPUT`              | Actor failed due to bad configuration (run is also terminated)      |\n| `NO_COMMENTS`                | No comments found for the video                                     |\n\n---\n\n## FAQ\n\n### Is YouTube comments scraping legal?\n\nOur [YouTube scrapers](https://apify.com/store?search=youtube) are ethical and **do not extract any private user data, such as email addresses, gender, or location**. They only extract what the user has chosen to share publicly. However, you should be aware that your **results could contain personal data.** You should not scrape personal data unless you have a legitimate reason to do so.\n\nIf you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/).\n\n### Do I need proxies to scrape YouTube comments?\n\nIf you run the scraper on the Apify platform, for successful YouTube scraping you will need [residential proxies](https://apify.com/proxy?pricing=residential-ip#pricing) which are included in Apify's **monthly Starter plan**.\n\nFor more details about how our pricing works, platform credits, proxies, and usage, see the [platform pricing page](https://apify.com/pricing/actors).\n\n### Can I use YouTube Comments Scraper with the API?\n\nYes. You can do so using Apify API which will enable you to manage, schedule, and run any Apify Actors, including this one. The API also lets you access any datasets, monitor Actor performance, fetch results, create and update versions, and more. To access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/streamers/youtube-comments-scraper/api/javascript). To access the API using Python for scraping YouTube comments, use the `apify-client` [PyPi package](https://apify.com/streamers/youtube-comments-scraper/api/python).\n\nCheck out the [Apify API reference](https://docs.apify.com/api/v2) docs for full details or click on the [API tab](https://apify.com/streamers/youtube-comments-scraper/api/python) for code examples.\n\n### Can I use YouTube Scraper through an MCP Server?\n\nWith Apify API, you can use almost any Actor in conjunction with an MCP server. You can connect to the MCP server using clients like ClaudeDesktop and LibreChat, or even build your own. Read all about how you can [set up Apify Actors with MCP](https://blog.apify.com/how-to-use-mcp/).\n\nFor YouTube Scraper, go to the [MCP tab](https://apify.com/streamers/youtube-comments-scraper/api/mcp) and then go through the following steps:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`\n2. Send API messages using that `sessionId` to trigger the scraper\n3. The message starts the Amazon ASINs Scraper with the provided input\n4. The response should be: `Accepted`\n\n### Your feedback\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for YouTube Comment Scraper or simply found a bug, please create an issue on the Actor’s [Issues tab](https://apify.com/streamers/youtube-comments-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "author": {
+     "type": "string",
+     "description": "The username/display name of the comment author",
+     "nullable": true,
+     "example": "Apify"
+    },
+    "comment": {
+     "type": "string",
+     "description": "The text content of the comment",
+     "nullable": true,
+     "example": "This is a great video! Thanks for sharing."
+    },
+    "cid": {
+     "type": "string",
+     "description": "The unique comment ID assigned by YouTube",
+     "nullable": true,
+     "example": "UgxAbCdEf12GhIjKl34MnOpQrStUvWx"
+    },
+    "replyCount": {
+     "type": "number",
+     "description": "The number of replies to this comment",
+     "nullable": true,
+     "example": 5
+    },
+    "replyToCid": {
+     "type": "string",
+     "description": "The comment ID this comment is replying to, null if it's a top-level comment",
+     "nullable": true,
+     "example": "UgxAbCdEf12GhIjKl34MnOpQrStUvWx"
+    },
+    "voteCount": {
+     "type": "number",
+     "description": "The number of likes/upvotes the comment has received",
+     "nullable": true,
+     "example": 15
+    },
+    "authorIsChannelOwner": {
+     "type": "boolean",
+     "description": "Whether the comment author is the owner of the video's channel",
+     "nullable": true,
+     "example": false
+    },
+    "publishedTimeText": {
+     "type": "string",
+     "description": "The relative time text when the comment was published (e.g., '2 days ago', '1 week ago')",
+     "nullable": true,
+     "example": "3 days ago"
+    },
+    "type": {
+     "type": "string",
+     "description": "The type of comment - either a top-level 'comment' or a 'reply' to another comment",
+     "enum": [
+      "comment",
+      "reply"
+     ],
+     "nullable": true,
+     "example": "comment"
+    },
+    "hasCreatorHeart": {
+     "type": "boolean",
+     "description": "Whether the video creator has 'hearted' this comment",
+     "nullable": true,
+     "example": false
+    },
+    "videoId": {
+     "type": "string",
+     "description": "The unique YouTube video ID that this comment belongs to",
+     "nullable": true,
+     "example": "aBcDeFgHiJk"
+    },
+    "pageUrl": {
+     "type": "string",
+     "description": "The full URL of the YouTube video page",
+     "nullable": true,
+     "example": "https://www.youtube.com/watch?v=aBcDeFgHiJk"
+    },
+    "commentsCount": {
+     "type": "number",
+     "description": "The total number of comments on the video",
+     "nullable": true,
+     "example": 1250
+    },
+    "title": {
+     "type": "string",
+     "description": "The title of the YouTube video",
+     "nullable": true,
+     "example": "Example Video Title"
+    }
+   },
+   "required": [],
+   "additionalProperties": true
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "Overview of scraped YouTube comments with key information",
+    "transformation": {
+     "fields": [
+      "author",
+      "comment",
+      "type",
+      "voteCount",
+      "replyCount",
+      "publishedTimeText",
+      "hasCreatorHeart",
+      "authorIsChannelOwner",
+      "title",
+      "pageUrl"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "author": {
+       "label": "Author",
+       "format": "text"
+      },
+      "comment": {
+       "label": "Comment",
+       "format": "text"
+      },
+      "type": {
+       "label": "Type",
+       "format": "text"
+      },
+      "voteCount": {
+       "label": "Likes",
+       "format": "number"
+      },
+      "replyCount": {
+       "label": "Replies",
+       "format": "number"
+      },
+      "publishedTimeText": {
+       "label": "Published",
+       "format": "text"
+      },
+      "hasCreatorHeart": {
+       "label": "Creator Heart",
+       "format": "boolean"
+      },
+      "authorIsChannelOwner": {
+       "label": "Is Channel Owner",
+       "format": "boolean"
+      },
+      "title": {
+       "label": "Video Title",
+       "format": "text"
+      },
+      "pageUrl": {
+       "label": "Video URL",
+       "format": "link"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Input schema for the youtube-search-scraper actor\",\n  \"description\": \"Scrape YouTube search results using a search term, or directly input a video, channel, or results page URL. Feel free to try it out with our default settings by hitting &#9655;<b> Start</b>. If you need any help, have a read through <a href='https://blog.apify.com/how-to-scrape-youtube/' target='_blank' rel='noopener'>this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Direct video URLs\",\n      \"type\": \"array\",\n      \"description\": \"Enter a link to a specific Youtube video <a href='https://www.youtube.com/watch?v=xObhZ0Ga7EQ' target='_blank' rel='noopener'>YouTube video</a>. You can also import a CSV file or Google Sheet with a list of URLs.<br>\",\n      \"default\": [],\n      \"prefill\": [\n        {\n          \"url\": \"https://www.youtube.com/watch?v=xObhZ0Ga7EQ\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n        }\n      ],\n      \"editor\": \"requestListSources\"\n    },\n    \"maxComments\": {\n      \"title\": \"Maximum comments\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of comments you want to scrape per video.\",\n      \"prefill\": 10,\n      \"default\": 1,\n      \"minimum\": 1,\n      \"example\": 100\n    },\n    \"sortCommentsBy\": {\n      \"title\": \"Sorting order\",\n      \"type\": \"string\",\n      \"description\": \"Select Youtube sorting parameter for comments\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"TOP_COMMENTS\",\n        \"NEWEST_FIRST\"\n      ],\n      \"enumTitles\": [\n        \"Top comments\",\n        \"Newest first\"\n      ],\n      \"default\": \"NEWEST_FIRST\"\n    },\n    \"oldestCommentDate\": {\n      \"title\": \"Scrape comments published after [date]\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"example\": \"2026-03-01\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"description\": \"Only comments published after or on this date will be scraped. Alternatively, specify how old the scraped comments should be. Putting <code>1 day</code> will get you only today's comments, <code>2 days</code> - yesterday's and today's, and so on. Note, that if you select this, sorting parameter will be auto-reset to newest first\"\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

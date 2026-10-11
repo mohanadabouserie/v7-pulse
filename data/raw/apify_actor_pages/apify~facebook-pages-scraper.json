@@ -1,0 +1,383 @@
+{
+ "act": {
+  "title": "Facebook Pages Scraper",
+  "users30d": 5883,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What is Facebook Pages Scraper?\n\nIt's a simple but powerful data extraction tool that allows you to **scrape basic data from Facebook pages and profiles**. To get that data, just **insert page URLs and click \"Save & Start\" button**. With this web scraping tool, you can go beyond the limitations of the Facebook API:\n\n🗂 Scrape a bunch of Facebook Pages **at once**\n\n👥 Scrape **both Pages and Profiles** ([see the difference in data](https://apify.com/apify/facebook-pages-scraper?backlink=%252Fstore%252Fcategories%253Fsearch%253Dpages#is-there-a-difference-between-scraping-a-facebook-page-and-facebook-profile))\n\n📇 Get **contact details, likes, followers**, ratings, and more\n\n⚡ Get **500 pages for free** in less than 2 minutes\n\n🔓 **No limitations** on requests or number of calls\n\n💾 Export Facebook data in **JSON, CSV, Excel, or HTML**\n\n🔗 Export via SDKs (Python & Node.js), use **API Endpoints**, webhooks, or integrate with apps & AI workflows\n\n🔍 Explore 20+ **other [Facebook scraping tools](https://apify.com/apify/facebook-pages-scraper#what-is-the-best-facebook-scraper)**\n\n## What Facebook pages data can I extract?\n\nWith this Facebook API, you will be able to extract the following data from Facebook pages or profiles:\n\n<table>\n<tr>\n<td>📝 Page title</td>\n<td>🔗 Page URL</td>\n</tr>\n<tr>\n<td>📮 Address</td>\n<td>📞 Contact details (phone number)</td>\n</tr>\n<tr>\n<td>🌐 Website</td>\n<td>💬 Messenger link (if available)</td>\n</tr>\n<tr>\n<td>📝 Intro (bio/description)</td>\n<td>📍 Number of check-ins and mentions</td>\n</tr>\n<tr>\n<td>⭐ Rating and rating count </td>\n<td>📅 Page creation date</td>\n</tr>\n<tr>\n<td>📚 Page Ad Library ID</td>\n<td>📢 Ad status</td>\n</tr>\n<tr>\n<td>👥 Number of followers</td>\n<td>👍 Number of likes</td>\n</tr>\n<tr>\n<td>🎨 Categories</td>\n<td>🌄 Profile and cover photo URL</td>\n</tr>\n</table>\n\n## How do I use Facebook Pages Scraper?\n\nFacebook Pages Scraper was designed to be easy to start with even if you've never extracted data from the web before. Here's how you can scrape Facebook data with this tool:\n\n1.  [Create](https://console.apify.com/sign-up) a free Apify account using your email.\n2.  Open [Facebook Pages Scraper](https://apify.com/apify/facebook-pages-scraper).\n3.  Add one or more Facebook Page URLs to scrape its info.\n4.  Click \"Start\" and wait for the data to be extracted.\n5.  Download your data in JSON, XML, CSV, Excel, or HTML.\n\nFor a step-by-step guide on how to scrape Facebook Pages, follow our [Facebook Pages Scraper tutorial](https://blog.apify.com/how-to-scrape-facebook-pages-posts-comments-photos-and-more/) 📝.\n\n## How much will scraping Facebook pages cost you?\n\nScraping data from Facebook pages costs $10 for every 1,000 pages, or $0.01 per page. If you're on Apify Free plan, you will be able to scrape **up to 500 pages** before needing to upgrade.\n\nFor more frequent or extensive data scraping, consider upgrading to the $29/month [Starter plan](https://apify.com/pricing), which can get you **up to 2,900 Facebook pages** per month. For scalable Facebook scraping, check out $199/month Scale or $999/month Business plan.\n\n## ⬇️ Input\n\nThe input for Facebook Pages Scraper should be **Facebook Page URLs** such as `https://www.facebook.com/humansofnewyork/`. You can insert the page URLs one by one, paste a prepared list, or set the input via API.\n\n<a href=\"https://console.apify.com/actors/4Hv5RhChiaDk6iwad\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20pages%20data%20input.png?raw=true\" alt=\"Facebook page scraping input\" style=\"width:70%;\">\n</a>\n\nClick on the [input tab](https://apify.com/apify/facebook-pages-scraper/input-schema) for a full explanation of an input example in JSON.\n\n## ⬆️ Output\n\nThe results will be wrapped into a dataset which you can find in the **Storage** tab. Here's an excerpt from the dataset you'd get if you apply the input parameters above:\n\n<a href=\"https://console.apify.com/actors/4Hv5RhChiaDk6iwad\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20pages%20data%20output.png?raw=true\" alt=\"Facebook page scraping output\" style=\"width:90%;\">\n</a>\n\n### 📘 **Extracted Facebook pages sample**\n\n```json\n[\n    {\n        \"facebookUrl\": \"https://www.facebook.com/ChrisBrecheensWritingAboutWriting\",\n        \"categories\": [\"Page\", \"Interest\"],\n        \"info\": [\n            \"Writing About Writing. 1,148,094 likes\",\n            \"68,836 talking about this. Macros, memes, quotes, puns and more as well as daily updates from the blog this page...\"\n        ],\n        \"likes\": 1148094,\n        \"messenger\": null,\n        \"title\": \"Writing About Writing\",\n        \"pageId\": \"100077736131324\",\n        \"pageName\": \"ChrisBrecheensWritingAboutWriting\",\n        \"pageUrl\": \"https://www.facebook.com/ChrisBrecheensWritingAboutWriting\",\n        \"intro\": \"Macros, memes, quotes, puns and more as well as daily updates from the blog this page promotes: chri\",\n        \"websites\": [\"https://chrisbrecheen.blogspot.com/\"],\n        \"email\": \"chris.brecheen@gmail.com\",\n        \"website\": \"chrisbrecheen.blogspot.com\",\n        \"followers\": 1219522,\n        \"profilePictureUrl\": \"https://scontent.fios2-1.fna.fbcdn.net/v/t39.30808-1/471437612_609196481681551_4559415822805108518_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=1&ccb=1-7&_nc_sid=f907e8&_nc_ohc=2cjbJkLMnuYQ7kNvwHBHlxY&_nc_oc=AdlYruGJleJeuE-0HuI3Ye3EV9GUO6qXcNROJDf9a6712ZeYkHxRQYGy9KsmIKi7-Hg&_nc_zt=24&_nc_ht=scontent.fios2-1.fna&_nc_gid=_Gdmphc_JPSw5m9Ls42NEw&oh=00_AfFwiUKwT9RIgdnq17-dbzVkmud1yZrB9jPPShL5skg8Ng&oe=68158058\",\n        \"coverPhotoUrl\": \"https://scontent.fios2-1.fna.fbcdn.net/v/t39.30808-6/482133942_9017224025053486_513526455002128649_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=aGKCwWHxQecQ7kNvwFnuJjo&_nc_oc=AdkcJCw3QB5Gqj1LcTMsMpjhw5BwK1JruvLLtw70Yul5o3pPcwWcc9Gi-tWgiK5MrDw&_nc_zt=23&_nc_ht=scontent.fios2-1.fna&_nc_gid=M5WWbBwQlIDAyFzjfVcNbw&oh=00_AfEWWO-US6Q5qweRTVWV6nkdt2HZWY5DCSE8r7mNEzxUkA&oe=68158386\",\n        \"profilePhoto\": \"https://www.facebook.com/photo/?fbid=609196478348218&set=a.178389964762207\",\n        \"creation_date\": \"October 7, 2012\",\n        \"ad_status\": \"This Page is not currently running ads.\",\n        \"about_me\": {\n            \"text\": \"Memes, macros infographics, and quotes about writing, art, creativity, inspiration, motivation, process, craft, grammar, linguistics, books, reading, literature, and living life by one's own rules.  Wordplay riddles, sayings of famous authors, and a healthy love of puns.  Plus my personal pledge that I'll cross-post my blog only twice a day (three times if I'm running a poll), and I won't cry very much at all if you never actually visit it.\",\n            \"urls\": []\n        },\n        \"facebookId\": \"100077736131324\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"290072384435404\"\n        }\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/nasaearth\",\n        \"categories\": [\"Page\", \"Science Website\"],\n        \"info\": [\n            \"NASA Earth. 10,505,363 likes\",\n            \"6,420 talking about this. Explore and learn more about our home planet. 🌎💚   Verification: http://nasa.gov/socialmedia\"\n        ],\n        \"likes\": 10505363,\n        \"messenger\": null,\n        \"title\": \"NASA Earth\",\n        \"pageId\": \"100064975200317\",\n        \"pageName\": \"nasaearth\",\n        \"pageUrl\": \"https://www.facebook.com/nasaearth\",\n        \"intro\": \"Explore and learn more about our home planet. 🌎💚   Verification: http://nasa.gov/socialmedia\",\n        \"websites\": [\"https://science.nasa.gov/earth/\"],\n        \"CONFIRMED_OWNER_LABEL\": \"NATIONAL AERONAUTICS AND SPACE ADMINISTRATION\",\n        \"website\": \"science.nasa.gov/earth\",\n        \"followers\": 10921894,\n        \"followings\": 26,\n        \"profilePictureUrl\": \"https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-1/435065639_833099202199246_6261622852628963143_n.jpg?stp=dst-jpg_p200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f907e8&_nc_ohc=4MThx_noih4Q7kNvwGy6Dr2&_nc_oc=AdnsrNHgrm8-lm5dwjPUnXJgjtJTjA85aNQ7ZyfaTYfV-GjO4Qpwidc0HId253ef6EI&_nc_zt=24&_nc_ht=scontent-lga3-2.xx&_nc_gid=_Ao7aUXC8xLE8LUOa2cxXg&oh=00_AfHRVudkoaLeIPCVPQTpqVMYITkIpfwdbY2JPqmeG0RhUg&oe=6815797D\",\n        \"coverPhotoUrl\": \"https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/481916835_1055641396611691_1391211533881599614_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=icgSMafrn0wQ7kNvwG2Rztn&_nc_oc=AdnR0AG46r2SGKjNiXEAjA3ZHa4dup4oeDQ-7PssEyGo8yV8RwM07svxnM7pth57sC4&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=GhxFphyL8skAFZ8DtB9MHg&oh=00_AfGhao-GleaCAux8RMCnOgPkeNnjjNvJaRQo2oncKm58JQ&oe=6815947C\",\n        \"profilePhoto\": \"https://www.facebook.com/photo/?fbid=833099205532579&set=a.360010466174791\",\n        \"creation_date\": \"December 29, 2008\",\n        \"ad_status\": \"This Page is not currently running ads.\",\n        \"confirmed_owner\": \"NATIONAL AERONAUTICS AND SPACE ADMINISTRATION is responsible for this Page.\",\n        \"facebookId\": \"100064975200317\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"57242657138\"\n        }\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/UNclimatechange\",\n        \"categories\": [\"Page\", \"Organization\"],\n        \"info\": [\n            \"UN Climate Change, Bonn, Germany. 494,043 likes\",\n            \"807 talking about this\",\n            \"2,177 were here. The official Facebook page of the United Nations Framework...\"\n        ],\n        \"likes\": 494043,\n        \"messenger\": null,\n        \"title\": \"UN Climate Change | Bonn\",\n        \"address\": \"Platz der Vereinten Nationen 1 , Bonn, Germany https://maps.google.com/maps?q=Platz+der+Vereinten+Nationen+1+%2C+Bonn%2C+Germany&hl=en\",\n        \"pageId\": \"100067499490396\",\n        \"pageName\": \"UNclimatechange\",\n        \"pageUrl\": \"https://www.facebook.com/UNclimatechange\",\n        \"intro\": \"The official Facebook page of the United Nations Framework Convention on Climate Change (UNFCCC).\",\n        \"websites\": [\n            \"https://maps.google.com/maps?q=Platz+der+Vereinten+Nationen+1+%2C+Bonn%2C+Germany&hl=en\",\n            \"http://unfccc.int/\"\n        ],\n        \"CONFIRMED_OWNER_LABEL\": \"United Nations Framework Convention on Climate Change (UNFCCC)\",\n        \"phone\": \"+49 228 8151000\",\n        \"website\": \"unfccc.int\",\n        \"rating\": \"94% recommend (839 Reviews)\",\n        \"followers\": 514363,\n        \"profilePictureUrl\": \"https://scontent.fsxb1-1.fna.fbcdn.net/v/t39.30808-1/346870311_587061183553860_709539914076514993_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=f907e8&_nc_ohc=c1XouJLe7NUQ7kNvwG_r6hm&_nc_oc=Adk7XyB-E8Q3R22kkSE81A_CbkYM6i-XAft0R2td8j1pgBYLpynuOhDqwpr1t46IbqU&_nc_zt=24&_nc_ht=scontent.fsxb1-1.fna&_nc_gid=3QQYx0bSkxRsh_a_dsLSTA&oh=00_AfFf-XI2ZLbThKqfuhUTThapEW_c5z1DexGu4i9DMvjxAA&oe=681596AA\",\n        \"coverPhotoUrl\": \"https://scontent.fsxb1-1.fna.fbcdn.net/v/t39.30808-6/258086905_10159533815620867_4631418575296415090_n.png?stp=dst-png_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xMKEqoYR7-0Q7kNvwGJikJo&_nc_oc=AdlZELbUbSanzkgp4c4AxgEybKzAmQQGm5_NtGSgasZ5WBHW3Y28PpPdMOs5YSUVkS4&_nc_zt=23&_nc_ht=scontent.fsxb1-1.fna&_nc_gid=VWCgAojNj_KRIub-2tiBEA&oh=00_AfGXTdaEMkIfOqMO8D3HFP-MSZMeUDgeO3QjzKG-ki_5Xg&oe=681583DB\",\n        \"profilePhoto\": \"https://www.facebook.com/photo/?fbid=587061196887192&set=a.587061156887196\",\n        \"ratingOverall\": 94,\n        \"ratingCount\": 839,\n        \"creation_date\": \"January 26, 2009\",\n        \"ad_status\": \"This Page is not currently running ads.\",\n        \"confirmed_owner\": \"United Nations Framework Convention on Climate Change (UNFCCC) is responsible for this Page.\",\n        \"facebookId\": \"100067499490396\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"63044235866\"\n        }\n    }\n]\n```\n\n## What is the best Facebook scraper?\n\nYou can use any of the dedicated scrapers below if you want to scrape specific Facebook data. Each of them is built particularly for the relevant Facebook scraping case be it groups, reviews, comments or ads. Feel free to browse them:\n\n<table>\n<tr>\n<td>🕵️‍♀️ <a href=\"https://apify.com/apify/facebook-search-scraper\">Facebook Search Scraper</a></td>\n<td>🗓 <a href=\"https://apify.com/apify/facebook-events-scraper\">Facebook Events Scraper</a></td>\n<td>👥 <a href=\"https://apify.com/apify/facebook-groups-scraper\">Facebook Groups Scraper</a></td>\n</tr>\n<tr>\n<td>🕹 <a href=\"https://apify.com/apify/facebook-games-scraper\">Facebook Games Scraper</a></td>\n<td>👀 <a href=\"https://apify.com/apify/facebook-marketplace-scraper\">Facebook Marketplace Scraper</a></td>\n<td>🎞 <a href=\"https://apify.com/apify/facebook-reels-scraper\">Facebook Reels Scraper</a></td>\n</tr>\n<tr>\n<td>🌟 <a href=\"https://apify.com/apify/facebook-reviews-scraper\">Facebook Reviews Scraper</a></td>\n<td>📝 <a href=\"https://apify.com/apify/facebook-posts-scraper\">Facebook Posts Scraper</a></td>\n<td>📹 <a href=\"https://apify.com/apify/facebook-video-search-scraper\">Facebook Video Search Scraper</a></td>\n</tr>\n<tr>\n<td>💬 <a href=\"https://apify.com/apify/facebook-comments-scraper\">Facebook Comments Scraper</a></td>\n<td>👍 <a href=\"https://apify.com/apify/facebook-likes-scraper\">Facebook Likes and Reactions Scraper</a></td>\n<td>ℹ️ <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Page Contact Information</a></td>\n</tr>\n<tr>\n<td>👥 <a href=\"https://apify.com/apify/facebook-groups-scraper\">Facebook Groups Scraper</a></td>\n<td>🏞 <a href=\"https://apify.com/apify/facebook-photos-scraper\">Facebook Photos Scraper</a></td>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Brand Collaboration Scraper</a></td>\n</tr>\n<tr>\n<td>🛍️ <a href=\"https://apify.com/apify/facebook-ads-scraper\">Facebook Ads Library Scraper</a></td>\n<td>📱 <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Pages Info Scraper</a></td>\n</tr>\n</table>\n\n## ❓ FAQ\n\n### Is there a difference between scraping a Facebook page and Facebook profile?\n\nYes, there is. Facebook Pages are created for businesses, companies, non-profits, and other social causes. Those are the Facebook accounts that strive to provide \"public-first\" content and are often managed by a group of people. An easy way to distinguish between a Facebook profile and a Facebook page is that pages usually have a category of content and activity they would like to be associated with (news, software, hospitality, etc.) Facebook Pages that are particularly popular often include a blue verification badge. Facebook profiles are created for personal use.\n\nFacebook Pages Scraper can extract information from both Facebook pages and Facebook profiles. However, the data provided by each differs. **Generally, Facebook profiles contain less data**. From Facebook profile, you can typically expect: `facebookUrl`, `pageName`, `pageId`, `pageUrl`, `title`, `facebookId`, `coverPhotoUrl`, and `personalProfile` (name, gender, profile photos: small, medium, large).\n\n### Why do I see less information for some Facebook pages?\n\nSome Facebook pages have restrictions set either by Facebook or by the page owners, which can limit the information that's publicly available. Without logging into an account, access to certain details may be restricted. Logging into a Facebook account can help verify whether that's the case or whether there's an issue with the scraper itself.\n\n### Can I export Facebook Pages data using API?\n\nYes, you can access the extracted Facebook data through the Apify API. You’ll need an Apify account and your API token (available under Integrations settings in Console). Apify API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more. To access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/apify/facebook-pages-scraper/api/javascript). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/facebook-pages-scraper/api/python).\n\nClick on the [API tab](https://apify.com/apify/facebook-pages-scraper/api) for code examples or check out the [Apify API reference docs](https://docs.apify.com/api/v2) for full detail.\n\n### Can I use Facebook Pages Scraper through an MCP Server?\n\nWith Apify API, you can use Facebook Pages Scraper within your AI workflows. You can connect to the MCP Server using clients like ClaudeDesktop and LibreChat or build your own. Here's you can se up 📘 Facebook Scraper via Model Context Protocol (MCP) server, you should:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`.\n2. Send API messages using that `sessionId` to trigger the scraper.\n3. The message starts the 📘 Facebook Pages Scraper with the provided input.\n4. The response should be: `Accepted`.\n\n### Do I need proxies to scrape data from Facebook Pages?\n\nYou need proxies in general but you don't need to do anything extra to apply them if you run the scraper on the Apify platform. For successful Facebook scraping, we run [residential proxies](https://apify.com/proxy?pricing=residential-ip#pricing) in the background which are included in Apify's monthly Starter plan **($29)**.\n\n### Can I integrate data from Facebook Pages Scraper with other apps?\n\nYes. Facebook Pages Scraper can be connected with almost any cloud service or web app thanks to [integrations on the Apify platform](https://apify.com/integrations). You can **integrate with Make, Zapier, ChatGPT, Slack, Airbyte, GitHub, Google Sheets, Asana, Google Drive, Keboola, MCP Servers**, and more.\n\nYou can also use [webhooks](https://docs.apify.com/integrations/webhooks) to carry out an action whenever an event occurs, e.g., get a notification whenever Facebook Pages Scraper successfully finishes a run.\n\n### Is it legal to scrape Facebook Pages data?\n\nOur [Facebook scrapers](https://apify.com/store/categories?search=facebook&managedBy=APIFY) are ethical and **do not extract any private user data**. They only extract what the user has chosen to share publicly. However, you should be aware that your results could contain personal data. You should not scrape personal data unless you have a legitimate reason to do so.\n\nIf you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/).\n\n### Your feedback\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for Facebook Pages Scraper or simply found a bug, please create an issue on the Actor’s [Issues tab](https://apify.com/apify/facebook-pages-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "facebookUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook page that was scraped.",
+     "examples": [
+      "https://www.facebook.com/examplepage"
+     ]
+    },
+    "pageId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Unique Facebook page ID.",
+     "examples": [
+      "123456789012345"
+     ]
+    },
+    "pageUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook page.",
+     "examples": [
+      "https://www.facebook.com/examplepage"
+     ]
+    },
+    "title": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Name of the Facebook page.",
+     "examples": [
+      "Example Business"
+     ]
+    },
+    "categories": {
+     "description": "Categories or types associated with the page.",
+     "examples": [
+      [
+       "Restaurant",
+       "Italian Restaurant"
+      ]
+     ],
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "info": {
+     "description": "General information lines about the page (e.g. likes count, description).",
+     "examples": [
+      [
+       "10K likes",
+       "This is an example page."
+      ]
+     ],
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "likes": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of people who like the page.",
+     "examples": [
+      10000
+     ]
+    },
+    "followers": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of followers of the page.",
+     "examples": [
+      12000
+     ]
+    },
+    "rating": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Average star rating of the page.",
+     "examples": [
+      "4.5"
+     ]
+    },
+    "email": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Contact email address of the page.",
+     "examples": [
+      "contact@example.com"
+     ]
+    },
+    "phone": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Contact phone number of the page.",
+     "examples": [
+      "+1 555-123-4567"
+     ]
+    },
+    "address": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Physical address of the business.",
+     "examples": [
+      "123 Example St, Example City, CA 90210"
+     ]
+    },
+    "website": {
+     "description": "Website URL linked on the page.",
+     "examples": [
+      "https://example.com"
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "string",
+      "array"
+     ]
+    },
+    "websites": {
+     "description": "All website URLs linked on the page.",
+     "examples": [
+      [
+       "https://example.com"
+      ]
+     ],
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "messenger": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Messenger URL for the page.",
+     "examples": [
+      "https://m.me/examplepage"
+     ]
+    },
+    "intro": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Short introductory text from the page profile.",
+     "examples": [
+      "Welcome to our example page."
+     ]
+    },
+    "priceRange": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Price range indicator for the business.",
+     "examples": [
+      "$$"
+     ]
+    },
+    "services": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Services offered by the business.",
+     "examples": [
+      "Catering, Dine-in, Delivery"
+     ]
+    },
+    "alternativeSocialMedia": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Links to other social media accounts.",
+     "examples": [
+      "https://instagram.com/examplepage"
+     ]
+    },
+    "wifi": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Wi-Fi availability information.",
+     "examples": [
+      "Free Wi-Fi"
+     ]
+    },
+    "payment": {
+     "description": "Accepted payment methods.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "posts": {
+     "description": "Recent posts from the page.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "postDate": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "postText": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "postsImages": {
+        "anyOf": [
+         {
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "postLinks": {
+        "anyOf": [
+         {
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "postUrl": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "postStats": {
+        "anyOf": [
+         {
+          "type": "object",
+          "additionalProperties": {}
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "postComments": {
+        "anyOf": [
+         {
+          "type": "object",
+          "additionalProperties": {}
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "postId": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "personalProfile": {
+     "description": "Personal profile data (when the URL is a personal profile, not a page).",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "autoGeneratedPage": {
+     "description": "Data for auto-generated Facebook pages.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    }
+   },
+   "additionalProperties": {}
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "title",
+      "categories",
+      "likes",
+      "info",
+      "rating",
+      "email",
+      "phone",
+      "address",
+      "website",
+      "pageUrl"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "pageUrl": {
+       "label": "Facebook URL",
+       "format": "link"
+      }
+     }
+    }
+   }
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"facebook-page-scraper\",\n  \"description\": \"Extract public information from Facebook pages. Get page info, categories, number of likes, address, phone, email, services and rating (whatever is available for the given page). If you need any guidance, just <a href='https://blog.apify.com/how-to-scrape-facebook-pages-posts-comments-photos-and-more/' target='_blank' rel='noopener'>follow this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Start urls\",\n      \"description\": \"Provide urls of Facebook pages you want to get information from. Only works on facebook pages, not personal profiles (not even public ones).\",\n      \"default\": [],\n      \"prefill\": [\n        {\n          \"url\": \"https://www.facebook.com/copperkettleyqr/\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.facebook.com/copperkettleyqr/\"\n        },\n        {\n          \"url\": \"https://www.facebook.com/HiltonGardenInnMontrealAirport/\"\n        }\n      ],\n      \"type\": \"array\",\n      \"uniqueItems\": true,\n      \"editor\": \"requestListSources\"\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

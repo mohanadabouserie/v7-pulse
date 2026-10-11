@@ -1,0 +1,326 @@
+{
+  "data": {
+    "id": "nH2AHrwxeTRJoN5hX",
+    "userId": "ZscMwFR5H7eCtWtyh",
+    "name": "instagram-post-scraper",
+    "username": "apify",
+    "description": "Scrape Instagram posts. Just add one or more Instagram usernames and get your data in seconds including caption, metrics, images, mentions, coauthors, recent comments, sponsored status, video duration, views. Export scraped data, schedule scraper via API, integrate with other tools or AI workflows.",
+    "isPublic": true,
+    "createdAt": "2021-11-24T13:35:27.668Z",
+    "modifiedAt": "2026-10-03T08:37:43.105Z",
+    "taggedBuilds": {
+      "latest": {
+        "buildId": "YpOHYnCZHphs1LJjT",
+        "finishedAt": "2026-10-02T13:19:29.797Z",
+        "buildNumberInt": 612,
+        "buildNumber": "0.0.612"
+      }
+    },
+    "stats": {
+      "totalBuilds": 3352,
+      "totalRuns": 57453591,
+      "totalUsers": 135526,
+      "totalUsers7Days": 7167,
+      "totalUsers30Days": 13451,
+      "totalUsers90Days": 24291,
+      "lastRunStartedAt": "2026-10-04T19:00:13.045Z",
+      "totalMetamorphs": 1,
+      "publicActorRunStats30Days": {
+        "ABORTED": 603,
+        "FAILED": 73,
+        "SUCCEEDED": 6618302,
+        "TIMED-OUT": 5836,
+        "TOTAL": 6624814
+      },
+      "actorReviewCount": 139,
+      "actorReviewRating": 4.285074904505706,
+      "bookmarkCount": 1233
+    },
+    "versions": [
+      {
+        "versionNumber": "0.0",
+        "sourceType": "GIT_REPO",
+        "buildTag": "latest"
+      },
+      {
+        "versionNumber": "0.98",
+        "sourceType": "SOURCE_FILES"
+      },
+      {
+        "versionNumber": "0.99",
+        "sourceType": "GIT_REPO",
+        "buildTag": null
+      }
+    ],
+    "defaultRunOptions": {
+      "build": "latest",
+      "timeoutSecs": 20000,
+      "memoryMbytes": 1024
+    },
+    "exampleRunInput": {
+      "body": "{ \"helloWorld\": 123 }",
+      "contentType": "application/json; charset=utf-8"
+    },
+    "categories": [
+      "SOCIAL_MEDIA"
+    ],
+    "isDeprecated": false,
+    "title": "Instagram Post Scraper",
+    "pictureUrl": "https://apify-image-uploads-prod.s3.amazonaws.com/nH2AHrwxeTRJoN5hX/HtJ62Ye2i8MDd67os-Instagram_Post_Scraper.png",
+    "seoTitle": "📝 Instagram Post Scraper",
+    "seoDescription": "Scrape Instagram post details. Get likes&views metrics, coauthors, mentions, images, hashtags, timestamp without the official Instagram API.",
+    "pricingInfos": [
+      {
+        "pricingModel": "PRICE_PER_DATASET_ITEM",
+        "pricePerUnitUsd": 0.0023,
+        "reasonForChange": "",
+        "unitName": "results",
+        "startedAt": "2024-08-14T00:00:00.000Z",
+        "createdAt": "2024-07-30T08:23:22.190Z",
+        "apifyMarginPercentage": 0.2,
+        "notifiedAboutFutureChangeAt": "2024-07-30T08:23:57.434Z",
+        "notifiedAboutChangeAt": "2024-08-14T00:39:16.749Z"
+      },
+      {
+        "pricingModel": "PRICE_PER_DATASET_ITEM",
+        "reasonForChange": null,
+        "tieredPricing": {
+          "FREE": {
+            "tieredPricePerUnitUsd": 0.0027
+          },
+          "BRONZE": {
+            "tieredPricePerUnitUsd": 0.0023
+          },
+          "SILVER": {
+            "tieredPricePerUnitUsd": 0.002
+          },
+          "GOLD": {
+            "tieredPricePerUnitUsd": 0.0016
+          },
+          "PLATINUM": {
+            "tieredPricePerUnitUsd": 0.001
+          },
+          "DIAMOND": {
+            "tieredPricePerUnitUsd": 0.0005
+          }
+        },
+        "unitName": "posts",
+        "createdAt": "2025-05-20T16:22:00.000Z",
+        "startedAt": "2025-05-12T16:22:00.000Z",
+        "apifyMarginPercentage": 0.2,
+        "notifiedAboutChangeAt": "2025-05-20T16:22:00.000Z"
+      },
+      {
+        "minimalMaxTotalChargeUsd": null,
+        "pricingModel": "PAY_PER_EVENT",
+        "isPriceChangeNotificationSuppressed": true,
+        "pricingPerEvent": {
+          "actorChargeEvents": {
+            "post": {
+              "eventTitle": "Post",
+              "eventDescription": "Each post written to the dataset.",
+              "isOneTimeEvent": false,
+              "eventTieredPricingUsd": {
+                "FREE": {
+                  "tieredEventPriceUsd": 0.0027
+                },
+                "BRONZE": {
+                  "tieredEventPriceUsd": 0.0023
+                },
+                "SILVER": {
+                  "tieredEventPriceUsd": 0.002
+                },
+                "GOLD": {
+                  "tieredEventPriceUsd": 0.0016
+                },
+                "PLATINUM": {
+                  "tieredEventPriceUsd": 0.001
+                },
+                "DIAMOND": {
+                  "tieredEventPriceUsd": 0.0005
+                }
+              },
+              "isPrimaryEvent": true
+            }
+          }
+        },
+        "createdAt": "2025-12-12T13:11:09.649Z",
+        "startedAt": "2025-12-12T13:11:09.649Z",
+        "apifyMarginPercentage": 0.2
+      },
+      {
+        "minimalMaxTotalChargeUsd": null,
+        "pricingModel": "PAY_PER_EVENT",
+        "isPriceChangeNotificationSuppressed": true,
+        "pricingPerEvent": {
+          "actorChargeEvents": {
+            "post": {
+              "eventTitle": "Post",
+              "eventDescription": "Each post written to the dataset.",
+              "isOneTimeEvent": false,
+              "eventTieredPricingUsd": {
+                "FREE": {
+                  "tieredEventPriceUsd": 0.0027
+                },
+                "BRONZE": {
+                  "tieredEventPriceUsd": 0.0023
+                },
+                "SILVER": {
+                  "tieredEventPriceUsd": 0.002
+                },
+                "GOLD": {
+                  "tieredEventPriceUsd": 0.0016
+                },
+                "PLATINUM": {
+                  "tieredEventPriceUsd": 0.001
+                },
+                "DIAMOND": {
+                  "tieredEventPriceUsd": 0.0005
+                }
+              },
+              "isPrimaryEvent": true
+            }
+          }
+        },
+        "createdAt": "2026-02-20T11:54:40.625Z",
+        "startedAt": "2026-02-20T11:54:40.625Z",
+        "apifyMarginPercentage": 0.2
+      },
+      {
+        "minimalMaxTotalChargeUsd": null,
+        "pricingModel": "PAY_PER_EVENT",
+        "isPriceChangeNotificationSuppressed": true,
+        "pricingPerEvent": {
+          "actorChargeEvents": {
+            "post": {
+              "eventTitle": "Post",
+              "eventDescription": "Each post written to the dataset.",
+              "isOneTimeEvent": false,
+              "eventTieredPricingUsd": {
+                "FREE": {
+                  "tieredEventPriceUsd": 0.0017
+                },
+                "BRONZE": {
+                  "tieredEventPriceUsd": 0.0015
+                },
+                "SILVER": {
+                  "tieredEventPriceUsd": 0.0013
+                },
+                "GOLD": {
+                  "tieredEventPriceUsd": 0.001
+                },
+                "PLATINUM": {
+                  "tieredEventPriceUsd": 0.0008
+                },
+                "DIAMOND": {
+                  "tieredEventPriceUsd": 0.0004
+                }
+              },
+              "isPrimaryEvent": true
+            },
+            "post-details": {
+              "eventTitle": "Post details",
+              "eventDescription": "Each post written to the dataset with detailed information.",
+              "isOneTimeEvent": false,
+              "eventTieredPricingUsd": {
+                "FREE": {
+                  "tieredEventPriceUsd": 0.001
+                },
+                "BRONZE": {
+                  "tieredEventPriceUsd": 0.0008
+                },
+                "SILVER": {
+                  "tieredEventPriceUsd": 0.0007
+                },
+                "GOLD": {
+                  "tieredEventPriceUsd": 0.0006
+                },
+                "PLATINUM": {
+                  "tieredEventPriceUsd": 0.0002
+                },
+                "DIAMOND": {
+                  "tieredEventPriceUsd": 0.0001
+                }
+              }
+            }
+          }
+        },
+        "createdAt": "2026-03-10T08:51:38.024Z",
+        "startedAt": "2026-03-10T08:51:38.024Z",
+        "apifyMarginPercentage": 0.2
+      },
+      {
+        "minimalMaxTotalChargeUsd": 0.005,
+        "pricingModel": "PAY_PER_EVENT",
+        "isPriceChangeNotificationSuppressed": false,
+        "pricingPerEvent": {
+          "actorChargeEvents": {
+            "post": {
+              "eventTitle": "Post",
+              "eventDescription": "Each post written to the dataset.",
+              "isOneTimeEvent": false,
+              "eventTieredPricingUsd": {
+                "FREE": {
+                  "tieredEventPriceUsd": 0.0017
+                },
+                "BRONZE": {
+                  "tieredEventPriceUsd": 0.0015
+                },
+                "SILVER": {
+                  "tieredEventPriceUsd": 0.0013
+                },
+                "GOLD": {
+                  "tieredEventPriceUsd": 0.001
+                },
+                "PLATINUM": {
+                  "tieredEventPriceUsd": 0.0008
+                },
+                "DIAMOND": {
+                  "tieredEventPriceUsd": 0.0004
+                }
+              },
+              "isPrimaryEvent": true
+            },
+            "post-details": {
+              "eventTitle": "Post details",
+              "eventDescription": "Each post written to the dataset with detailed information.",
+              "isOneTimeEvent": false,
+              "eventTieredPricingUsd": {
+                "FREE": {
+                  "tieredEventPriceUsd": 0.001
+                },
+                "BRONZE": {
+                  "tieredEventPriceUsd": 0.0008
+                },
+                "SILVER": {
+                  "tieredEventPriceUsd": 0.0007
+                },
+                "GOLD": {
+                  "tieredEventPriceUsd": 0.0006
+                },
+                "PLATINUM": {
+                  "tieredEventPriceUsd": 0.0002
+                },
+                "DIAMOND": {
+                  "tieredEventPriceUsd": 0.0001
+                }
+              }
+            }
+          }
+        },
+        "createdAt": "2026-07-13T08:57:46.368Z",
+        "startedAt": "2026-07-13T08:57:46.368Z",
+        "apifyMarginPercentage": 0.2
+      }
+    ],
+    "notice": "NONE",
+    "isCritical": true,
+    "isGeneric": false,
+    "hasNoDataset": false,
+    "isSourceCodeHidden": true,
+    "standbyUrl": null,
+    "actorPermissionLevel": "LIMITED_PERMISSIONS",
+    "readmeSummary": "## Instagram Post Scraper\n\nAn Instagram post scraping Actor that crawls public Instagram web pages to extract post-level metadata and media beyond official API limits; it targets individual posts or whole profiles (single or bulk) and returns structured records for each post containing captions, hashtags and mentions, tagged users and coauthors, media URLs and dimensions, alt text, post type (image, carousel/sidecar, reel/video), timestamps and posting date, owner profile information, engagement metrics (counts of likes, comments, replies, video views and play counts), a sample of recent comments with timestamps and like counts, video duration and URLs, indicators for pinned/sponsored/paid-partnership posts and comment status, and child-post/carousel item data. The Actor supports large-scale profile or URL processing, date-based filtering and pinned-post inclusion controls, producing post-level metadata useful for analytics, monitoring, and trend extraction.\n\n## Use cases\n\n- Extract full post-level metadata and media for analytics and reporting (captions, hashtags, mentions, tagged users, images/videos, alt text, dimensions).  \n- Collect engagement metrics and temporal metadata for trend analysis and post-type performance comparison.  \n- Monitor content published by creators or competitors across multiple profiles at scale.  \n- Sample recent comments with timestamps and likes for sentiment or engagement analysis.  \n- Bulk-process lists of profiles or post URLs for large-scale social media data collection.  \n- Gather reel/video-specific metrics (view/play counts and duration) for video performance measurement.",
+    "deploymentKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5yeRSz+PAyzcP38RzT5oE2jtDdxtRr3eqBcczvLRtyxCuj3GBLh6OhmOtDVWbHjptoaBB1+bzn/Suuh1+sC/q5qEvP4vDQ7x+BccgWz3n6WzJjg1FXqgnSm0wKN1oEgGcmeQOo79mG508pBmq/zPCMlES6QtnxzU245Li6RAlV+7YCvDFwGTQruQBYF/7qCKsumQMfWQFACaq15l86qh7TDgHGsvQBVZ2jCwBZi3/56ToYGZqelU1tLsJUNuH557TK1Zg7YuTrtLBUx0dC1tifzXwici4/4msR5TFEcVLxFvNqkMf7PO0JDlI/vGGgUzSUlPKCRnncQU9mhBqN+yP \n"
+  }
+}

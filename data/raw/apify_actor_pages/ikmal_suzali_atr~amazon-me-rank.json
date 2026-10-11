@@ -1,0 +1,94 @@
+{
+ "act": {
+  "title": "Amazon Middle East Keyword Rank Tracker",
+  "users30d": 1,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Amazon Middle East Keyword Rank Tracker\n\nTracks where any brand ranks for a keyword on amazon.ae, amazon.sa and amazon.eg, and which competitors hold the sponsored slots above it. Every result on the search page is captured in order, organic and paid alike, with price, rating and review count attached. Run it daily on your keyword set to see rank movement, new entrants and ad pressure in the Gulf and Egypt.\n\n## What you get\n\n- The full search page in shopper order: `keyword`, `page`, `position` and one row per result.\n- `is_sponsored` on every row, read from the Sponsored label on the card, so paid slots and organic ranks are separable.\n- Competitor pricing at the moment of capture: `price`, `original_price` and `currency` (AED, SAR or EGP).\n- Social proof next to the rank: `rating`, `rating_count` and `badges`.\n- Identity per result: `asin`, `name`, `brand`, `image_url` and `product_url`.\n- `total_results` for the keyword, the `delivery` line on the card, and `captured_at` on every row for a clean time series.\n\n## Input\n\nGive it keywords and a storefront. The defaults are sensible for a daily rank pull.\n\n```json\n{\n  \"keywords\": [\"shampoo\"],\n  \"locale\": \"ae\",\n  \"pages\": 2,\n  \"proxyConfiguration\": { \"useApifyProxy\": true, \"apifyProxyGroups\": [\"RESIDENTIAL\"], \"apifyProxyCountry\": \"AE\" },\n  \"delayMs\": 1500,\n  \"callsPerSession\": 80\n}\n```\n\n- `keywords` (required): the search terms to rank. Duplicates are ignored.\n- `locale`: `ae` for amazon.ae, `sa` for amazon.sa, `eg` for amazon.eg. Default `ae`.\n- `pages`: result pages per keyword. Amazon exposes at most 7.\n- `proxyConfiguration`: residential proxy in the storefront's country. The actor already defaults to residential AE.\n\n## Output\n\nOne row per search result position.\n\n```json\n{\n  \"platform\": \"amazon-me\",\n  \"locale\": \"ae\",\n  \"keyword\": \"shampoo\",\n  \"page\": 1,\n  \"position\": 1,\n  \"id\": \"B08Y155F2X\",\n  \"asin\": \"B08Y155F2X\",\n  \"name\": \"Redken Volume Injection Shampoo For Fine Hair | Lift & Volume | 300ml\",\n  \"brand\": null,\n  \"price\": 99.17,\n  \"original_price\": null,\n  \"currency\": \"AED\",\n  \"rating\": 4.4,\n  \"rating_count\": 3200,\n  \"in_stock\": true,\n  \"is_sponsored\": true,\n  \"badges\": [],\n  \"delivery\": \"FREE delivery Mon, 14 Sep on your first order\",\n  \"product_url\": \"https://www.amazon.ae/dp/B08Y155F2X\",\n  \"total_results\": 10000,\n  \"captured_at\": \"2026-09-12T03:35:25.740Z\"\n}\n```\n\n`seller` is always null on search rows, Amazon does not print it on a result card. `brand` is null for most products: today's Amazon cards carry no brand line, and the brand is part of `name`. It is filled for books and media, where the card prints a byline. For a reliable brand per product, pass the ASINs to the matching Amazon product details actor. `original_price` is null when nothing is struck through.\n\n## Use cases\n\n- Daily keyword rank tracking for your own ASINs: filter on `brand` or `asin` and chart `position` over `captured_at`.\n- Share of search: count your rows against all rows per `keyword` and `page`.\n- Ad-slot share: `is_sponsored` shows who is buying the top of page one and how that changes week to week.\n- Competitor price watching on the terms you care about, using `price` and `original_price`.\n\n## Notes and limits\n\n- Amazon serves at most 7 result pages per keyword, so `pages` above 7 gains nothing. A page carries roughly 48 to 60 results.\n- A residential proxy inside the storefront's country is required. Datacentre addresses get a captcha or a bot interstitial.\n- Sponsored detection is per card and reflects the auction at capture time. Two runs an hour apart can legitimately differ.\n- A keyword that returns nothing is reported as an empty capture with its context, not counted as a clean capture.\n- Live runs: amazon.ae \"shampoo\" over 2 pages returned 108 rows with 13 sponsored, amazon.sa over 3 pages returned 151 rows, amazon.eg over 1 page returned 60 rows.\n\n## FAQ\n\n**Do I need a proxy?** Yes. Use a residential proxy in the storefront's country, AE for amazon.ae, SA for amazon.sa, EG for amazon.eg. The actor already defaults to residential AE.\n\n**How many results can I get?** Up to 7 pages per keyword, roughly 48 to 60 results a page, so about 300 to 400 rows per keyword per run.\n\n**Does it need a login or an API key?** No. Only public search pages, no Amazon account and no advertising credentials.\n\n**How is a sponsored slot detected?** From the Sponsored label Amazon prints on the result card, so `is_sponsored` matches what a shopper in that country sees.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "title": "Amazon Middle East rank",
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "transformation": {
+     "fields": [
+      "keyword",
+      "page",
+      "position",
+      "is_sponsored",
+      "id",
+      "name",
+      "brand",
+      "price",
+      "original_price",
+      "currency",
+      "rating",
+      "rating_count",
+      "product_url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "keyword": {
+       "label": "keyword",
+       "format": "text"
+      },
+      "page": {
+       "label": "page",
+       "format": "number"
+      },
+      "position": {
+       "label": "position",
+       "format": "number"
+      },
+      "is_sponsored": {
+       "label": "is sponsored",
+       "format": "boolean"
+      },
+      "id": {
+       "label": "id",
+       "format": "text"
+      },
+      "name": {
+       "label": "name",
+       "format": "text"
+      },
+      "brand": {
+       "label": "brand",
+       "format": "text"
+      },
+      "price": {
+       "label": "price",
+       "format": "number"
+      },
+      "original_price": {
+       "label": "original price",
+       "format": "number"
+      },
+      "currency": {
+       "label": "currency",
+       "format": "text"
+      },
+      "rating": {
+       "label": "rating",
+       "format": "number"
+      },
+      "rating_count": {
+       "label": "rating count",
+       "format": "number"
+      },
+      "product_url": {
+       "label": "product url",
+       "format": "link"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Amazon Middle East — Keyword Rank\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"keywords\": {\n      \"title\": \"Keywords\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Search keywords to rank. Duplicates are ignored.\",\n      \"prefill\": [\n        \"shampoo\"\n      ]\n    },\n    \"locale\": {\n      \"title\": \"Storefront\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"ae\",\n        \"sa\",\n        \"eg\"\n      ],\n      \"enumTitles\": [\n        \"UAE (amazon.ae)\",\n        \"Saudi Arabia (amazon.sa)\",\n        \"Egypt (amazon.eg)\"\n      ],\n      \"default\": \"ae\",\n      \"description\": \"Which Amazon storefront.\",\n      \"editor\": \"select\"\n    },\n    \"pages\": {\n      \"title\": \"Pages per keyword\",\n      \"type\": \"integer\",\n      \"description\": \"Result pages to capture per keyword. Leave at 0 to capture every result page; the run stops as soon as the results end.\",\n      \"default\": 0,\n      \"minimum\": 0,\n      \"maximum\": 7,\n      \"editor\": \"number\",\n      \"prefill\": 0\n    },\n    \"delayMs\": {\n      \"title\": \"Delay between calls (ms)\",\n      \"type\": \"integer\",\n      \"description\": \"Pause between page fetches.\",\n      \"default\": 1500,\n      \"minimum\": 500,\n      \"editor\": \"number\"\n    },\n    \"callsPerSession\": {\n      \"title\": \"Calls per session\",\n      \"type\": \"integer\",\n      \"description\": \"Re-mint the session after this many page fetches.\",\n      \"default\": 80,\n      \"minimum\": 5,\n      \"editor\": \"number\"\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"Proxy\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"description\": \"On the Apify platform this decides egress. Residential proxy in the storefront's country is recommended (AE for the default locale). On our own servers it is ignored and our residential proxy is used.\",\n      \"default\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ],\n        \"apifyProxyCountry\": \"AE\"\n      }\n    }\n  },\n  \"required\": [\n    \"keywords\"\n  ]\n}"
+}

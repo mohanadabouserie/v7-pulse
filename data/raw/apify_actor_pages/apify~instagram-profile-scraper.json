@@ -1,0 +1,473 @@
+{
+ "act": {
+  "title": "Instagram Profile Scraper",
+  "users30d": 30463,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "> **🚀 New feature: About profile**. You can now scrape information about when the user joined Instagram, got verified, where they are from, or how many times they’ve changed the username. Available as a paid add-on. Try it out and share your feedback in a review!\n\n## What can Instagram Profile Scraper do?\n\nOur Instagram Profile Scraper **scrape data from public Instagram profiles** beyond what the Instagram API allows. Just **add one or more Instagram usernames, profile URLs, or profile IDs**, and you're ready to:\n\n👤 Extract **Instagram** **data at scale from any public profile** with no limits on requests\n\n🌐 Get **contact details, links, and websites**, if listed in bio\n\n✅ **Categorize an account by type**: business/private status, category, number of followers/follows, check verification, content stats, and join date\n\n🪢 Map out **related accounts to get a broader view of the niche**\n\n🎥 Get an overview of the **most recent content and its stats** – posts, videos, highlights reels, plus the latest 12 posts with details\n\n⬇️ **Download Instagram basic profile** data in JSON, CSV, Excel, or other formats\n\n🦾 Export posts data via SDKs (Python & Node.js), use **API Endpoints & webhooks**\n\n🤳 Explore our other [social media scrapers](https://apify.com/store/categories/social-media-scrapers?search=instagram&managedBy=APIFY)\n\nYou can use Instagram Profile Scraper to discover creators and businesses by analyzing bios, follower metrics, posting activity, and collecting any contact details or websites they’ve shared. Other options include market research and tracking competitors.\n\n## What data can I scrape from Instagram profiles?\n\nUsing this Instagram Profile API, you will be able to extract the following Instagram user data:\n\n<table>\n<tr>\n<td>👤 Profile name</td>\n<td>🔗 Profile URL</td>\n<td>🆔 Profile ID</td>\n<td>📝 Profile bio</td>\n</tr>\n<tr>\n<td>🌐 External URLs (websites)</td>\n<td>👥 Number of profile followers</td>\n<td>➡️ Number of profile follows</td>\n<td>🧑‍🤝‍🧑 Related profiles</td>\n</tr>\n<tr>\n<td>📍 Location (if available)</td>\n<td>🔁 Username change count</td>\n<td>🕒 Join date</td>\n<td>🆕 Is the user recently joined?</td>\n</tr>\n<tr>\n<td>🎥 Total video count</td>\n<td>📮 Total posts count</td>\n<td>📚 Highlight reels count</td>\n<td>🪪 Facebook ID</td>\n</tr>\n<tr>\n<td>✅ Is user verified</td> \n<td>⏱️ When the account got verified</td>\n<td>💼 Is it a business or private account?</td>\n<td>🏢 Business category</td>\n</tr>\n<tr>\n<td>📷 Profile pic URL</td>\n<td>📯 Latest image posts, carousels, and videos (12) with details</td>\n<td>📽️ Number of IGTV videos</td>\n<td>📈 Latest IGTV videos (12) with details</td>\n</tr>\n</table>\n\n> If you're not sure which profiles to extract data from, let's find them first. To **find the right profiles to scrape for a niche**, first use the keyword search by users in 🔗 [Instagram Search Scraper](https://apify.com/apify/instagram-search-scraper). You can then reuse the resulting list as an input for Instagram Profile Scraper.\n\n> And another tip: since both Meta platforms users share a username, you can **extract data from both Instagram and Threads at once**. To do so, check out our 🔗 [Threads Profile Scraper](https://apify.com/apify/threads-profile-api-scraper).\n\n## How to scrape data from Instagram profiles?\n\nInstagram Profile Scraper is designed to be fast and easy to use, so there aren't too many parameters or settings. Just follow the steps below:\n\n1. [Create](https://console.apify.com/actors/dSCLg0C3YEZ83HzYX/) a free Apify account.\n2. Open [Instagram Profile Scraper](https://apify.com/apify/instagram-profile-scraper).\n3. Add **one or multiple Instagram usernames, profile URLs, or profile IDs.**\n4. Click \"Save & Start\" and wait for the datasets to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nIf you want more guidance on how to use Instagram Profile Scraper, here's a full video that explains it:\n\nhttps://www.youtube.com/watch?v=eUOvDzLHNek\n\nFor more details, check out our tutorial on [how to scrape data from Instagram](https://blog.apify.com/scrape-instagram-posts-comments-and-more-21d05506aeb3/), full of tips and tricks.\n\n> If you would like to scrape not only profile info but also **profile's posts or reels** — using usernames as input as well — go for our 🔗 [Instagram Post Scraper](https://apify.com/apify/instagram-post-scraper) or 🔗 [Instagram Reels Scraper](https://apify.com/apify/instagram-reel-scraper), respectively.\n\n## How much will scraping Instagram profiles cost you?\n\nInstagram Profile Scraper works on our pay-per-event (PPE) model, meaning you’re charged for each result you receive. On the Free plan, the price is $2.60 per 1,000 results ($0.0026 per result), giving you **nearly 2,000 results for free with the $5 credit.**\n\nOn paid plans, you get discounted rates and more monthly credit. For example, on the Starter plan, it costs just $2.30 per 1,000 results, which lets you scrape **over 8,200 results per month**. Check the [pricing tab](https://apify.com/apify/instagram-profile-scraper/pricing) for full details.\n\n## ⬇️ Input\n\nTo use this Instagram account scraper, **enter either a profile URL, Instagram username, or profile ID.** You can enter them one by one or all at once using the **Bulk edit** function.\n\n<a href=\"https://console.apify.com/actors/dSCLg0C3YEZ83HzYX/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/instagram-profile-scraper-input.png?raw=true\" alt=\"Instagram Profile Scraper input\" style=\"width:70%;\">\n</a>\n\n## ⬆️ Output\n\nThe results will be wrapped into a dataset, which you can find in the **Storage** tab. Here's an excerpt from the dataset you'd get if you apply the input parameters above:\n\n<a href=\"https://console.apify.com/actors/dSCLg0C3YEZ83HzYX/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/profile%20instagram%20scraping%20dataset.png?raw=true\" alt=\"Instagram Profile Scraper output\" style=\"width:100%;\">\n</a>\n\nBesides the table view, you can also view your data as JSON, as well as download it as CSV, XML, Excel file, or through an API. Here’s an abridged version of the output for NASA’s profile.\n\n### 👤 Extracted Instagram Profile data sample\n\nYou can export the data in common formats such as JSON, XML, CSV, or Excel. The JSON sample below is shortened for easier viewing. For details about extensive profile dataset, check the ❓[FAQ](https://apify.com/apify/instagram-profile-scraper#faq).\n\n```json\n[\n\t{\n  \"inputUrl\": \"https://www.instagram.com/nasa\",\n  \"id\": \"528817151\",\n  \"username\": \"nasa\",\n  \"url\": \"https://www.instagram.com/nasa\",\n  \"fullName\": \"NASA\",\n  \"biography\": \"🚀 🌎  Exploring the universe and our home planet. Verification: nasa.gov/socialmedia\",\n  \"about\": {\n    \"accounts_with_shared_followers\": null,\n    \"country\": \"United States\",\n    \"date_joined\": \"August 2013\",\n    \"date_joined_as_timestamp\": 1375315200,\n    \"date_verified\": null,\n    \"date_verified_as_timestamp\": null,\n    \"former_usernames\": 0,\n    \"id\": 528817151,\n    \"is_verified\": true,\n    \"username\": \"nasa\"\n  },\n  \"followersCount\": 96323377,\n  \"followsCount\": 80,\n  \"postsCount\": 4519,\n  \"highlightReelCount\": 7,\n  \"igtvVideoCount\": 171,\n  \"isBusinessAccount\": true,\n  \"joinedRecently\": false,\n  \"hasChannel\": false,\n  \"businessCategoryName\": \"Government Agencies\",\n  \"private\": false,\n  \"verified\": true,\n  \"externalUrl\": \"https://www.nasa.gov/\",\n  \"externalUrlShimmed\": \"https://l.instagram.com/?u=https%3A%2F%2Fwww.nasa.gov%2F&e=AT1ZDjgJaY0R3J_5BPBhAkOVzpnYahFjiPfJyjhlnLEYYuNsNcNWRb82YQFgO2KIr0y4-5RQxLwKrzkenyPD_X8lCwG1152r\",\n  \"externalUrls\": [\n    {\n      \"title\": \"Launches & Landings\",\n      \"lynx_url\": \"https://l.instagram.com/?u=http%3A%2F%2Fnasa.gov%2Fevents&e=AT3hgq2YyF3WlvjYHI2JwZbU2zCrM0mxkyXi6ng_rLM013yQVU42kfTDkEniCuGcLymBVrWAI63WDRN-mGG9ZI1iRN6E1Gza\",\n      \"url\": \"http://nasa.gov/events\",\n      \"link_type\": \"external\"\n    },\n    {\n      \"title\": \"NASA+\",\n      \"lynx_url\": \"https://l.instagram.com/?u=https%3A%2F%2Fplus.nasa.gov%2F&e=AT3MvU7lsdJzSS0VVs6unWL8xGF20bNKMeveMEAdPytH_L_Jrxjv2I1xGoawVT8PbKpLj4nteArXX001dmsvqfAKIks5kC-z\",\n      \"url\": \"https://plus.nasa.gov\",\n      \"link_type\": \"external\"\n    },\n  ],\n   \"profilePicUrl\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/29090066_159271188110124_1152068159029641216_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=Gh65bXDHKlwQ7kNvwEfYy1t&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZHQIUQ7a4Apf3Of5gBsl8WIjOeYtUD5y5qsjSP0QTIaw&oe=68BDE429&_nc_sid=8b3546\",\n  \"profilePicUrlHD\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/29090066_159271188110124_1152068159029641216_n.jpg?stp=dst-jpg_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=Gh65bXDHKlwQ7kNvwEfYy1t&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZy8pFx0aFMB6vCGqyOTixf4xcabDbR696Nk9So5zGS5A&oe=68BDE429&_nc_sid=8b3546\",\n  \"relatedProfiles\": [\n    {\n      \"id\": \"953293389\",\n      \"full_name\": \"International Space Station\",\n      \"is_private\": false,\n      \"is_verified\": true,\n      \"profile_pic_url\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/524387219_18515253022013390_8734863048221656878_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zNjAuYzIifQ&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=n5Q3j5RGpyUQ7kNvwEuQbjr&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfYdsrSuRePFjZmEZ1cVxFBbv8ZG6-5GBxUh0AjU08Imeg&oe=68BDB283&_nc_sid=8b3546\",\n      \"username\": \"iss\"\n    },\n    {\n      \"id\": \"15230646745\",\n      \"full_name\": \"NASA en Español\",\n      \"is_private\": false,\n      \"is_verified\": true,\n      \"profile_pic_url\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/89602193_2056296544517035_8140307827425017856_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=bmfcz6_-JfcQ7kNvwE6o78-&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZNjVvfjFKu1YoDP7FLfQL5VAK1SPK-5034xn0D0zKPmQ&oe=68BDC908&_nc_sid=8b3546\",\n      \"username\": \"nasa_es\"\n    },\n    {\n      \"id\": \"6372512764\",\n      \"full_name\": \"Rubin Observatory\",\n      \"is_private\": false,\n      \"is_verified\": false,\n      \"profile_pic_url\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/129172974_838595436887238_6606102628994764123_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4zMjAuYzIifQ&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=auPF0Imwh6sQ7kNvwED04jo&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZ9C8VqyMuMVrOyKcG94AFFAwVlf1TI4PbEOJvUtIl-bw&oe=68BDDD5E&_nc_sid=8b3546\",\n      \"username\": \"rubin_observatory\"\n    }\n  ],\n  \"latestPosts\": [\n    {\n      \"id\": \"3697661021377407101\",\n      \"type\": \"Sidecar\",\n      \"shortCode\": \"DNQuxufAih9\",\n      \"caption\": \"Under the sea🪸⁣\\n ⁣\\nIn 2020, @NASAHubble released this image, nicknamed the “Cosmic Reef,” to celebrate 30 years in space. It shows a giant red nebula and its smaller blue neighbor, which are both part of a vast star-forming region in the Large Magellanic Cloud, a satellite galaxy of the Milky Way, located 163,000 light-years away. In this picture, we can see how young, energetic, massive stars illuminate and sculpt their birthplace with powerful winds and searing ultraviolet radiation.⁣\\n ⁣\\nAt the heart of the big red nebula are sparkling stars, each of which are 10 to 20 times more massive than our Sun. The stars' ultraviolet radiation heats the surrounding dense gas. The massive stars also unleash fierce winds of charged particles that blast away lower-density gas, forming the bubble-like structures seen on the right, which resemble coral.⁣\\n ⁣\\nBy contrast, the seemingly isolated blue nebula at lower left was created by a solitary mammoth star 200,000 times brighter than our Sun. The blue gas was ejected by the star through a series of eruptive events during which it lost part of its outer envelope of material.⁣\\n ⁣\\nImage description: An image is split in two. In the bottom left of the first image a bright blue ring appears, slightly fading in all directions, with a small blue dot in the middle. Red and orange waves of gas ripple, arcing from top left to top right. A light blue center appears out of the sea of red, and several bright white dots shine through. In the top right, dark blue gas emanates from the blackness of space.⁣\\n\\nCredit: NASA, ESA, STScI⁣\\n ⁣\\n#NASA #Hubble #CoralReef #Nebula #Stars #Astronomy\",\n      \"hashtags\": [\n        \"NASA\",\n        \"Hubble\",\n        \"CoralReef\",\n        \"Nebula\",\n        \"Stars\",\n        \"Astronomy\"\n      ],\n      \"mentions\": [\n        \"NASAHubble\"\n      ],\n      \"url\": \"https://www.instagram.com/p/DNQuxufAih9/\",\n      \"commentsCount\": 1882,\n      \"dimensionsHeight\": 1350,\n      \"dimensionsWidth\": 1080,\n      \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/531774345_18540287185049152_7874995044152401858_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=uQXBAI_7AhcQ7kNvwEwED5m&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzY5NzY2MDk2OTgzMjgwODA4NA%3D%3D.3-ccb7-5&oh=00_AfbdGmHsoImNQrhNUJOEaoE-JcaUbufJ6uLX8bzrlXfyug&oe=68BDD977&_nc_sid=8b3546\",\n      \"images\": [\n        \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/531774345_18540287185049152_7874995044152401858_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=uQXBAI_7AhcQ7kNvwEwED5m&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzY5NzY2MDk2OTgzMjgwODA4NA%3D%3D.3-ccb7-5&oh=00_AfbdGmHsoImNQrhNUJOEaoE-JcaUbufJ6uLX8bzrlXfyug&oe=68BDD977&_nc_sid=8b3546\",\n        \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/531284406_18540287176049152_5083951218943882291_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=5yWvF2w3ZLUQ7kNvwGONSLu&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzY5NzY2MDk2OTAzNjUzMTMzMw%3D%3D.3-ccb7-5&oh=00_AfavyuwNnTr-45VBGBJzrY4h8QX9eIK3zzQQqtnmeMDULg&oe=68BDAFF6&_nc_sid=8b3546\"\n      ],\n      \"alt\": \"Photo by NASA on August 12, 2025. May be an image of text.\",\n      \"likesCount\": 601022,\n      \"timestamp\": \"2025-08-12T16:19:28.000Z\",\n      \"childPosts\": [\n        {\n          \"id\": \"3697660969832808084\",\n          \"type\": \"Image\",\n          \"shortCode\": \"DNQuw-etf6U\",\n          \"caption\": \"\",\n          \"hashtags\": [],\n          \"mentions\": [],\n          \"url\": \"https://www.instagram.com/p/DNQuw-etf6U/\",\n          \"commentsCount\": 0,\n          \"firstComment\": \"\",\n          \"latestComments\": [],\n          \"dimensionsHeight\": 1350,\n          \"dimensionsWidth\": 1080,\n          \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/531774345_18540287185049152_7874995044152401858_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=uQXBAI_7AhcQ7kNvwEwED5m&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzY5NzY2MDk2OTgzMjgwODA4NA%3D%3D.3-ccb7-5&oh=00_AfbdGmHsoImNQrhNUJOEaoE-JcaUbufJ6uLX8bzrlXfyug&oe=68BDD977&_nc_sid=8b3546\",\n          \"images\": [],\n          \"alt\": \"Photo by NASA on August 12, 2025. May be an image of text.\",\n          \"likesCount\": null,\n          \"timestamp\": null,\n          \"childPosts\": [],\n          \"ownerUsername\": \"nasa\",\n          \"ownerId\": \"528817151\"\n        },\n        {\n          \"id\": \"3697660969036531333\",\n          \"type\": \"Image\",\n          \"shortCode\": \"DNQuw9vP8aF\",\n          \"caption\": \"\",\n          \"hashtags\": [],\n          \"mentions\": [],\n          \"url\": \"https://www.instagram.com/p/DNQuw9vP8aF/\",\n          \"commentsCount\": 0,\n          \"firstComment\": \"\",\n          \"latestComments\": [],\n          \"dimensionsHeight\": 1350,\n          \"dimensionsWidth\": 1080,\n          \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/531284406_18540287176049152_5083951218943882291_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=5yWvF2w3ZLUQ7kNvwGONSLu&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzY5NzY2MDk2OTAzNjUzMTMzMw%3D%3D.3-ccb7-5&oh=00_AfavyuwNnTr-45VBGBJzrY4h8QX9eIK3zzQQqtnmeMDULg&oe=68BDAFF6&_nc_sid=8b3546\",\n          \"images\": [],\n          \"alt\": \"Photo by NASA on August 12, 2025. May be an image of text.\",\n          \"likesCount\": null,\n          \"timestamp\": null,\n          \"childPosts\": [],\n          \"ownerUsername\": \"nasa\",\n          \"ownerId\": \"528817151\"\n        }\n      ],\n      \"ownerUsername\": \"nasa\",\n      \"ownerId\": \"528817151\",\n      \"isPinned\": true,\n      \"isCommentsDisabled\": false\n    },\n    {\n      \"id\": \"3673013061754164654\",\n      \"type\": \"Image\",\n      \"shortCode\": \"DL5KetROhWu\",\n      \"caption\": \"At NASA, we’re redefining the mirror selfie.⁣\\n⁣\\nAstronaut Zena Cardman pauses to inspect her spacesuit’s wrist mirror, a small but crucial tool for reading suit displays and controls. This portrait, taken at @NASAJohnson in Houston, Texas, shows one of the many small moments of preparation in an astronaut’s journey to spaceflight.⁣\\n⁣\\nCardman, a Virginia native, is gearing up for her first spaceflight to the International Space Station as part of our SpaceX Crew-11 mission, scheduled to launch later this summer. Selected in the “Turtles” astronaut class of 2017, she has a research background in geobiology, with degrees in biology and marine sciences from the University of North Carolina, Chapel Hill.⁣\\n⁣\\nHer experience includes multiple expeditions to Antarctica as part of her studies of life in extreme environments like caves and deep-sea sediments. Now, she’s taking on the next frontier.⁣\\n⁣\\nThis photo was one of NASA’s 2024 Photos of the Year, capturing the calm determination required in every moment of an astronaut’s training—even routine spacesuit checks.⁣\\n⁣\\nImage description: Astronaut Zena Cardman wears a white spacesuit and looks down while adjusting a small mirror on her wrist, attached to her left glove. She is photographed against a dark background at Johnson Space Center.⁣\\n⁣\\nCredit: NASA/Josh Valcarcel⁣\\n⁣\\n#NASA #Astronaut #SpaceX #NASAPhotoOfTheYear #MirrorSelfie\",\n      \"hashtags\": [\n        \"NASA\",\n        \"Astronaut\",\n        \"SpaceX\",\n        \"NASAPhotoOfTheYear\",\n        \"MirrorSelfie\"\n      ],\n      \"mentions\": [\n        \"NASAJohnson\"\n      ],\n      \"url\": \"https://www.instagram.com/p/DL5KetROhWu/\",\n      \"commentsCount\": 521,\n      \"dimensionsHeight\": 719,\n      \"dimensionsWidth\": 1080,\n      \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/516513244_18534178162049152_7010594162229503875_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=GwXFdCq9-AcQ7kNvwHYp_CU&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzY3MzAxMzA2MTc1NDE2NDY1NA%3D%3D.3-ccb7-5&oh=00_AfaCj1mF0R0FVaJjPlozo5z_xcgBjcSZ9kGNwSrOpNKoJA&oe=68BDC66A&_nc_sid=8b3546\",\n      \"images\": [],\n      \"alt\": \"Photo by NASA on July 09, 2025. May be an image of 1 person, glasses, gas mask and text.\",\n      \"likesCount\": 174591,\n      \"timestamp\": \"2025-07-09T16:08:25.000Z\",\n      \"childPosts\": [],\n      \"ownerUsername\": \"nasa\",\n      \"ownerId\": \"528817151\",\n      \"isPinned\": true,\n      \"isCommentsDisabled\": false\n    },\n    {\n      \"id\": \"3710009743416087462\",\n      \"type\": \"Video\",\n      \"shortCode\": \"DN8mjSFjdOm\",\n      \"caption\": \"We’re going up, up, up, it’s our moment! 🎶 \\n\\nThe Nancy Grace Roman Space Telescope, which will unveil the cosmos in ways never before possible, has passed its deployment test at @NASAGoddard. The test ensures Roman’s solar panels and deployable aperture cover will unfold as planned in space.\\n\\nRoman, which will look for planets beyond our solar system and study essential questions in dark energy and astrophysics, is scheduled to lift off no later than May 2027 with the team aiming for as early as fall 2026.\\n\\nCheck out the link in @NASAUniverse’s Roman story highlight to learn more! \\n\\nVideo description is in the comments.\\n\\nVideo credit: NASA Goddard Space Flight Center \\n\\nMusic credit: “History in Motion” by Fred Dubois [SACEM], Koka Media [SACEM], Universal Publishing Production Music France [SACEM], and Universal Production Music\\n\\n#NASARoman #Astrophysics #SpaceTelescope\",\n      \"hashtags\": [\n        \"NASARoman\",\n        \"Astrophysics\",\n        \"SpaceTelescope\"\n      ],\n      \"mentions\": [\n        \"NASAGoddard.\",\n        \"NASAUniverse’s\"\n      ],\n      \"url\": \"https://www.instagram.com/p/DN8mjSFjdOm/\",\n      \"commentsCount\": 429,\n      \"dimensionsHeight\": 853,\n      \"dimensionsWidth\": 480,\n      \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/540339845_18543281020049152_374907486710299024_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=BI6ApvowgkAQ7kNvwFHMRMF&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfaqzI2_uxUQzYx9wP5NePb9Dkx7aIMsHkPLp1Ckzpg2lw&oe=68BDC0BC&_nc_sid=8b3546\",\n      \"images\": [],\n      \"videoUrl\": \"https://scontent-lga3-2.cdninstagram.com/o1/v/t16/f2/m86/AQNgItj-I8c54F4JITtRKe96uTNaCh-jff0yVYtRQnctHNVjYHSK6k_5F1T8wjlcX07D0JbkKdZVT9CVgGIaIfYf60ILBtAnoEDfb7M.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=105&vs=1710745592912059_790277742&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8wMTQwMTA2MERBQTU1ODc1ODc1NkQwMDBDM0EzNTI5Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTHpBSXlBUDdLYndFekVGQUxwUXUwREQ1SklsYnFfRUFBQUYVAgLIARIAKAAYABsAFQAAJoKzhJGV5KZAFQIoAkMzLBdAU4zMzMzMzRgSZGFzaF9iYXNlbGluZV8xX3YxEQB1%2Fgdl5p0BAA%3D%3D&ccb=9-4&oh=00_AfYaF22OWN5DNeufbo4E5PxQbU8f7Z01w_ZcF7TQjo5JVQ&oe=68B9E893&_nc_sid=8b3546\",\n      \"alt\": null,\n      \"likesCount\": 53833,\n      \"videoViewCount\": 926847,\n      \"timestamp\": \"2025-08-29T17:16:11.000Z\",\n      \"childPosts\": [],\n      \"ownerUsername\": \"nasa\",\n      \"ownerId\": \"528817151\",\n      \"productType\": \"clips\",\n      \"taggedUsers\": [\n        {\n          \"full_name\": \"NASA Goddard\",\n          \"id\": \"3808579\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/259425979_4763874963660268_347188873176140064_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=Wp6boRbLcVEQ7kNvwGB9Csp&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZPE3Jd7W_Qv9C2N1BQX0bvP4iibV_HGSegnj4PgnA3yw&oe=68BDDA14&_nc_sid=8b3546\",\n          \"username\": \"nasagoddard\"\n        },\n        {\n          \"full_name\": \"NASA Universe\",\n          \"id\": \"65495240044\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/437785305_1498177207718392_5285428334541669140_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=Uaqg3YE86UoQ7kNvwEIACEK&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZ5q2ixACuwomqFYKDV0ohM6F28V920cxWzzt71zGxXWw&oe=68BDCDE6&_nc_sid=8b3546\",\n          \"username\": \"nasauniverse\"\n        }\n      ],\n      \"isCommentsDisabled\": false\n    },\n    {\n      \"id\": \"3704177173242037885\",\n      \"type\": \"Image\",\n      \"shortCode\": \"DNn4YN0M8Z9\",\n      \"caption\": \"Some people look up at clouds and see an elephant; some satellites look down at ice and spot a smiley face. 😊\\n \\nThis friendly pattern of cobalt blue water – toward the bottom of this satellite image, left of center – formed as snow and ice melted on the surface of the Greenland ice sheet earlier this summer.\\n \\nMelt ponds typically begin to dot the edges of the ice sheet in the spring, growing and occasionally connecting in a network of bright blue rivers and pools. The ponded water can drain through cracks in the ice sheet, and if it reaches bedrock at the base of the ice sheet can temporarily speed up the flow of ice toward the coast.\\n \\nThis true-color image was taken by the Landsat 9 satellite as it passed over western Greenland on July 2, 2025.\\n \\nHave a (n)ice day!\\n \\nImage description: Bright blue pools of water dot the white background of the Greenland ice sheet. There are some irregular shaped larger pools that are filled with water, but most of the features in the image appear as outlines, with water surrounding a bit of ice. In the bottom center of the image, two small melt ponds stand out at each edge of a curved line, with those features encircled by another melt pond, creating a smiling face pattern. \\n \\nCredit: NASA/USGS Landsat\\n \\n#NASA #Earth #Greenland #Meltponds #SmileyFace\",\n      \"hashtags\": [\n        \"NASA\",\n        \"Earth\",\n        \"Greenland\",\n        \"Meltponds\",\n        \"SmileyFace\"\n      ],\n      \"mentions\": [],\n      \"url\": \"https://www.instagram.com/p/DNn4YN0M8Z9/\",\n      \"commentsCount\": 444,\n      \"dimensionsHeight\": 719,\n      \"dimensionsWidth\": 1080,\n      \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-15/537496610_18541843609049152_667922901239589885_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=rfqLldfUiaMQ7kNvwGnDBJs&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&ig_cache_key=MzcwNDE3NzE3MzI0MjAzNzg4NQ%3D%3D.3-ccb7-5&oh=00_Afbe1pn4MfVJKVF2hJ4JcIIKY7CzTKwUpYeIFimpWQacmA&oe=68BDD7BE&_nc_sid=8b3546\",\n      \"images\": [],\n      \"alt\": \"Photo by NASA on August 21, 2025. May be an image of text.\",\n      \"likesCount\": 216938,\n      \"timestamp\": \"2025-08-21T16:05:55.000Z\",\n      \"childPosts\": [],\n      \"ownerUsername\": \"nasa\",\n      \"ownerId\": \"528817151\",\n      \"isCommentsDisabled\": false\n    },\n      \"latestIgtvVideos\": [\n    {\n      \"type\": \"Video\",\n      \"shortCode\": \"CqnzfuxpAKL\",\n      \"title\": \"\",\n      \"caption\": \"On April 3, we announced the team of space explorers that will embark on the first crewed Artemis mission around the Moon and back in 2024: @NASAAstronauts Reid Wiseman, @AstroVicGlover, and @Astro_Christina, and @CanadianSpaceAgency astronaut @AstroJeremy. Today, they’re taking your questions live. \\r \\rIn 2022, the uncrewed Artemis I mission successfully tested our deep exploration systems — SLS, Orion, and @NASAKennedy’s Exploration Ground Systems — with a 25.5-day journey around the Moon and back to Earth. Artemis II will launch the Orion spacecraft aboard the Space Launch System (SLS) rocket on a 10-day mission to test the Orion spacecraft’s life-support systems. \\r \\rWith #Artemis, we will land the first woman and first person of color on the lunar surface. \\r \\rThumbnail image credit: NASA/Josh Valcarcel \\r \\r#NASA #Moon #LunarMission #Astronaut #CSA #SpaceLaunchSystem #Orion #NASAKennedy #artemis\",\n      \"commentsCount\": 2378,\n      \"commentsDisabled\": false,\n      \"dimensionsHeight\": 1920,\n      \"dimensionsWidth\": 1080,\n      \"displayUrl\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.29350-15/339186499_173726455535874_7041676884942695648_n.jpg?se=7&stp=dst-jpg_e35_tt6&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=7OCX-IbqGZIQ7kNvwEiyfDa&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZWcfTe2kEx-LDWVvyD9qgo6yvKUVF6zqOU6Jo-DQLXug&oe=68BDAEE7&_nc_sid=8b3546\",\n      \"likesCount\": 330976,\n      \"videoDuration\": 1122.054,\n      \"videoViewCount\": 2430081,\n      \"id\": \"3073651751604454027\",\n      \"hashtags\": [\n        \"Artemis,\",\n        \"NASA\",\n        \"Moon\",\n        \"LunarMission\",\n        \"Astronaut\",\n        \"CSA\",\n        \"SpaceLaunchSystem\",\n        \"Orion\",\n        \"NASAKennedy\",\n        \"artemis\"\n      ],\n      \"mentions\": [\n        \"NASAAstronauts\",\n        \"AstroVicGlover,\",\n        \"Astro_Christina,\",\n        \"CanadianSpaceAgency\",\n        \"AstroJeremy.\",\n        \"NASAKennedy’s\"\n      ],\n      \"url\": \"https://www.instagram.com/p/CqnzfuxpAKL/\",\n      \"firstComment\": \"\",\n      \"latestComments\": [],\n      \"images\": [],\n      \"videoUrl\": \"https://scontent-lga3-3.cdninstagram.com/o1/v/t16/f2/m69/AQM43ZTzFdUhnFnNebJcWDTBR8GQDnOCv_XcJOQekgeiehMD4FlTRSJYobJsnbmJ3DoQwf9PniHcNoumh3UOlnq_.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uaWd0di5jMi43MjAuYmFzZWxpbmUifQ&_nc_cat=110&vs=807723887881714_3189018764&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSUNXbUFERlpsTDRhZFVFQUJyRXJ4dS02TWRwYnFDQkFBQUYVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTmptQmhxSUpQR244OVFEQUpqMmhxTC1vSFE5YnFDQkFBQUYVAgLIARIAKAAYABsBiAd1c2Vfb2lsATEVAAAmoKyRs4L58T8VAigCQzMsF0CRiDdLxqfwGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXsB2XsnQEA&ccb=9-4&oh=00_AfY6G5jD3sqZG6k-ZFnmZPey0js10VMD4mr5vGYq_8cUgw&oe=68B9CE11&_nc_sid=8b3546\",\n      \"alt\": null,\n      \"timestamp\": \"2023-04-04T17:04:37.000Z\",\n      \"childPosts\": [],\n      \"ownerUsername\": \"nasa\",\n      \"ownerId\": \"528817151\",\n      \"productType\": \"igtv\",\n      \"taggedUsers\": [\n        {\n          \"full_name\": \"NASA\",\n          \"id\": \"528817151\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/29090066_159271188110124_1152068159029641216_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=1&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=Gh65bXDHKlwQ7kNvwEfYy1t&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZHQIUQ7a4Apf3Of5gBsl8WIjOeYtUD5y5qsjSP0QTIaw&oe=68BDE429&_nc_sid=8b3546\",\n          \"username\": \"nasa\"\n        },\n        {\n          \"full_name\": \"NASA Artemis\",\n          \"id\": \"1104426670\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/243060603_348004860384021_2397564104194509360_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=RtgB0GnS5psQ7kNvwFIvpT-&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZePAc9tsK9CW_DYiznG2pGsneu-cJ3rEyWvPBTRy-lfQ&oe=68BDD9A4&_nc_sid=8b3546\",\n          \"username\": \"nasaartemis\"\n        },\n        {\n          \"full_name\": \"NASA’s Johnson Space Center\",\n          \"id\": \"673882723\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/11421977_902607023152688_677352411_a.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xNTAuYzIifQ&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=obarzbHEcKEQ7kNvwHjAzFt&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfZI5Bh5wlVQvN511QOnYKjAEK6CkAtuLQc7FDNYPSzk8w&oe=68BDDC10&_nc_sid=8b3546\",\n          \"username\": \"nasajohnson\"\n        },\n        {\n          \"full_name\": \"NASA Astronauts\",\n          \"id\": \"8328756214\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-1.cdninstagram.com/v/t51.2885-19/503939840_18271007971276215_6035321566360967661_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MDAuYzIifQ&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=cic2fKTMyTAQ7kNvwGLYyyW&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfY7zB1FSoeRRNFmMks1m2pNJOl2j9klQ3lMQghA8PseyQ&oe=68BDD969&_nc_sid=8b3546\",\n          \"username\": \"nasaastronauts\"\n        },\n        {\n          \"full_name\": \"Canadian Space Agency\",\n          \"id\": \"3517229058\",\n          \"is_verified\": true,\n          \"profile_pic_url\": \"https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/335793446_121583980771113_4538780798561187899_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QEWnPDliR8l8O8O6lrq-a6UQkmkKfPOZ27sjRSLF1eSNuG_DZx7QTwof5IFZW-nYOQ&_nc_ohc=ua_abD9s2oAQ7kNvwGw1EtK&_nc_gid=AZnTjfD_Q7X_TSnVbEhOGA&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfYmR8vtQ5TmbgaUYbwnF-P5wmwi8lsXd6To5edN-eDGTQ&oe=68BDB03A&_nc_sid=8b3546\",\n          \"username\": \"canadianspaceagency\"\n        },\n      ],\n      \"isCommentsDisabled\": false\n    },\n  ],\n  ]\n```\n\n## Want to get other details from an Instagram account?\n\nYou can use the other dedicated scrapers below if you want to scrape specific Instagram data:\n\n<table>\n<tr>\n<td>📷 <a href=\"https://apify.com/apify/instagram-post-scraper\">Instagram Post Scraper</a></td>\n<td>💬 <a href=\"https://apify.com/apify/instagram-comment-scraper\">Instagram Comments Scraper</a></td>\n</tr>\n<tr>\n<td>✅ <a href=\"https://apify.com/clockworks/tiktok-profile-scraper\">TikTok Profile Scraper</a></td>\n<td>🎞️ <a href=\"https://apify.com/apify/instagram-reel-scraper\">Instagram Reel Scraper</a></td>\n</tr>\n<tr>\n<td>#️⃣ <a href=\"https://apify.com/apify/instagram-hashtag-scraper\">Instagram Hashtag Scraper</a></td>\n<td>📊 <a href=\"https://apify.com/apify/instagram-hashtag-analytics-scraper\">Instagram Hashtag Analytics Scraper</a></td>\n</tr>\n<tr>\n<td>👥 <a href=\"https://apify.com/apify/instagram-followers-count-scraper\">Instagram Followers Count Scraper</a></td>\n<td>🏷️ <a href=\"https://apify.com/apify/instagram-tagged-scraper\">Instagram Mentions Scraper</a></td>\n</tr>\n<tr>\n<td>💾 <a href=\"https://apify.com/apify/export-instagram-comments-posts\">Export Instagram Comments and Posts Tool</a></td>\n</tr>\n<tr>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Instagram Influencer Collaboration Scraper</a></td>\n<td>🛍️ <a href=\"https://apify.com/apify/facebook-ads-scraper\">Instagram Ads Scraper</a></td>    \n</tr>\n</table>\n\n> If you're comfortable with more complex settings, use our more advanced 🔗 [Instagram Scraper](https://apify.com/apify/instagram-scraper) or 🔗 [Instagram API Scraper](https://apify.com/apify/instagram-api-scraper). They cover almost all functionalities of the dedicated scrapers.\n\n## ❓FAQ\n\n### What's the expected size of the Instagram Profile dataset?\n\nNote that the dataset can become extensive due to sections like `relatedProfiles`, `latestPosts`, and `latestIgtvVideos`. If you only need key metrics and contact information from scraped Instagram profiles, you can exclude these fields in **Storage > Dataset > Export dataset > Omit fields**.\n\n### What if I only need very basic profile info from Instagram account?\n\nIn case you need to scrape only basic profile info, such as **followers count, following count, and the last time the account posted**, you can use 👥 [Instagram Followers Count Scraper](https://apify.com/apify/instagram-followers-count-scraper). It is more optimized for a specific use case like this.\n\n### Can I get Instagram details by username?\n\nYes. All you need is the profile’s username, and the scraper will fetch all available public data from that account. This includes metrics like followers, follows, posts, engagement, and profile contact details, so you don’t need anything more than the username to start.\n\n### Can I get Instagram details by URL or ID?\n\nYes. Simply provide the profile’s URL or ID, and the scraper will extract the same set of public data as it would with a username. Using URLs can be especially handy if you already have a list of Instagram profiles from another source and want to process them directly.\n\n### Is it legal to scrape Instagram profiles?\n\nOur Instagram scrapers do not extract any private user data, such as email addresses, gender, or location. They only extract what the user has chosen to share publicly.\n\nHowever, you should be aware that your results could contain personal data. Personal data is protected by the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).\n\n### **Can I use integrations with Instagram Profile Scraper?**\n\nYou can integrate profile data scraped from Instagram with almost any cloud service or web app. We offer integrations with **Zapier, n8n, Slack, Make, Airbyte, Gumloop, CrewAI, IFTTT, Lindy, GitHub, Google Sheets, Google Drive**, [and plenty more](https://apify.com/integrations).\n\nAlternatively, you could use [webhooks](https://docs.apify.com/integrations/webhooks) to carry out an action whenever an event occurs, such as getting a notification whenever the Instagram Profile Scraper successfully finishes a run.\n\n### Can I use this Instagram data extractor with the Apify API?\n\nYes. The Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors. Meaning the API will let you access any datasets, monitor actor performance, fetch scraped profile results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/apify/instagram-profile-scraper/api/javascript). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/instagram-profile-scraper/api/python). Check out the [Apify API reference](https://docs.apify.com/api/v2) docs for all the details.\n\n### Can I get Instagram account details through an MCP Server?\n\nWith Apify API, you can use almost any Actor in conjunction with an MCP server. You can connect to the MCP server using clients like ClaudeDesktop and LibreChat, or even build your own. Read all about how you can [set up Apify Actors with MCP](https://blog.apify.com/how-to-use-mcp/).\n\nFor Instagram Profile Scraper, go to the [MCP](https://apify.com/apify/instagram-profile-scraper/api/mcp) tab and then go through the following steps:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`\n2. Send API messages using that `sessionId` to trigger the scraper\n3. The message starts the Instagram Profile Scraper with the provided input\n4. The response should be: `Accepted`\n\n### Instagram Profile Scraper not working\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for Instagram Profile Scraper or simply found a bug, please create an issue on the Actor’s [Issues tab](https://apify.com/apify/instagram-profile-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "1234567890123456789"
+     ],
+     "description": "Unique Instagram user ID"
+    },
+    "username": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "exampleuser"
+     ],
+     "description": "Instagram username of the profile"
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://www.instagram.com/exampleuser"
+     ],
+     "description": "URL of the Instagram profile"
+    },
+    "fullName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "Example User"
+     ],
+     "description": "Full display name of the user"
+    },
+    "biography": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "This is an example biography."
+     ],
+     "description": "Profile biography text"
+    },
+    "externalUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://example.com"
+     ],
+     "description": "External URL linked in the profile bio"
+    },
+    "externalUrlShimmed": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://l.instagram.com/?u=https%3A%2F%2Fexample.com"
+     ],
+     "description": "Shimmed (tracked) version of the external URL"
+    },
+    "externalUrls": {
+     "examples": [
+      [
+       {
+        "url": "https://example.com",
+        "title": "My Website"
+       }
+      ]
+     ],
+     "description": "All bio links added to the profile",
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "followersCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      50000
+     ],
+     "description": "Number of followers the profile has"
+    },
+    "followsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      500
+     ],
+     "description": "Number of accounts the profile follows"
+    },
+    "hasChannel": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the profile has an Instagram broadcast channel"
+    },
+    "highlightReelCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      5
+     ],
+     "description": "Number of highlight reels on the profile"
+    },
+    "isBusinessAccount": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the account is a business account"
+    },
+    "joinedRecently": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the account joined Instagram recently"
+    },
+    "businessCategoryName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "Clothing (Brand)"
+     ],
+     "description": "Business category of the account"
+    },
+    "private": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the profile is private"
+    },
+    "verified": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the profile has a verified badge"
+    },
+    "profilePicUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://example.com/profile/pic/123456.jpg"
+     ],
+     "description": "URL of the profile picture"
+    },
+    "profilePicUrlHD": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://example.com/profile/pic/123456_hd.jpg"
+     ],
+     "description": "URL of the high-resolution profile picture"
+    },
+    "facebookPage": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "examplefbpage"
+     ],
+     "description": "Connected Facebook page name"
+    },
+    "igtvVideoCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      12
+     ],
+     "description": "Number of IGTV videos on the profile"
+    },
+    "relatedProfiles": {
+     "examples": [
+      [
+       {
+        "id": "987654321",
+        "username": "relateduser",
+        "is_verified": false
+       }
+      ]
+     ],
+     "description": "Related Instagram profiles suggested by Instagram",
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "latestIgtvVideos": {
+     "examples": [
+      []
+     ],
+     "description": "Most recent IGTV videos from the profile",
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "postsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "examples": [
+      150
+     ],
+     "description": "Total number of posts on the profile"
+    },
+    "latestPosts": {
+     "examples": [
+      []
+     ],
+     "description": "Most recent posts from the profile",
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "hasPublicStory": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the profile currently has a public story"
+    },
+    "isRestrictedProfile": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "examples": [
+      false
+     ],
+     "description": "Whether the profile is restricted (e.g. age-gated)"
+    },
+    "restrictionReason": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "Age-restricted content"
+     ],
+     "description": "Reason the profile is restricted, if applicable"
+    },
+    "businessAddress": {
+     "examples": [
+      {
+       "street_address": "123 Example St",
+       "city_name": "Example City"
+      }
+     ],
+     "description": "Business address associated with the profile",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "fbid": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "17841400123456789"
+     ],
+     "description": "Facebook ID linked to the Instagram profile"
+    },
+    "searchTerm": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "example brand"
+     ],
+     "description": "Search term used to find this profile"
+    },
+    "searchSource": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "facebook-ads"
+     ],
+     "description": "Source of the search that found this profile"
+    },
+    "threadsNetProfile": {
+     "examples": [
+      {
+       "username": "exampleuser"
+      }
+     ],
+     "description": "Threads.net profile linked to this account",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "inputUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "https://www.instagram.com/exampleuser/"
+     ],
+     "description": "Original input URL that was used to find this profile"
+    },
+    "error": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "not_found"
+     ],
+     "description": "Error code if the profile could not be fully scraped"
+    },
+    "errorDescription": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "examples": [
+      "Profile does not exist"
+     ],
+     "description": "Human-readable description of the error"
+    },
+    "requestErrorMessages": {
+     "examples": [
+      [
+       "Error: BLOCKED\n    at getRouteDefinition ..."
+      ]
+     ],
+     "description": "Array of error messages encountered during scraping",
+     "items": {
+      "type": "string"
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    }
+   }
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "transformation": {
+     "fields": [
+      "fullName",
+      "profilePicUrl",
+      "username",
+      "postsCount",
+      "followersCount",
+      "followsCount",
+      "private",
+      "verified",
+      "isBusinessAccount",
+      "biography"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "fullName": {
+       "label": "Name",
+       "format": "text"
+      },
+      "postsCount": {
+       "label": "Number of posts",
+       "format": "text"
+      },
+      "followersCount": {
+       "label": "Followers",
+       "format": "text"
+      },
+      "followsCount": {
+       "label": "Following",
+       "format": "number"
+      },
+      "biography": {
+       "label": "Bio",
+       "format": "text"
+      }
+     }
+    }
+   }
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"Input schema for Instagram Profile scraper\",\n  \"type\": \"object\",\n  \"description\": \"Get data from Instagram profiles.\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"usernames\": {\n      \"title\": \"Instagram username(s)\",\n      \"type\": \"array\",\n      \"description\": \"Provide one or several Instagram user names you want to scrape the posts from. The actor will also handle user name IDs.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"humansofny\"\n      ]\n    },\n    \"includeAboutSection\": {\n      \"title\": \"$ Extract about account information\",\n      \"type\": \"boolean\",\n      \"description\": \"This feature is for paying users only. If enabled, the scraper will extract information about the account, including date joined, country of origin, and the profile's channel information. Please beware that the country is there ONLY if the user filled in this information.\",\n      \"default\": false\n    }\n  },\n  \"required\": [\n    \"usernames\"\n  ]\n}"
+}

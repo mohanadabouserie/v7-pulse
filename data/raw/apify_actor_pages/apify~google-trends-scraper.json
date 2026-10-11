@@ -1,0 +1,541 @@
+{
+ "act": {
+  "title": "Google Trends Scraper",
+  "users30d": 1824,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## 🌍 What is Google Trends Scraper?\n\nGoogle Trends Scraper crawls specified search queries and Google Trends URLs, and extracts data from Google Trends pages in structured formats such as JSON, CSV, XML, or Excel. With this Google Trends API, you will be able to extract the following Google Trends data:\n\n<table>\n<tr>\n<td>🔍 Search term</td>\n<td>🏙 Interest by city</td>\n</tr>\n<tr>\n<td>🌍 Interest by subregion</td>\n<td>🗺 Geo code and Geo name</td>\n</tr>\n<tr>\n<td>📊 Average interest over time</td>\n<td>📆 Timeline of the interest over time</td>\n</tr>\n<tr>\n<td>🔺 Rising related queries</td>\n<td>🔝 Top related queries</td>\n</tr>\n<tr>\n<td>⬆️ Rising related topics</td>\n<td>⭐️ Top related topics</td>\n</tr>\n</table>\n\n## 🌐 How do I use Google Trends Scraper?\n\nGoogle Trends Scraper is designed to be user-friendly, even for those who have never extracted data from the web before. Here’s how you can use Google Trends Scraper to extract data from Google Trends:\n\n1. [Create](https://console.apify.com/sign-up) an Apify account\n2. Open [Google Trends Scraper](https://apify.com/apify/google-trends-scraper).\n3. Enter your search term, location, and time range. Or use a Google Trends URL with applied filters instead.\n4. Click the “Start” button and wait for the data to be extracted.\n5. Download your data in JSON, CSV, Excel, XML, or HTML.\n\nIf you need guidance on how to run the scraper, you can read the [step-by-step guide to scraping Google Trends](https://blog.apify.com/step-by-step-guide-to-scraping-google-trends/); it includes use cases, screenshots, and examples. Or [watch a short video tutorial](https://www.youtube.com/watch?v=qtgkqKAIxjk) ▷ on YouTube.\n\n[Google Trends scraping tool](https://www.youtube.com/watch?v=qtgkqKAIxjk)\n\n## 📉 What can you do with scraped Google Trends data?\n\n🔍 **Back up your market research** by tracking the popularity of search terms and identifying trending topics\n\n📊 **Find business insights** by comparing the popularity of multiple search terms and seeing how they relate to each other\n\n📍 **Generate content ideas** by exploring regional interest and seeing which areas are searching for specific topics the most\n\n💡 **Discover related queries and topics** to gain a deeper understanding of user interests\n\n🕒 **Improve your SEO game** by analyzing search trends over time to identify seasonal patterns or long-term changes in user behavior\n\n## ⬇️ Input example\n\nYou can scrape Google Trends either **by search query** or **by a Google Trends URL**. For a full explanation of input including an example in JSON, head over to the [input tab](https://apify.com/apify/google-trends-scraper/input-schema).\n\nYou can set up the input programmatically or use the fields in the scraper’s interface:\n\n<img width=\"80%\" src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Google%20Trends%20scraping%20data.png?raw=true\" />\n\n## ⬆️ Output example\n\nThe scraped Google Trends data will be shown as a dataset which you can find in the **Output** tab. Note that the output is organized as a table for viewing convenience:\n\n<img width=\"80%\" src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Google%20trends%20API.png?raw=true\" />\n\nYou can preview all the fields and choose in which format to download Google Trends data you’ve extracted: JSON, Excel, HTML table, CSV, or XML. Here below is the same dataset in JSON:\n\n```json\n{\n  \"inputUrlOrTerm\": \"web scraping\",\n  \"searchTerm\": \"web scraping\",\n  \"interestOverTime_timelineData\": [\n    {\n      \"time\": \"1673136000\",\n      \"formattedTime\": \"Jan 8 – 14, 2023\",\n      \"formattedAxisTime\": \"Jan 8, 2023\",\n      \"value\": [\n        99\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"99\"\n      ]\n    },\n    {\n      \"time\": \"1673740800\",\n      \"formattedTime\": \"Jan 15 – 21, 2023\",\n      \"formattedAxisTime\": \"Jan 15, 2023\",\n      \"value\": [\n        96\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"96\"\n      ]\n    },\n    {\n      \"time\": \"1674345600\",\n      \"formattedTime\": \"Jan 22 – 28, 2023\",\n      \"formattedAxisTime\": \"Jan 22, 2023\",\n      \"value\": [\n        99\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"99\"\n      ]\n    },\n    {\n      \"time\": \"1674950400\",\n      \"formattedTime\": \"Jan 29 – Feb 4, 2023\",\n      \"formattedAxisTime\": \"Jan 29, 2023\",\n      \"value\": [\n        98\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"98\"\n      ]\n    },\n    {\n      \"time\": \"1675555200\",\n      \"formattedTime\": \"Feb 5 – 11, 2023\",\n      \"formattedAxisTime\": \"Feb 5, 2023\",\n      \"value\": [\n        100\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"100\"\n      ]\n    },\n    {\n      \"time\": \"1676160000\",\n      \"formattedTime\": \"Feb 12 – 18, 2023\",\n      \"formattedAxisTime\": \"Feb 12, 2023\",\n      \"value\": [\n        91\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"91\"\n      ]\n    },\n    {\n      \"time\": \"1676764800\",\n      \"formattedTime\": \"Feb 19 – 25, 2023\",\n      \"formattedAxisTime\": \"Feb 19, 2023\",\n      \"value\": [\n        98\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"98\"\n      ]\n    },\n{\n      \"time\": \"1703376000\",\n      \"formattedTime\": \"Dec 24 – 30, 2023\",\n      \"formattedAxisTime\": \"Dec 24, 2023\",\n      \"value\": [\n        80\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"80\"\n      ]\n    },\n    {\n      \"time\": \"1703980800\",\n      \"formattedTime\": \"Dec 31, 2023 – Jan 6, 2024\",\n      \"formattedAxisTime\": \"Dec 31, 2023\",\n      \"value\": [\n        81\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"81\"\n      ]\n    },\n    {\n      \"time\": \"1704585600\",\n      \"formattedTime\": \"Jan 7 – 13, 2024\",\n      \"formattedAxisTime\": \"Jan 7, 2024\",\n      \"value\": [\n        91\n      ],\n      \"hasData\": [\n        true\n      ],\n      \"formattedValue\": [\n        \"91\"\n      ],\n      \"isPartial\": true\n    }\n  ],\n  \"interestOverTime_averages\": [],\n  \"interestBySubregion\": [],\n  \"interestByCity\": [],\n  \"relatedTopics_top\": [\n    {\n      \"topic\": {\n        \"mid\": \"/m/07ykbs\",\n        \"title\": \"Web scraping\",\n        \"type\": \"Topic\"\n      },\n      \"value\": 100,\n      \"formattedValue\": \"100\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/07ykbs&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/0828v\",\n        \"title\": \"World Wide Web\",\n        \"type\": \"Topic\"\n      },\n      \"value\": 97,\n      \"formattedValue\": \"97\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/0828v&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/05z1_\",\n        \"title\": \"Python\",\n        \"type\": \"Programming language\"\n      },\n      \"value\": 29,\n      \"formattedValue\": \"29\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/05z1_&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/026sq\",\n        \"title\": \"Data\",\n        \"type\": \"Topic\"\n      },\n      \"value\": 14,\n      \"formattedValue\": \"14\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/026sq&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/085n4\",\n        \"title\": \"Website\",\n        \"type\": \"Topic\"\n      },\n      \"value\": 9,\n      \"formattedValue\": \"9\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/085n4&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/0c828v\",\n        \"title\": \"Selenium\",\n        \"type\": \"Software\"\n      },\n      \"value\": 5,\n      \"formattedValue\": \"5\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/0c828v&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/0z5n\",\n        \"title\": \"Application programming interface\",\n        \"type\": \"Type of software\"\n      },\n      \"value\": 5,\n      \"formattedValue\": \"5\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/0z5n&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/022qrc8\",\n        \"title\": \"Beautiful Soup\",\n        \"type\": \"HTML parser\"\n      },\n      \"value\": 5,\n      \"formattedValue\": \"5\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/022qrc8&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/07k1x\",\n        \"title\": \"Tool\",\n        \"type\": \"Topic\"\n      },\n      \"value\": 5,\n      \"formattedValue\": \"5\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/07k1x&date=today+12-m\"\n    },\n    {\n      \"topic\": {\n        \"mid\": \"/m/086nh\",\n        \"title\": \"Web page\",\n        \"type\": \"Topic\"\n      },\n      \"value\": 5,\n      \"formattedValue\": \"5\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=/m/086nh&date=today+12-m\"\n    },\n{\n      \"topic\": {\n        \"mid\": \"/m/0g57xn\",\n        \"title\": \"Sentiment analysis\",\n        \"type\": \"Field of study\"\n      },\n      \"value\": 50,\n      \"formattedValue\": \"+50%\",\n      \"link\": \"/trends/explore?q=/m/0g57xn&date=today+12-m\"\n    }\n  ],\n  \"relatedQueries_top\": [\n    {\n      \"query\": \"python scraping\",\n      \"value\": 100,\n      \"formattedValue\": \"100\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=python+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"python\",\n      \"value\": 96,\n      \"formattedValue\": \"96\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=python&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping python\",\n      \"value\": 94,\n      \"formattedValue\": \"94\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+python&date=today+12-m\"\n    },\n    {\n      \"query\": \"web data scraping\",\n      \"value\": 39,\n      \"formattedValue\": \"39\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+data+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"data scraping\",\n      \"value\": 38,\n      \"formattedValue\": \"38\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=data+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping in python\",\n      \"value\": 18,\n      \"formattedValue\": \"18\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+in+python&date=today+12-m\"\n    },\n    {\n      \"query\": \"what is web scraping\",\n      \"value\": 17,\n      \"formattedValue\": \"17\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=what+is+web+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"selenium web scraping\",\n      \"value\": 17,\n      \"formattedValue\": \"17\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=selenium+web+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"selenium\",\n      \"value\": 16,\n      \"formattedValue\": \"16\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=selenium&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping google\",\n      \"value\": 16,\n      \"formattedValue\": \"16\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+google&date=today+12-m\"\n    },\n    {\n      \"query\": \"api\",\n      \"value\": 16,\n      \"formattedValue\": \"16\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=api&date=today+12-m\"\n    },\n    {\n      \"query\": \"website scraping\",\n      \"value\": 16,\n      \"formattedValue\": \"16\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=website+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping api\",\n      \"value\": 16,\n      \"formattedValue\": \"16\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+api&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping using python\",\n      \"value\": 15,\n      \"formattedValue\": \"15\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+using+python&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping with python\",\n      \"value\": 14,\n      \"formattedValue\": \"14\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+with+python&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping tools\",\n      \"value\": 12,\n      \"formattedValue\": \"12\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+tools&date=today+12-m\"\n    },\n    {\n      \"query\": \"beautifulsoup\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=beautifulsoup&date=today+12-m\"\n    },\n    {\n      \"query\": \"beautifulsoup web scraping\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=beautifulsoup+web+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping free\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraping+free&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraper\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scraper&date=today+12-m\"\n    },\n    {\n      \"query\": \"scraper\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=scraper&date=today+12-m\"\n    },\n    {\n      \"query\": \"scrape\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=scrape&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scrape\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=web+scrape&date=today+12-m\"\n    },\n    {\n      \"query\": \"python selenium web scraping\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=python+selenium+web+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"python selenium\",\n      \"value\": 11,\n      \"formattedValue\": \"11\",\n      \"hasData\": true,\n      \"link\": \"/trends/explore?q=python+selenium&date=today+12-m\"\n    }\n  ],\n  \"relatedQueries_rising\": [\n    {\n      \"query\": \"chatgpt web scraping\",\n      \"value\": 4250,\n      \"formattedValue\": \"+4,250%\",\n      \"link\": \"/trends/explore?q=chatgpt+web+scraping&date=today+12-m\"\n    },\n    {\n      \"query\": \"analisis data adalah\",\n      \"value\": 1150,\n      \"formattedValue\": \"+1,150%\",\n      \"link\": \"/trends/explore?q=analisis+data+adalah&date=today+12-m\"\n    },\n    {\n      \"query\": \"analisis data\",\n      \"value\": 750,\n      \"formattedValue\": \"+750%\",\n      \"link\": \"/trends/explore?q=analisis+data&date=today+12-m\"\n    },\n{\n      \"query\": \"playwright\",\n      \"value\": 50,\n      \"formattedValue\": \"+50%\",\n      \"link\": \"/trends/explore?q=playwright&date=today+12-m\"\n    },\n    {\n      \"query\": \"web scraping tool free\",\n      \"value\": 50,\n      \"formattedValue\": \"+50%\",\n      \"link\": \"/trends/explore?q=web+scraping+tool+free&date=today+12-m\"\n    }\n  ],\n  \"interestBy\": [\n    {\n      \"geoCode\": \"SH\",\n      \"geoName\": \"St. Helena\",\n      \"value\": [\n        100\n      ],\n      \"formattedValue\": [\n        \"100\"\n      ],\n      \"maxValueIndex\": 0,\n      \"hasData\": [\n        true\n      ]\n    },\n    {\n      \"geoCode\": \"TN\",\n      \"geoName\": \"Tunisia\",\n      \"value\": [\n        60\n      ],\n      \"formattedValue\": [\n        \"60\"\n      ],\n      \"maxValueIndex\": 0,\n      \"hasData\": [\n        true\n      ]\n    },\n    {\n      \"geoCode\": \"SG\",\n      \"geoName\": \"Singapore\",\n      \"value\": [\n        56\n      ],\n      \"formattedValue\": [\n        \"56\"\n      ],\n      \"maxValueIndex\": 0,\n      \"hasData\": [\n        true\n      ]\n    },\n    {\n      \"geoCode\": \"PK\",\n      \"geoName\": \"Pakistan\",\n      \"value\": [\n        46\n      ],\n      \"formattedValue\": [\n        \"46\"\n      ],\n      \"maxValueIndex\": 0,\n      \"hasData\": [\n        true\n      ]\n    },\n{\n      \"geoCode\": \"KM\",\n      \"geoName\": \"Comoros\",\n      \"value\": [\n        0\n      ],\n      \"formattedValue\": [\n        \"\"\n      ],\n      \"maxValueIndex\": 0,\n      \"hasData\": [\n        false\n      ]\n    },\n    {\n      \"geoCode\": \"IO\",\n      \"geoName\": \"British Indian Ocean Territory\",\n      \"value\": [\n        0\n      ],\n      \"formattedValue\": [\n        \"\"\n      ],\n      \"maxValueIndex\": 0,\n      \"hasData\": [\n        false\n      ]\n    }\n  ]\n}]\n```\n\n## 📍 Want to try other Google scrapers?\n\nUse the dedicated scrapers below if you want to scrape specific public data from Google services. Each of them is built particularly for the relevant scraping case, be it Google Places, images, Google trending searches, or Google Search Engine Results Page (SERP) data. Feel free to browse them:\n\n<table>\n<tr>\n<td>🔍 <a href=\"https://apify.com/apify/google-search-scraper\">Google Search Results Scraper</a></td>\n<td>👁 <a href=\"https://apify.com/alexey/google-lens\">Google Lens Scraper</a></td>\n</tr>\n<tr>\n<td>📍 <a href=\"https://apify.com/compass/crawler-google-places\">Google Maps Scraper</a></td>\n<td>📩 <a href=\"https://apify.com/lukaskrivka/google-maps-with-contact-details\">Google Maps Email Extractor</a></td>\n</tr>\n<tr>\n<td>📉 <a href=\"https://apify.com/hooli/google-trending-searches\">Google Trending Searches</a></td>\n<td>📰 <a href=\"https://apify.com/lhotanok/google-news-scraper\">Google News Scraper</a></td>\n</tr>\n<tr>\n<td>⭐️<a href=\"https://apify.com/compass/google-maps-reviews-scraper\">Google Maps Reviews Scraper</a></td>\n<td>🤖 <a href=\"https://apify.com/geneea/reviews-text-nlp-analyzer\">AI Text Analyzer for Google Reviews</a></td>\n</tr>\n<tr>\n<td>💼 <a href=\"https://apify.com/dan.scraper/google-jobs-scraper\">Google Jobs Scraper</a></td>\n<td>🎮 <a href=\"https://apify.com/epctex/google-play-scraper\">Google Play Scraper</a></td>\n</tr>\n</table>\n\n## ❓FAQ\n\n### Is there a Google Trends API?\n\nGoogle Trends does not offer an official API for public use. This means there isn't a dedicated Application Programming Interface provided by Google specifically for Google Trends data. But you can use scrapers and crawlers as a stand-in for a web scraping API, e.g. **📈📉[Google Trends Scraper](https://apify.com/apify/google-trends-scraper)**.\n\n### Can I use Google Trends Scraper data with the API?\n\nYes, you can do so by using the Apify API. It gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors such as this one. The API also lets you access any datasets, monitor Actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` [npm package](https://apify.com/apify/google-trends-scraper/api/client/nodejs). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/google-trends-scraper/api/client/python).\n\nCheck out the <a href=\"https://docs.apify.com/api/v2\"  target=\"_blank\"> Apify API reference</a> docs for full details or click on the <a href=\"https://apify.com/apify/google-trends-scraper/api\"  target=\"_blank\"> API tab</a> for code examples and API endpoints.\n\n### Can I create a Google Trends integration using data from this scraper?\n\nYes. Google Trends Scraper can be connected with almost any cloud service or web app thanks to <a href=\"https://apify.com/integrations\"  target=\"_blank\">integrations on the Apify platform</a>. You can integrate with Make, Zapier, Slack, Airbyte, GitHub, Google Sheets, Google Drive, LangChain, <a href=\"https://docs.apify.com/integrations\"  target=\"_blank\">and more</a>.\n\nOr you can use <a href=\"https://docs.apify.com/integrations/webhooks\"  target=\"_blank\">webhooks</a> to carry out an action whenever an event occurs, e.g. get a notification whenever Google Trends Scraper successfully finishes a run.\n\n### Can I use this Google Trends API in Python?\n\nYes, by using the Apify API. To access the [Google Trends API using Python](https://apify.com/apify/google-trends-scraper/api/client/python), use the `apify-client` PyPI package. You can find more details about the client [in the Apify Docs](https://docs.apify.com/api/client/python/).\n\n### Is it legal to scrape Google Trends data?\n\nIt is legal to scrape publicly available data from Google Trends. However, you should always review and comply with Google's terms of service and any applicable laws and regulations regarding web scraping. Additionally, be mindful of any rate limits or restrictions imposed by Google to avoid potential issues.\n\n### Not your cup of tea? Build your own scraper.\n\nGoogle Trends Scraper doesn’t exactly do what you need? You can always build one of your own! We have various [scraper templates](https://apify.com/templates) in Python, JavaScript, and TypeScript to get you started. Alternatively, you can write it from scratch using the [open-source library Crawlee](https://crawlee.dev/). You can keep the scraper to yourself or make it public by adding it to Apify Store (and [find users](https://apify.com/partners/actor-developers) for it).\n\n### Your feedback\n\nWe’re always working on improving the performance of Apify’s Actors. So if you’ve got any technical feedback for Google Trends Scraper or simply found a bug, please create an issue on the Actor’s [Issues tab](https://console.apify.com/actors/DyNQEYDj9awfGQf9A/console) in Apify Console.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "anyOf": [
+    {
+     "type": "object",
+     "properties": {
+      "inputUrlOrTerm": {
+       "type": "string",
+       "description": "The original URL or search term provided as input",
+       "examples": [
+        "bitcoin",
+        "/trends/explore?q=bitcoin&geo=US"
+       ]
+      },
+      "searchTerm": {
+       "type": "string",
+       "description": "The normalized search term extracted from the input",
+       "examples": [
+        "bitcoin",
+        "artificial intelligence"
+       ]
+      },
+      "interestOverTime_timelineData": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/TimelineDataItem"
+       },
+       "description": "Timeline data showing interest over time with data points",
+       "examples": [
+        [
+         {
+          "time": "1609459200",
+          "formattedTime": "Jan 1, 2021",
+          "formattedAxisTime": "Jan 1",
+          "value": [
+           75
+          ]
+         }
+        ]
+       ]
+      },
+      "interestOverTime_averages": {
+       "$ref": "#/definitions/Averages",
+       "description": "Calculated averages for the interest over time data",
+       "examples": [
+        [
+         {
+          "average": 68.5,
+          "percent": 100
+         }
+        ]
+       ]
+      }
+     },
+     "required": [
+      "inputUrlOrTerm",
+      "interestOverTime_averages",
+      "interestOverTime_timelineData",
+      "searchTerm"
+     ]
+    },
+    {
+     "type": "object",
+     "properties": {
+      "inputUrlOrTerm": {
+       "type": "string",
+       "description": "The original URL or search term provided as input",
+       "examples": [
+        "bitcoin",
+        "/trends/explore?q=bitcoin&geo=US"
+       ]
+      },
+      "searchTerm": {
+       "type": "string",
+       "description": "The normalized search term extracted from the input",
+       "examples": [
+        "bitcoin",
+        "artificial intelligence"
+       ]
+      },
+      "interestBySubregion": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/InterestByGeoMapDataItem"
+       },
+       "description": "Interest by geographic subregion (e.g., states, provinces)",
+       "examples": [
+        [
+         {
+          "geoCode": "US-CA",
+          "geoName": "California",
+          "value": [
+           100
+          ]
+         }
+        ]
+       ]
+      },
+      "interestBySubregionTopics": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/InterestByGeoMapDataItem"
+       },
+       "description": "Interest by subregion for related topics (optional)",
+       "examples": [
+        [
+         {
+          "geoCode": "US-NY",
+          "geoName": "New York",
+          "value": [
+           85
+          ]
+         }
+        ]
+       ]
+      },
+      "interestByCity": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/CityGeoMapDataItem"
+       },
+       "description": "Interest by city-level geography",
+       "examples": [
+        [
+         {
+          "geoCode": "US-CA-807",
+          "geoName": "San Francisco CA",
+          "value": [
+           95
+          ]
+         }
+        ]
+       ]
+      },
+      "interestByCityTopics": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/CityGeoMapDataItem"
+       },
+       "description": "Interest by city for related topics (optional)",
+       "examples": [
+        [
+         {
+          "geoCode": "US-NY-501",
+          "geoName": "New York NY",
+          "value": [
+           90
+          ]
+         }
+        ]
+       ]
+      },
+      "interestByMetro": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/MetroGeoMapDataItem"
+       },
+       "description": "Interest by metropolitan area",
+       "examples": [
+        [
+         {
+          "geoCode": "US-SF",
+          "geoName": "San Francisco-Oakland-San Jose CA",
+          "value": [
+           88
+          ]
+         }
+        ]
+       ]
+      },
+      "interestByMetroTopics": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/MetroGeoMapDataItem"
+       },
+       "description": "Interest by metro area for related topics (optional)",
+       "examples": [
+        [
+         {
+          "geoCode": "US-NY",
+          "geoName": "New York NY",
+          "value": [
+           92
+          ]
+         }
+        ]
+       ]
+      },
+      "relatedTopics_top": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/RankedKeyword"
+       },
+       "description": "Top related topics ranked by popularity",
+       "examples": [
+        [
+         {
+          "keyword": "cryptocurrency",
+          "value": 100,
+          "link": "/trends/explore?q=..."
+         }
+        ]
+       ]
+      },
+      "relatedTopics_rising": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/RankedKeyword"
+       },
+       "description": "Rising related topics with growing interest",
+       "examples": [
+        [
+         {
+          "keyword": "blockchain",
+          "value": 250,
+          "link": "/trends/explore?q=..."
+         }
+        ]
+       ]
+      },
+      "relatedQueries_top": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/RankedKeyword"
+       },
+       "description": "Top related search queries ranked by popularity",
+       "examples": [
+        [
+         {
+          "keyword": "buy bitcoin",
+          "value": 100,
+          "link": "/trends/explore?q=..."
+         }
+        ]
+       ]
+      },
+      "relatedQueries_rising": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/RankedKeyword"
+       },
+       "description": "Rising related search queries with growing interest",
+       "examples": [
+        [
+         {
+          "keyword": "bitcoin price today",
+          "value": 350,
+          "link": "/trends/explore?q=..."
+         }
+        ]
+       ]
+      },
+      "interestBy": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/InterestByGeoMapDataItem"
+       },
+       "description": "Generic interest by geographic location",
+       "examples": [
+        [
+         {
+          "geoCode": "US",
+          "geoName": "United States",
+          "value": [
+           100
+          ]
+         }
+        ]
+       ]
+      },
+      "interestOverTime_timelineData": {
+       "type": "array",
+       "items": {
+        "$ref": "#/definitions/TimelineDataItem"
+       },
+       "description": "Timeline data showing interest over time with data points",
+       "examples": [
+        [
+         {
+          "time": "1609459200",
+          "formattedTime": "Jan 1, 2021",
+          "formattedAxisTime": "Jan 1",
+          "value": [
+           75
+          ]
+         }
+        ]
+       ]
+      },
+      "interestOverTime_averages": {
+       "$ref": "#/definitions/Averages",
+       "description": "Calculated averages for the interest over time data",
+       "examples": [
+        [
+         {
+          "average": 68.5,
+          "percent": 100
+         }
+        ]
+       ]
+      }
+     },
+     "required": [
+      "inputUrlOrTerm",
+      "interestBy",
+      "interestByCity",
+      "interestByMetro",
+      "interestBySubregion",
+      "interestOverTime_averages",
+      "interestOverTime_timelineData",
+      "relatedQueries_rising",
+      "relatedQueries_top",
+      "relatedTopics_rising",
+      "relatedTopics_top",
+      "searchTerm"
+     ]
+    }
+   ],
+   "description": "Main output data structure containing Google Trends results",
+   "definitions": {
+    "TimelineDataItem": {
+     "type": "object",
+     "properties": {
+      "time": {
+       "type": "string"
+      },
+      "formattedTime": {
+       "type": "string"
+      },
+      "formattedAxisTime": {
+       "type": "string"
+      },
+      "value": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       }
+      },
+      "hasData": {
+       "type": "array",
+       "items": {
+        "type": "boolean"
+       }
+      },
+      "formattedValue": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      }
+     },
+     "required": [
+      "time",
+      "formattedTime",
+      "formattedAxisTime",
+      "value",
+      "hasData",
+      "formattedValue"
+     ]
+    },
+    "Averages": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    },
+    "InterestByGeoMapDataItem": {
+     "type": "object",
+     "properties": {
+      "geoCode": {
+       "type": "string"
+      },
+      "geoName": {
+       "type": "string"
+      },
+      "value": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       }
+      },
+      "formattedValue": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "maxValueIndex": {
+       "type": "number"
+      },
+      "hasData": {
+       "type": "array",
+       "items": {
+        "type": "boolean"
+       }
+      }
+     },
+     "required": [
+      "geoCode",
+      "geoName",
+      "value",
+      "formattedValue",
+      "maxValueIndex",
+      "hasData"
+     ]
+    },
+    "CityGeoMapDataItem": {
+     "type": "object",
+     "properties": {
+      "coordinates": {
+       "type": "object",
+       "properties": {
+        "lat": {
+         "type": "number"
+        },
+        "lng": {
+         "type": "number"
+        }
+       },
+       "required": [
+        "lat",
+        "lng"
+       ]
+      },
+      "geoName": {
+       "type": "string"
+      },
+      "value": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       }
+      },
+      "formattedValue": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "maxValueIndex": {
+       "type": "number"
+      },
+      "hasData": {
+       "type": "array",
+       "items": {
+        "type": "boolean"
+       }
+      }
+     },
+     "required": [
+      "coordinates",
+      "geoName",
+      "value",
+      "formattedValue",
+      "maxValueIndex",
+      "hasData"
+     ]
+    },
+    "MetroGeoMapDataItem": {
+     "type": "object",
+     "properties": {
+      "geoCode": {
+       "type": "string"
+      },
+      "geoName": {
+       "type": "string"
+      },
+      "value": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       }
+      },
+      "formattedValue": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "maxValueIndex": {
+       "type": "number"
+      },
+      "hasData": {
+       "type": "array",
+       "items": {
+        "type": "boolean"
+       }
+      }
+     },
+     "required": [
+      "geoCode",
+      "geoName",
+      "value",
+      "formattedValue",
+      "maxValueIndex",
+      "hasData"
+     ]
+    },
+    "RankedKeyword": {
+     "type": "object",
+     "properties": {
+      "query": {
+       "type": "string"
+      },
+      "value": {
+       "type": "number"
+      },
+      "formattedValue": {
+       "type": "string"
+      },
+      "link": {
+       "type": "string"
+      },
+      "hasData": {
+       "type": "boolean"
+      }
+     },
+     "required": [
+      "query",
+      "value",
+      "formattedValue",
+      "link"
+     ]
+    }
+   }
+  },
+  "views": {}
+ },
+ "input": "{\n  \"title\": \"Google Trends Scraper input\",\n  \"description\": \"Enter one or more search terms to scrape their Google Trends data. You can also paste Google Trends URLs or load terms from a public Google Sheet.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"searchTerms\": {\n      \"title\": \"Search terms\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"(Required if 'spreadsheetId' is not provided) List of search terms to be scraped.\",\n      \"example\": [\n        \"webscraping\"\n      ],\n      \"prefill\": [\n        \"webscraping\"\n      ]\n    },\n    \"isMultiple\": {\n      \"title\": \"Multiple terms\",\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"description\": \"If checked, a comma is treated as a separator for multiple terms\",\n      \"default\": false\n    },\n    \"timeRange\": {\n      \"title\": \"Time range\",\n      \"type\": \"string\",\n      \"description\": \"Choose a predefined search's time range (defaults to 'Past 12 months')\",\n      \"editor\": \"select\",\n      \"default\": \"\",\n      \"enumTitles\": [\n        \"Past 12 months (output frequency: 7 days)\",\n        \"Past hour (output frequency: 1 minute)\",\n        \"Past 4 hours (output frequency: 1 minute)\",\n        \"Past day (output frequency: 8 minutes)\",\n        \"Past 7 days (output frequency: 1 hour)\",\n        \"Past 30 days (output frequency: 1 day)\",\n        \"Past 90 days (output frequency: 1 day)\",\n        \"Past 5 years (output frequency: 7 days)\",\n        \"2004 - present (output frequency: 1 month)\"\n      ],\n      \"enum\": [\n        \"\",\n        \"now 1-H\",\n        \"now 4-H\",\n        \"now 1-d\",\n        \"now 7-d\",\n        \"today 1-m\",\n        \"today 3-m\",\n        \"today 5-y\",\n        \"all\"\n      ],\n      \"example\": \"today 3-m\",\n      \"prefill\": \"\"\n    },\n    \"geo\": {\n      \"title\": \"Geo area\",\n      \"type\": \"string\",\n      \"description\": \"Get results from a specific geo area (defaults to 'Worldwide'). This maps to different fields in the dataset results: smaller countries like Greece return just 'interestByCity' data, while larger ones like the United States return 'interestBySubregion' data as well. When omitted (Worldwide), 'interestBy' is returned instead, which corresponds to the 'Interest by area' section on Google Trends. Note: When using Google Trends URLs from the '🔗 Use a Google Trends URL instead of search terms' section, the geo parameter from the URL's query string takes precedence over this setting. You can also use start URLs to retrieve 'interestByMetro' data for metropolitan areas by providing URLs with more specific geo regions like California (US) directly copied from Google Trends.\",\n      \"editor\": \"select\",\n      \"default\": \"\",\n      \"enumTitles\": [\n        \"Worldwide\",\n        \"Afghanistan\",\n        \"Albania\",\n        \"Algeria\",\n        \"American Samoa\",\n        \"Andorra\",\n        \"Angola\",\n        \"Anguilla\",\n        \"Antarctica\",\n        \"Antigua and Barbuda\",\n        \"Argentina\",\n        \"Armenia\",\n        \"Aruba\",\n        \"Australia\",\n        \"Austria\",\n        \"Azerbaijan\",\n        \"Bahamas\",\n        \"Bahrain\",\n        \"Bangladesh\",\n        \"Barbados\",\n        \"Belarus\",\n        \"Belgium\",\n        \"Belize\",\n        \"Benin\",\n        \"Bermuda\",\n        \"Bhutan\",\n        \"Bolivia, Plurinational State of\",\n        \"Bonaire, Sint Eustatius and Saba\",\n        \"Bosnia and Herzegovina\",\n        \"Botswana\",\n        \"Bouvet Island\",\n        \"Brazil\",\n        \"British Indian Ocean Territory\",\n        \"Brunei Darussalam\",\n        \"Bulgaria\",\n        \"Burkina Faso\",\n        \"Burundi\",\n        \"Cabo Verde\",\n        \"Cambodia\",\n        \"Cameroon\",\n        \"Canada\",\n        \"Cayman Islands\",\n        \"Central African Republic\",\n        \"Chad\",\n        \"Chile\",\n        \"China\",\n        \"Christmas Island\",\n        \"Cocos\",\n        \"Colombia\",\n        \"Comoros\",\n        \"Congo\",\n        \"Congo, the Democratic Republic of the\",\n        \"Cook Islands\",\n        \"Costa Rica\",\n        \"Cote d'Ivoire !Côte d'Ivoire\",\n        \"Croatia\",\n        \"Cuba\",\n        \"Curaçao\",\n        \"Cyprus\",\n        \"Czechia\",\n        \"Denmark\",\n        \"Djibouti\",\n        \"Dominica\",\n        \"Dominican Republic\",\n        \"Ecuador\",\n        \"Egypt\",\n        \"El Salvador\",\n        \"Equatorial Guinea\",\n        \"Eritrea\",\n        \"Estonia\",\n        \"Ethiopia\",\n        \"Falkland Islands\",\n        \"Faroe Islands\",\n        \"Fiji\",\n        \"Finland\",\n        \"France\",\n        \"French Guiana\",\n        \"French Polynesia\",\n        \"French Southern Territories\",\n        \"Gabon\",\n        \"Gambia\",\n        \"Georgia\",\n        \"Germany\",\n        \"Ghana\",\n        \"Gibraltar\",\n        \"Greece\",\n        \"Greenland\",\n        \"Grenada\",\n        \"Guadeloupe\",\n        \"Guam\",\n        \"Guatemala\",\n        \"Guernsey\",\n        \"Guinea\",\n        \"Guinea-Bissau\",\n        \"Guyana\",\n        \"Haiti\",\n        \"Heard Island and McDonald Islands\",\n        \"Holy See\",\n        \"Honduras\",\n        \"Hong Kong\",\n        \"Hungary\",\n        \"Iceland\",\n        \"India\",\n        \"Indonesia\",\n        \"Iran, Islamic Republic of\",\n        \"Iraq\",\n        \"Ireland\",\n        \"Isle of Man\",\n        \"Israel\",\n        \"Italy\",\n        \"Jamaica\",\n        \"Japan\",\n        \"Jersey\",\n        \"Jordan\",\n        \"Kazakhstan\",\n        \"Kenya\",\n        \"Kiribati\",\n        \"Korea\",\n        \"Korea\",\n        \"Kuwait\",\n        \"Kyrgyzstan\",\n        \"Lao People's Democratic Republic\",\n        \"Latvia\",\n        \"Lebanon\",\n        \"Lesotho\",\n        \"Liberia\",\n        \"Libya\",\n        \"Liechtenstein\",\n        \"Lithuania\",\n        \"Luxembourg\",\n        \"Macao\",\n        \"Macedonia, the former Yugoslav Republic of\",\n        \"Madagascar\",\n        \"Malawi\",\n        \"Malaysia\",\n        \"Maldives\",\n        \"Mali\",\n        \"Malta\",\n        \"Marshall Islands\",\n        \"Martinique\",\n        \"Mauritania\",\n        \"Mauritius\",\n        \"Mayotte\",\n        \"Mexico\",\n        \"Micronesia, Federated States of\",\n        \"Moldova, Republic of\",\n        \"Monaco\",\n        \"Mongolia\",\n        \"Montenegro\",\n        \"Montserrat\",\n        \"Morocco\",\n        \"Mozambique\",\n        \"Myanmar\",\n        \"Namibia\",\n        \"Nauru\",\n        \"Nepal\",\n        \"Netherlands[note 1]\",\n        \"New Caledonia\",\n        \"New Zealand\",\n        \"Nicaragua\",\n        \"Niger\",\n        \"Nigeria\",\n        \"Niue\",\n        \"Norfolk Island\",\n        \"Northern Mariana Islands\",\n        \"Norway\",\n        \"Oman\",\n        \"Pakistan\",\n        \"Palau\",\n        \"Palestine, State of\",\n        \"Panama\",\n        \"Papua New Guinea\",\n        \"Paraguay\",\n        \"Peru\",\n        \"Philippines\",\n        \"Pitcairn\",\n        \"Poland\",\n        \"Portugal\",\n        \"Puerto Rico\",\n        \"Qatar\",\n        \"Reunion !Réunion\",\n        \"Romania\",\n        \"Russian Federation\",\n        \"Rwanda\",\n        \"Saint Barthélemy\",\n        \"Saint Helena, Ascension and Tristan da Cunha\",\n        \"Saint Kitts and Nevis\",\n        \"Saint Lucia\",\n        \"Saint Martin\",\n        \"Saint Pierre and Miquelon\",\n        \"Saint Vincent and the Grenadines\",\n        \"Samoa\",\n        \"San Marino\",\n        \"Sao Tome and Principe\",\n        \"Saudi Arabia\",\n        \"Senegal\",\n        \"Serbia\",\n        \"Seychelles\",\n        \"Sierra Leone\",\n        \"Singapore\",\n        \"Sint Maarten\",\n        \"Slovakia\",\n        \"Slovenia\",\n        \"Solomon Islands\",\n        \"Somalia\",\n        \"South Africa\",\n        \"South Georgia and the South Sandwich Islands\",\n        \"South Sudan\",\n        \"Spain\",\n        \"Sri Lanka\",\n        \"Sudan\",\n        \"Suriname\",\n        \"Svalbard and Jan Mayen\",\n        \"Swaziland\",\n        \"Sweden\",\n        \"Switzerland\",\n        \"Syrian Arab Republic\",\n        \"Taiwan, Province of China [note 2]\",\n        \"Tajikistan\",\n        \"Tanzania, United Republic of\",\n        \"Thailand\",\n        \"Timor-Leste\",\n        \"Togo\",\n        \"Tokelau\",\n        \"Tonga\",\n        \"Trinidad and Tobago\",\n        \"Tunisia\",\n        \"Turkey\",\n        \"Turkmenistan\",\n        \"Turks and Caicos Islands\",\n        \"Tuvalu\",\n        \"Uganda\",\n        \"Ukraine\",\n        \"United Arab Emirates\",\n        \"United Kingdom\",\n        \"United States\",\n        \"United States Minor Outlying Islands\",\n        \"Uruguay\",\n        \"Uzbekistan\",\n        \"Vanuatu\",\n        \"Venezuela, Bolivarian Republic of\",\n        \"Viet Nam\",\n        \"Virgin Islands, British\",\n        \"Virgin Islands, U.S.\",\n        \"Wallis and Futuna\",\n        \"Western Sahara\",\n        \"Yemen\",\n        \"Zambia\",\n        \"Zimbabwe\"\n      ],\n      \"enum\": [\n        \"\",\n        \"AF\",\n        \"AL\",\n        \"DZ\",\n        \"AS\",\n        \"AD\",\n        \"AO\",\n        \"AI\",\n        \"AQ\",\n        \"AG\",\n        \"AR\",\n        \"AM\",\n        \"AW\",\n        \"AU\",\n        \"AT\",\n        \"AZ\",\n        \"BS\",\n        \"BH\",\n        \"BD\",\n        \"BB\",\n        \"BY\",\n        \"BE\",\n        \"BZ\",\n        \"BJ\",\n        \"BM\",\n        \"BT\",\n        \"BO\",\n        \"BQ\",\n        \"BA\",\n        \"BW\",\n        \"BV\",\n        \"BR\",\n        \"IO\",\n        \"BN\",\n        \"BG\",\n        \"BF\",\n        \"BI\",\n        \"CV\",\n        \"KH\",\n        \"CM\",\n        \"CA\",\n        \"KY\",\n        \"CF\",\n        \"TD\",\n        \"CL\",\n        \"CN\",\n        \"CX\",\n        \"Keeling Islands \",\n        \"CO\",\n        \"KM\",\n        \"CG\",\n        \"CD\",\n        \"CK\",\n        \"CR\",\n        \"CI\",\n        \"HR\",\n        \"CU\",\n        \"CW\",\n        \"CY\",\n        \"CZ\",\n        \"DK\",\n        \"DJ\",\n        \"DM\",\n        \"DO\",\n        \"EC\",\n        \"EG\",\n        \"SV\",\n        \"GQ\",\n        \"ER\",\n        \"EE\",\n        \"ET\",\n        \"Malvinas \",\n        \"FO\",\n        \"FJ\",\n        \"FI\",\n        \"FR\",\n        \"GF\",\n        \"PF\",\n        \"TF\",\n        \"GA\",\n        \"GM\",\n        \"GE\",\n        \"DE\",\n        \"GH\",\n        \"GI\",\n        \"GR\",\n        \"GL\",\n        \"GD\",\n        \"GP\",\n        \"GU\",\n        \"GT\",\n        \"GG\",\n        \"GN\",\n        \"GW\",\n        \"GY\",\n        \"HT\",\n        \"HM\",\n        \"Vatican City State \",\n        \"HN\",\n        \"HK\",\n        \"HU\",\n        \"IS\",\n        \"IN\",\n        \"ID\",\n        \"IR\",\n        \"IQ\",\n        \"IE\",\n        \"IM\",\n        \"IL\",\n        \"IT\",\n        \"JM\",\n        \"JP\",\n        \"JE\",\n        \"JO\",\n        \"KZ\",\n        \"KE\",\n        \"KI\",\n        \"the Democratic People's Republic of \",\n        \"the Republic of \",\n        \"KW\",\n        \"KG\",\n        \"LA\",\n        \"LV\",\n        \"LB\",\n        \"LS\",\n        \"LR\",\n        \"LY\",\n        \"LI\",\n        \"LT\",\n        \"LU\",\n        \"MO\",\n        \"MK\",\n        \"MG\",\n        \"MW\",\n        \"MY\",\n        \"MV\",\n        \"ML\",\n        \"MT\",\n        \"MH\",\n        \"MQ\",\n        \"MR\",\n        \"MU\",\n        \"YT\",\n        \"MX\",\n        \"FM\",\n        \"MD\",\n        \"MC\",\n        \"MN\",\n        \"ME\",\n        \"MS\",\n        \"MA\",\n        \"MZ\",\n        \"MM\",\n        \"NA\",\n        \"NR\",\n        \"NP\",\n        \"NL\",\n        \"NC\",\n        \"NZ\",\n        \"NI\",\n        \"NE\",\n        \"NG\",\n        \"NU\",\n        \"NF\",\n        \"MP\",\n        \"NO\",\n        \"OM\",\n        \"PK\",\n        \"PW\",\n        \"PS\",\n        \"PA\",\n        \"PG\",\n        \"PY\",\n        \"PE\",\n        \"PH\",\n        \"PN\",\n        \"PL\",\n        \"PT\",\n        \"PR\",\n        \"QA\",\n        \"RE\",\n        \"RO\",\n        \"RU\",\n        \"RW\",\n        \"BL\",\n        \"SH\",\n        \"KN\",\n        \"LC\",\n        \"French part \",\n        \"PM\",\n        \"VC\",\n        \"WS\",\n        \"SM\",\n        \"ST\",\n        \"SA\",\n        \"SN\",\n        \"RS\",\n        \"SC\",\n        \"SL\",\n        \"SG\",\n        \"Dutch part \",\n        \"SK\",\n        \"SI\",\n        \"SB\",\n        \"SO\",\n        \"ZA\",\n        \"GS\",\n        \"SS\",\n        \"ES\",\n        \"LK\",\n        \"SD\",\n        \"SR\",\n        \"SJ\",\n        \"SZ\",\n        \"SE\",\n        \"CH\",\n        \"SY\",\n        \"TW\",\n        \"TJ\",\n        \"TZ\",\n        \"TH\",\n        \"TL\",\n        \"TG\",\n        \"TK\",\n        \"TO\",\n        \"TT\",\n        \"TN\",\n        \"TR\",\n        \"TM\",\n        \"TC\",\n        \"TV\",\n        \"UG\",\n        \"UA\",\n        \"AE\",\n        \"GB\",\n        \"US\",\n        \"UM\",\n        \"UY\",\n        \"UZ\",\n        \"VU\",\n        \"VE\",\n        \"VN\",\n        \"VG\",\n        \"VI\",\n        \"WF\",\n        \"EH\",\n        \"YE\",\n        \"ZM\",\n        \"ZW\"\n      ]\n    },\n    \"viewedFrom\": {\n      \"title\": \"Country to view Trends from\",\n      \"type\": \"string\",\n      \"description\": \"Country for residential proxies to ensure correct results\",\n      \"prefill\": \"\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"\",\n        \"us\",\n        \"af\",\n        \"al\",\n        \"dz\",\n        \"as\",\n        \"ad\",\n        \"ao\",\n        \"ai\",\n        \"aq\",\n        \"ag\",\n        \"ar\",\n        \"am\",\n        \"aw\",\n        \"au\",\n        \"at\",\n        \"az\",\n        \"bs\",\n        \"bh\",\n        \"bd\",\n        \"bb\",\n        \"by\",\n        \"be\",\n        \"bz\",\n        \"bj\",\n        \"bm\",\n        \"bt\",\n        \"bo\",\n        \"ba\",\n        \"bw\",\n        \"bv\",\n        \"br\",\n        \"io\",\n        \"bn\",\n        \"bg\",\n        \"bf\",\n        \"bi\",\n        \"kh\",\n        \"cm\",\n        \"ca\",\n        \"cv\",\n        \"ky\",\n        \"cf\",\n        \"td\",\n        \"cl\",\n        \"cn\",\n        \"cx\",\n        \"cc\",\n        \"co\",\n        \"km\",\n        \"cg\",\n        \"cd\",\n        \"ck\",\n        \"cr\",\n        \"ci\",\n        \"hr\",\n        \"cu\",\n        \"cy\",\n        \"cz\",\n        \"dk\",\n        \"dj\",\n        \"dm\",\n        \"do\",\n        \"ec\",\n        \"eg\",\n        \"sv\",\n        \"gq\",\n        \"er\",\n        \"ee\",\n        \"et\",\n        \"fk\",\n        \"fo\",\n        \"fj\",\n        \"fi\",\n        \"fr\",\n        \"gf\",\n        \"pf\",\n        \"tf\",\n        \"ga\",\n        \"gm\",\n        \"ge\",\n        \"de\",\n        \"gh\",\n        \"gi\",\n        \"gr\",\n        \"gl\",\n        \"gd\",\n        \"gp\",\n        \"gu\",\n        \"gt\",\n        \"gn\",\n        \"gw\",\n        \"gy\",\n        \"ht\",\n        \"hm\",\n        \"va\",\n        \"hn\",\n        \"hk\",\n        \"hu\",\n        \"is\",\n        \"in\",\n        \"id\",\n        \"ir\",\n        \"iq\",\n        \"ie\",\n        \"il\",\n        \"it\",\n        \"jm\",\n        \"jp\",\n        \"jo\",\n        \"kz\",\n        \"ke\",\n        \"ki\",\n        \"kp\",\n        \"kr\",\n        \"kw\",\n        \"kg\",\n        \"la\",\n        \"lv\",\n        \"lb\",\n        \"ls\",\n        \"lr\",\n        \"ly\",\n        \"li\",\n        \"lt\",\n        \"lu\",\n        \"mo\",\n        \"mk\",\n        \"mg\",\n        \"mw\",\n        \"my\",\n        \"mv\",\n        \"ml\",\n        \"mt\",\n        \"mh\",\n        \"mq\",\n        \"mr\",\n        \"mu\",\n        \"yt\",\n        \"mx\",\n        \"fm\",\n        \"md\",\n        \"mc\",\n        \"mn\",\n        \"me\",\n        \"ms\",\n        \"ma\",\n        \"mz\",\n        \"mm\",\n        \"na\",\n        \"nr\",\n        \"np\",\n        \"nl\",\n        \"an\",\n        \"nc\",\n        \"nz\",\n        \"ni\",\n        \"ne\",\n        \"ng\",\n        \"nu\",\n        \"nf\",\n        \"mp\",\n        \"no\",\n        \"om\",\n        \"pk\",\n        \"pw\",\n        \"ps\",\n        \"pa\",\n        \"pg\",\n        \"py\",\n        \"pe\",\n        \"ph\",\n        \"pn\",\n        \"pl\",\n        \"pt\",\n        \"pr\",\n        \"qa\",\n        \"re\",\n        \"ro\",\n        \"ru\",\n        \"rw\",\n        \"sh\",\n        \"kn\",\n        \"lc\",\n        \"pm\",\n        \"vc\",\n        \"ws\",\n        \"sm\",\n        \"st\",\n        \"sa\",\n        \"sn\",\n        \"rs\",\n        \"sc\",\n        \"sl\",\n        \"sg\",\n        \"sk\",\n        \"si\",\n        \"sb\",\n        \"so\",\n        \"za\",\n        \"gs\",\n        \"ss\",\n        \"es\",\n        \"lk\",\n        \"sd\",\n        \"sr\",\n        \"sj\",\n        \"sz\",\n        \"se\",\n        \"ch\",\n        \"sy\",\n        \"tw\",\n        \"tj\",\n        \"tz\",\n        \"th\",\n        \"tl\",\n        \"tg\",\n        \"tk\",\n        \"to\",\n        \"tt\",\n        \"tn\",\n        \"tr\",\n        \"tm\",\n        \"tc\",\n        \"tv\",\n        \"ug\",\n        \"ua\",\n        \"ae\",\n        \"gb\",\n        \"um\",\n        \"uy\",\n        \"uz\",\n        \"vu\",\n        \"ve\",\n        \"vn\",\n        \"vg\",\n        \"vi\",\n        \"wf\",\n        \"eh\",\n        \"ye\",\n        \"zm\",\n        \"zw\"\n      ],\n      \"enumTitles\": [\n        \"\",\n        \"United States\",\n        \"Afghanistan\",\n        \"Albania\",\n        \"Algeria\",\n        \"American Samoa\",\n        \"Andorra\",\n        \"Angola\",\n        \"Anguilla\",\n        \"Antarctica\",\n        \"Antigua and Barbuda\",\n        \"Argentina\",\n        \"Armenia\",\n        \"Aruba\",\n        \"Australia\",\n        \"Austria\",\n        \"Azerbaijan\",\n        \"Bahamas\",\n        \"Bahrain\",\n        \"Bangladesh\",\n        \"Barbados\",\n        \"Belarus\",\n        \"Belgium\",\n        \"Belize\",\n        \"Benin\",\n        \"Bermuda\",\n        \"Bhutan\",\n        \"Bolivia\",\n        \"Bosnia and Herzegovina\",\n        \"Botswana\",\n        \"Bouvet Island\",\n        \"Brazil\",\n        \"British Indian Ocean Territory\",\n        \"Brunei Darussalam\",\n        \"Bulgaria\",\n        \"Burkina Faso\",\n        \"Burundi\",\n        \"Cambodia\",\n        \"Cameroon\",\n        \"Canada\",\n        \"Cape Verde\",\n        \"Cayman Islands\",\n        \"Central African Republic\",\n        \"Chad\",\n        \"Chile\",\n        \"China\",\n        \"Christmas Island\",\n        \"Cocos (Keeling) Islands\",\n        \"Colombia\",\n        \"Comoros\",\n        \"Congo-Brazzaville\",\n        \"Congo, Democratic Republic of the\",\n        \"Cook Islands\",\n        \"Costa Rica\",\n        \"Cote D'ivoire\",\n        \"Croatia\",\n        \"Cuba\",\n        \"Cyprus\",\n        \"Czech Republic\",\n        \"Denmark\",\n        \"Djibouti\",\n        \"Dominica\",\n        \"Dominican Republic\",\n        \"Ecuador\",\n        \"Egypt\",\n        \"El Salvador\",\n        \"Equatorial Guinea\",\n        \"Eritrea\",\n        \"Estonia\",\n        \"Ethiopia\",\n        \"Falkland Islands\",\n        \"Faroe Islands\",\n        \"Fiji\",\n        \"Finland\",\n        \"France\",\n        \"French Guiana\",\n        \"French Polynesia\",\n        \"French Southern Territories\",\n        \"Gabon\",\n        \"Gambia\",\n        \"Georgia\",\n        \"Germany\",\n        \"Ghana\",\n        \"Gibraltar\",\n        \"Greece\",\n        \"Greenland\",\n        \"Grenada\",\n        \"Guadeloupe\",\n        \"Guam\",\n        \"Guatemala\",\n        \"Guinea\",\n        \"Guinea-Bissau\",\n        \"Guyana\",\n        \"Haiti\",\n        \"Heard Island and Mcdonald Islands\",\n        \"Vatican City State\",\n        \"Honduras\",\n        \"Hong Kong\",\n        \"Hungary\",\n        \"Iceland\",\n        \"India\",\n        \"Indonesia\",\n        \"Iran\",\n        \"Iraq\",\n        \"Ireland\",\n        \"Israel\",\n        \"Italy\",\n        \"Jamaica\",\n        \"Japan\",\n        \"Jordan\",\n        \"Kazakhstan\",\n        \"Kenya\",\n        \"Kiribati\",\n        \"Korea, Democratic People's Republic of\",\n        \"Korea\",\n        \"Kuwait\",\n        \"Kyrgyzstan\",\n        \"Laos\",\n        \"Latvia\",\n        \"Lebanon\",\n        \"Lesotho\",\n        \"Liberia\",\n        \"Libyan Arab Jamahiriya\",\n        \"Liechtenstein\",\n        \"Lithuania\",\n        \"Luxembourg\",\n        \"Macao\",\n        \"Macedonia\",\n        \"Madagascar\",\n        \"Malawi\",\n        \"Malaysia\",\n        \"Maldives\",\n        \"Mali\",\n        \"Malta\",\n        \"Marshall Islands\",\n        \"Martinique\",\n        \"Mauritania\",\n        \"Mauritius\",\n        \"Mayotte\",\n        \"Mexico\",\n        \"Micronesia\",\n        \"Moldova\",\n        \"Monaco\",\n        \"Mongolia\",\n        \"Montenegro\",\n        \"Montserrat\",\n        \"Morocco\",\n        \"Mozambique\",\n        \"Myanmar\",\n        \"Namibia\",\n        \"Nauru\",\n        \"Nepal\",\n        \"Netherlands\",\n        \"Netherlands Antilles\",\n        \"New Caledonia\",\n        \"New Zealand\",\n        \"Nicaragua\",\n        \"Niger\",\n        \"Nigeria\",\n        \"Niue\",\n        \"Norfolk Island\",\n        \"Northern Mariana Islands\",\n        \"Norway\",\n        \"Oman\",\n        \"Pakistan\",\n        \"Palau\",\n        \"Palestine\",\n        \"Panama\",\n        \"Papua New Guinea\",\n        \"Paraguay\",\n        \"Peru\",\n        \"Philippines\",\n        \"Pitcairn\",\n        \"Poland\",\n        \"Portugal\",\n        \"Puerto Rico\",\n        \"Qatar\",\n        \"Reunion\",\n        \"Romania\",\n        \"Russian Federation\",\n        \"Rwanda\",\n        \"Saint Helena\",\n        \"Saint Kitts and Nevis\",\n        \"Saint Lucia\",\n        \"Saint Pierre and Miquelon\",\n        \"Saint Vincent and the Grenadines\",\n        \"Samoa\",\n        \"San Marino\",\n        \"Sao Tome and Principe\",\n        \"Saudi Arabia\",\n        \"Senegal\",\n        \"Serbia\",\n        \"Seychelles\",\n        \"Sierra Leone\",\n        \"Singapore\",\n        \"Slovakia\",\n        \"Slovenia\",\n        \"Solomon Islands\",\n        \"Somalia\",\n        \"South Africa\",\n        \"South Georgia and the South Sandwich Islands\",\n        \"South Sudan\",\n        \"Spain\",\n        \"Sri Lanka\",\n        \"Sudan\",\n        \"Suriname\",\n        \"Svalbard and Jan Mayen\",\n        \"Swaziland\",\n        \"Sweden\",\n        \"Switzerland\",\n        \"Syrian Arab Republic\",\n        \"Taiwan\",\n        \"Tajikistan\",\n        \"Tanzania\",\n        \"Thailand\",\n        \"Timor-Leste\",\n        \"Togo\",\n        \"Tokelau\",\n        \"Tonga\",\n        \"Trinidad and Tobago\",\n        \"Tunisia\",\n        \"Turkey\",\n        \"Turkmenistan\",\n        \"Turks and Caicos Islands\",\n        \"Tuvalu\",\n        \"Uganda\",\n        \"Ukraine\",\n        \"United Arab Emirates\",\n        \"United Kingdom\",\n        \"United States Minor Outlying Islands\",\n        \"Uruguay\",\n        \"Uzbekistan\",\n        \"Vanuatu\",\n        \"Venezuela\",\n        \"Viet Nam\",\n        \"Virgin Islands, British\",\n        \"Virgin Islands, U.S.\",\n        \"Wallis and Futuna\",\n        \"Western Sahara\",\n        \"Yemen\",\n        \"Zambia\",\n        \"Zimbabwe\"\n      ]\n    },\n    \"skipDebugScreen\": {\n      \"title\": \"Do not save snapshot\",\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"description\": \"By default, a snapshot of each visited Google Trends page is saved to the key-value store\",\n      \"default\": false\n    },\n    \"startUrls\": {\n      \"title\": \"Google Trends URLs\",\n      \"type\": \"array\",\n      \"description\": \"Copy a Google Trends URL and paste it here.\",\n      \"editor\": \"requestListSources\",\n      \"example\": [\n        {\n          \"url\": \"https://trends.google.com/trends/explore?q=web+scraping&geo=US\"\n        }\n      ],\n      \"sectionCaption\": \"🔗 Use a Google Trends URL instead of search terms\",\n      \"sectionDescription\": \"Useful when default search is not enough, i.e. for custom date range or comparing trends\"\n    },\n    \"spreadsheetId\": {\n      \"title\": \"Google Sheet ID\",\n      \"type\": \"string\",\n      \"description\": \"(Optional) ID of the Google Sheet from where search terms will be loaded.\\n Spreadsheet must have only one column. Row 1 is considered the title of the column so it will not be loaded as a search term. The provided spreadsheet must be publicly available. Check the actor documentation for more info.\",\n      \"editor\": \"textfield\",\n      \"example\": \"1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms\",\n      \"sectionCaption\": \"Advanced options\"\n    },\n    \"category\": {\n      \"title\": \"Category of trends\",\n      \"type\": \"string\",\n      \"description\": \"Choose a category to filter the search for (defaults to 'All categories')\",\n      \"editor\": \"select\",\n      \"default\": \"\",\n      \"enumTitles\": [\n        \"All categories\",\n        \"Arts & Entertainment\",\n        \"Autos & Vehicles\",\n        \"Beauty & Fitness\",\n        \"Books & Literature\",\n        \"Business & Industrial\",\n        \"Computers & Electronics\",\n        \"Finance\",\n        \"Food & Drink\",\n        \"Games\",\n        \"Health\",\n        \"Hobbies & Leisure\",\n        \"Home & Garden\",\n        \"Internet & Telecom\",\n        \"Jobs & Education\",\n        \"Law & Government\",\n        \"News\",\n        \"Online Communities\",\n        \"People & Society\",\n        \"Pets & Animals\",\n        \"Property\",\n        \"Reference\",\n        \"Science\",\n        \"Shopping\",\n        \"Sports\",\n        \"Travel\"\n      ],\n      \"enum\": [\n        \"\",\n        \"3\",\n        \"47\",\n        \"44\",\n        \"22\",\n        \"12\",\n        \"5\",\n        \"7\",\n        \"71\",\n        \"8\",\n        \"45\",\n        \"65\",\n        \"11\",\n        \"13\",\n        \"958\",\n        \"19\",\n        \"16\",\n        \"299\",\n        \"14\",\n        \"66\",\n        \"29\",\n        \"533\",\n        \"174\",\n        \"18\",\n        \"20\",\n        \"67\"\n      ]\n    },\n    \"maxItems\": {\n      \"title\": \"Max items\",\n      \"type\": \"integer\",\n      \"minimum\": 0,\n      \"description\": \"Maximum number of items to scrape. Zero means no limit.\",\n      \"default\": 0\n    },\n    \"customTimeRange\": {\n      \"title\": \"Custom time range\",\n      \"type\": \"string\",\n      \"description\": \"Provide custom time range. If present, it takes precedence over regular timeRange. Format is: `YYYY-MM-DD YYYY-MM-DD`. See examples in the documentation.\",\n      \"example\": \"2024-01-01 2024-12-31\",\n      \"editor\": \"textfield\"\n    },\n    \"maxConcurrency\": {\n      \"title\": \"Max concurrency\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"description\": \"How many pages will be opened in parallel if enough CPU is available.\",\n      \"default\": 10,\n      \"unit\": \"parallel pages\"\n    },\n    \"maxRequestRetries\": {\n      \"title\": \"Max request retries\",\n      \"type\": \"integer\",\n      \"minimum\": 1,\n      \"description\": \"How many times will the Actor retry a request if it fails.\",\n      \"default\": 7,\n      \"unit\": \"retries\"\n    },\n    \"pageLoadTimeoutSecs\": {\n      \"title\": \"Page load timeout\",\n      \"type\": \"integer\",\n      \"minimum\": 30,\n      \"description\": \"How long it will wait for page loading before it abandons the loading and tries again.\",\n      \"default\": 180,\n      \"unit\": \"seconds\"\n    }\n  }\n}"
+}

@@ -1,0 +1,281 @@
+{
+ "act": {
+  "title": "Reddit Scraper Lite",
+  "users30d": 7495,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What does Reddit Scraper do?\n\nOur unofficial Reddit API will get data from [Reddit](https://www.reddit.com/) with no limitations or authentication. It enables you to extract posts and comments together with some user info without login. It is built on top of [Apify SDK](https://docs.apify.com/sdk/js/), and you can run it both on the [Apify platform](http://console.apify.com).\n\nReddit Scraper allows you to:\n\n- **scrape subreddits** (communities) with top posts\n- **scrape Reddit posts** with title and text, username, number of comments, votes, media elements.\n- **get Reddit comments,** timestamps, points, usernames, post and comment URLs.\n- **scrape user details**, their most recent posts and comments.\n- sort scraped data **by categories** of Relevance, Hot, Top, and New.\n- scrape data using a specific URL or by keyword.\n\n## What data can I extract from Reddit?\n\n<table>\n  <tr>\n    <td>📌 Popular subreddits</td>\n    <td>🔍 Subreddit details</td>\n  </tr>\n  <tr>\n    <td>📋 Subreddit name</td>\n    <td>👥 Number of members</td>\n  </tr>\n  <tr>\n    <td>🌐 Community URL</td>\n    <td>📚 Category</td>\n  </tr>\n  <tr>\n    <td>📌 Reddit posts</td>\n    <td>💬 Reddit comments</td>\n  </tr>\n  <tr>\n    <td>📃 Title and text</td>\n    <td>⏱ Timestamps</td>\n  </tr>\n  <tr>\n    <td>👤 Username</td>\n    <td>🔗 Post and comment URLs </td>\n  </tr>\n  <tr>\n    <td>👍 Votes</td>\n    <td>📷 Media elements</td>\n  </tr>\n  <tr>\n    <td>👤 User details</td>\n    <td>📄 Recent posts and comments</td>\n  </tr>\n</table>\n\n## How much will it cost to scrape Reddit?\n\nReddit Scraper on the [Apify platform](https://console.apify.com/) will give you **1,000 results for less than $4 in platform usage credits**. That should be covered by the free $5 in monthly credits you get on every Apify Free plan.\n\nBut if you need to get more data regularly from Reddit, you should grab an [Apify subscription](https://apify.com/pricing). We recommend our $49/month Starter plan - with that one, you can get well over 10,000 results every month! [Watch this video](https://www.youtube.com/watch?v=-wyz2iscZ30) for a few helpful tips on how to pick a plan.\n\n## How to scrape Reddit?\n\nReddit Scraper doesn't require any coding skills to start using it.\n\n1. Create a [free Apify account](https://console.apify.com/) using your email.\n2. Open the [Reddit Scraper](https://apify.com/trudax/reddit-scraper).\n3. Add one or more full Reddit URLs (for subreddits/communities, users, or posts) to the **Start URLs** field, or enter a keyword in the **Search Term** field.\n4. Click \"Start\" and wait for the scraper to extract the data.\n5. Download your data in JSON, XML, CSV, Excel, or HTML format.\n\nIf you're unsure where to start, just follow our [step-by-step guide](https://blog.apify.com/how-to-scrape-reddit/) or see our [short video tutorial](https://youtu.be/BmD53kvskS0). The tutorial steps can be also be used for [Reddit Scraper Lite](https://apify.com/trudax/reddit-scraper-lite).\n\n[Watch the video](https://youtu.be/BmD53kvskS0)\n\n### How to use scraped Reddit data\n\n- Keep track of **discussions about your brand** or product across Reddit communities.\n- **Research** the topics that interest you and get a wide range of opinions.\n- Keep an eye on debates over **high stakes subjects** such as finance, politics, new technology, and news in general.\n- **Watch out for new trends**, attitudes, and PR opportunities.\n- **Automatically track mentions** of the business or topic that interests you.\n- **Scrape Reddit comments** to kick off and support your sentiment analysis.\n\n## Input parameters\n\nTo run this Actor successfully, you **must provide at least one of the following required fields**:\n\n1. **Start URLs** (`startUrls`): An array of objects containing full Reddit URLs to scrape (e.g., `[{\"url\": \"https://www.reddit.com/r/pasta/\"}]`).\n2. **Search Term** (`searches`): An array of search query strings to search Reddit's topics (e.g., `[\"pasta\"]`).\n\nIf both fields are empty, the actor will fail with an **\"Invalid input\"** error.\n\n> [!IMPORTANT]\n>\n> - **Ignore Search parameters when using Start URLs**: When **Start URLs** are provided, all **Search** parameters (Search Term, Sort, Filter by date, etc.) are ignored. If you want to use the search functionality, make sure the **Start URLs** field is empty. Alternatively, you can perform a search directly on Reddit, apply the desired filters, and then copy the resulting URL into the **Start URLs** field.\n\n### How to scrape Reddit by URLs\n\nAlmost any URL from Reddit will return a dataset. If the URL is not supported, the scraper will display a message before scraping the page.\n\n### Input examples\n\nHere are some examples of URLs that can be scraped.\n\n- scraping communities: <https://www.reddit.com/r/worldnews/>\n- scraping channels within communities: <https://www.reddit.com/r/worldnews/hot>\n- scraping popular communities: <https://www.reddit.com/subreddits/leaderboard/crypto/>\n\n- scraping users: <https://www.reddit.com/user/lukaskrivka>\n- scraping user comments: <https://www.reddit.com/user/lukaskrivka/comments/>\n- scraping posts: <https://www.reddit.com/r/learnprogramming/comments/lp1hi4/is_webscraping_a_good_skill_to_learn_as_a_beginner/>\n- scraping popular posts: <https://www.reddit.com/r/popular/>\n\n- scraping search results:\n- for users/communities: <https://www.reddit.com/search/?q=news&type=communities,people>\n- for posts: <https://www.reddit.com/search/?q=news>\n\nNote: if you use a `search URL` as a parameter for `startUrls`, it will only scrape for posts. If you want to search for communities and users, use the `search` field or a specific URL instead.\n\n### How to scrape Reddit by search term\n\n- **Search Term** or `searches` - the keywords you want to search via the Reddit's search engine. You can keep one field or add as many as you want. Don't use this field if you're using the `startUrls` parameter.\n- **Community** or `searchCommunityName` - If provided, the search will be performed only inside this community (e.g., 'programming').\n\n### Advanced parameters\n\n- **Include NSFW content** or `includeNSFW` - Toggle to include or exclude NSFW (Not Safe For Work) content from your search results.\n- **Include media links, up votes and comment count** or `includeMediaLinks` - If enabled, the scraper will extract more detailed information for posts, including `upVotes`, `upVoteRatio`, `imageUrls`, `videoUrls`, and `numberOfComments`. This parameter is disabled by default to improve performance, as it uses a more detailed extraction method.\n- **Search for posts** or `searchPosts` - If enabled, the scraper will search for posts matching the keyword.\n- **Search for comments** or `searchComments` - If enabled, the scraper will search for comments matching the keyword.\n- **Search for communities** or `searchCommunities` - If enabled, the scraper will search for communities matching the keyword.\n- **Search for users** or `searchUsers` - If enabled, the scraper will search for users matching the keyword.\n- **Search for media** or `searchMedia` - If enabled, the scraper will search for media (images/videos) matching the keyword.\n- **Skip comments** or `skipComments` - If enabled, the scraper will not extract comments when scraping posts.\n- **Skip user posts** or `skipUserPosts` - If enabled, the scraper will not extract user posts when scraping user profiles.\n- **Skip community** or `skipCommunity` - If enabled, the scraper will not extract community details when scraping communities.\n- **Debug Mode** or `debugMode` - If enabled, the scraper will output detailed logs to help with debugging.\n- **Navigation timeout** or `navigationTimeout` - Set the time the actor will wait for the page to be ready for navigation (between 20 and 60 seconds).\n- **Page scroll timeout** or `scrollTimeout` - Set the timeout in seconds for how long the page should scroll down to load new items.\n- **Ignore start URLs** or `ignoreStartUrls` - If enabled, the scraper will ignore the `startUrls` field. This is mainly used as a fix for integrations like Zapier.\n\n- **Sort search** or `sort` - will sort search results by Relevance, Hot, Top, New or most amount of Comments.\n- **Filter by date** or `time` - will filter the search by the last hour, day, week, month or year. Only available if you're scraping Posts.\n- **Post date limit** or `postDateLimit` - Use this value to only retrieve posts published after a specific date. When this parameter is used, the 'Sort search' (`sort`) parameter will automatically be set to 'New' to ensure chronological consistency.\n- **Comment date limit** or `commentDateLimit` - Use this value to only retrieve comments published after a specific date inside a post.\n\nTo see the full list of parameters, their default values, and how to set the values of your own, head over to [Input Schema tab](https://apify.com/trudax/reddit-scraper/input-schema).\n\n### Input example\n\n#### Using Search with Media Links\n\nThis is an example of how to scrape posts with detailed media information and votes.\n\n```json\n{\n  \"searches\": [\"parrots\"],\n  \"includeMediaLinks\": true,\n  \"maxPostCount\": 10,\n  \"proxy\": {\n    \"useApifyProxy\": true\n  }\n}\n```\n\n#### Using Search\n\nThis is an example of how your input will look like if you decide to scrape all Reddit communities that contain the keyword _parrot_. Results will be sorted by the newest first.\n\n```json\n{\n  \"maxItems\": 10,\n  \"maxPostCount\": 10,\n  \"maxComments\": 10,\n  \"maxCommunitiesCount\": 10,\n  \"maxUserCount\": 10,\n  \"scrollTimeout\": 40,\n  \"navigationTimeout\": 30,\n  \"proxy\": {\n    \"useApifyProxy\": true\n  },\n  \"searches\": [\"parrots\"],\n  \"searchCommunities\": true,\n  \"searchPosts\": false,\n  \"sort\": \"new\",\n  \"time\": \"all\"\n}\n```\n\n#### Using Start URLs\n\nThis is an example of how your input will look like if you decide to scrape a specific community and a specific post.\n\n```json\n{\n  \"maxItems\": 10,\n  \"maxPostCount\": 10,\n  \"maxComments\": 10,\n  \"scrollTimeout\": 40,\n  \"navigationTimeout\": 30,\n  \"proxy\": {\n    \"useApifyProxy\": true\n  },\n  \"startUrls\": [\n    { \"url\": \"https://www.reddit.com/r/pasta/\" },\n    {\n      \"url\": \"https://www.reddit.com/r/pasta/comments/vwi6jx/pasta_peperoni_and_ricotta_cheese_how_to_make/\"\n    }\n  ]\n}\n```\n\n## Results\n\nThe output from scraping Reddit is stored in the dataset. Each post, comment, user or community is stored as an item inside the dataset. After the run is finished, you can download the scraped data onto your computer or export to any web app in various data formats (JSON, CSV, XML, RSS, HTML Table). Here's a few examples of the outputs you can get for different types of inputs:\n\n> **Note:** Many detailed fields are only extracted when `includeMediaLinks` is set to `true` in the input. If this parameter is `false` (default), the scraper uses fast RSS feeds which omit or limit: `upVotes`, `upVoteRatio`, `numberOfComments`, `imageUrls`, `videoUrls`, `authorFlair`, `flair`, `userId`, `isVideo`, `isAd`, and `over18`.\n\n### 📝 Example Reddit post\n\n```json\n{\n  \"id\": \"t3_144w7sn\",\n  \"parsedId\": \"144w7sn\",\n  \"url\": \"https://www.reddit.com/r/HonkaiStarRail/comments/144w7sn/my_luckiest_10x_pull_yet/\",\n  \"username\": \"YourKingLives\",\n  \"userId\": \"t2_78abc123\",\n  \"title\": \"My Luckiest 10x Pull Yet\",\n  \"communityName\": \"r/HonkaiStarRail\",\n  \"parsedCommunityName\": \"HonkaiStarRail\",\n  \"body\": \"...\",\n  \"html\": \"...\",\n  \"numberOfComments\": 42,\n  \"upVotes\": 1500,\n  \"upVoteRatio\": 0.98,\n  \"authorFlair\": \"Trailblazer\",\n  \"isVideo\": false,\n  \"isAd\": false,\n  \"over18\": false,\n  \"imageUrls\": [\n    \"https://preview.redd.it/yod3okjkgx4b1.jpg?auto=webp&s=be5faf0250e19138b82c7bbe5e7406fa46da4e73\"\n  ],\n  \"videoUrls\": [],\n  \"createdAt\": \"2023-06-09T05:23:15.000Z\",\n  \"scrapedAt\": \"2023-06-09T05:23:28.409Z\",\n  \"dataType\": \"post\"\n}\n```\n\n### 💬 Example Reddit comment\n\n```json\n{\n  \"id\": \"t1_jnhqrgg\",\n  \"parsedId\": \"jnhqrgg\",\n  \"url\": \"https://www.reddit.com/r/NewsWithJingjing/comments/144v5c3/theres_no_flag_large_enough/jnhqrgg/\",\n  \"parentId\": \"t3_144v5c3\",\n  \"username\": \"smokecat20\",\n  \"authorFlair\": \"Patriot\",\n  \"category\": \"NewsWithJingjing\",\n  \"communityName\": \"r/NewsWithJingjing\",\n  \"body\": \"A true patriot.\",\n  \"createdAt\": \"2023-06-09T05:00:00.000Z\",\n  \"scrapedAt\": \"2023-06-09T05:23:32.025Z\",\n  \"upVotes\": 3,\n  \"numberOfReplies\": 0,\n  \"html\": \"&lt;div class=\\\"md\\\"&gt;&lt;p&gt;A true patriot.&lt;/p&gt;\\n&lt;/div&gt;\",\n  \"dataType\": \"comment\"\n}\n```\n\n### 👥 Example Reddit community\n\n```json\n{\n  \"id\": \"2qlhq\",\n  \"name\": \"t5_2qlhq\",\n  \"title\": \"Pizza\",\n  \"headerImage\": \"https://b.thumbs.redditmedia.com/jq9ytPEOecwd5bmGIvNQzjTPE9hdd0kB9XGa--wq55A.png\",\n  \"description\": \"The home of pizza on reddit. An educational community devoted to the art of pizza making.\",\n  \"over18\": false,\n  \"createdAt\": \"2008-08-26T00:03:48.000Z\",\n  \"scrapedAt\": \"2023-06-09T05:16:55.443Z\",\n  \"numberOfMembers\": 569724,\n  \"url\": \"https://www.reddit.com/r/Pizza/\",\n  \"dataType\": \"community\"\n}\n```\n\n### 👤 Example Reddit user\n\n```json\n{\n  \"id\": \"c3h2qmv\",\n  \"url\": \"https://www.reddit.com/user/jancurn/\",\n  \"username\": \"jancurn\",\n  \"userIcon\": \"https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png\",\n  \"postKarma\": 4,\n  \"commentKarma\": 10,\n  \"description\": \"\",\n  \"over18\": false,\n  \"createdAt\": \"2018-09-10T15:13:39.000Z\",\n  \"scrapedAt\": \"2023-06-09T05:21:14.409Z\",\n  \"dataType\": \"user\"\n}\n```\n\n## Only need a few Reddit results?\n\nUse our super fast dedicated **[Reddit Scraper Lite](https://apify.com/trudax/reddit-scraper-lite)** if you want to scrape Reddit data on a smaller scale. Just enter one or more Reddit URLs or keywords and click to scrape.\n\n## Notes for developers\n\n### Reddit's 1,000 items limit\n\nWhen browsing Reddit, you might notice that any list (like a subreddit's \"New\" posts or a user's comments) usually stops after about 1,000 items. This is not a limitation of the scraper, but a standard way Reddit handles its data across its entire platform.\n\n**Note:** This limit only applies to lists of posts or search results. It does **not** affect the comments inside a specific post; the scraper will still be able to extract all available comments within a single post URL, even if there are thousands of them.\n\nIf you need to gather more than 1,000 results from a list, here are some effective ways to get more data:\n\n- **Combine different sorts**: Scrape the \"New\" category first, then \"Top\", \"Hot\", and \"Controversial\". This often uncovers thousands of unique posts.\n- **Use Search**: Searching for specific keywords often brings up older posts that are no longer visible in the main lists.\n- **Time Filters**: Use the search parameters to filter by \"last year\", \"last month\", etc., to reveal different sets of data.\n- **Date Limits**: Use the postDateLimit or commentDateLimit for incremental scraping (e.g., daily runs) to capture all data over time before it falls off the 1,000-item limit.\n\n### Limiting results with maxItems\n\nIf you need to limit the scope of your search, you can do that by setting the max number of posts you want to scrape inside a community or user. You can also set a limit to the number of comments for each post. You can limit the number of communities and users by using the following parameters:\n\n```json\n{\n  \"maxItems\": 100,\n  \"maxPostCount\": 50,\n  \"maxComments\": 10,\n  \"maxCommunitiesCount\": 5,\n  \"maxUserCount\": 5\n}\n```\n\n> **Note:** The maximum value allowed for all numeric limit and timeout parameters is **2,147,483,647** (the 32-bit signed integer limit). Any value exceeding this will be automatically capped to ensure system stability.\n\nYou can also set `maxItems` to prevent a very long run of the Actor. This parameter will stop your scraper when it reaches the number of results you've indicated, so you need to be careful not to trim your results.\n\nSee the [Input Schema tab](https://apify.com/trudax/reddit-scraper/input-schema) for the full list of the ways to restrict Reddit Scraper using these parameters:\n`maxItems`, `maxPostCount`, `maxComments`, `maxCommunitiesCount`, `maxUserCount`\n\n### Improving actor speed\n\nIf you want to speed up your Actor runs, consider the following strategies:\n\n- **Adjust `navigationTimeout`**: If you have many requests failing because of navigation timeouts, you can reduce `navigationTimeout` in the input so that requests are retried faster. Note that this has the side effect of potentially increasing the failure rate if a page is not loaded in time, but it can work well in some cases.\n- **Increase Run Memory**: If you have multiple `startUrls` or searches, increasing the run memory can increase concurrency and therefore also reduce the time the Actor takes to process all requests.\n\n## FAQ\n\n### Is Reddit scraping legal?\n\nWhile scraping publicly available data from Reddit is generally allowed, it's important to comply with Reddit's terms of service and respect the site's usage policies. It's recommended to use the scraper responsibly, avoid excessive requests, and ensure that the scraped data is used in compliance with applicable laws and regulations. You can read more about compliance with ToS [in our blogpost](https://blog.apify.com/enforceability-of-terms-of-use/).\n\n### Can I use Reddit API to scrape Reddit?\n\nThe Reddit API is currently free. However, Reddit has specific API rules, and free access to the API will be restricted in the future due to concerns over data usage. In addition, Reddit API has been recently announced to become [a paid service](https://techcrunch.com/2023/04/18/reddit-will-begin-charging-for-access-to-its-api). Using a Reddit web scraper such as this one as an API has advantages such over the official one such as not requiring authentication, special authorization for commercial use, or registration for a token.\n\n### How can I scrape Reddit comments?\n\nReddit Scraper allows scraping specific parts of Reddit, including comments. You can extract posts and comments along with user information, such as timestamps, number of votes, usernames, post URL, and comment URLs. This enables you to gather comprehensive commment data from subreddits and Reddit users.\n\n### Is it necessary to use cookies for accessing logged-in content when scraping Reddit?\n\nNo, it is not required. As of May 2023, Reddit maintains its data publicly accessible and does not enforce a login barrier.\n\n### Do you need proxies for scraping Reddit?\n\nIt is highly recommended. Subreddits are open for access and do not require a login to retrieve information. Typically, using proxies is necessary to ensure successful Reddit scraping. While some results can be obtained with datacenter proxies, residential proxies are preferred for Reddit scraping. Fortunately, our Free plan offers a trial of [Apify Proxy](https://apify.com/proxy), which get you started.\n\n### Can I export or import scraped Reddit data using API?\n\nYes. The Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run any Apify Actor, including this one. The API also lets you access any datasets, monitor Actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` NPM package. To access the API using Python, use the `apify-client` PyPi package.\n\nCheck out the [Apify API reference docs](https://docs.apify.com/api/v2) for full details or click on the [API tab](https://apify.com/trudax/reddit-scraper/api) for code examples.\n\n### Why can't I get more than 1,000 posts from a subreddit or search?\n\nThis is a standard behavior of the Reddit platform. Any list you see on Reddit (like the \"New\" posts in a community or search results) usually only goes back about 1,000 items. This is not a limitation of the scraper itself, but how Reddit makes its data available.\n\nHowever, this **does not affect comments**. If you have a link to a specific post, the scraper can still extract all the comments inside it, even if there are thousands. To get more posts, you can try searching for specific keywords or using different sorting options like \"Top\", \"Hot\", or filtering by specific time periods.\n\n### What is the difference between Reddit Scraper and Reddit Scraper Lite?\n\nThe functionality of both actor are the same. The difference is that the Lite version charges based on the number of\nresults it extracts and it has a custom proxy configuration integrated with the actor that is cheaper than then the Residential proxies\nused by Apify. The Reddit Scraper version allows you to use either one of Apify`s proxies or a custom one.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Unique identifier of the item"
+    },
+    "parsedId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Cleaned up ID"
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Direct URL to the item"
+    },
+    "username": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Reddit username of the author"
+    },
+    "userId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Reddit user ID of the author"
+    },
+    "authorFlair": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "User flair text in the subreddit where the post/comment was made"
+    },
+    "title": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Title of the post"
+    },
+    "communityName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Subreddit name prefixed with r/"
+    },
+    "parsedCommunityName": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Subreddit name without prefix"
+    },
+    "category": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Category or subreddit name"
+    },
+    "body": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text content"
+    },
+    "html": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "HTML content"
+    },
+    "link": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "External link or Reddit post link"
+    },
+    "postId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ID of the parent post (for comments)"
+    },
+    "parentId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ID of the parent (post or comment)"
+    },
+    "numberOfComments": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "Number of comments on a post"
+    },
+    "numberOfReplies": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "Number of replies to a comment"
+    },
+    "flair": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Link flair text of the post"
+    },
+    "upVotes": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "Number of upvotes"
+    },
+    "upVoteRatio": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Ratio of upvotes to total votes"
+    },
+    "isVideo": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post is a video"
+    },
+    "isAd": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post is an advertisement"
+    },
+    "over18": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post is NSFW (over 18)"
+    },
+    "videoUrls": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "URL of the video if applicable"
+    },
+    "thumbnailUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the thumbnail"
+    },
+    "imageUrls": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "List of image URLs in the post"
+    },
+    "createdAt": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ISO timestamp of creation"
+    },
+    "scrapedAt": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ISO timestamp of scraping"
+    },
+    "dataType": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "The type of data ('post', 'comment', 'community', 'user')"
+    }
+   }
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "transformation": {
+     "fields": [
+      "dataType",
+      "username",
+      "authorFlair",
+      "title",
+      "body",
+      "upVotes",
+      "numberOfComments",
+      "communityName",
+      "url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "dataType": {
+       "label": "Type",
+       "format": "text"
+      },
+      "username": {
+       "label": "Username",
+       "format": "text"
+      },
+      "authorFlair": {
+       "label": "Author Flair",
+       "format": "text"
+      },
+      "title": {
+       "label": "Title",
+       "format": "text"
+      },
+      "body": {
+       "label": "Body",
+       "format": "text"
+      },
+      "upVotes": {
+       "label": "Upvotes",
+       "format": "number"
+      },
+      "numberOfComments": {
+       "label": "Comments",
+       "format": "number"
+      },
+      "communityName": {
+       "label": "Community",
+       "format": "text"
+      },
+      "url": {
+       "label": "URL",
+       "format": "link"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Input schema for Reddit scraper Lite\",\n  \"description\": \"Scrape information about posts, communities and users https://www.reddit.com without login.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Start URLs\",\n      \"type\": \"array\",\n      \"description\": \"If you already have URL(s) of page(s) you wish to scrape, you can set them here. If you want to use the search field below, remove all startUrls here.\",\n      \"editor\": \"requestListSources\",\n      \"placeholderValue\": \"URL\",\n      \"items\": {\n        \"type\": \"object\",\n        \"required\": [\n          \"url\"\n        ],\n        \"properties\": {\n          \"url\": {\n            \"type\": \"string\",\n            \"title\": \"URL\",\n            \"description\": \"URL of the page\",\n            \"pattern\": \"(^$|reddit\\\\.com\\\\/.+)\"\n          }\n        }\n      },\n      \"prefill\": [\n        {\n          \"url\": \"https://www.reddit.com/r/pasta/comments/vwi6jx/pasta_peperoni_and_ricotta_cheese_how_to_make/\"\n        }\n      ]\n    },\n    \"skipComments\": {\n      \"title\": \"Skip comments\",\n      \"description\": \"This will skip scrapping comments when going through posts\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"skipUserPosts\": {\n      \"title\": \"Skip user posts\",\n      \"description\": \"This will skip scrapping user posts when going through user activity\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"skipCommunity\": {\n      \"title\": \"Skip community\",\n      \"description\": \"This will skip scrapping community info but will still get community posts if they were not skipped.\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"includeMediaLinks\": {\n      \"title\": \"Include media links, up votes and comment count\",\n      \"description\": \"This will include upVotes, upVoteRatio, imageUrls, videoUrls, and numberOfComments when scraping posts. Enabling this will use a more detailed extraction method, which may affect performance.\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"searches\": {\n      \"title\": \"Search Term\",\n      \"type\": \"array\",\n      \"description\": \"Here you can provide a search query which will be used to search Reddit`s topics.\",\n      \"editor\": \"stringList\",\n      \"sectionCaption\": \"Search\",\n      \"sectionDescription\": \"This fields will be used on the search and will be ignored when using startUrls\"\n    },\n    \"searchCommunityName\": {\n      \"title\": \"Community (optional)\",\n      \"type\": \"string\",\n      \"description\": \"If provided, the search will be performed only inside this community (e.g., 'programming').\",\n      \"editor\": \"textfield\"\n    },\n    \"ignoreStartUrls\": {\n      \"title\": \"Ignore start URLs\",\n      \"description\": \"Mainly used as a fix for ignoring starUrl on Zapier\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"searchPosts\": {\n      \"title\": \"Search for posts\",\n      \"description\": \"Will search for posts with the provided search\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"editor\": \"checkbox\"\n    },\n    \"searchComments\": {\n      \"title\": \"Search for comments\",\n      \"description\": \"Will search for comments with the provided search\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"searchCommunities\": {\n      \"title\": \"Search for communities\",\n      \"description\": \"Will search for communities with the provided search\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"searchUsers\": {\n      \"title\": \"Search for users\",\n      \"description\": \"Will search for users with the provided search\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"searchMedia\": {\n      \"title\": \"Search for media\",\n      \"description\": \"Will search for media with the provided search\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    },\n    \"sort\": {\n      \"title\": \"Sort search\",\n      \"description\": \"Sort search by Relevance, Hot, Top, New or Comments\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"\",\n        \"relevance\",\n        \"hot\",\n        \"top\",\n        \"new\",\n        \"rising\",\n        \"comments\"\n      ],\n      \"enumTitles\": [\n        \"None\",\n        \"Relevance\",\n        \"Hot\",\n        \"Top\",\n        \"New\",\n        \"Rising\",\n        \"Comments\"\n      ],\n      \"default\": \"new\",\n      \"prefill\": \"new\"\n    },\n    \"time\": {\n      \"title\": \"Filter by date (Posts only)\",\n      \"description\": \"Filter posts by last hour, week, day, month or year\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"all\",\n        \"hour\",\n        \"day\",\n        \"week\",\n        \"month\",\n        \"year\"\n      ],\n      \"enumTitles\": [\n        \"All time\",\n        \"Last hour\",\n        \"Last day\",\n        \"Last week\",\n        \"Last month\",\n        \"Last year\"\n      ]\n    },\n    \"includeNSFW\": {\n      \"title\": \"Include NSFW content\",\n      \"description\": \"You can choose to include or exclude NSFW content from your search\",\n      \"type\": \"boolean\",\n      \"default\": true,\n      \"editor\": \"checkbox\",\n      \"sectionCaption\": \"Filters\",\n      \"sectionDescription\": \"Choose the types of results you want to include\"\n    },\n    \"maxItems\": {\n      \"title\": \"Maximum number of items to be saved\",\n      \"type\": \"integer\",\n      \"description\": \"The maximum number of items that will be saved in the dataset. If you are scrapping for Communities&Users, remember to consider that each category inside a community is saved as a separated item.\",\n      \"editor\": \"number\",\n      \"prefill\": 10,\n      \"default\": 10,\n      \"sectionCaption\": \"Limits\"\n    },\n    \"maxPostCount\": {\n      \"title\": \"Limit of posts scraped inside a single page\",\n      \"type\": \"integer\",\n      \"description\": \"The maximum number of posts that will be scraped for each Posts Page or Communities&Users URL\",\n      \"editor\": \"number\",\n      \"prefill\": 10,\n      \"default\": 10\n    },\n    \"postDateLimit\": {\n      \"title\": \"Post date limit\",\n      \"type\": \"string\",\n      \"description\": \"Use this value to only retrieve posts published after a specific date.\",\n      \"editor\": \"datepicker\"\n    },\n    \"commentDateLimit\": {\n      \"title\": \"Comment date limit\",\n      \"type\": \"string\",\n      \"description\": \"Use this value to only retrieve comments published after a specific date inside a post.\",\n      \"editor\": \"datepicker\"\n    },\n    \"maxComments\": {\n      \"title\": \"Limit of comments scraped inside a single page\",\n      \"type\": \"integer\",\n      \"description\": \"The maximum number of comments that will be scraped for each Comments Page. If you don't want to scrape comments you can set this to zero.\",\n      \"editor\": \"number\",\n      \"prefill\": 10,\n      \"default\": 10\n    },\n    \"maxCommunitiesCount\": {\n      \"title\": \"Limit of `Communities`'s pages scraped\",\n      \"type\": \"integer\",\n      \"description\": \"The maximum number of `Communities`'s pages that will be scraped if your search or startUrl is a Communities type.\",\n      \"editor\": \"number\",\n      \"prefill\": 2,\n      \"default\": 2\n    },\n    \"maxUserCount\": {\n      \"title\": \"Limit of `Users`'s pages scraped\",\n      \"type\": \"integer\",\n      \"description\": \"The maximum number of `Users`'s pages that will be scraped.\",\n      \"editor\": \"number\",\n      \"prefill\": 2,\n      \"default\": 2\n    },\n    \"scrollTimeout\": {\n      \"title\": \"Page scroll timeout (seconds)\",\n      \"type\": \"integer\",\n      \"description\": \"Set the timeout in seconds in which the page will stop scrolling down to load new items\",\n      \"editor\": \"number\",\n      \"prefill\": 40,\n      \"default\": 40\n    },\n    \"navigationTimeout\": {\n      \"title\": \"Navigation timeout (seconds)\",\n      \"type\": \"integer\",\n      \"description\": \"Set the navigation timeout in seconds for page loading\",\n      \"editor\": \"number\",\n      \"prefill\": 60,\n      \"default\": 60,\n      \"minimum\": 20,\n      \"maximum\": 60\n    },\n    \"proxy\": {\n      \"title\": \"Proxy configuration\",\n      \"type\": \"object\",\n      \"description\": \"Either use Apify proxy, or provide your own proxy servers.\",\n      \"sectionCaption\": \"Proxy Settings\",\n      \"sectionDescription\": \"All settings bellow are ignored on the Lite version. The Lite version of the actor does not require proxy settings and they will be ignored.\",\n      \"prefill\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ]\n      },\n      \"default\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ]\n      },\n      \"editor\": \"proxy\"\n    },\n    \"debugMode\": {\n      \"title\": \"Debug Mode\",\n      \"type\": \"boolean\",\n      \"description\": \"Activate to see detailed logs\",\n      \"default\": false,\n      \"editor\": \"checkbox\"\n    }\n  },\n  \"required\": []\n}"
+}

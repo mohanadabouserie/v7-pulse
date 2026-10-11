@@ -1,0 +1,307 @@
+{
+ "act": {
+  "title": "Facebook Public Profiles Scraper",
+  "users30d": 453,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Facebook Public Profiles Scraper\n\nExtract **facebook public profiles** into typed records for lead enrichment, research, and recurring data pipelines. Provide public profile URLs and receive identity, bio, work, education, location, relationship, follower signals, verification, profile image, and external-link fields without a Facebook login.\n\nThe Actor works with username URLs such as `https://www.facebook.com/zuck`, numeric URLs such as `https://www.facebook.com/profile.php?id=4`, and Facebook people permalinks such as `/people/<name>/<numeric-id>`. It processes only information visible on the public logged-out profile.\n\n## What does Facebook Public Profiles Scraper do?\n\nThe Actor turns a list of public Facebook profile URLs into one normalized dataset item per useful profile.\n\nIt:\n\n- validates and canonicalizes Facebook profile URLs;\n- removes duplicate input URLs;\n- renders the public logged-out profile;\n- extracts visible Intro and identity fields;\n- normalizes abbreviated follower and public “talking about this” counts such as `121M` to integers;\n- returns null or an empty array when a field is not public;\n- retries a challenged profile with a fresh browser session and alternate public route;\n- returns an uncharged diagnostic row when a profile is unavailable on the public logged-out surface;\n- stops safely before the platform timeout and marks unprocessed URLs for a smaller follow-up batch;\n- stops at your `maxItems` limit.\n\nIt does not log into Facebook, search for people by name, infer hidden attributes, or bypass profile privacy settings.\n\n## Who is this Facebook profile extractor for?\n\n### Lead operations teams\n\nEnrich a list of known public profile URLs with current public role, education, and location context before review in a CRM.\n\n### Researchers and analysts\n\nCreate consistent snapshots of public figures or creators instead of manually copying fields from individual profiles.\n\n### Developers and data engineers\n\nFeed typed JSON into a spreadsheet, warehouse, CRM, webhook, or scheduled comparison pipeline.\n\n### Talent and partnership teams\n\nReview publicly stated work and education information for already identified people. Always apply an appropriate lawful basis and human review.\n\n## What Facebook profile data is extracted?\n\n| Field | Type | Meaning |\n| --- | --- | --- |\n| `recordType` | string | `profile` for extracted data or `diagnostic` for a safe per-input outcome |\n| `status` | string | `ok`, `unavailable`, or `skipped` |\n| `sourceUrl` | string | URL supplied in the input |\n| `url` | string | Canonical public Facebook profile URL |\n| `username` | string or null | Username from a username URL |\n| `profileId` | string or null | Public numeric profile ID when exposed |\n| `name` | string | Public display name |\n| `accountType` | string or null | Visible profile/category label |\n| `bio` | string or null | Public Intro or bio text with duplicated Facebook count metadata removed |\n| `work` | string[] | Visible roles and workplaces |\n| `education` | string[] | Visible schools and education statements |\n| `currentCity` | string or null | Visible current city |\n| `hometown` | string or null | Visible hometown |\n| `relationship` | string or null | Visible relationship statement |\n| `followers` | integer or null | Normalized visible follower count |\n| `following` | integer or null | Normalized visible following count |\n| `talkingAbout` | integer or null | Normalized public “talking about this” engagement count |\n| `verified` | boolean | Whether a verification signal is exposed |\n| `profilePictureUrl` | string or null | Public profile image URL |\n| `externalLinks` | string[] | Public non-Facebook profile links |\n| `routeUsed` | string | Public `about` or `overview` route that produced the profile |\n| `attempts` | integer | Number of bounded delivery attempts |\n| `errorCode` | string or null | Stable diagnostic code for unavailable or skipped inputs |\n| `errorMessage` | string or null | Safe diagnostic explanation |\n| `scrapedAt` | ISO timestamp | Time of processing |\n\n## Why use this Actor?\n\n- **No Facebook credentials:** only the public logged-out surface is used.\n- **Typed enrichment output:** downstream tools receive stable fields rather than raw HTML.\n- **Privacy-aware nulls:** unavailable fields are not guessed.\n- **Bulk-ready input:** submit multiple known profile URLs and set an output limit.\n- **Efficient rendering:** images, video, fonts, styles, and trackers are blocked where they are unnecessary for extraction.\n- **Actionable outcomes:** unavailable profiles produce explicit, uncharged diagnostic rows instead of a misleading empty success or an opaque hard failure; transient delivery outages still fail visibly.\n\n## How to get started\n\n1. Open the Actor input page.\n2. Add one or more public Facebook profile URLs to **Facebook profile URLs**.\n3. Set **Maximum profiles** to the number of records you need.\n4. Click **Start**.\n5. Open the default dataset to inspect, download, or integrate the records.\n\nA useful first input is:\n\n```json\n{\n  \"startUrls\": [\n    { \"url\": \"https://www.facebook.com/zuck\" },\n    { \"url\": \"https://www.facebook.com/BillGates\" }\n  ],\n  \"maxItems\": 2\n}\n```\n\n## Input parameters\n\n### `startUrls`\n\nRequired array of public `facebook.com` profile URLs. Supported shapes are:\n\n- username URL: `https://www.facebook.com/zuck`;\n- numeric profile URL: `https://www.facebook.com/profile.php?id=4`;\n- people permalink: `https://www.facebook.com/people/<name>/<numeric-id>`.\n\nURLs for posts, groups, events, Marketplace, search results, or login pages are outside this Actor's scope. They produce uncharged `invalid` diagnostic rows without stopping valid profiles in the same batch. Blank entries, non-string entries, and request-list objects without a usable `url` receive the same safe per-input diagnostic instead of being silently dropped.\n\n### `maxItems`\n\nOptional integer from 1 to 1,000. The Actor stops after this many useful records. The default is 100. If fewer input URLs are available, only those inputs are processed.\n\n## Output example\n\nThis shortened record reflects the current public output shape:\n\n```json\n{\n  \"recordType\": \"profile\",\n  \"status\": \"ok\",\n  \"sourceUrl\": \"https://www.facebook.com/zuck\",\n  \"url\": \"https://www.facebook.com/zuck\",\n  \"username\": \"zuck\",\n  \"profileId\": \"4\",\n  \"name\": \"Mark Zuckerberg\",\n  \"accountType\": \"Profile · Public figure\",\n  \"bio\": \"Bringing the world closer together.\",\n  \"work\": [\"Founder and CEO at Meta\", \"Works at Biohub\"],\n  \"education\": [\"Studied Computer Science and Psychology at Harvard University\"],\n  \"currentCity\": \"Palo Alto, California\",\n  \"hometown\": \"Dobbs Ferry, New York\",\n  \"relationship\": \"Married to Priscilla Chan\",\n  \"followers\": 121000000,\n  \"following\": null,\n  \"talkingAbout\": 1057559,\n  \"verified\": true,\n  \"profilePictureUrl\": \"https://scontent-...fbcdn.net/...\",\n  \"externalLinks\": [],\n  \"routeUsed\": \"about\",\n  \"attempts\": 1,\n  \"scrapedAt\": \"2026-08-07T14:07:27.673Z\"\n}\n```\n\nFacebook can change public values and visibility at any time. Treat the example as a schema illustration, not a promise that a count or personal statement remains unchanged.\n\n## How much does it cost to extract Facebook public profiles?\n\nThe Actor uses pay-per-event pricing:\n\n- one `start` event is charged once per run;\n- one `item` event is charged for each useful profile record;\n- rejected, failed, duplicate, or non-emitted records have no item charge.\n\nThe start event is **$0.005**. The item price decreases by Apify plan:\n\n| Plan tier | Price per emitted profile |\n| --- | ---: |\n| FREE | $0.00460 |\n| BRONZE | $0.00400 |\n| SILVER | $0.00312 |\n| GOLD | $0.00240 |\n| PLATINUM | $0.00160 |\n| DIAMOND | $0.00112 |\n\nYour run total follows:\n\n`$0.005 start event + emitted profile records × active item tier`\n\nFor example, on the FREE tier, 1 profile costs **$0.00960**, 10 profiles cost **$0.05100**, and 100 profiles cost **$0.46500**. On BRONZE, the same batches cost **$0.00900**, **$0.04500**, and **$0.40500**. Rejected, failed, duplicate, and non-emitted records do not add an item event.\n\nBatching profiles into one run avoids paying the start event separately for each profile. Apify platform usage is included in the event price rather than added as a separate customer charge.\n\n## Tips for reliable runs\n\n- Supply canonical profile URLs collected with an appropriate lawful purpose.\n- Use username or numeric profile URLs, not search-result or post URLs.\n- Start with a small batch before scheduling a large enrichment job.\n- Expect fields to differ by profile because each person controls public visibility.\n- Use `profileId` or canonical `url` as the stable join key when available.\n- Store `scrapedAt` alongside snapshots when comparing data over time.\n\n## Limits and failure behavior\n\nFacebook may show less information for some profiles, locations, or sessions. A valid record can therefore contain null fields or empty arrays.\n\nThe Actor isolates blank, malformed, missing-URL, non-string, or non-profile entries as `recordType: \"diagnostic\"`, `status: \"invalid\"` rows, so one bad entry does not terminate the valid profiles in a batch. Those rows have no start or item charge when the batch contains no valid targets. It retries blocked desktop delivery once with a fresh session and alternate public route. When both desktop routes are blocked, a bounded US residential mobile-document attempt can recover publicly visible identity, bio, and follower signals. Facebook's mobile surface sometimes omits work, education, location, relationship, verification, and links that desktop exposes: those fields remain null or empty, never inferred. Numeric-ID requests are accepted on either route only when the delivered profile ID matches the requested ID; redirects to a different identity are never billed as the requested profile. A genuinely unavailable profile produces an uncharged `status: \"unavailable\"` diagnostic; a transient all-target delivery outage exits with an error. If the run approaches its platform timeout, remaining URLs receive `status: \"skipped\"` for a smaller batch.\n\nThe Actor does not:\n\n- discover profiles from a person name or keyword;\n- access private, friends-only, or login-only information;\n- return posts, comments, friends, followers lists, or private contact details;\n- perform built-in historical change detection;\n- guarantee that a public CDN image URL remains permanent.\n\n## Recurring lead enrichment workflow\n\nFor repeated enrichment:\n\n1. keep approved public profile URLs in your CRM or input store;\n2. run this Actor on a schedule;\n3. export each result with its `scrapedAt` timestamp;\n4. compare the current row to the prior row in your own database or automation;\n5. route meaningful changes to human review.\n\nThis Actor produces fresh snapshots. Scheduling and comparison are configured through Apify Tasks, webhooks, or your downstream system; the Actor does not claim a change unless your workflow compares snapshots.\n\n## Export and integration options\n\nThe default dataset can be downloaded as JSON, CSV, Excel, XML, or RSS through Apify. Common patterns include:\n\n- send completed datasets to Google Sheets or Airtable;\n- upsert records into a CRM using `profileId` or `url`;\n- load snapshots into BigQuery, Snowflake, or PostgreSQL;\n- trigger Make, Zapier, or n8n from a run-finished webhook;\n- call the Actor from an internal enrichment API.\n\n## Run with the Apify API\n\nReplace `APIFY_TOKEN` with your token.\n\n### cURL\n\n```bash\ncurl -X POST \\\n  \"https://api.apify.com/v2/acts/automation-lab~facebook-public-profile-scraper/runs?token=APIFY_TOKEN&waitForFinish=120\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"startUrls\": [{\"url\": \"https://www.facebook.com/zuck\"}],\n    \"maxItems\": 1\n  }'\n```\n\n### JavaScript\n\n```javascript\nimport { ApifyClient } from 'apify-client';\n\nconst client = new ApifyClient({ token: process.env.APIFY_TOKEN });\nconst run = await client.actor('automation-lab/facebook-public-profile-scraper').call({\n  startUrls: [{ url: 'https://www.facebook.com/zuck' }],\n  maxItems: 1,\n});\nconst { items } = await client.dataset(run.defaultDatasetId).listItems();\nconsole.log(items);\n```\n\n### Python\n\n```python\nfrom apify_client import ApifyClient\nimport os\n\nclient = ApifyClient(os.environ['APIFY_TOKEN'])\nrun = client.actor('automation-lab/facebook-public-profile-scraper').call(run_input={\n    'startUrls': [{'url': 'https://www.facebook.com/zuck'}],\n    'maxItems': 1,\n})\nitems = client.dataset(run['defaultDatasetId']).list_items().items\nprint(items)\n```\n\n## Use with MCP and AI assistants\n\nAdd this Actor to Claude Code through Apify MCP:\n\n```bash\nclaude mcp add --transport http apify \\\n  \"https://mcp.apify.com?tools=automation-lab/facebook-public-profile-scraper\"\n```\n\n### Claude Desktop\n\nAdd this server object to the `mcpServers` section of Claude Desktop's configuration:\n\n```json\n{\n  \"mcpServers\": {\n    \"apify\": {\n      \"url\": \"https://mcp.apify.com?tools=automation-lab/facebook-public-profile-scraper\"\n    }\n  }\n}\n```\n\n### Cursor\n\nOpen **Settings → Tools & MCP → New MCP Server** and use the same Apify MCP URL shown above.\n\n### VS Code\n\nAdd the same HTTP server URL to your workspace MCP configuration, then select the `automation-lab/facebook-public-profile-scraper` tool.\n\nExample prompts:\n\n- “Extract the public profile record for `https://www.facebook.com/zuck`.”\n- “Enrich these approved Facebook profile URLs and return name, work, education, city, and follower count.”\n- “Create current snapshots for this list and highlight null fields that need manual review.”\n\n## Data handling, dependencies, and AI\n\n- **Data source and recipient:** the Actor sends each submitted public profile URL and ordinary browser request metadata to Facebook's public website. Meta controls Facebook-side processing, regions, logs, and retention under its terms and privacy policy.\n- **No credentials:** the Actor does not accept or send Facebook login cookies, passwords, or account tokens.\n- **No AI:** extraction is deterministic browser rendering and parsing. No input, page content, or output is sent to an AI model or AI provider.\n- **Privacy-safe operations:** runtime logs use a short one-way target fingerprint plus route, attempt, duration, and error class. They do not contain submitted profile URLs or extracted profile fields.\n- **Private repair diagnostics:** failed operations send sanitized diagnostic input, exceptions, and Actor/build/run IDs to our private GlitchTip service for repair. At most one desktop and one mobile observation per run also record browser version, current-context UA/client hints, platform/touch/language, and viewport from existing navigation, without extra requests. These observations contain no profile URLs, identifiers, cookies, full headers, or page content. Secret fields and URL queries are removed; reports are retained for 30 days. Expected unavailable profiles and successful retries are not reported as errors.\n- **Actor storage:** input, logs, and dataset rows are stored by Apify under the user's plan and deletion settings. The Actor creates no cross-run profile cache and no additional backup. Users can delete runs and their default storages in Apify Console or through the API.\n- **Branding:** Facebook and Meta are used nominatively to identify the public source. This Actor is independent and is not endorsed, sponsored, certified, or operated by Meta.\n\n## Responsible and legal use\n\nPublic availability does not remove privacy, copyright, contractual, or data-protection obligations. Use the Actor only when you have a lawful purpose and authority to process the requested information.\n\nDo not use the output for harassment, unlawful discrimination, sensitive-trait inference, credential collection, or decisions that require protected data. Follow Facebook's terms, applicable privacy laws, data-minimization principles, retention limits, and deletion requests. Obtain legal advice for your jurisdiction and use case.\n\n## Troubleshooting\n\n### Why is a field null or an array empty?\n\nThe profile does not expose that field on its public logged-out surface, or Facebook did not deliver it in the current session. The Actor intentionally does not infer private values.\n\n### Why was my URL rejected?\n\nThe URL must identify a profile by username, `profile.php?id=<number>`, or `/people/<name>/<numeric-id>`. Post, section, group, search, Marketplace, and non-Facebook URLs are rejected before a chargeable browser request.\n\n### Why did the run fail with no profiles extracted?\n\nInspect each dataset row's `status` and `errorCode`. `PROFILE_NOT_PUBLIC_OR_UNAVAILABLE` means Facebook did not expose that target on either supported logged-out route. `RUN_TIME_BUDGET_EXHAUSTED` means the remaining URLs should be submitted in a smaller batch. A hard-failed run instead indicates a transient delivery or platform error after bounded recovery.\n\n### Can this Actor search Facebook profiles by name?\n\nNo. It extracts known public profile URLs. Name search is a different workflow and is not silently approximated.\n\n## FAQ\n\n### Does it require Facebook cookies or credentials?\n\nNo. The Actor uses the public logged-out profile surface.\n\n### Does it scrape private profiles?\n\nNo. Only publicly visible fields are returned.\n\n### Can I process multiple profiles?\n\nYes. Add multiple URLs and set `maxItems` up to 1,000. Duplicate input URLs are processed once.\n\n### Can I monitor profiles?\n\nYou can schedule repeated snapshot runs and compare records in your own workflow. Built-in history or change alerts are not included.\n\n### Are profile pictures downloaded?\n\nNo. The Actor returns the public metadata URL and blocks image downloads during extraction to reduce transfer and runtime.\n\n## Related automation-lab Actors\n\n- [Facebook Pages Scraper](https://apify.com/automation-lab/facebook-pages-scraper) for business and organization Page metadata.\n- [Facebook Page Contact Info Scraper](https://apify.com/automation-lab/facebook-page-contact-info-scraper) for publicly listed Page websites, email, phone, and addresses.\n- [Facebook Followers Following Scraper](https://apify.com/automation-lab/facebook-followers-following-scraper) for visible relationship lists when publicly available.\n- [Facebook URL to ID Resolver](https://apify.com/automation-lab/facebook-url-to-id-resolver) when you only need a Facebook numeric identifier.\n\n## Support\n\nWhen reporting a problem, include the Actor run URL, a public reproducible profile URL, the expected public field, and the observed error. Do not include Facebook credentials, private profile data, or unrelated personal information.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "required": [],
+   "additionalProperties": true,
+   "properties": {
+    "recordType": {
+     "title": "Record type",
+     "description": "Whether this row is an extracted profile or a processing diagnostic.",
+     "type": "string",
+     "enum": [
+      "profile",
+      "diagnostic"
+     ],
+     "nullable": true,
+     "example": "profile"
+    },
+    "status": {
+     "title": "Status",
+     "description": "Processing outcome for this input URL.",
+     "type": "string",
+     "enum": [
+      "ok",
+      "invalid",
+      "unavailable",
+      "skipped"
+     ],
+     "nullable": true,
+     "example": "ok"
+    },
+    "sourceUrl": {
+     "title": "Input URL",
+     "description": "Facebook URL supplied in the input.",
+     "type": "string",
+     "nullable": true,
+     "example": "https://www.facebook.com/example.profile"
+    },
+    "url": {
+     "title": "Profile URL",
+     "description": "Canonical public Facebook profile URL.",
+     "type": "string",
+     "nullable": true,
+     "example": "https://www.facebook.com/example.profile"
+    },
+    "username": {
+     "title": "Username",
+     "description": "Username from the profile URL, when present.",
+     "type": "string",
+     "nullable": true,
+     "example": "example.profile"
+    },
+    "profileId": {
+     "title": "Profile ID",
+     "description": "Public numeric Facebook profile identifier, when exposed.",
+     "type": "string",
+     "nullable": true,
+     "example": "100012345678901"
+    },
+    "name": {
+     "title": "Name",
+     "description": "Public profile display name.",
+     "type": "string",
+     "nullable": true,
+     "example": "Example Person"
+    },
+    "accountType": {
+     "title": "Account type",
+     "description": "Visible Facebook account or profile category.",
+     "type": "string",
+     "nullable": true,
+     "example": "Profile · Digital creator"
+    },
+    "bio": {
+     "title": "Bio",
+     "description": "Public profile bio or intro text.",
+     "type": "string",
+     "nullable": true,
+     "example": "Sharing public updates and projects."
+    },
+    "work": {
+     "title": "Work",
+     "description": "Publicly listed roles and workplaces.",
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "nullable": true,
+     "example": [
+      "Works at Example Organization"
+     ]
+    },
+    "education": {
+     "title": "Education",
+     "description": "Publicly listed schools or education statements.",
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "nullable": true,
+     "example": [
+      "Studied at Example University"
+     ]
+    },
+    "currentCity": {
+     "title": "Current city",
+     "description": "Publicly listed current city.",
+     "type": "string",
+     "nullable": true,
+     "example": "Example City"
+    },
+    "hometown": {
+     "title": "Hometown",
+     "description": "Publicly listed hometown.",
+     "type": "string",
+     "nullable": true,
+     "example": "Sample Town"
+    },
+    "relationship": {
+     "title": "Relationship",
+     "description": "Publicly listed relationship statement.",
+     "type": "string",
+     "nullable": true,
+     "example": "Married"
+    },
+    "followers": {
+     "title": "Followers",
+     "description": "Visible follower count normalized to an integer.",
+     "type": "integer",
+     "nullable": true,
+     "example": 12500
+    },
+    "following": {
+     "title": "Following",
+     "description": "Visible following count normalized to an integer.",
+     "type": "integer",
+     "nullable": true,
+     "example": 250
+    },
+    "talkingAbout": {
+     "title": "Talking about this",
+     "description": "Visible public engagement count normalized to an integer.",
+     "type": "integer",
+     "nullable": true,
+     "example": 1057559
+    },
+    "verified": {
+     "title": "Verified",
+     "description": "Whether Facebook exposes a verification signal.",
+     "type": "boolean",
+     "nullable": true,
+     "example": true
+    },
+    "profilePictureUrl": {
+     "title": "Profile picture",
+     "description": "Public profile image URL from page metadata.",
+     "type": "string",
+     "nullable": true,
+     "example": "https://scontent.example.invalid/profile.jpg"
+    },
+    "externalLinks": {
+     "title": "External links",
+     "description": "Public non-Facebook links exposed on the profile.",
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "nullable": true,
+     "example": [
+      "https://example.com"
+     ]
+    },
+    "routeUsed": {
+     "title": "Route used",
+     "description": "Privacy-safe public delivery route that produced the profile.",
+     "type": "string",
+     "enum": [
+      "about",
+      "overview"
+     ],
+     "nullable": true,
+     "example": "about"
+    },
+    "attempts": {
+     "title": "Attempts",
+     "description": "Number of bounded public delivery attempts made for this URL.",
+     "type": "integer",
+     "nullable": true,
+     "example": 1
+    },
+    "errorCode": {
+     "title": "Diagnostic code",
+     "description": "Stable machine-readable reason when a profile row could not be produced.",
+     "type": "string",
+     "enum": [
+      "INVALID_PROFILE_URL",
+      "PROFILE_NOT_PUBLIC_OR_UNAVAILABLE",
+      "RUN_TIME_BUDGET_EXHAUSTED"
+     ],
+     "nullable": true,
+     "example": "PROFILE_NOT_PUBLIC_OR_UNAVAILABLE"
+    },
+    "errorMessage": {
+     "title": "Diagnostic message",
+     "description": "Safe explanation of an invalid, unavailable, or skipped profile.",
+     "type": "string",
+     "nullable": true,
+     "example": "The profile is not available on Facebook’s public logged-out surface."
+    },
+    "scrapedAt": {
+     "title": "Processed at",
+     "description": "UTC processing timestamp.",
+     "type": "string",
+     "format": "date-time",
+     "nullable": true,
+     "example": "2026-01-15T12:00:00.000Z"
+    }
+   }
+  },
+  "views": {
+   "overview": {
+    "title": "Facebook profile results",
+    "description": "Extracted public profiles and actionable per-input diagnostics.",
+    "transformation": {
+     "fields": [
+      "status",
+      "name",
+      "url",
+      "profileId",
+      "bio",
+      "followers",
+      "talkingAbout",
+      "verified",
+      "routeUsed",
+      "attempts",
+      "errorCode",
+      "scrapedAt"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "status": {
+       "label": "Status",
+       "format": "text"
+      },
+      "name": {
+       "label": "Name",
+       "format": "text"
+      },
+      "url": {
+       "label": "Profile URL",
+       "format": "link"
+      },
+      "profileId": {
+       "label": "Profile ID",
+       "format": "text"
+      },
+      "bio": {
+       "label": "Bio",
+       "format": "text"
+      },
+      "followers": {
+       "label": "Followers",
+       "format": "number"
+      },
+      "talkingAbout": {
+       "label": "Talking about",
+       "format": "number"
+      },
+      "verified": {
+       "label": "Verified",
+       "format": "boolean"
+      },
+      "routeUsed": {
+       "label": "Route",
+       "format": "text"
+      },
+      "attempts": {
+       "label": "Attempts",
+       "format": "number"
+      },
+      "errorCode": {
+       "label": "Diagnostic",
+       "format": "text"
+      },
+      "scrapedAt": {
+       "label": "Processed at",
+       "format": "date"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Facebook Public Profiles Scraper Input\",\n  \"description\": \"Extract publicly visible identity, bio, work, education, location, follower signals, and links from Facebook profile URLs. No Facebook login is required.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"required\": [\n    \"startUrls\"\n  ],\n  \"properties\": {\n    \"startUrls\": {\n      \"sectionCaption\": \"Profile extraction\",\n      \"sectionDescription\": \"Add a JSON array of public Facebook profile URLs and choose the maximum number of useful records to save.\",\n      \"title\": \"Facebook profile URLs\",\n      \"description\": \"Public facebook.com profile URLs supplied as strings or {\\\"url\\\": \\\"...\\\"} objects. Username URLs, profile.php URLs with a numeric id, and /people/<name>/<numeric-id> permalinks are supported. Page sections, posts, groups, search URLs, blank entries, and entries without a usable URL are reported as uncharged per-input diagnostics without stopping valid profiles in the same batch.\",\n      \"type\": \"array\",\n      \"editor\": \"json\",\n      \"minItems\": 1,\n      \"maxItems\": 1000,\n      \"prefill\": [\n        {\n          \"url\": \"https://www.facebook.com/profile.php?id=4\"\n        }\n      ]\n    },\n    \"maxItems\": {\n      \"title\": \"Maximum profiles\",\n      \"description\": \"Stop after this many useful profile records. Duplicate input URLs are processed once.\",\n      \"type\": \"integer\",\n      \"default\": 100,\n      \"prefill\": 1,\n      \"minimum\": 1,\n      \"maximum\": 1000\n    }\n  }\n}"
+}

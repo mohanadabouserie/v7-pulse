@@ -1,0 +1,90 @@
+{
+ "act": {
+  "title": "Facebook Profile Scraper",
+  "users30d": 15,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Facebook Profile Scraper\n\nExtract public Facebook profile details in bulk - name, bio, work history, education, hometown, current city, relationship status, follower counts, verified badge, profile picture and external links. No login required.\n\n## What you get\n\nOne clean record per profile with:\n\n- **Identity**: `name`, `username`, numeric `profileId`, canonical `url`, `alternateName`, `gender`\n- **Bio and category**: `bio` (Intro text), `accountType` (e.g. Public figure, Digital creator, Artist), `profileKind` (PROFILE or PAGE)\n- **Work history**: `work[]` - employer, employer page URL, position, and whether it is a current role\n- **Education**: `education[]` - school, school page URL, field of study, level (high school / college)\n- **Places**: `currentCity` and `hometown`\n- **Relationship**: `relationship` status plus `relationshipPartner` and `relationshipPartnerUrl` where shown\n- **Audience**: exact `followers`, `likes`, `talkingAbout`, and the `joined` date when it is displayed\n- **Trust signals**: `verified` badge, `creationDate`, `isRunningAds`\n- **Media and links**: `profilePictureUrl`, `coverPhotoUrl`, `website`, `externalLinks[]`\n- **Status**: `isPrivate` and `error` so you always know why a row is empty\n\nFeed in a list of URLs or usernames and export the result to JSON, CSV, Excel or Google Sheets from the Apify console.\n\n## Use cases\n\n- Lead generation and B2B prospecting - pull job titles, employers and locations for creators and founders\n- Influencer and creator vetting - confirm follower counts, verification and category before outreach\n- Audience and market research - profile the people behind public brands and communities\n- Recruiting and background research - work history and education at a glance\n- CRM and people-data enrichment - append Facebook attributes to an existing contact list\n\n## How to use\n\n1. Paste one or more profiles into **Profile URLs or usernames**. Accepted formats:\n   - `https://www.facebook.com/zuck`\n   - `https://m.facebook.com/zuck/`\n   - `https://www.facebook.com/profile.php?id=4`\n   - `zuck` (bare username)\n2. Optionally set **Max profiles** (default 100, `0` for no limit)\n3. Keep the default **Proxy configuration** (residential) - Facebook blocks most datacenter IPs\n4. Run the actor and open the **Dataset** tab - one record per profile\n\nDuplicate inputs are removed before scraping.\n\n## Which profiles can be scraped?\n\nFacebook only shows profile details to visitors who are not logged in when the owner has made the profile public - profiles in **professional mode**, **public figures**, **creators**, and any profile whose About section is visible to \"Everyone\". Business Pages are supported too (work/education fields stay empty and page-specific fields such as `likes` and `isRunningAds` are filled instead).\n\nStandard personal profiles that are only visible to friends, or that Facebook locks for logged-out visitors, cannot be read. For those the actor still emits a row with `isPrivate: true` and an explanatory `error`, and **you are not charged** for it.\n\n`following` is never available on public profiles without logging in and is always `null`.\n\n## Output format\n\nEach dataset record:\n\n```json\n{\n  \"sourceUrl\": \"https://www.facebook.com/zuck\",\n  \"url\": \"https://www.facebook.com/zuck\",\n  \"username\": \"zuck\",\n  \"profileId\": \"4\",\n  \"name\": \"Mark Zuckerberg\",\n  \"alternateName\": null,\n  \"bio\": \"Bringing the world closer together.\",\n  \"accountType\": \"Public figure\",\n  \"profileKind\": \"PROFILE\",\n  \"work\": [\n    { \"employer\": \"Meta\", \"employerUrl\": \"https://www.facebook.com/Meta\", \"position\": \"Founder and CEO\", \"isCurrent\": true, \"text\": \"Founder and CEO at Meta\" },\n    { \"employer\": \"Biohub\", \"employerUrl\": \"https://www.facebook.com/biohub\", \"position\": null, \"isCurrent\": true, \"text\": \"Works at Biohub\" }\n  ],\n  \"education\": [\n    { \"school\": \"Harvard University\", \"schoolUrl\": \"https://www.facebook.com/Harvard\", \"fieldOfStudy\": \"Computer Science and Psychology\", \"level\": \"COLLEGE\", \"isCurrent\": false, \"text\": \"Studied Computer Science and Psychology at Harvard University\" }\n  ],\n  \"currentCity\": \"Palo Alto, California\",\n  \"hometown\": \"Dobbs Ferry, New York\",\n  \"relationship\": \"Married\",\n  \"relationshipPartner\": \"Priscilla Chan\",\n  \"relationshipPartnerUrl\": \"https://www.facebook.com/priscilla\",\n  \"joined\": null,\n  \"followers\": 121000000,\n  \"following\": null,\n  \"likes\": 121203400,\n  \"talkingAbout\": 647914,\n  \"verified\": true,\n  \"gender\": \"MALE\",\n  \"profilePictureUrl\": \"https://scontent.xx.fbcdn.net/…\",\n  \"coverPhotoUrl\": \"https://scontent.xx.fbcdn.net/…\",\n  \"externalLinks\": [],\n  \"website\": null,\n  \"otherDetails\": [],\n  \"creationDate\": \"February 11, 2004\",\n  \"isRunningAds\": true,\n  \"isPrivate\": false,\n  \"error\": null,\n  \"scrapedAt\": \"2026-09-06T02:10:31.512Z\"\n}\n```\n\nA private or locked profile:\n\n```json\n{\n  \"sourceUrl\": \"https://www.facebook.com/some.person\",\n  \"url\": \"https://www.facebook.com/some.person\",\n  \"username\": \"some.person\",\n  \"name\": null,\n  \"work\": [],\n  \"education\": [],\n  \"isPrivate\": true,\n  \"error\": \"Profile is private or not publicly visible.\"\n}\n```\n\n## Pricing\n\nYou pay per successfully scraped profile. Rows for private, locked or not-found profiles are free.\n\n## Notes\n\n- Intro details are only as complete as what the profile owner chose to show publicly - a profile may expose work but no city, for example. Anything the actor could not classify is kept verbatim in `otherDetails`.\n- The same person referenced by both a username URL and a `profile.php?id=` URL is treated as two inputs.\n- Free-tier runs are capped at 50 profiles; paid plans remove the limit.\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "Key fields for each result.",
+    "transformation": {
+     "fields": [
+      "sourceUrl",
+      "url",
+      "username",
+      "profileId",
+      "name",
+      "alternateName",
+      "bio",
+      "accountType",
+      "profileKind",
+      "currentCity",
+      "hometown",
+      "relationship"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "sourceUrl": {
+       "label": "Source Url",
+       "format": "link"
+      },
+      "url": {
+       "label": "Url",
+       "format": "link"
+      },
+      "username": {
+       "label": "Username",
+       "format": "text"
+      },
+      "profileId": {
+       "label": "Profile Id",
+       "format": "text"
+      },
+      "name": {
+       "label": "Name",
+       "format": "text"
+      },
+      "alternateName": {
+       "label": "Alternate Name",
+       "format": "text"
+      },
+      "bio": {
+       "label": "Bio",
+       "format": "text"
+      },
+      "accountType": {
+       "label": "Account Type",
+       "format": "text"
+      },
+      "profileKind": {
+       "label": "Profile Kind",
+       "format": "text"
+      },
+      "currentCity": {
+       "label": "Current City",
+       "format": "text"
+      },
+      "hometown": {
+       "label": "Hometown",
+       "format": "text"
+      },
+      "relationship": {
+       "label": "Relationship",
+       "format": "text"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Facebook Profile Scraper Input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Profile URLs or usernames\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Public Facebook profiles to scrape. Accepts full URLs (https://www.facebook.com/zuck), mobile URLs, numeric profile URLs (https://www.facebook.com/profile.php?id=4), or bare usernames (zuck). Duplicates are removed. One dataset record is produced per profile.\",\n      \"prefill\": [\n        \"https://www.facebook.com/zuck\"\n      ]\n    },\n    \"maxItems\": {\n      \"title\": \"Max profiles\",\n      \"type\": \"integer\",\n      \"description\": \"Maximum number of profiles to scrape in this run. Set 0 to process every profile in the list.\",\n      \"default\": 100,\n      \"minimum\": 0\n    },\n    \"proxyConfiguration\": {\n      \"title\": \"Proxy configuration\",\n      \"type\": \"object\",\n      \"editor\": \"proxy\",\n      \"description\": \"Proxy used to load the public profile page that contains the Intro details (work, education, hometown, current city, relationship). Residential proxies are strongly recommended - datacenter IPs are frequently blocked.\",\n      \"default\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ]\n      },\n      \"prefill\": {\n        \"useApifyProxy\": true,\n        \"apifyProxyGroups\": [\n          \"RESIDENTIAL\"\n        ]\n      }\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

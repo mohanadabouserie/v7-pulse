@@ -1,0 +1,87 @@
+{
+ "input": {
+  "twitterHandles": [
+   "EGYPTAIR",
+   "EGYPTAIR",
+   "EGYPTAIR",
+   "EGYPTAIR",
+   "EGYPTAIR"
+  ],
+  "getFollowers": false,
+  "getFollowing": false,
+  "getRetweeters": false,
+  "getAbout": true,
+  "maxItems": 5
+ },
+ "items": [
+  {
+   "inputSource": "EGYPTAIR",
+   "type": "user",
+   "userName": "EGYPTAIR",
+   "url": "https://x.com/EGYPTAIR",
+   "twitterUrl": "https://twitter.com/EGYPTAIR",
+   "id": "70008157",
+   "name": "EGYPTAIR",
+   "isVerified": false,
+   "hasNftAvatar": false,
+   "profilePicture": "https://pbs.twimg.com/profile_images/2029166872306892801/OlqQBMcF_normal.jpg",
+   "coverPicture": "https://pbs.twimg.com/profile_banners/70008157/1726994149",
+   "description": "The only official account for EGYPTAIR.",
+   "location": "Egypt",
+   "followers": 186561,
+   "following": 44,
+   "protected": false,
+   "status": "",
+   "canDm": true,
+   "canMediaTag": false,
+   "createdAt": "Sun Aug 30 00:55:27 +0000 2009",
+   "entities": {
+    "description": {},
+    "url": {
+     "urls": [
+      {
+       "display_url": "egyptair.com",
+       "expanded_url": "http://www.egyptair.com",
+       "indices": [
+        0,
+        23
+       ],
+       "url": "https://t.co/jpME1VlCAc"
+      }
+     ]
+    }
+   },
+   "fastFollowersCount": 0,
+   "favouritesCount": 841,
+   "listedCount": 807,
+   "hasCustomTimelines": true,
+   "isTranslator": false,
+   "mediaCount": 4365,
+   "statusesCount": 53947,
+   "affiliatesHighlightedLabel": {},
+   "professional": {
+    "category": [
+     {
+      "icon_name": "IconBriefcaseStroke",
+      "id": 93,
+      "name": "Aviation"
+     }
+    ],
+    "professional_type": "Business",
+    "rest_id": "1463113242532663300"
+   },
+   "possiblySensitive": false,
+   "profileInterstitialType": "",
+   "hasGraduatedAccess": true,
+   "about": {
+    "accountBasedIn": "Egypt",
+    "locationAccurate": true,
+    "profileImageShape": "Circle",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/2029166872306892801/OlqQBMcF_normal.jpg",
+    "usernameChangeCount": "0",
+    "accountCreatedAt": "Sun Aug 30 00:55:27 +0000 2009",
+    "accountSource": "Egypt App Store"
+   }
+  }
+ ]
+}

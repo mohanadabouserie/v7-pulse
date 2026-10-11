@@ -1,0 +1,490 @@
+[
+  {
+    "type": "web_search_20260209",
+    "name": "web_search",
+    "max_uses": 5,
+    "user_location": {
+      "type": "approximate",
+      "city": "Cairo",
+      "timezone": "Africa/Cairo"
+    }
+  },
+  {
+    "type": "web_fetch_20260209",
+    "name": "web_fetch",
+    "max_uses": 5,
+    "citations": {
+      "enabled": true
+    },
+    "max_content_tokens": 20000
+  },
+  {
+    "name": "get_overview",
+    "description": "Summary of the conversation about V7 in Egypt for a period: counts with the previous period, views and engagement counted on the day they happened, net sentiment, purchase intent, 'can't find it', top topics, types of post, products, platforms, top questions, complaints and ideas, posts waiting for a reply, sales leads, approved events and auto-insights. Uses the user's current dashboard filters unless overridden.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "integer",
+          "enum": [
+            7,
+            30,
+            90
+          ],
+          "description": "Length of the period ending on the latest data date. Defaults to the dashboard's current range."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "posts",
+            "comments",
+            "both"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "UGC",
+            "BGC",
+            "all"
+          ]
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "pom",
+              "pina",
+              "lmint",
+              "blue",
+              "pine",
+              "pink",
+              "pmalt",
+              "amalt",
+              "cream",
+              "cola",
+              "dcola",
+              "llime"
+            ]
+          }
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "fb",
+              "ig",
+              "tt",
+              "x",
+              "yt",
+              "rd"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "search_posts",
+    "description": "Find posts or comments and return up to 20 with date, platform, author, author type, text (first 300 characters), sentiment, type, topic, products, reach, engagement, link and whether V7 still needs to reply. Use it to quote real examples, check a claim, or list what needs a reply.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Words to find in the text or author name, in Arabic, English or Franco-Arabic."
+        },
+        "sentiment": {
+          "type": "string",
+          "enum": [
+            "pos",
+            "neu",
+            "neg"
+          ]
+        },
+        "platform": {
+          "type": "string",
+          "enum": [
+            "fb",
+            "ig",
+            "tt",
+            "x",
+            "yt",
+            "rd"
+          ]
+        },
+        "product": {
+          "type": "string",
+          "enum": [
+            "pom",
+            "pina",
+            "lmint",
+            "blue",
+            "pine",
+            "pink",
+            "pmalt",
+            "amalt",
+            "cream",
+            "cola",
+            "dcola",
+            "llime"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of post, e.g. Question, Complaint, Praise, Purchase intent, Sales lead, Suggestion, False claim."
+        },
+        "topic": {
+          "type": "string"
+        },
+        "waiting_for_reply": {
+          "type": "boolean"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "posts",
+            "comments",
+            "both"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "UGC",
+            "BGC",
+            "all"
+          ]
+        },
+        "country": {
+          "type": "string",
+          "description": "Country name in English. Default Egypt."
+        },
+        "days": {
+          "type": "integer",
+          "enum": [
+            7,
+            30,
+            90
+          ],
+          "description": "Length of the period ending on the latest data date. Defaults to the dashboard's current range."
+        },
+        "sort": {
+          "type": "string",
+          "enum": [
+            "reach",
+            "newest",
+            "engagement"
+          ]
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        }
+      }
+    }
+  },
+  {
+    "name": "get_breakdown",
+    "description": "Count posts or comments by one dimension, with net sentiment and negative share for each group.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "by": {
+          "type": "string",
+          "enum": [
+            "product",
+            "platform",
+            "topic",
+            "type",
+            "label",
+            "author_type",
+            "language",
+            "day",
+            "hashtag",
+            "group",
+            "sentiment",
+            "governorate_search_interest"
+          ]
+        },
+        "days": {
+          "type": "integer",
+          "enum": [
+            7,
+            30,
+            90
+          ],
+          "description": "Length of the period ending on the latest data date. Defaults to the dashboard's current range."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "posts",
+            "comments",
+            "both"
+          ]
+        }
+      },
+      "required": [
+        "by"
+      ]
+    }
+  },
+  {
+    "name": "get_our_accounts",
+    "description": "V7 Egypt's own accounts: followers, posts published, engagement rate, views counted on the day they happened, best formats, profile visits by platform (Facebook page_views_total, Instagram profile_views, TikTok profile_views; YouTube has none), where followers live and their ages (Meta insights), and comments on V7's posts: count, sentiment, questions and complaints answered, median reply time and what people say.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "integer",
+          "enum": [
+            7,
+            30,
+            90
+          ],
+          "description": "Length of the period ending on the latest data date. Defaults to the dashboard's current range."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_market",
+    "description": "Online stores: V7 on Amazon.eg (price, 'bought in past month', best-seller ranks, ratings), Carrefour Egypt and Noon (price, stock), Amazon's top fizzy drinks by company, and with include_competitors the same for Coca-Cola, Pepsi and their brands, malt drinks and local colas, plus price per 100 ml. Also Google search interest in Egypt by week and governorate.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "include_competitors": {
+          "type": "boolean"
+        },
+        "store": {
+          "type": "string",
+          "enum": [
+            "Amazon.eg",
+            "Carrefour",
+            "Noon",
+            "all"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "get_restaurants",
+    "description": "Talabat restaurant menus in the tracked Cairo areas: share of restaurants listing V7, Coca-Cola Co. and PepsiCo brands, who supplies them, by area and type of restaurant, menu prices, the restaurants most visible on Talabat, which V7 products are listed, restaurants that list V7 and prospects that sell soft drinks but not V7.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "area": {
+          "type": "string",
+          "enum": [
+            "Zamalek",
+            "Downtown",
+            "Dokki",
+            "Mohandessin",
+            "Maadi",
+            "Heliopolis",
+            "Nasr City",
+            "New Cairo",
+            "Sheikh Zayed",
+            "6th of October"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Burgers & fried chicken",
+            "Pizza & Italian",
+            "Egyptian & grills",
+            "Shawarma & Levantine",
+            "Asian & sushi",
+            "Seafood",
+            "Cafés, bakeries & desserts",
+            "Sandwiches & other"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "get_risks_and_events",
+    "description": "Rumor and attack campaigns (claim, status, risk, posts, views, coordination score, whether V7 responded, the fact-sheet truth), current alerts, and events on the charts or waiting for approval, with their evidence.",
+    "input_schema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_outside_egypt",
+    "description": "Posts about V7 from outside Egypt: counts by country and region, Egyptians abroad vs locals, questions and complaints, import and stockist leads, last-7-day signals, and V7's pages abroad with follower counts.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "integer",
+          "enum": [
+            7,
+            30,
+            90
+          ],
+          "description": "Length of the period ending on the latest data date. Defaults to the dashboard's current range."
+        },
+        "country": {
+          "type": "string",
+          "description": "Country name in English."
+        }
+      }
+    }
+  },
+  {
+    "name": "apify_list_actors",
+    "description": "List the Apify actors V7 Pulse is allowed to run, with what each collects, its input fields, its price per item and the maximum items allowed per run. Call it before planning a run.",
+    "input_schema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "apify_run_actor",
+    "description": "Start an allowlisted Apify actor to collect new data. Runs at or under the auto-approve limit start at once; bigger runs are sent to an admin and return status 'needs_approval'. Always keep max_items and max_cost_usd as small as the question allows, and test with a few items first.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "actor_id": {
+          "type": "string",
+          "enum": [
+            "apify/facebook-posts-scraper",
+            "apify/facebook-comments-scraper",
+            "apify/facebook-groups-scraper",
+            "apify/instagram-scraper",
+            "apify/instagram-comment-scraper",
+            "clockworks/tiktok-scraper",
+            "streamers/youtube-scraper",
+            "streamers/youtube-comments-scraper",
+            "trudax/reddit-scraper-lite",
+            "apidojo/tweet-scraper",
+            "junglee/Amazon-crawler",
+            "junglee/amazon-bestsellers",
+            "blackfalcondata/carrefour-maf-scraper",
+            "crawlerbros/noon-scraper",
+            "memo23/talabat-scraper",
+            "apify/google-trends-scraper"
+          ]
+        },
+        "input": {
+          "type": "object",
+          "description": "The actor input, as documented by apify_list_actors."
+        },
+        "max_items": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2000
+        },
+        "max_cost_usd": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 15
+        },
+        "reason": {
+          "type": "string",
+          "description": "One sentence on what this collects and why, shown to the approving admin."
+        }
+      },
+      "required": [
+        "actor_id",
+        "input",
+        "max_items",
+        "max_cost_usd",
+        "reason"
+      ]
+    }
+  },
+  {
+    "name": "apify_get_run",
+    "description": "Status of an Apify run started by apify_run_actor: status, items so far, cost so far, and once it has succeeded a summary plus up to 50 items, trimmed to the fields that matter.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "run_id": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Optional item fields to keep."
+        }
+      },
+      "required": [
+        "run_id"
+      ]
+    }
+  },
+  {
+    "name": "create_event_suggestion",
+    "description": "Suggest an event that explains a spike or a change (launch, campaign, viral post, news, search spike, rumor). It goes to the Events tab as pending until an admin approves it. Include the evidence.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "YYYY-MM-DD"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 90
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "V7 campaign",
+            "V7 post",
+            "V7 announcement",
+            "Product launch",
+            "Creator post",
+            "Viral post",
+            "News",
+            "Search spike",
+            "Rumor",
+            "Mention spike",
+            "Other"
+          ]
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "pom",
+              "pina",
+              "lmint",
+              "blue",
+              "pine",
+              "pink",
+              "pmalt",
+              "amalt",
+              "cream",
+              "cola",
+              "dcola",
+              "llime"
+            ]
+          }
+        },
+        "evidence": {
+          "type": "string",
+          "description": "The numbers or sources behind it."
+        }
+      },
+      "required": [
+        "date",
+        "title",
+        "type",
+        "evidence"
+      ]
+    }
+  }
+]

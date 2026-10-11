@@ -1,0 +1,7252 @@
+{
+ "input": {
+  "twitterContent": "V7 (مشروب OR صودا OR كريم OR بيناكولادا OR رمان OR مالت OR كانز) -هافال -Haval -Raptor",
+  "maxItems": 30,
+  "queryType": "Latest"
+ },
+ "items": [
+  {
+   "type": "tweet",
+   "id": "2101738112254693660",
+   "url": "https://x.com/AhmedBargal6/status/2101738112254693660",
+   "twitterUrl": "https://twitter.com/AhmedBargal6/status/2101738112254693660",
+   "text": "V7 بيناكولادا \nبينك ليموناد \nكريم صودا \nمفيش أي شركة أجنبية جابت الجودة دي في مصر طول عمرها",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 1,
+   "likeCount": 5,
+   "quoteCount": 0,
+   "viewCount": 323,
+   "createdAt": "Sun Sep 20 18:19:49 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2101738112254693660",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "AhmedBargal6",
+    "url": "https://x.com/AhmedBargal6",
+    "twitterUrl": "https://twitter.com/AhmedBargal6",
+    "id": "932190384020746240",
+    "name": "Ahmed Bargal",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1880357952470609920/HiCfshcF_normal.jpg",
+    "coverPicture": "",
+    "description": "",
+    "location": "",
+    "followers": 462,
+    "following": 381,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Nov 19 10:14:41 +0000 2017",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 23706,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 223,
+    "statusesCount": 2324,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "Normal One",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "2101644952505589805",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1258851194950356999",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 43326
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/2100342569699770368/I5CQ553h_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1258851194950356999/1787019278"
+        },
+        "core": {
+         "created_at": "Fri May 08 20:08:21 +0000 2020",
+         "name": "shimaa",
+         "screen_name": "shimaas2122"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": "Cairo, Egypt"
+        },
+        "media_permissions": {
+         "can_media_tag": false
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "2099923225199182238"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "",
+         "entities": {
+          "description": {}
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 3440,
+         "following": 290
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1258851194950356999",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 933,
+         "tweets": 15699
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": ""
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "2101644952505589805"
+      ],
+      "editable_until_msecs": "1789909778000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 44,
+      "bookmarked": false,
+      "conversation_id_str": "2101644952505589805",
+      "created_at": "Sun Sep 20 12:09:38 +0000 2026",
+      "display_text_range": [
+       0,
+       77
+      ],
+      "entities": {},
+      "extended_entities": {
+       "media": [
+        {
+         "allow_download_status": {
+          "allow_download": true
+         },
+         "display_url": "pic.x.com/TBzOn0j5n3",
+         "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2101644944985264128",
+         "indices": [
+          78,
+          101
+         ],
+         "media_key": "3_2101644944985264128",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFF15AACgACHSqK8wYWoC0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHSqK8UXXkAAKAAIdKorzBhagLQAA",
+           "media_key": "3_2101644944985264128"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HSqK8UXXkAAxAgE.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 660,
+            "w": 1179,
+            "x": 0,
+            "y": 514
+           },
+           {
+            "h": 1174,
+            "w": 1174,
+            "x": 2,
+            "y": 0
+           },
+           {
+            "h": 1174,
+            "w": 1030,
+            "x": 74,
+            "y": 0
+           },
+           {
+            "h": 1174,
+            "w": 587,
+            "x": 296,
+            "y": 0
+           },
+           {
+            "h": 1174,
+            "w": 1179,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1174,
+          "width": 1179
+         },
+         "sizes": {
+          "large": {
+           "h": 1174,
+           "w": 1179
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/TBzOn0j5n3"
+        },
+        {
+         "allow_download_status": {
+          "allow_download": true
+         },
+         "display_url": "pic.x.com/TBzOn0j5n3",
+         "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2101644944980979712",
+         "indices": [
+          78,
+          101
+         ],
+         "media_key": "3_2101644944980979712",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFFljAACgACHSqK8wYWoC0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHSqK8UWWMAAKAAIdKorzBhagLQAA",
+           "media_key": "3_2101644944980979712"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HSqK8UWWMAAlpjf.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 660,
+            "w": 1179,
+            "x": 0,
+            "y": 553
+           },
+           {
+            "h": 1179,
+            "w": 1179,
+            "x": 0,
+            "y": 34
+           },
+           {
+            "h": 1213,
+            "w": 1064,
+            "x": 0,
+            "y": 0
+           },
+           {
+            "h": 1213,
+            "w": 607,
+            "x": 0,
+            "y": 0
+           },
+           {
+            "h": 1213,
+            "w": 1179,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1213,
+          "width": 1179
+         },
+         "sizes": {
+          "large": {
+           "h": 1213,
+           "w": 1179
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/TBzOn0j5n3"
+        }
+       ]
+      },
+      "favorite_count": 610,
+      "favorited": false,
+      "full_text": "موضوع إن المطاعم بقت بتطفحنا ماية الغسيل الل اسمها ڤي كولا وماكسي بالعافية دة https://t.co/TBzOn0j5n3",
+      "is_quote_status": false,
+      "lang": "ar",
+      "possibly_sensitive": false,
+      "possibly_sensitive_editable": true,
+      "quote_count": 28,
+      "reply_count": 47,
+      "retweet_count": 11,
+      "retweeted": false,
+      "user_id_str": "1258851194950356999"
+     },
+     "rest_id": "2101644952505589805",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEdKorzBhagLQ8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "96299",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "2101644952505589805",
+    "url": "https://x.com/shimaas2122/status/2101644952505589805",
+    "twitterUrl": "https://twitter.com/shimaas2122/status/2101644952505589805",
+    "text": "موضوع إن المطاعم بقت بتطفحنا ماية الغسيل الل اسمها ڤي كولا وماكسي بالعافية دة https://t.co/TBzOn0j5n3",
+    "source": "",
+    "retweetCount": 11,
+    "replyCount": 47,
+    "likeCount": 610,
+    "quoteCount": 28,
+    "viewCount": 96299,
+    "createdAt": "Sun Sep 20 12:09:38 +0000 2026",
+    "lang": "ar",
+    "bookmarkCount": 44,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2101644952505589805",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "shimaas2122",
+     "url": "https://x.com/shimaas2122",
+     "twitterUrl": "https://twitter.com/shimaas2122",
+     "id": "1258851194950356999",
+     "name": "shimaa",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/2100342569699770368/I5CQ553h_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1258851194950356999/1787019278",
+     "description": "",
+     "location": "Cairo, Egypt",
+     "followers": 3440,
+     "following": 290,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": false,
+     "createdAt": "Fri May 08 20:08:21 +0000 2020",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 43326,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 933,
+     "statusesCount": 15699,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "2099923225199182238"
+     ],
+     "profile_bio": {
+      "description": "",
+      "entities": {
+       "description": {}
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/TBzOn0j5n3",
+       "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2101644944985264128",
+       "indices": [
+        78,
+        101
+       ],
+       "media_key": "3_2101644944985264128",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFF15AACgACHSqK8wYWoC0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHSqK8UXXkAAKAAIdKorzBhagLQAA",
+         "media_key": "3_2101644944985264128"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HSqK8UXXkAAxAgE.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 660,
+          "w": 1179,
+          "x": 0,
+          "y": 514
+         },
+         {
+          "h": 1174,
+          "w": 1174,
+          "x": 2,
+          "y": 0
+         },
+         {
+          "h": 1174,
+          "w": 1030,
+          "x": 74,
+          "y": 0
+         },
+         {
+          "h": 1174,
+          "w": 587,
+          "x": 296,
+          "y": 0
+         },
+         {
+          "h": 1174,
+          "w": 1179,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1174,
+        "width": 1179
+       },
+       "sizes": {
+        "large": {
+         "h": 1174,
+         "w": 1179
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/TBzOn0j5n3"
+      },
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/TBzOn0j5n3",
+       "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2101644944980979712",
+       "indices": [
+        78,
+        101
+       ],
+       "media_key": "3_2101644944980979712",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFFljAACgACHSqK8wYWoC0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHSqK8UWWMAAKAAIdKorzBhagLQAA",
+         "media_key": "3_2101644944980979712"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HSqK8UWWMAAlpjf.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 660,
+          "w": 1179,
+          "x": 0,
+          "y": 553
+         },
+         {
+          "h": 1179,
+          "w": 1179,
+          "x": 0,
+          "y": 34
+         },
+         {
+          "h": 1213,
+          "w": 1064,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1213,
+          "w": 607,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1213,
+          "w": 1179,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1213,
+        "width": 1179
+       },
+       "sizes": {
+        "large": {
+         "h": 1213,
+         "w": 1179
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/TBzOn0j5n3"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2095616130480033858",
+   "url": "https://x.com/0A70O/status/2095616130480033858",
+   "twitterUrl": "https://twitter.com/0A70O/status/2095616130480033858",
+   "text": "الهلال يشكر \" مالكوم \" 📄\nالهلال يشكر \" داروين نونيز \" 📄\nالهلال يشكر \" كريم بنزيما  \" 📄\n\nالهلال يعلن التعاقد مع \" سامرفيل \" 💙\nالهلال يعلن التعاقد مع \" واتكينز \" 💙\nالهلال يعلن التعاقد مع \" مارتنيلي \" 💙\n\nقول وفعل ياشامخ الله يعزك يابو خالد 💙💙",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 4,
+   "quoteCount": 0,
+   "viewCount": 342,
+   "createdAt": "Thu Sep 03 20:53:14 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2095616130480033858",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "0A70O",
+    "url": "https://x.com/0A70O",
+    "twitterUrl": "https://twitter.com/0A70O",
+    "id": "1390593233416294404",
+    "name": "𝐕𝟕",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2099074879576522752/BaZfN3wD_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1390593233416294404/1789297555",
+    "description": "",
+    "location": "",
+    "followers": 241,
+    "following": 847,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Fri May 07 09:04:09 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 1080,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1420,
+    "statusesCount": 10377,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "A life far from the noise",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "2062472412923334742",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1244602586",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 10
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/2070822570224414720/zW6vO9PY_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1244602586/1782226664"
+        },
+        "core": {
+         "created_at": "Tue Mar 05 20:53:23 +0000 2013",
+         "name": "الوليد بن طلال",
+         "screen_name": "Alwaleed_Talal"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {
+         "label": {
+          "badge": {
+           "url": "https://pbs.twimg.com/profile_images/2022979799522881536/xe5VeLD7_bigger.jpg"
+          },
+          "description": "شركة المملكة القابضة",
+          "url": {
+           "url": "https://twitter.com/Kingdom_KHC",
+           "url_type": "DeepLink"
+          },
+          "user_label_display_type": "Badge",
+          "user_label_type": "BusinessLabel"
+         }
+        },
+        "location": {
+         "location": "Riyadh"
+        },
+        "media_permissions": {
+         "can_media_tag": true
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "2088959829645615359"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "The Chairman of the Board of @Alwaleed_Philan             The Chairman of the Board of @Kingdom_KHC             The Chairman @RotanaMedia & @RotanaMusic",
+         "entities": {
+          "description": {
+           "user_mentions": [
+            {
+             "id_str": "",
+             "indices": [
+              29,
+              45
+             ],
+             "name": "",
+             "screen_name": "Alwaleed_Philan"
+            },
+            {
+             "id_str": "",
+             "indices": [
+              87,
+              99
+             ],
+             "name": "",
+             "screen_name": "Kingdom_KHC"
+            },
+            {
+             "id_str": "",
+             "indices": [
+              125,
+              137
+             ],
+             "name": "",
+             "screen_name": "RotanaMedia"
+            },
+            {
+             "id_str": "",
+             "indices": [
+              140,
+              152
+             ],
+             "name": "",
+             "screen_name": "RotanaMusic"
+            }
+           ]
+          },
+          "url": {
+           "urls": [
+            {
+             "display_url": "alwaleed.com.sa",
+             "expanded_url": "http://www.alwaleed.com.sa",
+             "indices": [
+              0,
+              23
+             ],
+             "url": "https://t.co/ZvNh3QZXGV"
+            }
+           ]
+          }
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "006600"
+        },
+        "profile_translation": {
+         "translator_type_enum": "Regular"
+        },
+        "properties": {
+         "has_extended_profile": false,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 13886199,
+         "following": 63
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1244602586",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 402,
+         "tweets": 714
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": "https://t.co/ZvNh3QZXGV"
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "2062472412923334742"
+      ],
+      "editable_until_msecs": "1780570316000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 2309,
+      "bookmarked": false,
+      "conversation_id_str": "2062472412923334742",
+      "created_at": "Thu Jun 04 09:51:56 +0000 2026",
+      "display_text_range": [
+       0,
+       26
+      ],
+      "entities": {},
+      "favorite_count": 44256,
+      "favorited": false,
+      "full_text": "\"الهدوء ما قبل العـاصفة 💙\"",
+      "is_quote_status": false,
+      "lang": "ar",
+      "quote_count": 4616,
+      "reply_count": 12659,
+      "retweet_count": 20636,
+      "retweeted": false,
+      "user_id_str": "1244602586"
+     },
+     "rest_id": "2062472412923334742",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEcn1+7a1aQVg8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "21561485",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "2062472412923334742",
+    "url": "https://x.com/Alwaleed_Talal/status/2062472412923334742",
+    "twitterUrl": "https://twitter.com/Alwaleed_Talal/status/2062472412923334742",
+    "text": "\"الهدوء ما قبل العـاصفة 💙\"",
+    "source": "",
+    "retweetCount": 20636,
+    "replyCount": 12659,
+    "likeCount": 44256,
+    "quoteCount": 4616,
+    "viewCount": 21561485,
+    "createdAt": "Thu Jun 04 09:51:56 +0000 2026",
+    "lang": "ar",
+    "bookmarkCount": 2309,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2062472412923334742",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "Alwaleed_Talal",
+     "url": "https://x.com/Alwaleed_Talal",
+     "twitterUrl": "https://twitter.com/Alwaleed_Talal",
+     "id": "1244602586",
+     "name": "الوليد بن طلال",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/2070822570224414720/zW6vO9PY_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1244602586/1782226664",
+     "description": "",
+     "location": "Riyadh",
+     "followers": 13886199,
+     "following": 63,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Tue Mar 05 20:53:23 +0000 2013",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 10,
+     "hasCustomTimelines": true,
+     "isTranslator": true,
+     "mediaCount": 402,
+     "statusesCount": 714,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "2088959829645615359"
+     ],
+     "profile_bio": {
+      "description": "The Chairman of the Board of @Alwaleed_Philan             The Chairman of the Board of @Kingdom_KHC             The Chairman @RotanaMedia & @RotanaMusic",
+      "entities": {
+       "description": {
+        "user_mentions": [
+         {
+          "id_str": "",
+          "indices": [
+           29,
+           45
+          ],
+          "name": "",
+          "screen_name": "Alwaleed_Philan"
+         },
+         {
+          "id_str": "",
+          "indices": [
+           87,
+           99
+          ],
+          "name": "",
+          "screen_name": "Kingdom_KHC"
+         },
+         {
+          "id_str": "",
+          "indices": [
+           125,
+           137
+          ],
+          "name": "",
+          "screen_name": "RotanaMedia"
+         },
+         {
+          "id_str": "",
+          "indices": [
+           140,
+           152
+          ],
+          "name": "",
+          "screen_name": "RotanaMusic"
+         }
+        ]
+       },
+       "url": {
+        "urls": [
+         {
+          "display_url": "alwaleed.com.sa",
+          "expanded_url": "http://www.alwaleed.com.sa",
+          "indices": [
+           0,
+           23
+          ],
+          "url": "https://t.co/ZvNh3QZXGV"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {},
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2095254494661460194",
+   "url": "https://x.com/leh_kedaa/status/2095254494661460194",
+   "twitterUrl": "https://twitter.com/leh_kedaa/status/2095254494661460194",
+   "text": "مش عايزة المح اي جريمة قتل او اغتصاب او قضايا شرف عندي على اي بلاتفورم انا عايزة اشوف الوان وحب وكرينجات وواحدة بتبدا سمول بيزنس وواحد بيجرب الكريم صودا من v7 ابعدوا عن نفسيتي وجسمي كمية الخراب والسلبية اللي في كل حتة يارب عافينا واحمينا",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 0,
+   "likeCount": 8,
+   "quoteCount": 0,
+   "viewCount": 567,
+   "createdAt": "Wed Sep 02 20:56:14 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2095254494661460194",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "leh_kedaa",
+    "url": "https://x.com/leh_kedaa",
+    "twitterUrl": "https://twitter.com/leh_kedaa",
+    "id": "773178261564190720",
+    "name": "لينا",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2091182830013366272/BSbu--t6_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/773178261564190720/1776371305",
+    "description": "",
+    "location": "Cairo",
+    "followers": 5824,
+    "following": 90,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Sep 06 15:17:17 +0000 2016",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 12088,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 164,
+    "statusesCount": 8152,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2031056614686347366"
+    ],
+    "profile_bio": {
+     "description": "بحب بابا والفن",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/lina.abdalhake…",
+         "expanded_url": "https://www.instagram.com/lina.abdalhakeem?igsh=MWY5dDZ4YXJpYmt2Yw==",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/XvwwYEItZh"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2090882438562042309",
+   "url": "https://x.com/Mannozaa/status/2090882438562042309",
+   "twitterUrl": "https://twitter.com/Mannozaa/status/2090882438562042309",
+   "text": "@StarGirlivyy انا بقرف من اي مشروب بلاقيه مسكر و الكوكاكولا بجد الوحيده اللي مش مسكره و مفيهاش افتر تيست بشع زي البيبسي و v7",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 21,
+   "quoteCount": 0,
+   "viewCount": 7692,
+   "createdAt": "Fri Aug 21 19:23:14 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2090881741674205390",
+   "conversationId": "2090873044482797883",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Mannozaa",
+    "url": "https://x.com/Mannozaa",
+    "twitterUrl": "https://twitter.com/Mannozaa",
+    "id": "1276872255436455937",
+    "name": "منوزة",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2106435792033705984/t-_OWGt7_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1276872255436455937/1790792091",
+    "description": "",
+    "location": "",
+    "followers": 14195,
+    "following": 192,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sat Jun 27 13:37:44 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 121024,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 4118,
+    "statusesCount": 30315,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "\"Honestly, Nevermind\" is the greatest album of all time",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/mennadawoodd?i…",
+         "expanded_url": "https://www.instagram.com/mennadawoodd?igsh=Ym5zajlhangwbXVw&utm_source=qr",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/CwGC8nQxRZ"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "1920593533473599488",
+      "indices": [
+       0,
+       13
+      ],
+      "name": "الكيوي باشا",
+      "screen_name": "StarGirlivyy"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2089686204895674392",
+   "url": "https://x.com/MotazAssal/status/2089686204895674392",
+   "twitterUrl": "https://twitter.com/MotazAssal/status/2089686204895674392",
+   "text": "فخر الصناعات المصرية \"ڤي سڤن V7\" يعيد طرح المشروب الأسطوري لشويبس  \"كريم صودا\" .. \nمشروب جيل الطيبين ..\nhttps://t.co/t5NT1cD2pz https://t.co/844IhhbY3f",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 9,
+   "quoteCount": 0,
+   "viewCount": 577,
+   "createdAt": "Tue Aug 18 12:09:50 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2089686204895674392",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "MotazAssal",
+    "url": "https://x.com/MotazAssal",
+    "twitterUrl": "https://twitter.com/MotazAssal",
+    "id": "1463319795034644487",
+    "name": "Motaz Assal",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1644168663518289922/hXEsMDxT_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1463319795034644487/1704316465",
+    "description": "",
+    "location": "Mansoura - Jeddah - Sarajevo ",
+    "followers": 16111,
+    "following": 1903,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Wed Nov 24 01:33:42 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 165873,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 8417,
+    "statusesCount": 87484,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1636291499506688001"
+    ],
+    "profile_bio": {
+     "description": "University Lecturer, Academic Researcher, Economist and Certified English Translator\nمقدم محتوى #في_الكريزة\n#Fel_Kreza\nhttps://t.co/nqz7uCP3sA",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          96,
+          107
+         ],
+         "text": "في_الكريزة"
+        },
+        {
+         "indices": [
+          108,
+          118
+         ],
+         "text": "Fel_Kreza"
+        }
+       ],
+       "urls": [
+        {
+         "display_url": "youtube.com/@felkreza",
+         "expanded_url": "http://youtube.com/@felkreza",
+         "indices": [
+          119,
+          142
+         ],
+         "url": "https://t.co/nqz7uCP3sA"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "allow_download_status": {
+       "allow_download": true
+      },
+      "display_url": "pic.x.com/844IhhbY3f",
+      "expanded_url": "https://x.com/MotazAssal/status/2089686204895674392/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 37,
+          "w": 37,
+          "x": 409,
+          "y": 613
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 37,
+          "w": 37,
+          "x": 409,
+          "y": 613
+         }
+        ]
+       }
+      },
+      "id_str": "2089685644503040000",
+      "indices": [
+       128,
+       151
+      ],
+      "media_key": "3_2089685644503040000",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0ADgWk1kAACgACHQAOiB7XQBgAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHQAOBaTWQAAKAAIdAA6IHtdAGAAA",
+        "media_key": "3_2089685644503040000"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HQAOBaTWQAArvcQ.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 605,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 818,
+         "x": 158,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 718,
+         "x": 208,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 409,
+         "x": 363,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 818,
+       "width": 1080
+      },
+      "sizes": {
+       "large": {
+        "h": 818,
+        "w": 1080
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/844IhhbY3f"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/MotazAssal/sta…",
+      "expanded_url": "https://x.com/MotazAssal/status/1928134633973076441?s=20",
+      "indices": [
+       104,
+       127
+      ],
+      "url": "https://t.co/t5NT1cD2pz"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "1928134633973076441",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1463319795034644487",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 165873
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/1644168663518289922/hXEsMDxT_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1463319795034644487/1704316465"
+        },
+        "core": {
+         "created_at": "Wed Nov 24 01:33:42 +0000 2021",
+         "name": "Motaz Assal",
+         "screen_name": "MotazAssal"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": "Mansoura - Jeddah - Sarajevo "
+        },
+        "media_permissions": {
+         "can_media_tag": true
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "1636291499506688001"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "University Lecturer, Academic Researcher, Economist and Certified English Translator\nمقدم محتوى #في_الكريزة\n#Fel_Kreza\nhttps://t.co/nqz7uCP3sA",
+         "entities": {
+          "description": {
+           "hashtags": [
+            {
+             "indices": [
+              96,
+              107
+             ],
+             "text": "في_الكريزة"
+            },
+            {
+             "indices": [
+              108,
+              118
+             ],
+             "text": "Fel_Kreza"
+            }
+           ],
+           "urls": [
+            {
+             "display_url": "youtube.com/@felkreza",
+             "expanded_url": "http://youtube.com/@felkreza",
+             "indices": [
+              119,
+              142
+             ],
+             "url": "https://t.co/nqz7uCP3sA"
+            }
+           ]
+          }
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 16111,
+         "following": 1903
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1463319795034644487",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 8417,
+         "tweets": 87484
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": ""
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "1928134633973076441"
+      ],
+      "editable_until_msecs": "1748541694000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 1,
+      "bookmarked": false,
+      "conversation_id_str": "1928134633973076441",
+      "created_at": "Thu May 29 17:01:34 +0000 2025",
+      "display_text_range": [
+       0,
+       77
+      ],
+      "entities": {},
+      "extended_entities": {
+       "media": [
+        {
+         "allow_download_status": {
+          "allow_download": true
+         },
+         "display_url": "pic.x.com/1cZAOA86J5",
+         "expanded_url": "https://x.com/MotazAssal/status/1928134633973076441/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "1928134388081897473",
+         "indices": [
+          78,
+          101
+         ],
+         "media_key": "3_1928134388081897473",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrCHAKg1jABCgACGsIcO+EX0dkAAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABGsIcAqDWMAEKAAIawhw74RfR2QAA",
+           "media_key": "3_1928134388081897473"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/GsIcAqDWMAESIuk.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 369,
+            "w": 659,
+            "x": 0,
+            "y": 633
+           },
+           {
+            "h": 659,
+            "w": 659,
+            "x": 0,
+            "y": 488
+           },
+           {
+            "h": 751,
+            "w": 659,
+            "x": 0,
+            "y": 442
+           },
+           {
+            "h": 1211,
+            "w": 606,
+            "x": 53,
+            "y": 0
+           },
+           {
+            "h": 1211,
+            "w": 659,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1211,
+          "width": 659
+         },
+         "sizes": {
+          "large": {
+           "h": 1211,
+           "w": 659
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/1cZAOA86J5"
+        }
+       ]
+      },
+      "favorite_count": 11,
+      "favorited": false,
+      "full_text": "مشروب جيل الطيبين ..\nشويبس \"كريم صودا\" .. كان طعمها مالوش حل ..\nإنتاج ٢٠٠٣ .. https://t.co/1cZAOA86J5",
+      "is_quote_status": false,
+      "lang": "ar",
+      "possibly_sensitive": false,
+      "possibly_sensitive_editable": true,
+      "quote_count": 2,
+      "reply_count": 1,
+      "retweet_count": 1,
+      "retweeted": false,
+      "user_id_str": "1463319795034644487"
+     },
+     "rest_id": "1928134633973076441",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEawhw74RfR2Q8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "1717",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "1928134633973076441",
+    "url": "https://x.com/MotazAssal/status/1928134633973076441",
+    "twitterUrl": "https://twitter.com/MotazAssal/status/1928134633973076441",
+    "text": "مشروب جيل الطيبين ..\nشويبس \"كريم صودا\" .. كان طعمها مالوش حل ..\nإنتاج ٢٠٠٣ .. https://t.co/1cZAOA86J5",
+    "source": "",
+    "retweetCount": 1,
+    "replyCount": 1,
+    "likeCount": 11,
+    "quoteCount": 2,
+    "viewCount": 1717,
+    "createdAt": "Thu May 29 17:01:34 +0000 2025",
+    "lang": "ar",
+    "bookmarkCount": 1,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "1928134633973076441",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "MotazAssal",
+     "url": "https://x.com/MotazAssal",
+     "twitterUrl": "https://twitter.com/MotazAssal",
+     "id": "1463319795034644487",
+     "name": "Motaz Assal",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1644168663518289922/hXEsMDxT_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1463319795034644487/1704316465",
+     "description": "",
+     "location": "Mansoura - Jeddah - Sarajevo ",
+     "followers": 16111,
+     "following": 1903,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Wed Nov 24 01:33:42 +0000 2021",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 165873,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 8417,
+     "statusesCount": 87484,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "1636291499506688001"
+     ],
+     "profile_bio": {
+      "description": "University Lecturer, Academic Researcher, Economist and Certified English Translator\nمقدم محتوى #في_الكريزة\n#Fel_Kreza\nhttps://t.co/nqz7uCP3sA",
+      "entities": {
+       "description": {
+        "hashtags": [
+         {
+          "indices": [
+           96,
+           107
+          ],
+          "text": "في_الكريزة"
+         },
+         {
+          "indices": [
+           108,
+           118
+          ],
+          "text": "Fel_Kreza"
+         }
+        ],
+        "urls": [
+         {
+          "display_url": "youtube.com/@felkreza",
+          "expanded_url": "http://youtube.com/@felkreza",
+          "indices": [
+           119,
+           142
+          ],
+          "url": "https://t.co/nqz7uCP3sA"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/1cZAOA86J5",
+       "expanded_url": "https://x.com/MotazAssal/status/1928134633973076441/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "1928134388081897473",
+       "indices": [
+        78,
+        101
+       ],
+       "media_key": "3_1928134388081897473",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrCHAKg1jABCgACGsIcO+EX0dkAAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABGsIcAqDWMAEKAAIawhw74RfR2QAA",
+         "media_key": "3_1928134388081897473"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/GsIcAqDWMAESIuk.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 369,
+          "w": 659,
+          "x": 0,
+          "y": 633
+         },
+         {
+          "h": 659,
+          "w": 659,
+          "x": 0,
+          "y": 488
+         },
+         {
+          "h": 751,
+          "w": 659,
+          "x": 0,
+          "y": 442
+         },
+         {
+          "h": 1211,
+          "w": 606,
+          "x": 53,
+          "y": 0
+         },
+         {
+          "h": 1211,
+          "w": 659,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1211,
+        "width": 659
+       },
+       "sizes": {
+        "large": {
+         "h": 1211,
+         "w": 659
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/1cZAOA86J5"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2089045375831171115",
+   "url": "https://x.com/LaCeriseRevz/status/2089045375831171115",
+   "twitterUrl": "https://twitter.com/LaCeriseRevz/status/2089045375831171115",
+   "text": "ريڤيو ال v7 الجديدة 🎃\n\nاول مرة طعمها بيبقى كإنه دوا اوبلكس بتاع الكحة، بعدين طعمها بيبدأ يبقى كإنه فيها لمحة اناناس، و اخيرًا بيبدأ طعمها الأصلي يبان و بتبقى شبه الكريمة اللي بين البسكويت الويڤر فعلًا..\nمحتاجة تدوها فرصتها بس عشان طعمها الحقيقي يبان. https://t.co/6zy2KehtuX",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 10,
+   "quoteCount": 0,
+   "viewCount": 748,
+   "createdAt": "Sun Aug 16 17:43:24 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2089045375831171115",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "LaCeriseRevz",
+    "url": "https://x.com/LaCeriseRevz",
+    "twitterUrl": "https://twitter.com/LaCeriseRevz",
+    "id": "1492889938433560581",
+    "name": "𝒮’𝒶ℳ𝒶́₊˚ ⚯͛",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2086965267234521088/L2iyzLIK_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1492889938433560581/1764064930",
+    "description": "",
+    "location": "Alexandria, Egypt",
+    "followers": 1119,
+    "following": 298,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Feb 13 15:54:51 +0000 2022",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 65620,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 378,
+    "statusesCount": 22304,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "🍒⚡️🦢",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/6zy2KehtuX",
+      "expanded_url": "https://x.com/LaCeriseRevz/status/2089045375831171115/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 92,
+          "w": 92,
+          "x": 1530,
+          "y": 122
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 92,
+          "w": 92,
+          "x": 1530,
+          "y": 122
+         }
+        ]
+       }
+      },
+      "id_str": "2089045349943980032",
+      "indices": [
+       251,
+       274
+      ],
+      "media_key": "3_2089045349943980032",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARz9x61zF7AACgACHP3Hs3oW4CsAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHP3HrXMXsAAKAAIc/cezehbgKwAA",
+        "media_key": "3_2089045349943980032"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HP3HrXMXsAAQXYU.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 917,
+         "w": 1638,
+         "x": 0,
+         "y": 207
+        },
+        {
+         "h": 1638,
+         "w": 1638,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1867,
+         "w": 1638,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 2048,
+         "w": 1024,
+         "x": 255,
+         "y": 0
+        },
+        {
+         "h": 2048,
+         "w": 1638,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 2048,
+       "width": 1638
+      },
+      "sizes": {
+       "large": {
+        "h": 2048,
+        "w": 1638
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/6zy2KehtuX"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2088501900798796021",
+   "url": "https://x.com/HabibaNEld30709/status/2088501900798796021",
+   "twitterUrl": "https://twitter.com/HabibaNEld30709/status/2088501900798796021",
+   "text": "V7\nمفيهاش غير طعم الكولا العادية وممكن البيناكولادا شوية مقبول \nأما عندك البلوبيري ده بريل مواعين\nالرمان طعم حاجه مش مفهومه\nالكولا دايت أسوأ كولا دايت شربتها  \nالبتاع الي في الصورة ده عايزة اسالهم ليه والله",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 7,
+   "quoteCount": 0,
+   "viewCount": 189,
+   "createdAt": "Sat Aug 15 05:43:50 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2088501900798796021",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "HabibaNEld30709",
+    "url": "https://x.com/HabibaNEld30709",
+    "twitterUrl": "https://twitter.com/HabibaNEld30709",
+    "id": "1816855212986105861",
+    "name": "حَـبـيـبـة",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2104511239351128064/dI4MIObW_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1816855212986105861/1789243023",
+    "description": "",
+    "location": "المدينة الزحمة جدا",
+    "followers": 442,
+    "following": 360,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Fri Jul 26 15:17:18 +0000 2024",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 18093,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 38,
+    "statusesCount": 2181,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2094830386425561164"
+    ],
+    "profile_bio": {
+     "description": "(FSـCU)\n⏳\nعمرها ما هتمشي زي ما انت عايز ، تأقلم .",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "2088324571787088157",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "996292173158109185",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 33348
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/2097343682999373824/zL4X7TcX_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/996292173158109185/1777157064"
+        },
+        "core": {
+         "created_at": "Tue May 15 07:32:19 +0000 2018",
+         "name": "Shahad🦦",
+         "screen_name": "xoxoshahadG"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": ""
+        },
+        "media_permissions": {
+         "can_media_tag": false
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "2000660885854150897"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "I thought somebody could tell me how- but I found nobody could.\n\nmedical student (5/5)🦤",
+         "entities": {
+          "description": {}
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 1263,
+         "following": 581
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "996292173158109185",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 325,
+         "tweets": 2562
+        },
+        "verification": {
+         "is_blue_verified": false,
+         "verified": false
+        },
+        "website": {
+         "url": ""
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "2088324571787088157"
+      ],
+      "editable_until_msecs": "1786733951000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 3,
+      "bookmarked": false,
+      "conversation_id_str": "2088324571787088157",
+      "created_at": "Fri Aug 14 17:59:11 +0000 2026",
+      "display_text_range": [
+       0,
+       63
+      ],
+      "entities": {},
+      "extended_entities": {
+       "media": [
+        {
+         "display_url": "pic.x.com/ZbFiuhuwOC",
+         "expanded_url": "https://x.com/xoxoshahadG/status/2088324571787088157/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2088324550660370433",
+         "indices": [
+          64,
+          87
+         ],
+         "media_key": "3_2088324550660370433",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARz7OB1J1rABCgACHPs4IjUW0R0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHPs4HUnWsAEKAAIc+zgiNRbRHQAA",
+           "media_key": "3_2088324550660370433"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HPs4HUnWsAEjjY9.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 1381,
+            "w": 2466,
+            "x": 0,
+            "y": 676
+           },
+           {
+            "h": 2466,
+            "w": 2466,
+            "x": 0,
+            "y": 133
+           },
+           {
+            "h": 2811,
+            "w": 2466,
+            "x": 0,
+            "y": 0
+           },
+           {
+            "h": 3645,
+            "w": 1823,
+            "x": 273,
+            "y": 0
+           },
+           {
+            "h": 3645,
+            "w": 2466,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 3645,
+          "width": 2466
+         },
+         "sizes": {
+          "large": {
+           "h": 2048,
+           "w": 1386
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/ZbFiuhuwOC"
+        }
+       ]
+      },
+      "favorite_count": 20,
+      "favorited": false,
+      "full_text": "اروح بقا واجربها\nلو طلعت وحشه ع اللف دا كله حسابكم معايا عسييير https://t.co/ZbFiuhuwOC",
+      "is_quote_status": true,
+      "lang": "ar",
+      "possibly_sensitive": false,
+      "possibly_sensitive_editable": true,
+      "quote_count": 3,
+      "quoted_status_id_str": "2088269435735781729",
+      "quoted_status_permalink": {
+       "display": "x.com/xoxoshahadG/st…",
+       "expanded": "https://twitter.com/xoxoshahadG/status/2088269435735781729",
+       "url": "https://t.co/LggmIDlaX9"
+      },
+      "reply_count": 3,
+      "retweet_count": 0,
+      "retweeted": false,
+      "user_id_str": "996292173158109185"
+     },
+     "quoted_tweet_results": {
+      "rest_id": "2088269435735781729",
+      "result": {
+       "__typename": "Tweet",
+       "rest_id": "2088269435735781729"
+      }
+     },
+     "rest_id": "2088324571787088157",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEc+zgiNRbRHQ8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "12942",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "2088324571787088157",
+    "url": "https://x.com/xoxoshahadG/status/2088324571787088157",
+    "twitterUrl": "https://twitter.com/xoxoshahadG/status/2088324571787088157",
+    "text": "اروح بقا واجربها\nلو طلعت وحشه ع اللف دا كله حسابكم معايا عسييير https://t.co/ZbFiuhuwOC",
+    "source": "",
+    "retweetCount": 0,
+    "replyCount": 3,
+    "likeCount": 20,
+    "quoteCount": 3,
+    "viewCount": 12942,
+    "createdAt": "Fri Aug 14 17:59:11 +0000 2026",
+    "lang": "ar",
+    "bookmarkCount": 3,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2088324571787088157",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "xoxoshahadG",
+     "url": "https://x.com/xoxoshahadG",
+     "twitterUrl": "https://twitter.com/xoxoshahadG",
+     "id": "996292173158109185",
+     "name": "Shahad🦦",
+     "isVerified": false,
+     "isBlueVerified": false,
+     "profilePicture": "https://pbs.twimg.com/profile_images/2097343682999373824/zL4X7TcX_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/996292173158109185/1777157064",
+     "description": "",
+     "location": "",
+     "followers": 1263,
+     "following": 581,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": false,
+     "createdAt": "Tue May 15 07:32:19 +0000 2018",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 33348,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 325,
+     "statusesCount": 2562,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "2000660885854150897"
+     ],
+     "profile_bio": {
+      "description": "I thought somebody could tell me how- but I found nobody could.\n\nmedical student (5/5)🦤",
+      "entities": {
+       "description": {}
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "display_url": "pic.x.com/ZbFiuhuwOC",
+       "expanded_url": "https://x.com/xoxoshahadG/status/2088324571787088157/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2088324550660370433",
+       "indices": [
+        64,
+        87
+       ],
+       "media_key": "3_2088324550660370433",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARz7OB1J1rABCgACHPs4IjUW0R0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHPs4HUnWsAEKAAIc+zgiNRbRHQAA",
+         "media_key": "3_2088324550660370433"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HPs4HUnWsAEjjY9.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 1381,
+          "w": 2466,
+          "x": 0,
+          "y": 676
+         },
+         {
+          "h": 2466,
+          "w": 2466,
+          "x": 0,
+          "y": 133
+         },
+         {
+          "h": 2811,
+          "w": 2466,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 3645,
+          "w": 1823,
+          "x": 273,
+          "y": 0
+         },
+         {
+          "h": 3645,
+          "w": 2466,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 3645,
+        "width": 2466
+       },
+       "sizes": {
+        "large": {
+         "h": 2048,
+         "w": 1386
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/ZbFiuhuwOC"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": {
+     "rest_id": "2088269435735781729",
+     "result": {
+      "__typename": "Tweet",
+      "rest_id": "2088269435735781729"
+     }
+    },
+    "quoted_tweet": {
+     "type": "tweet",
+     "id": "2088269435735781729",
+     "url": "",
+     "twitterUrl": "",
+     "text": "",
+     "source": "",
+     "retweetCount": 0,
+     "replyCount": 0,
+     "likeCount": 0,
+     "quoteCount": 0,
+     "viewCount": 0,
+     "createdAt": "",
+     "lang": "",
+     "bookmarkCount": 0,
+     "isReply": false,
+     "inReplyToId": null,
+     "conversationId": "",
+     "inReplyToUserId": null,
+     "inReplyToUsername": null,
+     "isPinned": false,
+     "author": {},
+     "extendedEntities": {},
+     "card": null,
+     "place": {},
+     "entities": {},
+     "reply_to_user_results": null,
+     "quoted_tweet_results": null,
+     "quoted_tweet": null,
+     "retweeted_tweet": null,
+     "isConversationControlled": false
+    },
+    "retweeted_tweet": null,
+    "isConversationControlled": false,
+    "isQuote": true
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2088269435735781729",
+   "url": "https://x.com/xoxoshahadG/status/2088269435735781729",
+   "twitterUrl": "https://twitter.com/xoxoshahadG/status/2088269435735781729",
+   "text": "ياترى هلاقي V7 كريم صودا الجديده وكولا عم جمعه امتى\nعايزه اجربهم https://t.co/LP1mWcYWJW",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 22,
+   "quoteCount": 1,
+   "viewCount": 2993,
+   "createdAt": "Fri Aug 14 14:20:06 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2088269435735781729",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "xoxoshahadG",
+    "url": "https://x.com/xoxoshahadG",
+    "twitterUrl": "https://twitter.com/xoxoshahadG",
+    "id": "996292173158109185",
+    "name": "Shahad🦦",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2097343682999373824/zL4X7TcX_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/996292173158109185/1777157064",
+    "description": "",
+    "location": "",
+    "followers": 1263,
+    "following": 581,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue May 15 07:32:19 +0000 2018",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 33348,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 325,
+    "statusesCount": 2562,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2000660885854150897"
+    ],
+    "profile_bio": {
+     "description": "I thought somebody could tell me how- but I found nobody could.\n\nmedical student (5/5)🦤",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/LP1mWcYWJW",
+      "expanded_url": "https://x.com/xoxoshahadG/status/2088269435735781729/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "2088269386419245056",
+      "indices": [
+       65,
+       88
+      ],
+      "media_key": "16_2088269386419245056",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAgoAARz7BfFc15AACgACHPsF/NhWMWEAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAACCgABHPsF8VzXkAAKAAIc+wX82FYxYQAA",
+        "media_key": "16_2088269386419245056"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HPsF8VzXkAAWgXE.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 360,
+       "width": 480
+      },
+      "sizes": {
+       "large": {
+        "h": 360,
+        "w": 480
+       }
+      },
+      "type": "animated_gif",
+      "url": "https://t.co/LP1mWcYWJW",
+      "video_info": {
+       "aspect_ratio": [
+        4,
+        3
+       ],
+       "variants": [
+        {
+         "bitrate": 0,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/tweet_video/HPsF8VzXkAAWgXE.mp4"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2080367794722423280",
+   "url": "https://x.com/M7mwagih/status/2080367794722423280",
+   "twitterUrl": "https://twitter.com/M7mwagih/status/2080367794722423280",
+   "text": "بجد يعني عاملين اعلان عن stroopwafel مصري\nجبته فتحته لقيت بسكوتتين\nحاجه ملهاش علاقه بالوافل اساسا\nال v7 diet cola دي طعمها وحش جدا مقارنه بالكوكاكولا\nباقي منتجات الصودا توزيعها زي الخرا وموجوده عند شويه فلاحين وصعايده في الاكشاك بيبيعوها ب اغلي من تمنها ٣٠٪",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "viewCount": 48,
+   "createdAt": "Thu Jul 23 19:01:48 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2080367345818653131",
+   "conversationId": "2080367345818653131",
+   "inReplyToUserId": "1293626368387883011",
+   "inReplyToUsername": "M7mwagih",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "M7mwagih",
+    "url": "https://x.com/M7mwagih",
+    "twitterUrl": "https://twitter.com/M7mwagih",
+    "id": "1293626368387883011",
+    "name": "Mohammed-Wagih",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2049524346272829440/NC7CGHQe_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1293626368387883011/1638641910",
+    "description": "",
+    "location": "",
+    "followers": 289,
+    "following": 60,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Wed Aug 12 19:12:29 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 7891,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 2730,
+    "statusesCount": 32293,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1355306855728295940"
+    ],
+    "profile_bio": {
+     "description": "A depressing/sarcastic/random account.\nMostly football,memes,venting,sometimes chess/movies\n,+18\nAmateur writer,pharmacist\nI return insults,",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "wlahyma3rf.wordpress.com",
+         "expanded_url": "https://wlahyma3rf.wordpress.com",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/a3FfGo0AnN"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": {
+    "rest_id": "1293626368387883011",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "M7mwagih"
+     },
+     "rest_id": "1293626368387883011"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2051892441674871217",
+   "url": "https://x.com/IemWorld/status/2051892441674871217",
+   "twitterUrl": "https://twitter.com/IemWorld/status/2051892441674871217",
+   "text": "https://t.co/ZVFUFysbQD",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 24,
+   "quoteCount": 0,
+   "viewCount": 5251,
+   "createdAt": "Wed May 06 05:10:55 +0000 2026",
+   "lang": "zxx",
+   "bookmarkCount": 10,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2051892441674871217",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "IemWorld",
+    "url": "https://x.com/IemWorld",
+    "twitterUrl": "https://twitter.com/IemWorld",
+    "id": "1397424944884166657",
+    "name": "‏‏‏IEM WORLD - قناة عالم السماعات",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1653711744773095425/XOLYc8N2_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1397424944884166657/1780696025",
+    "description": "",
+    "location": "السعودية - الرياض",
+    "followers": 3899,
+    "following": 151,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed May 26 05:31:04 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 112,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 710,
+    "statusesCount": 1400,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2028349053306605967"
+    ],
+    "profile_bio": {
+     "description": "#iem #DAP #DAC #AMP #Audio",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          4
+         ],
+         "text": "iem"
+        },
+        {
+         "indices": [
+          5,
+          9
+         ],
+         "text": "DAP"
+        },
+        {
+         "indices": [
+          10,
+          14
+         ],
+         "text": "DAC"
+        },
+        {
+         "indices": [
+          15,
+          19
+         ],
+         "text": "AMP"
+        },
+        {
+         "indices": [
+          20,
+          26
+         ],
+         "text": "Audio"
+        }
+       ]
+      },
+      "url": {
+       "urls": [
+        {
+         "display_url": "linktr.ee/iemworld",
+         "expanded_url": "https://linktr.ee/iemworld",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/MfwtXNk2Jx"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2051…",
+      "expanded_url": "http://x.com/i/article/2051470990396227586",
+      "indices": [
+       0,
+       23
+      ],
+      "url": "https://t.co/ZVFUFysbQD"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2046371817443426320",
+   "url": "https://x.com/Bojjaan_Krikc/status/2046371817443426320",
+   "twitterUrl": "https://twitter.com/Bojjaan_Krikc/status/2046371817443426320",
+   "text": "يجدعان المنتج اللي اسمه V7 دا فاجر بجد\nلامين يامال المشروبات الغازية دلوقتي\nبيبسي بقت زي الزفت طعمها ماية والV7 دي كل شوية بتبقى أفجر",
+   "source": "",
+   "retweetCount": 2,
+   "replyCount": 15,
+   "likeCount": 323,
+   "quoteCount": 2,
+   "viewCount": 26652,
+   "createdAt": "Mon Apr 20 23:33:55 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 17,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2046371817443426320",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Bojjaan_Krikc",
+    "url": "https://x.com/Bojjaan_Krikc",
+    "twitterUrl": "https://twitter.com/Bojjaan_Krikc",
+    "id": "1262197940862554116",
+    "name": "Sofiiiaaan",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2076032841830248448/EXYvtVKB_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1262197940862554116/1787910104",
+    "description": "",
+    "location": "Prison (room previously)",
+    "followers": 15687,
+    "following": 3111,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Mon May 18 01:47:03 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 42870,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1642,
+    "statusesCount": 16140,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "وَإِلَيْهِ يُرْجَعُ الْأَمْرُ كُلُّهُ فَاعْبُدْهُ وَتَوَكَّلْ عَلَيْهِ",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "ngl.link/kg_sofiiaaan1",
+         "expanded_url": "https://ngl.link/kg_sofiiaaan1",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/e277qHE2ez"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2017263576205889754",
+   "url": "https://x.com/Parisiend3/status/2017263576205889754",
+   "twitterUrl": "https://twitter.com/Parisiend3/status/2017263576205889754",
+   "text": "@MMajeedX @MhmdGamal1907 يامحمود حتى V7 خورافي وأكثر اكتمال من v20\nوكان شايل الفريق بعد خروج كريم بن زيما\nواستحق الأفضل في العالم\nضد ليزبيج كان الهداف\nضد الستي صنع ٣ من ٤ أهداف\nضد بايرن كان الهداف\nضد دورتمند كان الهداف\nوش تبي أكثر 😂😂",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 4,
+   "quoteCount": 0,
+   "viewCount": 143,
+   "createdAt": "Fri Jan 30 15:48:10 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2017256295724707977",
+   "conversationId": "2016988562504228948",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Parisiend3",
+    "url": "https://x.com/Parisiend3",
+    "twitterUrl": "https://twitter.com/Parisiend3",
+    "id": "1501078447363436545",
+    "name": "🇸🇦 Aziz",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1983818356693049344/LN_KvWOf_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1501078447363436545/1761770066",
+    "description": "",
+    "location": "",
+    "followers": 704,
+    "following": 450,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Tue Mar 08 06:12:56 +0000 2022",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 14878,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1015,
+    "statusesCount": 5854,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1986090021552607473"
+    ],
+    "profile_bio": {
+     "description": "",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "2438545413",
+      "indices": [
+       0,
+       9
+      ],
+      "name": "محمود مجيد",
+      "screen_name": "MMajeedX"
+     },
+     {
+      "id_str": "989969756",
+      "indices": [
+       10,
+       24
+      ],
+      "name": "Mohmed Gamal",
+      "screen_name": "MhmdGamal1907"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2016275693131149343",
+   "url": "https://x.com/cairo24_/status/2016275693131149343",
+   "twitterUrl": "https://twitter.com/cairo24_/status/2016275693131149343",
+   "text": "تجار يرفعون أسعار كانز V7 إلى 20 جنيهًا.. والشركة: ممارسات فردية لتحقيق أرباح على حساب المستهلكين\nhttps://t.co/narHVdAHRQ https://t.co/5DjzKbVKfJ",
+   "source": "",
+   "retweetCount": 4,
+   "replyCount": 15,
+   "likeCount": 139,
+   "quoteCount": 10,
+   "viewCount": 11720,
+   "createdAt": "Tue Jan 27 22:22:40 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 6,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2016275693131149343",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "cairo24_",
+    "url": "https://x.com/cairo24_",
+    "twitterUrl": "https://twitter.com/cairo24_",
+    "id": "887060863584280576",
+    "name": "Cairo 24 - القاهرة 24",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1721156972915920896/UMp32K1r_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/887060863584280576/1776817482",
+    "description": "",
+    "location": "Giza, Egypt",
+    "followers": 343787,
+    "following": 367,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Mon Jul 17 21:26:05 +0000 2017",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 285,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 205756,
+    "statusesCount": 249084,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "الحساب الرسمي لـ القاهرة 24 موقع صحفي مصري يومي يعمل على مدار الـ24 ساعة  Official account for https://t.co/xyEOdZbdMi",
+     "entities": {
+      "description": {
+       "urls": [
+        {
+         "display_url": "cairo24.com",
+         "expanded_url": "http://cairo24.com",
+         "indices": [
+          95,
+          118
+         ],
+         "url": "https://t.co/xyEOdZbdMi"
+        }
+       ]
+      },
+      "url": {
+       "urls": [
+        {
+         "display_url": "cairo24.com",
+         "expanded_url": "https://www.cairo24.com",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/Mn1crX4Wlp"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/5DjzKbVKfJ",
+      "expanded_url": "https://x.com/cairo24_/status/2016275693131149343/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "2016275685010972674",
+      "indices": [
+       122,
+       145
+      ],
+      "media_key": "3_2016275685010972674",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARv7QA2GViACCgACG/tAD2pWMB8AAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABG/tADYZWIAIKAAIb+0APalYwHwAA",
+        "media_key": "3_2016275685010972674"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/G_tADYZWIAIpq8x.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 605,
+         "w": 1080,
+         "x": 0,
+         "y": 318
+        },
+        {
+         "h": 991,
+         "w": 991,
+         "x": 45,
+         "y": 0
+        },
+        {
+         "h": 991,
+         "w": 869,
+         "x": 106,
+         "y": 0
+        },
+        {
+         "h": 991,
+         "w": 496,
+         "x": 292,
+         "y": 0
+        },
+        {
+         "h": 991,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 991,
+       "width": 1080
+      },
+      "sizes": {
+       "large": {
+        "h": 991,
+        "w": 1080
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/5DjzKbVKfJ"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "urls": [
+     {
+      "display_url": "cairo24.com/2360999",
+      "expanded_url": "https://www.cairo24.com/2360999",
+      "indices": [
+       98,
+       121
+      ],
+      "url": "https://t.co/narHVdAHRQ"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1995174111526502813",
+   "url": "https://x.com/AbrarGamalll/status/1995174111526502813",
+   "twitterUrl": "https://twitter.com/AbrarGamalll/status/1995174111526502813",
+   "text": "V7 رمان خد الكباب حلة في حتة تانية ( دبس الرمان كان خلصان )",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 4,
+   "quoteCount": 1,
+   "viewCount": 530,
+   "createdAt": "Sun Nov 30 16:52:31 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1995174111526502813",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "AbrarGamalll",
+    "url": "https://x.com/AbrarGamalll",
+    "twitterUrl": "https://twitter.com/AbrarGamalll",
+    "id": "1518773189731573763",
+    "name": "Abrar Gamal 🐟",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1856328854438113280/kIZN1FE3_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1518773189731573763/1726429711",
+    "description": "",
+    "location": "Sadat city ",
+    "followers": 210,
+    "following": 188,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Tue Apr 26 02:05:34 +0000 2022",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 14503,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 113,
+    "statusesCount": 835,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "Graphic designer , let the vibe slide over me 🧘🏻‍♀️...",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/abrar_gamalll?…",
+         "expanded_url": "https://www.instagram.com/abrar_gamalll?igsh=M2t5dnJod3g4OHF4",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/KxXyIvFaxE"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1993064687823622454",
+   "url": "https://x.com/ameera22577/status/1993064687823622454",
+   "twitterUrl": "https://twitter.com/ameera22577/status/1993064687823622454",
+   "text": "النسكافيه بتاع اول الصحيان والشاي بالنعناع\nالمغرب   وكان فيه كانز اسمها امستل عظمة مشروب شعير بالليمون مظبوط ظبطة بنت لذين للأسف مابقاش موجود. فيه V7 قريب شوية بس امستل في حتة تانية \nولو اعتبرنا شوربة السي فود البيضا مشروب فدي بتخليني طايرة في السحاب",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "viewCount": 84,
+   "createdAt": "Mon Nov 24 21:10:25 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1993064687823622454",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ameera22577",
+    "url": "https://x.com/ameera22577",
+    "twitterUrl": "https://twitter.com/ameera22577",
+    "id": "1367980678302818304",
+    "name": "Om Hamdy",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1918363736718348288/0py0JwHG_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1367980678302818304/1688001643",
+    "description": "",
+    "location": "مقبرة الغزاة والشعب",
+    "followers": 644,
+    "following": 741,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Fri Mar 05 23:30:09 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 3737,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1072,
+    "statusesCount": 4863,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1918014226494259557"
+    ],
+    "profile_bio": {
+     "description": "لو كنت أجهل ما علمت لسرني ... جهلي كما قد ساءني ما أعلم.",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "1992675475315921043",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1070763278635278338",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 240329
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/1637089230311632897/yGJqMPtf_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1070763278635278338/1681353625"
+        },
+        "core": {
+         "created_at": "Thu Dec 06 19:33:54 +0000 2018",
+         "name": "AMR.",
+         "screen_name": "AmrGlil"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": "Cairo "
+        },
+        "media_permissions": {
+         "can_media_tag": true
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "1935072697639387172"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "Football player⚽⚽",
+         "entities": {
+          "description": {},
+          "url": {
+           "urls": [
+            {
+             "display_url": "instagram.com/ammmmmmmmmrrrr…",
+             "expanded_url": "https://instagram.com/ammmmmmmmmrrrrrrrrr?igshid=18rlnakdn0czl",
+             "indices": [
+              0,
+              23
+             ],
+             "url": "https://t.co/bgL88dtlyj"
+            }
+           ]
+          }
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 28019,
+         "following": 23851
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1070763278635278338",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 1405,
+         "tweets": 8963
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": "https://t.co/bgL88dtlyj"
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "1992675475315921043"
+      ],
+      "editable_until_msecs": "1763929430000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 476,
+      "bookmarked": false,
+      "conversation_id_str": "1992675475315921043",
+      "created_at": "Sun Nov 23 19:23:50 +0000 2025",
+      "display_text_range": [
+       0,
+       122
+      ],
+      "entities": {},
+      "favorite_count": 1649,
+      "favorited": false,
+      "full_text": "تعالو نتناقش نقاش مهم اوي\nأي أكتر مشروب لما بتشربه بتحس إنك بتملك الدنيا\nوما عليها؟\nمحدش يسكيب بقا لأهمية النقاش دا بالذات",
+      "is_quote_status": false,
+      "lang": "ar",
+      "quote_count": 961,
+      "reply_count": 773,
+      "retweet_count": 45,
+      "retweeted": false,
+      "user_id_str": "1070763278635278338"
+     },
+     "rest_id": "1992675475315921043",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEbp2fJgtaQkw8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "454220",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "1992675475315921043",
+    "url": "https://x.com/AmrGlil/status/1992675475315921043",
+    "twitterUrl": "https://twitter.com/AmrGlil/status/1992675475315921043",
+    "text": "تعالو نتناقش نقاش مهم اوي\nأي أكتر مشروب لما بتشربه بتحس إنك بتملك الدنيا\nوما عليها؟\nمحدش يسكيب بقا لأهمية النقاش دا بالذات",
+    "source": "",
+    "retweetCount": 45,
+    "replyCount": 773,
+    "likeCount": 1649,
+    "quoteCount": 961,
+    "viewCount": 454220,
+    "createdAt": "Sun Nov 23 19:23:50 +0000 2025",
+    "lang": "ar",
+    "bookmarkCount": 476,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "1992675475315921043",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "AmrGlil",
+     "url": "https://x.com/AmrGlil",
+     "twitterUrl": "https://twitter.com/AmrGlil",
+     "id": "1070763278635278338",
+     "name": "AMR.",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1637089230311632897/yGJqMPtf_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1070763278635278338/1681353625",
+     "description": "",
+     "location": "Cairo ",
+     "followers": 28019,
+     "following": 23851,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Thu Dec 06 19:33:54 +0000 2018",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 240329,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 1405,
+     "statusesCount": 8963,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "1935072697639387172"
+     ],
+     "profile_bio": {
+      "description": "Football player⚽⚽",
+      "entities": {
+       "description": {},
+       "url": {
+        "urls": [
+         {
+          "display_url": "instagram.com/ammmmmmmmmrrrr…",
+          "expanded_url": "https://instagram.com/ammmmmmmmmrrrrrrrrr?igshid=18rlnakdn0czl",
+          "indices": [
+           0,
+           23
+          ],
+          "url": "https://t.co/bgL88dtlyj"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {},
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "1977046083890290988",
+   "url": "https://x.com/Momohamed993/status/1977046083890290988",
+   "twitterUrl": "https://twitter.com/Momohamed993/status/1977046083890290988",
+   "text": "@MaiFahmy23 V7 cola بديل رااائع للمشروبات الغازيه",
+   "source": "",
+   "retweetCount": 2,
+   "replyCount": 3,
+   "likeCount": 103,
+   "quoteCount": 0,
+   "viewCount": 12464,
+   "createdAt": "Sat Oct 11 16:18:12 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 2,
+   "isReply": true,
+   "inReplyToId": "1977039247195750647",
+   "conversationId": "1977039247195750647",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Momohamed993",
+    "url": "https://x.com/Momohamed993",
+    "twitterUrl": "https://twitter.com/Momohamed993",
+    "id": "1717888437854826496",
+    "name": "Mostafa Mohamed 🇪🇬🇪🇬 𓅓𓋴𓏏𓄿𓆑𓄿",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1984164360739033088/ULwCYkuR_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1717888437854826496/1739463290",
+    "description": "",
+    "location": "",
+    "followers": 169,
+    "following": 1317,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Fri Oct 27 12:58:41 +0000 2023",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 85598,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 37,
+    "statusesCount": 1587,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "1578518262282952704",
+      "indices": [
+       0,
+       11
+      ],
+      "name": "Mai Fahmy 🦅🇪🇬",
+      "screen_name": "MaiFahmy23"
+     }
+    ]
+   },
+   "reply_to_user_results": {
+    "rest_id": "1578518262282952704",
+    "result": {
+     "__typename": "UserUnavailable",
+     "message": "User is deactivated",
+     "unavailable_reason": "NoReason"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1976713635348328510",
+   "url": "https://x.com/ahmedtahana/status/1976713635348328510",
+   "twitterUrl": "https://twitter.com/ahmedtahana/status/1976713635348328510",
+   "text": "تعديل: V7 رمّان افضل مشروب حاليا في الجمهورية",
+   "source": "",
+   "retweetCount": 2,
+   "replyCount": 10,
+   "likeCount": 85,
+   "quoteCount": 3,
+   "viewCount": 12153,
+   "createdAt": "Fri Oct 10 18:17:10 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 5,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1976713635348328510",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ahmedtahana",
+    "url": "https://x.com/ahmedtahana",
+    "twitterUrl": "https://twitter.com/ahmedtahana",
+    "id": "635012614",
+    "name": "ahmedtahan",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1269325819526164482/14jjNDrR_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/635012614/1508432204",
+    "description": "",
+    "location": "Egypt ",
+    "followers": 98309,
+    "following": 332,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Sat Jul 14 01:29:49 +0000 2012",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 14326,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 29722,
+    "statusesCount": 270641,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "Smile today, tomorrow could be worse",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1970956402576511131",
+   "url": "https://x.com/MUSTAFAamenn/status/1970956402576511131",
+   "twitterUrl": "https://twitter.com/MUSTAFAamenn/status/1970956402576511131",
+   "text": "لقيت V7 عاملين مشروب شعير بطعم التفاح يقفل ملفات أي مشروب شعير في تاريخ تلاجات الساقع في أي كشك",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 15,
+   "quoteCount": 1,
+   "viewCount": 886,
+   "createdAt": "Wed Sep 24 20:59:59 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1970956402576511131",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "MUSTAFAamenn",
+    "url": "https://x.com/MUSTAFAamenn",
+    "twitterUrl": "https://twitter.com/MUSTAFAamenn",
+    "id": "1784322020865404928",
+    "name": "Mustafa",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2100231105777389568/D1jrYMRv_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1784322020865404928/1786276988",
+    "description": "",
+    "location": "",
+    "followers": 3074,
+    "following": 2795,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sat Apr 27 20:41:51 +0000 2024",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 59933,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 3374,
+    "statusesCount": 20768,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1944674082819043553"
+    ],
+    "profile_bio": {
+     "description": "Intern Doctor ZU\nhttps://t.co/g9uMRgQ3Q2\nhttps://t.co/aF7twDyjR6\nادعوا لزياد أنور و عبد الرحمن جودة و فراس\nالعويني بالرحمة والمغفرة",
+     "entities": {
+      "description": {
+       "urls": [
+        {
+         "display_url": "ngl.link/mustafaamenn",
+         "expanded_url": "https://ngl.link/mustafaamenn",
+         "indices": [
+          17,
+          40
+         ],
+         "url": "https://t.co/g9uMRgQ3Q2"
+        },
+        {
+         "display_url": "boxd.it/jPKUj",
+         "expanded_url": "https://boxd.it/jPKUj",
+         "indices": [
+          41,
+          64
+         ],
+         "url": "https://t.co/aF7twDyjR6"
+        }
+       ]
+      },
+      "url": {
+       "urls": [
+        {
+         "display_url": "youtube.com/@mustafaaminam…",
+         "expanded_url": "https://youtube.com/@mustafaaminamikacin?si=Lxf3IrcKrf78Vovq",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/iyAStQ1LZO"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1953410151723004333",
+   "url": "https://x.com/SayedQasm/status/1953410151723004333",
+   "twitterUrl": "https://twitter.com/SayedQasm/status/1953410151723004333",
+   "text": "v7 pink lemonade \nتفوز ب اسوأ مشروب صيفي السنه دي",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 125,
+   "createdAt": "Thu Aug 07 10:57:27 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1953410151723004333",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "SayedQasm",
+    "url": "https://x.com/SayedQasm",
+    "twitterUrl": "https://twitter.com/SayedQasm",
+    "id": "2418260139",
+    "name": "Sayed Qassem",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1878360479887695872/qk6ceIbV_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/2418260139/1678730674",
+    "description": "",
+    "location": "Flying in the sky",
+    "followers": 36,
+    "following": 32,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Mon Mar 17 19:15:01 +0000 2014",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 1756,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 11,
+    "statusesCount": 968,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "Cloud Management / .. and other stupid things",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1952714936393592972",
+   "url": "https://x.com/zghlol778/status/1952714936393592972",
+   "twitterUrl": "https://twitter.com/zghlol778/status/1952714936393592972",
+   "text": "ال V7 ده مشروب شكلا نضيف وشيك فشخ \nداخلي ميتشربش والله نفس ناس اعرفها..☝️ https://t.co/HBrHaQmXDW",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 201,
+   "createdAt": "Tue Aug 05 12:54:55 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1952714936393592972",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "zghlol778",
+    "url": "https://x.com/zghlol778",
+    "twitterUrl": "https://twitter.com/zghlol778",
+    "id": "1657505130596507648",
+    "name": "M𓂆Zغluol 🇦🇷🇵🇸",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2075233363393208320/W1pyX8_7_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1657505130596507648/1699783124",
+    "description": "",
+    "location": "المنصورةةةةة ",
+    "followers": 1840,
+    "following": 1641,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sat May 13 21:57:07 +0000 2023",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 15003,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1872,
+    "statusesCount": 10380,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1658402038236033026"
+    ],
+    "profile_bio": {
+     "description": "الاكونت القديم في ذمة الله\n VISCA\nBARCA FOREVER💙❤️🐐10",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/HBrHaQmXDW",
+      "expanded_url": "https://x.com/zghlol778/status/1952714936393592972/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "1952714930337050624",
+      "indices": [
+       74,
+       97
+      ],
+      "media_key": "3_1952714930337050624",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARsZb+IaV3AACgACGxlv44NW8IwAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGxlv4hpXcAAKAAIbGW/jg1bwjAAA",
+        "media_key": "3_1952714930337050624"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gxlv4hpXcAAazy7.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 323,
+         "w": 577,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 577,
+         "w": 577,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 658,
+         "w": 577,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1024,
+         "w": 512,
+         "x": 65,
+         "y": 0
+        },
+        {
+         "h": 1024,
+         "w": 577,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1024,
+       "width": 577
+      },
+      "sizes": {
+       "large": {
+        "h": 1024,
+        "w": 577
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/HBrHaQmXDW"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1952090187183395317",
+   "url": "https://x.com/NJCanopus/status/1952090187183395317",
+   "twitterUrl": "https://twitter.com/NJCanopus/status/1952090187183395317",
+   "text": "شسمه مشروب V7 الجديد عجبني اوي\nمتوقعتش انه هيطلع طعمه حلو كدة كإنه كاندي",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 3,
+   "likeCount": 5,
+   "quoteCount": 0,
+   "viewCount": 319,
+   "createdAt": "Sun Aug 03 19:32:23 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1952090187183395317",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "NJCanopus",
+    "url": "https://x.com/NJCanopus",
+    "twitterUrl": "https://twitter.com/NJCanopus",
+    "id": "1248266538219642881",
+    "name": "سُوهارُو",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2077930880098541569/DerBY0Ni_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1248266538219642881/1782132621",
+    "description": "",
+    "location": "",
+    "followers": 1770,
+    "following": 266,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Thu Apr 09 15:08:40 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 49243,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 2398,
+    "statusesCount": 14227,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2091308452450550271"
+    ],
+    "profile_bio": {
+     "description": "スハイラ🎐 personal account                                                                              Naruto | Slam dunk",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "ngl.link/suharu",
+         "expanded_url": "https://ngl.link/suharu",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/ECKdE7VTUh"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1946901833739383294",
+   "url": "https://x.com/mariam_eldiasty/status/1946901833739383294",
+   "twitterUrl": "https://twitter.com/mariam_eldiasty/status/1946901833739383294",
+   "text": "ال v7 الجديدة دي مشروب مثالي لعشاق أي منتج بطعم دوا الكحة",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "viewCount": 320,
+   "createdAt": "Sun Jul 20 11:55:43 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1946901833739383294",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "mariam_eldiasty",
+    "url": "https://x.com/mariam_eldiasty",
+    "twitterUrl": "https://twitter.com/mariam_eldiasty",
+    "id": "252810144",
+    "name": "Mariam",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2018827771837837312/No_8L9e5_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/252810144/1585160385",
+    "description": "",
+    "location": "",
+    "followers": 6917,
+    "following": 477,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Feb 15 23:36:54 +0000 2011",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 26502,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 682,
+    "statusesCount": 45927,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1312511986849071104"
+    ],
+    "profile_bio": {
+     "description": "Medley of whimsy and therapy | MU'21 | MLS'16",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "m.facebook.com/sentirewritings",
+         "expanded_url": "https://m.facebook.com/sentirewritings",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/lcZBcDnKbW"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1944476486117007750",
+   "url": "https://x.com/96khmm/status/1944476486117007750",
+   "twitterUrl": "https://twitter.com/96khmm/status/1944476486117007750",
+   "text": "@most_tantawy V7 منتج محترم جدا و قادر يكتسح بس يحتاج تمويل و محتاج ينتجه عبوات مختلفة فئة لتر و ٢ لتر و كدة لازم تمويل كبير عشان يقدر يجاري كوكا كولا و بيبسي أنا اتعودت عليه و اصبح مشروب أساسي",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 67,
+   "createdAt": "Sun Jul 13 19:18:15 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "1944471323478286547",
+   "conversationId": "1944471323478286547",
+   "inReplyToUserId": "1376213825389801474",
+   "inReplyToUsername": "most_tantawy",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "96khmm",
+    "url": "https://x.com/96khmm",
+    "twitterUrl": "https://twitter.com/96khmm",
+    "id": "1756052824335503360",
+    "name": "ＫＨＡＬＥＤ 𓅋",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2103915803670126592/NGWEdz7E_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1756052824335503360/1771529266",
+    "description": "",
+    "location": "Cairo, Egypt",
+    "followers": 326,
+    "following": 328,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Fri Feb 09 20:30:20 +0000 2024",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 162082,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1639,
+    "statusesCount": 14300,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1816406858086646141"
+    ],
+    "profile_bio": {
+     "description": "Nestlé Professional MENA 🍀",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "1376213825389801474",
+      "indices": [
+       0,
+       13
+      ],
+      "name": "مصہٰطہٰفہٰي",
+      "screen_name": "most_tantawy"
+     }
+    ]
+   },
+   "reply_to_user_results": {
+    "rest_id": "1376213825389801474",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "most_tantawy"
+     },
+     "rest_id": "1376213825389801474"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1944471323478286547",
+   "url": "https://x.com/most_tantawy/status/1944471323478286547",
+   "twitterUrl": "https://twitter.com/most_tantawy/status/1944471323478286547",
+   "text": "طعمها عجبني v7 و dara's ايس كريم عاملين حاجه حلوة https://t.co/ASq9IYbRQT",
+   "source": "",
+   "retweetCount": 2,
+   "replyCount": 6,
+   "likeCount": 17,
+   "quoteCount": 0,
+   "viewCount": 993,
+   "createdAt": "Sun Jul 13 18:57:44 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1944471323478286547",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "most_tantawy",
+    "url": "https://x.com/most_tantawy",
+    "twitterUrl": "https://twitter.com/most_tantawy",
+    "id": "1376213825389801474",
+    "name": "مصہٰطہٰفہٰي",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2106470098831605761/9brDANCN_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1376213825389801474/1791129355",
+    "description": "",
+    "location": "القاهرة،العتيقه",
+    "followers": 23727,
+    "following": 3443,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Mar 28 16:45:42 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 219898,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 26370,
+    "statusesCount": 250140,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1806952090733818127"
+    ],
+    "profile_bio": {
+     "description": "اهلاوي فشششششششخ 🦅🦅🦅\nبحب التصوير",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/ASq9IYbRQT",
+      "expanded_url": "https://x.com/most_tantawy/status/1944471323478286547/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "1944471320806170624",
+      "indices": [
+       50,
+       73
+      ],
+      "media_key": "3_1944471320806170624",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARr8Jl0wliAACgACGvwmXc/bYNMAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGvwmXTCWIAAKAAIa/CZdz9tg0wAA",
+        "media_key": "3_1944471320806170624"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/GvwmXTCWIAAgEbg.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 860,
+         "w": 1536,
+         "x": 0,
+         "y": 952
+        },
+        {
+         "h": 1536,
+         "w": 1536,
+         "x": 0,
+         "y": 512
+        },
+        {
+         "h": 1751,
+         "w": 1536,
+         "x": 0,
+         "y": 297
+        },
+        {
+         "h": 2048,
+         "w": 1024,
+         "x": 153,
+         "y": 0
+        },
+        {
+         "h": 2048,
+         "w": 1536,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 2048,
+       "width": 1536
+      },
+      "sizes": {
+       "large": {
+        "h": 2048,
+        "w": 1536
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/ASq9IYbRQT"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1940432791608623574",
+   "url": "https://x.com/shamosa2018/status/1940432791608623574",
+   "twitterUrl": "https://twitter.com/shamosa2018/status/1940432791608623574",
+   "text": "في شركه للمياة الغازيه مصريه اسمها v7 شكلها تحفه ولها أطعمه كتير واحلي طعم mix بين🍍🥥والميكس دة اسمه بيناكولادا وكمان لها غطاء عشان لوتبقي مشروب يحفظ الصودا فيه وتفضل فريش عيبه الوحيد سعرة عالي شويه غير كدة  هو ممتاز ويستحق التجربه https://t.co/dva7Cer9iN",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 4,
+   "quoteCount": 0,
+   "viewCount": 118,
+   "createdAt": "Wed Jul 02 15:30:03 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1940432791608623574",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "shamosa2018",
+    "url": "https://x.com/shamosa2018",
+    "twitterUrl": "https://twitter.com/shamosa2018",
+    "id": "3451097127",
+    "name": "Shams",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1823899739244376064/RVqFR428_normal.jpg",
+    "coverPicture": "",
+    "description": "",
+    "location": "Cairo, Egypt",
+    "followers": 2707,
+    "following": 4933,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Wed Aug 26 21:59:13 +0000 2015",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 110513,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 3420,
+    "statusesCount": 18931,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2093041706492985401"
+    ],
+    "profile_bio": {
+     "description": "",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/dva7Cer9iN",
+      "expanded_url": "https://x.com/shamosa2018/status/1940432791608623574/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "1940432779453366272",
+      "indices": [
+       231,
+       254
+      ],
+      "media_key": "3_1940432779453366272",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrtzVUB14AACgACGu3NV9ZaAdYAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGu3NVQHXgAAKAAIa7c1X1loB1gAA",
+        "media_key": "3_1940432779453366272"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gu3NVQHXgAAbHt2.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 1060,
+         "w": 1893,
+         "x": 0,
+         "y": 3036
+        },
+        {
+         "h": 1893,
+         "w": 1893,
+         "x": 0,
+         "y": 2203
+        },
+        {
+         "h": 2158,
+         "w": 1893,
+         "x": 0,
+         "y": 1938
+        },
+        {
+         "h": 3786,
+         "w": 1893,
+         "x": 0,
+         "y": 310
+        },
+        {
+         "h": 4096,
+         "w": 1893,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 4096,
+       "width": 1893
+      },
+      "sizes": {
+       "large": {
+        "h": 2048,
+        "w": 947
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/dva7Cer9iN"
+     },
+     {
+      "display_url": "pic.x.com/dva7Cer9iN",
+      "expanded_url": "https://x.com/shamosa2018/status/1940432791608623574/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 136,
+          "w": 136,
+          "x": 614,
+          "y": 1080
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 272,
+          "w": 272,
+          "x": 1228,
+          "y": 2160
+         }
+        ]
+       }
+      },
+      "id_str": "1940432775103864832",
+      "indices": [
+       231,
+       254
+      ],
+      "media_key": "3_1940432775103864832",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrtzVP+l2AACgACGu3NV9ZaAdYAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGu3NU/6XYAAKAAIa7c1X1loB1gAA",
+        "media_key": "3_1940432775103864832"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gu3NU_6XYAAcOwH.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 1060,
+         "w": 1893,
+         "x": 0,
+         "y": 1004
+        },
+        {
+         "h": 1893,
+         "w": 1893,
+         "x": 0,
+         "y": 588
+        },
+        {
+         "h": 2158,
+         "w": 1893,
+         "x": 0,
+         "y": 455
+        },
+        {
+         "h": 3786,
+         "w": 1893,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 4096,
+         "w": 1893,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 4096,
+       "width": 1893
+      },
+      "sizes": {
+       "large": {
+        "h": 2048,
+        "w": 947
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/dva7Cer9iN"
+     },
+     {
+      "display_url": "pic.x.com/dva7Cer9iN",
+      "expanded_url": "https://x.com/shamosa2018/status/1940432791608623574/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "1940432785748959232",
+      "indices": [
+       231,
+       254
+      ],
+      "media_key": "3_1940432785748959232",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrtzVZ5FqAACgACGu3NV9ZaAdYAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGu3NVnkWoAAKAAIa7c1X1loB1gAA",
+        "media_key": "3_1940432785748959232"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gu3NVnkWoAAdu4M.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 1060,
+         "w": 1893,
+         "x": 0,
+         "y": 1823
+        },
+        {
+         "h": 1893,
+         "w": 1893,
+         "x": 0,
+         "y": 1407
+        },
+        {
+         "h": 2158,
+         "w": 1893,
+         "x": 0,
+         "y": 1274
+        },
+        {
+         "h": 3786,
+         "w": 1893,
+         "x": 0,
+         "y": 310
+        },
+        {
+         "h": 4096,
+         "w": 1893,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 4096,
+       "width": 1893
+      },
+      "sizes": {
+       "large": {
+        "h": 2048,
+        "w": 947
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/dva7Cer9iN"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1934953425541751055",
+   "url": "https://x.com/urfaavno/status/1934953425541751055",
+   "twitterUrl": "https://twitter.com/urfaavno/status/1934953425541751055",
+   "text": "هافف عليا ف الجو ده واحده V7 بالبيناكولادا",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 8,
+   "quoteCount": 0,
+   "viewCount": 67,
+   "createdAt": "Tue Jun 17 12:37:01 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1934953425541751055",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "urfaavno",
+    "url": "https://x.com/urfaavno",
+    "twitterUrl": "https://twitter.com/urfaavno",
+    "id": "1346653246367129602",
+    "name": "🎀",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2064627661654142976/2Lv2wpfi_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1346653246367129602/1727978175",
+    "description": "",
+    "location": "Egypt ",
+    "followers": 9163,
+    "following": 5439,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Wed Jan 06 03:02:24 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 132502,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 560,
+    "statusesCount": 28919,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1513590927088046080"
+    ],
+    "profile_bio": {
+     "description": "You can handle this🤎')",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1919465977529467050",
+   "url": "https://x.com/inzaghi_16/status/1919465977529467050",
+   "twitterUrl": "https://twitter.com/inzaghi_16/status/1919465977529467050",
+   "text": "My current obsession\nبيج البينك بالبيستو \nبيج البرتقالي بالجبنة الحارة \nتودو كب كيك بالسولتيد كراميل \nاونيرو الازرق اللي هو متغطي بالشكولاتة \nزبادو توت وفروالة وخوخ \nV7 بيناكولادا\nشوكولاتة كورونا الدارك اللي بالبندق اللي لونها اخضر\nواللي بالميلك والبندق برضه\nايس كريم فرايداي كله",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 23,
+   "quoteCount": 0,
+   "viewCount": 1092,
+   "createdAt": "Mon May 05 18:55:25 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 4,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1919465977529467050",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "inzaghi_16",
+    "url": "https://x.com/inzaghi_16",
+    "twitterUrl": "https://twitter.com/inzaghi_16",
+    "id": "1437036940197572608",
+    "name": "Inzaghi ☆",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2051491531765243906/RdGWuk2j_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1437036940197572608/1772898670",
+    "description": "",
+    "location": "dreams",
+    "followers": 3376,
+    "following": 362,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Sep 12 12:54:59 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 165806,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 2220,
+    "statusesCount": 49299,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1760634561032053162"
+    ],
+    "profile_bio": {
+     "description": "museum of fear",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/inzaghi_art?ig…",
+         "expanded_url": "https://instagram.com/inzaghi_art?igshid=NzZlODBkYWE4Ng==",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/K8UwXbNW7a"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "1919452252395147495",
+    "result": {
+     "__typename": "TweetUnavailable",
+     "unavailable_reason": "Protected"
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "",
+    "url": "",
+    "twitterUrl": "",
+    "text": "",
+    "source": "",
+    "retweetCount": 0,
+    "replyCount": 0,
+    "likeCount": 0,
+    "quoteCount": 0,
+    "viewCount": 0,
+    "createdAt": "",
+    "lang": "",
+    "bookmarkCount": 0,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {},
+    "extendedEntities": {},
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "1912989456422125928",
+   "url": "https://x.com/ONTVEgy/status/1912989456422125928",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912989456422125928",
+   "text": "جودة المشروب المصري V7 و V كولا\n#معكم_منى_الشاذلي\n#ON https://t.co/3SOWRgqP8Y",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 0,
+   "quoteCount": 0,
+   "viewCount": 1398,
+   "createdAt": "Thu Apr 17 22:00:02 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912989456422125928",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/3SOWRgqP8Y",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912989456422125928/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912950452347432960",
+      "indices": [
+       54,
+       77
+      ],
+      "media_key": "13_1912950452347432960",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMKk0ZF3AAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowqTRkXcAAAAA==",
+        "media_key": "13_1912950452347432960"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow1w7nW0AAZO08.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 900,
+       "width": 1600
+      },
+      "sizes": {
+       "large": {
+        "h": 900,
+        "w": 1600
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/3SOWRgqP8Y",
+      "video_info": {
+       "aspect_ratio": [
+        16,
+        9
+       ],
+       "duration_millis": 311560,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912950452347432960/pl/fgAWBJqCwpFuEuc2.m3u8?tag=14"
+        },
+        {
+         "bitrate": 288000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912950452347432960/vid/avc1/480x270/ZtX5ffHaMYgTu4jP.mp4?tag=14"
+        },
+        {
+         "bitrate": 832000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912950452347432960/vid/avc1/640x360/0kff4WJRIhcGKNmy.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912950452347432960/vid/avc1/1280x720/5c0oJowZI8COEve2.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       32,
+       49
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       50,
+       53
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1912989449073414373",
+   "url": "https://x.com/ONTVEgy/status/1912989449073414373",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912989449073414373",
+   "text": "المشروب الغازي V7 طبيعي 100 %.. شوفوا أصحاب المشروع قالوا إيه عن الأطعمة في #معكم_منى_الشاذلي\n#ON https://t.co/S7ZQwO6yRT",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 9,
+   "quoteCount": 0,
+   "viewCount": 1448,
+   "createdAt": "Thu Apr 17 22:00:00 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912989449073414373",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/S7ZQwO6yRT",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912989449073414373/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912949950985437184",
+      "indices": [
+       98,
+       121
+      ],
+      "media_key": "13_1912949950985437184",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMKdhdloAAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowp2F2WgAAAAA==",
+        "media_key": "13_1912949950985437184"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow1rNQXsAALLrr.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 900,
+       "width": 1600
+      },
+      "sizes": {
+       "large": {
+        "h": 900,
+        "w": 1600
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/S7ZQwO6yRT",
+      "video_info": {
+       "aspect_ratio": [
+        16,
+        9
+       ],
+       "duration_millis": 405680,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912949950985437184/pl/b0vaGY-hzODyi2qH.m3u8?tag=14&v=35f"
+        },
+        {
+         "bitrate": 288000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912949950985437184/vid/avc1/480x270/VnPVKAXs15aiZemS.mp4?tag=14"
+        },
+        {
+         "bitrate": 832000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912949950985437184/vid/avc1/640x360/KnWbdMZqrNIH-BNT.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912949950985437184/vid/avc1/1280x720/h_K0D207Vy080_ea.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       76,
+       93
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       94,
+       97
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1912983155465740412",
+   "url": "https://x.com/ONTVEgy/status/1912983155465740412",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912983155465740412",
+   "text": "شوفوا مين طلع الشاطر😎.. لعبة الأسئلة مع أصحاب المشروب المصري V7\n#معكم_منى_الشاذلي\n#ON https://t.co/aJ7uQbVDVh",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 0,
+   "quoteCount": 0,
+   "viewCount": 1127,
+   "createdAt": "Thu Apr 17 21:35:00 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912983155465740412",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/aJ7uQbVDVh",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912983155465740412/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912950201934843904",
+      "indices": [
+       86,
+       109
+      ],
+      "media_key": "13_1912950201934843904",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMKhLLVpAAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowqEstWkAAAAA==",
+        "media_key": "13_1912950201934843904"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow13neWcAA-mz3.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 900,
+       "width": 1600
+      },
+      "sizes": {
+       "large": {
+        "h": 900,
+        "w": 1600
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/aJ7uQbVDVh",
+      "video_info": {
+       "aspect_ratio": [
+        16,
+        9
+       ],
+       "duration_millis": 388000,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912950201934843904/pl/niDEO27lbJmTdKs8.m3u8?tag=14"
+        },
+        {
+         "bitrate": 288000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912950201934843904/vid/avc1/480x270/d2IkZ2EKC5ScoU1r.mp4?tag=14"
+        },
+        {
+         "bitrate": 832000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912950201934843904/vid/avc1/640x360/cpT64oR0GvoOLtcM.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912950201934843904/vid/avc1/1280x720/i34tky5GQXX9akzm.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       64,
+       81
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       82,
+       85
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1912979632254525744",
+   "url": "https://x.com/ONTVEgy/status/1912979632254525744",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912979632254525744",
+   "text": "أصحاب مشروع المشروب الغازي V7 باعوا كل ممتلكاتهم علشان يحققوا حلمهم😲\n#معكم_منى_الشاذلي\n#ON https://t.co/DXBfJRbUgh",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 1421,
+   "createdAt": "Thu Apr 17 21:21:00 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912979632254525744",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/DXBfJRbUgh",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912979632254525744/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912959528108220416",
+      "indices": [
+       91,
+       114
+      ],
+      "media_key": "13_1912959528108220416",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMMo42luAAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowyjjaW4AAAAA==",
+        "media_key": "13_1912959528108220416"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow1-fdWEAA2H6Z.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 1600,
+       "width": 900
+      },
+      "sizes": {
+       "large": {
+        "h": 1600,
+        "w": 900
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/DXBfJRbUgh",
+      "video_info": {
+       "aspect_ratio": [
+        9,
+        16
+       ],
+       "duration_millis": 65040,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912959528108220416/pl/tQySWPNxIEI8TMjX.m3u8?tag=14&v=902"
+        },
+        {
+         "bitrate": 632000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912959528108220416/vid/avc1/320x568/HoQ7NG0DO1x5-cpS.mp4?tag=14"
+        },
+        {
+         "bitrate": 950000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912959528108220416/vid/avc1/480x852/4xbG7KrMdeRJX6Sw.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912959528108220416/vid/avc1/720x1280/KjjpM7BlYTAmfqcE.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       69,
+       86
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       87,
+       90
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1912974096784150846",
+   "url": "https://x.com/ONTVEgy/status/1912974096784150846",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912974096784150846",
+   "text": "أصحاب مشروع المشروب الغازي V7 بيحكوا عن بداية حلمهم😍\n#معكم_منى_الشاذلي\n#ON https://t.co/DNLuU3Qfwk",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "viewCount": 969,
+   "createdAt": "Thu Apr 17 20:59:00 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912974096784150846",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/DNLuU3Qfwk",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912974096784150846/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912941115734446080",
+      "indices": [
+       75,
+       98
+      ],
+      "media_key": "13_1912941115734446080",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMIc8/l1AAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowhzz+XUAAAAA==",
+        "media_key": "13_1912941115734446080"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow1jTbXsAEjUBk.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 900,
+       "width": 1600
+      },
+      "sizes": {
+       "large": {
+        "h": 900,
+        "w": 1600
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/DNLuU3Qfwk",
+      "video_info": {
+       "aspect_ratio": [
+        16,
+        9
+       ],
+       "duration_millis": 247040,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912941115734446080/pl/iUHc0A8eTFPI4jdS.m3u8?tag=14"
+        },
+        {
+         "bitrate": 288000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941115734446080/vid/avc1/480x270/OhHKwpTlMyv5fuT2.mp4?tag=14"
+        },
+        {
+         "bitrate": 832000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941115734446080/vid/avc1/640x360/AJILXiXRHvlZ2DMa.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941115734446080/vid/avc1/1280x720/kY0qqp-IJu7KqSBX.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       53,
+       70
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       71,
+       74
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1912969313947992299",
+   "url": "https://x.com/ONTVEgy/status/1912969313947992299",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912969313947992299",
+   "text": "الصحاب لما يعملوا مشروع وينجح بجد😍.. قصة نجاح مشروع المشروب الغازي V7\n#معكم_منى_الشاذلي\n#ON https://t.co/9uEbCteP2l",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 0,
+   "likeCount": 1,
+   "quoteCount": 0,
+   "viewCount": 1230,
+   "createdAt": "Thu Apr 17 20:40:00 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912969313947992299",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/9uEbCteP2l",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912969313947992299/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912941106246963200",
+      "indices": [
+       92,
+       115
+      ],
+      "media_key": "13_1912941106246963200",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMIc0KF9AAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowhzQoX0AAAAA==",
+        "media_key": "13_1912941106246963200"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow1efCXYAEVDfk.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 900,
+       "width": 1600
+      },
+      "sizes": {
+       "large": {
+        "h": 900,
+        "w": 1600
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/9uEbCteP2l",
+      "video_info": {
+       "aspect_ratio": [
+        16,
+        9
+       ],
+       "duration_millis": 336120,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912941106246963200/pl/mcIT_N2uAhzvEtKp.m3u8?tag=14"
+        },
+        {
+         "bitrate": 288000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941106246963200/vid/avc1/480x270/gR3V6H2wCoF604OH.mp4?tag=14"
+        },
+        {
+         "bitrate": 832000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941106246963200/vid/avc1/640x360/sRTSTLYyuRw5nRwB.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941106246963200/vid/avc1/1280x720/XeXHgHjM5hWxQzuT.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       70,
+       87
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       88,
+       91
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1912962715087237134",
+   "url": "https://x.com/ONTVEgy/status/1912962715087237134",
+   "twitterUrl": "https://twitter.com/ONTVEgy/status/1912962715087237134",
+   "text": "المشروب الغازي اللي كسر مصر الفترة الأخيرة وبقينا نصدره لأوروبا كمان🤩.. مشروب V7 مصري ١٠٠ ٪ 🇪🇬\n#معكم_منى_الشاذلي\n#ON https://t.co/IRAKfJXJ5g",
+   "source": "",
+   "retweetCount": 2,
+   "replyCount": 0,
+   "likeCount": 16,
+   "quoteCount": 0,
+   "viewCount": 2585,
+   "createdAt": "Thu Apr 17 20:13:47 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1912962715087237134",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "ONTVEgy",
+    "url": "https://x.com/ONTVEgy",
+    "twitterUrl": "https://twitter.com/ONTVEgy",
+    "id": "166566887",
+    "name": "ON",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1765375262949003264/TAo6ir2Z_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/166566887/1713185812",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4056904,
+    "following": 10,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jul 14 13:42:21 +0000 2010",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 170,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 365734,
+    "statusesCount": 487647,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "#ON بتقنية HD تمنحك تجربة ممتعة ومجموعة مميزة من الأفلام والبرامج والمسلسلات الجديدة عبر تردد 11861 رأسي نايل سات معامل الترميز 27500 معامل تصحيح الخطأ 6/5",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          0,
+          3
+         ],
+         "text": "ON"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "additional_media_info": {
+       "description": "",
+       "monetizable": true,
+       "title": ""
+      },
+      "allow_download_status": {
+       "allow_download": false
+      },
+      "display_url": "pic.x.com/IRAKfJXJ5g",
+      "expanded_url": "https://x.com/ONTVEgy/status/1912962715087237134/video/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "1912941114698465280",
+      "indices": [
+       117,
+       140
+      ],
+      "media_key": "13_1912941114698465280",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARqMIc8B14AAAAA=",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAAECgABGowhzwHXgAAAAA==",
+        "media_key": "13_1912941114698465280"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gow1ar_X0AAKZly.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 900,
+       "width": 1600
+      },
+      "sizes": {
+       "large": {
+        "h": 900,
+        "w": 1600
+       }
+      },
+      "type": "video",
+      "url": "https://t.co/IRAKfJXJ5g",
+      "video_info": {
+       "aspect_ratio": [
+        16,
+        9
+       ],
+       "duration_millis": 261760,
+       "variants": [
+        {
+         "content_type": "application/x-mpegURL",
+         "url": "https://video-s.twimg.com/amplify_video/1912941114698465280/pl/UFJM__ZcUKbG7R_B.m3u8?tag=14&v=491"
+        },
+        {
+         "bitrate": 288000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941114698465280/vid/avc1/480x270/xnWx_g_S235Dr_mP.mp4?tag=14"
+        },
+        {
+         "bitrate": 832000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941114698465280/vid/avc1/640x360/Vt2NUdjztTxepm-e.mp4?tag=14"
+        },
+        {
+         "bitrate": 2176000,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/amplify_video/1912941114698465280/vid/avc1/1280x720/B8siOAvdfzGier8k.mp4?tag=14"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       95,
+       112
+      ],
+      "text": "معكم_منى_الشاذلي"
+     },
+     {
+      "indices": [
+       113,
+       116
+      ],
+      "text": "ON"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1911776660044808556",
+   "url": "https://x.com/Hassan_El_said/status/1911776660044808556",
+   "twitterUrl": "https://twitter.com/Hassan_El_said/status/1911776660044808556",
+   "text": "@noqta21 ال V7 طعمها زيت او كريم فاتيكا اللي بجوز الهند",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 4,
+   "quoteCount": 0,
+   "viewCount": 273,
+   "createdAt": "Mon Apr 14 13:40:49 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "1911719288144073115",
+   "conversationId": "1911719288144073115",
+   "inReplyToUserId": "1870916959136575488",
+   "inReplyToUsername": "noqta21",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Hassan_El_said",
+    "url": "https://x.com/Hassan_El_said",
+    "twitterUrl": "https://twitter.com/Hassan_El_said",
+    "id": "1253815698796826625",
+    "name": "Hassan El Said",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2030453266165702657/K9TEX2xi_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1253815698796826625/1739832025",
+    "description": "",
+    "location": "موجود في الدنيا",
+    "followers": 188,
+    "following": 161,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Fri Apr 24 22:39:02 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 2210,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 71,
+    "statusesCount": 594,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "MMPME (4/5)||🩺",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "1870916959136575488",
+      "indices": [
+       0,
+       8
+      ],
+      "name": "نقطه",
+      "screen_name": "noqta21"
+     }
+    ]
+   },
+   "reply_to_user_results": {
+    "rest_id": "1870916959136575488",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "noqta21"
+     },
+     "rest_id": "1870916959136575488"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1902491115884048454",
+   "url": "https://x.com/R281853/status/1902491115884048454",
+   "twitterUrl": "https://twitter.com/R281853/status/1902491115884048454",
+   "text": "أنا عايشة ضغط تجهيز الشقة و الجهاز و أنا مش مشروب عليا V7 حتى",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 19,
+   "quoteCount": 0,
+   "viewCount": 271,
+   "createdAt": "Wed Mar 19 22:43:23 +0000 2025",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1902491115884048454",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "R281853",
+    "url": "https://x.com/R281853",
+    "twitterUrl": "https://twitter.com/R281853",
+    "id": "1703550145638363136",
+    "name": "🌙ضوى ✮⋆",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2093282336968241152/UW2lmq8r_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1703550145638363136/1780872780",
+    "description": "",
+    "location": "القاهرة, مصر",
+    "followers": 851,
+    "following": 825,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Sep 17 23:23:53 +0000 2023",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 9434,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 280,
+    "statusesCount": 4226,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2000267532046156070"
+    ],
+    "profile_bio": {
+     "description": "𝓜𝓸𝓱𝓪𝓶𝓶𝓮𝓭.♡",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1872735746857296020",
+   "url": "https://x.com/mmdlhz10/status/1872735746857296020",
+   "twitterUrl": "https://twitter.com/mmdlhz10/status/1872735746857296020",
+   "text": "@Abda7eem عقاب فنجاله مشروب https://t.co/7M2SnxSxr7",
+   "source": "",
+   "retweetCount": 3,
+   "replyCount": 0,
+   "likeCount": 13,
+   "quoteCount": 0,
+   "viewCount": 1795,
+   "createdAt": "Fri Dec 27 20:06:10 +0000 2024",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": true,
+   "inReplyToId": "1872687218315411616",
+   "conversationId": "1872687218315411616",
+   "inReplyToUserId": "1331444948",
+   "inReplyToUsername": "Abda7eem",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "mmdlhz10",
+    "url": "https://x.com/mmdlhz10",
+    "twitterUrl": "https://twitter.com/mmdlhz10",
+    "id": "1611863618932310016",
+    "name": "M7MD V7",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2058978995547381761/y6qmnnff_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1611863618932310016/1777243637",
+    "description": "",
+    "location": "",
+    "followers": 55,
+    "following": 265,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sat Jan 07 23:13:45 +0000 2023",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 1558,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 149,
+    "statusesCount": 915,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "allow_download_status": {
+       "allow_download": true
+      },
+      "display_url": "pic.x.com/7M2SnxSxr7",
+      "expanded_url": "https://x.com/mmdlhz10/status/1872735746857296020/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 48,
+          "w": 48,
+          "x": 675,
+          "y": 252
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 48,
+          "w": 48,
+          "x": 675,
+          "y": 252
+         }
+        ]
+       }
+      },
+      "id_str": "1872735735473635328",
+      "indices": [
+       28,
+       51
+      ],
+      "media_key": "3_1872735735473635328",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARn9SzqvFgAACgACGf1LPVWa4JQAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGf1LOq8WAAAKAAIZ/Us9VZrglAAA",
+        "media_key": "3_1872735735473635328"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/Gf1LOq8WAAAg3rz.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 696,
+         "w": 1242,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1202,
+         "w": 1202,
+         "x": 40,
+         "y": 0
+        },
+        {
+         "h": 1202,
+         "w": 1054,
+         "x": 186,
+         "y": 0
+        },
+        {
+         "h": 1202,
+         "w": 601,
+         "x": 413,
+         "y": 0
+        },
+        {
+         "h": 1202,
+         "w": 1242,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1202,
+       "width": 1242
+      },
+      "sizes": {
+       "large": {
+        "h": 1202,
+        "w": 1242
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/7M2SnxSxr7"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "1331444948",
+      "indices": [
+       0,
+       9
+      ],
+      "name": "ID7O",
+      "screen_name": "Abda7eem"
+     }
+    ]
+   },
+   "reply_to_user_results": {
+    "rest_id": "1331444948",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "Abda7eem"
+     },
+     "rest_id": "1331444948"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1870080189784297928",
+   "url": "https://x.com/CBCEgypt/status/1870080189784297928",
+   "twitterUrl": "https://twitter.com/CBCEgypt/status/1870080189784297928",
+   "text": "استجابت شركة V7 لطلب الملايين من عشاقها المصريين بطرح V Diet Cola، بعد النجاح الكبير الذي حققته الشركة خلال وقت قياسي.\n\nاستكمالًا لنجاحات شركة بينيفيت المصرية، المنتجة للعلامتين التجاريتين V7 وV Super Soda، قررت الشركة أن يكون المنتج بطعم طبيعي 100%، بالإضافة إلى كونه (بدون سكر وبدون كافيين)، في سابقة فريدة من نوعها لمنتج مصري. كما أضافت الشركة الغطاء الواقي ضد الأتربة، الذي انفردت به الشركة منذ ظهورها، للحفاظ على نظافة وأمان المشروب.\n\nولم يقتصر الأمر على مصر فقط، بل صدرت شركة بينيفيت منتجاتها لأكثر من 24 دولة حول العالم في 5 قارات، لتثبت أنها بالفعل فخر الصناعة المصرية.\n\n#CBC",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 0,
+   "likeCount": 4,
+   "quoteCount": 0,
+   "viewCount": 1116,
+   "createdAt": "Fri Dec 20 12:13:56 +0000 2024",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1870080189784297928",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "CBCEgypt",
+    "url": "https://x.com/CBCEgypt",
+    "twitterUrl": "https://twitter.com/CBCEgypt",
+    "id": "327722701",
+    "name": "CBC Egypt",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2024476434002022400/GruW8y7J_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/327722701/1771507839",
+    "description": "",
+    "location": "Egypt",
+    "followers": 4038447,
+    "following": 2,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sat Jul 02 01:36:29 +0000 2011",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 17,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 259776,
+    "statusesCount": 528286,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "قناة مصرية عامة تهدف إلى إعلام راقي يطرح ويناقش آراء جميع اطياف المجتمع المصري - بلا إنحياز سياسي أو ديني التردد: 12092 رأسي",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "cbc-eg.com",
+         "expanded_url": "http://www.cbc-eg.com",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/sdENQyB9RM"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/Bfj3pskOcZ",
+      "expanded_url": "https://x.com/CBCEgypt/status/1870080189784297928/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 88,
+          "w": 88,
+          "x": 282,
+          "y": 653
+         },
+         {
+          "h": 99,
+          "w": 99,
+          "x": 684,
+          "y": 652
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 88,
+          "w": 88,
+          "x": 282,
+          "y": 653
+         },
+         {
+          "h": 99,
+          "w": 99,
+          "x": 684,
+          "y": 652
+         }
+        ]
+       }
+      },
+      "id_str": "1870080184142925825",
+      "indices": [
+       279,
+       302
+      ],
+      "media_key": "3_1870080184142925825",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARnz3AT1VhABCgACGfPcBkWWkcgAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGfPcBPVWEAEKAAIZ89wGRZaRyAAA",
+        "media_key": "3_1870080184142925825"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/GfPcBPVWEAEzib2.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 604,
+         "w": 1079,
+         "x": 0,
+         "y": 476
+        },
+        {
+         "h": 1079,
+         "w": 1079,
+         "x": 0,
+         "y": 1
+        },
+        {
+         "h": 1080,
+         "w": 947,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1080,
+         "w": 540,
+         "x": 188,
+         "y": 0
+        },
+        {
+         "h": 1080,
+         "w": 1079,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1080,
+       "width": 1079
+      },
+      "sizes": {
+       "large": {
+        "h": 1080,
+        "w": 1079
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/Bfj3pskOcZ"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [
+     {
+      "indices": [
+       579,
+       583
+      ],
+      "text": "CBC"
+     }
+    ],
+    "symbols": [],
+    "urls": [],
+    "user_mentions": []
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1845139574114131980",
+   "url": "https://x.com/imaz3n/status/1845139574114131980",
+   "twitterUrl": "https://twitter.com/imaz3n/status/1845139574114131980",
+   "text": "كلها ماسكة في حوارات عبيطة مش عارف هايدي ميك أب مين وجوزها وعمالين يرغوا \nومحدش قال انه عايز بيتزاية تشيكن رانش لارچ من عند بريموس وواحدة V7 بيناكولادا ونقعد على رواقة عادي خالص",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 255,
+   "createdAt": "Sat Oct 12 16:28:50 +0000 2024",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1845139574114131980",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "imaz3n",
+    "url": "https://x.com/imaz3n",
+    "twitterUrl": "https://twitter.com/imaz3n",
+    "id": "1057251954588610563",
+    "name": "Mazen",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2089764251715915776/3RCzexcO_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1057251954588610563/1771985358",
+    "description": "",
+    "location": "Cairo, Egypt",
+    "followers": 383,
+    "following": 429,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Oct 30 12:44:43 +0000 2018",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 44798,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 961,
+    "statusesCount": 13480,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "boxd.it/1xq7t",
+         "expanded_url": "https://boxd.it/1xq7t",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/Ujd2TN8EG5"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "1832050131870331020",
+   "url": "https://x.com/Adrik_Inc/status/1832050131870331020",
+   "twitterUrl": "https://twitter.com/Adrik_Inc/status/1832050131870331020",
+   "text": "✳ مقاطعة كوكاكولا وبيبسي بسبب غزة ترفع أسعار المشروبات الغازية المحلية في الدول الإسلامية\n\nReuters:\n\n📌استثمرت كوكاكولا وبيبسي مئات الملايين من الدولارات في دول ذات أغلبية مسلمة مثل مصر وباكستان على مدى عقود.\n\n📌تواجه الشركتان تحديات من المشروبات الغازية المحلية وسط مقاطعة المستهلكين في هذه المناطق، مدفوعة بتصورات العلامات التجارية كرموز لأمريكا ودعمها لإسرائيل خلال صراع غزة.\n\n📌في مصر، انخفضت مبيعات كوكاكولا بشكل كبير، بينما شهدت العلامة التجارية المحلية V7 زيادة كبيرة في الصادرات.\n\n📌اضطرت كوكاكولا إلى إلغاء حملة إعلانية في بنغلاديش بسبب ردود الفعل العنيفة، وتوقف نمو بيبسي في الشرق الأوسط منذ بدء صراع غزة في أكتوبر.\n\n📌بلغ إجمالي إيرادات بيبسيكو من إفريقيا والشرق الأوسط وجنوب آسيا 6 مليارات دولار في عام 2023، بينما بلغت إيرادات كوكاكولا من أوروبا والشرق الأوسط وأفريقيا 8 مليارات دولار في نفس العام.\n📌 زاهي خوري، وهو فلسطيني أميركي، يدير مصنعاً لتعبئة كوكا كولا في الضفة الغربية، لكن مصنعاً آخر في غزة تبلغ قيمته 25 مليون دولار دمر في الصراع، رغم أن الموظفين لم يصابوا بأذى.",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 5,
+   "quoteCount": 0,
+   "viewCount": 3011,
+   "createdAt": "Fri Sep 06 13:36:03 +0000 2024",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "1832050131870331020",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Adrik_Inc",
+    "url": "https://x.com/Adrik_Inc",
+    "twitterUrl": "https://twitter.com/Adrik_Inc",
+    "id": "1415509388312420360",
+    "name": "أدرك ـ باب المعرفة",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1731252059792379904/aGypzVOw_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1415509388312420360/1701597642",
+    "description": "",
+    "location": "",
+    "followers": 499704,
+    "following": 493,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Thu Jul 15 03:12:36 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 14413,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 28138,
+    "statusesCount": 35316,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2079518992599744968"
+    ],
+    "profile_bio": {
+     "description": "أدرك نبعٌ مستقل يرصِدُ الحقيقة.\n\nالمرخصة من وزارة الإعلام برقم: 588-2024",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "allow_download_status": {
+       "allow_download": true
+      },
+      "display_url": "pic.x.com/EECVVP3g6j",
+      "expanded_url": "https://x.com/Adrik_Inc/status/1832050131870331020/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 86,
+          "w": 86,
+          "x": 347,
+          "y": 131
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 86,
+          "w": 86,
+          "x": 347,
+          "y": 131
+         }
+        ]
+       }
+      },
+      "id_str": "1832050118599524352",
+      "indices": [
+       272,
+       295
+      ],
+      "media_key": "3_1832050118599524352",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARlsv+BR1kAACgACGWy/42jWsIwAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABGWy/4FHWQAAKAAIZbL/jaNawjAAA",
+        "media_key": "3_1832050118599524352"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/GWy_4FHWQAAwzGw.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 448,
+         "w": 800,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 471,
+         "w": 471,
+         "x": 145,
+         "y": 0
+        },
+        {
+         "h": 471,
+         "w": 413,
+         "x": 174,
+         "y": 0
+        },
+        {
+         "h": 471,
+         "w": 236,
+         "x": 262,
+         "y": 0
+        },
+        {
+         "h": 471,
+         "w": 800,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 471,
+       "width": 800
+      },
+      "sizes": {
+       "large": {
+        "h": 471,
+        "w": 800
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/EECVVP3g6j"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "timestamps": [],
+    "urls": [],
+    "user_mentions": []
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  }
+ ]
+}

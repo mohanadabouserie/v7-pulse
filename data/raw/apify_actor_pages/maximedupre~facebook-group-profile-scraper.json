@@ -1,0 +1,392 @@
+{
+ "act": {
+  "title": "Facebook Group Profile Scraper",
+  "users30d": 14,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## 👥 Turn direct Facebook group sources into profile data\n\nCommunity researchers, moderators, marketers, and developers can use this Facebook group profile scraper to turn direct Facebook group URLs, usernames, or numeric IDs into structured dataset rows. Each saved row includes group identity, public description, history, posting activity, membership, visibility, listed administrators and moderators, and public rules. Use those fields to compare communities or review a group's public profile without copying values by hand.\n\n- Review a group's posting activity and member counts with **[Facebook Group Stats Scraper](https://apify.com/maximedupre/facebook-group-profile-scraper/examples/facebook-group-stats-scraper)**.\n- Collect a group's identity, description, history, and visibility with **[Facebook Group Info Scraper](https://apify.com/maximedupre/facebook-group-profile-scraper/examples/facebook-group-info-scraper)**.\n- Gather structured profiles from a list of direct sources with **[Facebook Group Data Scraper](https://apify.com/maximedupre/facebook-group-profile-scraper/examples/facebook-group-data-scraper)**.\n- Save a public profile for a known group with **[Facebook Group Profile Scraper](https://apify.com/maximedupre/facebook-group-profile-scraper/examples/facebook-group-profile-scraper)**.\n- Turn a URL, username, or numeric ID into a dataset row with **[Facebook Group Scraper](https://apify.com/maximedupre/facebook-group-profile-scraper/examples/facebook-group-scraper)**.\n\n### 📊 Review each group in one structured row\n\nEach saved row is the first eligible occurrence of one submitted group. If the same source group appears again through another URL, username, or ID, the Actor ignores the later match. The row describes the first saved match and does not combine later matches.\n\nPublic fields are returned when Facebook exposes them. A missing source field stays unfilled, and an unresolved group does not produce a profile row.\n\n### ▶️ Run a Facebook group profile check\n\nChoose `Direct group URL`, `Group username`, or `Numeric group ID` in `findGroupsBy`, then add values to the matching list. The other lists are ignored. The Actor reads the public group profile and saves one row for each group it can resolve. It does not discover groups by keyword or collect posts, comments, or member lists.\n\n**Run steps**\n\n1. Choose a source type in `findGroupsBy`.\n2. Add one or more values to its matching list.\n3. Start the Actor.\n4. Open the group profiles in the default dataset.\n\n### ⚙️ Input\n\nChoose one source type in `findGroupsBy`. Add values to its matching list. The other lists are ignored.\n\n**Input fields**\n\n| Field | Type | What it does |\n|---|---|---|\n| `findGroupsBy` | string | Selects `url`, `username`, or `id` and chooses which source list to use. |\n| `groupUrls` | array of objects | Adds one or more direct public Facebook group URL objects. Use this when `findGroupsBy` is `url`. |\n| `groupUrls[].url` | string | Holds one direct public Facebook group URL. |\n| `groupUsernames` | array of strings | Adds one or more Facebook group usernames without `@`. Use this when `findGroupsBy` is `username`. |\n| `groupIds` | array of strings | Adds one or more numeric Facebook group IDs. Keep each ID as a full number. Use this when `findGroupsBy` is `id`. |\n\n**Example input**\n\nThis example is copied from the public input of the successful current-beta default-input run:\n\n```json\n{\n  \"findGroupsBy\": \"url\",\n  \"groupUrls\": [\n    {\n      \"url\": \"https://www.facebook.com/groups/1010440649638729\"\n    }\n  ]\n}\n```\n\nThe example uses URL mode. For another source type, change `findGroupsBy` and fill the matching list.\n\n### 🧾 Output\n\n**Run output**\n\n| Field | Type | What it does |\n|---|---|---|\n| `dataset` | string | Opens the group profile rows from this run. |\n\n**Group profile row**\n\nThe default dataset has one group profile row shape. `identity` is required. Other fields may be omitted when Facebook does not expose them, and arrays may be empty.\n\n| Field | Type | What it does |\n|---|---|---|\n| `identity` | object | Holds the stable group identity and resolved public link. |\n| `identity.groupId` | string | Gives Facebook's stable group ID. |\n| `identity.name` | string | Gives the group name shown by Facebook. |\n| `identity.url` | string | Gives the resolved public group URL. |\n| `identity.username` | string | Gives the group username shown by Facebook, without `@`, when available. |\n| `description` | string | Gives the public group description shown by Facebook. |\n| `history` | object | Holds creation and history details shown by Facebook. |\n| `history.createdAt` | string | Gives the group creation date in date form when it can be read exactly. |\n| `history.summary` | string | Gives public history text shown by Facebook. |\n| `postingActivity` | object | Holds daily and monthly posting activity. |\n| `postingActivity.postsPerDay` | number | Gives the normalized daily post count from Facebook's displayed value. |\n| `postingActivity.postsPerDayDisplay` | string | Gives the daily posting value as Facebook displays it. |\n| `postingActivity.postsPerMonth` | number | Gives the normalized monthly post count from Facebook's displayed value. |\n| `postingActivity.postsPerMonthDisplay` | string | Gives the monthly posting value as Facebook displays it. |\n| `membership` | object | Holds member count and recent member growth. |\n| `membership.memberCount` | integer | Gives the normalized member count from Facebook's displayed value. |\n| `membership.memberCountDisplay` | string | Gives the member count as Facebook displays it. |\n| `membership.recentMemberGrowth` | object | Holds the recent member-growth value. |\n| `membership.recentMemberGrowth.count` | integer | Gives the normalized number of new members in the stated period. |\n| `membership.recentMemberGrowth.period` | string | Gives the period used by Facebook for the growth value. |\n| `membership.recentMemberGrowth.display` | string | Gives the recent growth value as Facebook displays it. |\n| `visibility` | object | Holds the group's privacy and discoverability status. |\n| `visibility.privacy` | string | Gives the group privacy status shown by Facebook. |\n| `visibility.discoverability` | string | Gives the group discoverability status shown by Facebook. |\n| `administrators` | array of objects | Lists administrators that Facebook shows for the group. |\n| `administrators[].name` | string | Gives an administrator name shown by Facebook. |\n| `administrators[].profileUrl` | string | Gives an administrator's public Facebook profile link. |\n| `moderators` | array of objects | Lists moderators that Facebook shows for the group. |\n| `moderators[].name` | string | Gives a moderator name shown by Facebook. |\n| `moderators[].profileUrl` | string | Gives a moderator's public Facebook profile link. |\n| `rules` | array of objects | Lists rules or guidelines that Facebook shows for the group. |\n| `rules[].title` | string | Gives a rule title when Facebook shows one. |\n| `rules[].text` | string | Gives the public rule text shown by Facebook. |\n\n**Example group profile row**\n\nThis complete row comes from a successful current-beta run. It shows the public values returned for one group at retrieval time.\n\n```json\n{\n  \"identity\": {\n    \"groupId\": \"506273379443089\",\n    \"name\": \"OFFRO CASA - AFFITTO ALLOGGI & STANZE X STUDENTI - TORINO\",\n    \"url\": \"https://www.facebook.com/groups/OFFROCASA/\",\n    \"username\": \"OFFROCASA\"\n  },\n  \"description\": \"> Dal 2012 sempre dalla parte degli studenti e dei privati <\\nOggi probabilmente l’ultimo gruppo torinese di affiti non svenduto a compagnie. \\n\\nLeggete bene le regole prima di richiedere l’iscrizione, la quale sarà istantanea se vi iscrivete prima dal gruppo gemello CERCO. E fate i bravi una volta dentro.\\nMettete LIKE qui se trovate casa/inquilino grazie a questo gruppo! (41)\\n\\n> WELCOME INTERNATIONALS! Group rules in English in first comment here. Like this post if you find your accomodation thanks to this group!\",\n  \"history\": {\n    \"createdAt\": \"2013-07-18\",\n    \"summary\": \"Group created on July 18, 2013. Name last changed on February 12, 2018.\"\n  },\n  \"postingActivity\": {\n    \"postsPerDay\": 20,\n    \"postsPerDayDisplay\": \"20\",\n    \"postsPerMonth\": 541,\n    \"postsPerMonthDisplay\": \"541\"\n  },\n  \"membership\": {\n    \"memberCountDisplay\": \"43,351 total members\",\n    \"memberCount\": 43351,\n    \"recentMemberGrowth\": {\n      \"display\": \"No new members in the last week\",\n      \"count\": 0,\n      \"period\": \"last week\"\n    }\n  },\n  \"visibility\": {\n    \"privacy\": \"Public group\",\n    \"discoverability\": \"Visible\"\n  },\n  \"administrators\": [\n    {\n      \"name\": \"Alessandro Nince\",\n      \"profileUrl\": \"https://www.facebook.com/profile.php?id=629158103\"\n    }\n  ],\n  \"rules\": [\n    {\n      \"text\": \"Can't have rules in multiple languages. Google Translator works just fine for English. Erasmus this group was born for you! Good luck!\",\n      \"title\": \"SORRY NON ITALIAN SPEAKERS!\"\n    },\n    {\n      \"text\": \"Gruppo dedicato ad annunci di chi OFFRE in AFFITTO STANZE ed APPARTAMENTI per STUDENTI UNIVERSITARI a TORINO. NO annunci CERCO (vedere gruppo gemello). NO altre città, NO vendite, NO mobili e oggetti\",\n      \"title\": \"Esclusivamente per chi OFFRE, ALLOGGI, a TORINO\"\n    },\n    {\n      \"text\": \"Solo individui privati. NO attività commerciali, NO spam, NO housing websites o agenzie immobiliari. Questi non saranno accettati nel gruppo.\",\n      \"title\": \"Esclusivamente per PRIVATI: NO AGENZIE o ATTIVITÀ\"\n    },\n    {\n      \"text\": \"NO post ri-condivisi, NO post che rimandano a gruppi terzi. NO ups. Manteniamo la ricerca facile per il bene di tutti.\",\n      \"title\": \"MASSIMO 1 POST a SETTIMANA per alloggio/persona\"\n    },\n    {\n      \"text\": \"Esiste un gruppo gemello\\nwww.facebook.com/groups/CERCOCASATORINO per gli annunci di tipo CERCO, qui quelli NON sono i benvenuti (scarsissimo successo poi). Approvazione automatica per chi è già di là\",\n      \"title\": \"C'è GRUPPO GEMELLO per annunci di tipo CERCO\"\n    },\n    {\n      \"text\": \"La SPAM, gli annunci sospetti, MULTIPLI, off-topic o che rimandano ad AGENZIE immobiliari o gruppi terzi VANNO SEGNALATI all'amministratore che provvederà a ripulire.\",\n      \"title\": \"SEGNALARE agli admin la SPAM e i FUORI LUOGO\"\n    },\n    {\n      \"text\": \"Chi non rispetta le regole del gruppo viene espulso alla velocità della luce e bloccato perennemente. Con troppi spammatori non si può fare altrimenti. Avvisati.\",\n      \"title\": \"TOLLERANZA 0: sgarri 1 volta SEI FUORI per SEMPRE\"\n    },\n    {\n      \"text\": \"Se hai trovato il tuo alloggio, o inquilino, grazie a questo gruppo, per favore metti MI PIACE al primo post fissato in alto (in \\\"Comunicazioni\\\")! Serve per fare un po' di statistica. GRAZIE!\",\n      \"title\": \"LIKE al 1° post se trovi il tuo alloggio/inqulino\"\n    }\n  ]\n}\n```\n\n### 💳 Pricing\n\n**How charges work**\n\nThis Actor uses pay-per-event pricing. A `Group profile` event is charged for each public group profile saved to the dataset. The current price is shown in the Store pricing panel.\n\n### 🔌 Integrations\n\nStart the Actor with the Apify API, then read the default dataset or export its rows as JSON, CSV, Excel, or XML. The structured dataset can also be used in your own scripts or data workflow.\n\nhttps://www.youtube.com/watch?v=bNACk1_S_6w&list=PLObrtcm1Kw6MUrlLNDbK9QRg8VDJg0gOW&index=4\n\n### ❓ FAQ\n\n#### Why is the same group saved only once?\n\nThe Actor saves the first eligible occurrence of a source group. If another submitted URL, username, or ID points to that group later, the later match is ignored, and the saved row reflects only the first match.\n\n#### What happens if Facebook does not show a field?\n\nThe field is left unfilled rather than guessed. Arrays such as `administrators`, `moderators`, and `rules` may be empty when the public page does not expose matching data.\n\n#### Can it profile private groups?\n\nIt reads publicly reachable group pages only. Private, member-only, or login-gated content is outside scope, so an inaccessible group may produce no row and unavailable fields are not invented.\n\n#### Does it return posts, comments, or members?\n\nNo. It returns group-level profile data. Posts, comments, and full member lists are outside its scope.\n\n#### What can I submit?\n\nChoose a direct Facebook group URL, a group username, or a numeric group ID. The selected source list accepts one or more values, and only that list is used.\n\n#### Can I submit several groups in one run?\n\nYes. Add several values to the selected list. The Actor handles each submitted source and saves a profile for each group it can resolve.\n\n#### What are the normalized activity and membership values?\n\n`postingActivity.postsPerDay` and `postsPerMonth` are numeric versions of Facebook's displayed posting values. `membership.memberCount` and `recentMemberGrowth.count` are numeric versions when the source value can be read; the matching display fields preserve what Facebook shows.\n\n#### Does it need a Facebook login or developer API key?\n\nNo. It reads publicly reachable group pages without requiring a Facebook login or developer API key.\n\n#### Does it find groups from a keyword?\n\nNo. This Actor profiles groups you submit directly. It does not search a directory or discover groups by keyword.\n\n#### What can I do with the administrators and moderators fields?\n\nThey contain names and public profile URLs that Facebook lists for the group. They are not private contact details.\n\n## 📝 Changelog\n\n**0.0: Initial release**\n\n## 🆘 Support\n\nFor issues, questions, or feature requests, [file a ticket](https://console.apify.com/actors/maximedupre~facebook-group-profile-scraper/issues) and I'll fix or implement it in less than 24h 🫡\n\n## 🔗 Related Actors\n\n- [Facebook User Posts Scraper](https://apify.com/maximedupre/facebook-user-posts-scraper). Collect public posts from related Facebook profiles or Pages for follow-up research.\n- [Facebook Group Profile Scraper 📊](https://apify.com/easyapi/facebook-group-profile-scraper). Compare another public group-profile data source when you need a second extraction.\n- [Facebook Group Post Scraper](https://apify.com/scraper-engine/facebook-group-post-scraper). Collect posts and engagement from a group after profiling it.\n- [Facebook Groups Search Scraper With Member Filters](https://apify.com/api-empire/facebook-groups-search-scraper). Discover groups by keyword and member count before sending direct sources here.\n- [Facebook Url To Id Scraper](https://apify.com/scraper-engine/facebook-url-to-id). Convert a Facebook group URL to a numeric ID before matching or storing profiles.\n\n**Made with ❤️ by Maxime Dupré**\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "title": "Facebook group profile",
+   "description": "A public Facebook group profile with the values Facebook shows.",
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "identity": {
+     "title": "Group identity",
+     "description": "The stable identity and public link for the group.",
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "groupId": {
+       "title": "Group ID",
+       "description": "Facebook's stable group ID. It is a string so the full value is kept.",
+       "type": "string",
+       "examples": [
+        "123456789012345"
+       ]
+      },
+      "name": {
+       "title": "Group name",
+       "description": "The group name shown by Facebook.",
+       "type": "string",
+       "examples": [
+        "Local Gardeners"
+       ]
+      },
+      "url": {
+       "title": "Group URL",
+       "description": "The resolved public URL for the group.",
+       "type": "string",
+       "format": "uri",
+       "examples": [
+        "https://www.facebook.com/groups/localgardeners"
+       ]
+      },
+      "username": {
+       "title": "Group username",
+       "description": "The group username shown by Facebook, without the @ sign.",
+       "type": "string",
+       "examples": [
+        "localgardeners"
+       ]
+      }
+     },
+     "required": [
+      "groupId",
+      "name",
+      "url"
+     ]
+    },
+    "description": {
+     "title": "Description",
+     "description": "The public group description shown by Facebook.",
+     "type": "string",
+     "examples": [
+      "A place for local gardeners to share tips and events."
+     ]
+    },
+    "history": {
+     "title": "Group history",
+     "description": "Creation and history details that Facebook shows for the group.",
+     "type": "object",
+     "additionalProperties": false,
+     "minProperties": 1,
+     "properties": {
+      "createdAt": {
+       "title": "Created date",
+       "description": "The group creation date shown by Facebook, in ISO 8601 date form when it can be read exactly.",
+       "type": "string",
+       "format": "date",
+       "examples": [
+        "2018-04-21"
+       ]
+      },
+      "summary": {
+       "title": "History summary",
+       "description": "Public history text shown by Facebook for the group.",
+       "type": "string",
+       "examples": [
+        "The group was created for local gardening events."
+       ]
+      }
+     }
+    },
+    "postingActivity": {
+     "title": "Posting activity",
+     "description": "Daily and monthly posting activity shown by Facebook.",
+     "type": "object",
+     "additionalProperties": false,
+     "minProperties": 1,
+     "properties": {
+      "postsPerDay": {
+       "title": "Posts per day",
+       "description": "The normalized number of posts per day from the value Facebook shows.",
+       "type": "number",
+       "minimum": 0,
+       "examples": [
+        12
+       ]
+      },
+      "postsPerDayDisplay": {
+       "title": "Posts per day shown",
+       "description": "The daily posting value as Facebook displays it.",
+       "type": "string",
+       "examples": [
+        "12 posts a day"
+       ]
+      },
+      "postsPerMonth": {
+       "title": "Posts per month",
+       "description": "The normalized number of posts per month from the value Facebook shows.",
+       "type": "number",
+       "minimum": 0,
+       "examples": [
+        360
+       ]
+      },
+      "postsPerMonthDisplay": {
+       "title": "Posts per month shown",
+       "description": "The monthly posting value as Facebook displays it.",
+       "type": "string",
+       "examples": [
+        "360 posts a month"
+       ]
+      }
+     }
+    },
+    "membership": {
+     "title": "Membership",
+     "description": "Membership size and recent growth values shown by Facebook.",
+     "type": "object",
+     "additionalProperties": false,
+     "minProperties": 1,
+     "properties": {
+      "memberCount": {
+       "title": "Member count",
+       "description": "The normalized number of members from the value Facebook shows.",
+       "type": "integer",
+       "minimum": 0,
+       "examples": [
+        12500
+       ]
+      },
+      "memberCountDisplay": {
+       "title": "Member count shown",
+       "description": "The member count as Facebook displays it.",
+       "type": "string",
+       "examples": [
+        "12.5K members"
+       ]
+      },
+      "recentMemberGrowth": {
+       "title": "Recent member growth",
+       "description": "Recent member growth values shown by Facebook.",
+       "type": "object",
+       "additionalProperties": false,
+       "minProperties": 1,
+       "properties": {
+        "count": {
+         "title": "New members",
+         "description": "The normalized number of new members in the stated period.",
+         "type": "integer",
+         "minimum": 0,
+         "examples": [
+          42
+         ]
+        },
+        "period": {
+         "title": "Growth period",
+         "description": "The period Facebook uses for the recent growth value.",
+         "type": "string",
+         "examples": [
+          "last week"
+         ]
+        },
+        "display": {
+         "title": "Growth shown",
+         "description": "The recent growth value as Facebook displays it.",
+         "type": "string",
+         "examples": [
+          "42 new members in the last week"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "visibility": {
+     "title": "Visibility",
+     "description": "The privacy and discoverability status shown by Facebook.",
+     "type": "object",
+     "additionalProperties": false,
+     "minProperties": 1,
+     "properties": {
+      "privacy": {
+       "title": "Privacy",
+       "description": "The group privacy status shown by Facebook.",
+       "type": "string",
+       "examples": [
+        "Public"
+       ]
+      },
+      "discoverability": {
+       "title": "Discoverability",
+       "description": "The group discoverability status shown by Facebook.",
+       "type": "string",
+       "examples": [
+        "Visible"
+       ]
+      }
+     }
+    },
+    "administrators": {
+     "title": "Administrators",
+     "description": "Administrators that Facebook lists for the group.",
+     "type": "array",
+     "items": {
+      "title": "Administrator",
+      "description": "An administrator name and public profile link.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "title": "Name",
+        "description": "The administrator name shown by Facebook.",
+        "type": "string",
+        "examples": [
+         "Alex Rivera"
+        ]
+       },
+       "profileUrl": {
+        "title": "Profile URL",
+        "description": "The administrator's public Facebook profile link.",
+        "type": "string",
+        "format": "uri",
+        "examples": [
+         "https://www.facebook.com/alex.rivera"
+        ]
+       }
+      },
+      "required": [
+       "name",
+       "profileUrl"
+      ]
+     }
+    },
+    "moderators": {
+     "title": "Moderators",
+     "description": "Moderators that Facebook lists for the group.",
+     "type": "array",
+     "items": {
+      "title": "Moderator",
+      "description": "A moderator name and public profile link.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "title": "Name",
+        "description": "The moderator name shown by Facebook.",
+        "type": "string",
+        "examples": [
+         "Jamie Chen"
+        ]
+       },
+       "profileUrl": {
+        "title": "Profile URL",
+        "description": "The moderator's public Facebook profile link.",
+        "type": "string",
+        "format": "uri",
+        "examples": [
+         "https://www.facebook.com/jamie.chen"
+        ]
+       }
+      },
+      "required": [
+       "name",
+       "profileUrl"
+      ]
+     }
+    },
+    "rules": {
+     "title": "Group rules",
+     "description": "Rules or guidelines that Facebook shows for the group.",
+     "type": "array",
+     "items": {
+      "title": "Group rule",
+      "description": "A group rule with its full public text.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+       "title": {
+        "title": "Rule title",
+        "description": "The rule title shown by Facebook, when available.",
+        "type": "string",
+        "examples": [
+         "Be kind"
+        ]
+       },
+       "text": {
+        "title": "Rule text",
+        "description": "The full public rule text shown by Facebook.",
+        "type": "string",
+        "examples": [
+         "Treat other members with respect."
+        ]
+       }
+      },
+      "required": [
+       "text"
+      ]
+     }
+    }
+   },
+   "required": [
+    "identity"
+   ]
+  },
+  "views": {
+   "overview": {
+    "title": "Group profiles",
+    "transformation": {
+     "fields": [
+      "identity",
+      "description",
+      "history",
+      "postingActivity",
+      "membership",
+      "visibility",
+      "administrators",
+      "moderators",
+      "rules"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "identity": {
+       "label": "Group identity",
+       "format": "object"
+      },
+      "description": {
+       "label": "Description",
+       "format": "text"
+      },
+      "history": {
+       "label": "Group history",
+       "format": "object"
+      },
+      "postingActivity": {
+       "label": "Posting activity",
+       "format": "object"
+      },
+      "membership": {
+       "label": "Membership",
+       "format": "object"
+      },
+      "visibility": {
+       "label": "Visibility",
+       "format": "object"
+      },
+      "administrators": {
+       "label": "Administrators",
+       "format": "array"
+      },
+      "moderators": {
+       "label": "Moderators",
+       "format": "array"
+      },
+      "rules": {
+       "label": "Group rules",
+       "format": "array"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Facebook Group Profile Scraper\",\n  \"description\": \"Choose Direct group URL, Group username, or Numeric group ID. Add one or more groups to the matching list. Other lists are ignored.\\n\\nNeed a fix or improvement? [File an issue](https://apify.com/maximedupre/facebook-group-profile-scraper/issues/open) and I'll resolve it in less than 24h 🫡\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"findGroupsBy\": {\n      \"title\": \"Find groups by\",\n      \"type\": \"string\",\n      \"description\": \"Choose how you will provide the public Facebook groups. Add values only to the matching list; other lists are ignored.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"url\",\n        \"username\",\n        \"id\"\n      ],\n      \"enumTitles\": [\n        \"Direct group URL\",\n        \"Group username\",\n        \"Numeric group ID\"\n      ],\n      \"prefill\": \"url\"\n    },\n    \"groupUrls\": {\n      \"title\": \"Group URLs\",\n      \"type\": \"array\",\n      \"description\": \"Add one or more direct URLs for public Facebook groups. The Actor saves a profile for each group it can resolve.\",\n      \"editor\": \"requestListSources\",\n      \"prefill\": [\n        {\n          \"url\": \"https://www.facebook.com/groups/1010440649638729\"\n        }\n      ],\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"url\": {\n            \"title\": \"Group URL\",\n            \"type\": \"string\",\n            \"description\": \"A direct URL for a public Facebook group.\"\n          }\n        },\n        \"required\": [\n          \"url\"\n        ]\n      },\n      \"sectionCaption\": \"🔗 Direct group URL options\"\n    },\n    \"groupUsernames\": {\n      \"title\": \"Group usernames\",\n      \"type\": \"array\",\n      \"description\": \"Add one or more Facebook group usernames without the @ sign. The Actor saves a profile for each group it can resolve.\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\",\n        \"pattern\": \"^[A-Za-z0-9][A-Za-z0-9._-]*$\"\n      },\n      \"sectionCaption\": \"👤 Group username options\"\n    },\n    \"groupIds\": {\n      \"title\": \"Numeric group IDs\",\n      \"type\": \"array\",\n      \"description\": \"Add one or more numeric Facebook group IDs. Keep each ID as a full number. The Actor saves a profile for each group it can resolve.\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\",\n        \"pattern\": \"^[0-9]+$\"\n      },\n      \"sectionCaption\": \"🔢 Numeric group ID options\"\n    }\n  },\n  \"required\": [\n    \"findGroupsBy\"\n  ]\n}"
+}

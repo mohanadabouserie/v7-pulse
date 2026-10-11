@@ -1,0 +1,302 @@
+{
+ "act": {
+  "title": "Fast YouTube Channel Scraper",
+  "users30d": 2946,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Fast YouTube Channel Scraper Readme\n\n## What is Fast YouTube Channel Scraper?\n\nFast YouTube Channel Scraper is a data extraction tool created for scraping channel information from YouTube, going beyond the limitations of YouTube Data API.\n\n- Extract **all channel information**\n- Also includes the **creator’s bio** and **number of subscribers**\n- Allows for bulk extraction of multiple channels, making for easy comparison\n\n## Which YouTube channel data can I extract using this tool?\n\n<table>\n<tr>\n<td>📁 Channel name</td>\n<td>➕ Number of subscribers </td>\n</tr>\n<tr>\n<td>🌐 Channel URL</td>\n<td>📝 Channel description</td>\n</tr>\n<tr>\n<td>📍 Location</td>\n<td>⏳ Video duration</td>\n</tr>\n<tr>\n<td>📺 Video title</td>\n<td>🎥 Video URL</td>\n</tr>\n<tr>\n<td>📅 Date of posting</td>\n<td>🖼️ Thumbnail URL</td>\n</tr>\n<tr>\n<td>📊 Total view count</td>\n<td>🔗 Links in video description</td>\n</tr>\n</table>\n\n## How to use data after web scraping YouTube channels?\n\nThe data extracted from Fast YouTube Channel Scraper can be used in all kinds of ways, such as:\n\n- Keeping **track of competitors' channels** and monitoring activity on them\n- Enrich your **lead generation** data with YouTube channel information\n- Understanding a **channel audience's interests**\n- Analyzing **engagement statistics** to improve performance\n- Tracking **trends** in the channel's popularity\n- Developing marketing and advertising campaigns based on the above data\n\n## How do I use Fast YouTube Channel Scraper?\n\nFast YouTube Channel Scraper is designed to be user-friendly, even for those who have never extracted data from the web before. Here’s how you can use YouTube Channel Scraper to extract data from any number of YouTube channels:\n\n1. [Create](https://console.apify.com/actors/67Q6fmd8iedTVcCwY) an Apify account\n2. Open [Fast YouTube Channel Scraper.](https://apify.com/streamers/youtube-channel-scraper)\n3. Add one or more YouTube channel URLs to scrape channel info.\n4. Click the “Start” button and wait for the data to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\n## ⬇️ Input example\n\nTo use Fast YouTube Channel Scraper, all you need as input is one or more **YouTube channel URLs.** Simply add these to the top field in the Console, then add how many videos, shorts, or streams you want to scrape.\n\n<a href=\"https://console.apify.com/actors/67Q6fmd8iedTVcCwY/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-channel-scraper-input.png?raw=true\" alt=\"Fast YouTube Channel Scraper input\" style=\"width:70%;\">\n</a>\n\n💡 If you want only channel information without videos, input \"0\" to the maximum number of videos, shorts, and streams fields.\n\nClick on the [input tab](https://apify.com/streamers/youtube-channel-scraper/input-schema) for more advanced parameters, below an example in JSON.\n\n```json\n{\n    \"maxResultStreams\": 0,\n    \"maxResults\": 10,\n    \"maxResultsShorts\": 0,\n    \"oldestPostDate\": \"100 days\",\n    \"sortVideosBy\": \"NEWEST\",\n    \"startUrls\": [\n        {\n            \"url\": \"https://www.youtube.com/@Apify\",\n            \"method\": \"GET\"\n        }\n    ]\n}\n```\n\n## ⬆️ Output example\n\nThe scraped YouTube channel data will be shown as a dataset which you can find in the **Storage** tab. Note that the output is organized as a table for viewing convenience, but it doesn’t show **all the fields**:\n\n<a href=\"https://console.apify.com/actors/67Q6fmd8iedTVcCwY/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/youtube-channel-scraper-output.png?raw=true\" alt=\"Fast YouTube Channel Scraper output\" style=\"width:100%;\">\n</a>\n\nYou can preview all the fields, or export the data in JSON, Excel, HTML table, CSV, or XML. Here is what it would look like in JSON:\n\n```json\n\t{\n    \"id\": \"kwWeUpLAG0I\",\n    \"title\": \"How to Scrape Facebook Reels for Infinite Content Ideas\",\n    \"duration\": \"5:13\",\n    \"channelName\": \"Apify\",\n    \"channelUsername\": \"Apify\",\n    \"channelUrl\": \"https://www.youtube.com/channel/UCTgwcoeGGKmZ3zzCXN2qo_A\",\n    \"date\": \"6 days ago\",\n    \"url\": \"https://www.youtube.com/watch?v=kwWeUpLAG0I\",\n    \"viewCount\": 402,\n    \"fromYTUrl\": \"https://www.youtube.com/@Apify/videos\",\n    \"type\": \"video\",\n    \"thumbnailUrl\": \"https://i9.ytimg.com/vi/kwWeUpLAG0I/hqdefault_custom_1.jpg?sqp=COjs6sIG-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCjizgVGFlvoWlFH4qZAY7eXIcKFw\",\n    \"input\": \"https://www.youtube.com/@Apify\",\n    \"order\": 0,\n    \"aboutChannelInfo\": {\n      \"channelDescription\": \"Welcome to Apify’s official YouTube channel!\\n\\nApify is a web scraping and automation platform, which lets you automate anything you can do in a web browser 🚀\\n\\nGather data with pre-built tools we call Actors and further use it to feed generative AI or for lead generation, machine learning, market research, and a myriad of other use cases 🤖\\n\\nAre you a developer? Build your own Actors and publish them on Apify Store to earn passive income 💸\\n\\nSubscribe now for tutorials on how to use our Actors, build your own ones, utilize our open-source libraries, or learn about various web scraping technologies 📖\",\n      \"channelJoinedDate\": \"Jan 4, 2017\",\n      \"channelDescriptionLinks\": [\n        {\n          \"text\": \"Try Apify for FREE\",\n          \"url\": \"https://apify.com/\"\n        },\n        {\n          \"text\": \"Join our Discord\",\n          \"url\": \"https://discord.com/invite/jyEM2PRvMU\"\n        },\n        {\n          \"text\": \"LinkedIn\",\n          \"url\": \"https://www.linkedin.com/company/apifytech\"\n        },\n        {\n          \"text\": \"Twitter X\",\n          \"url\": \"https://twitter.com/apify\"\n        },\n        {\n          \"text\": \"GitHub\",\n          \"url\": \"https://github.com/apify\"\n        },\n        {\n          \"text\": \"Apify Docs\",\n          \"url\": \"https://docs.apify.com\"\n        },\n        {\n          \"text\": \"Schedule demo\",\n          \"url\": \"https://apify.com/professional-services\"\n        }\n      ],\n      \"channelLocation\": \"Czechia\",\n      \"channelUsername\": \"Apify\",\n      \"channelAvatarUrl\": \"https://yt3.googleusercontent.com/mcMDz5bXyewUKn5L1RQu8_dYHq3PTdc-AfL4rWUwmYwJr37WikQCE7Ek9M38yucDNh1vyvJTcw=s160-c-k-c0x00ffffff-no-rj\",\n      \"channelBannerUrl\": \"https://yt3.googleusercontent.com/y6R2IxD_CkgaHgkSEpqaU6Pe1U4O2QtP2XOK47jEszZTqH5LTuXzadO704MsQMLOXvLannhLCw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj\",\n      \"channelTotalVideos\": 169,\n      \"channelTotalViews\": 660763,\n      \"numberOfSubscribers\": 8390,\n      \"isChannelVerified\": false,\n      \"channelName\": \"Apify\",\n      \"channelUrl\": \"https://www.youtube.com/channel/UCTgwcoeGGKmZ3zzCXN2qo_A\",\n      \"channelId\": \"UCTgwcoeGGKmZ3zzCXN2qo_A\",\n      \"inputChannelUrl\": \"https://www.youtube.com/@Apify\",\n      \"isAgeRestricted\": false\n    },\n```\n\n## ▶️ Want to try other YouTube APIs and scrapers?\n\nIf you want to extract specific YouTube data, you can use one of these specialized scrapers:\n\n- ▶️ [YouTube Scraper](https://apify.com/streamers/youtube-scraper)\n- 💬 [YouTube Comments Scraper](https://apify.com/streamers/youtube-comments-scraper)\n- ▶️ [YouTube Shorts Scraper](https://apify.com/streamers/youtube-shorts-scraper)\n- 📽️ [YouTube Video Scraper by Hashtag](https://apify.com/streamers/youtube-video-scraper-by-hashtag)\n\nIf you need to download scraped YouTube videos, you can use [YouTube Video Downloader](https://apify.com/pocesar/download-youtube-video).\n\nYou can also combine YouTube data with that from other social networks. Try:\n\n- [TikTok scrapers](https://apify.com/clockworks)\n- [Instagram scrapers](https://apify.com/store/categories?search=instagram&managedBy=APIFY)\n- [Facebook scrapers](https://apify.com/store/categories?search=facebook&managedBy=APIFY)\n- Or any of our [social media scrapers](https://apify.com/store?category=SOCIAL_MEDIA)\n\nFurthermore, you can use the power of AI agents to do multiple tasks at one. For example, our [Comments Analyzer Agent](https://apify.com/apify/comments-analyzer-agent) can perform sentiment analysis of YouTube videos, or you could try our [Influencer Discovery Agent](https://apify.com/apify/influencer-discovery-agent) for lead generation on TikTok videos.\n\n## Integrating YouTube Shorts Scraper with other apps\n\nYouTube Scraper can be connected with almost any cloud service or web app thanks to [integrations](https://apify.com/integrations) on the Apify platform. These include [Make](https://docs.apify.com/platform/integrations/make), [Zapier](https://docs.apify.com/platform/integrations/zapier), [Slack](https://docs.apify.com/platform/integrations/slack), [Airbyte](https://docs.apify.com/platform/integrations/airbyte), [GitHub](https://docs.apify.com/platform/integrations/github), [Google Drive](https://docs.apify.com/platform/integrations/drive), and [plenty more](https://docs.apify.com/platform/integrations).\n\nAlternatively, you can use [webhooks](https://docs.apify.com/platform/integrations/webhooks) to carry out an action whenever an event occurs, e.g. get a notification whenever YouTube Scraper successfully finishes a run, or initiate a new process, like ordering your data.\n\n## Error items\n\nWhen the scraper cannot retrieve data for a given input — for example a channel does not exist or is age-restricted — it pushes an **error item** to the dataset instead of silently skipping it. Normal output items are never affected; you can tell them apart by the presence of an `error` field.\n\n### Error item structure\n\n```json\n{\n    \"url\": \"https://www.youtube.com/@somechannel\",\n    \"input\": \"somechannel\",\n    \"error\": \"CHANNEL_DOES_NOT_EXIST\",\n    \"note\": \"Channel does not exist\"\n}\n```\n\n### Error codes reference\n\n| `error`                      | Meaning                                                             |\n| ---------------------------- | ------------------------------------------------------------------- |\n| `CHANNEL_DOES_NOT_EXIST`     | Channel URL points to a channel that does not exist                 |\n| `NOT_FOUND`                  | Page was not found                                                  |\n| `VIDEO_UNAVAILABLE`          | Video is not available (deleted, region-blocked, etc.)              |\n| `AGE_RESTRICTED`             | Channel is age-restricted and cannot be accessed without login      |\n| `CHANNEL_HAS_NO_VIDEOS`      | Channel exists but has no uploaded videos                           |\n| `CHANNEL_HAS_NO_LIVE_VIDEOS` | Channel exists but has no live videos                               |\n| `CHANNEL_HAS_NO_SHORTS`      | Channel exists but has no Shorts                                    |\n| `DATE_FILTER_TOO_STRICT`     | Videos exist but none match the active date filter                  |\n| `NO_VIDEOS`                  | No videos found on the page                                         |\n| `NO_RESULTS`                 | No results collected — check that video-type limits are set above 0 |\n| `NO_VALID_START_URLS`        | All provided start URLs were invalid or malformed                   |\n| `INVALID_INPUT`              | Actor failed due to bad configuration (run is also terminated)      |\n| `NO_COMMENTS`                | No comments found for the video                                     |\n\n---\n\n## ❓FAQ\n\n### How much does it cost to scrape YouTube channel data?\n\nThis scraper uses the pay-per-result pricing model, so your costs can be easily calculated. It will cost you **$0.50 to scrape 1,000 search results, so 0.0005 USD per item**.\n\nApify’s Free plan provides $5 free usage credits every month. For that amount, you can get up to **10,000 results from YouTube channels for free**. If you need to get more YouTube channels regularly, you should grab an Apify subscription. Each tier gives you discounts on use of Actors, check out how that works for Fast YouTube Channel Scraper on the [pricing tab](https://apify.com/streamers/youtube-channel-scraper/pricing).\n\n### Is scraping YouTube channels legal?\n\nOur [YouTube scrapers](https://apify.com/store?search=youtube) are ethical and **do not extract any private user data, such as email addresses, gender, or location**. They only extract what the user has chosen to share publicly. However, you should be aware that your **results could contain personal data.** You should not scrape personal data unless you have a legitimate reason to do so.\n\nIf you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/).\n\n### Do I need proxies to scrape YouTube channels?\n\nIf you run the scraper on the Apify platform, for successful YouTube scraping you will need [residential proxies](https://apify.com/proxy?pricing=residential-ip#pricing) which are included in Apify's **monthly Starter plan ($29)**. For more details about how our pricing works, platform credits, proxies, and usage, see the [platform pricing page](https://apify.com/pricing/actors).\n\n### Can I use Fast YouTube Channel Scraper with the API?\n\nYes. You can do so using Apify API which will enable you to manage, schedule, and run any Apify Actors, including this one. The API also lets you access any datasets, monitor Actor performance, fetch results, create and update versions, and more. To access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/streamers/youtube-channel-scraper/api/javascript). To access the API using Python for scraping YouTube channels, use the `apify-client` [PyPi package](https://apify.com/streamers/youtube-channel-scraper/api/python).\n\nCheck out the [Apify API reference](https://docs.apify.com/api/v2) docs for full details or click on the [API tab](https://apify.com/streamers/youtube-channel-scraper/api) for code examples.\n\n### Can I use YouTube Scraper through an MCP Server?\n\nWith Apify API, you can use almost any Actor in conjunction with an MCP server. You can connect to the MCP server using clients like ClaudeDesktop and LibreChat, or even build your own. Read all about how you can [set up Apify Actors with MCP](https://blog.apify.com/how-to-use-mcp/).\n\nFor YouTube Scraper, go to the [MCP tab](https://apify.com/streamers/youtube-channel-scraper/api/mcp) and then go through the following steps:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`\n2. Send API messages using that `sessionId` to trigger the scraper\n3. The message starts the Amazon ASINs Scraper with the provided input\n4. The response should be: `Accepted`\n\n### How do I scrape comments and likes?\n\nYou can get like and comment counts for each video by using the [YouTube Scraper](https://apify.com/streamers/youtube-scraper). You can also scrape comments of a video with [YouTube Comments Scraper](https://apify.com/streamers/youtube-comments-scraper).\n\n### Your feedback\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for Fast YouTube Channel Scraper or simply found a bug, please create an issue on the Actor’s [Issues tab](https://apify.com/streamers/youtube-channel-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string",
+     "description": "The unique YouTube video ID",
+     "nullable": true,
+     "example": "k6lOLfRwY0I"
+    },
+    "title": {
+     "type": "string",
+     "description": "The title of the video",
+     "nullable": true,
+     "example": "Deploy OpenClaw + Apify Skills on Hostinger: Build a Social Media AI Agent"
+    },
+    "url": {
+     "type": "string",
+     "description": "The full URL of the video",
+     "nullable": true,
+     "example": "https://www.youtube.com/watch?v=k6lOLfRwY0I"
+    },
+    "type": {
+     "type": "string",
+     "description": "The type of content (video, stream, shorts)",
+     "nullable": true,
+     "example": "video"
+    },
+    "duration": {
+     "type": "string",
+     "description": "The duration of the video in MM:SS or HH:MM:SS format",
+     "nullable": true,
+     "example": "11:20"
+    },
+    "date": {
+     "type": "string",
+     "description": "The publication date or relative time of the video",
+     "nullable": true,
+     "example": "23 hours ago"
+    },
+    "viewCount": {
+     "type": "number",
+     "description": "The number of views the video has received",
+     "nullable": true,
+     "example": 220
+    },
+    "thumbnailUrl": {
+     "type": "string",
+     "description": "The URL of the video thumbnail image",
+     "nullable": true,
+     "example": "https://i.ytimg.com/vi/k6lOLfRwY0I/hqdefault.jpg"
+    },
+    "channelName": {
+     "type": "string",
+     "description": "The display name of the YouTube channel",
+     "nullable": true,
+     "example": "Apify"
+    },
+    "channelUrl": {
+     "type": "string",
+     "description": "The URL of the YouTube channel",
+     "nullable": true,
+     "example": "https://www.youtube.com/channel/UCTgwcoeGGKmZ3zzCXN2qo_A"
+    },
+    "channelUsername": {
+     "type": "string",
+     "description": "The @username handle of the channel",
+     "nullable": true,
+     "example": "Apify"
+    },
+    "channelId": {
+     "type": "string",
+     "description": "The unique channel ID assigned by YouTube",
+     "nullable": true,
+     "example": "UCTgwcoeGGKmZ3zzCXN2qo_A"
+    },
+    "numberOfSubscribers": {
+     "type": "number",
+     "description": "The total number of subscribers to the channel",
+     "nullable": true,
+     "example": 12200
+    },
+    "channelTotalVideos": {
+     "type": "number",
+     "description": "The total number of videos published on the channel",
+     "nullable": true,
+     "example": 208
+    },
+    "channelDescription": {
+     "type": "string",
+     "description": "The channel's about/description text",
+     "nullable": true,
+     "example": "Welcome to Apify's official YouTube channel! Apify is a web scraping and automation platform."
+    },
+    "channelDescriptionLinks": {
+     "type": "array",
+     "description": "Links found in the channel description",
+     "items": {
+      "type": "object",
+      "properties": {
+       "text": {
+        "type": "string",
+        "nullable": true
+       },
+       "url": {
+        "type": "string",
+        "nullable": true
+       }
+      }
+     },
+     "nullable": true,
+     "example": [
+      {
+       "text": "Try Apify for FREE",
+       "url": "https://apify.com/"
+      }
+     ]
+    },
+    "channelLocation": {
+     "type": "string",
+     "description": "The geographic location of the channel (if public)",
+     "nullable": true,
+     "example": "Czechia"
+    },
+    "channelJoinedDate": {
+     "type": "string",
+     "description": "The date when the channel was created",
+     "nullable": true,
+     "example": "Jan 4, 2017"
+    },
+    "channelTotalViews": {
+     "type": "number",
+     "description": "The total number of views across all channel videos",
+     "nullable": true,
+     "example": 5320407
+    },
+    "isChannelVerified": {
+     "type": "boolean",
+     "description": "Whether the channel has a verification checkmark",
+     "nullable": true,
+     "example": false
+    },
+    "channelBannerUrl": {
+     "type": "string",
+     "description": "URL of the channel's banner image",
+     "nullable": true,
+     "example": "https://yt3.googleusercontent.com/9R-6LgNquSQXsKiQ2mD7kLG6uql1KHc5E5oHm7fY0QosPROCaYRj8bSJ4OeFOTLiJZS9oucB6w=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+    },
+    "channelAvatarUrl": {
+     "type": "string",
+     "description": "URL of the channel's profile picture/avatar",
+     "nullable": true,
+     "example": "https://yt3.googleusercontent.com/taqvhsquq1iG09A82lJy_qSjXUmvQB0Tm-kAPIxgg0pv1fqSwvZ7ZNWhkWZ1Ias1_mZrllnNsQ4=s160-c-k-c0x00ffffff-no-rj"
+    },
+    "isAgeRestricted": {
+     "type": "boolean",
+     "description": "Whether the channel is age-restricted",
+     "nullable": true,
+     "example": false
+    },
+    "inputChannelUrl": {
+     "type": "string",
+     "description": "The original URL provided as input (may differ from canonical channelUrl)",
+     "nullable": true,
+     "example": "https://www.youtube.com/@Apify"
+    },
+    "fromYTUrl": {
+     "type": "string",
+     "description": "The YouTube channel section URL from which this video was scraped",
+     "nullable": true,
+     "example": "https://www.youtube.com/@Apify/videos"
+    },
+    "input": {
+     "type": "string",
+     "description": "The input channel URL used for scraping",
+     "nullable": true,
+     "example": "https://www.youtube.com/@Apify"
+    },
+    "order": {
+     "type": "number",
+     "description": "The order/position of the video in the scraped results",
+     "nullable": true,
+     "example": 0
+    },
+    "streamType": {
+     "type": "string",
+     "description": "The type of stream if the video is a live stream (e.g., 'ended')",
+     "nullable": true,
+     "example": "ended"
+    },
+    "fromChannelListPage": {
+     "type": "string",
+     "description": "The channel section from which the video was scraped (videos, streams, shorts)",
+     "nullable": true,
+     "example": "videos"
+    },
+    "standardizedUrl": {
+     "type": "string",
+     "description": "The standardized/canonical URL for the channel",
+     "nullable": true,
+     "example": "https://www.youtube.com/@Apify/about"
+    },
+    "progressKey": {
+     "type": "object",
+     "description": "Internal key used to track scraping progress, contains url (the channel section URL) and label (e.g. CHANNEL_VIDEOS, CHANNEL_STREAMS)",
+     "nullable": true,
+     "example": {
+      "url": "https://www.youtube.com/@Apify/about?ucbcb=1",
+      "label": "CHANNEL_VIDEOS"
+     }
+    },
+    "aboutChannelInfo": {
+     "type": "object",
+     "description": "Detailed channel information scraped from the channel's about page, contains channelDescription, channelJoinedDate, channelLocation, channelUsername, channelAvatarUrl, channelBannerUrl, channelTotalVideos, channelTotalViews, numberOfSubscribers, isChannelVerified, channelName, channelUrl, channelId, inputChannelUrl, isAgeRestricted",
+     "nullable": true,
+     "example": {
+      "channelDescription": "Welcome to Apify's official YouTube channel!",
+      "channelJoinedDate": "Jan 4, 2017",
+      "channelLocation": "Czechia",
+      "channelUsername": "Apify",
+      "numberOfSubscribers": 12200,
+      "isChannelVerified": false
+     }
+    }
+   },
+   "required": [],
+   "additionalProperties": true
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "Overview of scraped YouTube channel videos",
+    "transformation": {
+     "fields": [
+      "title",
+      "url",
+      "viewCount",
+      "date",
+      "type",
+      "duration",
+      "channelName",
+      "channelUrl",
+      "numberOfSubscribers"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "title": {
+       "label": "Title",
+       "format": "text"
+      },
+      "url": {
+       "label": "Video URL",
+       "format": "link"
+      },
+      "viewCount": {
+       "label": "Views",
+       "format": "number"
+      },
+      "date": {
+       "label": "Date",
+       "format": "text"
+      },
+      "type": {
+       "label": "Type",
+       "format": "text"
+      },
+      "duration": {
+       "label": "Duration",
+       "format": "text"
+      },
+      "channelName": {
+       "label": "Channel Name",
+       "format": "text"
+      },
+      "channelUrl": {
+       "label": "Channel URL",
+       "format": "link"
+      },
+      "numberOfSubscribers": {
+       "label": "Subscribers",
+       "format": "number"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Input schema for the youtube-search-scraper actor\",\n  \"description\": \"Scrape YouTube search results using a search term, or directly input a video, channel, or results page URL. Feel free to try it out with our default settings by hitting &#9655;<b> Start</b>. If you need any help, have a read through <a href='https://blog.apify.com/how-to-scrape-youtube/' target='_blank' rel='noopener'>this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Direct URLs\",\n      \"type\": \"array\",\n      \"description\": \"Enter a link to a <a href='https://www.youtube.com/c/Apify' target='_blank' rel='noopener'>channel</a>. You can also import a CSV file or Google Sheet with a list of URLs.<br>\",\n      \"prefill\": [\n        {\n          \"url\": \"https://www.youtube.com/@Apify\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.youtube.com/@TechReviewer\"\n        }\n      ],\n      \"editor\": \"requestListSources\"\n    },\n    \"maxResults\": {\n      \"title\": \"Maximum videos per search term\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of regular videos (not streams, not shorts) you want to get from one channel. If you use several urls on the input you will get this number for each channel.\",\n      \"minimum\": 0,\n      \"maximum\": 999999,\n      \"default\": 0,\n      \"prefill\": 10,\n      \"example\": 10,\n      \"unit\": \"Videos\"\n    },\n    \"maxResultsShorts\": {\n      \"title\": \"Maximum shorts per search term\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of Shorts videos you want to get from the channel.\",\n      \"minimum\": 0,\n      \"maximum\": 999999,\n      \"default\": 0,\n      \"prefill\": 0,\n      \"example\": 5,\n      \"unit\": \"Videos\"\n    },\n    \"maxResultStreams\": {\n      \"title\": \"Maximum streams per search term\",\n      \"type\": \"integer\",\n      \"description\": \"Limit the number of Stream videos you want to get from the channel.\",\n      \"minimum\": 0,\n      \"maximum\": 999999,\n      \"default\": 0,\n      \"prefill\": 0,\n      \"example\": 0,\n      \"unit\": \"Videos\"\n    },\n    \"oldestPostDate\": {\n      \"title\": \"Scrape videos published after [date]\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"description\": \"Only posts uploaded after or on this date will be scraped. Alternatively, specify how old the scraped videos should be in days. Putting <code>1 day</code> will get you only today's posts, <code>2 days</code> - yesterday's and today's, and so on. Note, that if you select this, sorting parameter will be auto-reset to NEWEST\",\n      \"example\": \"2024-01-01\",\n      \"sectionCaption\": \"Channel sorting/filtering\",\n      \"sectionDescription\": \"Date filtering works only partially, it's based on the date labels like under video thumbnails. It doesn't work for YouTube shorts, only regular videos. If you want exact date filtering or to filter shorts, check out <a href='https://apify.com/streamers/youtube-scraper' target='_blank' rel='noopener'>this scraper</a>.\"\n    },\n    \"sortVideosBy\": {\n      \"title\": \"Sort by\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"description\": \"Maps to the sorting buttons on the top of the channel's 'Videos', 'Shorts' and 'Live' pages.\",\n      \"example\": \"NEWEST\",\n      \"enum\": [\n        \"NEWEST\",\n        \"POPULAR\",\n        \"OLDEST\"\n      ],\n      \"enumTitles\": [\n        \"Newest\",\n        \"Popular\",\n        \"Oldest\"\n      ]\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

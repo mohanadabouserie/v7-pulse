@@ -1,0 +1,1104 @@
+<title>V7 Pulse Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --ground:#f3f6f5;
+  --paper:#ffffff;
+  --surface:#fcfcfb;
+  --ink:#0f1f20;
+  --ink-2:#465655;
+  --muted:#7a8786;
+  --hair:#dce3e1;
+  --hair-strong:#c3cecc;
+  --accent:#0e5e63;
+  --accent-ink:#ffffff;
+  --accent-soft:#e1efed;
+  --lemon:#f2b53a;
+  --lemon-soft:#fdf3dc;
+  --pos:#2a78d6;
+  --neu:#a9aea9;
+  --neg:#e34948;
+  --bar:#0e5e63;
+  --bar-muted:#c9d2d0;
+  --good:#0ca30c;
+  --warning:#fab219;
+  --critical:#d03b3b;
+  --good-text:#006300;
+  --bad-text:#b42323;
+  --window:#e9eeed;
+  --shadow:0 1px 2px rgba(15,31,32,.05),0 12px 40px -12px rgba(15,31,32,.18);
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans","IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --arabic:"IBM Plex Sans Arabic","IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0c1213;--paper:#121a1b;--surface:#161e1f;
+    --ink:#ecf2f1;--ink-2:#a8b6b4;--muted:#7f8d8b;
+    --hair:#243031;--hair-strong:#34423f;
+    --accent:#5cb8b2;--accent-ink:#06191a;--accent-soft:#16302f;
+    --lemon:#f2b53a;--lemon-soft:#2e2715;
+    --pos:#3987e5;--neu:#5d635f;--neg:#e66767;
+    --bar:#5cb8b2;--bar-muted:#3a4645;
+    --good-text:#3cc23c;--bad-text:#f08080;
+    --window:#1b2425;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0c1213;--paper:#121a1b;--surface:#161e1f;
+  --ink:#ecf2f1;--ink-2:#a8b6b4;--muted:#7f8d8b;
+  --hair:#243031;--hair-strong:#34423f;
+  --accent:#5cb8b2;--accent-ink:#06191a;--accent-soft:#16302f;
+  --lemon:#f2b53a;--lemon-soft:#2e2715;
+  --pos:#3987e5;--neu:#5d635f;--neg:#e66767;
+  --bar:#5cb8b2;--bar-muted:#3a4645;
+  --good-text:#3cc23c;--bad-text:#f08080;
+  --window:#1b2425;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;padding-inline:20px;padding-block:0 64px}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.ar{font-family:var(--arabic)}
+.wrap{max-width:780px;margin-inline:auto}
+.wide{max-width:1180px;margin-inline:auto}
+
+/* ---------- header ---------- */
+.masthead{max-width:1180px;margin-inline:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-block:22px;border-bottom:1px solid var(--hair);font-size:13px;color:var(--ink-2)}
+.brandmark{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.01em}
+.bubbles{width:26px;height:26px;flex:none}
+.meta-line{font-family:var(--mono);font-size:12px;letter-spacing:.02em}
+
+.hero{padding-block:64px 40px}
+.eyebrow{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 14px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,6.4vw,64px);line-height:1.02;letter-spacing:-.03em;margin:0 0 22px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{font-size:19px;line-height:1.55;color:var(--ink-2);margin:0;max-width:62ch}
+.hero-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:10px;overflow:hidden;margin-top:36px}
+.hero-facts div{background:var(--paper);padding:14px 16px}
+.hero-facts dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-family:var(--mono)}
+.hero-facts dd{margin:4px 0 0;font-weight:600;font-size:15px}
+
+section.block{padding-block:48px;border-top:1px solid var(--hair)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,34px);line-height:1.12;letter-spacing:-.02em;margin:0 0 14px;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01em;margin:0 0 8px}
+p{margin:0 0 14px}
+.sec-intro{color:var(--ink-2);max-width:64ch}
+
+/* problem / answer */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.compare > div{background:var(--paper);border:1px solid var(--hair);border-radius:10px;padding:18px 20px}
+.compare h3{font-size:15px;font-family:var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.compare ul{margin:0;padding-left:18px}
+.compare li{margin-bottom:6px}
+.compare .after h3{color:var(--accent)}
+
+/* ---------- DASHBOARD FRAME ---------- */
+.dash-section{padding-block:56px;border-top:1px solid var(--hair)}
+.dash-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.dash-head p{margin:0;color:var(--ink-2);max-width:60ch}
+.sample-note{font-family:var(--mono);font-size:12px;color:var(--ink-2);display:flex;gap:14px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;padding:2px 8px;border-radius:999px;border:1px solid var(--hair-strong);color:var(--ink-2);background:var(--paper);white-space:nowrap}
+.chip.real{border-color:color-mix(in oklab,var(--lemon) 70%,transparent);background:var(--lemon-soft);color:var(--ink)}
+.chip.real::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lemon)}
+.chip.sample::before{content:"";width:6px;height:6px;border-radius:50%;border:1.5px solid var(--muted)}
+
+.window{background:var(--window);border:1px solid var(--hair-strong);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.titlebar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--hair-strong)}
+.dots{display:flex;gap:6px}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--hair-strong);display:block}
+.url{flex:1;min-width:0;font-family:var(--mono);font-size:12px;color:var(--muted);background:var(--paper);border:1px solid var(--hair);border-radius:6px;padding:4px 10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.app{display:grid;grid-template-columns:200px 1fr;min-height:600px}
+.side{background:var(--paper);border-right:1px solid var(--hair);padding:18px 12px;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.side .brandmark{font:inherit;font-family:var(--display);font-weight:700;font-size:15px;padding:0 8px 16px;border:0;background:none;color:var(--ink);cursor:pointer;text-align:left}
+.side .nav{font:inherit;font-size:14px;display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:7px;color:var(--ink-2);border:0;background:none;cursor:pointer;text-align:left;width:100%}
+.side .nav[aria-current="page"]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.side .nav:hover:not([aria-current="page"]){background:var(--ground);color:var(--ink)}
+.side .badge{margin-left:auto;font-family:var(--mono);font-size:10.5px;background:var(--critical);color:#fff;border-radius:999px;padding:0 6px;line-height:17px}
+
+/* views */
+.view{display:flex;flex-direction:column;gap:16px;min-width:0}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:12.5px;border:1px solid var(--hair-strong);background:var(--paper);color:var(--ink-2);padding:4px 11px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.data-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+.data-table th{text-align:left;font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--hair-strong)}
+.data-table td{padding:10px;border-bottom:1px solid var(--hair);vertical-align:middle}
+.data-table td.n,.data-table th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.data-table tr.me td{background:var(--accent-soft)}
+.data-table tr.me td:first-child{font-weight:600}
+.tscroll{overflow-x:auto}
+.stack-row{display:grid;grid-template-columns:110px 1fr 46px;gap:10px;align-items:center;font-size:13px}
+.stack-row.me .name{font-weight:600}
+.stack{display:flex;gap:2px;height:14px}
+.stack span{display:block;height:100%}
+.stack span:first-child{border-radius:4px 0 0 4px}
+.stack span:last-child{border-radius:0 4px 4px 0}
+.stack-row .v{font-family:var(--mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums}
+.feed{display:flex;flex-direction:column;gap:10px}
+.mention{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:12px;border:1px solid var(--hair);border-radius:8px;background:var(--paper);font-size:14px}
+.mention .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted);font-family:var(--mono);margin-top:6px}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:1px 7px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.pill.pos{color:var(--pos)} .pill.neg{color:var(--neg)} .pill.neu{color:var(--ink-2)}
+.tag{font-family:var(--mono);font-size:10.5px;padding:1px 7px;border-radius:4px;background:var(--ground);color:var(--ink-2);border:1px solid var(--hair)}
+.empty{font-size:13.5px;color:var(--muted);padding:10px 0}
+.auth{display:inline-flex;align-items:center;gap:6px;font-size:12.5px}
+.auth i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.rules{display:flex;flex-direction:column}
+.rule{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:11px 0;border-top:1px solid var(--hair);font-size:13.5px}
+.rule:first-child{border-top:0}
+.rule small{display:block;color:var(--muted);font-size:12px}
+.switch{position:relative;width:36px;height:20px;border-radius:999px;border:0;background:var(--hair-strong);cursor:pointer;flex:none;padding:0}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:var(--paper);transition:left .15s}
+.switch[aria-checked="true"]{background:var(--accent)}
+.switch[aria-checked="true"]::after{left:19px}
+.history{display:flex;flex-direction:column}
+.history div{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--hair);font-size:13px}
+.history div:first-child{border-top:0}
+.history span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.reports{display:flex;flex-direction:column;gap:8px}
+.rep{font:inherit;text-align:left;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:12px;border:1px solid var(--hair);border-radius:8px;background:var(--paper);color:var(--ink)}
+.rep[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.rep b{font-weight:600;font-size:14px}
+.rep span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.rep em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:right}
+.rep-doc h5{font-family:var(--display);font-size:20px;margin:0 0 2px;letter-spacing:-.01em}
+.rep-doc .when{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:14px}
+.rep-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:8px;overflow:hidden;margin-bottom:16px}
+.rep-stats div{background:var(--paper);padding:10px 12px}
+.rep-stats dt{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.rep-stats dd{margin:2px 0 0;font-family:var(--display);font-weight:700;font-size:20px}
+.rep-doc h6{font-size:12px;font-family:var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:14px 0 6px}
+.rep-doc ul{margin:0;padding-left:18px;font-size:14px}
+.rep-doc li{margin-bottom:5px}
+.side svg{width:16px;height:16px;flex:none}
+.side .sp{flex:1}
+.side small{font-size:11px;color:var(--muted);padding:0 10px;font-family:var(--mono)}
+
+.main{padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0;background:var(--ground)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.toolbar h3{margin:0;font-size:20px}
+.toolbar .sub{font-size:13px;color:var(--muted);font-family:var(--mono)}
+.seg{display:inline-flex;background:var(--paper);border:1px solid var(--hair);border-radius:8px;padding:3px;gap:2px}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:5px 12px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);font-weight:600}
+
+.grid{display:grid;gap:16px}
+.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+.row-a{grid-template-columns:minmax(0,1.75fr) minmax(0,1fr)}
+.row-b{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.row-c{grid-template-columns:minmax(0,1fr) minmax(0,1.35fr)}
+
+.panel{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:16px;min-width:0}
+.panel-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.panel-h h4{margin:0;font-size:14px;font-weight:600}
+.panel-h span{font-size:12px;color:var(--muted)}
+
+.kpi .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-family:var(--mono)}
+.kpi .val{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:-.02em;line-height:1.15;margin-top:4px}
+.kpi .delta{font-size:12.5px;font-weight:500;display:inline-flex;align-items:center;gap:4px}
+.delta.up{color:var(--good-text)} .delta.down{color:var(--bad-text)}
+.kpi .foot{display:flex;justify-content:space-between;align-items:end;gap:8px;margin-top:6px}
+.kpi svg{width:92px;height:30px;flex:none}
+
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--mono);font-size:10.5px;fill:var(--muted)}
+.chart .grid-line{stroke:var(--hair);stroke-width:1}
+.chart .axis-line{stroke:var(--hair-strong);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--paper);border:1px solid var(--hair-strong);border-radius:8px;padding:8px 10px;font-size:12px;box-shadow:var(--shadow);min-width:150px;z-index:5;line-height:1.45}
+.tip b{font-weight:600}
+.tip .r{display:flex;justify-content:space-between;gap:14px;font-variant-numeric:tabular-nums}
+.tip .r i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px}
+
+.hbars{display:flex;flex-direction:column;gap:9px}
+.hbar{display:grid;grid-template-columns:96px 1fr 44px;align-items:center;gap:10px;font-size:13px}
+.hbar .track{height:12px;background:transparent;position:relative}
+.hbar .fill{height:100%;border-radius:0 4px 4px 0;background:var(--bar-muted)}
+.hbar.me .fill{background:var(--bar)}
+.hbar.me .name{font-weight:600}
+.hbar .v{font-family:var(--mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+
+.div-bars{display:flex;flex-direction:column;gap:8px}
+.drow{display:grid;grid-template-columns:118px 1fr 40px;align-items:center;gap:10px;font-size:13px}
+.dtrack{position:relative;height:14px}
+.dtrack::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--hair-strong)}
+.dfill{position:absolute;top:0;height:100%}
+.dfill.pos{left:50%;background:var(--pos);border-radius:0 4px 4px 0}
+.dfill.neg{right:50%;background:var(--neg);border-radius:4px 0 0 4px}
+.drow .v{font-family:var(--mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums}
+.dscale{display:grid;grid-template-columns:118px 1fr 40px;gap:10px;font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:4px}
+.dscale div{display:flex;justify-content:space-between}
+
+.alerts{display:flex;flex-direction:column;gap:10px}
+.alert{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:10px 12px;border:1px solid var(--hair);border-radius:8px;background:var(--paper);font-size:13.5px;line-height:1.45}
+.alert .sev{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:500;white-space:nowrap;padding-top:2px}
+.alert .sev svg{width:14px;height:14px}
+.sev.critical{color:var(--critical)} .sev.warning{color:color-mix(in oklab,var(--warning) 70%,var(--ink))} .sev.good{color:var(--good-text)}
+.alert .when{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;font-family:var(--mono)}
+
+.posts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.post{border:1px solid var(--hair);border-radius:8px;background:var(--paper);padding:12px;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
+.post .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.post .who{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;min-width:0}
+.post .who span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plat{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-family:var(--mono);font-size:10px;font-weight:500;color:#fff;flex:none}
+.plat.fb{background:#1f5fbf} .plat.ig{background:#b2367a}
+.post .txt{color:var(--ink);line-height:1.5}
+.post .stats{display:flex;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.post a{font-size:12px}
+
+.themes{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.themes li{padding-left:14px;border-left:2px solid var(--hair-strong)}
+.themes b{font-weight:600}
+.cite{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap}
+
+/* chat */
+.chat{display:flex;flex-direction:column;gap:10px}
+.chat-log{display:flex;flex-direction:column;gap:10px;max-height:300px;overflow-y:auto;padding-right:4px}
+.msg{max-width:88%;padding:9px 12px;border-radius:10px;font-size:13.5px;line-height:1.5}
+.msg.me{align-self:flex-end;background:var(--accent);color:var(--accent-ink);border-bottom-right-radius:3px}
+.msg.bot{align-self:flex-start;background:var(--paper);border:1px solid var(--hair);border-bottom-left-radius:3px}
+.msg.bot ul{margin:6px 0 0;padding-left:18px}
+.suggest{display:flex;gap:6px;flex-wrap:wrap}
+.suggest button{font:inherit;font-size:12.5px;border:1px solid var(--hair-strong);background:var(--paper);color:var(--ink);padding:5px 10px;border-radius:999px;cursor:pointer;text-align:left}
+.suggest button:hover{border-color:var(--accent);color:var(--accent)}
+.ask{display:flex;gap:8px}
+.ask input{flex:1;min-width:0;font:inherit;font-size:14px;padding:8px 12px;border:1px solid var(--hair-strong);border-radius:8px;background:var(--paper);color:var(--ink)}
+.ask button{font:inherit;font-size:14px;font-weight:600;padding:8px 14px;border-radius:8px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+
+/* ---------- report, requirements, roadmap ---------- */
+.report-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:22px 0 0;padding:0;list-style:none}
+.report-list li{padding:12px 0;border-top:1px solid var(--hair);display:grid;grid-template-columns:auto 1fr;gap:12px}
+.report-list .pg{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:3px;min-width:28px}
+.report-list b{display:block;font-weight:600}
+.report-list span{font-size:14px;color:var(--ink-2)}
+
+.req-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:22px}
+.req-col h3{display:flex;align-items:center;gap:8px}
+.owner{font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;padding:2px 7px;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
+.owner.us{background:var(--ground);color:var(--ink-2);border:1px solid var(--hair-strong)}
+.checklist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column}
+.checklist li{padding:12px 0;border-top:1px solid var(--hair);font-size:15px}
+.checklist b{display:block;font-weight:600}
+.checklist span{color:var(--ink-2);font-size:14px}
+.checklist .opt{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-left:6px;font-weight:500}
+
+.table-wrap{overflow-x:auto;margin-top:22px;border:1px solid var(--hair);border-radius:10px;background:var(--paper)}
+table.road{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+.road th,.road td{text-align:left;padding:14px 16px;border-top:1px solid var(--hair);vertical-align:top}
+.road thead th{border-top:0;font-family:var(--mono);font-size:11.5px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);background:var(--surface)}
+.road td:first-child{white-space:nowrap}
+.road .phase{font-family:var(--display);font-weight:700;font-size:16px;display:block}
+.road .weeks{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.road ul{margin:0;padding-left:18px}
+.road li{margin-bottom:3px}
+
+.costs{margin-top:22px;border:1px solid var(--hair);border-radius:10px;background:var(--paper);overflow:hidden}
+.cost-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:12px 18px;border-top:1px solid var(--hair);font-size:15px;align-items:baseline}
+.cost-row:first-child{border-top:0}
+.cost-row span{color:var(--ink-2);font-size:13.5px;display:block}
+.cost-row .amt{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cost-row.total{background:var(--accent-soft);font-weight:600}
+.cost-row.total .amt{color:var(--accent)}
+.fine{font-size:13px;color:var(--muted);margin-top:10px}
+
+.limits{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.limits li{padding:12px 16px;background:var(--paper);border:1px solid var(--hair);border-radius:8px;font-size:14.5px}
+.limits b{font-weight:600}
+
+.steps{counter-reset:s;list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--hair)}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:800;font-size:22px;color:var(--accent);line-height:1.2}
+.steps b{display:block}
+.steps span{color:var(--ink-2);font-size:14.5px}
+
+footer{max-width:780px;margin:56px auto 0;padding-top:20px;border-top:1px solid var(--hair);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--mono)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .app{grid-template-columns:1fr}
+  .side{flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--hair);padding:10px}
+  .side .brandmark{padding:6px 8px;width:100%}
+  .side .nav{width:auto}
+  .side .sp,.side small{display:none}
+  .rep-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .row-a,.row-b,.row-c{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{padding-inline:16px}
+  .compare,.req-grid,.report-list{grid-template-columns:1fr}
+  .posts{grid-template-columns:1fr}
+  .main{padding:12px}
+  .kpi .val{font-size:24px}
+  .kpi svg{width:64px}
+  .hbar{grid-template-columns:78px 1fr 40px}
+  .drow,.dscale{grid-template-columns:96px 1fr 36px}
+  .side .nav span{display:none}
+  .side .badge{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hbar .fill,.dfill{transition:width .5s ease}
+}
+</style>
+
+<header class="masthead">
+  <div class="brandmark">
+    <svg class="bubbles" viewBox="0 0 26 26" aria-hidden="true"><circle cx="9" cy="17" r="6" fill="none" stroke="var(--accent)" stroke-width="2.2"/><circle cx="18.5" cy="9" r="4" fill="none" stroke="var(--accent)" stroke-width="2.2"/><circle cx="20" cy="20" r="2" fill="var(--lemon)"/></svg>
+    V7 Pulse
+  </div>
+  <div class="meta-line">Proposal · Social listening &amp; market intelligence · October 2026</div>
+</header>
+
+<main>
+<div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Prepared for the V7 marketing team</p>
+    <h1>Know what Egypt is saying about <em>V7</em> — every day, in its own dialect.</h1>
+    <p class="lede">V7 Pulse is a private dashboard and weekly report that collects public conversation about V7 and its competitors from Facebook, Instagram, TikTok, X and YouTube, reads it in Egyptian Arabic, English and Franco-Arabic, and turns it into numbers, themes and alerts your team can act on.</p>
+    <dl class="hero-facts">
+      <div><dt>Platforms</dt><dd>Facebook, Instagram, TikTok, X, YouTube</dd></div>
+      <div><dt>Cadence</dt><dd>Daily refresh · weekly report</dd></div>
+      <div><dt>Languages</dt><dd>Masri, Arabic, English, Franco</dd></div>
+      <div><dt>First version</dt><dd>3 weeks from kickoff</dd></div>
+    </dl>
+  </section>
+
+  <section class="block">
+    <h2>Why V7 needs this now</h2>
+    <p class="sec-intro">V7's audience grew fast as Egyptians looked for local alternatives to international soda brands. Much of that conversation happens on food pages, reels and comment sections that never tag <span class="ar">@v7egypt</span> — and none of it shows up in Meta Insights.</p>
+    <div class="compare">
+      <div>
+        <h3>Today</h3>
+        <ul>
+          <li>Insights stop at V7's own pages and posts</li>
+          <li>Mentions on food pages and creators' reels go unseen</li>
+          <li>Complaints (availability, taste, price) surface late, by chance</li>
+          <li>No like-for-like view against Pepsi, Coca-Cola or Spiro Spathis</li>
+        </ul>
+      </div>
+      <div class="after">
+        <h3>With V7 Pulse</h3>
+        <ul>
+          <li>Every public mention of V7 and each flavor, in one place</li>
+          <li>Sentiment and topics read in Egyptian dialect, not translated</li>
+          <li>Alerts within hours when complaints or volume spike</li>
+          <li>Weekly share of voice against the competitors you choose</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= DASHBOARD ================= -->
+<section class="dash-section wide" id="dashboard">
+  <div class="dash-head">
+    <div>
+      <p class="eyebrow">What your team will see</p>
+      <h2>The V7 Pulse dashboard</h2>
+      <p>A working preview. Use the sidebar to open each screen, switch the date range, hover the charts, and try the assistant at the bottom of the Overview.</p>
+    </div>
+    <div class="sample-note">
+      <span class="chip real">Real post, pulled 3 Oct 2026</span>
+      <span class="chip sample">Sample figure, for illustration</span>
+    </div>
+  </div>
+
+  <div class="window" role="region" aria-label="Dashboard preview">
+    <div class="titlebar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="url" id="fakeUrl">pulse.v7-insights.com/overview</div>
+    </div>
+    <div class="app">
+      <nav class="side" aria-label="Dashboard sections (preview)">
+        <button type="button" class="brandmark" data-view="overview" aria-label="V7 Pulse — go to Overview">
+          <svg class="bubbles" viewBox="0 0 26 26" aria-hidden="true"><circle cx="9" cy="17" r="6" fill="none" stroke="var(--accent)" stroke-width="2.2"/><circle cx="18.5" cy="9" r="4" fill="none" stroke="var(--accent)" stroke-width="2.2"/><circle cx="20" cy="20" r="2" fill="var(--lemon)"/></svg>
+          V7 Pulse
+        </button>
+        <button type="button" class="nav" data-view="overview" aria-current="page" title="Overview"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg><span>Overview</span></button>
+        <button type="button" class="nav" data-view="competitors" title="Competitors"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 13h12M4 10v3M8 6v7M12 3v10"/></svg><span>Competitors</span></button>
+        <button type="button" class="nav" data-view="conversations" title="Conversations"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4h12v7H6l-4 3z"/></svg><span>Conversations</span></button>
+        <button type="button" class="nav" data-view="influencers" title="Influencers"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="6" r="3"/><path d="M3 14c1-3 9-3 10 0"/></svg><span>Influencers</span></button>
+        <button type="button" class="nav" data-view="alerts" title="Alerts"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2l6 11H2z"/><path d="M8 7v3"/></svg><span>Alerts</span><b class="badge">1</b></button>
+        <button type="button" class="nav" data-view="reports" title="Weekly reports"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 2h6l3 3v9H4z"/><path d="M6 8h5M6 11h5"/></svg><span>Weekly reports</span></button>
+        <div class="sp"></div>
+        <small>Last refresh 06:00 Cairo</small>
+      </nav>
+
+      <div class="main">
+        <div class="toolbar">
+          <div>
+            <h3 id="viewTitle">Overview</h3>
+            <div class="sub" id="rangeLabel">26 Sep – 2 Oct 2026</div>
+          </div>
+          <div class="seg" role="group" aria-label="Date range" id="rangeSeg">
+            <button type="button" id="r7" aria-pressed="true">Last 7 days</button>
+            <button type="button" id="r30" aria-pressed="false">Last 30 days</button>
+          </div>
+        </div>
+
+        <div class="view" data-view="overview">
+        <div class="grid kpis" id="kpis"></div>
+
+        <div class="grid row-a">
+          <div class="panel">
+            <div class="panel-h"><h4>Mentions per day, by sentiment</h4>
+              <div class="legend"><span><i style="background:var(--pos)"></i>Positive</span><span><i style="background:var(--neu)"></i>Neutral</span><span><i style="background:var(--neg)"></i>Negative</span></div>
+            </div>
+            <div class="chart" id="volChart"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h4>Where the conversation happens</h4><span>share of mentions</span></div>
+            <div class="hbars" id="platBars"></div>
+            <div class="panel-h" style="margin-top:20px;margin-bottom:8px"><h4>Language mix</h4></div>
+            <div class="hbars" id="langBars"></div>
+          </div>
+        </div>
+
+        <div class="grid row-b">
+          <div class="panel">
+            <div class="panel-h"><h4>Share of voice</h4><span>mentions vs. competitors</span></div>
+            <div class="hbars" id="sovBars"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h4>What people talk about</h4><span>net sentiment by topic</span></div>
+            <div class="div-bars" id="aspectBars"></div>
+            <div class="dscale"><span></span><div><span>−100</span><span>0</span><span>+100</span></div><span></span></div>
+          </div>
+        </div>
+
+        <div class="grid row-c">
+          <div class="panel">
+            <div class="panel-h"><h4>Alerts</h4><span>sent to WhatsApp &amp; email</span></div>
+            <div class="alerts">
+              <div class="alert">
+                <span class="sev critical"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l7 13H1zM7.2 6v4h1.6V6zm0 5.2v1.6h1.6v-1.6z"/></svg>Critical</span>
+                <div>Availability complaints tripled in Alexandria over 48 hours — mostly “can’t find it in any supermarket”. <span class="chip sample">Sample</span><span class="when">Today 09:40 · 34 posts</span></div>
+              </div>
+              <div class="alert">
+                <span class="sev warning"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="7"/><path d="M7.2 4h1.6v5H7.2zm0 6.2h1.6v1.6H7.2z" fill="var(--paper)"/></svg>Watch</span>
+                <div>Cream Soda season-end post is drawing unusually many comments — fans asking for it back before summer 2027. <span class="chip real">Real</span><span class="when">From V7’s 10 Sep post · 63 FB + 98 IG comments</span></div>
+              </div>
+              <div class="alert">
+                <span class="sev good"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="7"/><path d="M4.5 8.2l2.3 2.3 4.7-4.7" fill="none" stroke="var(--paper)" stroke-width="1.8"/></svg>Opportunity</span>
+                <div>Food page <span class="ar">Mon3esh - منعش</span> featured V7 Cream Soda — 7,444 reactions. Candidate for a creator partnership. <span class="chip real">Real</span><span class="when">Facebook keyword search</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h4>Top posts</h4><span>by engagement</span></div>
+            <div class="posts">
+              <div class="post">
+                <div class="top"><div class="who"><span class="plat fb">f</span><span>V7Egypt</span></div><span class="chip real">Real</span></div>
+                <div class="txt">The real natural taste of Malt.</div>
+                <div class="stats"><span>11.0M views</span><span>1,962 likes</span><span>112 comments</span></div>
+                <a href="https://www.facebook.com/reel/2127943088075770/" target="_blank" rel="noopener">View reel · 8 Sep</a>
+              </div>
+              <div class="post">
+                <div class="top"><div class="who"><span class="plat fb">f</span><span class="ar">Mon3esh - منعش</span></div><span class="chip real">Real</span></div>
+                <div class="txt">V7 Cream Soda #wheretoeategypt</div>
+                <div class="stats"><span>7,444 reactions</span><span>277 comments</span></div>
+                <a href="https://www.facebook.com/reel/1036524789086888/" target="_blank" rel="noopener">View reel · 15 Aug</a>
+              </div>
+              <div class="post">
+                <div class="top"><div class="who"><span class="plat ig">ig</span><span>v7egypt</span></div><span class="chip real">Real</span></div>
+                <div class="txt">Same great taste. Now in its most colorful look yet. Welcome to the Summer of Colors!</div>
+                <div class="stats"><span>1,607 likes</span><span>28 comments</span></div>
+                <a href="https://www.instagram.com/p/DbYMPQMFXY_/" target="_blank" rel="noopener">View post · 29 Jul</a>
+              </div>
+              <div class="post">
+                <div class="top"><div class="who"><span class="plat ig">ig</span><span>v7egypt</span></div><span class="chip real">Real</span></div>
+                <div class="txt ar" dir="rtl">الصيف خلص... V7 Cream Soda راجعة تاني صيف 2027</div>
+                <div class="stats"><span>149 likes</span><span>98 comments</span></div>
+                <a href="https://www.instagram.com/p/DdG_sWYEi_T/" target="_blank" rel="noopener">View post · 10 Sep</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid row-c">
+          <div class="panel">
+            <div class="panel-h"><h4>This week in one minute</h4><span>written by AI · sample</span></div>
+            <ul class="themes">
+              <li><b>Flavor curiosity.</b> Pomegranate and the flavored malts drive most new-flavor questions; people ask where to buy, not what it tastes like. <span class="cite">[12][31][44]</span></li>
+              <li><b>Cream Soda loyalty.</b> The season-end post turned into a request thread — a signal for an early 2027 return or a limited winter drop. <span class="cite">[3][9]</span></li>
+              <li><b>Local pride.</b> “Egyptian-made” is the most common reason given for switching to V7. <span class="cite">[7][18][26]</span></li>
+              <li><b>Availability gap.</b> Negative posts concentrate on supermarkets in Alexandria and Upper Egypt rather than the product itself. <span class="cite">[21][40]</span></li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><h4>Ask V7 Pulse</h4><span>answers from your data · sample answers</span></div>
+            <div class="chat">
+              <div class="chat-log" id="chatLog" aria-live="polite">
+                <div class="msg bot">Hi — ask me anything about this week’s conversation. Try one of these:</div>
+              </div>
+              <div class="suggest" id="suggest"></div>
+              <form class="ask" id="askForm">
+                <label for="askInput" class="ar" style="position:absolute;left:-9999px">Ask a question</label>
+                <input id="askInput" type="text" placeholder="e.g. What do people say about our price?" autocomplete="off">
+                <button type="submit">Ask</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div><!-- /overview -->
+
+        <!-- ===== Competitors ===== -->
+        <div class="view" data-view="competitors" hidden>
+          <div class="grid row-b">
+            <div class="panel">
+              <div class="panel-h"><h4>Share of voice</h4><span>share of all brand mentions</span></div>
+              <div class="hbars" id="sovBars2"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h4>Sentiment by brand</h4>
+                <div class="legend"><span><i style="background:var(--pos)"></i>Positive</span><span><i style="background:var(--neu)"></i>Neutral</span><span><i style="background:var(--neg)"></i>Negative</span></div>
+              </div>
+              <div class="hbars" id="brandSent"></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h4>Brand benchmark</h4><span>last 7 days · sample</span></div>
+            <div class="tscroll"><table class="data-table" id="brandTable"></table></div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h4>When people compare brands</h4><span>posts mentioning V7 and a competitor · sample</span></div>
+            <ul class="themes">
+              <li><b>V7 vs Pepsi.</b> Most comparisons come from people explaining why they switched — “Egyptian-made” and “natural flavors” are the top reasons given.</li>
+              <li><b>V7 vs Spiro Spathis.</b> Both are seen as local alternatives; Spiro wins on nostalgia, V7 on flavor variety and the new look.</li>
+              <li><b>Price checks.</b> Shoppers compare can prices across brands in supermarket posts; V7 is usually described as “fair” rather than cheap.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===== Conversations ===== -->
+        <div class="view" data-view="conversations" hidden>
+          <div class="panel">
+            <div class="panel-h"><h4>Mentions of V7</h4>
+              <div class="filters" role="group" aria-label="Filter by sentiment" id="convFilters">
+                <button type="button" data-f="all" aria-pressed="true">All</button>
+                <button type="button" data-f="pos" aria-pressed="false">Positive</button>
+                <button type="button" data-f="neu" aria-pressed="false">Neutral</button>
+                <button type="button" data-f="neg" aria-pressed="false">Negative</button>
+              </div>
+            </div>
+            <div class="feed" id="feed"></div>
+          </div>
+          <div class="grid row-b">
+            <div class="panel">
+              <div class="panel-h"><h4>Most asked questions</h4><span>this week · sample</span></div>
+              <div class="tscroll"><table class="data-table" id="faqTable" style="min-width:0"></table></div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h4>What people talk about</h4><span>net sentiment by topic</span></div>
+              <div class="div-bars" id="aspectBars2"></div>
+              <div class="dscale"><span></span><div><span>−100</span><span>0</span><span>+100</span></div><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Influencers ===== -->
+        <div class="view" data-view="influencers" hidden>
+          <div class="panel">
+            <div class="panel-h"><h4>Pages and creators mentioning V7</h4><span>last 30 days</span></div>
+            <div class="tscroll"><table class="data-table" id="inflTable"></table></div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h4>How the authenticity check works</h4></div>
+            <p style="font-size:14px;margin:0;color:var(--ink-2)">Each account’s followers are compared with the engagement its posts actually get, and with sudden follower jumps. A low score usually means bought followers — worth checking before paying for a partnership.</p>
+          </div>
+        </div>
+
+        <!-- ===== Alerts ===== -->
+        <div class="view" data-view="alerts" hidden>
+          <div class="grid row-b">
+            <div class="panel">
+              <div class="panel-h"><h4>Active alerts</h4><span>3 open</span></div>
+              <div class="alerts" id="alertsCopy"></div>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h4>Alert rules</h4><span>sent to WhatsApp &amp; email</span></div>
+              <div class="rules" id="rules"></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-h"><h4>History</h4><span>last 30 days</span></div>
+            <div class="history" id="history"></div>
+          </div>
+        </div>
+
+        <!-- ===== Weekly reports ===== -->
+        <div class="view" data-view="reports" hidden>
+          <div class="grid row-c">
+            <div class="panel">
+              <div class="panel-h"><h4>Reports</h4><span>delivered Sundays 08:00</span></div>
+              <div class="reports" id="reportList"></div>
+            </div>
+            <div class="panel rep-doc" id="reportDoc" aria-live="polite"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="block">
+    <h2>The weekly report</h2>
+    <p class="sec-intro">Every Sunday morning the team receives a report built from the same data — readable on a phone, ready to forward to management.</p>
+    <ol class="report-list">
+      <li><span class="pg">01</span><div><b>Analytics overview</b><span>Mentions, engagement, views, sentiment, emotion, language and platform split, with week-over-week change.</span></div></li>
+      <li><span class="pg">02</span><div><b>Key themes</b><span>The five conversations that mattered, each linked to the posts behind it.</span></div></li>
+      <li><span class="pg">03</span><div><b>Competitor benchmark</b><span>Share of voice, views and engagement for V7 against the chosen brands.</span></div></li>
+      <li><span class="pg">04</span><div><b>Positive and negative drivers</b><span>What people praise and what they complain about — taste, price, availability, packaging.</span></div></li>
+      <li><span class="pg">05</span><div><b>Top posts and voices</b><span>Highest-reach posts and the creators and pages mentioning V7.</span></div></li>
+      <li><span class="pg">06</span><div><b>Comment analysis</b><span>What V7’s own followers ask and feel in the comments under brand posts.</span></div></li>
+      <li><span class="pg">07</span><div><b>Keywords and hashtags</b><span>The words and tags rising this week, in Arabic and English.</span></div></li>
+      <li><span class="pg">08</span><div><b>Recommendations</b><span>Three to five concrete actions for content, community and sales teams.</span></div></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <h2>What we need to start</h2>
+    <p class="sec-intro">Most of the work sits with us. From V7 we need a short list of inputs in the first week — about two hours of the marketing team’s time.</p>
+    <div class="req-grid">
+      <div class="req-col">
+        <h3><span class="owner">From V7</span></h3>
+        <ul class="checklist">
+          <li><b>Brand and product keywords</b><span>How customers write V7 and each flavor — Arabic, English and Franco (e.g. <span class="ar">في سفن</span>, “v seven”, <span class="ar">كريم صودا</span>).</span></li>
+          <li><b>Competitor list</b><span>Five to eight brands to benchmark against, with their official pages.</span></li>
+          <li><b>Campaign calendar and hashtags</b><span>Upcoming launches and campaigns such as Summer of Colors, so their impact is measured separately.</span></li>
+          <li><b>Alert contacts</b><span>Who gets urgent alerts, on which channel (WhatsApp or email), and what counts as urgent.</span></li>
+          <li><b>Meta Business read access</b><span class="opt">optional</span><span>Adds follower growth and reach for V7’s own pages, which public data can’t show.</span></li>
+          <li><b>Sales or distribution data</b><span class="opt">optional</span><span>Weekly figures by region let us connect online buzz to sales and stock-outs.</span></li>
+          <li><b>One point of contact</b><span>A 30-minute review every two weeks to tune keywords and report content.</span></li>
+        </ul>
+      </div>
+      <div class="req-col">
+        <h3><span class="owner us">Handled by us</span></h3>
+        <ul class="checklist">
+          <li><b>Data collection</b><span>Daily automated collection of public posts and comments through Apify, already tested on V7’s pages.</span></li>
+          <li><b>Arabic-first AI analysis</b><span>A language model reads each post for relevance, sentiment, emotion and topic — filtering out unrelated posts that keyword search picks up.</span></li>
+          <li><b>Database and history</b><span>Every post is stored, so trends build up month over month.</span></li>
+          <li><b>Private hosting</b><span>Dashboard on a dedicated server with HTTPS and a login for each team member.</span></li>
+          <li><b>Report delivery</b><span>Weekly report generated and sent automatically; alerts sent as they happen.</span></li>
+          <li><b>Maintenance</b><span>Fixing collectors when platforms change, and tuning the AI to Egyptian slang as it evolves.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Roadmap</h2>
+    <p class="sec-intro">The first version goes live in three weeks with the core dashboard and weekly report. Each later phase adds tools on top of the same data.</p>
+    <div class="table-wrap">
+      <table class="road">
+        <thead><tr><th>Phase</th><th>What you get</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td><span class="phase">Phase 1</span><span class="weeks">Weeks 1–3</span></td>
+            <td><ul><li>Facebook, Instagram and TikTok collection</li><li>Sentiment, emotion and language analysis</li><li>Overview dashboard and top posts</li><li>Automated weekly report</li></ul></td>
+            <td>A reliable weekly read on V7’s reputation from day one.</td></tr>
+          <tr><td><span class="phase">Phase 2</span><span class="weeks">Weeks 4–6</span></td>
+            <td><ul><li>Competitor share of voice</li><li>X and YouTube</li><li>Spike and crisis alerts on WhatsApp</li><li>Topic-level sentiment and complaint grouping</li><li>Ask V7 Pulse assistant</li></ul></td>
+            <td>Catch problems early and answer “why” without waiting for a report.</td></tr>
+          <tr><td><span class="phase">Phase 3</span><span class="weeks">Month 3 onward</span></td>
+            <td><ul><li>Spotting the V7 bottle in photos and videos that don’t mention V7 by name</li><li>Price and stock tracking on Talabat, Breadfast and online supermarkets</li><li>Influencer ranking with fake-follower checks</li><li>Weather-linked demand signals</li><li>New product ideas mined from customer requests</li></ul></td>
+            <td>Turns listening into planning: distribution, partnerships and product development.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Running costs</h2>
+    <p class="sec-intro">Monthly infrastructure at the expected volume of a few thousand posts a month. These are pass-through costs, quoted separately from the build.</p>
+    <div class="costs">
+      <div class="cost-row"><div>Data collection — Apify<span>Social media collectors, pay per post collected</span></div><div class="amt">$30 – 50</div></div>
+      <div class="cost-row"><div>AI analysis — language model<span>Sentiment, topics, weekly summary and the assistant</span></div><div class="amt">$20 – 60</div></div>
+      <div class="cost-row"><div>Hosting — private server<span>Dashboard, database and scheduled jobs</span></div><div class="amt">$10 – 20</div></div>
+      <div class="cost-row total"><div>Estimated monthly total</div><div class="amt">$60 – 130</div></div>
+    </div>
+    <p class="fine">Estimates based on current provider pricing (October 2026). Costs grow with the number of competitors and posts tracked.</p>
+  </section>
+
+  <section class="block">
+    <h2>What to expect from the data</h2>
+    <ul class="limits">
+      <li><b>Public conversation only.</b> Private profiles, closed groups and direct messages are not collected.</li>
+      <li><b>X is the least stable source.</b> X restricts automated access more than other platforms; expect occasional gaps there.</li>
+      <li><b>Keyword search is noisy.</b> In our test, one in three search results was truly about V7. The AI relevance check removes the rest before anything is counted.</li>
+      <li><b>No audience demographics from Facebook.</b> Age and gender of commenters aren’t public; Meta Business access fills part of that gap for V7’s own pages.</li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>Next steps</h2>
+    <ol class="steps">
+      <li><div><b>Agree on scope</b><span>Confirm the platforms, competitors and Phase 1 features.</span></div></li>
+      <li><div><b>Kickoff session</b><span>One hour with the marketing team to collect keywords, competitors and alert contacts.</span></div></li>
+      <li><div><b>First data in 3 days</b><span>V7’s pages and keyword mentions start collecting into the dashboard.</span></div></li>
+      <li><div><b>First weekly report</b><span>Delivered at the end of week 3, reviewed together.</span></div></li>
+    </ol>
+  </section>
+</div>
+</main>
+
+<footer>
+  <span>Prepared by Mohanad Abouserie</span>
+  <span>October 2026</span>
+</footer>
+
+<script>
+(function(){
+  /* ---------- sample data (deterministic) ---------- */
+  var END = new Date(Date.UTC(2026,9,2));
+  function seeded(s){return function(){s=(s*16807)%2147483647;return (s-1)/2147483646;};}
+  var rnd = seeded(7);
+  var days = [];
+  for (var i=59;i>=0;i--){
+    var d = new Date(END.getTime()-i*864e5);
+    var dow = d.getUTCDay();
+    var base = 130 + (59-i)*0.9 + (dow===5||dow===4?28:0) + rnd()*36;
+    var total = Math.round(base);
+    var negShare = 0.11 + rnd()*0.05;
+    if (i===3){ total = Math.round(total*2.7); negShare = 0.2; }
+    if (i===1){ total = Math.round(total*1.25); }
+    var posShare = 0.43 + rnd()*0.08;
+    var pos = Math.round(total*posShare), neg = Math.round(total*negShare);
+    days.push({date:d,total:total,pos:pos,neg:neg,neu:total-pos-neg,
+      eng: Math.round(total*(68+rnd()*20)),
+      views: Math.round(total*(7800+rnd()*4200)) + (i===24 ? 11019677 : 0)});
+  }
+
+  var fmtDay = function(d){return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',timeZone:'UTC'});};
+  function compact(n){
+    if (n>=1e6) return (n/1e6).toFixed(n>=1e7?1:2).replace(/\.0+$/,'')+'M';
+    if (n>=1e3) return (n/1e3).toFixed(1).replace(/\.0$/,'')+'K';
+    return n.toLocaleString('en-US');
+  }
+  function sum(arr,k){return arr.reduce(function(a,b){return a+b[k];},0);}
+
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+
+  /* ---------- KPIs ---------- */
+  function spark(values){
+    var w=92,h=30,max=Math.max.apply(null,values),min=Math.min.apply(null,values);
+    var svg=el('svg',{viewBox:'0 0 '+w+' '+h,'aria-hidden':'true'});
+    var pts=values.map(function(v,i){return [ (i/(values.length-1))*(w-4)+2, h-3-((v-min)/((max-min)||1))*(h-8) ];});
+    var dArea='M'+pts[0][0]+','+(h-1)+' '+pts.map(function(p){return 'L'+p[0].toFixed(1)+','+p[1].toFixed(1);}).join(' ')+' L'+pts[pts.length-1][0]+','+(h-1)+'Z';
+    el('path',{d:dArea,fill:'var(--accent-soft)'},svg);
+    el('path',{d:'M'+pts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1);}).join(' L'),fill:'none',stroke:'var(--accent)','stroke-width':'1.6','stroke-linejoin':'round'},svg);
+    var last=pts[pts.length-1];
+    el('circle',{cx:last[0],cy:last[1],r:'2.6',fill:'var(--accent)'},svg);
+    return svg;
+  }
+  function renderKpis(n){
+    var cur=days.slice(-n), prev=days.slice(-2*n,-n);
+    function delta(a,b){return (a-b)/b*100;}
+    var curNet = Math.round((sum(cur,'pos')-sum(cur,'neg'))/sum(cur,'total')*100);
+    var prevNet = Math.round((sum(prev,'pos')-sum(prev,'neg'))/sum(prev,'total')*100);
+    var items=[
+      {label:'Mentions',val:sum(cur,'total').toLocaleString('en-US'),d:delta(sum(cur,'total'),sum(prev,'total')),unit:'%',series:cur.map(function(x){return x.total;})},
+      {label:'Engagement',val:compact(sum(cur,'eng')),d:delta(sum(cur,'eng'),sum(prev,'eng')),unit:'%',series:cur.map(function(x){return x.eng;})},
+      {label:'Views',val:compact(sum(cur,'views')),d:delta(sum(cur,'views'),sum(prev,'views')),unit:'%',series:cur.map(function(x){return x.views;})},
+      {label:'Net sentiment',val:(curNet>0?'+':'')+curNet,d:curNet-prevNet,unit:' pts',series:cur.map(function(x){return (x.pos-x.neg)/x.total;})}
+    ];
+    var host=document.getElementById('kpis'); host.innerHTML='';
+    items.forEach(function(it){
+      var p=document.createElement('div'); p.className='panel kpi';
+      var up=it.d>=0;
+      var dtxt=(up?'▲ ':'▼ ')+Math.abs(it.d).toFixed(it.unit==='%'?0:0)+it.unit+' vs previous';
+      p.innerHTML='<div class="label">'+it.label+'</div><div class="val">'+it.val+'</div><div class="foot"><span class="delta '+(up?'up':'down')+'">'+dtxt+'</span></div>';
+      p.querySelector('.foot').appendChild(spark(it.series));
+      host.appendChild(p);
+    });
+    document.getElementById('rangeLabel').textContent = fmtDay(cur[0].date)+' – '+fmtDay(cur[cur.length-1].date)+' 2026';
+  }
+
+  /* ---------- stacked volume chart ---------- */
+  function renderVolume(n){
+    var data=days.slice(-n);
+    var host=document.getElementById('volChart'); host.innerHTML='';
+    var W=640,H=250,m={t:24,r:8,b:26,l:36};
+    var iw=W-m.l-m.r, ih=H-m.t-m.b;
+    var max=Math.max.apply(null,data.map(function(d){return d.total;}));
+    var step = max>400?200:100; var top=Math.ceil(max/step)*step;
+    var svg=el('svg',{viewBox:'0 0 '+W+' '+H,role:'img','aria-label':'Stacked bar chart of daily mentions by sentiment'},host);
+    for(var t=0;t<=top;t+=step){
+      var y=m.t+ih-(t/top)*ih;
+      el('line',{x1:m.l,x2:W-m.r,y1:y,y2:y,'class':t===0?'axis-line':'grid-line'},svg);
+      var lab=el('text',{x:m.l-6,y:y+3.5,'text-anchor':'end'},svg); lab.textContent=t;
+    }
+    var bw=iw/data.length, gap=Math.max(2,bw*0.28), w=bw-gap;
+    var tip=document.createElement('div'); tip.className='tip'; tip.hidden=true; host.appendChild(tip);
+    var peak=data.reduce(function(a,b){return b.total>a.total?b:a;});
+    data.forEach(function(d,i){
+      var x=m.l+i*bw+gap/2, yBase=m.t+ih;
+      var g=el('g',{},svg);
+      [['neg','var(--neg)'],['neu','var(--neu)'],['pos','var(--pos)']].forEach(function(s,si){
+        var h=(d[s[0]]/top)*ih;
+        var segH=Math.max(0,h-(si<2?2:0));
+        el('rect',{x:x.toFixed(1),y:(yBase-h).toFixed(1),width:w.toFixed(1),height:segH.toFixed(1),fill:s[1],rx:si===2?Math.min(3,w/3):0},g);
+        yBase-=h;
+      });
+      var hit=el('rect',{x:(m.l+i*bw).toFixed(1),y:m.t,width:bw.toFixed(1),height:ih,fill:'transparent'},g);
+      hit.addEventListener('mouseenter',function(){
+        tip.hidden=false;
+        tip.innerHTML='<b>'+fmtDay(d.date)+'</b> · '+d.total+' mentions'+
+          '<div class="r"><span><i style="background:var(--pos)"></i>Positive</span><span>'+d.pos+'</span></div>'+
+          '<div class="r"><span><i style="background:var(--neu)"></i>Neutral</span><span>'+d.neu+'</span></div>'+
+          '<div class="r"><span><i style="background:var(--neg)"></i>Negative</span><span>'+d.neg+'</span></div>';
+        var rect=host.getBoundingClientRect(), sx=rect.width/W;
+        var left=(m.l+i*bw+bw/2)*sx; var tw=tip.offsetWidth;
+        tip.style.left=Math.min(Math.max(0,left-tw/2),rect.width-tw)+'px';
+        tip.style.top='0px';
+        g.style.opacity=1; svg.querySelectorAll('g').forEach(function(o){o.style.opacity=o===g?1:.45;});
+      });
+      hit.addEventListener('mouseleave',function(){tip.hidden=true;svg.querySelectorAll('g').forEach(function(o){o.style.opacity=1;});});
+      var every = n<=7?1:5;
+      if (i%every===0 || (n>7 && i===data.length-1)){
+        var tl=el('text',{x:(m.l+i*bw+bw/2).toFixed(1),y:H-8,'text-anchor':'middle'},svg); tl.textContent=fmtDay(d.date);
+      }
+      if (d===peak){
+        var py=m.t+ih-(d.total/top)*ih-8;
+        var ann=el('text',{x:(m.l+i*bw+bw/2).toFixed(1),y:py,'text-anchor':'middle',style:'fill:var(--ink);font-weight:500'},svg);
+        ann.textContent='Spike alert';
+      }
+    });
+  }
+
+  /* ---------- horizontal bars ---------- */
+  function hbars(id,rows,highlight){
+    var host=document.getElementById(id); host.innerHTML='';
+    var max=Math.max.apply(null,rows.map(function(r){return r[1];}));
+    rows.forEach(function(r){
+      var row=document.createElement('div'); row.className='hbar'+(r[0]===highlight?' me':'');
+      row.innerHTML='<span class="name">'+r[0]+'</span><div class="track"><div class="fill" style="width:'+(r[1]/max*100).toFixed(1)+'%"></div></div><span class="v">'+r[1]+'%</span>';
+      host.appendChild(row);
+    });
+  }
+  var PLAT={7:[['Facebook',46],['TikTok',24],['Instagram',19],['X',7],['YouTube',4]],30:[['Facebook',49],['TikTok',21],['Instagram',20],['X',6],['YouTube',4]]};
+  var LANG={7:[['Masri',71],['Franco',14],['English',11],['MSA',4]],30:[['Masri',69],['Franco',15],['English',12],['MSA',4]]};
+  var SOV={7:[['Pepsi',29],['V7',24],['Coca-Cola',21],['Spiro Spathis',16],['Big Cola',10]],30:[['Pepsi',31],['V7',22],['Coca-Cola',22],['Spiro Spathis',15],['Big Cola',10]]};
+
+  var ASPECTS=[['Taste',62],['Natural & vitamins',48],['Flavor variety',41],['New look',35],['Price',-8],['Fizz level',-14],['Availability',-37]];
+  ['aspectBars','aspectBars2'].forEach(function(id){
+    var host=document.getElementById(id);
+    ASPECTS.forEach(function(a){
+      var row=document.createElement('div'); row.className='drow';
+      var v=a[1], cls=v>=0?'pos':'neg';
+      row.innerHTML='<span>'+a[0]+'</span><div class="dtrack" title="'+a[0]+': '+(v>0?'+':'')+v+'"><div class="dfill '+cls+'" style="width:'+(Math.abs(v)/2)+'%"></div></div><span class="v">'+(v>0?'+':'')+v+'</span>';
+      host.appendChild(row);
+    });
+  });
+
+  /* ---------- range switch ---------- */
+  var b7=document.getElementById('r7'), b30=document.getElementById('r30');
+  var currentN=7;
+  function setRange(n){
+    currentN=n;
+    b7.setAttribute('aria-pressed',n===7); b30.setAttribute('aria-pressed',n===30);
+    renderKpis(n); renderVolume(n);
+    hbars('platBars',PLAT[n]); hbars('langBars',LANG[n]); hbars('sovBars',SOV[n],'V7');
+  }
+  b7.addEventListener('click',function(){setRange(7);});
+  b30.addEventListener('click',function(){setRange(30);});
+  setRange(7);
+
+  /* ---------- view switching ---------- */
+  var TITLES={overview:'Overview',competitors:'Competitors',conversations:'Conversations',influencers:'Influencers',alerts:'Alerts',reports:'Weekly reports'};
+  var SUBS={competitors:'26 Sep – 2 Oct 2026 · V7 vs 4 brands',conversations:'26 Sep – 2 Oct 2026',influencers:'3 Sep – 2 Oct 2026',alerts:'Live',reports:'Every Sunday, covering Saturday to Friday'};
+  var navBtns=document.querySelectorAll('.side [data-view]');
+  var views=document.querySelectorAll('.main .view');
+  function showView(v){
+    views.forEach(function(x){x.hidden = x.getAttribute('data-view')!==v;});
+    navBtns.forEach(function(b){
+      if(!b.classList.contains('nav')) return;
+      if(b.getAttribute('data-view')===v) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current');
+    });
+    document.getElementById('viewTitle').textContent=TITLES[v];
+    document.getElementById('fakeUrl').textContent='pulse.v7-insights.com/'+v;
+    document.getElementById('rangeSeg').hidden = v!=='overview';
+    if(v==='overview') setRange(currentN); else document.getElementById('rangeLabel').textContent=SUBS[v];
+  }
+  navBtns.forEach(function(b){b.addEventListener('click',function(){showView(b.getAttribute('data-view'));});});
+
+  /* ---------- competitors ---------- */
+  var BRANDS=[
+    {n:'Pepsi',sov:29,pos:38,neu:33,neg:29,vpp:9800,epp:61,topic:'Boycott discussion'},
+    {n:'V7',sov:24,pos:52,neu:32,neg:16,vpp:10600,epp:83,topic:'Flavors & availability'},
+    {n:'Coca-Cola',sov:21,pos:40,neu:35,neg:25,vpp:8700,epp:54,topic:'Promotions'},
+    {n:'Spiro Spathis',sov:16,pos:55,neu:33,neg:12,vpp:6100,epp:72,topic:'Nostalgia & local pride'},
+    {n:'Big Cola',sov:10,pos:44,neu:40,neg:16,vpp:4300,epp:38,topic:'Price & value'}
+  ];
+  hbars('sovBars2',BRANDS.map(function(b){return [b.n,b.sov];}),'V7');
+  (function(){
+    var host=document.getElementById('brandSent');
+    BRANDS.forEach(function(b){
+      var r=document.createElement('div'); r.className='stack-row'+(b.n==='V7'?' me':'');
+      r.innerHTML='<span class="name">'+b.n+'</span><div class="stack" title="'+b.n+': '+b.pos+'% positive, '+b.neu+'% neutral, '+b.neg+'% negative">'+
+        '<span style="width:'+b.pos+'%;background:var(--pos)"></span><span style="width:'+b.neu+'%;background:var(--neu)"></span><span style="width:'+b.neg+'%;background:var(--neg)"></span></div>'+
+        '<span class="v">'+b.pos+'%</span>';
+      host.appendChild(r);
+    });
+    var v7m=sum(days.slice(-7),'total'), all=v7m/0.24;
+    var rows=BRANDS.map(function(b){
+      var m=b.n==='V7'?v7m:Math.round(all*b.sov/100);
+      var net=b.pos-b.neg;
+      return '<tr'+(b.n==='V7'?' class="me"':'')+'><td>'+b.n+'</td><td class="n">'+m.toLocaleString('en-US')+'</td><td class="n">'+compact(m*b.vpp)+'</td><td class="n">'+compact(m*b.epp)+'</td><td class="n">'+b.epp+'</td><td class="n">'+(net>0?'+':'')+net+'</td><td>'+b.topic+'</td></tr>';
+    }).join('');
+    document.getElementById('brandTable').innerHTML='<thead><tr><th>Brand</th><th class="n">Mentions</th><th class="n">Views</th><th class="n">Engagement</th><th class="n">Eng. / post</th><th class="n">Net sentiment</th><th>Top topic</th></tr></thead><tbody>'+rows+'</tbody>';
+  })();
+
+  /* ---------- conversations ---------- */
+  var FEED=[
+    {s:'pos',p:'fb',who:'Mon3esh - منعش',t:'V7 Cream Soda #wheretoeategypt',topic:'Flavor variety',when:'15 Aug',stat:'7,444 reactions',real:true,url:'https://www.facebook.com/reel/1036524789086888/'},
+    {s:'neg',p:'fb',who:'Facebook user · Alexandria',t:'دورت على V7 رمان في ٣ سوبر ماركت في سموحة ومش لاقيه',topic:'Availability',when:'2 Oct',stat:'14 comments',ar:true},
+    {s:'pos',p:'tt',who:'TikTok comment',t:'الكريم صودا بتاعة V7 أحلى حاجة شربتها الصيف ده',topic:'Taste',when:'1 Oct',stat:'212 likes',ar:true},
+    {s:'pos',p:'x',who:'X user · Cairo',t:'بقيت أشتري V7 بدل البيبسي، منتج مصري وطعمه حلو',topic:'Local pride',when:'1 Oct',stat:'86 likes',ar:true},
+    {s:'neu',p:'fb',who:'Facebook user · Giza',t:'هي الكانز بتاعة V7 بكام دلوقتي؟',topic:'Price',when:'30 Sep',stat:'9 comments',ar:true},
+    {s:'neg',p:'ig',who:'Instagram comment',t:'The pineapple one is too sweet for me and goes flat quickly.',topic:'Fizz level',when:'30 Sep',stat:'31 likes'},
+    {s:'neu',p:'tt',who:'TikTok comment',t:'V7 el romman 7elw bas fein a2dar ala2eeh fe Mansoura?',topic:'Availability',when:'29 Sep',stat:'47 likes'},
+    {s:'pos',p:'ig',who:'Instagram comment',t:'The new colorful cans look amazing on the shelf!',topic:'New look',when:'28 Sep',stat:'58 likes'}
+  ];
+  var PLAT_ABBR={fb:['fb','f'],ig:['ig','ig'],tt:['tt','tt'],x:['x','x']};
+  var SLABEL={pos:'Positive',neu:'Neutral',neg:'Negative'};
+  function renderFeed(f){
+    var host=document.getElementById('feed'); host.innerHTML='';
+    var list=FEED.filter(function(x){return f==='all'||x.s===f;});
+    if(!list.length){host.innerHTML='<div class="empty">No mentions match this filter.</div>';return;}
+    list.forEach(function(x){
+      var d=document.createElement('div'); d.className='mention';
+      d.innerHTML='<span class="plat '+(x.p==='ig'?'ig':'fb')+'" style="'+(x.p==='tt'?'background:#111':x.p==='x'?'background:#333':'')+'">'+PLAT_ABBR[x.p][1]+'</span>'+
+        '<div><div style="font-weight:600;font-size:13px">'+x.who+'</div>'+
+        '<div'+(x.ar?' class="ar" dir="rtl" style="text-align:right"':'')+'>'+x.t+'</div>'+
+        '<div class="meta"><span class="pill '+x.s+'">'+SLABEL[x.s]+'</span><span class="tag">'+x.topic+'</span><span>'+x.when+' · '+x.stat+'</span>'+
+        (x.real?'<span class="chip real">Real</span><a href="'+x.url+'" target="_blank" rel="noopener">View</a>':'<span class="chip sample">Sample</span>')+'</div></div>';
+      host.appendChild(d);
+    });
+  }
+  document.querySelectorAll('#convFilters button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('#convFilters button').forEach(function(o){o.setAttribute('aria-pressed',o===b);});
+      renderFeed(b.getAttribute('data-f'));
+    });
+  });
+  renderFeed('all');
+  document.getElementById('faqTable').innerHTML='<thead><tr><th>Question</th><th class="n">Times asked</th></tr></thead><tbody>'+
+    [['Where can I buy V7 Pomegranate?',41],['When is Cream Soda coming back?',33],['Is V7 made in Egypt?',22],['How much is a can now?',19],['Does V7 have caffeine?',8]]
+    .map(function(r){return '<tr><td>'+r[0]+'</td><td class="n">'+r[1]+'</td></tr>';}).join('')+'</tbody>';
+
+  /* ---------- influencers ---------- */
+  var AUTH={good:['var(--good)','Genuine'],warning:['var(--warning)','Check followers'],critical:['var(--critical)','Likely bought followers']};
+  var INFL=[
+    ['<span class="ar">Mon3esh - منعش</span> <span class="chip real">Real</span>','Facebook','Food reviews','—',1,'7,444',null],
+    ['Food reviewer · Cairo','TikTok','Food reviews','420K',3,'58.2K',['good',94]],
+    ['Student creator · Mansoura','TikTok','Campus life','65K',4,'22.9K',['good',97]],
+    ['Comedy page','Facebook','Entertainment','1.2M',1,'31.0K',['good',88]],
+    ['Lifestyle creator · Alexandria','Instagram','Lifestyle','180K',2,'12.4K',['warning',61]],
+    ['Deals page','Facebook','Discounts','310K',2,'3.1K',['critical',42]]
+  ];
+  document.getElementById('inflTable').innerHTML='<thead><tr><th>Page or creator</th><th>Platform</th><th>Category</th><th class="n">Followers</th><th class="n">V7 posts</th><th class="n">Engagement</th><th>Authenticity</th></tr></thead><tbody>'+
+    INFL.map(function(r){
+      var a=r[6]?'<span class="auth"><i style="background:'+AUTH[r[6][0]][0]+'"></i>'+r[6][1]+'% · '+AUTH[r[6][0]][1]+'</span>':'<span class="auth" style="color:var(--muted)">Not scored yet</span>';
+      return '<tr><td>'+r[0]+(r[6]?' <span class="chip sample">Sample</span>':'')+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td class="n">'+r[3]+'</td><td class="n">'+r[4]+'</td><td class="n">'+r[5]+'</td><td>'+a+'</td></tr>';
+    }).join('')+'</tbody>';
+
+  /* ---------- alerts ---------- */
+  document.getElementById('alertsCopy').innerHTML=document.querySelector('.view[data-view="overview"] .alerts').innerHTML;
+  var RULES=[
+    ['Mention spike','More than 2× the 7-day average',true],
+    ['Negative sentiment','Negative share above 20% in one day',true],
+    ['Safety or health rumor','Words like “poisoning”, <span class="ar">تسمم</span>, <span class="ar">حشرة</span>',true],
+    ['Big account mentions V7','Any account with 100K+ followers',true],
+    ['Competitor launch','New product or campaign from a tracked brand',false]
+  ];
+  var rh=document.getElementById('rules');
+  RULES.forEach(function(r,i){
+    var d=document.createElement('div'); d.className='rule';
+    d.innerHTML='<div><span id="rule'+i+'">'+r[0]+'</span><small>'+r[1]+'</small></div><button type="button" class="switch" role="switch" aria-checked="'+r[2]+'" aria-labelledby="rule'+i+'"></button>';
+    d.querySelector('.switch').addEventListener('click',function(){this.setAttribute('aria-checked',this.getAttribute('aria-checked')!=='true');});
+    rh.appendChild(d);
+  });
+  document.getElementById('history').innerHTML=[
+    ['29 Sep','<b>Mention spike</b> — 2.7× the 7-day average after the Pomegranate post was reshared by food pages. <span class="chip sample">Sample</span>'],
+    ['24 Sep','<b>Big account</b> — a food reviewer with 420K followers posted a V7 taste test. <span class="chip sample">Sample</span>'],
+    ['17 Sep','<b>Negative sentiment</b> — 23% negative in one day, availability in Upper Egypt. <span class="chip sample">Sample</span>'],
+    ['10 Sep','<b>Comment surge</b> — Cream Soda end-of-season post drew 63 Facebook and 98 Instagram comments. <span class="chip real">Real</span>']
+  ].map(function(h){return '<div><span>'+h[0]+'</span><div>'+h[1]+'</div></div>';}).join('');
+
+  /* ---------- weekly reports ---------- */
+  var REPORTS=[
+    {label:'26 Sep – 2 Oct',off:0,hi:['Pomegranate drives most new-flavor questions — people ask where to buy, not what it tastes like.','Mentions spiked on 29 Sep when food pages reshared the Pomegranate post.','Availability complaints concentrate in Alexandria supermarkets.'],rec:['Publish a list of Alexandria stores carrying V7.','Reply to “where to buy” comments with a store finder link.','Approach Mon3esh about a review series.']},
+    {label:'19 – 25 Sep',off:7,hi:['“Egyptian-made” remains the top reason people give for choosing V7.','Price questions rose as shoppers compared can prices across brands.'],rec:['Lead next week’s content with the local-production story.','Show the price per can clearly in supermarket promotions.']},
+    {label:'12 – 18 Sep',off:14,hi:['Cream Soda fans kept asking for it back in the comments.','Two student creators posted unpaid V7 reviews.'],rec:['Tease Cream Soda’s 2027 return to keep the thread alive.','Invite student creators to a campus sampling day.']},
+    {label:'5 – 11 Sep',off:21,hi:['The Malt reel passed 11M views — V7’s biggest post of the month.','The Cream Soda end-of-season post drew 161 comments across Facebook and Instagram.'],rec:['Reuse the Malt reel format for Pomegranate.','Answer Cream Soda comments with a return date.']}
+  ];
+  function weekStats(off){
+    var w=days.slice(days.length-7-off,days.length-off);
+    var net=Math.round((sum(w,'pos')-sum(w,'neg'))/sum(w,'total')*100);
+    return {m:sum(w,'total'),net:net,views:sum(w,'views'),eng:sum(w,'eng')};
+  }
+  var listHost=document.getElementById('reportList'), doc=document.getElementById('reportDoc');
+  function openReport(i){
+    var r=REPORTS[i], s=weekStats(r.off);
+    listHost.querySelectorAll('.rep').forEach(function(b,j){b.setAttribute('aria-pressed',j===i);});
+    doc.innerHTML='<h5>Weekly report · '+r.label+' 2026</h5><div class="when">Sent Sunday 08:00 · 8 sections · web and PDF <span class="chip sample">Sample</span></div>'+
+      '<dl class="rep-stats"><div><dt>Mentions</dt><dd>'+s.m.toLocaleString('en-US')+'</dd></div><div><dt>Engagement</dt><dd>'+compact(s.eng)+'</dd></div><div><dt>Views</dt><dd>'+compact(s.views)+'</dd></div><div><dt>Net sentiment</dt><dd>'+(s.net>0?'+':'')+s.net+'</dd></div></dl>'+
+      '<h6>Highlights</h6><ul>'+r.hi.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>'+
+      '<h6>Recommendations</h6><ul>'+r.rec.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';
+  }
+  REPORTS.forEach(function(r,i){
+    var s=weekStats(r.off);
+    var b=document.createElement('button'); b.type='button'; b.className='rep'; b.setAttribute('aria-pressed',i===0);
+    b.innerHTML='<b>'+r.label+'</b><em>'+s.m.toLocaleString('en-US')+' mentions</em><span>'+(i===0?'Latest':'Archived')+'</span><em>net '+(s.net>0?'+':'')+s.net+'</em>';
+    b.addEventListener('click',function(){openReport(i);});
+    listHost.appendChild(b);
+  });
+  openReport(0);
+
+  /* ---------- assistant (scripted preview) ---------- */
+  var QA=[
+    ['Why did negative sentiment rise this week?',
+     'Negative mentions rose from 12% to 15%. Two thirds of them are about <b>availability</b>, not the product:<ul><li>34 posts from Alexandria saying V7 is out of stock in supermarkets</li><li>11 posts asking where to find Pomegranate</li></ul>Taste complaints stayed flat. Suggested action: share the list of stores carrying V7 in Alexandria.'],
+    ['Which flavor gets the most positive comments?',
+     '<b>Cream Soda</b> leads with 81% positive, mostly fans asking for it back before summer 2027. Pomegranate is second at 64%, then Pineapple malt at 58%.'],
+    ['How do we compare with Pepsi this month?',
+     'Pepsi has more mentions (31% vs 22% share of voice), but V7 has the higher net sentiment: <b>+36 vs +9</b>. Pepsi’s negatives are dominated by boycott discussion; V7’s by availability.'],
+    ['Draft a reply to the top complaint',
+     '<span class="ar" dir="rtl" style="display:block">أهلاً بيك، آسفين إنك تعبت في التدوير! ابعتلنا منطقتك في رسالة وهنقولك أقرب مكان تلاقي فيه V7.</span><span style="display:block;margin-top:6px;color:var(--muted);font-size:12px">Your team reviews every draft before it’s posted.</span>']
+  ];
+  var log=document.getElementById('chatLog'), sug=document.getElementById('suggest');
+  function add(cls,html){var m=document.createElement('div');m.className='msg '+cls;m.innerHTML=html;log.appendChild(m);log.scrollTop=log.scrollHeight;}
+  QA.forEach(function(q){
+    var b=document.createElement('button'); b.type='button'; b.textContent=q[0];
+    b.addEventListener('click',function(){add('me',q[0]); setTimeout(function(){add('bot',q[1]);},350);});
+    sug.appendChild(b);
+  });
+  document.getElementById('askForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var inp=document.getElementById('askInput'); var v=inp.value.trim(); if(!v) return;
+    var safe=v.replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
+    add('me',safe); inp.value='';
+    setTimeout(function(){add('bot','In the live version, V7 Pulse answers this from your real posts and comments, with links to the sources. In this preview, try one of the sample questions above.');},350);
+  });
+})();
+</script>

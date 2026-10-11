@@ -1,0 +1,1105 @@
+{
+ "act": {
+  "title": "TikTok Data Extractor",
+  "users30d": 4459,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What does TikTok Data Extractor do?\n\nThis TikTok Data Extractor allows you to extract data about videos from the [TikTok](https://www.tiktok.com/) social media site. It gives you detailed TikTok information in structured formats such as _Excel, XML, HTML, JSON,_ and _CSV_, which you can use in your own reports, spreadsheets, and applications. TikTok Data Extractor allows you to scrape:\n\n- Results from a TikTok **hashtag search**\n- **Number** of comments and shares, followers and following, total likes\n- **Individual posts** and **full user profiles** - by using a URL for a specific profile or video\n- Information about posts from **keyword search queries**\n- **Download** scraped videos directly\n- Export scraped data in multiple formats: **JSON, CSV, Excel, or HTML**\n- Export via SDKs (Python & Node.js), use **API Endpoints**, **webhooks**, or integrate with workflows\n\n## What data can you get with TikTok Data Extractor?\n\nTikTok Data Extractor can gather any kind of data from the social media app, such as:\n\n<table>\n<tr>\n<td>👤 Profile name</td>\n<td>❤️ Likes</td>\n<td>🔁 Shares</td>\n</tr>\n<tr>\n<td>▶️ Plays</td>\n<td>🔗 Video URL</td>\n<td>🌐 Profile URL</td>\n</tr>\n<tr>\n<td>📝 Video description</td>\n<td>💬 Video subtitles</td>\n<td>🈹 Text language</td>\n</tr>\n<tr>\n<td>📜 Bio</td>\n<td>🏷️ Hashtags used</td>\n<td>📢 Ad post?</td>\n</tr>\n<tr>\n<td>📌 Pinned post?</td>\n<td>💰 Sponsored?</td>\n<td>📍 Location of creation</td>\n</tr>\n</table>\n\n## How to scrape TikTok with TikTok Data Extractor\n\nIf you've never done any web scraping before, don’t worry. TikTok Data Scraper is easy to use. Here’s how:\n\n1. [Create](https://console.apify.com/actors/OtzYfK1ndEGdwWFKQ?addFromActorId=OtzYfK1ndEGdwWFKQ) a free Apify account using your email.\n2. Open [TikTok Data Extractor](https://apify.com/clockworks/free-tiktok-scraper).\n3. Add one or more hashtags to scrape TikTok followers, videos and creators.\n4. Click the “Start” button and wait for the data to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nIf you feel like you’d enjoy more comprehensive explanation, try this [step-by-step guide](https://blog.apify.com/how-to-scrape-tiktok-tutorial/) or simply watch a quick [video tutorial](https://www.youtube.com/watch?v=WwdmQzv_w54) on YouTube:\n\nhttps://www.youtube.com/watch?v=WwdmQzv_w54\n\n## Input\n\nTo start scraping TikTok, fill in the input form. TikTok Data Extractor recognizes the following input parameters:\n\n- **hashtags** - scrapes TikTok for hashtags\n- **profiles** - scrapes TikTok profiles\n- **search** - scrapes specific keywords and extract videos and profiles that contain it\n- **video URLs** - scrapes specific TikTok videos\n\nHere’s a screenshot of scraping #funny from TikTok.\n\n<a href=\"https://console.apify.com/actors/OtzYfK1ndEGdwWFKQ/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/tiktok-data-extractor-input.png?raw=true\" alt=\"TikTok Data Extractor input\" style=\"width:70%;\">\n</a>\n\nAnd here’s the same, just in JSON.\n\n```json\n{\n    \"hashtags\": [\"funny\"],\n    \"resultsPerPage\": 100,\n    \"shouldDownloadCovers\": false,\n    \"shouldDownloadSlideshowImages\": false,\n    \"shouldDownloadSubtitles\": false,\n    \"shouldDownloadVideos\": false\n}\n```\n\n## Output\n\nYou get the output from TikTok Data Extractor stored in a tab. Here's an example of some of the output from the previous #funny Actor run.\n\n<a href=\"https://console.apify.com/actors/OtzYfK1ndEGdwWFKQ/\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/tiktok-data-extractor-output.png?raw=true\" alt=\"TikTok Data Extractor output\" style=\"width:70%;\">\n</a>\n\nBy clicking on the green Export button, you can download the dataset in XML, CSV, Excel, HTML, or JSON.\n\n### Scraped TikTok hashtags\n\n```json\n{\n    \"authorMeta.avatar\": \"<https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/bc3a20fbab0d67915fa082152d96449e.jpeg?lk3s=a5d48078&nonce=12322&refresh_token=3045197dca8797ac15f26bd1d8d2c859&x-expires=1723143600&x-signature=bnKkJ%2FGVCg7v%2BDqd%2B5val9VDd0U%3D&shp=a5d48078&shcp=b59d6b55>\",\n    \"authorMeta.name\": \"tom.cashman\",\n    \"text\": \"Breaking up via Wordle #wordle #fyp #foryou #foryoupage #fy #breakups\",\n    \"diggCount\": 465100,\n    \"shareCount\": 8397,\n    \"playCount\": 3500000,\n    \"commentCount\": 1072,\n    \"videoMeta.duration\": 26,\n    \"musicMeta.musicName\": \"original sound\",\n    \"musicMeta.musicAuthor\": \"cashman.tom\",\n    \"musicMeta.musicOriginal\": true,\n    \"createTimeISO\": \"2022-01-27T03:45:41.000Z\",\n    \"webVideoUrl\": \"<https://www.tiktok.com/@tom.cashman/video/7057727079848103169>\"\n}\n```\n\n### Scraped TikTok Profiles\n\n```json\n[\n    {\n        \"authorMeta.avatar\": \"https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/e755d298d36b3175a2ca87d603b5dc2d~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=ad1b4c7e&x-expires=1764493200&x-signature=PCx9if1hscJ1KXJVZUio%2B2BLlS0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5\",\n        \"authorMeta.name\": \"khaby.lame\",\n        \"text\": \"Here’s my new vase, I hope you like it #learnfromkhaby #comedy \",\n        \"diggCount\": 58500,\n        \"shareCount\": 949,\n        \"playCount\": 801800,\n        \"commentCount\": 1391,\n        \"videoMeta.duration\": 33,\n        \"musicMeta.musicName\": \"original sound\",\n        \"musicMeta.musicAuthor\": \"Khabane lame\",\n        \"musicMeta.musicOriginal\": true,\n        \"createTimeISO\": \"2025-11-26T16:06:05.000Z\",\n        \"webVideoUrl\": \"https://www.tiktok.com/@khaby.lame/video/7577066025573813526\"\n    }\n]\n```\n\n### Scraped TikTok search queries\n\n```json\n[\n    {\n        \"authorMeta.avatar\": \"https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/f1f2fefde64a184a4969b9355f388de4~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=f08a3504&x-expires=1764493200&x-signature=kwAkYDhDusD2bozDp3WhhdDQ07Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a\",\n        \"authorMeta.name\": \"afu0831\",\n        \"text\": \"#粉丝一千万 #cat #funny #foryou #fyp \",\n        \"diggCount\": 1478,\n        \"shareCount\": 857,\n        \"playCount\": 116400,\n        \"commentCount\": 49,\n        \"videoMeta.duration\": 5,\n        \"musicMeta.musicName\": \"suara asli - Kang Guru\",\n        \"musicMeta.musicAuthor\": \"Kang Guru\",\n        \"musicMeta.musicOriginal\": true,\n        \"createTimeISO\": \"2025-11-27T16:44:18.000Z\",\n        \"webVideoUrl\": \"https://www.tiktok.com/@afu0831/video/7577446618987777281\"\n    },\n    {\n        \"authorMeta.avatar\": \"https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/2a47aafe313f23dfb9444ed868788506~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=396464a3&x-expires=1764493200&x-signature=09bdU9SBF7Tb0qa0Cnvixz8xtfE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a\",\n        \"authorMeta.name\": \"done15222\",\n        \"text\": \"wait wait 😂 funny moments 😂 #funnymoments #funnyvideos #funnytiktok #funny \",\n        \"diggCount\": 16800,\n        \"shareCount\": 4961,\n        \"playCount\": 625800,\n        \"commentCount\": 679,\n        \"videoMeta.duration\": 10,\n        \"musicMeta.musicName\": \"laugh\",\n        \"musicMeta.musicAuthor\": \"بو حسن\",\n        \"musicMeta.musicOriginal\": true,\n        \"createTimeISO\": \"2025-11-26T12:14:12.000Z\",\n        \"webVideoUrl\": \"https://www.tiktok.com/@done15222/video/7577006237489827127\"\n    },\n    {\n        \"authorMeta.avatar\": \"https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/f1f2fefde64a184a4969b9355f388de4~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=f08a3504&x-expires=1764493200&x-signature=kwAkYDhDusD2bozDp3WhhdDQ07Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a\",\n        \"authorMeta.name\": \"afu0831\",\n        \"text\": \"#粉丝一千万 #cat #funny #foryou #fyp \",\n        \"diggCount\": 353,\n        \"shareCount\": 145,\n        \"playCount\": 18200,\n        \"commentCount\": 48,\n        \"videoMeta.duration\": 15,\n        \"musicMeta.musicName\": \"Originalton\",\n        \"musicMeta.musicAuthor\": \"funnyvideos\",\n        \"musicMeta.musicOriginal\": true,\n        \"createTimeISO\": \"2025-11-28T01:08:02.000Z\",\n        \"webVideoUrl\": \"https://www.tiktok.com/@afu0831/video/7577576300840258833\"\n    }\n]\n```\n\n### Scraped TikTok Video URLs\n\n```json\n[\n    {\n        \"url\": \"https://www.tiktok.com/@shaiie_foeva/video/7533731959172861206\",\n        \"error\": \"Post not found or private.\"\n    },\n    {\n        \"id\": \"7553309587378539831\",\n        \"text\": \"Unexpected prank#funny#prank#foryou#funnyvideo#fyp \",\n        \"textLanguage\": \"en\",\n        \"createTime\": 1758641970,\n        \"createTimeISO\": \"2025-09-23T15:39:30.000Z\",\n        \"isAd\": false,\n        \"authorMeta\": {\n            \"id\": \"7522438923319657527\",\n            \"name\": \"chunniuc\",\n            \"profileUrl\": \"https://www.tiktok.com/@chunniuc\",\n            \"nickName\": \"chunniuc\",\n            \"verified\": false,\n            \"signature\": \"\",\n            \"bioLink\": null,\n            \"originalAvatarUrl\": \"https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f9090639eaf88d6d19302acc0f3c2c90~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=f915efaa&x-expires=1765533600&x-signature=Etgb%2Fp8BjOZDW1N8Nh1qtrbFCuw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8\",\n            \"avatar\": \"https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f9090639eaf88d6d19302acc0f3c2c90~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=f915efaa&x-expires=1765533600&x-signature=Etgb%2Fp8BjOZDW1N8Nh1qtrbFCuw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8\",\n            \"privateAccount\": false,\n            \"followDatasetUrl\": null,\n            \"following\": 2,\n            \"friends\": 0,\n            \"fans\": 508700,\n            \"heart\": 6400000,\n            \"video\": 40,\n            \"digg\": 13\n        },\n        \"musicMeta\": {\n            \"musicName\": \"original sound\",\n            \"musicAuthor\": \"chunniuc\",\n            \"musicOriginal\": true,\n            \"playUrl\": \"https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-v-27dcd7-tx/o4vroDM8eQB1goCaIhDUBipSSSizJ0BiNBXQfF/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=0&dr=0&er=0&lr=default&cd=0%7C0%7C0%7C0&br=250&bt=125&ft=GcAInInz7ThwX-MPXq8Zmo&mime_type=audio_mpeg&qs=6&rc=OmZpNjs0OTU7NWlpaGk3Z0BpMzQ2ZHY5cmdlNjMzZzU8NEAxMTI1Ni4tNjAxYTRiY15hYSM2XmE1MmRjcjZhLS1kMS9zcw%3D%3D&btag=e00090000&expire=1765385182&l=20251210104511BBB68D0351632A021252&ply_type=3&policy=3&signature=f1b0279540256080ab35149fced9013f&tk=0\",\n            \"coverMediumUrl\": \"https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f9090639eaf88d6d19302acc0f3c2c90~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=f915efaa&x-expires=1765533600&x-signature=Etgb%2Fp8BjOZDW1N8Nh1qtrbFCuw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8\",\n            \"originalCoverMediumUrl\": \"https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f9090639eaf88d6d19302acc0f3c2c90~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=f915efaa&x-expires=1765533600&x-signature=Etgb%2Fp8BjOZDW1N8Nh1qtrbFCuw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8\",\n            \"musicId\": \"7553309743813643063\"\n        },\n        \"webVideoUrl\": \"https://www.tiktok.com/@chunniuc/video/7553309587378539831\",\n        \"mediaUrls\": [],\n        \"videoMeta\": {\n            \"height\": 768,\n            \"width\": 576,\n            \"duration\": 70,\n            \"coverUrl\": \"https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o8fTvrPPDQbzUS97AyFESxR2jBfioQDQEvg8E0~tplv-tiktokx-origin.image?dr=9636&x-expires=1765533600&x-signature=EAfGHi%2FFtspgSd69yc24x6V%2Fq2E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8\",\n            \"originalCoverUrl\": \"https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o8fTvrPPDQbzUS97AyFESxR2jBfioQDQEvg8E0~tplv-tiktokx-origin.image?dr=9636&x-expires=1765533600&x-signature=EAfGHi%2FFtspgSd69yc24x6V%2Fq2E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8\",\n            \"definition\": \"540p\",\n            \"format\": \"mp4\"\n        },\n        \"diggCount\": 1500000,\n        \"shareCount\": 94900,\n        \"playCount\": 147200000,\n        \"collectCount\": 102300,\n        \"commentCount\": 17300,\n        \"mentions\": [],\n        \"detailedMentions\": [],\n        \"hashtags\": [\n            {\n                \"id\": \"5424\",\n                \"name\": \"funny\",\n                \"title\": \"What's so #Funny?\",\n                \"cover\": \"\"\n            },\n            {\n                \"id\": \"9122\",\n                \"name\": \"prank\",\n                \"title\": \"\",\n                \"cover\": \"\"\n            },\n            {\n                \"id\": \"42164\",\n                \"name\": \"foryou\",\n                \"title\": \"\",\n                \"cover\": \"\"\n            },\n            {\n                \"id\": \"56948\",\n                \"name\": \"funnyvideo\",\n                \"title\": \"\",\n                \"cover\": \"\"\n            },\n            {\n                \"id\": \"229207\",\n                \"name\": \"fyp\",\n                \"title\": \"\",\n                \"cover\": \"\"\n            }\n        ],\n        \"effectStickers\": [],\n        \"isSlideshow\": false,\n        \"isPinned\": false,\n        \"searchQuery\": \"funny\"\n    }\n]\n```\n\n## How can I use the data extracted from TikTok with TikTok Data Extractor?\n\n- 💙 Boost **brand awareness** or spread the message about social issues and causes.\n- 📈 Forecast **upcoming trends** and influences on social media across the new generation.\n- 🔬 Get **data for research** and social listening experiments.\n- ⭐ Get authentic **reviews** and back up sentiment analysis with real data.\n- 🪧Plan **commercial campaigns** on TikTok or other social media platforms.\n- 📚 Simplify **market research** for hashtag challenges and marketing campaigns.\n- 📋 Get a list of [perfect-fit marketing leads](https://blog.apify.com/marketing-leads-scraping-with-apify/).\n\nGet in-depth information about how can TikTok Data Extractor help you and how to use it in this webinar we held.\n\nhttps://www.youtube.com/watch?v=p__yZvTJB3I\n\n## Scrape any TikTok data you need with dedicated scrapers\n\nUse dedicated Actors if you want to **scrape specific TikTok data**.\n\n<table>\n<tr>\n<td>🎵 <a href=\"https://apify.com/clockworks/tiktok-scraper\">TikTok Scraper</a></td>\n<td>🗣 <a href=\"https://apify.com/clockworks/tiktok-profile-scraper\">TikTok Profile Scraper</a></td>\n<td>💬 <a href=\"https://apify.com/clockworks/tiktok-comments-scraper\">TikTok Comments Scraper</a></td>\n</tr>\n<tr>\n<td>📝 <a href=\"https://apify.com/clockworks/tiktok-transcript-extractor\">TikTok Transcript Extractor</a></td>\n<td>#️⃣ <a href=\"https://apify.com/clockworks/tiktok-hashtag-scraper\">TikTok Hashtag Scraper</a></td>\n<td>🎸 <a href=\"https://apify.com/clockworks/tiktok-sound-scraper\">TikTok Sound Scraper</a></td>\n</tr>\n<tr>\n<td>🔍 <a href=\"https://apify.com/clockworks/tiktok-discover-scraper\">TikTok Discover Scraper</a></td>\n<td>🕵️ <a href=\"https://apify.com/clockworks/tiktok-user-search-scraper\">TikTok User Search Scraper</a></td>\n<td>🛒 <a href=\"https://apify.com/clockworks/tiktok-shop-scraper\">TikTok Shop Scraper</a></td>\n</tr>\n<tr>\n<td>👥 <a href=\"https://apify.com/clockworks/tiktok-followers-scraper\">TikTok Followers Scraper</a></td>\n<td>🧭 <a href=\"https://apify.com/clockworks/tiktok-explore-scraper\">TikTok Explore Scraper</a></td>\n<td>📊 <a href=\"https://apify.com/clockworks/tiktok-ads-scraper\">TikTok Hashtag Analytics</a></td>\n</tr>\n<tr>\n<td>📈 <a href=\"https://apify.com/clockworks/tiktok-trends-scraper\">TikTok Trends Scraper</a></td>\n<td>📹 <a href=\"https://apify.com/clockworks/tiktok-video-scraper\">TikTok Video Scraper</a></td>\n<td></td>\n</tr>\n</table>\n\nWe also have put together a few AI agents that will help you extract data from social media and turn it into actionable information:\n\n- [Comments Analyzer Agent](https://apify.com/apify/comments-analyzer-agent)\n- [Influencer Discovery Agent](https://apify.com/apify/influencer-discovery-agent)\n\n## Frequently asked questions\n\n### How much does TikTok Data Extractor cost?\n\nTikTok Data Extractor uses the pay-per-result (PPR) pricing model, so your costs can be easily calculated: it will cost you **$5 to scrape 1,000 results**, so $0.005 per item. Apify provides you with $5 free usage credits every month on the [Apify free plan](https://apify.com/pricing), so you can **get 1,000 results from TikTok Data Extractor for free**.\n\nIf you need to extract data regularly, we recommend you get an Apify subscription. Not only do you get a greater amount of prepaid credits, you get a discount on your usage costs, as well. Check out the [pricing tab](https://apify.com/clockworks/free-tiktok-scraper/pricing) for more details.\n\n### Can I use integrations with TikTok Data Extractor?\n\nYou can integrate TikTok Data Extractor with almost any cloud service or web app. We offer integrations with **Make, Zapier, Slack, Airbyte, GitHub, Google Sheets, Google Drive**, [and plenty more](https://docs.apify.com/integrations).\n\nAlternatively, you could use [webhooks](https://docs.apify.com/integrations/webhooks) to carry out an action whenever an event occurs, such as getting a notification whenever TikTok Data Extractor successfully finishes a run.\n\n### Can I use TikTok Data Extractor with the Apify API?\n\nThe Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify Actors. The API also lets you access any datasets, monitor Actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/clockworks/free-tiktok-scraper/api/javascript). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/clockworks/free-tiktok-scraper/api/python).\n\nClick on the [API tab](https://apify.com/clockworks/free-tiktok-scraper/api/python) for code examples, or check out the [Apify API reference](https://docs.apify.com/api/v2) docs for all the details.\n\n### Can I use TikTok Data Extractor through an MCP Server?\n\nWith Apify API, you can use almost any Actor in conjunction with an MCP server. You can connect to the MCP server using clients like ClaudeDesktop and LibreChat, or even build your own. Read all about how you can [set up Apify Actors with MCP](https://blog.apify.com/how-to-use-mcp/).\n\nFor TikTok Data Extractor, go to the [MCP tab](https://apify.com/clockworks/free-tiktok-scraper/api/mcp) and then go through the following steps:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`\n2. Send API messages using that `sessionId` to trigger the scraper\n3. The message starts the TikTok Data Extractor with the provided input\n4. The response should be: `Accepted`\n\n### Is it legal to scrape TikTok?\n\nOur scrapers do not extract any private user data, such as email addresses, gender, or location. They only extract what the user has chosen to share publicly.\n\nHowever, you should be aware that your results could contain personal data. Personal data is protected by the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) in the European Union and by other regulations around the world. You\nshould not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).\n\n### Your feedback\n\nWe’re always working on improving the performance of our Actors. If you have any technical feedback for TikTok Data Extractor or found a bug, please create an issue in the [Issues tab](https://apify.com/clockworks/free-tiktok-scraper/issues/open).\n\n## Error items\n\nWhen the scraper cannot retrieve data for a given input — for example a profile is private or a post has been deleted — it pushes an **error item** to the dataset instead of silently skipping it. Normal output items are never affected; you can tell them apart by the presence of an `errorCode` field.\n\n### Error item structure\n\n```json\n{\n    \"url\": \"https://www.tiktok.com/@someuser\",\n    \"input\": \"someuser\",\n    \"error\": \"Profile is private\",\n    \"errorCode\": \"PROFILE_PRIVATE\"\n}\n```\n\n### Error codes reference\n\n| `errorCode`                      | Meaning                                                        |\n| -------------------------------- | -------------------------------------------------------------- |\n| `NOT_FOUND`                      | Profile or hashtag does not exist                              |\n| `POST_NOT_FOUND_OR_PRIVATE`      | Post URL is gone or private                                    |\n| `POST_SENSITIVE`                 | Post is flagged as sensitive content                           |\n| `NO_TRENDING_FOR_HASHTAG`        | No ads found for this hashtag                                  |\n| `MUSIC_NOT_FOUND`                | No videos found for the music tag                              |\n| `SEARCH_QUERY_NOT_FOUND`         | No videos found for the search query                           |\n| `SEARCH_QUERY_PROFILE_NOT_FOUND` | No profiles found for the search query                         |\n| `FILTER_NO_PASS`                 | Videos exist but none match the active date/popularity filters |\n| `PROFILE_EMPTY`                  | Profile has no videos (or is behind a login wall)              |\n| `PROFILE_REPOSTS_EMPTY`          | Profile has no reposts (or is behind a login wall)             |\n| `PROFILE_STORIES_EMPTY`          | Profile has no active story right now                          |\n| `PROFILE_FOLLOWING_EMPTY`        | Profile is not following anyone                                |\n| `PROFILE_FOLLOWERS_EMPTY`        | Profile has no followers                                       |\n| `PROFILE_PRIVATE`                | Profile is private                                             |\n| `GOOGLE_RUN_NO_RESULTS`          | Google-assisted run returned no results                        |\n| `TRENDING_EMPTY`                 | Trending page returned no results                              |\n| `INVALID_INPUT`                  | Actor failed due to bad configuration (run is also terminated) |\n| `INVALID_URLS`                   | One or more start URLs were malformed                          |\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string",
+     "description": "Unique identifier of the TikTok video",
+     "nullable": true,
+     "example": "7234567890123456789"
+    },
+    "text": {
+     "type": "string",
+     "description": "Caption text of the TikTok video",
+     "nullable": true,
+     "example": "Check out this amazing dance! #fyp #dance"
+    },
+    "textLanguage": {
+     "type": "string",
+     "description": "Detected language of the video caption",
+     "nullable": true,
+     "example": "en"
+    },
+    "createTime": {
+     "type": "number",
+     "description": "Unix timestamp when the video was created",
+     "nullable": true,
+     "example": 1672531200
+    },
+    "createTimeISO": {
+     "type": "string",
+     "description": "ISO 8601 formatted creation date and time",
+     "nullable": true,
+     "example": "2023-01-01T00:00:00.000Z"
+    },
+    "isMuted": {
+     "type": "boolean",
+     "description": "Whether the video audio is muted",
+     "nullable": true,
+     "example": false
+    },
+    "webVideoUrl": {
+     "type": "string",
+     "description": "URL to view the video on TikTok",
+     "nullable": true,
+     "example": "https://www.tiktok.com/@exampleuser/video/7234567890123456789"
+    },
+    "locationCreated": {
+     "type": "string",
+     "description": "Country code where the video was created",
+     "nullable": true,
+     "example": "US"
+    },
+    "isAd": {
+     "type": "boolean",
+     "description": "Whether the video is a sponsored advertisement",
+     "nullable": true,
+     "example": false
+    },
+    "authorMeta": {
+     "type": "object",
+     "description": "Metadata about the video author",
+     "properties": {
+      "id": {
+       "type": "string",
+       "nullable": true
+      },
+      "name": {
+       "type": "string",
+       "nullable": true
+      },
+      "profileUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "verified": {
+       "type": "boolean",
+       "nullable": true
+      },
+      "privateAccount": {
+       "type": "boolean",
+       "nullable": true
+      },
+      "nickName": {
+       "type": "string",
+       "nullable": true
+      },
+      "avatar": {
+       "type": "string",
+       "nullable": true
+      },
+      "signature": {
+       "type": "string",
+       "nullable": true
+      },
+      "bioLink": {
+       "type": "string",
+       "nullable": true
+      },
+      "region": {
+       "type": "string",
+       "nullable": true
+      },
+      "following": {
+       "type": "number",
+       "nullable": true
+      },
+      "fans": {
+       "type": "number",
+       "nullable": true
+      },
+      "video": {
+       "type": "number",
+       "nullable": true
+      },
+      "heart": {
+       "type": "number",
+       "nullable": true
+      },
+      "digg": {
+       "type": "number",
+       "nullable": true
+      },
+      "friends": {
+       "type": "number",
+       "nullable": true
+      },
+      "commerceUserInfo": {
+       "type": "object",
+       "properties": {
+        "commerceUser": {
+         "type": "boolean",
+         "nullable": true
+        },
+        "category": {
+         "type": "string",
+         "nullable": true
+        }
+       },
+       "required": [],
+       "additionalProperties": true,
+       "nullable": true
+      },
+      "isUnderAge18": {
+       "type": "boolean",
+       "nullable": true
+      },
+      "roomId": {
+       "type": "string",
+       "nullable": true
+      },
+      "ttSeller": {
+       "type": "boolean",
+       "nullable": true
+      },
+      "createTime": {
+       "type": "number",
+       "nullable": true
+      },
+      "followDatasetUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "originalAvatarUrl": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "nullable": true,
+     "example": {
+      "id": "6784642169778881542",
+      "name": "exampleuser",
+      "profileUrl": "https://www.tiktok.com/@exampleuser",
+      "nickName": "Example User",
+      "verified": false,
+      "privateAccount": false,
+      "signature": "Content creator",
+      "avatar": "https://p16-sign.tiktokcdn-us.com/example-avatar.jpg",
+      "fans": 12500,
+      "video": 48,
+      "following": 120,
+      "heart": 98000,
+      "originalAvatarUrl": "https://p16-sign.tiktokcdn-us.com/example-avatar-orig.jpg",
+      "followDatasetUrl": null
+     }
+    },
+    "musicMeta": {
+     "type": "object",
+     "description": "Metadata about the background music used in the video",
+     "properties": {
+      "musicName": {
+       "type": "string",
+       "nullable": true
+      },
+      "musicAuthor": {
+       "type": "string",
+       "nullable": true
+      },
+      "playUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "coverMediumUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "musicOriginal": {
+       "type": "boolean",
+       "nullable": true
+      },
+      "musicAlbum": {
+       "type": "string",
+       "nullable": true
+      },
+      "musicId": {
+       "type": "string",
+       "nullable": true
+      },
+      "originalCoverMediumUrl": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "nullable": true,
+     "example": {
+      "musicName": "Original Sound",
+      "musicAuthor": "exampleuser",
+      "musicOriginal": true,
+      "musicId": "7234567890123456789",
+      "playUrl": "https://sf16-ies-music.tiktokcdn.com/obj/example.mp3",
+      "coverMediumUrl": "https://p16-sign.tiktokcdn-us.com/example-music-cover.jpg",
+      "originalCoverMediumUrl": "https://p16-sign.tiktokcdn-us.com/example-music-cover-orig.jpg"
+     }
+    },
+    "videoMeta": {
+     "type": "object",
+     "description": "Technical metadata about the video file",
+     "properties": {
+      "height": {
+       "type": "number",
+       "nullable": true
+      },
+      "width": {
+       "type": "number",
+       "nullable": true
+      },
+      "duration": {
+       "type": "number",
+       "nullable": true
+      },
+      "coverUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "originalCoverUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "definition": {
+       "type": "string",
+       "nullable": true
+      },
+      "format": {
+       "type": "string",
+       "nullable": true
+      },
+      "subtitleLinks": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "language": {
+          "type": "string",
+          "nullable": true
+         },
+         "downloadLink": {
+          "type": "string",
+          "nullable": true
+         },
+         "tiktokLink": {
+          "type": "string",
+          "nullable": true
+         },
+         "source": {
+          "type": "string",
+          "nullable": true
+         },
+         "sourceUnabbreviated": {
+          "type": "string",
+          "nullable": true
+         },
+         "version": {
+          "type": "string",
+          "nullable": true
+         }
+        },
+        "required": [],
+        "additionalProperties": true
+       },
+       "nullable": true
+      },
+      "transcriptionLink": {
+       "type": "string",
+       "nullable": true
+      },
+      "aiVideoDescription": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "startSecond": {
+          "type": "integer"
+         },
+         "endSecond": {
+          "type": "integer"
+         },
+         "displayTime": {
+          "type": "string"
+         },
+         "description": {
+          "type": "string"
+         }
+        },
+        "required": [],
+        "additionalProperties": true
+       },
+       "nullable": true
+      },
+      "aiVideoSummary": {
+       "type": "string",
+       "nullable": true
+      },
+      "downloadAddr": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "nullable": true,
+     "example": {
+      "height": 1920,
+      "width": 1080,
+      "duration": 15,
+      "coverUrl": "https://p16-sign.tiktokcdn-us.com/example-cover.jpg",
+      "originalCoverUrl": "https://p16-sign.tiktokcdn-us.com/example-cover-orig.jpg",
+      "definition": "720p",
+      "format": "mp4",
+      "downloadAddr": "https://v19-webapp.tiktok.com/example-video.mp4",
+      "transcriptionLink": null,
+      "aiVideoDescription": null,
+      "aiVideoSummary": null
+     }
+    },
+    "locationMeta": {
+     "type": "object",
+     "description": "Geographic location metadata if the video is geotagged",
+     "properties": {
+      "address": {
+       "type": "string",
+       "nullable": true
+      },
+      "city": {
+       "type": "string",
+       "nullable": true
+      },
+      "cityCode": {
+       "type": "string",
+       "nullable": true
+      },
+      "countryCode": {
+       "type": "string",
+       "nullable": true
+      },
+      "locationName": {
+       "type": "string",
+       "nullable": true
+      },
+      "locationId": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "nullable": true,
+     "example": {
+      "address": "New York",
+      "city": "New York",
+      "cityCode": "NYC",
+      "countryCode": "US",
+      "locationName": "New York, NY",
+      "locationId": "6342626"
+     }
+    },
+    "mediaUrls": {
+     "type": "array",
+     "description": "Array of media URLs associated with the video",
+     "items": {
+      "type": "string"
+     },
+     "nullable": true,
+     "example": [
+      "https://v19-webapp.tiktok.com/example-video.mp4"
+     ]
+    },
+    "slideshowImageLinks": {
+     "type": "array",
+     "description": "Image links for slideshow-style posts",
+     "items": {
+      "type": "object",
+      "properties": {
+       "tiktokLink": {
+        "type": "string",
+        "nullable": true
+       },
+       "downloadLink": {
+        "type": "string",
+        "nullable": true
+       }
+      },
+      "required": [],
+      "additionalProperties": true
+     },
+     "nullable": true,
+     "example": [
+      {
+       "tiktokLink": "https://p16-sign.tiktokcdn-us.com/example-slide1.jpg",
+       "downloadLink": "https://p16-sign.tiktokcdn-us.com/example-slide1-dl.jpg"
+      }
+     ]
+    },
+    "diggCount": {
+     "type": "number",
+     "description": "Number of likes (hearts) the video has received",
+     "nullable": true,
+     "example": 12500
+    },
+    "shareCount": {
+     "type": "number",
+     "description": "Number of times the video has been shared",
+     "nullable": true,
+     "example": 850
+    },
+    "playCount": {
+     "type": "number",
+     "description": "Number of times the video has been viewed",
+     "nullable": true,
+     "example": 125000
+    },
+    "commentCount": {
+     "type": "number",
+     "description": "Number of comments on the video",
+     "nullable": true,
+     "example": 340
+    },
+    "collectCount": {
+     "type": "number",
+     "description": "Number of times the video has been saved/bookmarked",
+     "nullable": true,
+     "example": 1200
+    },
+    "repostCount": {
+     "type": "number",
+     "description": "Number of times the video has been reposted",
+     "nullable": true,
+     "example": 75
+    },
+    "mentions": {
+     "type": "array",
+     "description": "Array of usernames mentioned in the video caption",
+     "items": {
+      "type": "string"
+     },
+     "nullable": true,
+     "example": [
+      "@examplefriend",
+      "@anotheruser"
+     ]
+    },
+    "detailedMentions": {
+     "type": "array",
+     "description": "Detailed information about users mentioned in the caption",
+     "items": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "string",
+        "nullable": true
+       },
+       "name": {
+        "type": "string",
+        "nullable": true
+       },
+       "nickName": {
+        "type": "string",
+        "nullable": true
+       },
+       "profileUrl": {
+        "type": "string",
+        "nullable": true
+       },
+       "postUrl": {
+        "type": "string",
+        "nullable": true
+       },
+       "secUid": {
+        "type": "string",
+        "nullable": true
+       }
+      },
+      "required": [],
+      "additionalProperties": true
+     },
+     "nullable": true,
+     "example": [
+      {
+       "id": "6784642169778881542",
+       "name": "examplefriend",
+       "nickName": "Example Friend",
+       "profileUrl": "https://www.tiktok.com/@examplefriend"
+      }
+     ]
+    },
+    "hashtags": {
+     "type": "array",
+     "description": "Array of hashtags used in the video caption",
+     "items": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": "string",
+        "nullable": true
+       },
+       "name": {
+        "type": "string",
+        "nullable": true
+       },
+       "title": {
+        "type": "string",
+        "nullable": true
+       },
+       "cover": {
+        "type": "string",
+        "nullable": true
+       }
+      },
+      "required": [],
+      "additionalProperties": true
+     },
+     "nullable": true,
+     "example": [
+      {
+       "id": "4747",
+       "name": "fyp",
+       "title": "For You",
+       "cover": ""
+      },
+      {
+       "id": "496813",
+       "name": "dance",
+       "title": "Dance",
+       "cover": ""
+      }
+     ]
+    },
+    "effectStickers": {
+     "type": "array",
+     "description": "Visual effects and stickers applied to the video",
+     "items": {
+      "type": "object",
+      "properties": {
+       "ID": {
+        "type": "string",
+        "nullable": true
+       },
+       "name": {
+        "type": "string",
+        "nullable": true
+       },
+       "stickerStats": {
+        "type": "object",
+        "properties": {
+         "useCount": {
+          "type": "number",
+          "nullable": true
+         }
+        },
+        "required": [],
+        "additionalProperties": true,
+        "nullable": true
+       }
+      },
+      "required": [],
+      "additionalProperties": true
+     },
+     "nullable": true,
+     "example": [
+      {
+       "ID": "123456",
+       "name": "Sparkle Effect",
+       "stickerStats": {
+        "useCount": 50000
+       }
+      }
+     ]
+    },
+    "isSlideshow": {
+     "type": "boolean",
+     "description": "Whether the post is a slideshow of images rather than a video",
+     "nullable": true,
+     "example": false
+    },
+    "isPinned": {
+     "type": "boolean",
+     "description": "Whether the video is pinned to the author's profile",
+     "nullable": true,
+     "example": false
+    },
+    "isSponsored": {
+     "type": "boolean",
+     "description": "Whether the video contains sponsored content",
+     "nullable": true,
+     "example": false
+    },
+    "hasTikTokShopProduct": {
+     "type": "boolean",
+     "description": "Whether the video has a TikTok Shop product attached. Only meaningful when present: an omitted value means we could not determine it, not that the video has no product. Search results are the case where TikTok often does not expose the signal.",
+     "nullable": true,
+     "example": false
+    },
+    "commentsDatasetUrl": {
+     "type": "string",
+     "description": "URL to the dataset containing comments for this video, if collected separately",
+     "nullable": true,
+     "example": null
+    },
+    "input": {
+     "type": "string",
+     "description": "Original input value used to find this video",
+     "nullable": true,
+     "example": "https://www.tiktok.com/@exampleuser/video/7234567890123456789"
+    },
+    "url": {
+     "type": "string",
+     "description": "URL associated with an error result",
+     "nullable": true,
+     "example": "https://www.tiktok.com/@missinguser"
+    },
+    "error": {
+     "type": "string",
+     "description": "Error message if the item could not be scraped",
+     "nullable": true,
+     "example": "Profile not found"
+    },
+    "errorCode": {
+     "type": "string",
+     "description": "Machine-readable error code",
+     "nullable": true,
+     "example": "NOT_FOUND"
+    },
+    "invalidUrls": {
+     "type": "array",
+     "description": "List of invalid URLs that could not be processed",
+     "items": {},
+     "nullable": true,
+     "example": [
+      "https://invalid-url-example.com"
+     ]
+    },
+    "submittedVideoUrl": {
+     "type": "string",
+     "description": "Original video URL from the input, useful for mapping results back to inputs",
+     "nullable": true,
+     "example": "https://www.tiktok.com/@exampleuser/video/7234567890123456789"
+    },
+    "fromProfileSection": {
+     "type": "string",
+     "description": "Profile section this video was scraped from",
+     "enum": [
+      "videos",
+      "reposts",
+      "stories"
+     ],
+     "nullable": true,
+     "example": "videos"
+    },
+    "isStory": {
+     "type": "boolean",
+     "description": "Whether this item was scraped as a profile's active TikTok Story, rather than a regular post",
+     "nullable": true,
+     "example": false
+    },
+    "searchQuery": {
+     "type": "string",
+     "description": "Search query used to find this video",
+     "nullable": true,
+     "example": "funny cats"
+    },
+    "searchHashtag": {
+     "type": "object",
+     "description": "Hashtag used to find this video",
+     "properties": {
+      "name": {
+       "type": "string",
+       "nullable": true
+      },
+      "views": {
+       "type": "number",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "nullable": true,
+     "example": {
+      "name": "fyp",
+      "views": 5000000000
+     }
+    },
+    "searchMusic": {
+     "type": "object",
+     "description": "Music used to find this video",
+     "properties": {
+      "musicTag": {
+       "type": "string",
+       "nullable": true
+      },
+      "videos": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "nullable": true,
+     "example": {
+      "musicTag": "example-sound",
+      "videos": "1200000"
+     }
+    }
+   },
+   "required": [],
+   "additionalProperties": true,
+   "$schema": "http://json-schema.org/draft-07/schema#"
+  },
+  "views": {
+   "overview": {
+    "title": "Overview 🔎",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "authorMeta.avatar",
+      "authorMeta.name",
+      "text",
+      "diggCount",
+      "shareCount",
+      "playCount",
+      "commentCount",
+      "videoMeta.duration",
+      "musicMeta.musicName",
+      "musicMeta.musicAuthor",
+      "musicMeta.musicOriginal",
+      "createTimeISO",
+      "webVideoUrl"
+     ],
+     "flatten": [
+      "authorMeta",
+      "musicMeta",
+      "videoMeta"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "text": {
+       "label": "Text"
+      },
+      "diggCount": {
+       "label": "Diggs",
+       "format": "number"
+      },
+      "shareCount": {
+       "label": "Shares",
+       "format": "number"
+      },
+      "playCount": {
+       "label": "Plays",
+       "format": "number"
+      },
+      "commentCount": {
+       "label": "Comments",
+       "format": "number"
+      },
+      "createTimeISO": {
+       "label": "Create Time",
+       "format": "date"
+      },
+      "webVideoUrl": {
+       "label": "Video url",
+       "format": "link"
+      },
+      "videoMeta.duration": {
+       "label": "Duration (seconds)",
+       "format": "number"
+      },
+      "authorMeta.name": {
+       "label": "Author"
+      },
+      "authorMeta.avatar": {
+       "label": "Author's Avatar",
+       "format": "image"
+      },
+      "authorMeta.fans": {
+       "label": "Followers",
+       "format": "number"
+      },
+      "authorMeta.video": {
+       "label": "Author's videos",
+       "format": "number"
+      },
+      "musicMeta.musicName": {
+       "label": "Music"
+      },
+      "musicMeta.musicAuthor": {
+       "label": "Music author"
+      },
+      "musicMeta.musicOriginal": {
+       "label": "Music original?"
+      }
+     }
+    }
+   },
+   "posts": {
+    "title": "Posts ✉️",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "videoMeta.coverUrl",
+      "text",
+      "diggCount",
+      "shareCount",
+      "playCount",
+      "commentCount",
+      "videoMeta.duration",
+      "locationCreated",
+      "isAd",
+      "isMuted",
+      "hashtags",
+      "authorMeta.name",
+      "webVideoUrl",
+      "createTimeISO"
+     ],
+     "flatten": [
+      "authorMeta",
+      "videoMeta"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "videoMeta.coverUrl": {
+       "label": "Cover",
+       "format": "image"
+      },
+      "text": {
+       "label": "Text"
+      },
+      "diggCount": {
+       "label": "Diggs",
+       "format": "number"
+      },
+      "shareCount": {
+       "label": "Shares",
+       "format": "number"
+      },
+      "playCount": {
+       "label": "Plays",
+       "format": "number"
+      },
+      "commentCount": {
+       "label": "Comments",
+       "format": "number"
+      },
+      "createTimeISO": {
+       "label": "Create Time",
+       "format": "date"
+      },
+      "webVideoUrl": {
+       "label": "Video url",
+       "format": "link"
+      },
+      "videoMeta.duration": {
+       "label": "Duration (seconds)",
+       "format": "number"
+      },
+      "authorMeta.name": {
+       "label": "Author"
+      },
+      "authorMeta.avatar": {
+       "label": "Author's Avatar",
+       "format": "image"
+      },
+      "authorMeta.fans": {
+       "label": "Followers",
+       "format": "number"
+      },
+      "authorMeta.video": {
+       "label": "Author's videos",
+       "format": "number"
+      }
+     }
+    }
+   },
+   "author": {
+    "title": "Authors 🧑‍🎤",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "authorMeta.avatar",
+      "authorMeta.name",
+      "authorMeta.nickName",
+      "authorMeta.verified",
+      "authorMeta.signature",
+      "authorMeta.fans",
+      "authorMeta.video",
+      "authorMeta.privateAccount",
+      "authorMeta.ttSeller",
+      "authorMeta.bioLink",
+      "authorMeta.id",
+      "text"
+     ],
+     "flatten": [
+      "authorMeta"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "authorMeta.avatar": {
+       "label": "Avatar",
+       "format": "image"
+      },
+      "authorMeta.name": {
+       "label": "Name"
+      },
+      "authorMeta.nickName": {
+       "label": "Nickname"
+      },
+      "authorMeta.verified": {
+       "label": "Verified?"
+      },
+      "authorMeta.signature": {
+       "label": "Signature"
+      },
+      "authorMeta.privateAccount": {
+       "label": "Private account?"
+      },
+      "authorMeta.ttSeller": {
+       "label": "TikTok seller?"
+      },
+      "authorMeta.roomId": {
+       "label": "Room Id"
+      },
+      "authorMeta.bioLink": {
+       "label": "Bio link"
+      },
+      "authorMeta.fans": {
+       "label": "Author Fans"
+      },
+      "authorMeta.video": {
+       "label": "Author videos"
+      },
+      "authorMeta.id": {
+       "label": "Author ID"
+      },
+      "text": {
+       "label": "Text"
+      }
+     }
+    }
+   },
+   "music": {
+    "title": "Music 🎶",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "musicMeta.coverMediumUrl",
+      "musicMeta.musicName",
+      "musicMeta.musicAuthor",
+      "musicMeta.musicOriginal",
+      "musicMeta.musicAlbum",
+      "musicMeta.playUrl",
+      "musicMeta.musicId",
+      "text"
+     ],
+     "flatten": [
+      "musicMeta"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "musicMeta.musicName": {
+       "label": "Music name"
+      },
+      "musicMeta.musicAuthor": {
+       "label": "Music author"
+      },
+      "musicMeta.musicOriginal": {
+       "label": "Music original"
+      },
+      "musicMeta.musicAlbum": {
+       "label": "Music album"
+      },
+      "musicMeta.playUrl": {
+       "label": "Play URL"
+      },
+      "musicMeta.coverMediumUrl": {
+       "label": "Cover URL",
+       "format": "image"
+      },
+      "musicMeta.musicId": {
+       "label": "Music ID"
+      },
+      "text": {
+       "label": "Text"
+      }
+     }
+    }
+   },
+   "video": {
+    "title": "Video 🎞️",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "videoMeta.coverUrl",
+      "videoMeta.duration",
+      "videoMeta.definition",
+      "videoMeta.format",
+      "videoMeta.height",
+      "videoMeta.width",
+      "videoMeta.originalDownloadAddr",
+      "videoMeta.downloadAddr",
+      "text"
+     ],
+     "flatten": [
+      "videoMeta"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "videoMeta.height": {
+       "label": "Height"
+      },
+      "videoMeta.width": {
+       "label": "Width"
+      },
+      "videoMeta.duration": {
+       "label": "Duration (seconds)"
+      },
+      "videoMeta.coverUrl": {
+       "label": "Cover URL",
+       "format": "image"
+      },
+      "videoMeta.originalCoverUrl": {
+       "label": "Original Cover URL",
+       "format": "image"
+      },
+      "videoMeta.definition": {
+       "label": "Definition"
+      },
+      "videoMeta.format": {
+       "label": "Format"
+      },
+      "videoMeta.originalDownloadAddr": {
+       "label": "Original Download"
+      },
+      "videoMeta.downloadAddr": {
+       "label": "Download"
+      },
+      "text": {
+       "label": "Text"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Input schema for TikTok scraper\",\n  \"description\": \"Choose your starting point: hashtags #️⃣, profiles 😎, search results 🔍 or specific tiktoks 🔗. To try the scraper, just add a hashtag, then indicate how many tiktoks you want extracted in the <strong>💯 Number of videos</strong> and hit the <strong>▷ Start</strong> button. Here’s a <a href='https://blog.apify.com/how-to-scrape-tiktok-tutorial/' target='_blank' rel='noopener'>tutorial to help</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"hashtags\": {\n      \"title\": \"#️⃣ Videos with this hashtag\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Just add one or more TikTok hashtags and the scraper will collect data about videos containing this hashtag: likes, users, followers and more. <br> You can enter the hashtags one by one, or use the <strong>Bulk edit</strong> section to add a prepared list.\",\n      \"prefill\": [\n        \"fyp\"\n      ]\n    },\n    \"resultsPerPage\": {\n      \"title\": \"💯 Number of videos per hashtag, profile or search\",\n      \"type\": \"integer\",\n      \"unit\": \"videos\",\n      \"description\": \"Add the number of tiktoks you want to scrape per hashtag, profile, or search query. This field is applicable to <strong>#️⃣ Hashtags</strong>, <strong>😎 Profiles</strong>, and <strong>🔍 Search</strong>.\",\n      \"minimum\": 1,\n      \"default\": 1,\n      \"prefill\": 100,\n      \"maximum\": 1000000\n    },\n    \"profiles\": {\n      \"title\": \"Usernames\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Add one or multiple TikTok usernames or user IDs you want to scrape. You can enter the usernames one by one, or use the <strong>Bulk edit</strong> section to add a prepared list.\",\n      \"sectionCaption\": \"😎 TikTok profiles data\",\n      \"sectionDescription\": \"Alternatively, add one or multiple TikTok usernames whose videos and profile data you want to scrape. Don't forget to fill out the <strong> 💯 Number of videos </strong> you want to scrape in the section above.\"\n    },\n    \"profileScrapeSections\": {\n      \"title\": \"Profile sections to scrape\",\n      \"description\": \"If a profile has reposted videos, you can scrape them by selecting 'Reposts'. If a profile currently has an active story, you can scrape it by selecting 'Stories'\",\n      \"type\": \"array\",\n      \"editor\": \"select\",\n      \"minItems\": 1,\n      \"uniqueItems\": true,\n      \"default\": [\n        \"videos\"\n      ],\n      \"items\": {\n        \"type\": \"string\",\n        \"enum\": [\n          \"videos\",\n          \"reposts\",\n          \"stories\"\n        ],\n        \"enumTitles\": [\n          \"Videos\",\n          \"Reposts\",\n          \"Stories\"\n        ]\n      }\n    },\n    \"profileSorting\": {\n      \"title\": \"Profile video sorting\",\n      \"description\": \"Select Latest to scrape the most recent videos first, Oldest - the oldest videos first, Popular - the most popular videos first. Date filters only work with Latest and Oldest. Only supported for Videos section. Note: Popular sorting is limited by TikTok to approximately 400–500 videos per profile and may return significantly fewer results than Latest or Oldest.\",\n      \"type\": \"string\",\n      \"editor\": \"select\",\n      \"default\": \"latest\",\n      \"enum\": [\n        \"latest\",\n        \"popular\",\n        \"oldest\"\n      ],\n      \"enumTitles\": [\n        \"Latest\",\n        \"Popular\",\n        \"Oldest\"\n      ]\n    },\n    \"excludePinnedPosts\": {\n      \"title\": \"Exclude pinned posts\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Tick to exclude pinned posts from profiles. Pinned posts are usually the first videos on a profile's page.\",\n      \"editor\": \"checkbox\"\n    },\n    \"oldestPostDateUnified\": {\n      \"title\": \"📅 Date filter - scrape profile videos published after [date] ($)\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"description\": \"Optional charged filter. Only videos uploaded after or on this date will be scraped. Alternatively, specify how old the scraped videos should be in days. Putting <code>1</code> will get you only today's posts, <code>2</code> - yesterday's and today's, and so on.\"\n    },\n    \"newestPostDate\": {\n      \"title\": \"📅 Date filter - scrape profile videos published before [date] ($)\",\n      \"type\": \"string\",\n      \"editor\": \"datepicker\",\n      \"description\": \"Optional charged filter. Only videos uploaded before or on this date will be scraped.\"\n    },\n    \"mostDiggs\": {\n      \"title\": \"⭐ Popularity filter - scrape videos with number of hearts < [number] ($)\",\n      \"type\": \"integer\",\n      \"unit\": \"hearts\",\n      \"description\": \"Optional charged filter. Scrapes only videos with less hearts than the number you add. Doesn't work with date filters\",\n      \"minimum\": 1\n    },\n    \"leastDiggs\": {\n      \"title\": \"⭐ Popularity filter - scrape videos with number of hearts ≥ [number] ($)\",\n      \"type\": \"integer\",\n      \"unit\": \"hearts\",\n      \"description\": \"Optional charged filter. Scrapes only videos with no less hearts than the number you add. Doesn't work with date filters\",\n      \"minimum\": 1\n    },\n    \"maxFollowersPerProfile\": {\n      \"title\": \"🗂️ Maximum number of followers profiles ($)\",\n      \"type\": \"integer\",\n      \"unit\": \"followers\",\n      \"description\": \"Scrapes number of 'Followers' profiles requested from the inputted profiles. You can find the link to the dataset under the followDatasetUrl field in the output. If you want to scrape only Followers/Following profiles, go to our TikTok Followers Scraper.\",\n      \"minimum\": 0,\n      \"prefill\": 0\n    },\n    \"maxFollowingPerProfile\": {\n      \"title\": \"🗂️ Maximum number of following profiles ($)\",\n      \"type\": \"integer\",\n      \"unit\": \"following profiles\",\n      \"description\": \"Scrapes number of 'Following' profiles requested from the inputted profiles. You can find the link to the dataset under the followDatasetUrl field in the output. If you want to scrape only Followers/Following profiles, go to our TikTok Followers Scraper.\",\n      \"minimum\": 0,\n      \"prefill\": 0\n    },\n    \"searchQueries\": {\n      \"sectionCaption\": \"🔍 Search\",\n      \"title\": \"Search queries\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Your keyword will apply to both videos <strong>and</strong> profiles. Use the <strong>Search sorting</strong> field below to specify whether you want your search to apply to top content, videos or users. <br> As for your query's format, you can use any query that works on TikTok.\",\n      \"sectionDescription\": \"Alternatively, add a keyword and the scraper will extract all tiktoks and profiles that contain it. Don't forget to fill out the <strong> 💯 Number of videos </strong> you want to scrape in the section above.\"\n    },\n    \"searchSection\": {\n      \"title\": \"Top/Video/Profile section\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"\",\n        \"/video\",\n        \"/user\"\n      ],\n      \"enumTitles\": [\n        \"Top\",\n        \"Video\",\n        \"Profile\"\n      ],\n      \"default\": \"\",\n      \"description\": \"By default, this scraper will sort the search results by whatever shows up in the <strong>Top</strong> section of TikTok search. <br> But you can narrow it down: if you want to apply your search query to just videos, use <strong>Video</strong>, just profiles - <strong>Profile</strong>.\"\n    },\n    \"maxProfilesPerQuery\": {\n      \"title\": \"Number of profiles per query\",\n      \"type\": \"integer\",\n      \"unit\": \"profiles\",\n      \"description\": \"Only applies to profile searches. In this case ignore the <strong> 💯 Number of videos </strong> section and choose the number of profiles you want to scrape here.\",\n      \"minimum\": 1,\n      \"default\": 10\n    },\n    \"videoSearchSorting\": {\n      \"title\": \"🎯 Video search sorting ($)\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"MOST_RELEVANT\",\n        \"MOST_LIKED\",\n        \"LATEST\"\n      ],\n      \"enumTitles\": [\n        \"Most relevant\",\n        \"Most liked\",\n        \"Latest\"\n      ],\n      \"default\": \"MOST_RELEVANT\",\n      \"description\": \"Optional charged filter. Select how you want the search results to be sorted when searching for videos. Only valid with `/video` search section.\"\n    },\n    \"videoSearchDateFilter\": {\n      \"title\": \"📅 Video search date filter ($)\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"ALL_TIME\",\n        \"PAST_24_HOURS\",\n        \"PAST_WEEK\",\n        \"PAST_MONTH\",\n        \"LAST_3_MONTHS\",\n        \"LAST_6_MONTHS\"\n      ],\n      \"enumTitles\": [\n        \"All time\",\n        \"Past 24 hours\",\n        \"Past week\",\n        \"Past month\",\n        \"Last 3 months\",\n        \"Last 6 months\"\n      ],\n      \"default\": \"ALL_TIME\",\n      \"description\": \"Optional charged filter. Select a date range in which to search for videos. Only valid with `/video` search section.\"\n    },\n    \"postURLs\": {\n      \"sectionCaption\": \"🔗 Video URLs\",\n      \"title\": \"Direct URLs for scraping specific tiktoks\",\n      \"type\": \"array\",\n      \"editor\": \"stringList\",\n      \"description\": \"Add the URLs of tiktok videos you want to scrape. You can paste video URLs one by one, or use the <strong>Bulk edit</strong> section to add a prepared list.\"\n    },\n    \"scrapeRelatedVideos\": {\n      \"title\": \"Scrape related videos\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Tick to scrape related videos for the post URLs you provide.\\n- The maximum number of scraped related videos is set by the `resultsPerPage` count.\\n- Note that this only works for direct video URLs from the `postURLs` field.\",\n      \"editor\": \"checkbox\"\n    },\n    \"shouldDownloadVideos\": {\n      \"sectionCaption\": \"📹 Download TikTok videos\",\n      \"sectionDescription\": \"You can download scraped TikTok videos to your storage. Links to the downloaded videos will be stored in the dataset (field <code>mediaUrls</code>). Unlike TikTok CDN URLs, they won't expire after scraping has finished. <br> You can also find all downloaded files in the <strong>📦 Storage sidebar → Key-value stores tab</strong>.\",\n      \"title\": \"⬇️ Add-on: video download ($)\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"This is a charged add-on. Tick to download TikTok videos.\",\n      \"editor\": \"checkbox\"\n    },\n    \"shouldDownloadCovers\": {\n      \"title\": \"Include thumbnails\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Tick to download TikTok video cover images (thumbnails).\",\n      \"editor\": \"checkbox\"\n    },\n    \"shouldDownloadSlideshowImages\": {\n      \"title\": \"Download slideshow images\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Tick to download TikTok slideshow images.\",\n      \"editor\": \"checkbox\"\n    },\n    \"shouldDownloadAvatars\": {\n      \"title\": \"Include profile avatars\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Tick to download authors' profile pictures.\",\n      \"editor\": \"checkbox\"\n    },\n    \"shouldDownloadMusicCovers\": {\n      \"title\": \"Include sound covers\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Tick to download cover images of sounds used in posts.\",\n      \"editor\": \"checkbox\"\n    },\n    \"videoKvStoreIdOrName\": {\n      \"title\": \"✍️ Name your storage for videos. Unnamed key-value stores will be deleted after 7 days (or longer on paid plans)\",\n      \"type\": \"string\",\n      \"resourceType\": \"keyValueStore\",\n      \"resourcePermissions\": [\n        \"READ\",\n        \"WRITE\"\n      ],\n      \"description\": \"Name (or ID) of the Key Value Store where the videos and other media like thumbnails will be stored. Omit to store in the default one. Using this option will provide a named Key-Value store can help bypass data retention and store the content forever until the store is manually deleted.<br><br>The Key-Value store's name can consist of a versatile combination of uppercase letters, lowercase letters, digits, or hyphens, all without any spaces.\",\n      \"editor\": \"textfield\",\n      \"pattern\": \"^[a-zA-Z0-9-]+$\"\n    },\n    \"downloadSubtitlesOptions\": {\n      \"title\": \"Subtitles & Transcription\",\n      \"type\": \"string\",\n      \"default\": \"NEVER_DOWNLOAD_SUBTITLES\",\n      \"description\": \"Choose how to handle subtitles and audio transcription for input videos. Subtitles are provided by TikTok for some videos, and transcription means that this Actor will use speech-to-text AI to generate video transcript. Transcripts are charged as an extra event according to your plan.\",\n      \"sectionCaption\": \"📝 Download TikTok subtitles or transcription ($)\",\n      \"sectionDescription\": \"Choose how to handle subtitles and audio transcription for the input videos.\",\n      \"editor\": \"select\",\n      \"enum\": [\n        \"NEVER_DOWNLOAD_SUBTITLES\",\n        \"DOWNLOAD_SUBTITLES\",\n        \"DOWNLOAD_AND_TRANSCRIBE_VIDEOS_WITHOUT_SUBTITLES\",\n        \"TRANSCRIBE_ALL_VIDEOS\"\n      ],\n      \"enumTitles\": [\n        \"Don't download subtitles\",\n        \"Download subtitles (only when present on the video)\",\n        \"Download subtitles + transcribe videos without subtitles (using speech-to-text models) ($)\",\n        \"Transcribe all videos (using speech-to-text models) ($)\"\n      ]\n    },\n    \"aiVideoDescription\": {\n      \"title\": \"AI video description\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Use AI to generate a time-segmented description of each video (what is seen and heard, per scene). Provided inline under `videoMeta.aiVideoDescription`. Charged per video-second, only when the description is produced successfully.\",\n      \"sectionCaption\": \"🤖 AI video analysis ($)\",\n      \"sectionDescription\": \"Enrich videos with an AI-generated description and/or summary. Charged per video-second, per feature, only on success.\",\n      \"editor\": \"checkbox\"\n    },\n    \"aiVideoSummary\": {\n      \"title\": \"AI video summary\",\n      \"type\": \"boolean\",\n      \"default\": false,\n      \"description\": \"Use AI to generate a high-level summary of each video as a piece of content. Provided inline under `videoMeta.aiVideoSummary`. Charged per video-second, only when the summary is produced successfully.\",\n      \"editor\": \"checkbox\"\n    },\n    \"commentsPerPost\": {\n      \"sectionCaption\": \"💬 TikTok comments ($)\",\n      \"sectionDescription\": \"Scrape comments from the videos requested. The link to the dataset will be under a field commentsDatasetURL in the output.\",\n      \"title\": \"Maximum comments per post\",\n      \"type\": \"integer\",\n      \"unit\": \"comments\",\n      \"description\": \"The number of comments extracted from every result. Due to TikTok API limitations, the actual number of scraped comments may differ, especially for posts with thousands of comments. The link to the dataset will be under a field commentsDatasetURL in the output.\",\n      \"minimum\": 0,\n      \"prefill\": 0\n    },\n    \"topLevelCommentsPerPost\": {\n      \"title\": \"Maximum top-level comments per post\",\n      \"type\": \"integer\",\n      \"unit\": \"comments\",\n      \"description\": \"The maximum number of top-level (non-reply) comments you want from a single post.\",\n      \"minimum\": 0,\n      \"prefill\": 0\n    },\n    \"maxRepliesPerComment\": {\n      \"title\": \"Maximum replies per comment\",\n      \"description\": \"The maximum number of replies you want from a single comment. \\n\\nNote: Successful extraction of all desired replies is currently not guaranteed.\",\n      \"type\": \"integer\",\n      \"prefill\": 0,\n      \"minimum\": 0,\n      \"unit\": \"replies\"\n    },\n    \"proxyCountryCode\": {\n      \"sectionCaption\": \"🌐 Scrape as in a country filter ($)\",\n      \"sectionDescription\": \"This is an additional charged filter. By selecting a proxy country, the Actor will use residential proxy group to get country-specific data. Note that using proxies might slow down your runs.\",\n      \"title\": \"Proxy country\",\n      \"type\": \"string\",\n      \"description\": \"Country to use with proxy. Use it in case you want to scrape posts only available for some country.\",\n      \"editor\": \"select\",\n      \"default\": \"None\",\n      \"prefill\": \"None\",\n      \"enum\": [\n        \"None\",\n        \"AF\",\n        \"AL\",\n        \"DZ\",\n        \"AS\",\n        \"AD\",\n        \"AO\",\n        \"AI\",\n        \"AG\",\n        \"AR\",\n        \"AM\",\n        \"AU\",\n        \"AT\",\n        \"AZ\",\n        \"BS\",\n        \"BH\",\n        \"BB\",\n        \"BY\",\n        \"BE\",\n        \"BZ\",\n        \"BJ\",\n        \"BM\",\n        \"BT\",\n        \"BO\",\n        \"BA\",\n        \"BW\",\n        \"BR\",\n        \"VG\",\n        \"BN\",\n        \"BG\",\n        \"BF\",\n        \"BI\",\n        \"KH\",\n        \"CM\",\n        \"CA\",\n        \"CV\",\n        \"KY\",\n        \"TD\",\n        \"CL\",\n        \"CO\",\n        \"CK\",\n        \"CR\",\n        \"HR\",\n        \"CY\",\n        \"CZ\",\n        \"CD\",\n        \"DK\",\n        \"DJ\",\n        \"DO\",\n        \"EC\",\n        \"EG\",\n        \"SV\",\n        \"EE\",\n        \"ET\",\n        \"FK\",\n        \"FJ\",\n        \"FI\",\n        \"FR\",\n        \"PF\",\n        \"GA\",\n        \"GE\",\n        \"DE\",\n        \"GH\",\n        \"GI\",\n        \"GR\",\n        \"GL\",\n        \"GD\",\n        \"GP\",\n        \"GT\",\n        \"GN\",\n        \"GW\",\n        \"GY\",\n        \"HN\",\n        \"HU\",\n        \"IS\",\n        \"ID\",\n        \"IQ\",\n        \"IE\",\n        \"IM\",\n        \"IL\",\n        \"IT\",\n        \"CI\",\n        \"JM\",\n        \"JP\",\n        \"JE\",\n        \"KZ\",\n        \"KE\",\n        \"XK\",\n        \"KW\",\n        \"LA\",\n        \"LV\",\n        \"LB\",\n        \"LS\",\n        \"LR\",\n        \"LY\",\n        \"LT\",\n        \"LU\",\n        \"MO\",\n        \"MG\",\n        \"MW\",\n        \"MY\",\n        \"MV\",\n        \"ML\",\n        \"MT\",\n        \"MH\",\n        \"MQ\",\n        \"MR\",\n        \"MU\",\n        \"MX\",\n        \"MD\",\n        \"MC\",\n        \"MN\",\n        \"ME\",\n        \"MA\",\n        \"MZ\",\n        \"MM\",\n        \"NA\",\n        \"NR\",\n        \"NP\",\n        \"NL\",\n        \"NZ\",\n        \"NI\",\n        \"NG\",\n        \"MK\",\n        \"NO\",\n        \"OM\",\n        \"PS\",\n        \"PA\",\n        \"PG\",\n        \"PY\",\n        \"PE\",\n        \"PH\",\n        \"PL\",\n        \"PT\",\n        \"PR\",\n        \"QA\",\n        \"CG\",\n        \"RO\",\n        \"RU\",\n        \"RW\",\n        \"RE\",\n        \"KN\",\n        \"LC\",\n        \"MF\",\n        \"PM\",\n        \"VC\",\n        \"SM\",\n        \"SA\",\n        \"SN\",\n        \"RS\",\n        \"SL\",\n        \"SG\",\n        \"SX\",\n        \"SK\",\n        \"SB\",\n        \"SO\",\n        \"ZA\",\n        \"KR\",\n        \"ES\",\n        \"LK\",\n        \"SR\",\n        \"SZ\",\n        \"SE\",\n        \"CH\",\n        \"TW\",\n        \"TJ\",\n        \"TZ\",\n        \"TH\",\n        \"TG\",\n        \"TO\",\n        \"TT\",\n        \"TN\",\n        \"TR\",\n        \"TC\",\n        \"TV\",\n        \"VI\",\n        \"UG\",\n        \"UA\",\n        \"AE\",\n        \"GB\",\n        \"US\",\n        \"UY\",\n        \"VE\",\n        \"VN\",\n        \"WF\",\n        \"YE\",\n        \"ZM\",\n        \"ZW\",\n        \"AX\"\n      ],\n      \"enumTitles\": [\n        \"None\",\n        \"Afghanistan\",\n        \"Albania\",\n        \"Algeria\",\n        \"American Samoa\",\n        \"Andorra\",\n        \"Angola\",\n        \"Anguilla\",\n        \"Antigua and Barbuda\",\n        \"Argentina\",\n        \"Armenia\",\n        \"Australia\",\n        \"Austria\",\n        \"Azerbaijan\",\n        \"Bahamas\",\n        \"Bahrain\",\n        \"Barbados\",\n        \"Belarus\",\n        \"Belgium\",\n        \"Belize\",\n        \"Benin\",\n        \"Bermuda\",\n        \"Bhutan\",\n        \"Bolivia\",\n        \"Bosnia and Herzegovina\",\n        \"Botswana\",\n        \"Brazil\",\n        \"British Virgin Islands\",\n        \"Brunei\",\n        \"Bulgaria\",\n        \"Burkina Faso\",\n        \"Burundi\",\n        \"Cambodia\",\n        \"Cameroon\",\n        \"Canada\",\n        \"Cape Verde\",\n        \"Cayman Islands\",\n        \"Chad\",\n        \"Chile\",\n        \"Colombia\",\n        \"Cook Islands\",\n        \"Costa Rica\",\n        \"Croatia\",\n        \"Cyprus\",\n        \"Czech Republic\",\n        \"Democratic Republic of the Congo\",\n        \"Denmark\",\n        \"Djibouti\",\n        \"Dominican Republic\",\n        \"Ecuador\",\n        \"Egypt\",\n        \"El Salvador\",\n        \"Estonia\",\n        \"Ethiopia\",\n        \"Falkland Islands\",\n        \"Fiji\",\n        \"Finland\",\n        \"France\",\n        \"French Polynesia\",\n        \"Gabon\",\n        \"Georgia\",\n        \"Germany\",\n        \"Ghana\",\n        \"Gibraltar\",\n        \"Greece\",\n        \"Greenland\",\n        \"Grenada\",\n        \"Guadeloupe\",\n        \"Guatemala\",\n        \"Guinea\",\n        \"Guinea-Bissau\",\n        \"Guyana\",\n        \"Honduras\",\n        \"Hungary\",\n        \"Iceland\",\n        \"Indonesia\",\n        \"Iraq\",\n        \"Ireland\",\n        \"Isle of Man\",\n        \"Israel\",\n        \"Italy\",\n        \"Ivory Coast\",\n        \"Jamaica\",\n        \"Japan\",\n        \"Jersey\",\n        \"Kazakhstan\",\n        \"Kenya\",\n        \"Kosovo\",\n        \"Kuwait\",\n        \"Laos\",\n        \"Latvia\",\n        \"Lebanon\",\n        \"Lesotho\",\n        \"Liberia\",\n        \"Libya\",\n        \"Lithuania\",\n        \"Luxembourg\",\n        \"Macao\",\n        \"Madagascar\",\n        \"Malawi\",\n        \"Malaysia\",\n        \"Maldives\",\n        \"Mali\",\n        \"Malta\",\n        \"Marshall Islands\",\n        \"Martinique\",\n        \"Mauritania\",\n        \"Mauritius\",\n        \"Mexico\",\n        \"Moldova\",\n        \"Monaco\",\n        \"Mongolia\",\n        \"Montenegro\",\n        \"Morocco\",\n        \"Mozambique\",\n        \"Myanmar [Burma]\",\n        \"Namibia\",\n        \"Nauru\",\n        \"Nepal\",\n        \"Netherlands\",\n        \"New Zealand\",\n        \"Nicaragua\",\n        \"Nigeria\",\n        \"North Macedonia\",\n        \"Norway\",\n        \"Oman\",\n        \"Palestine\",\n        \"Panama\",\n        \"Papua New Guinea\",\n        \"Paraguay\",\n        \"Peru\",\n        \"Philippines\",\n        \"Poland\",\n        \"Portugal\",\n        \"Puerto Rico\",\n        \"Qatar\",\n        \"Republic of the Congo\",\n        \"Romania\",\n        \"Russia\",\n        \"Rwanda\",\n        \"Réunion\",\n        \"Saint Kitts and Nevis\",\n        \"Saint Lucia\",\n        \"Saint Martin\",\n        \"Saint Pierre and Miquelon\",\n        \"Saint Vincent and the Grenadines\",\n        \"San Marino\",\n        \"Saudi Arabia\",\n        \"Senegal\",\n        \"Serbia\",\n        \"Sierra Leone\",\n        \"Singapore\",\n        \"Sint Maarten\",\n        \"Slovakia\",\n        \"Solomon Islands\",\n        \"Somalia\",\n        \"South Africa\",\n        \"South Korea\",\n        \"Spain\",\n        \"Sri Lanka\",\n        \"Suriname\",\n        \"Swaziland\",\n        \"Sweden\",\n        \"Switzerland\",\n        \"Taiwan\",\n        \"Tajikistan\",\n        \"Tanzania\",\n        \"Thailand\",\n        \"Togo\",\n        \"Tonga\",\n        \"Trinidad and Tobago\",\n        \"Tunisia\",\n        \"Turkey\",\n        \"Turks and Caicos Islands\",\n        \"Tuvalu\",\n        \"U.S. Virgin Islands\",\n        \"Uganda\",\n        \"Ukraine\",\n        \"United Arab Emirates\",\n        \"United Kingdom\",\n        \"United States\",\n        \"Uruguay\",\n        \"Venezuela\",\n        \"Vietnam\",\n        \"Wallis and Futuna\",\n        \"Yemen\",\n        \"Zambia\",\n        \"Zimbabwe\",\n        \"Åland\"\n      ]\n    }\n  },\n  \"required\": []\n}"
+}

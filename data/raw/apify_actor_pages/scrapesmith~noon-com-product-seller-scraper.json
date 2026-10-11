@@ -1,0 +1,151 @@
+{
+ "act": {
+  "title": "Noon.com Product & Seller Scraper",
+  "users30d": 11,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Noon.com Product Scraper — Prices, Ratings & Sellers\n\nExtract live product data from **Noon.com**, the leading online marketplace across the UAE, Saudi Arabia, and Egypt. Search any keyword and get structured pricing, ratings, seller details, stock status, and discount information — ready for price monitoring, market research, or catalog analysis.\n\n## 🔀 Three ways to scrape\n\n1. 🔎 **Search mode** — pass one or more keywords (or Noon search URLs) and get every matching product with pricing, ratings, and seller info (automatic pagination).\n2. 📦 **Product-detail mode** — pass Noon product page URLs (or SKU codes) and get the complete product record: full specifications, stock, delivery estimates, return policy, seller, variants, and every discount. Runs at ~1,000 products per minute.\n3. 🏷️ **Seller-monitoring mode** — pass product SKUs and get **one row per seller** competing on each product: seller name, seller ID, rating, price, sale price, stock, delivery, discounts, and the Buy Box winner. Built for Buy Box and competitor-seller tracking.\n\n## ⚡ Why use this scraper\n\n- 🚀 **Fast, reliable results** — no browser rendering delays, no CAPTCHAs to solve\n- 💸 **Full pricing intelligence** — current price, sale price, discount codes and terms\n- 🔬 **Deep product detail** — specifications, stock, delivery estimate, return policy, warranty, variants\n- ⭐ **Ratings & reputation** — product rating, review count, seller rating\n- 🌍 **Multi-market coverage** — UAE, Saudi Arabia, and Egypt storefronts\n- 📈 **Bulk-friendly** — dozens of search queries or thousands of product URLs in a single job\n\n## 📥 Input\n\nSearch by keyword:\n\n```json\n{\n  \"searchQueries\": [\"iphone\", \"samsung galaxy\", \"laptop\"],\n  \"maxResults\": 100,\n  \"country\": \"uae-en\"\n}\n```\n\n…scrape specific products for full detail:\n\n```json\n{\n  \"productUrls\": [\n    \"https://www.noon.com/uae-en/.../N70211464V/p/\",\n    \"N48650886A\"\n  ],\n  \"country\": \"uae-en\"\n}\n```\n\n…or monitor every seller on a set of products:\n\n```json\n{\n  \"asins\": [\"N23157381A\", \"N48650886A\"],\n  \"noon_domain\": \"www.noon.com/uae-en\"\n}\n```\n\n| Field | Type | Default | Description |\n|---|---|---|---|\n| `searchQueries` | array of strings | — | Keywords to search on Noon.com, or pasted Noon search URLs |\n| `productUrls` | array of strings | — | Noon product page URLs or raw SKU codes → full product detail |\n| `asins` | array of strings | — | Product SKUs → one row per competing seller (Buy Box tracking) |\n| `noon_domain` | string | — | Optional Noon domain (e.g. `www.noon.com/saudi-en`); overrides Country |\n| `maxResults` | integer | 100 | Maximum products to return per search query |\n| `country` | enum | `uae-en` | Storefront: `uae-en`, `saudi-en`, or `egypt-en` |\n\nProvide any combination of `searchQueries`, `productUrls`, or `asins`.\n\n## 📤 Output\n\nEach result is a flat record ready to export to CSV, Excel, JSON, or push to your own database. Search and product-detail modes return one row per product:\n\n```json\n{\n  \"productId\": \"N70211464V\",\n  \"catalogSku\": \"N70211464V-1\",\n  \"name\": \"iPhone 17 Pro Max 256 GB (eSIM only) Silver 5G With FaceTime\",\n  \"brand\": \"Apple\",\n  \"brandCode\": \"apple\",\n  \"price\": 4949,\n  \"salePrice\": null,\n  \"currency\": \"AED\",\n  \"rating\": 4.5,\n  \"ratingCount\": 26723,\n  \"seller\": \"callmate\",\n  \"sellerRating\": 4.8,\n  \"imageUrl\": \"https://f.nooncdn.com/p/...\",\n  \"imageUrls\": [\"https://f.nooncdn.com/p/...\"],\n  \"productUrl\": \"https://www.noon.com/uae-en/iphone-17-pro-max.../p/\",\n  \"inStock\": true,\n  \"specifications\": { \"Screen Size\": \"6.9 in\", \"RAM Size\": \"12 GB\" },\n  \"discount\": \"Extra 10% off\",\n  \"discountDetail\": \"Extra 10% Off | Use code: SAVEBIG\",\n  \"discountCode\": \"SAVEBIG\",\n  \"isBestseller\": false,\n  \"bestSellerRank\": \"#3\",\n  \"flags\": [\"fbn\", \"quick_atc\", \"free_delivery_eligible\"],\n  \"categories\": [],\n  \"query\": \"iphone\",\n  \"page\": 1,\n  \"scrapedAt\": \"2026-07-04T12:00:00+00:00\"\n}\n```\n\n🏷️ **Seller-monitoring mode** returns one row per seller on each product — perfect for spotting who owns the Buy Box and who's undercutting:\n\n```json\n{\n  \"product_sku\": \"N53391647A\",\n  \"product_name\": \"WH-CH520 Wireless Bluetooth On-Ear Headphones\",\n  \"seller_name\": \"noon\",\n  \"seller_code\": \"p-9404\",\n  \"seller_rating\": 3.9,\n  \"price\": 199,\n  \"sale_price\": 146,\n  \"stock\": 3,\n  \"is_buybox_winner\": true,\n  \"seller_rank\": 0,\n  \"estimated_delivery\": \"Get it by 8 July\",\n  \"currency\": \"AED\"\n}\n```\n\n## 🎯 Use cases\n\n- 💹 **Price monitoring** — track competitor pricing and discount campaigns over time\n- 🔍 **Market research** — analyze bestsellers, ratings, and brand presence by category\n- 🗂️ **Catalog enrichment** — pull structured specs and imagery for product listings\n- 🏪 **Seller & Buy Box intelligence** — see every seller on a product and who wins the Buy Box\n\n## 💰 Pricing\n\nPay only for the products you collect. No subscription, no setup fees, no per-hour billing.\n\n## 🚀 Getting started\n\n1. Enter search keywords, product URLs, or SKUs — depending on the mode you need\n2. Choose your target market (UAE, Saudi Arabia, or Egypt)\n3. Set the maximum results per query\n4. Run the actor and export your dataset as JSON, CSV, Excel, or XML\n\nFree plan runs return up to 25 results so you can preview the data before scaling up. 🆓",
+ "dataset": {
+  "actorSpecification": 1,
+  "title": "Noon.com Products",
+  "views": {
+   "overview": {
+    "title": "Noon.com Products",
+    "transformation": {
+     "fields": [
+      "name",
+      "brand",
+      "price",
+      "salePrice",
+      "currency",
+      "seller",
+      "inStock",
+      "rating",
+      "productUrl",
+      "mode"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "name": {
+       "label": "Name",
+       "format": "text"
+      },
+      "brand": {
+       "label": "Brand",
+       "format": "text"
+      },
+      "price": {
+       "label": "Price",
+       "format": "number"
+      },
+      "salePrice": {
+       "label": "Sale Price",
+       "format": "number"
+      },
+      "currency": {
+       "label": "Currency",
+       "format": "text"
+      },
+      "seller": {
+       "label": "Seller",
+       "format": "text"
+      },
+      "inStock": {
+       "label": "In Stock",
+       "format": "boolean"
+      },
+      "rating": {
+       "label": "Rating",
+       "format": "number"
+      },
+      "productUrl": {
+       "label": "URL",
+       "format": "link"
+      },
+      "mode": {
+       "label": "Mode",
+       "format": "text"
+      }
+     }
+    }
+   },
+   "sellers": {
+    "title": "Seller Monitoring",
+    "transformation": {
+     "fields": [
+      "product_sku",
+      "product_name",
+      "seller_name",
+      "seller_code",
+      "seller_rating",
+      "price",
+      "sale_price",
+      "stock",
+      "is_buybox_winner",
+      "seller_rank",
+      "estimated_delivery",
+      "currency"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "product_sku": {
+       "label": "SKU",
+       "format": "text"
+      },
+      "product_name": {
+       "label": "Product",
+       "format": "text"
+      },
+      "seller_name": {
+       "label": "Seller",
+       "format": "text"
+      },
+      "seller_code": {
+       "label": "Seller ID",
+       "format": "text"
+      },
+      "seller_rating": {
+       "label": "Seller Rating",
+       "format": "number"
+      },
+      "price": {
+       "label": "Price",
+       "format": "number"
+      },
+      "sale_price": {
+       "label": "Sale Price",
+       "format": "number"
+      },
+      "stock": {
+       "label": "Stock",
+       "format": "number"
+      },
+      "is_buybox_winner": {
+       "label": "Buy Box",
+       "format": "boolean"
+      },
+      "seller_rank": {
+       "label": "Rank",
+       "format": "number"
+      },
+      "estimated_delivery": {
+       "label": "Delivery",
+       "format": "text"
+      },
+      "currency": {
+       "label": "Currency",
+       "format": "text"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Noon.com Product Scraper Input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"searchQueries\": {\n      \"title\": \"Search Queries or Search URLs\",\n      \"type\": \"array\",\n      \"description\": \"Keywords to search on Noon.com (e.g. \\\"iphone\\\"), or pasted Noon search URLs (e.g. https://www.noon.com/uae-en/search/?q=iphone). Returns listing-level data with pricing, ratings, and seller info.\",\n      \"editor\": \"stringList\",\n      \"prefill\": [\n        \"iphone\"\n      ]\n    },\n    \"productUrls\": {\n      \"title\": \"Product URLs or SKUs\",\n      \"type\": \"array\",\n      \"description\": \"Noon.com product page URLs or raw SKU codes (e.g. N43252862A). Returns FULL product detail: specifications, stock, delivery estimate, return policy, warranty, variants, seller ratings, and every discount. Runs at ~1,000 products/minute.\",\n      \"editor\": \"stringList\"\n    },\n    \"asins\": {\n      \"title\": \"Seller Monitoring — Product SKUs\",\n      \"type\": \"array\",\n      \"description\": \"Product SKU codes (e.g. N23157381A) to monitor for seller/offer competition. Returns ONE row per seller on each product — seller name, seller ID, rating, price, sale price, stock, delivery, discounts, and buy-box winner. Ideal for Buy Box and competitor-seller tracking.\",\n      \"editor\": \"stringList\"\n    },\n    \"noon_domain\": {\n      \"title\": \"Noon Domain (optional)\",\n      \"type\": \"string\",\n      \"description\": \"Optional. The Noon domain your SKUs come from, e.g. www.noon.com/saudi-en. If set, it overrides the Country field. Leave blank to use Country.\",\n      \"editor\": \"textfield\"\n    },\n    \"maxResults\": {\n      \"title\": \"Max Results Per Query\",\n      \"type\": \"integer\",\n      \"description\": \"Maximum number of products to return per search query (search mode only).\",\n      \"default\": 100,\n      \"minimum\": 1\n    },\n    \"country\": {\n      \"title\": \"Country\",\n      \"type\": \"string\",\n      \"description\": \"Noon.com storefront to search.\",\n      \"default\": \"uae-en\",\n      \"enum\": [\n        \"uae-en\",\n        \"saudi-en\",\n        \"egypt-en\"\n      ],\n      \"enumTitles\": [\n        \"UAE\",\n        \"Saudi Arabia\",\n        \"Egypt\"\n      ],\n      \"editor\": \"select\"\n    }\n  }\n}"
+}

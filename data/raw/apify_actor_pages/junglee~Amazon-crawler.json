@@ -1,0 +1,776 @@
+{
+ "act": {
+  "title": "Amazon Product Scraper",
+  "users30d": 2363,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What is Amazon Product Scraper and how does it work?\nAmazon Product Scraper is a web scraping tool that enables you to extract product data from Amazon by using Amazon's subcategory URLs or product URLs.\n\nFor example, this is an Amazon URL for the Computer Monitors subcategory: \n\n```https://www.amazon.com/s?i=specialty-aps&bbn=16225007011&rh=n%3A16225007011%2Cn%3A1292115011```\n\nAmazon subcategories typically have ```/s``` in the URL after the Amazon domain, so make sure your URL looks something like the example above.\n\nSo just add one or more Amazon URLs in the input field and select the maximum number of items you want to scrape. Then download the data from the output schema. You can even get this data via API without having to log in to the Apify platform.\n\n## Why scrape Amazon products?\nScraping Amazon products can help you to:\n\n➡️ Monitor the performance of categories and subcategories on Amazon so you can put the performance of your products into context.\n\n➡️ Discover up-and-coming brands and products to benchmark your performance within its category based on views, conversions, and reviews.\n\n➡️ Fine-tune your advertising and messaging.\n\n➡️ Use Amazon data to give you an edge in competitive intelligence.\n\nFor more inspiration, check out [how web scraping is transforming e-commerce analytics](https://apify.com/industries/ecommerce-and-retail).\n\n## How many results can you scrape with Amazon Product Scraper?\n\nAmazon Product Scraper can return over 100 000 results on average. However, you have to keep in mind that scraping amazon.com has many variables to it and may cause the results to fluctuate case by case. There’s no one-size-fits-all-use-cases number. The maximum number of results may vary depending on the complexity of the input, location, and other factors. Some of the most frequent cases are:\n\n- website gives a different number of results depending on the type/value of the input\n- website has an internal limit that no scraper can cross\n- scraper has a limit that we are working on improving\n\nTherefore, while we regularly run Actor tests to keep the benchmarks in check, the results may also fluctuate without our knowing. The best way to know for sure for your particular use case is to do a test run yourself.\n\n## How much will scraping Amazon Products cost you?\n\nWhen it comes to scraping, it can be challenging to estimate the resources needed to extract data as use cases may vary significantly. That's why the best course of action is to run a test scrape with a small sample of input data and limited output. You’ll get your price per scrape, which you’ll then multiply by the number of scrapes you intend to do. \n\n[Watch this video](https://www.youtube.com/watch?v=kOy8C6_5ZU4) for a few helpful tips. And don't forget that choosing a higher plan will save you money in the long run.\n\nhttps://www.youtube.com/watch?v=kOy8C6_5ZU4\n\n## 7 pages Amazon limitation\nAmazon sometimes restricts search terms to a maximum of 7 pages, please validate the number of pages in the URL. To overcome this limit, try to use one of the regular categories and combine it with the search terms. E.g. instead of just searching for `Diamond rings`, find `Jewelry` or `Women's rings` category and combine them with the search term.\n\n## Is it legal to scrape Amazon?\nIt is legal to scrape publicly available data such as product descriptions, prices, or ratings. Read our blog post on [the legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) to learn more.\n\n## How do I scrape products on Amazon?\nThis simple [step-by-step guide](https://blog.apify.com/step-by-step-guide-to-scraping-amazon/#how-do-i-scrape-data-on-amazon) shows you how to use Amazon Product Scraper.\n\n## Want more Amazon scraping options?\nTry these 👇\n- [Amazon Best Sellers Scraper](https://apify.com/mihails/amazon-bestsellers-scraper)\n- [Amazon Reviews Scraper](https://apify.com/lhotanok/amazon-reviews-scraper)\n- [Amazon ASINs Scraper](https://apify.com/lhotanok/amazon-asins-scraper)\n\n## Need to find product pairs between Amazon and another online shop?\n\nUse the [AI Product Matcher](https://apify.com/equidem/ai-product-matcher). This AI model allows you to compare items from different web stores, identifying exact matches and comparing real-time data obtained via web scraping. With the AI Product Matcher, you can use scraped product data to monitor product matches across the industry, implement dynamic pricing for your website, replace or complement manual mapping, and obtain realistic estimates against your competition for upcoming promo campaigns. \n\nMost importantly, it is relatively easy to get started with (just follow [this guide](https://blog.apify.com/product-matching-ai-pricing-intelligence-web-scraping/)), and it can check thousands of pairs of products.\n\n## Input options\nWhen running Amazon Product Scraper, you need to configure what you want to scrape and how it should be extracted. This input is provided either as a JSON file or in the editor on the Apify platform. Most input fields have reasonable default values.\n\nFor detailed descriptions and examples for all input fields, please visit the dedicated [Input tab](https://apify.com/vaclavrut/amazon-crawler/input-schema).\n\nPlease note the following when using Amazon Product Scraper:\n- Price information might be missing if the delivery country has no sellers. Setting a specific \"apifyProxyCountry\" in proxy settings should help with this.\n- There could still be differences in pricing depending on the US state.\n- Amazon also shows different offers based on your proxy location.\n\n## Sample output from Amazon Product Scraper\n\n```json\n{\n    \"title\": \"SanDisk 1TB Extreme microSDXC UHS-I Memory Card with Adapter - Up to 190MB/s, C10, U3, V30, 4K, 5K, A2, Micro SD Card- SDSQXAV-1T00-GN6MA\",\n    \"url\": \"https://www.amazon.com/dp/B09X7MPX8L\",\n    \"asin\": \"B09X7MPX8L\",\n    \"inStock\": true,\n    \"inStockText\": \"Only 8 left in stock - order soon.       Only 8 left in stock - order soon.\",\n    \"brand\": \"SanDisk\",\n    \"price\": {\n        \"value\": 145.5,\n        \"currency\": \"$\"\n    },\n    \"listPrice\": {\n        \"value\": 299.99,\n        \"currency\": \"$\"\n    },\n    \"shippingPrice\": null,\n        \"stars\": 4.8,\n        \"starsBreakdown\": {\n        \"5star\": 0.86,\n        \"4star\": 0.09,\n        \"3star\": 0.02,\n        \"2star\": 0.01,\n        \"1star\": 0.01\n    },\n    \"reviewsCount\": 36704,\n    \"answeredQuestions\": 151,\n    \"breadCrumbs\": \"Electronics › Computers & Accessories › Computer Accessories & Peripherals › Memory Cards › Micro SD Cards\",\n    \"thumbnailImage\": \"https://m.media-amazon.com/images/I/716kSUlHouL.__AC_SX300_SY300_QL70_FMwebp_.jpg\",\n    \"description\": null,\n    \"features\": [\n    \"Save time with card offload speeds of up to 190MB/s powered by SanDisk QuickFlow Technology (Up to 190MB/s read speeds, engineered with proprietary technology to reach speeds beyond UHS-I 104MB/s, requires compatible devices capable of reaching such speeds. Based on internal testing; performance may be lower depending upon host device interface, usage conditions and other factors. 1MB=1,000,000 bytes. SanDisk QuickFlow Technology is only available for 64GB, 128GB, 256GB, 400GB, 512GB, and 1TB capacities. 1GB=1,000,000,000 bytes and 1TB=1,000,000,000,000 bytes. Actual user storage less.)\",\n    \"Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately)\",\n    \"Up to 130MB/s write speeds for fast shooting (Based on internal testing; performance may be lower depending upon host device interface, usage conditions and other factors. 1MB=1,000,000 bytes.)\",\n    \"4K and 5K UHD-ready with UHS Speed Class 3 (U3) and Video Speed Class 30 (V30) (Compatible device required. Full HD (1920x1080), 4K UHD (3840 x 2160), and 5K UHD (5120 X 2880) support may vary based upon host device, file attributes and other factors. See HD page on SanDisk site. UHS Speed Class 3 (U3) designates a performance option designed to support real-time video recording with UHS-enabled host devices. Video Speed Class 30 (V30), sustained video capture rate of 30MB/s, designates a performance option designed to support real-time video recording with UHS-enabled host devices. See the SD Association’s official website.)\",\n    \"Rated A2 for faster loading and in-app performance (A2 performance is 4000 read IOPS, 2000 write IOPS. Results may vary based on host device, app type and other factors)\"\n    ],\n    \"variantAsins\": [],\n    \"reviewsLink\": \"/SanDisk-Extreme-microSDXC-Memory-Adapter/product-reviews/B09X7MPX8L?reviewerType=all_reviews\",\n    \"delivery\": \"Thursday, January 26\",\n    \"fastestDelivery\": \"Sunday, January 22\",\n    \"returnPolicy\": \"Eligible for Return, Refund or Replacement within 30 days of receipt  Eligible for Return, Refund or Replacement within 30 days of receipt\",\n    \"support\": \"Free Amazon tech support included\",\n    \"variantAttributes\": [],\n    \"priceVariants\": null,\n    \"seller\": {\n        \"name\": \"Direct Suppliers US\",\n        \"id\": \"A210SJF12S88M5\",\n        \"url\": \"/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A210SJF12S88M5&asin=B09X7MPX8L&ref_=dp_merchant_link&isAmazonFulfilled=1\",\n        \"reviewsCount\": null,\n        \"averageRating\": null\n    },\n    \"bestsellerRanks\": null,\n    \"locationText\": \"Select your address\"\n}\n```\n\n## Integrations and Amazon Product Scraper\n\nLast but not least, Amazon Product Scraper can be connected with almost any cloud service or web app thanks to <a href=\"https://apify.com/integrations\"  target=\"_blank\"> integrations on the Apify platform</a>. You can integrate with Make, Zapier, Slack, Airbyte, GitHub, Google Sheets, Google Drive, <a href=\"https://docs.apify.com/integrations\"  target=\"_blank\"> and more</a>. Or you can use <a href=\"https://docs.apify.com/integrations/webhooks\"  target=\"_blank\"> webhooks</a> to carry out an action whenever an event occurs, e.g. get a notification whenever Instagram API Scraper successfully finishes a run.\n\n## Using Amazon Product Scraper with the Apify API\n\nThe Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the apify-client NPM package. To access the API using Python, use the apify-client PyPI package.\n\nCheck out the <a href=\"https://docs.apify.com/api/v2\"  target=\"_blank\"> Apify API reference</a> docs for full details or click on the <a href=\"https://apify.com/junglee/free-amazon-product-scraper/api\"  target=\"_blank\"> API tab</a> for code examples. \n\n## Error items\n\nWhen the scraper cannot retrieve data for a given input — for example a product URL returns a 404 or a start URL is malformed — it pushes an **error item** to the dataset instead of silently skipping it. Normal output items are never affected; you can tell them apart by the presence of an `error` field.\n\n### Error item structure\n\n```json\n{\n    \"error\": \"product_not_found\",\n    \"errorDescription\": \"Loaded a 404 page. The product does not exist.\",\n    \"input\": \"https://www.amazon.com/dp/B0XXXXXXXX\",\n    \"url\": \"https://www.amazon.com/dp/B0XXXXXXXX\"\n}\n```\n\n### Error codes reference\n\n| `error`                          | Meaning                                                        |\n| -------------------------------- | -------------------------------------------------------------- |\n| `invalid_url`                    | One or more start URLs were malformed or not recognized        |\n| `invalid_input`                  | Actor failed due to bad configuration (run is also terminated) |\n| `product_not_found`              | Product URL returns a 404 page                                 |\n| `shortened_url_invalid`          | Amazon shortened URL could not be resolved                     |\n| `bestsellers_category_not_found` | Bestsellers category page could not be found                   |\n| `no_relevant_reviews_found`      | Reviews exist but none match the active filters                |\n| `no_results_found`               | No results were found for the given input                      |\n\n---\n\n## Not your cup of tea? Build your own scraper\n\nAmazon Product Scraper doesn’t exactly do what you need? You can always build your own! We have various [scraper templates](https://apify.com/templates) in Python, JavaScript, and TypeScript to get you started. Alternatively, you can write it from scratch using our [open-source library Crawlee](https://crawlee.dev/). You can keep the scraper to yourself or make it public by adding it to Apify Store (and [find users](https://blog.apify.com/make-regular-passive-income-developing-web-automation-actors-b0392278d085/) for it). \n\nOr let us know if you need a [custom scraping solution](https://apify.com/custom-solutions).\n\n## Your feedback\n\nWe’re always working on improving the performance of our Actors. So if you’ve got any technical feedback for xxx or simply found a bug, please create an issue on the Actor’s [Issues tab](https://console.apify.com/actors/BG3WDrGdteHgZgbPK/issues) in Apify Console.\n\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "title": {
+     "type": "string",
+     "description": "Product title",
+     "nullable": true,
+     "example": "Example Wireless Headphones with Noise Cancelling"
+    },
+    "url": {
+     "type": "string",
+     "description": "URL of the product page",
+     "nullable": true,
+     "example": "https://www.amazon.com/dp/B08EXAMPLE01"
+    },
+    "asin": {
+     "type": "string",
+     "description": "Amazon Standard Identification Number",
+     "nullable": true,
+     "example": "B08EXAMPLE01"
+    },
+    "originalAsin": {
+     "type": "string",
+     "description": "Original ASIN before any redirects",
+     "nullable": true,
+     "example": "B08EXAMPLE01"
+    },
+    "brand": {
+     "type": "string",
+     "description": "Product brand name",
+     "nullable": true,
+     "example": "Example Brand"
+    },
+    "author": {
+     "type": "string",
+     "description": "Author name (for books)",
+     "nullable": true,
+     "example": "Example Author"
+    },
+    "price": {
+     "type": "object",
+     "description": "Current product price",
+     "nullable": true,
+     "properties": {
+      "value": {
+       "type": "number",
+       "nullable": true
+      },
+      "currency": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "value": 29.99,
+      "currency": "USD"
+     }
+    },
+    "listPrice": {
+     "type": "object",
+     "description": "Original list price before discounts",
+     "nullable": true,
+     "properties": {
+      "value": {
+       "type": "number",
+       "nullable": true
+      },
+      "currency": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "value": 49.99,
+      "currency": "USD"
+     }
+    },
+    "shippingPrice": {
+     "type": "object",
+     "description": "Shipping cost",
+     "nullable": true,
+     "properties": {
+      "value": {
+       "type": "number",
+       "nullable": true
+      },
+      "currency": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "value": 0,
+      "currency": "USD"
+     }
+    },
+    "inStock": {
+     "type": "boolean",
+     "description": "Whether the product is currently in stock",
+     "nullable": true,
+     "example": true
+    },
+    "inStockText": {
+     "type": "string",
+     "description": "Stock availability text as shown on the page",
+     "nullable": true,
+     "example": "In Stock"
+    },
+    "delivery": {
+     "type": "string",
+     "description": "Delivery information",
+     "nullable": true,
+     "example": "FREE delivery Monday, April 7"
+    },
+    "fastestDelivery": {
+     "type": "string",
+     "description": "Fastest available delivery option",
+     "nullable": true,
+     "example": "Get it today"
+    },
+    "condition": {
+     "type": "string",
+     "description": "Product condition",
+     "nullable": true,
+     "example": "New"
+    },
+    "stars": {
+     "type": "number",
+     "description": "Average customer rating out of 5",
+     "nullable": true,
+     "example": 4.5
+    },
+    "starsBreakdown": {
+     "type": "object",
+     "description": "Percentage breakdown of ratings by star level",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "5 star": 72,
+      "4 star": 15,
+      "3 star": 7,
+      "2 star": 3,
+      "1 star": 3
+     }
+    },
+    "reviewsCount": {
+     "type": "number",
+     "description": "Total number of customer reviews",
+     "nullable": true,
+     "example": 1250
+    },
+    "answeredQuestions": {
+     "type": "number",
+     "description": "Number of answered customer questions",
+     "nullable": true,
+     "example": 45
+    },
+    "breadCrumbs": {
+     "type": "string",
+     "description": "Category breadcrumb path",
+     "nullable": true,
+     "example": "Electronics > Headphones > Over-Ear Headphones"
+    },
+    "sustainabilityFeatures": {
+     "type": "array",
+     "description": "Sustainability certifications and features",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "title": "Carbon Neutral",
+       "description": "This product is carbon neutral certified.",
+       "certifiedBy": []
+      }
+     ]
+    },
+    "description": {
+     "type": "string",
+     "description": "Product description",
+     "nullable": true,
+     "example": "This is an example product description with key features and benefits."
+    },
+    "features": {
+     "type": "array",
+     "description": "List of product feature bullet points",
+     "nullable": true,
+     "items": {
+      "type": "string"
+     },
+     "example": [
+      "Noise cancelling technology",
+      "30-hour battery life",
+      "Foldable design"
+     ]
+    },
+    "videosCount": {
+     "type": "number",
+     "description": "Number of product videos",
+     "nullable": true,
+     "example": 2
+    },
+    "visitStoreLink": {
+     "type": "object",
+     "description": "Link to visit the brand store page",
+     "nullable": true,
+     "properties": {
+      "text": {
+       "type": "string",
+       "nullable": true
+      },
+      "url": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "text": "Visit the Example Brand Store",
+      "url": "https://www.amazon.com/stores/ExampleBrand/page/EXAMPLEID"
+     }
+    },
+    "thumbnailImage": {
+     "type": "string",
+     "description": "URL of the product thumbnail image",
+     "nullable": true,
+     "example": "https://m.media-amazon.com/images/I/exampleimage.jpg"
+    },
+    "galleryThumbnails": {
+     "type": "array",
+     "description": "URLs of gallery thumbnail images",
+     "nullable": true,
+     "items": {
+      "type": "string"
+     },
+     "example": [
+      "https://m.media-amazon.com/images/I/example1.jpg",
+      "https://m.media-amazon.com/images/I/example2.jpg"
+     ]
+    },
+    "highResolutionImages": {
+     "type": "array",
+     "description": "URLs of high-resolution product images",
+     "nullable": true,
+     "items": {
+      "type": "string"
+     },
+     "example": [
+      "https://m.media-amazon.com/images/I/examplehires.jpg"
+     ]
+    },
+    "importantInformation": {
+     "type": "object",
+     "description": "Important product information section",
+     "nullable": true,
+     "properties": {
+      "title": {
+       "type": "string",
+       "nullable": true
+      },
+      "items": {
+       "type": "array",
+       "nullable": true,
+       "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": []
+       }
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "title": "Safety Information",
+      "items": [
+       {
+        "title": "Warning",
+        "text": "Keep out of reach of children.",
+        "url": null
+       }
+      ]
+     }
+    },
+    "returnPolicy": {
+     "type": "string",
+     "description": "Return policy information",
+     "nullable": true,
+     "example": "30-day return period"
+    },
+    "support": {
+     "type": "string",
+     "description": "Product support information",
+     "nullable": true,
+     "example": "1-year manufacturer warranty"
+    },
+    "variantAsins": {
+     "type": "array",
+     "description": "ASINs of all product variants",
+     "nullable": true,
+     "items": {
+      "type": "string"
+     },
+     "example": [
+      "B08EXAMPLE02",
+      "B08EXAMPLE03"
+     ]
+    },
+    "variantDetails": {
+     "type": "array",
+     "description": "Detailed information about each product variant",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "asin": "B08EXAMPLE02",
+       "price": {
+        "value": 34.99,
+        "currency": "USD"
+       },
+       "name": "Black",
+       "images": [],
+       "thumbnail": null
+      }
+     ]
+    },
+    "reviewsLink": {
+     "type": "string",
+     "description": "URL to the product reviews page",
+     "nullable": true,
+     "example": "https://www.amazon.com/product-reviews/B08EXAMPLE01"
+    },
+    "hasReviews": {
+     "type": "boolean",
+     "description": "Whether the product has customer reviews",
+     "nullable": true,
+     "example": true
+    },
+    "variantAttributes": {
+     "type": "array",
+     "description": "Attributes that differentiate product variants (e.g., color, size)",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "key": "Color",
+       "value": "Black"
+      },
+      {
+       "key": "Size",
+       "value": "Standard"
+      }
+     ]
+    },
+    "attributes": {
+     "type": "array",
+     "description": "Product technical specifications and attributes",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "key": "Manufacturer",
+       "value": "Example Brand"
+      },
+      {
+       "key": "Item Weight",
+       "value": "0.55 pounds"
+      }
+     ]
+    },
+    "attributesMapped": {
+     "type": "object",
+     "description": "Product attributes as a flat key-value map (alternative representation of attributes)",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "Manufacturer": "Example Brand",
+      "Item Weight": "0.55 pounds"
+     }
+    },
+    "productOverview": {
+     "type": "array",
+     "description": "Product overview specifications displayed prominently on the page",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "key": "Brand",
+       "value": "Example Brand"
+      },
+      {
+       "key": "Model Number",
+       "value": "EX-100"
+      }
+     ]
+    },
+    "manufacturerAttributes": {
+     "type": "array",
+     "description": "Manufacturer-provided product attributes",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "key": "Battery Life",
+       "value": "30 hours"
+      }
+     ]
+    },
+    "seller": {
+     "type": "object",
+     "description": "Seller information for the product listing",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "id": "EXAMPLESELLERID",
+      "name": "Example Seller",
+      "url": "https://www.amazon.com/sp?seller=EXAMPLESELLERID"
+     }
+    },
+    "bestsellerRanks": {
+     "type": "array",
+     "description": "Bestseller rankings across Amazon categories",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "rank": 42,
+       "category": "Electronics",
+       "url": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics"
+      }
+     ]
+    },
+    "isAmazonChoice": {
+     "type": "boolean",
+     "description": "Whether the product has the Amazon's Choice badge",
+     "nullable": true,
+     "example": false
+    },
+    "amazonChoiceText": {
+     "type": "string",
+     "description": "Amazon's Choice label text",
+     "nullable": true,
+     "example": "Amazon's Choice in Wireless Headphones"
+    },
+    "bookDescription": {
+     "type": "string",
+     "description": "Extended description for books",
+     "nullable": true,
+     "example": "This is an example book description."
+    },
+    "priceRange": {
+     "type": "object",
+     "description": "Price range for products with multiple price variants",
+     "nullable": true,
+     "properties": {
+      "min": {
+       "type": "object",
+       "nullable": true,
+       "additionalProperties": true,
+       "required": []
+      },
+      "max": {
+       "type": "object",
+       "nullable": true,
+       "additionalProperties": true,
+       "required": []
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "min": {
+       "value": 19.99,
+       "currency": "USD"
+      },
+      "max": {
+       "value": 49.99,
+       "currency": "USD"
+      }
+     }
+    },
+    "aPlusContent": {
+     "type": "object",
+     "description": "Amazon A+ enhanced brand content",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "title": "About Example Brand",
+      "rawText": "Example brand story text.",
+      "rawImages": [],
+      "rawVideos": [],
+      "modules": []
+     }
+    },
+    "brandStory": {
+     "type": "object",
+     "description": "Brand story section content",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "title": "Our Story",
+      "image": null,
+      "items": []
+     }
+    },
+    "productComparison": {
+     "type": "object",
+     "description": "Product comparison table with competing products",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "title": "Compare with similar items",
+      "items": []
+     }
+    },
+    "aiReviewsSummary": {
+     "type": "object",
+     "description": "AI-generated summary of customer reviews",
+     "nullable": true,
+     "additionalProperties": true,
+     "required": [],
+     "example": {
+      "text": "Customers appreciate the sound quality and comfortable fit.",
+      "keywords": []
+     }
+    },
+    "monthlyPurchaseVolume": {
+     "type": "string",
+     "description": "Estimated monthly purchase volume shown on the product page",
+     "nullable": true,
+     "example": "1K+ bought in past month"
+    },
+    "offers": {
+     "type": "array",
+     "description": "Available purchase offers from different sellers",
+     "nullable": true,
+     "items": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": []
+     },
+     "example": [
+      {
+       "url": "https://www.amazon.com/gp/offer-listing/B08EXAMPLE01",
+       "condition": "New",
+       "price": {
+        "value": 29.99,
+        "currency": "USD"
+       },
+       "seller": {
+        "name": "Example Seller"
+       },
+       "position": 1,
+       "isPinnedOffer": true
+      }
+     ]
+    },
+    "locationText": {
+     "type": "string",
+     "description": "Delivery location text shown on the product page",
+     "nullable": true,
+     "example": "Delivering to New York 10001"
+    },
+    "unNormalizedProductUrl": {
+     "type": "string",
+     "description": "Original product URL before normalization",
+     "nullable": true,
+     "example": "https://www.amazon.com/Example-Product-Title/dp/B08EXAMPLE01/ref=sr_1_1"
+    },
+    "loadedCountryCode": {
+     "type": "string",
+     "description": "Country code of the Amazon domain that was scraped",
+     "nullable": true,
+     "example": "US"
+    },
+    "categoryPageData": {
+     "type": "object",
+     "description": "Additional data from the category listing page where the product was found",
+     "nullable": true,
+     "properties": {
+      "categoryUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "saleSummary": {
+       "type": "string",
+       "nullable": true
+      },
+      "isSponsored": {
+       "type": "boolean",
+       "nullable": true
+      },
+      "bestsellerBadge": {
+       "type": "string",
+       "nullable": true
+      },
+      "productPosition": {
+       "type": "number",
+       "nullable": true
+      },
+      "pageNumber": {
+       "type": "number",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "categoryUrl": "https://www.amazon.com/s?k=headphones",
+      "saleSummary": null,
+      "isSponsored": false,
+      "bestsellerBadge": null,
+      "productPosition": 3,
+      "pageNumber": 1
+     }
+    },
+    "bestsellerPageData": {
+     "type": "object",
+     "description": "Additional data from the bestsellers page where the product was found",
+     "nullable": true,
+     "properties": {
+      "position": {
+       "type": "number",
+       "nullable": true
+      },
+      "categoryUrl": {
+       "type": "string",
+       "nullable": true
+      },
+      "categoryName": {
+       "type": "string",
+       "nullable": true
+      },
+      "categoryFullName": {
+       "type": "string",
+       "nullable": true
+      }
+     },
+     "required": [],
+     "additionalProperties": true,
+     "example": {
+      "position": 5,
+      "categoryUrl": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics",
+      "categoryName": "Electronics",
+      "categoryFullName": "Best Sellers in Electronics"
+     }
+    },
+    "input": {
+     "type": "string",
+     "description": "Input URL that was used to scrape this product",
+     "nullable": true,
+     "example": "https://www.amazon.com/dp/B08EXAMPLE01"
+    }
+   },
+   "required": [],
+   "additionalProperties": true
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "title",
+      "asin",
+      "brand",
+      "stars",
+      "reviewsCount",
+      "thumbnailImage",
+      "breadCrumbs",
+      "description",
+      "price",
+      "url"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "thumbnailImage": {
+       "label": "Picture",
+       "format": "image"
+      },
+      "title": {
+       "label": "Title",
+       "format": "text"
+      },
+      "brand": {
+       "label": "Brand",
+       "format": "text"
+      },
+      "description": {
+       "label": "Description",
+       "format": "text"
+      },
+      "stars": {
+       "label": "Stars",
+       "format": "text"
+      },
+      "reviewsCount": {
+       "label": "Reviews count",
+       "format": "text"
+      },
+      "price.value": {
+       "label": "Price",
+       "format": "text"
+      },
+      "breadCrumbs": {
+       "label": "Categories",
+       "format": "text"
+      },
+      "asin": {
+       "label": "ASIN",
+       "format": "text"
+      },
+      "url": {
+       "label": "URL",
+       "format": "link"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Input schema for Amazon Product Scraper.\",\n  \"description\": \"This is our most versatile Amazon scraper. You enter one or more Amazon category URLs and the scraper will extract detailed information about each product on the pages it crawls. </br></br> Amazon sometimes restricts search terms to maximum of 7 pages, please validate the number of pages in the URL. To overcome this limit, try to use one of the regular categories and combine it with the search terms. E.g. instead of just searching for `Diamond rings`, find `Jewelry` or `Women's rings` category and combine them with the search term.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"categoryOrProductUrls\": {\n      \"title\": \"Enter one or more Amazon category or product URLs\",\n      \"type\": \"array\",\n      \"description\": \"Use a link to the Amazon category you want to scrape, e.g. video games - https://www.amazon.com/s?bbn=16225016011&rh=n%3A20972781011, https://www.amazon.com/dp/B0B3BVWJ6Y.\\n You can also filter within the category with almost any filter available, i.e. price, manufacturer, rating, etc. \\n By using a different URL you can also choose a different Amazon country, e.g. Germany: https://www.amazon.de/. You don't need to set a proxy country to do that.\",\n      \"editor\": \"requestListSources\",\n      \"prefill\": [\n        {\n          \"url\": \"https://www.amazon.com/s?k=keyboard\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.amazon.com/s?k=keyboard\"\n        }\n      ],\n      \"uniqueItems\": true,\n      \"nullable\": false\n    },\n    \"maxItemsPerStartUrl\": {\n      \"title\": \"Max results (per start URL)\",\n      \"type\": \"integer\",\n      \"description\": \"Enter the maximum number of results you want to scrape per each star URL. This will let the scraper know when to stop.\",\n      \"minimum\": 0,\n      \"prefill\": 100,\n      \"example\": 100,\n      \"unit\": \"results\",\n      \"nullable\": false\n    },\n    \"language\": {\n      \"sectionCaption\": \"Other Settings\",\n      \"sectionDescription\": \"These settings are not required for the scraper to run, but they can help you get better results.\",\n      \"title\": \"Language\",\n      \"type\": \"string\",\n      \"description\": \"Language to use on Amazon.\\n\\n**Disclaimer**: each Amazon domain has a different set of supported languages. If you choose a language that is not supported by the domain, the scraper will use the default language of the domain.\",\n      \"nullable\": true,\n      \"enum\": [\n        \"cs\",\n        \"da\",\n        \"de\",\n        \"en\",\n        \"es\",\n        \"fr\",\n        \"nl\",\n        \"pl\",\n        \"pt\",\n        \"sv\",\n        \"tr\",\n        \"he\",\n        \"ar\",\n        \"mrta\",\n        \"hi\",\n        \"bn\",\n        \"ta\",\n        \"te\",\n        \"kn\",\n        \"ml\",\n        \"ko\",\n        \"zh_CN\",\n        \"zh_TW\",\n        \"ja\"\n      ],\n      \"example\": \"en\",\n      \"enumTitles\": [\n        \"čeština - CS ('.de')\",\n        \"dansk - DA ('.de')\",\n        \"Deutsch - DE ('.com', '.de')\",\n        \"English - EN ('.ae', '.ca', '.co.jp', '.com.be', '.com', '.de', '.eg', '.in', '.nl', '.sa', '.se')\",\n        \"español - ES ('.com', '.es')\",\n        \"français - FR ('.ca', '.com.be')\",\n        \"Nederlands - NL ('.com.be', '.de', '.nl')\",\n        \"polski - PL ('.de')\",\n        \"português - PT ('.com', '.es')\",\n        \"svenska - SV ('.se')\",\n        \"Türkçe - TR ('.de')\",\n        \"עברית - HE ('.com')\",\n        \"العربية - AR ('.ae', '.com', '.eg', '.sa')\",\n        \"मराठी - MR ('.in')\",\n        \"हिन्दी - HI ('.in')\",\n        \"বাংলা - BN ('.in')\",\n        \"தமிழ் - TA ('.in')\",\n        \"తెలుగు - TE ('.in')\",\n        \"ಕನ್ನಡ - KN ('.in')\",\n        \"മലയാളം - ML ('.in')\",\n        \"한국어 - KO ('.com')\",\n        \"中文 (简体) - ZH ('.co.jp', '.com')\",\n        \"中文 (繁體) - ZH ('.com')\",\n        \"日本語 - JA ('.co.jp')\"\n      ]\n    },\n    \"proxyCountry\": {\n      \"title\": \"Proxy country\",\n      \"type\": \"string\",\n      \"description\": \"You can set proxy country to **avoid geo-blocking** and **access region-specific content**. Amazon shows you the products that can be shipped to your address based on the proxy you use.\\n\\n*By default*, the scraper **automatically selects** the **proxy country** based on the used Amazon website domain, ensuring low blocking rates and results relevant to the base domain.\",\n      \"enum\": [\n        \"AUTO_SELECT_PROXY_COUNTRY\",\n        \"AF\",\n        \"AL\",\n        \"DZ\",\n        \"AS\",\n        \"AD\",\n        \"AO\",\n        \"AI\",\n        \"AQ\",\n        \"AG\",\n        \"AR\",\n        \"AM\",\n        \"AW\",\n        \"AU\",\n        \"AT\",\n        \"AZ\",\n        \"BS\",\n        \"BH\",\n        \"BD\",\n        \"BB\",\n        \"BY\",\n        \"BE\",\n        \"BZ\",\n        \"BJ\",\n        \"BM\",\n        \"BT\",\n        \"BO\",\n        \"BQ\",\n        \"BA\",\n        \"BW\",\n        \"BV\",\n        \"BR\",\n        \"IO\",\n        \"VG\",\n        \"BN\",\n        \"BG\",\n        \"BF\",\n        \"BI\",\n        \"KH\",\n        \"CM\",\n        \"CA\",\n        \"CV\",\n        \"KY\",\n        \"CF\",\n        \"TD\",\n        \"CL\",\n        \"CN\",\n        \"CX\",\n        \"CC\",\n        \"CO\",\n        \"KM\",\n        \"CK\",\n        \"CR\",\n        \"HR\",\n        \"CU\",\n        \"CW\",\n        \"CY\",\n        \"CZ\",\n        \"CD\",\n        \"DK\",\n        \"DJ\",\n        \"DM\",\n        \"DO\",\n        \"TL\",\n        \"EC\",\n        \"EG\",\n        \"SV\",\n        \"GQ\",\n        \"ER\",\n        \"EE\",\n        \"ET\",\n        \"FK\",\n        \"FO\",\n        \"FJ\",\n        \"FI\",\n        \"FR\",\n        \"GF\",\n        \"PF\",\n        \"TF\",\n        \"GA\",\n        \"GM\",\n        \"GE\",\n        \"DE\",\n        \"GH\",\n        \"GI\",\n        \"GR\",\n        \"GL\",\n        \"GD\",\n        \"GP\",\n        \"GU\",\n        \"GT\",\n        \"GG\",\n        \"GW\",\n        \"GN\",\n        \"GY\",\n        \"HT\",\n        \"HM\",\n        \"HN\",\n        \"HK\",\n        \"HU\",\n        \"IS\",\n        \"IN\",\n        \"ID\",\n        \"IR\",\n        \"IQ\",\n        \"IE\",\n        \"IM\",\n        \"IL\",\n        \"IT\",\n        \"CI\",\n        \"JM\",\n        \"JP\",\n        \"JE\",\n        \"JO\",\n        \"KZ\",\n        \"KE\",\n        \"KI\",\n        \"XK\",\n        \"KW\",\n        \"KG\",\n        \"LA\",\n        \"LV\",\n        \"LB\",\n        \"LS\",\n        \"LR\",\n        \"LY\",\n        \"LI\",\n        \"LT\",\n        \"LU\",\n        \"MO\",\n        \"MG\",\n        \"MW\",\n        \"MY\",\n        \"MV\",\n        \"ML\",\n        \"MT\",\n        \"MH\",\n        \"MQ\",\n        \"MR\",\n        \"MU\",\n        \"YT\",\n        \"MX\",\n        \"FM\",\n        \"MD\",\n        \"MC\",\n        \"MN\",\n        \"ME\",\n        \"MS\",\n        \"MA\",\n        \"MZ\",\n        \"MM\",\n        \"NA\",\n        \"NR\",\n        \"NP\",\n        \"NL\",\n        \"NC\",\n        \"NZ\",\n        \"NI\",\n        \"NE\",\n        \"NG\",\n        \"NU\",\n        \"NF\",\n        \"KP\",\n        \"MK\",\n        \"MP\",\n        \"NO\",\n        \"OM\",\n        \"PK\",\n        \"PW\",\n        \"PS\",\n        \"PA\",\n        \"PG\",\n        \"PY\",\n        \"PE\",\n        \"PH\",\n        \"PN\",\n        \"PL\",\n        \"PT\",\n        \"PR\",\n        \"QA\",\n        \"CG\",\n        \"RE\",\n        \"RO\",\n        \"RU\",\n        \"RW\",\n        \"BL\",\n        \"SH\",\n        \"KN\",\n        \"LC\",\n        \"MF\",\n        \"PM\",\n        \"VC\",\n        \"WS\",\n        \"SM\",\n        \"ST\",\n        \"SA\",\n        \"SN\",\n        \"RS\",\n        \"SC\",\n        \"SL\",\n        \"SG\",\n        \"SX\",\n        \"SK\",\n        \"SI\",\n        \"SB\",\n        \"SO\",\n        \"ZA\",\n        \"GS\",\n        \"KR\",\n        \"SS\",\n        \"ES\",\n        \"LK\",\n        \"SD\",\n        \"SR\",\n        \"SJ\",\n        \"SZ\",\n        \"SE\",\n        \"CH\",\n        \"SY\",\n        \"TW\",\n        \"TJ\",\n        \"TZ\",\n        \"TH\",\n        \"TG\",\n        \"TK\",\n        \"TO\",\n        \"TT\",\n        \"TN\",\n        \"TR\",\n        \"TM\",\n        \"TC\",\n        \"TV\",\n        \"UM\",\n        \"VI\",\n        \"UG\",\n        \"UA\",\n        \"AE\",\n        \"GB\",\n        \"US\",\n        \"UY\",\n        \"UZ\",\n        \"VU\",\n        \"VA\",\n        \"VE\",\n        \"VN\",\n        \"WF\",\n        \"EH\",\n        \"YE\",\n        \"ZM\",\n        \"ZW\",\n        \"AX\"\n      ],\n      \"enumTitles\": [\n        \"Automatic (based on Amazon domain)\",\n        \"Afghanistan\",\n        \"Albania\",\n        \"Algeria\",\n        \"American Samoa\",\n        \"Andorra\",\n        \"Angola\",\n        \"Anguilla\",\n        \"Antarctica\",\n        \"Antigua and Barbuda\",\n        \"Argentina\",\n        \"Armenia\",\n        \"Aruba\",\n        \"Australia\",\n        \"Austria\",\n        \"Azerbaijan\",\n        \"Bahamas\",\n        \"Bahrain\",\n        \"Bangladesh\",\n        \"Barbados\",\n        \"Belarus\",\n        \"Belgium\",\n        \"Belize\",\n        \"Benin\",\n        \"Bermuda\",\n        \"Bhutan\",\n        \"Bolivia\",\n        \"Bonaire\",\n        \"Bosnia and Herzegovina\",\n        \"Botswana\",\n        \"Bouvet Island\",\n        \"Brazil\",\n        \"British Indian Ocean Territory\",\n        \"British Virgin Islands\",\n        \"Brunei\",\n        \"Bulgaria\",\n        \"Burkina Faso\",\n        \"Burundi\",\n        \"Cambodia\",\n        \"Cameroon\",\n        \"Canada\",\n        \"Cape Verde\",\n        \"Cayman Islands\",\n        \"Central African Republic\",\n        \"Chad\",\n        \"Chile\",\n        \"China\",\n        \"Christmas Island\",\n        \"Cocos [Keeling] Islands\",\n        \"Colombia\",\n        \"Comoros\",\n        \"Cook Islands\",\n        \"Costa Rica\",\n        \"Croatia\",\n        \"Cuba\",\n        \"Curacao\",\n        \"Cyprus\",\n        \"Czech Republic\",\n        \"Democratic Republic of the Congo\",\n        \"Denmark\",\n        \"Djibouti\",\n        \"Dominica\",\n        \"Dominican Republic\",\n        \"East Timor\",\n        \"Ecuador\",\n        \"Egypt\",\n        \"El Salvador\",\n        \"Equatorial Guinea\",\n        \"Eritrea\",\n        \"Estonia\",\n        \"Ethiopia\",\n        \"Falkland Islands\",\n        \"Faroe Islands\",\n        \"Fiji\",\n        \"Finland\",\n        \"France\",\n        \"French Guiana\",\n        \"French Polynesia\",\n        \"French Southern Territories\",\n        \"Gabon\",\n        \"Gambia\",\n        \"Georgia\",\n        \"Germany\",\n        \"Ghana\",\n        \"Gibraltar\",\n        \"Greece\",\n        \"Greenland\",\n        \"Grenada\",\n        \"Guadeloupe\",\n        \"Guam\",\n        \"Guatemala\",\n        \"Guernsey\",\n        \"Guinea-Bissau\",\n        \"Guinea\",\n        \"Guyana\",\n        \"Haiti\",\n        \"Heard Island and McDonald Islands\",\n        \"Honduras\",\n        \"Hong Kong\",\n        \"Hungary\",\n        \"Iceland\",\n        \"India\",\n        \"Indonesia\",\n        \"Iran\",\n        \"Iraq\",\n        \"Ireland\",\n        \"Isle of Man\",\n        \"Israel\",\n        \"Italy\",\n        \"Ivory Coast\",\n        \"Jamaica\",\n        \"Japan\",\n        \"Jersey\",\n        \"Jordan\",\n        \"Kazakhstan\",\n        \"Kenya\",\n        \"Kiribati\",\n        \"Kosovo\",\n        \"Kuwait\",\n        \"Kyrgyzstan\",\n        \"Laos\",\n        \"Latvia\",\n        \"Lebanon\",\n        \"Lesotho\",\n        \"Liberia\",\n        \"Libya\",\n        \"Liechtenstein\",\n        \"Lithuania\",\n        \"Luxembourg\",\n        \"Macao\",\n        \"Madagascar\",\n        \"Malawi\",\n        \"Malaysia\",\n        \"Maldives\",\n        \"Mali\",\n        \"Malta\",\n        \"Marshall Islands\",\n        \"Martinique\",\n        \"Mauritania\",\n        \"Mauritius\",\n        \"Mayotte\",\n        \"Mexico\",\n        \"Micronesia\",\n        \"Moldova\",\n        \"Monaco\",\n        \"Mongolia\",\n        \"Montenegro\",\n        \"Montserrat\",\n        \"Morocco\",\n        \"Mozambique\",\n        \"Myanmar [Burma]\",\n        \"Namibia\",\n        \"Nauru\",\n        \"Nepal\",\n        \"Netherlands\",\n        \"New Caledonia\",\n        \"New Zealand\",\n        \"Nicaragua\",\n        \"Niger\",\n        \"Nigeria\",\n        \"Niue\",\n        \"Norfolk Island\",\n        \"North Korea\",\n        \"North Macedonia\",\n        \"Northern Mariana Islands\",\n        \"Norway\",\n        \"Oman\",\n        \"Pakistan\",\n        \"Palau\",\n        \"Palestine\",\n        \"Panama\",\n        \"Papua New Guinea\",\n        \"Paraguay\",\n        \"Peru\",\n        \"Philippines\",\n        \"Pitcairn Islands\",\n        \"Poland\",\n        \"Portugal\",\n        \"Puerto Rico\",\n        \"Qatar\",\n        \"Republic of the Congo\",\n        \"Réunion\",\n        \"Romania\",\n        \"Russia\",\n        \"Rwanda\",\n        \"Saint Barthélemy\",\n        \"Saint Helena\",\n        \"Saint Kitts and Nevis\",\n        \"Saint Lucia\",\n        \"Saint Martin\",\n        \"Saint Pierre and Miquelon\",\n        \"Saint Vincent and the Grenadines\",\n        \"Samoa\",\n        \"San Marino\",\n        \"São Tomé and Príncipe\",\n        \"Saudi Arabia\",\n        \"Senegal\",\n        \"Serbia\",\n        \"Seychelles\",\n        \"Sierra Leone\",\n        \"Singapore\",\n        \"Sint Maarten\",\n        \"Slovakia\",\n        \"Slovenia\",\n        \"Solomon Islands\",\n        \"Somalia\",\n        \"South Africa\",\n        \"South Georgia and the South Sandwich Islands\",\n        \"South Korea\",\n        \"South Sudan\",\n        \"Spain\",\n        \"Sri Lanka\",\n        \"Sudan\",\n        \"Suriname\",\n        \"Svalbard and Jan Mayen\",\n        \"Swaziland\",\n        \"Sweden\",\n        \"Switzerland\",\n        \"Syria\",\n        \"Taiwan\",\n        \"Tajikistan\",\n        \"Tanzania\",\n        \"Thailand\",\n        \"Togo\",\n        \"Tokelau\",\n        \"Tonga\",\n        \"Trinidad and Tobago\",\n        \"Tunisia\",\n        \"Turkey\",\n        \"Turkmenistan\",\n        \"Turks and Caicos Islands\",\n        \"Tuvalu\",\n        \"U.S. Minor Outlying Islands\",\n        \"U.S. Virgin Islands\",\n        \"Uganda\",\n        \"Ukraine\",\n        \"United Arab Emirates\",\n        \"United Kingdom\",\n        \"United States\",\n        \"Uruguay\",\n        \"Uzbekistan\",\n        \"Vanuatu\",\n        \"Vatican City\",\n        \"Venezuela\",\n        \"Vietnam\",\n        \"Wallis and Futuna\",\n        \"Western Sahara\",\n        \"Yemen\",\n        \"Zambia\",\n        \"Zimbabwe\",\n        \"Åland\"\n      ],\n      \"prefill\": \"AUTO_SELECT_PROXY_COUNTRY\",\n      \"example\": \"AUTO_SELECT_PROXY_COUNTRY\",\n      \"default\": \"AUTO_SELECT_PROXY_COUNTRY\"\n    },\n    \"maxSearchPagesPerStartUrl\": {\n      \"title\": \"Maximum search pages (per start URL)\",\n      \"type\": \"integer\",\n      \"description\": \"Enter the maximum number of search pages to scrape for each start URL. E.g. only scrape the first 5 pages.\\n\\nThis field can also be used with the `maxItemsPerStartUrl` option, the scraper will stop after either one of these limits is reached.\",\n      \"minimum\": 1,\n      \"prefill\": 9999,\n      \"example\": 9999,\n      \"unit\": \"pages\",\n      \"nullable\": false\n    },\n    \"maxProductVariantsAsSeparateResults\": {\n      \"title\": \"Maximum product variants per product (as separate results)\",\n      \"type\": \"integer\",\n      \"description\": \"Enter the maximum number of product variants you want to scrape per each product, outputted as separate results.\\n\\n**Please beware** that **you can already get** most of the **variant details** changes, in the **`variantDetails` field**, which is outputted by default.\\n\\nNote that this **will increase the number of requests** and **extend the scraping time**.\",\n      \"minimum\": 0,\n      \"prefill\": 0,\n      \"example\": 0,\n      \"unit\": \"variants\",\n      \"nullable\": false\n    },\n    \"maxOffers\": {\n      \"title\": \"Maximum scraped offers\",\n      \"type\": \"integer\",\n      \"description\": \"Enter the maximum number of offers you want to scrape per each product. This will let the scraper know when to stop.\\n\\nNote that this **will increase the number of requests** and **extend the scraping time**.\",\n      \"minimum\": 0,\n      \"prefill\": 0,\n      \"example\": 0,\n      \"default\": 0,\n      \"unit\": \"offers\",\n      \"nullable\": false\n    },\n    \"scrapeSellers\": {\n      \"title\": \"Scrape sellers\",\n      \"type\": \"boolean\",\n      \"description\": \"Enable this option to extract further information about sellers of the product. Scrapes the featured offer seller (main seller).\\n\\nThis option goes hand in hand with the `maxOffers` option bby scraping the seller of each offer. If you set `maxOffers` to 0, only the featured offer seller will be scraped.\\n\\nNote that this **will increase the number of requests** and **extend the scraping time**.\",\n      \"example\": false,\n      \"default\": false,\n      \"nullable\": false\n    },\n    \"useCaptchaSolver\": {\n      \"title\": \"Use Captcha solver (warning: see description)\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled the scraper will automatically solve captchas thrown by Amazon. This will decrease the amount of request retries and increase the speed of the scraper.<br><br>***IMPORTANT*** - This option works well only for the `'.com'` Amazon domain, but even for that one Amazon doesn't show a few product fields after solving a captcha (specifically: 'attributes', 'manufacturer attributes', and 'bestseller ranks')\",\n      \"example\": false,\n      \"default\": false\n    },\n    \"scrapeProductVariantPrices\": {\n      \"title\": \"Scrape product variant prices\",\n      \"type\": \"boolean\",\n      \"description\": \"Enable this option to extract prices of different variations of a product. Useful when you need prices for each variant.\\n\\nNote that this **will increase the number of requests** and **extend the scraping time**.\",\n      \"example\": false,\n      \"default\": false\n    },\n    \"scrapeProductDetails\": {\n      \"title\": \"Scrape product details\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled, the scraper will extract each found product from the category page in detail (this is the default behavior).\\n\\nIf disabled, the scraper will only extract the quick product information from the category page. Useful for faster and more lightweight searches for products.\",\n      \"editor\": \"hidden\",\n      \"example\": true,\n      \"default\": true,\n      \"nullable\": true\n    },\n    \"countryCode\": {\n      \"sectionCaption\": \"Delivery location settings\",\n      \"sectionDescription\": \"Set the delivery location on Amazon to get more relevant prices, offers, and shipping options. Use either the country code or the zip code to set the delivery location.\",\n      \"title\": \"Country code\",\n      \"type\": \"string\",\n      \"description\": \"The country code to use as the delivery location.\",\n      \"enum\": [\n        \"AF\",\n        \"AX\",\n        \"AL\",\n        \"DZ\",\n        \"AS\",\n        \"AD\",\n        \"AO\",\n        \"AI\",\n        \"AG\",\n        \"AR\",\n        \"AM\",\n        \"AW\",\n        \"AU\",\n        \"AT\",\n        \"AZ\",\n        \"BS\",\n        \"BH\",\n        \"BD\",\n        \"BB\",\n        \"BY\",\n        \"BE\",\n        \"BZ\",\n        \"BJ\",\n        \"BM\",\n        \"BT\",\n        \"BO\",\n        \"BQ\",\n        \"BA\",\n        \"BW\",\n        \"BV\",\n        \"BR\",\n        \"IO\",\n        \"BN\",\n        \"BG\",\n        \"BF\",\n        \"BI\",\n        \"KH\",\n        \"CM\",\n        \"CA\",\n        \"CV\",\n        \"KY\",\n        \"CF\",\n        \"TD\",\n        \"CL\",\n        \"CN\",\n        \"CX\",\n        \"CC\",\n        \"CO\",\n        \"KM\",\n        \"CD\",\n        \"CG\",\n        \"CK\",\n        \"CR\",\n        \"CI\",\n        \"HR\",\n        \"CW\",\n        \"CY\",\n        \"CZ\",\n        \"DK\",\n        \"DJ\",\n        \"DM\",\n        \"DO\",\n        \"EC\",\n        \"EG\",\n        \"SV\",\n        \"GQ\",\n        \"ER\",\n        \"EE\",\n        \"ET\",\n        \"FK\",\n        \"FO\",\n        \"FJ\",\n        \"FI\",\n        \"FR\",\n        \"GF\",\n        \"PF\",\n        \"TF\",\n        \"GA\",\n        \"GM\",\n        \"GE\",\n        \"DE\",\n        \"GH\",\n        \"GI\",\n        \"GR\",\n        \"GL\",\n        \"GD\",\n        \"GP\",\n        \"GT\",\n        \"GG\",\n        \"GW\",\n        \"GN\",\n        \"GY\",\n        \"HT\",\n        \"HM\",\n        \"VA\",\n        \"HN\",\n        \"HK\",\n        \"HU\",\n        \"IS\",\n        \"IN\",\n        \"ID\",\n        \"IQ\",\n        \"IE\",\n        \"IM\",\n        \"IL\",\n        \"IT\",\n        \"JM\",\n        \"JP\",\n        \"JE\",\n        \"JO\",\n        \"KZ\",\n        \"KE\",\n        \"KI\",\n        \"XK\",\n        \"KW\",\n        \"KG\",\n        \"LA\",\n        \"LV\",\n        \"LB\",\n        \"LS\",\n        \"LR\",\n        \"LY\",\n        \"LI\",\n        \"LT\",\n        \"LU\",\n        \"MO\",\n        \"MK\",\n        \"MG\",\n        \"MW\",\n        \"MY\",\n        \"MV\",\n        \"ML\",\n        \"MT\",\n        \"MH\",\n        \"MQ\",\n        \"MR\",\n        \"MU\",\n        \"YT\",\n        \"MX\",\n        \"FM\",\n        \"MD\",\n        \"MC\",\n        \"MN\",\n        \"ME\",\n        \"MS\",\n        \"MA\",\n        \"MZ\",\n        \"MM\",\n        \"NA\",\n        \"NR\",\n        \"NP\",\n        \"AN\",\n        \"NL\",\n        \"NC\",\n        \"NZ\",\n        \"NI\",\n        \"NE\",\n        \"NG\",\n        \"NU\",\n        \"NF\",\n        \"NO\",\n        \"OM\",\n        \"PK\",\n        \"PW\",\n        \"PS\",\n        \"PA\",\n        \"PG\",\n        \"PY\",\n        \"PE\",\n        \"PH\",\n        \"PN\",\n        \"PL\",\n        \"PT\",\n        \"QA\",\n        \"KR\",\n        \"RE\",\n        \"RO\",\n        \"RU\",\n        \"RW\",\n        \"BL\",\n        \"SH\",\n        \"KN\",\n        \"LC\",\n        \"MF\",\n        \"PM\",\n        \"VC\",\n        \"WS\",\n        \"SM\",\n        \"ST\",\n        \"SA\",\n        \"SN\",\n        \"RS\",\n        \"SC\",\n        \"SL\",\n        \"SG\",\n        \"SX\",\n        \"SK\",\n        \"SI\",\n        \"SB\",\n        \"SO\",\n        \"ZA\",\n        \"GS\",\n        \"ES\",\n        \"LK\",\n        \"SR\",\n        \"SJ\",\n        \"SZ\",\n        \"SE\",\n        \"CH\",\n        \"TW\",\n        \"TJ\",\n        \"TZ\",\n        \"TH\",\n        \"TL\",\n        \"TG\",\n        \"TK\",\n        \"TO\",\n        \"TT\",\n        \"TN\",\n        \"TR\",\n        \"TM\",\n        \"TC\",\n        \"TV\",\n        \"UG\",\n        \"UA\",\n        \"AE\",\n        \"GB\",\n        \"UM\",\n        \"US\",\n        \"UY\",\n        \"UZ\",\n        \"VU\",\n        \"VE\",\n        \"VN\",\n        \"VG\",\n        \"WF\",\n        \"EH\",\n        \"YE\",\n        \"ZM\",\n        \"ZW\"\n      ],\n      \"enumTitles\": [\n        \"Afghanistan\",\n        \"Aland Islands\",\n        \"Albania\",\n        \"Algeria\",\n        \"American Samoa\",\n        \"Andorra\",\n        \"Angola\",\n        \"Anguilla\",\n        \"Antigua and Barbuda\",\n        \"Argentina\",\n        \"Armenia\",\n        \"Aruba\",\n        \"Australia\",\n        \"Austria\",\n        \"Azerbaijan\",\n        \"Bahamas, The\",\n        \"Bahrain\",\n        \"Bangladesh\",\n        \"Barbados\",\n        \"Belarus\",\n        \"Belgium\",\n        \"Belize\",\n        \"Benin\",\n        \"Bermuda\",\n        \"Bhutan\",\n        \"Bolivia\",\n        \"Bonaire, Saint Eustatius and Saba\",\n        \"Bosnia and Herzegovina\",\n        \"Botswana\",\n        \"Bouvet Island\",\n        \"Brazil\",\n        \"British Indian Ocean Territory\",\n        \"Brunei Darussalam\",\n        \"Bulgaria\",\n        \"Burkina Faso\",\n        \"Burundi\",\n        \"Cambodia\",\n        \"Cameroon\",\n        \"Canada\",\n        \"Cape Verde\",\n        \"Cayman Islands\",\n        \"Central African Republic\",\n        \"Chad\",\n        \"Chile\",\n        \"China\",\n        \"Christmas Island\",\n        \"Cocos (Keeling) Islands\",\n        \"Colombia\",\n        \"Comoros\",\n        \"Congo, The Democratic Republic of the\",\n        \"Congo\",\n        \"Cook Islands\",\n        \"Costa Rica\",\n        \"Cote D'ivoire\",\n        \"Croatia\",\n        \"Curaçao\",\n        \"Cyprus\",\n        \"Czech Republic\",\n        \"Denmark\",\n        \"Djibouti\",\n        \"Dominica\",\n        \"Dominican Republic\",\n        \"Ecuador\",\n        \"Egypt\",\n        \"El Salvador\",\n        \"Equatorial Guinea\",\n        \"Eritrea\",\n        \"Estonia\",\n        \"Ethiopia\",\n        \"Falkland Islands (Malvinas)\",\n        \"Faroe Islands\",\n        \"Fiji\",\n        \"Finland\",\n        \"France\",\n        \"French Guiana\",\n        \"French Polynesia\",\n        \"French Southern Territories\",\n        \"Gabon\",\n        \"Gambia, The\",\n        \"Georgia\",\n        \"Germany\",\n        \"Ghana\",\n        \"Gibraltar\",\n        \"Greece\",\n        \"Greenland\",\n        \"Grenada\",\n        \"Guadeloupe\",\n        \"Guatemala\",\n        \"Guernsey\",\n        \"Guinea-Bissau\",\n        \"Guinea\",\n        \"Guyana\",\n        \"Haiti\",\n        \"Heard Island and the McDonald Islands\",\n        \"Holy See\",\n        \"Honduras\",\n        \"Hong Kong\",\n        \"Hungary\",\n        \"Iceland\",\n        \"India\",\n        \"Indonesia\",\n        \"Iraq\",\n        \"Ireland\",\n        \"Isle of Man\",\n        \"Israel\",\n        \"Italy\",\n        \"Jamaica\",\n        \"Japan\",\n        \"Jersey\",\n        \"Jordan\",\n        \"Kazakhstan\",\n        \"Kenya\",\n        \"Kiribati\",\n        \"Kosovo\",\n        \"Kuwait\",\n        \"Kyrgyzstan\",\n        \"Lao People's Democratic Republic\",\n        \"Latvia\",\n        \"Lebanon\",\n        \"Lesotho\",\n        \"Liberia\",\n        \"Libya\",\n        \"Liechtenstein\",\n        \"Lithuania\",\n        \"Luxembourg\",\n        \"Macao\",\n        \"Macedonia, The Former Yugoslav Republic of\",\n        \"Madagascar\",\n        \"Malawi\",\n        \"Malaysia\",\n        \"Maldives\",\n        \"Mali\",\n        \"Malta\",\n        \"Marshall Islands\",\n        \"Martinique\",\n        \"Mauritania\",\n        \"Mauritius\",\n        \"Mayotte\",\n        \"Mexico\",\n        \"Micronesia, Federated States of\",\n        \"Moldova, Republic of\",\n        \"Monaco\",\n        \"Mongolia\",\n        \"Montenegro\",\n        \"Montserrat\",\n        \"Morocco\",\n        \"Mozambique\",\n        \"Myanmar\",\n        \"Namibia\",\n        \"Nauru\",\n        \"Nepal\",\n        \"Netherlands Antilles\",\n        \"Netherlands\",\n        \"New Caledonia\",\n        \"New Zealand\",\n        \"Nicaragua\",\n        \"Niger\",\n        \"Nigeria\",\n        \"Niue\",\n        \"Norfolk Island\",\n        \"Norway\",\n        \"Oman\",\n        \"Pakistan\",\n        \"Palau\",\n        \"Palestinian Territories\",\n        \"Panama\",\n        \"Papua New Guinea\",\n        \"Paraguay\",\n        \"Peru\",\n        \"Philippines\",\n        \"Pitcairn\",\n        \"Poland\",\n        \"Portugal\",\n        \"Qatar\",\n        \"Republic of Korea\",\n        \"Reunion\",\n        \"Romania\",\n        \"Russian Federation\",\n        \"Rwanda\",\n        \"Saint Barthelemy\",\n        \"Saint Helena, Ascension and Tristan da Cunha\",\n        \"Saint Kitts and Nevis\",\n        \"Saint Lucia\",\n        \"Saint Martin\",\n        \"Saint Pierre and Miquelon\",\n        \"Saint Vincent and the Grenadines\",\n        \"Samoa\",\n        \"San Marino\",\n        \"Sao Tome and Principe\",\n        \"Saudi Arabia\",\n        \"Senegal\",\n        \"Serbia\",\n        \"Seychelles\",\n        \"Sierra Leone\",\n        \"Singapore\",\n        \"Sint Maarten\",\n        \"Slovakia\",\n        \"Slovenia\",\n        \"Solomon Islands\",\n        \"Somalia\",\n        \"South Africa\",\n        \"South Georgia and the South Sandwich Islands\",\n        \"Spain\",\n        \"Sri Lanka\",\n        \"Suriname\",\n        \"Svalbard and Jan Mayen\",\n        \"Swaziland\",\n        \"Sweden\",\n        \"Switzerland\",\n        \"Taiwan\",\n        \"Tajikistan\",\n        \"Tanzania, United Republic of\",\n        \"Thailand\",\n        \"Timor-leste\",\n        \"Togo\",\n        \"Tokelau\",\n        \"Tonga\",\n        \"Trinidad and Tobago\",\n        \"Tunisia\",\n        \"Turkey\",\n        \"Turkmenistan\",\n        \"Turks and Caicos Islands\",\n        \"Tuvalu\",\n        \"Uganda\",\n        \"Ukraine\",\n        \"United Arab Emirates\",\n        \"United Kingdom\",\n        \"United States Minor Outlying Islands\",\n        \"United States\",\n        \"Uruguay\",\n        \"Uzbekistan\",\n        \"Vanuatu\",\n        \"Venezuela\",\n        \"Vietnam\",\n        \"Virgin Islands, British\",\n        \"Wallis and Futuna\",\n        \"Western Sahara\",\n        \"Yemen\",\n        \"Zambia\",\n        \"Zimbabwe\"\n      ],\n      \"example\": \"US\",\n      \"nullable\": true\n    },\n    \"zipCode\": {\n      \"title\": \"Zip code\",\n      \"type\": \"string\",\n      \"description\": \"The zip code to use as the delivery location. This is useful for more precise location settings, especially in larger countries.\",\n      \"editor\": \"textfield\",\n      \"example\": \"10001\",\n      \"nullable\": true\n    },\n    \"locationDeliverableRoutes\": {\n      \"title\": \"Location deliverable routes\",\n      \"type\": \"array\",\n      \"description\": \"The list of routes/page types, for which the deliverable location settings should be applied.\\n- This is useful for speeding up the scraping process by not applying the location settings to all pages, for which you don't need the localized data for.\\n- For example, you can set it to `['SEARCH', 'PRODUCT']` to apply the location settings only to search and product pages.\\n- By default, all pages are included.\",\n      \"editor\": \"select\",\n      \"items\": {\n        \"type\": \"string\",\n        \"enum\": [\n          \"PRODUCT\",\n          \"SEARCH\",\n          \"OFFERS\"\n        ],\n        \"enumTitles\": [\n          \"Product detail\",\n          \"Products search\",\n          \"Product offers\"\n        ]\n      },\n      \"prefill\": [\n        \"PRODUCT\",\n        \"SEARCH\",\n        \"OFFERS\"\n      ],\n      \"example\": [\n        \"PRODUCT\",\n        \"SEARCH\",\n        \"OFFERS\"\n      ],\n      \"default\": [\n        \"PRODUCT\",\n        \"SEARCH\",\n        \"OFFERS\"\n      ],\n      \"nullable\": true\n    }\n  },\n  \"required\": [\n    \"categoryOrProductUrls\"\n  ]\n}"
+}

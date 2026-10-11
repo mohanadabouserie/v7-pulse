@@ -1,0 +1,88 @@
+{
+ "act": {
+  "title": "Facebook Posts Search",
+  "users30d": 1709,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Facebook Posts Search\r\n\r\n- This **Apify Actor** searches for posts on **Facebook** based on keywords or hashtags. The results include post url,\r\n  post content, publication date,\r\n  author information, and engagement metrics.\r\n\r\n\r\n- It is a perfect tool for **monitoring** Facebook for **brand mentions** over time\r\n  **Stay ahead** of potential reputation risks, respond to significant events, and engage with **highly active** public\r\n  discussions 🚀\r\n\r\n---------------\r\n\r\n## Features\r\n\r\n- 🔍 Search by **keywords, hashtags**\r\n- 📅 Filter by **location**\r\n- 📊 Extract **likes, comments, reactions, shares etc.**\r\n- 🖼️ Retrieve **images and links** from posts\r\n\r\n## Input Parameters\r\n\r\n| Parameter      | Type     | Required | Description                                                                                                  |\r\n|----------------|----------|----------|--------------------------------------------------------------------------------------------------------------|\r\n| `query`        | `string` | ✅        | Keyword to search posts for.                                                                                 |\r\n| `resultsCount` | `number` | ❌        | Maximum number of posts to extract (e.g. `30`).  If not set, only a few of the first posts will be returned. |\r\n| `maxResults`  | `number` | ❌        | Alias for `resultsCount`; `resultsCount` takes precedence when both are provided.                            |\n| `location`     | `string` | ❌        | Search posts with a pinned location. Accepts a name (e.g. `London`) or a Facebook Location ID.               |\n| `searchType`   | `string` | ❌        | Search type: most popular - top (default) or latest. Defaults to platform’s default if not specified.        |\r\n| `startDate`    | `string` | ❌        | Get posts starting from given date (YYYY-MM-DD).                                                             |\n| `endDate`      | `string` | ❌        | Get posts ending on date (YYYY-MM-DD).                                                                       |\n\r\n## Example Input\r\n\r\n```json\r\n{\r\n    \"query\": \"Orange\",\r\n    \"resultsCount\": 50,\r\n    \"searchType\": \"latest\"\r\n}\r\n```\r\n\r\nor\r\n\r\n```json\r\n{\r\n    \"query\": \"bronco\",\r\n    \"resultsCount\": 5,\r\n    \"startDate\": \"2025-01-01\",\r\n    \"endDate\": \"2025-01-31\"\r\n}\r\n```\r\n\r\n## Output Data\r\n\r\nThe actor returns an array of JSON objects with extracted post data. When Facebook provides a location tagged in a\r\npost, its ID is returned in the optional `taggedLocationId` field.\n\n### Example Output\r\n\r\n```json\r\n[\r\n    {\r\n        \"url\": \"https://www.facebook.com/jeff.moerke.1/posts/pfbid02gAfuzjGqHuAk9APdU6mDwveqeNg7cXf3YrEyFohYjwu8F2zgxgzSayXZ4bXHEZHHl\",\r\n        \"timestamp\": 1743735597000,\r\n        \"postText\": \"🍾Dom Daily🍾\\nLV Collection on Point🕺🏻💃\\n40 Bottles in 40 days\\n 2009 Dom Pèrignon at @themonarchsteakhouse.aspen 🤑 needed something to wash down the caviar. \\n\\nSquad has pieces on pieces \\n#jeffmoerke #hospatality #dompérignon #louisevuitton #aspen @louisvuitton @domperignonofficial @domperignoncollectors\",\r\n        \"reactionsCount\": 251,\r\n        \"reactions\": {\r\n            \"like\": 218,\r\n            \"love\": 30,\r\n            \"support\": 3,\r\n            \"haha\": 4,\r\n            \"wow\": 5,\r\n            \"sorry\": 6,\r\n            \"anger\": 1\r\n        },\r\n        \"commentsCount\": 1,\r\n        \"sharesCount\": 3,\r\n        \"postId\": \"1891857264894411\",\r\n        \"taggedLocationId\": \"108343052523582\",\n        \"isReshare\": false,\n        \"sharedPost\": null,\n        \"author\": {\r\n            \"id\": \"100022104669475\",\r\n            \"name\": \"Jeff Moerke\",\r\n            \"profilePicture\": \"https://scontent.fpoz3-1.fna.fbcdn.net/v/t39.30808-1/328653743_672376154638502_2292484167379744319_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=wzuppsF7tW4Q7kNvwG8Jokm&_nc_oc=AdmCjeJrDYFOkExMlTro1Go_4aIZPGVCdSU0isBvxAsSEUTMOOyND1H0-a5J1ilYdCg&_nc_zt=24&_nc_ht=scontent.fpoz3-1.fna&_nc_gid=3HnVNoc9LAaE2-rhHqoH3Q&oh=00_AYEWhweOAbsVEla31p_H1Lrg5kMPajznKLyvr7UEUAZjwA&oe=67F57505\",\r\n            \"profileUrl\": \"https://www.facebook.com/jeff.moerke.1\"\r\n        },\r\n        \"attachments\": [\r\n            {\r\n                \"type\": \"video\",\r\n                \"url\": \"https://www.facebook.com/jeff.moerke.1/videos/521227401036554/\",\r\n                \"id\": \"521227401036554\"\r\n            },\r\n            {\r\n                \"type\": \"photo\",\r\n                \"url\": \"https://www.facebook.com/photo.php?fbid=1891857228227748&set=a.197904564289698&type=3\",\r\n                \"id\": \"1891857228227748\",\r\n                \"accessibilityCaption\": \"May be an image of text that says \\\"AplPay LOUIS VUITTONNEW YORK NY Mar 30, 2025 $3,628.76 AplPay LOUIS VUITTONNEW YORK NY Feb 24, 2025 $541.24 LOUIS VUITTON USA, INEW YORK NY Feb 2, 2025 $1,825.31 LOUIS VUITTON USA, INEW YORK NY Feb 2, 2025 $12,398.11 LOUIS VUITTON USA, INEW YORK NY Feb 1, 2025 $964.54 LOUIS VUITTON USA, INEW YORK NY Coh1 2025 $5,711.36\\\"\"\r\n            }\r\n        ]\r\n    }\r\n]\r\n```\r\n\r\n### Example Reshare Output\n\nIllustrative result with modified names and identifiers: `author` identifies the person sharing the post,\nand `sharedPost` contains the original.\nTimestamps are in milliseconds; unavailable shared-post fields are `null`.\n\n```json\n[\n    {\n        \"url\": \"https://www.facebook.com/groups/787308176464718/posts/1453639979831531/\",\n        \"postId\": \"1453639979831531\",\n        \"timestamp\": 1776084422000,\n        \"postText\": \"Sharing this recipe!\",\n        \"reactionsCount\": 4,\n        \"reactions\": {\n            \"like\": 3,\n            \"love\": 1\n        },\n        \"commentsCount\": 2,\n        \"sharesCount\": 1,\n        \"author\": {\n            \"id\": \"100095138558305\",\n            \"name\": \"Irene Veggie\",\n            \"profilePicture\": \"https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/366698601_172471579190550_1759016207881133083_n.jpg?stp=cp0_dst-jpg_s24x24_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=I-NU2OG0lQwQ7kNvwEYSodZ&_nc_oc=AdreVIA87izZ4H9hHHukQ9krefMLYvpH22-50HnXh2x8QwnxZ5LFHMtMLEnqQ7ej3-t&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=oNXx3sf6tFtxMDaIICQxmB&_nc_ss=7a3a8&oh=00_Af2rd8uun7wO0S0i8mGOrnEKiFrM7UNB2PtveMgW3iF9jB&oe=69E3EE09\",\n            \"profileUrl\": \"https://www.facebook.com/profile.php?id=100095138558305\"\n        },\n        \"isReshare\": true,\n        \"sharedPost\": {\n            \"postId\": \"848158384971886\",\n            \"url\": \"https://www.facebook.com/HappyVeggieStudio/posts/pfbid0rnW2iSxvvqfR3mqcMVeYbgmRRdtqx7PN4S9te9ftrLBeNao8Zeuj44UxfdkQ6y3cm\",\n            \"postText\": \"Try these avocado sushi cups. Full recipe below!\",\n            \"author\": {\n                \"id\": \"100093331920589\",\n                \"name\": \"Happy Veggie Studio\",\n                \"profilePicture\": \"https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/495359071_586354351152292_5047216559807115732_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=jFsFMIibW2gQ7kNvwH3ED-9&_nc_oc=AdoOhcukYCO2qbyls22-elG7arB-yCjpnIsV1x8c3Hm8IbipHfvMW5Ce23bGBfXq321&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=oNXx3sf6tFtxMDaIICQxmB&_nc_ss=7a3a8&oh=00_Af0LkHZBHpOPb7SyrlIo_D6iieN8hlQR42HjoUcaTq6ueh&oe=69E3C22B\",\n                \"profileUrl\": \"https://www.facebook.com/HappyVeggieStudio\"\n            },\n            \"timestamp\": 1776080822000,\n            \"attachments\": [\n                {\n                    \"type\": \"photo\",\n                    \"url\": \"https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/668982649_848076701646721_5592975237572055582_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=107&ccb=1-7&_nc_sid=dd6889&_nc_ohc=oGsRo6I9ObYQ7kNvwEjYUz5&_nc_oc=AdpfbEqrcy9lgnCa-xabKCUjRzoVBQZ1SZIrIQauXU_OtkL20oA6JTK0U4imIJY-RkN&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=oNXx3sf6tFtxMDaIICQxmB&_nc_ss=7a3a8&oh=00_Af0XuHfGXqqpzdJD-evM_-T2q30xe452oHXIYSBMmuXgIR&oe=69E3D46A\",\n                    \"id\": \"848158358305222\",\n                    \"accessibilityCaption\": \"Avocado sushi cups on a plate\"\n                }\n            ]\n        }\n    }\n]\n```\n\n##### Let us know if you need any other output fields. 🤙\n\r\n## Usage\r\n\r\n1. **Create an Apify account** and navigate to the actor.\r\n2. **Configure input parameters** in the Apify UI or via API.\r\n3. **Run the actor** and monitor execution logs.\r\n4. **Download extracted posts** as JSON, CSV, or Excel.\r\n\r\n## Limitations & Notes\r\n\r\n- Scraping Facebook data **must comply with their Terms of Service**.\r\n- Avoid excessive scraping to prevent IP bans.\r\n- Free users can retrieve up to **100 posts per search query**.\r\n- Free users are rate-limited to a certain number of requests per day.\r\n- For higher usage limits, upgrade to a [paid Apify plan](https://apify.com/pricing).\r\n\r\n## Works Best With\r\n\r\nTo maximize the effectiveness of this scraper, use it in combination\r\nwith [Facebook Comments Scraper](https://apify.com/scraper_one/facebook-comments-scraper).\r\n\r\nBy first extracting Facebook posts with this scraper, you can then pass the collected post URLs into the Facebook\r\nComments Scraper, allowing you to retrieve\r\ncomments associated with those posts.\r\n\r\n### Best Use Case Scenario\r\n\r\n- 🔎 Run Facebook Posts Search actor → Collect a list of posts based on keywords.\r\n- 📥 Feed post URLs into Facebook Comments Scraper → Extract comments from the collected posts for deeper analysis.\r\n- 📊 Get full post insights → Combine post metadata and comments for a complete dataset.\r\n\r\nThis workflow is ideal for social media monitoring, sentiment analysis, and engagement tracking. 🚀\r\n\r\n## Other Recommended Scrapers\r\n\r\nIf you're working with multiple platforms or want additional data sources, check out these scrapers:\r\n\r\n- 🐦 [X (Twitter) Posts Search](https://apify.com/scraper_one/x-posts-search) — Find posts/tweets based on keywords,\r\n  hashtags, and more\r\n- 🐦 [X (Twitter) Post Replies Scraper](https://apify.com/scraper_one/x-post-replies-scraper) — Scrap replies of multiple\r\n  X (Twitter) posts\r\n- 🐦 [X (Twitter) Profile Posts Scraper](https://apify.com/scraper_one/x-profile-posts-scraper) — Scrap posts of specific\r\n  X (Twitter) profile\r\n- 📘 [Facebook Posts Search](https://apify.com/scraper_one/facebook-posts-search) — Discover Facebook posts for a given\r\n  topic or page\r\n- 📘 [Facebook Comments Scraper](https://apify.com/scraper_one/facebook-comments-scraper) — Extract comments from public\r\n  Facebook posts\r\n- 📘 [Facebook Reactions Scraper](https://apify.com/scraper_one/facebook-reactions-scraper) — Scrap reactions from\r\n  Facebook posts (like, sad, haha, angry etc.)\r\n- 📘 [Facebook Posts Scraper](https://apify.com/scraper_one/facebook-posts-scraper) — Scrap posts from Facebook pages,\r\n  groups etc.\r\n- 🎬 [YouTube Search Scraper](https://apify.com/scraper_one/youtube-search-scraper) — Extract videos from search queries\r\n- 🎬 [YouTube Comments Scraper](https://apify.com/scraper_one/youtube-comments-scraper) — Extract comments from posted\r\n  videos\r\n- 🎬 [YouTube Downloader](https://apify.com/scraper_one/yt-downloader) — Download youtube videos\r\n\r\n## Support & Contact\r\n\r\n✉️ If you encounter issues or need help, feel free to **open an issue** or contact us at **scraper1one@gmail.com**\r\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "transformation": {
+     "fields": [
+      "url",
+      "postId",
+      "taggedLocationId",
+      "postText",
+      "reactions",
+      "reactionsCount",
+      "timestamp",
+      "commentsCount",
+      "author",
+      "attachments",
+      "isReshare",
+      "sharedPost"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "url": {
+       "label": "Post url",
+       "format": "link"
+      },
+      "postId": {
+       "label": "Post id",
+       "format": "text"
+      },
+      "taggedLocationId": {
+       "label": "Tagged location id",
+       "format": "text"
+      },
+      "postText": {
+       "label": "Post text",
+       "format": "text"
+      },
+      "reactions": {
+       "label": "Reactions",
+       "format": "object"
+      },
+      "reactionsCount": {
+       "label": "Reactions count",
+       "format": "number"
+      },
+      "timestamp": {
+       "label": "Publication timestamp",
+       "format": "number"
+      },
+      "commentsCount": {
+       "label": "Comments count",
+       "format": "number"
+      },
+      "author": {
+       "label": "Author",
+       "format": "object"
+      },
+      "attachments": {
+       "label": "Attachments",
+       "format": "object"
+      },
+      "isReshare": {
+       "label": "Is reshare",
+       "format": "boolean"
+      },
+      "sharedPost": {
+       "label": "Shared post",
+       "format": "object"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Custom Search Input\",\n  \"description\": \"Input schema for searching Facebook data using Apify Actor.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"query\": {\n      \"title\": \"Search Query\",\n      \"type\": \"string\",\n      \"description\": \"The search term to look for.\",\n      \"editor\": \"textfield\",\n      \"prefill\": \"Tesla\",\n      \"minLength\": 1,\n      \"maxLength\": 100,\n      \"pattern\": \"^[^{}$<>`]*$\"\n    },\n    \"resultsCount\": {\n      \"title\": \"Number of results\",\n      \"type\": \"integer\",\n      \"description\": \"Number of search results to retrieve. If not set, only a few of the first posts will be returned. Note: Free-plan users can retrieve up to 100 posts per search query.\",\n      \"editor\": \"number\",\n      \"minimum\": 1,\n      \"prefill\": 10\n    },\n    \"maxResults\": {\n      \"title\": \"Maximum results (alias)\",\n      \"type\": \"integer\",\n      \"description\": \"Alias for resultsCount. Used only when resultsCount is not provided.\",\n      \"editor\": \"number\",\n      \"minimum\": 1\n    },\n    \"searchType\": {\n      \"title\": \"Search Type\",\n      \"type\": \"string\",\n      \"description\": \"What kind of posts you'd like to search for. Defaults to platform’s default if not specified.\",\n      \"editor\": \"select\",\n      \"default\": \"top\",\n      \"enum\": [\n        \"top\",\n        \"latest\"\n      ],\n      \"enumTitles\": [\n        \"Most popular\",\n        \"Latest\"\n      ]\n    },\n    \"location\": {\n      \"title\": \"Location\",\n      \"type\": \"string\",\n      \"description\": \"Limit posts to a given **pinned** location. Enter a location name or a Facebook Location ID. For names, the first result from the Facebook location dropdown is selected. For example, entering 'Alaska' will result in 'Anchorage, Alaska'.\",\n      \"editor\": \"textfield\",\n      \"maxLength\": 20\n    },\n    \"startDate\": {\n      \"title\": \"Start Date\",\n      \"type\": \"string\",\n      \"description\": \"Get posts starting from given date (YYYY-MM-DD).\",\n      \"editor\": \"datepicker\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])$\"\n    },\n    \"endDate\": {\n      \"title\": \"End Date\",\n      \"type\": \"string\",\n      \"description\": \"Get posts ending on given date (YYYY-MM-DD).\",\n      \"editor\": \"datepicker\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])$\"\n    }\n  },\n  \"required\": [\n    \"query\"\n  ]\n}"
+}

@@ -1,0 +1,526 @@
+<title>V7 Pulse Costs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#f2f5f4;--paper:#ffffff;--surface:#fcfcfb;--sunk:#eef2f1;
+  --ink:#0f1f20;--ink-2:#465655;--muted:#6f7c7b;
+  --hair:#dde4e2;--hair-strong:#c3cecc;
+  --accent:#0e5e63;--accent-ink:#ffffff;--accent-soft:#e1efed;
+  --claude:#6c4fd3;--claude-soft:#ece8fb;
+  --apify:#c98a10;--apify-soft:#fdf3dc;
+  --bad-text:#b42323;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0c1213;--paper:#131b1c;--surface:#161f20;--sunk:#0f1617;
+    --ink:#ecf2f1;--ink-2:#a8b6b4;--muted:#859391;
+    --hair:#243031;--hair-strong:#35433f;
+    --accent:#5cb8b2;--accent-ink:#06191a;--accent-soft:#16302f;
+    --claude:#a493f2;--claude-soft:#221d3a;
+    --apify:#f2b53a;--apify-soft:#2e2715;
+    --bad-text:#f08080;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0c1213;--paper:#131b1c;--surface:#161f20;--sunk:#0f1617;
+  --ink:#ecf2f1;--ink-2:#a8b6b4;--muted:#859391;
+  --hair:#243031;--hair-strong:#35433f;
+  --accent:#5cb8b2;--accent-ink:#06191a;--accent-soft:#16302f;
+  --claude:#a493f2;--claude-soft:#221d3a;
+  --apify:#f2b53a;--apify-soft:#2e2715;
+  --bad-text:#f08080;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:14px/1.5 var(--body)}
+button,select,input{font:inherit;color:inherit}
+a{color:var(--accent);text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
+header.top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+h1{font-family:var(--display);font-size:30px;line-height:1.1;margin:0;letter-spacing:-.015em;text-wrap:balance}
+.sub{color:var(--ink-2);margin:6px 0 0;max-width:62ch}
+.presets{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.presets .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.btn{border:1px solid var(--hair-strong);background:var(--paper);border-radius:8px;padding:7px 12px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.layout{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:20px;align-items:start}
+.controls{display:flex;flex-direction:column;gap:14px}
+.panel{background:var(--paper);border:1px solid var(--hair);border-radius:12px;padding:16px 18px}
+.panel h2{font-family:var(--display);font-size:17px;margin:0 0 12px;letter-spacing:-.005em}
+.field{display:flex;flex-direction:column;gap:6px;padding:10px 0;border-top:1px solid var(--hair)}
+.field:first-of-type{border-top:0;padding-top:0}
+.field>label,.field legend{font-weight:600;font-size:13.5px;padding:0}
+.field .help{font-size:12.5px;color:var(--muted)}
+fieldset.field{border:0;margin:0;min-width:0;border-top:1px solid var(--hair);padding:10px 0}
+.range{display:grid;grid-template-columns:1fr 84px;gap:10px;align-items:center}
+input[type=range]{accent-color:var(--accent);width:100%}
+input[type=number],select{width:100%;border:1px solid var(--hair-strong);border-radius:8px;padding:6px 8px;background:var(--surface)}
+input[type=number]{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{border:1px solid var(--hair-strong);border-radius:7px;padding:5px 10px;cursor:pointer;font-size:13px;background:var(--surface)}
+.seg input:checked+label{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.seg input:focus-visible+label{outline:2px solid var(--accent);outline-offset:2px}
+.check{display:flex;gap:8px;align-items:center;font-size:13px}
+.check input{accent-color:var(--accent);width:16px;height:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+details.adv summary{cursor:pointer;font-weight:600;font-family:var(--display);font-size:15px}
+details.adv[open] summary{margin-bottom:10px}
+.advgrid{display:grid;grid-template-columns:1fr 96px;gap:8px 10px;align-items:center;font-size:13px}
+.advgrid .h{grid-column:1/-1;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.results{display:flex;flex-direction:column;gap:16px;min-width:0}
+.hero{background:var(--paper);border:1px solid var(--hair);border-radius:14px;padding:20px 22px;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:18px}
+.hero .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hero .v{font-family:var(--display);font-size:40px;line-height:1.05;letter-spacing:-.02em;margin-top:4px}
+.hero .v.s{font-size:26px}
+.hero .p{font-size:12.5px;color:var(--ink-2);margin-top:4px}
+.split{grid-column:1/-1}
+.splitbar{display:flex;height:12px;border-radius:6px;overflow:hidden;background:var(--sunk);margin-top:6px}
+.splitbar span{display:block;height:100%}
+.leg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--ink-2);margin-top:8px}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.cur{display:flex;gap:4px}
+.lines{display:flex;flex-direction:column}
+.line{display:grid;grid-template-columns:minmax(0,1fr) 120px 110px;gap:4px 14px;align-items:center;padding:10px 0;border-top:1px solid var(--hair)}
+.line:first-child{border-top:0}
+.line .nm{font-weight:600;font-size:13.5px}
+.line .ex{font-size:12px;color:var(--muted);grid-column:1/2}
+.line .bar{height:8px;border-radius:4px;background:var(--sunk);overflow:hidden;grid-row:1;grid-column:2}
+.line .bar span{display:block;height:100%}
+.line .amt{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;grid-row:1;grid-column:3}
+.line .amt small{display:block;font-size:11px;color:var(--muted)}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:1px}
+.tag.f{background:var(--accent-soft);color:var(--accent)}.tag.v{background:var(--sunk);color:var(--ink-2)}
+.sec{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:14px 0 2px}
+.cmp{width:100%;border-collapse:collapse;font-size:13px}
+.cmp th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--hair-strong)}
+.cmp td{padding:7px 8px;border-bottom:1px solid var(--hair)}
+.cmp td.r,.cmp th.r{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.cmp tr.on td,.cmp td.on{background:var(--accent-soft);font-weight:600}
+.cap{font-size:12.5px;color:var(--muted);margin:-6px 0 8px}
+.cmp .up{color:var(--bad-text)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.note{font-size:12.5px;color:var(--ink-2);background:var(--sunk);border-radius:8px;padding:10px 12px;margin:12px 0 0}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.fact{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:12px}
+.fact b{display:block;font-family:var(--mono);font-size:18px;font-variant-numeric:tabular-nums;margin-top:2px}
+.fact span{font-size:12px;color:var(--muted)}
+.src{font-size:12.5px;color:var(--ink-2)}
+.src li{margin:3px 0}
+.sticky{display:none}
+@media (max-width:1180px){
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  .results{order:-1}
+  .hero{grid-template-columns:1fr 1fr}
+  .hero .tot{grid-column:1/-1}
+  .g2{grid-template-columns:1fr}
+  .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;justify-content:space-between;align-items:center;gap:10px;background:var(--paper);border-top:1px solid var(--hair-strong);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+  .sticky b{font-family:var(--display);font-size:20px}
+  .wrap{padding-block:20px 90px}
+}
+@media (max-width:520px){
+  .wrap{padding-inline:16px}
+  h1{font-size:24px}
+  .hero .v{font-size:32px}
+  .line{grid-template-columns:minmax(0,1fr) 96px}
+  .line .bar{display:none}
+  .line .amt{grid-column:2}
+  .two{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>What V7 Pulse costs to run</h1>
+      <p class="sub">A yearly estimate for hosting the dashboard, collecting the data and running Claude. Move the controls and every number updates. Prices checked 6 Oct 2026.</p>
+    </div>
+    <div class="presets" role="group" aria-label="Scenarios">
+      <span class="lbl">Scenario</span>
+      <button type="button" class="btn" data-preset="lean" aria-pressed="false">Lean</button>
+      <button type="button" class="btn" data-preset="rec" aria-pressed="true">Recommended</button>
+      <button type="button" class="btn" data-preset="heavy" aria-pressed="false">Heavy</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <form class="controls" id="form" autocomplete="off">
+      <section class="panel">
+        <h2>Ask V7 Pulse</h2>
+        <div class="field">
+          <label for="msgs">Questions asked per day</label>
+          <div class="range"><input type="range" id="msgs" min="0" max="300" step="1" value="20"><input type="number" id="msgsN" min="0" max="5000" value="20" aria-label="Questions per day"></div>
+          <span class="help">Everyone on the team together.</span>
+        </div>
+        <div class="field">
+          <label for="model">Claude model for answers</label>
+          <select id="model">
+            <option value="opus5">Claude Opus 5 · $5 / $25 per million tokens</option>
+            <option value="opus55">Claude Opus 5.5 · $4 / $20 (new)</option>
+            <option value="sonnet5">Claude Sonnet 5 · $2 / $10</option>
+            <option value="haiku45">Claude Haiku 4.5 · $1 / $5</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="search">Questions that also search the web</label>
+          <div class="range"><input type="range" id="search" min="0" max="100" step="5" value="20"><input type="number" id="searchN" min="0" max="100" value="20" aria-label="Percent of questions that search"></div>
+          <span class="help">Percent of questions. About 2 searches each, $10 per 1,000 searches.</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>How fresh the data is</h2>
+        <fieldset class="field" style="border-top:0;padding-top:0">
+          <legend>Social media refresh</legend>
+          <div class="seg" id="refreshSeg"></div>
+          <span class="help">How often new posts and comments are collected from Facebook, Instagram, TikTok, X and YouTube.</span>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Online store checks</legend>
+          <div class="seg" id="storeSeg"></div>
+          <label class="check"><input type="checkbox" id="storeComp" checked> Include competitors</label>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Talabat restaurant check</legend>
+          <div class="seg" id="talSeg"></div>
+          <div class="seg" id="talCovSeg"></div>
+        </fieldset>
+        <div class="field">
+          <label for="analysis">Analysis runs per day</label>
+          <div class="range"><input type="range" id="analysis" min="0" max="24" step="1" value="2"><input type="number" id="analysisN" min="0" max="24" value="2" aria-label="Analysis runs per day"></div>
+          <span class="help">Daily summary, suggested events and rumor grouping.</span>
+        </div>
+        <div class="field">
+          <label for="nModel">Claude model for analysis runs</label>
+          <select id="nModel">
+            <option value="opus5" selected>Claude Opus 5 · $5 / $25 per million tokens</option>
+            <option value="opus55">Claude Opus 5.5 · $4 / $20 (new)</option>
+            <option value="sonnet5">Claude Sonnet 5 · $2 / $10</option>
+            <option value="haiku45">Claude Haiku 4.5 · $1 / $5</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>How much people talk about V7</h2>
+        <div class="field">
+          <label for="posts">New posts about V7 per day</label>
+          <div class="range"><input type="range" id="posts" min="10" max="2000" step="10" value="100"><input type="number" id="postsN" min="0" max="20000" value="100" aria-label="New posts per day"></div>
+          <span class="help">All platforms. Searches also return unrelated posts (the Haval V7 car, phones), which still cost to collect and read.</span>
+        </div>
+        <div class="field">
+          <label for="comments">New comments per day</label>
+          <div class="range"><input type="range" id="comments" min="0" max="3000" step="10" value="150"><input type="number" id="commentsN" min="0" max="30000" value="150" aria-label="New comments per day"></div>
+          <span class="help">Facebook and Instagram comments come free through Meta’s API once V7’s token is set up.</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Plans</h2>
+        <div class="field">
+          <label for="vps">Hosting, Hostinger VPS (yearly plan)</label>
+          <select id="vps">
+            <option value="kvm1">KVM 1 · 1 vCPU, 4 GB · $6.49 a month</option>
+            <option value="kvm2" selected>KVM 2 · 2 vCPU, 8 GB · $8.99 a month</option>
+            <option value="kvm4">KVM 4 · 4 vCPU, 16 GB · $12.99 a month</option>
+          </select>
+          <span class="help" id="vpsHelp"></span>
+        </div>
+        <div class="field">
+          <label for="apify">Apify plan</label>
+          <select id="apify">
+            <option value="auto" selected>Cheapest for this usage</option>
+            <option value="free">Free · $5 of usage a month</option>
+            <option value="starter">Starter, billed yearly · $17 a month</option>
+            <option value="scale">Scale, billed yearly · $179 a month</option>
+          </select>
+        </div>
+        <div class="field two">
+          <div><label for="domain" style="font-weight:600;font-size:13.5px">Domain, USD a year</label><input type="number" id="domain" min="0" step="0.01" value="19.99"></div>
+          <div><label for="other" style="font-weight:600;font-size:13.5px">Other fixed, USD a year</label><input type="number" id="other" min="0" step="1" value="0"></div>
+        </div>
+        <div class="field">
+          <label for="rate">Egyptian pounds per US dollar</label>
+          <input type="number" id="rate" min="1" step="0.1" value="52.3">
+        </div>
+      </section>
+
+      <section class="panel">
+        <details class="adv" id="adv">
+          <summary>Assumptions behind the estimate</summary>
+          <div class="advgrid">
+            <span class="h">One Ask V7 Pulse answer</span>
+            <label for="aFresh">New input tokens (data the tools return, the question)</label><input type="number" id="aFresh" value="15000" step="500">
+            <label for="aCached">Cached input tokens (instructions, tool list)</label><input type="number" id="aCached" value="25000" step="500">
+            <label for="aWrite">Tokens written to the cache</label><input type="number" id="aWrite" value="3000" step="500">
+            <label for="aOut">Output tokens (answer and thinking)</label><input type="number" id="aOut" value="2000" step="100">
+            <label for="aSearchTok">Extra input tokens per web search</label><input type="number" id="aSearchTok" value="4000" step="500">
+            <span class="h">Reading one post or comment</span>
+            <label for="rModel">Model</label>
+            <select id="rModel"><option value="haiku45" selected>Haiku 4.5</option><option value="sonnet5">Sonnet 5</option></select>
+            <label for="rIn">Input tokens</label><input type="number" id="rIn" value="600" step="50">
+            <label for="rCached">Cached instructions</label><input type="number" id="rCached" value="2000" step="100">
+            <label for="rOut">Output tokens</label><input type="number" id="rOut" value="150" step="10">
+            <label class="check" style="grid-column:1/-1"><input type="checkbox" id="batch" checked> Use the Batch API for reading (half price, results within hours)</label>
+            <span class="h">One analysis run</span>
+            <label for="nFresh">New input tokens</label><input type="number" id="nFresh" value="20000" step="1000">
+            <label for="nCached">Cached input tokens</label><input type="number" id="nCached" value="10000" step="1000">
+            <label for="nOut">Output tokens</label><input type="number" id="nOut" value="2500" step="100">
+            <span class="h">Collecting posts with Apify</span>
+            <label for="noise">Unrelated results, % of what searches return</label><input type="number" id="noise" value="35" step="5" min="0" max="90">
+            <label for="terms">Search terms per platform</label><input type="number" id="terms" value="3" step="1" min="1">
+            <label for="minRes">Fewest results asked for per search</label><input type="number" id="minRes" value="10" step="5" min="1">
+            <label for="startFee">Start fee per search run, USD</label><input type="number" id="startFee" value="0.005" step="0.001" min="0">
+            <label for="pFb">Facebook, USD per 1,000 results</label><input type="number" id="pFb" value="5" step="0.1" min="0">
+            <label for="pIg">Instagram, USD per 1,000 results</label><input type="number" id="pIg" value="2.3" step="0.1" min="0">
+            <label for="pTt">TikTok, USD per 1,000 results</label><input type="number" id="pTt" value="5" step="0.1" min="0">
+            <label for="pX">X, USD per 1,000 results</label><input type="number" id="pX" value="0.4" step="0.1" min="0">
+            <label for="ttCom">Comments that need Apify (TikTok), %</label><input type="number" id="ttCom" value="25" step="5" min="0" max="100">
+            <span class="h">Other data checks, USD per check</span>
+            <label for="cStoreC">Online stores, with competitors</label><input type="number" id="cStoreC" value="0.30" step="0.01" min="0">
+            <label for="cStoreV">Online stores, V7 only</label><input type="number" id="cStoreV" value="0.19" step="0.01" min="0">
+            <label for="cTalS">Talabat, sample of 650 restaurants</label><input type="number" id="cTalS" value="0.65" step="0.05" min="0">
+            <label for="cTalF">Talabat, every restaurant in 10 areas</label><input type="number" id="cTalF" value="10.60" step="0.1" min="0">
+          </div>
+          <p class="note">Free sources cost nothing to collect: Google Trends, the YouTube Data API, Reddit, Google News and Meta’s API for V7’s own pages. Token counts are estimates; the first month of real use will show the true numbers.</p>
+        </details>
+      </section>
+    </form>
+
+    <div class="results" aria-live="polite">
+      <section class="hero">
+        <div class="tot">
+          <div class="k">Year one total</div>
+          <div class="v num" id="tTotal">—</div>
+          <div class="p" id="tTotalP"></div>
+        </div>
+        <div>
+          <div class="k">Per month</div>
+          <div class="v s num" id="tMonth">—</div>
+          <div class="p" id="tMonthP"></div>
+        </div>
+        <div>
+          <div class="k">From year two</div>
+          <div class="v s num" id="tYear2">—</div>
+          <div class="p" id="tYear2P"></div>
+        </div>
+        <div class="split">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+            <div class="leg" id="splitLeg" style="margin-top:0"></div>
+            <div class="cur seg" role="group" aria-label="Currency">
+              <input type="radio" name="cur" id="curUsd" value="usd" checked><label for="curUsd">USD</label>
+              <input type="radio" name="cur" id="curEgp" value="egp"><label for="curEgp">EGP</label>
+            </div>
+          </div>
+          <div class="splitbar" id="splitBar" role="img"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap"><h2>Where the money goes</h2>
+          <div class="leg" style="margin:0 0 10px"><span><i style="background:var(--accent)"></i>Plans</span><span><i style="background:var(--claude)"></i>Claude</span><span><i style="background:var(--apify)"></i>Apify data collection</span></div></div>
+        <div class="lines" id="lines"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Per unit</h2>
+        <div class="facts" id="facts"></div>
+      </section>
+
+      <div class="g2">
+        <section class="panel">
+          <h2>If the social refresh changes</h2>
+          <p class="cap">Year-one total at each refresh rate.</p>
+          <table class="cmp" id="cmpRefresh"></table>
+        </section>
+        <section class="panel">
+          <h2>If the Claude model changes</h2>
+          <p class="cap">Change to the year-one total.</p>
+          <table class="cmp" id="cmpModel"></table>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h2>Prices used</h2>
+        <ul class="src">
+          <li>Claude: Opus 5 $5 / $25, Opus 5.5 $4 / $20, Sonnet 5 $2 / $10, Haiku 4.5 $1 / $5 per million input / output tokens. Cached input is billed at about a tenth of the input price, Batch API at half price, web search at $10 per 1,000 searches. <a href="https://platform.claude.com/docs/en/about-claude/pricing" target="_blank" rel="noopener">Claude pricing ↗</a></li>
+          <li>Apify: Free $0 ($5 of usage a month), Starter $17 a month billed yearly ($19 of usage), Scale $179 a month billed yearly ($199 of usage). Usage above the plan’s amount is billed on top. Per-result prices from each scraper’s store page. <a href="https://apify.com/pricing" target="_blank" rel="noopener">Apify pricing ↗</a></li>
+          <li>Hostinger VPS: KVM 1 $6.49, KVM 2 $8.99, KVM 4 $12.99 a month at signup; renewal $11.99, $14.99 and $28.99. Check the price for a 12-month term at checkout. <a href="https://www.hostinger.com/vps-hosting" target="_blank" rel="noopener">Hostinger VPS ↗</a></li>
+          <li>Domain: a .com renews at $19.99 a year at Hostinger. <a href="https://www.hostinger.com/tld/com-domain" target="_blank" rel="noopener">.com domains ↗</a></li>
+          <li>Exchange rate: about EGP 52.3 per US dollar on 6 Oct 2026. Change it above.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="sticky" aria-hidden="true"><span>Year one total</span><b class="num" id="stickyTotal">—</b></div>
+
+<script>
+(function(){
+"use strict";
+/* Prices checked 6 Oct 2026. USD. Token prices per million tokens. */
+var MODELS={opus5:{n:'Claude Opus 5',in:5,out:25,cr:0.5},opus55:{n:'Claude Opus 5.5',in:4,out:20,cr:0.2},sonnet5:{n:'Claude Sonnet 5',in:2,out:10,cr:0.2},haiku45:{n:'Claude Haiku 4.5',in:1,out:5,cr:0.1}};
+var SEARCH_PRICE=0.01,SEARCHES_PER=2,CACHE_WRITE=1.25;
+var VPS={kvm1:{n:'KVM 1',mo:6.49,renew:11.99},kvm2:{n:'KVM 2',mo:8.99,renew:14.99},kvm4:{n:'KVM 4',mo:12.99,renew:28.99}};
+var APIFY={free:{n:'Apify Free',mo:0,incl:5},starter:{n:'Apify Starter',mo:17,incl:19},scale:{n:'Apify Scale',mo:179,incl:199}};
+var REFRESH=[['1h','Every hour',24],['3h','Every 3 hours',8],['6h','Every 6 hours',4],['12h','Every 12 hours',2],['1d','Daily',1],['1w','Weekly',1/7]];
+var STORES=[['2d','Twice a day',2],['1d','Daily',1],['1w','Weekly',1/7],['off','Off',0]];
+var TALABAT=[['1w','Weekly',52],['1m','Monthly',12],['3m','Quarterly',4],['off','Off',0]];
+var TALCOV=[['full','Every restaurant'],['sample','Sample of 650']];
+/* share of posts per platform, and whether it is collected with Apify */
+var PLAT=[['fb','Facebook',.40],['ig','Instagram',.25],['tt','TikTok',.20],['x','X',.12],['yt','YouTube',.03]];
+var PRESETS={
+  lean:{msgs:10,model:'sonnet5',search:10,refresh:'1d',store:'1d',storeComp:false,tal:'3m',talCov:'sample',analysis:1,nModel:'sonnet5',posts:100,comments:150,vps:'kvm1',apify:'auto'},
+  rec:{msgs:20,model:'opus5',search:20,refresh:'6h',store:'1d',storeComp:true,tal:'1m',talCov:'full',analysis:2,nModel:'opus5',posts:100,comments:150,vps:'kvm2',apify:'auto'},
+  heavy:{msgs:100,model:'opus5',search:30,refresh:'1h',store:'2d',storeComp:true,tal:'1w',talCov:'full',analysis:4,nModel:'opus5',posts:300,comments:600,vps:'kvm4',apify:'auto'}
+};
+var $=function(id){return document.getElementById(id);};
+function seg(id,name,opts,val){$(id).innerHTML=opts.map(function(o){var i=name+'_'+o[0];return '<input type="radio" name="'+name+'" id="'+i+'" value="'+o[0]+'"'+(o[0]===val?' checked':'')+'><label for="'+i+'">'+o[1]+'</label>';}).join('');}
+seg('refreshSeg','refresh',REFRESH,'6h');seg('storeSeg','store',STORES,'1d');seg('talSeg','tal',TALABAT,'1m');seg('talCovSeg','talCov',TALCOV,'full');
+function radio(name){var x=document.querySelector('input[name="'+name+'"]:checked');return x?x.value:null;}
+function setRadio(name,v){var x=document.querySelector('input[name="'+name+'"][value="'+v+'"]');if(x)x.checked=true;}
+function num(id){var v=parseFloat($(id).value);return isFinite(v)&&v>=0?v:0;}
+/* keep each slider and its number box in step */
+[['msgs','msgsN'],['search','searchN'],['analysis','analysisN'],['posts','postsN'],['comments','commentsN']].forEach(function(p){
+  $(p[0]).addEventListener('input',function(){$(p[1]).value=$(p[0]).value;});
+  $(p[1]).addEventListener('input',function(){$(p[0]).value=Math.min(+$(p[0]).max,+$(p[1]).value||0);});
+});
+
+function read(){
+  return {msgs:num('msgsN'),model:$('model').value,search:Math.min(100,num('searchN'))/100,refresh:radio('refresh'),store:radio('store'),storeComp:$('storeComp').checked,
+    tal:radio('tal'),talCov:radio('talCov'),analysis:num('analysisN'),posts:num('postsN'),comments:num('commentsN'),vps:$('vps').value,apify:$('apify').value,
+    domain:num('domain'),other:num('other'),rate:num('rate')||1,
+    aFresh:num('aFresh'),aCached:num('aCached'),aWrite:num('aWrite'),aOut:num('aOut'),aSearchTok:num('aSearchTok'),
+    rModel:$('rModel').value,rIn:num('rIn'),rCached:num('rCached'),rOut:num('rOut'),batch:$('batch').checked,
+    nModel:$('nModel').value,nFresh:num('nFresh'),nCached:num('nCached'),nOut:num('nOut'),
+    noise:Math.min(90,num('noise'))/100,terms:Math.max(1,num('terms')),minRes:Math.max(1,num('minRes')),startFee:num('startFee'),
+    price:{fb:num('pFb'),ig:num('pIg'),tt:num('pTt'),x:num('pX'),yt:0},ttCom:Math.min(100,num('ttCom'))/100,
+    cStoreC:num('cStoreC'),cStoreV:num('cStoreV'),cTalS:num('cTalS'),cTalF:num('cTalF')};
+}
+function perDay(list,k){for(var i=0;i<list.length;i++)if(list[i][0]===k)return list[i][2];return 0;}
+function msgCost(s,m){var M=MODELS[m],srch=s.search*SEARCHES_PER;
+  return ((s.aFresh+srch*s.aSearchTok)*M.in+s.aCached*M.cr+s.aWrite*M.in*CACHE_WRITE+s.aOut*M.out)/1e6+srch*SEARCH_PRICE;}
+function calc(s){
+  var r={};
+  /* Claude */
+  r.msg=msgCost(s,s.model);
+  r.chat=s.msgs*365*r.msg;
+  r.webShare=s.msgs*365*s.search*SEARCHES_PER*SEARCH_PRICE;
+  var R=MODELS[s.rModel],postsCollected=s.posts/(1-s.noise),items=postsCollected+s.comments;
+  r.item=(s.rIn*R.in+s.rCached*R.cr+s.rOut*R.out)/1e6*(s.batch?.5:1);
+  r.items=items;r.read=items*365*r.item;
+  var A=MODELS[s.nModel];r.run=(s.nFresh*A.in+s.nCached*A.cr+s.nOut*A.out)/1e6;r.analysis=s.analysis*365*r.run;
+  /* Apify: social posts */
+  var checks=perDay(REFRESH,s.refresh),social=0;r.plat={};
+  PLAT.forEach(function(p){var price=s.price[p[0]];if(!price){r.plat[p[0]]=0;return;}
+    var collected=postsCollected*p[2],per=Math.max(s.minRes,Math.ceil(collected/checks/s.terms*1.5));
+    var day=checks*s.terms*(s.startFee+per*price/1000);r.plat[p[0]]=day*365;social+=day*365;});
+  var ttComments=s.comments*s.ttCom;r.comApify=(ttComments*s.price.tt/1000+(ttComments>0?checks*s.startFee:0))*365;
+  r.social=social+r.comApify;
+  r.stores=perDay(STORES,s.store)*365*(s.storeComp?s.cStoreC:s.cStoreV);
+  r.talabat=perDay(TALABAT,s.tal)*(s.talCov==='full'?s.cTalF:s.cTalS);
+  r.apifyUse=r.social+r.stores+r.talabat;
+  var mUse=r.apifyUse/12,plans={};
+  Object.keys(APIFY).forEach(function(k){var P=APIFY[k];plans[k]={k:k,fixed:P.mo*12,over:Math.max(0,mUse-P.incl)*12,ok:k!=='free'||mUse<=P.incl+1e-9};plans[k].total=plans[k].fixed+plans[k].over;});
+  var pick=s.apify;
+  if(pick==='auto'){pick=Object.keys(plans).filter(function(k){return plans[k].ok;}).sort(function(a,b){return plans[a].total-plans[b].total;})[0];}
+  r.apifyPlan=plans[pick];r.apifyWarn=!plans[pick].ok;
+  /* fixed */
+  var V=VPS[s.vps];r.vps1=V.mo*12;r.vps2=V.renew*12;r.domain=s.domain;r.other=s.other;
+  r.fixed=r.vps1+r.domain+r.other+r.apifyPlan.fixed;
+  r.variable=r.chat+r.read+r.analysis+r.apifyPlan.over;
+  r.total=r.fixed+r.variable;
+  r.total2=r.total-r.vps1+r.vps2;
+  return r;
+}
+var cur='usd';
+function money(usd,s,small){var v=cur==='egp'?usd*s.rate:usd,pre=cur==='egp'?'EGP ':'$';
+  if(small)return pre+(v<1?v.toFixed(cur==='egp'?2:3):v.toFixed(2));
+  return pre+Math.round(v).toLocaleString('en-US');}
+function other(usd,s){return cur==='egp'?'$'+Math.round(usd).toLocaleString('en-US'):'EGP '+Math.round(usd*s.rate).toLocaleString('en-US');}
+function render(){
+  var s=read(),r=calc(s),M=MODELS[s.model];
+  $('tTotal').textContent=money(r.total,s);$('stickyTotal').textContent=money(r.total,s);
+  $('tTotalP').textContent=other(r.total,s)+' · fixed '+money(r.fixed,s)+', variable '+money(r.variable,s);
+  $('tMonth').textContent=money(r.total/12,s);$('tMonthP').textContent='average across the year';
+  $('tYear2').textContent=money(r.total2,s);$('tYear2P').textContent='hosting renews at $'+VPS[s.vps].renew.toFixed(2)+' a month';
+  $('vpsHelp').textContent='Renews at $'+VPS[s.vps].renew.toFixed(2)+' a month from year two.';
+  var fp=r.total?r.fixed/r.total*100:0;
+  $('splitBar').innerHTML='<span style="width:'+fp.toFixed(1)+'%;background:var(--accent)"></span><span style="width:'+(100-fp).toFixed(1)+'%;background:var(--claude)"></span>';
+  $('splitBar').setAttribute('aria-label','Fixed '+Math.round(fp)+'%, variable '+Math.round(100-fp)+'%');
+  $('splitLeg').innerHTML='<span><i style="background:var(--accent)"></i>Fixed '+Math.round(fp)+'%</span><span><i style="background:var(--claude)"></i>Variable '+Math.round(100-fp)+'%</span>';
+  var ap=r.apifyPlan,plan=APIFY[ap.k];
+  var L=[
+    {sec:'Fixed, paid yearly'},
+    {n:'Hosting',t:'f',v:r.vps1,c:'var(--accent)',ex:'Hostinger '+VPS[s.vps].n+', $'+VPS[s.vps].mo.toFixed(2)+' a month on a yearly plan. Runs the dashboard, the database and the collection jobs.'},
+    {n:'Domain',t:'f',v:r.domain,c:'var(--accent)',ex:'One .com, renewed yearly. SSL certificates are free.'},
+    {n:plan.n+' plan',t:'f',v:ap.fixed,c:'var(--accent)',ex:ap.k==='free'?'Covers up to $5 of data collection a month.':'$'+plan.mo+' a month billed yearly. Includes $'+plan.incl+' of data collection each month.'},
+    {n:'Other fixed costs',t:'f',v:r.other,c:'var(--accent)',ex:'Anything else you add above, such as paid backups.',hide:!r.other},
+    {sec:'Variable, grows with use'},
+    {n:'Ask V7 Pulse answers',t:'v',v:r.chat,c:'var(--claude)',ex:Math.round(s.msgs).toLocaleString('en-US')+' questions a day × '+money(r.msg,s,1)+' each on '+M.n+(r.webShare?', including '+money(r.webShare,s)+' of web searches':'')+'.'},
+    {n:'Reading posts and comments',t:'v',v:r.read,c:'var(--claude)',ex:'About '+Math.round(r.items).toLocaleString('en-US')+' items a day read by '+MODELS[s.rModel].n+(s.batch?' through the Batch API':'')+': sentiment, topic, product, rumor check.'},
+    {n:'Analysis runs',t:'v',v:r.analysis,c:'var(--claude)',ex:s.analysis+' a day × '+money(r.run,s,1)+' on '+MODELS[s.nModel].n+': daily summary, suggested events, rumor grouping.'},
+    {n:'Data collection above the plan',t:'v',v:ap.over,c:'var(--apify)',ex:'Apify usage '+money(r.apifyUse,s)+' a year (social media '+money(r.social,s)+', online stores '+money(r.stores,s)+', Talabat '+money(r.talabat,s)+'), minus '+money(Math.min(r.apifyUse,plan.incl*12),s)+' covered by the plan.'}
+  ];
+  var max=Math.max.apply(null,L.filter(function(x){return !x.sec;}).map(function(x){return x.v;}))||1;
+  $('lines').innerHTML=L.map(function(x){
+    if(x.sec)return '<div class="sec">'+x.sec+'</div>';
+    if(x.hide)return '';
+    return '<div class="line"><div><span class="nm">'+x.n+'</span><span class="tag '+x.t+'">'+(x.t==='f'?'Fixed':'Variable')+'</span></div>'+
+      '<div class="bar" aria-hidden="true"><span style="width:'+(x.v/max*100).toFixed(1)+'%;background:'+x.c+'"></span></div>'+
+      '<div class="amt">'+money(x.v,s)+'<small>'+(r.total?Math.round(x.v/r.total*100):0)+'% · '+money(x.v/12,s)+'/mo</small></div><div class="ex">'+x.ex+'</div></div>';
+  }).join('')+(r.apifyWarn?'<p class="note" style="color:var(--bad-text)">This much data collection doesn’t fit the Free plan’s $5 a month. Choose Starter or “Cheapest for this usage”.</p>':'');
+  var checks=perDay(REFRESH,s.refresh);
+  $('facts').innerHTML=[
+    ['One question',money(r.msg,s,1),'on '+M.n],
+    ['One analysis run',money(r.run,s,1),'on '+MODELS[s.nModel].n],
+    ['One social refresh',money(r.social/365/Math.max(checks,1e-9),s,1),checks>=1?checks+' a day':'once a week'],
+    ['Reading 1,000 posts',money(r.item*1000,s,1),MODELS[s.rModel].n+(s.batch?', Batch API':'')]
+  ].map(function(f){return '<div class="fact"><span>'+f[0]+'</span><b>'+f[1]+'</b><span>'+f[2]+'</span></div>';}).join('');
+  /* what-if tables */
+  function row(label,t,on,base){var d=t-base;return '<tr'+(on?' class="on"':'')+'><td>'+label+'</td><td class="r">'+money(t,s)+'</td><td class="r'+(d>0.5?' up':'')+'">'+(on?'current':(d>=0?'+':'−')+money(Math.abs(d),s))+'</td></tr>';}
+  var head='<thead><tr><th>Option</th><th class="r">Year one</th><th class="r">Change</th></tr></thead>';
+  $('cmpRefresh').innerHTML=head+'<tbody>'+REFRESH.map(function(o){var t=calc(Object.assign({},s,{refresh:o[0]})).total;return row(o[1],t,o[0]===s.refresh,r.total);}).join('')+'</tbody>';
+  /* one row per model, one column per job: the change if that job moved to that model */
+  function modelCell(job,k){if(s[job]===k)return '<td class="r on">current</td>';
+    var o={};o[job]=k;var d=calc(Object.assign({},s,o)).total-r.total;
+    return '<td class="r'+(d>0.5?' up':'')+'">'+(d>=0?'+':'−')+money(Math.abs(d),s)+'</td>';}
+  $('cmpModel').innerHTML='<thead><tr><th>Model</th><th class="r">Answers</th><th class="r">Analysis</th></tr></thead><tbody>'+Object.keys(MODELS).map(function(k){
+    return '<tr><td>'+MODELS[k].n.replace('Claude ','')+'</td>'+modelCell('model',k)+modelCell('nModel',k)+'</tr>';}).join('')+'</tbody>';
+  /* scenario buttons */
+  var match=Object.keys(PRESETS).filter(function(k){var P=PRESETS[k];return Object.keys(P).every(function(f){return String(s[f]===undefined?'':(f==='search'?Math.round(s.search*100):s[f]))===String(P[f]);});})[0];
+  document.querySelectorAll('[data-preset]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-preset')===match));});
+  try{localStorage.setItem('v7costs',JSON.stringify(saveState()));}catch(e){}
+}
+function saveState(){var o={};document.querySelectorAll('#form input,#form select').forEach(function(el){if(!el.id)return;if(el.type==='radio'){if(el.checked)o['r:'+el.name]=el.value;}else o[el.id]=el.type==='checkbox'?el.checked:el.value;});o.cur=cur;o.adv=$('adv').open;return o;}
+function loadState(o){Object.keys(o).forEach(function(k){if(k==='cur'||k==='adv')return;if(k.indexOf('r:')===0){setRadio(k.slice(2),o[k]);return;}var el=$(k);if(!el)return;if(el.type==='checkbox')el.checked=!!o[k];else el.value=o[k];});
+  ['msgs','search','analysis','posts','comments'].forEach(function(k){if(o[k+'N']!=null)$(k).value=Math.min(+$(k).max,+o[k+'N']);});
+  if(o.cur){cur=o.cur;setRadio('cur',cur);}if(o.adv)$('adv').open=true;}
+function applyPreset(k){var P=PRESETS[k];
+  [['msgs','msgs'],['search','search'],['analysis','analysis'],['posts','posts'],['comments','comments']].forEach(function(p){$(p[0]).value=Math.min(+$(p[0]).max,P[p[1]]);$(p[0]+'N').value=P[p[1]];});
+  $('model').value=P.model;$('nModel').value=P.nModel;$('vps').value=P.vps;$('apify').value=P.apify;$('storeComp').checked=P.storeComp;
+  setRadio('refresh',P.refresh);setRadio('store',P.store);setRadio('tal',P.tal);setRadio('talCov',P.talCov);render();}
+document.querySelectorAll('[data-preset]').forEach(function(b){b.addEventListener('click',function(){applyPreset(b.getAttribute('data-preset'));});});
+$('form').addEventListener('input',render);$('form').addEventListener('change',render);
+$('form').addEventListener('submit',function(e){e.preventDefault();});
+document.querySelectorAll('input[name="cur"]').forEach(function(el){el.addEventListener('change',function(){cur=el.value;render();});});
+$('adv').addEventListener('toggle',function(){try{localStorage.setItem('v7costs',JSON.stringify(saveState()));}catch(e){}});
+try{var saved=JSON.parse(localStorage.getItem('v7costs')||'null');
+  /* settings saved before analysis had its own model: analysis used the answers model */
+  if(saved){if(saved.nModel==null&&saved.model)saved.nModel=saved.model;loadState(saved);}}catch(e){}
+render();
+})();
+</script>

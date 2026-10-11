@@ -1,0 +1,69 @@
+{
+ "act": {
+  "title": "Talabat Scraper - Restaurant Menus, Prices & Delivery Fees",
+  "users30d": 14,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "# Talabat Scraper\n\n<!-- thirdwatch-portfolio-proof:start -->\n> **Thirdwatch portfolio:** 8,800+ users across 140+ public Actors, 2M+ records delivered, >95% run success. [Explore all Thirdwatch Actors](https://apify.com/thirdwatch).\n<!-- thirdwatch-portfolio-proof:end -->\n\n> Scrape restaurants and menus from Talabat.com across 9 Middle Eastern countries — ratings, cuisines, GPS coordinates, payment methods, and full menus with prices.\n\n## What you get\n\nTalabat is the dominant food-delivery platform across MENA, operating in UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar, Jordan, Egypt, and Iraq. This actor returns restaurant names, ratings, cuisines, latitude/longitude, accepted payment methods, popular items, and — when enabled — the full menu with item-level prices, descriptions, and images.\n\n## Output fields (restaurants)\n\n| Field | Description |\n|-------|-------------|\n| `name` | Restaurant name |\n| `slug` | URL slug identifier |\n| `cuisine` | Cuisine types (e.g., \"Pizza, Italian, Fast Food\") |\n| `rating` | Average customer rating |\n| `total_ratings` | Total number of ratings |\n| `logo` | Restaurant logo URL |\n| `latitude` | GPS latitude |\n| `longitude` | GPS longitude |\n| `accepts_cash` | Whether cash is accepted |\n| `accepts_card` | Whether card is accepted |\n| `most_selling_items` | List of popular menu item names |\n| `country` | Country code |\n| `url` | Full Talabat URL |\n| `menu_items` | Full menu (when `scrapeMenu` is enabled) |\n| `scraped_at` | Timestamp |\n\n## Output fields (menu items, when enabled)\n\n| Field | Description |\n|-------|-------------|\n| `name` | Menu item name |\n| `description` | Item description |\n| `price` | Item price |\n| `old_price` | Original price if discounted |\n| `image` | Item image URL |\n| `category` | Menu section |\n| `has_choices` | True if the item has customizable choices (sizes, add-ons, extras) |\n| `choice_sections` | Full choice tree, only present when `scrapeMenuChoices` is enabled |\n\n## Output fields (choice sections, when `scrapeMenuChoices` is enabled)\n\nEach menu item with `has_choices=true` gets a `choice_sections` array. Each section has:\n\n| Field | Description |\n|-------|-------------|\n| `section_name` | Section title (e.g. `\"Choose Your Side\"`, `\"Add On\"`) |\n| `selection_string` | Human-readable rule (e.g. `\"Choose 1\"`, `\"Choose up to 16 items\"`) |\n| `min_quantity` / `max_quantity` | Quantity bounds for the section |\n| `is_single_selection` | True if user must pick exactly one option |\n| `is_mandatory` | True if the section must be filled to add the item |\n| `options` | Array of individual choices, each with `id`, `name`, `price`, `old_price`, `is_discounted`, `has_sub_choices` |\n\nNote: choice options are text-only on Talabat — there is no per-option image field. The parent menu item's image is in `menu_items[].image`.\n\n## Example output\n\n```json\n{\n    \"name\": \"Pizza Hut\",\n    \"slug\": \"pizza-hut\",\n    \"cuisine\": \"Pizza, Italian, Fast Food\",\n    \"rating\": 4.2,\n    \"total_ratings\": 15420,\n    \"logo\": \"https://images.deliveryhero.io/image/talabat/restaurants/pizza-hut-logo.jpg\",\n    \"latitude\": 25.2048,\n    \"longitude\": 55.2708,\n    \"accepts_cash\": true,\n    \"accepts_card\": true,\n    \"most_selling_items\": [\"Pepperoni Pizza\", \"Margherita\", \"Chicken Supreme\"],\n    \"country\": \"uae\",\n    \"url\": \"https://www.talabat.com/uae/pizza-hut\",\n    \"scraped_at\": \"2026-04-11T12:00:00.000000+00:00\"\n}\n```\n\n## Input parameters\n\n| Parameter | Required | Description |\n|-----------|----------|-------------|\n| `queries` | No | Search terms or restaurant names (e.g., `[\"pizza\", \"mcdonalds\", \"sushi\"]`). Leave empty if you only want specific restaurants via `restaurantSlugs`. |\n| `restaurantSlugs` | No | Scrape specific restaurants directly by slug instead of searching — the last segment of a Talabat restaurant URL (e.g. `blue-fig` for `talabat.com/jordan/blue-fig`). Uses the selected `country`. |\n| `country` | No | One of `uae`, `sa`, `kw`, `bh`, `om`, `qa`, `jo`, `eg`, `iq`. Default `uae`. |\n| `maxResults` | No | Max restaurants per query. Default `20`, max `1000`. |\n| `scrapeMenu` | No | Fetch the full menu (items, prices, descriptions, images) for each restaurant. Default `false`. |\n| `scrapeMenuChoices` | No | Also fetch the full choice tree (sizes, add-ons, extras with prices) for every customizable menu item. Auto-enables `scrapeMenu`. Billed separately as a `menu-choices-fetched` event, so runs that don't need choices aren't charged for them. Default `false`. |\n\n<!-- thirdwatch-blog-backlinks -->\n\n## Use cases & recipes\n\nStep-by-step guides on [thirdwatch.dev/blog](https://thirdwatch.dev/blog):\n\n- [Build a Food Delivery Price Comparison with Talabat (2026)](https://thirdwatch.dev/blog/build-food-delivery-price-comparison-with-talabat)\n- [Extract Talabat Cuisines and Ratings for MENA Market Research (2026)](https://thirdwatch.dev/blog/extract-talabat-cuisines-and-ratings-for-market-research)\n- [Monitor Talabat Promotions and Discounts at Scale (2026)](https://thirdwatch.dev/blog/monitor-talabat-promotions-and-discounts-at-scale)\n- [Scrape Talabat Restaurant Menus for Price Monitoring (2026)](https://thirdwatch.dev/blog/scrape-talabat-restaurant-menus-for-price-monitoring)\n\n<!-- thirdwatch-blog-backlinks -->-end\n\n## Supported countries\n\n| Code | Country |\n|------|---------|\n| `uae` | United Arab Emirates |\n| `sa` | Saudi Arabia |\n| `kw` | Kuwait |\n| `bh` | Bahrain |\n| `om` | Oman |\n| `qa` | Qatar |\n| `jo` | Jordan |\n| `eg` | Egypt |\n| `iq` | Iraq |\n\n## Use cases\n\n- **Food-tech analysts**: Benchmark cuisine distribution and rating density across all 9 Talabat countries.\n- **Restaurant chains**: Track your ratings, popular items, and payment options vs. direct competitors.\n- **Cloud kitchens**: Identify under-served cuisines and gaps in each country.\n- **Location intelligence teams**: Use GPS coordinates to map restaurant density for retail expansion.\n- **Menu-pricing analysts**: Monitor item-level prices across chains and countries.\n\n## Limitations\n\n- Menu items vary with time of day — some entries disappear outside peak hours or restaurant opening times.\n- Lightly-rated restaurants (new listings) may return `null` for `rating`.\n- `most_selling_items` shows only item names; enable `scrapeMenu` to get prices and descriptions.\n- GPS coordinates are restaurant headquarters — not per-branch — for chains.\n\n## Compared to alternatives\n\n- **vs. other Talabat scrapers**: No direct Apify Store competitor at this time — this is the only Talabat scraper on the platform.\n- **vs. Talabat Partner API**: Not publicly available — restricted to registered restaurant partners. This actor is the public-data alternative.\n\nPairs well with [Deliveroo Scraper](https://apify.com/thirdwatch/deliveroo-scraper?fpr=9m2cd6) and [Noon Food Scraper](https://apify.com/thirdwatch/noon-food-scraper?fpr=9m2cd6) for full MENA food-delivery coverage.\n\n## FAQ\n\n**How many countries does Talabat cover?**\nNine: UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar, Jordan, Egypt, and Iraq.\n\n**Do I need a Talabat account?**\nNo. Only publicly visible restaurant listings and menus are scraped.\n\n**Should I enable `scrapeMenu`?**\nYes if you need item-level prices or descriptions. The actor still returns restaurant-level fields for restaurants where the menu is gated or unavailable.\n\n**Should I enable `scrapeMenuChoices`?**\nEnable it when you need the customization options for each menu item — sizes, add-ons, sauces, extras with their individual prices, plus the rules around them (single-pick vs multi-pick, mandatory sections, min/max quantities). Off by default because fetching choices takes extra time (typically 30 to 80 percent of menu items have choices) and is billed under a separate event so customers who don't need it aren't charged for it. A 200-item menu with ~100 customizable items adds roughly 20 to 40 seconds to the run.\n\n**How many restaurants per query?**\nTypically 20-100+ depending on the search term and country. Set `maxResults` up to 1000.\n\nLast verified: 2026-04\n\nMore scrapers at [thirdwatch.dev](https://thirdwatch.dev).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+   "overview": {
+    "title": "Restaurants",
+    "transformation": {
+     "fields": [
+      "name",
+      "cuisine",
+      "rating",
+      "total_ratings",
+      "country",
+      "url",
+      "vendor_id",
+      "menu_items"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "name": {
+       "label": "Restaurant",
+       "format": "text"
+      },
+      "cuisine": {
+       "label": "Cuisine",
+       "format": "text"
+      },
+      "rating": {
+       "label": "Rating",
+       "format": "number"
+      },
+      "total_ratings": {
+       "label": "Total Ratings",
+       "format": "number"
+      },
+      "country": {
+       "label": "Country",
+       "format": "text"
+      },
+      "url": {
+       "label": "Restaurant URL",
+       "format": "link"
+      },
+      "vendor_id": {
+       "label": "Vendor ID",
+       "format": "text"
+      },
+      "menu_items": {
+       "label": "Menu Items",
+       "format": "array"
+      }
+     }
+    }
+   }
+  }
+ },
+ "input": "{\n  \"title\": \"Talabat Scraper Input\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"queries\": {\n      \"title\": \"Search Queries\",\n      \"type\": \"array\",\n      \"description\": \"Search terms to find restaurants (e.g., 'pizza', 'mcdonalds', 'sushi'). Each query returns up to maxResults restaurants. Leave empty if you only want to scrape specific restaurants via Restaurant Slugs.\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\",\n        \"minLength\": 1\n      },\n      \"default\": [],\n      \"prefill\": [\n        \"pizza\"\n      ]\n    },\n    \"restaurantSlugs\": {\n      \"title\": \"Restaurant Slugs\",\n      \"type\": \"array\",\n      \"description\": \"Scrape specific restaurants directly by slug, skipping search. The slug is the last segment of a Talabat restaurant URL — for https://www.talabat.com/jordan/blue-fig the slug is 'blue-fig'. Each slug uses the Country selected above.\",\n      \"editor\": \"stringList\",\n      \"items\": {\n        \"type\": \"string\",\n        \"minLength\": 1\n      },\n      \"default\": [],\n      \"prefill\": []\n    },\n    \"country\": {\n      \"title\": \"Country\",\n      \"type\": \"string\",\n      \"description\": \"Country code for Talabat. Supported: uae, sa, kw, bh, om, qa, jo, eg, iq.\",\n      \"editor\": \"select\",\n      \"default\": \"uae\",\n      \"prefill\": \"uae\",\n      \"enum\": [\n        \"uae\",\n        \"sa\",\n        \"kw\",\n        \"bh\",\n        \"om\",\n        \"qa\",\n        \"jo\",\n        \"eg\",\n        \"iq\"\n      ],\n      \"enumTitles\": [\n        \"UAE\",\n        \"Saudi Arabia\",\n        \"Kuwait\",\n        \"Bahrain\",\n        \"Oman\",\n        \"Qatar\",\n        \"Jordan\",\n        \"Egypt\",\n        \"Iraq\"\n      ]\n    },\n    \"maxResults\": {\n      \"title\": \"Max Results Per Query\",\n      \"type\": \"integer\",\n      \"description\": \"Maximum number of restaurants to return per query.\",\n      \"editor\": \"number\",\n      \"default\": 10,\n      \"prefill\": 20,\n      \"minimum\": 1,\n      \"maximum\": 1000\n    },\n    \"scrapeMenu\": {\n      \"title\": \"Scrape Menu\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled, fetches the full menu (items with prices, descriptions, images) for each restaurant. Adds a 'menu_items' array and delivery metadata to each result.\",\n      \"default\": false\n    },\n    \"scrapeMenuChoices\": {\n      \"title\": \"Scrape Menu Choices (extras, sizes, add-ons)\",\n      \"type\": \"boolean\",\n      \"description\": \"If enabled, fetches the full choice tree for every customizable menu item: choice sections (e.g. 'Size', 'Add-ons'), individual options with prices, and quantity rules (min/max selectable, single vs. multi-select). Requires 'Scrape Menu' to be enabled. Each fetch is billed as a separate event so customers who don't need choices aren't charged for them.\",\n      \"default\": false\n    }\n  },\n  \"required\": []\n}"
+}

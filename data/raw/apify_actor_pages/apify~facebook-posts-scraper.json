@@ -1,0 +1,544 @@
+{
+ "act": {
+  "title": "Facebook Posts Scraper",
+  "users30d": 14862,
+  "pricingModel": "PAY_PER_EVENT",
+  "notice": "NONE",
+  "deprecated": false
+ },
+ "readme": "## What is Facebook Posts Scraper?\n\nIt's a simple but powerful Facebook post extractor that allows you to scrape posts from Facebook pages and profiles. To get that data, just insert the page or profile URL and click \"Save & Start\" button. With this post scraper tool, you can crawl Facebook posts and download all posts from Facebook page beyond the limitations of the Facebook API:\n\n🗂 Scrape multiple Facebook pages **at once**\n\n📝 Extract **key post data**: text, URLs, timestamps, engagement metrics, and thumbnails\n\n👍 Get **number of shares, likes, and comments** for each Facebook post\n\n🎥 Access **video transcripts** and media assets\n\n📅 Filter posts by **time frame** (custom date ranges)\n\n⚡ Get **500 posts for free** in less than 2 minutes\n\n🔓 **No limitations** on requests or number of calls\n\n💾 Export Facebook data in **JSON, CSV, Excel, or HTML**\n\n🔗 Export via SDKs (Python & Node.js), use **API Endpoints**, webhooks, or integrate with apps & AI workflows\n\n🔍 Explore 20+ **other [Facebook scraping tools](https://apify.com/store/collections/facebook-scrapers)**\n\n## What Facebook posts data can I extract?\n\nWith this Facebook post API, you can download Facebook posts and extract comprehensive data from any public page or profile. Use this post scraper to analyze engagement patterns, track content performance, and monitor posting trends:\n\n<table>\n<tr>\n<td>📝 Post text and caption</td>\n<td>🔗 Post URL and page/profile URL</td>\n</tr>\n<tr>\n<td>🕐 Timestamp and publish date</td>\n<td>👍 Number of likes, reactions, and shares</td>\n</tr>\n<tr>\n<td>💬 Comments count and top comments</td>\n<td>👥 Author name and profile ID</td>\n</tr>\n<tr>\n<td>🆔 Post ID and Facebook ID</td>\n<td>📊 Engagement metrics breakdown</td>\n</tr>\n<tr>\n<td>🖼 Media URLs and thumbnails</td>\n<td>🎥 Video URLs and transcripts</td>\n</tr>\n<tr>\n<td>🔗 External links in posts</td>\n<td>📱 Page or profile details</td>\n</tr>\n<tr>\n<td>🔢 Reaction breakdowns (like, love, haha, etc.)</td>\n<td>📢 Number of Facebook shares per post</td>\n</tr>\n<tr>\n<td>📣 Whether the page runs ads</td>\n<td>🆔 Page ID in Meta Ads Library</td>\n</tr>\n<tr>\n<td>🔄 Whether post is shared from another page</td>\n<td>🎬 Whether the post is a video</td>\n</tr>\n</table>\n\n## How do I use Facebook Posts Scraper?\n\nFacebook Posts Scraper was designed to be easy to start with even if you've never extracted data from the web before. Here's how you can use this Facebook post extractor to crawl Facebook posts:\n\n1. [Create](https://console.apify.com/sign-up) a free Apify account using your email.\n1. Open [Facebook Posts Scraper](https://apify.com/apify/facebook-posts-scraper).\n1. Add one or more Facebook page/profile URLs to scrape posts from.\n1. Choose optional filters: time frame (custom date range), include video transcripts, or number of posts to scrape.\n1. Click \"Start\" and wait for the data to be extracted.\n1. Download your data in JSON, XML, CSV, Excel, or HTML.\n\nFor a step-by-step guide on scraping Facebook posts, follow our [Facebook Posts Scraper tutorial](https://blog.apify.com/scrape-facebook-posts-data/) 📝.\n\n## ➡️ Input\n\nThe input for Facebook Posts Scraper should be Facebook page or profile URLs such as `https://www.facebook.com/pagename/`. You can insert the URLs one by one, paste a prepared list, or set the input via API. You can also set optional filters like time frame (custom date range) to download Facebook posts from specific periods, enable video transcripts, or limit the number of posts.\n\n<a href=\"https://console.apify.com/actors/KoJrdxJCTtpon81KY\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20posts%20input.png?raw=true\" alt=\"Facebook posts scraping input\" style=\"width:70%;\">\n</a>\n\nClick on the [input tab](https://apify.com/apify/facebook-posts-scraper/input-schema) for a full explanation of an input example in JSON.\n\n## ⬅️ Output\n\nThe results will be wrapped into a dataset which you can find in the **Output** tab. Here's an excerpt from the dataset you'd get when scraping Facebook posts:\n\n<a href=\"https://console.apify.com/actors/KoJrdxJCTtpon81KY\">\n<img src=\"https://github.com/apify-projects/actor-readme-images/blob/master/Facebook%20posts%20output.png?raw=true\" alt=\"Facebook posts scraping output\" style=\"width:70%;\">\n</a>\n\n### 📘 Example of extracted Facebook post data\n\nYou can choose in which format to download your Facebook data: JSON, JSONL, Excel spreadsheet, HTML table, CSV, or XML. Here's what a typical post output looks like:\n\n```json\n[\n    {\n        \"facebookUrl\": \"https://www.facebook.com/cern\",\n        \"postId\": \"1315686150601111\",\n        \"pageName\": \"cern\",\n        \"url\": \"https://www.facebook.com/cern/posts/pfbid02tCuZQNXY4oegKgnTGU2pbxtZdrg9uZwuaSWdyZeaYuhb8hw8ZBZ51Go19Em86Uwvl\",\n        \"time\": \"2026-01-20T13:00:05.000Z\",\n        \"timestamp\": 1768914005,\n        \"user\": {\n            \"id\": \"100064792144187\",\n            \"name\": \"CERN\",\n            \"profileUrl\": \"https://www.facebook.com/100064792144187\",\n            \"profilePic\": \"https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-1/348216459_1300189730851164_4698791499509539689_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Pj2Wg3o7ldwQ7kNvwGGPU3k&_nc_oc=AdnmAKKQ_2TQdVmfEq42BxQekAnn4xQbK__K1Ubul6MOYLHsqDraXyiOODvzedxgHR5vwR5V7ZcyS9aWAVxLWl3C&_nc_zt=24&_nc_ht=scontent-lga3-3.xx&_nc_gid=ypkFPlrkf_vAdug9n8GJ3A&oh=00_AfpFBtut5Iv6v0iQRPvSkPr_288dbS69vh9VJMeXUZ10Dw&oe=69755C03\"\n        },\n        \"collaborators\": [],\n        \"text\": \"What can you do with 380 million #Higgs bosons?\\n\\nWhat is the fate of the universe? Why is there more matter than #antimatter? What lurks beyond the #Standard Model? Valentina Cairo and Steven Lowette explore the physics reach of the High-Luminosity LHC (#HiLumiLHC) in the new issue of the #CERNCourier.\\n\\nRead more: https://cerncourier.com/a/what-can-you-do-with-380-million-higgs-bosons/\",\n        \"textReferences\": [\n            {\n                \"url\": \"https://l.facebook.com/l.php?u=https%3A%2F%2Fcerncourier.com%2Fa%2Fwhat-can-you-do-with-380-million-higgs-bosons%2F&h=AT1ryZGt8eZkjr8VtJvdF7O_ECl8TYUwlINEJeOpLm279O-2HQdm8K-7D3DWfVjUC51TaPwj5cEFs3_643kfe9GOO3GIdFwu5dpAzOZVghvf3X9taxjwOrhNvuVV-PiGoImW9axSWZvK5jRY0HVDBHNPGvLoBzrxwdZ1kzgke_XYMsmY&s=1\",\n                \"external_url\": \"https://cerncourier.com/a/what-can-you-do-with-380-million-higgs-bosons/\",\n                \"web_link\": {\n                    \"__typename\": \"ExternalWebLink\",\n                    \"url\": \"https://cerncourier.com/a/what-can-you-do-with-380-million-higgs-bosons/\",\n                    \"fbclid\": null,\n                    \"lynx_mode\": \"ASYNCLAZY\"\n                },\n                \"mobileUrl\": \"https://lm.facebook.com/l.php?u=https%3A%2F%2Fcerncourier.com%2Fa%2Fwhat-can-you-do-with-380-million-higgs-bosons%2F&h=AT3WZGDRRCD-VLBzxP7Fsf_Zjb1cS88KBZ2Gq4DWBZfVEKn4nPU5i4eS8DE14zBaY7SnAhVSKgXdmkyJS7QL5lyEMG5H3lCkeNOYsqh8t-HqvJyCau4Dv2J969HI0G44H160YV74sn5jKoxv30c6XOy2dMoApxcJcZtZsML-YiqAgthJ&s=1\",\n                \"id\": \"NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2Nlcm5jb3VyaWVyLmNvbS9hL3doYXQtY2FuLXlvdS1kby13aXRoLTM4MC1taWxsaW9uLWhpZ2dzLWJvc29ucy86OkRlZmF1bHQ6OjoxMzE1Njg2MTUwNjAxMTEx\"\n            },\n            {\n                \"url\": \"https://www.facebook.com/hashtag/higgs?__eep__=6\",\n                \"mobileUrl\": \"https://m.facebook.com/hashtag/higgs\",\n                \"id\": \"277101575754961\"\n            },\n            {\n                \"url\": \"https://www.facebook.com/hashtag/antimatter?__eep__=6\",\n                \"mobileUrl\": \"https://m.facebook.com/hashtag/antimatter\",\n                \"id\": \"388710277894247\"\n            },\n            {\n                \"url\": \"https://www.facebook.com/hashtag/standard?__eep__=6\",\n                \"mobileUrl\": \"https://m.facebook.com/hashtag/standard\",\n                \"id\": \"218027618337364\"\n            },\n            {\n                \"url\": \"https://www.facebook.com/hashtag/hilumilhc?__eep__=6\",\n                \"mobileUrl\": \"https://m.facebook.com/hashtag/hilumilhc\",\n                \"id\": \"1404235909704964\"\n            },\n            {\n                \"url\": \"https://www.facebook.com/hashtag/cerncourier?__eep__=6\",\n                \"mobileUrl\": \"https://m.facebook.com/hashtag/cerncourier\",\n                \"id\": \"218164278307153\"\n            }\n        ],\n        \"link\": \"https://cerncourier.com/a/what-can-you-do-with-380-million-higgs-bosons/\",\n        \"likes\": 146,\n        \"comments\": 3,\n        \"shares\": 27,\n        \"topReactionsCount\": 4,\n        \"media\": [\n            {\n                \"thumbnail\": \"https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/618970043_1315670090602717_8133399184917159433_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=1&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T4WYOy4-rBwQ7kNvwE5nP9G&_nc_oc=AdkzQR48rCWiJpmKjbl9l8nfUvSEv23tImr9JzO_-y5mdq8R8Usmv0RmaO53tSClXcnmgFiygMHOEc6cjpHJ3cWO&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=ypkFPlrkf_vAdug9n8GJ3A&oh=00_Afq4rjFhoZmNdMyZZ9I3pmnEgtQl5mO5W8C21Yj2sQFrVQ&oe=69756C90\",\n                \"__typename\": \"Photo\",\n                \"__isMedia\": \"Photo\",\n                \"accent_color\": \"FF1A0534\",\n                \"photo_product_tags\": [],\n                \"photo_image\": {\n                    \"uri\": \"https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/618970043_1315670090602717_8133399184917159433_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=1&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T4WYOy4-rBwQ7kNvwE5nP9G&_nc_oc=AdkzQR48rCWiJpmKjbl9l8nfUvSEv23tImr9JzO_-y5mdq8R8Usmv0RmaO53tSClXcnmgFiygMHOEc6cjpHJ3cWO&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=ypkFPlrkf_vAdug9n8GJ3A&oh=00_Afq4rjFhoZmNdMyZZ9I3pmnEgtQl5mO5W8C21Yj2sQFrVQ&oe=69756C90\",\n                    \"height\": 540,\n                    \"width\": 960\n                },\n                \"url\": \"https://www.facebook.com/photo/?fbid=1315686073934452&set=a.636209511882115\",\n                \"id\": \"1315686073934452\",\n                \"feedback\": {\n                    \"can_viewer_comment\": false,\n                    \"id\": \"ZmVlZGJhY2s6MTMxNTY4NjE1MDYwMTExMQ==\"\n                },\n                \"ocrText\": \"May be an image of fireworks\"\n            }\n        ],\n        \"feedbackId\": \"ZmVlZGJhY2s6MTMxNTY4NjE1MDYwMTExMQ==\",\n        \"reactionLikeCount\": 135,\n        \"reactionLoveCount\": 8,\n        \"reactionCareCount\": 2,\n        \"reactionWowCount\": 1,\n        \"topLevelUrl\": \"https://www.facebook.com/100064792144187/posts/1315686150601111\",\n        \"facebookId\": \"100064792144187\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"169005736520113\"\n        },\n        \"inputUrl\": \"https://www.facebook.com/cern\"\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/OurWorldinData\",\n        \"postId\": \"1488978839895353\",\n        \"pageName\": \"OurWorldinData\",\n        \"url\": \"https://www.facebook.com/OurWorldinData/posts/pfbid0cgFatC8MEX6pPqnj6bPWS64bkptnQS5p8LivWR9PbJoJbeRg6fcFjqvf9d35e6iYl\",\n        \"time\": \"2026-01-20T11:17:58.000Z\",\n        \"timestamp\": 1768907878,\n        \"user\": {\n            \"id\": \"100063497546604\",\n            \"name\": \"Our World in Data\",\n            \"profileUrl\": \"https://www.facebook.com/100063497546604\",\n            \"profilePic\": \"https://scontent.fwbw1-1.fna.fbcdn.net/v/t39.30808-1/476307086_1193465699446670_8804202441996587127_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ZGpr8DcwVY0Q7kNvwHzaC7d&_nc_oc=AdmGwCHVLWxxE6EnQCCzXLGzIeOeEXwOyd6hrfIWlRTXQ_7MtFNVmFsND5lm_Q3qFiQ&_nc_zt=24&_nc_ht=scontent.fwbw1-1.fna&_nc_gid=dg8rFwrg9E1em7VZFcstUw&oh=00_Afq3evsVu7EiclquNSCxjcw3ThSEzW2hJXemkOyEjZxNWg&oe=697574D3\"\n        },\n        \"collaborators\": [],\n        \"text\": \"Over 40,000 near-Earth asteroids have been detected since 1990—\\n\\nSince the late 20th century, astronomers and space agencies have taken steps to monitor the threat of large asteroids passing near Earth.\\n\\nThey set up international efforts to find these objects early, track their paths, and learn more about what they’re made of, so we’d have the best chance of spotting a real collision risk in time.\\n\\nAs the chart shows, more than 40,000 near-Earth asteroids have been discovered and tracked since 1990.\\n\\nNASA estimates that we’ve already found over 90% of near-Earth objects larger than 1 kilometer. These are the most dangerous ones, because an impact at that size could cause global-scale damage.\\n\\n(This Data Insight was written by Edouard Mathieu and Pablo Rosado.)\\n\\nExplore more interactive charts on space exploration and satellites: https://ourworldindata.org/search?topics=Space+Exploration+%26+Satellites\\n\\nSubscribe to our newsletter to receive Data Insights directly in your inbox: https://ourworldindata.org/subscribe\",\n        \"textReferences\": [\n            {\n                \"url\": \"https://l.facebook.com/l.php?u=https%3A%2F%2Fourworldindata.org%2Fsearch%3Ftopics%3DSpace%2BExploration%2B%2526%2BSatellites&h=AT3NPxyNmqS2JQy-DvT58TqeSLMsmfDLMrV4PTA2IG3Z0CU34gFYT_XCyyl1WSYL5hnYhbJ8vSMkKTIGeQVySnTmPIBPFVlxRDGUe0k5asfIJ60xJp2P2d6BRLs-fjqU3TXnbeVHmUQKARp3Z6-ydQBH9XwkaMJ3&s=1\",\n                \"external_url\": \"https://ourworldindata.org/search?topics=Space+Exploration+%26+Satellites\",\n                \"web_link\": {\n                    \"__typename\": \"ExternalWebLink\",\n                    \"url\": \"https://ourworldindata.org/search?topics=Space+Exploration+%26+Satellites\",\n                    \"fbclid\": null,\n                    \"lynx_mode\": \"ASYNCLAZY\"\n                },\n                \"mobileUrl\": \"https://lm.facebook.com/l.php?u=https%3A%2F%2Fourworldindata.org%2Fsearch%3Ftopics%3DSpace%2BExploration%2B%2526%2BSatellites&h=AT1N99KYEUlxP8PCcf-3qvEYm7AeLu0SBDTjLZ8dB6LidS7TU2ZayjGvsafq1ZmRnJZsFdFQQRtcNCywo8BLq_u7QXj2Uw43Ki4baM81PjZtaNMHqucYdNIDv-zT9E5DolF5hM6QpIzuo0tpDaWmG11JHVJddp5l&s=1\",\n                \"id\": \"NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL291cndvcmxkaW5kYXRhLm9yZy9zZWFyY2g/dG9waWNzPVNwYWNlK0V4cGxvcmF0aW9uKyUyNitTYXRlbGxpdGVzOjpEZWZhdWx0Ojo6MTQ4ODk3ODgzOTg5NTM1Mw==\"\n            },\n            {\n                \"url\": \"https://l.facebook.com/l.php?u=https%3A%2F%2Fourworldindata.org%2Fsubscribe&h=AT3yksEresnHU9OBj2Y-BKIgvYxj8aPk43bTyu2iqKQt0Z854MWqeFqL01Cl2pmhtOf13gw92KmgON1_NIBvAeVlWCcxkekOYfQWIpz-AOqay_Vd0orw4u9JGHYn_cE-hzVLsCWBVBNqyLppudh81pZwPX2fVruy&s=1\",\n                \"external_url\": \"https://ourworldindata.org/subscribe\",\n                \"web_link\": {\n                    \"__typename\": \"ExternalWebLink\",\n                    \"url\": \"https://ourworldindata.org/subscribe\",\n                    \"fbclid\": null,\n                    \"lynx_mode\": \"ASYNCLAZY\"\n                },\n                \"mobileUrl\": \"https://lm.facebook.com/l.php?u=https%3A%2F%2Fourworldindata.org%2Fsubscribe&h=AT1VYhjtXkApq3moVuZ-5QEeqYHwsgf873PIVoxZxfPI8BddSoNKhcvOE-3B6QRyJ83i8lQJwlxZbKGQiVTXxE3GcOXvGMbb4U14rzf4llPtSXaiDllYul2YdQvVIrhQVirUCK36ROqN8Y7xsYyXzGZM5kj214tx&s=1\",\n                \"id\": \"NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL291cndvcmxkaW5kYXRhLm9yZy9zdWJzY3JpYmU6OkRlZmF1bHQ6OjoxNDg4OTc4ODM5ODk1MzUz\"\n            }\n        ],\n        \"link\": \"https://ourworldindata.org/search?topics=Space+Exploration+%26+Satellites\",\n        \"likes\": 18,\n        \"shares\": 3,\n        \"topReactionsCount\": 2,\n        \"media\": [\n            {\n                \"thumbnail\": \"https://scontent.fwbw1-1.fna.fbcdn.net/v/t39.30808-6/617842353_1488978829895354_7092179280408000991_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3dhbP9jOwxIQ7kNvwF1Qzy6&_nc_oc=Adkc0EwoJPJVx-RKMGDlUZJAf_865JrqG1gVo6a3XiDQIG9IaW3QVZy_tqOaLHJKXuE&_nc_zt=23&_nc_ht=scontent.fwbw1-1.fna&_nc_gid=dg8rFwrg9E1em7VZFcstUw&oh=00_AfornpHQbUc5G5G6shAmqPTIIb2dJ7lb8Nn-Mrssv-LDXQ&oe=69754B62\",\n                \"__typename\": \"Photo\",\n                \"__isMedia\": \"Photo\",\n                \"accent_color\": \"FFFFFFFF\",\n                \"photo_product_tags\": [],\n                \"photo_image\": {\n                    \"uri\": \"https://scontent.fwbw1-1.fna.fbcdn.net/v/t39.30808-6/617842353_1488978829895354_7092179280408000991_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3dhbP9jOwxIQ7kNvwF1Qzy6&_nc_oc=Adkc0EwoJPJVx-RKMGDlUZJAf_865JrqG1gVo6a3XiDQIG9IaW3QVZy_tqOaLHJKXuE&_nc_zt=23&_nc_ht=scontent.fwbw1-1.fna&_nc_gid=dg8rFwrg9E1em7VZFcstUw&oh=00_AfornpHQbUc5G5G6shAmqPTIIb2dJ7lb8Nn-Mrssv-LDXQ&oe=69754B62\",\n                    \"height\": 526,\n                    \"width\": 526\n                },\n                \"url\": \"https://www.facebook.com/photo/?fbid=1488978826562021&set=a.542059731253940\",\n                \"id\": \"1488978826562021\",\n                \"feedback\": {\n                    \"can_viewer_comment\": false,\n                    \"id\": \"ZmVlZGJhY2s6MTQ4ODk3ODgzOTg5NTM1Mw==\"\n                },\n                \"ocrText\": \"Cumulative near-Earth asteroids discovered over time. Stacked area chart of cumulative discoveries from 1990 to 2025, showing three size categories: smaller than 140 meters; 140 meters to 1 kilometer; and larger than 1 kilometer. The y-axis runs from 0 to 40,000 cumulative asteroids. Discoveries rise slowly through the 1990s and 2000s, then accelerate sharply after about 2010 and especially after 2015. By 2025, roughly 40,000 near-Earth asteroids have been recorded, with the majority in the smaller-than-140-meters category, a substantial but smaller share in the 140 meters to 1 kilometer category, and a very small number larger than 1 kilometer. Data source: NASA Center for Near-Earth Object Studies (2026). License: CC BY.\"\n            }\n        ],\n        \"feedbackId\": \"ZmVlZGJhY2s6MTQ4ODk3ODgzOTg5NTM1Mw==\",\n        \"reactionLikeCount\": 17,\n        \"reactionHahaCount\": 1,\n        \"topLevelUrl\": \"https://www.facebook.com/100063497546604/posts/1488978839895353\",\n        \"facebookId\": \"100063497546604\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"255848064618361\"\n        },\n        \"inputUrl\": \"https://www.facebook.com/OurWorldinData\"\n    },\n    {\n        \"facebookUrl\": \"https://www.facebook.com/bbcearth\",\n        \"postId\": \"1441693187314472\",\n        \"pageName\": \"bbcearth\",\n        \"url\": \"https://www.facebook.com/reel/895509256298494/\",\n        \"time\": \"2026-01-20T14:00:46.000Z\",\n        \"timestamp\": 1768917646,\n        \"user\": {\n            \"id\": \"100044214140223\",\n            \"name\": \"BBC Earth\",\n            \"profileUrl\": \"https://www.facebook.com/100044214140223\",\n            \"profilePic\": \"https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/378863511_857719969045133_4486636644081495495_n.jpg?stp=c191.191.1666.1666a_cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=38S9Wsz6IisQ7kNvwEHjsej&_nc_oc=Adl754iSLl3lFILNqorjKKl9bvdbaRk5ifAe4-18BjgWlvvA1fmkDvFfFfwumHo4XUk&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=91OrvVvEtP9Zr9FHWiKYMA&oh=00_Afq23KotN4dC2MI0MrFoQOmIYUMiT8oZ6iRWNHZD5oZH2Q&oe=69757D3D\"\n        },\n        \"collaborators\": [],\n        \"text\": \"Like many animals, panda bears take pains to mark their territory. They may even perform an handstand or two.\",\n        \"likes\": 147,\n        \"comments\": 2,\n        \"shares\": 3,\n        \"topReactionsCount\": 5,\n        \"viewsCount\": 309624,\n        \"feedbackId\": \"ZmVlZGJhY2s6MTQ0MTY5MzE4NzMxNDQ3Mg==\",\n        \"reactionLikeCount\": 112,\n        \"reactionLoveCount\": 29,\n        \"reactionCareCount\": 3,\n        \"reactionHahaCount\": 2,\n        \"reactionWowCount\": 1,\n        \"topLevelUrl\": \"https://www.facebook.com/100044214140223/posts/1441693187314472\",\n        \"facebookId\": \"100044214140223\",\n        \"pageAdLibrary\": {\n            \"is_business_page_active\": false,\n            \"id\": \"118883634811868\"\n        },\n        \"inputUrl\": \"https://www.facebook.com/bbcearth\"\n    }\n]\n```\n\n## How much will scraping Facebook posts cost you?\n\nScraping data from Facebook posts costs approximately $5-8 for every 1,000 posts, or $0.005-0.008 per post. If you're on Apify Free plan, you will be able to scrape up to 500 posts before needing to upgrade.\n\nFor more frequent or extensive Facebook data scraping, consider upgrading to the $29/month [Starter plan](https://apify.com/pricing), which can get you up to 3,600-5,800 Facebook posts per month. For scalable scraping of Facebook posts, check out $199/month Scale or $999/month Business plan.\n\n## What is the best Facebook scraper?\n\nYou can use the dedicated scrapers below if you want to scrape specific Facebook data. Each of them is built particularly for the relevant Facebook scraping case be it groups, reviews, comments or search. If you need to scrape posts from Instagram instead, check out our [Instagram Post Scraper](https://apify.com/apify/instagram-post-scraper).\n\n<table>\n<tr>\n<td>🕵️‍♀️ <a href=\"https://apify.com/apify/facebook-search-scraper\">Facebook Search Scraper</a></td>\n<td>🗓 <a href=\"https://apify.com/apify/facebook-events-scraper\">Facebook Events Scraper</a></td>\n<td>🚩 <a href=\"https://apify.com/apify/facebook-pages-scraper\">Facebook Pages Scraper</a></td>\n</tr>\n<tr>\n<td>🕹 <a href=\"https://apify.com/apify/facebook-games-scraper\">Facebook Games Scraper</a></td>\n<td>👀 <a href=\"https://apify.com/apify/facebook-marketplace-scraper\">Facebook Marketplace Scraper</a></td>\n<td>🎞 <a href=\"https://apify.com/apify/facebook-reels-scraper\">Facebook Reels Scraper</a></td>\n</tr>\n<tr>\n<td>🌟 <a href=\"https://apify.com/apify/facebook-reviews-scraper\">Facebook Reviews Scraper</a></td>\n<td>👥 <a href=\"https://apify.com/apify/facebook-groups-scraper\">Facebook Groups Scraper</a></td>\n<td>📹 <a href=\"https://apify.com/apify/facebook-video-search-scraper\">Facebook Video Search Scraper</a></td>\n</tr>\n<tr>\n<td>💬 <a href=\"https://apify.com/apify/facebook-comments-scraper\">Facebook Comments Scraper</a></td>\n<td>👍 <a href=\"https://apify.com/apify/facebook-likes-scraper\">Facebook Likes and Reactions Scraper</a></td>\n<td>ℹ️ <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Page Contact Information</a></td>\n</tr>\n<tr>\n<td>🏞 <a href=\"https://apify.com/apify/facebook-photos-scraper\">Facebook Photos Scraper</a></td>\n<td>🔮 <a href=\"https://apify.com/apify/brand-collaboration-scraper\">Brand Collaboration Scraper</a></td>\n<td>👥 <a href=\"https://apify.com/apify/facebook-followers-following-scraper\">Facebook Followers Following Scraper</a></td>\n</tr>\n<tr>\n<td>🛍️ <a href=\"https://apify.com/apify/facebook-ads-scraper\">Facebook Ads Library Scraper</a></td>\n<td>📱 <a href=\"https://apify.com/apify/facebook-page-contact-information\">Facebook Pages Info Scraper</a></td>\n<td>🧲 <a href=\"https://apify.com/apify/social-media-leads-analyzer\">Social Media Leads Analyzer</a></td>\n</tr>\n<tr>\n<td>📸 <a href=\"https://apify.com/apify/instagram-post-scraper\">Instagram Post Scraper</a></td>\n<td></td>\n<td></td>\n</tr>\n</table>\n\n## ❓ FAQ\n\n### Can I export Facebook Posts data using API?\n\nYes, you can access the extracted Facebook data through the Apify API. You'll need an Apify account and your API token (available under Integrations settings in Console). Apify API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more. To access the API using Node.js, use the `apify-client` [NPM package](https://apify.com/apify/facebook-posts-scraper/api/javascript). To access the API using Python, use the `apify-client` [PyPI package](https://apify.com/apify/facebook-posts-scraper/api/python).\n\nClick on the [API tab](https://apify.com/apify/facebook-posts-scraper/api) for code examples or check out the [Apify API reference docs](https://docs.apify.com/api/v2) for full detail.\n\n### Can I use Facebook Posts Scraper through an MCP server?\n\nWith Apify API, you can use Facebook Posts Scraper within your AI workflows. You can connect to the [MCP server](https://apify.com/apify/facebook-posts-scraper/api/mcp) using clients like ClaudeDesktop and LibreChat or build your own. Here's how you can set up Facebook Posts Scraper via Model Context Protocol (MCP) server:\n\n1. Start a Server-Sent Events (SSE) session to receive a `sessionId`.\n2. Send API messages using that `sessionId` to trigger the scraper.\n3. The message starts the Facebook Posts Scraper with the provided input.\n4. The response should be: `Accepted`.\n\nThis makes Facebook Posts Scraper compatible with Facebook MCP server implementations and allows you to use it as a Facebook post extractor within your AI agent workflows.\n\n### Is there a difference between scraping a Facebook profile and Facebook page?\n\nYes, there is. Facebook Pages are created for businesses, companies, non-profits, and other social causes. Those are the Facebook accounts that strive to provide \"public-first\" content and are often managed by a group of people. An easy way to distinguish between a Facebook profile and a Facebook page is that pages usually have a category of content and activity they would like to be associated with (news, software, hospitality, etc.) Facebook Pages that are particularly popular often include a blue verification badge. Facebook profiles are created for personal use.\n\nThis scraper can extract information from both Facebook pages and Facebook profiles.\n\n### Do I need proxies to scrape data from Facebook posts?\n\nYou need proxies in general but you don't need to do anything extra to apply them if you run the scraper on the Apify platform. For successful scraping of Facebook posts, we run [residential proxies](https://apify.com/proxy?pricing=residential-ip#pricing) in the background which are included in Apify's monthly Starter plan ($29).\n\n### Can I integrate data from Facebook Posts Scraper with other apps?\n\nYes. Facebook Posts Scraper can be connected with almost any cloud service or web app thanks to [integrations on the Apify platform](https://apify.com/integrations). You can integrate with Make, Zapier, ChatGPT, Slack, Airbyte, GitHub, Google Sheets, Asana, Google Drive, Keboola, MCP Servers, and more.\n\n### Is it legal to scrape Facebook Posts data?\n\nOur [Facebook scrapers](https://apify.com/store/collections/facebook-scrapers) are ethical and do not extract any private user data. They only extract what the user has chosen to share publicly. However, you should be aware that your results could contain personal data. You should not scrape personal data unless you have a legitimate reason to do so.\n\nIf you're unsure whether your reason is legitimate, consult your lawyers. You can also read our blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/).\n\n### Facebook Posts Scraper is not working?\n\nWe're always working on improving the performance of our Actors. So if you've got any technical feedback for Facebook Posts Scraper or simply found a bug, please create an issue on the Actor's [Issues tab](https://apify.com/apify/facebook-posts-scraper/issues/open).\n",
+ "dataset": {
+  "actorSpecification": 1,
+  "fields": {
+   "type": "object",
+   "properties": {
+    "facebookUrl": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook page or profile the post was scraped from.",
+     "examples": [
+      "https://www.facebook.com/examplepage"
+     ]
+    },
+    "postId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook post ID.",
+     "examples": [
+      "123456789012345"
+     ]
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "URL of the Facebook post.",
+     "examples": [
+      "https://www.facebook.com/examplepage/posts/123456789"
+     ]
+    },
+    "time": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Date and time the post was published, in ISO 8601 format.",
+     "examples": [
+      "2025-01-15T12:00:00.000Z"
+     ]
+    },
+    "timestamp": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Unix timestamp of when the post was published.",
+     "examples": [
+      1736942400
+     ]
+    },
+    "timeCreated": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Original creation date if the post was backdated, in ISO 8601 format."
+    },
+    "timestampCreated": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Unix timestamp of the original post creation date if backdated."
+    },
+    "text": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Text content of the post.",
+     "examples": [
+      "This is an example post text."
+     ]
+    },
+    "textReferences": {
+     "description": "Entities referenced in the post text (pages, profiles).",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "user": {
+     "description": "Author of the post.",
+     "examples": [
+      {
+       "id": "100012345678901",
+       "name": "Example Page",
+       "profileUrl": "https://www.facebook.com/examplepage"
+      }
+     ],
+     "properties": {
+      "id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profileUrl": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profilePic": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "pageName": {
+     "description": "Page or profile name, as a plain string or an object with page details.",
+     "examples": [
+      "Example Page"
+     ],
+     "properties": {
+      "id": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "profilePic": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "string",
+      "object"
+     ]
+    },
+    "collaborators": {
+     "description": "Collaborators tagged in the post.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "likes": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Total number of reactions on the post.",
+     "examples": [
+      150
+     ]
+    },
+    "comments": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of comments on the post.",
+     "examples": [
+      25
+     ]
+    },
+    "shares": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of times the post was shared.",
+     "examples": [
+      10
+     ]
+    },
+    "topReactionsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Total count of top reactions on the post.",
+     "examples": [
+      150
+     ]
+    },
+    "reactionLikeCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Like reactions.",
+     "examples": [
+      100
+     ]
+    },
+    "reactionLoveCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Love reactions.",
+     "examples": [
+      30
+     ]
+    },
+    "reactionHahaCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Haha reactions.",
+     "examples": [
+      10
+     ]
+    },
+    "reactionWowCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Wow reactions.",
+     "examples": [
+      5
+     ]
+    },
+    "reactionSadCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Sad reactions.",
+     "examples": [
+      3
+     ]
+    },
+    "reactionAngryCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Angry reactions.",
+     "examples": [
+      2
+     ]
+    },
+    "reactionCareCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of Care reactions.",
+     "examples": [
+      0
+     ]
+    },
+    "media": {
+     "description": "Media attachments (photos, videos) included in the post.",
+     "examples": [
+      [
+       {
+        "thumbnail": "https://example.com/post-image.jpg",
+        "__typename": "Photo"
+       }
+      ]
+     ],
+     "items": {
+      "type": "object",
+      "properties": {
+       "thumbnail": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "__typename": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "ocrText": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    },
+    "link": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "External link included in the post.",
+     "examples": [
+      "https://example.com/article"
+     ]
+    },
+    "actionLink": {
+     "description": "Call-to-action link attached to the post.",
+     "properties": {
+      "link_display": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "title": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "url": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "previewTitle": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Title of a link preview attached to the post.",
+     "examples": [
+      "Example Article Title"
+     ]
+    },
+    "previewDescription": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Description of a link preview attached to the post.",
+     "examples": [
+      "Example article description."
+     ]
+    },
+    "previewSource": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Source domain of the link preview.",
+     "examples": [
+      "example.com"
+     ]
+    },
+    "previewTarget": {
+     "description": "Target object of the link preview.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "isVideo": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post contains a video attachment.",
+     "examples": [
+      false
+     ]
+    },
+    "viewsCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of video views (for video posts). It is the number that matches the view count numbers you see on Facebook. This view is counted once the video has been watched for at least 1 second."
+    },
+    "videoPostViewCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of views on the video post. This view is counted once the video has been watched for at least 3 seconds."
+    },
+    "liveViewerCount": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "Number of viewers of a live video."
+    },
+    "feedbackId": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Facebook feedback ID associated with the post.",
+     "examples": [
+      "234567890123456"
+     ]
+    },
+    "sharedPost": {
+     "description": "The original post data if this post is a share.",
+     "additionalProperties": {},
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "paidPartnership": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "Whether the post is a paid partnership.",
+     "examples": [
+      false
+     ]
+    },
+    "topComments": {
+     "description": "Top comments on the post.",
+     "examples": [
+      []
+     ],
+     "items": {
+      "type": "object",
+      "additionalProperties": {}
+     },
+     "type": [
+      "array",
+      "null"
+     ]
+    }
+   },
+   "additionalProperties": {}
+  },
+  "views": {
+   "overview": {
+    "title": "Overview",
+    "description": "",
+    "transformation": {
+     "fields": [
+      "media",
+      "url",
+      "text",
+      "likes",
+      "comments",
+      "shares"
+     ]
+    },
+    "display": {
+     "component": "table",
+     "properties": {
+      "media[0].thumbnail": {
+       "label": "Post picture",
+       "format": "image"
+      },
+      "url": {
+       "label": "Post url",
+       "format": "link"
+      },
+      "text": {
+       "label": "Post text",
+       "format": "text"
+      },
+      "likes": {
+       "label": "Number of likes",
+       "format": "number"
+      },
+      "comments": {
+       "label": "Number of comments",
+       "format": "number"
+      },
+      "shares": {
+       "label": "Number of shares",
+       "format": "number"
+      }
+     }
+    }
+   }
+  },
+  "$schema": "https://apify.com/schemas/v1/dataset.json"
+ },
+ "input": "{\n  \"title\": \"Input schema for the empty project actor.\",\n  \"description\": \"This scraper will get post and page details from Facebook pages of your choice. To try it out, just paste a Facebook Page URL and click ▷ Start. If you need any guidance, just <a href='https://blog.apify.com/scrape-facebook-posts-data/' target='_blank' rel='noopener'>follow this tutorial</a>.\",\n  \"type\": \"object\",\n  \"schemaVersion\": 1,\n  \"properties\": {\n    \"startUrls\": {\n      \"title\": \"Facebook URLs\",\n      \"type\": \"array\",\n      \"description\": \"Enter a valid Facebook page URL, e.g. <code>https://www.facebook.com/humansofnewyork/</code>. Note that you can only scrape public pages with this Actor, not personal profiles.\",\n      \"editor\": \"requestListSources\",\n      \"prefill\": [\n        {\n          \"url\": \"https://www.facebook.com/humansofnewyork/\"\n        }\n      ],\n      \"example\": [\n        {\n          \"url\": \"https://www.facebook.com/humansofnewyork/\"\n        }\n      ]\n    },\n    \"resultsLimit\": {\n      \"title\": \"Results amount\",\n      \"type\": \"integer\",\n      \"description\": \"Set how many posts should be scraped per page. For example, if set to 5, the scraper will extract up to 5 posts from each page. This setting is ignored when scraping direct post URLs. If this limit is not set, as many results as possible are returned.\",\n      \"editor\": \"number\",\n      \"prefill\": 20,\n      \"minimum\": 1,\n      \"example\": 20\n    },\n    \"captionText\": {\n      \"title\": \"Include video transcript\",\n      \"description\": \"Extract video transcript (if available).\",\n      \"default\": false,\n      \"type\": \"boolean\",\n      \"editor\": \"checkbox\",\n      \"example\": false\n    },\n    \"onlyPostsNewerThan\": {\n      \"title\": \"Posts newer than\",\n      \"type\": \"string\",\n      \"description\": \"Scrape posts from the provided date to the present day (or date set in 'Older than'). The date should be in YYYY-MM-DD absolute format or in relative format, e.g., 1 day, 2 months, 3 years. The JSON input also supports adding time units (UTC timezone): Full or partial ISO timestamp (e.g., `2025-09-23T10:02:01`) as absolute time and relative time, e.g., `1 hour` or `2 minutes`.\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"editor\": \"datepicker\",\n      \"sectionCaption\": \"Time frame\",\n      \"sectionDescription\": \"Use this if you only want to scrape posts from a specific period of time.\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"example\": \"2024-01-01\"\n    },\n    \"onlyPostsOlderThan\": {\n      \"title\": \"Posts older than\",\n      \"type\": \"string\",\n      \"description\": \"Scrape posts from the provided date to the past (or date set in 'Newer than'). The date should be in YYYY-MM-DD or full ISO absolute format or in relative format e.g. 1 days, 2 months, 3 years. The JSON input also supports adding time units (UTC timezone): Full or partial ISO timestamp (e.g., `2025-09-23T10:02:01`) as absolute time and relative time, e.g., `1 hour` or `2 minutes`.\\n\\n\",\n      \"dateType\": \"absoluteOrRelative\",\n      \"editor\": \"datepicker\",\n      \"pattern\": \"^(\\\\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\\\d|3[01])(T[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?(\\\\.\\\\d+)?Z?)?$|^(\\\\d+)\\\\s*(minute|hour|day|week|month|year)s?$\",\n      \"example\": \"2024-12-31\"\n    }\n  },\n  \"required\": [\n    \"startUrls\"\n  ]\n}"
+}

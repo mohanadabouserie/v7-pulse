@@ -1,0 +1,19 @@
+t_x        kaitoeasyapi   20 items     run cost ~$0.0000 | total $0.0000
+t_fb       scraper_one    3 items      run cost ~$0.0000 | total $0.0000
+t_tt       clockworks     HTTP 400: b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.50"\n  }\n}' run cost ~$0.0050 | total $0.0050
+t_ig       apify          3 items      run cost ~$0.0120 | total $0.0171
+x_owner    kaitoeasyapi   60 items     run cost ~$0.0000 | total $0.0000
+x_quality  kaitoeasyapi   24 items     run cost ~$0.0150 | total $0.0150
+x_malt     kaitoeasyapi   15 items     run cost ~$0.0061 | total $0.0211
+x_price    kaitoeasyapi   60 items     run cost ~$0.0038 | total $0.0249
+x_give     kaitoeasyapi   40 items     run cost ~$0.0150 | total $0.0399
+x_general  kaitoeasyapi   80 items     run cost ~$0.0100 | total $0.0499
+fb_owner   scraper_one    15 items     run cost ~$0.0202 | total $0.0702
+fb_coke    scraper_one    15 items     run cost ~$0.0602 | total $0.1303
+fb_quality scraper_one    12 items     run cost ~$0.0440 | total $0.1743
+fb_malt    scraper_one    10 items     run cost ~$0.0841 | total $0.2584
+fb_give    scraper_one    15 items     run cost ~$0.0200 | total $0.2785
+fb_general scraper_one    20 items     run cost ~$0.1081 | total $0.3866
+ig_v7      apify          23 items     run cost ~$0.0320 | total $0.4186
+tt_rumor   clockworks     24 items     run cost ~$0.0390 | total $0.4576
+x_coke2024 kaitoeasyapi   15 items     run cost ~$0.0000 | total $0.0000
