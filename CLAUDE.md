@@ -97,6 +97,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - Pushing changes a public site, so ask the user first.
   - The build swaps the chat line that points to claude.ai. If that text changes, update the swap in `deploy/build_sites.py`; the build stops if it can't find it.
 - **The calculator** is published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P, with a public copy at https://mohanadabouserie.github.io/v7-pulse-costs/ (its own repo, cloned to `deploy/v7-pulse-costs/`).
+  - On a new machine, clone it first: `git clone https://github.com/mohanadabouserie/v7-pulse-costs deploy/v7-pulse-costs`.
   - Before editing, copy it to `archive/costs_versions/V7_Pulse_Costs_vN.html`.
   - Then republish, and run `python3 deploy/build_sites.py costs` and `tests/test_costs.py`. Commit and push in `deploy/v7-pulse-costs/` after the user's OK.
   - When prices or the setup change, update the prices in its script (with the checked date in the comment) and the estimate in `PROJECT_MEMORY.md` section 8.
