@@ -102,7 +102,11 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
 - **Clickable rows** open the side panel (`openDrawer`) with a full chart (`bigLine`, with `invert:true` for ranks). Show a › chevron in the last column, and outline the small trend line on hover.
 - **Like-for-like prices:** always show per-100 ml next to the shelf price, shade the cheapest option, and state the difference from V7 in words.
 - **Class names:** never reuse `demo`, `real`, `st` or `pill` for new elements (DECISIONS #69).
-- **Price and stock apart** (Version 17): a price cell holds only the price and price notes. Stock goes in its own column (`td.stk`, ✓ In stock or one pill per problem naming the store). On phones that column is hidden and problems sit under the product name (`.stk-m`).
+- **Price and stock apart** (Versions 17 and 19):
+  - A price cell holds only the price and price notes.
+  - When a table covers several stores, each store gets its own Price and Stock columns under a store header, separated by a thin line (`.smx-g`). Stock cells (`td.sk`) show ✓, a gold pill with the count left, or ✕ Out.
+  - Never use one Stock column for several stores.
+  - On phones the stock columns aren't drawn; problems sit under the product name with the store named (`.stk-m`).
 
 ## 9. Real-data views (Version 18)
 - **The header badge** says "Real data" on every view built from real collections (Online stores, Restaurants, Search trends, Rumors & attacks). Views whose data spans more than the demo period hide the date filters.

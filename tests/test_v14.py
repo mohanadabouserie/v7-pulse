@@ -25,7 +25,7 @@ async def main():
         check('needs attention lists Noon pricing, low stock, Apple Malt pack and missing listings', len(att)==4 and 'Noon sellers' in att[0] and 'running low' in att[1], att)
         rows=await J("document.querySelectorAll('.smx tbody tr').length"); check('matrix has all 12 products', rows==12, rows)
         over=await J("[...document.querySelectorAll('.smx .px.over')].map(x=>x.textContent)"); check('matrix marks prices above the shelf price', 'EGP 25' in over and 'EGP 22.70' in over, over)
-        low=await J("[...document.querySelectorAll('.smx td.stk .av.low')].map(x=>x.textContent)"); check('matrix says which listing is low', low==['Low on Noon · 8 left'], low)
+        low=await J("[...document.querySelectorAll('.smx td.sk .av.low')].map(x=>{const td=x.closest('td');return [td.parentElement.querySelector('th').textContent,td===td.parentElement.lastElementChild,x.textContent]})"); check('matrix says which listing is low (Noon’s stock column)', low==[['Piña Colada',True,'8 left']], low)
         comp=await J("!!document.querySelector('.cmpt')"); check('competitor table shown when competitors are on', comp)
         cells=await J("[...document.querySelectorAll('.cmpt tbody tr')].map(r=>r.querySelector('th').textContent)"); check('competitor table rows', cells==['Amazon.eg sales, last month','Places in Amazon’s top 20','Rating','Can price per 100 ml'], cells)
         await click('[data-act=comp][data-v="0"]')

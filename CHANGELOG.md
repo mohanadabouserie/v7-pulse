@@ -439,3 +439,15 @@ At the user's request, for a collaborator: everything is pushed to https://githu
   - It had no unpushed commits or changes. Its last state (Version 15) is in the repo history (commit 9cf4de4).
 - **Files:** `.gitignore` (its ignore line removed), `PROJECT_MEMORY.md`.
 
+### Version 19: price and stock for each store (12 Oct 2026)
+The user found the single Stock column confusing: with Amazon.eg, Carrefour and Noon in one table, it didn't say which store it meant.
+- **Summary, "V7 price and stock in each store":** each store now has its own two columns, Price and Stock, under the store's name.
+  - A ✓ means in stock at that store.
+  - Low stock shows as a gold pill under that store ("8 left" under Noon for Piña Colada), and out of stock as "✕ Out".
+  - When a store doesn't sell a product, one "—" spans both of its columns.
+  - Thin lines separate the stores, and the key under the table adds "✓: in stock".
+- **Phones:** unchanged from Version 17. Prices only; any stock problem is written under the product name with its store ("Low on Noon · 8 left").
+- **Tests:** `test_v14.py` checks that the low pill sits in Noon's Stock column. `test_v16.py` checks the two header rows and one mark per listing (23 in stock, 1 low). All 11 dashboard suites pass.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 18 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v18.html`), `DESIGN.md`, `tests/test_v14.py`, `tests/test_v16.py`. Published as artifact Version 19.
+- **Not yet public:** the GitHub copy (`docs/`) still shows Version 18.
+

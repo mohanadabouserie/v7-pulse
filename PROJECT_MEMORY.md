@@ -13,7 +13,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 18) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 19) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 18 since 11 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -24,7 +24,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Daily store checker | `data/collect_store_history.py` (not scheduled, see open items). Noon is read by Claude through `data/noon_llm.py`. Runs with `data/.venv/bin/python`. Tests: `tests/test_noon_llm.py` |
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v17.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v18.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -78,7 +78,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 18)
+## 4. The dashboard today (Version 19)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -87,7 +87,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - On phones, the filters sit behind a Filters button.
 - **Rumors & attacks (Version 18): real posts only.** A status sentence, five numbers, three claims (price confusion, active; "V7 was sold to Coca-Cola", contained since May 2024; "V7 Malt tastes like alcohol", watching), the claim detail with every post, "Also worth a look", "Nothing found", how the posts were found, and the fact sheet. Data: `data/raw/social/rumors_11oct/` (see section 10). To refresh: run `collect.py`, `normalize.py`, label the new posts in `labels.json`, then `build_rumors.py --inject`.
 - **Online stores (Versions 16 and 17):**
-  - Summary: "Needs attention" next to "Against competitors", then "V7 price and stock in each store": prices in the store columns, stock in its own column (Version 17).
+  - Summary: "Needs attention" next to "Against competitors", then "V7 price and stock in each store": each store has its own Price and Stock columns (Version 19).
   - Prices: one drink type at a time, compared per 100 ml with V7.
   - Sales & ranks: "Best-seller ranks" table; rows open the full chart.
   - Stock: a status sentence, a where-to-buy grid, and only the problems, with day strips.

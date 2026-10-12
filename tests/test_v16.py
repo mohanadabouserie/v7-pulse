@@ -23,8 +23,11 @@ async def main():
         over=await J("[...document.querySelectorAll('.smx .s2.bad')].map(x=>x.textContent)")
         check('prices above the shelf price say by how much', any('over shelf price' in x for x in over), over)
         check('no stock dots, words instead', await J("!document.querySelector('.smx .sdot')"))
-        stk=await J("[[...document.querySelectorAll('.smx thead th')].map(t=>t.textContent.trim()).pop(),[...document.querySelectorAll('.smx td.stk .av')].map(x=>x.className.split(' ')[1]+':'+x.textContent),[...document.querySelectorAll('.smx tbody td:not(.stk)')].some(t=>/stock|Low|Out/.test(t.textContent)),getComputedStyle(document.querySelector('.smx .stk-m')).display]")
-        check('stock in its own column, store columns show prices only', stk[0]=='Stock' and stk[1].count('in:✓ In stock')==10 and 'low:Low on Noon · 8 left' in stk[1] and not stk[2] and stk[3]=='none', stk)
+        stk=await J("""(()=>{const t=document.querySelector('.smx');const pina=[...t.querySelectorAll('tbody tr')].find(r=>r.textContent.includes('Piña'));
+          return [[...t.querySelectorAll('thead tr')].map(r=>[...r.children].map(c=>c.textContent.trim())),[...t.querySelectorAll('td.sk .av')].map(x=>x.className.split(' ')[1]),
+            [...pina.children].map(c=>c.textContent.trim()),[...t.querySelectorAll('tbody td.smx-g')].some(c=>/stock|left|Out/.test(c.textContent))]})()""")
+        check('each store has its own Price and Stock columns (Version 19)', stk[0]==[['Product','Amazon.eg','Carrefour','Noon'],['Price','Stock','Price','Stock','Price','Stock']], stk[0])
+        check('one stock mark per listing: 23 in stock, Piña Colada low under Noon, prices alone in Price', stk[1].count('in')==23 and stk[1].count('low')==1 and stk[2][-1]=='8 left' and not stk[3], (stk[1].count('in'),stk[2]))
         # Stock
         await click('[data-act=stab][data-v=stock]')
         ban=await J("[document.querySelector('.sbanner').className,document.querySelector('.sbanner').textContent]")
