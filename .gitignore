@@ -8,9 +8,8 @@ __pycache__/
 # project Python for the store collector (Anthropic SDK)
 data/.venv/
 
-# local clones of the Pages repos: the dashboard now publishes from docs/ in this repo,
-# the cost calculator from its own repo (mohanadabouserie/v7-pulse-costs)
-deploy/v7-pulse/
+# local clone of the cost calculator's Pages repo (mohanadabouserie/v7-pulse-costs);
+# the dashboard publishes from docs/ in this repo
 deploy/v7-pulse-costs/
 
 # test screenshots

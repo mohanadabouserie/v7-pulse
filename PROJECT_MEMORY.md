@@ -15,7 +15,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 |---|---|
 | Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 18) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 18 since 11 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` is no longer used (git-ignored) |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 18 since 11 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -399,7 +399,6 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Which hashtags does V7 use for campaigns? `#اشرب_اي` returned nothing about V7, so we need the exact spelling or the source.
 - Hosting choice and timeline.
 - Add the collaborator to the repo: GitHub → mohanadabouserie/v7-pulse → Settings → Collaborators. The user does this; we need the collaborator's GitHub username to do it for them.
-- The local folder `deploy/v7-pulse/` (old Pages clone) can be deleted once the user agrees.
 - From the rumors check, for V7:
   - confirm whether the fruit flavours contain sugar or honey;
   - send newsrooms the right brand name ("Seven Cola" appeared in the factory news);

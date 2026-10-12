@@ -433,3 +433,9 @@ At the user's request, for a collaborator: everything is pushed to https://githu
 - **CLAUDE.md** was rewritten for any Claude session: repository map, machine setup (Playwright, the venv, which `.env` files to create), code map, tests, publishing, data pipelines, secrets, known quirks. `README.md` was added.
 - **Files:** `.gitignore`, `deploy/build_sites.py`, `tests/*.py` (source paths), `CLAUDE.md`, `README.md`, `docs/`.
 
+### Old Pages clone removed (12 Oct 2026)
+- At the user's request, the local folder `deploy/v7-pulse/` was deleted.
+  - It was the old clone of the Pages repo, now replaced by `docs/` in this repo.
+  - It had no unpushed commits or changes. Its last state (Version 15) is in the repo history (commit 9cf4de4).
+- **Files:** `.gitignore` (its ignore line removed), `PROJECT_MEMORY.md`.
+
