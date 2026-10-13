@@ -30,7 +30,7 @@ async def main():
         check('products: product filter wins over an old card click', h2c=='Pink Lemonade' and 'product filter' in pick2, (h2c,pick2))
         await J("document.getElementById('prodAll').click()"); await pg.wait_for_timeout(300)
         await J("document.getElementById('prodNew').click()"); await pg.wait_for_timeout(300)
-        vc=await J("[...document.querySelectorAll('.pcard')].filter(c=>['cola','dcola','lime'].includes(c.dataset.v)).map(c=>[c.querySelector('.nm').textContent,+c.querySelector('.k-v').textContent.replace(/,/g,'')])")
+        vc=await J("[...document.querySelectorAll('.pcard')].filter(c=>['cola','dcola','llime','orange'].includes(c.dataset.v)).map(c=>[c.querySelector('.nm').textContent,+c.querySelector('.k-v').textContent.replace(/,/g,'')])")
         h2d=await J("[...document.querySelector('.dd-head h2').childNodes].find(n=>n.nodeType===3&&n.textContent.trim()).textContent.trim()")
         check('products: V Cola line opens on its most-discussed product', h2d==max(vc,key=lambda c:c[1])[0], (h2d,vc))
         await J("document.getElementById('prodAll').click()"); await pg.wait_for_timeout(300)

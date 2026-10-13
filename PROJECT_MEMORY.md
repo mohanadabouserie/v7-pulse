@@ -1,6 +1,6 @@
 # V7 Pulse: project memory
 
-Last updated: 7 Oct 2026 (dashboard Version 15, V7 brand redesign)
+Last updated: 13 Oct 2026 (dashboard Version 21: V7's own posts and pages abroad are real, V Orange added, data to 12 Oct)
 
 ## 1. What this is
 V7 Pulse is a social listening and market dashboard for V7's marketing team. Mohanad (the user, an internal employee) is proposing it to V7's marketing manager.
@@ -13,9 +13,9 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 20) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 21) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 18 since 11 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 19 since 12 Oct; Versions 20 and 21 are committed locally, not pushed). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -24,7 +24,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Daily store checker | `data/collect_store_history.py` (not scheduled, see open items). Noon is read by Claude through `data/noon_llm.py`. Runs with `data/.venv/bin/python`. Tests: `tests/test_noon_llm.py` |
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v18.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v20.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -42,28 +42,31 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - **Ownership:** the V7 and V Cola trademarks belong to Benefit (بينيفت). Vitality (ڤيتاليتي) is its manufacturing arm. Source: El Watan / SIS, May 2026.
 - **Factory:** in Sadat City, Menofia, opened by PM Madbouly on 11 May 2026 (EGP 1.5B).
 - **Exports:** 48 countries on 6 continents in 2026, with a target of 80+ by 2030. Exports tripled in 2024, when V7 was sold in 21 countries (Reuters).
-- **12 products:**
+- **13 products:**
   - flavours: Pomegranate, Piña Colada, Lemon Mint, Blueberry, Pineapple, Pink Lemonade (a 2025 summer edition, with a Dara's co-brand);
   - malts: Pineapple Malt and Apple Malt (Malt is not new; the Amazon pineapple malt listing has 539+ reviews);
-  - Cream Soda, seasonal, off shelves since 10 Sep 2026 and "back summer 2027";
-  - the V Cola line: V Cola, V Cola Diet and Lemon-Lime (V Super Soda, April 2025).
+  - Cream Soda, seasonal: the 2026 summer edition launched on 6 Aug (teaser 2 Aug), went off shelves on 10 Sep and is "back summer 2027";
+  - the V Cola line: V Cola, V Cola Diet and Lemon-Lime (V Super Soda, April 2025). V7's July reels call the Lemon-Lime can "V Lemon", as Carrefour does;
+  - **V Orange**, new in the V Cola line, launched on 11 Oct 2026 on Facebook, Instagram and YouTube (posted with the V Super Soda page). Not on TikTok yet, and not in the stores at the 4–5 Oct check (13 Oct).
+- **Partnerships seen in V7's posts (2026):** Circle K × V7 Mixology Menu (30 Jul), V7 × Cairokee night at Masyaf Ras Alhekma (17 Aug), On the Run × V7 Refreshment Menu (30 Aug).
 - **Shelf price:** about EGP 15 for a 300 ml can at Amazon.eg and Carrefour.
 - **Official accounts:**
 
-  | Account | Followers (real, 4–5 Oct) |
+  | Account | Followers (real, 13 Oct) |
   |---|---|
-  | facebook.com/V7Egypt | 76,755 |
-  | instagram.com/v7egypt | 38,458 |
-  | tiktok.com/@v7.egypt | 36,900 |
-  | youtube.com/@V7Egypt | 2,510 |
+  | facebook.com/V7Egypt | 79,783 (76,755 on 5 Oct). Ad Library: "isn't currently running ads" |
+  | instagram.com/v7egypt | 38,959 |
+  | tiktok.com/@v7.egypt | 36,900 (151.9K likes, 87 videos) |
+  | youtube.com/@V7Egypt | 2,540 (35.8M channel views, 47 videos) |
 - **V7 accounts abroad:**
 
-  | Account | Followers |
+  | Account | Followers (13 Oct) |
   |---|---|
   | @v7tunisia | 4,174 |
-  | @v7uzbekistan | 1,806 |
-  | @v7ldnuk (UK) | 351 |
-  | @drinkv7 (India) | 115 |
+  | @v7uzbekistan | 1,808 |
+  | @v7ldnuk (UK) | 355 |
+  | @drinkv7 (India) | 112 |
+  | @thehalaldrinksco (UK distributor) | 1,272 |
 
   The UK distributor is Halal Drinks Co (halaldrinksco.com).
 - **Seen abroad:** a shop in Gaza, Malaysia, "V7 Mauritania".
@@ -78,14 +81,21 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 20)
+## 4. The dashboard today (Version 21)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
 - Every product has its can color (dots and card strips).
 - Navigation: Overview, then Conversation, To act on (Alerts, Rumors & attacks, Events), Market, International.
 - On phones, the filters sit behind a Filters button.
-- **Version 20, realistic demo:** about 1 to 2 public posts a day, and posts and comments shown together (97% is comments under V7's posts). No Facebook groups tab, emotions, word cloud or dialect split. Reply tracking is on Facebook and YouTube. Follower details and online times are Instagram insights. Alerts are sized for real volumes (DECISIONS #80–86).
+- **Version 20, realistic demo:** about 1 to 2 public posts a day, and posts and comments shown together (most of it, about 75% since Version 21's real posts, is comments under V7's posts). No Facebook groups tab, emotions, word cloud or dialect split. Reply tracking is on Facebook and YouTube. Follower details and online times are Instagram insights. Alerts are sized for real volumes (DECISIONS #80–86).
+- **Version 21, real own posts (DECISIONS #87–94):**
+  - Data runs to 12 Oct 2026.
+  - V7's own posts from late July are real on all four platforms (50 posts), built by `data/raw/verify_13oct/build_own_posts.py --inject`. Followers are the 13 Oct counts.
+  - V Orange is in, with launch handling: "Excited to try it", "Looking for it" and a "Launch questions" alert.
+  - The V7 pages abroad table and their latest posts are real.
+  - Real launches and partnerships are events, and the V Orange launch is the pending suggestion.
+  - "Partly real" badge on Our content and V7 pages abroad.
 - **Rumors & attacks (Version 18): real posts only.** A status sentence, five numbers, three claims (price confusion, active; "V7 was sold to Coca-Cola", contained since May 2024; "V7 Malt tastes like alcohol", watching), the claim detail with every post, "Also worth a look", "Nothing found", how the posts were found, and the fact sheet. Data: `data/raw/social/rumors_11oct/` (see section 10). To refresh: run `collect.py`, `normalize.py`, label the new posts in `labels.json`, then `build_rumors.py --inject`.
 - **Online stores (Versions 16 and 17):**
   - Summary: "Needs attention" next to "Against competitors", then "V7 price and stock in each store": each store has its own Price and Stock columns (Version 19).
@@ -110,8 +120,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | Conversation | Products | One card per product. The detail panel opens on the most-discussed product, or the one picked in the filter |
 | Conversation | Customer voice | |
 | Conversation | People | |
-| Conversation | Facebook groups | |
-| Conversation | Hashtags & words | |
+| Conversation | Hashtags | |
 | Conversation | Our content | Includes profile visits, followers' city and age, and replies to comments |
 | To act on | Alerts | |
 | To act on | Events | Suggestions wait for admin approval |
@@ -129,8 +138,9 @@ The dashboard artifact is private. People can't open it until it's shared from t
 
 | Real | Demo |
 |---|---|
-| The 9 posts marked "Real post" | All other social posts and comments |
-| Follower counts | Profile visits, followers' city and age (until V7 connects Meta and TikTok) |
+| V7's own posts from late July (50 in Egypt) and the pages abroad's 12 latest posts each, with counts as of 13 Oct | V7's posts before late July, all comments, and other people's posts |
+| The 9 public posts marked "Real post", and the UK distributor's 3 | |
+| Follower counts (13 Oct) | Profile visits, followers' city and age, online times (until V7 connects Meta and TikTok) |
 | V7 pages abroad | |
 | Export facts | |
 | Online stores | Store history before 4 Oct (shown hatched) |
@@ -325,6 +335,24 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - What people ask for under V7's posts: new flavours (watermelon above all, then mango, mixed berry, peach, a winter edition, iced coffee), sugar-free malt, 1 L and 2 L bottles. Sales leads: fridge requests and would-be distributors.
 - V7's TikTok "Summer of Colors" video (29 Jul) has 11.4M plays.
 
+**V7's own posts and pages (real, 13 Oct 2026)**
+- V7 posted 10 times in the last 30 days (5 of them the V Orange launch on 11 Oct), against 24 in the 30 days before.
+- **V Orange launch (11 Oct):**
+  - 528K views on Facebook, 48K on Instagram and 97K on a YouTube Short in two days, with 154 comments (Facebook 99, Instagram 55).
+  - Of 34 comments read, most are excitement and friend tags. About 1 in 6 ask when and where it will be sold ("will it be in every governorate?", "can I order it on Talabat?"). Others ask for 1 L and 2 L bottles, strawberry, peach, mandarin, green apple and sugar-free.
+- **Biggest videos:**
+  - Malt reel (8 Sep): 13.2M Facebook views, 2.7M on YouTube.
+  - Summer of Colors (29 Jul): 12.5M Facebook, 11.4M TikTok, 3.1M YouTube.
+  - Cream Soda launch (6 Aug): 6.7M TikTok, 2.6M Facebook, 1.1M YouTube.
+  - Views 20+ times the followers point to promotion, but the Ad Library showed no ads running on 13 Oct.
+- YouTube: no comments on any of the 12 latest videos.
+- **Pages abroad:**
+  - V7_UK hasn't posted since 3 Sep.
+  - V7 Tunisia posted twice in 30 days.
+  - V7 Uzbekistan posts every few days. It lists its shops (Makro, Andalus, Assorti, Baraka, Cool grocery) and on 13 Oct asked for regional distributors. Its 8 Oct posts say "0% Shakar" (0% sugar).
+  - V7 India was at Anuga Select India in Mumbai (late Sep).
+  - Halal Drinks Co (UK) launched V7 6-packs on 3 Oct and "Meet V Cola" on 10 Oct.
+
 **Search**
 - The busiest week was 9 Aug 2026.
 
@@ -341,6 +369,8 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - **Follower counts for personal Facebook profiles and Reddit users:** not public.
 - **Views on most Facebook posts, Instagram photos and Reddit:** hidden, so reach is estimated from engagement and capped at the audience.
 - **Replies on X:** not collected yet.
+- **YouTube comments:** V7's videos have none to collect (13 Oct).
+- **A commenter's follower count:** comment tools don't return it; only post authors on X and TikTok, and pages and creators, show followers.
 - **Exact stock and sales on Noon and Carrefour:** not shown by the stores.
 - **Real sales numbers:** only V7's own data, or a retail audit firm such as NielsenIQ.
 
@@ -368,7 +398,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 
 ## 9. Apify account and spend
 - **Plan:** the user's Free plan, with USD 5 of credits a month. The cycle resets on 2 Nov.
-- **Spent so far:** USD 3.96 of 5 (Apify's reading on 13 Oct, after the page-by-page checks).
+- **Spent so far:** USD 4.25 of 5 (Apify's reading on 13 Oct, after the deeper pass). USD 0.75 left until 2 Nov.
 
 **Spend log**
 
@@ -384,6 +414,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | 5 Oct | Hashtag test | 0.022 | 3.24 |
 | 11 Oct | Rumors pull: X, Facebook, Instagram, TikTok (413 posts) | about 0.47 by the run log | 3.83 (Apify's reading) |
 | 13 Oct | Review checks: Facebook and Instagram replies, V7's TikTok and its comments, X this week | 0.11 | 3.96 |
+| 13 Oct | Deeper pass: V7's own posts on 4 platforms, the pages abroad, YouTube details, page followers, V Orange comments | about 0.19 by the run log | 4.25 (Apify's reading, with late charges from earlier runs) |
 
 ## 10. Raw data map (`data/raw/`)
 | Folder | What's in it |
@@ -398,7 +429,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | `social/governorate_test_4oct/` | 114 real posts and their labels |
 | `social/reddit_quora_4oct/` | Reddit RSS and Quora results |
 | `social/hashtag_test_5oct/` | `#اشرب_اي` on Instagram and TikTok |
-| `verify_13oct/` | Review checks (13 Oct): Facebook comment replies (V7Egypt answers next day), Instagram comments (no replies returned), V7's 5 latest TikTok videos and 90 comments, X this week |
+| `verify_13oct/` | Review checks (13 Oct): Facebook comment replies (V7Egypt answers next day), Instagram comments (no replies returned), V7's 5 latest TikTok videos and 90 comments, X this week (`run.py`). Deeper pass: `own_pull.py` (Instagram profiles of V7 Egypt, the 4 pages abroad and the UK distributor; V7Egypt's 15 Facebook posts; 10 TikTok videos; YouTube channel), `own_pull2.py` (YouTube likes and dates, page followers and ad status, the first V Orange comments), and `build_own_posts.py --inject`, which writes the dashboard's `REAL_OWN` and `REAL_OWN_X` blocks |
 | `social/rumors_11oct/` | Rumors & attacks, real. Raw pulls (`x_*`, `fb_*`, `ig_v7`, `tt_rumor`, `x_coke2024`), `collect.py` (full / extra / test), `run.log`, `normalize.py` → `posts.json` (368 unique), `labels.json` (177 posts about V7, labelled by Claude on 11 Oct), `build_rumors.py` → `rumors_dashboard.json` and the dashboard's `RUMOR_DATA` block |
 | `apify_actor_pages/` | Apify Store pages for the actors we considered |
 
@@ -410,12 +441,15 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).
 - Which hashtags does V7 use for campaigns? `#اشرب_اي` returned nothing about V7, so we need the exact spelling or the source.
 - Hosting choice and timeline.
-- Push Version 20 to the public copy? It shows Version 19.
+- Push Versions 20 and 21 to the public copy? It shows Version 19.
+- Backfill V7's own posts to the full 180 days (about USD 0.30), so longer periods are all real. It waits on budget: USD 0.75 is left until 2 Nov.
 - Add the collaborator to the repo: GitHub → mohanadabouserie/v7-pulse → Settings → Collaborators. The user does this; we need the collaborator's GitHub username to do it for them.
 - From the rumors check, for V7:
   - confirm whether the fruit flavours contain sugar or honey;
   - send newsrooms the right brand name ("Seven Cola" appeared in the factory news);
-  - publish a recommended price.
+  - publish a recommended price;
+  - say when and where V Orange will be sold (people are asking under the launch post);
+  - check V7 Uzbekistan's "0% sugar" claim, and V7_UK's page, quiet since 3 Sep.
 - Which setup to budget for: questions a day and refresh rate, using the cost calculator.
 - Update the proposal page's cost box? `V7_Pulse_Proposal.html` still shows the 3 Oct estimate of USD 60 to 130 a month. The lean setup (USD 75 a month) fits that range. The recommended setup (USD 208) is higher because it adds daily store checks, a monthly full Talabat check and 20 Opus questions a day.
 

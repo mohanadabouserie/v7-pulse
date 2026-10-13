@@ -10,7 +10,8 @@ A social listening and market dashboard for V7, the Egyptian vitamin soda.
   - restaurant menus (Talabat, 10 Cairo areas);
   - Google search trends;
   - Rumors & attacks (public posts from X, Facebook, Instagram and TikTok, read one by one);
-  - V7's follower counts and its pages abroad.
+  - V7's own posts on Facebook, Instagram, TikTok and YouTube from late July, and its follower counts;
+  - V7's pages abroad and their latest posts.
 - **What's demo:** the other social posts are generated for illustration and labelled as demo in the dashboard.
 
 ## Files
@@ -25,7 +26,7 @@ A social listening and market dashboard for V7, the Egyptian vitamin soda.
 ## Run the checks
 ```bash
 pip install playwright && python3 -m playwright install chromium
-python3 tests/test_v18.py
+python3 tests/test_v21.py
 ```
 Each test prints `FAIL 0` when everything passes.
 

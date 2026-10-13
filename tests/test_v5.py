@@ -55,7 +55,7 @@ async def main():
         check('approve decrements badge', badge=='1', badge)
         await nav('overview')
         evl = await J("document.getElementById('evlist').textContent")
-        check('approved event on overview chart', 'Pomegranate post reshared' in evl, evl[:200])
+        check('approved event on overview chart', 'V Orange launched' in evl, evl[:200])
         await nav('events')
         await click('[data-act=evno][data-v=ev7]')
         rej = await J("[...document.querySelectorAll('.evc .ev-t')].map(e=>e.textContent)")
@@ -92,7 +92,7 @@ async def main():
         title = await J("document.getElementById('vTitle').textContent")
         chip = await J("[...document.querySelectorAll('.activef .chip')].map(c=>c.textContent)")
         dates = await J("[...document.querySelectorAll('.plist .pc .when')].map(e=>e.textContent.split(',')[0])")
-        check('day filter opens posts for that day', title in ('All posts','Posts & comments') and any('On 29 Sep' in c for c in chip) and len(set(dates))==1, (title,chip,set(dates)))
+        check('day filter opens posts for that day', title in ('All posts','Posts & comments') and any('On 11 Oct' in c for c in chip) and len(set(dates))==1, (title,chip,set(dates)))
         # --- explorer sorted by reach
         rs = await J("[...document.querySelectorAll('.plist .pc')].length")
         sortv = await J("document.getElementById('pf_sort').value")

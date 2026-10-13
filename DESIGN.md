@@ -44,14 +44,17 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
 | Blueberry | `#5A5CA8` | V Cola | `#1B3366` |
 | Pineapple | `#E8902F`* | V Cola Diet | `#A7B0BE` |
 | Pink Lemonade | `#D63462` | Lemon-Lime (V Lemon) | `#2F8C46` |
+| V Orange (new, 11 Oct 2026) | `#EE6A1F`† | | |
 
 \* Plain Pineapple isn't on V7's site, so it gets a pineapple orange, distinct from Piña Colada's yellow.
+
+† Set before seeing the can: a redder orange than Pineapple's. Swap in the can's colour once V Orange is in shops.
 
 **Where product colors appear**
 - They're stored as `PRODUCTS[].c`.
 - `pdot(id)` draws the dot next to a product's name: in chips, the product filter, product lists and the product details title.
 - Product cards carry a 5 px strip in the can color.
-- They identify a product. They are never used as chart series (12 colors is too many to tell apart).
+- They identify a product. They are never used as chart series (13 colors is too many to tell apart).
 
 ## 4. Type
 - **Nunito Sans:** the closest free match to V7's Avenir, used for all Latin text. It's loaded from Google Fonts in weights 400–900.

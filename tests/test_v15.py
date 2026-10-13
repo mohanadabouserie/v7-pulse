@@ -49,10 +49,10 @@ async def main():
         # product can colors
         await click('.side .nav[data-view=products]')
         pcs=await J("[...document.querySelectorAll('.pcard')].map(c=>c.style.getPropertyValue('--pc'))")
-        check('every product card carries its can color', len(pcs)==12 and all(re.match(r'#[0-9a-f]{6}$',x) for x in pcs) and len(set(pcs))==12, pcs)
+        check('every product card carries its can color', len(pcs)==13 and all(re.match(r'#[0-9a-f]{6}$',x) for x in pcs) and len(set(pcs))==13, pcs)
         check('product details title has its color dot', await J("!!document.querySelector('.dd-head h2 .pdot')"))
         await click('#prodBtn'); n=await J("document.querySelectorAll('#prodList .pdot').length"); await click('#prodBtn')
-        check('product filter shows a dot per product', n==12, n)
+        check('product filter shows a dot per product', n==13, n)   # 13 with V Orange (launched 11 Oct 2026)
         await click('.side .nav[data-view=posts]')
         check('product chips on posts have dots', await J("document.querySelectorAll('.pc .chip.prod .pdot').length")>0)
         # quantities in navy, sentiment green and red

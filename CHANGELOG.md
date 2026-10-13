@@ -495,3 +495,87 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Files:** `V7_Pulse_Dashboard.html` (Version 19 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v19.html`), `data/raw/verify_13oct/` (run.py, run.log, fb_replies, ig_replies, tt_profile, tt_comments, x_week), `DESIGN.md`, tests. Published as artifact Version 20.
 - **Not yet public:** the GitHub copy shows Version 19.
 
+
+### Version 21: the deeper pass, V7's own posts and V Orange (13 Oct 2026)
+- **Why:** the user asked to dig deeper into the page-by-page review, checking each element against real data.
+- **Real checks (Apify, capped; about USD 0.19, plus late charges from earlier runs; Apify reads USD 4.25 of 5):**
+  - `data/raw/verify_13oct/own_pull.py`:
+    - Instagram profiles of @v7egypt, the four V7 pages abroad and the UK distributor, with their 12 latest posts;
+    - V7Egypt's 15 latest Facebook posts;
+    - @v7.egypt's 10 latest TikTok videos;
+    - the YouTube channel's 6 latest videos and 6 Shorts.
+  - `own_pull2.py`:
+    - YouTube likes and exact dates for those 12;
+    - the Facebook page's follower count (79,783) and ad status ("isn't currently running ads");
+    - the first 34 comments on the V Orange launch, on Facebook and Instagram. Claude labelled them in the chat.
+- **Findings:**
+  - V7 launched **V Orange** on 11 Oct: 528K Facebook views and a 97K YouTube Short in two days, 154 comments. It isn't on TikTok yet. Most comments are excitement and friend tags; about 1 in 6 ask when and where it will be sold; others ask for 1 L and 2 L bottles and other flavours.
+  - Cream Soda's 2026 summer edition launched on **6 Aug** (teaser 2 Aug), not 1 May. The dashboard said May.
+  - "V Lemon" in V7's July reels is the Lemon-Lime can (Carrefour's listing is "V Lemon").
+  - V7 posted 10 times in the last 30 days, against 24 in the 30 days before.
+  - Partnerships found in V7's posts: Circle K × V7 Mixology Menu (30 Jul), V7 × Cairokee night (17 Aug), On the Run × V7 Refreshment Menu (30 Aug).
+  - Pages abroad:
+    - V7_UK hasn't posted since 3 Sep, and V7 Tunisia posted twice in 30 days.
+    - V7 Uzbekistan is active, lists its shops (Makro, Andalus, Assorti, Baraka, Cool) and on 13 Oct asked for regional distributors. Its 8 Oct posts say "0% Shakar" (0% sugar).
+    - V7 India was at Anuga Select India in Mumbai (late Sep).
+    - Halal Drinks Co (UK) launched V7 6-packs on 3 Oct.
+  - YouTube shows no comments on any of V7's 12 latest videos.
+- **Dashboard (Version 21):**
+  - **Dates:**
+    - The data now runs to 12 Oct 2026 (was 2 Oct), so the V Orange launch is in range.
+    - Store alerts keep their real 4–5 Oct dates.
+    - The custom date range allows the full period.
+  - **Products:**
+    - V Orange is added (V Cola line, new, can colour `#EE6A1F`), and Cream Soda's launch is 6 Aug.
+    - For a new product's first 4 weeks, "Can't find it" reads "Looking for it", and the status line says "day N since launch".
+    - A new category, "Excited to try it", covers launch reactions, so "Tried it" stays for people who tasted it. For V Orange it's 0.
+  - **Our content:**
+    - All 50 V7 posts from late July are real (Facebook, Instagram, TikTok, YouTube), with counts as of 13 Oct. Demo posts fill only the days before each platform's first real post.
+    - Followers are the 13 Oct counts: 79,783 on Facebook, 38,959 on Instagram, 36,900 on TikTok, 2,540 on YouTube.
+    - The header badge reads "Partly real".
+    - The posts table says how many rows are real.
+    - "Positive comments" shows "—" under 5 comments.
+    - Generated comments follow each post's real comment count, up to 120 (was 60).
+  - **Comments on a launch post** follow the 34 real V Orange comments: excitement, tags, "when will it be in stores?", sizes and flavours. There are new templates, and V7 has a reply for "when will it be sold".
+  - **Outside Egypt, V7 pages abroad:**
+    - The table is real, from each page's 12 latest posts: followers, posts in the last 30 days ("12+" when the 12 don't reach back that far), average engagement rate, average video views, last post and best post. Older pinned posts are left out of the averages.
+    - "Positive comments" is gone.
+    - The demo posts on V7's pages abroad are replaced by the real ones, and the panel shows the latest post from each page.
+    - The UK distributor's 3 V7 posts are real posts abroad.
+  - **Outside Egypt, Countries:**
+    - "Main issue" uses short names, with the full label on hover.
+    - "Asking to buy" says when nobody asked.
+  - **Events:**
+    - The V Orange launch is the pending suggestion, found from the jump in posts and comments (about 56× the week before).
+    - The unsupported demo "Pomegranate post reshared" suggestion is removed.
+    - The Cream Soda launch, Circle K menu, Cairokee night and On the Run menu are added as real team events.
+    - Event evidence counts posts and comments, and names every platform V7 posted on.
+  - **Alerts:**
+    - A new product's "when and where" questions get their own alert ("V Orange launch: 24 people asking when and where to buy it") and a "Launch questions" rule. They no longer trigger "More people can't find V7".
+    - The Overview's "Can't find it" panel leaves them out, with a link to read them.
+    - The period line reads "public posts and comments".
+  - **Online stores:**
+    - Tables list only products that existed at the 4–5 Oct check. A note says V Orange launched after it.
+  - **Commenters' follower counts** show only where a platform gives them (post authors on X and TikTok, and pages and creators). Comment tools don't return them (`folKnown`).
+  - **Charts:** the last date label on a line chart ends at the edge instead of being cut off.
+  - **Copy:**
+    - The sidebar, the guide and the Ask V7 Pulse system prompt say V7's own posts are real.
+    - The prompt says today is 13 Oct, and that the data runs to 12 Oct.
+    - The prompt counts the real posts.
+- **Tests:**
+  - New `tests/test_v21.py` (25 checks).
+  - `test_v5.py` uses the new pending event.
+  - `test_v11.py` includes V Orange and fixes the Lemon-Lime id.
+  - `test_v15.py` expects 13 can colours.
+  - `test_v20.py`:
+    - expects about 70% of the conversation under V7's posts;
+    - checks the launch alert instead of "waiting over a day", which doesn't fire at V7's real posting volume;
+    - reads Customer voice over 90 days.
+  - All 13 suites pass, on the file and on `docs/index.html`.
+- **Files:**
+  - `V7_Pulse_Dashboard.html` (Version 20 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v20.html`; the new `REAL_OWN` and `REAL_OWN_X` blocks are written by `data/raw/verify_13oct/build_own_posts.py --inject`);
+  - `data/raw/verify_13oct/`: `own_pull.py`, `own_pull2.py` and their JSON, `build_own_posts.py`;
+  - `DESIGN.md` (V Orange's colour);
+  - tests, CLAUDE.md, README.md.
+  - Published as artifact Version 21.
+- **Not yet public:** the GitHub copy shows Version 19 (Versions 20 and 21 are committed locally).

@@ -20,7 +20,7 @@ async def main():
         check('opens on posts and comments together', k[0]=='both' and k[1]=='Posts and comments', k)
         where=await J("[...document.querySelectorAll('.panel')].find(p=>p.textContent.startsWith('Where and who')).innerText")
         m=re.search(r'Comments under V7’s posts\s*(\d+)%',where)
-        check('most of the conversation is comments under V7’s posts', m and int(m.group(1))>=80, m and m.group(0))
+        check('most of the conversation is comments under V7’s posts', m and int(m.group(1))>=60, m and m.group(0))   # about 70% with V7’s real posts (v21)
         await click('#kindSeg [data-kind=posts]')
         n=int((await J("document.querySelector('.kpi .k-v').textContent")).replace(',',''))
         check('public posts at the real rate: about 1 to 2 a day', 15<=n<=90, n)
@@ -40,7 +40,9 @@ async def main():
         check('no sentiment score on fewer than 5 items', all(x=='—' for x in small), small)
         # customer voice: categories from real comments
         await nav('voice')
+        await click('#rangeSeg [data-r="90"]',700)   # V7's real posts since late July (v21): the last 30 days alone may have no "can't reach V7" comment
         vtxt=await J("document.getElementById('content').innerText")
+        await click('#rangeSeg [data-r="30"]',700)
         check('requests use the real asks (watermelon, sugar-free malt) and the “can’t reach V7” complaint', 'watermelon' in vtxt and 'malt too' in vtxt and 'Can’t reach V7' in vtxt)
         # hashtags
         await nav('hashtags')
@@ -62,7 +64,7 @@ async def main():
         rules=await J("[...document.querySelectorAll('.rule')].map(r=>[r.querySelector('span').textContent,r.querySelector('.switch').getAttribute('aria-checked')])")
         al=await J("[...document.querySelectorAll('.al .t1')].map(x=>x.textContent)")
         check('“unanswered for a day” is on, “mention spike” is gone', ['Unanswered for a day','true'] in rules and not any('Mention spike' in r[0] for r in rules), rules)
-        check('alerts flag questions waiting over a day', any('waiting over a day' in a for a in al), al)
+        check('a launch gets its own alert, not “can’t find V7”', any(a.startswith('V Orange launch:') for a in al) and not any(a.startswith('More people can’t find V7') for a in al), al)   # v21
         # outside Egypt
         await nav('abroad')
         sub=await J("[...document.querySelectorAll('.subtabs button')].map(b=>b.textContent)")
