@@ -584,3 +584,38 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Why:** the user's OK ("yes push it").
 - `deploy/build_sites.py dashboard` rebuilt `docs/index.html`, and all 13 suites passed on it (`DASH_SRC`).
 - Pushed `main` (commits 6eb7235 Version 20, ea37ea4 Version 21, 992409f public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 21.
+
+### Version 22: V7's own posts back to 16 Apr (13 Oct 2026)
+- **Why:** the user approved the 180-day backfill ("go ahead with the 180-day backfill").
+- **Real data (Apify, every run capped, after 3-post tests of the Facebook and TikTok date filters):** USD 0.39 by Apify's run records, against the USD 0.30 estimated first and the 0.35–0.40 estimated before the runs. Apify reads USD 4.64 of 5, so USD 0.36 is left until 2 Nov.
+  - `data/raw/own_backfill_13oct/pull.py`:
+    - Facebook 16 Apr – 20 Jul: 21 posts, date filter;
+    - TikTok 16 Apr – 1 Aug: 9 videos, date filter;
+    - Instagram: the 45 latest posts, back to 27 May. The run hit its cap, so Instagram before 27 May stays demo;
+    - YouTube channel since 16 Apr: 30 videos and Shorts.
+  - `yt_pages.py`: exact dates and likes for 18 older YouTube videos, read free from their public pages, 2 seconds apart.
+- **Findings in V7's older posts:**
+  - **V Lemon relaunch (19–20 May):** "It's now V Lemon" reels got 19.4M views on Facebook, and a YouTube Short 5.5M.
+  - **V Cola's "Raise the flag" World Cup campaign (28 May to 7 Jul):** Egypt's flag on cans and trucks, with Seoudi, Breadfast, Talabat, Oscar Grand Stores, Buffalo Burger, ESLSCA, clubs and Ahl Masr hospital joining in. The launch reel got 4.7M views on Facebook and 685K on Instagram.
+  - **New can design ("Hello Summer. New Design", 21 Jun):** 4,719 reactions and 150 comments on Facebook.
+  - **Smaller items:**
+    - a Breadfast giveaway (top 10 V Cola orders win prizes, June);
+    - the Cafex Egypt exhibition (7 May);
+    - Playa booth (16–21 Jul);
+    - factory-opening posts and shares (11 and 14 May).
+- **Dashboard:**
+  - **Our content:** 129 real V7 posts in Egypt (Facebook 36, Instagram 45, TikTok 19, YouTube 29). Demo posts remain only on Instagram before 27 May; 10 of them show over the full 180 days.
+  - **Rebuild script:** `build_own_posts.py` merges both pulls. Times are converted to Cairo time (summer time from 24 Apr). Flag, national-team and "V Cola" posts are tagged V Cola, and shared news posts get their source as text.
+  - **New real events:** the V Lemon relaunch (19 May), the "Raise the flag" campaign (28 May) and the new can design (21 Jun). The Summer of Colors event text is corrected: the new cans were first shown on 21 Jun.
+  - **Demo public posts** follow these campaigns, with more V Lemon from 19 May and more V Cola from 28 May to 7 Jul.
+  - **A new product's first week** has no tasting categories: excitement, where and when, price, "is it worth trying?", flavour ideas.
+  - **Engagement rate and Best formats** leave out posts with views 20+ times the followers (most likely promoted). Promoted YouTube Shorts showed 47.5% engagement on a 2,540-subscriber channel.
+  - **Profile visits:** the busiest-day note names the V7 post that drew the most views that day, not just an event the day before.
+  - **Copy:** the guide, the "Partly real" tooltip and the Ask V7 Pulse prompt say V7's posts are real from 16 Apr (Instagram from 27 May).
+- **Tests:**
+  - New `tests/test_v22.py` (10 checks).
+  - `test_v21.py`: 90 days are now all real.
+  - `test_v20.py`: the share under V7's posts must be over half (55–75% depending on the demo draw).
+  - All 14 suites pass, on the file and on `docs/index.html`.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 21 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v21.html`), `data/raw/own_backfill_13oct/`, `data/raw/verify_13oct/build_own_posts.py`, tests. Published as artifact Version 22.
+

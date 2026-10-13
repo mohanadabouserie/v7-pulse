@@ -1,6 +1,6 @@
 # V7 Pulse: project memory
 
-Last updated: 13 Oct 2026 (dashboard Version 21: V7's own posts and pages abroad are real, V Orange added, data to 12 Oct)
+Last updated: 13 Oct 2026 (dashboard Version 22: V7's own posts real back to 16 Apr; Version 21 added V Orange, real pages abroad, data to 12 Oct)
 
 ## 1. What this is
 V7 Pulse is a social listening and market dashboard for V7's marketing team. Mohanad (the user, an internal employee) is proposing it to V7's marketing manager.
@@ -13,7 +13,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 21) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 22) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 21 since 13 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -24,7 +24,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Daily store checker | `data/collect_store_history.py` (not scheduled, see open items). Noon is read by Claude through `data/noon_llm.py`. Runs with `data/.venv/bin/python`. Tests: `tests/test_noon_llm.py` |
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v20.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v21.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -81,7 +81,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 21)
+## 4. The dashboard today (Version 22)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -91,7 +91,8 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - **Version 20, realistic demo:** about 1 to 2 public posts a day, and posts and comments shown together (most of it, about 75% since Version 21's real posts, is comments under V7's posts). No Facebook groups tab, emotions, word cloud or dialect split. Reply tracking is on Facebook and YouTube. Follower details and online times are Instagram insights. Alerts are sized for real volumes (DECISIONS #80–86).
 - **Version 21, real own posts (DECISIONS #87–94):**
   - Data runs to 12 Oct 2026.
-  - V7's own posts from late July are real on all four platforms (50 posts), built by `data/raw/verify_13oct/build_own_posts.py --inject`. Followers are the 13 Oct counts.
+  - V7's own posts are real on all four platforms: 129 posts since 16 Apr; Instagram is real from 27 May (Version 22). Built by `data/raw/verify_13oct/build_own_posts.py --inject`. Followers are the 13 Oct counts.
+  - Engagement-rate averages leave out posts with views 20+ times the followers.
   - V Orange is in, with launch handling: "Excited to try it", "Looking for it" and a "Launch questions" alert.
   - The V7 pages abroad table and their latest posts are real.
   - Real launches and partnerships are events, and the V Orange launch is the pending suggestion.
@@ -138,7 +139,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 
 | Real | Demo |
 |---|---|
-| V7's own posts from late July (50 in Egypt) and the pages abroad's 12 latest posts each, with counts as of 13 Oct | V7's posts before late July, all comments, and other people's posts |
+| V7's own posts since 16 Apr (129 in Egypt; Instagram from 27 May) and the pages abroad's 12 latest posts each, with counts as of 13 Oct | V7's Instagram posts before 27 May, all comments, and other people's posts |
 | The 9 public posts marked "Real post", and the UK distributor's 3 | |
 | Follower counts (13 Oct) | Profile visits, followers' city and age, online times (until V7 connects Meta and TikTok) |
 | V7 pages abroad | |
@@ -336,6 +337,11 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - V7's TikTok "Summer of Colors" video (29 Jul) has 11.4M plays.
 
 **V7's own posts and pages (real, 13 Oct 2026)**
+- **Campaigns since April:**
+  - **V Lemon relaunch (19–20 May):** 19.4M Facebook views on the "It's now V Lemon" reels, 5.5M on a YouTube Short.
+  - **V Cola's "Raise the flag" World Cup campaign (28 May to 7 Jul):** flags on cans and trucks; Seoudi, Breadfast, Talabat, Oscar Grand Stores, Buffalo Burger, ESLSCA, clubs and Ahl Masr hospital took part; the launch reel got 4.7M Facebook views. A Breadfast giveaway ran in June.
+  - **New can design (21 Jun):** shown in "Hello Summer. New Design".
+  - **Smaller items:** the Cafex Egypt exhibition (7 May) and a Playa booth (16–21 Jul).
 - V7 posted 10 times in the last 30 days (5 of them the V Orange launch on 11 Oct), against 24 in the 30 days before.
 - **V Orange launch (11 Oct):**
   - 528K views on Facebook, 48K on Instagram and 97K on a YouTube Short in two days, with 154 comments (Facebook 99, Instagram 55).
@@ -398,7 +404,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 
 ## 9. Apify account and spend
 - **Plan:** the user's Free plan, with USD 5 of credits a month. The cycle resets on 2 Nov.
-- **Spent so far:** USD 4.25 of 5 (Apify's reading on 13 Oct, after the deeper pass). USD 0.75 left until 2 Nov.
+- **Spent so far:** USD 4.64 of 5 (Apify's reading on 13 Oct, after the backfill). USD 0.36 left until 2 Nov.
 
 **Spend log**
 
@@ -415,6 +421,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | 11 Oct | Rumors pull: X, Facebook, Instagram, TikTok (413 posts) | about 0.47 by the run log | 3.83 (Apify's reading) |
 | 13 Oct | Review checks: Facebook and Instagram replies, V7's TikTok and its comments, X this week | 0.11 | 3.96 |
 | 13 Oct | Deeper pass: V7's own posts on 4 platforms, the pages abroad, YouTube details, page followers, V Orange comments | about 0.19 by the run log | 4.25 (Apify's reading, with late charges from earlier runs) |
+| 13 Oct | Backfill of V7's own posts to 16 Apr: Facebook 21, TikTok 9, Instagram 45, YouTube 30, plus two 3-post tests | 0.39 (run records) | 4.64 |
 
 ## 10. Raw data map (`data/raw/`)
 | Folder | What's in it |
@@ -430,6 +437,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | `social/reddit_quora_4oct/` | Reddit RSS and Quora results |
 | `social/hashtag_test_5oct/` | `#اشرب_اي` on Instagram and TikTok |
 | `verify_13oct/` | Review checks (13 Oct): Facebook comment replies (V7Egypt answers next day), Instagram comments (no replies returned), V7's 5 latest TikTok videos and 90 comments, X this week (`run.py`). Deeper pass: `own_pull.py` (Instagram profiles of V7 Egypt, the 4 pages abroad and the UK distributor; V7Egypt's 15 Facebook posts; 10 TikTok videos; YouTube channel), `own_pull2.py` (YouTube likes and dates, page followers and ad status, the first V Orange comments), and `build_own_posts.py --inject`, which writes the dashboard's `REAL_OWN` and `REAL_OWN_X` blocks |
+| `own_backfill_13oct/` | V7 Egypt's older posts back to 16 Apr (`pull.py test|full`: Facebook and TikTok with date filters, Instagram 45 latest, YouTube channel) and `yt_pages.py` (exact dates and likes from the videos' public pages). Merged by `../verify_13oct/build_own_posts.py` |
 | `social/rumors_11oct/` | Rumors & attacks, real. Raw pulls (`x_*`, `fb_*`, `ig_v7`, `tt_rumor`, `x_coke2024`), `collect.py` (full / extra / test), `run.log`, `normalize.py` → `posts.json` (368 unique), `labels.json` (177 posts about V7, labelled by Claude on 11 Oct), `build_rumors.py` → `rumors_dashboard.json` and the dashboard's `RUMOR_DATA` block |
 | `apify_actor_pages/` | Apify Store pages for the actors we considered |
 
@@ -441,7 +449,8 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).
 - Which hashtags does V7 use for campaigns? `#اشرب_اي` returned nothing about V7, so we need the exact spelling or the source.
 - Hosting choice and timeline.
-- Backfill V7's own posts to the full 180 days (about USD 0.30), so longer periods are all real. It waits on budget: USD 0.75 is left until 2 Nov.
+- Instagram posts before 27 May are still demo (about USD 0.04 to fill, after 2 Nov).
+- Push Version 22 to the public copy? It shows Version 21.
 - Add the collaborator to the repo: GitHub → mohanadabouserie/v7-pulse → Settings → Collaborators. The user does this; we need the collaborator's GitHub username to do it for them.
 - From the rumors check, for V7:
   - confirm whether the fruit flavours contain sugar or honey;

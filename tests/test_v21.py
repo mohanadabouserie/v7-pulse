@@ -47,7 +47,7 @@ async def main():
         check('no positive-comment share on posts with fewer than 5 comments', small and all(x=='—' for x in small), small)
         await click('#rangeSeg [data-r="90"]',700)
         hint90=await J(panel('Our posts')+".querySelector('.hint').textContent")
-        check('a 90-day view says how many posts are demo (before late July)', re.search(r'\d+ real, \d+ demo',hint90), hint90)
+        check('90 days of V7’s posts are all real (v22 backfill)', 'all real' in hint90, hint90)
         await click('#rangeSeg [data-r="30"]',700)
         # outside Egypt: the pages are real
         await nav('abroad'); await click('[data-act=xtab][data-v=pages]',700)
