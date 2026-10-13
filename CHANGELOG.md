@@ -579,3 +579,8 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - tests, CLAUDE.md, README.md.
   - Published as artifact Version 21.
 - **Not yet public:** the GitHub copy shows Version 19 (Versions 20 and 21 are committed locally).
+
+### Public copy: Version 21 (13 Oct 2026)
+- **Why:** the user's OK ("yes push it").
+- `deploy/build_sites.py dashboard` rebuilt `docs/index.html`, and all 13 suites passed on it (`DASH_SRC`).
+- Pushed `main` (commits 6eb7235 Version 20, ea37ea4 Version 21, 992409f public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 21.
