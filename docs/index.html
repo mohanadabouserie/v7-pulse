@@ -528,8 +528,13 @@ button.flag:hover{text-decoration:underline}
 .smx .s2.bad{color:var(--bad-text)}.smx .s2.warn{color:var(--warn-text)}.smx .s2 .sh{display:none}
 .smx .pk{font-size:11px;color:var(--muted)}
 .smx td.smx-na{color:var(--muted)}
-.smx td.stk .av{margin:1px 0}
-.smx .stk-m,.stk-note{display:none}
+.smx .stk-m{display:none}
+.smx th.smx-g,.smx td.smx-g{border-left:1px solid var(--hair)}
+.smx thead th.smx-st span{display:block;padding:8px 8px 4px}
+.smx thead th.smx-sub span{display:block;padding:3px 8px 7px;font-size:10px}
+.smx td.sk{width:1%;padding:9px 10px;text-align:center}
+.smx thead th.smx-sub:not(.smx-g){text-align:center}
+.smx td.sk .av{padding:2px 9px;font-size:12px}
 .smx .pnm{display:flex;align-items:baseline}
 .smx .s2{white-space:normal;max-width:150px}
 .smx .s2 .nb{white-space:nowrap}
@@ -546,7 +551,7 @@ button.flag:hover{text-decoration:underline}
   .smx thead th span,.cmpt th span{padding:7px 5px!important}
   .smx td,.smx th[scope=row],.cmpt td,.cmpt th[scope=row]{padding:8px 5px;font-size:12px}
   .smx .s2 .lg,.smx .cur{display:none}.smx .s2 .sh{display:inline;white-space:nowrap}
-  .smx td.stk,.smx th.stkh{display:none}.smx .stk-m{display:block}.stk-note{display:inline}
+  .smx .stk-m{display:block}
   .smx th[scope=row],.smx tr.off td,.smx .s2{white-space:normal}
   .smx .sc{gap:4px}
   .attn .al{grid-template-columns:16px 1fr}
@@ -2924,36 +2929,43 @@ function vStoreSummary(){
   var attn='<section class="panel'+(cp?' s7':'')+'"><div class="ph"><h2>Needs attention</h2><span class="hint">latest check, 4–5 Oct 2026</span></div>'+
     (att.length?'<div class="alist attn">'+att.map(function(a){return '<div class="al"><span class="sev warning" title="Needs attention">'+SEV.warning[1]+'</span><div><div class="t1">'+a.t1+'</div><div class="t2">'+a.t2+'</div>'+(a.todo?'<div class="t2"><b style="color:var(--ink)">Next step:</b> '+a.todo+'</div>':'')+'</div><div style="text-align:right">'+(a.go?'<button type="button" class="linkbtn" data-act="stab" data-v="'+a.go+'">'+(a.go==='prices'?'Prices':'Stock')+' →</button>':'')+'</div></div>';}).join('')+'</div>':'<div class="empty">Nothing needs attention at the latest check.</div>')+
     (okP.length?'<p class="hint-line" style="margin:10px 0 0">Everything else is in stock on Amazon.eg and Carrefour at '+egp(Math.min.apply(null,okP))+(Math.max.apply(null,okP)!==Math.min.apply(null,okP)?'–'+String(Math.max.apply(null,okP)):'')+' a can.</p>':'')+'</section>';
-  /* where V7 is sold: prices in the store columns, stock in its own column */
+  /* where V7 is sold: each store has its own Price and Stock columns, so every stock mark belongs to one store.
+     Phones show prices only, with any stock problem written under the product name. */
+  var phone=innerWidth<=560,SM=['Amazon.eg','Carrefour','Noon'];
   function stockIssues(pid,L){
     var out=[],low=[];
     L.forEach(function(o){var x=o[1];if(!x)return;var w=o[0]==='Noon'&&NOON_WARN[pid];
       if(x.st===false)out.push('Out on '+o[0]);else if(w)low.push('Low on '+o[0]+' · '+w[w.length-1][1].replace(/^Only /i,'').replace(/ in stock$/i,''));});
     return {out:out,low:low};
   }
-  function stockWords(pid,L){
-    var k=stockIssues(pid,L);
-    if(!k.out.length&&!k.low.length)return '<span class="av in" title="In stock in every store that sells it">✓ In stock</span>';
-    return k.out.map(function(t){return '<span class="av out">'+esc(t)+'</span>';}).concat(k.low.map(function(t){return '<span class="av low">'+esc(t)+'</span>';})).join(' ');
-  }
   function stockLine(pid,L){var k=stockIssues(pid,L);    /* phones: problems under the product name */
     return k.out.concat(k.low).map(function(t,i){return '<span class="s2 stk-m '+(i<k.out.length?'bad':'warn')+'">'+esc(t)+'</span>';}).join('');}
+  function stockCell(x,store,pid){
+    var w=store==='Noon'&&NOON_WARN[pid],nm=prodLabel(pid);
+    if(x.st===false)return '<td class="sk"><span class="av out" title="'+esc(nm)+': out of stock on '+store+'">✕ Out</span></td>';
+    if(w)return '<td class="sk"><span class="av low" title="'+esc(nm+' on '+store+': '+w[w.length-1][1])+'">'+esc(w[w.length-1][1].replace(/^Only /i,'').replace(/ in stock$/i,''))+'</span></td>';
+    return '<td class="sk"><span class="av in" role="img" aria-label="In stock on '+store+'" title="'+esc(nm)+': in stock on '+store+'">✓</span></td>';
+  }
   function cell(x,store,pid){
-    if(!x)return '<td class="smx-na" title="'+esc(prodLabel(pid))+': not listed on '+store+'">—</td>';
+    if(!x)return '<td class="smx-na smx-g"'+(phone?'':' colspan="2"')+' title="'+esc(prodLabel(pid))+': not listed on '+store+'">—</td>';
     var per=perCan(x),over=per>SHELF+.5,w=store==='Noon'&&NOON_WARN[pid],st=x.st===false?'out':w?'low':'in',d=Math.round((per-SHELF)*100)/100;
     var tip=prodLabel(pid)+' on '+store+': '+egp(per)+(x.pk>1?' a can ('+x.pk+'-pack for '+egp(x.p)+')':'')+(x.reg&&x.reg>x.p?', regular price '+egp(x.reg):'')+' · '+(st==='in'?'in stock':st==='low'?w[w.length-1][1]:'out of stock');
     var inner='<span class="px'+(over?' over':'')+'"><span class="cur">EGP </span>'+egp(per).replace('EGP ','')+'</span>'+(x.pk>1?'<span class="s2"><span class="lg">a can, sold as <span class="nb">'+x.pk+'-pack</span></span><span class="sh">'+x.pk+'-pack</span></span>':'')+
       (over?'<span class="s2 bad"><span class="lg">'+egp(d)+' over shelf price</span><span class="sh">+'+egp(d).replace('EGP ','')+'</span></span>':'');
-    return '<td title="'+esc(tip)+'">'+(x.u?'<a class="sc" href="'+esc(x.u)+'" target="_blank" rel="noopener" aria-label="'+esc(tip)+'">'+inner+'</a>':'<span class="sc">'+inner+'</span>')+'</td>';
+    return '<td class="smx-g" title="'+esc(tip)+'">'+(x.u?'<a class="sc" href="'+esc(x.u)+'" target="_blank" rel="noopener" aria-label="'+esc(tip)+'">'+inner+'</a>':'<span class="sc">'+inner+'</span>')+'</td>';
   }
   var mrows=PRODUCTS.map(function(p){
-    if(p.status==='seasonal')return '<tr class="off"><th scope="row"><span class="pnm">'+pdot(p.id)+'<span>'+esc(p.en)+'</span></span></th><td colspan="4">Off season, back in summer 2027</td></tr>';
+    if(p.status==='seasonal')return '<tr class="off"><th scope="row"><span class="pnm">'+pdot(p.id)+'<span>'+esc(p.en)+'</span></span></th><td class="smx-g" colspan="'+(phone?3:6)+'">Off season, back in summer 2027</td></tr>';
     var n=noonOf(p.id),L=[['Amazon.eg',amzOf(p.id)],['Carrefour',carOf(p.id)],['Noon',n?(n.s||n.pk):null]];
-    return '<tr><th scope="row"><span class="pnm">'+pdot(p.id)+'<span>'+esc(p.en)+stockLine(p.id,L)+'</span></span></th>'+L.map(function(o){return cell(o[1],o[0],p.id);}).join('')+'<td class="stk">'+stockWords(p.id,L)+'</td></tr>';}).join('');
-  var matrix='<section class="panel s12"><div class="ph"><h2>V7 price and stock in each store'+info('The store columns show the price of one 300 ml can at the latest check; packs are shown per can and red means above the EGP 15 shelf price. The Stock column says whether the product can be bought in every store that sells it. Click a price to open the listing.')+'</h2>'+
+    return '<tr><th scope="row"><span class="pnm">'+pdot(p.id)+'<span>'+esc(p.en)+(phone?stockLine(p.id,L):'')+'</span></span></th>'+L.map(function(o){return cell(o[1],o[0],p.id)+(o[1]&&!phone?stockCell(o[1],o[0],p.id):'');}).join('')+'</tr>';}).join('');
+  var head=phone?'<tr>'+th('Product')+SM.map(function(st){return th(st);}).join('')+'</tr>':
+    '<tr><th scope="col" rowspan="2"><span style="display:block;padding:8px">Product</span></th>'+SM.map(function(st){return '<th scope="colgroup" colspan="2" class="smx-g smx-st"><span>'+st+'</span></th>';}).join('')+'</tr>'+
+    '<tr>'+SM.map(function(){return '<th scope="col" class="smx-g smx-sub"><span>Price</span></th><th scope="col" class="smx-sub"><span>Stock</span></th>';}).join('')+'</tr>';
+  var cols='<colgroup><col></colgroup>'+SM.map(function(){return phone?'<colgroup><col></colgroup>':'<colgroup span="2"></colgroup>';}).join('');
+  var matrix='<section class="panel s12"><div class="ph"><h2>V7 price and stock in each store'+info('Each store has two columns: the price of one 300 ml can at the latest check, and whether it’s in stock there. Packs are shown per can, and red means above the EGP 15 shelf price. Click a price to open the listing.')+'</h2>'+
     '<span class="hint">latest check</span></div>'+
-    '<div class="tw"><table class="t smx"><thead><tr>'+th('Product')+th('Amazon.eg')+th('Carrefour')+th('Noon')+'<th scope="col" class="stkh"><span style="display:block;padding:8px">Stock</span></th></tr></thead><tbody>'+mrows+'</tbody></table></div>'+
-    '<p class="hint-line" style="margin:10px 0 0">Prices in EGP for one 300 ml can. Shelf price: EGP 15. Red: above it. —: the store doesn’t sell it. <span class="stk-note">Everything is in stock unless a problem is shown under the product. </span>Noon prices are set by third-party sellers. <a class="linkbtn" href="https://www.noon.com/egypt-en/search/?q=V7" target="_blank" rel="noopener">Search V7 on Noon ↗</a></p></section>';
+    '<div class="tw"><table class="t smx'+(phone?'':' smx-ps')+'">'+cols+'<thead>'+head+'</thead><tbody>'+mrows+'</tbody></table></div>'+
+    '<p class="hint-line" style="margin:10px 0 0">Prices in EGP for one 300 ml can. Shelf price: EGP 15. Red: above it. '+(phone?'—: the store doesn’t sell it. Everything is in stock unless a problem is shown under the product. ':'✓: in stock. —: the store doesn’t sell it. ')+'Noon prices are set by third-party sellers. <a class="linkbtn" href="https://www.noon.com/egypt-en/search/?q=V7" target="_blank" rel="noopener">Search V7 on Noon ↗</a></p></section>';
   if(!cp){h+=attn+'<div class="g">'+matrix+'</div>';}
   else{
     var pr=coRating('pepsi',both),cr=coRating('coke',both);
