@@ -3,7 +3,7 @@ from playwright.async_api import async_playwright
 import os, pathlib
 # the dashboard next to this folder; DASH_SRC=file:///…/docs/index.html runs the same checks on the public copy
 SRC = os.environ.get('DASH_SRC', pathlib.Path(__file__).resolve().parent.parent.joinpath('V7_Pulse_Dashboard.html').as_uri())
-VIEWS = ['overview','posts','products','voice','people','groups','hashtags','owned','alerts','events','stores','restaurants','trends','radar','abroad']
+VIEWS = ['overview','posts','products','voice','people','hashtags','owned','alerts','events','stores','restaurants','trends','radar','abroad']
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()

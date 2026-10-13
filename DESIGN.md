@@ -120,3 +120,15 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
 - **Claim status pills:** Active, Watching (grey), Slowing, Contained or Ended (green), Handled and Dismissed (muted).
 - **Charts that span years** count posts per month, with "Mon YYYY" labels. Short episodes count per day.
 
+## 10. Honest numbers (Version 20)
+- **Small numbers:**
+  - Show a change under 10 as the difference ("+3", "−2"), never a percentage.
+  - Show net sentiment only from 5 items up; otherwise use "—" with "Too few to score".
+  - "Biggest gain" style sentences use a percentage only on a base of 10 or more.
+- **Volumes:** demo volumes follow what real collection returns. Posts and comments show together by default, and a "Where it happens" split says how much is comments under V7's posts.
+- **Don't add:**
+  - emotion labels or word clouds;
+  - dialect splits beyond Egyptian Arabic, other Arabic, English and Franco-Arabic;
+  - badges that say nothing (only Seasonal is shown).
+- **Data that needs V7's accounts** is labelled with its source ("Instagram insights · demo numbers").
+

@@ -13,7 +13,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 19) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 20) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 18 since 11 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -78,13 +78,14 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 19)
+## 4. The dashboard today (Version 20)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
 - Every product has its can color (dots and card strips).
 - Navigation: Overview, then Conversation, To act on (Alerts, Rumors & attacks, Events), Market, International.
 - On phones, the filters sit behind a Filters button.
+- **Version 20, realistic demo:** about 1 to 2 public posts a day, and posts and comments shown together (97% is comments under V7's posts). No Facebook groups tab, emotions, word cloud or dialect split. Reply tracking is on Facebook and YouTube. Follower details and online times are Instagram insights. Alerts are sized for real volumes (DECISIONS #80–86).
 - **Rumors & attacks (Version 18): real posts only.** A status sentence, five numbers, three claims (price confusion, active; "V7 was sold to Coca-Cola", contained since May 2024; "V7 Malt tastes like alcohol", watching), the claim detail with every post, "Also worth a look", "Nothing found", how the posts were found, and the fact sheet. Data: `data/raw/social/rumors_11oct/` (see section 10). To refresh: run `collect.py`, `normalize.py`, label the new posts in `labels.json`, then `build_rumors.py --inject`.
 - **Online stores (Versions 16 and 17):**
   - Summary: "Needs attention" next to "Against competitors", then "V7 price and stock in each store": each store has its own Price and Stock columns (Version 19).
@@ -318,6 +319,12 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - Not found: fake V7 pages, giveaway scams, coordinated accounts, safety claims.
 - V7 is named as a boycott alternative in 21 of 177 posts. The top post, "Buy V Cola, it tastes better than Coca-Cola", has 408K views.
 
+**Comments and volume (real checks, 13 Oct 2026)**
+- Public posts about V7 are about 1 to 2 a day across X, Instagram, TikTok and Facebook; most of the conversation is comments under V7's own posts (25 to 177 a post).
+- V7 answers most Facebook comments, usually the next day (about 18 h); a follow-up asking for contact numbers and the nearest distributor went unanswered for a week.
+- What people ask for under V7's posts: new flavours (watermelon above all, then mango, mixed berry, peach, a winter edition, iced coffee), sugar-free malt, 1 L and 2 L bottles. Sales leads: fridge requests and would-be distributors.
+- V7's TikTok "Summer of Colors" video (29 Jul) has 11.4M plays.
+
 **Search**
 - The busiest week was 9 Aug 2026.
 
@@ -326,7 +333,10 @@ The dashboard artifact is private. People can't open it until it's shared from t
 ## 7. What we can't get, and why
 - **City or governorate of posts:** platforms don't expose it reliably.
 - **Commenter country:** not exposed.
-- **Private Facebook groups:** can't be collected.
+- **Private Facebook groups:** can't be collected. Public groups can, but finding V7 in them means scraping every post (one 88K group posts about 790 a day, about USD 4 a day per group), so the groups tab was removed.
+- **Facebook follower age, gender and city:** retired by Meta (2024–2025); Instagram still reports them, and when followers are online.
+- **Instagram and TikTok replies:** the comment actors don't show who replied; needs V7's own account access.
+- **Emotions and Arabic dialects:** not reliable on short posts, so not shown.
 - **Account age:** public only on X, TikTok and YouTube.
 - **Follower counts for personal Facebook profiles and Reddit users:** not public.
 - **Views on most Facebook posts, Instagram photos and Reddit:** hidden, so reach is estimated from engagement and capped at the audience.
@@ -358,7 +368,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 
 ## 9. Apify account and spend
 - **Plan:** the user's Free plan, with USD 5 of credits a month. The cycle resets on 2 Nov.
-- **Spent so far:** USD 3.84 of 5 (Apify's usage reading on 11 Oct, after the rumors pull and its follow-up search).
+- **Spent so far:** USD 3.96 of 5 (Apify's reading on 13 Oct, after the page-by-page checks).
 
 **Spend log**
 
@@ -373,6 +383,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | 5 Oct | Noon and history | | 3.22 |
 | 5 Oct | Hashtag test | 0.022 | 3.24 |
 | 11 Oct | Rumors pull: X, Facebook, Instagram, TikTok (413 posts) | about 0.47 by the run log | 3.83 (Apify's reading) |
+| 13 Oct | Review checks: Facebook and Instagram replies, V7's TikTok and its comments, X this week | 0.11 | 3.96 |
 
 ## 10. Raw data map (`data/raw/`)
 | Folder | What's in it |
@@ -387,6 +398,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | `social/governorate_test_4oct/` | 114 real posts and their labels |
 | `social/reddit_quora_4oct/` | Reddit RSS and Quora results |
 | `social/hashtag_test_5oct/` | `#اشرب_اي` on Instagram and TikTok |
+| `verify_13oct/` | Review checks (13 Oct): Facebook comment replies (V7Egypt answers next day), Instagram comments (no replies returned), V7's 5 latest TikTok videos and 90 comments, X this week |
 | `social/rumors_11oct/` | Rumors & attacks, real. Raw pulls (`x_*`, `fb_*`, `ig_v7`, `tt_rumor`, `x_coke2024`), `collect.py` (full / extra / test), `run.log`, `normalize.py` → `posts.json` (368 unique), `labels.json` (177 posts about V7, labelled by Claude on 11 Oct), `build_rumors.py` → `rumors_dashboard.json` and the dashboard's `RUMOR_DATA` block |
 | `apify_actor_pages/` | Apify Store pages for the actors we considered |
 
@@ -398,6 +410,7 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).
 - Which hashtags does V7 use for campaigns? `#اشرب_اي` returned nothing about V7, so we need the exact spelling or the source.
 - Hosting choice and timeline.
+- Push Version 20 to the public copy? It shows Version 19.
 - Add the collaborator to the repo: GitHub → mohanadabouserie/v7-pulse → Settings → Collaborators. The user does this; we need the collaborator's GitHub username to do it for them.
 - From the rumors check, for V7:
   - confirm whether the fruit flavours contain sugar or honey;

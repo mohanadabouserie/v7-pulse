@@ -451,3 +451,47 @@ The user found the single Stock column confusing: with Amazon.eg, Carrefour and 
 - **Files:** `V7_Pulse_Dashboard.html` (Version 18 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v18.html`), `DESIGN.md`, `tests/test_v14.py`, `tests/test_v16.py`. Published as artifact Version 19.
 - **Not yet public:** the GitHub copy (`docs/`) still shows Version 18.
 
+### Version 20: page-by-page review, checked against real data (13 Oct 2026)
+The user asked for an expert UI/UX pass over every page and element, with real Apify calls and Claude-in-chat reading to check that each thing can be filled, removing what can't be collected, is noise, or is misleading. Version 19 was pushed to the public site first (commit 7e77c42).
+- **Checks run:** `data/raw/verify_13oct/run.py`, capped at USD 0.30. Apify charged USD 0.11 (TikTok's actor needs a USD 0.50 cap but charged cents).
+  - **Facebook comments with replies** on V7's Cream Soda reel: V7Egypt answers comments, usually the next day (about 18 h, some within the hour). A follow-up asking for contact numbers and the nearest distributor (6 Oct) has no answer.
+  - **Instagram comments:** the actor returns no replies, so the Instagram answer rate needs V7's own access.
+  - **V7's TikTok:** the latest 5 videos (687 to 11.4M plays) and their 90 comments. Mostly flavour requests: watermelon (asked again and again), mango, mixed berry, a winter edition, iced coffee.
+  - **X this week:** 2 of 20 results were about V7, one more "EGP 15 at the agency, 20 at the kiosk" post.
+  - **Already on file and re-read:**
+    - 50 real Facebook comments (4 Oct): praise, requests (sugar-free malt, peach, 1 L and 2 L bottles), 3 sales leads (fridges, distributor) and "can't reach V7".
+    - The 5 Oct checks: a public Facebook group with 88K members posts about 790 times a day, so scraping groups to find V7 would cost about USD 4 a day per group.
+    - Volumes from earlier pulls: about 1 to 2 public posts a day about V7.
+  - **Web:** Meta retired Facebook page fan age, gender and city (2024 to Nov 2025; `page_follows_city` remains). Instagram still gives follower demographics and `online_followers` (last 30 days, 100+ followers).
+- **Demo data recalibrated to what can be collected:**
+  - Public posts went from about 33 a day to about 1.4 a day in Egypt (`pois(1.4×dayMult)`), and posts from abroad from about 7 a day to a few a month.
+  - Posts and comments now show together by default ("Both"). About 97% of the conversation is comments under V7's own posts.
+  - The comment mix and reply habits come from the real comments: replies are tracked on Facebook and YouTube only, answered about 65% of the time, mostly the next day. V7 thanks most Facebook praise.
+  - Requests use the real asks: watermelon, mango, berries, sugar-free malt, bigger bottles. A new complaint, "Can't reach V7 (messages, complaints line)", is added. Sales leads include fridge requests.
+  - Groups are rare in Facebook search results, so group posts are rare in the demo too. Most posts from abroad are businesses, and comments abroad are mostly from local people in the local language.
+  - V7's own posts rotate through the range (weighted), so no product disappears by chance.
+- **Removed:**
+  - the Facebook groups tab and the "Facebook groups abroad" panel (group posts still show "in <group>");
+  - emotion labels;
+  - the "Words people use most" cloud, with the tab renamed Hashtags and generic tags (#fyp, #viral, #explore…) dropped;
+  - Arabic dialect guesses (shown together as "Other Arabic");
+  - "Core" badges (only Seasonal stays) and "Mentioned together with";
+  - the "When your audience posts" heatmap;
+  - the old social alert thresholds.
+- **Changed:**
+  - "Who follows us" is labelled as Instagram insights.
+  - The heatmap is now "When our followers are online" (Instagram `online_followers`, demo until V7 connects).
+  - "What people say under our posts" puts emoji-only comments and tags in one line.
+  - A "Where it happens" split is added, and "Who posts publicly" counts posts only.
+  - Changes under 10 show "+3", not a percentage. Net sentiment needs 5 or more items. "Biggest gain" shows a percentage only on a base of 10 or more.
+  - Alerts:
+    - "More public posts than usual" fires at 5 or more posts in a day and 3× the average.
+    - "Negative day" needs 20 or more posts and comments and over 25% negative.
+    - "Can't find it" counts comments too.
+    - "Unanswered for a day" is on and flags questions waiting over a day.
+  - The guide text is updated to match.
+- **Real data added:** V7's four TikTok videos in the period (Summer of Colors, 11.4M plays) in Our posts. The Summer of Colors event mentions TikTok.
+- **Tests:** new `tests/test_v20.py` (20 checks). `test_v5.py` (the day link opens posts and comments) and the view lists in `test_reg5.py`, `smoke5.py` and `copy_dump.py` are updated. All 12 suites pass.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 19 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v19.html`), `data/raw/verify_13oct/` (run.py, run.log, fb_replies, ig_replies, tt_profile, tt_comments, x_week), `DESIGN.md`, tests. Published as artifact Version 20.
+- **Not yet public:** the GitHub copy shows Version 19.
+

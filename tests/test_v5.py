@@ -87,11 +87,12 @@ async def main():
         await nav('events')
         await pg.wait_for_timeout(100)
         await click('[data-act=evno][data-v=ev9]'); await click('[data-act=evback][data-v=ev9]')
+        await click('#kindSeg [data-kind=both]')   # public posts are few (1-2 a day); the day link opens posts and comments
         await click('[data-act=dayposts]')
         title = await J("document.getElementById('vTitle').textContent")
         chip = await J("[...document.querySelectorAll('.activef .chip')].map(c=>c.textContent)")
         dates = await J("[...document.querySelectorAll('.plist .pc .when')].map(e=>e.textContent.split(',')[0])")
-        check('day filter opens posts for that day', title=='All posts' and any('On 29 Sep' in c for c in chip) and len(set(dates))==1, (title,chip,set(dates)))
+        check('day filter opens posts for that day', title in ('All posts','Posts & comments') and any('On 29 Sep' in c for c in chip) and len(set(dates))==1, (title,chip,set(dates)))
         # --- explorer sorted by reach
         rs = await J("[...document.querySelectorAll('.plist .pc')].length")
         sortv = await J("document.getElementById('pf_sort').value")
