@@ -100,7 +100,7 @@ a{color:var(--accent);text-underline-offset:2px}
 .period{font-size:13px;color:var(--ink-2);margin-top:5px}
 .top-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .demo{font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px dashed var(--hair-strong);color:var(--muted);white-space:nowrap}
-.demo.isreal{border:1px solid color-mix(in oklab,var(--lemon) 60%,transparent);background:var(--lemon-soft);color:var(--ink)}
+.demo.isreal{border:1px solid color-mix(in oklab,var(--lemon) 60%,transparent);background:var(--lemon-soft);color:var(--ink)} .demo.mixed{border:1px solid color-mix(in oklab,var(--lemon) 60%,transparent);color:var(--ink)}
 .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--hair-strong);background:var(--paper);border-radius:999px;padding:7px 14px;cursor:pointer;font-size:13px;font-weight:700;white-space:nowrap;color:var(--ink)}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
 .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:800}
@@ -740,8 +740,7 @@ button.flag:hover{text-decoration:underline}
     <button type="button" class="nav" data-view="products"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h4M6.5 2v2.5L5 7v6.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V7L9.5 4.5V2"/><path d="M5 9.5h6"/></svg>Products</button>
     <button type="button" class="nav" data-view="voice"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4h12v7H6l-4 3z"/><path d="M8 6.2v1.6M8 9.2v.1"/></svg>Customer voice</button>
     <button type="button" class="nav" data-view="people"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="5.5" r="2.8"/><path d="M2.8 14c.9-2.8 9.5-2.8 10.4 0"/></svg>People</button>
-    <button type="button" class="nav" data-view="groups"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="5.5" cy="6" r="2.2"/><circle cx="11" cy="6" r="2.2"/><path d="M1.5 13.5c.6-2.4 7.4-2.4 8 0M8.8 11.2c1.8-.9 5.2-.5 5.7 2.3"/></svg>Facebook groups</button>
-    <button type="button" class="nav" data-view="hashtags"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2 4.5 14M11.5 2 10 14M2.5 5.5h11M2 10.5h11"/></svg>Hashtags &amp; words</button>
+    <button type="button" class="nav" data-view="hashtags"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2 4.5 14M11.5 2 10 14M2.5 5.5h11M2 10.5h11"/></svg>Hashtags</button>
     <button type="button" class="nav" data-view="owned"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="m6.5 6 3.5 2-3.5 2z"/></svg>Our content</button>
     <div class="side-sec">To act on</div>
     <button type="button" class="nav" data-view="alerts"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2.2 14 13H2z"/><path d="M8 6.8v3M8 11.2v.1"/></svg>Alerts<span class="count" id="alertCount" hidden></span></button>
@@ -754,7 +753,7 @@ button.flag:hover{text-decoration:underline}
     <div class="side-sec">International</div>
     <button type="button" class="nav" data-view="abroad"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2.2 2 2.2 10 0 12M8 2c-2.2 2-2.2 10 0 12"/></svg>Outside Egypt</button>
     <div class="grow"></div>
-    <div class="side-foot"><b>Social posts are demo data</b>, except those marked “Real post”. <b>Real:</b> V7’s follower counts and pages abroad, Rumors &amp; attacks, Online stores, Restaurants, Search trends and the export facts (collected 4–11 Oct 2026).<br>Demo posts up to 2 Oct 2026</div>
+    <div class="side-foot"><b>Social posts are demo data</b>, except those marked “Real post”. <b>Real:</b> V7’s own posts, followers and pages abroad, Rumors &amp; attacks, Online stores, Restaurants, Search trends and the export facts (collected 4–13 Oct 2026).<br>Demo posts up to 12 Oct 2026</div>
   </nav>
 
   <div class="main">
@@ -840,7 +839,7 @@ function rnd(a,b){return a+R()*(b-a);}
 function pick(a){return a[Math.floor(R()*a.length)];}
 function wpick(o){var s=0,k;for(k in o)s+=o[k];var r=R()*s;for(k in o){r-=o[k];if(r<=0)return k;}return k;}
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-var DAY=864e5, NDAYS=180, END=Date.UTC(2026,9,2), START=END-(NDAYS-1)*DAY;
+var DAY=864e5, NDAYS=180, END=Date.UTC(2026,9,12), START=END-(NDAYS-1)*DAY;
 function D(s){return Math.round((Date.parse(s+'T00:00:00Z')-START)/DAY);}
 var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 var WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
@@ -852,23 +851,29 @@ function pct(a,b){return b?Math.round(a/b*100):0;}
 function dPct(c,p){return p?(c-p)/p*100:null;}
 function signed(n){return (n>0?'+':'')+n;}
 function deltaHTML(c,p,o){
-  o=o||{};var v=o.pts!=null?o.pts:dPct(c,p);
+  o=o||{};
+  if(o.pts==null&&Math.max(c,p)<10){var df=c-p;return '<span class="delta flat" title="Too few to show a percentage; the change in number">'+(df>0?'+':df<0?'−':'± ')+Math.abs(df)+'</span>';}
+  var v=o.pts!=null?o.pts:dPct(c,p);
   if(v==null||!isFinite(v))return c?'<span class="delta flat">new</span>':'<span class="delta flat">—</span>';
   var r=Math.round(v);if(r===0)return '<span class="delta flat">± 0'+(o.pts!=null?' pts':'%')+'</span>';
   var good=o.invert?r<0:r>0;
   return '<span class="delta '+(o.neutral?'flat':good?'up':'down')+'" title="Compared with the previous period">'+(r>0?'▲ ':'▼ ')+Math.abs(r)+(o.pts!=null?' pts':'%')+'</span>';
 }
-function netHTML(n,count){if(!count)return '<span class="muted">—</span>';return '<span class="netv '+(n>0?'p':n<0?'n':'')+'">'+signed(n)+'</span>';}
+function netHTML(n,count){if(!count)return '<span class="muted">—</span>';if(count<5)return '<span class="muted" title="Too few to score">—</span>';return '<span class="netv '+(n>0?'p':n<0?'n':'')+'">'+signed(n)+'</span>';}
 function info(t){return '<button type="button" class="info" data-tip="'+esc(t)+'" aria-label="About this: '+esc(t)+'">i</button>';}
 function bd(s){return '<bdi>'+esc(s)+'</bdi>';}
 function htag(t){return '<bdi dir="ltr" class="num">'+esc(t)+'</bdi>';}
+/* Platform-wide tags that say nothing about V7 */
+var GENERIC_TAGS={'#fyp':1,'#fy':1,'#foryou':1,'#foryoupage':1,'#viral':1,'#explore':1,'#explorepage':1,'#اكسبلور':1,'#trending':1,'#reels':1,'#tiktok':1,'#fypシ':1};
+function realTag(t){return !GENERIC_TAGS[String(t).toLowerCase()];}
 function plural(n,w){return n+' '+w+(n===1?'':'s');}
 function byEng(a,b){return b.eng-a.eng;}
 
 /* =========================================================
    Reference data
    ========================================================= */
-/* The real range, as listed on Amazon.eg, Carrefour Egypt and Noon (checked 4 Oct 2026) */
+/* The real range, as listed on Amazon.eg, Carrefour Egypt and Noon (checked 4 Oct 2026), and V Orange, launched on V7’s pages on 11 Oct 2026.
+   Cream Soda’s summer edition launched on 6 Aug 2026 (V7’s launch video). */
 var PRODUCTS=[
   {id:'pom',c:'#b23a45',en:'Pomegranate',ar:'رمان',fr:'romman',status:'core',line:'v7'},
   {id:'pina',c:'#f2c744',en:'Piña Colada',ar:'بينا كولادا',fr:'pina colada',status:'core',line:'v7'},
@@ -878,10 +883,11 @@ var PRODUCTS=[
   {id:'pink',c:'#d63462',en:'Pink Lemonade',ar:'بينك ليموناد',fr:'pink lemonade',status:'core',line:'v7'},
   {id:'pmalt',c:'#c9a35a',en:'Pineapple Malt',ar:'شعير بالأناناس',fr:'malt ananas',status:'core',line:'v7'},
   {id:'amalt',c:'#7b5a2c',en:'Apple Malt',ar:'شعير بالتفاح',fr:'malt tofa7',status:'core',line:'v7'},
-  {id:'cream',c:'#1a93ab',en:'Cream Soda',ar:'كريم صودا',fr:'cream soda',status:'seasonal',launch:'2026-05-01',end:'2026-09-10',line:'v7'},
+  {id:'cream',c:'#1a93ab',en:'Cream Soda',ar:'كريم صودا',fr:'cream soda',status:'seasonal',launch:'2026-08-06',end:'2026-09-10',line:'v7'},
   {id:'cola',c:'#1b3366',en:'V Cola',ar:'في كولا',fr:'V cola',status:'core',line:'vcola'},
   {id:'dcola',c:'#a7b0be',en:'V Cola Diet',ar:'في كولا دايت',fr:'V cola diet',status:'core',line:'vcola'},
-  {id:'llime',c:'#2f8c46',en:'Lemon-Lime',ar:'ليمون لايم',fr:'lemon lime',status:'core',line:'vcola'}
+  {id:'llime',c:'#2f8c46',en:'Lemon-Lime',ar:'ليمون لايم',fr:'lemon lime',status:'core',line:'vcola'},
+  {id:'orange',c:'#ee6a1f',en:'V Orange',ar:'في أورانج',fr:'V orange',status:'new',launch:'2026-10-11',line:'vcola'}
 ];
 var PROD={};PRODUCTS.forEach(function(p){PROD[p.id]=p;});
 /* small dot in the product's can color, next to its name */
@@ -895,7 +901,8 @@ var GOVS=[['Cairo','القاهرة',30],['Giza','الجيزة',14],['Alexandria'
 var GOV_W={},GOV_AR={};GOVS.forEach(function(g){GOV_W[g[0]]=g[2];GOV_AR[g[0]]=g[1];});
 var AVAIL_W=Object.assign({},GOV_W,{Alexandria:34,Assiut:10,Sohag:8,Minya:8,Cairo:18});
 var EMO_ALL=['Joy','Trust','Anticipation','Surprise','Sadness','Anger','Disgust'];
-var LANG={ar:'Egyptian Arabic',fr:'Franco-Arabic',en:'English',gulf:'Gulf Arabic',levant:'Levantine Arabic',iraqi:'Iraqi Arabic',maghreb:'Maghrebi Arabic',sudan:'Sudanese Arabic',french:'French',uz:'Uzbek'};
+/* Dialects other than Egyptian can't be told apart reliably in short posts, so they're shown together */
+var LANG={ar:'Egyptian Arabic',fr:'Franco-Arabic',en:'English',gulf:'Other Arabic',levant:'Other Arabic',iraqi:'Other Arabic',maghreb:'Other Arabic',sudan:'Other Arabic',french:'French',uz:'Uzbek'};
 var SEGL={diaspora:'Egyptians abroad',local:'Local consumers',business:'Businesses & importers',creator:'Creators',page:'Pages',brand:'V7 pages',home:'People in Egypt'};
 
 var CL={
@@ -904,17 +911,18 @@ var CL={
   q_caffeine:{g:'Questions',label:'Caffeine and sugar content',intent:'Question',topic:'Natural & health',s:[.1,.85,.05],emo:['Anticipation','Trust']},
   q_launch:{g:'Questions',label:'When will the new flavor reach my area?',intent:'Question',topic:'Availability',s:[.15,.8,.05],emo:['Anticipation']},
   q_cream:{g:'Questions',label:'When is Cream Soda coming back?',intent:'Question',topic:'Product range',s:[.1,.6,.3],emo:['Anticipation','Sadness']},
-  q_rec:{g:'Questions',label:'Is it worth trying? Which flavor is best?',intent:'Asking for advice',topic:'Taste',s:[.15,.8,.05],emo:['Anticipation']},
-  q_wholesale:{g:'Questions',label:'Shops and cafés asking for a distributor',intent:'Sales lead',topic:'Distribution',s:[.2,.8,0],emo:['Anticipation']},
+  q_rec:{g:'Questions',label:'Is it worth trying? Which flavor is best?',intent:'Question',topic:'Taste',s:[.15,.8,.05],emo:['Anticipation']},
+  q_wholesale:{g:'Questions',label:'Shops asking for a distributor or a V7 fridge',intent:'Sales lead',topic:'Distribution',s:[.2,.8,0],emo:['Anticipation']},
   c_avail:{g:'Complaints',label:'Can’t find it in stores',intent:'Complaint',topic:'Availability',s:[0,.1,.9],emo:['Anger','Sadness']},
   c_sweet:{g:'Complaints',label:'Too sweet',intent:'Complaint',topic:'Sweetness',s:[0,.2,.8],emo:['Disgust','Sadness']},
   c_fizz:{g:'Complaints',label:'Goes flat quickly',intent:'Complaint',topic:'Fizz',s:[0,.15,.85],emo:['Disgust','Sadness']},
   c_price:{g:'Complaints',label:'Price went up',intent:'Complaint',topic:'Price',s:[0,.15,.85],emo:['Anger']},
   c_damaged:{g:'Complaints',label:'Dented or leaking cans',intent:'Complaint',topic:'Packaging',s:[0,.1,.9],emo:['Disgust','Anger']},
   c_hype:{g:'Complaints',label:'Not worth the hype',intent:'Complaint',topic:'Taste',s:[0,.4,.6],emo:['Sadness']},
-  i_diet:{g:'Ideas',label:'Make a sugar-free version',intent:'Suggestion',topic:'Product range',s:[.25,.7,.05],emo:['Anticipation']},
+  c_contact:{g:'Complaints',label:'Can’t reach V7 (messages, complaints line)',intent:'Complaint',topic:'Customer service',s:[0,.45,.55],emo:['Anger']},
+  i_diet:{g:'Ideas',label:'Sugar-free versions, malt too',intent:'Suggestion',topic:'Product range',s:[.25,.7,.05],emo:['Anticipation']},
   i_size:{g:'Ideas',label:'Bigger bottle for families',intent:'Suggestion',topic:'Product range',s:[.25,.7,.05],emo:['Anticipation']},
-  i_flavor:{g:'Ideas',label:'New flavor requests (mango, strawberry)',intent:'Suggestion',topic:'Product range',s:[.4,.6,0],emo:['Anticipation','Joy']},
+  i_flavor:{g:'Ideas',label:'New flavor requests (watermelon, mango, berries)',intent:'Suggestion',topic:'Product range',s:[.4,.6,0],emo:['Anticipation','Joy']},
   i_cream:{g:'Ideas',label:'Keep Cream Soda all year',intent:'Suggestion',topic:'Product range',s:[.35,.45,.2],emo:['Anticipation','Sadness']},
   i_glass:{g:'Ideas',label:'Bring glass bottles',intent:'Suggestion',topic:'Packaging',s:[.3,.65,.05],emo:['Anticipation']},
   p_taste:{g:'Praise',label:'Love the taste',intent:'Praise',topic:'Taste',s:[.92,.08,0],emo:['Joy','Joy','Surprise']},
@@ -922,6 +930,7 @@ var CL={
   p_natural:{g:'Praise',label:'Natural flavors, vitamins, no caffeine',intent:'Praise',topic:'Natural & health',s:[.88,.12,0],emo:['Trust']},
   p_pack:{g:'Praise',label:'Love the new can design',intent:'Praise',topic:'Packaging',s:[.9,.1,0],emo:['Joy','Surprise']},
   p_pair:{g:'Praise',label:'Perfect with food and outings',intent:'Praise',topic:'Occasions',s:[.85,.15,0],emo:['Joy']},
+  p_hype:{g:'Praise',label:'Excited to try it',intent:'Praise',topic:'Reactions',s:[.9,.1,0],emo:['Anticipation','Joy']},
   b_buy:{g:'Praise',label:'About to buy',intent:'Purchase intent',topic:'Occasions',s:[.7,.3,0],emo:['Anticipation','Joy']},
   n_share:{g:'Other',label:'Sharing a moment',intent:'Mention',topic:'Occasions',s:[.55,.45,0],emo:['Joy','Joy','Trust']},
   n_deal:{g:'Other',label:'Deals and offers',intent:'Deal or offer',topic:'Promotions',s:[.3,.7,0],emo:['Anticipation']},
@@ -954,6 +963,7 @@ var TPL={
   q_launch:{ar:['هو {P} الجديد نزل كل المحافظات؟','إمتى {P} هينزل {G}؟'],en:['when is the new {P} coming to {G}?'],fr:['el {P} el gedid nezel {G} wala lessa?']},
   q_cream:{ar:['هي الكريم صودا هترجع إمتى؟ مش هستنى لصيف ٢٠٢٧','ليه وقفتوا الكريم صودا؟'],en:['why is the cream soda only a summer thing 😭'],fr:['el cream soda hatrga3 emta?']},
   q_rec:{ar:['حد جرب {P}؟ يستاهل؟','أنهي نكهة من V7 أحلى؟ عايز أجرب'],en:['is {P} actually worth trying?'],fr:['7ad garab {P}? 7elw?']},
+  p_hype:{ar:['{P} الجديدة شكلها هتبقى جامدة 😍','مستني {P} تنزل عشان أجربها','عاش يا V7، {P} فكرة حلوة'],en:['can’t wait to try the new {P}!','{P} just dropped and I need it 😍'],fr:['mestany {P} tenzel 3ashan agarabha']},
   q_wholesale:{ar:['عايز أتعامل مع موزع V7 للكافيه بتاعي في {G}، حد يعرف رقمهم؟','محتاج V7 جملة لسوبر ماركت في {G}، مين الموزع؟'],en:['need a V7 distributor for my café in {G}, anyone have their number?'],fr:['3ayez mowaze3 V7 lel cafe fe {G}']},
   c_avail:{ar:['بقالي أسبوع بدور على {P} ومش لاقيه في أي سوبر ماركت في {G}','{P} مختفي من {G} خالص','السوبر ماركت قالي {P} مش بيجيلهم في {G}'],en:['can’t find {P} anywhere in {G}','every store in {G} is out of {P} again'],fr:['mesh la2y {P} fe ay supermarket fe {G}','{P} msh mawgood fe {G} khales']},
   c_sweet:{ar:['{P} سكره عالي شوية بالنسبالي','طعم {P} حلو بس مسكّر زيادة'],en:['{P} is a bit too sweet for me tbh'],fr:['{P} meskar zyada shwaya']},
@@ -962,7 +972,7 @@ var TPL={
   c_damaged:{ar:['اشتريت كرتونة {P} ولقيت كانزين مطبوقين','علبة {P} كانت بتنقط من تحت'],en:['got a dented can of {P} in my delivery order 🙄'],fr:['el can bta3 {P} kan madhoos']},
   i_diet:{ar:['ياريت V7 تعمل نسخة من غير سكر','محتاجين {P} دايت بجد'],en:['pls make a zero sugar {P}'],fr:['ya reet te3mlo {P} diet']},
   i_size:{ar:['عايزين {P} في إزازة لتر للعزومات'],en:['{P} needs a 1L bottle for family gatherings'],fr:['3ayzeen {P} fe ezaza kbira']},
-  i_flavor:{ar:['نفسي V7 تعمل نكهة مانجا','إيه رأيكم V7 تعمل فراولة؟'],en:['V7 needs a mango flavor. just saying'],fr:['V7 lazem te3mel mango']},
+  i_flavor:{ar:['نفسي V7 تعمل نكهة بطيخ','إيه رأيكم V7 تعمل مانجا؟','V7 لازم تعمل خوخ بقى'],en:['V7 needs a watermelon flavor. just saying','mixed berry V7 when?'],fr:['V7 lazem te3mel watermelon']},
   i_cream:{ar:['رجعوا الكريم صودا طول السنة بقى','الكريم صودا لازم تبقى طول السنة مش في الصيف بس'],en:['bring the cream soda back all year pls'],fr:['rag3o el cream soda tol el sana']},
   i_glass:{ar:['ياريت يرجع {P} في إزازة زجاج'],en:['{P} in glass bottles would be so much better'],fr:['{P} fe ezaz glass yeb2a a7la']},
   p_taste:{ar:['{P} طعمه تحفة بجد','جربت {P} النهارده، أحسن من أي حاجة مستوردة','{P} أحلى حاجة شربتها الصيف ده'],en:['{P} is honestly the best local soda rn','just tried {P} and wow','ok {P} is actually really good'],fr:['{P} gamda gedan','{P} a7la 7aga shrebtaha']},
@@ -1004,14 +1014,18 @@ var LOCAL_EN_W={x_try:16,p_taste:12,x_values:6,x_where:14,x_price:8,x_halal:5,x_
    ev: the evidence; null means it's worked out from the data when the Events tab opens. */
 var EVENTS=[
   {id:'ev1',d:D('2026-05-11'),label:'Prime Minister opens V7’s new factory in Sadat City',type:'News',prods:null,src:'ai',st:'approved',real:true,ev:'Covered by El Watan, Al Jazeera Egypt and other news sites; Mazid’s post on X got 54.7K views. Google searches for “V7” rose that week.'},
-  {id:'ev2',d:D('2026-07-29'),label:'Summer of Colors campaign',type:'V7 campaign',prods:null,src:'team',st:'approved',real:true,ev:'V7 launched its new can design on Instagram and Facebook.'},
+  {id:'ev2',d:D('2026-07-29'),label:'Summer of Colors campaign',type:'V7 campaign',prods:null,src:'team',st:'approved',real:true,ev:'V7 launched its new can design on Instagram, Facebook and TikTok. The TikTok video passed 11.4M plays.'},
   {id:'ev3',d:D('2026-08-15'),label:'Mon3esh features Cream Soda',type:'Creator post',prods:['cream'],src:'ai',st:'approved',real:true,ev:'Mon3esh’s reel got 7,444 reactions, the most of any post about V7 that week.'},
   {id:'ev4',d:D('2026-08-27'),label:'Pineapple Malt video',type:'V7 post',prods:['pmalt'],src:'team',st:'approved',real:true,ev:'V7’s video for its Pineapple Malt.'},
-  {id:'ev5',d:D('2026-09-08'),label:'Malt reel passes 11M views',type:'Viral post',prods:['pmalt','amalt'],src:'ai',st:'approved',real:true,ev:'V7Egypt’s malt reel gained over 11M views in the two weeks after it was posted.'},
+  {id:'ev5',d:D('2026-09-08'),label:'Malt reel passes 11M views',type:'Viral post',prods:['pmalt','amalt'],src:'ai',st:'approved',real:true,ev:'V7Egypt’s malt reel gained over 11M views in the two weeks after it was posted, and had 13.2M by 13 Oct 2026.'},
   {id:'ev6',d:D('2026-09-10'),label:'Cream Soda off sale until summer 2027',type:'V7 announcement',prods:['cream'],src:'team',st:'approved',real:true,ev:'V7 announced the end of the Cream Soda season.'},
   {id:'ev7',d:D('2026-08-09'),label:'Google searches for “V7” hit a 12-month high',type:'Search spike',prods:['cream'],src:'ai',st:'pending',real:true,ev:'Google Trends score of 100 for the week of 9 Aug, against a 12-month average of 46. A Cream Soda review on Reddit got 52 upvotes and 70 comments the same day.'},
-  {id:'ev9',d:D('2026-09-29'),label:'Pomegranate post reshared by food pages',type:'Viral post',prods:['pom'],src:'ai',st:'pending',ev:null},
-  {id:'ev10',d:D('2026-09-18'),label:'Mention spike on TikTok',type:'Mention spike',prods:null,src:'ai',st:'rejected',ev:null,tiktok:true,why:'One creator posted the same video several times. Not a real moment.'}
+  {id:'ev9',d:D('2026-10-11'),label:'V Orange launched',type:'Product launch',prods:['orange'],src:'ai',st:'pending',real:true,ev:null},
+  {id:'ev10',d:D('2026-09-18'),label:'Mention spike on TikTok',type:'Mention spike',prods:null,src:'ai',st:'rejected',ev:null,tiktok:true,why:'One creator posted the same video several times. Not a real moment.'},
+  {id:'ev11',d:D('2026-07-30'),label:'Circle K × V7 Mixology Menu',type:'V7 campaign',prods:null,src:'team',st:'approved',real:true,ev:'Drinks made with V7 at selected Circle K stores, announced on V7’s and Circle K’s Facebook pages.'},
+  {id:'ev12',d:D('2026-08-06'),label:'Cream Soda summer edition launched',type:'Product launch',prods:['cream'],src:'team',st:'approved',real:true,ev:'The launch video got 6.7M plays on TikTok, 2.6M views on Facebook and 1.1M on YouTube (checked 13 Oct 2026).'},
+  {id:'ev13',d:D('2026-08-17'),label:'V7 × Cairokee night at Masyaf Ras Alhekma',type:'V7 campaign',prods:null,src:'team',st:'approved',real:true,ev:'V7 shared clips from the concert on Facebook, Instagram and TikTok.'},
+  {id:'ev14',d:D('2026-08-30'),label:'On the Run × V7 Refreshment Menu',type:'V7 campaign',prods:null,src:'team',st:'approved',real:true,ev:'Drinks made with V7 at every On the Run branch, announced on Instagram.'}
 ];
 var EVTYPES=['V7 campaign','V7 post','V7 announcement','Product launch','Creator post','Viral post','News','Search spike','Rumor','Mention spike','Other'];
 function approvedEvents(){return EVENTS.filter(function(e){return e.st==='approved';}).sort(function(a,b){return a.d-b.d;});}
@@ -1045,12 +1059,12 @@ PAGES.forEach(function(c,i){addAuthor({id:'pg'+i,name:c[0],handle:c[0],pl:c[1],f
 addAuthor({id:'pg_mon3esh',name:'Mon3esh - منعش',handle:'mon3esh.zone',pl:'fb',followers:null,cat:'Food & drinks',gov:'Cairo',cty:'EG',type:'page',seg:'page',real:true,url:'https://www.facebook.com/mon3esh.zone'});
 var NEWS=[['الأسبوع الاقتصادي','fb',2400000],['Egypt Market Watch','x',540000],['بوابة السوق','fb',1200000],['Cairo Business Post','x',310000],['Egypt Business Today','yt',180000]];
 NEWS.forEach(function(c,i){addAuthor({id:'nw'+i,name:c[0],handle:c[0],pl:c[1],followers:c[2],cat:'Business news',gov:'Cairo',cty:'EG',type:'news',seg:'page'});});
-/* Follower counts are real, collected 4–5 Oct 2026 */
+/* Follower counts are real, checked 13 Oct 2026 */
 var OWN={
-  fb:addAuthor({id:'own_fb',name:'V7Egypt',handle:'V7Egypt',pl:'fb',followers:76755,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.facebook.com/V7Egypt/',real:true,realFollowers:true}),
-  ig:addAuthor({id:'own_ig',name:'V7',handle:'v7egypt',pl:'ig',followers:38458,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.instagram.com/v7egypt/',real:true,realFollowers:true}),
+  fb:addAuthor({id:'own_fb',name:'V7Egypt',handle:'V7Egypt',pl:'fb',followers:79783,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.facebook.com/V7Egypt/',real:true,realFollowers:true}),
+  ig:addAuthor({id:'own_ig',name:'V7',handle:'v7egypt',pl:'ig',followers:38959,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.instagram.com/v7egypt/',real:true,realFollowers:true}),
   tt:addAuthor({id:'own_tt',name:'V7 Egypt',handle:'v7.egypt',pl:'tt',followers:36900,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.tiktok.com/@v7.egypt',real:true,realFollowers:true}),
-  yt:addAuthor({id:'own_yt',name:'V7 Egypt',handle:'V7Egypt',pl:'yt',followers:2510,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.youtube.com/@V7Egypt',real:true,realFollowers:true})
+  yt:addAuthor({id:'own_yt',name:'V7 Egypt',handle:'V7Egypt',pl:'yt',followers:2540,type:'official',seg:'brand',gov:'Cairo',cty:'EG',url:'https://www.youtube.com/@V7Egypt',real:true,realFollowers:true})
 };
 /* Only public groups can be collected */
 var GROUPS=[
@@ -1086,11 +1100,13 @@ function getPerson(pl,gov){
    ========================================================= */
 function prodWeights(d,abroad){
   var w={pom:10,pina:9,lmint:9,blue:6,pine:4,pink:6,pmalt:7,amalt:4,cola:9,dcola:6,llime:4};
-  if(d>=D('2026-05-01')&&d<=D('2026-09-10'))w.cream=12;else if(d>D('2026-09-10'))w.cream=4;
+  if(d>=D('2026-08-06')&&d<=D('2026-09-10'))w.cream=d<D('2026-08-27')?18:12;else if(d>D('2026-09-10'))w.cream=4;
+  if(d>=D('2026-07-21')&&d<=D('2026-07-31'))w.llime=7;   /* V7’s V Lemon reels, 21–28 Jul */
+  if(d>=D('2026-10-11'))w.orange=26;
   if(d>=D('2026-08-27')&&d<D('2026-09-08'))w.pmalt=11;
   if(d>=D('2026-09-08')&&d<=D('2026-09-15')){w.pmalt=16;w.amalt=9;}
   if(d>=D('2026-09-29'))w.pom=15;
-  if(abroad){w.cola*=1.8;w.dcola*=1.4;if(w.cream)w.cream*=.15;w.pmalt*=1.3;w.amalt*=1.3;}
+  if(abroad){w.cola*=1.8;w.dcola*=1.4;if(w.cream)w.cream*=.15;w.pmalt*=1.3;w.amalt*=1.3;delete w.orange;}
   return w;
 }
 function clusterWeights(prods,d){
@@ -1099,7 +1115,8 @@ function clusterWeights(prods,d){
   var p=PROD[prods[0]];
   if(p.id==='cream'&&d>D(p.end))return {q_cream:12,i_cream:10,p_taste:3,n_share:2};
   var w=Object.assign({},BASE_W);
-  if(p.status==='new'&&d-D(p.launch)<28){w.q_where=14;w.c_avail=10;w.q_launch=6;w.q_rec=7;w.p_taste=16;}
+  if(p.status==='new'&&d-D(p.launch)<7){w.p_hype=16;w.q_where=14;w.q_launch=10;w.q_rec=4;w.c_avail=3;w.p_taste=2;}   /* announced, not yet in most shops */
+  else if(p.status==='new'&&d-D(p.launch)<28){w.q_where=14;w.c_avail=10;w.q_launch=6;w.q_rec=7;w.p_taste=16;}
   if(d>=D('2026-07-29')&&d<=D('2026-08-31'))w.p_pack=8;
   return w;
 }
@@ -1159,7 +1176,7 @@ function metricsFor(pl,a,grp,c){
   return {views:views,likes:likes,comments:Math.round(likes*(q?rnd(.15,.5):rnd(.03,.15))*(grp?1.8:1)),shares:pl==='ig'||pl==='yt'?0:Math.round(likes*rnd(.01,.1))};
 }
 function pickCreator(cands){var w={};cands.forEach(function(x,i){w[i]=1/Math.pow(x.followers||2e4,.6);});return cands[+wpick(w)];}
-function needsReplyFor(c){var i=CL[c].intent;return i==='Question'||i==='Complaint'||i==='Sales lead'||i==='Asking for advice';}
+function needsReplyFor(c){var i=CL[c].intent;return i==='Question'||i==='Complaint'||i==='Sales lead';}
 var PID=0;
 function makePost(d){
   var prods,r=R();
@@ -1173,8 +1190,8 @@ function makePost(d){
   var type;
   if(c==='n_news')type='news';
   else if(pl==='rd')type='person';
-  else if(c.charAt(0)==='c'||c.charAt(0)==='q'||c.charAt(0)==='i')type=pl==='fb'?wpick(c==='q_wholesale'?{group:70,person:30}:{group:45,person:55}):pl==='yt'?wpick({creator:30,person:70}):'person';
-  else if(pl==='fb')type=wpick(c==='n_deal'?{group:30,person:35,page:35}:{group:36,person:50,page:8,creator:6});
+  else if(c.charAt(0)==='c'||c.charAt(0)==='q'||c.charAt(0)==='i')type=pl==='fb'?wpick(c==='q_wholesale'?{group:20,person:80}:{group:10,person:90}):pl==='yt'?wpick({creator:30,person:70}):'person';
+  else if(pl==='fb')type=wpick(c==='n_deal'?{group:8,person:22,page:70}:{group:6,person:60,page:24,creator:10});
   else if(pl==='ig')type=wpick({person:80,creator:16,page:4});
   else if(pl==='tt')type=wpick({person:80,creator:20});
   else if(pl==='x')type=wpick({person:93,creator:7});
@@ -1192,10 +1209,10 @@ function makePost(d){
   }
   var text=pick(TPL[c][lang]).replace('{P}',pName(prods,lang)).replace('{G}',govName(gov,lang));
   var sw=CL[c].s,sr=R(),s=sr<sw[0]?'pos':sr<sw[0]+sw[1]?'neu':'neg';
-  var m=metricsFor(pl,a,grp,c),needs=needsReplyFor(c);
+  var m=metricsFor(pl,a,grp,c),needs=needsReplyFor(c)&&(pl==='fb'||pl==='yt');
   var post={id:'p'+(PID++),d:d,h:hourPick(),mi:Math.floor(rnd(0,60)),pl:pl,a:a.id,g:grp?grp.id:null,sr:pl==='rd'?wpick(SUBS):null,prods:prods,c:c,lang:lang,text:text,
     tags:pl==='rd'?[]:tagsFor(c,prods,pl,d,a.type),s:s,emo:R()<.85?pick(CL[c].emo):pick(EMO_ALL),views:m.views,likes:m.likes,comments:m.comments,shares:m.shares,
-    gov:gov,cty:'EG',seg:a.seg||'home',owned:false,needsReply:needs,replied:needs?R()<.36:null};
+    gov:gov,cty:'EG',seg:a.seg||'home',owned:false,needsReply:needs,replied:needs?R()<.25:null};
   var q='V7'+(prods.length&&prods[0]!=='ALL'?' '+PROD[prods[0]].en:'');
   post.url=grp?'https://www.facebook.com/search/groups/?q='+encodeURIComponent(grp.name):searchUrl(pl,q);
   return post;
@@ -1211,8 +1228,11 @@ function dayMult(d){
 }
 var CANDS={};
 Object.keys(AUTH).forEach(function(k){var a=AUTH[k];if(a.real||a.type==='official')return;(CANDS[a.type+'|'+a.pl]||(CANDS[a.type+'|'+a.pl]=[])).push(a);});
+/* Real searches return about 1 to 2 public posts a day about V7 in Egypt (X, Instagram, TikTok and Facebook together, checked
+   11 and 13 Oct 2026), so the demo uses the same. Most of the conversation is in comments under V7's own posts. */
+function pois(l){var L=Math.exp(-l),k=0,q=1;do{k++;q*=R();}while(q>L);return k-1;}
 for(var d=0;d<NDAYS;d++){
-  var n=Math.round((13+d*.09)*dayMult(d)*rnd(.85,1.15));
+  var n=pois(1.4*dayMult(d));
   for(var i=0;i<n;i++)POSTS.push(makePost(d));
 }
 POSTS.push({id:'real_mon3esh',d:D('2026-08-15'),h:20,mi:14,pl:'fb',a:'pg_mon3esh',g:null,prods:['cream'],c:'p_taste',lang:'en',text:'V7 Cream Soda',
@@ -1234,14 +1254,62 @@ var OWN_CAP={
   en_all:['Pick your flavor. V7.','Every V7 flavor, ice-cold.','Which V7 flavor is your favorite? Tell us in the comments.'],
   ar:['V7 {N}.. طعم طبيعي ١٠٠٪','جربت V7 {N}؟ قولنا رأيك في الكومنتات','مزاجك النهارده إيه؟ V7 {N}','V7 {N} ساقعة في الحر ده','V7 {N}.. فيتامينات ونكهات طبيعية','صنع في مصر. V7 {N}']
 };
+/*REAL_OWN*//* V7 Egypt’s real posts (checked 13 Oct 2026): Facebook from 21 Jul, Instagram from 17 Aug, TikTok from 2 Aug, YouTube from 26 Jul.
+   Counts are as of 13 Oct. Demo posts fill only the days before. Posts with views 20+ times the followers were most likely promoted.
+   Built by data/raw/verify_13oct/build_own_posts.py */
 var REAL_OWN=[
-  {d:D('2026-09-10'),pl:'fb',prods:['cream'],text:'الصيف خلص... V7 Cream Soda راجعة تاني صيف 2027',likes:73,comments:63,shares:10,views:7344,fmt:'Reel',url:'https://www.facebook.com/reel/1583808776758074/'},
-  {d:D('2026-09-08'),pl:'fb',prods:['pmalt','amalt'],text:'The real natural taste of Malt.',likes:1962,comments:112,shares:12,views:11019677,fmt:'Reel',boost:true,url:'https://www.facebook.com/reel/2127943088075770/'},
-  {d:D('2026-08-27'),pl:'fb',prods:['pmalt'],text:'V7 Flavored Malt. 100% natural flavors. Experience the true taste of flavored malt with a bold pineapple burst.',likes:58,comments:14,shares:1,views:3233,fmt:'Reel',url:'https://www.facebook.com/reel/2178553179670479/'},
-  {d:D('2026-07-29'),pl:'ig',prods:['ALL'],text:'V7. Same great taste. Now in its most colorful look yet. Welcome to the Summer of Colors!',likes:1607,comments:28,shares:0,views:0,fmt:'Reel',url:'https://www.instagram.com/p/DbYMPQMFXY_/'},
-  {d:D('2026-09-29'),pl:'ig',prods:['pom'],text:'Sip into V7 Pomegranate. A refreshing burst of rich pomegranate flavor…',likes:54,comments:0,shares:0,views:0,fmt:'Reel',url:'https://www.instagram.com/p/Dd3qTp4RKc2/'},
-  {d:D('2026-09-10'),pl:'ig',prods:['cream'],text:'الصيف خلص... V7 Cream Soda راجعة تاني صيف 2027',likes:149,comments:98,shares:0,views:0,fmt:'Reel',url:'https://www.instagram.com/p/DdG_sWYEi_T/'}
+  {d:D('2026-07-21'),h:14,pl:'fb',prods:['llime'],text:'Heavy workload? Reset with a refreshing V Lemon! Real bold lemon taste. 100% natural flavors.',likes:19,comments:0,shares:2,views:3512,fmt:'Reel',url:'https://www.facebook.com/reel/2604124010016432/'},
+  {d:D('2026-07-26'),h:14,pl:'fb',prods:['llime'],text:'Spicy food got you on fire? Put out the heat with the ultimate refresh button. V Lemon is the perfect cool-down partner!',likes:15,comments:1,shares:0,views:3169,fmt:'Reel',url:'https://www.facebook.com/reel/3703485943140092/'},
+  {d:D('2026-07-26'),h:14,pl:'yt',prods:['llime'],text:'Put out the heat with the ultimate refresh button.',likes:4,comments:0,shares:0,views:124,fmt:'Video',url:'https://www.youtube.com/watch?v=sGt-zS8rQ04'},
+  {d:D('2026-07-28'),h:14,pl:'fb',prods:['llime'],text:'Feeling the heat? Time to hit reset and stay refreshed. Crack open a V Lemon and bring the chill back!',likes:18,comments:3,shares:1,views:4024,fmt:'Reel',url:'https://www.facebook.com/reel/1365774308402714/'},
+  {d:D('2026-07-28'),h:14,pl:'yt',prods:['llime'],text:'Time to hit reset and stay refreshed',likes:3,comments:0,shares:0,views:148,fmt:'Video',url:'https://www.youtube.com/watch?v=uJ30cNME_gE'},
+  {d:D('2026-07-29'),h:16,pl:'fb',prods:['ALL'],text:'V7. Same great taste. Now in its most colorful look yet. Welcome to the Summer of Colors!',likes:1770,comments:111,shares:23,views:12498730,fmt:'Reel',boost:true,url:'https://www.facebook.com/reel/1712062300012692/'},
+  {d:D('2026-07-29'),h:16,pl:'ig',prods:['ALL'],text:'V7. Same great taste. Now in its most colorful look yet. Welcome to the Summer of Colors!',likes:1607,comments:28,shares:0,views:0,fmt:'Reel',url:'https://www.instagram.com/p/DbYMPQMFXY_/'},
+  {d:D('2026-07-29'),h:16,pl:'tt',prods:['ALL'],text:'V7. Same great taste. Now in its most colorful look yet. Welcome to the Summer of Colors!',likes:15600,comments:177,shares:576,views:11400000,fmt:'Video',boost:true,url:'https://www.tiktok.com/@v7.egypt/video/7667937140940066069'},
+  {d:D('2026-07-29'),h:16,pl:'yt',prods:['ALL'],text:'Welcome to the Summer of Colors!',likes:9,comments:0,shares:0,views:3130479,fmt:'Video',boost:true,url:'https://www.youtube.com/watch?v=KiN0iqEC85E'},
+  {d:D('2026-07-30'),h:16,pl:'fb',prods:['ALL'],text:'One collaboration. Seven refreshing reasons to stop by. 🍹 Introducing the Circle K × V7 Mixology Menu—crafted with bold flavors and made for summer. Available now at selected Circle K stores.',likes:45,comments:1,shares:6,views:0,fmt:'Image',url:'https://www.facebook.com/circlekegypt/posts/pfbid02KcjmHnvR8QYrgdAaGUyTd5TZreE2qMU2jzUMVUGkFrbgEMosDmcXGvopFsT54F9Zl'},
+  {d:D('2026-08-02'),h:19,pl:'fb',prods:['cream'],text:'Summer is here. Bringing back the magic taste. Can you guess what\'s coming?',likes:105,comments:38,shares:10,views:14438,fmt:'Reel',url:'https://www.facebook.com/reel/894816333325206/'},
+  {d:D('2026-08-02'),h:19,pl:'tt',prods:['cream'],text:'Summer is here. Bringing back the magic taste. Can you guess what\'s coming?',likes:238,comments:20,shares:37,views:8282,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7669476787247697159'},
+  {d:D('2026-08-02'),h:19,pl:'yt',prods:['cream'],text:'Can you guess what\'s coming?',likes:4,comments:0,shares:0,views:333,fmt:'Short',url:'https://www.youtube.com/shorts/m7dqQ1ee4YQ'},
+  {d:D('2026-08-06'),h:14,pl:'fb',prods:['cream'],text:'Say hello to our NEW Summer Edition, V7 Cream Soda is here!',likes:954,comments:95,shares:36,views:2559453,fmt:'Reel',boost:true,url:'https://www.facebook.com/reel/1311620121046511/'},
+  {d:D('2026-08-06'),h:14,pl:'tt',prods:['cream'],text:'Say hello to our NEW Summer Edition, V7 Cream Soda is here!',likes:15500,comments:677,shares:4518,views:6700000,fmt:'Video',boost:true,url:'https://www.tiktok.com/@v7.egypt/video/7670884150236187922'},
+  {d:D('2026-08-06'),h:14,pl:'yt',prods:['cream'],text:'V7 Cream Soda is here!',likes:15,comments:0,shares:0,views:1111568,fmt:'Short',boost:true,url:'https://www.youtube.com/shorts/lmIDg2GPaSU'},
+  {d:D('2026-08-12'),h:18,pl:'yt',prods:['dcola'],text:'V Super Soda Diet!',likes:1,comments:0,shares:0,views:264,fmt:'Short',url:'https://www.youtube.com/shorts/_EgguTERnTo'},
+  {d:D('2026-08-17'),h:18,pl:'fb',prods:['ALL'],text:'Snippets from V7 x Cairokee night for the books at Masyaf Ras Alhekma M squared., taking over for a Summer of Colors.',likes:69,comments:1,shares:7,views:6407,fmt:'Reel',url:'https://www.facebook.com/reel/905870948807860/'},
+  {d:D('2026-08-17'),h:18,pl:'ig',prods:['ALL'],text:'Snippets from V7 x @cairokee night for the books @masyaf_ras_alhekma, taking over for a Summer of Colors.',likes:91,comments:3,shares:0,views:1428,fmt:'Reel',url:'https://www.instagram.com/p/DcJUoPjMCD2/'},
+  {d:D('2026-08-17'),h:18,pl:'tt',prods:['ALL'],text:'Snippets from V7 x @cairokee night for the books at Masyaf Ras Alhekma @M squared., taking over for a Summer of Colors.',likes:85,comments:15,shares:2,views:2666,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7675021172035063048'},
+  {d:D('2026-08-21'),h:13,pl:'ig',prods:['cream'],text:'The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.',likes:228,comments:5,shares:0,views:2967,fmt:'Reel',url:'https://www.instagram.com/p/DcTKMrCsxar/'},
+  {d:D('2026-08-21'),h:13,pl:'tt',prods:['cream'],text:'The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.',likes:205,comments:37,shares:23,views:4480,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7676437499710803218'},
+  {d:D('2026-08-21'),h:14,pl:'fb',prods:['cream'],text:'The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.',likes:112,comments:23,shares:3,views:7693,fmt:'Reel',url:'https://www.facebook.com/reel/1052326230778325/'},
+  {d:D('2026-08-25'),h:12,pl:'fb',prods:['ALL'],text:'V7 تهنئكم بالمولد النبوي الشريف، كل عام وأنتم بخير',likes:51,comments:1,shares:3,views:0,fmt:'Image',url:'https://www.facebook.com/V7Egypt/posts/pfbid05gNBEsGnmRXehtitJDYzoNLo5Lcc7JwdTtEWQAuRsQ1siW8HxCA1ecg3bGud4XBQl'},
+  {d:D('2026-08-25'),h:12,pl:'ig',prods:['ALL'],text:'V7 تهنئكم بالمولد النبوي الشريف، كل عام وأنتم بخير',likes:54,comments:0,shares:0,views:0,fmt:'Image',url:'https://www.instagram.com/p/DcdV7SSlYXm/'},
+  {d:D('2026-08-26'),h:21,pl:'fb',prods:['ALL'],text:'Summer is not over yet, there’s still more to refresh!',likes:44,comments:2,shares:0,views:4917,fmt:'Reel',url:'https://www.facebook.com/reel/947564051739167/'},
+  {d:D('2026-08-26'),h:21,pl:'ig',prods:['ALL'],text:'Summer is not over yet, there’s still more to refresh!',likes:129,comments:2,shares:0,views:2089,fmt:'Reel',url:'https://www.instagram.com/p/Dcg1VIDRak7/'},
+  {d:D('2026-08-26'),h:21,pl:'tt',prods:['ALL'],text:'Summer is not over yet, there’s still more to refresh!',likes:51,comments:17,shares:2,views:2073,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7678406422190624008'},
+  {d:D('2026-08-27'),h:14,pl:'ig',prods:['pmalt'],text:'V7 Flavored Malt. 100% natural flavors. Experience the true taste of flavored malt with a bold pineapple burst.',likes:69,comments:0,shares:0,views:803,fmt:'Reel',url:'https://www.instagram.com/p/Dciu19Rs9Q8/'},
+  {d:D('2026-08-27'),h:15,pl:'fb',prods:['pmalt'],text:'V7 Flavored Malt. 100% natural flavors. Experience the true taste of flavored malt with a bold pineapple burst.',likes:75,comments:16,shares:1,views:6163,fmt:'Reel',url:'https://www.facebook.com/reel/2178553179670479/'},
+  {d:D('2026-08-27'),h:15,pl:'tt',prods:['pmalt'],text:'V7 Flavored Malt. 100% natural flavors. Experience the true taste of flavored malt with a bold pineapple burst.',likes:38,comments:15,shares:7,views:1992,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7678680052199869703'},
+  {d:D('2026-08-30'),h:13,pl:'ig',prods:['ALL'],text:'Real pomegranate. Extra lemon. Real fizz. Zero drama. Grab your drink from our new On the Run × V7 Refreshment Menu, now available exclusively at all On the Run branches.',likes:54,comments:0,shares:0,views:1837,fmt:'Reel',url:'https://www.instagram.com/p/DcqP3O5jo01/'},
+  {d:D('2026-09-08'),h:14,pl:'fb',prods:['pmalt','amalt'],text:'The real natural taste of Malt.',likes:2333,comments:124,shares:12,views:13193303,fmt:'Reel',boost:true,url:'https://www.facebook.com/reel/2127943088075770/'},
+  {d:D('2026-09-08'),h:14,pl:'ig',prods:['pmalt','amalt'],text:'The real natural taste of Malt.',likes:2141,comments:75,shares:0,views:412380,fmt:'Reel',url:'https://www.instagram.com/p/DdBn3ZvqV5o/'},
+  {d:D('2026-09-08'),h:14,pl:'yt',prods:['pmalt','amalt'],text:'الطعم الطبيعي للشعير',likes:4,comments:0,shares:0,views:2726198,fmt:'Video',boost:true,url:'https://www.youtube.com/watch?v=_V4m4AKhnUU'},
+  {d:D('2026-09-08'),h:14,pl:'yt',prods:['pmalt','amalt'],text:'الطعم الطبيعي للشعير',likes:1,comments:0,shares:0,views:177,fmt:'Short',url:'https://www.youtube.com/shorts/DOgdnfSxC50'},
+  {d:D('2026-09-10'),h:16,pl:'fb',prods:['cream'],text:'الصيف خلص... V7 Cream Soda راجعة تاني صيف 2027',likes:119,comments:78,shares:10,views:11645,fmt:'Reel',url:'https://www.facebook.com/reel/1583808776758074/'},
+  {d:D('2026-09-10'),h:16,pl:'ig',prods:['cream'],text:'الصيف خلص... V7 Cream Soda راجعة تاني صيف 2027',likes:155,comments:100,shares:0,views:4327,fmt:'Reel',url:'https://www.instagram.com/p/DdG_sWYEi_T/'},
+  {d:D('2026-09-10'),h:17,pl:'tt',prods:['cream'],text:'الصيف خلص... V7 Cream Soda راجعة تاني صيف 2027',likes:181,comments:51,shares:4,views:4036,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7683908318414359828'},
+  {d:D('2026-09-10'),h:17,pl:'yt',prods:['cream'],text:'V7 Cream Soda',likes:4,comments:0,shares:0,views:198,fmt:'Short',url:'https://www.youtube.com/shorts/62rAd56QjBM'},
+  {d:D('2026-09-29'),h:14,pl:'ig',prods:['pom'],text:'Sip into V7 Pomegranate. A refreshing burst of rich pomegranate flavor, made with 100% natural flavors and enriched with vitamins.',likes:67,comments:0,shares:0,views:974,fmt:'Reel',url:'https://www.instagram.com/p/Dd3qTp4RKc2/'},
+  {d:D('2026-09-29'),h:14,pl:'tt',prods:['pom'],text:'Sip into V7 Pomegranate. A refreshing burst of rich pomegranate flavor, made with 100% natural flavors and enriched with vitamins.',likes:43,comments:4,shares:1,views:954,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7690920610217725205'},
+  {d:D('2026-10-04'),h:19,pl:'ig',prods:['pmalt'],text:'مشروب شعير بطعم الأناناس طعم طبيعي 100٪ غيّرنا بيه مفهوم الشعير',likes:47,comments:0,shares:0,views:0,fmt:'Image',url:'https://www.instagram.com/p/DeFEwP7iv-A/'},
+  {d:D('2026-10-04'),h:19,pl:'tt',prods:['pmalt'],text:'مشروب شعير بطعم الأناناس. طعم طبيعي 100٪، غيّرنا بيه مفهوم الشعير.',likes:21,comments:2,shares:2,views:688,fmt:'Video',url:'https://www.tiktok.com/@v7.egypt/video/7692852254906404103'},
+  {d:D('2026-10-06'),h:12,pl:'ig',prods:['ALL'],text:'في ذكرى نصر أكتوبر، نفتخر بكل لحظة أثبت فيها المصريون أن العزيمة قادرة على صنع المستحيل. تحيا مصر دائمًا وأبدًا🇪🇬',likes:80,comments:1,shares:0,views:0,fmt:'Image',url:'https://www.instagram.com/p/DeJaxfBxpOE/'},
+  {d:D('2026-10-11'),h:14,pl:'fb',prods:['orange'],text:'V Orange is here 🍊 !برتقان أوي بقى',likes:791,comments:99,shares:42,views:527675,fmt:'Reel',url:'https://www.facebook.com/reel/1044722265279133/'},
+  {d:D('2026-10-11'),h:14,pl:'ig',prods:['orange'],text:'V Orange is here 🍊 !برتقان أوي بقى',likes:1196,comments:55,shares:0,views:47757,fmt:'Reel',url:'https://www.instagram.com/p/DeWgI0dD2Ar/'},
+  {d:D('2026-10-11'),h:14,pl:'yt',prods:['orange'],text:'v orange is here!🍊',likes:250,comments:0,shares:0,views:97474,fmt:'Short',boost:true,url:'https://www.youtube.com/shorts/QJg1UfBkplw'},
+  {d:D('2026-10-11'),h:14,pl:'yt',prods:['orange'],text:'V Orange is here',likes:10,comments:0,shares:0,views:71819,fmt:'Video',boost:true,url:'https://www.youtube.com/watch?v=kPnb9mzFJ90'},
+  {d:D('2026-10-11'),h:16,pl:'yt',prods:['orange'],text:'V Orange is here!',likes:3,comments:0,shares:0,views:29230,fmt:'Video',url:'https://www.youtube.com/watch?v=2qM_9AbrxBc'}
 ];
+var OWN_REAL_FROM={fb:D('2026-07-21'),ig:D('2026-08-17'),tt:D('2026-08-02'),yt:D('2026-07-26')};/*END_REAL_OWN*/
 var realOwnKey={};REAL_OWN.forEach(function(r){realOwnKey[r.pl+r.d]=1;});
 function ownPost(d,pl,o){
   var a=OWN[pl];
@@ -1249,11 +1317,14 @@ function ownPost(d,pl,o){
     s:R()<.7?'pos':'neu',emo:pick(['Joy','Anticipation']),gov:'Cairo',cty:'EG',seg:'brand',owned:true,needsReply:false,replied:null,cpos:Math.round(rnd(55,86))};
   return Object.assign(base,o);
 }
+/* Weighted rotation: V7 features each product in turn, more often the bigger ones */
+var OWN_CNT={},OWN_N=0;
+function ownPick(w){var tw=0,k,best=null,bv=-1e9;for(k in w)tw+=w[k];OWN_N++;for(k in w){var v=w[k]/tw*OWN_N-(OWN_CNT[k]||0)+R()*.3;if(v>bv){bv=v;best=k;}}OWN_CNT[best]=(OWN_CNT[best]||0)+1;return best;}
 for(var d2=0;d2<NDAYS;d2++){
   [['fb',3,0],['ig',4,1],['tt',5,2],['yt',21,4]].forEach(function(s){
-    if(d2%s[1]!==s[2]||realOwnKey[s[0]+d2])return;
+    if(d2%s[1]!==s[2]||realOwnKey[s[0]+d2]||d2>=OWN_REAL_FROM[s[0]])return;
     var w=prodWeights(d2);if(d2>D('2026-09-10'))delete w.cream;
-    var pid=R()<.15?'ALL':wpick(w),lang=R()<.55?'en':'ar',a=OWN[s[0]];
+    var pid=R()<.15?'ALL':ownPick(w),lang=R()<.55?'en':'ar',a=OWN[s[0]];
     var nm=pid==='ALL'?(lang==='ar'?'بكل نكهاتها':'all flavors'):PROD[pid][lang==='ar'?'ar':'en'];
     var fmt=s[0]==='fb'?wpick({Reel:50,Image:35,Video:15}):s[0]==='ig'?wpick({Reel:55,Carousel:25,Image:20}):'Video';
     var reach=Math.round(a.followers*(fmt==='Reel'||fmt==='Video'?rnd(.4,3.2):rnd(.12,.6)));
@@ -1366,14 +1437,14 @@ var GROUPS_X=[
 ].map(function(g,i){return {id:'gx'+i,name:g[0],members:g[1],area:g[2],cty:g[3],w:g[4],abroad:true};});
 GROUPS_X.forEach(function(g){GRP[g.id]=g;});
 GRP.gx2.real=true;GRP.gx2.url='https://www.facebook.com/groups/2828301800643081/';
-/* Real V7 accounts abroad, found on Instagram (followers checked 4–5 Oct 2026) */
+/* Real V7 accounts abroad, found on Instagram (followers and latest posts checked 13 Oct 2026) */
 var OWN_X=[
-  {id:'own_tn_ig',name:'V7 Tunisia',handle:'v7tunisia',pl:'ig',followers:4174,cty:'TN',gov:'Tunis',url:'https://www.instagram.com/v7tunisia/',every:3,lang:'french',since:'2026-05-01'},
-  {id:'own_uz_ig',name:'V7 Uzbekistan',handle:'v7uzbekistan',pl:'ig',followers:1806,cty:'UZ',gov:'Tashkent',url:'https://www.instagram.com/v7uzbekistan/',every:3,lang:'uz',since:'2026-06-01'},
-  {id:'own_uk_ig',name:'V7_UK',handle:'v7ldnuk',pl:'ig',followers:351,cty:'GB',gov:'London',url:'https://www.instagram.com/v7ldnuk/',every:3,lang:'en'},
-  {id:'own_in_ig',name:'V7 India',handle:'drinkv7',pl:'ig',followers:115,cty:'IN',gov:'Mumbai',url:'https://www.instagram.com/drinkv7/',every:6,lang:'en'}
+  {id:'own_tn_ig',name:'V7 Tunisia',handle:'v7tunisia',pl:'ig',followers:4174,cty:'TN',gov:'Tunis',url:'https://www.instagram.com/v7tunisia/',lang:'french'},
+  {id:'own_uz_ig',name:'V7 Uzbekistan',handle:'v7uzbekistan',pl:'ig',followers:1808,cty:'UZ',gov:'Tashkent',url:'https://www.instagram.com/v7uzbekistan/',lang:'uz'},
+  {id:'own_uk_ig',name:'V7_UK',handle:'v7ldnuk',pl:'ig',followers:355,cty:'GB',gov:'London',url:'https://www.instagram.com/v7ldnuk/',lang:'en'},
+  {id:'own_in_ig',name:'V7 India',handle:'drinkv7',pl:'ig',followers:112,cty:'IN',gov:'Mumbai',url:'https://www.instagram.com/drinkv7/',lang:'en'}
 ].map(function(o){return addAuthor(Object.assign({type:'official',seg:'brand',regional:true,real:true,realFollowers:true},o));});
-var DISTRIBUTORS=[{name:'Halal Drinks Co',handle:'thehalaldrinksco',cty:'GB',followers:1275,note:'UK distributor of V7 and V Cola',url:'https://www.instagram.com/thehalaldrinksco/'}];
+var DISTRIBUTORS=[{name:'Halal Drinks Co',handle:'thehalaldrinksco',cty:'GB',followers:1272,note:'UK distributor of V7 and V Cola',url:'https://www.instagram.com/thehalaldrinksco/'}];
 function tplFor(c,dial){
   var x=TPLX[c]||{};
   if(x[dial])return {l:x[dial],dial:dial};
@@ -1399,7 +1470,8 @@ function countryWeights(d){var w={};COUNTRIES.forEach(function(C){if(C.since&&d<
 function dayMultX(d){var x=dt(d),wd=x.getUTCDay(),m=1;if(wd===4||wd===5)m*=1.12;var mo=x.getUTCMonth();if(mo>=5&&mo<=7)m*=1.1;if(d===D('2026-09-08'))m*=1.4;if(d===D('2026-09-09'))m*=1.2;if(d===D('2026-09-29'))m*=1.3;return m;}
 function makeIntlPost(d){
   var C=COUNTRY[wpick(countryWeights(d))],city=pick(C.cities)[0];
-  var r=R(),seg=r<.06?'business':r<.06+C.dias*.94?'diaspora':'local';
+  /* Most public posts about V7 abroad are from businesses: wholesalers, shops and distributors (real pull, 11 Oct 2026) */
+  var r=R(),seg=r<.45?'business':r<.45+C.dias*.55?'diaspora':'local';
   var c=seg==='business'?'x_import':wpick(seg==='diaspora'?DIAS_W:C.dialect==='en'?LOCAL_EN_W:LOCAL_AR_W);
   var dial=seg==='diaspora'?wpick({eg:62,en:28,fr:10}):C.dialect==='en'?'en':(R()<C.enShare?'en':C.dialect);
   var tp=tplFor(c,dial);dial=tp.dial;
@@ -1409,7 +1481,7 @@ function makeIntlPost(d){
   else{var p1=wpick(prodWeights(d,true));prods=[p1];if(R()<.08){var p2=wpick(prodWeights(d,true));if(p2!==p1)prods.push(p2);}}
   var pl=c==='x_import'?wpick({fb:60,ig:20,x:12,tt:8}):wpick(C.dialect==='en'?{ig:30,tt:25,fb:20,x:12,yt:13,rd:4}:{fb:42,tt:24,ig:18,x:11,yt:5,rd:1});
   var grp=null,a=null;
-  if(pl==='fb'&&R()<(seg==='business'?.5:.36)){
+  if(pl==='fb'&&R()<(seg==='business'?.1:.06)){
     var gw={},any=false;
     GROUPS_X.forEach(function(g){var m=seg==='business'?(g.cty===null?6:g.cty===C.code?.5:0):(g.cty===C.code?(g.area===city?2:1):0);if(m){gw[g.id]=g.w*m;any=true;}});
     if(any){grp=GRP[wpick(gw)];if(grp.cty===C.code)city=grp.area;}
@@ -1421,7 +1493,7 @@ function makeIntlPost(d){
   var isAr=dial!=='en'&&dial!=='fr';
   var text=pick(tp.l).replace('{P}',pName(prods,isAr?'ar':dial)).replace('{C}',isAr?cityAr(C,city):city).replace('{K}',isAr?C.ar:C.en);
   var sw=CL[c].s,sr=R(),s=sr<sw[0]?'pos':sr<sw[0]+sw[1]?'neu':'neg';
-  var m=metricsFor(pl,a,grp,c),needs=needsReplyFor(c);
+  var m=metricsFor(pl,a,grp,c),needs=needsReplyFor(c)&&(pl==='fb'||pl==='yt');
   var post={id:'x'+(PID++),d:d,h:hourPick(),mi:Math.floor(rnd(0,60)),pl:pl,a:a.id,g:grp?grp.id:null,sr:pl==='rd'?(seg==='diaspora'?'r/ExEgypt':'r/'+C.en.replace(/[^A-Za-z]/g,'')):null,prods:prods,c:c,lang:dial==='eg'?'ar':dial,text:text,
     tags:pl==='rd'?[]:tagsX(c,prods,pl,seg,C),s:s,emo:R()<.85?pick(CL[c].emo):pick(EMO_ALL),views:m.views,likes:m.likes,comments:m.comments,shares:m.shares,
     gov:city,cty:C.code,seg:a.seg||seg,owned:false,needsReply:needs,replied:needs?R()<.24:null};
@@ -1430,33 +1502,69 @@ function makeIntlPost(d){
   return post;
 }
 for(var dx=0;dx<NDAYS;dx++){
-  var nx=Math.round((2.4+dx*.024)*dayMultX(dx)*rnd(.8,1.2));
+  var nx=pois(.22*dayMultX(dx));
   for(var ix=0;ix<nx;ix++)POSTS.push(makeIntlPost(dx));
 }
-var OWNX_CAP={
-  en:['V7 {N} is back in stock. Order now!','Which V7 flavour are you grabbing this weekend? {N}?','Ice-cold V7 {N}, made in Egypt with natural flavours','New delivery in: V7 {N} 12-packs','V7 {N}: vitamins, honey, no caffeine'],
-  en_all:['The full V7 range is back in stock. Order now!','Which V7 flavour are you grabbing this weekend?','New delivery in: V7 12-packs, every flavour'],
-  gulf:['V7 {N} متوفر الحين','وش نكهتك المفضلة من V7؟ {N}؟','V7 {N} بارد يروي العطش'],
-  iraqi:['V7 {N} متوفر هسه بالأسواق','شنو نكهتك المفضلة؟ V7 {N}'],
-  maghreb:['V7 {N} متوفر توا','شن النكهة اللي تحبها؟ V7 {N}'],
-  french:['V7 {N} : boisson gazeuse aux arômes 100 % naturels','Enrichie en vitamines, sans caféine : V7 {N}','Disponible en Tunisie : V7 {N}'],
-  uz:['V7 {N}: vitaminlar bilan boyitilgan ichimlik','Tabiiy ta’m, kofeinsiz: V7 {N}','V7 {N} do‘konlarda']
-};
-OWN_X.forEach(function(a,ix){
-  for(var d=0;d<NDAYS;d++){
-    if((d+ix)%a.every!==0||(a.since&&d<D(a.since)))continue;
-    var w=prodWeights(d,true);delete w.cream;
-    var pid=R()<.12?'ALL':wpick(w),isAr=['gulf','iraqi','maghreb'].indexOf(a.lang)>=0;
-    var nm=pid==='ALL'?(isAr?'بكل نكهاته':a.lang==='french'?'toutes les saveurs':a.lang==='uz'?'barcha ta’mlar':'all flavours'):PROD[pid][isAr?'ar':'en'];
-    var fmt=a.pl==='ig'?wpick({Reel:50,Carousel:20,Image:30}):wpick({Reel:40,Image:45,Video:15});
-    var reach=Math.round(a.followers*(fmt==='Reel'||fmt==='Video'?rnd(.5,3):rnd(.15,.7)));
-    var views=fmt==='Image'||fmt==='Carousel'?0:reach;
-    var likes=Math.round(a.pl==='ig'?a.followers*rnd(.01,.06):reach*rnd(.01,.05));
-    POSTS.push({id:'o'+(PID++),d:d,h:Number(wpick({13:2,17:3,19:3,20:4,21:3})),mi:0,pl:a.pl,a:a.id,g:null,c:'own',lang:a.lang,
-      text:pick(a.lang==='en'&&pid==='ALL'?OWNX_CAP.en_all:(OWNX_CAP[a.lang]||OWNX_CAP.en)).replace('{N}',nm).replace('V7 V Cola','V Cola'),tags:['#V7'],s:R()<.7?'pos':'neu',emo:pick(['Joy','Anticipation']),
-      gov:a.gov,cty:a.cty,seg:'brand',owned:true,needsReply:false,replied:null,cpos:Math.round(rnd(55,88)),prods:[pid],fmt:fmt,
-      views:views,likes:likes,comments:Math.round(likes*rnd(.03,.15)),shares:a.pl==='ig'?0:Math.round(likes*rnd(.01,.06)),url:profileUrl(a)});
-  }
+/* The UK distributor’s real posts about V7 (Instagram, checked 13 Oct 2026) */
+addAuthor({id:'dist_uk',name:'Halal Drinks Co',handle:'thehalaldrinksco',pl:'ig',followers:1272,cat:'Distributor',type:'page',seg:'business',gov:'Birmingham',cty:'GB',real:true,url:'https://www.instagram.com/thehalaldrinksco/'});
+POSTS.push({id:'real_hd1',d:D('2026-08-06'),h:11,mi:53,pl:'ig',a:'dist_uk',g:null,sr:null,prods:['ALL'],c:'n_deal',lang:'en',text:'The full range of V Drinks is now available across Birmingham! 🥤 ✅ Delivery available across the region ✅ Collection from our new West Midlands depot Looking to become a stockist? DM us. 🌐 www.halaldrinksco.com #HalalDrinksCo…',tags:[],s:'pos',emo:'Joy',views:0,likes:1,comments:0,shares:0,gov:'Birmingham',cty:'GB',seg:'business',owned:false,real:true,url:'https://www.instagram.com/p/Dbsi0YsNW24/',fmt:'Image',needsReply:false,replied:null});
+POSTS.push({id:'real_hd2',d:D('2026-10-03'),h:16,mi:47,pl:'ig',a:'dist_uk',g:null,sr:null,prods:['ALL'],c:'n_deal',lang:'en',text:'🥤 NEW V7 6 PACKS ARE HERE! Enjoy your V7 favourites in our brand-new 6 packs! Perfect for stocking up, sharing or mixing & matching your favourite flavours. 🛒 Available online now 📦 Delivery & collection available Shop now at…',tags:[],s:'pos',emo:'Joy',views:0,likes:3,comments:0,shares:0,gov:'Birmingham',cty:'GB',seg:'business',owned:false,real:true,url:'https://www.instagram.com/p/DeCaml4IvDi/',fmt:'Image',needsReply:false,replied:null});
+POSTS.push({id:'real_hd3',d:D('2026-10-10'),h:14,mi:40,pl:'ig',a:'dist_uk',g:null,sr:null,prods:['cola'],c:'n_deal',lang:'en',text:'🥤 Meet V Cola! 🔥 Bold, refreshing and seriously satisfying - Caffeine Free Cola!! Perfect for shops, takeaways, restaurants or simply stocking up at home. 📦 Available by the case 🛒 Retail & trade orders welcome 🚚 UK delivery available…',tags:[],s:'pos',emo:'Joy',views:0,likes:1,comments:0,shares:0,gov:'Birmingham',cty:'GB',seg:'business',owned:false,real:true,url:'https://www.instagram.com/p/DeUNpIKN5qc/',fmt:'Image',needsReply:false,replied:null});
+/* Real posts from V7’s pages abroad: each page’s 12 latest Instagram posts, checked 13 Oct 2026 (pin: pinned to the top of the profile).
+   Posts inside the dashboard’s dates join the feed; the pages table uses all 12. */
+/*REAL_OWN_X*/var REAL_OWN_X=[
+  {a:'own_tn_ig',d:D('2026-05-14'),h:17,mi:21,text:'Pour la première fois en Tunisie 🇹🇳 Boisson Gazeuse aux Arômes 100%Naturel🌿 Enrichie en Vitamines Essentielles🧬 [B1, B3, B5, B6, B12, V, D, E] Et du Miel Naturel🍯 Immune Support🛡️',likes:116,comments:10,views:0,fmt:'Image',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/DYU1lIyIodl/'},
+  {a:'own_tn_ig',d:D('2026-07-16'),h:22,mi:9,text:'🏁 V7 RACING TEAM 🏁 📷 @_waelamri_ @md.themask @drive_time_program @bmc_bouaita_motors_company',likes:77,comments:1,views:0,fmt:'Image',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/Da3kqKmo8Ux/'},
+  {a:'own_tn_ig',d:D('2026-05-08'),h:20,mi:6,text:'Mom\'s Always Right 🙋‍♀️ 100% Naturel Flavors 🌿 Enriched With Vitamins 🧬 Enriched with Naturel Honeybee🍯',likes:1097,comments:8,views:83841,fmt:'Reel',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/DYFrutmI72T/'},
+  {a:'own_tn_ig',d:D('2026-09-28'),h:23,mi:46,text:'Same Great Test , Now its Most Colorful Look Yet',likes:12,comments:1,views:109,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dd2SJE_oBJ2/'},
+  {a:'own_tn_ig',d:D('2026-09-17'),h:19,mi:59,text:'V7 Pinacolada🥥🍍 🆚 V7 Pomegranate 🍅 Quelle est votre Préférée ❔❓',likes:151,comments:25,views:2172,fmt:'Reel',prods:['pina','pom'],url:'https://www.instagram.com/p/DdZjHouoGww/'},
+  {a:'own_tn_ig',d:D('2026-09-07'),h:23,mi:34,text:'V7 Blueberry 🫐 ANTIOXIDANT & IMMUNE SUPPORT Vitamine D, B1, B3, B5, B6, B12 100% Naturel flavors 🌿',likes:24,comments:1,views:0,fmt:'Image',prods:['blue'],url:'https://www.instagram.com/p/DdAMc40ok3b/'},
+  {a:'own_tn_ig',d:D('2026-09-07'),h:23,mi:16,text:'🧊 Refresh Your Day with V7 🧊',likes:178,comments:0,views:0,fmt:'Image',prods:['ALL'],url:'https://www.instagram.com/p/DdAKb_FoipD/'},
+  {a:'own_tn_ig',d:D('2026-09-01'),h:0,mi:4,text:'Can you Guess what\'s Coming ❔',likes:20,comments:1,views:642,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DcuOUgzI6si/'},
+  {a:'own_tn_ig',d:D('2026-08-26'),h:20,mi:55,text:'🍋🍋‍🟩🍍🍎🥥🍇🫐🍓⛱️🏝️',likes:14,comments:1,views:436,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dcg-8wJIGpF/'},
+  {a:'own_tn_ig',d:D('2026-08-25'),h:1,mi:24,text:'Remember ! You always need Vitamins💪🧬 📍@bestfitness_soukra 📷 By Aureon',likes:35,comments:1,views:0,fmt:'Image',prods:['ALL'],url:'https://www.instagram.com/p/DccWAiBopji/'},
+  {a:'own_tn_ig',d:D('2026-08-18'),h:22,mi:17,text:'V7 🌿 VITAMINES SPARKLING DRINK 🫧',likes:45,comments:2,views:0,fmt:'Carousel',prods:['ALL'],url:'https://www.instagram.com/p/DcMjwWNiLlw/'},
+  {a:'own_tn_ig',d:D('2026-08-18'),h:0,mi:53,text:'Feel Green 🌿',likes:19,comments:1,views:0,fmt:'Image',prods:['ALL'],url:'https://www.instagram.com/p/DcKQzzSINEV/'},
+  {a:'own_uz_ig',d:D('2026-10-08'),h:10,mi:56,text:'100% Himoya. 0% Shakar. V7 bilan tanishing! Ko’chada, mashinada yoki sayrda bankali ichimlik ichish endi mutlaqo xavfsiz. Misrdan to’g’ridan-to’g’ri import qilinadigan V7 ichimliklari O’zbekistonda yagona bo’lgan maxsus plastik qopqoq…',likes:3,comments:0,views:0,fmt:'Image',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/DeOO1bAN7kk/'},
+  {a:'own_uz_ig',d:D('2026-10-08'),h:10,mi:56,text:'100% Himoya. 0% Shakar. V7 bilan tanishing! Ko’chada, mashinada yoki sayrda bankali ichimlik ichish endi mutlaqo xavfsiz. Misrdan to’g’ridan-to’g’ri import qilinadigan V7 ichimliklari O’zbekistonda yagona bo’lgan maxsus plastik qopqoq…',likes:19,comments:2,views:0,fmt:'Image',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/DeOO96lN5Qs/'},
+  {a:'own_uz_ig',d:D('2026-10-08'),h:10,mi:57,text:'Sport bilan shug’ullanasizmi yoki qat’iy diyetadamisiz? Endi o’zingizni sevimli gazlangan ichimliklardan cheklashingiz shart emas. V7 — fitnes va sog’lom turmush tarzi ixlosmandlari uchun ideal tanlov. Tarkibida shakar yo’qligi va past…',likes:13,comments:1,views:0,fmt:'Image',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/DeOPButNDm6/'},
+  {a:'own_uz_ig',d:D('2026-10-13'),h:10,mi:28,text:'Viloyatlardan V7 ichimliklarining rasmiy distribyutorlarini izlayapmiz! 🤝📈 Misrda ishlab chiqariladigan mashhur V7 vitaminli gazli ichimligi Toshkent shahridagi 10 dan ortiq yirik savdo nuqtalarida o’z xaridorlarini topib ulgurdi. Endi…',likes:2,comments:0,views:7,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DebDrFGtBcg/'},
+  {a:'own_uz_ig',d:D('2026-10-12'),h:14,mi:45,text:'V7 ni bir marta tatib ko’rib, uning ashaddiy muxlisiga aylanib qolishingiz aniq! Ishonmaysizmi? Unda videoni ko’ring! 🥤 Agar siz doimiy harakatda bo’lsangiz, sport zaldan chiqmasangiz yoki shunchaki maza qilib, zararli bo’lmagan…',likes:10,comments:4,views:110,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DeY72-rN8aE/'},
+  {a:'own_uz_ig',d:D('2026-09-23'),h:17,mi:4,text:'V7 PINAPPLE-MALT',likes:17,comments:5,views:74,fmt:'Reel',prods:['pmalt'],url:'https://www.instagram.com/p/DdoRJ05NhFz/'},
+  {a:'own_uz_ig',d:D('2026-09-22'),h:0,mi:10,text:'V7 LIMON-MINT🍋🌱',likes:18,comments:3,views:101,fmt:'Reel',prods:['lmint'],url:'https://www.instagram.com/p/Ddj4N5zN2eC/'},
+  {a:'own_uz_ig',d:D('2026-09-19'),h:14,mi:20,text:'',likes:24,comments:3,views:147,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DddrJpANg3w/'},
+  {a:'own_uz_ig',d:D('2026-09-16'),h:13,mi:59,text:'🍋🌿 V7 LEMON MINT Limonning yorqin ta’mi. Yalpizning mayin salqinligi. Va har bir qultumda — haqiqiy tetiklik. 💧 V7 Lemon Mint — issiq kunlarda o‘zingizni yangicha his qilish uchun. ✨ Bir qultum. Bir zum. Yangi kayfiyat. #V7 #LemonMint…',likes:15,comments:5,views:76,fmt:'Reel',prods:['lmint'],url:'https://www.instagram.com/p/DdV6V3dt0uj/'},
+  {a:'own_uz_ig',d:D('2026-08-27'),h:15,mi:32,text:'V7 @v7uzbekistan',likes:704,comments:53,views:19316,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dcik39noK7b/'},
+  {a:'own_uz_ig',d:D('2026-08-25'),h:19,mi:6,text:'Hozirda bizning ichimliklarimizni: Makro Andalus Assorti Baraka Cool grocery va yana bir qancha do’konlardan v7 ichimligini xarid qilishingiz mumkin.',likes:39,comments:9,views:232,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dcdzy8dtG2v/'},
+  {a:'own_uz_ig',d:D('2026-08-25'),h:18,mi:51,text:'Qurtobani sevuchi tanishlarilaga yuborib qo’yila🤤✈️ @v7uzbekistan suvlari bilan yanayam@mazzali😋💚 #rek #top #trendingreels #food #instalike',likes:66,comments:29,views:884,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dcdx3wFgyzm/'},
+  {a:'own_uk_ig',d:D('2026-09-03'),h:19,mi:50,text:'V Cola vs Coca-Cola…👀 If you haven’t tried our V Cola, you’re missing out!!! S\\O @young_spray_official @ilhanm.a @chronikslewdem4life @prince_of_danawf.o.g @davinadesmurez @huntizzy1 Free Smurkio🤲🏾@lildurk Tune in… @rtmpodcastshow every…',likes:52,comments:6,views:3582,fmt:'Reel',prods:['cola'],pin:1,url:'https://www.instagram.com/p/Dc1e-F2AuK_/'},
+  {a:'own_uk_ig',d:D('2026-08-25'),h:15,mi:2,text:'‘The Greatest Drink’ S/O to the Legend @young_spray_official for putting V7 on the MAP!!!👑🫡🚿 Big up the “LUNACYYYY” @11millz_ @conspiracyfactualist11millz always bringing knowledge to the table everytime!!(best character unlocked)👊🏾💪🏾…',likes:41,comments:13,views:2477,fmt:'Reel',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/DcdwqK9Is7r/'},
+  {a:'own_uk_ig',d:D('2026-08-10'),h:23,mi:46,text:'New look, same great taste! S/O @zezemillz💎 #v7drinks #sparkling #zezemillz #uk #london',likes:10,comments:3,views:1580,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Db4HhDlIqxK/'},
+  {a:'own_uk_ig',d:D('2026-07-27'),h:15,mi:54,text:'‘Best Drink In Town’ V7 S/O @jayverified__ @young_spray_official Available soon on our website! WWW.SE7ENTHHEAVEN.COM #v7drinks #flavours #uk #explorepage',likes:28,comments:3,views:1556,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DbTOXrWoNJN/'},
+  {a:'own_uk_ig',d:D('2026-07-19'),h:22,mi:30,text:'S/O to the best and number 1 podcast in the UK!! @rtmpodcastshow where we keep things Realer Than Most’🤲🏾❤️🏁 #V7drinks #sparkling #flavours #youngspray #rtm',likes:62,comments:2,views:377,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Da_VNB7IEKG/'},
+  {a:'own_uk_ig',d:D('2026-07-15'),h:22,mi:42,text:'V7 Blueberry for a smooth boost and distinctive taste; full of flavour and enriched with vitamins & honey… Available soon on our website! WWW.SE7ENTHHEAVEN.COM #v7drinks #blueberry #sparkling #uk #explorepage',likes:18,comments:0,views:258,fmt:'Reel',prods:['blue'],url:'https://www.instagram.com/p/Da1DURlIclx/'},
+  {a:'own_uk_ig',d:D('2026-07-04'),h:19,mi:1,text:'Amazing V7 sparkling drinks enriched with vitamins…Available soon on our website! WWW.SE7ENTHHEAVEN.COM S/O @rtmpodcastshow 🗣️®️™️🦁 @realerthanmostshow 😅🧠🎮',likes:25,comments:2,views:2499,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DaYUxgGoRdu/'},
+  {a:'own_uk_ig',d:D('2026-05-13'),h:20,mi:51,text:'The can being squeezed tells you enough about the flavours. #v7drinks #stockup #ordernow #fmcg #softdrinksuk',likes:5,comments:0,views:121,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DYSowKcMMH7/'},
+  {a:'own_uk_ig',d:D('2026-04-29'),h:21,mi:56,text:'Pink lemonade just got a glow up 🍓🍋 Fresh, crisp and seriously refreshing. Light citrus with subtle berry notes and a clean sparkling finish that hits every time. Built for summer days, late nights and everything in between. V7 Pink…',likes:21,comments:1,views:0,fmt:'Image',prods:['pink'],url:'https://www.instagram.com/p/DXutIdwjBQ0/'},
+  {a:'own_uk_ig',d:D('2026-04-22'),h:21,mi:20,text:'Better than who? 🤫👀 #v7drinks',likes:10,comments:0,views:187,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DXcnaEaMAhY/'},
+  {a:'own_uk_ig',d:D('2026-04-21'),h:13,mi:59,text:'#v7pinklemonadeflavour #vitamindrink #sparklingdrink',likes:12,comments:0,views:174,fmt:'Reel',prods:['pink'],url:'https://www.instagram.com/p/DXZQK-zqCFc/'},
+  {a:'own_uk_ig',d:D('2026-04-14'),h:20,mi:22,text:'New flavour approved 👍 #v7drinks #ordernow',likes:276,comments:1,views:3235,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DXH6aNKMvH3/'},
+  {a:'own_in_ig',d:D('2026-10-09'),h:21,mi:45,text:'Mumbai weather said stay hot… we said not on our watch! 🥵🤝🧊 Grab your V7, pick your flavour, and let the chill take over. 🌴 Heat outside. Chill inside. V7 on repeat. 💚💗💛 #mumbaiheat #heatwaves #refreshingdrink #summerdrinks #V7',likes:9,comments:0,views:0,fmt:'Image',prods:['ALL'],url:'https://www.instagram.com/p/DeR6gs-IupJ/'},
+  {a:'own_in_ig',d:D('2026-10-07'),h:21,mi:21,text:'Thank god, it was just a dream🥹🥹 . . . . #meme #refreshyourday #energyboost #drinkv7 #tastetheenergy',likes:24,comments:0,views:731,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DeMuLVLIMnW/'},
+  {a:'own_in_ig',d:D('2026-10-05'),h:18,mi:8,text:'If you can’t hear this post then you are thirsty for V7🫣 . . . . #refreshingdrink #drink #asmr #refreshingdrink #V7',likes:9,comments:0,views:0,fmt:'Carousel',prods:['ALL'],url:'https://www.instagram.com/p/DeHOmpkiMX_/'},
+  {a:'own_in_ig',d:D('2026-10-02'),h:19,mi:42,text:'Let V7 refresh you to the left to the right…🙈 . . . . #meme #refreshingdrink #drinkv7 #refreshyourday #energyboost',likes:16,comments:0,views:117,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dd_qyETowp0/'},
+  {a:'own_in_ig',d:D('2026-10-01'),h:1,mi:28,text:'When noodles meet the perfect drink 💕 @drinkv7 @joayotopokki {nesco , Goregaon, brand, collab, paid, viral, like , comment , share } #collaboration #brand #instagramreels #fyp #viral',likes:191,comments:5,views:2660,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dd7InGHzpM0/'},
+  {a:'own_in_ig',d:D('2026-09-30'),h:20,mi:47,text:'🥤✨ V7 Drink is at ANUGA Select India! ✨🥤 Ready to discover your next favourite fizzy drink? 👀💥 Come visit V7 Drink and experience the refreshing vibes at the exhibition! 📍 NESCO, Hall 06 📌 Stall B15 🎪 ANUGA Select India Don’t just hear…',likes:136,comments:3,views:1071,fmt:'Reel',prods:['ALL'],pin:1,url:'https://www.instagram.com/p/Dd6ocRJNOsD/'},
+  {a:'own_in_ig',d:D('2026-09-28'),h:21,mi:28,text:'What’s better than one V7? Threee🙈 . . . . #refreshingdrink #refreshing #drinkv7 #energyboost #refreshyourday',likes:18,comments:4,views:82,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Dd1jzKVomJx/'},
+  {a:'own_in_ig',d:D('2026-09-25'),h:13,mi:42,text:'Egyptian flavours are making their way to Mumbai! 🇪🇬✨ Join us at Anuga Select India 2026 and explore the taste, culture and products Egypt has to offer. 📍 Stall B15 | Bombay Exhibition Centre 📅 29 Sept – 1 Oct ⏰ 10 AM – 6 PM Your…',likes:6,comments:0,views:38,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DdtAF4AIlb1/'},
+  {a:'own_in_ig',d:D('2026-09-23'),h:19,mi:8,text:'How many sips did you get?🙈 . . . . #neverhaveiever #gameschallenge #drinkingame #refreshingdrink #drinkv7',likes:27,comments:0,views:878,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/DdobuvSIuGn/'},
+  {a:'own_in_ig',d:D('2026-09-21'),h:19,mi:36,text:'The only +4 worth accepting 👀 . . . . #uno #refreshing #refreshingdrink #unocards #v7',likes:8,comments:0,views:0,fmt:'Image',prods:['ALL'],url:'https://www.instagram.com/p/DdjVZrZIrp-/'},
+  {a:'own_in_ig',d:D('2026-09-19'),h:17,mi:27,text:'Being Baddie with best drink ever 🫣 . . . . #baddie #problem #drinkv7 #refreshyourday #energyboost',likes:15,comments:0,views:603,fmt:'Reel',prods:['ALL'],url:'https://www.instagram.com/p/Ddd9EvHxn4d/'},
+  {a:'own_in_ig',d:D('2026-09-16'),h:13,mi:31,text:'POV: Your girl grip is fully stocked 🎀 . . . . #girlsgrip #pinklemonade #sodadrink #aesthetic #refreshingdrink',likes:8,comments:0,views:0,fmt:'Image',prods:['pink'],url:'https://www.instagram.com/p/DdVzwtjOh-5/'}
+];/*END_REAL_OWN_X*/
+REAL_OWN_X.forEach(function(r){var a=AUTH[r.a];if(r.d<0||r.d>NDAYS-1)return;
+  POSTS.push({id:'o'+(PID++),d:r.d,h:r.h,mi:r.mi,pl:'ig',a:a.id,g:null,c:'own',lang:a.lang,text:r.text||'(no caption)',tags:[],s:'pos',emo:'Joy',
+    gov:a.gov,cty:a.cty,seg:'brand',owned:true,needsReply:false,replied:null,cpos:null,prods:r.prods,fmt:r.fmt,views:r.views,likes:r.likes,comments:r.comments,shares:0,url:r.url,real:true});
 });
 /* =========================================================
    Rumors & attacks: real public posts about V7 from X, Facebook, Instagram and TikTok,
@@ -1593,8 +1701,11 @@ var TPLC={
   p_taste:{ar:['أحلى طعم 😍','جربتها وطلعت تحفة','طعمها جامد بجد','أحسن من أي حاجة مستوردة'],fr:['gamda awy 😍','a7la 7aga'],en:['Love it!','So good 😍','Best local soda']},
   n_tag:{ar:['@{F} تعالي نجربها','@{F} شوف دي'],fr:['@{F} yalla negarabha'],en:['@{F} we need to try this']},
   n_emoji:{ar:['❤️❤️','😍😍😍','🔥🔥'],en:['❤️','😍🔥']},
+  p_hype:{ar:['شكلها هتبقى جامدة 😍','مستني أجربها','عاش يا V7 👏','V7 بتفاجئنا كل مرة ❤️'],fr:['mestanyeeha 😍'],en:['Can’t wait to try it!','Looks amazing 🔥']},
   i_size:{ar:['اعملوا لتر و٢ لتر بقى','محتاجين إزازة كبيرة للعزومات'],fr:['e3melo litr w 2 litr'],en:['Please make a 1L bottle']},
-  i_flavor:{ar:['نفسنا في نكهة مانجا','اعملوا فراولة'],en:['Mango flavor next please']},
+  i_flavor:{ar:['اعملوا بطيخ بقى','طب مش ناويين تعملوا خوخ؟','نفسنا في نكهة مانجا','ليه متعملوش فراولة؟','نفسي في تفاح أخضر'],fr:['e3melo watermelon'],en:['we want WATERMELON','make mix berry flavor','make a winter edition v7']},
+  i_diet:{ar:['عايزين شعير من غير سكر','ياريت تعملوا شعير من غير سكر 🙄'],en:['Sugar-free malt please']},
+  c_contact:{ar:['بعتلكم رسالة ياريت حد يرد','عاوز رقم الشكوى','ممكن أرقام تواصل؟'],en:['I sent you a message, no reply yet']},
   i_cream:{ar:['رجعوا الكريم صودا','ليه مش طول السنة؟'],fr:['rag3o el cream soda'],en:['Bring Cream Soda back!']},
   q_cream:{ar:['هترجع إمتى؟','الكريم صودا راجعة إمتى؟'],en:['When is it coming back?']},
   c_avail:{ar:['مش لاقياها في أي مكان','مختفية من السوبر ماركت عندنا'],fr:['msh la2yaha khales'],en:['Can’t find it anywhere']},
@@ -1602,49 +1713,66 @@ var TPLC={
   c_sweet:{ar:['مسكرة زيادة شوية'],en:['A bit too sweet for me']},
   p_local:{ar:['منتج مصري نفتخر بيه 🇪🇬','فخر الصناعة المصرية'],en:['Proud of this Egyptian brand 🇪🇬']},
   b_buy:{ar:['هجيب كرتونة النهارده','نازلة أجيبها حالاً'],fr:['nazel ageebha delwa2ty'],en:['Buying a pack today']},
-  q_wholesale:{ar:['عايز أبقى موزع، أتواصل إزاي؟','محتاج تلاجة V7 للمحل'],en:['How can I become a distributor?']}
+  q_wholesale:{ar:['عاوز ابقى موزع معتمد','محتاج تلاجة V7 للمحل','أقرب منفذ أو موزع فين؟','عاوز انزل تلاجة في المحل'],en:['How can I become a distributor?']},
+  q_launch:{ar:['هتنزل إمتى؟','ياريت تنزل في أقرب وقت','هتبقى موجودة في كل المحافظات؟','مستنيين نشوفها في السوق'],fr:['hatenzel emta?'],en:['When will it be in stores?']}
 };
 var V7_REPLY={
   q_where:['متوفرة في كارفور وأمازون مصر وأغلب السوبر ماركت 💙','ابعتلنا رسالة بمنطقتك ونقولك أقرب مكان'],
   q_price:['سعر الكانز حوالي ١٥ جنيه في السوبر ماركت 💙'],
   q_cream:['راجعة صيف ٢٠٢٧ 😉'],
+  q_launch:['قريب جداً في كل المحافظات 🧡 تابعونا'],
+  p_hype:['مستنيين رأيك لما تجربها 🧡'],
   c_avail:['آسفين جداً! ابعتلنا اسم المنطقة ونبلغ فريق التوزيع'],
   c_price:['السعر الرسمي حوالي ١٥ جنيه، لو لقيته أغلى ابعتلنا اسم المحل'],
   q_wholesale:['ابعتلنا رسالة ببياناتك وفريق المبيعات هيتواصل معاك'],
-  def:['شكراً على رأيك 💙','نورتنا ❤️'],
+  c_contact:['آسفين على التأخير، ابعتلنا رقمك في رسالة وهنتواصل معاك'],
+  i_flavor:['أهلاً بيك، شكراً لمشاركة اقتراحك معنا. تم إرساله إلى القسم المختص 💚'],
+  i_diet:['أهلاً بيك، شكراً لمشاركة اقتراحك معنا. تم إرساله إلى القسم المختص 💚'],
+  i_size:['أهلاً بيك، شكراً لمشاركة اقتراحك معنا. تم إرساله إلى القسم المختص 💚'],
+  def:['مبسوطين انها عجبتك 🤩💚','شكراً على رأيك 💚','نورتنا ❤️'],
   en:['Thank you for your support! 💙','Send us a message and we’ll point you to the nearest store.'],
   french:['Merci pour votre soutien ! 💙','Écrivez-nous et on vous indique le point de vente le plus proche.'],
   uz:['Rahmat! 💙','Bizga xabar yozing, eng yaqin do‘konni aytamiz.']
 };
 var COMMENTS=[],PIDX={};POSTS.forEach(function(p){PIDX[p.id]=p;});
 (function genComments(){
-  var CW_OWN={q_where:10,q_price:5,p_taste:14,n_tag:9,n_emoji:8,i_size:3,i_flavor:3,c_avail:4,c_price:3,c_sweet:2,p_local:4,b_buy:4,q_wholesale:1.5};
+  /* Mix and reply habits taken from real comments on V7's Facebook and TikTok posts (13 Oct 2026): mostly praise and flavour
+     requests, a few sales leads (fridges, distributors). V7 answers most Facebook comments, usually the next day. */
+  var CW_OWN={p_taste:26,p_local:3,b_buy:3,i_flavor:7,i_diet:2,i_size:2,q_wholesale:2,c_contact:2,c_avail:2,c_price:1.5,c_sweet:1,q_where:4,q_price:2,n_emoji:5,n_tag:4};
+  /* Comments on a new product's launch post, from 34 real comments on V Orange's launch (11–13 Oct 2026): excitement, friend tags,
+     “when will it be in stores?”, and requests for 1 L bottles, other flavours and sugar-free versions */
+  var CW_LAUNCH={p_hype:10,n_tag:4,n_emoji:6,i_flavor:4,i_diet:2,i_size:2,q_where:3,q_launch:3,b_buy:1,p_local:2};
   var CW_UGC={p_taste:12,q_where:6,q_price:4,n_tag:8,n_emoji:6,c_avail:3,c_price:2,c_sweet:2,b_buy:3,p_local:2,i_flavor:1};
   var ugc=POSTS.filter(function(p){return !p.owned&&!p.camp&&p.pl!=='x';}).map(function(p){return p.reach;}).sort(function(a,b){return b-a;});
   var cut=ugc[Math.floor(ugc.length*.1)]||0,KN=0;
   function finish(cm,p){cm.eng=cm.likes+cm.comments;cm.t=cm.d*1440+cm.h*60+cm.mi;cm.text_l=cm.text.toLowerCase();cm.reach=Math.min(p.reach,Math.max(20,cm.eng*40));cm.reachHow='comment';cm.pf='feed';COMMENTS.push(cm);}
   function v7Reply(p,cm){
     var page=AUTH[p.a],L=page.lang==='french'?'french':page.lang==='uz'?'uz':page.lang==='en'||p.cty!=='EG'?'en':'ar';
-    var dd=Math.min(NDAYS-1,cm.d+(R()<.7?0:1)),hh=dd===cm.d?Math.min(23,cm.h+Math.floor(rnd(0,5))):Math.floor(rnd(9,22));
+    var dd=Math.min(NDAYS-1,cm.d+(R()<.25?0:1)),hh=dd===cm.d?Math.min(23,cm.h+Math.floor(rnd(0,4))):Math.floor(rnd(10,15));
     var r={id:'k'+(KN++),kind:'comment',parent:p.id,replyTo:cm.id,d:dd,h:hh,mi:Math.floor(rnd(0,60)),pl:p.pl,a:page.id,g:null,sr:null,prods:p.prods,c:'own_reply',lang:L==='ar'?'ar':L,
       text:pick(L==='ar'?(V7_REPLY[cm.c]||V7_REPLY.def):V7_REPLY[L]),tags:[],s:'pos',emo:'Joy',views:0,likes:Math.round(rnd(0,6)),comments:0,shares:0,gov:'Cairo',cty:p.cty,seg:'brand',owned:true,needsReply:false,replied:null,url:p.url};
     finish(r,p);cm.replyMin=(r.t-cm.t);
   }
   POSTS.forEach(function(p){
     if(p.camp||p.pl==='x')return; /* replies on X aren't collected */
-    var n=p.owned?Math.min(p.comments,60):(p.reach>=cut?Math.min(p.comments,12):0);
+    var n=p.owned?Math.min(p.comments,120):(p.reach>=cut?Math.min(p.comments,12):0);   /* V7's posts carry their real comment counts */
     for(var i=0;i<n;i++){
       var off=+wpick({0:60,1:25,2:10,3:5}),d=Math.min(NDAYS-1,p.d+off);
-      var cw=p.owned?CW_OWN:CW_UGC;
+      var cw=p.owned?CW_OWN:CW_UGC,np=PROD[p.prods[0]];
+      if(p.owned&&np&&np.status==='new'&&d-D(np.launch)<14)cw=CW_LAUNCH;
       if(p.prods.indexOf('cream')>=0&&d>D('2026-09-10'))cw=Object.assign({},cw,{q_cream:14,i_cream:10});
       var c=wpick(cw),T=TPLC[c],lang=wpick({ar:62,fr:18,en:20});if(!T[lang])lang=T.ar?'ar':'en';
-      var a=p.cty!=='EG'?getPersonX(p.pl,COUNTRY[p.cty],p.gov,R()<.5?'diaspora':'local'):getPerson(p.pl,wpick(GOV_W));
-      var sw=CL[c].s,sr=R(),s=sr<sw[0]?'pos':sr<sw[0]+sw[1]?'neu':'neg',needs=!!p.owned&&needsReplyFor(c);
+      /* Abroad, comments are mostly from local people, in the local language; Egyptian dialect marks an Egyptian abroad */
+      var abroadC=p.cty!=='EG'?COUNTRY[p.cty]:null,dias=abroadC&&R()<.12;
+      if(abroadC&&!dias){lang=abroadC.dialect==='en'||R()<.3?'en':abroadC.dialect;if(!T[lang])T=Object.assign({},T,(function(o){o[lang]=T.ar||T.en;return o;})({}));}
+      var a=abroadC?getPersonX(p.pl,abroadC,p.gov,dias?'diaspora':'local'):getPerson(p.pl,wpick(GOV_W));
+      var sw=CL[c].s,sr=R(),s=sr<sw[0]?'pos':sr<sw[0]+sw[1]?'neu':'neg',needs=!!p.owned&&needsReplyFor(c)&&(p.pl==='fb'||p.pl==='yt');
       var cm={id:'k'+(KN++),kind:'comment',parent:p.id,d:d,h:off?hourPick():Math.min(23,p.h+Math.floor(rnd(0,4))),mi:Math.floor(rnd(0,60)),pl:p.pl,a:a.id,g:p.g,sr:p.sr,prods:p.prods,c:c,lang:lang,
         text:pick(T[lang]).replace('{F}',pick(FIRST_EN).toLowerCase()+Math.floor(rnd(1,99))),tags:[],s:s,emo:pick(CL[c].emo),views:0,
         likes:Math.max(0,Math.round(Math.exp(rnd(0,p.owned?3.2:2.6)))-1),comments:R()<.12?Math.round(rnd(1,6)):0,shares:0,gov:p.gov,cty:p.cty,seg:a.seg||'home',owned:false,needsReply:needs,replied:needs?false:null,url:p.url};
       finish(cm,p);
-      if(needs&&R()<.45){cm.replied=true;v7Reply(p,cm);}
+      if(needs&&R()<.65){cm.replied=true;v7Reply(p,cm);}
+      else if(!needs&&p.owned&&p.pl==='fb'&&CL[c].g==='Praise'&&R()<.6)v7Reply(p,cm);   /* V7 thanks most people on Facebook */
     }
   });
   COMMENTS.sort(function(a,b){return b.t-a.t;});
@@ -1669,14 +1797,14 @@ var VISITS=(function(){
   return o;
 })();
 var FOLLOWERS_IN={cities:[['Cairo',37],['Giza',13],['Alexandria',10],['Mansoura',3.6],['Tanta',2.8],['Zagazig',2.3],['Other cities in Egypt',23.3],['Outside Egypt',8]],
-  age:[['13–17',5],['18–24',33],['25–34',37],['35–44',16],['45 and over',9]],women:47};
+  age:[['13–17',5],['18–24',33],['25–34',37],['35–44',16],['45 and over',9]],women:47,total:38959};
 
 /* =========================================================
    State & filtering
    ========================================================= */
 var state={view:'overview',range:30,products:[],platforms:[],source:'earned',
   pf:null,pfPage:1,pfx:null,pfxPage:1,sorts:{},limits:{},peopleSeg:'all',xPeopleSeg:'all',dd:null,xtab:'overview',xmk:'all',selCamp:null,campOver:{},campChecks:{},campLim:{},gtTerm:'V7',gtAll:false,
-  kind:'posts',metric:'posts',evEdit:null,comp:true,rArea:'all',rCui:'all',custom:null,stab:'summary',pseg:'cola',sOpen:{},hStore:'all',hRate:'both',hRank:'Amazon.eg'};
+  kind:'both',metric:'posts',evEdit:null,comp:true,rArea:'all',rCui:'all',custom:null,stab:'summary',pseg:'cola',sOpen:{},hStore:'all',hRate:'both',hRank:'Amazon.eg'};
 function blankPF(){return {q:'',s:'',intent:'',topic:'',type:'',gap:'',lang:'',tag:'',person:'',group:'',cluster:'',reply:'',seg:'',day:'',onown:'',sort:'reach'};}
 state.pf=blankPF();state.pfx=blankPF();
 /* Posts, comments or both, from the Posts / Comments / Both switch */
@@ -1759,6 +1887,8 @@ function productScope(){
 }
 var GAP=['c_avail','q_where','q_launch','x_where','x_wish'];
 function isGap(p){return GAP.indexOf(p.c)>=0;}
+/* Asking when and where a new product will be sold, in its first 4 weeks */
+function launchQ(p){if(p.c!=='q_where'&&p.c!=='q_launch')return false;var np=PROD[p.prods[0]];return !!np&&np.status==='new'&&p.d-D(np.launch)<28;}
 function isDemand(p){return p.c==='x_where'||p.c==='x_wish';}
 var TRIAL=['p_taste','c_sweet','c_fizz','p_pair','n_share','x_try','x_home'];
 /* Only the country is shown, and only for posts from abroad. Cities and governorates can't be known reliably. */
@@ -1976,7 +2106,7 @@ function lineChart(host,vals,startD,label){
   s+='<path d="M'+X(0)+','+(m.t+ih)+' L'+line+' L'+X(n-1)+','+(m.t+ih)+'Z" fill="var(--bar-soft)"/><path d="M'+line+'" fill="none" stroke="var(--bar)" stroke-width="2" stroke-linejoin="round"/>';
   s+='<circle cx="'+X(n-1)+'" cy="'+Y(vals[n-1])+'" r="3.5" fill="var(--bar)"/>';
   var every=Math.max(1,Math.ceil(n/6));
-  for(var i=0;i<n;i+=every)s+='<text x="'+X(i).toFixed(1)+'" y="'+(H-7)+'" text-anchor="middle">'+fmtD(startD+i)+'</text>';
+  for(var i=0;i<n;i+=every)s+='<text x="'+X(i).toFixed(1)+'" y="'+(H-7)+'" text-anchor="'+(i===n-1&&n>1?'end':'middle')+'">'+fmtD(startD+i)+'</text>';   /* the last date ends at the edge instead of running past it */
   for(var j=0;j<n;j++)s+='<rect class="hit" data-i="'+j+'" x="'+(X(j)-iw/n/2).toFixed(1)+'" y="'+m.t+'" width="'+(iw/n).toFixed(1)+'" height="'+ih+'" fill="transparent"/>';
   host.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(label)+'">'+s+'</svg>';
   var svg=host.firstChild;
@@ -1993,7 +2123,7 @@ function insights(c){
   var pc=countBy(c.cur,function(p){return p.prods[0]==='ALL'?[]:p.prods;}),pp=countBy(c.prev,function(p){return p.prods[0]==='ALL'?[]:p.prods;});
   var mover=null;Object.keys(pc).forEach(function(k){if(state.products.length===1)return;var dl=pc[k]-(pp[k]||0);if(!mover||dl>mover.dl)mover={k:k,dl:dl,c:pc[k],p:pp[k]||0};});
   out.push('<b>'+fmtN(cs.n)+' '+N1(cs.n)+'</b>, '+(ch==null?'with no earlier period to compare.':(ch>=0?'up ':'down ')+Math.abs(Math.round(ch))+'% on the previous '+c.r+' days.')+
-    (mover&&mover.dl>0?' The biggest gain is <b>'+esc(PROD[mover.k].en)+'</b> ('+(mover.p?'+'+Math.round(dPct(mover.c,mover.p))+'%':'new this period')+').':''));
+    (mover&&mover.dl>0?' The biggest gain is <b>'+esc(PROD[mover.k].en)+'</b> ('+(mover.p>=10?'+'+Math.round(dPct(mover.c,mover.p))+'%':mover.p?mover.p+' → '+mover.c:'new this period')+').':''));
   var negT=topE(countBy(c.cur.filter(function(p){return p.s==='neg';}),function(p){return CL[p.c].topic;}),1)[0];
   if(negT){
     var tp1=topE(countBy(c.cur.filter(function(p){return p.s==='neg'&&CL[p.c].topic===negT[0];}),function(p){return p.prods[0]==='ALL'?[]:p.prods;}),1)[0];
@@ -2001,10 +2131,10 @@ function insights(c){
   }
   var q=topE(countBy(c.cur.filter(function(p){return CL[p.c].g==='Questions'&&CL[p.c].intent!=='Sales lead';}),function(p){return p.c;}),1)[0];
   if(q)out.push('Most asked: <b>“'+esc(CL[q[0]].label)+'”</b> ('+q[1]+' '+N1(q[1])+'). '+c.cur.filter(function(p){return p.needsReply&&!p.replied;}).length+' questions and complaints have no reply from V7 yet.');
-  var tc=countBy(c.cur,function(p){return p.tags;}),tp=countBy(c.prev,function(p){return p.tags;}),rise=null;
+  var tc=countBy(c.cur,function(p){return p.tags.filter(realTag);}),tp=countBy(c.prev,function(p){return p.tags;}),rise=null;
   Object.keys(tc).forEach(function(k){if(tc[k]<5)return;var r=tc[k]/((tp[k]||0)+2);if(!rise||r>rise.r)rise={k:k,r:r,c:tc[k],p:tp[k]||0};});
-  if(rise)out.push('Fastest-growing hashtag: <b>'+htag(rise.k)+'</b>, '+rise.c+' '+N1(rise.c)+' vs '+rise.p+' before.');
-  var big=c.cur.filter(function(p){var a=AUTH[p.a];return a.type!=='official'&&a.followers>=1e5;}).sort(function(a,b){return b.reach-a.reach;});
+  if(rise&&rise.c>=rise.p+3)out.push('Fastest-growing hashtag: <b>'+htag(rise.k)+'</b>, '+rise.c+' '+N1(rise.c)+' vs '+rise.p+' before.');
+  var big=c.cur.filter(function(p){var a=AUTH[p.a];return a.type!=='official'&&folKnown(a,p.kind!=='comment')&&a.followers>=1e5;}).sort(function(a,b){return b.reach-a.reach;});
   if(big.length)out.push('<b>'+big.length+' '+N1(big.length)+'</b> came from accounts with 100K+ followers. The one with the most reach was by '+bd(AUTH[big[0].a].name)+' ('+compact(big[0].reach)+').');
   var leads=c.cur.filter(function(p){return CL[p.c].intent==='Sales lead';}).length;
   if(leads)out.push('<b>'+leads+(leads===1?' shop or café':' shops and cafés')+'</b> asked how to stock V7. Pass these to the sales team (Customer voice → Sales leads).');
@@ -2018,7 +2148,7 @@ function insights(c){
    ========================================================= */
 var content=document.getElementById('content');
 var HOOKS=[];
-var TITLES={radar:'Rumors & attacks',overview:'Overview',posts:'All posts',products:'Products',voice:'Customer voice',people:'People',groups:'Facebook groups',hashtags:'Hashtags & words',owned:'Our content',alerts:'Alerts',events:'Events',abroad:'Outside Egypt',stores:'Online stores',restaurants:'Restaurants',trends:'Search trends'};
+var TITLES={radar:'Rumors & attacks',overview:'Overview',posts:'All posts',products:'Products',voice:'Customer voice',people:'People',hashtags:'Hashtags',owned:'Our content',alerts:'Alerts',events:'Events',abroad:'Outside Egypt',stores:'Online stores',restaurants:'Restaurants',trends:'Search trends'};
 
 function vOverview(c){
   var cs=stats(c.cur),ps=stats(c.prev),cm=isCm();
@@ -2049,39 +2179,38 @@ function vOverview(c){
     '<section class="panel s7"><div class="ph"><h2>'+ctitle+info(ctip)+'</h2>'+mseg+'</div>'+legend+'<div class="chart" id="tchart" style="margin-top:8px"></div><div class="events" id="evlist"></div>'+
       (pend?'<div class="evnote"><span><b>'+plural(pend,'suggested event')+'</b> waiting for approval. Only approved events appear on the charts.</span><button type="button" class="linkbtn" style="padding:0" data-act="view" data-v="events">Review →</button></div>':'')+'</section>'+
   '</div>';
-  var emo=topE(countBy(c.cur,function(p){return p.emo;}));
   h+='<div class="g">'+
     '<section class="panel s4"><div class="ph"><h2>Sentiment'+info('Each '+N1(1)+' is marked positive, neutral or negative, whether it’s written in Egyptian Arabic, Franco-Arabic or English.')+'</h2><span class="hint">'+fmtN(cs.n)+' '+N1(cs.n)+'</span></div>'+
       '<div class="stack100" role="img" aria-label="'+pct(cs.pos,cs.n)+'% positive, '+pct(cs.neu,cs.n)+'% neutral, '+pct(cs.neg,cs.n)+'% negative"><span style="width:'+pct(cs.pos,cs.n)+'%;background:var(--pos)"></span><span style="width:'+pct(cs.neu,cs.n)+'%;background:var(--neu)"></span><span style="width:'+pct(cs.neg,cs.n)+'%;background:var(--neg)"></span></div>'+
       '<div class="sentnums"><div><b style="color:var(--pos)">'+pct(cs.pos,cs.n)+'%</b>Positive</div><div><b>'+pct(cs.neu,cs.n)+'%</b>Neutral</div><div><b style="color:var(--neg)">'+pct(cs.neg,cs.n)+'%</b>Negative</div></div>'+
-      '<div class="sub-h">Main emotion in each '+(cm?'comment':'post')+'</div>'+bars(emo.slice(0,6).map(function(e){return {l:e[0],v:e[1],vl:pct(e[1],cs.n)+'%'};}))+'</section>'+
+'</section>'+
     '<section class="panel s4"><div class="ph"><h2>Where and who</h2><span class="hint">share of '+NP()+'</span></div>'+
       bars(topE(countBy(c.cur,function(p){return PL[p.pl].n;})).map(function(e){return {l:e[0],v:e[1],vl:pct(e[1],cs.n)+'%'};}))+
-      '<div class="sub-h">'+(cm?'Who is commenting':'Who is posting')+'</div>'+
-      bars(topE(countBy(c.cur,function(p){var a=AUTH[p.a];return p.g?'Facebook groups':a.type==='person'?'People (own profiles)':a.type==='creator'?'Creators':a.type==='page'?'Pages':a.type==='news'?'News outlets':'V7 official';})).map(function(e){var v=e[0]==='Facebook groups'?'groups':e[0]==='Creators'?'people':'';var r={l:e[0],v:e[1],vl:pct(e[1],cs.n)+'%'};if(v){r.act='view';r.val=v;}return r;}))+
+      (state.kind==='both'?'<div class="sub-h">Where it happens</div>'+bars(topE(countBy(c.cur,function(p){return p.kind!=='comment'?'Public posts about V7':PIDX[p.parent]&&PIDX[p.parent].owned?'Comments under V7’s posts':'Comments under other posts';})).map(function(e){return {l:e[0],v:e[1],vl:pct(e[1],cs.n)+'%'};})):'')+
+      '<div class="sub-h">'+(cm?'Who is commenting':'Who posts publicly')+'</div>'+
+      bars(topE(countBy(cm?c.cur:c.cur.filter(function(p){return p.kind!=='comment';}),function(p){var a=AUTH[p.a];return p.g?'Facebook groups':a.type==='person'?'People (own profiles)':a.type==='creator'?'Creators':a.type==='page'?'Pages':a.type==='news'?'News outlets':'V7 official';})).map(function(e){var r={l:e[0],v:e[1],vl:pct(e[1],cs.n)+'%'};if(e[0]==='Facebook groups'){r.act='posts';r.k='type';r.val='group';}else if(e[0]==='Creators'){r.act='view';r.val='people';}return r;}).map(function(r,i,arr){var t=arr.reduce(function(x,y){return x+y.v;},0);r.vl=pct(r.v,t)+'%';return r;}))+
       '<div class="sub-h">Language</div>'+
       bars(topE(countBy(c.cur,function(p){return LANG[p.lang];})).map(function(e){return {l:e[0],v:e[1],vl:pct(e[1],cs.n)+'%'};}))+'</section>'+
-    '<section class="panel s4"><div class="ph"><h2>'+(cm?'Why people comment':'Why people post')+info('What each '+N1(1)+' is doing: asking a question, complaining, praising, planning to buy, and so on. Click a bar to read them.')+'</h2></div>'+
+    '<section class="panel s4"><div class="ph"><h2>'+(cm?'Why people comment':state.kind==='both'?'Why people post and comment':'Why people post')+info('What each '+N1(1)+' is doing: asking a question, complaining, praising, planning to buy, and so on. Click a bar to read them.')+'</h2></div>'+
       bars(topE(countBy(c.cur,function(p){return CL[p.c].intent;})).map(function(e){return {l:e[0],v:e[1],act:'posts',k:'intent',val:e[0]};}))+'</section>'+
   '</div>';
   var prodRows;
-  if(state.products.length===1){
-    var sel=state.products[0],co=countBy(c.cur.filter(function(p){return p.prods.length>1;}),function(p){return p.prods.filter(function(x){return x!==sel;});});
-    prodRows='<div class="ph"><h2>Mentioned together with '+esc(PROD[sel].en)+'</h2><span class="hint">'+NP()+' naming both</span></div>'+bars(topE(co).map(function(e){return {l:prodLabel(e[0]),v:e[1],act:'setprod',val:e[0],dot:e[0]};}));
-  }else{
+  {
     var pcnt=countBy(c.cur,function(p){return p.prods.length?p.prods:['BRAND'];});
     prodRows='<div class="ph"><h2>Products in the conversation'+info('A post can name more than one product. Comments count under the products of the post they’re on. “Whole range” = about all flavors at once. “No flavor named” = about V7 in general. Click a product to focus the whole dashboard on it.')+'</h2><span class="hint">click to focus</span></div>'+
       bars(topE(pcnt).map(function(e){if(e[0]==='BRAND')return {l:'No flavor named',v:e[1],dim:true};if(e[0]==='ALL')return {l:'Whole range',v:e[1],dim:true};return {l:prodLabel(e[0]),v:e[1],act:'setprod',val:e[0],dot:e[0]};}));
   }
   h+='<div class="g"><section class="panel s6">'+prodRows+'</section>'+
     '<section class="panel s6"><div class="ph"><h2>Topics and how people feel'+info('For each topic: net sentiment (positive minus negative, −100 to +100) and how many '+NP()+'. Green leans positive, red leans negative. Click a topic to read them.')+'</h2></div>'+diverging(topicRows(c.cur))+'</section></div>';
-  var gapL=c.cur.filter(isGap),gapP=c.prev.filter(isGap);
+  var gapL=c.cur.filter(function(p){return isGap(p)&&!launchQ(p);}),gapP=c.prev.filter(function(p){return isGap(p)&&!launchQ(p);}),lq=c.cur.filter(launchQ);
+  var lqP=topE(countBy(lq,function(p){return [p.prods[0]];}),1)[0];
   var gapRows=topE(countBy(gapL,function(p){return p.prods.length&&p.prods[0]!=='ALL'?p.prods:['BRAND'];}),7).map(function(e){return e[0]==='BRAND'?{l:'V7 in general',v:e[1],dim:true}:{l:prodLabel(e[0]),v:e[1],act:'setprod',val:e[0]};});
   var top6=c.cur.slice().sort(SORTERS.reach).slice(0,6);
-  h+='<div class="g"><section class="panel s5"><div class="ph"><h2>Can’t find it'+info(NPc()+' asking where to buy V7 or saying it’s out of stock. Shown by product, because we can’t reliably tell which city or governorate each person is in.')+'</h2><button type="button" class="linkbtn" data-act="posts" data-k="gap" data-v="1">Read them →</button></div>'+
+  h+='<div class="g"><section class="panel s5"><div class="ph"><h2>Can’t find it'+info(NPc()+' asking where to buy V7 or saying it’s out of stock. Shown by product, because we can’t reliably tell which city or governorate each person is in.')+'</h2><button type="button" class="linkbtn" data-act="posts" data-k="gap" data-v="2">Read them →</button></div>'+
     '<div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px"><span class="k-v">'+fmtN(gapL.length)+'</span>'+deltaHTML(gapL.length,gapP.length,{invert:true})+'<span class="muted" style="font-size:12.5px">'+pct(gapL.length,cs.n)+'% of all '+NP()+'</span></div>'+
     '<div class="sub-h" style="margin-top:6px">By product</div>'+bars(gapRows)+
-    (gapL.length?'<div class="sub-h">Latest</div><ul class="brief quiet">'+gapL.slice().sort(SORTERS.new).slice(0,4).map(function(p){return '<li><span dir="auto">“'+esc(p.text.length>90?p.text.slice(0,88)+'…':p.text)+'”</span><span class="muted" style="display:block;font-size:12px">'+fmtD(p.d)+' · '+PL[p.pl].n+(p.prods.length&&p.prods[0]!=='ALL'?' · '+esc(PROD[p.prods[0]].en):'')+'</span></li>';}).join('')+'</ul>':'')+'</section>'+
+    (gapL.length?'<div class="sub-h">Latest</div><ul class="brief quiet">'+gapL.slice().sort(SORTERS.new).slice(0,4).map(function(p){return '<li><span dir="auto">“'+esc(p.text.length>90?p.text.slice(0,88)+'…':p.text)+'”</span><span class="muted" style="display:block;font-size:12px">'+fmtD(p.d)+' · '+PL[p.pl].n+(p.prods.length&&p.prods[0]!=='ALL'?' · '+esc(PROD[p.prods[0]].en):'')+'</span></li>';}).join('')+'</ul>':'')+
+    (lq.length?'<p class="hint-line" style="margin:10px 0 0">Not counted here: '+plural(lq.length,'question')+' about when and where '+esc(PROD[lqP[0]].en)+' will be sold, a new product. <button type="button" class="linkbtn" style="padding:0" data-act="alert" data-k="launch" data-v="'+lqP[0]+'">Read them →</button></p>':'')+'</section>'+
     '<section class="panel s7"><div class="ph"><h2>Top '+NP()+' by reach'+info('Reach is views when the platform shows them. When it hides them, as on most Facebook posts, Instagram photos and Reddit, reach is estimated from likes, comments and shares, and never more than the group’s members or the author’s followers. A comment’s reach is estimated from its likes and replies.')+'</h2><button type="button" class="linkbtn" data-act="view" data-v="posts">See all '+NP()+' →</button></div><div class="pgrid">'+top6.map(postCard).join('')+'</div></section></div>';
   content.innerHTML=h;
   var host=document.getElementById('tchart'),evs=met==='posts'?timeChart(host,c.cur,c):actChart(host,c.act,c,met);
@@ -2096,7 +2225,7 @@ function postsExplorer(list,key,abroad){
     if(f.s&&p.s!==f.s)return false;
     if(f.intent&&CL[p.c].intent!==f.intent)return false;
     if(f.topic&&CL[p.c].topic!==f.topic)return false;
-    if(f.gap&&!isGap(p))return false;
+    if(f.gap&&(!isGap(p)||(f.gap==='2'&&launchQ(p))))return false;
     if(f.lang&&p.lang!==f.lang)return false;
     if(f.tag&&p.tags.indexOf(f.tag)<0)return false;
     if(f.person&&p.a!==f.person)return false;
@@ -2117,7 +2246,7 @@ function postsExplorer(list,key,abroad){
   var topics=Object.keys(countBy(list,function(p){return CL[p.c].topic;})).sort();
   var langs=Object.keys(countBy(list,function(p){return p.lang;}));
   var special=[];
-  if(f.gap)special.push(['gap','Can’t find it']);
+  if(f.gap)special.push(['gap',f.gap==='2'?'Can’t find it':'Looking for it']);
   if(f.tag)special.push(['tag','Hashtag '+f.tag]);
   if(f.person)special.push(['person','By '+AUTH[f.person].name]);
   if(f.group)special.push(['group','In '+GRP[f.group].name]);
@@ -2171,7 +2300,7 @@ function vProducts(c){
   var ddId=state.products.length===1?state.products[0]:(state.dd&&pool.some(function(r){return r.id===state.dd;})?state.dd:topP.id);
   var h='<div class="pcards">'+rows.map(function(r){
     return '<button type="button" class="pcard" style="--pc:'+r.p.c+'" data-act="dd" data-v="'+r.id+'" aria-pressed="'+(r.id===ddId)+'" title="Show details for '+esc(r.p.en)+'">'+
-      '<span class="hd"><span><span class="nm">'+esc(r.p.en)+'</span> <span class="ar">'+esc(r.p.ar)+'</span></span><span class="st '+r.p.status+'">'+STATUS[r.p.status]+'</span></span>'+
+      '<span class="hd"><span><span class="nm">'+esc(r.p.en)+'</span> <span class="ar">'+esc(r.p.ar)+'</span></span>'+(r.p.status!=='core'?'<span class="st '+r.p.status+'">'+STATUS[r.p.status]+'</span>':'')+'</span>'+
       '<span class="row"><span><span class="k-v">'+fmtN(r.n)+'</span> '+deltaHTML(r.n,r.pn)+'</span>'+spark(r.series)+'</span>'+
       '<span class="ft">Net sentiment '+netHTML(r.net,r.n)+' · '+esc(r.topic)+'</span></button>';
   }).join('')+'</div>';
@@ -2179,7 +2308,7 @@ function vProducts(c){
   var trial=l.filter(function(x){return TRIAL.indexOf(x.c)>=0;}),buy=l.filter(function(x){return x.c==='b_buy';}),gap=l.filter(isGap);
   var hasP=function(x){return x.prods.indexOf(ddId)>=0;},PA=actSum(c.actNP.filter(hasP),c.from,c.to),PAP=actSum(ITEMS().filter(function(x){return passBase(x)&&hasP(x)&&x.d>=c.pfrom-PMAX&&x.d<=c.pto;}),c.pfrom,c.pto);
   var since=dp.launch?(NDAYS-1)-D(dp.launch):null;
-  var status=dp.status==='new'?'New · launched '+fmtD(D(dp.launch))+' · day '+(since+1)+' on the market':dp.status==='seasonal'?'Seasonal · off shelves since '+fmtD(D(dp.end)):(dp.line==='vcola'?'V Cola line':'Core range');
+  var status=dp.status==='new'?'New · launched '+fmtD(D(dp.launch))+' · day '+(since+1)+' since launch':dp.status==='seasonal'?'Seasonal · off shelves since '+fmtD(D(dp.end)):(dp.line==='vcola'?'V Cola line':'V7 flavours');
   var focused=state.products.length===1&&state.products[0]===ddId;
   h+='<section class="panel"><div class="dd-head"><div><div class="dd-pick">Product details · '+(state.products.length===1?'chosen in the product filter':'click a product above to switch')+'</div><h2>'+pdot(ddId)+esc(dp.en)+' <span class="ar muted" style="font-size:17px">'+esc(dp.ar)+'</span></h2><div class="period">'+status+' · '+perTxt(c)+'</div></div>'+
     '<button type="button" class="btn'+(focused?'':' primary')+'" data-act="'+(focused?'clearprod':'setprod')+'" data-v="'+ddId+'">'+(focused?'Show all products again':'Show only '+esc(dp.en)+' across the dashboard')+'</button></div>';
@@ -2188,7 +2317,7 @@ function vProducts(c){
     '<div class="tile"><div class="k-top"><span class="k-l">Net sentiment</span>'+info('Percentage of positive '+NP()+' minus percentage of negative '+NP()+' about this product.')+'</div><div class="k-v">'+(s.n?signed(s.net):'—')+'</div><p>'+pct(s.pos,s.n)+'% positive · '+pct(s.neg,s.n)+'% negative</p></div>'+
     '<div class="tile"><div class="k-top"><span class="k-l">Tried it</span>'+info(NPc()+' from people describing the taste after drinking it, positive or negative.')+'</div><div class="k-v">'+fmtN(trial.length)+'</div><p>people who tasted it and '+(isCm()?'commented':'posted')+'</p></div>'+
     '<div class="tile"><div class="k-top"><span class="k-l">Purchase intent</span>'+info(NPc()+' saying they are about to buy it, such as “stocking up” or “getting a carton”.')+'</div><div class="k-v">'+fmtN(buy.length)+'</div><p>about to buy</p></div>'+
-    '<div class="tile"><div class="k-top"><span class="k-l">Can’t find it</span>'+info(NPc()+' asking where to buy this product or saying it is out of stock.')+'</div><div class="k-v">'+fmtN(gap.length)+'</div><p>'+pct(gap.length,s.n)+'% of its '+NP()+'</p></div>'+
+    '<div class="tile"><div class="k-top"><span class="k-l">'+(dp.status==='new'&&NDAYS-1-D(dp.launch)<28?'Looking for it':'Can’t find it')+'</span>'+info(dp.status==='new'&&NDAYS-1-D(dp.launch)<28?NPc()+' asking when and where this new product will be sold, or saying they can’t find it yet.':NPc()+' asking where to buy this product or saying it is out of stock.')+'</div><div class="k-v">'+fmtN(gap.length)+'</div><p>'+pct(gap.length,s.n)+'% of its '+NP()+'</p></div>'+
     (isCm()?'<div class="tile"><div class="k-top"><span class="k-l">Likes and replies</span>'+info('Likes and replies on these comments, counted on the day they happened.')+'</div><div class="k-v">'+compact(PA.eng)+'</div><p>'+deltaHTML(PA.eng,PAP.eng)+'</p></div>':
       '<div class="tile"><div class="k-top"><span class="k-l">Views</span>'+info('Views counted on the day they happened, including older posts that kept getting views.')+'</div><div class="k-v">'+compact(PA.views)+'</div><p>'+compact(PA.eng)+' engagement</p></div>')+
   '</div>';
@@ -2200,18 +2329,16 @@ function vProducts(c){
   var qs=topE(countBy(l.filter(function(x){return CL[x.c].g==='Questions';}),function(x){return x.c;}),5);
   var cps=topE(countBy(l.filter(function(x){return CL[x.c].g==='Complaints';}),function(x){return x.c;}),5);
   var ids=topE(countBy(l.filter(function(x){return CL[x.c].g==='Ideas';}),function(x){return x.c;}),5);
-  var co=topE(countBy(l.filter(function(x){return x.prods.length>1;}),function(x){return x.prods.filter(function(y){return y!==ddId;});}),5);
   h+='<div class="g" style="margin-top:16px">'+
-    '<div class="s6"><div class="sub-h" style="margin-top:0">Top questions</div>'+bars(qs.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'posts',k:'cluster',val:e[0]};}),{wide:true})+'</div>'+
-    '<div class="s6"><div class="sub-h" style="margin-top:0">Top complaints</div>'+bars(cps.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'posts',k:'cluster',val:e[0]};}),{wide:true})+'</div>'+
-    '<div class="s6"><div class="sub-h" style="margin-top:0">Ideas &amp; requests</div>'+bars(ids.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'posts',k:'cluster',val:e[0]};}),{wide:true})+'</div>'+
-    '<div class="s6"><div class="sub-h" style="margin-top:0">Mentioned together with</div>'+bars(co.map(function(e){return {l:prodLabel(e[0]),v:e[1],act:'dd',val:e[0]};}))+'</div>'+
+    '<div class="s4"><div class="sub-h" style="margin-top:0">Top questions</div>'+bars(qs.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'posts',k:'cluster',val:e[0]};}),{wide:true})+'</div>'+
+    '<div class="s4"><div class="sub-h" style="margin-top:0">Top complaints</div>'+bars(cps.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'posts',k:'cluster',val:e[0]};}),{wide:true})+'</div>'+
+    '<div class="s4"><div class="sub-h" style="margin-top:0">Ideas &amp; requests</div>'+bars(ids.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'posts',k:'cluster',val:e[0]};}),{wide:true})+'</div>'+
   '</div>';
   var tp=l.slice().sort(SORTERS.reach).slice(0,4);
   h+='<div class="sub-h">Top '+NP()+' about '+esc(dp.en)+' by reach</div><div class="pgrid">'+tp.map(postCard).join('')+'</div></section>';
   h+='<section class="panel"><div class="ph"><h2>Compare all products</h2><span class="hint">'+perTxt(c)+' · click a row for details · click a column to sort</span></div>'+
     sortTable('prods',[
-      {k:'name',l:'Product',f:function(r){return '<b>'+esc(r.p.en)+'</b> <span class="st '+r.p.status+'">'+STATUS[r.p.status]+'</span>';},sv:function(r){return r.p.en;}},
+      {k:'name',l:'Product',f:function(r){return '<b>'+esc(r.p.en)+'</b>'+(r.p.status!=='core'?' <span class="st '+r.p.status+'">'+STATUS[r.p.status]+'</span>':'');},sv:function(r){return r.p.en;}},
       {k:'n',l:NPc(),r:1,f:function(r){return fmtN(r.n);}},
       {k:'ch',l:'Change',r:1,f:function(r){return deltaHTML(r.n,r.pn);},sv:function(r){return r.pn?r.n/r.pn:1e9;}},
       {k:'share',l:'Share',r:1,f:function(r){return pct(r.n,totalMent)+'%';},sv:function(r){return r.n;}},
@@ -2256,12 +2383,16 @@ function vVoice(c){
   content.innerHTML=h;
 }
 
+/* Comment tools (Facebook, Instagram, TikTok, YouTube) don't return a commenter's followers, and Instagram and Facebook
+   posts don't show a person's followers either (checked 13 Oct 2026). Pages and creators are looked up. */
+function folKnown(a,posted){if(a.followers==null)return false;if(a.type!=='person')return true;return !!posted&&(a.pl==='x'||a.pl==='tt'||a.pl==='yt');}
+function folWhy(a,posted){return !posted&&a.type==='person'?'Comment tools don’t show a commenter’s follower count':'This platform doesn’t show follower counts for personal profiles';}
 function authorRows(list){
   var m={};
   list.forEach(function(p){
     var a=AUTH[p.a];if(a.type==='official')return;
     var r=m[a.id]||(m[a.id]={a:a,n:0,eng:0,views:0,pos:0,neg:0,neu:0,prods:{},last:-1,unans:0});
-    r.n++;r.eng+=p.eng;r.views+=p.views;r[p.s]++;p.prods.forEach(function(x){if(x!=='ALL')r.prods[x]=(r.prods[x]||0)+1;});if(p.t>r.last)r.last=p.t;if(p.needsReply&&!p.replied)r.unans++;
+    r.n++;r.eng+=p.eng;r.views+=p.views;r[p.s]++;if(p.kind!=='comment')r.posted=true;p.prods.forEach(function(x){if(x!=='ALL')r.prods[x]=(r.prods[x]||0)+1;});if(p.t>r.last)r.last=p.t;if(p.needsReply&&!p.replied)r.unans++;
   });
   return Object.keys(m).map(function(k){var r=m[k];r.net=Math.round((r.pos-r.neg)/r.n*100);return r;});
 }
@@ -2269,7 +2400,7 @@ function peopleCols(abroad){
   var cols=[
     {k:'name',l:'Account',f:function(r){return '<span class="who">'+plBadge(r.a.pl)+'<span style="min-width:0"><span class="nm" dir="auto">'+esc(r.a.name)+'</span><small>'+esc(r.a.handle&&r.a.type==='person'?'@'+r.a.handle:authorKind(r.a))+'</small></span>'+(r.a.real?'<span class="real">Real</span>':'')+'</span>';},sv:function(r){return r.a.name;}},
     {k:'kind',l:'Type',f:function(r){return esc(authorKind(r.a));},sv:function(r){return authorKind(r.a);}},
-    {k:'fol',l:'Followers',r:1,f:function(r){return r.a.followers==null?'<span class="muted" title="This platform doesn’t show a follower count for personal profiles">—</span>':compact(r.a.followers);},sv:function(r){return r.a.followers||0;}}
+    {k:'fol',l:'Followers',r:1,f:function(r){return folKnown(r.a,r.posted)?compact(r.a.followers):'<span class="muted" title="'+folWhy(r.a,r.posted)+'">—</span>';},sv:function(r){return folKnown(r.a,r.posted)?r.a.followers:-1;}}
   ];
   if(abroad)cols.push({k:'cty',l:'Country',f:function(r){return esc(COUNTRY[r.a.cty].en);},sv:function(r){return COUNTRY[r.a.cty].en;}});
   cols=cols.concat([
@@ -2303,56 +2434,13 @@ function vPeople(c){
   content.innerHTML=h;
 }
 
-function groupRows(L,prevL,list){
-  var gg=groupBy(L.filter(function(p){return p.g;}),function(p){return p.g;}),pg=countBy(prevL.filter(function(p){return p.g;}),function(p){return p.g;});
-  return list.map(function(g){var l=gg[g.id]||[],s=stats(l);var tt=topE(countBy(l,function(p){return CL[p.c].topic;}),1)[0],tp=topE(countBy(l,function(p){return p.prods[0]==='ALL'?[]:p.prods;}),1)[0];
-    return {g:g,n:s.n,pn:pg[g.id]||0,eng:s.eng,net:s.net,topic:tt?tt[0]:'—',prod:tp?PROD[tp[0]].en:'—',q:l.filter(function(p){return CL[p.c].g==='Questions';}).length,un:l.filter(function(p){return p.needsReply&&!p.replied;}).length};}).filter(function(r){return r.n>0;});
-}
-function groupCols(abroad){
-  var cols=[
-    {k:'name',l:'Group',f:function(r){return '<span dir="auto" style="font-weight:600">'+esc(r.g.name)+'</span>'+(r.g.real?' <span class="real">Real group</span>':'')+'<span class="sub">Public group</span>';},sv:function(r){return r.g.name;}},
-    {k:'mem',l:'Members',r:1,f:function(r){return compact(r.g.members);},sv:function(r){return r.g.members;}}
-  ];
-  if(abroad)cols.push({k:'cty',l:'Country',f:function(r){return r.g.cty?esc(COUNTRY[r.g.cty].en):'Several countries';},sv:function(r){return r.g.cty?COUNTRY[r.g.cty].en:'~';}});
-  return cols.concat([
-    {k:'n',l:NPc(),r:1},{k:'ch',l:'Change',r:1,f:function(r){return deltaHTML(r.n,r.pn);},sv:function(r){return r.pn?r.n/r.pn:1e9;}},
-    {k:'eng',l:isCm()?'Likes and replies':'Engagement',r:1,f:function(r){return compact(r.eng);}},{k:'net',l:'Net sentiment',r:1,f:function(r){return netHTML(r.net,r.n);}},
-    {k:'q',l:'Questions',r:1},{k:'un',l:'No reply yet',r:1,f:function(r){return r.un?'<span style="color:var(--bad-text)">'+r.un+'</span>':'0';}},
-    {k:'topic',l:'Top topic'},{k:'prod',l:'Top product'}
-  ]);
-}
-function vGroups(c){
-  var L=c.cur.filter(function(p){return p.g;}),fbN=c.cur.filter(function(p){return p.pl==='fb';}).length;
-  var rows=groupRows(c.cur,c.prev,GROUPS);
-  function best(fn,lbl,fmt){var r=rows.slice().sort(function(a,b){return fn(b)-fn(a);})[0];return r?'<button type="button" class="tile" data-act="group" data-v="'+r.g.id+'"><div class="k-l">'+lbl+'</div><div style="font-weight:600;margin-top:4px" dir="auto">'+esc(r.g.name)+'</div><p>'+fmt(r)+'</p></button>':'';}
-  var h='<div class="tiles">'+
-    '<div class="tile"><div class="k-top"><span class="k-l">Groups talking about V7</span>'+info('Public Facebook groups where members posted about V7. Private groups can’t be collected, so they never appear here.')+'</div><div class="k-v">'+rows.length+'</div><p>'+fmtN(L.length)+' '+N1(L.length)+' · '+pct(L.length,fbN)+'% of Facebook '+NP()+'</p></div>'+
-    best(function(r){return r.n;},'Most active',function(r){return r.n+' '+N1(r.n)+' · '+compact(r.g.members)+' members';})+
-    best(function(r){return r.q;},'Most questions',function(r){return r.q+' questions';})+
-    best(function(r){return r.n>=4?-r.net:-999;},'Most negative',function(r){return 'net sentiment '+signed(r.net)+' · '+esc(r.topic);})+
-  '</div>';
-  h+='<section class="panel"><div class="ph"><h2>Facebook groups</h2><span class="hint">click a group to see its '+NP()+'</span></div>'+sortTable('groups',groupCols(false),rows,{sort:'n',act:'group',rid:function(r){return r.g.id;}})+'</section>';
-  h+='<section class="panel"><div class="ph"><h2>Group '+NP()+' with the most reach'+info('Facebook hides views in groups, so reach is estimated from likes, comments and shares, and never more than the group’s members.')+'</h2><button type="button" class="linkbtn" data-act="posts" data-k="type" data-v="group">See all group '+NP()+' →</button></div>'+(L.length?'<div class="pgrid">'+L.slice().sort(SORTERS.reach).slice(0,6).map(postCard).join('')+'</div>':'<div class="empty">No group '+NP()+' in this period.</div>')+'</section>';
-  content.innerHTML=h;
-}
-
-var STOP=('في من على و بس ده دي دا هو هي أي اي مش ان إن مع عشان بقى كل حد فين إيه ايه اللي انا أنا لحد النهارده يا لو ولا لسه شوية أوي اوي بجد بتاع بتاعة كان بعد ما قد إمتى ليه تاني لـ زي عن أو او كذا قالي عايز عايزة عايزين ياريت بكام دلوقتي حالاً بالنسبالي المرة نزل بقت '+
-  'the a an is to of and for in my at it this so be on me i with just really our new has have any yet next more even all anyone anywhere every '+
-  'el w fe ya bas mesh msh ana da di ma3 delwa2ty wala lessa shwaya gedan awy 3ala bta3 bta3et kol 7ad fein emta nezel').split(' ');
-function wordCloud(list,abroad){
-  var words={};
-  list.forEach(function(p){p.text_l.replace(/[؟?!.,،:;"“”()٪%…\-]/g,' ').split(/\s+/).forEach(function(w){if(w.length<2||/^\d+$/.test(w)||w==='v7'||STOP.indexOf(w)>=0)return;words[w]=(words[w]||0)+1;});});
-  var tw=topE(words,40),mx=tw.length?tw[0][1]:1,mn=tw.length?tw[tw.length-1][1]:1;
-  return '<div class="cloud">'+tw.map(function(e){var sz=12+Math.round((e[1]-mn)/((mx-mn)||1)*14);return '<button type="button" data-act="'+(abroad?'xsearch':'search')+'" data-v="'+esc(e[0])+'" style="font-size:'+sz+'px" dir="auto" title="Used in '+e[1]+' '+N1(e[1])+'. Click to read them.">'+esc(e[0])+'</button>';}).join('')+'</div>';
-}
 function vHashtags(c){
-  var tc=groupBy(c.cur,function(p){return p.tags;}),tp=countBy(c.prev,function(p){return p.tags;});
+  var tc=groupBy(c.cur,function(p){return p.tags.filter(realTag);}),tp=countBy(c.prev,function(p){return p.tags;});
   var CAMP={'#SummerOfColors':1,'#V7Pomegranate':1,'#V7Malt':1,'#V7':1,'#V7Egypt':1,'#VCola':1};
   var rows=Object.keys(tc).map(function(k){var l=tc[k],s=stats(l);var tpr=topE(countBy(l,function(p){return p.prods[0]==='ALL'?[]:p.prods;}),1)[0];return {tag:k,n:s.n,pn:tp[k]||0,views:s.views,eng:s.eng,net:s.net,prod:tpr?PROD[tpr[0]].en:'—',camp:!!CAMP[k]};});
-  var rising=rows.filter(function(r){return r.n>=4;}).sort(function(a,b){return b.n/(b.pn+2)-a.n/(a.pn+2);}).slice(0,6);
+  var rising=rows.filter(function(r){return r.n>=3&&r.n>r.pn;}).sort(function(a,b){return b.n/(b.pn+2)-a.n/(a.pn+2);}).slice(0,6);
   if(isCm()){
-    content.innerHTML='<div class="g"><section class="panel s8"><div class="ph"><h2>Hashtags</h2></div><div class="empty">Comments almost never use hashtags, so this table only counts posts. <button type="button" class="linkbtn" data-act="kind" data-v="posts">Switch to posts</button></div></section>'+
-      '<section class="panel s4"><div class="ph"><h2>Words people use most in comments'+info('The most common words in comments, without filler words. Click a word to read the comments that use it.')+'</h2></div>'+wordCloud(c.cur,false)+'</section></div>';
+    content.innerHTML='<section class="panel"><div class="ph"><h2>Hashtags</h2></div><div class="empty">Comments almost never use hashtags, so this page counts posts. <button type="button" class="linkbtn" data-act="kind" data-v="posts">Switch to posts</button></div></section>';
     return;
   }
   var h='<div class="g"><section class="panel s8"><div class="ph"><h2>Hashtags'+info('Hashtags used in posts about V7. “V7 tag” marks V7’s own brand and campaign hashtags. Click a hashtag for its posts.')+'</h2><span class="hint">click a hashtag for its posts</span></div>'+sortTable('tags',[
@@ -2362,8 +2450,8 @@ function vHashtags(c){
     {k:'net',l:'Net sentiment',r:1,f:function(r){return netHTML(r.net,r.n);}},{k:'prod',l:'Top product'}
   ],rows,{sort:'n',act:'tag',rid:function(r){return r.tag;},limit:20})+'</section>'+
   '<section class="panel s4"><div class="ph"><h2>Rising this period</h2><span class="hint">vs previous '+c.r+' days</span></div>'+
-    (rising.length?'<div class="cl">'+rising.map(function(r){return '<div class="clr"><button type="button" class="linkbtn num" style="padding:0;text-align:left;font-size:13.5px" data-act="tag" data-v="'+esc(r.tag)+'" dir="ltr">'+esc(r.tag)+'</button><span class="ct">'+r.n+' '+deltaHTML(r.n,r.pn)+'</span></div>';}).join('')+'</div>':'<div class="empty">Not enough data.</div>')+
-    '<div class="sub-h">Words people use most</div>'+wordCloud(c.cur,false)+'</section></div>';
+    (rising.length?'<div class="cl">'+rising.map(function(r){return '<div class="clr"><button type="button" class="linkbtn num" style="padding:0;text-align:left;font-size:13.5px" data-act="tag" data-v="'+esc(r.tag)+'" dir="ltr">'+esc(r.tag)+'</button><span class="ct">'+r.n+' '+deltaHTML(r.n,r.pn)+'</span></div>';}).join('')+'</div>':'<div class="empty">No hashtag grew this period. Public posts about V7 are few, so hashtags move slowly.</div>')+
+    '</section></div>';
   content.innerHTML=h;
 }
 
@@ -2407,7 +2495,7 @@ function vOwned(c){
   var Fc=FOLLOWERS_IN;
   h+='<div class="g"><section class="panel s8"><div class="ph"><h2>Profile visits'+info('How many times people opened V7’s page or profile. Comes from each platform’s insights once V7 connects its accounts (Meta Business Suite for Facebook and Instagram, TikTok Business for TikTok). Usually rises the day after a post does well.')+'</h2><span class="hint">from V7’s account insights · demo numbers</span></div>'+
       (PV.length?'<div class="tiles">'+pvTiles+'</div><div class="chart" id="pvchart" style="margin-top:12px"></div><div class="events" id="pvev"></div><p class="hint-line" id="pvnote" style="margin:10px 0 0"></p>':'<div class="empty">Profile visits are reported by Facebook, Instagram and TikTok. Add one of them in the platform filter.</div>')+'</section>'+
-    '<section class="panel s4"><div class="ph"><h2>Who follows us'+info('Facebook and Instagram report where followers live and their ages, for accounts with 100+ followers. This is the one reliable source of city-level data, and it covers followers only, not everyone who posts about V7.')+'</h2><span class="hint">Meta insights · demo numbers</span></div>'+
+    '<section class="panel s4"><div class="ph"><h2>Who follows us'+info('Instagram reports where V7’s followers live, their age and gender (accounts with 100+ followers). Facebook stopped reporting age and gender for pages in 2024 and gives followers’ cities only. Shown once V7 connects its accounts. It covers followers only, not everyone who posts about V7.')+'</h2><span class="hint">Instagram insights · demo numbers</span></div>'+
       '<div class="sub-h" style="margin-top:0">Where they live</div>'+bars(Fc.cities.map(function(x){return {l:x[0],v:x[1],vl:x[1]+'%',dim:x[0].indexOf('Other')===0||x[0]==='Outside Egypt'};}))+
       '<div class="sub-h">Age</div>'+bars(Fc.age.map(function(x){return {l:x[0],v:x[1],vl:x[1]+'%'};}))+
       '<p class="muted" style="font-size:12.5px;margin:10px 0 0">'+Fc.women+'% women, '+(100-Fc.women)+'% men</p></section></div>';
@@ -2416,7 +2504,7 @@ function vOwned(c){
   var K=COMMENTS.filter(function(k){return cmOk(k,c.from,c.to);}),KP=COMMENTS.filter(function(k){return cmOk(k,c.pfrom,c.pto);}),ks=stats(K),kps=stats(KP);
   var need=K.filter(function(k){return k.needsReply;}),rep=need.filter(function(k){return k.replied;}),wait=need.filter(function(k){return !k.replied;});
   var rt=rep.map(function(k){return k.replyMin;}).sort(function(a,b){return a-b;}),med=rt.length?rt[Math.floor(rt.length/2)]:null;
-  var say=topE(countBy(K,function(k){return k.c;}),8);
+  var shortK=K.filter(function(k){return k.c==='n_tag'||k.c==='n_emoji';}).length,say=topE(countBy(K.filter(function(k){return k.c!=='n_tag'&&k.c!=='n_emoji';}),function(k){return k.c;}),8);
   h+='<div class="g"><section class="panel s5"><div class="ph"><h2>Comments on our posts'+info('Every public comment on V7 Egypt’s posts in this period. A question or complaint counts as answered when a V7 account replies to it.')+'</h2><button type="button" class="linkbtn" data-act="cmposts" data-k="" data-v="">Read them →</button></div>'+
       '<div class="tiles two">'+
         '<div class="tile"><div class="k-l">Comments</div><div class="k-v">'+fmtN(ks.n)+'</div><p>'+deltaHTML(ks.n,kps.n)+'</p></div>'+
@@ -2426,25 +2514,25 @@ function vOwned(c){
       '</div>'+
       '<div class="stack100" style="margin-top:14px" role="img" aria-label="'+pct(ks.pos,ks.n)+'% positive, '+pct(ks.neu,ks.n)+'% neutral, '+pct(ks.neg,ks.n)+'% negative"><span style="width:'+pct(ks.pos,ks.n)+'%;background:var(--pos)"></span><span style="width:'+pct(ks.neu,ks.n)+'%;background:var(--neu)"></span><span style="width:'+pct(ks.neg,ks.n)+'%;background:var(--neg)"></span></div>'+
       '<div class="sentnums"><div><b style="color:var(--pos)">'+pct(ks.pos,ks.n)+'%</b>Positive</div><div><b>'+pct(ks.neu,ks.n)+'%</b>Neutral</div><div><b style="color:var(--neg)">'+pct(ks.neg,ks.n)+'%</b>Negative</div></div>'+
-      '<div class="sub-h">What people say under our posts</div>'+bars(say.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'cmposts',k:'cluster',val:e[0]};}))+'</section>'+
+      '<div class="sub-h">What people say under our posts</div>'+bars(say.map(function(e){return {l:CL[e[0]].label,v:e[1],act:'cmposts',k:'cluster',val:e[0]};}))+(shortK?'<p class="hint-line" style="margin:8px 0 0">Plus '+fmtN(shortK)+' emoji-only comments and friend tags.</p>':'')+'</section>'+
     '<section class="panel s7"><div class="ph"><h2>Waiting for a reply'+info('Questions and complaints under V7’s posts with no reply from V7 yet, the ones on posts with the most reach first.')+'</h2>'+(wait.length?'<button type="button" class="linkbtn" data-act="cmposts" data-k="reply" data-v="no">See all '+fmtN(wait.length)+' →</button>':'')+'</div>'+
       (wait.length?'<div class="plist">'+wait.slice().sort(SORTERS.reach).slice(0,4).map(postCard).join('')+'</div>':'<div class="empty">Every question and complaint has a reply.</div>')+'</section></div>';
   var fm=groupBy(own,function(p){return PL[p.pl].n+' · '+p.fmt;});
   var frows=Object.keys(fm).map(function(k){var l=fm[k];return {l:k,v:l.reduce(function(a,p){return a+p.er;},0)/l.length,n:l.length};}).sort(function(a,b){return b.v-a.v;});
   var ourP=countBy(own,function(p){return p.prods;}),audP=countBy(aud,function(p){return p.prods;}),ourT=own.length||1,audT=aud.length||1;
   var gapRows=PRODUCTS.map(function(p){return {l:p.en,a:(ourP[p.id]||0)/ourT*100,b:(audP[p.id]||0)/audT*100};}).filter(function(r){return r.a||r.b;}).sort(function(a,b){return b.b-a.b;});
-  var hm=[],wdOrder=[6,0,1,2,3,4,5],mxh=0;
-  for(var i=0;i<7;i++)hm.push([0,0,0,0,0,0,0,0]);
-  aud.forEach(function(p){var r=wdOrder.indexOf(dt(p.d).getUTCDay());hm[r][Math.floor(p.h/3)]++;});
+  /* Instagram's online_followers: followers online each hour over the last 30 days (demo pattern until V7 connects) */
+  var hm=[],mxh=0,HOUR=[.35,.2,.12,.08,.07,.09,.16,.28,.38,.45,.5,.55,.6,.62,.64,.66,.7,.76,.84,.93,1,.98,.86,.6],WDF=[.96,.92,.93,.95,.97,1.08,1.04];
+  for(var i=0;i<7;i++){var row=[];for(var b3=0;b3<8;b3++){var v=0;for(var hh=b3*3;hh<b3*3+3;hh++)v+=HOUR[hh];row.push(Math.round(v/3*WDF[i]*FOLLOWERS_IN.total*.17));}hm.push(row);}
   hm.forEach(function(r){r.forEach(function(v){if(v>mxh)mxh=v;});});
   var bestC=[0,0];hm.forEach(function(r,i){r.forEach(function(v,j){if(v>hm[bestC[0]][bestC[1]])bestC=[i,j];});});
   var WDN=['Sat','Sun','Mon','Tue','Wed','Thu','Fri'];
-  var hmH='<div class="hm" role="img" aria-label="Posts by day and time"><div></div>'+['00','03','06','09','12','15','18','21'].map(function(x){return '<div>'+x+'</div>';}).join('')+
-    hm.map(function(r,i){return '<div>'+WDN[i]+'</div>'+r.map(function(v,j){var p=mxh?Math.round(v/mxh*88)+4:0;return '<div class="c'+(i===bestC[0]&&j===bestC[1]?' hl':'')+'" style="background:color-mix(in oklab,var(--accent) '+p+'%,var(--surface))" title="'+WDN[i]+' '+String(j*3).padStart(2,'0')+':00–'+String(j*3+3).padStart(2,'0')+':00 · '+v+' posts">'+v+'</div>';}).join('');}).join('')+'</div>';
+  var hmH='<div class="hm" role="img" aria-label="Followers online by day and time"><div></div>'+['00','03','06','09','12','15','18','21'].map(function(x){return '<div>'+x+'</div>';}).join('')+
+    hm.map(function(r,i){return '<div>'+WDN[i]+'</div>'+r.map(function(v,j){var p=mxh?Math.round(v/mxh*88)+4:0;return '<div class="c'+(i===bestC[0]&&j===bestC[1]?' hl':'')+'" style="background:color-mix(in oklab,var(--accent) '+p+'%,var(--surface))" title="'+WDN[i]+' '+String(j*3).padStart(2,'0')+':00–'+String(j*3+3).padStart(2,'0')+':00 · about '+fmtN(v)+' followers online">'+compact(v)+'</div>';}).join('');}).join('')+'</div>';
   h+='<div class="g"><section class="panel s4"><div class="ph"><h2>Best formats'+info('Average engagement rate by platform and format, for V7’s own posts in this period.')+'</h2></div>'+bars(frows.map(function(r){return {l:r.l,v:r.v,vl:r.v.toFixed(1)+'%',title:r.n+' posts'};}))+'</section>'+
     '<section class="panel s4"><div class="ph"><h2>What we post vs what people discuss'+info('Each product’s share of V7’s own posts compared with its share of audience posts. A big gap means a product people talk about more than V7 does, or the reverse.')+'</h2></div>'+pairBars(gapRows,'Share of our posts','Share of audience posts')+'</section>'+
-    '<section class="panel s4"><div class="ph"><h2>When your audience posts'+info('Audience posts about V7 by day and 3-hour window, Cairo time. Schedule V7 posts just before the busiest window.')+'</h2><span class="hint">best slot outlined</span></div>'+hmH+'<p style="font-size:12.5px;color:var(--ink-2);margin:10px 0 0">Busiest: <b>'+WDN[bestC[0]]+' '+String(bestC[1]*3).padStart(2,'0')+':00–'+String(bestC[1]*3+3).padStart(2,'0')+':00</b>. Post just before this window.</p></section></div>';
-  h+='<section class="panel"><div class="ph"><h2>Our posts</h2><span class="hint">V7 Egypt accounts · '+own.length+' posts · pages abroad are under Outside Egypt</span></div>'+sortTable('own',[
+    '<section class="panel s4"><div class="ph"><h2>When our followers are online'+info('Instagram reports how many of V7’s followers are online each hour, over the last 30 days, once V7 connects its account. Cairo time, by day and 3-hour window. Post just before the busiest window.')+'</h2><span class="hint">Instagram insights · demo numbers</span></div>'+hmH+'<p style="font-size:12.5px;color:var(--ink-2);margin:10px 0 0">Busiest: <b>'+WDN[bestC[0]]+' '+String(bestC[1]*3).padStart(2,'0')+':00–'+String(bestC[1]*3+3).padStart(2,'0')+':00</b>. Post just before this window.</p></section></div>';
+  h+='<section class="panel"><div class="ph"><h2>Our posts</h2><span class="hint">V7 Egypt accounts · '+own.length+' posts'+(function(n){return n===own.length?' · all real':' · '+n+' real, '+(own.length-n)+' demo';})(own.filter(function(p){return p.real;}).length)+' · pages abroad are under Outside Egypt</span></div>'+sortTable('own',[
     {k:'d',l:'Date',f:function(r){return fmtD(r.d);},sv:function(r){return r.t;}},
     {k:'pl',l:'Platform',f:function(r){return plBadge(r.pl)+' '+esc(r.fmt);},sv:function(r){return r.pl;}},
     {k:'text',l:'Caption',f:function(r){return '<span dir="auto" style="display:block;max-width:340px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+esc(r.text)+'">'+esc(r.text)+'</span>'+(r.real?' <span class="real">Real post</span>':'');}},
@@ -2453,7 +2541,7 @@ function vOwned(c){
     {k:'likes',l:'Likes',r:1,f:function(r){return compact(r.likes);}},
     {k:'comments',l:'Comments',r:1,f:function(r){return compact(r.comments);}},
     {k:'er',l:'Eng. rate',r:1,f:function(r){return r.er.toFixed(2)+'%';}},
-    {k:'cpos',l:'Positive comments',r:1,f:function(r){return r.cpos==null?'—':r.cpos+'%';},sv:function(r){return r.cpos==null?-1:r.cpos;}},
+    {k:'cpos',l:'Positive comments',r:1,f:function(r){return r.cpos==null||(KIDS[r.id]||[]).length<5?'—':r.cpos+'%';},sv:function(r){return r.cpos==null||(KIDS[r.id]||[]).length<5?-1:r.cpos;}},
     {k:'url',l:'',nosort:1,f:function(r){return '<a href="'+esc(r.url)+'" target="_blank" rel="noopener" style="white-space:nowrap">Open ↗</a>';}}
   ],own,{sort:'d',limit:25})+'</section>';
   content.innerHTML=h;
@@ -2463,19 +2551,28 @@ function vOwned(c){
     document.getElementById('pvnote').innerHTML='Busiest day: <b>'+WD[dt(bd0).getUTCDay()]+' '+fmtD(bd0)+'</b>, '+fmtN(tv(bd0))+' visits, '+(tv(bd0)/avg).toFixed(1)+'× the daily average'+(bev?', '+(bev.d===bd0?'the day of':'the day after')+' “'+esc(bev.label)+'”':'')+'.';}
 }
 
-var RULES=[['Mention spike','More than 2× the 7-day average',true],['Negative day','Negative share above 28% with 12+ posts',true],['Can’t find it','“Can’t find it” posts up 60% or more week on week',true],['Big account','Any account with 100K+ followers mentions V7',true],['False claim or attack','A post contradicts the fact sheet, or accounts act together',true],['Sales lead','A shop or café asks how to stock V7',true],['Price above shelf price','An online store sells V7 for more than EGP 15 a can',true],['Out of stock online','A V7 product goes out of stock on Amazon.eg or Carrefour',true],['Unanswered for 24h','A question or complaint with no reply after a day',false]];
+var RULES=[['More public posts than usual','5 or more public posts in a day, and 3× the 7-day average',true],['Negative day','Over 25% negative, with 20+ posts and comments in the day',true],['Can’t find it','“Can’t find it” posts and comments up 60% or more week on week',true],['Launch questions','5 or more people asking when and where a new product will be sold, in its first 4 weeks',true],['Big account','Any account with 100K+ followers mentions V7',true],['False claim or attack','A post contradicts the fact sheet, or accounts act together',true],['Sales lead','A shop or café asks how to stock V7',true],['Price above shelf price','An online store sells V7 for more than EGP 15 a can',true],['Out of stock online','A V7 product goes out of stock on Amazon.eg or Carrefour',true],['Unanswered for a day','Questions and complaints under V7’s Facebook and YouTube posts with no reply after a day',true]];
 function detectAlerts(){
-  var base=POSTS.filter(function(p){return !p.owned&&p.cty==='EG'&&(!state.platforms.length||state.platforms.indexOf(p.pl)>=0)&&prodMatch(p);});
-  var dd=daily(base,0,NDAYS-1),neg=daily(base,0,NDAYS-1,function(p){return p.s==='neg'?1:0;}),out=[];
+  var keep=function(p){return p.cty==='EG'&&(!state.platforms.length||state.platforms.indexOf(p.pl)>=0)&&prodMatch(p);};
+  var base=POSTS.filter(function(p){return !p.owned&&keep(p);});
+  /* Public posts about V7 are few (1 to 2 a day), so most signals also count people's comments */
+  var talk=base.concat(COMMENTS.filter(function(k){return !k.owned&&keep(k);}));
+  var dd=daily(base,0,NDAYS-1),dt2=daily(talk,0,NDAYS-1),neg=daily(talk,0,NDAYS-1,function(p){return p.s==='neg'?1:0;}),out=[];
   for(var d=NDAYS-30;d<NDAYS;d++){
     var avg=0;for(var k=d-7;k<d;k++)avg+=dd[k];avg/=7;
     var ev=approvedEvents().filter(function(e){return e.d===d||e.d===d-1;})[0];
-    if(dd[d]>=15&&dd[d]>2*avg)out.push({sev:'warning',d:d,t1:'Mention spike: '+dd[d]+' posts',t2:(dd[d]/avg).toFixed(1)+'× the 7-day average.'+(ev?' Likely cause: '+esc(ev.label)+'.':''),act:['day',d]});
-    if(dd[d]>=12&&neg[d]/dd[d]>.28)out.push({sev:'critical',d:d,t1:'Negative day: '+Math.round(neg[d]/dd[d]*100)+'% negative',t2:neg[d]+' of '+dd[d]+' posts were negative.',act:['day',d]});
+    if(dd[d]>=5&&dd[d]>=3*Math.max(avg,1))out.push({sev:'warning',d:d,t1:'More public posts than usual: '+dd[d]+' in a day',t2:(avg?(dd[d]/avg).toFixed(1)+'× the 7-day average.':'Usually there are almost none.')+(ev?' Likely cause: '+esc(ev.label)+'.':''),act:['day',d]});
+    if(dt2[d]>=20&&neg[d]/dt2[d]>.25)out.push({sev:'critical',d:d,t1:'Negative day: '+Math.round(neg[d]/dt2[d]*100)+'% negative',t2:neg[d]+' of '+dt2[d]+' posts and comments were negative.',act:['day',d]});
   }
-  var lastW=base.filter(function(p){return isGap(p)&&p.d>NDAYS-8;}),prevW=base.filter(function(p){return isGap(p)&&p.d<=NDAYS-8&&p.d>NDAYS-15;});
+  var lastW=talk.filter(function(p){return isGap(p)&&!launchQ(p)&&p.d>NDAYS-8;}),prevW=talk.filter(function(p){return isGap(p)&&!launchQ(p)&&p.d<=NDAYS-8&&p.d>NDAYS-15;});
   if(lastW.length>=8&&lastW.length>=1.6*prevW.length){var gp=topE(countBy(lastW,function(p){return p.prods[0]==='ALL'?[]:p.prods;}),2);
-    out.push({sev:'critical',d:NDAYS-1,t1:'More people can’t find V7: '+lastW.length+' posts this week',t2:'Up from '+prevW.length+' last week.'+(gp.length?' Most about '+gp.map(function(e){return esc(PROD[e[0]].en);}).join(' and ')+'.':''),act:['gap','1']});}
+    out.push({sev:'critical',d:NDAYS-1,t1:'More people can’t find V7: '+lastW.length+' this week',t2:'Posts and comments, up from '+prevW.length+' last week.'+(gp.length?' Most about '+gp.map(function(e){return esc(PROD[e[0]].en);}).join(' and ')+'.':''),act:['gap','2']});}
+  PRODUCTS.forEach(function(pr){if(pr.status!=='new'||NDAYS-1-D(pr.launch)>=28)return;
+    var q=talk.filter(function(p){return isGap(p)&&p.prods.indexOf(pr.id)>=0&&p.d>=D(pr.launch);});
+    if(q.length>=5)out.push({sev:'warning',d:NDAYS-1,t1:pr.en+' launch: '+q.length+' people asking when and where to buy it',t2:'Since the launch post on '+fmtD(D(pr.launch))+'. One reply saying when and where it will be sold would answer most of them.',act:['launch',pr.id]});});
+  /* Replies are public on Facebook and YouTube; V7 usually answers the next day, so a day's wait is the line */
+  var late=COMMENTS.filter(function(k){return !k.owned&&k.needsReply&&!k.replied&&keep(k)&&k.d>NDAYS-9&&k.d<NDAYS-1;}),lateL=late.filter(function(k){return CL[k.c].intent==='Sales lead';}).length;
+  if(late.length>=5)out.push({sev:'warning',d:NDAYS-1,t1:late.length+' questions and complaints waiting over a day',t2:'Under V7’s Facebook and YouTube posts this week, with no reply yet'+(lateL?', including '+plural(lateL,'sales lead'):'')+'.',act:['view','voice']});
   STORE_ALERTS().forEach(function(a){out.push(a);});
   base.filter(function(p){var a=AUTH[p.a];return p.d>NDAYS-8&&a.type!=='official'&&a.followers>=1e5;}).sort(function(a,b){return b.views-a.views;}).slice(0,3).forEach(function(p){
     var a=AUTH[p.a];out.push({sev:p.s==='neg'?'critical':'good',d:p.d,t1:'Big account: '+bd(a.name)+' ('+compact(a.followers)+' followers)',t2:'“'+bd(p.text)+'” · '+compact(p.views)+' views.'+(p.camp?' This post is part of “'+esc(CAMP[p.camp].title.replace(/[“”]/g,''))+'” in Rumors &amp; attacks.':''),act:p.camp?['camp',p.camp]:['person',a.id]});
@@ -2509,7 +2606,7 @@ function vAlerts(){
 /* =========================================================
    Outside Egypt views
    ========================================================= */
-var XTABS=[['overview','Overview'],['countries','Countries'],['posts','Posts'],['people','People & groups'],['voice','Questions & leads'],['pages','V7 pages abroad']];
+var XTABS=[['overview','Overview'],['countries','Countries'],['posts','Posts'],['people','People'],['voice','Questions & leads'],['pages','V7 pages abroad']];
 function marketOptions(x){
   var cnt=countBy(x.curAll,function(p){return p.cty;});
   function o(v,l){return '<option value="'+esc(v)+'"'+(state.xmk===v?' selected':'')+'>'+esc(l)+'</option>';}
@@ -2588,11 +2685,14 @@ function xOverview(x){
     '<section class="panel s6"><div class="ph"><h2>What they talk about'+info('Net sentiment (positive minus negative) and number of '+NP()+' per topic, for '+NP()+' from abroad. Click a topic to read them.')+'</h2></div>'+diverging(topicRows(L),'xposts')+'</section></div>';
   return h;
 }
+/* Short names for the Countries table; the full label shows on hover */
+var ISSUE={c_avail:'Can’t find it',c_price:'Price went up',c_sweet:'Too sweet',c_fizz:'Goes flat',c_damaged:'Damaged cans',c_hype:'Overhyped',c_contact:'Can’t reach V7',
+  i_diet:'Sugar-free',i_size:'Bigger bottles',i_flavor:'New flavours',i_cream:'Cream Soda',i_glass:'Glass bottles',x_price:'Too expensive',x_ship:'Damaged on arrival',x_label:'Labels',fc_victim:'Scams'};
 function countryRows(x){
   var g=groupBy(x.cur,function(p){return p.cty;}),gp=countBy(x.prev,function(p){return p.cty;});
   return Object.keys(g).map(function(k){var l=g[k],s=stats(l),C=COUNTRY[k];
     var tp=topE(countBy(l,function(p){return p.prods[0]==='ALL'?[]:p.prods;}),1)[0],tq=topE(countBy(l.filter(function(p){return (CL[p.c].g==='Complaints'||CL[p.c].g==='Ideas')&&p.c!=='x_wish';}),function(p){return p.c;}),1)[0];
-    return {C:C,n:s.n,pn:gp[k]||0,share:s.n/(x.cur.length||1)*100,net:s.net,dias:pct(l.filter(function(p){return p.seg==='diaspora';}).length,s.n),prod:tp?PROD[tp[0]].en:'—',q:tq?CL[tq[0]].label:'—',
+    return {C:C,n:s.n,pn:gp[k]||0,share:s.n/(x.cur.length||1)*100,net:s.net,dias:pct(l.filter(function(p){return p.seg==='diaspora';}).length,s.n),prod:tp?PROD[tp[0]].en:'—',q:tq?(ISSUE[tq[0]]||CL[tq[0]].label):'—',qk:tq?tq[0]:null,
       leads:l.filter(function(p){return p.c==='x_import';}).length,demand:l.filter(isDemand).length,page:OWN_X.filter(function(o){return o.cty===k;})[0]};});
 }
 function mixRows(A,B){
@@ -2610,11 +2710,11 @@ function xCountries(x){
     {k:'dias',l:'Egyptians abroad',r:1,f:function(r){return r.dias+'%';}},
     {k:'demand',l:'Asking to buy',r:1},
     {k:'leads',l:'Import leads',r:1,f:function(r){return r.leads?'<b>'+r.leads+'</b>':'0';}},
-    {k:'prod',l:'Top product'},{k:'q',l:'Main issue'},
+    {k:'prod',l:'Top product'},{k:'q',l:'Main issue',f:function(r){return r.qk?'<span title="'+esc(CL[r.qk].label)+'">'+esc(r.q)+'</span>':'—';}},
     {k:'page',l:'V7 page',f:function(r){return r.page?'<a href="'+esc(profileUrl(r.page))+'" target="_blank" rel="noopener">'+esc(r.page.name)+' ↗</a> '+(r.page.real?'<span class="real">Real</span>':'<span class="demo-chip">Demo</span>'):'<span class="muted">—</span>';},sv:function(r){return r.page?1:0;}}
   ],rows,{sort:'n',act:'country',rid:function(r){return r.C.code;},limit:40})+'</section>';
   h+='<div class="g"><section class="panel s6"><div class="ph"><h2>Product mix: abroad vs Egypt'+info('Each product’s share of product mentions in posts from abroad compared with posts in Egypt.')+'</h2></div>'+pairBars(mixRows(x.cur,x.curEG),'Abroad','Egypt')+'</section>'+
-    '<section class="panel s6"><div class="ph"><h2>Asking to buy V7, by country'+info('People asking where to buy V7 in their country, or asking for it to be sold there. Useful for the export team when choosing new markets.')+'</h2><span class="hint">click a country for details</span></div>'+bars(topE(countBy(x.cur.filter(isDemand),function(p){return p.cty;}),10).map(function(e){return {l:COUNTRY[e[0]].en,v:e[1],act:'country',val:e[0]};}))+'</section></div>';
+    '<section class="panel s6"><div class="ph"><h2>Asking to buy V7, by country'+info('People asking where to buy V7 in their country, or asking for it to be sold there. Useful for the export team when choosing new markets.')+'</h2><span class="hint">click a country for details</span></div>'+(function(B){return B.length?bars(B):'<div class="empty">Nobody abroad asked where to buy V7 in this period.</div>';})(topE(countBy(x.cur.filter(isDemand),function(p){return p.cty;}),10).map(function(e){return {l:COUNTRY[e[0]].en,v:e[1],act:'country',val:e[0]};}))+'</section></div>';
   return h;
 }
 function xPosts(x){return postsExplorer(x.cur,'pfx',true);}
@@ -2622,10 +2722,8 @@ function xPeople(x){
   var all=authorRows(x.cur);
   var segs={all:all,diaspora:all.filter(function(r){return r.a.seg==='diaspora';}),local:all.filter(function(r){return r.a.seg==='local';}),business:all.filter(function(r){return r.a.seg==='business';}),creators:all.filter(function(r){return r.a.type==='creator'||r.a.type==='page';})};
   var labels={all:'Everyone',diaspora:'Egyptians abroad',local:'Local consumers',business:'Businesses & importers',creators:'Creators & pages'};
-  var rows=groupRows(x.cur,x.prev,GROUPS_X);
   var h='<section class="panel"><div class="ph"><h2>People and accounts abroad</h2><span class="hint">click a row to see their '+NP()+'</span></div><div class="seg" role="group" aria-label="Show" style="margin-bottom:12px">'+Object.keys(labels).map(function(k){return '<button type="button" data-act="xseg" data-v="'+k+'" aria-pressed="'+(state.xPeopleSeg===k)+'">'+labels[k]+' <span class="muted">'+segs[k].length+'</span></button>';}).join('')+'</div>'+
     sortTable('xpeople',peopleCols(true),segs[state.xPeopleSeg],{sort:'n',act:'person',rid:function(r){return r.a.id;},limit:30})+'</section>';
-  h+='<section class="panel"><div class="ph"><h2>Facebook groups abroad'+info('Community groups outside Egypt where V7 came up, mostly Egyptian communities abroad and local food and deals groups.')+'</h2><span class="hint">click a group to see its '+NP()+'</span></div>'+sortTable('xgroups',groupCols(true),rows,{sort:'n',act:'group',rid:function(r){return r.g.id;}})+'</section>';
   return h;
 }
 function xVoice(x){
@@ -2646,25 +2744,30 @@ function xVoice(x){
   return h;
 }
 function xPages(x){
-  var pages=OWN_X.filter(function(a){return xmkMatch({cty:a.cty});});
+  /* From each page's 12 latest Instagram posts (checked 13 Oct 2026), whatever their date, so not tied to the date filter */
+  var CHK=D('2026-10-13'),pages=OWN_X.filter(function(a){return xmkMatch({cty:a.cty});});
   var rows=pages.map(function(a){
-    var l=POSTS.filter(function(p){return p.a===a.id&&p.d>=x.from&&p.d<=x.to;});
-    var eng=l.reduce(function(s,p){return s+p.eng;},0),top=l.slice().sort(byEng)[0];
-    return {a:a,n:l.length,er:l.length?eng/l.length/a.followers*100:0,cpos:(function(){var k=l.filter(function(p){return p.cpos!=null;});return k.length?Math.round(k.reduce(function(s,p){return s+p.cpos;},0)/k.length):null;})(),top:top,last:l.length?Math.max.apply(null,l.map(function(p){return p.t;})):null,eng:eng};
+    var all=REAL_OWN_X.filter(function(r){return r.a===a.id;}),np=all.filter(function(r){return !r.pin;});
+    var oldest=np.length?Math.min.apply(null,np.map(function(r){return r.d;})):CHK;
+    /* Older pinned posts sit at the top of a profile out of date order, so they're left out of the averages */
+    var l=all.filter(function(r){return !r.pin||r.d>=oldest;}),vid=l.filter(function(r){return r.views>0;}),best=l.slice().sort(function(p,q){return (q.likes+q.comments)-(p.likes+p.comments);})[0];
+    return {a:a,n:l.filter(function(r){return r.d>CHK-30;}).length,more:oldest>CHK-30,er:l.length?l.reduce(function(s,r){return s+r.likes+r.comments;},0)/l.length/a.followers*100:0,
+      vv:vid.length?vid.reduce(function(s,r){return s+r.views;},0)/vid.length:null,last:l.length?Math.max.apply(null,l.map(function(r){return r.d;})):null,best:best};
   });
-  var pagePosts=POSTS.filter(function(p){return p.owned&&p.cty!=='EG'&&p.d>=x.from&&p.d<=x.to&&xmkMatch(p);}).sort(function(a,b){return b.t-a.t;}).slice(0,4);
+  /* The newest post from each page, so a quiet page shows as quiet */
+  var seenP={},pagePosts=POSTS.filter(function(p){return p.owned&&p.cty!=='EG'&&xmkMatch(p);}).sort(function(a,b){return b.t-a.t;}).filter(function(p){if(seenP[p.a])return false;seenP[p.a]=1;return true;}).slice(0,4);
   var leadsN=x.cur.filter(function(p){return p.c==='x_import';}).length;
-  var h='<section class="panel"><div class="ph"><h2>V7 pages outside Egypt'+info('V7 accounts run for other countries, found on Instagram. The accounts and follower counts are real (checked 4–5 Oct 2026). Their posts and engagement here are demo data.')+'</h2><span class="hint">'+esc(marketLabel())+' · last '+x.r+' days</span></div>'+sortTable('xpages',[
-    {k:'name',l:'Page',f:function(r){return '<span class="who">'+plBadge(r.a.pl)+'<span style="min-width:0"><span class="nm">'+esc(r.a.name)+'</span><small>'+(r.a.real?'@'+esc(r.a.handle):'')+'</small></span>'+(r.a.real?'<span class="real">Real account</span>':'<span class="demo-chip">Demo</span>')+'</span>';},sv:function(r){return r.a.name;}},
+  var h='<section class="panel"><div class="ph"><h2>V7 pages outside Egypt'+info('V7 accounts run for other countries, found on Instagram. Followers and each page’s 12 latest posts are real, checked 13 Oct 2026. Engagement rate is likes and comments on a post divided by followers, averaged over those posts. Older posts pinned to the top of a profile are left out of the averages.')+'</h2><span class="hint">'+esc(marketLabel())+' · latest 12 posts · checked 13 Oct 2026</span></div>'+sortTable('xpages',[
+    {k:'name',l:'Page',f:function(r){return '<span class="who">'+plBadge(r.a.pl)+'<span style="min-width:0"><span class="nm">'+esc(r.a.name)+'</span><small>@'+esc(r.a.handle)+'</small></span><span class="real">Real account</span></span>';},sv:function(r){return r.a.name;}},
     {k:'cty',l:'Country',f:function(r){return esc(COUNTRY[r.a.cty].en);},sv:function(r){return r.a.cty;}},
     {k:'fol',l:'Followers',r:1,f:function(r){return fmtN(r.a.followers);},sv:function(r){return r.a.followers;}},
-    {k:'n',l:'Posts',r:1},
-    {k:'er',l:'Avg eng. rate',r:1,f:function(r){return r.n?r.er.toFixed(1)+'%':'—';}},
-    {k:'cpos',l:'Positive comments',r:1,f:function(r){return r.cpos==null?'—':r.cpos+'%';},sv:function(r){return r.cpos==null?-1:r.cpos;}},
-    {k:'last',l:'Last post',r:1,f:function(r){return r.last!=null?fmtD(Math.floor(r.last/1440)):'—';}},
-    {k:'top',l:'Best post',nosort:1,f:function(r){return r.top?'<a href="'+esc(r.top.url)+'" target="_blank" rel="noopener" title="'+esc(r.top.text)+'">'+compact(r.top.eng)+' engagement ↗</a>':'—';}}
-  ],rows,{sort:'fol'})+'</section>';
-  h+='<div class="g"><section class="panel s7"><div class="ph"><h2>Latest posts from V7 pages abroad</h2><span class="hint">demo posts on real accounts</span></div><div class="pgrid">'+(pagePosts.length?pagePosts.map(postCard).join(''):'<div class="empty">No posts from these pages in this period.</div>')+'</div></section>'+
+    {k:'n',l:'Posts, last 30 days',r:1,f:function(r){return r.n+(r.more?'+':'');}},
+    {k:'er',l:'Avg eng. rate',r:1,f:function(r){return r.er.toFixed(1)+'%';}},
+    {k:'vv',l:'Avg video views',r:1,f:function(r){return r.vv==null?'—':compact(r.vv);},sv:function(r){return r.vv==null?-1:r.vv;}},
+    {k:'last',l:'Last post',r:1,f:function(r){return r.last!=null?fmtD(r.last):'—';}},
+    {k:'best',l:'Best post',nosort:1,f:function(r){return r.best?'<a href="'+esc(r.best.url)+'" target="_blank" rel="noopener" title="'+esc(r.best.text)+'">'+compact(r.best.likes+r.best.comments)+' likes and comments ↗</a>':'—';}}
+  ],rows,{sort:'fol'})+'<p class="hint-line" style="margin:10px 0 0">“+” means the page posts so often that its 12 latest posts don’t reach back 30 days.</p></section>';
+  h+='<div class="g"><section class="panel s7"><div class="ph"><h2>Latest post from each V7 page abroad</h2><span class="hint">real posts · checked 13 Oct 2026</span></div><div class="pgrid">'+(pagePosts.length?pagePosts.map(postCard).join(''):'<div class="empty">No posts from these pages yet.</div>')+'</div></section>'+
     '<section class="panel s5"><div class="ph"><h2>Distributors and importers'+info('Businesses that sell V7 abroad and post about it publicly. Found on Instagram.')+'</h2></div><div class="plist">'+
       DISTRIBUTORS.map(function(d){return '<div class="pc"><div class="pc-h">'+plBadge('ig')+'<b>'+esc(d.name)+'</b><span class="muted">@'+esc(d.handle)+'</span><span class="real">Real account</span></div><p class="pc-t">'+esc(d.note)+' · '+esc(COUNTRY[d.cty].en)+' · '+fmtN(d.followers)+' followers</p><div class="pc-f"><a href="'+esc(d.url)+'" target="_blank" rel="noopener">Open profile ↗</a></div></div>';}).join('')+
       '<p class="note"><b>'+plural(leadsN,'import or stockist lead')+'</b> in this period from businesses asking how to sell V7. <button type="button" class="linkbtn" style="padding:0" data-act="xtab" data-v="voice">See them in Questions &amp; leads →</button></p></div></section></div>';
@@ -2698,7 +2801,9 @@ var REST=[{"n":"Hunger","a":[0],"g":1,"cu":"Pasta, Crepes","r":4.6,"nr":48,"u":"
 var NOON_TOP=[{"pos":1,"t":"V7 Sparkling Drink Flavor Pink Lemonade 300 ml","co":"v7","p":20,"sku":"Z8296195D9C08A7260DACZ","r":4.4,"n":155,"pid":"pink"},{"pos":2,"t":"Coca-Cola PET 0.95litre","co":"coke","p":39.65,"sku":"N44332977A","r":4.5,"n":20},{"pos":3,"t":"Fanta Soft Drink With Orange Flavour 1.25L","co":"coke","p":46.9,"sku":"Z128FA02BE5480FC920ABZ","r":3.4,"n":5},{"pos":4,"t":"Schweppes Soft Drink With Pineapple Gold Flavour 320ml","co":"coke","p":28.44,"sku":"ZCAD2F4E26F7C9C26333CZ","r":5,"n":6},{"pos":5,"t":"V7 Vitamin Sparkling Drink 100% Natural Flavors - Pina Colada","co":"v7","p":22.7,"sku":"Z5480F05E3AD5FEFA9436Z","r":4.3,"n":215,"w":"Only 8 left","pid":"pina"},{"pos":6,"t":"Vimto","co":"other","p":289.9,"sku":"ZDF83D74C2E0B08872584Z","r":4.9,"n":9},{"pos":7,"t":"V7 Vitamin Sparkling Drink 100% Natural Flavors - Pomegranate","co":"v7","p":20,"sku":"Z956CC311C04270D55EDEZ","r":4.4,"n":210,"pid":"pom"},{"pos":8,"t":"Schweppes Soft Drink With Peach Gold Flavour 320ml","co":"coke","p":28.44,"sku":"Z5C1A465E40B47CE15B9BZ","r":4.4,"n":5},{"pos":9,"t":"Pepsi Diet Soft Drink PET Bottle 1.47L","co":"pepsi","p":39.75,"sku":"ZC1610A58CFE47A4CCE8AZ","r":2.4,"n":3},{"pos":10,"t":"7up Soft Drink Bottle 1.47 Liters","co":"pepsi","p":39.75,"sku":"ZC2156DCBAC991998F999Z","r":4.2,"n":11},{"pos":11,"t":"Power Horse Energy Drink 250ml Pack of 4","co":"other","p":201.4,"sku":"N51736580A","r":4.7,"n":10},{"pos":12,"t":"Monin Sugar Free Caramel Syrup 250ml - Rich Flavor Perfect for Coffee and Drinks","co":"other","p":434,"sku":"ZD7377EF2FFA2035D373BZ","r":5,"n":4},{"pos":13,"t":"V7 Vitamin Sparkling Drink 100% Natural Flavors - Lemon Mint","co":"v7","p":20,"sku":"Z0336C83B282431670462Z","r":4.1,"n":145,"pid":"lmint"},{"pos":14,"t":"Coca-Cola Regular Soft Drink Bottle 330ml Single","co":"coke","p":33.78,"sku":"N28991789A","r":5,"n":14},{"pos":15,"t":"7up EXTRA FIZZ 2.43L PET","co":"pepsi","p":35,"sku":"ZFAE3BC86EF6291F25287Z","r":5,"n":1},{"pos":16,"t":"Pepsi Soft Drink 400ml","co":"pepsi","p":14,"sku":"N28991845A","r":3.9,"n":29},{"pos":17,"t":"Barbican Peach Juice 330ml","co":"other","p":44.2,"sku":"N45745067A","r":3.8,"n":4},{"pos":18,"t":"Coca-Cola Original Taste 150ml *6","co":"coke","p":499,"sku":"Z095B39B477A81962CB61Z"},{"pos":19,"t":"Green Cola Lemon Lime Drink 0% Sugar 330ml","co":"other","p":22,"sku":"Z245359E428C09310BAEAZ","r":4.1,"n":8},{"pos":20,"t":"Barbican Pineapple Juice 330ml","co":"other","p":44.05,"sku":"N45745069A","r":4.9,"n":9}];
 var NOON_RATE={"pink":{"r":4.4,"n":155,"sku":"Z8296195D9C08A7260DACZ"},"pina":{"r":4.3,"n":215,"sku":"Z5480F05E3AD5FEFA9436Z"},"pom":{"r":4.4,"n":210,"sku":"Z956CC311C04270D55EDEZ"},"lmint":{"r":4.1,"n":145,"sku":"Z0336C83B282431670462Z"}};
 var NOON_WARN={pina:[['2026-10-04','Only 7 left'],['2026-10-05','Only 8 left']]};
-var SHELF=15,SNAP_D=NDAYS+1;/* SNAP_D = 4 Oct 2026, the day the store data was collected */
+var SHELF=15,SNAP_D=D('2026-10-04');/* the day the store data was collected */
+/* Products on sale when the stores were checked (V Orange launched after) */
+var STORE_PROD=PRODUCTS.filter(function(p){return !(p.status==='new'&&D(p.launch)>SNAP_D);});
 function egp(v){v=Math.round(v*100)/100;return 'EGP '+(v%1?v.toFixed(2):String(v));}
 function perCan(x){return x.pk>1?x.p/x.pk:x.p;}
 function amzOf(id){return STORE_AMZ.filter(function(x){return x.pid===id;})[0]||null;}
@@ -2907,8 +3012,8 @@ function storeAttention(cp){
   hist().filter(function(l){var z=!l.comp&&hLatest(l);return z&&z.x.st==='out';}).forEach(function(l){att.push({t1:esc(l.name)+' is out of stock on '+l.store,t2:'At the latest check.',todo:'Check supply with '+l.store+'.',go:'stock'});});
   STORE_AMZ.filter(function(x){return x.pk>1&&perCan(x)>SHELF+.5;}).forEach(function(x){
     att.push({t1:esc(prodLabel(x.pid))+' is only sold in '+x.pk+'-packs on Amazon.eg',t2:egp(perCan(x))+' a can, '+Math.round((perCan(x)/SHELF-1)*100)+'% above the shelf price.',todo:'Ask for a single-can listing at EGP 15.',go:'prices'});});
-  var miss=function(s){return PRODUCTS.filter(function(p){return p.status!=='seasonal'&&!(s==='Amazon.eg'?amzOf(p.id):s==='Carrefour'?carOf(p.id):noonOf(p.id));});};
-  var ma=miss('Amazon.eg'),mc=miss('Carrefour'),mn=miss('Noon'),live=PRODUCTS.filter(function(p){return p.status!=='seasonal';}).length,parts=[];
+  var miss=function(s){return STORE_PROD.filter(function(p){return p.status!=='seasonal'&&!(s==='Amazon.eg'?amzOf(p.id):s==='Carrefour'?carOf(p.id):noonOf(p.id));});};
+  var ma=miss('Amazon.eg'),mc=miss('Carrefour'),mn=miss('Noon'),live=STORE_PROD.filter(function(p){return p.status!=='seasonal';}).length,parts=[];
   if(ma.length)parts.push('Amazon.eg doesn’t list '+ma.map(function(p){return p.en;}).join(', '));
   if(mc.length)parts.push('Carrefour doesn’t list '+mc.map(function(p){return p.en;}).join(', '));
   if(mn.length)parts.push('Noon lists '+(live-mn.length)+' of '+live+' products');
@@ -2954,7 +3059,7 @@ function vStoreSummary(){
       (over?'<span class="s2 bad"><span class="lg">'+egp(d)+' over shelf price</span><span class="sh">+'+egp(d).replace('EGP ','')+'</span></span>':'');
     return '<td class="smx-g" title="'+esc(tip)+'">'+(x.u?'<a class="sc" href="'+esc(x.u)+'" target="_blank" rel="noopener" aria-label="'+esc(tip)+'">'+inner+'</a>':'<span class="sc">'+inner+'</span>')+'</td>';
   }
-  var mrows=PRODUCTS.map(function(p){
+  var mrows=STORE_PROD.map(function(p){
     if(p.status==='seasonal')return '<tr class="off"><th scope="row"><span class="pnm">'+pdot(p.id)+'<span>'+esc(p.en)+'</span></span></th><td class="smx-g" colspan="'+(phone?3:6)+'">Off season, back in summer 2027</td></tr>';
     var n=noonOf(p.id),L=[['Amazon.eg',amzOf(p.id)],['Carrefour',carOf(p.id)],['Noon',n?(n.s||n.pk):null]];
     return '<tr><th scope="row"><span class="pnm">'+pdot(p.id)+'<span>'+esc(p.en)+(phone?stockLine(p.id,L):'')+'</span></span></th>'+L.map(function(o){return cell(o[1],o[0],p.id)+(o[1]&&!phone?stockCell(o[1],o[0],p.id):'');}).join('')+'</tr>';}).join('');
@@ -2965,7 +3070,7 @@ function vStoreSummary(){
   var matrix='<section class="panel s12"><div class="ph"><h2>V7 price and stock in each store'+info('Each store has two columns: the price of one 300 ml can at the latest check, and whether it’s in stock there. Packs are shown per can, and red means above the EGP 15 shelf price. Click a price to open the listing.')+'</h2>'+
     '<span class="hint">latest check</span></div>'+
     '<div class="tw"><table class="t smx'+(phone?'':' smx-ps')+'">'+cols+'<thead>'+head+'</thead><tbody>'+mrows+'</tbody></table></div>'+
-    '<p class="hint-line" style="margin:10px 0 0">Prices in EGP for one 300 ml can. Shelf price: EGP 15. Red: above it. '+(phone?'—: the store doesn’t sell it. Everything is in stock unless a problem is shown under the product. ':'✓: in stock. —: the store doesn’t sell it. ')+'Noon prices are set by third-party sellers. <a class="linkbtn" href="https://www.noon.com/egypt-en/search/?q=V7" target="_blank" rel="noopener">Search V7 on Noon ↗</a></p></section>';
+    '<p class="hint-line" style="margin:10px 0 0">Prices in EGP for one 300 ml can. Shelf price: EGP 15. Red: above it. '+(phone?'—: the store doesn’t sell it. Everything is in stock unless a problem is shown under the product. ':'✓: in stock. —: the store doesn’t sell it. ')+'Noon prices are set by third-party sellers. <a class="linkbtn" href="https://www.noon.com/egypt-en/search/?q=V7" target="_blank" rel="noopener">Search V7 on Noon ↗</a></p>'+(function(L){return L.length?'<p class="hint-line" style="margin:6px 0 0">'+L.map(function(p){return esc(p.en)+' launched on '+fmtD(D(p.launch));}).join(', ')+', after this check.</p>':'';})(PRODUCTS.filter(function(p){return STORE_PROD.indexOf(p)<0;}))+'</section>';
   if(!cp){h+=attn+'<div class="g">'+matrix+'</div>';}
   else{
     var pr=coRating('pepsi',both),cr=coRating('coke',both);
@@ -2991,7 +3096,7 @@ function vStoreSummary(){
 
 /* ---------- Prices ---------- */
 function v7PriceTable(bare){
-  var rows=PRODUCTS.map(function(p){var a=amzOf(p.id),c=carOf(p.id),n=noonOf(p.id);
+  var rows=STORE_PROD.map(function(p){var a=amzOf(p.id),c=carOf(p.id),n=noonOf(p.id);
     return '<tr><td class="nw"><b>'+esc(p.en)+'</b> <span class="ar muted">'+esc(p.ar)+'</span>'+(p.status==='seasonal'?'<span class="sub">Seasonal, back in summer 2027</span>':'')+'</td>'+
       '<td>'+(a?priceHTML(a,true,openLink(a.u,'Open '+p.en+' on Amazon.eg')):NA)+'</td>'+
       '<td>'+(c?priceHTML(c,true,openLink(c.u,'Open '+p.en+' on Carrefour Egypt')):NA)+'</td>'+
@@ -3159,7 +3264,7 @@ function vStock(){
   var cls=out.length||gone.length?'bad':low.length?'warn':'ok';
   h+='<div class="sbanner '+cls+'" role="status"><span class="ic" aria-hidden="true">'+(cls==='ok'?'✓':'!')+'</span><div>'+line+(checked.length?'<small>Latest check: '+checked.join(' · ')+' 2026</small>':'')+'</div></div>';
   /* where each flavour can be bought now */
-  var prods=PRODUCTS.filter(function(p){return !state.products.length||state.products.indexOf(p.id)>=0;}),RK={in:0,low:1,out:2,na:3};
+  var prods=STORE_PROD.filter(function(p){return !state.products.length||state.products.indexOf(p.id)>=0;}),RK={in:0,low:1,out:2,na:3};
   h+='<section class="panel"><div class="ph"><h2>Where each V7 flavour can be bought now'+info('The status at each store’s latest check. Amazon and Noon show “Only N left” when stock runs low; Carrefour only shows in or out of stock.')+'</h2><span class="hint">latest check</span></div>'+
     '<div class="tw"><table class="t avail"><thead><tr>'+th('Product')+stores.map(function(s){return th(s);}).join('')+'</tr></thead><tbody>'+
     prods.map(function(p){return '<tr><th scope="row">'+pdot(p.id)+esc(p.en)+(p.status==='seasonal'?' <span class="st seasonal">Seasonal</span>':'')+'</th>'+stores.map(function(s){
@@ -3681,12 +3786,12 @@ function evEvidence(e){
   if(e.camp){var ci=CINFO[e.camp];
     return {t:plural(ci.L.length,'post')+' repeated or discussed the claim between '+fmtD(ci.first.d)+' and '+fmtD(ci.last.d)+', with '+compact(ci.views)+' views on the ones spreading it. The fact sheet says otherwise. '+(ci.resp?'V7 responded on '+fmtD(ci.resp.d)+'.':'V7 hasn’t responded yet.'),link:['camp',e.camp,'Open in Rumors & attacks']};}
   if(e.ev)return {t:e.ev,link:e.type==='Search spike'?['view','trends','Open Search trends']:null};
-  var base=POSTS.filter(function(p){return !p.owned&&p.cty==='EG'&&(!e.tiktok||p.pl==='tt');}),dd=daily(base,0,NDAYS-1),avg=0;
+  var base=POSTS.concat(COMMENTS).filter(function(p){return !p.owned&&p.cty==='EG'&&(!e.tiktok||p.pl==='tt');}),dd=daily(base,0,NDAYS-1),avg=0;
   for(var k=e.d-7;k<e.d;k++)avg+=dd[k];avg/=7;
-  var day=base.filter(function(p){return p.d===e.d;}),t=plural(day.length,'post')+' about V7 on '+fmtD(e.d)+', '+(dd[e.d]/(avg||1)).toFixed(1)+'× the average of the 7 days before.';
+  var day=base.filter(function(p){return p.d===e.d;}),t=day.length+(day.length===1?' post or comment':' posts and comments')+' about V7 on '+fmtD(e.d)+', '+(dd[e.d]/(avg||1)).toFixed(1)+'× the average of the 7 days before.';
   if(e.prods&&e.prods.length){var pp=day.filter(function(p){return p.prods.indexOf(e.prods[0])>=0;}).length;t+=' '+pct(pp,day.length)+'% of them mention '+PROD[e.prods[0]].en+'.';}
-  var own=POSTS.filter(function(p){return p.owned&&p.cty==='EG'&&p.d===e.d&&(!e.prods||p.prods.some(function(x){return e.prods.indexOf(x)>=0;}));})[0];
-  if(own)t+=' V7 posted about it on '+PL[own.pl].n+' the same day.';
+  var ownPl=[];POSTS.forEach(function(p){if(p.owned&&p.cty==='EG'&&p.d===e.d&&(!e.prods||p.prods.some(function(x){return e.prods.indexOf(x)>=0;}))&&ownPl.indexOf(PL[p.pl].n)<0)ownPl.push(PL[p.pl].n);});
+  if(ownPl.length)t+=' V7 posted about it on '+(ownPl.length>1?ownPl.slice(0,-1).join(', ')+' and '+ownPl[ownPl.length-1]:ownPl[0])+' the same day.';
   return {t:t,link:['dayposts',e.d,'Read that day’s posts']};
 }
 function evMeta(e){
@@ -3773,7 +3878,7 @@ function openPerson(id){
   var prods=topE(countBy(l,function(p){return p.prods[0]==='ALL'?[]:p.prods;}),5);
   var ageTxt=a.age==null?'':'<br>Account age: '+(a.age>=365?'about '+Math.floor(a.age/365)+' year'+(a.age>=730?'s':''):plural(a.age,'day'))+(a.age<30?' <span class="flag">New account</span>':'');
   var body=miniStats(l)+
-    '<div style="font-size:13.5px;color:var(--ink-2)">'+esc(authorKind(a))+' on '+PL[a.pl].n+' · '+(a.followers==null?'follower count not public':compact(a.followers)+' followers')+(abroad?' · '+esc(COUNTRY[a.cty].en):'')+(a.cat?' · '+esc(a.cat):'')+ageTxt+(a.fake?'<br><span class="flag">Not an official V7 account</span>':'')+'<br>'+allTime+' '+N1(allTime)+' about V7 in the last 6 months. <a href="'+esc(profileUrl(a))+'" target="_blank" rel="noopener">Open profile ↗</a></div>'+
+    '<div style="font-size:13.5px;color:var(--ink-2)">'+esc(authorKind(a))+' on '+PL[a.pl].n+' · '+(folKnown(a,ITEMS().some(function(p){return p.a===id&&p.kind!=='comment';}))?compact(a.followers)+' followers':'follower count not shown')+(abroad?' · '+esc(COUNTRY[a.cty].en):'')+(a.cat?' · '+esc(a.cat):'')+ageTxt+(a.fake?'<br><span class="flag">Not an official V7 account</span>':'')+'<br>'+allTime+' '+N1(allTime)+' about V7 in the last 6 months. <a href="'+esc(profileUrl(a))+'" target="_blank" rel="noopener">Open profile ↗</a></div>'+
     (prods.length?'<div><div class="sub-h" style="margin-top:0">Products they mention</div><div class="pc-c">'+prods.map(function(e){return '<button type="button" class="chip prod" data-act="setprod" data-v="'+e[0]+'">'+pdot(e[0])+esc(PROD[e[0]].en)+' · '+e[1]+'</button>';}).join('')+'</div></div>':'')+
     drawerPosts(l,'person',id,abroad,abroad?a.cty:null);
   openDrawer('<span dir="auto">'+esc(a.name)+'</span>',(a.type==='person'&&a.handle?'@'+esc(a.handle)+' · ':'')+esc(authorKind(a)),body);
@@ -3823,13 +3928,13 @@ function openCountry(code){
 }
 function openHelp(){
   var body='<div class="help">'+
-    '<p>V7 Pulse collects public posts that mention V7 on Facebook, Instagram, TikTok, X, YouTube and Reddit every morning, with the comments under them. Each post and comment is read in Egyptian Arabic, Franco-Arabic, other Arabic dialects or English, and tagged with its sentiment, topic, product and purpose. It also checks V7’s prices and rankings in online stores, and Google search interest.</p>'+
+    '<p>V7 Pulse collects public posts that mention V7 on Facebook, Instagram, TikTok, X, YouTube and Reddit every morning, with the comments under them. Each post and comment is read in Egyptian Arabic, Franco-Arabic, other Arabic dialects or English, and tagged with its sentiment, topic, product and purpose. Public posts about V7 are few, about one or two a day, so most of the conversation is in comments under V7’s own posts; the two are shown together by default. It also checks V7’s prices and rankings in online stores, and Google search interest.</p>'+
     '<h4>The filters at the top</h4><dl>'+
       '<dt>Date range</dt><dd>7, 30 or 90 days, or Custom to pick any from and to dates. Every number compares the chosen period with the period of the same length just before it. ▲ and ▼ show that change.</dd>'+
       '<dt>Products</dt><dd>Shows only posts and comments naming the chosen products. A comment counts under the products of the post it’s on. Posts about the whole range always count.</dd>'+
       '<dt>Platforms</dt><dd>Leave all off to include every platform, or pick one or more.</dd>'+
       '<dt>UGC / BGC</dt><dd>UGC (user-generated content) is what customers and the public post. BGC (brand-generated content) is what V7’s own accounts post, including V7’s replies to comments. All shows both.</dd>'+
-      '<dt>Posts / Comments</dt><dd>Posts counts posts only. Comments counts comments only: every comment on V7’s posts, plus the top comments on the posts about V7 with the most reach, on Facebook, Instagram, TikTok, YouTube and Reddit (replies on X aren’t collected). Both counts them together. Charts, tables and labels change to match.</dd>'+
+      '<dt>Posts / Comments</dt><dd>Posts counts posts only. Comments counts comments only: every comment on V7’s posts, plus the top comments on the posts about V7 with the most reach, on Facebook, Instagram, TikTok, YouTube and Reddit (replies on X aren’t collected). Both, the default, counts them together. Charts, tables and labels change to match.</dd>'+
     '</dl><h4>What the numbers mean</h4><dl>'+
       '<dt>Posts and comments</dt><dd>Public posts that mention V7 or one of its products, and the comments under them.</dd>'+
       '<dt>Reach</dt><dd>How many people saw a post: its views when the platform shows them. Facebook hides views on most posts, and Instagram photos and Reddit don’t show them, so there reach is estimated from likes, comments and shares (marked “~”), and never more than the group’s members or the author’s followers. A comment’s reach is estimated from its likes and replies. Lists of posts are sorted by reach.</dd>'+
@@ -3841,12 +3946,13 @@ function openHelp(){
       '<dt>Purchase intent</dt><dd>Posts and comments saying they are about to buy V7.</dd>'+
       '<dt>Can’t find it</dt><dd>Posts and comments asking where to buy V7 or saying it is out of stock.</dd>'+
       '<dt>Sales leads</dt><dd>Shops, cafés, importers and distributors asking how to stock V7.</dd>'+
-      '<dt>Waiting for a reply</dt><dd>Questions and complaints no V7 account has answered yet: posts with no reply from V7 in their comments, and comments on V7’s posts with no reply under them.</dd>'+
+      '<dt>Waiting for a reply</dt><dd>Questions, complaints and sales leads no V7 account has answered yet. Replies are public on Facebook and YouTube, so they’re tracked there: comments under V7’s posts, and the posts about V7 with the most reach. Instagram and TikTok replies show once V7 connects its accounts.</dd>'+
       '<dt>Fans / Unhappy repeat posters</dt><dd>Accounts that posted at least twice: never negatively, or mostly negatively.</dd>'+
       '<dt>No cities or governorates</dt><dd>Platforms rarely say where a poster lives, so posts aren’t split by city or governorate. Two exceptions: Google search interest by governorate (Search trends) and where V7’s own followers live (Our content).</dd>'+
     '</dl><h4>Our content</h4><dl>'+
       '<dt>Profile visits</dt><dd>How often people opened V7’s page or profile. Facebook (page_views_total), Instagram (profile_views) and TikTok (profile_views) report this once V7 connects its accounts. YouTube doesn’t report it.</dd>'+
-      '<dt>Who follows us</dt><dd>City, age and gender of V7’s followers, from Facebook and Instagram insights.</dd>'+
+      '<dt>Who follows us</dt><dd>City, age and gender of V7’s Instagram followers, from Instagram insights. Facebook now reports followers’ cities only.</dd>'+
+      '<dt>When our followers are online</dt><dd>From Instagram insights: how many followers are online each hour over the last 30 days.</dd>'+
       '<dt>Comments on our posts</dt><dd>Every comment on V7 Egypt’s posts, how many questions and complaints got a reply, and how fast.</dd>'+
     '</dl><h4>Events</h4><dl>'+
       '<dt>Suggested, then approved</dt><dd>The dashboard suggests events from spikes, viral posts, news and rumors, with the evidence. They wait in Events until a dashboard admin approves them. Only approved events appear on the charts and explain spikes in Alerts. The team can also add its own events.</dd>'+
@@ -3867,7 +3973,7 @@ function openHelp(){
       '<dt>What the scale means</dt><dd>Google Trends scores from 0 to 100. On the weekly chart 100 is the busiest week; on the governorate chart it’s the governorate where V7 is the biggest share of searches. They’re relative, not counts of searches.</dd>'+
       '<dt>V7, the company</dt><dd>Searches for V7 and V Cola in English and Arabic. Searches for other things called V7, such as Haval cars, aren’t counted. The search terms are listed on the page.</dd>'+
       '<dt>Governorates</dt><dd>Google places each search by where the searcher is. A governorate’s score is V7’s share of its searches, so it shows where V7 stands out, not where most searches happen. Matrouh includes the North Coast, so summer visitors count there.</dd>'+
-    '</dl><h4>Rumors &amp; attacks</h4><dl> <dt>Fact sheet</dt><dd>Every post is checked against V7’s fact sheet: price, ownership, ingredients, official accounts. Keep it up to date.</dd> <dt>Claim</dt><dd>Real posts saying the same thing that the fact sheet contradicts, grouped with people asking about it and people correcting it.</dd> <dt>Status</dt><dd>Active: posted about in the last 30 days. Watching: only one or two posts. Slowing: the last post was 1–3 months ago. Contained: V7 answered and the posts stopped.</dd> <dt>Coordination score</dt><dd>0–100. High means signs of an organised attack: copy-pasted text, bursts, and new accounts or few followers where the platform shows them.</dd> <dt>Risk</dt><dd>Combines reach, recent posts, how many people repeat the claim and how harmful it is.</dd> </dl><h4>Ask V7 Pulse</h4><dl><dt>Answers</dt><dd>In claude.ai, Claude answers from this dashboard’s numbers once you allow it, in the language you write in, and can suggest next steps with an owner and a reason. Each question counts toward your Claude plan. Otherwise you get short built-in answers.</dd><dt>Web searches and new data</dt><dd>When the dashboard doesn’t have the answer, Claude can suggest a web search or a new data collection. New collections have a cost limit and need an admin’s approval.</dd></dl><h4>Real vs demo</h4><p>Social posts are generated for illustration, except those marked “Real post”. Real: V7’s follower counts on Facebook, Instagram, TikTok and YouTube, the four V7 accounts abroad, the Online stores, Restaurants and Search trends tabs (collected 4–5 Oct 2026), Rumors &amp; attacks (11 Oct 2026), and the export facts. Profile visits and follower details are demo numbers until V7 connects its accounts. Links on demo posts open a platform search instead of an exact post.</p>'+
+    '</dl><h4>Rumors &amp; attacks</h4><dl> <dt>Fact sheet</dt><dd>Every post is checked against V7’s fact sheet: price, ownership, ingredients, official accounts. Keep it up to date.</dd> <dt>Claim</dt><dd>Real posts saying the same thing that the fact sheet contradicts, grouped with people asking about it and people correcting it.</dd> <dt>Status</dt><dd>Active: posted about in the last 30 days. Watching: only one or two posts. Slowing: the last post was 1–3 months ago. Contained: V7 answered and the posts stopped.</dd> <dt>Coordination score</dt><dd>0–100. High means signs of an organised attack: copy-pasted text, bursts, and new accounts or few followers where the platform shows them.</dd> <dt>Risk</dt><dd>Combines reach, recent posts, how many people repeat the claim and how harmful it is.</dd> </dl><h4>Ask V7 Pulse</h4><dl><dt>Answers</dt><dd>In claude.ai, Claude answers from this dashboard’s numbers once you allow it, in the language you write in, and can suggest next steps with an owner and a reason. Each question counts toward your Claude plan. Otherwise you get short built-in answers.</dd><dt>Web searches and new data</dt><dd>When the dashboard doesn’t have the answer, Claude can suggest a web search or a new data collection. New collections have a cost limit and need an admin’s approval.</dd></dl><h4>Real vs demo</h4><p>Social posts are generated for illustration, except those marked “Real post”. Real: V7’s posts and follower counts on Facebook, Instagram, TikTok and YouTube (posts from late July, checked 13 Oct 2026), the four V7 accounts abroad and their latest posts, the Online stores, Restaurants and Search trends tabs (collected 4–5 Oct 2026), Rumors &amp; attacks (11 Oct 2026), and the export facts. Comments are demo until they’re collected. Profile visits and follower details are demo numbers until V7 connects its accounts. Links on demo posts open a platform search instead of an exact post.</p>'+
   '</div>';
   openDrawer('How to read this dashboard','Definitions, filters and data sources',body);
 }
@@ -3977,7 +4083,7 @@ function itemOut(p){var a=AUTH[p.a],o={date:isoD(p.d),kind:p.kind==='comment'?'c
   if(p.kind==='comment')o.on_post=PIDX[p.parent].text.slice(0,90);return o;}
 function topLabels(list,fn,n){return topE(countBy(list,fn),n||8).map(function(e){return {name:e[0],count:e[1]};});}
 var AI_TOOLS=[
- {name:'get_overview',description:'Summary of the conversation about V7 in Egypt for a period ending 2 Oct 2026: counts with the previous period, views and engagement counted on the day they happened, sentiment, purchase intent, “can’t find it”, top topics, types of post, products, platforms, top questions and complaints, waiting for a reply, sales leads, approved events and the dashboard’s own insights. Uses the current dashboard filters unless you pass days or kind.',
+ {name:'get_overview',description:'Summary of the conversation about V7 in Egypt for a period ending 12 Oct 2026: counts with the previous period, views and engagement counted on the day they happened, sentiment, purchase intent, “can’t find it”, top topics, types of post, products, platforms, top questions and complaints, waiting for a reply, sales leads, approved events and the dashboard’s own insights. Uses the current dashboard filters unless you pass days or kind.',
   inputSchema:{type:'object',properties:{days:{type:'integer',enum:[7,30,90]},kind:{type:'string',enum:['posts','comments','both']}}},
   execute:function(i){aiProgress('Reading the overview');return withState(i||{},function(c){
     var cs=stats(c.cur),ps=stats(c.prev),A=actSum(c.act,c.from,c.to),AP=actSum(c.actPrev,c.pfrom,c.pto);
@@ -4085,13 +4191,13 @@ function aiRules(){
 '',
 'ABOUT V7',
 '- V7 is an Egyptian vitamin soda. V7 and V Cola belong to Benefit (بينيفت); Vitality is its manufacturing arm, with a factory in Sadat City opened by the Prime Minister on 11 May 2026. Exported to 48 countries.',
-'- Products: '+PRODUCTS.map(function(p){return p.en+(p.status==='seasonal'?' (seasonal, off sale until summer 2027)':'');}).join(', ')+'. A 300 ml can sells for about EGP 15.',
+'- Products: '+PRODUCTS.map(function(p){return p.en+(p.status==='seasonal'?' (seasonal, off sale until summer 2027)':p.status==='new'?' (new, launched on '+fmtD(D(p.launch))+' 2026)':'');}).join(', ')+'. A 300 ml can sells for about EGP 15.',
 '- Main competitors: Coca-Cola Co. (Coca-Cola, Sprite, Fanta, Schweppes) and PepsiCo (Pepsi, 7UP, Mirinda, Mountain Dew); malt drinks (Birell, Fayrouz, Barbican, Moussy) for V7’s malt flavours.',
 '',
 'THE DATA',
-'- Today is 5 Oct 2026. Social data covers 180 days to 2 Oct 2026.',
-'- REAL: online stores and competitors (Amazon.eg, Carrefour Egypt, Noon, 4–5 Oct 2026), restaurants (546 Talabat menus in 10 Cairo areas, 5 Oct 2026), Google search trends, V7’s follower counts, V7’s pages abroad and the export facts.',
-'- DEMO, made up to show the dashboard: social posts and comments (except 9 marked real), profile visits and follower details. When an answer rests on demo data, say so in one short line.',
+'- Today is 13 Oct 2026. Social data covers 180 days to 12 Oct 2026.',
+'- REAL: online stores and competitors (Amazon.eg, Carrefour Egypt, Noon, 4–5 Oct 2026), restaurants (546 Talabat menus in 10 Cairo areas, 5 Oct 2026), Google search trends, Rumors & attacks (public posts checked 11 Oct 2026), V7’s follower counts, V7’s own posts on Facebook, Instagram, TikTok and YouTube from late July (counts checked 13 Oct 2026), V7’s pages abroad with their latest posts, and the export facts.',
+'- DEMO, made up to show the dashboard: other people’s posts (except '+POSTS.filter(function(p){return p.real&&!p.owned;}).length+' marked real), all comments, V7’s posts before late July, profile visits and follower details. When an answer rests on demo data, say so in one short line.',
 '- The dashboard right now: tab “'+TITLES[state.view]+'”, filters '+JSON.stringify(filtersDesc())+'.',
 '- Views and engagement are counted on the day they happen. Reach is views when shown, otherwise estimated from engagement.',
 '',
@@ -4208,7 +4314,7 @@ platChips.innerHTML='<button type="button" class="pchip" data-pl="all" aria-pres
 platChips.addEventListener('click',function(e){var b=e.target.closest('[data-pl]');if(!b)return;var k=b.getAttribute('data-pl');
   if(k==='all')state.platforms=[];else{var i=state.platforms.indexOf(k);if(i>=0)state.platforms.splice(i,1);else state.platforms.push(k);if(state.platforms.length===Object.keys(PL).length)state.platforms=[];}
   state.pfPage=1;state.pfxPage=1;render();});
-var datePop=document.getElementById('datePop'),customBtn=document.getElementById('customBtn'),D_MIN=0,D_MAX=D('2026-10-05');
+var datePop=document.getElementById('datePop'),customBtn=document.getElementById('customBtn'),D_MIN=0,D_MAX=NDAYS-1;
 function closeDatePop(){datePop.hidden=true;customBtn.setAttribute('aria-expanded','false');}
 document.getElementById('rangeSeg').addEventListener('click',function(e){var b=e.target.closest('[data-r]');if(!b)return;var r=b.getAttribute('data-r');
   if(r==='custom'){if(!datePop.hidden){closeDatePop();return;}var bb=state.view==='stores'?storeBounds():bounds();
@@ -4227,7 +4333,7 @@ document.addEventListener('click',function(e){if(!datePop.hidden&&!e.target.clos
 document.getElementById('srcSeg').addEventListener('click',function(e){var b=e.target.closest('[data-src]');if(!b)return;state.source=b.getAttribute('data-src');state.pfPage=1;state.pfxPage=1;render();});
 document.getElementById('kindSeg').addEventListener('click',function(e){var b=e.target.closest('[data-kind]');if(!b)return;state.kind=b.getAttribute('data-kind');state.pfPage=1;state.pfxPage=1;render();});
 document.getElementById('fToggle').addEventListener('click',function(){var t=document.querySelector('.top'),o=!t.classList.contains('fopen');t.classList.toggle('fopen',o);this.setAttribute('aria-expanded',String(o));});
-document.getElementById('resetBtn').addEventListener('click',function(){state.custom=null;state.range=30;state.products=[];state.platforms=[];state.source='earned';state.kind='posts';state.dd=null;render();});
+document.getElementById('resetBtn').addEventListener('click',function(){state.custom=null;state.range=30;state.products=[];state.platforms=[];state.source='earned';state.kind='both';state.dd=null;render();});
 var prodBtn=document.getElementById('prodBtn'),prodPop=document.getElementById('prodPop');
 document.getElementById('prodList').innerHTML='<div class="pop-sec">V7 vitamin drinks</div>'+PRODUCTS.filter(function(p){return p.line==='v7';}).map(prodOption).join('')+'<div class="pop-sec">V Cola line</div>'+PRODUCTS.filter(function(p){return p.line==='vcola';}).map(prodOption).join('');
 function prodOption(p){return '<label><input type="checkbox" value="'+p.id+'" id="pc_'+p.id+'"> '+pdot(p.id)+esc(p.en)+(p.status!=='core'?' <span class="st '+p.status+'">'+STATUS[p.status]+'</span>':'')+'<span class="ar">'+esc(p.ar)+'</span></label>';}
@@ -4311,7 +4417,7 @@ function onAct(e){
     case 'pfreset':state[k||'pf']=blankPF();state[(k||'pf')+'Page']=1;render();break;
     case 'pfmore':state[(k||'pf')+'Page']++;render();break;
     case 'rule':el.setAttribute('aria-checked',el.getAttribute('aria-checked')!=='true');RULES[+v][2]=el.getAttribute('aria-checked')==='true';toast(RULES[+v][0]+(RULES[+v][2]?' alerts on':' alerts off'));break;
-    case 'alert':if(k==='person')openPerson(v);else if(k==='gap')goPosts('gap','1');else if(k==='view')go(v);else if(k==='cluster')goPosts('cluster',v);else if(k==='xcluster')goXPosts('cluster',v);else if(k==='country')openCountry(v);else if(k==='camp'){state.selCamp=v;state.view='radar';render();window.scrollTo(0,0);}else if(k==='day'){state.custom=null;state.range=(NDAYS-1-Number(v))<7?7:30;go('overview');}break;
+    case 'alert':if(k==='person')openPerson(v);else if(k==='gap')goPosts('gap',v);else if(k==='launch'){state.products=[v];goPosts('gap','1');}else if(k==='view')go(v);else if(k==='cluster')goPosts('cluster',v);else if(k==='xcluster')goXPosts('cluster',v);else if(k==='country')openCountry(v);else if(k==='camp'){state.selCamp=v;state.view='radar';render();window.scrollTo(0,0);}else if(k==='day'){state.custom=null;state.range=(NDAYS-1-Number(v))<7?7:30;go('overview');}break;
     case 'selcamp':state.selCamp=v;render();var cd=document.getElementById('cdetail');if(cd)cd.scrollIntoView({block:'start',behavior:'smooth'});break;
     case 'camp':state.selCamp=v;closePanels();state.view='radar';render();window.scrollTo(0,0);var cd2=document.getElementById('cdetail');if(cd2)cd2.scrollIntoView({block:'start'});break;
     case 'camphandled':state.campOver[v]='Handled';render();toast('Marked as handled');break;
@@ -4343,7 +4449,7 @@ document.getElementById('drBody').addEventListener('keydown',rowKey);
 /* =========================================================
    Render
    ========================================================= */
-var VIEWS={radar:vRadar,overview:vOverview,posts:vPosts,products:vProducts,voice:vVoice,people:vPeople,groups:vGroups,hashtags:vHashtags,owned:vOwned,alerts:vAlerts,events:vEvents,abroad:vAbroad,stores:vStores,restaurants:vRestaurants,trends:vTrends};
+var VIEWS={radar:vRadar,overview:vOverview,posts:vPosts,products:vProducts,voice:vVoice,people:vPeople,hashtags:vHashtags,owned:vOwned,alerts:vAlerts,events:vEvents,abroad:vAbroad,stores:vStores,restaurants:vRestaurants,trends:vTrends};
 function render(){
   hideTip();HOOKS=[];
   var c=ctxGet();
@@ -4359,10 +4465,10 @@ function render(){
   prodBtn.classList.toggle('primary',state.products.length>0);
   document.querySelectorAll('#srcSeg [data-src]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-src')===state.source));});
   document.querySelectorAll('#kindSeg [data-kind]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-kind')===state.kind));});
-  document.getElementById('resetBtn').hidden=!(state.custom||state.range!==30||state.products.length||state.platforms.length||state.source!=='earned'||state.kind!=='posts');
+  document.getElementById('resetBtn').hidden=!(state.custom||state.range!==30||state.products.length||state.platforms.length||state.source!=='earned'||state.kind!=='both');
   document.getElementById('fToggle').classList.toggle('on',!document.getElementById('resetBtn').hidden);
   /* Online stores, Restaurants and Search trends use real snapshots and Events has its own list, so the post filters don't apply there.
-     Elsewhere, hide the filters a view ignores: Alerts always use UGC posts from the last 30 days, Rumors covers every
+     Elsewhere, hide the filters a view ignores: Alerts always use public posts and comments from the last 30 days, Rumors covers every
      product and platform, and Our content is BGC by definition and shows its posts and comments side by side. */
   var V=state.view,market=V==='stores'||V==='trends'||V==='restaurants',badge=document.getElementById('dataBadge');
   var storeHist=V==='stores'&&['stock','ratings','ranks'].indexOf(state.stab)>=0;
@@ -4371,7 +4477,9 @@ function render(){
   document.getElementById('rangeWrap').hidden=V==='alerts';
   platChips.hidden=V==='radar'||storeHist;prodBtn.parentNode.hidden=V==='radar';
   document.getElementById('srcSeg').hidden=document.getElementById('kindSeg').hidden=V==='alerts'||V==='radar'||V==='owned'||storeHist;
-  badge.textContent=market||V==='radar'?'Real data':'Demo data';badge.classList.toggle('isreal',market||V==='radar');
+  var mixed=V==='owned'||(V==='abroad'&&state.xtab==='pages');
+  badge.textContent=market||V==='radar'?'Real data':mixed?'Partly real':'Demo data';badge.classList.toggle('isreal',market||V==='radar');badge.classList.toggle('mixed',mixed);
+  badge.title=!mixed?'':V==='owned'?'Real: V7’s posts from late July, its followers and views. Demo: comments, profile visits and follower details.':'Real: the pages, followers and latest posts. Demo: the leads count.';
   var where=state.view==='abroad'?'Outside Egypt · '+marketLabel():state.view==='radar'?'All countries':'Egypt';
   var sb=storeBounds();
   document.getElementById('period').textContent=storeHist?'Egypt · Amazon.eg, Carrefour Egypt and Noon · daily checks · '+fmtD(sb.from)+' – '+fmtD(sb.to)+' 2026':
@@ -4380,7 +4488,7 @@ function render(){
     state.view==='trends'?'Egypt · Google Trends, weekly · 5 Oct 2025 – 3 Oct 2026 · checked 5 Oct 2026':
     state.view==='radar'?'All countries · real posts from '+fmtMY(D(RUMOR_DATA.oldest))+' to '+fmtDY(D(RUMOR_DATA.newest))+' · checked '+fmtDY(R_CHECK):
     state.view==='events'?'Moments that explain the charts · '+fmtD(0)+' – '+fmtD(NDAYS-1)+' 2026':
-    state.view==='alerts'?'Egypt · UGC posts from the last 30 days'+(state.products.length?' · '+productScope():''):
+    state.view==='alerts'?'Egypt · public posts and comments from the last 30 days'+(state.products.length?' · '+productScope():''):
     where+' · '+fmtD(c.from)+' – '+fmtD(c.to)+' 2026, compared with '+fmtD(c.pfrom)+' – '+fmtD(c.pto)+(state.products.length?' · '+productScope():'');
   var ac=detectAlerts().filter(function(a){return a.sev==='critical';}).length,acEl=document.getElementById('alertCount');
   var rc=CAMPS.filter(function(cp){return campActive(cp.id)&&CINFO[cp.id].level==='High';}).length,rcEl=document.getElementById('radarCount');
