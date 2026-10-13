@@ -619,3 +619,8 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - All 14 suites pass, on the file and on `docs/index.html`.
 - **Files:** `V7_Pulse_Dashboard.html` (Version 21 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v21.html`), `data/raw/own_backfill_13oct/`, `data/raw/verify_13oct/build_own_posts.py`, tests. Published as artifact Version 22.
 
+### Public copy: Version 22 (13 Oct 2026)
+- **Why:** the user's OK ("yes push it").
+- `deploy/build_sites.py dashboard` rebuilt `docs/index.html`. All 14 suites had passed on this build before the Version 22 commit, and test_v22, test_v21, test_v18 and test_v5 were run again on the rebuild.
+- Pushed `main` (52fd85f Version 22, ce56aa8 public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 22.
+
