@@ -680,3 +680,8 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - `DESIGN.md`, tests.
   - Published as artifact Version 23.
 
+### Public copy: Version 23 (15 Oct 2026)
+- **Why:** the user's OK ("yes push it").
+- `deploy/build_sites.py dashboard` rebuilt `docs/index.html`. All 15 suites had passed on this build before the Version 23 commit, and test_v23, v22, v21, v18, v15 and v5 were run again on the rebuild.
+- Pushed `main` (1c1d43d Version 23, 84473e9 public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 23.
+
