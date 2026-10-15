@@ -39,7 +39,7 @@ async def main():
         secs=await J("[...document.querySelectorAll('.side-sec')].map(x=>x.textContent)")
         check('navigation groups', secs==['Conversation','To act on','Market','International'], secs)
         act=await J("(()=>{const out=[];let on=false;for(const el of document.querySelector('.side').children){if(el.classList.contains('side-sec'))on=el.textContent==='To act on';else if(on&&el.dataset.view)out.push(el.dataset.view);}return out})()")
-        check('To act on holds alerts, rumors and events', act==['alerts','radar','events'], act)
+        check('To act on holds the daily brief, alerts, rumors and events', act==['brief','alerts','radar','events'], act)   # Daily brief added in v23
         # overview: brief first, rumor line marked
         first=await J("document.querySelector('#content .g .panel h2').textContent")
         check('What changed comes before the chart', first.startswith('What changed this period'), first)
@@ -73,8 +73,8 @@ async def main():
         q=await b.new_page(viewport={'width':390,'height':844}); q.on('pageerror',lambda e:errs.append(str(e)))
         await q.goto(SRC); await q.wait_for_timeout(1200)
         check('[390] Filters button shown, filter row folded', await q.evaluate("getComputedStyle(document.getElementById('fToggle')).display!=='none' && getComputedStyle(document.getElementById('filtersRow')).display==='none'"))
-        top=await q.evaluate("document.querySelector('.kpis').getBoundingClientRect().top")
-        check('[390] KPI numbers start in the first screen', top<450, round(top))
+        top=await q.evaluate("[document.querySelector('.attn-p').getBoundingClientRect().top,document.querySelector('.kpis').getBoundingClientRect().top]")
+        check('[390] what needs attention, then the KPI numbers, start in the first screen', top[0]<450 and top[1]<900, [round(x) for x in top])   # v23: attention first, cards swipe sideways on phones
         await q.click('#fToggle'); await q.wait_for_timeout(200)
         check('[390] Filters button opens the filters', await q.evaluate("getComputedStyle(document.getElementById('filtersRow')).display!=='none'") and await q.get_attribute('#fToggle','aria-expanded')=='true')
         await q.evaluate("document.querySelector('[data-r=\"7\"]').click()"); await q.wait_for_timeout(300)

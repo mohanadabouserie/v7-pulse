@@ -1,6 +1,6 @@
 # V7 Pulse: project memory
 
-Last updated: 13 Oct 2026 (dashboard Version 22: V7's own posts real back to 16 Apr; Version 21 added V Orange, real pages abroad, data to 12 Oct)
+Last updated: 15 Oct 2026 (dashboard Version 23: the marketing team's feedback: posts with images, Needs your attention, alert next steps and previews, Daily brief, mixed sentiment)
 
 ## 1. What this is
 V7 Pulse is a social listening and market dashboard for V7's marketing team. Mohanad (the user, an internal employee) is proposing it to V7's marketing manager.
@@ -13,7 +13,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 22) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 23) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 22 since 13 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -24,7 +24,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Daily store checker | `data/collect_store_history.py` (not scheduled, see open items). Noon is read by Claude through `data/noon_llm.py`. Runs with `data/.venv/bin/python`. Tests: `tests/test_noon_llm.py` |
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v21.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v22.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -81,7 +81,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 22)
+## 4. The dashboard today (Version 23)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -97,6 +97,12 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - The V7 pages abroad table and their latest posts are real.
   - Real launches and partnerships are events, and the V Orange launch is the pending suggestion.
   - "Partly real" badge on Our content and V7 pages abroad.
+- **Version 23, the marketing team's feedback (DECISIONS #99–104):**
+  - 183 real posts carry their image, and a post view shows each post with its comments.
+  - Overview and Customer voice open with "Needs your attention".
+  - Alerts have a next step, an owner, a suggested reply, and an email and phone preview.
+  - A Daily brief tab with the morning email.
+  - Mixed sentiment, and "Worth amplifying" posts.
 - **Rumors & attacks (Version 18): real posts only.** A status sentence, five numbers, three claims (price confusion, active; "V7 was sold to Coca-Cola", contained since May 2024; "V7 Malt tastes like alcohol", watching), the claim detail with every post, "Also worth a look", "Nothing found", how the posts were found, and the fact sheet. Data: `data/raw/social/rumors_11oct/` (see section 10). To refresh: run `collect.py`, `normalize.py`, label the new posts in `labels.json`, then `build_rumors.py --inject`.
 - **Online stores (Versions 16 and 17):**
   - Summary: "Needs attention" next to "Against competitors", then "V7 price and stock in each store": each store has its own Price and Stock columns (Version 19).
@@ -437,6 +443,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | `social/reddit_quora_4oct/` | Reddit RSS and Quora results |
 | `social/hashtag_test_5oct/` | `#اشرب_اي` on Instagram and TikTok |
 | `verify_13oct/` | Review checks (13 Oct): Facebook comment replies (V7Egypt answers next day), Instagram comments (no replies returned), V7's 5 latest TikTok videos and 90 comments, X this week (`run.py`). Deeper pass: `own_pull.py` (Instagram profiles of V7 Egypt, the 4 pages abroad and the UK distributor; V7Egypt's 15 Facebook posts; 10 TikTok videos; YouTube channel), `own_pull2.py` (YouTube likes and dates, page followers and ad status, the first V Orange comments), and `build_own_posts.py --inject`, which writes the dashboard's `REAL_OWN` and `REAL_OWN_X` blocks |
+| `media_13oct/` | The cover image of 183 real posts (`fetch_media.py`, 360 px JPEGs in `img/`, `index.json`) and `build_media.py --inject`, which writes the dashboard's MEDIA block |
 | `own_backfill_13oct/` | V7 Egypt's older posts back to 16 Apr (`pull.py test|full`: Facebook and TikTok with date filters, Instagram 45 latest, YouTube channel) and `yt_pages.py` (exact dates and likes from the videos' public pages). Merged by `../verify_13oct/build_own_posts.py` |
 | `social/rumors_11oct/` | Rumors & attacks, real. Raw pulls (`x_*`, `fb_*`, `ig_v7`, `tt_rumor`, `x_coke2024`), `collect.py` (full / extra / test), `run.log`, `normalize.py` → `posts.json` (368 unique), `labels.json` (177 posts about V7, labelled by Claude on 11 Oct), `build_rumors.py` → `rumors_dashboard.json` and the dashboard's `RUMOR_DATA` block |
 | `apify_actor_pages/` | Apify Store pages for the actors we considered |
@@ -444,6 +451,20 @@ The dashboard artifact is private. People can't open it until it's shared from t
 Scripts in `data/raw/*` were written to run from the old temporary folder, so paths may need adjusting before rerunning.
 
 ## 11. Open items
+**V7 marketing team feedback (email, received 15 Oct 2026, shared as a phone screenshot; the first line and the end are cut off)**
+- The first line seems to mention a kickoff at the beginning of January, "as agreed".
+- Their points for the development phase:
+  1. **Posts:** show the actual posts and their content inside the posts section, not links only. Make the interface more visually intuitive and easier to follow, with clear, actionable views.
+  2. **Alerts:** send critical alerts immediately by email and mobile notification for severe or escalating issues, rumors and reputational risks. Include the relevant details and recommended actions.
+  3. **Daily report:** an automated daily executive summary of V7's brand health. It covers total mentions; positive, negative, neutral and **mixed** sentiment; red flags and emerging issues; positive brand signals; **new UGC worth amplifying**; and recommended actions.
+  4. **Competitors:** a clear overview of the main competitors, **Pepsi and Schweppes**: their brand sentiment, key conversations, … (cut off), summarized in a similar executive report.
+- Status: points 1–3 are built in the demo (Version 23). **Point 4 (competitors) is on hold** at the user's request (DECISIONS #98).
+- To agree with the team:
+  - which phone channel for Act now alerts (WhatsApp, Microsoft Teams, SMS or Telegram), and who receives alerts and the daily brief;
+  - the brief's time and language (Arabic, English or both);
+  - what counts as critical for them, and how fast they want to respond;
+  - their policy for reposting customers' content.
+
 **Waiting on the user**
 - Add an Anthropic API key for the store check (Noon is now read by Claude). Save it in `.env.anthropic` as `ANTHROPIC_API_KEY=...`; never paste it in chat. Then do one live run of `data/noon_llm.py`, measure the real cost, and update the cost calculator's store-check price if it differs.
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).

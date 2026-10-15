@@ -39,7 +39,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v22.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v23.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
@@ -68,7 +68,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - renderers (`kpi`, `bars`, `sortTable`, `postCard`), charts, insight text;
   - the Egypt and Outside Egypt views;
   - Online stores (real snapshots plus the daily history engine), Restaurants (real Talabat), Search trends (real Google Trends);
-  - the Rumors & attacks view (`vRadar`), Events, drawers, Ask V7 Pulse;
+  - the Rumors & attacks view (`vRadar`), the post view (`openPost`), alert plans and previews (`alertPlan`, `openAlertPreview`), "Needs your attention" (`attentionCards`), the Daily brief (`briefFor`, `vBrief`), Events, drawers, Ask V7 Pulse;
   - global controls (`onAct` switch on `data-act`), then `render()`.
 - **Views:** the `VIEWS` map routes each sidebar `data-view` to its function. Each view writes `content.innerHTML`. Charts that need sizes are pushed to `HOOKS` and run after render.
 - **Interaction:** any element with `data-act="…" data-v="…"` is handled in `onAct`. Rows that open details carry `tabindex=0`, so Enter and Space work.
@@ -78,13 +78,14 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - The header badge (`#dataBadge`) switches per view: "Real data", "Partly real" (Our content, V7 pages abroad) or "Demo data". Keep it honest when you add a view.
 - **Generated blocks, don't hand-edit:**
   - `/*RUMOR_DATA*/…/*END_RUMOR_DATA*/` is written by `build_rumors.py --inject`;
-  - `/*REAL_OWN*/…/*END_REAL_OWN*/` and `/*REAL_OWN_X*/…/*END_REAL_OWN_X*/` (V7's own posts, in Egypt and abroad) are written by `data/raw/verify_13oct/build_own_posts.py --inject`.
+  - `/*REAL_OWN*/…/*END_REAL_OWN*/` and `/*REAL_OWN_X*/…/*END_REAL_OWN_X*/` (V7's own posts, in Egypt and abroad) are written by `data/raw/verify_13oct/build_own_posts.py --inject`;
+  - `/*MEDIA*/…/*END_MEDIA*/` (each real post's image as a data: URI, keyed by the post link) is written by `data/raw/media_13oct/build_media.py --inject`.
 - **The file has very long lines** (one data line is 137K characters). Edit with exact-match replacements, not by retyping lines. Read with offsets.
 - **Class names:** never reuse `demo`, `real`, `st` or `pill` for new elements; they're badge styles (DECISIONS #69).
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.

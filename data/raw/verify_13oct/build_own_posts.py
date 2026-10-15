@@ -34,8 +34,8 @@ def load(name, folder=HERE):
 
 def js(s):
     s = re.sub(r'\s+', ' ', re.sub('[\u2066-\u2069\u200e\u200f]', '', s or '')).strip()
-    if len(s) > 240:
-        s = s[:237].rsplit(' ', 1)[0] + '…'
+    if len(s) > 1500:   # full captions for the post view (Version 23); cards show the first lines
+        s = s[:1497].rsplit(' ', 1)[0] + '…'
     return s.replace('\\', '\\\\').replace("'", "\\'").replace('</', '<\\/').replace('\u2028', ' ').replace('\u2029', ' ')
 
 

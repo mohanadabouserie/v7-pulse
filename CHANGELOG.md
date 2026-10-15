@@ -624,3 +624,59 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - `deploy/build_sites.py dashboard` rebuilt `docs/index.html`. All 14 suites had passed on this build before the Version 22 commit, and test_v22, test_v21, test_v18 and test_v5 were run again on the rebuild.
 - Pushed `main` (52fd85f Version 22, ce56aa8 public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 22.
 
+### Marketing team feedback (15 Oct 2026)
+- V7's marketing team sent feedback for the development phase: posts viewable inside the dashboard, a more intuitive and actionable interface, immediate email and mobile alerts with recommended actions, a daily executive summary (with mixed sentiment and UGC worth amplifying), and a competitor overview of Pepsi and Schweppes.
+- Recorded in `PROJECT_MEMORY.md` section 11. No dashboard change yet; next steps are being proposed to the user.
+
+### Version 23: the marketing team's feedback (15 Oct 2026)
+- **Why:** V7's marketing team asked for:
+  - posts viewable inside the dashboard;
+  - a more intuitive, actionable interface;
+  - immediate alerts with recommended actions;
+  - a daily executive summary.
+
+  The user asked to build all of it as one version. Competitors are on hold (DECISIONS #98).
+- **Real images (free, no Apify):**
+  - `data/raw/media_13oct/fetch_media.py` saved the cover image of 183 of 190 real posts:
+    - Instagram 105 (V7 Egypt, the pages abroad, the distributor);
+    - YouTube 30 (i.ytimg.com);
+    - Facebook 29;
+    - TikTok 19, read from each video's public page, because TikTok's oEmbed service doesn't answer from this network.
+  - Images are shrunk to 360 px (JPEG quality 55). The fetch ran one request a second, over IPv4 when the host has it, since this network often can't reach IPv6.
+  - Missing: 4 Facebook images on hosts reachable only over IPv6, and 3 Facebook text posts or shares.
+  - `build_media.py --inject` writes them into a new `/*MEDIA*/` block (about 2.4 MB). The page is now 3.25 MB.
+- **Dashboard:**
+  - **Posts you can see:**
+    - Post cards show the image with a video or album mark, and "View post".
+    - "Our posts" shows a thumbnail in each row.
+    - The new post view shows the image, full text (captions now kept up to 1,500 characters), numbers and links, then the comments with V7's replies, and says what's real.
+  - **Needs your attention:** Overview and Customer voice open with up to 4 action cards: severity, evidence, next step, owner. On phones they swipe sideways.
+  - **Alerts:**
+    - Every alert to act on gets a next step and an owner.
+    - Rumor alerts use the fact sheet's actions and replies. Launch questions come with a reply to fill in (date, places).
+    - "Preview the email and phone alert" shows:
+      - the email: subject, why it matters, the posts behind it (real rumor posts or posts with their images), next step and a suggested Arabic and English reply with a copy button;
+      - the phone notification.
+    - "How they're sent": Act now goes by email and phone right away; the rest by email and in the daily brief.
+  - **Daily brief (new tab under To act on):**
+    - Sections: brand health (mentions against the 7-day average, the four-part sentiment, replies waiting, V7's posts), red flags, positive signals, worth amplifying (each with a suggested step) and 3–5 recommended actions with owners.
+    - Any of the last 7 days can be opened, and "See the email" shows the morning email.
+  - **Mixed sentiment:**
+    - A fourth class (orange `--mix`) in the stats, charts, legends, tooltips, pills, the posts filter and the Ask V7 Pulse tools.
+    - In the demo, some complaints and requests come with a word of praise ("Love it, but…"), using their own random numbers: about 7% of the conversation.
+  - **Worth amplifying:** positive, original posts by people and creators with some engagement. It's a posts filter, an attention card and a brief section, each post with a suggested step: thank, ask to repost with permission, or invite a creator.
+  - **Smaller changes:**
+    - Alerts and Events, like the brief, are marked "Partly real".
+    - The guide defines Mixed, Worth amplifying, Needs your attention and Daily brief.
+    - The sidebar note is shorter, so the sidebar fits 900 px.
+- **Tests:**
+  - New `tests/test_v23.py` (27 checks).
+  - `test_v15.py`: the To act on group includes Daily brief; on phones, attention then KPIs start in the first screen.
+  - All 15 suites pass on the file and on `docs/index.html`.
+- **Files:**
+  - `V7_Pulse_Dashboard.html` (Version 22 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v22.html`);
+  - `data/raw/media_13oct/`;
+  - `data/raw/verify_13oct/build_own_posts.py` (full captions);
+  - `DESIGN.md`, tests.
+  - Published as artifact Version 23.
+

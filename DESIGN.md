@@ -24,6 +24,7 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
 | Sidebar | `--side-bg` | `#08703A` | `#0D2A1C` | Navigation. A shade deeper than the brand green, so white text reaches 6.2:1 and labels 4.6:1 |
 | Quantity | `--bar` | `#22396B` (V Cola navy) | `#8EA9E0` | Plain amounts: bars, sparklines, line charts |
 | Positive / neutral / negative | `--pos` `--neu` `--neg` | `#1A9150` `#C5CEC8` `#E2483D` | `#4CC383` `#4A5D53` `#F0705F` | Sentiment only |
+| Mixed (Version 23) | `--mix`, text `--mix-text` | `#D9822B`, text `#8A4510` | `#F0A35E`, text `#F3B27A` | Mixed sentiment only: praise and a complaint in one. Orange, apart from the events gold |
 | Events, things to review | `--lemon` | `#E8A317` (Super Soda gold) | `#F2B53A` | Event markers, pending counts, "Real data" badge |
 | Competitors | `--co-pepsi` `--co-coke` `--co-other` | `#1F5BC6` `#D22B36` `#9AA5A0` | lighter versions | PepsiCo blue, Coca-Cola red, others grey. V7 is always green |
 | Text | `--ink` `--ink-2` `--muted` | `#12201A` `#3F4F47` `#5F6F67` | `#E8F1EC` `#B3C5BB` `#8DA297` | Body, secondary, labels |
@@ -134,4 +135,33 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - dialect splits beyond Egyptian Arabic, other Arabic, English and Franco-Arabic;
   - badges that say nothing (only Seasonal is shown).
 - **Data that needs V7's accounts** is labelled with its source ("Instagram insights · demo numbers").
+
+## 11. The marketing team's feedback (Version 23)
+- **"Needs your attention" first:**
+  - Overview and Customer voice open with up to 4 cards (3 on Customer voice). Each card has:
+    - a severity label and a matching left border: red for act now, gold for watch, green for opportunity;
+    - a title and one line of evidence;
+    - **Next step**, and an owner chip (Social team, Customer care, Sales, E-commerce, PR);
+    - "View →".
+  - Order: urgent items, then social issues, replies waiting, posts worth amplifying, and at most one store item.
+  - On phones the cards are a row to swipe, so the KPI numbers still start in the first screen.
+- **Posts show their image:**
+  - A 112 px square on the card (84 px on phones), with a play mark for videos and an album mark for carousels.
+  - Card text stops at 6 lines; the full text is in the post view.
+  - Demo posts never get an invented image.
+  - Images are embedded as small JPEGs (360 px, quality 55), so the dashboard stays one file: 183 posts, about 2.4 MB.
+- **Post view:**
+  - A drawer that opens from "View post", the image or the caption in Our posts.
+  - Order: the image (shown whole on black), "the video plays on …", the full text, chips, the numbers, buttons to open and copy the link.
+  - Then the comments, with V7's replies under them on a green left rule.
+  - It ends with a line saying what's real.
+- **Alert preview:**
+  - An email card: From, To and Subject in a grey header, then small uppercase section labels (What people are posting, Next step, Suggested reply).
+  - A phone notification mock: a dark phone with a light card, drawn the same in both themes.
+- **Daily brief:**
+  - Brand-health tiles with the four-part sentiment bar.
+  - Red flags as left-ruled items by severity; positive signals in green.
+  - "Worth amplifying" cards with a suggested step under each.
+  - Numbered actions, each with an owner chip.
+- **"Partly real" badge:** also on Daily brief, Alerts and Events, with a tooltip saying which parts are real.
 
