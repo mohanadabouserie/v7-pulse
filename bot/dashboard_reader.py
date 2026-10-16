@@ -4,7 +4,7 @@ from the same data and the same logic.
 
 DASH_URL (env) picks the dashboard: the website's copy in docs/ by default. On a server it can be the live address.
 """
-import os, pathlib, re, threading
+import os, pathlib, re, threading, urllib.parse
 from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -15,7 +15,7 @@ _lock = threading.Lock()
 _pw = _browser = None
 
 
-def _page():
+def _page(init=None):
     global _pw, _browser
     if _browser is None or not _browser.is_connected():   # first use, or the browser crashed: start a new one
         close()
@@ -23,6 +23,8 @@ def _page():
         _browser = _pw.chromium.launch()
     pg = _browser.new_page(viewport={'width': 1280, 'height': 900})
     try:
+        if init:
+            pg.add_init_script(init)
         pg.goto(DASH_URL)
         pg.wait_for_function("document.querySelector('#content .panel')!==null", timeout=30000)
     except Exception:
@@ -100,6 +102,76 @@ def ask(question):
             return pg.evaluate("document.querySelector('#chatLog .msg.bot:last-child').innerHTML")
         finally:
             pg.close()
+
+
+# ---------------------------------------------------------------- Ask V7 Pulse with Claude
+# On claude.ai the dashboard gets Claude through window.claude.use('sample') and hands it standing instructions and eight
+# read-only tools over its own data. This stand-in for that runtime takes them over instead, so the bot can give Claude
+# exactly what the dashboard gives it (claude_tools_mcp.py runs the tools; v7pulse_bot.py runs Claude Code).
+FAKE_CLAUDE = """
+window.__v7cap = null; window.__v7tools = {}; window.__v7ready = false;
+window.claude = {use: async function (name) {
+  if (name !== 'sample') return null;
+  var sample = function (input, opts) {
+    var tools = (opts && opts.tools) || [];
+    tools.forEach(function (t) { window.__v7tools[t.name] = t.execute; });
+    window.__v7cap = {input: input, tools: tools.map(function (t) {
+      return {name: t.name, description: t.description, inputSchema: t.inputSchema || {type: 'object', properties: {}}}; })};
+    return new Promise(function () {});   // the page keeps waiting: the answer goes to Telegram, not to this page
+  };
+  sample.limits = async function () { setTimeout(function () { window.__v7ready = true; }, 0); return {tools: {maxCount: 8}}; };
+  return sample;
+}};
+"""
+_ai = {}
+
+
+def _ai_page():
+    """A dashboard page that has handed over its Claude instructions and tools (window.__v7cap, window.__v7tools)."""
+    pg = _page(FAKE_CLAUDE)
+    try:
+        pg.wait_for_function('window.__v7ready === true', timeout=15000)
+        pg.evaluate("document.getElementById('askInput').value = 'What happened this week?'; document.getElementById('askForm').requestSubmit()")
+        pg.wait_for_function('window.__v7cap !== null', timeout=15000)
+    except Exception:
+        pg.close(); raise
+    return pg
+
+
+def _stamp():
+    """When the dashboard file last changed (None for a web address), so the cached instructions follow a new version."""
+    if DASH_URL.startswith('file:'):
+        try:
+            return os.path.getmtime(urllib.parse.unquote(urllib.parse.urlparse(DASH_URL).path))
+        except OSError:
+            return None
+    return None
+
+
+def ai_setup():
+    """{'rules', 'tools'}: the instructions and the eight read-only tools the dashboard gives Claude on claude.ai."""
+    with _lock:
+        if 'rules' not in _ai or _ai.get('stamp') != _stamp():
+            pg = _ai_page()
+            try:
+                cap = pg.evaluate('window.__v7cap')
+            finally:
+                pg.close()
+            _ai.update(stamp=_stamp(), rules=cap['input'][0]['content'], tools=cap['tools'])
+        return {'rules': _ai['rules'], 'tools': _ai['tools']}
+
+
+def tool_page():
+    """A page whose dashboard tools run_tool can call."""
+    with _lock:
+        return _ai_page()
+
+
+def run_tool(pg, name, args):
+    """Runs one of the dashboard's read-only tools in the page; returns its result as JSON text."""
+    with _lock:
+        return pg.evaluate("""async ([n, i]) => { const f = window.__v7tools[n];
+            if (!f) throw new Error('no tool called ' + n); return JSON.stringify(await f(i || {})); }""", [name, args or {}])
 
 
 def close():

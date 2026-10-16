@@ -39,12 +39,12 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py`. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
 | `data/raw/social/rumors_11oct/` | The Rumors & attacks pipeline (see "Data pipelines"). |
-| `bot/` | The Telegram bot @v7_pulse_bot: `v7pulse_bot.py` (daily brief, Act now alerts, questions), `dashboard_reader.py` (reads the website copy in a headless browser), `README.md`, a systemd service file. State in `bot/state/` (ignored). One copy runs at a time; its process id is in `bot/state/bot.pid` |
+| `bot/` | The Telegram bot @v7_pulse_bot: `v7pulse_bot.py` (daily brief, Act now alerts, questions), `dashboard_reader.py` (reads the website copy in a headless browser), `claude_tools_mcp.py` (the dashboard's eight read-only Claude tools for Claude Code, which answers questions), `README.md`, a systemd service file. State in `bot/state/` (ignored). One copy runs at a time; its process id is in `bot/state/bot.pid` |
 | `Ask_V7_Pulse/` | Hosted-version setup for the chat: system prompt, 14 tool definitions, Apify allowlist. |
 | `scripts/` | Apify helper runners from the first tests. |
 | `Reference docs/` | Third-party PDFs. Kept locally only, and git-ignored. |
@@ -91,7 +91,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
-- **The Telegram bot:** `python3 tests/test_bot.py`. A stand-in for Telegram, so it needs no token and sends nothing. It reads the real dashboard; prefix with `DASH_SRC=file://$PWD/docs/index.html` for the copy the live bot reads.
+- **The Telegram bot:** `python3 tests/test_bot.py`. Stand-ins for Telegram and for Claude Code, so it needs no token or account and spends nothing. It reads the real dashboard; prefix with `DASH_SRC=file://$PWD/docs/index.html` for the copy the live bot reads.
 - Tests find the dashboard relative to the `tests/` folder, so they run from any checkout.
 
 ## Publishing
@@ -138,6 +138,8 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - The bot token is in `.env.telegram`. Never print it, log it, commit it, or put it in the dashboard; `test_v24.py` checks the page for it.
   - The join link is private too.
   - If the token leaks, revoke it in @BotFather.
+  - The bot's Claude sign-in is in `bot/state/claude/` (ignored). Never print or copy its `.credentials.json`.
+  - Don't sign the bot in with the user's work account (another company's Claude Team plan, and the CLI's default login on this machine): V7's data shouldn't go through another company's Claude account. The bot refuses any organization listed in `CLAUDE_BLOCKED_ORGS` in `.env.telegram` (DECISIONS #112). Never write that organization's name in a tracked file: the repo is public.
   - The bot runs on the user's machine. Restart it with `kill $(cat bot/state/bot.pid)`, then `setsid nohup python3 bot/v7pulse_bot.py >> bot/state/stdout.log 2>&1 < /dev/null &` (never `pkill -f`, which can match your own shell).
 - **Meta and Anthropic:** the Meta token goes in `.env.meta` as `META_SYSTEM_USER_TOKEN=…`. It's a system-user token; scripts get the Page token from it at run time with `/me/accounts`. The Anthropic key goes in `.env.anthropic`. The same rules apply to both: never print them, never put them in the dashboard file, and never ask anyone to paste them in chat.
 - **GitHub:** never print a `gh` token (`gh auth token`, `gh auth status -t`). Creating repos, changing access or settings, or pushing anything public needs the user's OK.

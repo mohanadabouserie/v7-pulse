@@ -737,3 +737,25 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - `deploy/build_sites.py dashboard` rebuilt `docs/index.html`. All 16 dashboard suites and `test_bot.py` passed on the rebuild (`DASH_SRC`).
 - Pushed `main` (aaf5737 Version 24, 450a534 the bot update, 341c196 public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 24: the links to @v7_pulse_bot are there, the join link isn't.
 - The live bot reads `docs/index.html`, so its brief, alerts and answers now come from Version 24.
+
+### Telegram bot: questions answered by Claude (16 Oct 2026, dashboard stays Version 24)
+- **Why:** the user: "connect it to my claude sessions until I get an llm api key… so that the bot on telegram can answer any question".
+- **How it works:**
+  - The bot opens the dashboard with a stand-in for claude.ai's runtime, so the page hands over what it gives Claude on claude.ai: its standing instructions and eight read-only tools (`dashboard_reader.ai_setup`, `tool_page`, `run_tool`).
+  - `bot/claude_tools_mcp.py` serves those tools to Claude Code over MCP (stdio). They run in a headless copy of the dashboard.
+  - Each question starts Claude Code in the background (`claude -p`, JSON out, the question on stdin). The bot keeps answering other commands, shows "typing…", then sends the answer as Telegram text: Markdown, tables as lines, the web and Apify suggestions as lines, and a link to the dashboard.
+  - Follow-ups see the chat's last three exchanges, kept in memory for two hours.
+- **Locked down (DECISIONS #111):**
+  - no built-in tools, only the dashboard's tool server (`--tools ""`, `--strict-mcp-config`, `--allowedTools mcp__v7pulse`);
+  - its own sign-in folder, a clean environment, and an empty folder outside the project;
+  - 100 questions a day, two at a time, one per chat, three minutes each.
+- **Fallbacks:** when Claude can't answer (not signed in, the plan's limit, too slow), the built-in answer, with a line saying why. If the plan doesn't include Opus 5.5, the plan's default model.
+- **Sign-in:**
+  - The CLI's default login on this machine is the user's work account (another company's Team plan), so it isn't used (DECISIONS #112). The bot needs its own sign-in: `CLAUDE_CONFIG_DIR="$PWD/bot/state/claude" claude auth login`.
+  - The user's first sign-in (23:07) went to the work account too, because the browser was signed in to it on claude.ai. The bot now refuses any organization listed in `CLAUDE_BLOCKED_ORGS` in `.env.telegram` (set to the work organization; the name stays out of the public repo). Restarted at 23:08; no question went to Claude in between.
+  - A question then gets the built-in answer, with a line saying Claude is signed in with an account the bot doesn't use.
+- **Checked:**
+  - The real CLI accepts every option the bot passes; with no sign-in it stops at "Not logged in".
+  - `tests/test_bot.py` now has 77 checks, with `tests/fake_claude.py` (a stand-in for Claude Code that runs the real tool server). FAIL 0 on the source and on `docs/index.html`.
+- **Running:** the bot restarted at 23:04 with the new code. The user joined as the admin at 22:39.
+- **Files:** `bot/v7pulse_bot.py`, `bot/dashboard_reader.py`, `bot/claude_tools_mcp.py` (new), `bot/README.md`, `tests/test_bot.py`, `tests/fake_claude.py` (new), `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.

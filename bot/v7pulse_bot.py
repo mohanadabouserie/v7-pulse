@@ -5,7 +5,10 @@ What it does
   when the dashboard has no new day of data, nothing is sent.
 - "Act now" alerts as soon as they're found (checked every 2 hours), once per chat. Watch and Opportunity alerts are in
   the brief.
-- Any question gets Ask V7 Pulse's answer, the same as on the website. /brief and /alerts on demand.
+- Any question is answered by Claude the way Ask V7 Pulse answers it on claude.ai: Claude Code gets the dashboard's own
+  instructions and its eight read-only tools (claude_tools_mcp.py), and nothing else. Until Claude is signed in (the
+  bot's own login in bot/state/claude, or ANTHROPIC_API_KEY in .env.anthropic), questions get the built-in answers.
+  /brief and /alerts on demand.
 Everything is read from the dashboard itself (dashboard_reader.py), so Telegram and the website always agree.
 
 Access
@@ -20,11 +23,13 @@ Secrets and state
 - .env.telegram in the project folder (git-ignored): TELEGRAM_BOT_TOKEN and TELEGRAM_JOIN_CODE. Never printed or logged.
   The same names set in the environment take precedence (the tests use this).
 - bot/state/ (git-ignored; V7_BOT_STATE picks another folder): subscribers.json (chats, names, the last brief and the
-  alerts each has had), sent.json (Telegram's update offset, the day of the last 09:00 run), bot.log, bot.pid.
+  alerts each has had), sent.json (Telegram's update offset, the day of the last 09:00 run), claude_use.json (questions
+  to Claude today), claude_tools.json, claude/ (the bot's Claude sign-in), bot.log, bot.pid.
 
 Run: python3 bot/v7pulse_bot.py   (keeps running; stop it with Ctrl+C or kill $(cat bot/state/bot.pid)). One copy at a time.
+Sign Claude in once: CLAUDE_CONFIG_DIR="$PWD/bot/state/claude" claude auth login   (see bot/README.md)
 """
-import datetime, fcntl, html, json, os, pathlib, re, signal, sys, time, traceback, urllib.error, urllib.request, zoneinfo
+import datetime, fcntl, glob, html, json, os, pathlib, re, shutil, signal, subprocess, sys, tempfile, time, traceback, urllib.error, urllib.request, zoneinfo
 from html.parser import HTMLParser
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -39,6 +44,16 @@ ALERT_EVERY = 2 * 3600
 SITE = dash.SITE
 SEV_MARK = {'Act now': '🔴', 'Watch': '🟡', 'Opportunity': '🟢', 'All clear': '✅'}
 GONE = ('blocked', 'deactivated', 'chat not found', 'kicked', 'not a member')   # Telegram's errors for a chat that's gone
+# Claude Code answers questions. V7_CLAUDE_CLI, V7_CLAUDE_MODEL, V7_CLAUDE_EFFORT and V7_CLAUDE_PER_DAY change the defaults.
+CLAUDE_CLI = (os.environ.get('V7_CLAUDE_CLI') or shutil.which('claude')
+              or (sorted(glob.glob(os.path.expanduser('~/.nvm/versions/node/*/bin/claude'))) or [''])[-1])
+CLAUDE_HOME = STATE / 'claude'                                          # the bot's own Claude sign-in
+CLAUDE_WORK = pathlib.Path(tempfile.gettempdir()) / 'v7pulse-bot'       # an empty folder: no project files or settings
+CLAUDE_MODEL = os.environ.get('V7_CLAUDE_MODEL', 'claude-opus-5-5')
+CLAUDE_EFFORT = os.environ.get('V7_CLAUDE_EFFORT', 'medium')
+CLAUDE_PER_DAY = int(os.environ.get('V7_CLAUDE_PER_DAY', '100'))      # questions to Claude a day, for the plan's limits
+CLAUDE_TIMEOUT = 180
+CLAUDE_AT_ONCE = 2
 
 
 def read_env():
@@ -47,12 +62,14 @@ def read_env():
         for line in open(f, encoding='utf-8'):
             if '=' in line and not line.startswith('#'):
                 k, v = line.strip().split('=', 1); e[k] = v
-    e.update({k: os.environ[k] for k in ('TELEGRAM_BOT_TOKEN', 'TELEGRAM_JOIN_CODE') if os.environ.get(k)})
+    e.update({k: os.environ[k] for k in ('TELEGRAM_BOT_TOKEN', 'TELEGRAM_JOIN_CODE', 'CLAUDE_BLOCKED_ORGS') if os.environ.get(k)})
     return e
 
 
 ENV = read_env()
 TOKEN, CODE = ENV.get('TELEGRAM_BOT_TOKEN', ''), ENV.get('TELEGRAM_JOIN_CODE', '')
+# Claude accounts the bot never uses, by organization or email (comma-separated, in .env.telegram; DECISIONS #112)
+BLOCKED_ORGS = [x.strip().lower() for x in ENV.get('CLAUDE_BLOCKED_ORGS', '').split(',') if x.strip()]
 if not TOKEN:
     sys.exit('No bot token: put TELEGRAM_BOT_TOKEN=… in .env.telegram (see bot/README.md).')
 
@@ -204,6 +221,47 @@ def to_tg(h):
     return re.sub(r'\n{3,}', '\n\n', s).strip()
 
 
+def md_inline(s):
+    s = esc(s)
+    s = re.sub(r'\*\*([^*]+)\*\*', r'<b>\1</b>', s)
+    s = re.sub(r'(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)', r'\1<i>\2</i>', s)
+    s = re.sub(r'`([^`]+)`', r'<code>\1</code>', s)
+    return re.sub(r'\[([^\]]+)\]\((https?://[^\s)]+)\)', lambda m: '<a href="%s">%s</a>' % (m.group(2).replace('"', '%22'), m.group(1)), s)
+
+
+def md_to_tg(src):
+    """Claude's Markdown (as the dashboard renders it) as Telegram HTML: bold, italics, code and links kept; headings as
+    bold lines; bullets and steps as text; tables as bullet lines; [[web: …]] and [[apify: …]] suggestions as lines."""
+    out, table = [], []
+
+    def flush():
+        rows = [[c.strip() for c in r.strip('|').split('|')] for r in table if not re.match(r'^\|?\s*:?-{2,}', r)]
+        if rows:
+            out.append('<b>%s</b>' % ' · '.join(md_inline(c.replace('**', '')) for c in rows[0]))
+            out.extend('• ' + ' · '.join(md_inline(c) for c in r) for r in rows[1:])
+        table.clear()
+    for line in str(src).split('\n'):
+        s = line.strip()
+        if len(s) > 1 and s[0] == '|' and s[-1] == '|':
+            table.append(s); continue
+        flush()
+        m = re.match(r'\[\[(web|apify):(.+)\]\]$', s, re.I)
+        if m:
+            f = [x.strip() for x in m.group(2).split('|') if x.strip()]
+            out.append('🔎 <i>Worth a web search:</i> ' + esc(f[0]) + (' (%s)' % esc(f[1]) if len(f) > 1 else '') if m.group(1).lower() == 'web'
+                       else '📥 <i>New data to collect, needs approval:</i> ' + esc(' · '.join(f)))
+            continue
+        m = re.match(r'#{1,4}\s+(.*)$', s)
+        if m:
+            out.append('<b>%s</b>' % md_inline(m.group(1).replace('**', ''))); continue
+        m = re.match(r'[-*•]\s+(.*)$', s)
+        if m:
+            out.append(('    ◦ ' if len(line) - len(line.lstrip()) >= 2 else '• ') + md_inline(m.group(1))); continue
+        out.append(md_inline(s))
+    flush()
+    return re.sub(r'\n{3,}', '\n\n', '\n'.join(out)).strip()
+
+
 # ---------------------------------------------------------------- messages
 
 def brief_msg(day=0):
@@ -252,10 +310,15 @@ def alerts_text():
     return '<b>Alerts in Egypt, last 30 days</b>\n\n' + '\n\n'.join(alert_text(a) for a in rows) + '\n\n<a href="%s#alerts">Open Alerts in V7 Pulse</a>' % SITE
 
 
-HELP = ('<b>V7 Pulse</b> sends the daily brief at 09:00 and “Act now” alerts as soon as they’re found.\n\n'
-        '/brief  the latest brief (/brief 1 for the day before)\n/alerts  what needs attention, with next steps\n'
-        '/ask <i>question</i>  or just type a question\n/stop  stop the brief and alerts\n\n'
-        'Questions get the same answers as Ask V7 Pulse on the website. <a href="%s">Open V7 Pulse</a>' % SITE)
+def help_text():
+    return ('<b>V7 Pulse</b> sends the daily brief at 09:00 and “Act now” alerts as soon as they’re found.\n\n'
+            '/brief  the latest brief (/brief 1 for the day before)\n/alerts  what needs attention, with next steps\n'
+            '/ask <i>question</i>  or just type a question\n/stop  stop the brief and alerts\n\n'
+            + ('Claude answers questions from the dashboard’s data, the way Ask V7 Pulse does. ' if claude_ready()
+               else 'Questions get the same answers as Ask V7 Pulse on the website. ')
+            + '<a href="%s">Open V7 Pulse</a>' % SITE)
+
+
 ADMIN_NOTE = ('\n\nYou’re the admin: /subscribers lists who gets the reports, /remove <i>id</i> takes someone off, '
               '/test sends you a sample alert. You’ll hear when someone joins.')
 NOT_MEMBER = ('This bot sends V7’s marketing alerts and reports to V7’s team. '
@@ -291,13 +354,13 @@ def handle(msg, subs):
     is_admin = member and subs[cid].get('role') == 'admin'
     if cmd == '/start':
         if member:
-            send(cid, HELP); return
+            send(cid, help_text()); return
         if CODE and arg.strip() == CODE:
             role = 'member' if any(s.get('role') == 'admin' for s in subs.values()) else 'admin'
             subs[cid] = {'name': name, 'type': chat.get('type'), 'role': role, 'since': datetime.datetime.now(CAIRO).isoformat(timespec='minutes')}
             save('subscribers.json', subs)
             log('joined:', cid, chat.get('type'), role)
-            send(cid, 'You’re in. ' + HELP + (ADMIN_NOTE if role == 'admin' else ''))
+            send(cid, 'You’re in. ' + help_text() + (ADMIN_NOTE if role == 'admin' else ''))
             for k in [k for k, s in subs.items() if s.get('role') == 'admin' and k != cid]:
                 deliver(k, '%s joined V7 Pulse on Telegram.' % esc(name), subs)
             typing(cid)
@@ -310,7 +373,7 @@ def handle(msg, subs):
             send(cid, NOT_MEMBER)
         return
     if cmd == '/help':
-        send(cid, HELP)
+        send(cid, help_text())
     elif cmd == '/brief':
         typing(cid)
         give_brief(cid, subs, int(arg) if arg.strip().isdigit() and int(arg) < 7 else 0)
@@ -336,8 +399,203 @@ def handle(msg, subs):
         q = arg if cmd == '/ask' else ('' if cmd else text)
         if not q:
             send(cid, 'Type a question, for example: what are the main complaints?'); return
-        typing(cid)
-        send(cid, to_tg(dash.ask(q)) or 'No answer for that one. Try /brief or /alerts.')
+        answer_question(cid, q)
+
+
+# ---------------------------------------------------------------- questions answered by Claude
+# Claude Code (the `claude` command) gets the dashboard's own instructions and its eight read-only tools through
+# claude_tools_mcp.py, and nothing else: no built-in tools (files, shell, web), no other tool servers, no settings,
+# an empty folder and a clean environment. It signs in with the bot's own login (bot/state/claude), or with
+# ANTHROPIC_API_KEY from .env.anthropic once there is one. Answers run in the background, so the bot keeps working.
+
+TELEGRAM_RULES = '\n'.join([
+    'ON TELEGRAM',
+    '- This chat is V7 Pulse’s Telegram bot (@v7_pulse_bot), not the dashboard page. The person asking is on V7’s team.',
+    '- Keep it short for a phone: the answer first, then at most six bullets. Aim for under 1,200 characters.',
+    '- No tables: Telegram can’t show them. Use bullets.',
+    '- Name the dashboard tab to open; a link to the dashboard goes under your answer.',
+    '- Earlier questions and answers from this chat, when there are any, come before the new question.'])
+HIST = {}               # chat -> {'t': time, 'turns': [(question, answer), …]}: the last exchanges, kept in memory only
+JOBS, WAITING = [], []
+_claude = {'at': 0, 'ok': False, 'model': CLAUDE_MODEL}   # model: '' once the plan has refused CLAUDE_MODEL
+
+
+def api_key():
+    """ANTHROPIC_API_KEY from .env.anthropic, once there is one: Claude then bills the API instead of the bot's login."""
+    f = ROOT / '.env.anthropic'
+    if f.exists():
+        for line in open(f, encoding='utf-8'):
+            if line.startswith('ANTHROPIC_API_KEY=') and line.strip()[18:]:
+                return line.strip()[18:]
+    return ''
+
+
+def claude_env():
+    """Claude Code's whole environment: the bot's sign-in folder, and nothing else from this machine."""
+    env = {'HOME': str(pathlib.Path.home()), 'LANG': 'C.UTF-8', 'CLAUDE_CONFIG_DIR': str(CLAUDE_HOME),
+           'PATH': os.pathsep.join([os.path.dirname(CLAUDE_CLI), '/usr/local/bin', '/usr/bin', '/bin'])}
+    if api_key():
+        env['ANTHROPIC_API_KEY'] = api_key()
+    return env
+
+
+def claude_ready():
+    """True when Claude can answer: an API key, or the bot signed in to Claude. Checked at most once a minute."""
+    if not (CLAUDE_CLI and os.path.exists(CLAUDE_CLI)):
+        return False
+    if api_key():
+        return True
+    if time.time() - _claude['at'] > 60:
+        _claude['at'] = time.time()
+        CLAUDE_HOME.mkdir(parents=True, exist_ok=True); CLAUDE_WORK.mkdir(exist_ok=True)
+        try:
+            r = subprocess.run([CLAUDE_CLI, 'auth', 'status'], capture_output=True, text=True, timeout=30, env=claude_env(), cwd=CLAUDE_WORK)
+            info = json.loads(r.stdout or '{}')
+            who = ('%s %s' % (info.get('email') or '', info.get('orgName') or '')).lower()
+            blocked = info.get('loggedIn') is True and any(o in who for o in BLOCKED_ORGS)
+            if blocked and not _claude.get('blocked'):
+                log('Claude is signed in with an account in CLAUDE_BLOCKED_ORGS; the bot won’t use it')
+            _claude['blocked'] = blocked
+            _claude['ok'] = info.get('loggedIn') is True and not blocked
+        except Exception as e:
+            _claude['ok'] = False; log('could not check the Claude sign-in:', safe(e))
+    return _claude['ok']
+
+
+def claude_quota():
+    """Counts today's question to Claude; False once V7_CLAUDE_PER_DAY is reached."""
+    day = datetime.datetime.now(CAIRO).date().isoformat()
+    use = load('claude_use.json', {})
+    if use.get('day') != day:
+        use = {'day': day, 'n': 0}
+    if use['n'] >= CLAUDE_PER_DAY:
+        return False
+    use['n'] += 1; save('claude_use.json', use)
+    return True
+
+
+def builtin_answer(cid, q, note=''):
+    """The dashboard's built-in answer, after a short line on why it isn't Claude's."""
+    typing(cid)
+    text = to_tg(dash.ask(q)) or 'No answer for that one. Try /brief or /alerts.'
+    send(cid, ('<i>%s</i>\n\n' % esc(note) if note else '') + text)
+
+
+def answer_question(cid, q):
+    """A question from a chat on the list: Claude answers in the background, or the built-in answer comes now."""
+    if not claude_ready():
+        return builtin_answer(cid, q, ('Claude is signed in with an account the bot doesn’t use' if _claude.get('blocked')
+                                       else 'Claude isn’t connected yet') + ', so this is the dashboard’s built-in answer.')
+    if not claude_quota():
+        return builtin_answer(cid, q, 'Today’s %d questions to Claude are used up, so this is the dashboard’s built-in answer.' % CLAUDE_PER_DAY)
+    WAITING.append({'cid': cid, 'q': q}); typing(cid)
+    start_jobs()
+
+
+def claude_prompt(cid, q):
+    h = HIST.get(cid)
+    turns = h['turns'] if h and time.time() - h['t'] < 2 * 3600 else []
+    if not turns:
+        return q
+    past = '\n\n'.join('Question: %s\nYour answer: %s' % (a, b[:1500]) for a, b in turns)
+    return 'Earlier in this Telegram chat:\n\n%s\n\nNew question: %s' % (past, q)
+
+
+def start_claude(job):
+    """Starts Claude Code on one question. The question goes in on stdin; the answer comes back as JSON."""
+    ai = dash.ai_setup()
+    save('claude_tools.json', ai['tools'])
+    CLAUDE_HOME.mkdir(parents=True, exist_ok=True); CLAUDE_WORK.mkdir(exist_ok=True)
+    env = claude_env()
+    server = {'type': 'stdio', 'command': sys.executable, 'args': [str(HERE / 'claude_tools_mcp.py')],
+              'env': {'V7_TOOLS_FILE': str(STATE / 'claude_tools.json'), 'DASH_URL': dash.DASH_URL,
+                      'HOME': env['HOME'], 'LANG': env['LANG'], 'PATH': env['PATH']}}
+    job['model'] = _claude['model']
+    cmd = [CLAUDE_CLI, '-p', '--output-format', 'json'] + (['--model', job['model']] if job['model'] else []) + ['--effort', CLAUDE_EFFORT,
+           '--system-prompt', ai['rules'] + '\n\n' + TELEGRAM_RULES, '--tools', '', '--strict-mcp-config',
+           '--mcp-config', json.dumps({'mcpServers': {'v7pulse': server}}), '--allowedTools', 'mcp__v7pulse',
+           '--no-session-persistence']
+    with tempfile.TemporaryFile() as prompt:
+        prompt.write(claude_prompt(job['cid'], job['q']).encode('utf-8')); prompt.seek(0)
+        job['out'], job['err'] = tempfile.TemporaryFile(), tempfile.TemporaryFile()
+        job['proc'] = subprocess.Popen(cmd, stdin=prompt, stdout=job['out'], stderr=job['err'], cwd=CLAUDE_WORK, env=env,
+                                       start_new_session=True)
+    job['started'] = time.time(); job['typing'] = time.time() + 4.5
+    log('Claude is answering', job['cid'])
+
+
+def start_jobs():
+    """Starts waiting questions: one at a time per chat, CLAUDE_AT_ONCE in all."""
+    for job in list(WAITING):
+        if len(JOBS) >= CLAUDE_AT_ONCE:
+            break
+        if any(j['cid'] == job['cid'] for j in JOBS):
+            continue
+        WAITING.remove(job)
+        try:
+            start_claude(job); JOBS.append(job)
+        except Exception as e:
+            log('could not start Claude:', safe(e))
+            builtin_answer(job['cid'], job['q'], 'Claude couldn’t be reached, so this is the dashboard’s built-in answer.')
+
+
+def stop_job(job):
+    try:
+        os.killpg(job['proc'].pid, signal.SIGKILL)   # Claude Code, its tool server and that server's browser
+    except OSError:
+        pass
+    job['proc'].wait()
+
+
+def read_claude(raw, code):
+    """(answer, None) from Claude Code's JSON output, or (None, why there's no answer)."""
+    try:
+        r = json.loads(raw)
+    except ValueError:
+        r = {}
+    if r.get('type') == 'result' and not r.get('is_error') and str(r.get('result') or '').strip():
+        return r['result'].strip(), None
+    return None, str(r.get('result') or r.get('subtype') or 'no answer (exit code %s)' % code)[:200]
+
+
+def finish(job, text, why=None):
+    cid, q = job['cid'], job['q']
+    if text:
+        h = HIST.setdefault(cid, {'t': 0, 'turns': []})
+        h['t'] = time.time(); h['turns'] = (h['turns'] + [(q, text)])[-3:]
+        log('Claude answered', cid, 'in %d s' % (time.time() - job['started']))
+        send(cid, md_to_tg(text) + '\n\n<a href="%s">Open V7 Pulse</a>' % SITE)
+        return
+    job['err'].seek(0)
+    log('Claude did not answer', cid + ':', safe(why), '|', safe(job['err'].read().decode('utf-8', 'replace')[-200:]))
+    if job['model'] and 'model' in why.lower():   # the plan doesn't include that model: use the plan's default from now on
+        _claude['model'] = ''; WAITING.insert(0, {'cid': cid, 'q': q}); log('using the plan’s default model from now on')
+        return
+    if re.search(r'log ?in|auth', why, re.I):     # "Not logged in": check the sign-in again before the next question
+        _claude.update(at=0, ok=False)
+    builtin_answer(cid, q, ('Claude’s usage limit is reached for now' if 'limit' in why.lower() else 'Claude couldn’t answer just now')
+                   + ', so this is the dashboard’s built-in answer.')
+
+
+def check_jobs():
+    """Sends the answers that are ready, keeps "typing…" on for the others, and starts waiting questions."""
+    for job in list(JOBS):
+        if job['proc'].poll() is None:
+            if time.time() - job['started'] > CLAUDE_TIMEOUT:
+                stop_job(job); JOBS.remove(job)
+                result = (None, 'no answer after %d seconds' % CLAUDE_TIMEOUT)
+            else:
+                if time.time() >= job['typing']:
+                    typing(job['cid']); job['typing'] = time.time() + 4.5
+                continue
+        else:
+            JOBS.remove(job); job['out'].seek(0)
+            result = read_claude(job['out'].read().decode('utf-8', 'replace'), job['proc'].returncode)
+        try:
+            finish(job, *result)
+        except Exception as e:
+            log('could not send the answer to', job['cid'], ':', safe(e))
+    start_jobs()
 
 
 # ---------------------------------------------------------------- the schedule
@@ -410,13 +668,14 @@ def run():
     try:
         while True:
             try:
-                for u in api('getUpdates', offset=offset, timeout=50, allowed_updates=['message']):
+                for u in api('getUpdates', offset=offset, timeout=2 if JOBS or WAITING else 50, allowed_updates=['message']):
                     offset = u['update_id'] + 1; st['offset'] = offset; save('sent.json', st)
                     if u.get('message'):
                         try:
                             handle(u['message'], subs)
                         except Exception as e:
                             log('error handling a message:', safe(e)); log(safe(traceback.format_exc()))
+                check_jobs()
                 if subs and due_brief(st):
                     daily_brief(subs, st)
                 if subs and time.time() >= next_check:
@@ -427,6 +686,8 @@ def run():
     except KeyboardInterrupt:
         pass
     finally:
+        for job in JOBS:
+            stop_job(job)
         dash.close(); log('stopped'); lock.close()
 
 

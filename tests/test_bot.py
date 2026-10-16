@@ -1,10 +1,20 @@
-"""The Telegram bot (bot/v7pulse_bot.py) against a stand-in for Telegram: no token, no network, nothing is sent.
-It reads the real dashboard (the source file, or DASH_SRC), so the messages checked are the real ones."""
-import datetime, html, os, pathlib, re, shutil, sys, tempfile
+"""The Telegram bot (bot/v7pulse_bot.py) against stand-ins for Telegram and for Claude Code (tests/fake_claude.py):
+no token, no account, no network, nothing is sent or spent. It reads the real dashboard (the source file, or DASH_SRC)
+and runs the real tool server, so the messages and the tool results checked are the real ones."""
+import datetime, html, json, os, pathlib, re, shutil, subprocess, sys, tempfile, time
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TMP = tempfile.mkdtemp(prefix='v7bot_')
+FAKE = ROOT / 'tests' / 'fake_claude.py'
+os.chmod(FAKE, 0o755)
 os.environ.update({'TELEGRAM_BOT_TOKEN': '000:test-token-for-the-tests', 'TELEGRAM_JOIN_CODE': 'join-test', 'V7_BOT_STATE': TMP,
-                   'DASH_URL': os.environ.get('DASH_SRC', (ROOT / 'V7_Pulse_Dashboard.html').as_uri())})
+                   'DASH_URL': os.environ.get('DASH_SRC', (ROOT / 'V7_Pulse_Dashboard.html').as_uri()), 'V7_CLAUDE_CLI': str(FAKE),
+                   'CLAUDE_BLOCKED_ORGS': 'Other Co, blocked.example'})
+def fake_mode(m):
+    """What the stand-in for Claude Code does next: '' answers, or logged_out, not_logged_in, limit, slow."""
+    (pathlib.Path(TMP) / 'claude').mkdir(parents=True, exist_ok=True)
+    (pathlib.Path(TMP) / 'claude' / 'fake_mode').write_text(m)
+    if 'b' in globals(): b._claude.update(at=0, ok=False)
+fake_mode('logged_out')
 sys.path.insert(0, str(ROOT / 'bot'))
 import v7pulse_bot as b
 
@@ -79,7 +89,7 @@ check('… and the admin hears who joined', 'Team Member joined V7 Pulse on Tele
 out = say('-100123', '/start@v7_pulse_bot join-test', kind='group', first='V7 Marketing')
 check('a group joins with /start@v7_pulse_bot and the code', subs.get('-100123', {}).get('name') == 'V7 Marketing' and len(out) == 2, [o[:60] for o in out])
 out = say('111', '/start join-test')
-check('/start again: the help, nothing sent twice', out == [b.HELP], [o[:60] for o in out])
+check('/start again: the help, nothing sent twice', out == [b.help_text()], [o[:60] for o in out])
 
 # on demand
 out = say('222', '/brief 1')
@@ -88,7 +98,8 @@ check('… and the latest brief stays marked as had', subs['222'].get('brief') =
 out = say('222', '/alerts')
 check('/alerts lists the alerts with next steps', len(out) == 1 and out[0].startswith('<b>Alerts in Egypt') and 'Next step:' in out[0] and b.SITE + '#alerts' in out[0], out[0][:200] if out else out)
 out = say('222', 'what are the main complaints?')
-check('a question gets Ask V7 Pulse’s answer', len(out) == 1 and len(out[0]) > 80 and 'No answer for that one' not in out[0], out[0][:200] if out else out)
+check('before Claude is signed in, a question gets the built-in answer, saying so', len(out) == 1 and out[0].startswith('<i>Claude isn’t connected yet') and 'Top complaints' in out[0], out[0][:200] if out else out)
+check('… and the help says so too', 'same answers as Ask V7 Pulse on the website' in b.help_text())
 out = say('222', '/ask how is V Cola doing?')
 check('/ask works too', len(out) == 1 and len(out[0]) > 20, out[0][:120] if out else out)
 out = say('222', '/test')
@@ -133,6 +144,78 @@ check('/stop takes the chat off the list', '333' not in subs and len(out) == 1 a
 out = say('333', 'hello')
 check('… and after that it gets only the short note', out == [b.NOT_MEMBER], out)
 
+# questions answered by Claude (the stand-in runs the real tool server and the real dashboard tools)
+def wait_jobs(limit=120):
+    t = time.time()
+    while (b.JOBS or b.WAITING) and time.time() - t < limit:
+        b.check_jobs(); time.sleep(0.3)
+fake_mode('other_org')
+out = say('222', 'what are the main complaints?')
+check('signed in with an organization the bot refuses: the built-in answer, saying so', not b.JOBS and len(out) == 1 and out[0].startswith('<i>Claude is signed in with an account the bot doesn’t use'), out[0][:120] if out else out)
+check('… and nothing goes to Claude', b._claude['ok'] is False and b._claude['blocked'] is True)
+fake_mode('')
+check('signed in, the help says Claude answers', 'Claude answers questions' in b.help_text())
+n = len(calls); out = say('222', 'how many mentions this month?')
+check('the question goes to Claude in the background: nothing yet, "typing…" on', out == [] and len(b.JOBS) == 1, out)
+job = b.JOBS[0] if b.JOBS else {}
+wait_jobs(); out = said('222', n)
+ans = out[0] if out else ''
+check('Claude’s answer arrives', len(out) == 1 and 'mentions in' in ans, out)
+check('Claude Code ran locked down: no built-in tools, only the dashboard’s tools, its own sign-in, clean environment, outside the project', 'PROBLEMS' not in ans, ans[:300])
+check('… with the dashboard’s instructions, the Telegram rules and all 8 tools', 'Tools: 8; dashboard rules: True; Telegram rules: True' in ans, ans[:300])
+ov = json.loads(b.dash.run_tool(b.dash.tool_page(), 'get_overview', {}))
+check('… and the number comes from the real dashboard tool', '<b>%d</b> mentions' % ov['count'] in ans, (ov['count'], ans[:80]))
+check('"typing…" shows while Claude works', any(m == 'sendChatAction' and str(p['chat_id']) == '222' for m, p in calls[n:]))
+check('Markdown becomes Telegram text: bullets, sub-points, a table as lines, a heading, steps, a link',
+      all(x in ans for x in ('• Tools: 8', '    ◦ a point under it', '<b>Product · Posts</b>', '• V Cola · 12', '<b>Recommended actions</b>',
+                             '1. Reply to the <b>12</b> questions', '<a href="https://mohanadabouserie.github.io/v7-pulse/#voice">the dashboard</a>')), ans)
+check('… with < and & escaped, and the suggestions as lines', '&lt;today&gt; &amp; tomorrow' in ans and '🔎 <i>Worth a web search:</i> V7 price news (check for a price change)' in ans
+      and '📥 <i>New data to collect, needs approval:</i> apify/instagram-scraper · new comments · $0.10' in ans, ans[-400:])
+check('… and a link to the dashboard under it', ans.rstrip().endswith('<a href="%s">Open V7 Pulse</a>' % b.SITE))
+check('the first question has no earlier turns', '- Earlier turns: False' in html.unescape(ans) or 'Earlier turns: False' in ans)
+n = len(calls); say('222', 'and last week?'); say('222', 'and the week before?')
+check('two questions from one chat wait their turn', len(b.JOBS) == 1 and len(b.WAITING) == 1, (len(b.JOBS), len(b.WAITING)))
+wait_jobs(); out = said('222', n)
+check('… both are answered, with the chat so far as context', len(out) == 2 and all('Earlier turns: True' in o for o in out), [o[:60] for o in out])
+fake_mode('not_logged_in')
+b._claude.update(at=time.time(), ok=True)      # the bot still thinks it's signed in
+n = len(calls); say('222', 'what are the main complaints?'); wait_jobs(); out = said('222', n)
+check('if the sign-in has gone: the built-in answer, saying Claude couldn’t answer', len(out) == 1 and out[0].startswith('<i>Claude couldn’t answer just now') and 'Top complaints' in out[0], out[0][:150] if out else out)
+check('… and the sign-in is checked again before the next question', b._claude['ok'] is False and b._claude['at'] == 0)
+fake_mode('limit')
+n = len(calls); say('222', 'what are the main complaints?'); wait_jobs(); out = said('222', n)
+check('when the plan’s usage limit is reached: the built-in answer, saying so', len(out) == 1 and out[0].startswith('<i>Claude’s usage limit is reached'), out[0][:150] if out else out)
+fake_mode('no_opus')
+n = len(calls); say('222', 'how many mentions this month?'); wait_jobs(); out = said('222', n)
+check('if the plan doesn’t include the model asked for, the question goes again on the plan’s default model', len(out) == 1 and 'mentions in' in out[0] and b._claude['model'] == '', (b._claude['model'], out[0][:80] if out else out))
+b._claude['model'] = b.CLAUDE_MODEL
+fake_mode('slow'); b.CLAUDE_TIMEOUT = 7
+n = len(calls); say('222', 'what are the main complaints?'); proc = b.JOBS[0]['proc'] if b.JOBS else None; wait_jobs(); out = said('222', n)
+check('"typing…" is renewed while Claude works', sum(1 for m, p in calls[n:] if m == 'sendChatAction' and str(p['chat_id']) == '222') >= 2)
+check('an answer that takes too long is stopped, and the built-in answer goes instead', proc is not None and proc.returncode is not None and len(out) == 1 and out[0].startswith('<i>Claude couldn’t answer just now'), out[0][:150] if out else out)
+b.CLAUDE_TIMEOUT = 180; fake_mode(''); keep = b.CLAUDE_PER_DAY; b.CLAUDE_PER_DAY = 0
+out = say('222', 'what are the main complaints?')
+check('after the day’s questions to Claude: the built-in answer, saying so', len(out) == 1 and out[0].startswith('<i>Today’s 0 questions to Claude are used up'), out[0][:150] if out else out)
+b.CLAUDE_PER_DAY = keep
+
+# the tool server on its own (what Claude Code talks to)
+srv = subprocess.Popen([sys.executable, str(ROOT / 'bot' / 'claude_tools_mcp.py')], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True,
+                       env={**os.environ, 'V7_TOOLS_FILE': str(pathlib.Path(TMP) / 'claude_tools.json')})
+def rpc(i, method, params=None):
+    srv.stdin.write(json.dumps({'jsonrpc': '2.0', 'id': i, 'method': method, 'params': params or {}}) + '\n'); srv.stdin.flush()
+    return json.loads(srv.stdout.readline())
+r = rpc(1, 'initialize', {'protocolVersion': '2025-06-18', 'capabilities': {}})
+check('tool server: the handshake answers the client’s protocol version', r['result']['protocolVersion'] == '2025-06-18' and 'tools' in r['result']['capabilities'], r)
+names = [t['name'] for t in rpc(2, 'tools/list')['result']['tools']]
+check('… lists the dashboard’s 8 read-only tools', names == ['get_overview', 'search_posts', 'get_breakdown', 'get_our_accounts', 'get_market', 'get_restaurants', 'get_risks_and_events', 'get_outside_egypt'], names)
+r = rpc(3, 'tools/call', {'name': 'search_posts', 'arguments': {'query': 'price'}})
+check('… runs one in the dashboard and returns its data', not r['result'].get('isError') and json.loads(r['result']['content'][0]['text']), str(r)[:200])
+r = rpc(4, 'tools/call', {'name': 'run_shell', 'arguments': {'cmd': 'ls'}})
+check('… refuses any other tool', r['result'].get('isError') is True, r)
+r = rpc(5, 'resources/list')
+check('… and anything else MCP offers', r.get('error', {}).get('code') == -32601, r)
+srv.stdin.close(); srv.wait(timeout=60)
+
 # sending
 long = '\n\n'.join('Paragraph %d ' % i + 'x' * 500 for i in range(30))
 parts = b.chunks(long)
@@ -154,7 +237,8 @@ n = len(calls); b.setup_profile()
 check('… and never overwritten once set, so edits in @BotFather stay', not [m for m, p in calls[n:] if m.startswith('set')])
 b.api = fake_api
 check('Telegram’s limits: description 512, about 120, command text 256', len(b.DESCRIPTION) <= 512 and len(b.ABOUT) <= 120 and all(len(d) <= 256 for c, d in b.COMMANDS))
-copy = ' '.join([b.HELP, b.ADMIN_NOTE, b.NOT_MEMBER, b.DESCRIPTION, b.ABOUT] + [d for c, d in b.COMMANDS])
+fake_mode('logged_out'); h1 = b.help_text(); fake_mode(''); h2 = b.help_text()
+copy = ' '.join([h1, h2, b.ADMIN_NOTE, b.NOT_MEMBER, b.DESCRIPTION, b.ABOUT, b.TELEGRAM_RULES] + [d for c, d in b.COMMANDS])
 check('bot copy: no "AI", no em dashes, no greetings', '—' not in copy and not re.search(r'\bAI\b', copy) and not re.search(r'\b(Hi|Hello|Welcome|Dear)\b', copy))
 
 # secrets and running
