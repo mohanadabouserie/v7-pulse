@@ -93,7 +93,8 @@ check('/start again: the help, nothing sent twice', out == [b.help_text()], [o[:
 
 # on demand
 out = say('222', '/brief 1')
-check('/brief 1 gives the day before', len(out) == 1 and 'Sun 11 Oct' in out[0], out[0][:80] if out else out)
+ld = re.search(r'V7 daily brief, (\w+ \d+ \w+)', latest)
+check('/brief 1 gives the day before', len(out) == 1 and ld and 'V7 daily brief,' in out[0] and ld.group(1) not in out[0], out[0][:80] if out else out)   # not tied to a date: the data gets refreshed
 check('… and the latest brief stays marked as had', subs['222'].get('brief') == latest)
 out = say('222', '/alerts')
 check('/alerts lists the alerts with next steps', len(out) == 1 and out[0].startswith('<b>Alerts in Egypt') and 'Next step:' in out[0] and b.SITE + '#alerts' in out[0], out[0][:200] if out else out)

@@ -768,3 +768,55 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - it named price and availability, tied the price complaints to the real Noon price, said the counts are demo data, and gave four actions with owners;
   - the API would have charged about USD 0.16 for it.
 - The live bot needed no restart: its next sign-in check finds the new account.
+
+### Real data everywhere: the collection (17 Oct 2026)
+- **Why:** the user upgraded Apify to Starter and asked for real data in every tab but Market, with Claude (their own plan) reading everything, no dummy data and no assumed numbers.
+- **Plan:** `data/raw/real_17oct/PLAN.md`. Window 20 Apr to 16 Oct 2026 (180 days); at most USD 14 of the USD 19 cycle, USD 5 in reserve; a cap on every run; 3-item tests first (USD 0.06).
+- **Collected** (`collect.py`, raw files in `raw/`):
+  - V7 Egypt's posts: Facebook 34, Instagram 51, TikTok 19, YouTube 28 (exact YouTube dates and likes from the public pages, `yt_pages.py`; comments are turned off on all of them).
+  - Every comment on those posts, with replies: Facebook 898, Instagram 1,141, TikTok 883. V7's replies: 632, counting V Super Soda's (DECISIONS #118).
+  - The pages abroad and the UK distributor: 194 posts, and 829 of their 1,837 comments (stopped by hand for the budget, DECISIONS #121).
+  - Public posts: X 314, Facebook search 12 queries, Instagram hashtags 137, TikTok 299, YouTube 124, Reddit 58.
+- **Spend:** USD 11.62 by the run records, 12.05 by Apify's meter. Lessons: Facebook's comment date filter is charged per comment (about USD 0.56 wasted); comment counts on pages abroad were much higher than their latest posts suggested.
+- **Merged** (`normalize.py`): one list in `items.json`, Cairo time, deduplicated, X's filler rows dropped, collaboration posts filed under their V7 page, replies linked to the comments they answer.
+- **Labelled** (`label.py`): Claude Code with the bot's sign-in (the user's personal Max plan), Opus 5.5 at low effort, 40 items a batch, JSON schema (DECISIONS #116, #117). 3,395 comments and X posts first, in 83 batches with no failures; then the public posts.
+- **Built** (`build_real.py --inject`): the REAL_OWN, REAL_OWN_X and new REAL_DATA blocks. Private people anonymous, @mentions masked (DECISIONS #122).
+
+### Version 25: real data everywhere (17 Oct 2026)
+- **Why:** the user asked for real data in every tab but Market, with no demo data and no assumed numbers.
+- **The data:** see "Real data everywhere: the collection" above. The dashboard now runs 20 Apr to 16 Oct 2026 (`END` moved from 12 to 16 Oct).
+- **Out:**
+  - **The demo generators:** made-up creators, pages, people and groups, the post and comment templates, the abroad posts, and the mixed-sentiment rewrite.
+  - **The demo account insights:** profile visits and "Who follows us", with Ask V7 Pulse's lookups and built-in answer on them (DECISIONS #119).
+  - **Estimated reach:** "~ reach" marks and reach estimates. "Top … by reach" becomes "by views" (DECISIONS #115).
+  - **Views spread over the days after a post:** views and engagement now count on the day the post went up (DECISIONS #114).
+  - **Leftover demo pieces:**
+    - the made-up event ev10;
+    - "Real post", "Real account" and "Real" tags;
+    - "demo" wording in the brief, the post view, the guide and Ask V7 Pulse's rules.
+- **In:**
+  - **Loaders:** for V7's posts, the pages abroad (with collaboration posts) and the new REAL_DATA block, which holds public posts, comments with replies and anonymous authors.
+  - **Classes:** p_ad, n_contest, q_job and n_other (DECISIONS #117).
+  - **V Super Soda** counts as V7, both its authors and its replies (DECISIONS #118).
+  - **"When people comment":** replaces the online-followers heatmap, built from the real comment times.
+  - **Wording:** "in a Facebook group" on cards; Facebook, Instagram and TikTok named where replies are tracked.
+  - **Badge and footer:** "Real data" on every tab, with the check date; the sidebar footer says all data is real.
+  - **Outside Egypt pages table:** every post since 20 Apr and exact counts. The "12+" mark is gone.
+- **Images:** `data/raw/real_17oct/fetch_media.py` added 129 covers (300 px). 312 images in all; the page is 6.4 MB.
+- **Ask V7 Pulse rules:** "today is 17 Oct", every source real, what isn't available.
+- **Tests:**
+  - New `tests/test_v25.py`: the real data block, privacy, no demo outside Market, no estimated reach, Our content, the post view with V7's replies, phone, tablet and dark mode.
+  - Updated v18, v20, v21, v22, v23 and test_bot to the real data. The 7 MB page limit replaces 5 MB.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 24 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v24.html`), `data/raw/real_17oct/`, `data/raw/media_13oct/index.json` and `img/`, tests, `CLAUDE.md`, `DESIGN.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.
+
+### Version 25 published (17 Oct 2026)
+- **Published** privately to https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (version id 1792192011-9c1f), with the `sample` capability carried forward. The public site and the Telegram bot still show Version 24 until a push.
+- **What blocked the publish, and the fixes:**
+  - Replacement characters (U+FFFD) in a few scraped texts were refused. `normalize.py`'s `clean()` now strips them.
+  - The publish guard took the page for a code-review page and refused it: review pages may be 512 KB at most. The trigger was nine Facebook links ending in `&id=…`. Each sits in the MEDIA block right before its image data, and the guard reads an `id=` followed by more than 2,048 characters with no space as review markup. `build_media.py` and `build_real.py` now write that `=` as `\u003d` inside the data strings, which reads back as the same link (DECISIONS #124).
+- **Lighter page (DECISIONS #125):**
+  - The page no longer carries Claude's English gist for each post and comment. It wasn't shown, and it stays in `labels.json`.
+  - Comment links are stored as their ids (`ci`, `ri`) and rebuilt in the page from the post's link. All 2,867 Facebook and Instagram comment links were checked to come out identical.
+  - The images keep their earlier quality. The page is 6.2 MB.
+- **Tests:** `test_v25.py` checks that the guard won't take the page for a review page, and that the image keys read back as the real links. All 17 suites pass.
+- **Files:** `V7_Pulse_Dashboard.html`, `data/raw/media_13oct/build_media.py`, `data/raw/real_17oct/build_real.py`, `data/raw/real_17oct/normalize.py`, `tests/test_v25.py`, `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.

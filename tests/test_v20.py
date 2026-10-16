@@ -23,7 +23,7 @@ async def main():
         check('most of the conversation is comments under V7’s posts', m and int(m.group(1))>50, m and m.group(0))   # 55–75% with V7’s real posts, depending on the demo draw (v21–v22)
         await click('#kindSeg [data-kind=posts]')
         n=int((await J("document.querySelector('.kpi .k-v').textContent")).replace(',',''))
-        check('public posts at the real rate: about 1 to 2 a day', 15<=n<=90, n)
+        check('public posts at real volume: a few a day (the 17 Oct collection)', 15<=n<=150, n)   # Version 25: real data everywhere
         await click('#kindSeg [data-kind=both]')
         txt=await J("document.getElementById('content').innerText")
         check('no emotion labels', 'emotion' not in txt.lower() and 'Anticipation' not in txt)
@@ -56,9 +56,9 @@ async def main():
         # our content
         await nav('owned')
         otxt=await J("document.getElementById('content').innerText")
-        check('follower details are Instagram’s, and the heatmap is when followers are online', 'Instagram insights' in otxt and 'When our followers are online' in otxt and 'When your audience posts' not in otxt)
+        check('no follower details or profile visits; the heatmap is when people comment', 'Who follows us' not in otxt and 'Profile visits' not in otxt and 'When people comment' in otxt)   # Version 25: real data everywhere
         tt=await J("[...document.querySelectorAll('table.t tbody tr')].filter(r=>r.textContent.includes('Summer of Colors')||r.textContent.includes('11M')).map(r=>r.textContent)")
-        check('V7’s real TikTok videos are in Our posts', await J("[...document.querySelectorAll('#content .real')].length")>=4)
+        check('V7’s real TikTok videos are in Our posts', await J("[...document.querySelectorAll('#content table.t tbody tr')].filter(r=>r.children[1].textContent.trim().startsWith('tt')).length")>=1)   # Version 25: real data everywhere
         # alerts: thresholds for real volumes
         await nav('alerts')
         rules=await J("[...document.querySelectorAll('.rule')].map(r=>[r.querySelector('span').textContent,r.querySelector('.switch').getAttribute('aria-checked')])")

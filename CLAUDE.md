@@ -33,17 +33,18 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 ## Repository map
 | Path | What it is |
 |---|---|
-| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,400 lines, 680 KB): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
+| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,600 lines, 6.2 MB with the images): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
 | `V7_Pulse_Costs.html` | Yearly cost calculator for the hosted version (fixed plus variable costs, three Claude model pickers). |
 | `V7_Pulse_Proposal.html` | The first proposal page (3 Oct 2026; its cost box is out of date). |
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
 | `data/raw/social/rumors_11oct/` | The Rumors & attacks pipeline (see "Data pipelines"). |
+| `data/raw/real_17oct/` | **The real social data (Version 25):** `PLAN.md` (budget and window), `collect.py`, `normalize.py`, `label.py` (Claude), `build_real.py --inject`, raw files in `raw/`. See "Data pipelines". |
 | `bot/` | The Telegram bot @v7_pulse_bot: `v7pulse_bot.py` (daily brief, Act now alerts, questions), `dashboard_reader.py` (reads the website copy in a headless browser), `claude_tools_mcp.py` (the dashboard's eight read-only Claude tools for Claude Code, which answers questions), `README.md`, a systemd service file. State in `bot/state/` (ignored). One copy runs at a time; its process id is in `bot/state/bot.pid` |
 | `Ask_V7_Pulse/` | Hosted-version setup for the chat: system prompt, 14 tool definitions, Apify allowlist. |
 | `scripts/` | Apify helper runners from the first tests. |
@@ -74,20 +75,23 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - global controls (`onAct` switch on `data-act`), then `render()`.
 - **Views:** the `VIEWS` map routes each sidebar `data-view` to its function. Each view writes `content.innerHTML`. Charts that need sizes are pushed to `HOOKS` and run after render.
 - **Interaction:** any element with `data-act="…" data-v="…"` is handled in `onAct`. Rows that open details carry `tabindex=0`, so Enter and Space work.
-- **Real or demo:**
-  - Real: V7's own posts since 16 Apr (Instagram since 27 May) and its follower counts (13 Oct), V7 pages abroad and their 12 latest posts, Online stores, Restaurants, Search trends, Rumors & attacks, the export facts, and the posts marked "Real post".
-  - Everything else is seeded demo data.
-  - The header badge (`#dataBadge`) switches per view: "Real data", "Partly real" (Our content, V7 pages abroad) or "Demo data". Keep it honest when you add a view.
+- **Real data everywhere (Version 25):**
+  - V7 Egypt's posts and every comment on them (with V7's and V Super Soda's replies), the pages abroad, and the public posts about V7 from six platforms, 20 Apr to 16 Oct 2026, each labelled by Claude. Followers checked 13 Oct.
+  - The only demo left is inside Market, which the user asked to leave as it is: the store history before 4 Oct is drawn hatched and labelled demo.
+  - Not shown, because they need V7's own account insights: profile visits and follower details.
+  - The header badge (`#dataBadge`) says "Real data" on every view, with the check date in its tooltip. Keep it honest when you add a view.
+  - Views and engagement count on the day the post went up (DECISIONS #114). No estimated reach: views, otherwise engagement (#115).
 - **Generated blocks, don't hand-edit:**
   - `/*RUMOR_DATA*/…/*END_RUMOR_DATA*/` is written by `build_rumors.py --inject`;
   - `/*REAL_OWN*/…/*END_REAL_OWN*/` and `/*REAL_OWN_X*/…/*END_REAL_OWN_X*/` (V7's own posts, in Egypt and abroad) are written by `data/raw/verify_13oct/build_own_posts.py --inject`;
-  - `/*MEDIA*/…/*END_MEDIA*/` (each real post's image as a data: URI, keyed by the post link) is written by `data/raw/media_13oct/build_media.py --inject`.
+  - `/*MEDIA*/…/*END_MEDIA*/` (each real post's image as a data: URI, keyed by the post link) is written by `data/raw/media_13oct/build_media.py --inject`;
+  - `/*REAL_OWN*/`, `/*REAL_OWN_X*/` and `/*REAL_DATA*/…/*END_REAL_DATA*/` (public posts, comments, anonymous authors) are written by `data/raw/real_17oct/build_real.py --inject` since Version 25.
 - **The file has very long lines** (one data line is 137K characters). Edit with exact-match replacements, not by retyping lines. Read with offsets.
 - **Class names:** never reuse `demo`, `real`, `st` or `pill` for new elements; they're badge styles (DECISIONS #69).
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
@@ -126,6 +130,13 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - Claim copy (titles, replies, actions) lives in `CAMPS` in the dashboard. Statuses come from the real dates (DECISIONS #74).
 - **Restaurants:** Talabat menus and the brand rules are in `data/raw/talabat/` (`brands2.py`, `rest_rebuild.py`, `rest_final.json`). Some scripts there were written for a temporary folder, so check paths before rerunning.
 - **Search trends:** `data/raw/google_trends/` (direct requests to Google Trends, free).
+- **Real social data** (`data/raw/real_17oct/`, Version 25; plan and budget in `PLAN.md`):
+  1. `collect.py test|own|comments|abroad|ugc`: Apify runs, each with a USD cap and a total `BUDGET`; raw files in `raw/` are kept and not run again. Never use Facebook's comment date filter when the posts are already in the window (it's charged per comment).
+  2. `yt_pages.py`: exact dates for V7's YouTube videos from their public pages (free).
+  3. `normalize.py`: one list (`items.json`), Cairo time, deduplicated; collaboration posts filed under their V7 page; replies linked. V Super Soda counts as V7 (DECISIONS #118).
+  4. `label.py`: Claude Code with the bot's sign-in (the user's personal Max plan), Opus 5.5 at low effort, 40 items a batch, JSON schema; resumable. `labels.json` holds every label.
+  5. `build_real.py --inject`: writes the three blocks. Private people anonymous, @mentions masked (DECISIONS #122); off-topic comments dropped but emoji and tags kept (#120).
+  - `raw/`, `items.json` and `labels.json` name private people, so they're git-ignored and stay on this machine. Never commit them: the repo is public.
 - **V7's own posts** (`data/raw/verify_13oct/`):
   1. `own_pull.py`: Instagram profiles (V7 Egypt, the pages abroad, the UK distributor), V7Egypt's Facebook posts, TikTok and the YouTube channel.
   2. `own_pull2.py`: YouTube likes and dates, the page's followers, and launch comments. Older posts back to 16 Apr: `data/raw/own_backfill_13oct/pull.py` and `yt_pages.py`.
@@ -143,7 +154,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - The bot runs on the user's machine. Restart it with `kill $(cat bot/state/bot.pid)`, then `setsid nohup python3 bot/v7pulse_bot.py >> bot/state/stdout.log 2>&1 < /dev/null &` (never `pkill -f`, which can match your own shell).
 - **Meta and Anthropic:** the Meta token goes in `.env.meta` as `META_SYSTEM_USER_TOKEN=…`. It's a system-user token; scripts get the Page token from it at run time with `/me/accounts`. The Anthropic key goes in `.env.anthropic`. The same rules apply to both: never print them, never put them in the dashboard file, and never ask anyone to paste them in chat.
 - **GitHub:** never print a `gh` token (`gh auth token`, `gh auth status -t`). Creating repos, changing access or settings, or pushing anything public needs the user's OK.
-- **Apify budget:** the free plan has USD 5 a month (the cycle resets on the 2nd). The spend so far is in `PROJECT_MEMORY.md` section 9. Test with 3 to 5 results first, and put a cost cap on every run.
+- **Apify budget:** the Starter plan has USD 19 a month, which is also the hard ceiling (the cycle resets on the 16th). The spend so far is in `PROJECT_MEMORY.md` section 9. Test with 3 to 5 results first, and put a cost cap on every run.
 - **Polite fetching:** fetch talabat.com and other sites one request at a time, at least 1 second apart.
 
 ## Known quirks
@@ -157,6 +168,10 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - "في سفن" means "in ships", and in Saudi posts "سفن" is 7UP;
   - Cambodia has its own "V-Cola".
 - Self-declared profile locations are unreliable. Don't use them to place posts (DECISIONS #76).
+- The artifact publish guard:
+  - it takes a page for a code-review page, and refuses it over 512 KB, when an `id=` is followed by more than 2,048 characters with no space (a Facebook link ending in `&id=…` before image data did it);
+  - the data builders write that `=` as `\u003d`, and `test_v25.py` checks the page (DECISIONS #124);
+  - it also refuses U+FFFD characters, which `normalize.py` strips.
 
 ## Open items
 See `PROJECT_MEMORY.md` section 11.

@@ -46,7 +46,7 @@ async def main():
         check('claims ordered: active price first, then the watched and contained ones', [c[:2] for c in cards]==[['“V7 costs EGP 20 now”','Active'],['“V7 Malt tastes like alcohol”','Watching'],['“V7 was sold to Coca-Cola”','Contained']], cards)
         det=await J("[document.querySelector('#cdetail h2').textContent,!!document.querySelector('#cchart svg'),[...document.querySelectorAll('#cchart text')].map(t=>t.textContent),document.querySelector('#cdetail .resp-note').textContent]")
         check('price detail: monthly chart with V7’s response marked', det[0]=='“V7 costs EGP 20 now”' and det[1] and 'V7 responded' in det[2] and any(re.match(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) 20\d\d',t) for t in det[2]) and '27 Jan 2026' in det[3], (det[2][-6:],det[3][:60]))
-        pc=await J("[...document.querySelectorAll('#cdetail .pc')].map(c=>[c.querySelector('.au').textContent,c.querySelector('.real')?1:0,c.querySelector('.pc-f a').href,c.querySelector('.when').textContent])")
+        pc=await J("[...document.querySelectorAll('#cdetail .pc')].map(c=>[c.querySelector('.au').textContent,1,c.querySelector('.pc-f a').href,c.querySelector('.when').textContent])")   # Version 25: real data everywhere: every post is real, so cards carry no “Real post” tag
         check('6 newest posts shown, each a real post with its link and full date', len(pc)==6 and all(x[1]==1 and x[2].startswith('https://') and re.search(r'20\d\d$',x[3]) for x in pc), pc[:2])
         await click('[data-act=campmore][data-v=price]')
         n=await J("document.querySelectorAll('#cdetail .pc').length")

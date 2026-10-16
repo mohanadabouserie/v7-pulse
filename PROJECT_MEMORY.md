@@ -1,19 +1,19 @@
 # V7 Pulse: project memory
 
-Last updated: 16 Oct 2026 (dashboard Version 24: V7 Pulse on Telegram, @v7_pulse_bot; Version 23: posts with images, Needs your attention, alert next steps, Daily brief, mixed sentiment)
+Last updated: 17 Oct 2026 (dashboard Version 25: real data everywhere but Market, 20 Apr to 16 Oct 2026, labelled by Claude; Version 24: V7 Pulse on Telegram)
 
 ## 1. What this is
 V7 Pulse is a social listening and market dashboard for V7's marketing team. Mohanad (the user, an internal employee) is proposing it to V7's marketing manager.
 
 - Today it's a working prototype in one HTML file.
-- Social posts are demo data, while the market tabs (stores, restaurants, search trends) use real data.
+- Since Version 25 (17 Oct 2026) every tab uses real data: V7's posts and every comment on them, the pages abroad, and the public posts about V7 from six platforms (20 Apr to 16 Oct 2026), each labelled by Claude. Market (stores, restaurants, search trends) is real too, apart from the store history before 4 Oct, which the user asked to leave as it is.
 - The plan is to host it later (Hostinger or a VPS), with daily data collection through Apify and Claude answering questions about the data.
 - The project started on 3 Oct 2026 with the request "use Apify to make a daily or weekly report about V7, like the reference docs". The reference docs are dima's sample listening reports, in `Reference docs/`.
 
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 24) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 25, 17 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 24 since 16 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -24,7 +24,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Daily store checker | `data/collect_store_history.py` (not scheduled, see open items). Noon is read by Claude through `data/noon_llm.py`. Runs with `data/.venv/bin/python`. Tests: `tests/test_noon_llm.py` |
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v23.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v24.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -81,7 +81,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 24)
+## 4. The dashboard today (Version 25)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -97,6 +97,23 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - The V7 pages abroad table and their latest posts are real.
   - Real launches and partnerships are events, and the V Orange launch is the pending suggestion.
   - "Partly real" badge on Our content and V7 pages abroad.
+- **Version 25, real data everywhere (DECISIONS #113–123; plan in `data/raw/real_17oct/PLAN.md`):**
+  - **Collected 17 Oct for 20 Apr to 16 Oct 2026:**
+    - V7 Egypt's 132 posts (Facebook 34, Instagram 51, TikTok 19, YouTube 28);
+    - every comment on them: 2,894 shown, plus 632 replies by V7 and V Super Soda; 223 off topic dropped;
+    - the pages abroad: 194 posts and 829 of 1,837 comments (budget);
+    - 219 public posts about V7, out of 1,078 found (X 63, Facebook 106, YouTube 20, TikTok 16, Instagram 12, Reddit 2).
+  - **Labels:** Claude labelled 4,196 items on the user's Max plan; the API would have charged about USD 15.
+  - **Findings, 180 days:**
+    - Comments: 60% positive, 4% negative, 1% mixed.
+    - Most common in comments: emoji reactions (914), love the taste (302), flavour requests (234), excited to try (175), loves the ad (113), bigger bottles (106), sales leads (66).
+    - V7 answered 167 of the 376 comments that needed a reply.
+    - The biggest public post: Kareem Elsayed's YouTube video “Can an Egyptian company compete with Pepsi and Coca-Cola?” (9 Oct, 1.47M views).
+    - Uzbekistan's giveaway posts drive most comments abroad.
+    - No new rumor claim since the 11 Oct check.
+  - **Removed:** the demo generators, profile visits and follower details (they need V7's account insights), estimated reach, the views spread over days, the demo groups, and a made-up event.
+  - **Images:** 312 posts now have their cover image (V7 Egypt 129 of 132, pages abroad 98 of 194, public 75 of 219). The page is 6.2 MB.
+  - **Published** privately on 17 Oct (DECISIONS #124 explains the publish guard fix). The website and the bot still show Version 24.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
@@ -420,8 +437,9 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - This replaces the 3 Oct estimate of USD 60 to 130 a month.
 
 ## 9. Apify account and spend
-- **Plan:** the user's Free plan, with USD 5 of credits a month. The cycle resets on 2 Nov.
-- **Spent so far:** USD 4.64 of 5 (Apify's reading on 13 Oct, after the backfill). USD 0.36 left until 2 Nov.
+- **Plan:** Starter since 16 Oct 2026: USD 19 of usage a month, which is also the hard ceiling. The cycle runs 16 Oct to 15 Nov 2026. (Before: the Free plan, USD 4.64 of 5 spent by 13 Oct.)
+- **Spent this cycle:** USD 12.05 by Apify's meter on 17 Oct (USD 11.62 by the run records), for the real-data collection. About USD 6.95 left until 15 Nov.
+- **Prices at Starter (BRONZE tier, checked 17 Oct):** Facebook posts USD 0.004 (+0.001 date filter), Facebook comments 0.002, Instagram posts 0.0015 (+0.0008 details), Instagram comments and hashtags 0.0023, TikTok 0.003 (+0.001 date filter), TikTok comments 0.001, YouTube 0.003, X 0.00022, Facebook search 0.003, Reddit 0.0038 (+0.02 a run). Facebook's comment date filter is charged per comment: don't use it when the posts are already in the window.
 
 **Spend log**
 
@@ -439,6 +457,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | 13 Oct | Review checks: Facebook and Instagram replies, V7's TikTok and its comments, X this week | 0.11 | 3.96 |
 | 13 Oct | Deeper pass: V7's own posts on 4 platforms, the pages abroad, YouTube details, page followers, V Orange comments | about 0.19 by the run log | 4.25 (Apify's reading, with late charges from earlier runs) |
 | 13 Oct | Backfill of V7's own posts to 16 Apr: Facebook 21, TikTok 9, Instagram 45, YouTube 30, plus two 3-post tests | 0.39 (run records) | 4.64 |
+| 17 Oct (new cycle, Starter) | Real data for every tab but Market, 20 Apr to 16 Oct (`data/raw/real_17oct/`): tests 0.06; V7's 132 posts 0.26; 2,922 comments on them 5.82; the pages abroad's 194 posts and 829 of their comments 2.35; 1,292 public posts from X, Facebook, Instagram, TikTok, YouTube and Reddit 3.12 | 11.62 (run records) | 12.05 (Apify's meter) |
 
 ## 10. Raw data map (`data/raw/`)
 | Folder | What's in it |
@@ -477,6 +496,8 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
+- Push Version 25 (real data) to the public site? Until then the website, and the Telegram bot, which reads the website copy in `docs/`, show Version 24's demo data.
+- Keep the real data fresh: about USD 6.95 of Apify is left until 15 Nov. A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`) costs roughly USD 1 to 2.
 - Share the bot's join link with the team when ready.
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.
 - Add an Anthropic API key for the store check (Noon is now read by Claude). Save it in `.env.anthropic` as `ANTHROPIC_API_KEY=...`; never paste it in chat. Then do one live run of `data/noon_llm.py`, measure the real cost, and update the cost calculator's store-check price if it differs.

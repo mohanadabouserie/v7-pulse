@@ -18,9 +18,9 @@ async def main():
         await pg.goto(SRC); await pg.wait_for_timeout(1200)
         # dates
         per=await J("document.getElementById('period').textContent")
-        check('the data runs to 12 Oct 2026', '13 Sep – 12 Oct 2026' in per, per)
+        check('the data runs to 16 Oct 2026', '17 Sep – 16 Oct 2026' in per, per)   # Version 25: real data everywhere
         foot=await J("document.querySelector('.side-foot').textContent")
-        check('sidebar: V7’s own posts are real, demo posts up to 12 Oct', 'V7’s own posts' in foot and 'Demo posts up to 12 Oct 2026' in foot, foot)
+        check('sidebar: all data is real, to 16 Oct', foot.startswith('All data is real.') and '16 Oct 2026' in foot, foot)   # Version 25: real data everywhere
         # overview: "can't find it" is about distribution; launch questions are counted apart
         cf=await J(panel('Can’t find it')+".innerText")
         check('overview: launch questions aren’t counted as “can’t find it”', re.search(r'Not counted here: \d+ questions about when and where V Orange will be sold',cf) and 'هتنزل إمتى' not in cf and 'hatenzel' not in cf, cf[-200:])
@@ -32,34 +32,34 @@ async def main():
         head=await J("document.querySelector('.dd-head').innerText")
         tiles=await J("[...document.querySelectorAll('#content .tile')].map(t=>t.querySelector('.k-l').textContent.trim()+'='+t.querySelector('.k-v').textContent.trim())")
         check('V Orange: launched 11 Oct, counted since launch', 'launched 11 Oct' in head and 'since launch' in head and 'on the market' not in head, head[:160])
-        check('V Orange: nobody “tried it” yet; people are looking for it', 'Tried it=0' in tiles and any(t.startswith('Looking for it=') for t in tiles), tiles)
+        check('V Orange: people are looking for it (real comments; a few already tried it)', any(t.startswith('Looking for it=') and int(t.split('=')[1])>0 for t in tiles) and any(t.startswith('Tried it=') for t in tiles), tiles)   # Version 25: real data everywhere
         # our content: real posts, real followers
         await nav('owned')
         badge=await J("document.getElementById('dataBadge').textContent")
-        check('Our content is marked partly real', badge=='Partly real', badge)
+        check('Our content is real data', badge=='Real data', badge)   # Version 25: real data everywhere
         fol=await J("[...document.querySelectorAll('#content .tiles.seven a.tile')].map(t=>t.querySelector('.k-v').textContent+' '+t.querySelector('p').textContent)")
-        check('followers are the 13 Oct counts (80K, 39K, 37K, 2.5K)', [f.split(' ')[0] for f in fol]==['80K','39K','37K','2.5K'] and all('real' in f for f in fol), fol)
+        check('followers are the 13 Oct counts (80K, 39K, 37K, 2.5K)', [f.split(' ')[0] for f in fol]==['80K','39K','37K','2.5K'] and all('13 Oct' in f for f in fol), fol)   # Version 25: real data everywhere
         rows=await J(panel('Our posts')+".querySelectorAll('tbody tr').length")
         real=await J(panel('Our posts')+".querySelectorAll('tbody tr .real').length")
         hint=await J(panel('Our posts')+".querySelector('.hint').textContent")
-        check('the last 30 days: 10 posts, all real', rows==10 and real==10 and 'all real' in hint, (rows,real,hint))
+        check('the last 30 days: V7’s posts, all real, counts as of 17 Oct', rows>=10 and 'counts as of 17 Oct' in hint, (rows,hint))   # Version 25: real data everywhere
         small=await J(panel('Our posts')+".querySelectorAll('tbody tr').length&&[..."+panel('Our posts')+".querySelectorAll('tbody tr')].filter(r=>+r.children[6].textContent.replace(/[^0-9]/g,'')<5).map(r=>r.children[8].textContent.trim())")
         check('no positive-comment share on posts with fewer than 5 comments', small and all(x=='—' for x in small), small)
         await click('#rangeSeg [data-r="90"]',700)
         hint90=await J(panel('Our posts')+".querySelector('.hint').textContent")
-        check('90 days of V7’s posts are all real (v22 backfill)', 'all real' in hint90, hint90)
+        check('90 days of V7’s posts are all real', 'counts as of 17 Oct' in hint90 and 'demo' not in hint90, hint90)   # Version 25: real data everywhere
         await click('#rangeSeg [data-r="30"]',700)
         # outside Egypt: the pages are real
         await nav('abroad'); await click('[data-act=xtab][data-v=pages]',700)
         badge=await J("document.getElementById('dataBadge').textContent")
         tab=await J(panel('V7 pages outside Egypt')+".querySelectorAll('tbody tr').length&&[..."+panel('V7 pages outside Egypt')+".querySelectorAll('tbody tr')].map(r=>[...r.children].map(c=>c.innerText.trim()))")
-        check('pages abroad: partly real, four real accounts', badge=='Partly real' and len(tab)==4 and all('Real account' in r[0] for r in tab), (badge,len(tab)))
+        check('pages abroad: real data, four accounts', badge=='Real data' and len(tab)==4, (badge,len(tab)))   # Version 25: real data everywhere
         uk=[r for r in tab if 'V7_UK' in r[0]][0]; ind=[r for r in tab if 'V7 India' in r[0]][0]
         check('V7_UK: no posts in 30 days, last post 3 Sep (real)', uk[3]=='0' and uk[6]=='3 Sep', uk)
-        check('V7 India posts so often that 12 posts don’t reach back 30 days: “12+”', ind[3]=='12+', ind)
+        check('V7 India: an exact post count for 30 days (every post since 20 Apr is collected)', ind[3].isdigit() and int(ind[3])>=5, ind)   # Version 25: real data everywhere
         lp=await J(panel('Latest post from each V7 page abroad')+".querySelectorAll('.pc').length")
         lr=await J(panel('Latest post from each V7 page abroad')+".querySelectorAll('.pc .real').length")
-        check('latest post from each page abroad: 4 real posts, one per page', lp==4 and lr==4, (lp,lr))
+        check('latest post from each page abroad: one per page', lp==4, (lp,lr))   # Version 25: real data everywhere
         await click('[data-act=xtab][data-v=countries]',700)
         iss=await J("(()=>{const t=[...document.querySelectorAll('#content table.t')][0];const hs=[...t.querySelectorAll('thead th')].map(h=>h.textContent.trim());const i=hs.findIndex(h=>h.startsWith('Main issue'));return [...t.querySelectorAll('tbody tr')].map(r=>r.children[i].textContent.trim());})()")
         check('countries: main issues use short names', iss and max(len(x) for x in iss)<=20, iss[:8])
@@ -75,8 +75,8 @@ async def main():
         await nav('alerts')
         al=await J("[...document.querySelectorAll('.al')].map(a=>[a.querySelector('.t1').textContent,(a.querySelector('.when')||{}).textContent||''])")
         check('launch questions get their own alert, not “can’t find V7”', any(a[0].startswith('V Orange launch:') for a in al) and not any(a[0].startswith('More people can’t find V7') for a in al), [a[0] for a in al])
-        late=[a for a in al if re.match(r'^(1[3-9]|2\d|3[01]) Oct$',a[1])]
-        check('no alert is dated after 12 Oct (store alerts keep their 4–5 Oct dates)', not late and any(a[1]=='4 Oct' for a in al), [a[1] for a in al])
+        late=[a for a in al if re.match(r'^(1[7-9]|2\d|3[01]) Oct$',a[1])]
+        check('no alert is dated after 16 Oct (store alerts keep their 4–5 Oct dates)', not late and any(a[1]=='4 Oct' for a in al), [a[1] for a in al])   # Version 25: real data everywhere
         await click('[data-act=alert][data-k=launch]',700)
         pf=await J("[document.getElementById('vTitle').textContent,document.getElementById('prodBtn').textContent]")
         check('the launch alert opens the V Orange posts', 'V Orange' in pf[1], pf)

@@ -22,3 +22,11 @@ Reference docs/
 # Telegram bot: the token file, and the bot's local state (chat ids of subscribers, what was already sent)
 telegram_key
 bot/state/
+
+# Version 25 real data: the raw pulls, the merged list and the labels name private people (commenters), so they stay on
+# this machine (DECISIONS #122). The anonymous build (real_dashboard.json) and the scripts are committed.
+data/raw/real_17oct/raw/
+data/raw/real_17oct/items.json
+data/raw/real_17oct/labels.json
+data/raw/real_17oct/labels_sample.json
+data/raw/real_17oct/*.out

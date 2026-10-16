@@ -118,7 +118,7 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - the platform badge;
   - the name, or "X user" and so on for private people (DECISIONS #75);
   - the account kind and followers;
-  - a "Real post" badge and the full date with the year;
+  - the full date with the year (no "Real post" badge since Version 25: everything is real);
   - the text, then an English "In short" note;
   - what the post does as a flag (red: repeats it, grey: asks, green: corrects), the metrics, and the link.
 - **Claim status pills:** Active, Watching (grey), Slowing, Contained or Ended (green), Handled and Dismissed (muted).
@@ -129,12 +129,12 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - Show a change under 10 as the difference ("+3", "−2"), never a percentage.
   - Show net sentiment only from 5 items up; otherwise use "—" with "Too few to score".
   - "Biggest gain" style sentences use a percentage only on a base of 10 or more.
-- **Volumes:** demo volumes follow what real collection returns. Posts and comments show together by default, and a "Where it happens" split says how much is comments under V7's posts.
+- **Volumes:** real since Version 25. Posts and comments show together by default, and a "Where it happens" split says how much is comments under V7's posts.
 - **Don't add:**
   - emotion labels or word clouds;
   - dialect splits beyond Egyptian Arabic, other Arabic, English and Franco-Arabic;
   - badges that say nothing (only Seasonal is shown).
-- **Data that needs V7's accounts** is labelled with its source ("Instagram insights · demo numbers").
+- **Data that needs V7's accounts** (profile visits, follower details) isn't shown (Version 25). The guide and Ask V7 Pulse say why.
 
 ## 11. The marketing team's feedback (Version 23)
 - **"Needs your attention" first:**
@@ -148,8 +148,8 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
 - **Posts show their image:**
   - A 112 px square on the card (84 px on phones), with a play mark for videos and an album mark for carousels.
   - Card text stops at 6 lines; the full text is in the post view.
-  - Demo posts never get an invented image.
-  - Images are embedded as small JPEGs (360 px, quality 55), so the dashboard stays one file: 183 posts, about 2.4 MB.
+  - Posts never get an invented image: a post without a collected cover shows its text only.
+  - Images are embedded as small JPEGs, so the dashboard stays one file: 360 px, quality 55 for the 13 Oct set; 300 px, quality 52 for those added on 17 Oct (V7's newest posts, the most-engaged posts abroad, the top public posts).
 - **Post view:**
   - A drawer that opens from "View post", the image or the caption in Our posts.
   - Order: the image (shown whole on black), "the video plays on …", the full text, chips, the numbers, buttons to open and copy the link.
@@ -163,9 +163,17 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - Red flags as left-ruled items by severity; positive signals in green.
   - "Worth amplifying" cards with a suggested step under each.
   - Numbered actions, each with an owner chip.
-- **"Partly real" badge:** also on Daily brief, Alerts and Events, with a tooltip saying which parts are real.
+- **Header badge (Version 25):** "Real data" on every view, with the check date in its tooltip. "Partly real" and "Demo data" are no longer used.
 - **Telegram (Version 24):**
   - The alert preview's phone shows a Telegram notification: a round blue Telegram mark, "V7 Pulse" as the title, then the alert.
   - The Daily brief has an "Open in Telegram ↗" button next to "See the email".
   - Ask V7 Pulse has a quiet line under the question box.
 
+## 12. Real data everywhere (Version 25)
+- **No demo outside Market.** Market's store history before 4 Oct stays hatched and labelled demo, as the user asked to leave Market as it is.
+- **No estimated numbers:**
+  - Lists and "Top" panels sort by views, then by likes, comments and shares. No "~ reach" marks.
+  - Views and engagement count on the day the post went up.
+- **Private people:** "Facebook user", "Instagram user" and so on, with no handle or link; @mentions in texts show as "@…".
+- **"When people comment"** (Our content) uses the followers heatmap's look, from the real comment times: day by 3-hour window, the busiest cell outlined.
+- **Facebook groups:** a post from a public group says "in a Facebook group" on its card. Group names aren't collected, so there's no groups table.

@@ -20,13 +20,10 @@ async def main():
         def panel(title): return f"[...document.querySelectorAll('.panel')].find(p=>{{const h=p.querySelector('h2');return h&&h.textContent.startsWith({title!r});}})"
         await pg.goto(SRC); await pg.wait_for_timeout(1200)
         # Our content over the whole period
-        await nav('owned'); await span('2026-04-16','2026-10-12')
+        await nav('owned'); await span('2026-04-20','2026-10-16')   # Version 25: real data everywhere: the dashboard runs 20 Apr to 16 Oct
         hint=await J(panel('Our posts')+".querySelector('.hint').textContent")
-        m=re.search(r'(\d+) real, (\d+) demo',hint)
-        check('180 days: 129 real posts, a few demo ones (Instagram before 27 May)', m and int(m.group(1))==129 and 0<int(m.group(2))<=12, hint)
-        await click('[data-act=more][data-k=own]',600)
-        demo=await J("[..."+panel('Our posts')+".querySelectorAll('tbody tr')].filter(r=>!r.querySelector('.real')).map(r=>[r.children[0].textContent.trim(),r.children[1].textContent.trim()])")
-        check('the demo posts are Instagram posts from before 27 May', demo and all('Image' in x[1] or 'Reel' in x[1] or 'Carousel' in x[1] for x in demo) and all(re.match(r'\d+ (Apr|May)$',x[0]) for x in demo), demo[:6])
+        m=re.search(r'(\d+) posts',hint)
+        check('180 days: every V7 Egypt post is real, counts as of 17 Oct (Instagram included, from 7 May)', m and 120<=int(m.group(1))<=140 and 'counts as of 17 Oct' in hint and 'demo' not in hint, hint)   # Version 25
         # the V Lemon relaunch week: the real reels lead
         await span('2026-05-19','2026-05-25')
         top=await J("[..."+panel('Our posts')+".querySelectorAll('tbody tr')].map(r=>[r.children[2].textContent.trim().slice(0,40),r.children[4].textContent.trim()])")
@@ -35,7 +32,7 @@ async def main():
         await nav('events')
         on=await J("[...document.querySelectorAll('.evr .evr-t')].map(e=>e.textContent)")
         for n in ['Lemon-Lime relaunched as V Lemon','V Cola “Raise the flag” World Cup campaign','“Hello Summer”: the new can design']:
-            check('real event on the charts: '+n, any(n in x and 'Real' in x for x in on), [x for x in on if n[:12] in x])
+            check('real event on the charts: '+n, any(n in x for x in on), [x for x in on if n[:12] in x])   # Version 25: real data everywhere: every event is real, no tag
         # the World Cup weeks: V Cola leads the conversation
         await nav('products'); await span('2026-05-28','2026-07-07')
         cards=await J("[...document.querySelectorAll('.pcard')].map(c=>[c.dataset.v,+c.querySelector('.k-v').textContent.replace(/,/g,'')])")
