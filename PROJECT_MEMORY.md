@@ -169,16 +169,17 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - **Ask V7 Pulse (chat):** in claude.ai, Claude answers from the dashboard's data through 8 read-only page tools (the `sample` capability). Web searches and new Apify collections only show up as suggestion cards, because the published page has no internet access and must never hold the Apify key. Short built-in answers work without Claude.
 - **Every "Show all"** has a "Show less".
 
-**Real vs demo**
+**Real vs demo (since Version 25, 17 Oct 2026)**
 
-| Real | Demo |
+| Real | Demo or not shown |
 |---|---|
-| V7's own posts since 16 Apr (129 in Egypt; Instagram from 27 May) and the pages abroad's 12 latest posts each, with counts as of 13 Oct | V7's Instagram posts before 27 May, all comments, and other people's posts |
-| The 9 public posts marked "Real post", and the UK distributor's 3 | |
-| Follower counts (13 Oct) | Profile visits, followers' city and age, online times (until V7 connects Meta and TikTok) |
-| V7 pages abroad | |
-| Export facts | |
-| Online stores | Store history before 4 Oct (shown hatched) |
+| V7 Egypt's 132 posts, 20 Apr to 16 Oct (the first is on 7 May; Instagram included), with counts as of 17 Oct | |
+| Every comment on them, and V7's and V Super Soda's replies | YouTube: comments are turned off on all 28 videos |
+| The pages abroad: 194 posts and their counts | 829 of their 1,837 comments were collected (budget) |
+| 219 public posts about V7 from X, Facebook, YouTube, TikTok, Instagram and Reddit | |
+| Follower counts (13 Oct) | Not shown: profile visits, followers' city and age, online times, reach (they need V7's own account insights) |
+| Export facts, rumors and attacks | |
+| Online stores | Store history before 4 Oct (shown hatched; left as it was at the user's request) |
 | Restaurants | |
 | Search trends | |
 
@@ -504,7 +505,6 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).
 - Which hashtags does V7 use for campaigns? `#اشرب_اي` returned nothing about V7, so we need the exact spelling or the source.
 - Hosting choice and timeline.
-- Instagram posts before 27 May are still demo (about USD 0.04 to fill, after 2 Nov).
 - Add the collaborator to the repo: GitHub → mohanadabouserie/v7-pulse → Settings → Collaborators. The user does this; we need the collaborator's GitHub username to do it for them.
 - From the rumors check, for V7:
   - confirm whether the fruit flavours contain sugar or honey;
