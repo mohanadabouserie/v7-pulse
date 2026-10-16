@@ -759,3 +759,12 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - `tests/test_bot.py` now has 77 checks, with `tests/fake_claude.py` (a stand-in for Claude Code that runs the real tool server). FAIL 0 on the source and on `docs/index.html`.
 - **Running:** the bot restarted at 23:04 with the new code. The user joined as the admin at 22:39.
 - **Files:** `bot/v7pulse_bot.py`, `bot/dashboard_reader.py`, `bot/claude_tools_mcp.py` (new), `bot/README.md`, `tests/test_bot.py`, `tests/fake_claude.py` (new), `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.
+
+### Telegram bot: signed in to Claude (16 Oct 2026)
+- Three sign-ins went to the work account, because the browser was signed in to it on claude.ai; the bot refused it each time (one question, at 23:50, got the built-in answer). With the work account signed out of the browser, the fourth went to the user's personal account (Max plan) at 23:55.
+- First real question, run through the bot's own code: "What are the main complaints this month, and what should we do about them?"
+  - 18 seconds, `claude-opus-5-5`, 4 turns (the dashboard's tools), exit 0;
+  - 1,722 characters of Telegram text, balanced HTML, no em dashes;
+  - it named price and availability, tied the price complaints to the real Noon price, said the counts are demo data, and gave four actions with owners;
+  - the API would have charged about USD 0.16 for it.
+- The live bot needed no restart: its next sign-in check finds the new account.

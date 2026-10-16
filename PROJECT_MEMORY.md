@@ -104,7 +104,8 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - Each chat gets each day's brief once: while the data stops at 12 Oct, the 09:00 run sends nothing new (DECISIONS #108). A chat that joins gets the welcome, the latest brief and any open Act now alert.
   - No alert is at Act now level in the current data (4 Watch, 2 Opportunity), so none is pushed; the admin's `/test` shows one.
   - Its Telegram menu (brief, alerts, ask, help, stop) and descriptions are set (DECISIONS #109).
-  - Questions are answered by Claude through Claude Code, with the dashboard's own instructions and eight read-only tools (DECISIONS #110–112). It needs the bot's own sign-in (`bot/state/claude`, one command in `bot/README.md`); until then, the built-in answers, with a line saying so.
+  - Questions are answered by Claude through Claude Code, with the dashboard's own instructions and eight read-only tools (DECISIONS #110–112). Signed in since 16 Oct, 23:55 with the user's personal account (Max plan); the work account is refused (`CLAUDE_BLOCKED_ORGS`).
+  - First real question ("main complaints this month, and what to do"): 18 seconds, Opus 5.5 at medium effort, 4 turns with the dashboard's tools, 1,722 characters with four recommended actions, labelled as demo data where it was. The API would have charged about USD 0.16 for it; on the Max plan it counts toward the plan's limits instead.
   - The user joined as the admin on 16 Oct, 22:39. Nobody else has joined yet.
   - The dashboard links to it, and `#brief` and `#alerts` links open those tabs.
 - **Version 23, the marketing team's feedback (DECISIONS #99–104):**
@@ -476,7 +477,6 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
-- Sign the bot in to Claude with their own account, not the work account (the first try, 16 Oct 23:07, went to the work account and is refused): log the bot out, then `CLAUDE_CONFIG_DIR="$PWD/bot/state/claude" claude auth login` from the project folder, choosing the account in a private window. Their own account needs a Pro or Max plan. Then a first real question, to check the model and the time it takes.
 - Share the bot's join link with the team when ready.
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.
 - Add an Anthropic API key for the store check (Noon is now read by Claude). Save it in `.env.anthropic` as `ANTHROPIC_API_KEY=...`; never paste it in chat. Then do one live run of `data/noon_llm.py`, measure the real cost, and update the cost calculator's store-check price if it differs.
