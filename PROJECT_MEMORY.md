@@ -100,7 +100,12 @@ The dashboard artifact is private. People can't open it until it's shared from t
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
-  - It runs on the user's machine, so it's live while that machine is on.
+  - It runs on the user's machine, so it's live while that machine is on. Detached since 16 Oct, 22:20 (process id in `bot/state/bot.pid`).
+  - Each chat gets each day's brief once: while the data stops at 12 Oct, the 09:00 run sends nothing new (DECISIONS #108). A chat that joins gets the welcome, the latest brief and any open Act now alert.
+  - No alert is at Act now level in the current data (4 Watch, 2 Opportunity), so none is pushed; the admin's `/test` shows one.
+  - Its Telegram menu (brief, alerts, ask, help, stop) and descriptions are set (DECISIONS #109).
+  - Questions get the website's built-in answers (summary, rumors, complaints, products people can't find, online prices…). Free-form answers need Claude on the hosted version.
+  - Nobody had joined by 16 Oct, 22:20: the user joins first with the private link and becomes the admin.
   - The dashboard links to it, and `#brief` and `#alerts` links open those tabs.
 - **Version 23, the marketing team's feedback (DECISIONS #99–104):**
   - 183 real posts carry their image, and a post view shows each post with its comments.
@@ -471,6 +476,9 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
+- Join @v7_pulse_bot with the private link before sharing it (the first to join is the admin), then send it to the team.
+- Push Version 24 to the public site (it shows Version 23, without the Telegram links)?
+- Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.
 - Add an Anthropic API key for the store check (Noon is now read by Claude). Save it in `.env.anthropic` as `ANTHROPIC_API_KEY=...`; never paste it in chat. Then do one live run of `data/noon_llm.py`, measure the real cost, and update the cost calculator's store-check price if it differs.
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).
 - Which hashtags does V7 use for campaigns? `#اشرب_اي` returned nothing about V7, so we need the exact spelling or the source.

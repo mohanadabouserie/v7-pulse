@@ -716,3 +716,17 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - `bot/`, `.gitignore`, tests.
   - Published as artifact Version 24.
 
+### Telegram bot update (16 Oct 2026, dashboard stays Version 24)
+- **Why:** a review before anyone joined. The data stops at 12 Oct, so the 09:00 run would have sent the same brief every morning, and the bot was tied to the shell that started it.
+- **The bot (`bot/v7pulse_bot.py`):**
+  - Each chat gets each day's brief once; with no new day of data, nothing is sent (DECISIONS #108).
+  - A chat that joins gets the welcome, the latest brief and any open Act now alert. Act now alerts are tracked per chat, so later joiners get them too.
+  - "typing…" shows while the dashboard is read, instead of a "…" message.
+  - A chat that blocks the bot or is deleted is taken off the list, and the others still get their messages.
+  - Long messages split at line breaks too; a piece Telegram can't read as HTML goes again as plain text. Telegram 5xx answers are retried.
+  - Its menu (brief, alerts, ask, help, stop) and descriptions are set where empty (DECISIONS #109).
+  - One copy at a time (`bot/state/bot.pid`); it stops cleanly on SIGTERM; `V7_BOT_STATE` and the token in the environment let the test run on its own.
+- **`bot/dashboard_reader.py`:** starts a new browser if the old one crashed.
+- **Running:** restarted detached at 22:20 (own session), so it no longer depends on the tool shell.
+- **Tests:** new `tests/test_bot.py` (49 checks) against a stand-in for Telegram and the real dashboard; FAIL 0 on the source and on `docs/index.html`.
+- **Files:** `bot/v7pulse_bot.py`, `bot/dashboard_reader.py`, `bot/README.md`, `tests/test_bot.py`, `CLAUDE.md`, `PROJECT_MEMORY.md`, `DECISIONS.md`.

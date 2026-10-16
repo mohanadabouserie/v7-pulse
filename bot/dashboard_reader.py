@@ -17,12 +17,16 @@ _pw = _browser = None
 
 def _page():
     global _pw, _browser
-    if _browser is None:
+    if _browser is None or not _browser.is_connected():   # first use, or the browser crashed: start a new one
+        close()
         _pw = sync_playwright().start()
         _browser = _pw.chromium.launch()
     pg = _browser.new_page(viewport={'width': 1280, 'height': 900})
-    pg.goto(DASH_URL)
-    pg.wait_for_function("document.querySelector('#content .panel')!==null", timeout=30000)
+    try:
+        pg.goto(DASH_URL)
+        pg.wait_for_function("document.querySelector('#content .panel')!==null", timeout=30000)
+    except Exception:
+        pg.close(); raise
     return pg
 
 
@@ -100,6 +104,9 @@ def ask(question):
 
 def close():
     global _pw, _browser
-    if _browser:
-        _browser.close(); _pw.stop()
+    for stop in (lambda: _browser and _browser.close(), lambda: _pw and _pw.stop()):
+        try:
+            stop()
+        except Exception:
+            pass
     _pw = _browser = None
