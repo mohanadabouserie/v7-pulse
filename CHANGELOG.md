@@ -730,3 +730,10 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Running:** restarted detached at 22:20 (own session), so it no longer depends on the tool shell.
 - **Tests:** new `tests/test_bot.py` (49 checks) against a stand-in for Telegram and the real dashboard; FAIL 0 on the source and on `docs/index.html`.
 - **Files:** `bot/v7pulse_bot.py`, `bot/dashboard_reader.py`, `bot/README.md`, `tests/test_bot.py`, `CLAUDE.md`, `PROJECT_MEMORY.md`, `DECISIONS.md`.
+
+### Public copy: Version 24 (16 Oct 2026)
+- **Why:** the user's OK ("yes push it").
+- Checked first: no bot token or join code in any commit pushed or any tracked file.
+- `deploy/build_sites.py dashboard` rebuilt `docs/index.html`. All 16 dashboard suites and `test_bot.py` passed on the rebuild (`DASH_SRC`).
+- Pushed `main` (aaf5737 Version 24, 450a534 the bot update, 341c196 public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 24: the links to @v7_pulse_bot are there, the join link isn't.
+- The live bot reads `docs/index.html`, so its brief, alerts and answers now come from Version 24.

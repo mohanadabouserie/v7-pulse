@@ -15,7 +15,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 |---|---|
 | Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 24) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 23 since 15 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 24 since 16 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -477,7 +477,6 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 
 **Waiting on the user**
 - Join @v7_pulse_bot with the private link before sharing it (the first to join is the admin), then send it to the team.
-- Push Version 24 to the public site (it shows Version 23, without the Telegram links)?
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.
 - Add an Anthropic API key for the store check (Noon is now read by Claude). Save it in `.env.anthropic` as `ANTHROPIC_API_KEY=...`; never paste it in chat. Then do one live run of `data/noon_llm.py`, measure the real cost, and update the cost calculator's store-check price if it differs.
 - Schedule the daily store check? It needs a paid Apify plan, at about USD 0.28 a day with competitors (Claude included).
