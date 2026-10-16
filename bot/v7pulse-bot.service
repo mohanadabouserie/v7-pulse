@@ -1,0 +1,15 @@
+# systemd user service for the V7 Pulse Telegram bot. Copy to ~/.config/systemd/user/ and run:
+#   systemctl --user enable --now v7pulse-bot
+# On a server, change WorkingDirectory to where the project folder is.
+[Unit]
+Description=V7 Pulse Telegram bot (@v7_pulse_bot)
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project
+ExecStart=/usr/bin/python3 bot/v7pulse_bot.py
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=default.target

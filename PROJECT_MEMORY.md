@@ -1,6 +1,6 @@
 # V7 Pulse: project memory
 
-Last updated: 15 Oct 2026 (dashboard Version 23: the marketing team's feedback: posts with images, Needs your attention, alert next steps and previews, Daily brief, mixed sentiment)
+Last updated: 16 Oct 2026 (dashboard Version 24: V7 Pulse on Telegram, @v7_pulse_bot; Version 23: posts with images, Needs your attention, alert next steps, Daily brief, mixed sentiment)
 
 ## 1. What this is
 V7 Pulse is a social listening and market dashboard for V7's marketing team. Mohanad (the user, an internal employee) is proposing it to V7's marketing manager.
@@ -13,7 +13,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 23) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 24) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 23 since 15 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -24,7 +24,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Daily store checker | `data/collect_store_history.py` (not scheduled, see open items). Noon is read by Claude through `data/noon_llm.py`. Runs with `data/.venv/bin/python`. Tests: `tests/test_noon_llm.py` |
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v22.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v23.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -81,7 +81,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 23)
+## 4. The dashboard today (Version 24)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -97,6 +97,11 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - The V7 pages abroad table and their latest posts are real.
   - Real launches and partnerships are events, and the V Orange launch is the pending suggestion.
   - "Partly real" badge on Our content and V7 pages abroad.
+- **Version 24, Telegram (DECISIONS #105–107):**
+  - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
+  - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
+  - It runs on the user's machine, so it's live while that machine is on.
+  - The dashboard links to it, and `#brief` and `#alerts` links open those tabs.
 - **Version 23, the marketing team's feedback (DECISIONS #99–104):**
   - 183 real posts carry their image, and a post view shows each post with its comments.
   - Overview and Customer voice open with "Needs your attention".
@@ -460,7 +465,7 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   4. **Competitors:** a clear overview of the main competitors, **Pepsi and Schweppes**: their brand sentiment, key conversations, … (cut off), summarized in a similar executive report.
 - Status: points 1–3 are built in the demo (Version 23). **Point 4 (competitors) is on hold** at the user's request (DECISIONS #98).
 - To agree with the team:
-  - which phone channel for Act now alerts (WhatsApp, Microsoft Teams, SMS or Telegram), and who receives alerts and the daily brief;
+  - who receives alerts and the daily brief on Telegram (the channel is Telegram, DECISIONS #105);
   - the brief's time and language (Arabic, English or both);
   - what counts as critical for them, and how fast they want to respond;
   - their policy for reposting customers' content.

@@ -685,3 +685,34 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - `deploy/build_sites.py dashboard` rebuilt `docs/index.html`. All 15 suites had passed on this build before the Version 23 commit, and test_v23, v22, v21, v18, v15 and v5 were run again on the rebuild.
 - Pushed `main` (1c1d43d Version 23, 84473e9 public copy). https://mohanadabouserie.github.io/v7-pulse/ serves Version 23.
 
+### Version 24: V7 Pulse on Telegram (16 Oct 2026)
+- **Why:** the user wants the alerts and reports on Telegram, and the dashboard's assistant connected to a Telegram bot. They created @v7_pulse_bot and gave the token in a file.
+- **Security first:**
+  - The token file `telegram_key` wasn't git-ignored in a public repo. It's now ignored, with `bot/state/`.
+  - The token was copied to `.env.telegram` (ignored, mode 600) and is never printed or logged.
+  - A private join code was added in the same file.
+  - `getMe` confirmed the bot: V7 Pulse, @v7_pulse_bot.
+- **The bot (`bot/`):**
+  - `v7pulse_bot.py` runs on long polling (no webhook or open ports).
+  - **Daily brief:** at 09:00 Cairo time.
+  - **Act now alerts:** as soon as they're found (checked every 2 hours).
+  - **Commands:** `/brief`, `/alerts`, and questions with `/ask` or plain text.
+  - **Access:** people join with the private link `t.me/v7_pulse_bot?start=<code>`, and the first to join is the admin (`/subscribers`, `/remove`, `/test`). Anyone else gets a short note.
+  - **Source:** `dashboard_reader.py` reads the brief, the alerts and Ask V7 Pulse's built-in answers from the website copy (`docs/index.html`) in a headless browser. Telegram and the website say the same thing.
+  - **Docs:** `README.md`, plus a systemd user service file.
+  - **Running:** it runs on this machine since 16 Oct, 21:59.
+- **Dashboard (Version 24):**
+  - Alert rules say Act now goes on Telegram and by email right away, the rest in the daily brief, with a link to @v7_pulse_bot.
+  - The alert preview shows the Telegram message.
+  - The Daily brief says it's sent on Telegram and by email, with an "Open in Telegram" button.
+  - Ask V7 Pulse points to the same answers on Telegram.
+  - Links like `…/v7-pulse/#brief` or `#alerts` open that tab, on load and on hash change, so the bot's links land on the right tab.
+  - The guide explains Telegram.
+- **Tests:**
+  - New `tests/test_v24.py`. It also checks that no bot token or join link is ever in the page.
+  - All 16 suites pass.
+- **Files:**
+  - `V7_Pulse_Dashboard.html` (Version 23 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v23.html`);
+  - `bot/`, `.gitignore`, tests.
+  - Published as artifact Version 24.
+

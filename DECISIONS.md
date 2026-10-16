@@ -108,4 +108,7 @@ Newest at the bottom. "User" means Mohanad asked for it; "Finding" means a test 
 | 102 | 15 Oct | A Daily brief tab and morning email: brand health, red flags, positive signals, posts worth amplifying, recommended actions | Marketing team: "automated daily executive summary report" | V7 marketing team | Active |
 | 103 | 15 Oct | Sentiment has a fourth class, Mixed: praise and a complaint in one post. It counts in totals, not in net sentiment | Marketing team asked for mixed sentiment | V7 marketing team | Active |
 | 104 | 15 Oct | Daily brief, Alerts and Events are marked "Partly real" | Their rumor, store and event items are real; the counts from posts and comments are demo | Review | Active |
+| 105 | 16 Oct | Telegram is the phone channel: the daily brief, Act now alerts and Ask V7 Pulse's answers go through @v7_pulse_bot | User: "I want things and notifications and reports to be sent on telegram" | User | Active |
+| 106 | 16 Oct | The bot reads the brief, alerts and answers from the dashboard itself (headless browser), not from a second copy of the logic | Telegram and the website must always agree | Design | Active |
+| 107 | 16 Oct | The bot token lives only in .env.telegram (ignored); the dashboard links to the bot, but only people with the private join link get reports, and the first to join is the admin | The website is public; a public bot with V7's alerts would leak them | Security | Active |
 

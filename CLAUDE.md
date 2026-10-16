@@ -39,11 +39,12 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v23.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
 | `data/raw/social/rumors_11oct/` | The Rumors & attacks pipeline (see "Data pipelines"). |
+| `bot/` | The Telegram bot @v7_pulse_bot: `v7pulse_bot.py` (daily brief, Act now alerts, questions), `dashboard_reader.py` (reads the website copy in a headless browser), `README.md`, a systemd service file. State in `bot/state/` (ignored) |
 | `Ask_V7_Pulse/` | Hosted-version setup for the chat: system prompt, 14 tool definitions, Apify allowlist. |
 | `scripts/` | Apify helper runners from the first tests. |
 | `Reference docs/` | Third-party PDFs. Kept locally only, and git-ignored. |
@@ -57,6 +58,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - `.env.apify` with `APIFY_API_TOKEN=…`. Load it with `set -a; . ./.env.apify; set +a`.
   - `.env.anthropic` with `ANTHROPIC_API_KEY=…`, for `data/noon_llm.py`.
   - `.env.meta` with `META_SYSTEM_USER_TOKEN=…`, when V7 connects its Facebook and Instagram accounts.
+  - `.env.telegram` with `TELEGRAM_BOT_TOKEN=…` and `TELEGRAM_JOIN_CODE=…`, for the Telegram bot (the plain `telegram_key` file is ignored too).
 
 ## The dashboard code
 - **One IIFE.** Nothing is global, so tests read the page through the DOM, not through JS variables.
@@ -85,7 +87,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
@@ -131,6 +133,10 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 
 ## Secrets and spending
 - **Apify:** the token is in `.env.apify` and `apify_key` (both gitignored). Never print, copy or commit it. Load it into the environment only.
+- **Telegram:**
+  - The bot token is in `.env.telegram`. Never print it, log it, commit it, or put it in the dashboard; `test_v24.py` checks the page for it.
+  - The join link is private too.
+  - If the token leaks, revoke it in @BotFather.
 - **Meta and Anthropic:** the Meta token goes in `.env.meta` as `META_SYSTEM_USER_TOKEN=…`. It's a system-user token; scripts get the Page token from it at run time with `/me/accounts`. The Anthropic key goes in `.env.anthropic`. The same rules apply to both: never print them, never put them in the dashboard file, and never ask anyone to paste them in chat.
 - **GitHub:** never print a `gh` token (`gh auth token`, `gh auth status -t`). Creating repos, changing access or settings, or pushing anything public needs the user's OK.
 - **Apify budget:** the free plan has USD 5 a month (the cycle resets on the 2nd). The spend so far is in `PROJECT_MEMORY.md` section 9. Test with 3 to 5 results first, and put a cost cap on every run.

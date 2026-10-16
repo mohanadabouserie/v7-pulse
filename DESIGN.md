@@ -164,4 +164,8 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - "Worth amplifying" cards with a suggested step under each.
   - Numbered actions, each with an owner chip.
 - **"Partly real" badge:** also on Daily brief, Alerts and Events, with a tooltip saying which parts are real.
+- **Telegram (Version 24):**
+  - The alert preview's phone shows a Telegram notification: a round blue Telegram mark, "V7 Pulse" as the title, then the alert.
+  - The Daily brief has an "Open in Telegram ↗" button next to "See the email".
+  - Ask V7 Pulse has a quiet line under the question box.
 

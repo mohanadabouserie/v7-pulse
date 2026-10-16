@@ -12,6 +12,7 @@ A social listening and market dashboard for V7, the Egyptian vitamin soda.
   - Rumors & attacks (public posts from X, Facebook, Instagram and TikTok, read one by one);
   - V7's own posts on Facebook, Instagram, TikTok and YouTube since April, and its follower counts;
   - V7's pages abroad and their latest posts.
+- **On Telegram:** @v7_pulse_bot sends the daily brief and urgent alerts, and answers questions. Joining needs a private link (see `bot/README.md`).
 - **What's demo:** the other social posts are generated for illustration and labelled as demo in the dashboard.
 
 ## Files

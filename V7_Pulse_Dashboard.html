@@ -679,7 +679,7 @@ button.flag:hover{text-decoration:underline}
 .tcard small{font-size:11.5px;color:var(--ink-2)}
 .sugg button{border:1px solid var(--hair-strong);background:var(--paper);border-radius:999px;padding:4px 10px;font-size:12.5px;cursor:pointer;text-align:left}
 .sugg button:hover{border-color:var(--accent);color:var(--accent)}
-.askf{display:flex;gap:8px}
+.askf{display:flex;gap:8px} .chat-tg{margin:0;font-size:12.5px;color:var(--muted)}
 .askf input{flex:1;min-width:0;border:1px solid var(--hair-strong);border-radius:999px;padding:9px 16px;background:var(--paper);font-size:14px}
 
 .empty{padding:18px;text-align:center;color:var(--muted);font-size:13.5px;border:1px dashed var(--hair-strong);border-radius:14px}
@@ -783,9 +783,9 @@ button.flag:hover{text-decoration:underline}
 .ph-n p{margin:0;color:#3f4f47}
 .ph-app{display:flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.06em;color:#3f4f47}
 .ph-app span:last-child{margin-left:auto;font-weight:600;letter-spacing:0;color:#5f6f67}
-.ph-ic{width:16px;height:16px;border-radius:4px;background:#0a7f40}
+.ph-ic{width:16px;height:16px;border-radius:4px;background:#0a7f40}.ph-ic.tg-ic{background:#229ed9;border-radius:50%}
 .db-top{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;margin-bottom:14px}
-.db-top .btn{margin-left:auto}
+.db-top .db-btns{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
 .db-list{display:flex;flex-direction:column;gap:10px}
 .db-it{border:1px solid var(--hair);border-left:4px solid var(--hair-strong);border-radius:12px;padding:10px 12px;background:var(--paper)}
 .db-it.critical{border-left-color:var(--critical)}.db-it.warning{border-left-color:var(--warning)}.db-it.good{border-left-color:var(--good)}
@@ -895,7 +895,7 @@ button.flag:hover{text-decoration:underline}
   <div class="chat-log" id="chatLog" aria-live="polite"></div>
   <div class="chat-foot">
     <div class="sugg" id="sugg"></div>
-    <form class="askf" id="askForm"><input id="askInput" type="text" autocomplete="off" placeholder="Ask anything about the data, or what to do next…" aria-label="Ask a question"><button type="submit" class="btn primary">Ask</button></form>
+    <form class="askf" id="askForm"><input id="askInput" type="text" autocomplete="off" placeholder="Ask anything about the data, or what to do next…" aria-label="Ask a question"><button type="submit" class="btn primary">Ask</button></form><p class="chat-tg">Also on Telegram, with the daily brief and alerts: <a href="https://t.me/v7_pulse_bot" target="_blank" rel="noopener">@v7_pulse_bot ↗</a></p>
   </div>
 </aside>
 <div id="tip" hidden></div>
@@ -2854,10 +2854,10 @@ function openAlertPreview(id,i){
     (pl.todo?'<p class="mail-k">Next step</p><p>'+esc(pl.todo)+(pl.owner?' <span class="tg">'+esc(pl.owner)+'</span>':'')+'</p>'+(pl.more&&pl.more.length?'<ul>'+pl.more.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>':''):'')+
     (pl.reply?'<p class="mail-k">Suggested reply</p><div class="mail-reply" dir="rtl">'+esc(pl.reply.ar)+'</div><div class="mail-reply">'+esc(pl.reply.en)+'</div><button type="button" class="btn" data-act="copyreply" data-v="'+esc(pl.reply.ar)+'">Copy the Arabic reply</button>':'')+
     '<p style="margin-top:14px"><span class="btn primary" aria-hidden="true">Open in V7 Pulse</span></p></div></div>';
-  var phone='<div class="phonep"><div class="ph-scr"><div class="ph-time">09:41</div><div class="ph-n"><div class="ph-app"><span class="ph-ic" aria-hidden="true"></span><span>V7 PULSE</span><span>now</span></div><b>'+esc(lbl+': '+strip(a.t1))+'</b><p>'+esc(short(strip(a.t2),110))+'</p></div></div></div>';
-  openDrawer('How this alert reaches the team',esc(lbl)+' · '+(now?'by email and phone notification as soon as it’s found':'by email and in the daily brief'),
-    '<div class="sub-h" style="margin-top:0">Email</div>'+mail+'<div class="sub-h">Phone notification</div>'+phone+
-    '<p class="hint-line" style="margin:10px 0 0">'+(now?'Act now alerts reach phones within about two hours of the posts, with the evidence and the next step.':'Phone notifications are for “Act now” alerts. This one is “'+esc(lbl)+'”, so it goes by email and in the daily brief; this is how it would look on a phone.')+'</p>');
+  var phone='<div class="phonep"><div class="ph-scr"><div class="ph-time">09:41</div><div class="ph-n"><div class="ph-app"><span class="ph-ic tg-ic" aria-hidden="true"></span><span>TELEGRAM</span><span>now</span></div><b>V7 Pulse</b><p>'+esc(lbl+': '+strip(a.t1))+'. '+esc(short(strip(a.t2),90))+'</p></div></div></div>';
+  openDrawer('How this alert reaches the team',esc(lbl)+' · '+(now?'on Telegram and by email as soon as it’s found':'in the daily brief, on Telegram and by email'),
+    '<div class="sub-h" style="margin-top:0">Email</div>'+mail+'<div class="sub-h">Telegram</div>'+phone+
+    '<p class="hint-line" style="margin:10px 0 0">'+(now?'Act now alerts reach the team on Telegram within about two hours of the posts, with the evidence and the next step.':'Telegram messages right away are for “Act now” alerts. This one is “'+esc(lbl)+'”, so it goes in the daily brief; this is how an alert looks on a phone.')+'</p>');
 }
 /* "Needs your attention": the few things to act on now, each with a next step and an owner */
 function attentionCards(scope){
@@ -2934,7 +2934,7 @@ function vBrief(){
   var d=state.briefDay,b=briefFor(d),dn=WD[dt(d).getUTCDay()]+' '+fmtD(d),days=[];for(var i=0;i<7;i++)days.push(NDAYS-1-i);
   var dv=b.avg?Math.round((b.day.length-b.avg)/b.avg*100):null;
   var h='<div class="db-top"><label class="xmk" for="briefSel"><span class="muted">Brief for</span><select class="sel" id="briefSel">'+days.map(function(x){return '<option value="'+x+'"'+(x===d?' selected':'')+'>'+WD[dt(x).getUTCDay()]+' '+fmtD(x)+(x===NDAYS-1?' (latest)':'')+'</option>';}).join('')+'</select></label>'+
-    '<span class="hint">sent to the marketing team at 09:00 the next morning</span><button type="button" class="btn" data-act="briefmail" data-v="'+d+'">See the email</button></div>';
+    '<span class="hint">sent to the marketing team at 09:00 the next morning, on Telegram and by email</span><span class="db-btns"><a class="btn" href="https://t.me/v7_pulse_bot" target="_blank" rel="noopener">Open in Telegram ↗</a><button type="button" class="btn" data-act="briefmail" data-v="'+d+'">See the email</button></span></div>';
   h+='<section class="panel"><div class="ph"><h2>Brand health, '+dn+'</h2><span class="hint">public posts and comments about V7 in Egypt</span></div><div class="tiles four">'+
     sTile('Mentions',fmtN(b.day.length),dv==null?'':(dv>=0?'▲ ':'▼ ')+Math.abs(dv)+'% vs the 7-day average of '+fmtN(Math.round(b.avg)),'Public posts and comments about V7 that day. V7’s own posts are counted apart.')+
     sTile('Net sentiment',signed(b.s.net),'7-day average '+signed(b.sw.net))+
@@ -2964,13 +2964,13 @@ function openBriefEmail(d){
     '<p class="mail-k">Worth amplifying</p>'+(b.amp.length?'<ul class="mail-ev">'+b.amp.map(function(p){var M=MEDIA[p.url];return '<li>'+(M?'<img src="'+M.s+'" alt="">':'')+'<div><b>'+esc(AUTH[p.a].name)+'</b> · '+PL[p.pl].n+'<br><span dir="auto">“'+esc(short(p.text,120))+'”</span><br><i>'+esc(ampStep(p))+'</i></div></li>';}).join('')+'</ul>':'<p class="muted">Nothing today.</p>')+
     '<p class="mail-k">Recommended actions</p>'+(b.acts.length?'<ol>'+b.acts.map(function(a){return '<li>'+esc(a.todo)+(a.owner?' <span class="tg">'+esc(a.owner)+'</span>':'')+'</li>';}).join('')+'</ol>':'<p class="muted">Nothing today.</p>')+
     '<p style="margin-top:14px"><span class="btn primary" aria-hidden="true">Open the brief in V7 Pulse</span></p></div></div>';
-  openDrawer('The daily brief email','Sent to the marketing team at 09:00 on '+fmtD(d+1),body);
+  openDrawer('The daily brief email','Sent to the marketing team at 09:00 on '+fmtD(d+1)+', on Telegram and by email',body);
 }
 function vAlerts(){
   var al=detectAlerts();
   var h='<div class="g"><section class="panel s8"><div class="ph"><h2>Alerts in Egypt'+info('Found automatically every morning from the last 30 days. They follow the product and platform filters at the top. Signals from other countries are in Outside Egypt.')+'</h2><span class="hint">last 30 days</span></div>'+alertList(al,'No alerts.')+'</section>'+
   '<section class="panel s4"><div class="ph"><h2>Alert rules</h2><span class="hint">sent by email</span></div><div class="rules">'+RULES.map(function(r,i){return '<div class="rule"><div><span id="rl'+i+'">'+esc(r[0])+'</span><small dir="auto">'+esc(r[1])+'</small></div><button type="button" class="switch" role="switch" aria-checked="'+r[2]+'" aria-labelledby="rl'+i+'" data-act="rule" data-v="'+i+'"></button></div>';}).join('')+'</div>'+
-  '<div class="sub-h">How they’re sent</div><div style="font-size:13px;color:var(--ink-2);display:flex;flex-direction:column;gap:6px"><span><b>Act now:</b> email and phone notification right away, with the posts, the next step and a suggested reply.</span><span><b>Watch and Opportunity:</b> by email, and in the daily brief at 09:00.</span></div></section></div>';
+  '<div class="sub-h">How they’re sent</div><div style="font-size:13px;color:var(--ink-2);display:flex;flex-direction:column;gap:6px"><span><b>Act now:</b> on Telegram and by email right away, with the posts, the next step and a suggested reply.</span><span><b>Watch and Opportunity:</b> in the daily brief at 09:00, on Telegram and by email.</span><span><b>Telegram:</b> <a href="https://t.me/v7_pulse_bot" target="_blank" rel="noopener">@v7_pulse_bot ↗</a>. The team joins with a private link.</span></div></section></div>';
   content.innerHTML=h;
 }
 
@@ -4317,7 +4317,8 @@ function openHelp(){
       '<dt>Mixed</dt><dd>A post or comment that praises and complains at once, such as “love it, but it’s too sweet”. It counts in the total, not in net sentiment.</dd>'+
       '<dt>Worth amplifying</dt><dd>Positive, original posts about V7 by people and creators, with some engagement. Thank them, or ask before reposting.</dd>'+
       '<dt>Needs your attention</dt><dd>The few things to act on now, at the top of Overview and Customer voice, each with a next step and an owner.</dd>'+
-      '<dt>Daily brief</dt><dd>The email the marketing team gets at 09:00 about the day before: brand health, red flags, positive signals, posts worth amplifying and next steps.</dd>'+
+      '<dt>Daily brief</dt><dd>What the marketing team gets at 09:00 about the day before, on Telegram and by email: brand health, red flags, positive signals, posts worth amplifying and next steps.</dd>'+
+      '<dt>Telegram</dt><dd><a href="https://t.me/v7_pulse_bot" target="_blank" rel="noopener">@v7_pulse_bot</a> sends the daily brief and Act now alerts, and answers questions like Ask V7 Pulse. The team joins with a private link from the person who runs V7 Pulse.</dd>'+
       '<dt>Purchase intent</dt><dd>Posts and comments saying they are about to buy V7.</dd>'+
       '<dt>Can’t find it</dt><dd>Posts and comments asking where to buy V7 or saying it is out of stock.</dd>'+
       '<dt>Sales leads</dt><dd>Shops, cafés, importers and distributors asking how to stock V7.</dd>'+
@@ -4868,7 +4869,7 @@ function render(){
     state.view==='restaurants'?'Cairo · Talabat menus in 10 delivery areas · checked 5 Oct 2026':
     state.view==='trends'?'Egypt · Google Trends, weekly · 5 Oct 2025 – 3 Oct 2026 · checked 5 Oct 2026':
     state.view==='radar'?'All countries · real posts from '+fmtMY(D(RUMOR_DATA.oldest))+' to '+fmtDY(D(RUMOR_DATA.newest))+' · checked '+fmtDY(R_CHECK):
-    state.view==='brief'?'Egypt · '+WD[dt(state.briefDay).getUTCDay()]+' '+fmtD(state.briefDay)+' 2026 · the morning email to the marketing team':
+    state.view==='brief'?'Egypt · '+WD[dt(state.briefDay).getUTCDay()]+' '+fmtD(state.briefDay)+' 2026 · the morning brief to the marketing team, on Telegram and by email':
     state.view==='events'?'Moments that explain the charts · '+fmtD(0)+' – '+fmtD(NDAYS-1)+' 2026':
     state.view==='alerts'?'Egypt · public posts and comments from the last 30 days'+(state.products.length?' · '+productScope():''):
     where+' · '+fmtD(c.from)+' – '+fmtD(c.to)+' 2026, compared with '+fmtD(c.pfrom)+' – '+fmtD(c.pto)+(state.products.length?' · '+productScope():'');
@@ -4881,6 +4882,8 @@ function render(){
   VIEWS[state.view](c);
   HOOKS.forEach(function(f){f();});
 }
+(function(){var v=(location.hash||'').slice(1);if(VIEWS[v])state.view=v;})();   /* #brief, #alerts… open that tab */
+window.addEventListener('hashchange',function(){var v=(location.hash||'').slice(1);if(VIEWS[v]&&v!==state.view){state.view=v;render();window.scrollTo(0,0);}});
 render();
 var lastW=innerWidth,rz;
 window.addEventListener('resize',function(){clearTimeout(rz);rz=setTimeout(function(){if(Math.abs(innerWidth-lastW)>40){lastW=innerWidth;render();}},250);});

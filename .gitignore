@@ -18,3 +18,7 @@ tests/shots5/
 
 # third-party reference documents (not ours to publish)
 Reference docs/
+
+# Telegram bot: the token file, and the bot's local state (chat ids of subscribers, what was already sent)
+telegram_key
+bot/state/
