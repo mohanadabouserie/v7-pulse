@@ -15,7 +15,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 |---|---|
 | Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 25, 17 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 24 since 16 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 25 since 17 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -113,11 +113,11 @@ The dashboard artifact is private. People can't open it until it's shared from t
     - No new rumor claim since the 11 Oct check.
   - **Removed:** the demo generators, profile visits and follower details (they need V7's account insights), estimated reach, the views spread over days, the demo groups, and a made-up event.
   - **Images:** 312 posts now have their cover image (V7 Egypt 129 of 132, pages abroad 98 of 194, public 75 of 219). The page is 6.2 MB.
-  - **Published** privately on 17 Oct (DECISIONS #124 explains the publish guard fix). The website and the bot still show Version 24.
+  - **Published** privately on 17 Oct (DECISIONS #124 explains the publish guard fix), and on the public site the same day. The bot reads that copy.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
-  - It runs on the user's machine, so it's live while that machine is on. Detached since 16 Oct, 22:20 (process id in `bot/state/bot.pid`).
+  - It runs on the user's machine, so it's live while that machine is on. It stops when the machine shuts down: it stopped at 02:47 on 17 Oct and was started again at 05:48 after the restart (process id in `bot/state/bot.pid`).
   - Each chat gets each day's brief once: while the data stops at 12 Oct, the 09:00 run sends nothing new (DECISIONS #108). A chat that joins gets the welcome, the latest brief and any open Act now alert.
   - No alert is at Act now level in the current data (4 Watch, 2 Opportunity), so none is pushed; the admin's `/test` shows one.
   - Its Telegram menu (brief, alerts, ask, help, stop) and descriptions are set (DECISIONS #109).
@@ -497,8 +497,8 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
-- Push Version 25 (real data) to the public site? Until then the website, and the Telegram bot, which reads the website copy in `docs/`, show Version 24's demo data.
 - Keep the real data fresh: about USD 6.95 of Apify is left until 15 Nov. A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`) costs roughly USD 1 to 2.
+- Daily views (DECISIONS #126): a daily check of each post's totals, so each day shows the views added that day. About USD 0.10 a day for posts from the last 30 days. Not built; it needs the user's OK to schedule.
 - Share the bot's join link with the team when ready.
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.
 - Add an Anthropic API key for the store check (Noon is now read by Claude). Save it in `.env.anthropic` as `ANTHROPIC_API_KEY=...`; never paste it in chat. Then do one live run of `data/noon_llm.py`, measure the real cost, and update the cost calculator's store-check price if it differs.

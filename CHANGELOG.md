@@ -820,3 +820,10 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - The images keep their earlier quality. The page is 6.2 MB.
 - **Tests:** `test_v25.py` checks that the guard won't take the page for a review page, and that the image keys read back as the real links. All 17 suites pass.
 - **Files:** `V7_Pulse_Dashboard.html`, `data/raw/media_13oct/build_media.py`, `data/raw/real_17oct/build_real.py`, `data/raw/real_17oct/normalize.py`, `tests/test_v25.py`, `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.
+
+### Public copy: Version 25 (17 Oct 2026)
+- **Pushed** at the user's request: `docs/index.html` rebuilt with `deploy/build_sites.py dashboard`, so https://mohanadabouserie.github.io/v7-pulse/ shows the real data. The push also carries the two Telegram bot commits from 16 and 17 Oct (any question answered by Claude through Claude Code).
+- **Tests on the public copy:** all 17 dashboard suites and `test_bot.py` pass with `DASH_SRC` on `docs/index.html`.
+- **Telegram bot:** it had stopped when the machine shut down (02:47) and was started again at 05:48. It reads the new copy.
+- **Daily views (decision only, DECISIONS #126):** once a daily check runs, each day gets the views added that day. Days before the first check keep the counts on the day the post went up.
+- **Files:** `docs/index.html`, `CHANGELOG.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.
