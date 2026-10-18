@@ -52,3 +52,67 @@
 2026-10-17 01:18  yt_search        youtube-scraper              SUCCEEDED    124 items  $0.4585  (cap $0.85)  total $11.7773  events {'result': 124, 'date-filter': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'transcribeMinute': 0}
 2026-10-17 01:25  reddit           reddit-scraper-lite          SUCCEEDED     58 items  $0.2695  (cap $0.35)  total $12.0468  events {'result': 58, 'actor-start-gb': 2}
 2026-10-17 01:25  --- stage ugc done, spent this cycle $12.0468
+2026-10-18 17:26  --- stage test2, spent so far this cycle $12.0481, budget $14.00
+2026-10-18 17:27  t2_ig_tagged     instagram-tagged-scraper     SUCCEEDED      5 items  $0.0000  (cap $0.03)  total $12.0481  events {'post': 0}
+2026-10-18 17:28  t2_ig_kw_posts   instagram-hashtag-scraper    SUCCEEDED      8 items  $0.0115  (cap $0.04)  total $12.0596  events {'result': 4}
+2026-10-18 17:28  t2_ig_kw_reels   instagram-hashtag-scraper    SUCCEEDED      5 items  $0.0207  (cap $0.04)  total $12.0803  events {'result': 5}
+2026-10-18 17:28  t2_tt_search_eg  tiktok-scraper               SUCCEEDED     10 items  $0.0092  (cap $0.50)  total $12.0895  events {'result': 0, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 0, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 17:29  t2_tt_top_eg     tiktok-scraper               SUCCEEDED      5 items  $0.0410  (cap $0.50)  total $12.1305  events {'result': 0, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 0, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 17:30  t2_tt_tags_eg    tiktok-scraper               SUCCEEDED     10 items  $0.0620  (cap $0.50)  total $12.1926  events {'result': 10, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 10, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 17:30  --- stage test2 done, spent this cycle $12.1926
+2026-10-18 17:30  --- stage test2, spent so far this cycle $12.1926, budget $14.00
+2026-10-18 17:32  t2_tt_6m_eg      tiktok-scraper               SUCCEEDED      5 items  $0.0010  (cap $0.50)  total $12.1936  events {'result': 3, 'filter-applied': 3, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 3, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 17:38  t2_tt_month_eg   tiktok-scraper               SUCCEEDED      0 items  $0.0261  (cap $0.50)  total $12.2197  events {'result': 0, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 0, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 17:38  --- stage test2 done, spent this cycle $12.2197
+2026-10-18 17:39  --- stage test2, spent so far this cycle $12.2197, budget $14.00
+2026-10-18 17:39  t2_ig_kw_dated   instagram-keyword-posts-scra SUCCEEDED     10 items  $0.0122  (cap $0.06)  total $12.2319  events {'post-result': 10, 'filtered-search-page': 2}
+2026-10-18 17:39  t2_google: could not start: HTTP 400 b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.50"\n  }\n}'
+2026-10-18 17:39  --- stage test2 done, spent this cycle $12.2319
+2026-10-18 17:39  --- stage test2, spent so far this cycle $12.2439, budget $14.00
+2026-10-18 17:39  t2_google: could not start: HTTP 400 b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.50"\n  }\n}'
+2026-10-18 17:39  --- stage test2 done, spent this cycle $12.2439
+2026-10-18 17:40  --- stage test2, spent so far this cycle $12.2462, budget $14.00
+2026-10-18 17:40  t2_google        google-search-scraper        SUCCEEDED      2 items  $0.0027  (cap $0.50)  total $12.2489  events {'search-page-scraped': 2, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-18 17:40  --- stage test2 done, spent this cycle $12.2489
+2026-10-18 17:42  --- stage test2, spent so far this cycle $12.2515, budget $14.00
+2026-10-18 17:43  t2_ig_mentions   instagram-scraper            SUCCEEDED      5 items  $0.0001  (cap $0.03)  total $12.2516  events {'result': 5}
+2026-10-18 17:43  --- stage test2 done, spent this cycle $12.2516
+2026-10-18 17:45  --- stage wide, spent so far this cycle $12.2631, budget $14.00
+2026-10-18 17:46  ig_tagged_v7     instagram-tagged-scraper     SUCCEEDED    180 items  $0.3381  (cap $0.45)  total $12.6012  events {'post': 168}
+2026-10-18 17:47  ig_tagged_vss    instagram-tagged-scraper     SUCCEEDED     60 items  $0.1246  (cap $0.15)  total $12.7258  events {'post': 60}
+2026-10-18 17:49  ig_kw_wide       instagram-keyword-posts-scra SUCCEEDED    381 items  $0.8308  (cap $0.75)  total $13.5566  events {'post-result': 363, 'filtered-search-page': 46}
+2026-10-18 17:57  google_ig        google-search-scraper        SUCCEEDED     50 items  $0.1096  (cap $0.50)  total $13.6662  events {'search-page-scraped': 40, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-18 18:00  --- stage test3, spent so far this cycle $13.7288, budget $14.00
+2026-10-18 18:01  t3_yt_comments_apidojo youtube-comments-scraper     SUCCEEDED     20 items  $0.0000  (cap $0.05)  total $13.7289  events {'dataset-item': 0, 'query-event': 0}
+2026-10-18 18:01  t3_yt_comments_calm: could not start: HTTP 400 b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.50"\n  }\n}'
+2026-10-18 18:01  --- stage test3 done, spent this cycle $13.7289
+2026-10-18 18:01  --- stage test3, spent so far this cycle $13.7299, budget $14.00
+2026-10-18 18:01  t3_yt_comments_calm youtube-scraper              SUCCEEDED      1 items  $0.0010  (cap $0.50)  total $13.7309  events {'apify-actor-start': 1, 'video': 1, 'channel': 0, 'comment': 43, 'transcript': 0, 'post': 0, 'playlist': 0, 'video-extras': 0, 'shorts-sound': 0}
+2026-10-18 18:01  --- stage test3 done, spent this cycle $13.7309
+2026-10-18 18:02  google_tt        google-search-scraper        SUCCEEDED     32 items  $0.0831  (cap $0.50)  total $13.7493  events {'search-page-scraped': 25, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-18 18:02    google_ig: 159 post links, 108 new inside the window
+2026-10-18 18:02  --- stage ytcheck, spent so far this cycle $13.7493, budget $14.00
+2026-10-18 18:02  yt_own_check     youtube-scraper              SUCCEEDED     28 items  $0.1196  (cap $0.50)  total $13.8690  events {'apify-actor-start': 1, 'video': 25, 'channel': 0, 'comment': 0, 'transcript': 0, 'post': 0, 'playlist': 0, 'video-extras': 0, 'shorts-sound': 0}
+2026-10-18 18:02  --- stage ytcheck done, spent this cycle $13.8690
+2026-10-18 18:03  ig_google_posts  instagram-post-scraper       SUCCEEDED    108 items  $0.2831  (cap $0.37)  total $14.0324  events {'post': 107, 'post-details': 107, 'music-data': 0}
+2026-10-18 18:03    google_tt: 92 post links, 83 new inside the window
+2026-10-18 18:04  tt_google_posts  tiktok-scraper               SUCCEEDED     83 items  $0.2443  (cap $0.50)  total $14.2767  events {'result': 83, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 0, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 18:04  fb_search_12     facebook-posts-search        SUCCEEDED     30 items  $0.0962  (cap $0.12)  total $14.3729  events {'result-item': 30, 'init': 1}
+2026-10-18 18:05  fb_search_13     facebook-posts-search        SUCCEEDED      3 items  $0.0000  (cap $0.12)  total $14.3729  events {'result-item': 0, 'init': 1}
+2026-10-18 18:05  fb_search_14     facebook-posts-search        SUCCEEDED     20 items  $0.0091  (cap $0.12)  total $14.3820  events {'result-item': 20, 'init': 1}
+2026-10-18 18:06  fb_search_15     facebook-posts-search        SUCCEEDED     30 items  $0.0991  (cap $0.12)  total $14.5291  events {'result-item': 30, 'init': 1}
+2026-10-18 18:07  fb_search_16     facebook-posts-search        SUCCEEDED     30 items  $0.0930  (cap $0.12)  total $14.6221  events {'result-item': 30, 'init': 1}
+2026-10-18 18:08  fb_search_17     facebook-posts-search        SUCCEEDED     30 items  $0.0361  (cap $0.12)  total $14.6582  events {'result-item': 30, 'init': 1}
+2026-10-18 18:08  x_extra          twitter-x-data-tweet-scraper SUCCEEDED    136 items  $0.0840  (cap $0.08)  total $14.7422  events {'apify-default-dataset-item': 136}
+2026-10-18 18:10  tt_tags_wide     tiktok-scraper               SUCCEEDED    101 items  $0.4053  (cap $0.50)  total $15.1474  events {'result': 101, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 101, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 18:10  tt_wide: skipped, only $0.45 of the $15.60 budget left (needs a $0.50 cap)
+2026-10-18 18:13  yt_recent        youtube-scraper              SUCCEEDED     76 items  $0.2252  (cap $0.35)  total $15.3726  events {'result': 75, 'date-filter': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'transcribeMinute': 0}
+2026-10-18 18:13  --- stage wide done, spent this cycle $15.3726
+2026-10-18 18:13  --- stage ytc, spent so far this cycle $15.3756, budget $14.00
+2026-10-18 18:14  yt_comments_own  youtube-comments-scraper     SUCCEEDED     58 items  $0.0070  (cap $0.12)  total $15.3827  events {'dataset-item': 5, 'query-event': 9}
+2026-10-18 18:14    public YouTube videos about V7 with comments: 14, 1407 comments by their counts (replies included)
+2026-10-18 18:15  yt_comments_public youtube-comments-scraper     SUCCEEDED   1015 items  $0.4096  (cap $0.77)  total $15.7922  events {'dataset-item': 842, 'query-event': 14}
+2026-10-18 18:15  --- stage ytc done, spent this cycle $15.7922
+2026-10-18 18:15  --- stage ttkw, spent so far this cycle $15.8308, budget $14.00
+2026-10-18 18:16  tt_wide          tiktok-scraper               SUCCEEDED    124 items  $0.4974  (cap $0.50)  total $16.3283  events {'result': 124, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 124, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+2026-10-18 18:16  --- stage ttkw done, spent this cycle $16.3283

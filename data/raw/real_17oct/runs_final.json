@@ -1,0 +1,966 @@
+{
+ "t_fb_posts": {
+  "id": "AdziXfbFm1EtjhKZJ",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:39:54.940Z",
+  "finishedAt": "2026-10-16T21:40:04.156Z",
+  "usageTotalUsd": 0.016,
+  "chargedEventCounts": {
+   "post": 3,
+   "actor-start": 1,
+   "filter-applied": 3
+  }
+ },
+ "t_fb_comments": {
+  "id": "Ra1xMc762k61xLNn6",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:40:20.440Z",
+  "finishedAt": "2026-10-16T21:40:27.250Z",
+  "usageTotalUsd": 0.035,
+  "chargedEventCounts": {
+   "comment": 17,
+   "actor-start": 1,
+   "filter-applied": 0
+  }
+ },
+ "t_ig_posts": {
+  "id": "Ae2NYnK4u6BeXbUCG",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:40:37.394Z",
+  "finishedAt": "2026-10-16T21:40:55.955Z",
+  "usageTotalUsd": 0.006900000000000001,
+  "chargedEventCounts": {
+   "post": 3,
+   "post-details": 3,
+   "music-data": 0
+  }
+ },
+ "t_ig_comments": {
+  "id": "NTcbeZQyVxzpB7n2E",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:41:11.096Z",
+  "finishedAt": "2026-10-16T21:41:34.009Z",
+  "usageTotalUsd": 0.0276,
+  "chargedEventCounts": {
+   "comment": 12
+  }
+ },
+ "t_tt_comments": {
+  "id": "9mpPx4E5QZSgmiFqi",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:41:44.727Z",
+  "finishedAt": "2026-10-16T21:41:52.027Z",
+  "usageTotalUsd": 0.004,
+  "chargedEventCounts": {
+   "result": 4
+  }
+ },
+ "t_x": {
+  "id": "QV1EXwes5kN5cVoo9",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:42:01.407Z",
+  "finishedAt": "2026-10-16T21:42:17.225Z",
+  "usageTotalUsd": 0.0033,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 15
+  }
+ },
+ "t_fb_search": {
+  "id": "jkcJGVFKtVy44Jjhu",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:42:26.922Z",
+  "finishedAt": "2026-10-16T21:42:33.568Z",
+  "usageTotalUsd": 0.00905,
+  "chargedEventCounts": {
+   "result-item": 3,
+   "init": 1
+  }
+ },
+ "t_ig_tag": {
+  "id": "uX5rJ8vFq0Zwpma6O",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:42:43.520Z",
+  "finishedAt": "2026-10-16T21:42:52.280Z",
+  "usageTotalUsd": 0.0069,
+  "chargedEventCounts": {
+   "result": 3
+  }
+ },
+ "t_tt_search": {
+  "id": "K8MFzB5CNW0K6hU82",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:43:08.929Z",
+  "finishedAt": "2026-10-16T21:43:14.271Z",
+  "usageTotalUsd": 0.010000000000000002,
+  "chargedEventCounts": {
+   "result": 3,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 0,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "t_yt_search": {
+  "id": "lbXQBkLoUZ6cFQXqq",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:43:25.585Z",
+  "finishedAt": "2026-10-16T21:43:41.802Z",
+  "usageTotalUsd": 0.009000000000000001,
+  "chargedEventCounts": {
+   "result": 3,
+   "date-filter": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "transcribeMinute": 0
+  }
+ },
+ "t_reddit": {
+  "id": "en2eZvXbF9jla735e",
+  "status": "FAILED",
+  "startedAt": "2026-10-16T21:43:50.743Z",
+  "finishedAt": "2026-10-16T21:44:00.428Z",
+  "usageTotalUsd": 0,
+  "chargedEventCounts": {
+   "result": 0,
+   "actor-start-gb": 0
+  }
+ },
+ "fb_posts": {
+  "id": "Fl4VXSBwPxs9tCZJ9",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:46:00.485Z",
+  "finishedAt": "2026-10-16T21:46:58.762Z",
+  "usageTotalUsd": 0.171,
+  "chargedEventCounts": {
+   "post": 34,
+   "actor-start": 1,
+   "filter-applied": 34
+  }
+ },
+ "ig_posts": {
+  "id": "clYxROs7kcPzEKAHg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:47:08.585Z",
+  "finishedAt": "2026-10-16T21:47:38.853Z",
+  "usageTotalUsd": 0.1173,
+  "chargedEventCounts": {
+   "post": 51,
+   "post-details": 51,
+   "music-data": 0
+  }
+ },
+ "tt_posts": {
+  "id": "hh2IDX8ftU2ZGMKlg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:47:51.647Z",
+  "finishedAt": "2026-10-16T21:47:57.782Z",
+  "usageTotalUsd": 0.077,
+  "chargedEventCounts": {
+   "result": 19,
+   "filter-applied": 19,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 0,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "yt_posts": {
+  "id": "XCKALKnG7fJyEZkSS",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:48:08.533Z",
+  "finishedAt": "2026-10-16T21:48:14.743Z",
+  "usageTotalUsd": 0.028,
+  "chargedEventCounts": {
+   "result": 28
+  }
+ },
+ "fb_comments": {
+  "id": "Tx8DnEo2wJuRdXJ78",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:48:50.277Z",
+  "finishedAt": "2026-10-16T21:49:19.916Z",
+  "usageTotalUsd": 2.36,
+  "chargedEventCounts": {
+   "comment": 898,
+   "actor-start": 1,
+   "filter-applied": 563
+  }
+ },
+ "ig_comments": {
+  "id": "q5u2kdNrKaRJkauZl",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:49:34.160Z",
+  "finishedAt": "2026-10-16T21:52:12.769Z",
+  "usageTotalUsd": 2.6243,
+  "chargedEventCounts": {
+   "comment": 1141
+  }
+ },
+ "tt_comments": {
+  "id": "teUp7QsT88DhLedxI",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:52:24.306Z",
+  "finishedAt": "2026-10-16T21:55:13.877Z",
+  "usageTotalUsd": 0.883,
+  "chargedEventCounts": {
+   "result": 883
+  }
+ },
+ "abroad_posts": {
+  "id": "1U05sJEPZbfqoSmOQ",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:55:32.533Z",
+  "finishedAt": "2026-10-16T21:56:00.726Z",
+  "usageTotalUsd": 0.4485,
+  "chargedEventCounts": {
+   "post": 195,
+   "post-details": 195,
+   "music-data": 0
+  }
+ },
+ "abroad_comments": {
+  "id": "L5ySBvWU1f1ni57xV",
+  "status": "ABORTED",
+  "startedAt": "2026-10-16T21:56:15.816Z",
+  "finishedAt": "2026-10-16T21:57:34.326Z",
+  "usageTotalUsd": 1.9067,
+  "chargedEventCounts": {
+   "comment": 829
+  }
+ },
+ "x_drink": {
+  "id": "liTJbpLWZK1tMmOPN",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:58:23.078Z",
+  "finishedAt": "2026-10-16T21:58:41.062Z",
+  "usageTotalUsd": 0.00946,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 43
+  }
+ },
+ "x_vcola": {
+  "id": "UYVmDcqo7Rqvf0bA0",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:58:57.103Z",
+  "finishedAt": "2026-10-16T21:59:20.660Z",
+  "usageTotalUsd": 0.044000000000000004,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 200
+  }
+ },
+ "x_talk": {
+  "id": "0aNiI2TiHKaa0O59O",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:59:31.413Z",
+  "finishedAt": "2026-10-16T21:59:48.062Z",
+  "usageTotalUsd": 0.00902,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 41
+  }
+ },
+ "x_en": {
+  "id": "EljCMbucBJWP8oNGr",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:59:57.233Z",
+  "finishedAt": "2026-10-16T22:00:13.711Z",
+  "usageTotalUsd": 0.0033,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 15
+  }
+ },
+ "x_brand": {
+  "id": "fthHm19zIOijn8UPU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:00:22.564Z",
+  "finishedAt": "2026-10-16T22:00:39.066Z",
+  "usageTotalUsd": 0.0033,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 15
+  }
+ },
+ "fb_search_00": {
+  "id": "88YNc3ijHpw8MVDhO",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:00:48.644Z",
+  "finishedAt": "2026-10-16T22:01:46.787Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_01": {
+  "id": "d1CAn7BzEQ6FzXjJZ",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:01:57.863Z",
+  "finishedAt": "2026-10-16T22:02:28.160Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_02": {
+  "id": "RQ7upwUNwWAZVpmYj",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:02:41.913Z",
+  "finishedAt": "2026-10-16T22:03:15.609Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_03": {
+  "id": "jlejnL46D81eYSg9l",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:03:25.959Z",
+  "finishedAt": "2026-10-16T22:03:52.882Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_04": {
+  "id": "oJDjTVP6ndapaIohE",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:04:10.413Z",
+  "finishedAt": "2026-10-16T22:04:55.548Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_05": {
+  "id": "WEpETjAtCs9Qje4Bo",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:05:13.376Z",
+  "finishedAt": "2026-10-16T22:06:10.134Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_06": {
+  "id": "oH8unCxC9wSCqInxH",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:06:24.019Z",
+  "finishedAt": "2026-10-16T22:07:39.386Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_07": {
+  "id": "Rqfqr6OZCwLKWbjyI",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:07:52.015Z",
+  "finishedAt": "2026-10-16T22:08:24.013Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_08": {
+  "id": "b5YHM8K691kCuSDUl",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:08:36.275Z",
+  "finishedAt": "2026-10-16T22:08:59.301Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_09": {
+  "id": "amwaOGQB0a2yPwq3T",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:09:11.017Z",
+  "finishedAt": "2026-10-16T22:09:55.327Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_10": {
+  "id": "aiHTeCLLodyuDcdJ4",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:10:11.845Z",
+  "finishedAt": "2026-10-16T22:10:46.928Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_11": {
+  "id": "okPjMmZDzdhSLcz3C",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:11:03.314Z",
+  "finishedAt": "2026-10-16T22:11:29.833Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "ig_tags": {
+  "id": "098AlbSuAQB4oqkTL",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:11:46.988Z",
+  "finishedAt": "2026-10-16T22:12:25.018Z",
+  "usageTotalUsd": 0.3151,
+  "chargedEventCounts": {
+   "result": 137
+  }
+ },
+ "tt_search": {
+  "id": "mrV018ZNbw1pl9px1",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:12:38.589Z",
+  "finishedAt": "2026-10-16T22:14:32.498Z",
+  "usageTotalUsd": 1.2,
+  "chargedEventCounts": {
+   "result": 300,
+   "filter-applied": 300,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 0,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "yt_search": {
+  "id": "gFp91QPpbOMEoE3nX",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:14:48.140Z",
+  "finishedAt": "2026-10-16T22:18:08.048Z",
+  "usageTotalUsd": 0.372,
+  "chargedEventCounts": {
+   "result": 124,
+   "date-filter": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "transcribeMinute": 0
+  }
+ },
+ "reddit": {
+  "id": "x2lYQaSGTGOCbDFn6",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T22:18:19.971Z",
+  "finishedAt": "2026-10-16T22:25:24.994Z",
+  "usageTotalUsd": 0.2604,
+  "chargedEventCounts": {
+   "result": 58,
+   "actor-start-gb": 2
+  }
+ },
+ "t2_ig_tagged": {
+  "id": "MnsZPutWq7chEZT75",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:26:44.465Z",
+  "finishedAt": "2026-10-18T14:27:41.842Z",
+  "usageTotalUsd": 0.0115,
+  "chargedEventCounts": {
+   "post": 5
+  }
+ },
+ "t2_ig_kw_posts": {
+  "id": "YExSJSFW26iWulrgG",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:27:51.831Z",
+  "finishedAt": "2026-10-18T14:28:06.104Z",
+  "usageTotalUsd": 0.0184,
+  "chargedEventCounts": {
+   "result": 8
+  }
+ },
+ "t2_ig_kw_reels": {
+  "id": "M7KVBl8Af7rZhge4L",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:28:17.229Z",
+  "finishedAt": "2026-10-18T14:28:29.776Z",
+  "usageTotalUsd": 0.0115,
+  "chargedEventCounts": {
+   "result": 5
+  }
+ },
+ "t2_tt_search_eg": {
+  "id": "dpyOGgp4EluPP6Uxw",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:28:42.408Z",
+  "finishedAt": "2026-10-18T14:28:49.217Z",
+  "usageTotalUsd": 0.041,
+  "chargedEventCounts": {
+   "result": 10,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 10,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "t2_tt_top_eg": {
+  "id": "yX4yTHQKeL2ITGnTW",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:28:59.343Z",
+  "finishedAt": "2026-10-18T14:29:06.347Z",
+  "usageTotalUsd": 0.021,
+  "chargedEventCounts": {
+   "result": 5,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 5,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "t2_tt_tags_eg": {
+  "id": "u95MTR7umi83ccuPf",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:29:16.179Z",
+  "finishedAt": "2026-10-18T14:29:52.072Z",
+  "usageTotalUsd": 0.041,
+  "chargedEventCounts": {
+   "result": 10,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 10,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "t2_tt_6m_eg": {
+  "id": "08SidSHq25L9QzLaW",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:30:57.367Z",
+  "finishedAt": "2026-10-18T14:31:54.008Z",
+  "usageTotalUsd": 0.026000000000000002,
+  "chargedEventCounts": {
+   "result": 5,
+   "filter-applied": 5,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 5,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "t2_tt_month_eg": {
+  "id": "hjnuUoDgCfCqXoWfU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:32:04.966Z",
+  "finishedAt": "2026-10-18T14:38:08.853Z",
+  "usageTotalUsd": 0.001,
+  "chargedEventCounts": {
+   "result": 0,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 0,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "t2_ig_mentions": {
+  "id": "38B9M55T9sWu3IyuN",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:42:47.172Z",
+  "finishedAt": "2026-10-18T14:43:20.302Z",
+  "usageTotalUsd": 0.0115,
+  "chargedEventCounts": {
+   "result": 5
+  }
+ },
+ "t2_ig_kw_dated": {
+  "id": "PVfBoVZN4OV1K8J7R",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:39:20.986Z",
+  "finishedAt": "2026-10-18T14:39:34.386Z",
+  "usageTotalUsd": 0.024,
+  "chargedEventCounts": {
+   "post-result": 10,
+   "filtered-search-page": 2
+  }
+ },
+ "t2_google": {
+  "id": "1SKbpvlQnHCsuJuao",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:40:13.935Z",
+  "finishedAt": "2026-10-18T14:40:41.416Z",
+  "usageTotalUsd": 0.00505,
+  "chargedEventCounts": {
+   "search-page-scraped": 2,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "ig_tagged_v7": {
+  "id": "RZA21fz2Cd8pdb5rd",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:45:16.195Z",
+  "finishedAt": "2026-10-18T14:46:23.284Z",
+  "usageTotalUsd": 0.414,
+  "chargedEventCounts": {
+   "post": 180
+  }
+ },
+ "ig_tagged_vss": {
+  "id": "VprTZcE2BVvO1Yakt",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:46:32.972Z",
+  "finishedAt": "2026-10-18T14:47:18.732Z",
+  "usageTotalUsd": 0.138,
+  "chargedEventCounts": {
+   "post": 60
+  }
+ },
+ "ig_kw_wide": {
+  "id": "rOmxYjQ3WOcE83PY5",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:47:32.419Z",
+  "finishedAt": "2026-10-18T14:49:07.111Z",
+  "usageTotalUsd": 0.75,
+  "chargedEventCounts": {
+   "post-result": 363,
+   "filtered-search-page": 46
+  }
+ },
+ "google_ig": {
+  "id": "1tydzOKHGc3BktCBq",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:49:23.166Z",
+  "finishedAt": "2026-10-18T14:57:20.687Z",
+  "usageTotalUsd": 0.10005,
+  "chargedEventCounts": {
+   "search-page-scraped": 40,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "google_tt": {
+  "id": "Z2iizx0bwSHugCaiE",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:57:36.015Z",
+  "finishedAt": "2026-10-18T15:01:43.571Z",
+  "usageTotalUsd": 0.06255,
+  "chargedEventCounts": {
+   "search-page-scraped": 25,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "ig_google_posts": {
+  "id": "C0gAOb9DfTCwwf1vL",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:02:05.372Z",
+  "finishedAt": "2026-10-18T15:02:55.266Z",
+  "usageTotalUsd": 0.2484,
+  "chargedEventCounts": {
+   "post": 108,
+   "post-details": 108,
+   "music-data": 0
+  }
+ },
+ "tt_google_posts": {
+  "id": "Y3JUTbQdhttppehO0",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:03:09.157Z",
+  "finishedAt": "2026-10-18T15:04:02.600Z",
+  "usageTotalUsd": 0.25,
+  "chargedEventCounts": {
+   "result": 83,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 0,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "fb_search_12": {
+  "id": "hliZBvJay211dKdJg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:04:17.175Z",
+  "finishedAt": "2026-10-18T15:04:43.484Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_13": {
+  "id": "2iqoI26vJB2nLBF5c",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:05:00.286Z",
+  "finishedAt": "2026-10-18T15:05:07.018Z",
+  "usageTotalUsd": 0.00905,
+  "chargedEventCounts": {
+   "result-item": 3,
+   "init": 1
+  }
+ },
+ "fb_search_14": {
+  "id": "xpxR5fASbeLr6Qf2v",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:05:17.084Z",
+  "finishedAt": "2026-10-18T15:05:37.073Z",
+  "usageTotalUsd": 0.06005,
+  "chargedEventCounts": {
+   "result-item": 20,
+   "init": 1
+  }
+ },
+ "fb_search_15": {
+  "id": "kfflyZkIv0y0YiREe",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:05:51.053Z",
+  "finishedAt": "2026-10-18T15:06:25.514Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_16": {
+  "id": "HibsLwFnJuxSAXY4w",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:06:41.792Z",
+  "finishedAt": "2026-10-18T15:07:13.231Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "fb_search_17": {
+  "id": "PULIJF7BrONWkj2Af",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:07:24.246Z",
+  "finishedAt": "2026-10-18T15:08:00.766Z",
+  "usageTotalUsd": 0.09004999999999999,
+  "chargedEventCounts": {
+   "result-item": 30,
+   "init": 1
+  }
+ },
+ "x_extra": {
+  "id": "Tf4Gv8xX0lm6LRxjr",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:08:14.916Z",
+  "finishedAt": "2026-10-18T15:08:41.157Z",
+  "usageTotalUsd": 0.029920000000000002,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 136
+  }
+ },
+ "tt_tags_wide": {
+  "id": "LeLYcRExAT6BfBVQO",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:08:59.473Z",
+  "finishedAt": "2026-10-18T15:09:51.524Z",
+  "usageTotalUsd": 0.405,
+  "chargedEventCounts": {
+   "result": 101,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 101,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "tt_wide": {
+  "id": "RvZPXVPLcP5tbl21w",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:15:37.849Z",
+  "finishedAt": "2026-10-18T15:16:25.091Z",
+  "usageTotalUsd": 0.497,
+  "chargedEventCounts": {
+   "result": 124,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 124,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  }
+ },
+ "yt_recent": {
+  "id": "IWgO7OHkjzHh0ycyE",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:10:10.468Z",
+  "finishedAt": "2026-10-18T15:13:14.640Z",
+  "usageTotalUsd": 0.228,
+  "chargedEventCounts": {
+   "result": 76,
+   "date-filter": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "transcribeMinute": 0
+  }
+ },
+ "t3_yt_comments_apidojo": {
+  "id": "vUbwnPSVB0Cgztggq",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:00:44.746Z",
+  "finishedAt": "2026-10-18T15:00:51.856Z",
+  "usageTotalUsd": 0.001,
+  "chargedEventCounts": {
+   "dataset-item": 0,
+   "query-event": 1
+  }
+ },
+ "t3_yt_comments_calm": {
+  "id": "UsmOJjmfZ1NoEFvD4",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:01:14.284Z",
+  "finishedAt": "2026-10-18T15:01:22.987Z",
+  "usageTotalUsd": 0.0194,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "video": 1,
+   "channel": 0,
+   "comment": 43,
+   "transcript": 0,
+   "post": 0,
+   "playlist": 0,
+   "video-extras": 0,
+   "shorts-sound": 0
+  }
+ },
+ "yt_own_check": {
+  "id": "KFGNtAqsqN38J8ySn",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:02:16.077Z",
+  "finishedAt": "2026-10-18T15:02:21.989Z",
+  "usageTotalUsd": 0.0346,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "video": 28,
+   "channel": 0,
+   "comment": 0,
+   "transcript": 0,
+   "post": 0,
+   "playlist": 0,
+   "video-extras": 0,
+   "shorts-sound": 0
+  }
+ },
+ "yt_comments_own": {
+  "id": "RL4diALluDQXuP0XS",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:13:37.009Z",
+  "finishedAt": "2026-10-18T15:13:51.384Z",
+  "usageTotalUsd": 0.011500000000000002,
+  "chargedEventCounts": {
+   "dataset-item": 5,
+   "query-event": 9
+  }
+ },
+ "yt_comments_public": {
+  "id": "luMlYbCnsDeazkNOU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:14:02.155Z",
+  "finishedAt": "2026-10-18T15:15:09.133Z",
+  "usageTotalUsd": 0.4435,
+  "chargedEventCounts": {
+   "dataset-item": 859,
+   "query-event": 14
+  }
+ }
+}

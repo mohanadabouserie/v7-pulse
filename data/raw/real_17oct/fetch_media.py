@@ -1,4 +1,4 @@
-"""17 Oct 2026 (Version 25): cover images for the real posts that have none yet, so they can be seen, not only linked.
+"""17 Oct 2026 (Version 25), widened 18 Oct (Version 26): cover images for the real posts that have none yet, so they can be seen, not only linked.
 Which: every V7 Egypt post without one, the 40 most-engaged posts of the pages abroad, and the top 80 public posts about V7 (by views,
 then likes, comments and shares). Image links come from the 17 Oct pulls in raw/ (Facebook, Instagram and X give one with the post;
 TikTok covers expire within hours, so a fresh link is read from each video's public page; YouTube thumbnails come from i.ytimg.com).
@@ -28,13 +28,18 @@ img_of = {}    # post link -> (image link or None, kind, platform)
 for x in raw('fb_posts'):
     m = (x.get('media') or [{}])[0] if x.get('media') else {}
     img_of[x['url']] = (m.get('thumbnail') or (m.get('photo_image') or {}).get('uri') or (m.get('image') or {}).get('uri'), 'video' if '/reel/' in x['url'] or x.get('isVideo') else 'image', 'fb')
-for name in ('ig_posts', 'abroad_posts', 'ig_tags'):
+for name in ('ig_posts', 'abroad_posts', 'ig_tags', 'ig_tagged_v7', 'ig_tagged_vss', 'ig_google_posts'):
     for x in raw(name):
-        img_of[x['url']] = (x.get('displayUrl'), {'Video': 'video', 'Sidecar': 'carousel'}.get(x.get('type'), 'image'), 'ig')
-for name in ('tt_posts', 'tt_search'):
+        if x.get('url'):
+            img_of[x['url']] = (x.get('displayUrl'), {'Video': 'video', 'Sidecar': 'carousel'}.get(x.get('type'), 'image'), 'ig')
+for x in raw('ig_kw_wide'):          # 18 Oct: Instagram keyword search (its own field names)
+    if x.get('url'):
+        img_of[x['url']] = (x.get('displayUrl'), {'reel': 'video', 'video': 'video', 'carousel': 'carousel'}.get(x.get('type'), 'image'), 'ig')
+for name in ('tt_posts', 'tt_search', 'tt_google_posts', 'tt_tags_wide', 'tt_wide'):
     for x in raw(name):
-        img_of[x['webVideoUrl']] = (None, 'video', 'tt')
-for name in ('yt_posts', 'yt_search'):
+        if x.get('webVideoUrl'):
+            img_of[x['webVideoUrl']] = (None, 'video', 'tt')
+for name in ('yt_posts', 'yt_search', 'yt_recent'):
     for x in raw(name):
         vid = re.search(r'(?:v=|shorts/)([\w-]{11})', x.get('url') or '')
         if vid: img_of[x['url']] = ('https://i.ytimg.com/vi/%s/hqdefault.jpg' % vid.group(1), 'video', 'yt')
@@ -51,7 +56,7 @@ for f in sorted((HERE / 'raw').glob('fb_search_*.json')):
 
 want = [u for u in own_urls if u not in have]
 want += [u for lk, cm, u in sorted(x_rows, key=lambda r: -(int(r[0]) + int(r[1]))) if u not in have][:40]
-ugc = sorted(data['ugc'], key=lambda r: (-(r['views'] or 0), -(r['likes'] + r['comments'] + r['shares'])))
+ugc = sorted(data['ugc'], key=lambda r: (-(r.get('views') or 0), -(r.get('likes', 0) + r.get('comments', 0) + r.get('shares', 0))))   # zero counts are left out of the data
 want += [r['url'] for r in ugc if r['url'] not in have and r['url'] in img_of][:80]
 print(len(want), 'images to fetch')
 

@@ -74,7 +74,7 @@ async def main():
         # alerts
         await nav('alerts')
         al=await J("[...document.querySelectorAll('.al')].map(a=>[a.querySelector('.t1').textContent,(a.querySelector('.when')||{}).textContent||''])")
-        check('launch questions get their own alert, not “can’t find V7”', any(a[0].startswith('V Orange launch:') for a in al) and not any(a[0].startswith('More people can’t find V7') for a in al), [a[0] for a in al])
+        check('launch questions get their own alert', any(a[0].startswith('V Orange launch:') for a in al), [a[0] for a in al])   # v26: test_v26 checks “can’t find V7” leaves them out
         late=[a for a in al if re.match(r'^(1[7-9]|2\d|3[01]) Oct$',a[1])]
         check('no alert is dated after 16 Oct (store alerts keep their 4–5 Oct dates)', not late and any(a[1]=='4 Oct' for a in al), [a[1] for a in al])   # Version 25: real data everywhere
         await click('[data-act=alert][data-k=launch]',700)

@@ -827,3 +827,49 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Telegram bot:** it had stopped when the machine shut down (02:47) and was started again at 05:48. It reads the new copy.
 - **Daily views (decision only, DECISIONS #126):** once a daily check runs, each day gets the views added that day. Days before the first check keep the counts on the day the post went up.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.
+
+### Version 26: the wider search and YouTube comments (18 Oct 2026)
+- **Why:** the user saw one Instagram post about V7 by other people in the last 7 days and asked for many Arabic and English keywords, workarounds beyond hashtags, a TikTok keyword search, and YouTube comments (they found the scrapers).
+- **What was wrong on 17 Oct:**
+  - Instagram had only 8 hashtags; most results were Cambodia's own V-Cola or years old (12 posts kept).
+  - TikTok's own date filter returns unrelated videos, so no TikTok post was kept for the last 30 days.
+  - "Comments are turned off on V7's YouTube videos" was wrong: `yt_pages.py` matched words that are in every page. They're on for 27 of 28.
+  - V7's YouTube titles were English machine translations, and their comment counts were 0.
+- **Tested first (USD 0.23):** Instagram keyword search (two scrapers), posts tagging @v7egypt, posts mentioning it, Google searches of instagram.com and tiktok.com, TikTok searched and browsed from Egypt, and YouTube comments with apidojo and calm_builder.
+- **Collected (`collect.py test2`, `wide`, `ttkw`, `ytcheck`, `ytc`):**
+  - **Instagram:** posts tagging @v7egypt (180, back to 19 Jun) and @vsupersoda (60); keyword search with 15 of 24 spellings inside the window (381, stopped at its cap); Google's finds (159 links, 108 new, fetched by link).
+  - **TikTok:** Google's finds (83 new, fetched by link); 5 hashtags (101) and a 10-keyword search (124, 8 keywords before its cap), both from Egypt.
+  - **Facebook, X and YouTube:** 6 more Facebook spellings, one more X query (136 posts), YouTube newest-first (76).
+  - **YouTube comments:** V7's videos (58) and the 14 public videos about V7 with comments (1,015).
+  - **Image links:** dates read from Instagram shortcodes and TikTok ids, so only finds inside the window were fetched.
+- **Labelled:** Claude labelled 2,065 new items, no failures (`label.py`).
+- **Result:**
+  - **Public posts about V7:** 586, up from 219: Instagram 280 (was 12), TikTok 96 (was 16), Facebook 124, X 63, YouTube 21, Reddit 2.
+  - **Last 7 days:** Instagram 18 (was 1), TikTok 6 (was 0).
+  - **YouTube comments:** 731, with 676 under public videos and 55 under V7's.
+  - **Comments in all:** 4,257.
+- **Dashboard:**
+  - **Comments under public videos:** they show under the public YouTube videos about V7. They never count as waiting for V7.
+  - **Comment times:** YouTube comments carry a day, not a time. They stay out of "When people comment" and out of the reply times.
+  - **Month-only comments:** YouTube only gives the month for older comments ("4 months ago"). Those 120 are listed under their video as "about 4 months before 18 Oct", but not counted by day.
+  - **V7's YouTube videos:** original Arabic titles and real comment counts.
+  - **Wording:**
+    - "as of 17 Oct" or "18 Oct" per post;
+    - "collected on 17–18 Oct";
+    - the help, the data sources and Ask V7 Pulse's rules no longer say YouTube comments are off;
+    - "Comments under other people's posts" replaces "other posts".
+  - **Needs your attention:** plain volume spikes now rank after questions waiting for V7; a negative day is still critical.
+  - **Images:** 119 new images (431 in all). The page is 8.0 MB.
+- **Findings:**
+  - **Can't find V7:** the alert fires with 15 posts and comments this week. 10 are YouTube comments under Kareem Elsayed's and Youssef Bsheer's videos: not available everywhere, no fridges in working-class cafés, no ads or distribution in Upper Egypt, supply problems.
+  - **Where the talk is:** over the last 30 days, comments under other people's posts are 59% of the conversation in Egypt (YouTube 60%, mostly Kareem Elsayed's video). Comments under V7's posts are 26% and public posts 15%.
+- **Spend (Apify's final run charges):** the wider search USD 3.06, the TikTok keyword search 0.50, the YouTube check and comments 0.49, tests 0.23: USD 4.28 on 18 Oct. The cycle is at USD 16.33 of 19 by the meter; 2.67 is left until 15 Nov.
+- **Tests:**
+  - New `tests/test_v26.py`: Instagram and TikTok coverage, YouTube comments and their dates, "can't find V7" leaving launch questions out, the post view, phone, tablet and dark mode.
+  - Updated: v20 (the conversation split), v21 (the launch alert), v23 (9 MB), v25 (the footer) and test_bot (an open Act now alert after the brief on joining).
+- **New report:** `data/raw/real_17oct/SCRAPERS.md` (from `scrapers_report.py`) lists every scraper with its link, input, output and cost.
+- **Files:**
+  - **Dashboard:** `V7_Pulse_Dashboard.html` (Version 25 saved as `archive/dashboard_versions/V7_Pulse_Dashboard_v25.html`).
+  - **Pipeline:** `data/raw/real_17oct/` (`collect.py`, `normalize.py`, `build_real.py`, `fetch_media.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`), plus `data/raw/media_13oct/`.
+  - **Tests:** `tests/`.
+  - **Notes:** `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.

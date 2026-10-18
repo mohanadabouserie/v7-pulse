@@ -33,18 +33,18 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 ## Repository map
 | Path | What it is |
 |---|---|
-| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,600 lines, 6.2 MB with the images): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
+| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,600 lines, 8.0 MB with the 431 images): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
 | `V7_Pulse_Costs.html` | Yearly cost calculator for the hosted version (fixed plus variable costs, three Claude model pickers). |
 | `V7_Pulse_Proposal.html` | The first proposal page (3 Oct 2026; its cost box is out of date). |
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
 | `data/raw/social/rumors_11oct/` | The Rumors & attacks pipeline (see "Data pipelines"). |
-| `data/raw/real_17oct/` | **The real social data (Version 25):** `PLAN.md` (budget and window), `collect.py`, `normalize.py`, `label.py` (Claude), `build_real.py --inject`, raw files in `raw/`. See "Data pipelines". |
+| `data/raw/real_17oct/` | **The real social data (Versions 25 and 26):** `PLAN.md` (budget and window), `collect.py`, `normalize.py`, `label.py` (Claude), `build_real.py --inject`, raw files in `raw/`, and `SCRAPERS.md` (every scraper's link, input, output and cost, written by `scrapers_report.py`). See "Data pipelines". |
 | `bot/` | The Telegram bot @v7_pulse_bot: `v7pulse_bot.py` (daily brief, Act now alerts, questions), `dashboard_reader.py` (reads the website copy in a headless browser), `claude_tools_mcp.py` (the dashboard's eight read-only Claude tools for Claude Code, which answers questions), `README.md`, a systemd service file. State in `bot/state/` (ignored). One copy runs at a time; its process id is in `bot/state/bot.pid` |
 | `Ask_V7_Pulse/` | Hosted-version setup for the chat: system prompt, 14 tool definitions, Apify allowlist. |
 | `scripts/` | Apify helper runners from the first tests. |
@@ -76,7 +76,8 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - **Views:** the `VIEWS` map routes each sidebar `data-view` to its function. Each view writes `content.innerHTML`. Charts that need sizes are pushed to `HOOKS` and run after render.
 - **Interaction:** any element with `data-act="…" data-v="…"` is handled in `onAct`. Rows that open details carry `tabindex=0`, so Enter and Space work.
 - **Real data everywhere (Version 25):**
-  - V7 Egypt's posts and every comment on them (with V7's and V Super Soda's replies), the pages abroad, and the public posts about V7 from six platforms, 20 Apr to 16 Oct 2026, each labelled by Claude. Followers checked 13 Oct.
+  - V7 Egypt's posts and every comment on them (with V7's and V Super Soda's replies), the pages abroad, the public posts about V7 from six platforms (searched widely since Version 26), and the comments under the public YouTube videos about V7, 20 Apr to 16 Oct 2026, each labelled by Claude. Followers checked 13 Oct.
+  - YouTube comments carry a day but no time (`nt`); older ones only a month (`da`, shown as "about 4 months before 18 Oct" under their video and not counted by day).
   - The only demo left is inside Market, which the user asked to leave as it is: the store history before 4 Oct is drawn hatched and labelled demo.
   - Not shown, because they need V7's own account insights: profile visits and follower details.
   - The header badge (`#dataBadge`) says "Real data" on every view, with the check date in its tooltip. Keep it honest when you add a view.
@@ -91,7 +92,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
@@ -131,11 +132,15 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - **Restaurants:** Talabat menus and the brand rules are in `data/raw/talabat/` (`brands2.py`, `rest_rebuild.py`, `rest_final.json`). Some scripts there were written for a temporary folder, so check paths before rerunning.
 - **Search trends:** `data/raw/google_trends/` (direct requests to Google Trends, free).
 - **Real social data** (`data/raw/real_17oct/`, Version 25; plan and budget in `PLAN.md`):
-  1. `collect.py test|own|comments|abroad|ugc`: Apify runs, each with a USD cap and a total `BUDGET`; raw files in `raw/` are kept and not run again. Never use Facebook's comment date filter when the posts are already in the window (it's charged per comment).
+  1. `collect.py test|own|comments|abroad|ugc`, then (18 Oct) `test2|wide|ttkw|ytcheck|ytc`: Apify runs, each with a USD cap and a budget line (`BUDGET`, `BUDGET_WIDE`, `BUDGET_YTC`); raw files in `raw/` are kept and not run again. Never use Facebook's comment date filter when the posts are already in the window (it's charged per comment).
+     - `wide`: Instagram posts tagging V7's accounts, Instagram keyword search inside the window (seemuapps), Google searches of instagram.com and tiktok.com (finds dated from their ids, then fetched by link), TikTok from Egypt, more spellings on Facebook, X and YouTube.
+     - `ytc`: YouTube comments (apidojo) on V7's videos and on the public videos about V7.
   2. `yt_pages.py`: exact dates for V7's YouTube videos from their public pages (free).
   3. `normalize.py`: one list (`items.json`), Cairo time, deduplicated; collaboration posts filed under their V7 page; replies linked. V Super Soda counts as V7 (DECISIONS #118).
   4. `label.py`: Claude Code with the bot's sign-in (the user's personal Max plan), Opus 5.5 at low effort, 40 items a batch, JSON schema; resumable. `labels.json` holds every label.
   5. `build_real.py --inject`: writes the three blocks. Private people anonymous, @mentions masked (DECISIONS #122); off-topic comments dropped but emoji and tags kept (#120).
+  6. `fetch_media.py`, then `../media_13oct/build_media.py --inject`: images for V7's posts, the top abroad posts and the top 80 public posts.
+  7. `scrapers_report.py` (with the Apify token in the environment): `SCRAPERS.md` and `runs_final.json`, each run's final charge.
   - `raw/`, `items.json` and `labels.json` name private people, so they're git-ignored and stay on this machine. Never commit them: the repo is public.
 - **V7's own posts** (`data/raw/verify_13oct/`):
   1. `own_pull.py`: Instagram profiles (V7 Egypt, the pages abroad, the UK distributor), V7Egypt's Facebook posts, TikTok and the YouTube channel.
@@ -168,6 +173,12 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - "في سفن" means "in ships", and in Saudi posts "سفن" is 7UP;
   - Cambodia has its own "V-Cola".
 - Self-declared profile locations are unreliable. Don't use them to place posts (DECISIONS #76).
+- TikTok (`clockworks`): its own date filter (`videoSearchDateFilter`) returns unrelated videos. Search with `proxyCountryCode: "EG"` and no date filter, then check dates.
+- Instagram: the hashtag #vcola is mostly Cambodia's V-Cola. Its keyword search returns the top results for a word (a few hundred), so add the posts that tag @v7egypt and Google's finds.
+- YouTube:
+  - `streamers/youtube-channel-scraper` returns English machine translations of V7's Arabic titles; `calm_builder/youtube-scraper` gives the originals.
+  - Comment dates are relative ("8 days ago", "4 months ago"); apidojo turns some into a date on the run's day of the month (18 May …), which is still month-only.
+- Minimum cost caps: USD 0.50 for TikTok, Google search and calm_builder.
 - The artifact publish guard:
   - it takes a page for a code-review page, and refuses it over 512 KB, when an `id=` is followed by more than 2,048 characters with no space (a Facebook link ending in `&id=…` before image data did it);
   - the data builders write that `=` as `\u003d`, and `test_v25.py` checks the page (DECISIONS #124);

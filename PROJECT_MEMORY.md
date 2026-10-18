@@ -1,11 +1,12 @@
 # V7 Pulse: project memory
 
-Last updated: 17 Oct 2026 (dashboard Version 25: real data everywhere but Market, 20 Apr to 16 Oct 2026, labelled by Claude; Version 24: V7 Pulse on Telegram)
+Last updated: 18 Oct 2026 (dashboard Version 26: the wider search, 586 public posts about V7, and YouTube comments; Version 25: real data everywhere but Market, 20 Apr to 16 Oct 2026, labelled by Claude)
 
 ## 1. What this is
 V7 Pulse is a social listening and market dashboard for V7's marketing team. Mohanad (the user, an internal employee) is proposing it to V7's marketing manager.
 
 - Today it's a working prototype in one HTML file.
+- Since Version 26 (18 Oct 2026) public posts are searched with many Arabic and English spellings and workarounds, and YouTube comments are in.
 - Since Version 25 (17 Oct 2026) every tab uses real data: V7's posts and every comment on them, the pages abroad, and the public posts about V7 from six platforms (20 Apr to 16 Oct 2026), each labelled by Claude. Market (stores, restaurants, search trends) is real too, apart from the store history before 4 Oct, which the user asked to leave as it is.
 - The plan is to host it later (Hostinger or a VPS), with daily data collection through Apify and Claude answering questions about the data.
 - The project started on 3 Oct 2026 with the request "use Apify to make a daily or weekly report about V7, like the reference docs". The reference docs are dima's sample listening reports, in `Reference docs/`.
@@ -13,7 +14,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 25, 17 Oct 2026) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 26, 18 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 25 since 17 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -81,7 +82,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 25)
+## 4. The dashboard today (Version 26)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -114,6 +115,16 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Removed:** the demo generators, profile visits and follower details (they need V7's account insights), estimated reach, the views spread over days, the demo groups, and a made-up event.
   - **Images:** 312 posts now have their cover image (V7 Egypt 129 of 132, pages abroad 98 of 194, public 75 of 219). The page is 6.2 MB.
   - **Published** privately on 17 Oct (DECISIONS #124 explains the publish guard fix), and on the public site the same day. The bot reads that copy.
+- **Version 26, the wider search and YouTube comments (18 Oct, DECISIONS #127–132):**
+  - **Why:** the user saw one Instagram post about V7 by other people in the last week. Instagram had only 8 hashtags, and TikTok's date filter returned unrelated videos.
+  - **Searched:** many Arabic and English spellings, plus Instagram posts that tag V7, Instagram keyword search, Google searches of Instagram and TikTok, and TikTok from Egypt. Every scraper, input and output is in `data/raw/real_17oct/SCRAPERS.md`.
+  - **Public posts about V7:** 586, up from 219: Instagram 280, Facebook 124, TikTok 96, X 63, YouTube 21, Reddit 2. In the last 7 days: Instagram 18 (was 1), TikTok 6 (was 0).
+  - **YouTube comments:** 731 shown: 676 under the public videos about V7 (most under Kareem Elsayed's, 9 Oct) and 55 under V7's own. 120 date only to the month and are listed under their video.
+  - **Corrections:** comments are on for 27 of V7's 28 YouTube videos (Version 25 said off). V7's YouTube titles are the original Arabic.
+  - **Findings:**
+    - "Can't find V7" now fires: 15 this week, 10 of them YouTube comments about availability (cafés' fridges, Upper Egypt, supply).
+    - In Egypt over the last 30 days, comments under other people's posts are 59% of the conversation, comments under V7's posts 26%, public posts 15%.
+  - **Page:** 8.0 MB with 431 images. Published privately on 18 Oct. The public site and the bot show Version 25 until a push.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
@@ -174,7 +185,8 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | Real | Demo or not shown |
 |---|---|
 | V7 Egypt's 132 posts, 20 Apr to 16 Oct (the first is on 7 May; Instagram included), with counts as of 17 Oct | |
-| Every comment on them, and V7's and V Super Soda's replies | YouTube: comments are turned off on all 28 videos |
+| Every comment on them, and V7's and V Super Soda's replies (YouTube from 18 Oct) | YouTube gives only the month for older comments: those are listed under their video, not counted by day |
+| The comments under the 14 public YouTube videos about V7 that have comments (18 Oct) | Comments under other people's Facebook, Instagram and TikTok posts aren't collected |
 | The pages abroad: 194 posts and their counts | 829 of their 1,837 comments were collected (budget) |
 | 219 public posts about V7 from X, Facebook, YouTube, TikTok, Instagram and Reddit | |
 | Follower counts (13 Oct) | Not shown: profile visits, followers' city and age, online times, reach (they need V7's own account insights) |
@@ -439,7 +451,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 
 ## 9. Apify account and spend
 - **Plan:** Starter since 16 Oct 2026: USD 19 of usage a month, which is also the hard ceiling. The cycle runs 16 Oct to 15 Nov 2026. (Before: the Free plan, USD 4.64 of 5 spent by 13 Oct.)
-- **Spent this cycle:** USD 12.05 by Apify's meter on 17 Oct (USD 11.62 by the run records), for the real-data collection. About USD 6.95 left until 15 Nov.
+- **Spent this cycle:** USD 16.33 by Apify's meter on 18 Oct (17 Oct: USD 12.04; 18 Oct: 4.28, by the final run charges). About USD 2.67 left until 15 Nov. Every run, with its input, output and cost: `data/raw/real_17oct/SCRAPERS.md`.
 - **Prices at Starter (BRONZE tier, checked 17 Oct):** Facebook posts USD 0.004 (+0.001 date filter), Facebook comments 0.002, Instagram posts 0.0015 (+0.0008 details), Instagram comments and hashtags 0.0023, TikTok 0.003 (+0.001 date filter), TikTok comments 0.001, YouTube 0.003, X 0.00022, Facebook search 0.003, Reddit 0.0038 (+0.02 a run). Facebook's comment date filter is charged per comment: don't use it when the posts are already in the window.
 
 **Spend log**
@@ -459,6 +471,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | 13 Oct | Deeper pass: V7's own posts on 4 platforms, the pages abroad, YouTube details, page followers, V Orange comments | about 0.19 by the run log | 4.25 (Apify's reading, with late charges from earlier runs) |
 | 13 Oct | Backfill of V7's own posts to 16 Apr: Facebook 21, TikTok 9, Instagram 45, YouTube 30, plus two 3-post tests | 0.39 (run records) | 4.64 |
 | 17 Oct (new cycle, Starter) | Real data for every tab but Market, 20 Apr to 16 Oct (`data/raw/real_17oct/`): tests 0.06; V7's 132 posts 0.26; 2,922 comments on them 5.82; the pages abroad's 194 posts and 829 of their comments 2.35; 1,292 public posts from X, Facebook, Instagram, TikTok, YouTube and Reddit 3.12 | 11.62 (run records) | 12.05 (Apify's meter) |
+| 18 Oct | The wider search and YouTube comments (DECISIONS #127–132): tests 0.23; Instagram tags, keyword search and Google finds, TikTok from Egypt and Google finds, more Facebook, X and YouTube spellings 3.06; TikTok keyword search 0.50; YouTube comments and the check of V7's videos 0.49 | 4.28 (final run charges) | 16.33 (Apify's meter) |
 
 ## 10. Raw data map (`data/raw/`)
 | Folder | What's in it |
@@ -497,7 +510,11 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
-- Keep the real data fresh: about USD 6.95 of Apify is left until 15 Nov. A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`) costs roughly USD 1 to 2.
+- Keep the real data fresh: about USD 2.67 of Apify is left until 15 Nov. A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`) costs roughly USD 1 to 2.
+- Gaps left by the budget on 18 Oct (about USD 1.10 to close, after 16 Nov or now):
+  - posts tagging @v7egypt before 19 Jun (the 180 reached back to 19 Jun; about 300 more, USD 0.55);
+  - 9 of the 24 Instagram spellings (ڤي سوبر صودا, V Super Soda, the Cream Soda, Pink Lemonade, Pomegranate and Blueberry ones; about USD 0.40);
+  - 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
 - Daily views (DECISIONS #126): a daily check of each post's totals, so each day shows the views added that day. About USD 0.10 a day for posts from the last 30 days. Not built; it needs the user's OK to schedule.
 - Share the bot's join link with the team when ready.
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.

@@ -20,7 +20,7 @@ async def main():
         check('opens on posts and comments together', k[0]=='both' and k[1]=='Posts and comments', k)
         where=await J("[...document.querySelectorAll('.panel')].find(p=>p.textContent.startsWith('Where and who')).innerText")
         m=re.search(r'Comments under V7’s posts\s*(\d+)%',where)
-        check('most of the conversation is comments under V7’s posts', m and int(m.group(1))>50, m and m.group(0))   # 55–75% with V7’s real posts, depending on the demo draw (v21–v22)
+        check('the conversation is split: comments under V7’s posts, under other people’s posts, public posts', m and 0<int(m.group(1))<100 and 'Comments under other people’s posts' in where and 'Public posts about V7' in where, m and m.group(0))   # v26: 26% under V7’s posts in the last 30 days (Kareem Elsayed’s video drew ~600 comments); it was 55–75% before
         await click('#kindSeg [data-kind=posts]')
         n=int((await J("document.querySelector('.kpi .k-v').textContent")).replace(',',''))
         check('public posts at real volume: a few a day (the 17 Oct collection)', 15<=n<=150, n)   # Version 25: real data everywhere
@@ -64,7 +64,7 @@ async def main():
         rules=await J("[...document.querySelectorAll('.rule')].map(r=>[r.querySelector('span').textContent,r.querySelector('.switch').getAttribute('aria-checked')])")
         al=await J("[...document.querySelectorAll('.al .t1')].map(x=>x.textContent)")
         check('“unanswered for a day” is on, “mention spike” is gone', ['Unanswered for a day','true'] in rules and not any('Mention spike' in r[0] for r in rules), rules)
-        check('a launch gets its own alert, not “can’t find V7”', any(a.startswith('V Orange launch:') for a in al) and not any(a.startswith('More people can’t find V7') for a in al), al)   # v21
+        check('a launch gets its own alert', any(a.startswith('V Orange launch:') for a in al), al)   # v21; v26: “can’t find V7” fires on real comments now, and test_v26 checks it leaves launch questions out
         # outside Egypt
         await nav('abroad')
         sub=await J("[...document.querySelectorAll('.subtabs button')].map(b=>b.textContent)")

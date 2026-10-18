@@ -117,8 +117,9 @@ if __name__ == '__main__':
         return aid
 
     # ------------------------------------------------ public posts about V7 (UGC)
-    UGC, ugc_id, rumor = [], {}, []
-    for i in sorted((i for i in items if i['src'] == 'ugc'), key=lambda i: i['date']):
+    RUNS_18 = {'ig_tagged_v7', 'ig_tagged_vss', 'ig_kw_wide', 'ig_google_posts', 'tt_google_posts', 'tt_tags_wide', 'tt_wide', 'yt_recent', 'x_extra'} | {'fb_search_%02d' % n for n in range(12, 18)}
+    UGC, ugc_id, ugc_cty, rumor = [], {}, {}, []
+    for i in sorted((i for i in items if i['src'] == 'ugc' and i['kind'] == 'post'), key=lambda i: i['date']):   # (comments under public videos come later)
         lab = labels.get(i['id'])
         if not lab:
             report['public posts not labelled'] += 1; continue
@@ -127,14 +128,15 @@ if __name__ == '__main__':
         cty = lab['cty'] or (i.get('region') if i.get('region') and len(i['region']) == 2 else '') or ('EG' if lab['lang'] in ('ar', 'fr', 'en', 'msa', 'other') else '')
         off = 'cairo' if cty in ('', 'EG') else 0
         d, hh, mi = local(i['date'], off if off == 'cairo' else 3)
-        k = 'u%d' % len(UGC); ugc_id[i['id']] = k
+        k = 'u%d' % len(UGC); ugc_id[i['id']] = k; ugc_cty[i['id']] = cty or 'XX'
         txt = i['text'] if lab['seg'] in ('creator', 'page', 'news', 'business') else mask(i['text'])
         UGC.append({'id': k, 'd': d, 'h': hh, 'mi': mi, 'pl': i['pl'], 'a': author(i, lab), 'grp': 1 if i.get('group') else 0, 'sr': i.get('subreddit'),
                     'prods': lab['prods'], 'c': lab['c'], 'lang': lab['lang'], 'text': txt, 'tags': sorted(set(tags_of(i['text'])) | {'#' + h for h in i.get('hashtags') or [] if h}),
                     's': lab['s'], 'emo': lab['emo'], 'views': i.get('views') or 0, 'likes': i.get('likes') or 0, 'comments': i.get('comments') or 0,
                     'shares': i.get('shares') or 0, 'gov': lab['gov'], 'cty': cty or 'XX', 'seg': lab['seg'], 'en': lab['en'], 'url': i['url'], 'fmt': i.get('fmt') or 'Text',
                     'needsReply': bool(lab['reply'] and i['pl'] in ('fb', 'ig', 'tt', 'yt')), 'place': i.get('place') or i.get('region') or None,
-                    'claim': lab['claim'], 'stance': lab['stance'], 'isReply': 1 if i.get('is_reply') else 0})
+                    'claim': lab['claim'], 'stance': lab['stance'], 'isReply': 1 if i.get('is_reply') else 0,
+                    'asof': 18 if i.get('counts_from') in RUNS_18 else 0})   # its numbers are as of 18 Oct (the wider search) or 17 Oct
         if lab['claim']:
             rumor.append(k)
     report['public posts about V7'] = len(UGC)
@@ -146,7 +148,7 @@ if __name__ == '__main__':
         cm_id[i['id']] = 'k%d' % len(cm_id)
     replied = {i['reply_to'] for i in comments if i.get('by_v7') and i.get('reply_to')}
     for i in comments:
-        parent = own_id.get(i['parent'])
+        parent = own_id.get(i['parent']) or ugc_id.get(i['parent'])    # V7's posts, the pages abroad, and (18 Oct) public YouTube videos
         if not parent:
             report['comments on a post outside the window'] += 1; continue
         post = by_id[i['parent']]
@@ -157,6 +159,8 @@ if __name__ == '__main__':
             report['comments after 16 Oct'] += 1; continue
         k = cm_id[i['id']]
         base = {'id': k, 'kind': 'comment', 'parent': parent, 'replyTo': cm_id.get(i.get('reply_to')), 'd': d, 'h': hh, 'mi': mi, 'pl': i['pl'],
+                'nt': 1 if i.get('date_day_only') else 0,      # YouTube gives a comment's day, not its time
+                'da': i.get('date_approx') or '', 'ago': i.get('ago') or '',   # YouTube gives only the month for older comments ('4 months')
                 'likes': i.get('likes') or 0, 'comments': i.get('comments') or 0, 'url': i.get('url') or post['url']}
         if i.get('by_v7'):
             h = ((i.get('author') or {}).get('handle') or (i.get('author') or {}).get('name') or '').replace(' ', '').lower()
@@ -167,15 +171,17 @@ if __name__ == '__main__':
             report['comments not labelled'] += 1; continue
         if not lab['about'] and lab['c'] not in ('n_emoji', 'n_tag'):    # emoji reactions and friend tags stay: they react to the post
             report['comments that are spam or off topic'] += 1; continue
-        pcty = 'EG' if post['src'] == 'own' else PAGES.get(page, (None, None, 'XX'))[2]
+        pcty = 'EG' if post['src'] == 'own' else ugc_cty.get(i['parent']) if post['src'] == 'ugc' else PAGES.get(page, (None, None, 'XX'))[2]
+        mine = post['src'] != 'ugc'     # under someone else's video V7's answers aren't collected, so "needs a reply" isn't tracked there
         CM.append(dict(base, a=author(i, lab), prods=lab['prods'], c=lab['c'], lang=lab['lang'], text=mask(i['text']) or '(sticker or photo)', s=lab['s'],
                        emo=lab['emo'], gov=lab['gov'], cty=lab['cty'] or pcty, seg=lab['seg'], en=lab['en'],
-                       needsReply=bool(lab['reply']), replied=(i['id'] in replied) if lab['reply'] else None,
+                       needsReply=bool(lab['reply']) and mine, replied=(i['id'] in replied) if lab['reply'] and mine else None,
                        lv=1 if i.get('liked_by_v7') else 0, claim=lab['claim'], stance=lab['stance']))
     report['comments shown'] = sum(1 for c in CM if 'by' not in c); report['V7 replies'] = sum(1 for c in CM if 'by' in c)
 
     meta = {'checked': CHECKED, 'window': [SINCE, UNTIL], 'apify_usd': None, 'claude': 'claude-opus-5-5, low effort, through Claude Code on the user’s plan',
-            'report': dict(report), 'notes': {'yt_comments_off': 'Comments are turned off on all of V7 Egypt’s YouTube videos.',
+            'report': dict(report), 'notes': {'yt_comments': 'YouTube comments collected on 18 Oct: V7 Egypt’s videos (comments are off on 1 of 28) and the public videos about V7.',
+                                               'wide_search': 'Public posts: the 17 Oct searches plus, on 18 Oct, more Arabic and English spellings, the Instagram posts that tag V7, Instagram keyword search and Google searches of Instagram and TikTok.',
                                                'abroad_partial': 'The pages abroad had 1,837 comments; 829 were collected (budget).'}}
     run_log = (HERE / 'run.log').read_text(encoding='utf-8')
     spent = re.findall(r'total \$([\d.]+)', run_log)

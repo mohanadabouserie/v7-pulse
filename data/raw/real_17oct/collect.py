@@ -1,7 +1,7 @@
 """Real data for every tab except Market (17 Oct 2026). The plan, the budget and the window are in PLAN.md.
 
 Usage:  python3 collect.py <stage> [--force]
-Stages, in order: test, own, comments, abroad, ugc
+Stages, in order: test, own, comments, abroad, ugc; then test2 and wide (18 Oct, the wider search for public posts)
 - Each run saves raw/<name>.json ({input, run, items}) and is skipped next time unless --force is given.
 - Every run has a USD cap (Apify's maxTotalChargeUsd), and the whole collection stops at BUDGET, read from Apify's usage meter.
 - The token is read from the environment only:  set -a; . ./.env.apify; set +a
@@ -13,10 +13,16 @@ RAW = HERE / 'raw'
 TOK = os.environ['APIFY_API_TOKEN']
 SINCE, UNTIL = '2026-04-20', '2026-10-16'       # 180 days: the dashboard's range
 BUDGET = 14.00                                   # of the USD 19 a month; the rest is the reserve
+BUDGET_YTC = 16.45                               # 18 Oct: YouTube comments, after the wider search
+BUDGET_WIDE = 15.60                              # 18 Oct: the wider search for public posts may spend up to here (DECISIONS #127)
 NODL = {"shouldDownloadVideos": False, "shouldDownloadCovers": False, "shouldDownloadSlideshowImages": False,
         "shouldDownloadAvatars": False, "shouldDownloadMusicCovers": False}
 FB_POSTS, FB_COMMENTS = 'apify~facebook-posts-scraper', 'apify~facebook-comments-scraper'
 IG_POSTS, IG_COMMENTS, IG_TAGS = 'apify~instagram-post-scraper', 'apify~instagram-comment-scraper', 'apify~instagram-hashtag-scraper'
+IG_TAGGED = 'apify~instagram-tagged-scraper'      # posts in which other accounts tag a profile
+IG_KW = 'seemuapps~instagram-keyword-posts-scraper'   # Instagram's keyword search, kept only inside the dates asked
+IG_SCRAPER = 'apify~instagram-scraper'           # resultsType 'mentions': posts whose caption mentions a profile
+GOOGLE = 'apify~google-search-scraper'
 TT, TT_COMMENTS = 'clockworks~tiktok-scraper', 'clockworks~tiktok-comments-scraper'
 YT, YT_CHANNEL = 'streamers~youtube-scraper', 'streamers~youtube-channel-scraper'
 X, FB_SEARCH, REDDIT = 'kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest', 'scraper_one~facebook-posts-search', 'trudax~reddit-scraper-lite'
@@ -41,15 +47,15 @@ def log(line):
         f.write(time.strftime('%Y-%m-%d %H:%M  ') + line + '\n')
 
 
-def run(name, actor, body, cap_usd, max_items=None):
+def run(name, actor, body, cap_usd, max_items=None, budget=None):
     """Runs one actor with a cost cap; returns its items. Saves them with the input and the run's numbers."""
     out = RAW / (name + '.json')
     if out.exists() and '--force' not in sys.argv:
         print(f'{name}: already collected, skipped')
         return json.load(open(out, encoding='utf-8'))['items']
-    before = spent()
-    if BUDGET - before < cap_usd:
-        log(f'{name}: skipped, only ${BUDGET - before:.2f} of the ${BUDGET:.2f} budget left (needs a ${cap_usd:.2f} cap)')
+    before, budget = spent(), budget or BUDGET
+    if budget - before < cap_usd:
+        log(f'{name}: skipped, only ${budget - before:.2f} of the ${budget:.2f} budget left (needs a ${cap_usd:.2f} cap)')
         return []
     q = f'?maxTotalChargeUsd={cap_usd:.3f}' + (f'&maxItems={max_items}' if max_items else '')
     try:
@@ -183,7 +189,155 @@ def stage_ugc():
                            "maxItems": 60, "maxPostCount": 15, "maxComments": 0, "postDateLimit": SINCE}, 0.35, 60)
 
 
-STAGES = {'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc}
+def stage_test2():
+    """18 Oct: the 17 Oct search found almost nothing recent on Instagram (8 hashtags, mostly Cambodia's V-Cola) or TikTok (unrelated
+    videos). A few results from each new method first: Instagram keyword search (posts and reels), posts tagging @v7egypt, and
+    TikTok searched and browsed from Egypt."""
+    B = BUDGET_WIDE
+    run('t2_ig_tagged', IG_TAGGED, {"username": ["v7egypt"], "resultsLimit": 5}, 0.03, 5, budget=B)
+    run('t2_ig_kw_posts', IG_TAGS, {"hashtags": ["ڤي سڤن", "V7 مشروب"], "keywordSearch": True, "resultsType": "posts", "resultsLimit": 4}, 0.04, 8, budget=B)
+    run('t2_ig_kw_reels', IG_TAGS, {"hashtags": ["ڤي سڤن", "V7 مشروب"], "keywordSearch": True, "resultsType": "reels", "resultsLimit": 4}, 0.04, 8, budget=B)
+    run('t2_tt_search_eg', TT, dict(NODL, searchQueries=["ڤي سڤن", "في سفن مشروب"], searchSection="/video", resultsPerPage=5, proxyCountryCode="EG"), 0.50, 10, budget=B)
+    run('t2_tt_top_eg', TT, dict(NODL, searchQueries=["V7 مشروب"], searchSection="", resultsPerPage=5, proxyCountryCode="EG"), 0.50, 5, budget=B)
+    run('t2_tt_tags_eg', TT, dict(NODL, hashtags=["v7egypt", "ڤي_سڤن"], resultsPerPage=5, proxyCountryCode="EG"), 0.50, 10, budget=B)
+    # TikTok's own date filter returned unrelated videos on 17 Oct (searched from abroad); tried again from Egypt
+    run('t2_tt_6m_eg', TT, dict(NODL, searchQueries=["ڤي سڤن"], searchSection="/video", videoSearchDateFilter="LAST_6_MONTHS", resultsPerPage=5, proxyCountryCode="EG"), 0.50, 5, budget=B)
+    run('t2_tt_month_eg', TT, dict(NODL, searchQueries=["V7 مشروب"], searchSection="/video", videoSearchDateFilter="PAST_MONTH", resultsPerPage=5, proxyCountryCode="EG"), 0.50, 5, budget=B)
+    run('t2_ig_mentions', IG_SCRAPER, {"directUrls": ["https://www.instagram.com/v7egypt/"], "resultsType": "mentions", "resultsLimit": 5}, 0.03, 5, budget=B)
+    run('t2_ig_kw_dated', IG_KW, {"keywords": ["ڤي سڤن", "V7 drink"], "maxPostsPerKeyword": 5, "dateFrom": SINCE, "dateTo": UNTIL}, 0.06, 10, budget=B)
+    run('t2_google', GOOGLE, {"queries": '"ڤي سڤن" site:instagram.com\n"ڤي سڤن" site:tiktok.com', "quickDateRange": "m6", "countryCode": "eg",
+                              "maxPagesPerQuery": 1}, 0.50, 2, budget=B)   # USD 0.50 is the lowest cap it accepts; it costs USD 0.0025 a page
+
+
+# ------------------------------------------------------------------ 18 Oct: the wider search for public posts (DECISIONS #127)
+# Spellings people use for V7 and its line, in Arabic and English, most useful first (a run that reaches its cap drops the last ones)
+KW_IG = ["ڤي سڤن", "في سفن", "فى سفن", "فيسفن", "ڤيسڤن", "V7 drink", "V7 soda", "V7 Egypt", "مشروب ڤي سڤن", "مشروب V7", "ڤي كولا", "في كولا",
+         "V Cola", "ڤي اورانج", "V Orange", "ڤي سوبر صودا", "V Super Soda", "V7 كريم صودا", "V7 cream soda", "ڤي سڤن كريم صودا", "V7 بينك ليمونيد",
+         "V7 pink lemonade", "V7 رمان", "V7 بلوبيري"]
+KW_GOOGLE = ['"ڤي سڤن"', '"في سفن"', '"فى سفن"', '"فيسفن"', '"V7 drink"', '"V7 soda"', '"V7 Egypt"', '"ڤي كولا"', '"في كولا"', '"V Cola" مصر',
+             '"ڤي اورانج"', '"V Orange"', '"V Super Soda"', '"V7 cream soda"', '"V7 كريم صودا"', '"@v7egypt"', '"V7" مشروب', '"V7" كانز']
+KW_TT = ["ڤي سڤن", "في سفن مشروب", "فيسفن", "V7 مشروب", "V7 drink", "ڤي كولا", "ڤي اورانج", "V7 كريم صودا", "V7 cream soda", "V7 بينك ليمونيد"]
+B62 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_'
+
+
+def id_day(pl, key):
+    """The day a post went up, read from its id (no request needed): Instagram's shortcode holds milliseconds since 24 Aug 2011
+    in its top bits, TikTok's video id holds seconds since 1970 in its top 32 bits."""
+    import datetime
+    try:
+        if pl == 'ig':
+            n = 0
+            for ch in key: n = n * 64 + B62.index(ch)
+            t = ((n >> 23) + 1314220021721) / 1000
+        else:
+            t = int(key) >> 32
+        return datetime.datetime.fromtimestamp(t, datetime.timezone.utc).date().isoformat()
+    except (ValueError, OverflowError):
+        return None
+
+
+def known_keys():
+    """Shortcodes and TikTok ids already collected, so Google's finds are only fetched when new."""
+    import re as _re
+    keys = set()
+    for f in RAW.glob('*.json'):
+        for x in json.load(open(f, encoding='utf-8')).get('items', []):
+            if isinstance(x, dict):
+                k = x.get('shortCode') or x.get('shortcode')
+                if k: keys.add('ig:' + k)
+                if x.get('webVideoUrl'): keys.add('tt:' + str(x.get('id')))
+    return keys
+
+
+def google_finds(name, pl):
+    import re as _re
+    out = {}
+    for page in (json.load(open(RAW / (name + '.json'), encoding='utf-8'))['items'] if (RAW / (name + '.json')).exists() else []):
+        for r in page.get('organicResults') or []:
+            u = r.get('url') or ''
+            m = _re.search(r'instagram\.com/(?:[\w.]+/)?(?:p|reel|tv)/([\w-]{8,})', u) if pl == 'ig' else _re.search(r'tiktok\.com/@([\w.]+)/(?:video|photo)/(\d{15,})', u)
+            if m:
+                key = m.group(1) if pl == 'ig' else m.group(2)
+                out[key] = 'https://www.instagram.com/p/%s/' % key if pl == 'ig' else 'https://www.tiktok.com/@%s/video/%s' % (m.group(1), m.group(2))
+    return out
+
+
+def stage_wide():
+    """Public posts the 17 Oct search missed: Instagram posts tagging V7's accounts, Instagram's keyword search kept inside the window,
+    Google searches limited to instagram.com and tiktok.com (posts with the words in their caption), then more spellings on
+    Facebook, X, TikTok and YouTube."""
+    B = BUDGET_WIDE
+    run('ig_tagged_v7', IG_TAGGED, {"username": ["v7egypt"], "resultsLimit": 180}, 0.45, 180, budget=B)
+    run('ig_tagged_vss', IG_TAGGED, {"username": ["vsupersoda"], "resultsLimit": 60}, 0.15, 60, budget=B)
+    run('ig_kw_wide', IG_KW, {"keywords": KW_IG, "maxPostsPerKeyword": 30, "dateFrom": SINCE, "dateTo": UNTIL}, 0.75, 720, budget=B)
+    q = lambda site, pages: {"queries": '\n'.join('%s site:%s' % (k, site) for k in KW_GOOGLE), "quickDateRange": "m6", "countryCode": "eg",
+                             "maxPagesPerQuery": pages}
+    run('google_ig', GOOGLE, q('instagram.com', 3), 0.50, len(KW_GOOGLE) * 3, budget=B)
+    run('google_tt', GOOGLE, q('tiktok.com', 2), 0.50, len(KW_GOOGLE) * 2, budget=B)
+    have = known_keys()
+    for pl, name in (('ig', 'google_ig'), ('tt', 'google_tt')):
+        finds = google_finds(name, pl)
+        new = {k: u for k, u in finds.items() if (pl + ':' + k) not in have and SINCE <= (id_day(pl, k) or '') <= UNTIL}
+        log(f'  {name}: {len(finds)} post links, {len(new)} new inside the window')
+        if new and pl == 'ig':
+            run('ig_google_posts', IG_POSTS, {"username": list(new.values())}, round(len(new) * 0.0023 * 1.3 + 0.05, 2), len(new), budget=B)
+        if new and pl == 'tt':
+            run('tt_google_posts', TT, dict(NODL, postURLs=list(new.values())), max(0.50, round(len(new) * 0.004 * 1.3, 2)), len(new), budget=B)
+    for i, kw in enumerate(['فى سفن', 'فيسفن', 'ڤي اورانج', 'V Orange', 'V Super Soda', 'V7 بينك ليمونيد'], start=12):
+        run(f'fb_search_{i:02d}', FB_SEARCH, {"query": kw, "resultsCount": 30, "searchType": "latest", "startDate": SINCE, "endDate": UNTIL}, 0.12, 30, budget=B)
+    run('x_extra', X, {"twitterContent": x_query('(فيسفن OR ڤيسڤن OR "ڤى سڤن" OR "في سيفن" OR Vseven OR "V Orange" OR "ڤي اورانج" OR "ڤي أورانج" '
+                                                 'OR "V Super Soda" OR "ڤي سوبر صودا")'), "maxItems": 200, "queryType": "Latest"}, 0.08, 200, budget=B)
+    # TikTok: searched and browsed from Egypt, without TikTok's date filter (it returns unrelated videos); dates are checked afterwards
+    run('tt_tags_wide', TT, dict(NODL, hashtags=['v7egypt', 'ڤي_سڤن', 'فيسفن', 'vseven', 'ڤي_اورانج'], resultsPerPage=25, proxyCountryCode="EG"), 0.50, 125, budget=B)
+    run('tt_wide', TT, dict(NODL, searchQueries=KW_TT, searchSection="/video", resultsPerPage=30, proxyCountryCode="EG"), 0.50, 300, budget=B)
+    run('yt_recent', YT, {"searchQueries": ['ڤي سڤن', 'في سفن مشروب', 'V7 drink', 'ڤي كولا', 'V7 cream soda'], "maxResults": 10, "maxResultsShorts": 10,
+                          "maxResultStreams": 0, "dateFilter": "year", "sortingOrder": "date"}, 0.35, 100, budget=B)
+
+
+YT_COMMENTS, YT_COMMENTS2 = 'apidojo~youtube-comments-scraper', 'calm_builder~youtube-scraper'
+
+
+def stage_test3():
+    """18 Oct: comments on public YouTube videos about V7 (V7 Egypt's own videos have comments turned off). The user found two
+    comment scrapers; 20 comments each from Kareem Elsayed's video (9 Oct, 1.47M views, 943 comments)."""
+    v = "https://www.youtube.com/watch?v=i9PVV4QqtXE"
+    run('t3_yt_comments_apidojo', YT_COMMENTS, {"startUrls": [{"url": v}], "sort": "top", "maxItems": 20, "includeReplies": False}, 0.05, 20, budget=16.0)
+    run('t3_yt_comments_calm', YT_COMMENTS2, {"startUrls": [{"url": v}], "maxResults": 1, "maxComments": 20, "commentsSortBy": "top", "maxReplyDepth": 1,
+                                              "maxRepliesPerComment": 3}, 0.50, 90, budget=16.0)   # USD 0.50: its lowest accepted cap
+
+
+def stage_ytcheck():
+    """18 Oct: are comments really off on V7 Egypt's own videos? calm_builder's video rows say so per video (USD 0.0012 a video)."""
+    urls = [v['url'] for v in json.load(open(RAW / 'yt_posts.json', encoding='utf-8'))['items'] if v.get('url')]
+    run('yt_own_check', YT_COMMENTS2, {"startUrls": [{"url": u} for u in urls], "maxResults": 1, "maxComments": 0}, 0.50, len(urls) + 2, budget=16.0)
+
+
+def stage_ytc():
+    """18 Oct: YouTube comments (apidojo's comments scraper, USD 0.0005 a comment). V7 Egypt's own videos with comments (75 by
+    their counts, replies included: V7's answers count) and the public videos about V7 that Claude kept on 17 Oct (top-level
+    comments, the biggest video first)."""
+    own = [x for x in json.load(open(RAW / 'yt_own_check.json', encoding='utf-8'))['items'] if (x.get('commentCount') or 0) > 0]
+    n_own = sum(x['commentCount'] for x in own)
+    run('yt_comments_own', YT_COMMENTS, {"startUrls": [{"url": x['url']} for x in own], "sort": "top", "maxItems": n_own + 40, "includeReplies": True},
+        round((n_own + 40) * 0.0005 + len(own) * 0.002 + 0.05, 2), n_own + 40, budget=BUDGET_YTC)
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    pub = sorted((i for i in items if i['pl'] == 'yt' and i['src'] == 'ugc' and (labels.get(i['id']) or {}).get('about') and (i.get('comments') or 0) > 0),
+                 key=lambda i: -i['comments'])
+    n = sum(i['comments'] for i in pub)
+    log(f'  public YouTube videos about V7 with comments: {len(pub)}, {n} comments by their counts (replies included)')
+    run('yt_comments_public', YT_COMMENTS, {"startUrls": [{"url": i['url']} for i in pub], "sort": "top", "maxItems": n, "includeReplies": False},
+        round(n * 0.0005 + len(pub) * 0.001 + 0.05, 2), n, budget=BUDGET_YTC)
+
+
+def stage_ttkw():
+    """18 Oct: the TikTok keyword search the wide stage skipped at its budget line, run at the user's request. Searched from Egypt,
+    without TikTok's date filter (it returns unrelated videos); dates are checked afterwards."""
+    run('tt_wide', TT, dict(NODL, searchQueries=KW_TT, searchSection="/video", resultsPerPage=30, proxyCountryCode="EG"), 0.50, 300, budget=16.40)
+
+
+STAGES = {'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+          'test3': stage_test3}
 
 if __name__ == '__main__':
     stage = sys.argv[1] if len(sys.argv) > 1 else ''
