@@ -140,3 +140,13 @@
 2026-10-19 01:51  --- stage transcripttest, spent so far this cycle $16.7406, budget $14.00
 2026-10-19 01:52  kw_transcript_test instagram-transcripts-scrape SUCCEEDED      3 items  $0.0160  (cap $0.05)  total $16.7566  events {'apify-default-dataset-item': 3, 'speech2text': 5}
 2026-10-19 01:52  --- stage transcripttest done, spent this cycle $16.7566
+2026-10-19 02:02  --- stage igprofiles, spent so far this cycle $16.7612, budget $14.00
+2026-10-19 02:02    igprofiles: 175 accounts without a follower count
+2026-10-19 02:03  ig_profiles      instagram-profile-scraper    SUCCEEDED    175 items  $0.4002  (cap $0.57)  total $17.1614  events {'profile': 175, 'about-account': 0}
+2026-10-19 02:03  --- stage igprofiles done, spent this cycle $17.1614
+2026-10-19 02:03  --- stage igspeech, spent so far this cycle $17.1614, budget $14.00
+2026-10-19 02:03    igspeech_about: 163 reels, cap $1.15
+2026-10-19 02:18  igspeech_about   instagram-transcripts-scrape SUCCEEDED    163 items  $0.7900  (cap $1.15)  total $17.9514  events {'apify-default-dataset-item': 163, 'speech2text': 187}
+2026-10-19 02:18    igspeech_tagged: 32 reels, cap $0.28
+2026-10-19 02:21  igspeech_tagged  instagram-transcripts-scrape SUCCEEDED     32 items  $0.1922  (cap $0.28)  total $18.1436  events {'apify-default-dataset-item': 31, 'speech2text': 42}
+2026-10-19 02:21  --- stage igspeech done, spent this cycle $18.1436

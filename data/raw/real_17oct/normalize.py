@@ -368,8 +368,35 @@ def yt_comments():
             add(it, name)
 
 
+# ---------------------------------------------------------------- 19 Oct: reels' speech and Instagram follower counts
+def extras():
+    speech = {}
+    for f in [RAW / 'kw_transcript_test.json'] + sorted(RAW.glob('igspeech_*.json')):
+        if f.exists():
+            for x in json.load(open(f, encoding='utf-8'))['items']:
+                t = clean(x.get('text'))
+                if x.get('code') and t:
+                    speech[x['code']] = t
+    prof = {(x.get('username') or '').lower(): x for x in load('ig_profiles') if x.get('username')}
+    n_sp = n_fol = 0
+    for it in ITEMS.values():
+        if it['pl'] != 'ig':
+            continue
+        if it['kind'] == 'post' and it['id'][3:] in speech:
+            it['speech'] = speech[it['id'][3:]]; n_sp += 1
+        a = it.get('author') or {}
+        pr = prof.get((a.get('handle') or '').lower())
+        if pr:
+            if a.get('followers') is None and pr.get('followersCount') is not None:
+                a['followers'] = num(pr['followersCount']); n_fol += 1
+            if not a.get('verified') and pr.get('verified'):
+                a['verified'] = True
+            it['author'] = a
+    print('speech attached to %d Instagram posts | follower counts filled on %d Instagram items' % (n_sp, n_fol))
+
+
 if __name__ == '__main__':
-    own_posts(); comments(); ugc(); yt_comments()
+    own_posts(); comments(); ugc(); yt_comments(); extras()
     out = list(ITEMS.values())
     json.dump({'made': datetime.date.today().isoformat(), 'window': [SINCE, UNTIL], 'items': out}, open(HERE / 'items.json', 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0)

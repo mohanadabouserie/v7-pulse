@@ -25,6 +25,14 @@ ACTORS = {   # actor id -> (Apify Store link, what it is)
     'X': ('kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest', 'X (Twitter) search'),
     'REDDIT': ('trudax/reddit-scraper-lite', 'Reddit search'),
     'GOOGLE': ('apify/google-search-scraper', 'Google search'),
+    'APIDOJO': ('apidojo/instagram-scraper-api', 'Instagram keyword search (posts)'),
+    'DAMI': ('dami_studio/instagram-reels-search-scraper', 'Instagram Reels search'),
+    'MEMO23': ('memo23/instagram-reels-search-scraper', 'Instagram Reels search, exact phrases'),
+    'BOOLEAN': ('scraping_solutions/instagram-boolean-search-scraper-posts-reels', 'Instagram search, exact phrases'),
+    'DATASLAYER': ('data-slayer/instagram-search-reels', 'Instagram Reels search'),
+    'IGSEARCH': ('apify/instagram-search-scraper', 'Instagram popular reels for a keyword'),
+    'SPEECH': ('apple_yang/instagram-transcripts-scraper', 'What is said in Instagram reels (speech to text)'),
+    'PROFILES': ('apify/instagram-profile-scraper', 'Instagram accounts (follower counts)'),
 }
 RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('t_fb_posts', 'FB_POSTS', '17 Oct test: 3 of V7 Egypt’s Facebook posts'),
@@ -83,6 +91,17 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('yt_own_check', 'YT_COMMENTS2', 'are comments on on V7 Egypt’s 28 videos? (27 yes, 1 off)'),
     ('yt_comments_own', 'YT_COMMENTS', 'comments on V7 Egypt’s YouTube videos'),
     ('yt_comments_public', 'YT_COMMENTS', 'comments on the public YouTube videos about V7'),
+] + [('kw_apidojo_%d' % i, 'APIDOJO', '19 Oct comparison: keyword %d of 3' % i) for i in (1, 2, 3)] + [
+    ('kw_apify_search', 'IGSEARCH', '19 Oct comparison: the 3 keywords'), ('kw_memo23', 'MEMO23', '19 Oct comparison: the 3 keywords in quotes'),
+] + [('kw_boolean_%d' % i, 'BOOLEAN', '19 Oct comparison: keyword %d of 3 in quotes' % i) for i in (1, 2, 3)] + [
+] + [('kw_dataslayer_%d' % i, 'DATASLAYER', '19 Oct comparison: keyword %d of 3' % i) for i in (1, 2, 3)] + [
+    ('kw_dami', 'DAMI', '19 Oct comparison: the 3 keywords'), ('kw_seemuapps', 'IG_KW', '19 Oct comparison: the 3 keywords'),
+    ('kw_apidojo_deep', 'APIDOJO', '19 Oct: 40 results for "V7 soda" (depth check)'),
+    ('kw_refetch_test', 'IG_POSTS', '19 Oct: the 25 posts apidojo returned without a caption or likes, fetched by link'),
+    ('kw_transcript_test', 'SPEECH', '19 Oct test: speech of 3 Egyptian Arabic reels'),
+    ('ig_profiles', 'PROFILES', 'follower counts of the 175 Instagram accounts that posted about V7 without one'),
+    ('igspeech_about', 'SPEECH', 'speech of the 163 Instagram reels about V7'),
+    ('igspeech_tagged', 'SPEECH', 'speech of the 32 reels that tag V7 but whose caption alone did not show it'),
 ]
 
 
@@ -149,11 +168,11 @@ def main():
         cost = run.get('usageTotalUsd') if run.get('usageTotalUsd') is not None else body.get('cost_usd')
         rows.append((name, actor, why, (run.get('startedAt') or '')[:10], short_input(body.get('input')), n, len(inwin), k, cost or 0))
         a = by_actor[actor]; a['runs'] += 1; a['items'] += n; a['kept'] += k; a['cost'] += round((cost or 0) * 10000)
-    lines = ['# Scrapers used for the real data (17–18 Oct 2026)', '',
+    lines = ['# Scrapers used for the real data (17–19 Oct 2026)', '',
              'Every Apify run of `data/raw/real_17oct/`, written by `scrapers_report.py` from the saved runs. **Returned** is what the scraper gave back; '
              '**in window** is what fell between 20 Apr and 16 Oct 2026 after duplicates were merged (an item found by two runs counts for both); '
              '**kept** is what the dashboard shows (public posts and comments Claude judged to be about V7, emoji reactions and friend tags under V7’s posts, '
-             'and every V7 post and reply). Cost is Apify’s charge for the run.', '',
+             'and every V7 post and reply). Runs that add to posts already collected (follower counts, the speech of reels, posts fetched by link to fill a gap) and the 19 Oct comparison runs keep nothing of their own, so their kept is 0. Cost is Apify’s charge for the run.', '',
              '## By scraper', '', '| Scraper | Used for | Runs | Returned | Kept | Cost (USD) |', '|---|---|---:|---:|---:|---:|']
     for actor, c in sorted(by_actor.items(), key=lambda kv: -kv[1]['cost']):
         link, what = ACTORS[actor]

@@ -433,7 +433,58 @@ def stage_transcripttest():
     run('kw_transcript_test', 'apple_yang~instagram-transcripts-scraper', {"bulkUrls": urls, "resultsLimit": len(urls)}, 0.05, len(urls) + 2, budget=17.10)
 
 
-STAGES = {'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+SPEECH = 'apple_yang~instagram-transcripts-scraper'   # what's said in a reel (speech to text): USD 0.001 a reel + USD 0.0035 a started minute
+PROFILES = 'apify~instagram-profile-scraper'           # an account's follower count: USD 0.0023 an account
+BUDGET_SPEECH = 18.50                                 # 19 Oct: speech and follower counts may spend up to here (DECISIONS #137, #138)
+
+
+def _seconds():
+    """Each Instagram video's length, from every raw file that has one."""
+    out = {}
+    for f in RAW.glob('*.json'):
+        for x in json.load(open(f, encoding='utf-8')).get('items', []):
+            if isinstance(x, dict):
+                code = x.get('shortCode') or x.get('shortcode') or x.get('code')
+                d = x.get('videoDuration') or x.get('durationSeconds') or ((x.get('video') or {}).get('duration') if isinstance(x.get('video'), dict) else None)
+                if code and d:
+                    out[code] = float(d)
+    return out
+
+
+def stage_igspeech():
+    """19 Oct (user's OK): what's said in the Instagram reels, for Claude to read with the caption. First the 166 public reels about
+    V7, most viewed first; then the reels that tag V7 but whose caption alone didn't show it. Reels already transcribed are skipped."""
+    import math
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    about = lambda i: (labels.get(i['id']) or {}).get('about')
+    done = set()
+    for f in list(RAW.glob('igspeech_*.json')) + [RAW / 'kw_transcript_test.json']:
+        if f.exists():
+            done |= {x.get('code') for x in json.load(open(f, encoding='utf-8'))['items'] if x.get('code')}
+    reels = [i for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'ig' and i.get('fmt') == 'Reel' and i.get('url') and i['id'][3:] not in done]
+    first = sorted((i for i in reels if about(i)), key=lambda i: -(i.get('views') or 0))
+    second = sorted((i for i in reels if not about(i) and any(r.startswith('ig_tagged') for r in i['found_by'])), key=lambda i: -(i.get('views') or 0))
+    secs = _seconds()
+    cost = lambda lst: round((sum(math.ceil(secs.get(i['id'][3:], 60) / 60) for i in lst) * 0.0035 + len(lst) * 0.001) * 1.3 + 0.05, 2)
+    for name, lst in (('igspeech_about', first), ('igspeech_tagged', second)):
+        log(f'  {name}: {len(lst)} reels, cap ${cost(lst):.2f}')
+        if lst:
+            run(name, SPEECH, {"bulkUrls": [i['url'] for i in lst], "resultsLimit": len(lst)}, cost(lst), len(lst) + 5, budget=BUDGET_SPEECH)
+
+
+def stage_igprofiles():
+    """19 Oct (user's OK): the follower counts the keyword and post scrapers don't return, for the Instagram accounts that posted about V7."""
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    handles = sorted({(i.get('author') or {}).get('handle') for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'ig'
+                      and (labels.get(i['id']) or {}).get('about') and (i.get('author') or {}).get('handle') and (i.get('author') or {}).get('followers') is None})
+    log(f'  igprofiles: {len(handles)} accounts without a follower count')
+    if handles:
+        run('ig_profiles', PROFILES, {"usernames": handles}, round(len(handles) * 0.0023 * 1.3 + 0.05, 2), len(handles) + 5, budget=BUDGET_SPEECH)
+
+
+STAGES = {'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

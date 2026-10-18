@@ -936,3 +936,33 @@ The user asked for an expert UI/UX pass over every page and element, with real A
     - All 166 Instagram reels about V7 would cost about USD 0.60 to 1.00.
   - **YouTube:** automatic subtitles, about USD 0.0016 a video (21 videos, about USD 0.03).
 - **Then:** Claude would re-read those posts with the speech, free on the user's plan. Not done; it needs the user's OK.
+
+### Public copy: Version 27 (19 Oct 2026)
+- **Pushed** at the user's request ("yes push it"). All 20 suites pass on `docs/index.html`, and the live site serves Version 27 ("likes hidden").
+
+### Version 28: what's said in reels, and Instagram follower counts (19 Oct 2026)
+- **Why:** user: "add the video speech to be read in the analysis of the posts on instagram and also close the follower count gap using any instagram scraper that can get this".
+- **Follower counts:** `collect.py igprofiles`, apify/instagram-profile-scraper.
+  - 175 accounts that posted about V7 without one: 174 filled (USD 0.40).
+  - Sizes: 66 under 1K, 46 at 1K–10K, 39 at 10K–100K, 23 at 100K+.
+  - `normalize.py` adds them to every post by those accounts.
+  - Effect: 410 accounts named (was 404, the 10K+ rule). "Big account: Cairo Spots (401K followers)" now shows for the V Orange launch post.
+- **Speech:** `collect.py igspeech`, apple_yang/instagram-transcripts-scraper.
+  - Reels covered: the 163 public reels about V7 (USD 0.79) and the 32 that tag V7 but whose caption alone didn't show it (USD 0.19). The 3 test reels were reused.
+  - Results: 146 reels have speech (128 with 20+ characters); the rest are music or silent, and 4 failed on the transcriber's side.
+  - `normalize.py` attaches it.
+  - `label.py` sends it to Claude with the caption (rules explain recognition errors such as "دي 7") and labels such reels again (147 items, no failures; marked `sp`).
+- **What the speech changed (146 reels):**
+  - type 61, sentiment 38 (19 neutral → positive, 8 positive → neutral, 7 neutral → mixed, 2 to negative), products 35;
+  - 6 reels now about V7, e.g. a "#pov #capcut" reel that is a Cream Soda taste review; 3 no longer.
+- **Dashboard:**
+  - A reel read with its speech says "Its sentiment and topic also count what's said in the video" in the post view.
+  - The data sources and Ask V7 Pulse's rules mention the speech.
+  - Public posts about V7: 589. Comments shown: 3,625.
+- **Tests:** new `tests/test_v28.py` (speech flags, follower counts, privacy, the post-view note, phone, tablet and dark mode). All 21 suites pass.
+- **Published** privately (Version 28). Public site: Version 27 until a push.
+- **Spend:** USD 1.38 today (followers 0.40, speech 0.98). Apify's meter: USD 18.14 of 19, so about USD 0.86 is left until 15 Nov. `SCRAPERS.md` now lists 93 runs from 26 scrapers.
+- **Files:**
+  - `V7_Pulse_Dashboard.html` (Version 27 saved in `archive/dashboard_versions/`);
+  - in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `label.py`, `build_real.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`;
+  - `tests/test_v28.py`; notes.
