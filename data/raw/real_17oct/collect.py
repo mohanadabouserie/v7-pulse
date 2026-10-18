@@ -367,6 +367,24 @@ def stage_kwtest():
 KW_IG_EN = ["V7 soda", "V7 drink", "V7 Egypt", "مشروب V7", "V7 كانز", "V Cola", "V Orange", "V Super Soda", "V7 cream soda", "V7 كريم صودا",
             "V7 pink lemonade", "V7 بينك ليمونيد", "V7 رمان", "V7 بلوبيري", "V7 شعير"]
 BUDGET_IGKW = 18.40
+IG_OWN = {'v7egypt', 'v7.egypt', 'vsupersoda', 'v.super.soda'} | set(ABROAD)   # V7's own accounts: collected elsewhere, never re-fetched
+
+
+def ig_gaps(tag):
+    """Links of the apidojo rows that came back without a caption or likes (DECISIONS #135), unless dami_studio returned the same
+    reel complete. Instagram's own gaps stay: a post with no caption, or likes the owner hid, comes back the same."""
+    complete = set()
+    for f in sorted(RAW.glob('igreels_%s.json' % tag)):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            if x.get('shortcode') and x.get('caption') and x.get('likeCount') is not None:
+                complete.add(x['shortcode'])
+    gaps = {}
+    for f in sorted(RAW.glob('igkw_%s_[0-9][0-9].json' % tag)):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            if (x.get('code') and x.get('url') and x['code'] not in complete and ((x.get('owner') or {}).get('username') or '').lower() not in IG_OWN
+                    and (not x.get('caption') or x.get('likeCount') is None)):
+                gaps[x['code']] = x['url']
+    return list(gaps.values())
 
 
 def stage_igkw():
@@ -384,6 +402,11 @@ def stage_igkw():
     n = reels * len(KW_IG_EN)    # it takes up to 20 keywords a run; reels older than --since are checked and billed, not delivered
     run('igreels_%s' % since.replace('-', ''), IG_REELS, {"searchQueries": KW_IG_EN, "maxReelsPerTerm": reels, "maxReels": n, "newerThan": since},
         round(n * 0.000395 * 2 + 0.05, 2), n + 5, budget=BUDGET_IGKW)
+    # Re-fetch by link what apidojo returned without a caption or likes (Apify's post scraper, USD 0.0023 a post; DECISIONS #135)
+    gaps = ig_gaps(since.replace('-', ''))
+    log(f'  igkw: {len(gaps)} posts to re-fetch for a missing caption or likes')
+    if gaps:
+        run('igkw_%s_refetch' % since.replace('-', ''), IG_POSTS, {"username": gaps}, round(len(gaps) * 0.0023 * 1.3 + 0.05, 2), len(gaps), budget=BUDGET_IGKW)
 
 
 def stage_kwdeep():
@@ -391,7 +414,20 @@ def stage_kwdeep():
     run('kw_apidojo_deep', 'apidojo~instagram-scraper-api', {"keywords": ["V7 soda"], "maxItems": 40, "until": SINCE}, 0.10, 40, budget=17.10)
 
 
-STAGES = {'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+def stage_refetchtest():
+    """19 Oct: does the re-fetch close apidojo's gaps? The 25 posts the step picks from the comparison runs, fetched for real."""
+    global RAW
+    import shutil, tempfile
+    t = pathlib.Path(tempfile.mkdtemp())
+    for src, dst in (('kw_apidojo_1', 'igkw_TEST_00'), ('kw_apidojo_3', 'igkw_TEST_01'), ('kw_apidojo_deep', 'igkw_TEST_02'), ('kw_dami', 'igreels_TEST')):
+        shutil.copy(RAW / (src + '.json'), t / (dst + '.json'))
+    real, RAW = RAW, t
+    gaps = ig_gaps('TEST')
+    RAW = real
+    run('kw_refetch_test', IG_POSTS, {"username": gaps}, round(len(gaps) * 0.0023 * 1.3 + 0.05, 2), len(gaps), budget=17.10)
+
+
+STAGES = {'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

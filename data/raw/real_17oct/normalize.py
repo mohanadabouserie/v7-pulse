@@ -80,7 +80,15 @@ def add(it, run):
         WHY_OUT[f'outside the window ({it["src"]} {it["kind"]})'] += 1; return
     old = ITEMS.get(it['id'])
     if old:
-        old['found_by'] = sorted(set(old['found_by']) | {run}); return
+        old['found_by'] = sorted(set(old['found_by']) | {run})
+        # the same post from another source fills what the first one missed (apidojo's caption-less rows, shares from dami_studio)
+        for k in ('text', 'likes', 'comments', 'shares', 'views', 'place', 'fmt'):
+            if old.get(k) in (None, '') and it.get(k) not in (None, ''):
+                old[k] = it[k]; old.setdefault('filled', []).append(k + ':' + run)
+        for k, v in (it.get('author') or {}).items():
+            if (old.get('author') or {}).get(k) in (None, '') and v not in (None, ''):
+                old.setdefault('author', {})[k] = v
+        return
     it['found_by'] = [run]
     it['counts_from'] = run           # the run whose numbers it carries (the first that found it)
     ITEMS[it['id']] = it
@@ -230,7 +238,7 @@ def ugc():
                  'fmt': 'Text' if not p.get('attachments') else 'Image', 'group': {'id': g.group(1)} if g else None, 'is_share': bool(p.get('isReshare')),
                  'query': body['input'].get('query')}, f.stem)
     # Instagram: the 17 Oct hashtags, then (18 Oct) posts tagging V7's accounts, Google's finds and Instagram's keyword search
-    for name in ('ig_tags', 'ig_tagged_v7', 'ig_tagged_vss', 'ig_google_posts', 'ig_kw_wide'):
+    for name in ('ig_tags', 'ig_tagged_v7', 'ig_tagged_vss', 'ig_google_posts', 'ig_kw_wide') + tuple(f.stem for f in sorted(RAW.glob('igkw_*_refetch.json'))):
         kw = name == 'ig_kw_wide'                     # seemuapps' keyword search names its fields differently
         for p in load(name):
             code = p.get('shortcode') if kw else p.get('shortCode')
@@ -251,6 +259,8 @@ def ugc():
                  'comments': num(p.get('commentsCount')), 'shares': num(p.get('sharesCount')), 'views': num(p.get('videoPlayCount')) or num(p.get('videoViewCount')),
                  'fmt': fmt_ig(p), 'hashtags': p.get('hashtags') or [], 'place': p.get('locationName')}, name)
     for f in sorted(RAW.glob('igkw_*.json')):      # 19 Oct on: Instagram keyword search with apidojo (DECISIONS #133)
+        if f.stem.endswith('_refetch'):
+            continue                               # (read above, with the other post-scraper files)
         for p in json.load(open(f, encoding='utf-8'))['items']:
             code, o = p.get('code'), p.get('owner') or {}
             if not code:

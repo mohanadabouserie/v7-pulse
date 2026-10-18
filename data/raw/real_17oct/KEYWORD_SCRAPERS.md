@@ -32,3 +32,12 @@ and not by one of V7's own accounts. Test cost USD 0.26.
   - Followers come from no keyword scraper except seemuapps. Today 187 of the 226 Instagram accounts that posted about V7 have none. Apify's own profile scraper fills them at USD 0.0023 an account (about USD 0.43 for all).
 - **Where followers matter:** naming an account in public (10K+, DECISIONS #75), the "Big account" alert (100K+), and the creator size on the People tab. Without them, an account is named only when Claude judges it a creator, page, news outlet or business.
 - **dami_studio added** next to apidojo (`collect.py igkw`, DECISIONS #134). Both readers were tested together: 27 posts inside the window, 4 found by both, 5 only by apidojo, 18 only by dami_studio.
+
+## The re-fetch (19 Oct)
+- **The step:** `collect.py igkw` picks the apidojo rows without a caption or likes, skipping V7's own accounts and reels dami_studio returned complete. It fetches them again by link with Apify's Instagram post scraper (USD 0.0023 a post; DECISIONS #135).
+- **Real test:** the 25 posts it picked from the comparison runs, fetched for real (USD 0.044). All 25 were read: captions 25, likes 24 (the 25th hidden by its owner), comments 25, dates and accounts 25, plays on all 13 videos.
+- **What it doesn't close:**
+  - Likes the owner hid: Instagram shows them to no one. Today 37 Instagram posts about V7 have no like count, and the dashboard shows them as 0.
+  - Follower counts: no keyword or post scraper returns them. Apify's profile scraper fills them (USD 0.0023 an account; 187 accounts, about USD 0.43).
+  - Shares: apidojo and the post scraper don't return them; dami_studio does for its reels. Instagram shows shares only on some reels (135 Instagram posts have none today).
+  - Deleted or age-restricted posts: they can't be read (2 of the 108 Google finds on 18 Oct).
