@@ -879,3 +879,14 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Tests on the public copy:** all 18 dashboard suites and `test_bot.py` pass with `DASH_SRC` on `docs/index.html`.
 - **Telegram bot:** it opens a fresh copy of the page for each brief, alert check and question, so it uses Version 26 without a restart. Its next check sends the open "Act now" alert ("More people can't find V7: 15 this week") to the subscribed chat.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+
+### Check: the Instagram keyword scraper (19 Oct 2026)
+- **Asked:** did seemuapps/instagram-keyword-posts-scraper work well, and do people say it's reliable?
+- **On our data:**
+  - **Dates:** it kept the dates asked (1 of 381 outside).
+  - **Counts:** for the 28 posts another scraper also fetched, dates and captions matched, and likes, comments and plays matched within a few hours' growth.
+  - **Duplicates:** 59 rows repeated a post another keyword had already found.
+  - **Relevance:** English and mixed phrases were mostly about V7 (V7 soda 24 of 30, V7 Egypt 22, مشروب V7 19, V7 drink 17). Arabic spellings were almost never about V7 (ڤي سڤن 1, في سفن 0, مشروب ڤي سڤن 1).
+  - **Value:** 67 posts about V7, 46 of them found by no other method.
+- **Online:** no independent reviews. Created 6 Oct 2026, 41 users and no ratings; its page reports 99.9% of runs succeeded and says it searches "the same way the Instagram search bar does", ranked by relevance, not by date.
+- **Files:** `CLAUDE.md`, `PROJECT_MEMORY.md`.

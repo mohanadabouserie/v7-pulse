@@ -513,7 +513,7 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Keep the real data fresh: about USD 2.67 of Apify is left until 15 Nov. A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`) costs roughly USD 1 to 2.
 - Gaps left by the budget on 18 Oct (about USD 1.10 to close, after 16 Nov or now):
   - posts tagging @v7egypt before 19 Jun (the 180 reached back to 19 Jun; about 300 more, USD 0.55);
-  - 9 of the 24 Instagram spellings (ڤي سوبر صودا, V Super Soda, the Cream Soda, Pink Lemonade, Pomegranate and Blueberry ones; about USD 0.40);
+  - 9 of the 24 Instagram spellings; after the 19 Oct check only the English and mixed ones are worth running (V Super Soda, V7 cream soda, V7 pink lemonade, V7 كريم صودا, V7 رمان, V7 بلوبيري; about USD 0.25);
   - 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
 - Daily views (DECISIONS #126): a daily check of each post's totals, so each day shows the views added that day. About USD 0.10 a day for posts from the last 30 days. Not built; it needs the user's OK to schedule.
 - Share the bot's join link with the team when ready.
