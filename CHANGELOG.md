@@ -873,3 +873,9 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - **Pipeline:** `data/raw/real_17oct/` (`collect.py`, `normalize.py`, `build_real.py`, `fetch_media.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`), plus `data/raw/media_13oct/`.
   - **Tests:** `tests/`.
   - **Notes:** `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`.
+
+### Public copy: Version 26 (18 Oct 2026)
+- **Pushed** at the user's request: `docs/index.html` rebuilt with `deploy/build_sites.py dashboard`, so https://mohanadabouserie.github.io/v7-pulse/ shows the wider search and the YouTube comments.
+- **Tests on the public copy:** all 18 dashboard suites and `test_bot.py` pass with `DASH_SRC` on `docs/index.html`.
+- **Telegram bot:** it opens a fresh copy of the page for each brief, alert check and question, so it uses Version 26 without a restart. Its next check sends the open "Act now" alert ("More people can't find V7: 15 this week") to the subscribed chat.
+- **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
