@@ -116,3 +116,27 @@
 2026-10-18 18:15  --- stage ttkw, spent so far this cycle $15.8308, budget $14.00
 2026-10-18 18:16  tt_wide          tiktok-scraper               SUCCEEDED    124 items  $0.4974  (cap $0.50)  total $16.3283  events {'result': 124, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 124, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
 2026-10-18 18:16  --- stage ttkw done, spent this cycle $16.3283
+2026-10-19 01:12  --- stage kwtest, spent so far this cycle $16.3291, budget $14.00
+2026-10-19 01:13  kw_apidojo_1     instagram-scraper-api        SUCCEEDED     10 items  $0.0001  (cap $0.10)  total $16.3292  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 01:13  kw_apidojo_2     instagram-scraper-api        SUCCEEDED     10 items  $0.0300  (cap $0.10)  total $16.3592  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 01:14  kw_apidojo_3     instagram-scraper-api        SUCCEEDED     10 items  $0.0150  (cap $0.10)  total $16.3742  events {'dataset-item': 1, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 01:14  kw_apify_search  instagram-search-scraper     SUCCEEDED     12 items  $0.0000  (cap $0.12)  total $16.3742  events {'result': 12, 'live-search-result': 0}
+2026-10-19 01:16  kw_memo23        instagram-reels-search-scrap SUCCEEDED      2 items  $0.0303  (cap $0.10)  total $16.4051  events {'reel-scraped': 2, 'apify-actor-start': 1}
+2026-10-19 01:17  kw_boolean_1     instagram-boolean-search-scr SUCCEEDED      0 items  $0.0300  (cap $0.10)  total $16.4351  events {'apify-default-dataset-item': 0, 'search-page': 4}
+2026-10-19 01:17  kw_boolean_2     instagram-boolean-search-scr SUCCEEDED      0 items  $0.0200  (cap $0.10)  total $16.4551  events {'apify-default-dataset-item': 0, 'search-page': 3}
+2026-10-19 01:18  kw_boolean_3     instagram-boolean-search-scr SUCCEEDED      1 items  $0.0200  (cap $0.10)  total $16.4751  events {'apify-default-dataset-item': 1, 'search-page': 4}
+2026-10-19 01:18  kw_dataslayer_1  instagram-search-reels       SUCCEEDED     12 items  $0.0415  (cap $0.05)  total $16.5165  events {'apify-actor-start': 1, 'apify-default-dataset-item': 12}
+2026-10-19 01:19  kw_dataslayer_2  instagram-search-reels       SUCCEEDED      0 items  $0.0020  (cap $0.05)  total $16.5185  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+2026-10-19 01:19  kw_dataslayer_3  instagram-search-reels       SUCCEEDED     12 items  $0.0281  (cap $0.05)  total $16.5467  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+2026-10-19 01:20  kw_dami          instagram-reels-search-scrap SUCCEEDED     26 items  $0.0418  (cap $0.05)  total $16.5884  events {'item': 25, 'apify-actor-start': 1, 'reel-checked': 18}
+2026-10-19 01:20  kw_seemuapps     instagram-keyword-posts-scra SUCCEEDED     24 items  $0.0044  (cap $0.10)  total $16.5928  events {'post-result': 24, 'filtered-search-page': 5}
+2026-10-19 01:20  --- stage kwtest done, spent this cycle $16.5928
+2026-10-19 01:26  --- stage kwdeep, spent so far this cycle $16.6513, budget $14.00
+2026-10-19 01:27  kw_apidojo_deep  instagram-scraper-api        SUCCEEDED     40 items  $0.0270  (cap $0.10)  total $16.6783  events {'dataset-item': 32, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 01:27  --- stage kwdeep done, spent this cycle $16.6783
+2026-10-19 01:43  --- stage refetchtest, spent so far this cycle $16.6829, budget $14.00
+2026-10-19 01:44  kw_refetch_test  instagram-post-scraper       SUCCEEDED     25 items  $0.0437  (cap $0.12)  total $16.7266  events {'post': 24, 'post-details': 24, 'music-data': 0}
+2026-10-19 01:44  --- stage refetchtest done, spent this cycle $16.7266
+2026-10-19 01:51  --- stage transcripttest, spent so far this cycle $16.7406, budget $14.00
+2026-10-19 01:52  kw_transcript_test instagram-transcripts-scrape SUCCEEDED      3 items  $0.0160  (cap $0.05)  total $16.7566  events {'apify-default-dataset-item': 3, 'speech2text': 5}
+2026-10-19 01:52  --- stage transcripttest done, spent this cycle $16.7566

@@ -427,7 +427,13 @@ def stage_refetchtest():
     run('kw_refetch_test', IG_POSTS, {"username": gaps}, round(len(gaps) * 0.0023 * 1.3 + 0.05, 2), len(gaps), budget=17.10)
 
 
-STAGES = {'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+def stage_transcripttest():
+    """19 Oct: can Instagram reels in Egyptian Arabic be transcribed? apple_yang's speech-to-text on 3 reels about V7 (USD 0.0045 a reel)."""
+    urls = json.load(open(sys.argv[sys.argv.index('--urls') + 1], encoding='utf-8'))
+    run('kw_transcript_test', 'apple_yang~instagram-transcripts-scraper', {"bulkUrls": urls, "resultsLimit": len(urls)}, 0.05, len(urls) + 2, budget=17.10)
+
+
+STAGES = {'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

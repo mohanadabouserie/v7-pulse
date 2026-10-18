@@ -136,7 +136,8 @@ if __name__ == '__main__':
                     'shares': i.get('shares') or 0, 'gov': lab['gov'], 'cty': cty or 'XX', 'seg': lab['seg'], 'en': lab['en'], 'url': i['url'], 'fmt': i.get('fmt') or 'Text',
                     'needsReply': bool(lab['reply'] and i['pl'] in ('fb', 'ig', 'tt', 'yt')), 'place': i.get('place') or i.get('region') or None,
                     'claim': lab['claim'], 'stance': lab['stance'], 'isReply': 1 if i.get('is_reply') else 0,
-                    'asof': 18 if i.get('counts_from') in RUNS_18 else 0})   # its numbers are as of 18 Oct (the wider search) or 17 Oct
+                    'asof': 18 if i.get('counts_from') in RUNS_18 else 0,   # its numbers are as of 18 Oct (the wider search) or 17 Oct
+                    'lh': 1 if i.get('likes') is None else 0})   # no like count from any source: on Instagram, the account hid it
         if lab['claim']:
             rumor.append(k)
     report['public posts about V7'] = len(UGC)

@@ -913,3 +913,26 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **What apidojo returns:** everything a post needs within its first 10 results, except the account's follower count and the share count. Filling the follower counts of the 187 Instagram accounts without one would cost about USD 0.43 (Apify's profile scraper); not done.
 - **The re-fetch (user's OK):** `collect.py igkw` re-fetches by link every apidojo row without a caption or likes (Apify's post scraper, USD 0.0023 a post). `normalize.py` now fills a post's missing fields from any second source; in today's data that adds 6 share counts and nothing else changes (7,220 items). Real test on the 25 posts the step picks (USD 0.044): all read, 25 captions, 24 like counts (1 hidden by its owner), comments, dates, accounts and plays complete. DECISIONS #135.
 - **Not closed by it:** likes hidden by their owner (37 Instagram posts today, shown as 0 on the dashboard), follower counts (USD 0.43 to fill with the profile scraper), shares (only some reels show them), deleted or age-restricted posts.
+
+### Version 27: likes hidden (19 Oct 2026)
+- **Why:** 37 Instagram public posts about V7 have no like count because their accounts hid it, and the dashboard showed "0 likes" (also 2 Reddit posts without upvotes). User: "yes fix the hidden likes".
+- **Change:**
+  - `build_real.py` flags them (`lh`), and the loader keeps the flag.
+  - Post cards and the post view say "likes hidden" on Instagram and "… not shown" elsewhere.
+  - The guide's "What the numbers mean" explains it. DECISIONS #136.
+- **Data:** rebuilt with `normalize.py`'s gap filling, which adds 6 share counts. Otherwise unchanged: 586 public posts, 3,625 comments shown.
+- **Tests:** new `tests/test_v27.py` covers the flag, the most-viewed hidden-likes post's card and post view, phone, and dark mode. All 20 suites pass.
+- **Published** privately to https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 27). The public site still shows Version 26 until a push.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 26 saved in `archive/dashboard_versions/`), `data/raw/real_17oct/build_real.py`, `tests/test_v27.py`, notes.
+
+### Reels and sentiment: what's said in the video (19 Oct 2026)
+- **Today:** sentiment, topic and products for a reel or video come only from its caption (for YouTube, the title and the start of the description). What's said in the video isn't read.
+- **What can be added:**
+  - **TikTok:** TikTok's own automatic subtitles come with the data already collected. 74 of the 96 TikTok videos about V7 have them, mostly Arabic, and they download free. Example: the caption "كل الاطعم من V كولا…" vs the speech "الشنطة دي اسمها شنطة المزاج… كل الاطعم بتاع شركة في كولا".
+  - **Instagram:** apple_yang/instagram-transcripts-scraper (speech to text, about USD 0.0035 a chunk). The test on 3 Egyptian Arabic reels (USD 0.016) was good:
+    - Kareem Elsayed's reel: 2,074 characters, a few word errors such as "دي 7" for V7.
+    - A Cream Soda reel: "هي هي بالضبط طعم الكارامل مع سودا تحفة جربوها", where the caption only said it was back.
+    - One reel is music only, so it has no speech.
+    - All 166 Instagram reels about V7 would cost about USD 0.60 to 1.00.
+  - **YouTube:** automatic subtitles, about USD 0.0016 a video (21 videos, about USD 0.03).
+- **Then:** Claude would re-read those posts with the speech, free on the user's plan. Not done; it needs the user's OK.

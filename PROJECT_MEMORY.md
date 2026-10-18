@@ -14,7 +14,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 26, 18 Oct 2026) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 27, 19 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 26 since 18 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -452,7 +452,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 ## 9. Apify account and spend
 - **Plan:** Starter since 16 Oct 2026: USD 19 of usage a month, which is also the hard ceiling. The cycle runs 16 Oct to 15 Nov 2026. (Before: the Free plan, USD 4.64 of 5 spent by 13 Oct.)
 - **Spent this cycle:** USD 16.33 by Apify's meter on 18 Oct (17 Oct: USD 12.04; 18 Oct: 4.28, by the final run charges). About USD 2.67 left until 15 Nov. Every run, with its input, output and cost: `data/raw/real_17oct/SCRAPERS.md`.
-- **19 Oct:** a comparison of 7 Instagram keyword scrapers (`data/raw/real_17oct/KEYWORD_SCRAPERS.md`) cost USD 0.26 by the run records; with the follow-up checks (USD 0.03) and the re-fetch test (USD 0.04), Apify's meter reads USD 16.74 of 19, so about USD 2.26 is left until 15 Nov.
+- **19 Oct:** a comparison of 7 Instagram keyword scrapers (`data/raw/real_17oct/KEYWORD_SCRAPERS.md`) cost USD 0.26 by the run records; with the follow-up checks (USD 0.03) and the re-fetch test (USD 0.04), Apify's meter reads USD 16.74 of 19. The transcript test (USD 0.016) brings it to USD 16.76: about USD 2.24 left until 15 Nov.
 - **Prices at Starter (BRONZE tier, checked 17 Oct):** Facebook posts USD 0.004 (+0.001 date filter), Facebook comments 0.002, Instagram posts 0.0015 (+0.0008 details), Instagram comments and hashtags 0.0023, TikTok 0.003 (+0.001 date filter), TikTok comments 0.001, YouTube 0.003, X 0.00022, Facebook search 0.003, Reddit 0.0038 (+0.02 a run). Facebook's comment date filter is charged per comment: don't use it when the posts are already in the window.
 
 **Spend log**
@@ -516,7 +516,8 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - posts tagging @v7egypt before 19 Jun (the 180 reached back to 19 Jun; about 300 more, USD 0.55);
   - 9 of the 24 Instagram spellings; after the 19 Oct check only the English and mixed ones are worth running (V Super Soda, V7 cream soda, V7 pink lemonade, V7 كريم صودا, V7 رمان, V7 بلوبيري; about USD 0.25);
   - 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
-- Likes hidden by their owner show as 0 on the dashboard (37 Instagram public posts about V7 today); showing "hidden" instead needs a flag from `normalize.py` and a small dashboard change.
+- Done in Version 27: likes hidden by their owner now say "likes hidden" (37 Instagram posts).
+- What's said in reels and videos (CHANGELOG 19 Oct): TikTok's own subtitles (74 of 96 videos about V7, free), Instagram speech-to-text (apple_yang, tested well on Egyptian Arabic; about USD 0.60 to 1.00 for 166 reels), YouTube subtitles (about USD 0.03). Then Claude re-reads those posts. Needs the user's OK.
 - Follower counts for Instagram accounts: 187 of the 226 that posted about V7 have none (the keyword scrapers don't return them). Apify's profile scraper, USD 0.0023 an account (about USD 0.43 for all), would fill them; it needs the user's OK.
 - Daily views (DECISIONS #126): a daily check of each post's totals, so each day shows the views added that day. About USD 0.10 a day for posts from the last 30 days. Not built; it needs the user's OK to schedule.
 - Share the bot's join link with the team when ready.
