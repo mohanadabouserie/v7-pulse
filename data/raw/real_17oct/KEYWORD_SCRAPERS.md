@@ -24,3 +24,11 @@ and not by one of V7's own accounts. Test cost USD 0.26.
 - **Shuffling:** Instagram's search changes between sessions. Two apidojo runs of "V7 soda" shared only 4 useful posts; together they had 13, and with dami_studio 17.
 - **Completeness:** apidojo gives captions and likes for about its first 10 results per keyword; past that, mostly bare links (9 of 35 with captions). dami_studio, seemuapps and data-slayer were complete throughout.
 - **What follows:** apidojo is set to 10 results per keyword (`collect.py igkw`). No single scraper finds everything; adding dami_studio's Reels search (USD 0.0004 a reel) would catch the reels apidojo misses.
+
+## Does apidojo return everything a post needs? (19 Oct)
+- **Yes, within its first 10 results per keyword:** link and exact time (20/20), caption (19/20), account name and handle, verified, likes and comments (19/20), plays for videos (20/20), format, image, location and collaborators when the post has them.
+- **Missing:** the account's follower count and the share count.
+  - dami_studio adds shares for reels.
+  - Followers come from no keyword scraper except seemuapps. Today 187 of the 226 Instagram accounts that posted about V7 have none. Apify's own profile scraper fills them at USD 0.0023 an account (about USD 0.43 for all).
+- **Where followers matter:** naming an account in public (10K+, DECISIONS #75), the "Big account" alert (100K+), and the creator size on the People tab. Without them, an account is named only when Claude judges it a creator, page, news outlet or business.
+- **dami_studio added** next to apidojo (`collect.py igkw`, DECISIONS #134). Both readers were tested together: 27 posts inside the window, 4 found by both, 5 only by apidojo, 18 only by dami_studio.

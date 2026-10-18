@@ -22,6 +22,7 @@ IG_POSTS, IG_COMMENTS, IG_TAGS = 'apify~instagram-post-scraper', 'apify~instagra
 IG_TAGGED = 'apify~instagram-tagged-scraper'      # posts in which other accounts tag a profile
 IG_KW_SEEMUAPPS = 'seemuapps~instagram-keyword-posts-scraper'   # Instagram's keyword search, kept only inside the dates asked (used 18 Oct)
 IG_KW = 'apidojo~instagram-scraper-api'          # Instagram keyword search from 19 Oct (DECISIONS #133; KEYWORD_SCRAPERS.md)
+IG_REELS = 'dami_studio~instagram-reels-search-scraper'   # Instagram's Reels search, next to apidojo (DECISIONS #134)
 IG_SCRAPER = 'apify~instagram-scraper'           # resultsType 'mentions': posts whose caption mentions a profile
 GOOGLE = 'apify~google-search-scraper'
 TT, TT_COMMENTS = 'clockworks~tiktok-scraper', 'clockworks~tiktok-comments-scraper'
@@ -369,14 +370,20 @@ BUDGET_IGKW = 18.40
 
 
 def stage_igkw():
-    """Instagram posts about V7 by keyword (apidojo), newer than --since (default: the window's start). Each keyword costs about
-    USD 0.015 for the search plus USD 0.0005 a post. Usage: python3 collect.py igkw [--since 2026-10-17] [--per 10]"""
+    """Instagram posts about V7 by keyword, newer than --since (default: the window's start), from two of Instagram's searches:
+    - apidojo (posts, reels and albums): about USD 0.015 a keyword plus USD 0.0005 a post, first 10 results per keyword (--per);
+    - dami_studio (Reels search, which finds reels apidojo misses): USD 0.0004 a reel delivered or checked, 30 per keyword (--reels).
+    Usage: python3 collect.py igkw [--since 2026-10-17] [--per 10] [--reels 30]"""
     a = sys.argv
     since = a[a.index('--since') + 1] if '--since' in a else SINCE
     per = int(a[a.index('--per') + 1]) if '--per' in a else 10   # apidojo gives captions and likes for about its first 10 results; past that, mostly bare links
     for i, kw in enumerate(KW_IG_EN):
         run('igkw_%s_%02d' % (since.replace('-', ''), i), IG_KW, {"keywords": [kw], "maxItems": per, "until": since},
             round(0.03 + per * 0.0005 * 1.5, 2), per, budget=BUDGET_IGKW)
+    reels = int(a[a.index('--reels') + 1]) if '--reels' in a else 30
+    n = reels * len(KW_IG_EN)    # it takes up to 20 keywords a run; reels older than --since are checked and billed, not delivered
+    run('igreels_%s' % since.replace('-', ''), IG_REELS, {"searchQueries": KW_IG_EN, "maxReelsPerTerm": reels, "maxReels": n, "newerThan": since},
+        round(n * 0.000395 * 2 + 0.05, 2), n + 5, budget=BUDGET_IGKW)
 
 
 def stage_kwdeep():

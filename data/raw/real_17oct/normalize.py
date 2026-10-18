@@ -263,6 +263,16 @@ def ugc():
                  'likes': num(p.get('likeCount')), 'comments': num(p.get('commentCount')), 'shares': None, 'views': num((p.get('video') or {}).get('playCount')),
                  'fmt': 'Album' if p.get('isCarousel') else 'Reel' if p.get('isVideo') else 'Image', 'hashtags': re.findall(r'#(\w+)', cap),
                  'place': (p.get('location') or {}).get('name') if isinstance(p.get('location'), dict) else None, 'query': p.get('inputSource')}, f.stem)
+    for f in sorted(RAW.glob('igreels_*.json')):   # 19 Oct on: Instagram's Reels search with dami_studio (DECISIONS #134)
+        for p in json.load(open(f, encoding='utf-8'))['items']:
+            if p.get('recordType') != 'instagram_reel' or not p.get('shortcode'):
+                WHY_OUT['not a post (a run summary or error row)'] += 1; continue
+            if (p.get('authorUsername') or '').lower() in OWN_IG | ABROAD_IG:
+                WHY_OUT['V7 itself in the search'] += 1; continue
+            add({'id': 'ig:' + p['shortcode'], 'kind': 'post', 'src': 'ugc', 'pl': 'ig', 'date': iso(p.get('timestamp')), 'text': clean(p.get('caption')),
+                 'url': p.get('reelUrl'), 'author': {'name': p.get('authorFullName'), 'handle': p.get('authorUsername'), 'verified': bool(p.get('authorIsVerified'))},
+                 'likes': num(p.get('likeCount')), 'comments': num(p.get('commentCount')), 'shares': num(p.get('shareCount')), 'views': num(p.get('playCount')),
+                 'fmt': 'Reel', 'hashtags': p.get('hashtags') or [], 'place': p.get('locationName'), 'query': p.get('sourceQuery') or p.get('sourceHashtag')}, f.stem)
     for name in ('tt_search', 'tt_google_posts', 'tt_tags_wide', 'tt_wide'):
         for p in load(name):
             if not p.get('id') or not p.get('webVideoUrl'):

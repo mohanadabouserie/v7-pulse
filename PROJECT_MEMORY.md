@@ -516,6 +516,7 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - posts tagging @v7egypt before 19 Jun (the 180 reached back to 19 Jun; about 300 more, USD 0.55);
   - 9 of the 24 Instagram spellings; after the 19 Oct check only the English and mixed ones are worth running (V Super Soda, V7 cream soda, V7 pink lemonade, V7 كريم صودا, V7 رمان, V7 بلوبيري; about USD 0.25);
   - 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
+- Follower counts for Instagram accounts: 187 of the 226 that posted about V7 have none (the keyword scrapers don't return them). Apify's profile scraper, USD 0.0023 an account (about USD 0.43 for all), would fill them; it needs the user's OK.
 - Daily views (DECISIONS #126): a daily check of each post's totals, so each day shows the views added that day. About USD 0.10 a day for posts from the last 30 days. Not built; it needs the user's OK to schedule.
 - Share the bot's join link with the team when ready.
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.

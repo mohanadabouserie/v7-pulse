@@ -909,3 +909,5 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - Two apidojo runs of the same keyword shared only 4 useful posts.
   - Past its first 10 results per keyword, apidojo's rows mostly lack captions and likes.
   - Details in `data/raw/real_17oct/KEYWORD_SCRAPERS.md`.
+- **dami_studio added (user's OK):** `collect.py igkw` now also runs dami_studio's Reels search (15 phrases, 30 reels each, newer than --since; USD 0.0004 a reel). `normalize.py` reads it (run-summary rows skipped) and `fetch_media.py` takes its cover images. Tested with apidojo on the comparison files: 27 posts inside the window, 4 found by both. DECISIONS #134.
+- **What apidojo returns:** everything a post needs within its first 10 results, except the account's follower count and the share count. Filling the follower counts of the 187 Instagram accounts without one would cost about USD 0.43 (Apify's profile scraper); not done.

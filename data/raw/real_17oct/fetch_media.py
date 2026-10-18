@@ -36,6 +36,10 @@ for f in sorted((HERE / 'raw').glob('igkw_*.json')):   # 19 Oct on: Instagram ke
     for x in json.load(open(f, encoding='utf-8'))['items']:
         if x.get('url'):
             img_of[x['url']] = ((x.get('image') or {}).get('url'), 'carousel' if x.get('isCarousel') else 'video' if x.get('isVideo') else 'image', 'ig')
+for f in sorted((HERE / 'raw').glob('igreels_*.json')):   # 19 Oct on: Instagram's Reels search with dami_studio
+    for x in json.load(open(f, encoding='utf-8'))['items']:
+        if x.get('reelUrl'):
+            img_of[x['reelUrl']] = (x.get('thumbnailUrl'), 'video', 'ig')
 for x in raw('ig_kw_wide'):          # 18 Oct: Instagram keyword search (its own field names)
     if x.get('url'):
         img_of[x['url']] = (x.get('displayUrl'), {'reel': 'video', 'video': 'video', 'carousel': 'carousel'}.get(x.get('type'), 'image'), 'ig')
