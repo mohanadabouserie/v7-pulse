@@ -17,3 +17,10 @@ and not by one of V7's own accounts. Test cost USD 0.26.
 - The four keyword scrapers find nearly the same posts: they all use Instagram's own search. Arabic is weak for all of them; exact-phrase scrapers are precise but find almost nothing.
 - Reels are 59% of the Instagram posts about V7 (photos 62, albums 52 of 280), so reels-only scrapers miss about 4 in 10.
 - Pick: apidojo/instagram-scraper-api for English and mixed keywords (track record, all formats, date filter, cost); seemuapps as the fallback.
+
+## Follow-up: did apidojo find what dami_studio found? (19 Oct)
+- **Overlap:** no. In the top 10 per keyword apidojo found 8 of dami_studio's 13 useful reels, and dami_studio found 8 of apidojo's 13. The four keyword scrapers together found 26 different useful posts; each alone 12 or 13.
+- **Depth:** asking apidojo for 40 results for "V7 soda" (USD 0.03) found 1 of the 4 reels it had missed, at position 36. The other 3 weren't there: dami_studio searches Instagram's Reels search, another surface.
+- **Shuffling:** Instagram's search changes between sessions. Two apidojo runs of "V7 soda" shared only 4 useful posts; together they had 13, and with dami_studio 17.
+- **Completeness:** apidojo gives captions and likes for about its first 10 results per keyword; past that, mostly bare links (9 of 35 with captions). dami_studio, seemuapps and data-slayer were complete throughout.
+- **What follows:** apidojo is set to 10 results per keyword (`collect.py igkw`). No single scraper finds everything; adding dami_studio's Reels search (USD 0.0004 a reel) would catch the reels apidojo misses.

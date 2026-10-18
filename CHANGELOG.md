@@ -902,3 +902,10 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - Reels are 59% of the Instagram posts about V7, so the reels-only scrapers miss about 4 in 10.
 - **Pick:** apidojo/instagram-scraper-api for English and mixed keywords (2,811 users, 1.28M runs a month, 100% succeeded, 5.0 from 9 reviews; all formats, a date filter, USD 0.0035 per useful post). seemuapps stays as the fallback.
 - **Files:** `data/raw/real_17oct/collect.py`, `kwtest_report.py`, `KEYWORD_SCRAPERS.md`; `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+- **Switched to apidojo (user's OK):** `collect.py igkw` runs apidojo/instagram-scraper-api per keyword with 15 English and mixed phrases (`KW_IG_EN`), 10 results each. `normalize.py` and `fetch_media.py` read its results, tested on a 40-post run (35 inside the window; V7's own left out). The 18 Oct stages still name seemuapps, which they used (`IG_KW_SEEMUAPPS`). DECISIONS #133. Nothing is collected until a refresh runs.
+- **Follow-up checks (USD 0.03):**
+  - apidojo found 8 of dami_studio's 13 useful reels.
+  - A 40-result run found 1 of the 4 it had missed; the rest weren't there, because dami_studio searches Instagram's Reels search.
+  - Two apidojo runs of the same keyword shared only 4 useful posts.
+  - Past its first 10 results per keyword, apidojo's rows mostly lack captions and likes.
+  - Details in `data/raw/real_17oct/KEYWORD_SCRAPERS.md`.

@@ -250,6 +250,19 @@ def ugc():
                  'url': p.get('url'), 'author': {'name': p.get('ownerFullName'), 'handle': p.get('ownerUsername')}, 'likes': num(p.get('likesCount')),
                  'comments': num(p.get('commentsCount')), 'shares': num(p.get('sharesCount')), 'views': num(p.get('videoPlayCount')) or num(p.get('videoViewCount')),
                  'fmt': fmt_ig(p), 'hashtags': p.get('hashtags') or [], 'place': p.get('locationName')}, name)
+    for f in sorted(RAW.glob('igkw_*.json')):      # 19 Oct on: Instagram keyword search with apidojo (DECISIONS #133)
+        for p in json.load(open(f, encoding='utf-8'))['items']:
+            code, o = p.get('code'), p.get('owner') or {}
+            if not code:
+                WHY_OUT['not a post (an error row)'] += 1; continue
+            if (o.get('username') or '').lower() in OWN_IG | ABROAD_IG:
+                WHY_OUT['V7 itself in the search'] += 1; continue
+            cap = clean(p.get('caption'))
+            add({'id': 'ig:' + code, 'kind': 'post', 'src': 'ugc', 'pl': 'ig', 'date': iso(p.get('createdAt')), 'text': cap, 'url': p.get('url'),
+                 'author': {'name': o.get('fullName'), 'handle': o.get('username'), 'verified': bool(o.get('isVerified'))},
+                 'likes': num(p.get('likeCount')), 'comments': num(p.get('commentCount')), 'shares': None, 'views': num((p.get('video') or {}).get('playCount')),
+                 'fmt': 'Album' if p.get('isCarousel') else 'Reel' if p.get('isVideo') else 'Image', 'hashtags': re.findall(r'#(\w+)', cap),
+                 'place': (p.get('location') or {}).get('name') if isinstance(p.get('location'), dict) else None, 'query': p.get('inputSource')}, f.stem)
     for name in ('tt_search', 'tt_google_posts', 'tt_tags_wide', 'tt_wide'):
         for p in load(name):
             if not p.get('id') or not p.get('webVideoUrl'):

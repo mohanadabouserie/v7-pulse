@@ -20,7 +20,8 @@ NODL = {"shouldDownloadVideos": False, "shouldDownloadCovers": False, "shouldDow
 FB_POSTS, FB_COMMENTS = 'apify~facebook-posts-scraper', 'apify~facebook-comments-scraper'
 IG_POSTS, IG_COMMENTS, IG_TAGS = 'apify~instagram-post-scraper', 'apify~instagram-comment-scraper', 'apify~instagram-hashtag-scraper'
 IG_TAGGED = 'apify~instagram-tagged-scraper'      # posts in which other accounts tag a profile
-IG_KW = 'seemuapps~instagram-keyword-posts-scraper'   # Instagram's keyword search, kept only inside the dates asked
+IG_KW_SEEMUAPPS = 'seemuapps~instagram-keyword-posts-scraper'   # Instagram's keyword search, kept only inside the dates asked (used 18 Oct)
+IG_KW = 'apidojo~instagram-scraper-api'          # Instagram keyword search from 19 Oct (DECISIONS #133; KEYWORD_SCRAPERS.md)
 IG_SCRAPER = 'apify~instagram-scraper'           # resultsType 'mentions': posts whose caption mentions a profile
 GOOGLE = 'apify~google-search-scraper'
 TT, TT_COMMENTS = 'clockworks~tiktok-scraper', 'clockworks~tiktok-comments-scraper'
@@ -204,7 +205,7 @@ def stage_test2():
     run('t2_tt_6m_eg', TT, dict(NODL, searchQueries=["ڤي سڤن"], searchSection="/video", videoSearchDateFilter="LAST_6_MONTHS", resultsPerPage=5, proxyCountryCode="EG"), 0.50, 5, budget=B)
     run('t2_tt_month_eg', TT, dict(NODL, searchQueries=["V7 مشروب"], searchSection="/video", videoSearchDateFilter="PAST_MONTH", resultsPerPage=5, proxyCountryCode="EG"), 0.50, 5, budget=B)
     run('t2_ig_mentions', IG_SCRAPER, {"directUrls": ["https://www.instagram.com/v7egypt/"], "resultsType": "mentions", "resultsLimit": 5}, 0.03, 5, budget=B)
-    run('t2_ig_kw_dated', IG_KW, {"keywords": ["ڤي سڤن", "V7 drink"], "maxPostsPerKeyword": 5, "dateFrom": SINCE, "dateTo": UNTIL}, 0.06, 10, budget=B)
+    run('t2_ig_kw_dated', IG_KW_SEEMUAPPS, {"keywords": ["ڤي سڤن", "V7 drink"], "maxPostsPerKeyword": 5, "dateFrom": SINCE, "dateTo": UNTIL}, 0.06, 10, budget=B)
     run('t2_google', GOOGLE, {"queries": '"ڤي سڤن" site:instagram.com\n"ڤي سڤن" site:tiktok.com', "quickDateRange": "m6", "countryCode": "eg",
                               "maxPagesPerQuery": 1}, 0.50, 2, budget=B)   # USD 0.50 is the lowest cap it accepts; it costs USD 0.0025 a page
 
@@ -269,7 +270,7 @@ def stage_wide():
     B = BUDGET_WIDE
     run('ig_tagged_v7', IG_TAGGED, {"username": ["v7egypt"], "resultsLimit": 180}, 0.45, 180, budget=B)
     run('ig_tagged_vss', IG_TAGGED, {"username": ["vsupersoda"], "resultsLimit": 60}, 0.15, 60, budget=B)
-    run('ig_kw_wide', IG_KW, {"keywords": KW_IG, "maxPostsPerKeyword": 30, "dateFrom": SINCE, "dateTo": UNTIL}, 0.75, 720, budget=B)
+    run('ig_kw_wide', IG_KW_SEEMUAPPS, {"keywords": KW_IG, "maxPostsPerKeyword": 30, "dateFrom": SINCE, "dateTo": UNTIL}, 0.75, 720, budget=B)
     q = lambda site, pages: {"queries": '\n'.join('%s site:%s' % (k, site) for k in KW_GOOGLE), "quickDateRange": "m6", "countryCode": "eg",
                              "maxPagesPerQuery": pages}
     run('google_ig', GOOGLE, q('instagram.com', 3), 0.50, len(KW_GOOGLE) * 3, budget=B)
@@ -357,10 +358,33 @@ def stage_kwtest():
     for i, k in enumerate(K, 1):
         go(f'kw_dataslayer_{i}', 'data-slayer~instagram-search-reels', {"query": k, "maxPages": 1}, 0.05, 10)
     go('kw_dami', 'dami_studio~instagram-reels-search-scraper', {"searchQueries": K, "maxReelsPerTerm": 10, "maxReels": 30, "newerThan": SINCE}, 0.05, 30)
-    go('kw_seemuapps', IG_KW, {"keywords": K, "maxPostsPerKeyword": 10, "dateFrom": SINCE, "dateTo": UNTIL}, 0.10, 30)
+    go('kw_seemuapps', IG_KW_SEEMUAPPS, {"keywords": K, "maxPostsPerKeyword": 10, "dateFrom": SINCE, "dateTo": UNTIL}, 0.10, 30)
 
 
-STAGES = {'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+# Instagram keyword search from 19 Oct: English and mixed phrases only (Instagram's own search fails on Arabic spellings; Arabic posts come
+# from the posts that tag V7 and from Google's exact-phrase search). One apidojo run per keyword: its item limit is per run, not per keyword.
+KW_IG_EN = ["V7 soda", "V7 drink", "V7 Egypt", "مشروب V7", "V7 كانز", "V Cola", "V Orange", "V Super Soda", "V7 cream soda", "V7 كريم صودا",
+            "V7 pink lemonade", "V7 بينك ليمونيد", "V7 رمان", "V7 بلوبيري", "V7 شعير"]
+BUDGET_IGKW = 18.40
+
+
+def stage_igkw():
+    """Instagram posts about V7 by keyword (apidojo), newer than --since (default: the window's start). Each keyword costs about
+    USD 0.015 for the search plus USD 0.0005 a post. Usage: python3 collect.py igkw [--since 2026-10-17] [--per 10]"""
+    a = sys.argv
+    since = a[a.index('--since') + 1] if '--since' in a else SINCE
+    per = int(a[a.index('--per') + 1]) if '--per' in a else 10   # apidojo gives captions and likes for about its first 10 results; past that, mostly bare links
+    for i, kw in enumerate(KW_IG_EN):
+        run('igkw_%s_%02d' % (since.replace('-', ''), i), IG_KW, {"keywords": [kw], "maxItems": per, "until": since},
+            round(0.03 + per * 0.0005 * 1.5, 2), per, budget=BUDGET_IGKW)
+
+
+def stage_kwdeep():
+    """19 Oct: apidojo missed 4 of dami_studio's reels for "V7 soda" in the top 10. Are they further down its results (depth) or not there at all?"""
+    run('kw_apidojo_deep', 'apidojo~instagram-scraper-api', {"keywords": ["V7 soda"], "maxItems": 40, "until": SINCE}, 0.10, 40, budget=17.10)
+
+
+STAGES = {'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':
