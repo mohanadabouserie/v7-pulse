@@ -180,6 +180,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - with ڤ they work: ڤي سڤن 25 of 29 about V7 on Facebook, ڤي كولا 26 of 30 on Facebook and 10 of 13 on TikTok; Arabic mixed with V7 too (V7 كريم صودا 20 of 30 on Facebook);
   - with ف they don't: في سفن is "in" + "ships" (and 7UP in Saudi posts), so في سفن مشروب got 2 of 30 on Facebook and 0 of 13 on TikTok, في كولا 1 of 30. Don't search the ف spellings;
   - for Arabic on Instagram use the posts that tag V7 and Google's exact-phrase search ("ڤي سڤن" site:instagram.com: 7 of 11), not Instagram's own keyword search.
+- Google's site search only covers what Instagram lets search engines index: public posts and reels since 1 Jan 2020 from accounts that meet Instagram's criteria (no private accounts, no stories). New posts usually reach it within about a day but can take days: on 18 Oct only 1 of its 203 Instagram links was from the last 2 days. Use it alongside the tagged posts and the keyword search, not instead.
 - YouTube:
   - `streamers/youtube-channel-scraper` returns English machine translations of V7's Arabic titles; `calm_builder/youtube-scraper` gives the originals.
   - Comment dates are relative ("8 days ago", "4 months ago"); apidojo turns some into a date on the run's day of the month (18 May …), which is still month-only.
