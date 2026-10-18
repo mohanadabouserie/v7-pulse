@@ -336,7 +336,31 @@ def stage_ttkw():
     run('tt_wide', TT, dict(NODL, searchQueries=KW_TT, searchSection="/video", resultsPerPage=30, proxyCountryCode="EG"), 0.50, 300, budget=16.40)
 
 
-STAGES = {'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+def stage_kwtest():
+    """19 Oct: which Instagram keyword scraper is strongest? The same three keywords (English, Arabic with ڤ, mixed), up to 10 results each,
+    for the six best-rated keyword scrapers in the Store and the one used on 18 Oct. Scrapers that take exact phrases get them in quotes."""
+    B = 17.40   # at most about USD 1 over the 16.33 spent; expected about 0.45
+    K = ['V7 soda', 'ڤي سڤن', 'V7 كريم صودا']; Q = ['"%s"' % k for k in K]
+
+    def go(name, actor, body, cap, n):
+        run(name, actor, body, cap, n, budget=B)
+        if not (RAW / (name + '.json')).exists():    # some scrapers refuse a cap under USD 0.50 (the cap is a ceiling, not the cost)
+            run(name, actor, body, 0.50, n, budget=B)
+    for i, k in enumerate(K, 1):
+        go(f'kw_apidojo_{i}', 'apidojo~instagram-scraper-api', {"keywords": [k], "maxItems": 10, "until": SINCE}, 0.10, 10)
+    go('kw_apify_search', 'apify~instagram-search-scraper', {"search": ', '.join(K), "searchType": "popular", "searchLimit": 10}, 0.12, 30)
+    go('kw_memo23', 'memo23~instagram-reels-search-scraper', {"queries": Q, "maxResultsPerQuery": 10, "oldestPostDate": SINCE, "newestPostDate": UNTIL,
+                                                               "contentType": "posts_and_reels"}, 0.10, 30)
+    for i, q in enumerate(Q, 1):
+        go(f'kw_boolean_{i}', 'scraping_solutions~instagram-boolean-search-scraper-posts-reels', {"searchQuery": q, "resultsLimit": 10, "contentType": "posts_and_reels",
+                                                                                              "oldestPostDate": SINCE, "newestPostDate": UNTIL}, 0.10, 10)
+    for i, k in enumerate(K, 1):
+        go(f'kw_dataslayer_{i}', 'data-slayer~instagram-search-reels', {"query": k, "maxPages": 1}, 0.05, 10)
+    go('kw_dami', 'dami_studio~instagram-reels-search-scraper', {"searchQueries": K, "maxReelsPerTerm": 10, "maxReels": 30, "newerThan": SINCE}, 0.05, 30)
+    go('kw_seemuapps', IG_KW, {"keywords": K, "maxPostsPerKeyword": 10, "dateFrom": SINCE, "dateTo": UNTIL}, 0.10, 30)
+
+
+STAGES = {'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

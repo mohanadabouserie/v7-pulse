@@ -892,3 +892,13 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Files:** `CLAUDE.md`, `PROJECT_MEMORY.md`.
 - **Arabic on every platform (follow-up question):** the spellings with ڤ work (ڤي سڤن 25 of 29 about V7 on Facebook, ڤي كولا 26 of 30 on Facebook and 10 of 13 on TikTok), and so does Arabic mixed with V7. The spellings with ف fail everywhere: في سفن is "in" + "ships" (في سفن مشروب 2 of 30 on Facebook, 0 of 13 on TikTok). Instagram's own search is the weak link; Google's exact-phrase search of instagram.com found 7 of 11 for "ڤي سڤن". The rule is in `CLAUDE.md` (Known quirks).
 - **Google's site search, checked (follow-up):** "posts can take days to reach Google" was from general knowledge. On 18 Oct Google returned a TikTok video from the same day and an Instagram post from the day before, but only 1 of its 203 Instagram links was from the last 2 days. Online, Google gives no timeline for Instagram; a recap of a Google talk (Oct 2026) puts the typical discovery of a new web address at about 20 hours. Instagram lets search engines index only public posts and reels since 2020 from accounts that meet its criteria, so Google never sees private accounts or stories. Of the 280 Instagram posts about V7: posts tagging @v7egypt 133, keyword search 67, Google 55 (all new), tagging @vsupersoda 36, hashtags 12.
+
+### Instagram keyword scrapers compared (19 Oct 2026)
+- **Asked:** search the Apify Store for Instagram keyword scrapers and pick the strongest.
+- **Store search:** over 80 Instagram scrapers mention search. Seven were tested on the same three keywords (V7 soda, ڤي سڤن, V7 كريم صودا), up to 10 results each (`collect.py kwtest`, `kwtest_report.py`). The test cost USD 0.26.
+- **Result (`data/raw/real_17oct/KEYWORD_SCRAPERS.md`):**
+  - The four keyword scrapers find nearly the same posts; Arabic is weak for all of them.
+  - The exact-phrase scrapers find almost nothing, and Apify's own search scraper returns only old "popular" reels.
+  - Reels are 59% of the Instagram posts about V7, so the reels-only scrapers miss about 4 in 10.
+- **Pick:** apidojo/instagram-scraper-api for English and mixed keywords (2,811 users, 1.28M runs a month, 100% succeeded, 5.0 from 9 reviews; all formats, a date filter, USD 0.0035 per useful post). seemuapps stays as the fallback.
+- **Files:** `data/raw/real_17oct/collect.py`, `kwtest_report.py`, `KEYWORD_SCRAPERS.md`; `CHANGELOG.md`, `PROJECT_MEMORY.md`.
