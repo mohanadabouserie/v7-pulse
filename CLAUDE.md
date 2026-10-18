@@ -176,6 +176,10 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - TikTok (`clockworks`): its own date filter (`videoSearchDateFilter`) returns unrelated videos. Search with `proxyCountryCode: "EG"` and no date filter, then check dates.
 - Instagram: the hashtag #vcola is mostly Cambodia's V-Cola. Its keyword search returns the top results for a word (a few hundred), so add the posts that tag @v7egypt and Google's finds.
   - The keyword search (seemuapps, 19 Oct check) matches loosely: Arabic spellings returned almost nothing about V7 (ڤي سڤن 1 of 30, في سفن 0 of 30: ships, Starbucks, BTS's "V"); English and mixed phrases worked (V7 soda 24 of 30, V7 Egypt 22, مشروب V7 19). Use English or mixed phrases there; its counts matched Apify's own scrapers.
+- Arabic spellings, on every platform (19 Oct check of the 17–18 Oct searches):
+  - with ڤ they work: ڤي سڤن 25 of 29 about V7 on Facebook, ڤي كولا 26 of 30 on Facebook and 10 of 13 on TikTok; Arabic mixed with V7 too (V7 كريم صودا 20 of 30 on Facebook);
+  - with ف they don't: في سفن is "in" + "ships" (and 7UP in Saudi posts), so في سفن مشروب got 2 of 30 on Facebook and 0 of 13 on TikTok, في كولا 1 of 30. Don't search the ف spellings;
+  - for Arabic on Instagram use the posts that tag V7 and Google's exact-phrase search ("ڤي سڤن" site:instagram.com: 7 of 11), not Instagram's own keyword search.
 - YouTube:
   - `streamers/youtube-channel-scraper` returns English machine translations of V7's Arabic titles; `calm_builder/youtube-scraper` gives the originals.
   - Comment dates are relative ("8 days ago", "4 months ago"); apidojo turns some into a date on the run's day of the month (18 May …), which is still month-only.

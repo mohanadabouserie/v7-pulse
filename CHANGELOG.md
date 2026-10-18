@@ -890,3 +890,4 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - **Value:** 67 posts about V7, 46 of them found by no other method.
 - **Online:** no independent reviews. Created 6 Oct 2026, 41 users and no ratings; its page reports 99.9% of runs succeeded and says it searches "the same way the Instagram search bar does", ranked by relevance, not by date.
 - **Files:** `CLAUDE.md`, `PROJECT_MEMORY.md`.
+- **Arabic on every platform (follow-up question):** the spellings with ڤ work (ڤي سڤن 25 of 29 about V7 on Facebook, ڤي كولا 26 of 30 on Facebook and 10 of 13 on TikTok), and so does Arabic mixed with V7. The spellings with ف fail everywhere: في سفن is "in" + "ships" (في سفن مشروب 2 of 30 on Facebook, 0 of 13 on TikTok). Instagram's own search is the weak link; Google's exact-phrase search of instagram.com found 7 of 11 for "ڤي سڤن". The rule is in `CLAUDE.md` (Known quirks).
