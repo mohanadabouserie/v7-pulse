@@ -966,3 +966,8 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - `V7_Pulse_Dashboard.html` (Version 27 saved in `archive/dashboard_versions/`);
   - in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `label.py`, `build_real.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`;
   - `tests/test_v28.py`; notes.
+
+### Public copy: Version 28 (19 Oct 2026)
+- **Pushed** at the user's request ("yes push it"). `docs/index.html` was rebuilt, and all 21 suites pass on it.
+- **What the site now shows:** the reels' speech in the analysis and Instagram follower counts. The Telegram bot reads this copy.
+- **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
