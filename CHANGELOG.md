@@ -971,3 +971,10 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Pushed** at the user's request ("yes push it"). `docs/index.html` was rebuilt, and all 21 suites pass on it.
 - **What the site now shows:** the reels' speech in the analysis and Instagram follower counts. The Telegram bot reads this copy.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+
+### Check: is Instagram complete now? (19 Oct 2026)
+- **No.**
+- **Coverage:** 262 of the 283 Instagram posts about V7 were found by one method only. A rough capture-recapture estimate (tagged 144, keyword 65, both 21, for 19 Jun to 16 Oct) puts that period at about 445 posts; we have 229.
+- **Sentiment:** 115 of 169 reels are read with real speech. On-screen text, text in photos, and the 4,115 comments under public posts aren't read, and labels haven't been checked by a person.
+- **Missing info:** the re-fetch and the profile scraper fill most of it. Hidden likes, most shares, private accounts and Stories can't be had.
+- **The official route:** V7's Business account through Meta's API covers tagged posts and @mentions completely. Details in PROJECT_MEMORY section 11.

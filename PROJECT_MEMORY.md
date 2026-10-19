@@ -519,6 +519,11 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - Done in Version 27: likes hidden by their owner now say "likes hidden" (37 Instagram posts).
 - Done in Version 28: what's said in Instagram reels is read with the caption (146 reels), and Instagram accounts have follower counts (174 of 175).
 - Not done: TikTok's own subtitles (74 of 96 videos about V7, free to download) and YouTube subtitles (about USD 0.03) could be read the same way.
+- Instagram is not complete (19 Oct check):
+  - Coverage: 262 of the 283 posts about V7 were found by one method only. For 19 Jun to 16 Oct the tagged list found 144, the keyword search 65, and both 21: a rough capture-recapture estimate of about 445 posts, and we have 229, so roughly half.
+  - Sentiment: 54 of 169 reels have no usable speech, and on-screen text and text in 114 photos and albums aren't read. The 4,115 comments under these public posts aren't collected (about USD 9.50 with the comment scraper). Claude's labels haven't been checked against a person's.
+  - Never available: hidden likes (37), most shares (135), private accounts, Stories, deleted posts.
+  - Closest to complete: V7's own Instagram Business account through Meta's API: every post that tags V7 (`/tags`) and every caption that @mentions it (the mentions webhook), free once connected (`.env.meta`). Also weekly runs, since search results shuffle, and a spot-check of 50 labels by a person.
 - Daily views (DECISIONS #126): a daily check of each post's totals, so each day shows the views added that day. About USD 0.10 a day for posts from the last 30 days. Not built; it needs the user's OK to schedule.
 - Share the bot's join link with the team when ready.
 - Keep the bot running when this app or machine restarts: the systemd user service in `bot/`, or the VPS later. Both need the user's OK.
