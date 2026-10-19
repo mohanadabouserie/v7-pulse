@@ -978,3 +978,37 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Sentiment:** 115 of 169 reels are read with real speech. On-screen text, text in photos, and the 4,115 comments under public posts aren't read, and labels haven't been checked by a person.
 - **Missing info:** the re-fetch and the profile scraper fill most of it. Hidden likes, most shares, private accounts and Stories can't be had.
 - **The official route:** V7's Business account through Meta's API covers tagged posts and @mentions completely. Details in PROJECT_MEMORY section 11.
+
+### Version 29: the Instagram gaps, closed as far as public data allows (19 Oct 2026)
+- **Why:** user: "close all the gaps in instagram ... also for music reels or albums, can we make an OCR or smth for them to read any text on them? ... maybe get an idea about the post from its comments ... investigate and see which is the most accurate". Apify's usage limit is now USD 100 (DECISIONS #139).
+- **What reads music reels, photos and albums best (tests on 8 posts, `collect.py vistest`, `vistest2`, `covtest`):**
+  - Claude reading the pictures (the photos, or the cover and a frame every 2 seconds of a reel; `vis_media.py`, `vis_read.py`): all the on-screen text afanasenko's extractor found, and more. It saw the V7 cup in a restaurant reel that the extractor called "V SPARKLING DRINK", and found no V7 in two DJ reels, which was right. Free on the Max plan. **Chosen** (DECISIONS #140).
+  - afanasenko/instagram-reel-script-extractor: good text and a summary, but USD 0.075 a reel. Not used.
+  - Comments: worth having for what people say, but they rarely say what a post shows. Instagram's alt text is generic. The audio pages of V7's ads returned 2 posts. None used to read posts.
+- **More posts (DECISIONS #142):**
+  - Google one month at a time, 12 exact phrases x 7 months: 882 new posts inside the window, fetched by link.
+  - Every post tagging @v7egypt back to 20 Apr (520; the 18 Oct pull reached 19 Jun), 8 more hashtags, one more seemuapps sample, apidojo and dami_studio since 20 Apr (15 phrases each).
+  - Instagram public posts about V7: 283 to **479**. Found by: posts tagging V7 250, Google 151, keyword search 112, Reels search 53, hashtags 22. 390 were found by one route only.
+- **Read with more than the caption:** 202 reels with their speech, 423 posts from their pictures (359 of them about V7).
+  - What the pictures changed: type 135, products 176, sentiment 72 (48 neutral to positive, 17 positive to neutral); 38 posts became about V7, 6 no longer.
+- **Comments under public Instagram posts (DECISIONS #141):** 2,633 collected from 251 posts (up to 100 a post, most liked first) and labelled. 2,296 are about V7 and shown under their post: 1,518 positive, 454 neutral, 286 negative, 35 mixed. scrapesmith returned nothing for 137 posts, which Apify's own scraper filled.
+- **Followers:** 110 more Instagram accounts.
+- **Dashboard:**
+  - a post read from its pictures says "Its sentiment and topic also count what's written or shown in its pictures" (or video) in the post view;
+  - the data sources, the help and Ask V7 Pulse's rules mention the pictures and the comments under public Instagram posts;
+  - public posts about V7: 785 (Instagram 479). Comments shown: 5,918, of them 2,296 under public Instagram posts. 546 images; the page is 10.2 MB.
+- **Tests:** new `tests/test_v29.py` (more Instagram posts, comments under them, privacy, "never waiting for V7", the picture flags and post-view note, phone, tablet and dark mode). `test_v20.py` (volume range) and `test_v23.py` (size limit) allow the larger data; `test_v23.py` and `test_v25.py` expect "collected on 17–19 Oct". All 22 suites pass (the 21 dashboard suites and the bot).
+- **Fixes on the way:** a labelling batch skipped 38 comments; they were labelled and added. The first choice of posts for pictures was too wide (1,230, with noisy Google finds): stopped at 775 and narrowed to posts about V7 or tagging it.
+- **Found in the review (as V7's marketing manager):**
+  - 21 Instagram accounts (talabat Egypt, Cairo 360, El-Shai and two V7 distributor pages among them) showed "Access delayed. Only the owner of the page can access this information" as their name: the tagged scraper's 19 Oct run put it in place of the full name on 201 of 520 posts. `normalize.py` now drops it and takes the name from the profile scraper, or shows the handle. `test_v29.py` checks it.
+  - The page said the data was collected on 17–18 Oct. The sidebar, the post view, the help, the Real data badge and Ask V7 Pulse now say 17–19 Oct, and the 196 posts first collected on 19 Oct say "as of 19 Oct" (`build_real.py`).
+  - The Overview's comment count and Ask V7 Pulse's rules still said comments under other people's posts aren't collected. They now name the comments under public Instagram posts and YouTube videos about V7.
+  - People: the "Creators & pages" tile said "10K+ followers" for all 69, and the Creator size panel said "accounts with 10K+ followers" above Nano and Unknown bars. The count has always been every creator, page and news outlet; the tile now says "16 with 10K+ followers" and the panel "creators, pages and news outlets, by followers".
+- **Published** privately (Version 29). Public site: Version 28 until a push.
+- **Spend:** USD 12.13 today by the final run charges (more posts 4.89, comments 3.92, media links 1.97, tests 0.55, speech 0.55, followers 0.25). Apify's meter: USD 30.31 this cycle, so about USD 11.31 above the included USD 19 is billed as overage; the limit leaves USD 69.69. Labelling and reading pictures ran on the Max plan (no API charge). `SCRAPERS.md` lists 133 runs from 28 scrapers.
+- **Still not possible:** private accounts, Stories, likes their owner hid, most share counts. No route finds every public post: by the closest pair (posts tagging V7 against Instagram's own search) there are about 780 in the window, so 479 is roughly 60%; other pairs say fewer. V7's own Business account through Meta's API would give every post that tags or @mentions it.
+- **Files:**
+  - `V7_Pulse_Dashboard.html` (Version 28 saved in `archive/dashboard_versions/`);
+  - in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `label.py`, `build_real.py`, `fetch_media.py`, new `vis_media.py` and `vis_read.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`;
+  - `data/raw/media_13oct/` (115 new images, `index.json`); `.gitignore` (`vis/` and `vis_read.json` stay local);
+  - `tests/test_v29.py`, `tests/test_v20.py`, `tests/test_v23.py`, `tests/test_v25.py`; notes.

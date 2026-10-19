@@ -6,34 +6,36 @@ Every Apify run of `data/raw/real_17oct/`, written by `scrapers_report.py` from 
 
 | Scraper | Used for | Runs | Returned | Kept | Cost (USD) |
 |---|---|---:|---:|---:|---:|
-| [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper) | Instagram comments | 3 | 1,982 | 1,778 | 4.56 |
+| [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper) | Instagram comments | 5 | 3,506 | 2,961 | 8.06 |
+| [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper) | Instagram posts of a profile, or posts by link | 10 | 2,174 | 424 | 5.00 |
 | [clockworks/tiktok-scraper](https://apify.com/clockworks/tiktok-scraper) | TikTok profiles, hashtags, keyword search, videos by link | 11 | 659 | 124 | 2.57 |
 | [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper) | Facebook comments | 2 | 915 | 877 | 2.40 |
+| [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper) | Instagram posts that tag a profile | 4 | 765 | 424 | 1.76 |
+| [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper) | What is said in Instagram reels (speech to text) | 5 | 306 | 0 | 1.57 |
 | [scraper_one/facebook-posts-search](https://apify.com/scraper_one/facebook-posts-search) | Facebook keyword search | 19 | 506 | 138 | 1.52 |
-| [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper) | What is said in Instagram reels (speech to text) | 3 | 198 | 0 | 1.02 |
+| [seemuapps/instagram-keyword-posts-scraper](https://apify.com/seemuapps/instagram-keyword-posts-scraper) | Instagram keyword search with a date range | 4 | 676 | 143 | 1.36 |
 | [clockworks/tiktok-comments-scraper](https://apify.com/clockworks/tiktok-comments-scraper) | TikTok comments | 2 | 887 | 872 | 0.89 |
-| [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper) | Instagram posts of a profile, or posts by link | 5 | 382 | 300 | 0.88 |
-| [seemuapps/instagram-keyword-posts-scraper](https://apify.com/seemuapps/instagram-keyword-posts-scraper) | Instagram keyword search with a date range | 3 | 415 | 69 | 0.83 |
+| [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper) | Instagram accounts (follower counts) | 2 | 285 | 0 | 0.66 |
+| [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper) | Instagram comments (cheaper, but returned nothing for half the posts) | 2 | 1,307 | 1,082 | 0.65 |
+| [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper) | Instagram hashtags (and Instagram keyword search) | 6 | 283 | 25 | 0.65 |
+| [apify/google-search-scraper](https://apify.com/apify/google-search-scraper) | Google search | 5 | 276 | 0 | 0.62 |
 | [streamers/youtube-scraper](https://apify.com/streamers/youtube-scraper) | YouTube keyword search | 3 | 203 | 30 | 0.61 |
-| [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper) | Instagram posts that tag a profile | 3 | 245 | 178 | 0.56 |
 | [apidojo/youtube-comments-scraper](https://apify.com/apidojo/youtube-comments-scraper) | YouTube comments | 3 | 1,093 | 731 | 0.46 |
-| [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper) | Instagram accounts (follower counts) | 1 | 175 | 0 | 0.40 |
-| [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper) | Instagram hashtags (and Instagram keyword search) | 4 | 153 | 12 | 0.35 |
+| [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api) | Instagram keyword search (posts) | 20 | 222 | 87 | 0.33 |
 | [trudax/reddit-scraper-lite](https://apify.com/trudax/reddit-scraper-lite) | Reddit search | 2 | 58 | 2 | 0.26 |
+| [afanasenko/instagram-reel-script-extractor](https://apify.com/afanasenko/instagram-reel-script-extractor) | On-screen text and speech of Instagram reels | 1 | 3 | 0 | 0.23 |
 | [apify/facebook-posts-scraper](https://apify.com/apify/facebook-posts-scraper) | Facebook page posts | 2 | 37 | 34 | 0.19 |
-| [apify/google-search-scraper](https://apify.com/apify/google-search-scraper) | Google search | 3 | 84 | 0 | 0.17 |
 | [scraping_solutions/instagram-boolean-search-scraper-posts-reels](https://apify.com/scraping_solutions/instagram-boolean-search-scraper-posts-reels) | Instagram search, exact phrases | 3 | 1 | 0 | 0.11 |
+| [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper) | Instagram Reels search | 6 | 177 | 73 | 0.11 |
 | [kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest](https://apify.com/kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest) | X (Twitter) search | 7 | 465 | 76 | 0.10 |
-| [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api) | Instagram keyword search (posts) | 4 | 70 | 0 | 0.08 |
 | [data-slayer/instagram-search-reels](https://apify.com/data-slayer/instagram-search-reels) | Instagram Reels search | 3 | 24 | 0 | 0.06 |
 | [calm_builder/youtube-scraper](https://apify.com/calm_builder/youtube-scraper) | YouTube videos (and comments) | 2 | 29 | 0 | 0.05 |
 | [streamers/youtube-channel-scraper](https://apify.com/streamers/youtube-channel-scraper) | YouTube channel videos | 1 | 28 | 28 | 0.03 |
 | [apify/instagram-search-scraper](https://apify.com/apify/instagram-search-scraper) | Instagram popular reels for a keyword | 1 | 12 | 0 | 0.03 |
-| [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper) | Instagram Reels search | 1 | 26 | 0 | 0.02 |
 | [apify/instagram-scraper](https://apify.com/apify/instagram-scraper) | Instagram (here: posts that mention a profile) | 1 | 5 | 0 | 0.01 |
 | [memo23/instagram-reels-search-scraper](https://apify.com/memo23/instagram-reels-search-scraper) | Instagram Reels search, exact phrases | 1 | 2 | 0 | 0.00 |
 
-Total for these runs: USD 18.15 (Apify’s meter for the month also counts platform usage).
+Total for these runs: USD 30.28 (Apify’s meter for the month also counts platform usage).
 
 ## Every run
 
@@ -263,7 +265,7 @@ Total for these runs: USD 18.15 (Apify’s meter for the month also counts platf
 - **Scraper:** [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper), 2026-10-16
 - **Why:** public posts: 8 Instagram hashtags
 - **Input:** `{"hashtags": ["v7egypt", "فى_سفن", "في_سفن", "vcola", "في_كولا", "ڤي_كولا", "vlemon", "v7creamsoda"], "resultsLimit": 40, "keywordSearch": false}`
-- **Output:** 137 returned · 46 in window · 12 kept · USD 0.3151
+- **Output:** 137 returned · 46 in window · 13 kept · USD 0.3151
 
 ### tt_search
 - **Scraper:** [clockworks/tiktok-scraper](https://apify.com/clockworks/tiktok-scraper), 2026-10-16
@@ -353,13 +355,13 @@ Total for these runs: USD 18.15 (Apify’s meter for the month also counts platf
 - **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-18
 - **Why:** public posts: Instagram posts tagging @v7egypt
 - **Input:** `{"username": ["v7egypt"], "resultsLimit": 180}`
-- **Output:** 180 returned · 176 in window · 136 kept · USD 0.4140
+- **Output:** 180 returned · 176 in window · 148 kept · USD 0.4140
 
 ### ig_tagged_vss
 - **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-18
 - **Why:** public posts: Instagram posts tagging @vsupersoda
 - **Input:** `{"username": ["vsupersoda"], "resultsLimit": 60}`
-- **Output:** 60 returned · 54 in window · 42 kept · USD 0.1380
+- **Output:** 60 returned · 54 in window · 48 kept · USD 0.1380
 
 ### ig_kw_wide
 - **Scraper:** [seemuapps/instagram-keyword-posts-scraper](https://apify.com/seemuapps/instagram-keyword-posts-scraper), 2026-10-18
@@ -383,7 +385,7 @@ Total for these runs: USD 18.15 (Apify’s meter for the month also counts platf
 - **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-18
 - **Why:** the Instagram posts Google found (new and inside the window), by link
 - **Input:** `{"username": "[108 links]"}`
-- **Output:** 108 returned · 105 in window · 55 kept · USD 0.2484
+- **Output:** 108 returned · 105 in window · 54 kept · USD 0.2484
 
 ### tt_google_posts
 - **Scraper:** [clockworks/tiktok-scraper](https://apify.com/clockworks/tiktok-scraper), 2026-10-18
@@ -595,7 +597,248 @@ Total for these runs: USD 18.15 (Apify’s meter for the month also counts platf
 - **Input:** `{"bulkUrls": "[32 links]", "resultsLimit": 32}`
 - **Output:** 32 returned · 0 in window · 0 kept · USD 0.1790
 
+### vis_posts
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** 19 Oct test: 8 sample posts fetched again by link, for their full-size pictures and videos
+- **Input:** `{"username": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/p/DZYSInqKZh0/", "https://www.instagram.com/p/DZK_YHGCL9i/", "https://www.instagram.com/p/DZK7ldYjYq5/", "https://www.instagram.com/p/DcRR5rTDZMS/", "https://www.instagram.com/p/DdSBnmsR-se/", "https://www.instagram.com/p/DdEtK7uICS0/"]}`
+- **Output:** 8 returned · 0 in window · 0 kept · USD 0.0184
+
+### vis_afanasenko
+- **Scraper:** [afanasenko/instagram-reel-script-extractor](https://apify.com/afanasenko/instagram-reel-script-extractor), 2026-10-19
+- **Why:** 19 Oct test: on-screen text of 3 music reels, to compare with Claude reading their frames
+- **Input:** `{"reelUrls": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/reel/DZYSInqKZh0/"], "maxItemsMode1": 3}`
+- **Output:** 3 returned · 0 in window · 0 kept · USD 0.2250
+
+### vis_cm_scrapesmith
+- **Scraper:** [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper), 2026-10-19
+- **Why:** 19 Oct test: the comments on the 8 sample posts
+- **Input:** `{"postUrls": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/p/DZYSInqKZh0/", "https://www.instagram.com/p/DZK_YHGCL9i/", "https://www.instagram.com/p/DZK7ldYjYq5/", "https://www.instagram.com/p/DcRR5rTDZMS/", "https://www.instagram.com/p/DdSBnmsR-se/", "https://www.instagram.com/p/DdEtK7uICS0/"], "maxCommentsPerPost": 20, "sortOrder": "popular"}`
+- **Output:** 86 returned · 0 in window · 0 kept · USD 0.0431
+
+### vis_cm_apify
+- **Scraper:** [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper), 2026-10-19
+- **Why:** 19 Oct test: the same comments with Apify’s own scraper
+- **Input:** `{"directUrls": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/p/DZYSInqKZh0/", "https://www.instagram.com/p/DZK_YHGCL9i/", "https://www.instagram.com/p/DZK7ldYjYq5/", "https://www.instagram.com/p/DcRR5rTDZMS/", "https://www.instagram.com/p/DdSBnmsR-se/", "https://www.instagram.com/p/DdEtK7uICS0/"], "resultsLimit": 20}`
+- **Output:** 86 returned · 0 in window · 0 kept · USD 0.1978
+
+### cov_audio
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** 19 Oct test: reels that use the audio of V7’s own ads
+- **Input:** `{"startUrls": ["https://www.instagram.com/reels/audio/27762052746747139/", "https://www.instagram.com/reels/audio/40046659618266325/"], "maxItems": 20}`
+- **Output:** 2 returned · 0 in window · 0 kept · USD 0.0100
+
+### cov_google_month
+- **Scraper:** [apify/google-search-scraper](https://apify.com/apify/google-search-scraper), 2026-10-19
+- **Why:** 19 Oct test: Google limited to one month (June)
+- **Input:** `{"queries": "https://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026&num=10\nhttps://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026&num=10", "maxPagesPerQuery": 1, "countryCode": "eg"}`
+- **Output:** 2 returned · 0 in window · 0 kept · USD 0.0050
+
+### cov_tags
+- **Scraper:** [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper), 2026-10-19
+- **Why:** 19 Oct test: 4 hashtags not tried before
+- **Input:** `{"hashtags": ["ڤي_سڤن", "vsupersoda", "vorange", "v7drink"], "resultsLimit": 5, "keywordSearch": false}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.0460
+
+### ig_google_months
+- **Scraper:** [apify/google-search-scraper](https://apify.com/apify/google-search-scraper), 2026-10-19
+- **Why:** public posts: Google search of instagram.com, 12 exact phrases, one month at a time
+- **Input:** `{"queries": "https://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A4%2F20%2F2026%2Ccd_max%3A4%2F30%2F2026\nhttps://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A5%2F1%2F2026%2Ccd_max%3A5%2F31%2F2026\nhttps://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026\nhttps://www.google.com/search?… (12026 characters)", "maxPagesPerQuery": 3, "countryCode": "eg"}`
+- **Output:** 190 returned · 0 in window · 0 kept · USD 0.4476
+
+### ig_google2_posts
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** the new Instagram posts Google found month by month, by link
+- **Input:** `{"username": "[882 links]"}`
+- **Output:** 882 returned · 857 in window · 97 kept · USD 2.0286
+
+### ig_tagged_v7_full
+- **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-19
+- **Why:** public posts: every Instagram post tagging @v7egypt back to 20 Apr
+- **Input:** `{"username": ["v7egypt"], "resultsLimit": 520}`
+- **Output:** 520 returned · 264 in window · 228 kept · USD 1.1960
+
+### ig_tags2
+- **Scraper:** [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper), 2026-10-19
+- **Why:** public posts: 8 more Instagram hashtags
+- **Input:** `{"hashtags": ["ڤي_سڤن", "vsupersoda", "vorange", "v7drink", "v7creamsoda", "ڤي_كولا", "vcolaegypt", "ڤي_اورانج"], "resultsLimit": 30, "keywordSearch": false}`
+- **Output:** 110 returned · 13 in window · 12 kept · USD 0.2530
+
+### ig_kw_wide2
+- **Scraper:** [seemuapps/instagram-keyword-posts-scraper](https://apify.com/seemuapps/instagram-keyword-posts-scraper), 2026-10-19
+- **Why:** public posts: one more Instagram keyword sample, 9 phrases, inside the window
+- **Input:** `{"keywords": ["V Super Soda", "V7 cream soda", "V7 كريم صودا", "V7 pink lemonade", "V7 بينك ليمونيد", "V7 رمان", "V7 بلوبيري", "V7 شعير", "V7 كانز"], "maxPostsPerKeyword": 30, "dateFrom": "2026-04-20", "dateTo": "2026-10-16"}`
+- **Output:** 261 returned · 196 in window · 74 kept · USD 0.5310
+
+### igkw_20260420_00
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 1 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 soda"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 9 kept · USD 0.0150
+
+### igkw_20260420_01
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 2 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 drink"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 9 kept · USD 0.0150
+
+### igkw_20260420_02
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 3 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 Egypt"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 10 in window · 9 kept · USD 0.0165
+
+### igkw_20260420_03
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 4 of 15, since 20 Apr
+- **Input:** `{"keywords": ["مشروب V7"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 7 in window · 3 kept · USD 0.0170
+
+### igkw_20260420_04
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 5 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 كانز"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 10 in window · 7 kept · USD 0.0150
+
+### igkw_20260420_05
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 6 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V Cola"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 3 in window · 0 kept · USD 0.0150
+
+### igkw_20260420_06
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 7 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V Orange"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 7 in window · 2 kept · USD 0.0155
+
+### igkw_20260420_07
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 8 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V Super Soda"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 8 in window · 6 kept · USD 0.0180
+
+### igkw_20260420_08
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 9 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 cream soda"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 9 kept · USD 0.0150
+
+### igkw_20260420_09
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 10 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 كريم صودا"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 7 kept · USD 0.0150
+
+### igkw_20260420_10
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 11 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 pink lemonade"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 4 kept · USD 0.0195
+
+### igkw_20260420_11
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 12 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 بينك ليمونيد"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 10 in window · 7 kept · USD 0.0150
+
+### igkw_20260420_12
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 13 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 رمان"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 3 kept · USD 0.0200
+
+### igkw_20260420_13
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 14 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 بلوبيري"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 10 in window · 7 kept · USD 0.0200
+
+### igkw_20260420_14
+- **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
+- **Why:** public posts: Instagram keyword search, phrase 15 of 15, since 20 Apr
+- **Input:** `{"keywords": ["V7 شعير"], "maxItems": 10, "until": "2026-04-20"}`
+- **Output:** 10 returned · 9 in window · 5 kept · USD 0.0150
+
+### igkw_20260420_refetch
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** the posts that keyword search returned without a caption or likes, by link
+- **Input:** `{"username": "[45 links]"}`
+- **Output:** 45 returned · 43 in window · 28 kept · USD 0.1035
+
+### igreels_20260420_00
+- **Scraper:** [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper), 2026-10-19
+- **Why:** public posts: Instagram Reels search, phrases 1 to 3 of 15, since 20 Apr
+- **Input:** `{"searchQueries": ["V7 soda", "V7 drink", "V7 Egypt"], "maxReelsPerTerm": 30, "maxReels": 90, "newerThan": "2026-04-20"}`
+- **Output:** 42 returned · 37 in window · 31 kept · USD 0.0239
+
+### igreels_20260420_01
+- **Scraper:** [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper), 2026-10-19
+- **Why:** public posts: Instagram Reels search, phrases 4 to 6 of 15, since 20 Apr
+- **Input:** `{"searchQueries": ["مشروب V7", "V7 كانز", "V Cola"], "maxReelsPerTerm": 30, "maxReels": 90, "newerThan": "2026-04-20"}`
+- **Output:** 37 returned · 21 in window · 10 kept · USD 0.0184
+
+### igreels_20260420_02
+- **Scraper:** [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper), 2026-10-19
+- **Why:** public posts: Instagram Reels search, phrases 7 to 9 of 15, since 20 Apr
+- **Input:** `{"searchQueries": ["V Orange", "V Super Soda", "V7 cream soda"], "maxReelsPerTerm": 30, "maxReels": 90, "newerThan": "2026-04-20"}`
+- **Output:** 39 returned · 33 in window · 20 kept · USD 0.0235
+
+### igreels_20260420_03
+- **Scraper:** [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper), 2026-10-19
+- **Why:** public posts: Instagram Reels search, phrases 10 to 12 of 15, since 20 Apr
+- **Input:** `{"searchQueries": ["V7 كريم صودا", "V7 pink lemonade", "V7 بينك ليمونيد"], "maxReelsPerTerm": 30, "maxReels": 90, "newerThan": "2026-04-20"}`
+- **Output:** 30 returned · 29 in window · 12 kept · USD 0.0196
+
+### igreels_20260420_04
+- **Scraper:** [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper), 2026-10-19
+- **Why:** public posts: Instagram Reels search, phrases 13 to 15 of 15, since 20 Apr
+- **Input:** `{"searchQueries": ["V7 رمان", "V7 بلوبيري", "V7 شعير"], "maxReelsPerTerm": 30, "maxReels": 90, "newerThan": "2026-04-20"}`
+- **Output:** 3 returned · 0 in window · 0 kept · USD 0.0034
+
+### vis_posts_202610190625
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** fresh media links for the photos and silent reels Claude read (stopped at 775 of 1,230 when the choice was narrowed)
+- **Input:** `{"note": "stopped: the selection was too wide (1,230 posts); what it fetched is kept"}`
+- **Output:** 775 returned · 0 in window · 0 kept · USD 1.7825
+
+### vis_posts_202610190636
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** fresh media links for the rest, narrowed to posts about V7 or tagging it
+- **Input:** `{"username": "[82 links]"}`
+- **Output:** 82 returned · 0 in window · 0 kept · USD 0.1886
+
+### igspeech_about_202610190625
+- **Scraper:** [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper), 2026-10-19
+- **Why:** speech of the new Instagram reels about V7
+- **Input:** `{"bulkUrls": "[100 links]", "resultsLimit": 100}`
+- **Output:** 100 returned · 0 in window · 0 kept · USD 0.5095
+
+### igspeech_tagged_202610190625
+- **Scraper:** [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper), 2026-10-19
+- **Why:** speech of the new reels that tag V7
+- **Input:** `{"bulkUrls": ["https://www.instagram.com/p/DZnApdJotKC/", "https://www.instagram.com/p/DYjrAXLszxK/", "https://www.instagram.com/p/DaP60RZsloV/", "https://www.instagram.com/p/DaJoWszRytU/", "https://www.instagram.com/p/DXzblhsMN3P/", "https://www.instagram.com/p/DZxH4MUJ7Vd/", "https://www.instagram.com/p/DY52w2biDGz/", "https://www.instagram.com/p/DZp1ZufoTRj/"], "resultsLimit": 8}`
+- **Output:** 8 returned · 0 in window · 0 kept · USD 0.0395
+
+### ig_profiles_202610190635
+- **Scraper:** [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper), 2026-10-19
+- **Why:** follower counts of the new Instagram accounts
+- **Input:** `{"usernames": "[110 items]"}`
+- **Output:** 110 returned · 0 in window · 0 kept · USD 0.2530
+
+### igcm_202610190646
+- **Scraper:** [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper), 2026-10-19
+- **Why:** comments under the public Instagram posts about V7, up to 100 a post (nothing back for 137 of 251 posts)
+- **Input:** `{"postUrls": "[251 links]", "maxCommentsPerPost": 100, "sortOrder": "popular"}`
+- **Output:** 1,221 returned · 1,211 in window · 1,082 kept · USD 0.6106
+
+### igcm_official_202610190652
+- **Scraper:** [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper), 2026-10-19
+- **Why:** comments under the posts scrapesmith returned nothing for
+- **Input:** `{"directUrls": "[137 links]", "resultsLimit": 100, "includeNestedComments": false}`
+- **Output:** 1,438 returned · 1,422 in window · 1,183 kept · USD 3.3074
+
 ## Without Apify
 
 - `yt_pages.py`: V7 Egypt’s YouTube watch pages, read directly for exact dates and counts (free). Its “comments turned off” reading was wrong: the words are in every page’s text. The 18 Oct check with calm_builder found comments on for 27 of the 28 videos.
 - Claude (`label.py`, through Claude Code on the user’s plan) read and labelled every public post and comment.
+- `vis_media.py`: the pictures of Instagram photos and albums, and a frame every 2 seconds of silent and music reels, downloaded from the links Apify’s post scraper returned (free). `vis_read.py`: Claude (Claude Code on the user’s plan, reading images only) wrote down the text on them and what they show. On the 19 Oct sample it read as well as afanasenko’s extractor, which costs USD 0.075 a reel.

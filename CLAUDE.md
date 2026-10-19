@@ -39,7 +39,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
@@ -92,7 +92,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_v27 test_v28 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_v27 test_v28 test_v29 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
@@ -136,13 +136,15 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
      - `wide`: Instagram posts tagging V7's accounts, Instagram keyword search inside the window (seemuapps), Google searches of instagram.com and tiktok.com (finds dated from their ids, then fetched by link), TikTok from Egypt, more spellings on Facebook, X and YouTube.
      - `ytc`: YouTube comments (apidojo) on V7's videos and on the public videos about V7.
      - `igkw`: Instagram keyword search (apidojo + dami_studio, re-fetch by link). `igprofiles`: follower counts. `igspeech`: what's said in reels (speech to text); `label.py` labels reels again once they have speech.
+     - 19 Oct (Version 29): `igcover` (Google one month at a time, every post tagging @v7egypt since 20 Apr, 8 more hashtags, a seemuapps sample; with `igkw --since 2026-04-20`), `igcomments` then `igcomments2` (comments under the public Instagram posts about V7: scrapesmith, then Apify's own scraper for the posts it returned nothing for), `igvisfetch` (fresh media links for the posts whose pictures are read). `vistest`, `vistest2` and `covtest` were the tests.
+     - Pictures: `vis_media.py` (run with `data/.venv/bin/python`, which has ffmpeg) downloads photos and a frame every 2 seconds of a video into `vis/`; `vis_read.py` has Claude Code (bot's sign-in, Read tool only) write the text on them and what they show to `vis_read.json`. `normalize.py` attaches it as `seen` and `label.py` labels the post again (`vs`).
   2. `yt_pages.py`: exact dates for V7's YouTube videos from their public pages (free).
   3. `normalize.py`: one list (`items.json`), Cairo time, deduplicated; collaboration posts filed under their V7 page; replies linked. V Super Soda counts as V7 (DECISIONS #118).
   4. `label.py`: Claude Code with the bot's sign-in (the user's personal Max plan), Opus 5.5 at low effort, 40 items a batch, JSON schema; resumable. `labels.json` holds every label.
   5. `build_real.py --inject`: writes the three blocks. Private people anonymous, @mentions masked (DECISIONS #122); off-topic comments dropped but emoji and tags kept (#120).
   6. `fetch_media.py`, then `../media_13oct/build_media.py --inject`: images for V7's posts, the top abroad posts and the top 80 public posts.
   7. `scrapers_report.py` (with the Apify token in the environment): `SCRAPERS.md` and `runs_final.json`, each run's final charge.
-  - `raw/`, `items.json` and `labels.json` name private people, so they're git-ignored and stay on this machine. Never commit them: the repo is public.
+  - `raw/`, `items.json`, `labels.json`, `vis/` and `vis_read.json` name or show private people, so they're git-ignored and stay on this machine. Never commit them: the repo is public.
 - **V7's own posts** (`data/raw/verify_13oct/`):
   1. `own_pull.py`: Instagram profiles (V7 Egypt, the pages abroad, the UK distributor), V7Egypt's Facebook posts, TikTok and the YouTube channel.
   2. `own_pull2.py`: YouTube likes and dates, the page's followers, and launch comments. Older posts back to 16 Apr: `data/raw/own_backfill_13oct/pull.py` and `yt_pages.py`.
@@ -160,7 +162,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - The bot runs on the user's machine. Restart it with `kill $(cat bot/state/bot.pid)`, then `setsid nohup python3 bot/v7pulse_bot.py >> bot/state/stdout.log 2>&1 < /dev/null &` (never `pkill -f`, which can match your own shell).
 - **Meta and Anthropic:** the Meta token goes in `.env.meta` as `META_SYSTEM_USER_TOKEN=…`. It's a system-user token; scripts get the Page token from it at run time with `/me/accounts`. The Anthropic key goes in `.env.anthropic`. The same rules apply to both: never print them, never put them in the dashboard file, and never ask anyone to paste them in chat.
 - **GitHub:** never print a `gh` token (`gh auth token`, `gh auth status -t`). Creating repos, changing access or settings, or pushing anything public needs the user's OK.
-- **Apify budget:** the Starter plan has USD 19 a month, which is also the hard ceiling (the cycle resets on the 16th). The spend so far is in `PROJECT_MEMORY.md` section 9. Test with 3 to 5 results first, and put a cost cap on every run.
+- **Apify budget:** the Starter plan includes USD 19 a month; since 19 Oct the user's usage limit is USD 100, and anything above USD 19 is billed as overage (the cycle resets on the 16th). The spend so far is in `PROJECT_MEMORY.md` section 9. Test with 3 to 5 results first, and put a cost cap on every run.
 - **Polite fetching:** fetch talabat.com and other sites one request at a time, at least 1 second apart.
 
 ## Known quirks
@@ -182,6 +184,12 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - with ف they don't: في سفن is "in" + "ships" (and 7UP in Saudi posts), so في سفن مشروب got 2 of 30 on Facebook and 0 of 13 on TikTok, في كولا 1 of 30. Don't search the ف spellings;
   - for Arabic on Instagram use the posts that tag V7 and Google's exact-phrase search ("ڤي سڤن" site:instagram.com: 7 of 11), not Instagram's own keyword search.
 - Instagram keyword search uses apidojo plus dami_studio's Reels search (`collect.py igkw`, DECISIONS #133–134): English and mixed phrases, 10 apidojo results and 30 reels per keyword (past 10, apidojo's rows lack captions and likes). Neither returns the account's follower count; apidojo has no share count. Rows without a caption or likes are re-fetched by link with Apify's post scraper (DECISIONS #135); that closes captions, likes, comments and plays, but not hidden likes, follower counts or shares. Instagram's search shuffles results between sessions, and its Reels search (dami_studio) finds reels the posts search misses. No scraper finds everything.
+- Instagram comments: scrapesmith (USD 0.0005 a comment) matched Apify's own scraper on a small test but returned nothing for 137 of 251 posts at full scale. Check what came back per post and send the rest to `apify~instagram-comment-scraper`.
+- apify/instagram-tagged-scraper (19 Oct run) returned "Access delayed. Only the owner of the page can access this information" as `ownerFullName` on 201 of 520 posts. `normalize.py` drops it (`NOT_A_NAME`) and takes the name from the profile scraper, else the handle.
+- dami_studio's Reels search delivers at most 100 reels a run, so `igkw` splits the keywords into runs of three.
+- Google one month at a time (`tbs=cdr:1,cd_min:…,cd_max:…`): share of finds that were new posts about V7, 19 Oct: "@v7egypt" 60%, "V7 cream soda" 41%, "V Cola" 37%, "مشروب V7" 31%, "ڤي سڤن" 24%, but "V7" 5% and "V Orange" 6%. Drop those two.
+- `run()` in `collect.py` skips a run whose `raw/<name>.json` exists, so a stage run again needs a new name (the newer stages add a timestamp).
+- Don't wrap a collect stage in a short `timeout`: the local script dies but the Apify run goes on and is billed. If it happens, save the run's items by its id rather than starting it again.
 - Google's site search only covers what Instagram lets search engines index: public posts and reels since 1 Jan 2020 from accounts that meet Instagram's criteria (no private accounts, no stories). New posts usually reach it within about a day but can take days: on 18 Oct only 1 of its 203 Instagram links was from the last 2 days. Use it alongside the tagged posts and the keyword search, not instead.
 - YouTube:
   - `streamers/youtube-channel-scraper` returns English machine translations of V7's Arabic titles; `calm_builder/youtube-scraper` gives the originals.

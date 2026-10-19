@@ -37,6 +37,9 @@ def clean(s):
     return re.sub(r'[ \t]+', ' ', re.sub('[⁦-⁩‎‏​]', '', str(s or '').replace('\ufffd', ''))).strip()   # U+FFFD: a character the platform already lost
 
 
+NOT_A_NAME = re.compile(r'access delayed|only the owner of the page', re.I)   # 19 Oct: the tagged scraper puts this where it couldn't read a full name
+
+
 def iso(t):
     """Any of the actors' time formats as UTC ISO ('2026-09-10T17:38:16Z')."""
     if t is None or t == '':
@@ -78,6 +81,8 @@ def add(it, run):
         WHY_OUT['no date'] += 1; return
     if not in_window(it['date']):
         WHY_OUT[f'outside the window ({it["src"]} {it["kind"]})'] += 1; return
+    if NOT_A_NAME.search((it.get('author') or {}).get('name') or ''):
+        it['author']['name'] = None
     old = ITEMS.get(it['id'])
     if old:
         old['found_by'] = sorted(set(old['found_by']) | {run})
@@ -238,8 +243,8 @@ def ugc():
                  'fmt': 'Text' if not p.get('attachments') else 'Image', 'group': {'id': g.group(1)} if g else None, 'is_share': bool(p.get('isReshare')),
                  'query': body['input'].get('query')}, f.stem)
     # Instagram: the 17 Oct hashtags, then (18 Oct) posts tagging V7's accounts, Google's finds and Instagram's keyword search
-    for name in ('ig_tags', 'ig_tagged_v7', 'ig_tagged_vss', 'ig_google_posts', 'ig_kw_wide') + tuple(f.stem for f in sorted(RAW.glob('igkw_*_refetch.json'))):
-        kw = name == 'ig_kw_wide'                     # seemuapps' keyword search names its fields differently
+    for name in ('ig_tags', 'ig_tags2', 'ig_tagged_v7', 'ig_tagged_v7_full', 'ig_tagged_vss', 'ig_google_posts', 'ig_google2_posts', 'ig_kw_wide', 'ig_kw_wide2') + tuple(f.stem for f in sorted(RAW.glob('igkw_*_refetch.json'))):
+        kw = name.startswith('ig_kw_wide')           # seemuapps' keyword search names its fields differently
         for p in load(name):
             code = p.get('shortcode') if kw else p.get('shortCode')
             if not code:
@@ -377,8 +382,11 @@ def extras():
                 t = clean(x.get('text'))
                 if x.get('code') and t:
                     speech[x['code']] = t
-    prof = {(x.get('username') or '').lower(): x for x in load('ig_profiles') if x.get('username')}
-    n_sp = n_fol = 0
+    prof = {}
+    for f in sorted(RAW.glob('ig_profiles*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            if x.get('username'): prof[x['username'].lower()] = x
+    n_sp = n_fol = n_name = 0
     for it in ITEMS.values():
         if it['pl'] != 'ig':
             continue
@@ -391,12 +399,41 @@ def extras():
                 a['followers'] = num(pr['followersCount']); n_fol += 1
             if not a.get('verified') and pr.get('verified'):
                 a['verified'] = True
+            if not a.get('name') and clean(pr.get('fullName')):
+                a['name'] = clean(pr['fullName']); n_name += 1
             it['author'] = a
-    print('speech attached to %d Instagram posts | follower counts filled on %d Instagram items' % (n_sp, n_fol))
+    print('speech attached to %d Instagram posts | follower counts filled on %d Instagram items | names from profiles on %d' % (n_sp, n_fol, n_name))
+
+
+def ig_ugc_comments():
+    """19 Oct: comments under public Instagram posts (scrapesmith), anonymous like the others; V7's own accounts count as V7's replies."""
+    for f in sorted(RAW.glob('igcm_*.json')):
+        for c in json.load(open(f, encoding='utf-8'))['items']:
+            code = (c.get('postUrl') or '').rstrip('/').split('/')[-1]
+            pid = 'ig:' + code
+            cid = c.get('commentId') or c.get('id')       # scrapesmith names it commentId, Apify's own scraper id
+            if not cid or pid not in ITEMS:
+                WHY_OUT['IG comment on an unknown post'] += 1; continue
+            u = c.get('username') or c.get('ownerUsername') or ''
+            add({'id': 'igc:' + str(cid), 'kind': 'comment', 'src': ITEMS[pid]['src'], 'pl': 'ig', 'parent': pid, 'date': iso(c.get('timestamp')),
+                 'text': clean(c.get('text')), 'url': c.get('commentUrl') or ITEMS[pid]['url'], 'author': {'name': u, 'handle': u, 'verified': bool(c.get('isVerified'))},
+                 'likes': num(c.get('likesCount')), 'comments': num(c.get('repliesCount')), 'shares': None, 'views': None, 'by_v7': u.lower() in OWN_IG | ABROAD_IG}, f.stem)
+
+
+def seen():
+    """19 Oct: what Claude read in a post's pictures (vis_read.json): the text written on them, what they show, whether V7 is visible."""
+    p = HERE / 'vis_read.json'
+    res = json.load(open(p, encoding='utf-8')) if p.exists() else {}
+    n = 0
+    for it in ITEMS.values():
+        r = res.get(it['id'][3:]) if it['pl'] == 'ig' and it['kind'] == 'post' else None
+        if r:
+            it['seen'] = {k: r[k] for k in ('text', 'shows', 'v7_visible', 'products')}; n += 1
+    print('pictures read for %d Instagram posts' % n)
 
 
 if __name__ == '__main__':
-    own_posts(); comments(); ugc(); yt_comments(); extras()
+    own_posts(); comments(); ugc(); yt_comments(); ig_ugc_comments(); extras(); seen()
     out = list(ITEMS.values())
     json.dump({'made': datetime.date.today().isoformat(), 'window': [SINCE, UNTIL], 'items': out}, open(HERE / 'items.json', 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0)

@@ -28,7 +28,7 @@ img_of = {}    # post link -> (image link or None, kind, platform)
 for x in raw('fb_posts'):
     m = (x.get('media') or [{}])[0] if x.get('media') else {}
     img_of[x['url']] = (m.get('thumbnail') or (m.get('photo_image') or {}).get('uri') or (m.get('image') or {}).get('uri'), 'video' if '/reel/' in x['url'] or x.get('isVideo') else 'image', 'fb')
-for name in ('ig_posts', 'abroad_posts', 'ig_tags', 'ig_tagged_v7', 'ig_tagged_vss', 'ig_google_posts'):
+for name in ('ig_posts', 'abroad_posts', 'ig_tags', 'ig_tags2', 'ig_tagged_v7', 'ig_tagged_v7_full', 'ig_tagged_vss', 'ig_google_posts', 'ig_google2_posts') + tuple(f.stem for f in sorted((HERE / 'raw').glob('vis_posts_*.json'))):
     for x in raw(name):
         if x.get('url'):
             img_of[x['url']] = (x.get('displayUrl'), {'Video': 'video', 'Sidecar': 'carousel'}.get(x.get('type'), 'image'), 'ig')

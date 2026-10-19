@@ -366,7 +366,7 @@ def stage_kwtest():
 # from the posts that tag V7 and from Google's exact-phrase search). One apidojo run per keyword: its item limit is per run, not per keyword.
 KW_IG_EN = ["V7 soda", "V7 drink", "V7 Egypt", "مشروب V7", "V7 كانز", "V Cola", "V Orange", "V Super Soda", "V7 cream soda", "V7 كريم صودا",
             "V7 pink lemonade", "V7 بينك ليمونيد", "V7 رمان", "V7 بلوبيري", "V7 شعير"]
-BUDGET_IGKW = 18.40
+BUDGET_IGKW = 32.0   # 19 Oct: the limit is USD 100 (was 18.40 under the USD 19 ceiling)
 IG_OWN = {'v7egypt', 'v7.egypt', 'vsupersoda', 'v.super.soda'} | set(ABROAD)   # V7's own accounts: collected elsewhere, never re-fetched
 
 
@@ -374,7 +374,7 @@ def ig_gaps(tag):
     """Links of the apidojo rows that came back without a caption or likes (DECISIONS #135), unless dami_studio returned the same
     reel complete. Instagram's own gaps stay: a post with no caption, or likes the owner hid, comes back the same."""
     complete = set()
-    for f in sorted(RAW.glob('igreels_%s.json' % tag)):
+    for f in sorted(RAW.glob('igreels_%s*.json' % tag)):
         for x in json.load(open(f, encoding='utf-8'))['items']:
             if x.get('shortcode') and x.get('caption') and x.get('likeCount') is not None:
                 complete.add(x['shortcode'])
@@ -399,9 +399,11 @@ def stage_igkw():
         run('igkw_%s_%02d' % (since.replace('-', ''), i), IG_KW, {"keywords": [kw], "maxItems": per, "until": since},
             round(0.03 + per * 0.0005 * 1.5, 2), per, budget=BUDGET_IGKW)
     reels = int(a[a.index('--reels') + 1]) if '--reels' in a else 30
-    n = reels * len(KW_IG_EN)    # it takes up to 20 keywords a run; reels older than --since are checked and billed, not delivered
-    run('igreels_%s' % since.replace('-', ''), IG_REELS, {"searchQueries": KW_IG_EN, "maxReelsPerTerm": reels, "maxReels": n, "newerThan": since},
-        round(n * 0.000395 * 2 + 0.05, 2), n + 5, budget=BUDGET_IGKW)
+    per_run = max(1, 100 // reels)   # it delivers at most 100 reels a run, so a few keywords a run; reels older than --since are checked and billed, not delivered
+    for k in range(0, len(KW_IG_EN), per_run):
+        kws = KW_IG_EN[k:k + per_run]; n = reels * len(kws)
+        run('igreels_%s_%02d' % (since.replace('-', ''), k // per_run), IG_REELS, {"searchQueries": kws, "maxReelsPerTerm": reels, "maxReels": n, "newerThan": since},
+            round(n * 0.000395 * 2 + 0.05, 2), n + 5, budget=BUDGET_IGKW)
     # Re-fetch by link what apidojo returned without a caption or likes (Apify's post scraper, USD 0.0023 a post; DECISIONS #135)
     gaps = ig_gaps(since.replace('-', ''))
     log(f'  igkw: {len(gaps)} posts to re-fetch for a missing caption or likes')
@@ -435,7 +437,7 @@ def stage_transcripttest():
 
 SPEECH = 'apple_yang~instagram-transcripts-scraper'   # what's said in a reel (speech to text): USD 0.001 a reel + USD 0.0035 a started minute
 PROFILES = 'apify~instagram-profile-scraper'           # an account's follower count: USD 0.0023 an account
-BUDGET_SPEECH = 18.50                                 # 19 Oct: speech and follower counts may spend up to here (DECISIONS #137, #138)
+BUDGET_SPEECH = 40.0                                 # 19 Oct: speech and follower counts may spend up to here (DECISIONS #137, #138)
 
 
 def _seconds():
@@ -467,7 +469,8 @@ def stage_igspeech():
     second = sorted((i for i in reels if not about(i) and any(r.startswith('ig_tagged') for r in i['found_by'])), key=lambda i: -(i.get('views') or 0))
     secs = _seconds()
     cost = lambda lst: round((sum(math.ceil(secs.get(i['id'][3:], 60) / 60) for i in lst) * 0.0035 + len(lst) * 0.001) * 1.3 + 0.05, 2)
-    for name, lst in (('igspeech_about', first), ('igspeech_tagged', second)):
+    tag = time.strftime('%Y%m%d%H%M')
+    for name, lst in (('igspeech_about_' + tag, first), ('igspeech_tagged_' + tag, second)):
         log(f'  {name}: {len(lst)} reels, cap ${cost(lst):.2f}')
         if lst:
             run(name, SPEECH, {"bulkUrls": [i['url'] for i in lst], "resultsLimit": len(lst)}, cost(lst), len(lst) + 5, budget=BUDGET_SPEECH)
@@ -481,10 +484,132 @@ def stage_igprofiles():
                       and (labels.get(i['id']) or {}).get('about') and (i.get('author') or {}).get('handle') and (i.get('author') or {}).get('followers') is None})
     log(f'  igprofiles: {len(handles)} accounts without a follower count')
     if handles:
-        run('ig_profiles', PROFILES, {"usernames": handles}, round(len(handles) * 0.0023 * 1.3 + 0.05, 2), len(handles) + 5, budget=BUDGET_SPEECH)
+        run('ig_profiles_' + time.strftime('%Y%m%d%H%M'), PROFILES, {"usernames": handles}, round(len(handles) * 0.0023 * 1.3 + 0.05, 2), len(handles) + 5, budget=BUDGET_SPEECH)
 
 
-STAGES = {'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+def stage_vistest():
+    """19 Oct: which method reads music reels and photos best? Step 1: the sample's posts fetched fresh (full-size media links)."""
+    sample = json.load(open(sys.argv[sys.argv.index('--sample') + 1], encoding='utf-8'))
+    urls = [x['url'] for x in sample]
+    run('vis_posts', IG_POSTS, {"username": urls}, round(len(urls) * 0.0023 * 1.3 + 0.05, 2), len(urls), budget=30.0)
+
+
+def stage_vistest2():
+    """19 Oct: the alternatives on the same sample: afanasenko's on-screen-text extractor (USD 0.075 a reel) on 3 reels, and the posts'
+    comments from scrapesmith (USD 0.0005 a comment) and from Apify's own scraper (USD 0.0023) to compare them."""
+    sample = json.load(open(sys.argv[sys.argv.index('--sample') + 1], encoding='utf-8'))
+    urls = [x['url'] for x in sample]
+    reels = ['https://www.instagram.com/reel/Db0cx1pMQ37/', 'https://www.instagram.com/reel/DeFaRKwo4zU/', 'https://www.instagram.com/reel/DZYSInqKZh0/']
+    run('vis_afanasenko', 'afanasenko~instagram-reel-script-extractor', {"reelUrls": reels, "maxItemsMode1": 3}, 0.30, 3, budget=30.0)
+    run('vis_cm_scrapesmith', 'scrapesmith~instagram-comments-scraper', {"postUrls": urls, "maxCommentsPerPost": 20, "sortOrder": "popular"}, 0.15, 170, budget=30.0)
+    run('vis_cm_apify', IG_COMMENTS, {"directUrls": urls, "resultsLimit": 20}, 0.50, 170, budget=30.0)
+
+
+def stage_covtest():
+    """19 Oct: three more ways to find Instagram posts about V7, a few results each: reels that use V7's own ad audio (apidojo, audio
+    pages), Google limited to one month at a time (exact phrase, site:instagram.com), and hashtags not tried before."""
+    import urllib.parse
+    run('cov_audio', IG_KW, {"startUrls": ["https://www.instagram.com/reels/audio/27762052746747139/", "https://www.instagram.com/reels/audio/40046659618266325/"],
+                              "maxItems": 20}, 0.10, 20, budget=30.0)
+    g = lambda q, a, b: 'https://www.google.com/search?' + urllib.parse.urlencode({'q': q + ' site:instagram.com', 'tbs': 'cdr:1,cd_min:%s,cd_max:%s' % (a, b), 'num': 10})
+    run('cov_google_month', GOOGLE, {"queries": '\n'.join([g('"V7"', '6/1/2026', '6/30/2026'), g('"ڤي سڤن"', '6/1/2026', '6/30/2026')]), "maxPagesPerQuery": 1, "countryCode": "eg"},
+        0.50, 4, budget=30.0)
+    run('cov_tags', IG_TAGS, {"hashtags": ['ڤي_سڤن', 'vsupersoda', 'vorange', 'v7drink'], "resultsLimit": 5, "keywordSearch": False}, 0.10, 20, budget=30.0)
+
+
+BUDGET_IG = 40.0     # 19 Oct: closing the Instagram gaps may spend up to here (the limit is USD 100 since 19 Oct; DECISIONS #139)
+MONTHS = [('4/20/2026', '4/30/2026'), ('5/1/2026', '5/31/2026'), ('6/1/2026', '6/30/2026'), ('7/1/2026', '7/31/2026'), ('8/1/2026', '8/31/2026'),
+          ('9/1/2026', '9/30/2026'), ('10/1/2026', '10/16/2026')]
+G_PHRASES = ['"V7"', '"ڤي سڤن"', '"ڤي كولا"', '"V Cola"', '"V7 cream soda"', '"V7 كريم صودا"', '"@v7egypt"', '"V7 Egypt"', '"V Orange"', '"ڤي اورانج"',
+             '"V Super Soda"', '"مشروب V7"']
+
+
+def stage_igcover():
+    """19 Oct (user: close all the Instagram gaps): more Instagram posts about V7 from every route that tested well:
+    - Google one month at a time (12 exact phrases x 7 months, 3 pages each), then the new posts inside the window fetched by link;
+    - the posts tagging @v7egypt back to 20 Apr (the 180 of 18 Oct reached 19 Jun);
+    - 8 hashtags not tried before;
+    - one more keyword sample (seemuapps, English and mixed phrases), since Instagram's search shuffles.
+    The apidojo + dami_studio keyword search runs as `igkw --since 2026-04-20`."""
+    import urllib.parse
+    B = BUDGET_IG
+    g = lambda q, a, b: 'https://www.google.com/search?' + urllib.parse.urlencode({'q': q + ' site:instagram.com', 'tbs': 'cdr:1,cd_min:%s,cd_max:%s' % (a, b)})
+    run('ig_google_months', GOOGLE, {"queries": '\n'.join(g(q, a, b) for q in G_PHRASES for a, b in MONTHS), "maxPagesPerQuery": 3, "countryCode": "eg"},
+        1.00, len(G_PHRASES) * len(MONTHS) * 3, budget=B)
+    have = known_keys()
+    finds = google_finds('ig_google_months', 'ig')
+    new = {k: u for k, u in finds.items() if ('ig:' + k) not in have and SINCE <= (id_day('ig', k) or '') <= UNTIL}
+    log(f'  ig_google_months: {len(finds)} post links, {len(new)} new inside the window')
+    if new:
+        run('ig_google2_posts', IG_POSTS, {"username": list(new.values())}, round(len(new) * 0.0023 * 1.3 + 0.05, 2), len(new), budget=B)
+    run('ig_tagged_v7_full', IG_TAGGED, {"username": ["v7egypt"], "resultsLimit": 520}, 1.40, 520, budget=B)
+    run('ig_tags2', IG_TAGS, {"hashtags": ['ڤي_سڤن', 'vsupersoda', 'vorange', 'v7drink', 'v7creamsoda', 'ڤي_كولا', 'vcolaegypt', 'ڤي_اورانج'], "resultsLimit": 30,
+                              "keywordSearch": False}, 0.70, 240, budget=B)
+    run('ig_kw_wide2', IG_KW_SEEMUAPPS, {"keywords": ["V Super Soda", "V7 cream soda", "V7 كريم صودا", "V7 pink lemonade", "V7 بينك ليمونيد", "V7 رمان",
+                                                      "V7 بلوبيري", "V7 شعير", "V7 كانز"], "maxPostsPerKeyword": 30, "dateFrom": SINCE, "dateTo": UNTIL}, 0.60, 270, budget=B)
+
+
+IG_CM_CHEAP = 'scrapesmith~instagram-comments-scraper'   # USD 0.0005 a comment; same comments as Apify's own (75 of 86 in the 19 Oct test)
+
+
+def _ig_public(about_only=True):
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    out = [i for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'ig' and i.get('url')]
+    return [i for i in out if (labels.get(i['id']) or {}).get('about')] if about_only else out, labels
+
+
+def stage_igcomments():
+    """19 Oct (DECISIONS #141): the comments under the public Instagram posts about V7, up to 100 a post, most liked first (scrapesmith).
+    They add what people say about V7 under other people's posts. Posts already done are skipped."""
+    posts, _ = _ig_public()
+    done = set()
+    for f in RAW.glob('igcm_*.json'):
+        done |= {(x.get('postUrl') or '').rstrip('/').split('/')[-1] for x in json.load(open(f, encoding='utf-8'))['items']}
+    todo = [i for i in posts if (i.get('comments') or 0) > 0 and i['id'][3:] not in done]
+    n = sum(min(i['comments'], 100) for i in todo)
+    log(f'  igcomments: {len(todo)} posts, about {n} comments')
+    if todo:
+        tag = time.strftime('%Y%m%d%H%M')
+        run('igcm_' + tag, IG_CM_CHEAP, {"postUrls": [i['url'] for i in todo], "maxCommentsPerPost": 100, "sortOrder": "popular"},
+            round(n * 0.0005 * 1.3 + 0.05, 2), n + 50, budget=BUDGET_IG)
+
+
+def stage_igvisfetch():
+    """19 Oct (DECISIONS #140): fresh media links for the Instagram posts whose pictures Claude will read (vis_media.py, vis_read.py):
+    posts about V7 that are photos, albums, or reels without usable speech, and posts that tag or hashtag V7 but whose text didn't show
+    it. Posts already read are skipped."""
+    posts, labels = _ig_public(about_only=False)
+    read = json.load(open(HERE / 'vis_read.json', encoding='utf-8')) if (HERE / 'vis_read.json').exists() else {}
+    about = lambda i: (labels.get(i['id']) or {}).get('about')
+    quiet = lambda i: i.get('fmt') in ('Image', 'Album') or len(i.get('speech') or '') < 20
+    signal = lambda i: any(r.startswith(('ig_tagged', 'ig_tags')) for r in i['found_by'])
+    fetched = set()
+    for f in RAW.glob('vis_posts*.json'):
+        fetched |= {x.get('shortCode') for x in json.load(open(f, encoding='utf-8'))['items'] if x.get('shortCode')}
+    todo = [i for i in posts if i['id'][3:] not in read and i['id'][3:] not in fetched and quiet(i) and (about(i) or signal(i))]
+    log(f'  igvisfetch: {len(todo)} posts ({sum(1 for i in todo if about(i))} about V7, {sum(1 for i in todo if not about(i))} to check)')
+    if todo:
+        tag = time.strftime('%Y%m%d%H%M')
+        run('vis_posts_' + tag, IG_POSTS, {"username": [i['url'] for i in todo]}, round(len(todo) * 0.0023 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_IG)
+
+
+def stage_igcomments2():
+    """19 Oct: scrapesmith returned nothing for 137 of 251 posts (DECISIONS #141), so the posts with no comments collected get them from
+    Apify's own comment scraper (USD 0.0023 a comment), up to 100 a post."""
+    posts, _ = _ig_public()
+    done = set()
+    for f in RAW.glob('igcm_*.json'):
+        done |= {(x.get('postUrl') or '').rstrip('/').split('/')[-1] for x in json.load(open(f, encoding='utf-8'))['items']}
+    todo = [i for i in posts if (i.get('comments') or 0) > 0 and i['id'][3:] not in done]
+    n = sum(min(i['comments'], 100) for i in todo)
+    log(f'  igcomments2: {len(todo)} posts without comments, about {n} comments')
+    if todo:
+        run('igcm_official_' + time.strftime('%Y%m%d%H%M'), IG_COMMENTS, {"directUrls": [i['url'] for i in todo], "resultsLimit": 100, "includeNestedComments": False},
+            round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_IG)
+
+
+STAGES = {'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

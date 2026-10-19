@@ -30,3 +30,7 @@ data/raw/real_17oct/items.json
 data/raw/real_17oct/labels.json
 data/raw/real_17oct/labels_sample.json
 data/raw/real_17oct/*.out
+
+# post images and video frames read for on-screen text (people's media): local only
+data/raw/real_17oct/vis/
+data/raw/real_17oct/vis_read.json

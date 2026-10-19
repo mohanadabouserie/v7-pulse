@@ -118,6 +118,7 @@ if __name__ == '__main__':
 
     # ------------------------------------------------ public posts about V7 (UGC)
     RUNS_18 = {'ig_tagged_v7', 'ig_tagged_vss', 'ig_kw_wide', 'ig_google_posts', 'tt_google_posts', 'tt_tags_wide', 'tt_wide', 'yt_recent', 'x_extra'} | {'fb_search_%02d' % n for n in range(12, 18)}
+    RUNS_19 = ('kw_', 'igkw_', 'igreels_', 'ig_google2_posts', 'ig_tagged_v7_full', 'ig_tags2', 'ig_kw_wide2', 'vis_posts')   # run names (prefixes) of 19 Oct, Versions 27 to 29
     UGC, ugc_id, ugc_cty, rumor = [], {}, {}, []
     for i in sorted((i for i in items if i['src'] == 'ugc' and i['kind'] == 'post'), key=lambda i: i['date']):   # (comments under public videos come later)
         lab = labels.get(i['id'])
@@ -136,9 +137,10 @@ if __name__ == '__main__':
                     'shares': i.get('shares') or 0, 'gov': lab['gov'], 'cty': cty or 'XX', 'seg': lab['seg'], 'en': lab['en'], 'url': i['url'], 'fmt': i.get('fmt') or 'Text',
                     'needsReply': bool(lab['reply'] and i['pl'] in ('fb', 'ig', 'tt', 'yt')), 'place': i.get('place') or i.get('region') or None,
                     'claim': lab['claim'], 'stance': lab['stance'], 'isReply': 1 if i.get('is_reply') else 0,
-                    'asof': 18 if i.get('counts_from') in RUNS_18 else 0,   # its numbers are as of 18 Oct (the wider search) or 17 Oct
+                    'asof': 19 if (i.get('counts_from') or '').startswith(RUNS_19) else 18 if i.get('counts_from') in RUNS_18 else 0,   # its numbers are as of 19 Oct, 18 Oct (the wider search) or 17 Oct
                     'lh': 1 if i.get('likes') is None else 0,   # no like count from any source: on Instagram, the account hid it
-                    'sp': 1 if i.get('speech') and lab.get('sp') else 0})   # labelled with what's said in the video (19 Oct)
+                    'sp': 1 if i.get('speech') and lab.get('sp') else 0,   # labelled with what's said in the video (19 Oct)
+                    'vs': 1 if i.get('seen') and lab.get('vs') else 0})   # labelled with what's written or shown in its pictures (19 Oct)
         if lab['claim']:
             rumor.append(k)
     report['public posts about V7'] = len(UGC)

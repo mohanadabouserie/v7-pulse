@@ -1,4 +1,4 @@
-"""Writes SCRAPERS.md: every Apify run of the real-data collection (17 and 18 Oct 2026) with the scraper's link, the input it was
+"""Writes SCRAPERS.md: every Apify run of the real-data collection (17 to 19 Oct 2026) with the scraper's link, the input it was
 given, what came back, what the dashboard kept, and the cost. Read from raw/ (each run's saved input, run record and items),
 items.json (what fell inside the window) and labels.json (what Claude judged to be about V7). Counts only: no names.
 Usage: python3 scrapers_report.py"""
@@ -33,6 +33,8 @@ ACTORS = {   # actor id -> (Apify Store link, what it is)
     'IGSEARCH': ('apify/instagram-search-scraper', 'Instagram popular reels for a keyword'),
     'SPEECH': ('apple_yang/instagram-transcripts-scraper', 'What is said in Instagram reels (speech to text)'),
     'PROFILES': ('apify/instagram-profile-scraper', 'Instagram accounts (follower counts)'),
+    'AFANASENKO': ('afanasenko/instagram-reel-script-extractor', 'On-screen text and speech of Instagram reels'),
+    'IG_CM_CHEAP': ('scrapesmith/instagram-comments-scraper', 'Instagram comments (cheaper, but returned nothing for half the posts)'),
 }
 RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('t_fb_posts', 'FB_POSTS', '17 Oct test: 3 of V7 Egypt’s Facebook posts'),
@@ -102,6 +104,28 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('ig_profiles', 'PROFILES', 'follower counts of the 175 Instagram accounts that posted about V7 without one'),
     ('igspeech_about', 'SPEECH', 'speech of the 163 Instagram reels about V7'),
     ('igspeech_tagged', 'SPEECH', 'speech of the 32 reels that tag V7 but whose caption alone did not show it'),
+    ('vis_posts', 'IG_POSTS', '19 Oct test: 8 sample posts fetched again by link, for their full-size pictures and videos'),
+    ('vis_afanasenko', 'AFANASENKO', '19 Oct test: on-screen text of 3 music reels, to compare with Claude reading their frames'),
+    ('vis_cm_scrapesmith', 'IG_CM_CHEAP', '19 Oct test: the comments on the 8 sample posts'),
+    ('vis_cm_apify', 'IG_COMMENTS', '19 Oct test: the same comments with Apify’s own scraper'),
+    ('cov_audio', 'APIDOJO', '19 Oct test: reels that use the audio of V7’s own ads'),
+    ('cov_google_month', 'GOOGLE', '19 Oct test: Google limited to one month (June)'),
+    ('cov_tags', 'IG_TAGS', '19 Oct test: 4 hashtags not tried before'),
+    ('ig_google_months', 'GOOGLE', 'public posts: Google search of instagram.com, 12 exact phrases, one month at a time'),
+    ('ig_google2_posts', 'IG_POSTS', 'the new Instagram posts Google found month by month, by link'),
+    ('ig_tagged_v7_full', 'IG_TAGGED', 'public posts: every Instagram post tagging @v7egypt back to 20 Apr'),
+    ('ig_tags2', 'IG_TAGS', 'public posts: 8 more Instagram hashtags'),
+    ('ig_kw_wide2', 'IG_KW', 'public posts: one more Instagram keyword sample, 9 phrases, inside the window'),
+] + [('igkw_20260420_%02d' % i, 'APIDOJO', 'public posts: Instagram keyword search, phrase %d of 15, since 20 Apr' % (i + 1)) for i in range(15)] + [
+    ('igkw_20260420_refetch', 'IG_POSTS', 'the posts that keyword search returned without a caption or likes, by link'),
+] + [('igreels_20260420_%02d' % i, 'DAMI', 'public posts: Instagram Reels search, phrases %d to %d of 15, since 20 Apr' % (3 * i + 1, 3 * i + 3)) for i in range(5)] + [
+    ('vis_posts_202610190625', 'IG_POSTS', 'fresh media links for the photos and silent reels Claude read (stopped at 775 of 1,230 when the choice was narrowed)'),
+    ('vis_posts_202610190636', 'IG_POSTS', 'fresh media links for the rest, narrowed to posts about V7 or tagging it'),
+    ('igspeech_about_202610190625', 'SPEECH', 'speech of the new Instagram reels about V7'),
+    ('igspeech_tagged_202610190625', 'SPEECH', 'speech of the new reels that tag V7'),
+    ('ig_profiles_202610190635', 'PROFILES', 'follower counts of the new Instagram accounts'),
+    ('igcm_202610190646', 'IG_CM_CHEAP', 'comments under the public Instagram posts about V7, up to 100 a post (nothing back for 137 of 251 posts)'),
+    ('igcm_official_202610190652', 'IG_COMMENTS', 'comments under the posts scrapesmith returned nothing for'),
 ]
 
 
@@ -187,7 +211,10 @@ def main():
     lines += ['## Without Apify', '',
               '- `yt_pages.py`: V7 Egypt’s YouTube watch pages, read directly for exact dates and counts (free). Its “comments turned off” reading was wrong: '
               'the words are in every page’s text. The 18 Oct check with calm_builder found comments on for 27 of the 28 videos.',
-              '- Claude (`label.py`, through Claude Code on the user’s plan) read and labelled every public post and comment.', '']
+              '- Claude (`label.py`, through Claude Code on the user’s plan) read and labelled every public post and comment.',
+              '- `vis_media.py`: the pictures of Instagram photos and albums, and a frame every 2 seconds of silent and music reels, downloaded from the '
+              'links Apify’s post scraper returned (free). `vis_read.py`: Claude (Claude Code on the user’s plan, reading images only) wrote down '
+              'the text on them and what they show. On the 19 Oct sample it read as well as afanasenko’s extractor, which costs USD 0.075 a reel.', '']
     (HERE / 'SCRAPERS.md').write_text('\n'.join(lines), encoding='utf-8')
     print('SCRAPERS.md: %d runs, %d scrapers, USD %.2f' % (len(rows), len(by_actor), tot))
 

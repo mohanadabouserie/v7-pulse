@@ -150,3 +150,86 @@
 2026-10-19 02:18    igspeech_tagged: 32 reels, cap $0.28
 2026-10-19 02:21  igspeech_tagged  instagram-transcripts-scrape SUCCEEDED     32 items  $0.1922  (cap $0.28)  total $18.1436  events {'apify-default-dataset-item': 31, 'speech2text': 42}
 2026-10-19 02:21  --- stage igspeech done, spent this cycle $18.1436
+2026-10-19 05:05  --- stage vistest, spent so far this cycle $18.1633, budget $14.00
+2026-10-19 05:05  vis_posts        instagram-post-scraper       SUCCEEDED      8 items  $0.0184  (cap $0.07)  total $18.1817  events {'post': 8, 'post-details': 8, 'music-data': 0}
+2026-10-19 05:05  --- stage vistest done, spent this cycle $18.1817
+2026-10-19 05:09  --- stage vistest2, spent so far this cycle $18.1817, budget $14.00
+2026-10-19 05:10  vis_afanasenko   instagram-reel-script-extrac SUCCEEDED      3 items  $0.2250  (cap $0.30)  total $18.4068  events {'REEL_ANALYZED': 3}
+2026-10-19 05:10  vis_cm_scrapesmith instagram-comments-scraper   SUCCEEDED     86 items  $0.0001  (cap $0.15)  total $18.4069  events {'apify-actor-start': 1, 'apify-default-dataset-item': 86}
+2026-10-19 05:11  vis_cm_apify     instagram-comment-scraper    SUCCEEDED     86 items  $0.2202  (cap $0.50)  total $18.6270  events {'comment': 86}
+2026-10-19 05:11  --- stage vistest2 done, spent this cycle $18.6270
+2026-10-19 05:12  --- stage covtest, spent so far this cycle $18.6478, budget $14.00
+2026-10-19 05:13  cov_audio        instagram-scraper-api        SUCCEEDED      2 items  $0.0100  (cap $0.10)  total $18.6578  events {'dataset-item': 0, 'audio-query': 2, 'user-query': 0, 'location-query': 0, 'tag-query': 0, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 05:14  cov_google_month google-search-scraper        SUCCEEDED      2 items  $0.0051  (cap $0.50)  total $18.6629  events {'search-page-scraped': 2, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-19 05:15  cov_tags         instagram-hashtag-scraper    SUCCEEDED     20 items  $0.0345  (cap $0.10)  total $18.6974  events {'result': 15}
+2026-10-19 05:15  --- stage covtest done, spent this cycle $18.6974
+2026-10-19 05:15  --- stage igcover, spent so far this cycle $18.7089, budget $14.00
+2026-10-19 05:32  ig_google_months google-search-scraper        SUCCEEDED    190 items  $0.4478  (cap $1.00)  total $19.1567  events {'search-page-scraped': 179, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-19 05:32    ig_google_months: 1036 post links, 882 new inside the window
+2026-10-19 05:41  ig_google2_posts instagram-post-scraper       SUCCEEDED    882 items  $2.0266  (cap $2.69)  total $21.1833  events {'post': 881, 'post-details': 881, 'music-data': 0}
+2026-10-19 06:05  --- stage igkw, spent so far this cycle $22.0022, budget $14.00
+2026-10-19 06:06  igkw_20260420_00 instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $22.0022  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:06  igkw_20260420_01 instagram-scraper-api        SUCCEEDED     10 items  $0.0633  (cap $0.04)  total $22.0655  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:06  igkw_20260420_02 instagram-scraper-api        SUCCEEDED     10 items  $0.0300  (cap $0.04)  total $22.0955  events {'dataset-item': 3, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:07  igkw_20260420_03 instagram-scraper-api        SUCCEEDED     10 items  $0.0648  (cap $0.04)  total $22.1603  events {'dataset-item': 4, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:07  igkw_20260420_04 instagram-scraper-api        SUCCEEDED     10 items  $0.0170  (cap $0.04)  total $22.1774  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:08  igkw_20260420_05 instagram-scraper-api        SUCCEEDED     10 items  $0.0633  (cap $0.04)  total $22.2407  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:08  igkw_20260420_06 instagram-scraper-api        SUCCEEDED     10 items  $0.0150  (cap $0.04)  total $22.2557  events {'dataset-item': 1, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:09  igkw_20260420_07 instagram-scraper-api        SUCCEEDED     10 items  $0.0155  (cap $0.04)  total $22.2712  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:09  igkw_20260420_08 instagram-scraper-api        SUCCEEDED     10 items  $0.0513  (cap $0.04)  total $22.3225  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:09  igkw_20260420_09 instagram-scraper-api        SUCCEEDED     10 items  $0.0300  (cap $0.04)  total $22.3525  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:11  igkw_20260420_10 instagram-scraper-api        SUCCEEDED     10 items  $0.1156  (cap $0.04)  total $22.4682  events {'dataset-item': 9, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:11  igkw_20260420_11 instagram-scraper-api        SUCCEEDED     10 items  $0.0005  (cap $0.04)  total $22.4687  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:11  igkw_20260420_12 instagram-scraper-api        SUCCEEDED     10 items  $0.0626  (cap $0.04)  total $22.5313  events {'dataset-item': 10, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:12  igkw_20260420_13 instagram-scraper-api        SUCCEEDED     10 items  $0.0150  (cap $0.04)  total $22.5463  events {'dataset-item': 10, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:12  igkw_20260420_14 instagram-scraper-api        SUCCEEDED     10 items  $0.0150  (cap $0.04)  total $22.5939  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-19 06:12  igreels_20260420: could not start: HTTP 400 b'{\n  "error": {\n    "type": "invalid-input",\n    "message": "Input is not valid: Field input.maxReels must be <= 100"\n  }\n}'
+2026-10-19 06:12    igkw: 45 posts to re-fetch for a missing caption or likes
+2026-10-19 06:13  igkw_20260420_refetch instagram-post-scraper       SUCCEEDED     45 items  $0.1035  (cap $0.18)  total $22.6974  events {'post': 45, 'post-details': 45, 'music-data': 0}
+2026-10-19 06:13  --- stage igkw done, spent this cycle $22.7250
+2026-10-19 06:14  ig_tagged_v7_full instagram-tagged-scraper     SUCCEEDED   520 items  $1.1960  (cap $1.40)  saved after the local stage timed out
+2026-10-19 06:14  --- stage igcover, spent so far this cycle $22.7346, budget $14.00
+2026-10-19 06:14    ig_google_months: 1036 post links, 18 new inside the window
+2026-10-19 06:14  ig_tags2         instagram-hashtag-scraper    SUCCEEDED    110 items  $0.2553  (cap $0.70)  total $22.9899  events {'result': 110}
+2026-10-19 06:16  ig_kw_wide2      instagram-keyword-posts-scra SUCCEEDED    261 items  $0.5311  (cap $0.60)  total $23.5210  events {'post-result': 261, 'filtered-search-page': 31}
+2026-10-19 06:16  --- stage igcover done, spent this cycle $23.5210
+2026-10-19 06:16  --- stage igkw, spent so far this cycle $23.5210, budget $14.00
+2026-10-19 06:17  igreels_20260420_00 instagram-reels-search-scrap SUCCEEDED     42 items  $0.0242  (cap $0.12)  total $23.5452  events {'item': 41, 'apify-actor-start': 1, 'reel-checked': 17}
+2026-10-19 06:18  igreels_20260420_01 instagram-reels-search-scrap SUCCEEDED     37 items  $0.0184  (cap $0.12)  total $23.5636  events {'item': 35, 'apify-actor-start': 1, 'reel-checked': 9}
+2026-10-19 06:20  igreels_20260420_02 instagram-reels-search-scrap SUCCEEDED     39 items  $0.0236  (cap $0.12)  total $23.5872  events {'item': 38, 'apify-actor-start': 1, 'reel-checked': 19}
+2026-10-19 06:21  igreels_20260420_03 instagram-reels-search-scrap SUCCEEDED     30 items  $0.0184  (cap $0.12)  total $23.6056  events {'item': 29, 'apify-actor-start': 1, 'reel-checked': 18}
+2026-10-19 06:21  igreels_20260420_04 instagram-reels-search-scrap SUCCEEDED      3 items  $0.0022  (cap $0.12)  total $23.6091  events {'item': 0, 'apify-actor-start': 1, 'reel-checked': 6}
+2026-10-19 06:21    igkw: 36 posts to re-fetch for a missing caption or likes
+2026-10-19 06:21  --- stage igkw done, spent this cycle $23.6091
+2026-10-19 06:24  --- stage igspeech, spent so far this cycle $23.6103, budget $14.00
+2026-10-19 06:24    igspeech_about: 100 reels, cap $0.75
+2026-10-19 06:24    igspeech_tagged: 8 reels, cap $0.10
+2026-10-19 06:24  --- stage igspeech done, spent this cycle $23.6103
+2026-10-19 06:24  --- stage igprofiles, spent so far this cycle $23.6103, budget $14.00
+2026-10-19 06:24    igprofiles: 110 accounts without a follower count
+2026-10-19 06:24  --- stage igprofiles done, spent this cycle $23.6103
+2026-10-19 06:24  --- stage igvisfetch, spent so far this cycle $23.6103, budget $14.00
+2026-10-19 06:24    igvisfetch: 1230 posts (325 about V7, 905 to check)
+2026-10-19 06:25  vis_posts_202610190625 instagram-post-scraper ABORTED 775 items  $1.7825  (stopped: selection too wide; kept)
+2026-10-19 06:25  --- stage igspeech, spent so far this cycle $25.3928, budget $14.00
+2026-10-19 06:25    igspeech_about_202610190625: 100 reels, cap $0.75
+2026-10-19 06:34  igspeech_about_202610190625 instagram-transcripts-scrape SUCCEEDED    100 items  $0.5036  (cap $0.75)  total $25.8964  events {'apify-default-dataset-item': 99, 'speech2text': 115}
+2026-10-19 06:34    igspeech_tagged_202610190625: 8 reels, cap $0.10
+2026-10-19 06:35  igspeech_tagged_202610190625 instagram-transcripts-scrape SUCCEEDED      8 items  $0.0386  (cap $0.10)  total $25.9350  events {'apify-default-dataset-item': 6, 'speech2text': 7}
+2026-10-19 06:35  --- stage igspeech done, spent this cycle $25.9350
+2026-10-19 06:35  --- stage igprofiles, spent so far this cycle $25.9350, budget $14.00
+2026-10-19 06:35    igprofiles: 110 accounts without a follower count
+2026-10-19 06:36  ig_profiles_202610190635 instagram-profile-scraper    SUCCEEDED    110 items  $0.2620  (cap $0.38)  total $26.1970  events {'profile': 109, 'about-account': 0}
+2026-10-19 06:36  --- stage igprofiles done, spent this cycle $26.1970
+2026-10-19 06:36  --- stage igvisfetch, spent so far this cycle $26.1970, budget $14.00
+2026-10-19 06:36    igvisfetch: 82 posts (80 about V7, 2 to check)
+2026-10-19 06:46  vis_posts_202610190636 instagram-post-scraper       SUCCEEDED     82 items  $0.1901  (cap $0.30)  total $26.3871  events {'post': 79, 'post-details': 79, 'music-data': 0}
+2026-10-19 06:46  --- stage igvisfetch done, spent this cycle $26.3871
+2026-10-19 06:46  --- stage igcomments, spent so far this cycle $26.3871, budget $14.00
+2026-10-19 06:46    igcomments: 251 posts, about 4386 comments
+2026-10-19 06:49  igcm_202610190646 instagram-comments-scraper   SUCCEEDED   1221 items  $0.6108  (cap $2.90)  total $26.9979  events {'apify-actor-start': 1, 'apify-default-dataset-item': 1221}
+2026-10-19 06:49  --- stage igcomments done, spent this cycle $26.9979
+2026-10-19 06:52  --- stage igcomments2, spent so far this cycle $26.9986, budget $14.00
+2026-10-19 06:52    igcomments2: 137 posts without comments, about 2571 comments
+2026-10-19 06:53  igcm_official_202610190652 instagram-comment-scraper    SUCCEEDED   1438 items  $3.3074  (cap $7.15)  total $30.3061  events {'comment': 1438}
+2026-10-19 06:53  --- stage igcomments2 done, spent this cycle $30.3061

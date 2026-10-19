@@ -23,7 +23,7 @@ async def main():
         check('the conversation is split: comments under V7’s posts, under other people’s posts, public posts', m and 0<int(m.group(1))<100 and 'Comments under other people’s posts' in where and 'Public posts about V7' in where, m and m.group(0))   # v26: 26% under V7’s posts in the last 30 days (Kareem Elsayed’s video drew ~600 comments); it was 55–75% before
         await click('#kindSeg [data-kind=posts]')
         n=int((await J("document.querySelector('.kpi .k-v').textContent")).replace(',',''))
-        check('public posts at real volume: a few a day (the 17 Oct collection)', 15<=n<=150, n)   # Version 25: real data everywhere
+        check('public posts at real volume: a few a day', 15<=n<=300, n)   # Version 25: real data everywhere; v29: the wider Instagram search, about 6 a day in the last 30 days
         await click('#kindSeg [data-kind=both]')
         txt=await J("document.getElementById('content').innerText")
         check('no emotion labels', 'emotion' not in txt.lower() and 'Anticipation' not in txt)
