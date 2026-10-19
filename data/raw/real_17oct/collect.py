@@ -33,10 +33,16 @@ X_NOISE = ' -هافال -Haval -Raptor -midjourney -Vivo -Honor -Jaecoo -Chery'
 
 
 def api(method, path, body=None, timeout=60):
-    req = urllib.request.Request('https://api.apify.com/v2' + path, method=method,
-                                 data=None if body is None else json.dumps(body).encode(),
-                                 headers={'Authorization': 'Bearer ' + TOK, 'Content-Type': 'application/json'})
-    return json.load(urllib.request.urlopen(req, timeout=timeout))
+    for attempt in range(4):   # 19 Oct: a 502 from Apify's API stopped a stage mid-way; reads are retried, starting a run is not
+        req = urllib.request.Request('https://api.apify.com/v2' + path, method=method,
+                                     data=None if body is None else json.dumps(body).encode(),
+                                     headers={'Authorization': 'Bearer ' + TOK, 'Content-Type': 'application/json'})
+        try:
+            return json.load(urllib.request.urlopen(req, timeout=timeout))
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
+            if method != 'GET' or attempt == 3 or (isinstance(e, urllib.error.HTTPError) and e.code < 500):
+                raise
+            time.sleep(10 * (attempt + 1))
 
 
 def spent():
@@ -732,7 +738,7 @@ FB_GROUPS = 'lofomachines~facebook-groups-posts-search-scraper'
 FB_REEL_DETAILS, FB_VIDEO_DETAILS = 'alpha-scraper~facebook-reels-details-scraper-pro', 'alpha-scraper~facebook-video-details-scraper'
 FB_POST_LINK, FB_PLAYS, FB_PAGES = 'danek~facebook-posts-fast', 'social_developer~facebook-playcount-scraper', 'apify~facebook-pages-scraper'
 FB_SPEECH, FB_CM_CHEAP = 'invideoiq~video-transcriber', 'thedoor~facebook-comment-scraper'
-BUDGET_FB = 62.00   # 19 Oct: the Facebook work may spend up to here on the meter (USD 100 limit; about USD 34.1 spent before it)
+BUDGET_FB = 80.00   # 19 Oct: the Facebook work may spend up to here on the meter (USD 100 limit; about USD 34.1 spent before it; raised from 62 for the reel and extra searches)
 
 
 def stage_fbcover():
@@ -875,7 +881,7 @@ def stage_fbviews():
     todo = [i for i in posts if (labels.get(i['id']) or {}).get('about') and i.get('fmt') in ('Reel', 'Video') and not i.get('views')]
     log(f'  fbviews: {len(todo)} video posts without plays')
     if todo:
-        run('fbd_posts_views', FB_POST_LINK, {"direct_urls": [{"url": i['url']} for i in todo]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
+        run('fbd_posts_views' + ('_' + time.strftime('%Y%m%d%H%M') if (RAW / 'fbd_posts_views.json').exists() else ''), FB_POST_LINK, {"direct_urls": [{"url": i['url']} for i in todo]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
 
 
 def stage_fbnames():
@@ -884,7 +890,90 @@ def stage_fbnames():
     todo = [i for i in posts if (labels.get(i['id']) or {}).get('about') and not (i.get('author') or {}).get('name')]
     log(f'  fbnames: {len(todo)} posts without the account name')
     if todo:
-        run('fbd_posts_names', FB_POST_LINK, {"direct_urls": [{"url": i['url']} for i in todo]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
+        run('fbd_posts_names' + ('_' + time.strftime('%Y%m%d%H%M') if (RAW / 'fbd_posts_names.json').exists() else ''), FB_POST_LINK, {"direct_urls": [{"url": i['url']} for i in todo]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
+
+
+FB_REEL_K = ['V7 كريم صودا', 'V7 cream soda', 'ڤي كولا', 'ڤي سڤن']
+BUDGET_FBREEL = 70.00   # 19 Oct: the reel comparison and the reel search after it may spend up to here on the meter (55.21 spent before them)
+
+
+def stage_fbreeltest():
+    """19 Oct (user: "u didn't use overlapping scrapers like we did with instagram"): every keyword search for Facebook reels and videos
+    on the same four keywords, 20 results each, to see which reels each one finds and misses (fbreel_report.py). The reels' dates and
+    text come from fetching them by link afterwards (fbreeldetails)."""
+    todo = []
+    go = lambda *a: todo.append(a)
+    for i, k in enumerate(FB_REEL_K, 1):
+        go(f'fbrt_apifyreels_{i}', FB_APIFY_SEARCH, {"categories": [k], "searchType": "reels", "resultsLimit": 20}, 0.15, 20)
+        go(f'fbrt_alien_{i}', 'alien_force~facebook-search-scraper', {"search_type": "posts", "keyword": k, "only_reels": True, "follow_post_scraping": True,
+                                                                      "results_limit": 20, "start_date": SINCE, "end_date": UNTIL}, 0.30, 20)
+        go(f'fbrt_apifyvideo_{i}', FB_V_APIFY, {"searchTerm": k, "resultsLimit": 20}, 0.15, 20)
+        go(f'fbrt_igview_{i}', 'igview-owner~facebook-search-scraper', {"query": k, "maxPages": 2}, 0.12, 40)
+        go(f'fbrt_lexis_{i}', 'lexis-solutions~facebook-videos-watch-scraper', {"query": k, "maxItems": 20}, 0.25, 20)
+        go(f'fbrt_easyapi_{i}', 'easyapi~facebook-videos-scraper', {"query": k, "maxItems": 20}, 0.20, 20)
+    go('fbrt_headply', FB_V_HEADPLY, {"searchQueries": FB_REEL_K, "maxItemsPerTarget": 20, "mode": "videoSearch"}, 0.45, 80)
+    go('fbrt_axesso', FB_V_AXESSO, {"input": [{"keyword": k, "sort": "RELEVANCE", "maxPosts": 20} for k in FB_REEL_K]}, 0.10, 80)
+    go('fbrt_sasky', 'sasky~facebook-keyword-videos-urls-scraper', {"keywords": FB_REEL_K, "date": "last-6-months", "limit": "80"}, 0.70, 80)
+    go('fbrt_nataniel', 'natanielsantos~facebook-video-search-scraper', {"searchTerms": FB_REEL_K, "maxItems": 20}, 0.40, 80)
+    go('fbrt_thenetaji', 'thenetaji~facebook-video-search-scraper', {"searchQuery": FB_REEL_K, "maxItems": 20}, 0.30, 80)
+    go('fbrt_autolab', 'automation-lab~facebook-public-video-search-results', {"searchQueries": FB_REEL_K, "maxItems": 80, "maxScrolls": 8}, 0.40, 80)
+    go('fbrt_google', 'simple.actor~google-short-videos', {"queries": ['"%s"' % k for k in FB_REEL_K], "maxItems": 24, "platform": "facebook", "timeRange": "year",
+                                                          "country": "EG", "language": "ar"}, 0.20, 96)
+    parallel(todo, BUDGET_FBREEL)
+
+
+def stage_fbreeldetails():
+    """19 Oct: the reels and videos the reel comparison found that the collection doesn't have yet (fbreel_report.py --todo writes
+    fbreel_todo.json), fetched by link with danek's details scraper (text, time, counts, plays), so they can be labelled and scored."""
+    todo = json.load(open(HERE / 'fbreel_todo.json', encoding='utf-8'))
+    log(f'  fbreeldetails: {len(todo)} reels and videos to fetch')
+    if todo:
+        run('fbd_posts_reeltest', FB_POST_LINK, {"direct_urls": [{"url": u} for u in todo.values()]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo),
+            budget=BUDGET_FBREEL)
+
+
+KW_FB_REELS = KW_FB_VIDEO + ['ڤي سڤن كريم صودا', 'V7 بينك ليمونيد', 'V Orange']   # the 15 most reel-heavy keywords
+
+
+def stage_fbreels():
+    """19 Oct: the reel search the comparison picked (fbreel_report.py). Facebook's own reel and video searches find mostly the same reels;
+    Google's short-videos search limited to Facebook finds others (17 of its 25 V7 reels on four keywords no Facebook search found), and
+    alien_force's reels-only search adds a few (6 of 27). So: Google's short videos for all 30 keywords (in quotes, past year, from Egypt),
+    alien_force for the 15 most reel-heavy keywords, then the new reels fetched by link (danek)."""
+    import re as _re
+    todo = [('fbr_google', 'simple.actor~google-short-videos', {"queries": ['"%s"' % k for k in KW_FB], "maxItems": 24, "platform": "facebook", "timeRange": "year",
+                                                               "country": "EG", "language": "ar"}, 1.40, 720)]
+    for i, k in enumerate(KW_FB_REELS):
+        todo.append((f'fbr_alien_{i:02d}', 'alien_force~facebook-search-scraper', {"search_type": "posts", "keyword": k, "only_reels": True, "follow_post_scraping": True,
+                                                                                  "results_limit": 20, "start_date": SINCE, "end_date": UNTIL}, 0.30, 20))
+    parallel(todo, BUDGET_FBREEL)
+    known = fb_known()
+    vid = _re.compile(r'facebook\.com/(?:reel/|watch/?\?v=|[^"\s?]+/videos/(?:[^/"\s?]+/)?)(\d{8,})')
+    new = {}
+    for f in [RAW / 'fbr_google.json'] + sorted(RAW.glob('fbr_alien_*.json')):
+        for x in (json.load(open(f, encoding='utf-8'))['items'] if f.exists() else []):
+            s = json.dumps(x, ensure_ascii=False)
+            m = vid.search(s)
+            if m and m.group(1) not in known and not _re.search(r'facebook\.com/(?:V7Egypt|Vsupersoda)/', s, _re.I):
+                new[m.group(1)] = 'https://www.facebook.com/reel/%s/' % m.group(1)
+    log(f'  fbreels: {len(new)} new reels and videos to fetch')
+    if new:
+        run('fbd_posts_reels2', FB_POST_LINK, {"direct_urls": [{"url": u} for u in new.values()]}, round(len(new) * 0.00233 * 1.3 + 0.05, 2), len(new), budget=BUDGET_FBREEL)
+
+
+BUDGET_FBMORE = 76.00   # 19 Oct: two more post searches and the gap filling after them may spend up to here on the meter (USD 100 limit)
+
+
+def stage_fbmore():
+    """19 Oct (user: "i meant depending on multiple to cover more"): two more post searches for all 30 keywords. On the comparison's three
+    keywords the three backends used in fbcover found 43 of the 49 posts about V7 that all 11 post scrapers found together; scrapeforge
+    and fetch_cat found the other 6 (scrapeforge 20 a keyword, USD 0.0026 a post; fetch_cat 20, USD 0.006)."""
+    todo = []
+    for i, k in enumerate(KW_FB):
+        todo.append((f'fbm_forge_{i:02d}', 'scrapeforge~facebook-search-posts', {"query": k, "search_type": "posts", "max_results": 20, "start_date": SINCE, "end_date": UNTIL}, 0.08, 20))
+        todo.append((f'fbm_fetchcat_{i:02d}', 'fetch_cat~facebook-post-search-scraper', {"query": k, "resultsCount": 20, "searchType": "top", "startDate": SINCE,
+                                                                                        "endDate": UNTIL}, 0.16, 20))
+    parallel(todo, BUDGET_FBMORE)
 
 
 def stage_fbfill2():
@@ -905,7 +994,7 @@ BUDGET_FBTEST2 = 36.00   # 19 Oct: the depth and gap tests may spend up to here 
 BUDGET_FBTEST = 34.00   # 19 Oct: the Facebook comparison may spend up to here on the meter (about USD 3.7 over the 30.31 spent; expected about 2)
 
 
-STAGES = {'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+STAGES = {'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

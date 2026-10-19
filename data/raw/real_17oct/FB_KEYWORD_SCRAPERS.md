@@ -74,3 +74,45 @@ Gap test cost USD 1.10 (meter 34.13).
 - **Filled:** plays on 158 of 178 videos; speech on 163 posts; 267 posts read from their pictures; 2,797 comments under the posts; followers for 210 of 302 named pages.
 - **Coverage:** Facebook's keyword search can surface about 600 posts about V7 in the window (capture-recapture between scraper_one and silentflow: 290 and 183 found, 88 by both); we have about 390 of those. The reel, video and Google route found 155 posts with almost no overlap (24), so far more reels and page videos exist than any search shows.
 - **Cost:** USD 24.88 in all (`SCRAPERS.md`).
+
+## 6. Reels: 13 searches on the same four keywords (19 Oct, after the user asked about overlapping scrapers)
+
+The user: "u didn't use overlapping scrapers like we did with instagram to test it?" Right: the first comparison scored Apify's reel
+search without dates. `collect.py fbreeltest` ran every Facebook reel and video search on V7 كريم صودا, V7 cream soda, ڤي كولا and
+ڤي سڤن (20 results each); the 208 reels the collection lacked were fetched by link and labelled; `fbreel_report.py` scores them.
+**Useful** = a reel about V7, posted 20 Apr to 16 Oct, not by V7's own pages. Test cost USD 4.23.
+
+| Search | Reels returned | Useful | Found by no other | Cost |
+|---|---|---|---|---|
+| [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos) (Google's short videos, Facebook only) | 63 | 25 | **17** | USD 0.09 |
+| [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper) (reels only) | 60 | 27 | 6 | USD 0.68 |
+| [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper) (reels) | 80 | 19 | 0 | USD 0.40 |
+| [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper) | 60 | 16 | 1 | USD 0.40 |
+| [igview-owner/facebook-search-scraper](https://apify.com/igview-owner/facebook-search-scraper) | 56 | 14 | 0 | USD 0.19 |
+| [axesso_data/facebook-video-search-scraper](https://apify.com/axesso_data/facebook-video-search-scraper) | 80 | 14 | 0 | USD 0.02 |
+| [automation-lab/facebook-public-video-search-results](https://apify.com/automation-lab/facebook-public-video-search-results) | 28 | 13 | 0 | USD 0.12 |
+| [natanielsantos/facebook-video-search-scraper](https://apify.com/natanielsantos/facebook-video-search-scraper) | 35 | 11 | 0 | USD 0.13 |
+| [thenetaji/facebook-video-search-scraper](https://apify.com/thenetaji/facebook-video-search-scraper) | 80 | 11 | 1 | USD 0.22 |
+| [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper) | 31 | 7 | 0 | USD 0.63 |
+| [headply/facebook-video-search-scraper](https://apify.com/headply/facebook-video-search-scraper) | 39 | 4 | 0 | USD 0.09 |
+| [sasky/facebook-keyword-videos-urls-scraper](https://apify.com/sasky/facebook-keyword-videos-urls-scraper) | 11 | 4 | 1 | USD 0.04 |
+| [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper) | 0 | 0 | 0 | USD 0.73 |
+
+- **54 useful reels in all; 11 were new** to the Version 30 collection.
+- **Facebook's own searches overlap:** alien_force and Apify's reel search share 16 of their 27 and 19.
+- **Google doesn't:** its 25 share 8 with the 37 all Facebook searches found together; capture-recapture puts these four keywords at about 110 reels, so the Version 30 run had about half of them.
+- **Pick:** Google's short videos (Facebook) for all 30 keywords, plus alien_force's reels-only search for the 15 most reel-heavy keywords (`collect.py fbreels`).
+
+## 7. More scrapers together, to cover more (19 Oct)
+
+The user: "i meant depending on multiple to cover more". On the comparison's three keywords, with Claude's labels: all 11 post scrapers
+together found 49 posts about V7; the three used in the full run (scraper_one, silentflow, Apify's search) found 43. Adding scrapeforge
+brings it to 47 and fetch_cat to 49, everything the 11 found. So `collect.py fbmore` runs scrapeforge and fetch_cat on all 30 keywords
+(20 each), next to the reel search (`fbreels`: Google's short videos and alien_force's reels-only search).
+
+## 8. Outcome (Version 31)
+
+- **Facebook public posts about V7: 520 to 590**; reels 152 to 192.
+- **Found only by:** scraper_one 184, Version 30's reel, video and Google links 109, the new reel searches (Google short videos, alien_force) 33, fetch_cat 16, scrapeforge 15, groups 11, silentflow 8, Apify's search 3, video search 3.
+- **Coverage:** scraper_one against the silentflow family (silentflow, scrapeforge, fetch_cat): 290 and 242 found, 101 both, so about 690 posts can be surfaced by Facebook's post search; the five found 434. Reels: the reel, video and Google routes found 125, the post searches 88, 21 both, so perhaps 500 reels; we have 192.
+- **Cost of this round:** USD 15.87 (comparison 4.23, reel search and fetch 4.14, two post searches 4.76, filling 2.72).

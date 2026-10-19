@@ -6,53 +6,61 @@ Every Apify run of `data/raw/real_17oct/`, written by `scrapers_report.py` from 
 
 | Scraper | Used for | Runs | Returned | Kept | Cost (USD) |
 |---|---|---:|---:|---:|---:|
+| [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber) | What is said in Facebook videos (speech to text) | 3 | 258 | 0 | 9.80 |
 | [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper) | Instagram comments | 5 | 3,506 | 2,997 | 8.06 |
-| [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber) | What is said in Facebook videos (speech to text) | 2 | 207 | 0 | 8.02 |
 | [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper) | Instagram posts of a profile, or posts by link | 10 | 2,174 | 424 | 5.00 |
+| [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper) | Facebook keyword search | 22 | 342 | 0 | 3.90 |
+| [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper) | Facebook keyword search | 33 | 592 | 282 | 3.55 |
 | [scraper_one/facebook-posts-search](https://apify.com/scraper_one/facebook-posts-search) | Facebook keyword search | 52 | 1,131 | 473 | 3.39 |
-| [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper) | Facebook keyword search (posts and reels) | 48 | 530 | 104 | 2.70 |
+| [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper) | Facebook keyword search (posts and reels) | 52 | 610 | 104 | 3.10 |
+| [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast) | Facebook posts, reels and videos by link | 7 | 1,147 | 206 | 2.67 |
+| [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper) | Facebook pages (followers, category) | 3 | 316 | 0 | 2.59 |
 | [clockworks/tiktok-scraper](https://apify.com/clockworks/tiktok-scraper) | TikTok profiles, hashtags, keyword search, videos by link | 11 | 659 | 124 | 2.57 |
-| [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper) | Facebook comments | 4 | 991 | 920 | 2.55 |
-| [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper) | Facebook pages (followers, category) | 2 | 250 | 0 | 2.05 |
-| [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper) | Facebook comments (cheaper) | 2 | 3,690 | 2,756 | 1.85 |
+| [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper) | Facebook comments | 5 | 995 | 923 | 2.56 |
+| [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper) | Facebook comments (cheaper) | 3 | 4,038 | 3,087 | 2.02 |
 | [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper) | Instagram posts that tag a profile | 4 | 765 | 424 | 1.76 |
 | [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper) | What is said in Instagram reels (speech to text) | 5 | 306 | 0 | 1.57 |
+| [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts) | Facebook keyword search | 34 | 594 | 215 | 1.54 |
 | [silentflow/facebook-search-scraper](https://apify.com/silentflow/facebook-search-scraper) | Facebook keyword search | 36 | 677 | 298 | 1.49 |
-| [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast) | Facebook posts, reels and videos by link | 4 | 640 | 153 | 1.49 |
+| [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper) | Facebook video search | 19 | 284 | 0 | 1.42 |
 | [seemuapps/instagram-keyword-posts-scraper](https://apify.com/seemuapps/instagram-keyword-posts-scraper) | Instagram keyword search with a date range | 4 | 676 | 143 | 1.36 |
-| [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper) | Facebook video search | 15 | 204 | 0 | 1.02 |
 | [apify/google-search-scraper](https://apify.com/apify/google-search-scraper) | Google search | 7 | 402 | 0 | 0.92 |
 | [clockworks/tiktok-comments-scraper](https://apify.com/clockworks/tiktok-comments-scraper) | TikTok comments | 2 | 887 | 872 | 0.89 |
+| [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper) | Facebook video plays | 3 | 191 | 0 | 0.76 |
+| [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper) | Facebook Watch search (returned nothing) | 4 | 0 | 0 | 0.73 |
 | [powerai/facebook-video-search-scraper](https://apify.com/powerai/facebook-video-search-scraper) | Facebook video search | 3 | 30 | 0 | 0.69 |
 | [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper) | Instagram accounts (follower counts) | 2 | 285 | 0 | 0.66 |
 | [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper) | Instagram comments (cheaper, but returned nothing for half the posts) | 2 | 1,307 | 1,082 | 0.65 |
 | [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper) | Instagram hashtags (and Instagram keyword search) | 6 | 283 | 25 | 0.65 |
+| [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper) | Facebook Watch search | 4 | 31 | 0 | 0.63 |
 | [streamers/youtube-scraper](https://apify.com/streamers/youtube-scraper) | YouTube keyword search | 3 | 203 | 30 | 0.61 |
-| [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper) | Facebook video plays | 2 | 148 | 0 | 0.59 |
+| [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos) | Google's short videos (here: Facebook reels) | 2 | 434 | 0 | 0.55 |
 | [apidojo/youtube-comments-scraper](https://apify.com/apidojo/youtube-comments-scraper) | YouTube comments | 3 | 1,093 | 731 | 0.46 |
+| [headply/facebook-video-search-scraper](https://apify.com/headply/facebook-video-search-scraper) | Facebook video search | 3 | 181 | 16 | 0.42 |
 | [lofomachines/facebook-groups-posts-search-scraper](https://apify.com/lofomachines/facebook-groups-posts-search-scraper) | Facebook public groups search | 2 | 72 | 19 | 0.35 |
 | [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api) | Instagram keyword search (posts) | 20 | 222 | 87 | 0.33 |
-| [headply/facebook-video-search-scraper](https://apify.com/headply/facebook-video-search-scraper) | Facebook video search | 2 | 142 | 16 | 0.33 |
 | [topapi/facebook-search-posts-scraper](https://apify.com/topapi/facebook-search-posts-scraper) | Facebook keyword search | 5 | 113 | 59 | 0.28 |
 | [powerai/facebook-post-search-scraper](https://apify.com/powerai/facebook-post-search-scraper) | Facebook keyword search (aborted) | 3 | 0 | 0 | 0.27 |
 | [trudax/reddit-scraper-lite](https://apify.com/trudax/reddit-scraper-lite) | Reddit search | 2 | 58 | 2 | 0.26 |
 | [afanasenko/instagram-reel-script-extractor](https://apify.com/afanasenko/instagram-reel-script-extractor) | On-screen text and speech of Instagram reels | 1 | 3 | 0 | 0.23 |
+| [thenetaji/facebook-video-search-scraper](https://apify.com/thenetaji/facebook-video-search-scraper) | Facebook video search | 1 | 80 | 0 | 0.22 |
 | [apify/facebook-posts-scraper](https://apify.com/apify/facebook-posts-scraper) | Facebook page posts, or posts by link | 3 | 45 | 34 | 0.22 |
-| [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper) | Facebook keyword search | 3 | 17 | 0 | 0.21 |
 | [igview-owner/facebook-old-posts-search](https://apify.com/igview-owner/facebook-old-posts-search) | Facebook keyword search | 3 | 32 | 25 | 0.20 |
 | [viralanalyzer/video-transcriber](https://apify.com/viralanalyzer/video-transcriber) | Speech to text (Whisper small) | 1 | 5 | 0 | 0.19 |
-| [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper) | Facebook keyword search | 3 | 30 | 29 | 0.18 |
-| [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts) | Facebook keyword search | 4 | 60 | 29 | 0.16 |
+| [igview-owner/facebook-search-scraper](https://apify.com/igview-owner/facebook-search-scraper) | Facebook video search | 4 | 56 | 0 | 0.19 |
+| [natanielsantos/facebook-video-search-scraper](https://apify.com/natanielsantos/facebook-video-search-scraper) | Facebook video search | 1 | 35 | 0 | 0.13 |
 | [danek/facebook-search-ppr](https://apify.com/danek/facebook-search-ppr) | Facebook keyword search | 3 | 33 | 22 | 0.13 |
+| [automation-lab/facebook-public-video-search-results](https://apify.com/automation-lab/facebook-public-video-search-results) | Facebook video search | 1 | 28 | 0 | 0.12 |
 | [scraping_solutions/instagram-boolean-search-scraper-posts-reels](https://apify.com/scraping_solutions/instagram-boolean-search-scraper-posts-reels) | Instagram search, exact phrases | 3 | 1 | 0 | 0.11 |
 | [dami_studio/instagram-reels-search-scraper](https://apify.com/dami_studio/instagram-reels-search-scraper) | Instagram Reels search | 6 | 177 | 73 | 0.11 |
 | [kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest](https://apify.com/kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest) | X (Twitter) search | 7 | 465 | 76 | 0.10 |
+| [axesso_data/facebook-video-search-scraper](https://apify.com/axesso_data/facebook-video-search-scraper) | Facebook video search | 3 | 327 | 0 | 0.08 |
 | [piotrv1001/facebook-video-transcript-scraper](https://apify.com/piotrv1001/facebook-video-transcript-scraper) | Facebook captions and speech to text | 1 | 5 | 0 | 0.07 |
 | [headply/facebook-post-search-scraper](https://apify.com/headply/facebook-post-search-scraper) | Facebook keyword search | 1 | 30 | 13 | 0.07 |
-| [axesso_data/facebook-video-search-scraper](https://apify.com/axesso_data/facebook-video-search-scraper) | Facebook video search | 2 | 247 | 0 | 0.06 |
 | [mina_safwat/facebook-search-actor](https://apify.com/mina_safwat/facebook-search-actor) | Facebook keyword search (no dates) | 3 | 30 | 0 | 0.06 |
 | [data-slayer/instagram-search-reels](https://apify.com/data-slayer/instagram-search-reels) | Instagram Reels search | 3 | 24 | 0 | 0.06 |
 | [calm_builder/youtube-scraper](https://apify.com/calm_builder/youtube-scraper) | YouTube videos (and comments) | 2 | 29 | 0 | 0.05 |
+| [sasky/facebook-keyword-videos-urls-scraper](https://apify.com/sasky/facebook-keyword-videos-urls-scraper) | Facebook video links by keyword | 1 | 11 | 0 | 0.04 |
 | [streamers/youtube-channel-scraper](https://apify.com/streamers/youtube-channel-scraper) | YouTube channel videos | 1 | 28 | 28 | 0.03 |
 | [apify/instagram-search-scraper](https://apify.com/apify/instagram-search-scraper) | Instagram popular reels for a keyword | 1 | 12 | 0 | 0.03 |
 | [codenest/facebook-video-transcript-scraper](https://apify.com/codenest/facebook-video-transcript-scraper) | Facebook's own captions | 1 | 5 | 0 | 0.02 |
@@ -62,7 +70,7 @@ Every Apify run of `data/raw/real_17oct/`, written by `scrapers_report.py` from 
 | [apify/facebook-hashtag-scraper](https://apify.com/apify/facebook-hashtag-scraper) | Facebook hashtags (returned nothing) | 1 | 2 | 0 | 0.01 |
 | [memo23/instagram-reels-search-scraper](https://apify.com/memo23/instagram-reels-search-scraper) | Instagram Reels search, exact phrases | 1 | 2 | 0 | 0.00 |
 
-Total for these runs: USD 55.16 (Apify’s meter for the month also counts platform usage).
+Total for these runs: USD 71.00 (Apify’s meter for the month also counts platform usage).
 
 ## Every run
 
@@ -1978,7 +1986,7 @@ Total for these runs: USD 55.16 (Apify’s meter for the month also counts platf
 - **Scraper:** [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper), 2026-10-19
 - **Why:** comments under the public Facebook posts about V7, up to 100 a post
 - **Input:** `{"postUrls": "[283 links]", "targetComments": 100, "includeReplies": false, "orderingMode": "MOST_RELEVANT"}`
-- **Output:** 3,665 returned · 3,456 in window · 2,756 kept · USD 1.8327
+- **Output:** 3,665 returned · 3,535 in window · 2,833 kept · USD 1.8327
 
 ### fbcm_official_202610191241
 - **Scraper:** [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper), 2026-10-19
@@ -2015,6 +2023,696 @@ Total for these runs: USD 55.16 (Apify’s meter for the month also counts platf
 - **Why:** the posts whose search row came without the account name, by link
 - **Input:** `{"direct_urls": [{"url": "https://www.facebook.com/V7SYRIA/posts/pfbid05rXQT8JS9FNovoZvXtS7RkEVy4QBD3MW1VTEzRSyu2yRfNwXe2f44tzKwsArZbUrl"}, {"url": "https://www.facebook.com/reel/1335221125444964/"}, {"url": "https://www.facebook.com/reel/957718373546606/"}, {"url": "https://www.facebook.com/groups/171095983238060/posts/2971892603158370/"}, {"url": "https://www.facebook.com/groups/TANTATOWN/posts/28540367075559869/"}]}`
 - **Output:** 5 returned · 3 in window · 3 kept · USD 0.0117
+
+### fbrt_apifyreels_1
+- **Scraper:** [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 1 of 4
+- **Input:** `{"categories": ["V7 كريم صودا"], "searchType": "reels", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1010
+
+### fbrt_apifyreels_2
+- **Scraper:** [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 2 of 4
+- **Input:** `{"categories": ["V7 cream soda"], "searchType": "reels", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1010
+
+### fbrt_apifyreels_3
+- **Scraper:** [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 3 of 4
+- **Input:** `{"categories": ["ڤي كولا"], "searchType": "reels", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1010
+
+### fbrt_apifyreels_4
+- **Scraper:** [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 4 of 4
+- **Input:** `{"categories": ["ڤي سڤن"], "searchType": "reels", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1010
+
+### fbrt_alien_1
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 1 of 4
+- **Input:** `{"search_type": "posts", "keyword": "V7 كريم صودا", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2234
+
+### fbrt_alien_2
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 2 of 4
+- **Input:** `{"search_type": "posts", "keyword": "V7 cream soda", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2220
+
+### fbrt_alien_3
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 3 of 4
+- **Input:** `{"search_type": "posts", "keyword": "ڤي كولا", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2229
+
+### fbrt_alien_4
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 4 of 4
+- **Input:** `{"search_type": "posts", "keyword": "ڤي سڤن", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 0 returned · 0 in window · 0 kept · USD 0.0094
+
+### fbrt_apifyvideo_1
+- **Scraper:** [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 1 of 4
+- **Input:** `{"searchTerm": "V7 كريم صودا", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1000
+
+### fbrt_apifyvideo_2
+- **Scraper:** [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 2 of 4
+- **Input:** `{"searchTerm": "V7 cream soda", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1000
+
+### fbrt_apifyvideo_3
+- **Scraper:** [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 3 of 4
+- **Input:** `{"searchTerm": "ڤي كولا", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1000
+
+### fbrt_apifyvideo_4
+- **Scraper:** [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 4 of 4
+- **Input:** `{"searchTerm": "ڤي سڤن", "resultsLimit": 20}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.1000
+
+### fbrt_igview_1
+- **Scraper:** [igview-owner/facebook-search-scraper](https://apify.com/igview-owner/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 1 of 4
+- **Input:** `{"query": "V7 كريم صودا", "maxPages": 2}`
+- **Output:** 14 returned · 0 in window · 0 kept · USD 0.0509
+
+### fbrt_igview_2
+- **Scraper:** [igview-owner/facebook-search-scraper](https://apify.com/igview-owner/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 2 of 4
+- **Input:** `{"query": "V7 cream soda", "maxPages": 2}`
+- **Output:** 14 returned · 0 in window · 0 kept · USD 0.0475
+
+### fbrt_igview_3
+- **Scraper:** [igview-owner/facebook-search-scraper](https://apify.com/igview-owner/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 3 of 4
+- **Input:** `{"query": "ڤي كولا", "maxPages": 2}`
+- **Output:** 14 returned · 0 in window · 0 kept · USD 0.0470
+
+### fbrt_igview_4
+- **Scraper:** [igview-owner/facebook-search-scraper](https://apify.com/igview-owner/facebook-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 4 of 4
+- **Input:** `{"query": "ڤي سڤن", "maxPages": 2}`
+- **Output:** 14 returned · 0 in window · 0 kept · USD 0.0471
+
+### fbrt_lexis_1
+- **Scraper:** [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 1 of 4
+- **Input:** `{"query": "V7 كريم صودا", "maxItems": 20}`
+- **Output:** 7 returned · 0 in window · 0 kept · USD 0.1334
+
+### fbrt_lexis_2
+- **Scraper:** [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 2 of 4
+- **Input:** `{"query": "V7 cream soda", "maxItems": 20}`
+- **Output:** 11 returned · 0 in window · 0 kept · USD 0.1815
+
+### fbrt_lexis_3
+- **Scraper:** [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 3 of 4
+- **Input:** `{"query": "ڤي كولا", "maxItems": 20}`
+- **Output:** 6 returned · 0 in window · 0 kept · USD 0.1590
+
+### fbrt_lexis_4
+- **Scraper:** [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 4 of 4
+- **Input:** `{"query": "ڤي سڤن", "maxItems": 20}`
+- **Output:** 7 returned · 0 in window · 0 kept · USD 0.1603
+
+### fbrt_easyapi_1
+- **Scraper:** [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 1 of 4
+- **Input:** `{"query": "V7 كريم صودا", "maxItems": 20}`
+- **Output:** 0 returned · 0 in window · 0 kept · USD 0.1833
+
+### fbrt_easyapi_2
+- **Scraper:** [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 2 of 4
+- **Input:** `{"query": "V7 cream soda", "maxItems": 20}`
+- **Output:** 0 returned · 0 in window · 0 kept · USD 0.1809
+
+### fbrt_easyapi_3
+- **Scraper:** [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 3 of 4
+- **Input:** `{"query": "ڤي كولا", "maxItems": 20}`
+- **Output:** 0 returned · 0 in window · 0 kept · USD 0.1820
+
+### fbrt_easyapi_4
+- **Scraper:** [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: keyword 4 of 4
+- **Input:** `{"query": "ڤي سڤن", "maxItems": 20}`
+- **Output:** 0 returned · 0 in window · 0 kept · USD 0.1838
+
+### fbrt_headply
+- **Scraper:** [headply/facebook-video-search-scraper](https://apify.com/headply/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords
+- **Input:** `{"searchQueries": ["V7 كريم صودا", "V7 cream soda", "ڤي كولا", "ڤي سڤن"], "maxItemsPerTarget": 20, "mode": "videoSearch"}`
+- **Output:** 39 returned · 0 in window · 0 kept · USD 0.0907
+
+### fbrt_axesso
+- **Scraper:** [axesso_data/facebook-video-search-scraper](https://apify.com/axesso_data/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords
+- **Input:** `{"input": [{"keyword": "V7 كريم صودا", "sort": "RELEVANCE", "maxPosts": 20}, {"keyword": "V7 cream soda", "sort": "RELEVANCE", "maxPosts": 20}, {"keyword": "ڤي كولا", "sort": "RELEVANCE", "maxPosts": 20}, {"keyword": "ڤي سڤن", "sort": "RELEVANCE", "maxPosts": 20}]}`
+- **Output:** 80 returned · 0 in window · 0 kept · USD 0.0201
+
+### fbrt_sasky
+- **Scraper:** [sasky/facebook-keyword-videos-urls-scraper](https://apify.com/sasky/facebook-keyword-videos-urls-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords
+- **Input:** `{"keywords": ["V7 كريم صودا", "V7 cream soda", "ڤي كولا", "ڤي سڤن"], "date": "last-6-months", "limit": "80"}`
+- **Output:** 11 returned · 0 in window · 0 kept · USD 0.0417
+
+### fbrt_nataniel
+- **Scraper:** [natanielsantos/facebook-video-search-scraper](https://apify.com/natanielsantos/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords
+- **Input:** `{"searchTerms": ["V7 كريم صودا", "V7 cream soda", "ڤي كولا", "ڤي سڤن"], "maxItems": 20}`
+- **Output:** 35 returned · 0 in window · 0 kept · USD 0.1331
+
+### fbrt_thenetaji
+- **Scraper:** [thenetaji/facebook-video-search-scraper](https://apify.com/thenetaji/facebook-video-search-scraper), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords
+- **Input:** `{"searchQuery": ["V7 كريم صودا", "V7 cream soda", "ڤي كولا", "ڤي سڤن"], "maxItems": 20}`
+- **Output:** 80 returned · 0 in window · 0 kept · USD 0.2240
+
+### fbrt_autolab
+- **Scraper:** [automation-lab/facebook-public-video-search-results](https://apify.com/automation-lab/facebook-public-video-search-results), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords
+- **Input:** `{"searchQueries": ["V7 كريم صودا", "V7 cream soda", "ڤي كولا", "ڤي سڤن"], "maxItems": 80, "maxScrolls": 8}`
+- **Output:** 28 returned · 0 in window · 0 kept · USD 0.1170
+
+### fbrt_google
+- **Scraper:** [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos), 2026-10-19
+- **Why:** 19 Oct reel comparison: the 4 keywords, Facebook only
+- **Input:** `{"queries": ["\"V7 كريم صودا\"", "\"V7 cream soda\"", "\"ڤي كولا\"", "\"ڤي سڤن\""], "maxItems": 24, "platform": "facebook", "timeRange": "year", "country": "EG", "language": "ar"}`
+- **Output:** 81 returned · 0 in window · 0 kept · USD 0.0888
+
+### fbd_posts_reeltest
+- **Scraper:** [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast), 2026-10-19
+- **Why:** the reels the comparison found that the collection lacked, by link
+- **Input:** `{"direct_urls": "[208 links]"}`
+- **Output:** 204 returned · 69 in window · 12 kept · USD 0.4754
+
+### fbr_google
+- **Scraper:** [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos), 2026-10-19
+- **Why:** Facebook reels: Google's short videos for the 30 keywords
+- **Input:** `{"queries": "[30 items]", "maxItems": 24, "platform": "facebook", "timeRange": "year", "country": "EG", "language": "ar"}`
+- **Output:** 353 returned · 0 in window · 0 kept · USD 0.4625
+
+### fbr_alien_00
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 1 of 15
+- **Input:** `{"search_type": "posts", "keyword": "ڤي سڤن", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2261
+
+### fbr_alien_01
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 2 of 15
+- **Input:** `{"search_type": "posts", "keyword": "مشروب ڤي سڤن", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 0 returned · 0 in window · 0 kept · USD 0.0036
+
+### fbr_alien_02
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 3 of 15
+- **Input:** `{"search_type": "posts", "keyword": "ڤي كولا", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2227
+
+### fbr_alien_03
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 4 of 15
+- **Input:** `{"search_type": "posts", "keyword": "ڤي اورانج", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2314
+
+### fbr_alien_04
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 5 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 كريم صودا", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2236
+
+### fbr_alien_05
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 6 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 cream soda", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2244
+
+### fbr_alien_06
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 7 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 مشروب", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 19 returned · 0 in window · 0 kept · USD 0.2102
+
+### fbr_alien_07
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 8 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 رمان", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2259
+
+### fbr_alien_08
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 9 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 Egypt", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16", "cookies": [], "filter_by_recent_posts": false, "fetch_reaction_map": false, "since": "all_times", "min_wait_time_in_sec": 1, "max_wait_time_in_sec": 4, "proxyConfiguration": {"useApifyProxy": true}}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2306
+
+### fbr_alien_09
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 10 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 drink", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 6 returned · 0 in window · 0 kept · USD 0.0734
+
+### fbr_alien_10
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 11 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V Cola", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2279
+
+### fbr_alien_11
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 12 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V Super Soda", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2288
+
+### fbr_alien_12
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 13 of 15
+- **Input:** `{"search_type": "posts", "keyword": "ڤي سڤن كريم صودا", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2256
+
+### fbr_alien_13
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 14 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V7 بينك ليمونيد", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2240
+
+### fbr_alien_14
+- **Scraper:** [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper), 2026-10-19
+- **Why:** Facebook reels: reels-only search, keyword 15 of 15
+- **Input:** `{"search_type": "posts", "keyword": "V Orange", "only_reels": true, "follow_post_scraping": true, "results_limit": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 0 in window · 0 kept · USD 0.2294
+
+### fbd_posts_reels2
+- **Scraper:** [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast), 2026-10-19
+- **Why:** the new reels from that search, by link
+- **Input:** `{"direct_urls": "[292 links]"}`
+- **Output:** 287 returned · 242 in window · 25 kept · USD 0.6688
+
+### fbf_plays_202610191508
+- **Scraper:** [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper), 2026-10-19
+- **Why:** plays of the new Facebook videos about V7
+- **Input:** `{"startUrls": "[43 links]"}`
+- **Output:** 43 returned · 0 in window · 0 kept · USD 0.1722
+
+### fbf_speech_202610191508
+- **Scraper:** [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber), 2026-10-19
+- **Why:** what is said in the new Facebook videos
+- **Input:** `{"video_urls": "[86 links]"}`
+- **Output:** 51 returned · 0 in window · 0 kept · USD 1.7850
+
+### fbf_pages_202610191508
+- **Scraper:** [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper), 2026-10-19
+- **Why:** followers of the new pages
+- **Input:** `{"startUrls": "[66 links]"}`
+- **Output:** 66 returned · 0 in window · 0 kept · USD 0.5412
+
+### fbcm_door_202610191508
+- **Scraper:** [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper), 2026-10-19
+- **Why:** comments under the new Facebook posts about V7
+- **Input:** `{"postUrls": "[43 links]", "targetComments": 100, "includeReplies": false, "orderingMode": "MOST_RELEVANT"}`
+- **Output:** 348 returned · 346 in window · 254 kept · USD 0.1741
+
+### fbcm_official_202610191510
+- **Scraper:** [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper), 2026-10-19
+- **Why:** comments under the new posts thedoor returned nothing for
+- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"}], "resultsLimit": 100, "includeNestedComments": false}`
+- **Output:** 4 returned · 4 in window · 3 kept · USD 0.0090
+
+### fbd_posts_views_202610191511
+- **Scraper:** [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast), 2026-10-19
+- **Why:** the new video posts behind a post link, for their plays
+- **Input:** `{"direct_urls": "[16 links]"}`
+- **Output:** 16 returned · 16 in window · 16 kept · USD 0.0373
+
+### fbm_forge_00
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 1 of 30
+- **Input:** `{"query": "ڤي سڤن", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 13 returned · 13 in window · 8 kept · USD 0.0337
+
+### fbm_forge_01
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 2 of 30
+- **Input:** `{"query": "ڤيسڤن", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 18 returned · 18 in window · 0 kept · USD 0.0467
+
+### fbm_forge_02
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 3 of 30
+- **Input:** `{"query": "مشروب ڤي سڤن", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 17 returned · 17 in window · 1 kept · USD 0.0441
+
+### fbm_forge_03
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 4 of 30
+- **Input:** `{"query": "ڤي سڤن كريم صودا", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 4 kept · USD 0.0519
+
+### fbm_forge_04
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 5 of 30
+- **Input:** `{"query": "ڤي سڤن رمان", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 5 returned · 5 in window · 0 kept · USD 0.0130
+
+### fbm_forge_05
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 6 of 30
+- **Input:** `{"query": "ڤي سڤن بينا كولادا", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 1 kept · USD 0.0519
+
+### fbm_forge_06
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 7 of 30
+- **Input:** `{"query": "ڤي سڤن شعير", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 15 returned · 15 in window · 2 kept · USD 0.0389
+
+### fbm_forge_07
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 8 of 30
+- **Input:** `{"query": "ڤي سڤن ليمون نعناع", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 0 kept · USD 0.0519
+
+### fbm_forge_08
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 9 of 30
+- **Input:** `{"query": "ڤي كولا", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 19 kept · USD 0.0519
+
+### fbm_forge_09
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 10 of 30
+- **Input:** `{"query": "ڤي كولا دايت", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 10 kept · USD 0.0519
+
+### fbm_forge_10
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 11 of 30
+- **Input:** `{"query": "ڤي اورانج", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 19 returned · 19 in window · 0 kept · USD 0.0493
+
+### fbm_forge_11
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 12 of 30
+- **Input:** `{"query": "ڤي ليمون", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 19 returned · 17 in window · 3 kept · USD 0.0493
+
+### fbm_forge_12
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 13 of 30
+- **Input:** `{"query": "ڤي سوبر صودا", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 19 returned · 19 in window · 9 kept · USD 0.0493
+
+### fbm_forge_13
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 14 of 30
+- **Input:** `{"query": "V7 كريم صودا", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 19 returned · 19 in window · 15 kept · USD 0.0493
+
+### fbm_forge_14
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 15 of 30
+- **Input:** `{"query": "V7 cream soda", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 18 returned · 18 in window · 6 kept · USD 0.0467
+
+### fbm_forge_15
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 16 of 30
+- **Input:** `{"query": "V7 مشروب", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 16 returned · 16 in window · 8 kept · USD 0.0415
+
+### fbm_forge_16
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 17 of 30
+- **Input:** `{"query": "مشروب V7", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 18 returned · 18 in window · 9 kept · USD 0.0467
+
+### fbm_forge_17
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 18 of 30
+- **Input:** `{"query": "V7 رمان", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 18 returned · 18 in window · 12 kept · USD 0.0467
+
+### fbm_forge_18
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 19 of 30
+- **Input:** `{"query": "V7 بينا كولادا", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 14 kept · USD 0.0519
+
+### fbm_forge_19
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 20 of 30
+- **Input:** `{"query": "V7 بلوبيري", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 4 kept · USD 0.0519
+
+### fbm_forge_20
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 21 of 30
+- **Input:** `{"query": "V7 شعير", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 12 returned · 12 in window · 1 kept · USD 0.0311
+
+### fbm_forge_21
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 22 of 30
+- **Input:** `{"query": "V7 بينك ليمونيد", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 3 kept · USD 0.0519
+
+### fbm_forge_22
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 23 of 30
+- **Input:** `{"query": "V7 pink lemonade", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 19 returned · 18 in window · 8 kept · USD 0.0493
+
+### fbm_forge_23
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 24 of 30
+- **Input:** `{"query": "V7 Egypt", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 18 returned · 18 in window · 1 kept · USD 0.0467
+
+### fbm_forge_24
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 25 of 30
+- **Input:** `{"query": "V7 soda", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 16 kept · USD 0.0519
+
+### fbm_forge_25
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 26 of 30
+- **Input:** `{"query": "V7 drink", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 3 kept · USD 0.0519
+
+### fbm_forge_26
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 27 of 30
+- **Input:** `{"query": "V Cola", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 4 kept · USD 0.0519
+
+### fbm_forge_27
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 28 of 30
+- **Input:** `{"query": "V Orange", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 13 returned · 13 in window · 1 kept · USD 0.0337
+
+### fbm_forge_28
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 29 of 30
+- **Input:** `{"query": "V Super Soda", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 20 returned · 16 in window · 16 kept · USD 0.0519
+
+### fbm_forge_29
+- **Scraper:** [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts), 2026-10-19
+- **Why:** Facebook public posts, a fourth search: keyword 30 of 30
+- **Input:** `{"query": "V7 كانز", "search_type": "posts", "max_results": 20, "start_date": "2026-04-20", "end_date": "2026-10-16"}`
+- **Output:** 18 returned · 18 in window · 8 kept · USD 0.0467
+
+### fbm_fetchcat_00
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 1 of 30
+- **Input:** `{"query": "ڤي سڤن", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 10 kept · USD 0.1200
+
+### fbm_fetchcat_01
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 2 of 30
+- **Input:** `{"query": "ڤيسڤن", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 0 kept · USD 0.1200
+
+### fbm_fetchcat_02
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 3 of 30
+- **Input:** `{"query": "مشروب ڤي سڤن", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 15 returned · 15 in window · 2 kept · USD 0.0900
+
+### fbm_fetchcat_03
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 4 of 30
+- **Input:** `{"query": "ڤي سڤن كريم صودا", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 7 kept · USD 0.1200
+
+### fbm_fetchcat_04
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 5 of 30
+- **Input:** `{"query": "ڤي سڤن رمان", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 1 returned · 1 in window · 1 kept · USD 0.0060
+
+### fbm_fetchcat_05
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 6 of 30
+- **Input:** `{"query": "ڤي سڤن بينا كولادا", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 5 kept · USD 0.1200
+
+### fbm_fetchcat_06
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 7 of 30
+- **Input:** `{"query": "ڤي سڤن شعير", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 15 returned · 15 in window · 2 kept · USD 0.0900
+
+### fbm_fetchcat_07
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 8 of 30
+- **Input:** `{"query": "ڤي سڤن ليمون نعناع", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 0 kept · USD 0.1200
+
+### fbm_fetchcat_08
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 9 of 30
+- **Input:** `{"query": "ڤي كولا", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 19 kept · USD 0.1200
+
+### fbm_fetchcat_09
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 10 of 30
+- **Input:** `{"query": "ڤي كولا دايت", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 12 kept · USD 0.1200
+
+### fbm_fetchcat_10
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 11 of 30
+- **Input:** `{"query": "ڤي اورانج", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 0 kept · USD 0.1200
+
+### fbm_fetchcat_11
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 12 of 30
+- **Input:** `{"query": "ڤي ليمون", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 18 in window · 2 kept · USD 0.1200
+
+### fbm_fetchcat_12
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 13 of 30
+- **Input:** `{"query": "ڤي سوبر صودا", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 8 kept · USD 0.1200
+
+### fbm_fetchcat_13
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 14 of 30
+- **Input:** `{"query": "V7 كريم صودا", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 18 kept · USD 0.1200
+
+### fbm_fetchcat_14
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 15 of 30
+- **Input:** `{"query": "V7 cream soda", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 20 kept · USD 0.1200
+
+### fbm_fetchcat_15
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 16 of 30
+- **Input:** `{"query": "V7 مشروب", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 17 returned · 17 in window · 7 kept · USD 0.1020
+
+### fbm_fetchcat_16
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 17 of 30
+- **Input:** `{"query": "مشروب V7", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 8 kept · USD 0.1200
+
+### fbm_fetchcat_17
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 18 of 30
+- **Input:** `{"query": "V7 رمان", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 17 kept · USD 0.1200
+
+### fbm_fetchcat_18
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 19 of 30
+- **Input:** `{"query": "V7 بينا كولادا", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 18 kept · USD 0.1200
+
+### fbm_fetchcat_19
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 20 of 30
+- **Input:** `{"query": "V7 بلوبيري", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 4 kept · USD 0.1200
+
+### fbm_fetchcat_20
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 21 of 30
+- **Input:** `{"query": "V7 شعير", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 1 kept · USD 0.1200
+
+### fbm_fetchcat_21
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 22 of 30
+- **Input:** `{"query": "V7 بينك ليمونيد", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 5 kept · USD 0.1200
+
+### fbm_fetchcat_22
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 23 of 30
+- **Input:** `{"query": "V7 pink lemonade", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 17 kept · USD 0.1200
+
+### fbm_fetchcat_23
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 24 of 30
+- **Input:** `{"query": "V7 Egypt", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 2 kept · USD 0.1200
+
+### fbm_fetchcat_24
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 25 of 30
+- **Input:** `{"query": "V7 soda", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 20 kept · USD 0.1200
+
+### fbm_fetchcat_25
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 26 of 30
+- **Input:** `{"query": "V7 drink", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 14 returned · 14 in window · 5 kept · USD 0.0840
+
+### fbm_fetchcat_26
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 27 of 30
+- **Input:** `{"query": "V Cola", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 11 kept · USD 0.1200
+
+### fbm_fetchcat_27
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 28 of 30
+- **Input:** `{"query": "V Orange", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 19 in window · 2 kept · USD 0.1200
+
+### fbm_fetchcat_28
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 29 of 30
+- **Input:** `{"query": "V Super Soda", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 17 in window · 17 kept · USD 0.1200
+
+### fbm_fetchcat_29
+- **Scraper:** [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper), 2026-10-19
+- **Why:** Facebook public posts, a fifth search: keyword 30 of 30
+- **Input:** `{"query": "V7 كانز", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
+- **Output:** 20 returned · 20 in window · 13 kept · USD 0.1200
 
 ## Without Apify
 

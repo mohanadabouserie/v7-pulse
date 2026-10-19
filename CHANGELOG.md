@@ -1045,3 +1045,25 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Pushed** at the user's request ("yes push it"). `docs/index.html` was rebuilt (13.4 MB), and all 23 suites pass on it.
 - **What the site now shows:** the wider Instagram search with its comments and pictures read (Version 29), and Facebook from every route with its plays, speech, pictures, comments and page followers (Version 30). The Telegram bot reads this copy.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+
+### Version 31: Facebook reels, and more searches together to cover more (19 Oct 2026)
+- **Why:** the user: "but u didn't use overlapping scrapers like we did with instagram to test it?" and "i meant depending on multiple to cover more". Version 30 compared post searches, but scored Facebook's reel search without dates and relied on three post searches.
+- **Reels compared** (`collect.py fbreeltest`, `fbreel_report.py`; USD 4.23 with fetching the 208 new reels by link): 13 reel and video searches on four keywords.
+  - Facebook's own searches mostly find the same reels (alien_force and Apify's reel search share 16 of 27 and 19).
+  - Google's short videos limited to Facebook find others: 25 reels about V7, 17 of them no Facebook search found, for USD 0.09. alien_force's reels-only search found 6 no other did. easyapi returned nothing.
+  - 54 reels about V7 on the four keywords; 11 were new to Version 30.
+- **More scrapers together** (DECISIONS #149-#150): on the three comparison keywords all 11 post searches found 49 posts about V7, Version 30's three found 43, and scrapeforge plus fetch_cat cover the other 6.
+  - `fbreels`: Google's short videos (Facebook) for all 30 keywords and alien_force's reels-only search for 15 (USD 3.47), 292 new reels fetched by link (USD 0.67).
+  - `fbmore`: scrapeforge and fetch_cat on all 30 keywords (USD 4.76).
+  - Then plays, speech, page followers and comments for the new posts (`fbfill`, `fbfill2`, `fbviews`; USD 2.72), their pictures read.
+- **Facebook public posts about V7: 520 to 590** (Reel 192, Image 185, Text 127, Album 60, Video 26). Found only by: scraper_one 184, the reel, video and Google links of Version 30 109, the new reel searches 33, fetch_cat 16, scrapeforge 15, groups 11, silentflow 8.
+- **Filled:** plays on 201 of 218 videos, speech on 203, pictures on 265, 3,128 comments under the posts, followers for 248 of 331 named pages.
+- **Found on the way:**
+  - 31 picture readings were of login pages or blank strips (expired Facebook links): removed, the posts labelled again, and `vis_media.py` now refuses a file that isn't an image;
+  - a 502 from Apify's API stopped a stage before its last step; the lost run's results were saved by its id, and `collect.py` now retries reads on 5xx errors.
+- **Coverage:** Facebook's post search can surface about 690 posts about V7 (scraper_one against the silentflow family: 290 and 242, 101 both); the five post searches found 434. For reels the reel, video and Google routes and the post searches share only 21 of 125 and 88, so there are perhaps 500 reels about V7 in the window and we have 192. No combination reaches all of them.
+- **Dashboard:** public posts about V7 1,251 (Facebook 590, Instagram 479); comments shown 9,037; 774 images; the page is 14.2 MB, close to the 16 MB limit (trim images next time it grows).
+- **Tests:** new `tests/test_v31.py`; `test_v23.py` allows 15 MB. All 24 suites pass.
+- **Published** privately (Version 31). Public site: Version 30 until a push.
+- **Spend:** USD 15.87 this round (Apify's meter: USD 71.08 of the USD 100 limit, USD 52.08 above the included 19). `SCRAPERS.md` lists 440 runs from 63 scrapers.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 30 saved in `archive/dashboard_versions/`); in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `vis_media.py`, new `fbreel_report.py`, `FB_KEYWORD_SCRAPERS.md`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`; `data/raw/media_13oct/` (66 new images); `tests/test_v31.py`, `tests/test_v23.py`; notes.

@@ -62,6 +62,14 @@ ACTORS = {   # actor id -> (Apify Store link, what it is)
     'FB_SP_ALPHA': ('alpha-scraper/facebook-transcript-subtitle-scraper', 'Facebook subtitles (returned none)'),
     'FB_CM_CHEAP': ('thedoor/facebook-comment-scraper', 'Facebook comments (cheaper)'),
     'FB_PAGES': ('apify/facebook-pages-scraper', 'Facebook pages (followers, category)'),
+    'FB_V_IGVIEW': ('igview-owner/facebook-search-scraper', 'Facebook video search'),
+    'FB_V_LEXIS': ('lexis-solutions/facebook-videos-watch-scraper', 'Facebook Watch search'),
+    'FB_V_EASYAPI': ('easyapi/facebook-videos-scraper', 'Facebook Watch search (returned nothing)'),
+    'FB_V_SASKY': ('sasky/facebook-keyword-videos-urls-scraper', 'Facebook video links by keyword'),
+    'FB_V_NATANIEL': ('natanielsantos/facebook-video-search-scraper', 'Facebook video search'),
+    'FB_V_THENETAJI': ('thenetaji/facebook-video-search-scraper', 'Facebook video search'),
+    'FB_V_AUTOLAB': ('automation-lab/facebook-public-video-search-results', 'Facebook video search'),
+    'GOOGLE_SHORTS': ('simple.actor/google-short-videos', "Google's short videos (here: Facebook reels)"),
 }
 RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('t_fb_posts', 'FB_POSTS', '17 Oct test: 3 of V7 Egypt’s Facebook posts'),
@@ -187,6 +195,22 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('fbf_speech_202610191228', 'FB_SPEECH', 'what is said in the Facebook reels and videos about V7, and in those whose text is too short to tell'),
     ('fbd_posts_views', 'FB_POST_LINK', 'the video posts about V7 behind a post link, by link, for their plays'),
     ('fbd_posts_names', 'FB_POST_LINK', 'the posts whose search row came without the account name, by link'),
+] + [(f'fbrt_{n}_{i}', a, f'19 Oct reel comparison: keyword {i} of 4') for n, a in (('apifyreels', 'FB_APIFY_SEARCH'), ('alien', 'FB_ALIEN'), ('apifyvideo', 'FB_V_APIFY'),
+      ('igview', 'FB_V_IGVIEW'), ('lexis', 'FB_V_LEXIS'), ('easyapi', 'FB_V_EASYAPI')) for i in (1, 2, 3, 4)] + [
+    ('fbrt_headply', 'FB_V_HEADPLY', '19 Oct reel comparison: the 4 keywords'), ('fbrt_axesso', 'FB_V_AXESSO', '19 Oct reel comparison: the 4 keywords'),
+    ('fbrt_sasky', 'FB_V_SASKY', '19 Oct reel comparison: the 4 keywords'), ('fbrt_nataniel', 'FB_V_NATANIEL', '19 Oct reel comparison: the 4 keywords'),
+    ('fbrt_thenetaji', 'FB_V_THENETAJI', '19 Oct reel comparison: the 4 keywords'), ('fbrt_autolab', 'FB_V_AUTOLAB', '19 Oct reel comparison: the 4 keywords'),
+    ('fbrt_google', 'GOOGLE_SHORTS', '19 Oct reel comparison: the 4 keywords, Facebook only'),
+    ('fbd_posts_reeltest', 'FB_POST_LINK', 'the reels the comparison found that the collection lacked, by link'),
+    ('fbr_google', 'GOOGLE_SHORTS', "Facebook reels: Google's short videos for the 30 keywords"),
+] + [(f'fbr_alien_{i:02d}', 'FB_ALIEN', 'Facebook reels: reels-only search, keyword %d of 15' % (i + 1)) for i in range(15)] + [
+    ('fbd_posts_reels2', 'FB_POST_LINK', 'the new reels from that search, by link'),
+    ('fbf_plays_202610191508', 'FB_PLAYS', 'plays of the new Facebook videos about V7'), ('fbf_speech_202610191508', 'FB_SPEECH', 'what is said in the new Facebook videos'),
+    ('fbf_pages_202610191508', 'FB_PAGES', 'followers of the new pages'), ('fbcm_door_202610191508', 'FB_CM_CHEAP', 'comments under the new Facebook posts about V7'),
+    ('fbcm_official_202610191510', 'FB_COMMENTS', 'comments under the new posts thedoor returned nothing for'),
+    ('fbd_posts_views_202610191511', 'FB_POST_LINK', 'the new video posts behind a post link, for their plays'),
+] + [(f'fbm_forge_{i:02d}', 'FB_FORGE', 'Facebook public posts, a fourth search: keyword %d of 30' % (i + 1)) for i in range(30)] + [
+] + [(f'fbm_fetchcat_{i:02d}', 'FB_FETCHCAT', 'Facebook public posts, a fifth search: keyword %d of 30' % (i + 1)) for i in range(30)] + [
 ]
 
 

@@ -441,8 +441,8 @@ def fb_files(*patterns):
 
 
 FB_SILENT_FILES = ('fbc_silent_*', 'fbd_posts*', 'fbkw_silentflow_*', 'fbkw_scrapeforge_*', 'fbkw_danek_*', 'fbkw_igview_*', 'fbdeep_silentflow_*',
-                   'fbdeep_scrapeforge_top', 'fbdeep_month_*', 'fbgap_danek', 'fbkw_topapi', 'fbdeep_topapi_*', 'fbgap_topapi_details')
-FB_ONE_FILES = ('fbc_one_*', 'fbkw_scraperone_*', 'fbkw_fetchcat_*')
+                   'fbdeep_scrapeforge_top', 'fbdeep_month_*', 'fbgap_danek', 'fbkw_topapi', 'fbdeep_topapi_*', 'fbgap_topapi_details', 'fbm_forge_*')
+FB_ONE_FILES = ('fbc_one_*', 'fbkw_scraperone_*', 'fbkw_fetchcat_*', 'fbm_fetchcat_*')
 FB_APIFY_FILES = ('fbc_apify_*', 'fbkw_apify_*')
 FB_HEADPLY_FILES = ('fbc_vheadply', 'fbvs_headply', 'fbkw_headply')
 FB_ALPHA_FILES = ('fbd_reels*', 'fbd_videos*', 'fbgap_reeldetails')

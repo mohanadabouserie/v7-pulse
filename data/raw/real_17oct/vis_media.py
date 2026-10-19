@@ -19,7 +19,10 @@ UA = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, 
 
 
 def get(url, path):
-    path.write_bytes(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30).read()); time.sleep(1)
+    b = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30).read(); time.sleep(1)
+    if path.suffix == '.jpg' and not (b[:3] == b'\xff\xd8\xff' or b[:8] == b'\x89PNG\r\n\x1a\n' or b[:4] == b'RIFF' or b[:6] in (b'GIF87a', b'GIF89a')):
+        raise ValueError('not an image (an expired link or a login page)')   # 19 Oct: some Facebook links return an HTML page
+    path.write_bytes(b)
 
 
 def main(files):
