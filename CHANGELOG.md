@@ -1067,3 +1067,8 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** privately (Version 31). Public site: Version 30 until a push.
 - **Spend:** USD 15.87 this round (Apify's meter: USD 71.08 of the USD 100 limit, USD 52.08 above the included 19). `SCRAPERS.md` lists 440 runs from 63 scrapers.
 - **Files:** `V7_Pulse_Dashboard.html` (Version 30 saved in `archive/dashboard_versions/`); in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `vis_media.py`, new `fbreel_report.py`, `FB_KEYWORD_SCRAPERS.md`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`; `data/raw/media_13oct/` (66 new images); `tests/test_v31.py`, `tests/test_v23.py`; notes.
+
+### Public copy: Version 31 (19 Oct 2026)
+- **Pushed** at the user's request ("yes push"). `docs/index.html` was rebuilt (14.2 MB), and all 24 suites pass on it.
+- **What the site now shows:** Facebook from five post searches and two reel searches (590 public posts about V7, 192 reels). The Telegram bot reads this copy.
+- **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.

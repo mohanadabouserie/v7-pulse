@@ -16,7 +16,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 |---|---|
 | Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 31, 19 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 30 since 19 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 31 since 19 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -151,7 +151,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Facebook public posts about V7:** 590 (was 520): 192 reels, 26 videos, 185 photos, 60 albums, 127 text. Plays on 201 of 218 videos, speech on 203, pictures on 265, 3,128 comments, followers for 248 pages.
   - **Coverage:** the post searches found 434 of about 690 posts Facebook's search can surface; reels about 192 of perhaps 500.
   - **Totals:** 1,251 public posts about V7, 9,037 comments shown, 774 images, 14.2 MB (near the 16 MB limit).
-  - Published privately on 19 Oct. The public site is Version 30 until a push.
+  - Published privately and on the public site on 19 Oct; the bot reads that copy.
   - Published privately and on the public site on 19 Oct; the bot reads that copy.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
@@ -544,7 +544,6 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
-- Push Version 31 to the public site (needs the user's OK).
 - Keep the real data fresh: USD 28.92 is left under the USD 100 limit until 15 Nov (above USD 19 is overage). A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`, plus `igkw --since`, `igcomments`, `igvisfetch`, then `vis_media.py`, `vis_read.py`, `normalize.py`, `label.py`, `build_real.py --inject`) costs roughly USD 2 to 4 now that Instagram comments and pictures are included. Anything on a schedule needs the user's OK.
 - Gaps left on 18 Oct: the posts tagging @v7egypt before 19 Jun and the Instagram spellings were closed in Version 29. Still open: 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
 - Offered, not built: speech to text and picture reading for TikTok and YouTube (Instagram and Facebook so far); comments under public TikTok posts. Facebook reels are still under-covered (about 192 of perhaps 500, Version 31). The page is 14.2 MB, near the 16 MB limit: trim images before it grows.
