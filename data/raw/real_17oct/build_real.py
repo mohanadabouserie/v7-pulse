@@ -118,7 +118,8 @@ if __name__ == '__main__':
 
     # ------------------------------------------------ public posts about V7 (UGC)
     RUNS_18 = {'ig_tagged_v7', 'ig_tagged_vss', 'ig_kw_wide', 'ig_google_posts', 'tt_google_posts', 'tt_tags_wide', 'tt_wide', 'yt_recent', 'x_extra'} | {'fb_search_%02d' % n for n in range(12, 18)}
-    RUNS_19 = ('kw_', 'igkw_', 'igreels_', 'ig_google2_posts', 'ig_tagged_v7_full', 'ig_tags2', 'ig_kw_wide2', 'vis_posts')   # run names (prefixes) of 19 Oct, Versions 27 to 29
+    RUNS_19 = ('kw_', 'igkw_', 'igreels_', 'ig_google2_posts', 'ig_tagged_v7_full', 'ig_tags2', 'ig_kw_wide2', 'vis_posts',
+               'fbc_', 'fbd_', 'fbkw_', 'fbdeep_', 'fbgap_', 'fbvs_', 'fbgroups_')   # run names (prefixes) of 19 Oct, Versions 27 to 30
     UGC, ugc_id, ugc_cty, rumor = [], {}, {}, []
     for i in sorted((i for i in items if i['src'] == 'ugc' and i['kind'] == 'post'), key=lambda i: i['date']):   # (comments under public videos come later)
         lab = labels.get(i['id'])

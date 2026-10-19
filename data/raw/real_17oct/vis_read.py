@@ -1,6 +1,6 @@
 """19 Oct 2026: Claude reads the text and the scene in a post's images (photos, or frames of a video), through Claude Code on the
 user's plan (the bot's sign-in), with only the Read tool, which shows it the images. For music reels and photo posts, where the
-caption is short and nothing is said. Writes vis_read.json: {shortcode: {text, shows, v7_visible, products, tone}}.
+caption is short and nothing is said. Writes vis_read.json: {shortcode or fb_<post id>: {text, shows, v7_visible, products, tone}}.
 Usage: python3 vis_read.py [shortcode …]   (default: every folder in vis/ without a result)"""
 import concurrent.futures, json, os, pathlib, shutil, subprocess, sys, threading, time
 HERE = pathlib.Path(__file__).resolve().parent
@@ -8,7 +8,7 @@ ROOT = HERE.parents[2]
 CLI = shutil.which('claude') or str(next(pathlib.Path.home().glob('.nvm/versions/node/*/bin/claude'), ''))
 SIGNIN = ROOT / 'bot' / 'state' / 'claude'
 OUT = HERE / 'vis_read.json'
-RULES = """You read the images of one public Instagram post (its photos, or frames taken every 2 seconds from its video, with the cover first)
+RULES = """You read the images of one public Instagram or Facebook post (its photos, or frames taken every 2 seconds from its video, with the cover first)
 for V7 Pulse, the social listening dashboard of V7's marketing team. V7 is an Egyptian vitamin soda: V7 flavors (Pomegranate, Piña Colada,
 Lemon Mint, Blueberry, Pineapple, Pink Lemonade, Cream Soda), V Cola, V Cola Diet, V Lemon, V Orange and malt drinks; its cans show "V7"
 or "V", and its Arabic name is ڤي سڤن. Open every image with the Read tool, then answer:

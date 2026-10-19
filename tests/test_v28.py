@@ -13,7 +13,7 @@ async def main():
     html = open(urllib.parse.unquote(urllib.parse.urlparse(SRC).path), encoding='utf-8').read()
     d = json.loads(re.search(r'/\*REAL_DATA\*/var REAL_DATA=(.*?);/\*END_REAL_DATA\*/', html, re.S).group(1))
     sp = [u for u in d['ugc'] if u.get('sp')]
-    check('Instagram reels read with their speech', len(sp) >= 80 and all(u['pl'] == 'ig' for u in sp), len(sp))
+    check('Instagram reels read with their speech', sum(1 for u in sp if u['pl'] == 'ig') >= 80 and all(u['pl'] in ('ig', 'fb') for u in sp), len(sp))   # Facebook too since Version 30
     au = {a['id']: a for a in d['au']}
     ig_named = [a for a in d['au'] if a['pl'] == 'ig' and not a.get('anon')]
     check('named Instagram accounts have follower counts', sum(1 for a in ig_named if a.get('followers')) >= 0.7 * len(ig_named), (sum(1 for a in ig_named if a.get('followers')), len(ig_named)))
@@ -22,7 +22,7 @@ async def main():
     check('private people stay anonymous: no name, handle, link or follower count', all(a['name'].endswith(' user') and not a.get('handle') and not a.get('url') and not a.get('followers') for a in anon), len(anon))
     check('the data sources say reels were read with their speech', 'also read what’s said in the video' in html)
     check('Ask V7 Pulse knows it too', 'also what’s said in the video, from speech to text' in html)
-    top = max(sp, key=lambda u: u.get('views') or 0)
+    top = max((u for u in sp if u['pl'] == 'ig'), key=lambda u: u.get('views') or 0)
     async with async_playwright() as p:
         b = await p.chromium.launch(); errs = []
         pg = await b.new_page(viewport={'width': 1440, 'height': 900}); pg.on('pageerror', lambda e: errs.append(str(e))); J = pg.evaluate

@@ -6,7 +6,7 @@ Stages, in order: test, own, comments, abroad, ugc; then test2 and wide (18 Oct,
 - Every run has a USD cap (Apify's maxTotalChargeUsd), and the whole collection stops at BUDGET, read from Apify's usage meter.
 - The token is read from the environment only:  set -a; . ./.env.apify; set +a
 """
-import json, os, pathlib, sys, time, urllib.error, urllib.request
+import json, os, pathlib, re, sys, time, urllib.error, urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = HERE / 'raw'
@@ -609,7 +609,303 @@ def stage_igcomments2():
             round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_IG)
 
 
-STAGES = {'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+# ------------------------------------------------------------------ 19 Oct: Facebook, the same work as Instagram (user: "do the same with facebook")
+FB_TEST_K = ['V7 soda', 'ڤي سڤن', 'V7 كريم صودا']   # the three keywords of the Instagram comparison (KEYWORD_SCRAPERS.md)
+
+
+def parallel(todo, budget, workers=8):
+    """Runs (name, actor, body, cap, n) in parallel threads; a scraper that refuses a cap under USD 0.50 is retried with 0.50
+    (the cap is a ceiling, not the cost). Costs per run are read later from the run records (scrapers_report.py)."""
+    import concurrent.futures
+
+    def one(t):
+        name, actor, body, cap, n = t
+        run(name, actor, body, cap, n, budget=budget)
+        if not (RAW / (name + '.json')).exists():
+            run(name, actor, body, 0.50, n, budget=budget)
+    with concurrent.futures.ThreadPoolExecutor(workers) as ex:
+        list(ex.map(one, todo))
+
+
+def stage_fbtest():
+    """19 Oct: which Facebook search finds the most posts about V7? Up to 10 results for each of the three keywords, from the eleven
+    post-search scrapers with a track record in the Store (scraper_one is the one used since 17 Oct), four video and reel searches, a
+    hashtag scraper, a search of public groups and Google limited to one month. A date range (20 Apr to 16 Oct) where the scraper takes one.
+    Scored by fbtest_report.py (FB_KEYWORD_SCRAPERS.md)."""
+    B = BUDGET_FBTEST
+    todo = []
+    go = lambda *a: todo.append(a)
+    for i, k in enumerate(FB_TEST_K, 1):
+        go(f'fbkw_scraperone_{i}', FB_SEARCH, {"query": k, "resultsCount": 10, "searchType": "top", "startDate": SINCE, "endDate": UNTIL}, 0.06, 10)
+        go(f'fbkw_scrapeforge_{i}', 'scrapeforge~facebook-search-posts', {"query": k, "search_type": "posts", "max_results": 10, "start_date": SINCE, "end_date": UNTIL}, 0.06, 10)
+        go(f'fbkw_apify_{i}', 'apify~facebook-search-scraper', {"categories": [k], "searchType": "posts", "resultsLimit": 10}, 0.08, 10)
+        go(f'fbkw_danek_{i}', 'danek~facebook-search-ppr', {"query": k, "search_type": "posts", "max_posts": 10, "start_date": SINCE, "end_date": UNTIL}, 0.06, 10)
+        go(f'fbkw_powerai_{i}', 'powerai~facebook-post-search-scraper', {"query": k, "maxResults": 10, "start_date": SINCE, "end_date": UNTIL}, 0.12, 10)
+        go(f'fbkw_alienforce_{i}', 'alien_force~facebook-search-scraper', {"search_type": "posts", "keyword": k, "results_limit": 10, "start_date": SINCE,
+                                                                            "end_date": UNTIL, "follow_post_scraping": True}, 0.15, 10)
+        go(f'fbkw_fetchcat_{i}', 'fetch_cat~facebook-post-search-scraper', {"query": k, "resultsCount": 10, "searchType": "top", "startDate": SINCE, "endDate": UNTIL}, 0.08, 10)
+        go(f'fbkw_mina_{i}', 'mina_safwat~facebook-search-actor', {"query": k, "limit": 10, "startDate": SINCE, "endDate": UNTIL}, 0.05, 10)
+        go(f'fbkw_igview_{i}', 'igview-owner~facebook-old-posts-search', {"query": k, "maxResults": 10, "startDate": SINCE, "endDate": UNTIL}, 0.07, 10)
+        go(f'fbkw_silentflow_{i}', 'silentflow~facebook-search-scraper', {"query": k, "search_type": "posts", "max_posts": 10, "start_date": SINCE, "end_date": UNTIL}, 0.05, 10)
+        go(f'fbvs_apify_{i}', 'apify~facebook-video-search-scraper', {"searchTerm": k, "resultsLimit": 10}, 0.07, 10)
+        go(f'fbvs_powerai_{i}', 'powerai~facebook-video-search-scraper', {"query": k, "maxResults": 10, "start_date": SINCE, "end_date": UNTIL}, 0.07, 10)
+        go(f'fbreels_apify_{i}', 'apify~facebook-search-scraper', {"categories": [k], "searchType": "reels", "resultsLimit": 10}, 0.08, 10)
+    go('fbkw_topapi', 'topapi~facebook-search-posts-scraper', {"searchQueries": FB_TEST_K, "sortBy": "top", "startDate": SINCE, "endDate": UNTIL,
+                                                               "maxPostsPerQuery": 10, "includePostDetails": False}, 0.12, 30)
+    go('fbkw_headply', 'headply~facebook-post-search-scraper', {"searchQueries": FB_TEST_K, "searchSort": "top", "maxItemsPerTarget": 10, "mode": "postSearch"}, 0.20, 30)
+    go('fbvs_headply', 'headply~facebook-video-search-scraper', {"searchQueries": FB_TEST_K, "maxItemsPerTarget": 10, "mode": "videoSearch"}, 0.20, 30)
+    go('fbvs_axesso', 'axesso_data~facebook-video-search-scraper', {"input": [{"keyword": k, "sort": "RELEVANCE", "maxPosts": 10} for k in FB_TEST_K]}, 0.05, 30)
+    go('fbtags_apify', 'apify~facebook-hashtag-scraper', {"keywordList": ['v7egypt', 'ڤي_سڤن', 'vsupersoda', 'ڤيسڤن'], "resultsLimit": 10}, 0.25, 40)
+    go('fbgroups_lofo', 'lofomachines~facebook-groups-posts-search-scraper', {"keywords": ['V7 drink', 'ڤي سڤن'], "afterDate": "this_year", "maxPosts": 10,
+                                                                               "countryCode": "eg"}, 0.10, 20)
+    import urllib.parse
+    g = lambda q, a, b: 'https://www.google.com/search?' + urllib.parse.urlencode({'q': q + ' site:facebook.com', 'tbs': 'cdr:1,cd_min:%s,cd_max:%s' % (a, b)})
+    go('fbgoogle_month', GOOGLE, {"queries": '\n'.join([g('"ڤي سڤن"', '6/1/2026', '6/30/2026'), g('"V7 cream soda"', '8/1/2026', '8/31/2026'), g('"ڤي كولا"', '6/1/2026', '6/30/2026')]),
+                                  "maxPagesPerQuery": 2, "countryCode": "eg"}, 0.50, 6)
+    parallel(todo, B)
+
+
+FB_SAMPLE_VIDEOS = ['https://www.facebook.com/reel/1807300737278091/', 'https://www.facebook.com/reel/1740716823817554/', 'https://www.facebook.com/reel/2258238494941774/',
+                    'https://www.facebook.com/reel/1376978311275889/', 'https://www.facebook.com/reel/1130641049532209/']   # creators' V7 reels with speech (19 Oct sample)
+FB_SAMPLE_PHOTOS = ['https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl',
+                    'https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl',
+                    'https://www.facebook.com/nancy.wahba.104/posts/pfbid06bLP5LWzDtFyaSqipxpyviv4e71Y7fho1X6e2x27RbUy5vqFH7UAkLMzVV1T2CQSl']
+FB_SAMPLE_PAGES = ['https://www.facebook.com/MaxABco', 'https://www.facebook.com/AkramTasteTest', 'https://www.facebook.com/cairo360',
+                   'https://www.facebook.com/SeoudiSupermarket', 'https://www.facebook.com/TalabatEG']
+
+
+def stage_fbtest2():
+    """19 Oct: (1) how deep the cheapest complete Facebook searches go (60 results for ڤي سڤن, top and most recent, and one month at a time);
+    (2) on a sample of five creators' V7 reels and three photo posts, which scrapers fill the gaps the searches leave: the video's views,
+    what's said in it, the comments, and the page's followers."""
+    B = BUDGET_FBTEST2
+    todo = []
+    go = lambda *a: todo.append(a)
+    k = 'ڤي سڤن'
+    go('fbdeep_silentflow_top', 'silentflow~facebook-search-scraper', {"query": k, "search_type": "posts", "max_posts": 60, "start_date": SINCE, "end_date": UNTIL}, 0.20, 60)
+    go('fbdeep_silentflow_recent', 'silentflow~facebook-search-scraper', {"query": k, "search_type": "posts", "max_posts": 60, "recent_posts": True, "start_date": SINCE,
+                                                                          "end_date": UNTIL}, 0.20, 60)
+    go('fbdeep_topapi_top', 'topapi~facebook-search-posts-scraper', {"searchQueries": [k], "sortBy": "top", "startDate": SINCE, "endDate": UNTIL, "maxPostsPerQuery": 60}, 0.20, 60)
+    go('fbdeep_topapi_recent', 'topapi~facebook-search-posts-scraper', {"searchQueries": [k], "sortBy": "recent", "startDate": SINCE, "endDate": UNTIL, "maxPostsPerQuery": 60}, 0.20, 60)
+    go('fbdeep_scrapeforge_top', 'scrapeforge~facebook-search-posts', {"query": k, "search_type": "posts", "max_results": 60, "start_date": SINCE, "end_date": UNTIL}, 0.20, 60)
+    go('fbdeep_month_silentflow', 'silentflow~facebook-search-scraper', {"query": k, "search_type": "posts", "max_posts": 30, "start_date": "2026-06-01",
+                                                                         "end_date": "2026-06-30"}, 0.10, 30)
+    go('fbdeep_month_topapi', 'topapi~facebook-search-posts-scraper', {"searchQueries": [k], "sortBy": "top", "startDate": "2026-06-01", "endDate": "2026-06-30",
+                                                                       "maxPostsPerQuery": 30}, 0.10, 30)
+    go('fbgap_topapi_details', 'topapi~facebook-search-posts-scraper', {"searchQueries": ['V7 كريم صودا'], "sortBy": "top", "startDate": SINCE, "endDate": UNTIL,
+                                                                        "maxPostsPerQuery": 10, "includePostDetails": True}, 0.08, 10)
+    links = FB_SAMPLE_VIDEOS + FB_SAMPLE_PHOTOS
+    go('fbgap_danek', 'danek~facebook-posts-fast', {"direct_urls": [{"url": u} for u in links]}, 0.05, 10)
+    go('fbgap_apifyposts', FB_POSTS, {"startUrls": [{"url": u} for u in links], "captionText": True}, 0.10, 10)
+    go('fbgap_playcount', 'social_developer~facebook-playcount-scraper', {"startUrls": [{"url": u} for u in FB_SAMPLE_VIDEOS]}, 0.05, 5)
+    go('fbgap_reeldetails', 'alpha-scraper~facebook-reels-details-scraper-pro', {"startUrls": [{"url": u} for u in FB_SAMPLE_VIDEOS]}, 0.05, 5)
+    go('fbsp_piotr', 'piotrv1001~facebook-video-transcript-scraper', {"pages": [], "videoUrls": FB_SAMPLE_VIDEOS, "transcribeWithAI": True, "language": "auto",
+                                                                      "maxResults": 5}, 0.40, 5)
+    go('fbsp_sian', 'sian.agency~facebook-ai-transcript-extractor', {"bulkUrls": FB_SAMPLE_VIDEOS}, 0.15, 5)
+    go('fbsp_viral', 'viralanalyzer~video-transcriber', {"mediaUrls": FB_SAMPLE_VIDEOS, "language": "ar", "model": "small", "maxMinutesPerItem": 5}, 0.40, 5)
+    go('fbsp_invideo', 'invideoiq~video-transcriber', {"video_urls": FB_SAMPLE_VIDEOS}, 0.30, 5)
+    go('fbsp_codenest', 'codenest~facebook-video-transcript-scraper', {"post_urls": [{"url": u} for u in FB_SAMPLE_VIDEOS]}, 0.05, 5)
+    go('fbsp_alpha', 'alpha-scraper~facebook-transcript-subtitle-scraper', {"videoUrls": [{"url": u} for u in FB_SAMPLE_VIDEOS], "outputFormat": "all_type"}, 0.05, 5)
+    cm_posts = [FB_SAMPLE_PHOTOS[0], FB_SAMPLE_PHOTOS[1], FB_SAMPLE_VIDEOS[0]]
+    go('fbcm_apify', FB_COMMENTS, {"startUrls": [{"url": u} for u in cm_posts], "resultsLimit": 30, "includeNestedComments": False}, 0.30, 90)
+    go('fbcm_thedoor', 'thedoor~facebook-comment-scraper', {"postUrls": cm_posts, "targetComments": 30, "includeReplies": False, "orderingMode": "MOST_RELEVANT"}, 0.10, 90)
+    go('fbpages_apify', 'apify~facebook-pages-scraper', {"startUrls": [{"url": u} for u in FB_SAMPLE_PAGES]}, 0.08, 5)
+    parallel(todo, B)
+
+
+# ------------------------------------------------------------------ 19 Oct: Facebook coverage (FB_KEYWORD_SCRAPERS.md, DECISIONS #143-#147)
+# Facebook's search gives about 10-15 posts about V7 per keyword, then unrelated ones (people and shops named "Seven"); a month at a time
+# returns the same noise. So: many keywords (ڤ spellings, mixed and English; not the ف ones), three search backends that rank differently,
+# Facebook's video and reel searches, public groups, and Google one month at a time.
+KW_FB = ['ڤي سڤن', 'ڤيسڤن', 'مشروب ڤي سڤن', 'ڤي سڤن كريم صودا', 'ڤي سڤن رمان', 'ڤي سڤن بينا كولادا', 'ڤي سڤن شعير', 'ڤي سڤن ليمون نعناع', 'ڤي كولا',
+         'ڤي كولا دايت', 'ڤي اورانج', 'ڤي ليمون', 'ڤي سوبر صودا', 'V7 كريم صودا', 'V7 cream soda', 'V7 مشروب', 'مشروب V7', 'V7 رمان', 'V7 بينا كولادا',
+         'V7 بلوبيري', 'V7 شعير', 'V7 بينك ليمونيد', 'V7 pink lemonade', 'V7 Egypt', 'V7 soda', 'V7 drink', 'V Cola', 'V Orange', 'V Super Soda', 'V7 كانز']
+KW_FB_VIDEO = ['ڤي سڤن', 'مشروب ڤي سڤن', 'ڤي كولا', 'ڤي اورانج', 'V7 كريم صودا', 'V7 cream soda', 'V7 مشروب', 'V7 رمان', 'V7 Egypt', 'V7 drink', 'V Cola',
+               'V Super Soda']
+KW_FB_GROUPS = ['ڤي سڤن', 'ڤي كولا', 'V7 كريم صودا', 'مشروب V7', 'V7 drink', 'V Cola', 'ڤي اورانج', 'V7 رمان', 'V7 شعير', 'V Super Soda', 'ڤي سڤن سعر',
+                'ڤي سڤن جملة']
+G_PHRASES_FB = ['"ڤي سڤن"', '"ڤي كولا"', '"ڤى كولا"', '"V7 cream soda"', '"V7 كريم صودا"', '"V Cola" مصر', '"V Super Soda"', '"مشروب V7"', '"ڤي اورانج"',
+                '"V7 Egypt"', '"V7 pink lemonade"', '"ڤيسڤن"']
+FB_SILENT, FB_APIFY_SEARCH = 'silentflow~facebook-search-scraper', 'apify~facebook-search-scraper'
+FB_V_HEADPLY, FB_V_AXESSO, FB_V_APIFY = 'headply~facebook-video-search-scraper', 'axesso_data~facebook-video-search-scraper', 'apify~facebook-video-search-scraper'
+FB_GROUPS = 'lofomachines~facebook-groups-posts-search-scraper'
+FB_REEL_DETAILS, FB_VIDEO_DETAILS = 'alpha-scraper~facebook-reels-details-scraper-pro', 'alpha-scraper~facebook-video-details-scraper'
+FB_POST_LINK, FB_PLAYS, FB_PAGES = 'danek~facebook-posts-fast', 'social_developer~facebook-playcount-scraper', 'apify~facebook-pages-scraper'
+FB_SPEECH, FB_CM_CHEAP = 'invideoiq~video-transcriber', 'thedoor~facebook-comment-scraper'
+BUDGET_FB = 62.00   # 19 Oct: the Facebook work may spend up to here on the meter (USD 100 limit; about USD 34.1 spent before it)
+
+
+def stage_fbcover():
+    """19 Oct: Facebook public posts about V7, every route that tested well (fbtest, fbtest2): 30 keywords on three search backends
+    (silentflow 20 each, scraper_one 20, Apify's search 10), Facebook's reel search and three video searches (12 keywords), public groups
+    (12 keywords) and Google one month at a time (12 exact phrases x 7 months). New finds without their details get them in fbdetails."""
+    import urllib.parse
+    todo = []
+    go = lambda *a: todo.append(a)
+    for i, k in enumerate(KW_FB):
+        go(f'fbc_silent_{i:02d}', FB_SILENT, {"query": k, "search_type": "posts", "max_posts": 20, "start_date": SINCE, "end_date": UNTIL}, 0.07, 20)
+        go(f'fbc_one_{i:02d}', FB_SEARCH, {"query": k, "resultsCount": 20, "searchType": "top", "startDate": SINCE, "endDate": UNTIL}, 0.08, 20)
+        go(f'fbc_apify_{i:02d}', FB_APIFY_SEARCH, {"categories": [k], "searchType": "posts", "resultsLimit": 10}, 0.08, 10)
+    for i, k in enumerate(KW_FB_VIDEO):
+        go(f'fbc_reels_{i:02d}', FB_APIFY_SEARCH, {"categories": [k], "searchType": "reels", "resultsLimit": 15}, 0.10, 15)
+        go(f'fbc_vapify_{i:02d}', FB_V_APIFY, {"searchTerm": k, "resultsLimit": 15}, 0.10, 15)
+    go('fbc_vheadply', FB_V_HEADPLY, {"searchQueries": KW_FB_VIDEO, "maxItemsPerTarget": 20, "mode": "videoSearch"}, 1.20, 240)
+    go('fbc_vaxesso', FB_V_AXESSO, {"input": [{"keyword": k, "sort": "RELEVANCE", "maxPosts": 20} for k in KW_FB_VIDEO]}, 0.20, 240)
+    go('fbc_groups', FB_GROUPS, {"keywords": KW_FB_GROUPS, "afterDate": "this_year", "maxPosts": 25, "countryCode": "eg"}, 1.60, 300)
+    g = lambda q, a, b: 'https://www.google.com/search?' + urllib.parse.urlencode({'q': q + ' site:facebook.com', 'tbs': 'cdr:1,cd_min:%s,cd_max:%s' % (a, b)})
+    go('fbc_google_months', GOOGLE, {"queries": '\n'.join(g(q, a, b) for q in G_PHRASES_FB for a, b in MONTHS), "maxPagesPerQuery": 2, "countryCode": "eg"},
+       1.00, len(G_PHRASES_FB) * len(MONTHS) * 2)
+    parallel(todo, BUDGET_FB)
+
+
+FB_LOOSE = re.compile(r'v7|ڤي|ڤى|سڤن|v ?cola|super ?soda|كريم صودا|cream soda', re.I)   # a reel or video worth fetching by link
+
+
+def fb_known():
+    """The post ids and video ids in every Facebook row that has an exact time and its numbers (normalize.py reads these)."""
+    import re as _re
+    ids = set()
+    pats = ('fb_search_*', 'fbc_one_*', 'fbc_silent_*', 'fbc_apify_*', 'fbc_vheadply', 'fbc_groups', 'fbd_*', 'fbkw_*', 'fbdeep_*', 'fbgap_*', 'fbvs_headply', 'fbgroups_lofo')
+    for pat in pats:
+        for f in RAW.glob(pat + '.json'):
+            for x in json.load(open(f, encoding='utf-8')).get('items', []):
+                if not isinstance(x, dict):
+                    continue
+                for k in ('postId', 'post_id', 'video_id', 'story_id'):
+                    if x.get(k): ids.add(str(x[k]))
+                v = x.get('video') if isinstance(x.get('video'), dict) else {}
+                if v.get('id'): ids.add(str(v['id']))
+                for u in (x.get('url'), x.get('post_url'), v.get('url')):
+                    m = _re.search(r'(?:/reel/|/videos/(?:[^/?]+/)?|[?&]v=|/posts/(?:[^/?]+/)?|story_fbid=|/permalink/|[?&]fbid=)(\d{8,})', u or '')
+                    if m: ids.add(m.group(1))
+    return ids
+
+
+def stage_fbdetails():
+    """19 Oct: the reels and videos that the reel search and two video searches return without an exact time or numbers, and Facebook's
+    posts that Google found month by month, fetched by link when they're new: reels, videos and posts alike with danek's details scraper
+    (USD 0.0023; 1,736 users; in the test it gave reels' text, time, counts and plays). V7's own pages are left out. A reel or video is
+    fetched only if its text names V7."""
+    import re as _re
+    known = fb_known()
+    vids = {}
+    for f in sorted(RAW.glob('fbc_reels_*.json')) + sorted(RAW.glob('fbreels_apify_*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            if x.get('postId') and x.get('url') and FB_LOOSE.search(x.get('caption') or '') and (x.get('authorName') or '').replace(' ', '').lower() not in ('v7egypt', 'vsupersoda'):
+                vids[str(x['postId'])] = x['url']
+    for f in [RAW / 'fbc_vaxesso.json', RAW / 'fbvs_axesso.json']:
+        for x in (json.load(open(f, encoding='utf-8'))['items'] if f.exists() else []):
+            if x.get('videoId') and x.get('videoUrl') and FB_LOOSE.search((x.get('title') or '') + ' ' + (x.get('description') or '')) and 'V7Egypt' not in (x.get('ownerUrl') or ''):
+                vids[str(x['videoId'])] = x['videoUrl']
+    for f in sorted(RAW.glob('fbc_vapify_*.json')) + sorted(RAW.glob('fbvs_apify_*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            u = x.get('videoUrl') or ''
+            m = _re.search(r'(?:/reel/|/videos/(?:[^/?]+/)?|[?&]v=)(\d{8,})', u)
+            if m and not u.endswith('undefined') and FB_LOOSE.search(json.dumps([x.get('title'), x.get('save_description'), x.get('label')], ensure_ascii=False)):
+                vids[m.group(1)] = u
+    posts = {}
+    for f in [RAW / 'fbc_google_months.json', RAW / 'fbgoogle_month.json']:
+        for page in (json.load(open(f, encoding='utf-8'))['items'] if f.exists() else []):
+            for r in page.get('organicResults') or []:
+                u = (r.get('url') or '').split('#')[0]
+                if _re.search(r'facebook\.com/(?:V7Egypt|Vsupersoda)/', u, _re.I):
+                    continue
+                mv = _re.search(r'(?:/reel/|/videos/(?:[^/?]+/)?|[?&]v=)(\d{8,})', u)
+                mp = _re.search(r'(?:/posts/(?:[^/?]+/)?|story_fbid=|/permalink/|[?&]fbid=|/photos/(?:[^/?]+/)?)(\d{8,}|pfbid\w+)', u)
+                if mv: vids[mv.group(1)] = u
+                elif mp: posts[mp.group(1)] = u
+    new_v = {k: u for k, u in vids.items() if k not in known}
+    new_p = {k: u for k, u in posts.items() if k not in known}
+    log(f'  fbdetails: {len(vids)} reels and videos found ({len(new_v)} new), {len(posts)} Google post links ({len(new_p)} new)')
+    links = list(new_v.values()) + list(new_p.values())   # danek's details scraper reads reels, videos and posts alike (text, time, counts, plays)
+    if links:
+        run('fbd_posts', FB_POST_LINK, {"direct_urls": [{"url": u} for u in links]}, round(len(links) * 0.00233 * 1.3 + 0.05, 2), len(links), budget=BUDGET_FB)
+
+
+def _fb_public():
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    posts = [i for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'fb' and i.get('url')]
+    return posts, labels
+
+
+def stage_fbfill():
+    """19 Oct: fills the gaps of the public Facebook posts about V7 (after normalize.py and label.py):
+    - exact plays for reels and videos without a view count (social_developer, USD 0.004 a video);
+    - what's said in reels and videos (invideoiq's transcriber, USD 0.035 a video; it read all five test reels, Facebook's own captions three);
+      also the videos whose text is too short to tell what they're about;
+    - the followers and category of the pages, creators, businesses and news outlets that posted (Apify's page scraper, USD 0.0082 a page);
+    - the comments under them, up to 100 a post (thedoor, USD 0.0005 a comment); fbfill2 sends the posts it returns nothing for to
+      Apify's own comment scraper."""
+    posts, labels = _fb_public()
+    about = lambda i: (labels.get(i['id']) or {}).get('about')
+    tag = time.strftime('%Y%m%d%H%M')
+    vids = [i for i in posts if i.get('fmt') in ('Reel', 'Video') and (about(i) or len(i.get('text') or '') < 30)]
+    done_sp = set()
+    for f in RAW.glob('fbf_speech_*.json'):
+        done_sp |= {(x.get('video_url') or x.get('url') or '').split('?')[0].rstrip('/') for x in json.load(open(f, encoding='utf-8'))['items']}
+    nosp = [i for i in vids if not i.get('speech') and i['url'].split('?')[0].rstrip('/') not in done_sp]
+    noviews = [i for i in vids if about(i) and not i.get('views')]
+    seg_ok = ('page', 'creator', 'business', 'news')
+    page_urls = sorted({(i.get('author') or {}).get('url').split('?')[0].rstrip('/') for i in posts if about(i) and (labels.get(i['id']) or {}).get('seg') in seg_ok
+                        and (i.get('author') or {}).get('url') and not (i.get('author') or {}).get('followers')})
+    done_cm = set()
+    for f in RAW.glob('fbcm_*.json'):
+        done_cm |= {x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') for x in json.load(open(f, encoding='utf-8'))['items']}
+    cm = [i for i in posts if about(i) and (i.get('comments') or 0) > 0 and i['url'] not in done_cm]
+    n_cm = sum(min(i['comments'], 100) for i in cm)
+    log(f'  fbfill: {len(noviews)} videos without views, {len(nosp)} videos to transcribe, {len(page_urls)} pages, {len(cm)} posts with about {n_cm} comments')
+    todo = []
+    if noviews:
+        todo.append(('fbf_plays_' + tag, FB_PLAYS, {"startUrls": [{"url": i['url']} for i in noviews]}, round(len(noviews) * 0.004 * 1.3 + 0.05, 2), len(noviews)))
+    if nosp:
+        todo.append(('fbf_speech_' + tag, FB_SPEECH, {"video_urls": [i['url'] for i in nosp]}, round(len(nosp) * 0.035 * 1.5 + 0.10, 2), len(nosp)))
+    if page_urls:
+        todo.append(('fbf_pages_' + tag, FB_PAGES, {"startUrls": [{"url": u} for u in page_urls]}, round(len(page_urls) * 0.0082 * 1.3 + 0.05, 2), len(page_urls)))
+    if cm:
+        todo.append(('fbcm_door_' + tag, FB_CM_CHEAP, {"postUrls": [i['url'] for i in cm], "targetComments": 100, "includeReplies": False,
+                                                       "orderingMode": "MOST_RELEVANT"}, round(n_cm * 0.0005 * 1.3 + 0.10, 2), n_cm + 50))
+    parallel(todo, BUDGET_FB)
+
+
+def stage_fbviews():
+    """19 Oct: the video posts about V7 whose link is a post link (a permalink or a group post), so the play count scraper can't read them,
+    fetched by link with danek's details scraper, which returns the video's id and plays."""
+    posts, labels = _fb_public()
+    todo = [i for i in posts if (labels.get(i['id']) or {}).get('about') and i.get('fmt') in ('Reel', 'Video') and not i.get('views')]
+    log(f'  fbviews: {len(todo)} video posts without plays')
+    if todo:
+        run('fbd_posts_views', FB_POST_LINK, {"direct_urls": [{"url": i['url']} for i in todo]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
+
+
+def stage_fbnames():
+    """19 Oct: the few public Facebook posts about V7 whose search row came without the account's name, fetched by link (danek)."""
+    posts, labels = _fb_public()
+    todo = [i for i in posts if (labels.get(i['id']) or {}).get('about') and not (i.get('author') or {}).get('name')]
+    log(f'  fbnames: {len(todo)} posts without the account name')
+    if todo:
+        run('fbd_posts_names', FB_POST_LINK, {"direct_urls": [{"url": i['url']} for i in todo]}, round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
+
+
+def stage_fbfill2():
+    """19 Oct: the posts thedoor returned no comments for get them from Apify's own comment scraper (USD 0.0023 a comment), up to 100 a post."""
+    posts, labels = _fb_public()
+    got = set()
+    for f in RAW.glob('fbcm_*.json'):
+        got |= {(x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') or '') for x in json.load(open(f, encoding='utf-8'))['items']}
+    cm = [i for i in posts if (labels.get(i['id']) or {}).get('about') and (i.get('comments') or 0) > 0 and i['url'] not in got]
+    n = sum(min(i['comments'], 100) for i in cm)
+    log(f'  fbfill2: {len(cm)} posts without comments, about {n} comments')
+    if cm:
+        run('fbcm_official_' + time.strftime('%Y%m%d%H%M'), FB_COMMENTS, {"startUrls": [{"url": i['url']} for i in cm], "resultsLimit": 100,
+                                                                           "includeNestedComments": False}, round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_FB)
+
+
+BUDGET_FBTEST2 = 36.00   # 19 Oct: the depth and gap tests may spend up to here on the meter (about USD 3 over the 33.03 spent; expected about 1.6)
+BUDGET_FBTEST = 34.00   # 19 Oct: the Facebook comparison may spend up to here on the meter (about USD 3.7 over the 30.31 spent; expected about 2)
+
+
+STAGES = {'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

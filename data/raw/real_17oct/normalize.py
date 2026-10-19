@@ -90,6 +90,17 @@ def add(it, run):
         for k in ('text', 'likes', 'comments', 'shares', 'views', 'place', 'fmt'):
             if old.get(k) in (None, '') and it.get(k) not in (None, ''):
                 old[k] = it[k]; old.setdefault('filled', []).append(k + ':' + run)
+        if it.get('fmt') in ('Reel', 'Video') and old.get('fmt') in ('Image', 'Text'):   # 19 Oct: a video search knows it's a video
+            old['fmt'] = it['fmt']
+        if it.get('url') and it['url'] != old.get('url') and it['url'] not in old.get('urls', []):
+            old.setdefault('urls', []).append(it['url'])
+        for k in ('cover', 'video'):
+            if it.get('media') and it['media'].get(k) and not (old.get('media') or {}).get(k):
+                old.setdefault('media', {'images': []})[k] = it['media'][k]
+        if it.get('media') and it['media'].get('images') and not (old.get('media') or {}).get('images'):
+            old.setdefault('media', {})['images'] = it['media']['images']
+        if it.get('duration') and not old.get('duration'):
+            old['duration'] = it['duration']
         for k, v in (it.get('author') or {}).items():
             if (old.get('author') or {}).get(k) in (None, '') and v not in (None, ''):
                 old.setdefault('author', {})[k] = v
@@ -235,13 +246,7 @@ def ugc():
             a = p.get('author') or {}
             if (a.get('name') or '').replace(' ', '').lower() in OWN_FB_NAMES:
                 WHY_OUT['V7 itself in the search'] += 1; continue
-            g = re.search(r'facebook\.com/groups/([\w.]+)/', p.get('url') or '')
-            add({'id': 'fb:' + str(p.get('postId') or p.get('url')), 'kind': 'post', 'src': 'ugc', 'pl': 'fb', 'date': iso(p.get('timestamp')),
-                 'text': clean(p.get('postText') or (p.get('sharedPost') or {}).get('postText')), 'url': p.get('url'),
-                 'author': {'name': a.get('name'), 'id': a.get('id'), 'url': a.get('url')}, 'likes': num(p.get('reactionsCount')),
-                 'comments': num(p.get('commentsCount')), 'shares': num(p.get('sharesCount')), 'views': None,
-                 'fmt': 'Text' if not p.get('attachments') else 'Image', 'group': {'id': g.group(1)} if g else None, 'is_share': bool(p.get('isReshare')),
-                 'query': body['input'].get('query')}, f.stem)
+            fb_post(fb_one_item(p, body), f.stem)   # 19 Oct: the shared Facebook reader (reels and videos told apart from photos)
     # Instagram: the 17 Oct hashtags, then (18 Oct) posts tagging V7's accounts, Google's finds and Instagram's keyword search
     for name in ('ig_tags', 'ig_tags2', 'ig_tagged_v7', 'ig_tagged_v7_full', 'ig_tagged_vss', 'ig_google_posts', 'ig_google2_posts', 'ig_kw_wide', 'ig_kw_wide2') + tuple(f.stem for f in sorted(RAW.glob('igkw_*_refetch.json'))):
         kw = name.startswith('ig_kw_wide')           # seemuapps' keyword search names its fields differently
@@ -420,20 +425,303 @@ def ig_ugc_comments():
                  'likes': num(c.get('likesCount')), 'comments': num(c.get('repliesCount')), 'shares': None, 'views': None, 'by_v7': u.lower() in OWN_IG | ABROAD_IG}, f.stem)
 
 
+# ---------------------------------------------------------------- 19 Oct: Facebook from every route (collect.py fbcover, fbdetails, fbfill)
+# The same Facebook post comes back under its post id from the post searches and under its video id from the video and reel searches.
+# Rows that carry both (a post id and a /reel/ or /videos/ link) link the two, so a post is counted once: fb:<post id> when it's known,
+# fb:v<video id> otherwise.
+FB_ALIAS = {}
+
+
+def fb_files(*patterns):
+    """The raw files of one Facebook format: the 19 Oct collection and the comparison runs that share its format."""
+    out = []
+    for pat in patterns:
+        out += sorted(RAW.glob(pat + '.json'))
+    return list(dict.fromkeys(out))
+
+
+FB_SILENT_FILES = ('fbc_silent_*', 'fbd_posts*', 'fbkw_silentflow_*', 'fbkw_scrapeforge_*', 'fbkw_danek_*', 'fbkw_igview_*', 'fbdeep_silentflow_*',
+                   'fbdeep_scrapeforge_top', 'fbdeep_month_*', 'fbgap_danek', 'fbkw_topapi', 'fbdeep_topapi_*', 'fbgap_topapi_details')
+FB_ONE_FILES = ('fbc_one_*', 'fbkw_scraperone_*', 'fbkw_fetchcat_*')
+FB_APIFY_FILES = ('fbc_apify_*', 'fbkw_apify_*')
+FB_HEADPLY_FILES = ('fbc_vheadply', 'fbvs_headply', 'fbkw_headply')
+FB_ALPHA_FILES = ('fbd_reels*', 'fbd_videos*', 'fbgap_reeldetails')
+FB_LOFO_FILES = ('fbc_groups', 'fbgroups_lofo')
+
+
+def fb_vid(url):
+    m = re.search(r'(?:/reel/|/videos/(?:[^/?]+/)?|[?&]v=)(\d{8,})', url or '')
+    return m.group(1) if m else None
+
+
+def fb_pnum(url):
+    m = re.search(r'(?:/posts/(?:[^/?]+/)?|story_fbid=|/permalink/|[?&]fbid=)(\d{8,})', url or '')
+    return m.group(1) if m else None
+
+
+def fb_alias(post_id, url=None, video_id=None):
+    vid = str(video_id) if video_id else fb_vid(url)
+    if post_id and vid and str(post_id) != vid:
+        FB_ALIAS.setdefault(vid, str(post_id))
+
+
+def fb_key(post_id=None, url=None, video_id=None):
+    vid = str(video_id) if video_id else fb_vid(url)
+    pid = str(post_id) if post_id else fb_pnum(url)
+    if pid and pid != vid:
+        return 'fb:' + pid
+    if vid:
+        return 'fb:' + FB_ALIAS[vid] if vid in FB_ALIAS else 'fb:v' + vid
+    if pid:
+        return 'fb:' + pid
+    return 'fb:' + (url or '').split('?')[0].rstrip('/') if url else None
+
+
+def fb_fmt(url, typ=None, video=False, n_images=0):
+    u, t = url or '', str(typ or '').lower()
+    if '/reel/' in u or t == 'reel':
+        return 'Reel'
+    if video or t in ('video', 'search_video') or '/videos/' in u or 'watch' in u:
+        return 'Video'
+    return 'Album' if n_images > 1 else 'Image' if n_images == 1 or t in ('photo', 'image') else 'Text'
+
+
+OWN_FB_IDS = set()   # V7's own pages' account ids, read from any row that names them (a search row can come without the name)
+
+
+def fb_own(name, url=None, aid=None):
+    return ((name or '').replace(' ', '').lower() in OWN_FB_NAMES or bool(re.search(r'facebook\.com/(?:V7Egypt|Vsupersoda)(?:[/?]|$)', url or '', re.I))
+            or bool(aid and str(aid) in OWN_FB_IDS))
+
+
+def fb_post(it, run):
+    """Adds a public Facebook post; V7's own pages are left out (collected as V7's posts)."""
+    a = it.get('author') or {}
+    if fb_own(a.get('name'), a.get('url'), a.get('id')):
+        WHY_OUT['V7 itself in the search'] += 1; return
+    if not it['id']:
+        WHY_OUT['not a post (an error row)'] += 1; return
+    g = re.search(r'facebook\.com/groups/([\w.]+)/', it.get('url') or '')
+    it.setdefault('group', {'id': g.group(1)} if g else None)
+    it.update(kind='post', src='ugc', pl='fb')
+    add(it, run)
+
+
+def fb_aliases():
+    """First pass: every row that has a post id and a video id, and the account ids of V7's own pages."""
+    for f in sorted(RAW.glob('fb_search_*.json')) + sorted(RAW.glob('fb*.json')):
+        for p in json.load(open(f, encoding='utf-8')).get('items', []):
+            if isinstance(p, dict):
+                for a in (p.get('author'), p.get('user'), {'name': p.get('authorName'), 'id': p.get('authorId')}, p.get('owner')):
+                    if isinstance(a, dict) and a.get('id') and (a.get('name') or '').replace(' ', '').lower() in OWN_FB_NAMES:
+                        OWN_FB_IDS.add(str(a['id']))
+    for f in sorted(RAW.glob('fb_search_*.json')) + fb_files(*FB_ONE_FILES, *FB_APIFY_FILES, *FB_HEADPLY_FILES):
+        for p in json.load(open(f, encoding='utf-8'))['items']:
+            fb_alias(p.get('postId'), p.get('url'))
+    for f in fb_files(*FB_SILENT_FILES):
+        for p in json.load(open(f, encoding='utf-8'))['items']:
+            fb_alias(p.get('post_id'), p.get('url'), p.get('video_id'))
+    for f in fb_files(*FB_ALPHA_FILES):
+        for p in json.load(open(f, encoding='utf-8'))['items']:
+            v = p.get('video') or {}
+            fb_alias((p.get('post') or {}).get('post_id'), v.get('url'), v.get('id'))
+
+
+def fb_ugc():
+    """Public Facebook posts about V7 from the 19 Oct routes. Rows without an exact time (the reel search, two video searches) were
+    fetched again by link (fbd_*) and are read from there."""
+    for f in fb_files(*FB_SILENT_FILES):   # silentflow's search, danek's posts by link and topapi: one format
+        body = json.load(open(f, encoding='utf-8'))
+        for p in body['items']:
+            if not isinstance(p, dict) or not p.get('timestamp'):
+                WHY_OUT['not a post (an error row)'] += 1; continue
+            a = p.get('author') or {}
+            url = p.get('url') or (p.get('browser_video') or {}).get('url') or ('https://www.facebook.com/reel/%s/' % p['video_id'] if p.get('video_id') else None)
+            album = [x.get('image_file_uri') or x.get('uri') for x in p.get('album_preview') or [] if isinstance(x, dict)]
+            vfile = (p.get('video_files') or {}).get('video_sd_file') if isinstance(p.get('video_files'), dict) else None
+            reps = [r.get('base_url') or r.get('url') for r in p.get('representations') or [] if isinstance(r, dict) and 'video' in str(r.get('mime_type', 'video'))]
+            video = vfile or (p.get('video') if isinstance(p.get('video'), str) and p.get('video').startswith('http') else None) or (reps[0] if reps else None)
+            imgs = [u for u in ([p.get('image')] if isinstance(p.get('image'), str) and p.get('image') else []) + [u for u in album if u]
+                    + [x if isinstance(x, str) else (x or {}).get('uri') or (x or {}).get('url') for x in p.get('images') or []] if u]
+            plays = p.get('video_view_count') or p.get('play_count_text')
+            fb_post({'id': fb_key(p.get('post_id'), url, p.get('video_id')), 'date': iso(p['timestamp']), 'text': clean(p.get('message') or p.get('description')),
+                     'url': url, 'author': {'name': a.get('name'), 'id': a.get('id'), 'url': a.get('url')}, 'likes': num(p.get('reactions_count')),
+                     'comments': num(p.get('comments_count')), 'shares': num(p.get('reshare_count')), 'views': fb_count(plays),
+                     'fmt': fb_fmt(url, p.get('type'), bool(video or p.get('video_id')), len(set(imgs))), 'is_share': bool(p.get('attached_post')),
+                     'media': {'cover': p.get('video_thumbnail') or p.get('thumbnail_uri') or None, 'video': video, 'images': list(dict.fromkeys(imgs))},
+                     'query': (body.get('input') or {}).get('query')}, f.stem)
+    for f in fb_files(*FB_ONE_FILES):                                             # scraper_one (the 17 Oct format) and fetch_cat
+        body = json.load(open(f, encoding='utf-8'))
+        for p in body['items']:
+            fb_post(fb_one_item(p, body), f.stem)
+    for f in fb_files(*FB_APIFY_FILES):                                           # Apify's own search
+        body = json.load(open(f, encoding='utf-8'))
+        for p in body['items']:
+            if not p.get('postId') or not p.get('timestamp'):
+                WHY_OUT['not a post (an error row)'] += 1; continue
+            u = p.get('user') or {}
+            med = [m for m in p.get('media') or [] if isinstance(m, dict)]
+            imgs = [((m.get('photo_image') or {}).get('uri') or m.get('thumbnail')) for m in med if m.get('__typename') == 'Photo' or m.get('photo_image')]
+            fb_post({'id': fb_key(p.get('postId'), p.get('url')), 'date': iso(p.get('timestamp')), 'text': clean(p.get('text')), 'url': p.get('url'),
+                     'author': {'name': u.get('name') or (p.get('pageName') or {}).get('name'), 'id': u.get('id'), 'url': u.get('profileUrl')},
+                     'likes': num(p.get('likes')), 'comments': num(p.get('comments')), 'shares': num(p.get('shares')), 'views': num(p.get('videoPostViewCount')),
+                     'fmt': fb_fmt(p.get('url'), None, bool(p.get('isVideo')), len([i for i in imgs if i])),
+                     'media': {'cover': next((m.get('thumbnail') for m in med if m.get('thumbnail')), None), 'video': None, 'images': [i for i in imgs if i]},
+                     'query': ((body.get('input') or {}).get('categories') or [None])[0]}, f.stem)
+    for p, run in [(p, f.stem) for f in fb_files(*FB_HEADPLY_FILES) for p in json.load(open(f, encoding='utf-8'))['items']]:   # headply: exact times and counts
+        if not p.get('postId') or not p.get('createdAt'):
+            WHY_OUT['not a post (an error row)'] += 1; continue
+        fb_post({'id': fb_key(p.get('postId'), p.get('url')), 'date': iso(p['createdAt']), 'text': clean(p.get('text')), 'url': p.get('url'),
+                 'author': {'name': p.get('authorName'), 'id': p.get('authorId'), 'url': p.get('authorUrl')}, 'likes': num(p.get('reactionCount')),
+                 'comments': num(p.get('commentCount')), 'shares': num(p.get('shareCount')), 'views': num(p.get('videoViewCount')),
+                 'fmt': fb_fmt(p.get('url'), p.get('postType'), p.get('postType') in ('reel', 'video') or bool(p.get('videoUrl'))), 'duration': num(p.get('videoDurationSec')),
+                 'media': {'cover': None, 'video': p.get('videoUrl'), 'images': []}, 'query': (p.get('source') or {}).get('target')}, run)
+    for f in fb_files(*FB_ALPHA_FILES):                                           # reels and videos fetched by link (alpha-scraper)
+        for p in json.load(open(f, encoding='utf-8'))['items']:
+            v, e, o = p.get('video') or {}, p.get('engagement') or {}, p.get('owner') or {}
+            if not v.get('id') or not v.get('upload_timestamp'):
+                WHY_OUT['not a post (an error row)'] += 1; continue
+            url = v.get('url') or p.get('_requested_url')
+            fb_post({'id': fb_key((p.get('post') or {}).get('post_id'), url, v.get('id')), 'date': iso(v['upload_timestamp']),
+                     'text': clean(v.get('description') or v.get('caption')), 'url': url,
+                     'author': {'name': o.get('name'), 'id': o.get('id'), 'url': ('https://www.facebook.com/' + o['username']) if o.get('username') else None},
+                     'likes': num(e.get('reactions_total') or e.get('likes')), 'comments': num(e.get('comments')), 'shares': num(e.get('shares')),
+                     'views': fb_count(re.match(r'([\d.,]+[KMk]?) views', v.get('title') or '') and re.match(r'([\d.,]+[KMk]?) views', v['title']).group(1)),
+                     'fmt': 'Reel' if v.get('is_reel') or '/reel/' in (url or '') else 'Video', 'duration': num(v.get('duration_seconds')),
+                     'music': (p.get('music') or {}).get('track_name'),
+                     'media': {'cover': (p.get('media') or {}).get('thumbnail_url'), 'video': v.get('direct_video_url') or v.get('video_only_url'), 'images': []}}, f.stem)
+    for p, run in [(p, f.stem) for f in fb_files(*FB_LOFO_FILES) for p in json.load(open(f, encoding='utf-8'))['items']]:   # public groups (lofomachines)
+        url = p.get('post_url')
+        if not url or not p.get('date'):
+            WHY_OUT['not a post (an error row)'] += 1; continue
+        g = re.search(r'/groups/(\d+)/', url)
+        fb_post({'id': fb_key(None, url), 'date': iso(p['date']), 'text': clean(p.get('text')), 'url': url,
+                 'author': {'name': p.get('author_name'), 'id': p.get('author_id')}, 'likes': num(p.get('reaction_count')), 'comments': num(p.get('comment_count')),
+                 'shares': num(p.get('share_count')), 'views': None, 'fmt': 'Image' if p.get('image_url') else 'Text',
+                 'group': {'id': g.group(1) if g else None, 'name': clean(html_unescape(p.get('group_name')))},
+                 'media': {'cover': None, 'video': None, 'images': [p['image_url']] if p.get('image_url') else []}, 'query': p.get('searchKeyword')}, run)
+
+
+def html_unescape(s):
+    import html
+    return html.unescape(s or '')
+
+
+def fb_count(v):
+    """'15K', '1.2M', '2,345' or a number."""
+    if v is None or v == '':
+        return None
+    if isinstance(v, (int, float)):
+        return int(v)
+    m = re.match(r'\s*([\d.,]+)\s*([KkMm]?)', str(v))
+    if not m:
+        return None
+    n = float(m.group(1).replace(',', ''))
+    return int(n * {'k': 1e3, 'm': 1e6, '': 1}[m.group(2).lower()])
+
+
+def fb_one_item(p, body):
+    """A scraper_one row (17-19 Oct). Reels and videos are told apart from photos by the link and the attachment type."""
+    a = p.get('author') or {}
+    att = [x for x in p.get('attachments') or [] if isinstance(x, dict)]
+    vids = [x for x in att if x.get('type') == 'video']
+    imgs = [x.get('url') for x in att if x.get('type') == 'photo' and x.get('url')]
+    return {'id': fb_key(p.get('postId'), p.get('url')), 'date': iso(p.get('timestamp')),
+            'text': clean(p.get('postText') or (p.get('sharedPost') or {}).get('postText')), 'url': p.get('url'),
+            'author': {'name': a.get('name'), 'id': a.get('id'), 'url': a.get('url') or a.get('profileUrl')}, 'likes': num(p.get('reactionsCount')),
+            'comments': num(p.get('commentsCount')), 'shares': num(p.get('sharesCount')), 'views': None,
+            'fmt': fb_fmt(p.get('url'), None, bool(vids), len(imgs)), 'is_share': bool(p.get('isReshare')),
+            'media': {'cover': None, 'video': vids[0].get('url') if vids else None, 'images': imgs}, 'query': (body.get('input') or {}).get('query')}
+
+
+def fb_ugc_comments():
+    """19 Oct: comments under public Facebook posts about V7 (thedoor first, Apify's own scraper for the posts it returned nothing for),
+    anonymous like the others; V7's own pages count as V7's replies."""
+    by_url = {}
+    for it in ITEMS.values():
+        if it['pl'] == 'fb' and it['kind'] == 'post' and it['src'] == 'ugc':
+            for u in [it.get('url')] + it.get('urls', []):
+                if u: by_url[u.split('?')[0].rstrip('/') if 'story_fbid' not in u else u] = it['id']
+    def parent(u):
+        u = u or ''
+        return by_url.get(u.split('?')[0].rstrip('/') if 'story_fbid' not in u else u) or (fb_key(None, u) if fb_key(None, u) in ITEMS else None)
+    for f in sorted(RAW.glob('fbcm_door_*.json')):
+        for c in json.load(open(f, encoding='utf-8'))['items']:
+            pid = parent(c.get('post_url'))
+            if not c.get('id') or not pid:
+                WHY_OUT['FB comment on an unknown post'] += 1; continue
+            name = c.get('author_name') or ''
+            it = {'id': 'fbc:' + str(c['id']), 'kind': 'comment', 'src': 'ugc', 'pl': 'fb', 'parent': pid, 'date': iso(c.get('timestamp') or c.get('comment_time')),
+                  'text': clean(c.get('text')), 'url': c.get('comment_url') or c.get('post_url'),
+                  'author': {'name': name, 'id': c.get('author_id'), 'url': c.get('author_profile_url')}, 'likes': num(c.get('reactions_count')),
+                  'comments': num(c.get('replies_count')), 'shares': None, 'views': None, 'by_v7': fb_own(name, c.get('author_profile_url'), c.get('author_id')),
+                  'has_media': bool(c.get('media') or c.get('image_url'))}
+            add(it, f.stem)
+    for f in sorted(RAW.glob('fbcm_official_*.json')):
+        for c in json.load(open(f, encoding='utf-8'))['items']:
+            pid = parent(c.get('facebookUrl') or c.get('inputUrl'))
+            cid = c.get('id') or c.get('commentId')
+            if not cid or not pid:
+                WHY_OUT['FB comment on an unknown post'] += 1; continue
+            name = c.get('profileName') or ''
+            add({'id': 'fbc:' + str(cid), 'kind': 'comment', 'src': 'ugc', 'pl': 'fb', 'parent': pid, 'date': iso(c.get('date')), 'text': clean(c.get('text')),
+                 'url': c.get('commentUrl') or c.get('facebookUrl'), 'author': {'name': name, 'id': c.get('profileId'), 'url': c.get('profileUrl')},
+                 'likes': num(c.get('likesCount')), 'comments': num(c.get('commentsCount')), 'shares': None, 'views': None,
+                 'by_v7': fb_own(name, c.get('profileUrl'), c.get('profileId')), 'has_media': bool(c.get('attachments'))}, f.stem)
+
+
+def fb_extras():
+    """19 Oct: what fbfill added to public Facebook posts: exact plays for videos and reels, what's said in them (invideoiq's
+    transcriber), and the followers and category of the pages that posted."""
+    plays, speech, pages = {}, {}, {}
+    for f in sorted(RAW.glob('fbf_plays_*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            if x.get('video_id') and x.get('play_count') not in (None, ''):
+                plays[str(x['video_id'])] = fb_count(x['play_count'])
+    for f in sorted(RAW.glob('fbf_speech_*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            t = clean(x.get('transcript') or x.get('text') or '')
+            u = x.get('video_url') or x.get('url') or x.get('input_url') or ''
+            if t and u: speech[u.split('?')[0].rstrip('/')] = t
+    for f in sorted(RAW.glob('fbf_pages_*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            for u in (x.get('facebookUrl'), x.get('pageUrl'), x.get('inputUrl')):
+                if u: pages[u.split('?')[0].rstrip('/').lower()] = x
+    n_p = n_s = n_f = 0
+    for it in ITEMS.values():
+        if it['pl'] != 'fb' or it['src'] != 'ugc' or it['kind'] != 'post':
+            continue
+        vid = fb_vid(it.get('url')) or (it['id'][4:] if it['id'].startswith('fb:v') else None)
+        vids = {vid} | {v for v, p in FB_ALIAS.items() if 'fb:' + p == it['id']}
+        pc = [plays[v] for v in vids if v in plays]
+        if pc and not it.get('views'):
+            it['views'] = max(pc); n_p += 1
+        for u in [it.get('url')] + it.get('urls', []):
+            if u and u.split('?')[0].rstrip('/') in speech:
+                it['speech'] = speech[u.split('?')[0].rstrip('/')]; n_s += 1; break
+        a = it.get('author') or {}
+        pg = pages.get((a.get('url') or '').split('?')[0].rstrip('/').lower())
+        if pg:
+            a['followers'] = a.get('followers') or num(pg.get('followers')); a['category'] = pg.get('category'); n_f += 1
+            if not a.get('name') and pg.get('title'):   # the search row came without the page's name
+                a['name'] = clean(pg['title'])
+    print('Facebook: plays on %d posts, speech on %d, page followers on %d' % (n_p, n_s, n_f))
+
+
 def seen():
     """19 Oct: what Claude read in a post's pictures (vis_read.json): the text written on them, what they show, whether V7 is visible."""
     p = HERE / 'vis_read.json'
     res = json.load(open(p, encoding='utf-8')) if p.exists() else {}
     n = 0
     for it in ITEMS.values():
-        r = res.get(it['id'][3:]) if it['pl'] == 'ig' and it['kind'] == 'post' else None
+        r = (res.get(it['id'][3:]) if it['pl'] == 'ig' else res.get('fb_' + it['id'][3:]) if it['pl'] == 'fb' else None) if it['kind'] == 'post' else None
         if r:
             it['seen'] = {k: r[k] for k in ('text', 'shows', 'v7_visible', 'products')}; n += 1
-    print('pictures read for %d Instagram posts' % n)
+    print('pictures read for %d Instagram and Facebook posts' % n)
 
 
 if __name__ == '__main__':
-    own_posts(); comments(); ugc(); yt_comments(); ig_ugc_comments(); extras(); seen()
+    own_posts(); comments(); fb_aliases(); ugc(); fb_ugc(); yt_comments(); ig_ugc_comments(); fb_ugc_comments(); extras(); fb_extras(); seen()
     out = list(ITEMS.values())
     json.dump({'made': datetime.date.today().isoformat(), 'window': [SINCE, UNTIL], 'items': out}, open(HERE / 'items.json', 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0)

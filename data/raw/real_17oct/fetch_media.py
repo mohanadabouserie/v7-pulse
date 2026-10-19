@@ -62,6 +62,14 @@ for f in sorted((HERE / 'raw').glob('fb_search_*.json')):
         if att and p.get('url'):
             img_of[p['url']] = (att[0]['url'], 'video' if att[0].get('type') == 'video' else 'image', 'fb')
 
+for it in json.load(open(HERE / 'items.json', encoding='utf-8'))['items']:   # 19 Oct on: Facebook from every route (normalize.py keeps each post's media links)
+    m = it.get('media') or {}
+    if it['pl'] == 'fb' and it['src'] == 'ugc' and it['kind'] == 'post' and (m.get('cover') or m.get('images')):
+        k = 'video' if it.get('fmt') in ('Reel', 'Video') else 'carousel' if it.get('fmt') == 'Album' else 'image'
+        for u in [it['url']] + it.get('urls', []):
+            if u not in img_of or not img_of[u][0]:
+                img_of[u] = (m.get('cover') or m['images'][0], k, 'fb')
+
 want = [u for u in own_urls if u not in have]
 want += [u for lk, cm, u in sorted(x_rows, key=lambda r: -(int(r[0]) + int(r[1]))) if u not in have][:40]
 ugc = sorted(data['ugc'], key=lambda r: (-(r.get('views') or 0), -(r.get('likes', 0) + r.get('comments', 0) + r.get('shares', 0))))   # zero counts are left out of the data

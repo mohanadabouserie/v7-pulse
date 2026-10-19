@@ -1012,3 +1012,31 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `label.py`, `build_real.py`, `fetch_media.py`, new `vis_media.py` and `vis_read.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`;
   - `data/raw/media_13oct/` (115 new images, `index.json`); `.gitignore` (`vis/` and `vis_read.json` stay local);
   - `tests/test_v29.py`, `tests/test_v20.py`, `tests/test_v23.py`, `tests/test_v25.py`; notes.
+
+### Version 30: Facebook, the same work as Instagram (19 Oct 2026)
+- **Why:** user: "can you please do the same with facebook? everything we did with instagram starting with getting all keyword search scrapers, comparing them, then getting best or combine multiple then see data gaps and fill it … facebook have videos and reels as well".
+- **Every Facebook search scraper compared** (`FB_KEYWORD_SCRAPERS.md`, `fbtest_report.py`; USD 2.72): 11 post-search scrapers, 4 video searches, the reel search, hashtags, public groups and Google, on the three Instagram keywords.
+  - The post searches mostly share Facebook's own search and return the same posts (68 useful in all); scraper_one and Apify's search rank differently. Arabic with ڤ works on Facebook.
+  - Not used: hashtags ("Empty or private data"), powerai (aborted 3 times), mina_safwat (no dates), headply's post search (no date filter).
+- **Depth** (USD 1.10 with the gap tests): past the first 10-15 results per keyword Facebook returns unrelated posts, and one month at a time returns the same noise. So more keywords and other backends, not deeper searches (DECISIONS #143).
+- **The search** (`collect.py fbcover`, USD 7.21): 30 keywords on silentflow, scraper_one and Apify's search; the reel search and three video searches (12 keywords); public groups (12 keywords; the run stopped after 62 posts); Google one month at a time (114 of 168 result pages before its cap). `fbdetails` fetched the 610 new reels, videos and Google links by link (danek, USD 1.40).
+- **Facebook public posts about V7: 124 to 520** (Image 181, Reel 152, Text 107, Album 54, Video 26; Egypt 381, Syria 77). By route: scraper_one 290 (196 no other route found), silentflow 183 (68), the reel, video and Google links 117 (all new), Apify's search 70, groups 13 (11), video search 25.
+- **Gaps filled** (`fbfill`, `fbfill2`, `fbviews`, `fbnames`):
+  - reels and videos told apart from photos (the 17 Oct reader marked all 20 as photos; DECISIONS #144);
+  - plays: 158 of 178 videos (social_developer, USD 0.57; danek by link for video posts behind a post link);
+  - speech: 163 posts read with what's said in them (invideoiq, USD 7.84; it beat Facebook's captions and Whisper on the test; DECISIONS #145);
+  - pictures: 267 photo posts, albums and quiet videos read by Claude (`vis_media.py --fb`, `vis_read.py`; DECISIONS #146). They changed the products of 54, the type of 20 and the sentiment of 26;
+  - comments under the public posts: 2,797 shown (1,022 positive, 1,469 neutral, 259 negative, 38 mixed), from thedoor (271 of 286 posts, USD 1.87) and Apify's own scraper for 12 more (DECISIONS #147);
+  - page followers and category: 210 of the 302 named pages, creators, businesses and news outlets (Apify's page scraper, USD 2.01); 34 have 100K+.
+- **Found on the way:**
+  - a 19.1-million-view reel came without its account's name; fetched by link, it was V Super Soda's (V7's own page). V7's own pages are now left out by their account ids too (15 posts), and 9 replies by V7's pages under public posts count as V7's;
+  - the dashboard kept three posts entered by hand before Version 25 (a Mon3esh reel without its 1.36M views, and two Reddit reviews that showed twice). The collected records replace them;
+  - one comment batch skipped some items; all labelled.
+  - with the Facebook comments, two days in the last 30 passed 25% negative and both showed in "Needs your attention", pushing out "questions wait for V7". The panel now shows the latest negative day (the other is mentioned and stays in Alerts) and keeps one slot for replies waiting or posts worth amplifying.
+- **Findings:** Kareem Elsayed's Facebook reel (1.46M views) and Mon3esh's (1.36M) are the biggest public Facebook posts; a viral post says Cream Soda "tastes like hair oil" (21,430 reactions); Facebook comments are mostly neutral tags and emoji, with price questions (213) and "not worth the hype" (158) the main complaints.
+- **Dashboard:** public posts about V7 1,181 (Facebook 520, Instagram 479); comments shown 8,706 (was 5,918). The data sources, help, Ask V7 Pulse and the post view name Facebook's speech, pictures and comments. 708 images; the page is 13.4 MB.
+- **Tests:** new `tests/test_v30.py`; `test_v23.py` allows 14 MB; `test_v28.py` accepts Facebook speech; `test_v29.py` follows the new wording. All 23 suites pass (22 dashboard suites and the bot).
+- **Published** privately (Version 30). Public site: Version 28 until a push.
+- **Spend:** USD 24.88 for Facebook today by the final run charges (tests 3.85, searches 4.58, reels, videos, groups and Google 2.63, by link 1.47, plays 0.57, speech 7.84, pages 2.01, comments 1.93). Apify's meter: USD 55.21 of the USD 100 limit (USD 36.21 above the included 19). Labelling (about 5,000 items) and picture reading ran on the Max plan. `SCRAPERS.md` lists 325 runs from 55 scrapers.
+- **Still not possible:** private profiles and closed groups, Stories, most share counts, and many reels: Facebook's search surfaces about 600 posts about V7 (we have about 390 of those), while the reel, video and Google route found 155 posts that barely overlap with it (24), so far more reels and page videos exist than any search shows.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 29 saved in `archive/dashboard_versions/`); in `data/raw/real_17oct/`: `collect.py`, `normalize.py`, `build_real.py`, `fetch_media.py`, `vis_media.py`, `vis_read.py`, new `fbtest_report.py` and `FB_KEYWORD_SCRAPERS.md`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`; `data/raw/media_13oct/` (162 new images); `tests/test_v30.py`, `tests/test_v23.py`, `tests/test_v29.py`; notes.

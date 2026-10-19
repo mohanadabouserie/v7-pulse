@@ -7,7 +7,7 @@ import collections, json, pathlib, re
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = HERE / 'raw'
 ACTORS = {   # actor id -> (Apify Store link, what it is)
-    'FB_POSTS': ('apify/facebook-posts-scraper', 'Facebook page posts'),
+    'FB_POSTS': ('apify/facebook-posts-scraper', 'Facebook page posts, or posts by link'),
     'FB_COMMENTS': ('apify/facebook-comments-scraper', 'Facebook comments'),
     'FB_SEARCH': ('scraper_one/facebook-posts-search', 'Facebook keyword search'),
     'IG_POSTS': ('apify/instagram-post-scraper', 'Instagram posts of a profile, or posts by link'),
@@ -35,6 +35,33 @@ ACTORS = {   # actor id -> (Apify Store link, what it is)
     'PROFILES': ('apify/instagram-profile-scraper', 'Instagram accounts (follower counts)'),
     'AFANASENKO': ('afanasenko/instagram-reel-script-extractor', 'On-screen text and speech of Instagram reels'),
     'IG_CM_CHEAP': ('scrapesmith/instagram-comments-scraper', 'Instagram comments (cheaper, but returned nothing for half the posts)'),
+    'FB_SILENT': ('silentflow/facebook-search-scraper', 'Facebook keyword search'),
+    'FB_FORGE': ('scrapeforge/facebook-search-posts', 'Facebook keyword search'),
+    'FB_APIFY_SEARCH': ('apify/facebook-search-scraper', 'Facebook keyword search (posts and reels)'),
+    'FB_DANEK_SEARCH': ('danek/facebook-search-ppr', 'Facebook keyword search'),
+    'FB_POWERAI': ('powerai/facebook-post-search-scraper', 'Facebook keyword search (aborted)'),
+    'FB_ALIEN': ('alien_force/facebook-search-scraper', 'Facebook keyword search'),
+    'FB_FETCHCAT': ('fetch_cat/facebook-post-search-scraper', 'Facebook keyword search'),
+    'FB_MINA': ('mina_safwat/facebook-search-actor', 'Facebook keyword search (no dates)'),
+    'FB_IGVIEW': ('igview-owner/facebook-old-posts-search', 'Facebook keyword search'),
+    'FB_TOPAPI': ('topapi/facebook-search-posts-scraper', 'Facebook keyword search'),
+    'FB_HEADPLY': ('headply/facebook-post-search-scraper', 'Facebook keyword search'),
+    'FB_V_APIFY': ('apify/facebook-video-search-scraper', 'Facebook video search'),
+    'FB_V_POWERAI': ('powerai/facebook-video-search-scraper', 'Facebook video search'),
+    'FB_V_HEADPLY': ('headply/facebook-video-search-scraper', 'Facebook video search'),
+    'FB_V_AXESSO': ('axesso_data/facebook-video-search-scraper', 'Facebook video search'),
+    'FB_TAGS': ('apify/facebook-hashtag-scraper', 'Facebook hashtags (returned nothing)'),
+    'FB_GROUPS': ('lofomachines/facebook-groups-posts-search-scraper', 'Facebook public groups search'),
+    'FB_POST_LINK': ('danek/facebook-posts-fast', 'Facebook posts, reels and videos by link'),
+    'FB_PLAYS': ('social_developer/facebook-playcount-scraper', 'Facebook video plays'),
+    'FB_REEL_DETAILS': ('alpha-scraper/facebook-reels-details-scraper-pro', 'Facebook reel details'),
+    'FB_SPEECH': ('invideoiq/video-transcriber', 'What is said in Facebook videos (speech to text)'),
+    'FB_SP_PIOTR': ('piotrv1001/facebook-video-transcript-scraper', 'Facebook captions and speech to text'),
+    'FB_SP_CODENEST': ('codenest/facebook-video-transcript-scraper', "Facebook's own captions"),
+    'FB_SP_VIRAL': ('viralanalyzer/video-transcriber', 'Speech to text (Whisper small)'),
+    'FB_SP_ALPHA': ('alpha-scraper/facebook-transcript-subtitle-scraper', 'Facebook subtitles (returned none)'),
+    'FB_CM_CHEAP': ('thedoor/facebook-comment-scraper', 'Facebook comments (cheaper)'),
+    'FB_PAGES': ('apify/facebook-pages-scraper', 'Facebook pages (followers, category)'),
 }
 RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('t_fb_posts', 'FB_POSTS', '17 Oct test: 3 of V7 Egypt’s Facebook posts'),
@@ -126,6 +153,40 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('ig_profiles_202610190635', 'PROFILES', 'follower counts of the new Instagram accounts'),
     ('igcm_202610190646', 'IG_CM_CHEAP', 'comments under the public Instagram posts about V7, up to 100 a post (nothing back for 137 of 251 posts)'),
     ('igcm_official_202610190652', 'IG_COMMENTS', 'comments under the posts scrapesmith returned nothing for'),
+] + [(f'fbkw_{n}_{i}', a, f'19 Oct Facebook comparison: keyword {i} of 3') for n, a in (('scraperone', 'FB_SEARCH'), ('scrapeforge', 'FB_FORGE'), ('apify', 'FB_APIFY_SEARCH'),
+      ('danek', 'FB_DANEK_SEARCH'), ('powerai', 'FB_POWERAI'), ('alienforce', 'FB_ALIEN'), ('fetchcat', 'FB_FETCHCAT'), ('mina', 'FB_MINA'), ('igview', 'FB_IGVIEW'),
+      ('silentflow', 'FB_SILENT')) for i in (1, 2, 3)] + [
+] + [(f'fbvs_{n}_{i}', a, f'19 Oct Facebook comparison: video search, keyword {i} of 3') for n, a in (('apify', 'FB_V_APIFY'), ('powerai', 'FB_V_POWERAI')) for i in (1, 2, 3)] + [
+] + [(f'fbreels_apify_{i}', 'FB_APIFY_SEARCH', f'19 Oct Facebook comparison: reel search, keyword {i} of 3') for i in (1, 2, 3)] + [
+    ('fbkw_topapi', 'FB_TOPAPI', '19 Oct Facebook comparison: the 3 keywords'), ('fbkw_headply', 'FB_HEADPLY', '19 Oct Facebook comparison: the 3 keywords'),
+    ('fbvs_headply', 'FB_V_HEADPLY', '19 Oct Facebook comparison: video search, the 3 keywords'), ('fbvs_axesso', 'FB_V_AXESSO', '19 Oct Facebook comparison: video search, the 3 keywords'),
+    ('fbtags_apify', 'FB_TAGS', '19 Oct Facebook comparison: 4 hashtags'), ('fbgroups_lofo', 'FB_GROUPS', '19 Oct Facebook comparison: public groups, 2 keywords'),
+    ('fbgoogle_month', 'GOOGLE', '19 Oct Facebook comparison: Google of facebook.com one month at a time'),
+    ('fbdeep_silentflow_top', 'FB_SILENT', '19 Oct depth: 60 results for ڤي سڤن'), ('fbdeep_silentflow_recent', 'FB_SILENT', '19 Oct depth: 60 most recent for ڤي سڤن'),
+    ('fbdeep_topapi_top', 'FB_TOPAPI', '19 Oct depth: 60 results for ڤي سڤن'), ('fbdeep_topapi_recent', 'FB_TOPAPI', '19 Oct depth: 60 most recent for ڤي سڤن'),
+    ('fbdeep_scrapeforge_top', 'FB_FORGE', '19 Oct depth: 60 results for ڤي سڤن'), ('fbdeep_month_silentflow', 'FB_SILENT', '19 Oct depth: June only'),
+    ('fbdeep_month_topapi', 'FB_TOPAPI', '19 Oct depth: June only'), ('fbgap_topapi_details', 'FB_TOPAPI', '19 Oct gap test: with post details'),
+    ('fbgap_danek', 'FB_POST_LINK', '19 Oct gap test: 8 posts by link'), ('fbgap_apifyposts', 'FB_POSTS', '19 Oct gap test: 8 posts by link, with captions'),
+    ('fbgap_playcount', 'FB_PLAYS', '19 Oct gap test: plays of 5 reels'), ('fbgap_reeldetails', 'FB_REEL_DETAILS', '19 Oct gap test: details of 5 reels'),
+    ('fbsp_piotr', 'FB_SP_PIOTR', '19 Oct speech test: 5 reels'), ('fbsp_invideo', 'FB_SPEECH', '19 Oct speech test: 5 reels'), ('fbsp_codenest', 'FB_SP_CODENEST', '19 Oct speech test: 5 reels'),
+    ('fbsp_viral', 'FB_SP_VIRAL', '19 Oct speech test: 5 reels'), ('fbsp_alpha', 'FB_SP_ALPHA', '19 Oct speech test: 5 reels'),
+    ('fbcm_apify', 'FB_COMMENTS', '19 Oct comment test: 3 posts'), ('fbcm_thedoor', 'FB_CM_CHEAP', '19 Oct comment test: 3 posts'), ('fbpages_apify', 'FB_PAGES', '19 Oct page test: 5 pages'),
+] + [(f'fbc_silent_{i:02d}', 'FB_SILENT', 'Facebook public posts: keyword %d of 30' % (i + 1)) for i in range(30)] + [
+] + [(f'fbc_one_{i:02d}', 'FB_SEARCH', 'Facebook public posts: keyword %d of 30' % (i + 1)) for i in range(30)] + [
+] + [(f'fbc_apify_{i:02d}', 'FB_APIFY_SEARCH', 'Facebook public posts: keyword %d of 30' % (i + 1)) for i in range(30)] + [
+] + [(f'fbc_reels_{i:02d}', 'FB_APIFY_SEARCH', 'Facebook reel search: keyword %d of 12' % (i + 1)) for i in range(12)] + [
+] + [(f'fbc_vapify_{i:02d}', 'FB_V_APIFY', 'Facebook video search: keyword %d of 12' % (i + 1)) for i in range(12)] + [
+    ('fbc_vheadply', 'FB_V_HEADPLY', 'Facebook video search: 12 keywords'), ('fbc_vaxesso', 'FB_V_AXESSO', 'Facebook video search: 12 keywords'),
+    ('fbc_groups', 'FB_GROUPS', 'Facebook public groups: 12 keywords (stopped after 62 posts)'),
+    ('fbc_google_months', 'GOOGLE', 'Google of facebook.com, 12 exact phrases, one month at a time (stopped at its cap after 114 of 168 pages)'),
+    ('fbd_posts', 'FB_POST_LINK', 'the new reels, videos and Google finds, by link'),
+    ('fbcm_door_202610191228', 'FB_CM_CHEAP', 'comments under the public Facebook posts about V7, up to 100 a post'),
+    ('fbcm_official_202610191241', 'FB_COMMENTS', 'comments under the posts thedoor returned nothing for'),
+    ('fbf_pages_202610191228', 'FB_PAGES', 'followers and category of the pages, creators, businesses and news outlets that posted about V7'),
+    ('fbf_plays_202610191228', 'FB_PLAYS', 'plays of the Facebook reels and videos about V7 without a view count'),
+    ('fbf_speech_202610191228', 'FB_SPEECH', 'what is said in the Facebook reels and videos about V7, and in those whose text is too short to tell'),
+    ('fbd_posts_views', 'FB_POST_LINK', 'the video posts about V7 behind a post link, by link, for their plays'),
+    ('fbd_posts_names', 'FB_POST_LINK', 'the posts whose search row came without the account name, by link'),
 ]
 
 
