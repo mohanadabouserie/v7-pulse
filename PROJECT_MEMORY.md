@@ -16,7 +16,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 |---|---|
 | Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 30, 19 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 28 since 19 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 30 since 19 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -135,7 +135,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Totals:** 785 public posts about V7, 5,918 comments shown, 546 images, 10.2 MB.
   - **Coverage:** roughly 60% of the window's public Instagram posts by the closest pair of routes (about 780 estimated); other pairs say less. Private accounts, Stories, hidden likes and most shares can't be had.
   - **Review fixes:** 21 Instagram accounts had a scraper's "Access delayed…" text as their name (now their real name or handle); the page says collected on 17–19 Oct; the Overview and Ask V7 Pulse no longer say comments under other people's posts aren't collected. People's "Creators & pages" tile no longer claims all of them have 10K+ followers (16 of 69 do).
-  - Published privately on 19 Oct. The public site is Version 28 until a push.
+  - Published privately on 19 Oct, and on the public site the same day (with Version 30).
 - **Version 30, Facebook (19 Oct, DECISIONS #143–148; `data/raw/real_17oct/FB_KEYWORD_SCRAPERS.md`):**
   - **Why:** the user asked for the same work on Facebook: compare every keyword scraper, combine the best, fill the gaps, and cover videos and reels.
   - **Compared:** 19 scrapers and routes. The post searches share Facebook's search; only the first 10-15 results per keyword are about V7. Arabic with ڤ works on Facebook.
@@ -144,7 +144,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Fixed:** reels and videos had been marked as photos; a V Super Soda reel (19.1M views) had counted as public; three posts entered by hand before Version 25 hid or duplicated the collected ones; "Needs your attention" showed two negative days and lost the replies card.
   - **Totals:** 1,181 public posts about V7 (Facebook 520, Instagram 479), 8,706 comments shown, 708 images, 13.4 MB.
   - **Coverage:** about 390 of the roughly 600 posts Facebook's search can surface; the reel, video and Google route shows many more reels and page videos exist.
-  - Published privately on 19 Oct. The public site is Version 28 until a push.
+  - Published privately and on the public site on 19 Oct; the bot reads that copy.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
@@ -535,7 +535,6 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
-- Push Versions 29 and 30 to the public site (needs the user's OK).
 - Keep the real data fresh: USD 44.79 is left under the USD 100 limit until 15 Nov (above USD 19 is overage). A weekly refresh of new posts and comments (`collect.py` with a later `SINCE`, plus `igkw --since`, `igcomments`, `igvisfetch`, then `vis_media.py`, `vis_read.py`, `normalize.py`, `label.py`, `build_real.py --inject`) costs roughly USD 2 to 4 now that Instagram comments and pictures are included. Anything on a schedule needs the user's OK.
 - Gaps left on 18 Oct: the posts tagging @v7egypt before 19 Jun and the Instagram spellings were closed in Version 29. Still open: 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
 - Offered, not built: speech to text and picture reading for TikTok and YouTube (Instagram and Facebook so far); comments under public TikTok posts. Facebook reels are still under-covered: Facebook's search doesn't surface most of them (Version 30 coverage note).
