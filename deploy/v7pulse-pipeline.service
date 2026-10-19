@@ -1,0 +1,14 @@
+# V7 Pulse refresh pipeline (data/raw/real_17oct/pipeline.py). NOT INSTALLED: anything that spends money on a schedule needs the
+# user's OK, and the dashboard's window must roll forward first (data/raw/real_17oct/PIPELINE.md, "Before a schedule").
+# To install for the current user (after that OK):
+#   mkdir -p ~/.config/systemd/user && cp deploy/v7pulse-pipeline*.service deploy/v7pulse-pipeline*.timer ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now v7pulse-pipeline.timer v7pulse-pipeline-weekly.timer
+# User timers run while the user is logged in. A missed run is made up at the next login (Persistent=true).
+[Unit]
+Description=V7 Pulse refresh pipeline, daily
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct
+ExecStart=/usr/bin/python3 pipeline.py run --mode daily --max-usd 3
+Nice=10

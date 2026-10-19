@@ -1,0 +1,11 @@
+# Sundays at 08:00 Cairo time, after the daily run. NOT INSTALLED.
+[Unit]
+Description=V7 Pulse refresh pipeline, weekly sweep
+
+[Timer]
+OnCalendar=Sun *-*-* 08:00:00 Africa/Cairo
+Persistent=true
+Unit=v7pulse-pipeline-weekly.service
+
+[Install]
+WantedBy=timers.target

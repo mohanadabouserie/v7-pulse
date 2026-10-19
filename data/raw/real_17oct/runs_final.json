@@ -5205,5 +5205,129 @@
    "apify-actor-start": 1,
    "apify-default-dataset-item": 16
   }
+ },
+ "igst_google": {
+  "id": "Szxp0hhV54x05oJ4b",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:17:41.871Z",
+  "finishedAt": "2026-10-19T14:22:55.299Z",
+  "usageTotalUsd": 0.10045,
+  "chargedEventCounts": {
+   "video": 88,
+   "search": 5,
+   "apify-actor-start": 1
+  }
+ },
+ "igst_posts": {
+  "id": "uPFzrp2KQhWTGcwdf",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:23:10.365Z",
+  "finishedAt": "2026-10-19T14:23:21.045Z",
+  "usageTotalUsd": 0.025300000000000003,
+  "chargedEventCounts": {
+   "post": 11,
+   "post-details": 11,
+   "music-data": 0
+  }
+ },
+ "fbf_plays_202610191732": {
+  "id": "d9wP9ll2mbvnuZyQI",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:32:35.598Z",
+  "finishedAt": "2026-10-19T14:32:47.228Z",
+  "usageTotalUsd": 0.06820000000000001,
+  "chargedEventCounts": {
+   "apify-actor-start": 4,
+   "apify-default-dataset-item": 17
+  }
+ },
+ "fbcm_door_202610191732": {
+  "id": "frSiHA8wMyLNMDMkd",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:32:35.692Z",
+  "finishedAt": "2026-10-19T14:32:58.567Z",
+  "usageTotalUsd": 0.03855,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 77,
+   "apify-actor-start": 1
+  }
+ },
+ "fbf_speech_202610191732": {
+  "id": "4tWZfvg1Nv47m0bUS",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:32:36.034Z",
+  "finishedAt": "2026-10-19T14:33:11.856Z",
+  "usageTotalUsd": 0.10500000000000001,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 3,
+   "extra-10-minutes": 0
+  }
+ },
+ "fbf_pages_202610191732": {
+  "id": "VL8fr97hOMHk25fNg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:32:35.614Z",
+  "finishedAt": "2026-10-19T14:33:19.646Z",
+  "usageTotalUsd": 0.2214,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 27,
+   "page": 0
+  }
+ },
+ "fbd_posts_views_202610191733": {
+  "id": "Mdowrea3OYAsFN6u4",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:33:35.559Z",
+  "finishedAt": "2026-10-19T14:34:36.527Z",
+  "usageTotalUsd": 0.03966,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 17
+  }
+ },
+ "igspeech_about_202610191734": {
+  "id": "vd4GXSTn0TUhyqPR5",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:34:54.416Z",
+  "finishedAt": "2026-10-19T14:35:26.832Z",
+  "usageTotalUsd": 0.022500000000000003,
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 5,
+   "speech2text": 5
+  }
+ },
+ "ig_profiles_202610191735": {
+  "id": "isp8S9bpGzPQIfFsx",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:35:37.135Z",
+  "finishedAt": "2026-10-19T14:36:02.903Z",
+  "usageTotalUsd": 0.069,
+  "chargedEventCounts": {
+   "profile": 30,
+   "about-account": 0
+  }
+ },
+ "igcm_202610191736": {
+  "id": "ZByZNk439H9TIfNzD",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:36:21.035Z",
+  "finishedAt": "2026-10-19T14:36:49.171Z",
+  "usageTotalUsd": 0.03805,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 76
+  }
+ },
+ "vis_posts_202610191737": {
+  "id": "cC7dk4ToEeILoTtdY",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:37:04.579Z",
+  "finishedAt": "2026-10-19T14:37:39.589Z",
+  "usageTotalUsd": 0.0161,
+  "chargedEventCounts": {
+   "post": 7,
+   "post-details": 7,
+   "music-data": 0
+  }
  }
 }

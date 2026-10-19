@@ -35,7 +35,12 @@ async def main():
     trips += re.findall(r'(?i)(?<!-)\bid\s*=\s*["\']?prr-(?:anchor|decisions|stamp)', html)
     check('the publish guard won’t take the page for a code-review page', not trips, trips[:2])
     media = json.loads(re.search(r'/\*MEDIA\*/var MEDIA=(.*?);/\*END_MEDIA\*/', html, re.S).group(1))
-    check('image keys read back as the real post links (&id= included)', sum('&id=' in k for k in media) >= 5 and all(k.startswith('https://') for k in media), sum('&id=' in k for k in media))
+    # Since Version 32 the images have a size budget (build_media.py) and no image key may carry an &id= link, so the escaping is checked
+    # on the post links themselves: every image key is a post's link, and the links with &id= read back whole though none is written raw.
+    own = ''.join(re.search(r'/\*%s\*/(.*?)/\*END_%s\*/' % (b, b), html, re.S).group(1) for b in ('REAL_OWN', 'REAL_OWN_X'))
+    links = {json.loads('"%s"' % u) for u in re.findall(r"url:'([^']*)'", own)} | {u['url'] for u in d['ugc'] if u.get('url')}
+    check('image keys read back as the real post links, and links with &id= are written escaped',
+          all(k in links for k in media) and sum('&id=' in u for u in links) >= 5 and '&id=' not in html, (sum(k not in links for k in media), sum('&id=' in u for u in links)))
     async with async_playwright() as p:
         b = await p.chromium.launch(); errs = []
         pg = await b.new_page(viewport={'width': 1440, 'height': 900}); pg.on('pageerror', lambda e: errs.append(str(e))); J = pg.evaluate

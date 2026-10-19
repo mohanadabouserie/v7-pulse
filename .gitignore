@@ -34,3 +34,9 @@ data/raw/real_17oct/*.out
 # post images and video frames read for on-screen text (people's media): local only
 data/raw/real_17oct/vis/
 data/raw/real_17oct/vis_read.json
+
+# the refresh pipeline's state (data/raw/real_17oct/pipeline.py): its lock, its ledger of Apify runs and its run reports stay on
+# the machine that runs it, like the bot's state
+data/raw/real_17oct/pipeline.lock
+data/raw/real_17oct/pipeline_ledger.json
+data/raw/real_17oct/pipeline_runs/

@@ -69,7 +69,7 @@ ACTORS = {   # actor id -> (Apify Store link, what it is)
     'FB_V_NATANIEL': ('natanielsantos/facebook-video-search-scraper', 'Facebook video search'),
     'FB_V_THENETAJI': ('thenetaji/facebook-video-search-scraper', 'Facebook video search'),
     'FB_V_AUTOLAB': ('automation-lab/facebook-public-video-search-results', 'Facebook video search'),
-    'GOOGLE_SHORTS': ('simple.actor/google-short-videos', "Google's short videos (here: Facebook reels)"),
+    'GOOGLE_SHORTS': ('simple.actor/google-short-videos', "Google's short videos (Facebook reels; one Instagram test)"),
 }
 RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('t_fb_posts', 'FB_POSTS', '17 Oct test: 3 of V7 Egypt’s Facebook posts'),
@@ -211,15 +211,34 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('fbd_posts_views_202610191511', 'FB_POST_LINK', 'the new video posts behind a post link, for their plays'),
 ] + [(f'fbm_forge_{i:02d}', 'FB_FORGE', 'Facebook public posts, a fourth search: keyword %d of 30' % (i + 1)) for i in range(30)] + [
 ] + [(f'fbm_fetchcat_{i:02d}', 'FB_FETCHCAT', 'Facebook public posts, a fifth search: keyword %d of 30' % (i + 1)) for i in range(30)] + [
+    ('igst_google', 'GOOGLE_SHORTS', "19 Oct test: Google's short videos limited to Instagram, 6 exact phrases (36 reels about V7, 4 of them new)"),
+    ('igst_posts', 'IG_POSTS', 'the new Instagram reels from that test, by link'),
+    ('fbf_plays_202610191732', 'FB_PLAYS', 'pipeline fill run (pipeline.py): plays of the Facebook videos still without a view count'),
+    ('fbcm_door_202610191732', 'FB_CM_CHEAP', 'pipeline fill run: comments under the Facebook posts that had none collected'),
+    ('fbf_speech_202610191732', 'FB_SPEECH', 'pipeline fill run: a second try for the 35 videos the transcriber had returned nothing for (3 read). '
+                                             'The budget guard had skipped it, and the old fallback started it with a USD 0.50 cap; fixed the same day'),
+    ('fbf_pages_202610191732', 'FB_PAGES', 'pipeline fill run: followers of the pages still without them'),
+    ('fbd_posts_views_202610191733', 'FB_POST_LINK', 'pipeline fill run: video posts behind a post link, for their plays'),
+    ('igspeech_about_202610191734', 'SPEECH', 'pipeline fill run: speech of the new Instagram reels about V7'),
+    ('ig_profiles_202610191735', 'PROFILES', 'pipeline fill run: follower counts of the Instagram accounts still without one'),
+    ('igcm_202610191736', 'IG_CM_CHEAP', 'pipeline fill run: comments under the Instagram posts that had none collected'),
+    ('vis_posts_202610191737', 'IG_POSTS', 'pipeline fill run: fresh media links for the Instagram posts whose pictures were not read yet'),
 ]
 
 
+PEOPLE_KEYS = {'username', 'usernames', 'profiles', 'handles'}
+
+
 def short_input(inp):
-    """The input as given, with long lists of links counted rather than printed."""
+    """The input as given, with lists of links and of accounts counted rather than printed: this file is public, and the links to private
+    people's posts carry their handle on Facebook, X and TikTok (19 Oct, DECISIONS #157). Long lists are counted too."""
     out = {}
     for k, v in (inp or {}).items():
-        if isinstance(v, list) and len(v) > 12:
-            out[k] = '[%d %s]' % (len(v), 'links' if any('http' in json.dumps(x) for x in v[:3]) else 'items')
+        links = isinstance(v, list) and any('http' in json.dumps(x) for x in v)
+        if isinstance(v, list) and (len(v) > 12 or links or k in PEOPLE_KEYS):
+            out[k] = '[%d %s]' % (len(v), ('link' if links else 'account' if k in PEOPLE_KEYS else 'item') + ('' if len(v) == 1 else 's'))
+        elif isinstance(v, str) and v.startswith('http'):
+            out[k] = '[1 link]'
         elif isinstance(v, str) and len(v) > 400:
             out[k] = v[:400] + '… (%d characters)' % len(v)
         elif k.startswith('shouldDownload'):

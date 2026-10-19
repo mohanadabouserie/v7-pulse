@@ -1,0 +1,11 @@
+# Daily at 07:00 Cairo time (see v7pulse-pipeline.service). NOT INSTALLED.
+[Unit]
+Description=V7 Pulse refresh pipeline, daily
+
+[Timer]
+OnCalendar=*-*-* 07:00:00 Africa/Cairo
+Persistent=true
+Unit=v7pulse-pipeline.service
+
+[Install]
+WantedBy=timers.target

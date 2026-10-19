@@ -588,3 +588,30 @@
 2026-10-19 15:12  --- stage fbnames, spent so far this cycle $71.0567, budget $14.00
 2026-10-19 15:12    fbnames: 0 posts without the account name
 2026-10-19 15:12  --- stage fbnames done, spent this cycle $71.0776
+2026-10-19 17:17  --- stage igshortstest, spent so far this cycle $71.0807, budget $14.00
+2026-10-19 17:23  igst_google      google-short-videos          SUCCEEDED     89 items  $0.0753  (cap $0.30)  total $71.1559  events {'video': 88, 'search': 5, 'apify-actor-start': 1}
+2026-10-19 17:23    igshortstest: 11 new reels inside the window to fetch
+2026-10-19 17:23  igst_posts       instagram-post-scraper       SUCCEEDED     11 items  $0.0252  (cap $0.08)  total $71.1811  events {'post': 11, 'post-details': 11, 'music-data': 0}
+2026-10-19 17:23  --- stage igshortstest done, spent this cycle $71.1811
+2026-10-19 17:32  --- pipeline fill 2026-04-20..2026-10-16, spent so far this cycle $71.2067, stops at $72.21
+2026-10-19 17:32    fbfill: 17 videos without views, 35 videos to transcribe, 27 pages, 3 posts with about 108 comments
+2026-10-19 17:32  fbf_speech_202610191732: skipped, only $1.00 of the $72.21 budget left (needs a $1.94 cap)
+2026-10-19 17:32  fbf_plays_202610191732 facebook-playcount-scraper   SUCCEEDED     17 items  $0.0002  (cap $0.14)  total $71.2069  events {'apify-actor-start': 4, 'apify-default-dataset-item': 0}
+2026-10-19 17:33  fbcm_door_202610191732 facebook-comment-scraper     SUCCEEDED     77 items  $0.0002  (cap $0.17)  total $71.2069  events {'apify-default-dataset-item': 46, 'apify-actor-start': 1}
+2026-10-19 17:33  fbf_speech_202610191732 video-transcriber            SUCCEEDED      3 items  $0.4168  (cap $0.50)  total $71.6235  events {'apify-default-dataset-item': 3, 'extra-10-minutes': 0}
+2026-10-19 17:33  fbf_pages_202610191732 facebook-pages-scraper       SUCCEEDED     27 items  $0.4168  (cap $0.34)  total $71.6235  events {'apify-default-dataset-item': 27, 'page': 0}
+2026-10-19 17:33    fbfill2: 0 posts without comments, about 0 comments
+2026-10-19 17:33    fbviews: 17 video posts without plays
+2026-10-19 17:34  fbd_posts_views_202610191733 facebook-posts-fast          SUCCEEDED     17 items  $0.0468  (cap $0.10)  total $71.6703  events {'apify-actor-start': 1, 'apify-default-dataset-item': 15}
+2026-10-19 17:34    fbnames: 0 posts without the account name
+2026-10-19 17:34    igspeech_about_202610191734: 5 reels, cap $0.08
+2026-10-19 17:35  igspeech_about_202610191734 instagram-transcripts-scrape SUCCEEDED      5 items  $0.0273  (cap $0.08)  total $71.6976  events {'apify-default-dataset-item': 4, 'speech2text': 4}
+2026-10-19 17:35    igspeech_tagged_202610191734: 0 reels, cap $0.05
+2026-10-19 17:35    igprofiles: 30 accounts without a follower count
+2026-10-19 17:36  ig_profiles_202610191735 instagram-profile-scraper    SUCCEEDED     30 items  $0.0551  (cap $0.14)  total $71.7527  events {'profile': 30, 'about-account': 0}
+2026-10-19 17:36    igcomments: 40 posts, about 268 comments
+2026-10-19 17:37  igcm_202610191736 instagram-comments-scraper   SUCCEEDED     76 items  $0.0305  (cap $0.22)  total $71.7832  events {'apify-actor-start': 1, 'apify-default-dataset-item': 76}
+2026-10-19 17:37    igcomments2: 23 posts without comments, about 164 comments
+2026-10-19 17:37  igcm_official_202610191737: skipped, only $0.42 of the $72.21 budget left (needs a $0.50 cap)
+2026-10-19 17:37    igvisfetch: 7 posts (6 about V7, 1 to check)
+2026-10-19 17:37  vis_posts_202610191737 instagram-post-scraper       SUCCEEDED      7 items  $0.0403  (cap $0.07)  total $71.8236  events {'post': 7, 'post-details': 7, 'music-data': 0}

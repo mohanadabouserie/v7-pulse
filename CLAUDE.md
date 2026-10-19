@@ -33,18 +33,18 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 ## Repository map
 | Path | What it is |
 |---|---|
-| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,600 lines, 8.0 MB with the 431 images): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
+| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,600 lines, 11.6 MB with its 522 images; the images have a 6 MB budget): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
 | `V7_Pulse_Costs.html` | Yearly cost calculator for the hosted version (fixed plus variable costs, three Claude model pickers). |
 | `V7_Pulse_Proposal.html` | The first proposal page (3 Oct 2026; its cost box is out of date). |
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches; `test_pipeline.py` the refresh pipeline, against stand-ins for Apify and Telegram. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
 | `data/raw/social/rumors_11oct/` | The Rumors & attacks pipeline (see "Data pipelines"). |
-| `data/raw/real_17oct/` | **The real social data (Versions 25 and 26):** `PLAN.md` (budget and window), `collect.py`, `normalize.py`, `label.py` (Claude), `build_real.py --inject`, raw files in `raw/`, and `SCRAPERS.md` (every scraper's link, input, output and cost, written by `scrapers_report.py`). See "Data pipelines". |
+| `data/raw/real_17oct/` | **The real social data (Versions 25 and 26):** `PLAN.md` (budget and window), `collect.py`, `normalize.py`, `label.py` (Claude), `build_real.py --inject`, raw files in `raw/`, `SCRAPERS.md` (every scraper's link, input, output and cost, written by `scrapers_report.py`), and `pipeline.py` (the refresh pipeline, `PIPELINE.md`). See "Data pipelines". |
 | `bot/` | The Telegram bot @v7_pulse_bot: `v7pulse_bot.py` (daily brief, Act now alerts, questions), `dashboard_reader.py` (reads the website copy in a headless browser), `claude_tools_mcp.py` (the dashboard's eight read-only Claude tools for Claude Code, which answers questions), `README.md`, a systemd service file. State in `bot/state/` (ignored). One copy runs at a time; its process id is in `bot/state/bot.pid` |
 | `Ask_V7_Pulse/` | Hosted-version setup for the chat: system prompt, 14 tool definitions, Apify allowlist. |
 | `scripts/` | Apify helper runners from the first tests. |
@@ -96,6 +96,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
+- **The refresh pipeline:** `python3 tests/test_pipeline.py`. Stand-ins for Apify and Telegram, so it needs no token and spends nothing.
 - **The Telegram bot:** `python3 tests/test_bot.py`. Stand-ins for Telegram and for Claude Code, so it needs no token or account and spends nothing. It reads the real dashboard; prefix with `DASH_SRC=file://$PWD/docs/index.html` for the copy the live bot reads.
 - Tests find the dashboard relative to the `tests/` folder, so they run from any checkout.
 
@@ -145,7 +146,11 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   4. `label.py`: Claude Code with the bot's sign-in (the user's personal Max plan), Opus 5.5 at low effort, 40 items a batch, JSON schema; resumable. `labels.json` holds every label.
   5. `build_real.py --inject`: writes the three blocks. Private people anonymous, @mentions masked (DECISIONS #122); off-topic comments dropped but emoji and tags kept (#120).
   6. `fetch_media.py`, then `../media_13oct/build_media.py --inject`: images for V7's posts, the top abroad posts and the top 80 public posts.
-  7. `scrapers_report.py` (with the Apify token in the environment): `SCRAPERS.md` and `runs_final.json`, each run's final charge.
+  7. `scrapers_report.py` (with the Apify token in the environment): `SCRAPERS.md` and `runs_final.json`, each run's final charge. It counts the links and accounts a run was given instead of printing them (DECISIONS #157).
+  8. `pipeline.py plan|run|status` (`--mode sweep|daily|weekly|fill`, `--max-usd`, default 10): steps 1 to 6 for Facebook and Instagram in one command (`PIPELINE.md`, DECISIONS #152–158).
+     - Each route has standby scrapers that write the same format, every run is health-checked, and each run has a spending line that the gap fillers obey too.
+     - It also keeps a lock, a ledger and a report per run (git-ignored), and sends a Telegram message to the bot's admins. `plan` spends nothing.
+     - Not scheduled: `daily` and `weekly` need the dashboard's window to roll past 16 Oct first, and the user's OK for the spending (DECISIONS #154). The systemd files in `deploy/` aren't installed.
   - `raw/`, `items.json`, `labels.json`, `vis/` and `vis_read.json` name or show private people, so they're git-ignored and stay on this machine. Never commit them: the repo is public.
 - **V7's own posts** (`data/raw/verify_13oct/`):
   1. `own_pull.py`: Instagram profiles (V7 Egypt, the pages abroad, the UK distributor), V7Egypt's Facebook posts, TikTok and the YouTube channel.
@@ -202,7 +207,8 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - YouTube:
   - `streamers/youtube-channel-scraper` returns English machine translations of V7's Arabic titles; `calm_builder/youtube-scraper` gives the originals.
   - Comment dates are relative ("8 days ago", "4 months ago"); apidojo turns some into a date on the run's day of the month (18 May …), which is still month-only.
-- Minimum cost caps: USD 0.50 for TikTok, Google search and calm_builder.
+- Minimum cost caps: USD 0.50 for TikTok, Google search and calm_builder. `collect.run` asks again with the scraper's own minimum when a start is refused for that reason, and only if it fits under the budget line. Never retry a run the budget guard skipped.
+- The images in the page have a budget: `build_media.py` takes V7's own posts first, then the pages abroad, then public posts by views, and stops at `V7_MEDIA_KB` (default 6,000 KB). The artifact limit is 16 MB; `test_v23.py` holds the page under 13 MB.
 - The artifact publish guard:
   - it takes a page for a code-review page, and refuses it over 512 KB, when an `id=` is followed by more than 2,048 characters with no space (a Facebook link ending in `&id=…` before image data did it);
   - the data builders write that `=` as `\u003d`, and `test_v25.py` checks the page (DECISIONS #124);

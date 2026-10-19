@@ -1,0 +1,9 @@
+# The weekly sweep of the second-tier routes (see v7pulse-pipeline.service). NOT INSTALLED.
+[Unit]
+Description=V7 Pulse refresh pipeline, weekly
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct
+ExecStart=/usr/bin/python3 pipeline.py run --mode weekly --max-usd 8
+Nice=10

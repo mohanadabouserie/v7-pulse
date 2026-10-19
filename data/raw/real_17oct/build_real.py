@@ -11,12 +11,12 @@ Times are local: Cairo (UTC+3 from 24 Apr, UTC+2 before), Tunisia and the UK UTC
 
 Usage: python3 build_real.py [--inject]
 """
-import collections, datetime, hashlib, json, pathlib, re, sys
+import collections, datetime, hashlib, json, os, pathlib, re, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 DASH = ROOT / 'V7_Pulse_Dashboard.html'
-SINCE, UNTIL, CHECKED = '2026-04-20', '2026-10-16', '2026-10-17'
+SINCE, UNTIL, CHECKED = os.environ.get('V7_SINCE', '2026-04-20'), os.environ.get('V7_UNTIL', '2026-10-16'), os.environ.get('V7_CHECKED', '2026-10-17')
 FOL = {'fb': 79783, 'ig': 38959, 'tt': 36900, 'yt': 2540}          # followers, checked 13 Oct 2026 (for the "most likely promoted" mark)
 PAGES = {'v7tunisia': ('own_tn_ig', 1, 'TN'), 'v7uzbekistan': ('own_uz_ig', 5, 'UZ'), 'v7ldnuk': ('own_uk_ig', 1, 'GB'), 'drinkv7': ('own_in_ig', 5.5, 'IN'),
          'thehalaldrinksco': ('dist_uk', 1, 'GB')}

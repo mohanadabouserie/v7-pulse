@@ -6,35 +6,35 @@ Every Apify run of `data/raw/real_17oct/`, written by `scrapers_report.py` from 
 
 | Scraper | Used for | Runs | Returned | Kept | Cost (USD) |
 |---|---|---:|---:|---:|---:|
-| [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber) | What is said in Facebook videos (speech to text) | 3 | 258 | 0 | 9.80 |
+| [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber) | What is said in Facebook videos (speech to text) | 4 | 261 | 0 | 9.90 |
 | [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper) | Instagram comments | 5 | 3,506 | 2,997 | 8.06 |
-| [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper) | Instagram posts of a profile, or posts by link | 10 | 2,174 | 424 | 5.00 |
+| [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper) | Instagram posts of a profile, or posts by link | 12 | 2,192 | 428 | 5.04 |
 | [alien_force/facebook-search-scraper](https://apify.com/alien_force/facebook-search-scraper) | Facebook keyword search | 22 | 342 | 0 | 3.90 |
 | [fetch_cat/facebook-post-search-scraper](https://apify.com/fetch_cat/facebook-post-search-scraper) | Facebook keyword search | 33 | 592 | 282 | 3.55 |
 | [scraper_one/facebook-posts-search](https://apify.com/scraper_one/facebook-posts-search) | Facebook keyword search | 52 | 1,131 | 473 | 3.39 |
 | [apify/facebook-search-scraper](https://apify.com/apify/facebook-search-scraper) | Facebook keyword search (posts and reels) | 52 | 610 | 104 | 3.10 |
-| [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast) | Facebook posts, reels and videos by link | 7 | 1,147 | 206 | 2.67 |
-| [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper) | Facebook pages (followers, category) | 3 | 316 | 0 | 2.59 |
+| [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper) | Facebook pages (followers, category) | 4 | 343 | 0 | 2.81 |
+| [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast) | Facebook posts, reels and videos by link | 8 | 1,164 | 223 | 2.71 |
 | [clockworks/tiktok-scraper](https://apify.com/clockworks/tiktok-scraper) | TikTok profiles, hashtags, keyword search, videos by link | 11 | 659 | 124 | 2.57 |
 | [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper) | Facebook comments | 5 | 995 | 923 | 2.56 |
-| [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper) | Facebook comments (cheaper) | 3 | 4,038 | 3,087 | 2.02 |
+| [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper) | Facebook comments (cheaper) | 4 | 4,115 | 3,164 | 2.06 |
 | [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper) | Instagram posts that tag a profile | 4 | 765 | 424 | 1.76 |
-| [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper) | What is said in Instagram reels (speech to text) | 5 | 306 | 0 | 1.57 |
+| [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper) | What is said in Instagram reels (speech to text) | 6 | 311 | 0 | 1.59 |
 | [scrapeforge/facebook-search-posts](https://apify.com/scrapeforge/facebook-search-posts) | Facebook keyword search | 34 | 594 | 215 | 1.54 |
 | [silentflow/facebook-search-scraper](https://apify.com/silentflow/facebook-search-scraper) | Facebook keyword search | 36 | 677 | 298 | 1.49 |
 | [apify/facebook-video-search-scraper](https://apify.com/apify/facebook-video-search-scraper) | Facebook video search | 19 | 284 | 0 | 1.42 |
 | [seemuapps/instagram-keyword-posts-scraper](https://apify.com/seemuapps/instagram-keyword-posts-scraper) | Instagram keyword search with a date range | 4 | 676 | 143 | 1.36 |
 | [apify/google-search-scraper](https://apify.com/apify/google-search-scraper) | Google search | 7 | 402 | 0 | 0.92 |
 | [clockworks/tiktok-comments-scraper](https://apify.com/clockworks/tiktok-comments-scraper) | TikTok comments | 2 | 887 | 872 | 0.89 |
-| [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper) | Facebook video plays | 3 | 191 | 0 | 0.76 |
+| [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper) | Facebook video plays | 4 | 208 | 0 | 0.83 |
 | [easyapi/facebook-videos-scraper](https://apify.com/easyapi/facebook-videos-scraper) | Facebook Watch search (returned nothing) | 4 | 0 | 0 | 0.73 |
+| [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper) | Instagram accounts (follower counts) | 3 | 315 | 0 | 0.72 |
+| [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper) | Instagram comments (cheaper, but returned nothing for half the posts) | 3 | 1,383 | 1,140 | 0.69 |
 | [powerai/facebook-video-search-scraper](https://apify.com/powerai/facebook-video-search-scraper) | Facebook video search | 3 | 30 | 0 | 0.69 |
-| [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper) | Instagram accounts (follower counts) | 2 | 285 | 0 | 0.66 |
-| [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper) | Instagram comments (cheaper, but returned nothing for half the posts) | 2 | 1,307 | 1,082 | 0.65 |
+| [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos) | Google's short videos (Facebook reels; one Instagram test) | 3 | 523 | 0 | 0.65 |
 | [apify/instagram-hashtag-scraper](https://apify.com/apify/instagram-hashtag-scraper) | Instagram hashtags (and Instagram keyword search) | 6 | 283 | 25 | 0.65 |
 | [lexis-solutions/facebook-videos-watch-scraper](https://apify.com/lexis-solutions/facebook-videos-watch-scraper) | Facebook Watch search | 4 | 31 | 0 | 0.63 |
 | [streamers/youtube-scraper](https://apify.com/streamers/youtube-scraper) | YouTube keyword search | 3 | 203 | 30 | 0.61 |
-| [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos) | Google's short videos (here: Facebook reels) | 2 | 434 | 0 | 0.55 |
 | [apidojo/youtube-comments-scraper](https://apify.com/apidojo/youtube-comments-scraper) | YouTube comments | 3 | 1,093 | 731 | 0.46 |
 | [headply/facebook-video-search-scraper](https://apify.com/headply/facebook-video-search-scraper) | Facebook video search | 3 | 181 | 16 | 0.42 |
 | [lofomachines/facebook-groups-posts-search-scraper](https://apify.com/lofomachines/facebook-groups-posts-search-scraper) | Facebook public groups search | 2 | 72 | 19 | 0.35 |
@@ -70,38 +70,38 @@ Every Apify run of `data/raw/real_17oct/`, written by `scrapers_report.py` from 
 | [apify/facebook-hashtag-scraper](https://apify.com/apify/facebook-hashtag-scraper) | Facebook hashtags (returned nothing) | 1 | 2 | 0 | 0.01 |
 | [memo23/instagram-reels-search-scraper](https://apify.com/memo23/instagram-reels-search-scraper) | Instagram Reels search, exact phrases | 1 | 2 | 0 | 0.00 |
 
-Total for these runs: USD 71.00 (Apify’s meter for the month also counts platform usage).
+Total for these runs: USD 71.75 (Apify’s meter for the month also counts platform usage).
 
 ## Every run
 
 ### t_fb_posts
 - **Scraper:** [apify/facebook-posts-scraper](https://apify.com/apify/facebook-posts-scraper), 2026-10-16
 - **Why:** 17 Oct test: 3 of V7 Egypt’s Facebook posts
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/V7Egypt/"}], "resultsLimit": 3, "onlyPostsNewerThan": "2026-04-20"}`
+- **Input:** `{"startUrls": "[1 link]", "resultsLimit": 3, "onlyPostsNewerThan": "2026-04-20"}`
 - **Output:** 3 returned · 0 in window · 0 kept · USD 0.0160
 
 ### t_fb_comments
 - **Scraper:** [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper), 2026-10-16
 - **Why:** 17 Oct test: comments on 2 V7 posts
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"}, {"url": "https://www.facebook.com/reel/1583808776758074/"}], "resultsLimit": 3, "includeNestedComments": true}`
+- **Input:** `{"startUrls": "[2 links]", "resultsLimit": 3, "includeNestedComments": true}`
 - **Output:** 17 returned · 0 in window · 0 kept · USD 0.0350
 
 ### t_ig_posts
 - **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-16
 - **Why:** 17 Oct test: 3 of V7 Egypt’s Instagram posts
-- **Input:** `{"username": ["v7egypt"], "resultsLimit": 3, "onlyPostsNewerThan": "2026-04-20"}`
+- **Input:** `{"username": "[1 account]", "resultsLimit": 3, "onlyPostsNewerThan": "2026-04-20"}`
 - **Output:** 3 returned · 0 in window · 0 kept · USD 0.0069
 
 ### t_ig_comments
 - **Scraper:** [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper), 2026-10-16
 - **Why:** 17 Oct test: comments on 2 V7 posts
-- **Input:** `{"directUrls": ["https://www.instagram.com/p/DdG_sWYEi_T/", "https://www.instagram.com/p/DZ2uClLMq8p/"], "resultsLimit": 3, "includeNestedComments": true}`
+- **Input:** `{"directUrls": "[2 links]", "resultsLimit": 3, "includeNestedComments": true}`
 - **Output:** 12 returned · 0 in window · 0 kept · USD 0.0276
 
 ### t_tt_comments
 - **Scraper:** [clockworks/tiktok-comments-scraper](https://apify.com/clockworks/tiktok-comments-scraper), 2026-10-16
 - **Why:** 17 Oct test: comments on a V7 TikTok video
-- **Input:** `{"postURLs": ["https://www.tiktok.com/@v7.egypt/video/7678406422190624008"], "commentsPerPost": 4, "maxRepliesPerComment": 2}`
+- **Input:** `{"postURLs": "[1 link]", "commentsPerPost": 4, "maxRepliesPerComment": 2}`
 - **Output:** 4 returned · 0 in window · 0 kept · USD 0.0040
 
 ### t_x
@@ -143,25 +143,25 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fb_posts
 - **Scraper:** [apify/facebook-posts-scraper](https://apify.com/apify/facebook-posts-scraper), 2026-10-16
 - **Why:** V7 Egypt’s Facebook posts since 20 Apr
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/V7Egypt/"}], "resultsLimit": 80, "onlyPostsNewerThan": "2026-04-20"}`
+- **Input:** `{"startUrls": "[1 link]", "resultsLimit": 80, "onlyPostsNewerThan": "2026-04-20"}`
 - **Output:** 34 returned · 34 in window · 34 kept · USD 0.1710
 
 ### ig_posts
 - **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-16
 - **Why:** V7 Egypt’s Instagram posts since 20 Apr
-- **Input:** `{"username": ["v7egypt"], "resultsLimit": 120, "onlyPostsNewerThan": "2026-04-20"}`
+- **Input:** `{"username": "[1 account]", "resultsLimit": 120, "onlyPostsNewerThan": "2026-04-20"}`
 - **Output:** 51 returned · 51 in window · 51 kept · USD 0.1173
 
 ### tt_posts
 - **Scraper:** [clockworks/tiktok-scraper](https://apify.com/clockworks/tiktok-scraper), 2026-10-16
 - **Why:** V7 Egypt’s TikTok videos since 20 Apr
-- **Input:** `{"profiles": ["v7.egypt"], "profileSorting": "latest", "oldestPostDateUnified": "2026-04-20", "resultsPerPage": 60}`
+- **Input:** `{"profiles": "[1 account]", "profileSorting": "latest", "oldestPostDateUnified": "2026-04-20", "resultsPerPage": 60}`
 - **Output:** 19 returned · 19 in window · 19 kept · USD 0.0770
 
 ### yt_posts
 - **Scraper:** [streamers/youtube-channel-scraper](https://apify.com/streamers/youtube-channel-scraper), 2026-10-16
 - **Why:** V7 Egypt’s YouTube videos and Shorts
-- **Input:** `{"startUrls": [{"url": "https://www.youtube.com/@V7Egypt"}], "maxResults": 40, "maxResultsShorts": 60, "maxResultStreams": 0, "oldestPostDate": "2026-04-20"}`
+- **Input:** `{"startUrls": "[1 link]", "maxResults": 40, "maxResultsShorts": 60, "maxResultStreams": 0, "oldestPostDate": "2026-04-20"}`
 - **Output:** 28 returned · 28 in window · 28 kept · USD 0.0280
 
 ### fb_comments
@@ -185,7 +185,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### abroad_posts
 - **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-16
 - **Why:** the posts of V7’s pages abroad
-- **Input:** `{"username": ["v7tunisia", "v7uzbekistan", "v7ldnuk", "drinkv7", "thehalaldrinksco"], "resultsLimit": 60, "onlyPostsNewerThan": "2026-04-20"}`
+- **Input:** `{"username": "[5 accounts]", "resultsLimit": 60, "onlyPostsNewerThan": "2026-04-20"}`
 - **Output:** 195 returned · 194 in window · 194 kept · USD 0.4485
 
 ### abroad_comments
@@ -323,7 +323,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### t2_ig_tagged
 - **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-18
 - **Why:** 18 Oct test: posts tagging @v7egypt
-- **Input:** `{"username": ["v7egypt"], "resultsLimit": 5}`
+- **Input:** `{"username": "[1 account]", "resultsLimit": 5}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0115
 
 ### t2_ig_kw_posts
@@ -371,7 +371,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### t2_ig_mentions
 - **Scraper:** [apify/instagram-scraper](https://apify.com/apify/instagram-scraper), 2026-10-18
 - **Why:** 18 Oct test: posts mentioning @v7egypt
-- **Input:** `{"directUrls": ["https://www.instagram.com/v7egypt/"], "resultsType": "mentions", "resultsLimit": 5}`
+- **Input:** `{"directUrls": "[1 link]", "resultsType": "mentions", "resultsLimit": 5}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0115
 
 ### t2_ig_kw_dated
@@ -389,13 +389,13 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### ig_tagged_v7
 - **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-18
 - **Why:** public posts: Instagram posts tagging @v7egypt
-- **Input:** `{"username": ["v7egypt"], "resultsLimit": 180}`
+- **Input:** `{"username": "[1 account]", "resultsLimit": 180}`
 - **Output:** 180 returned · 176 in window · 148 kept · USD 0.4140
 
 ### ig_tagged_vss
 - **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-18
 - **Why:** public posts: Instagram posts tagging @vsupersoda
-- **Input:** `{"username": ["vsupersoda"], "resultsLimit": 60}`
+- **Input:** `{"username": "[1 account]", "resultsLimit": 60}`
 - **Output:** 60 returned · 54 in window · 48 kept · USD 0.1380
 
 ### ig_kw_wide
@@ -491,13 +491,13 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### t3_yt_comments_apidojo
 - **Scraper:** [apidojo/youtube-comments-scraper](https://apify.com/apidojo/youtube-comments-scraper), 2026-10-18
 - **Why:** 18 Oct test: 20 comments from Kareem Elsayed’s video
-- **Input:** `{"startUrls": [{"url": "https://www.youtube.com/watch?v=i9PVV4QqtXE"}], "sort": "top", "maxItems": 20, "includeReplies": false}`
+- **Input:** `{"startUrls": "[1 link]", "sort": "top", "maxItems": 20, "includeReplies": false}`
 - **Output:** 20 returned · 0 in window · 0 kept · USD 0.0010
 
 ### t3_yt_comments_calm
 - **Scraper:** [calm_builder/youtube-scraper](https://apify.com/calm_builder/youtube-scraper), 2026-10-18
 - **Why:** 18 Oct test: the same with calm_builder (returned the video only)
-- **Input:** `{"startUrls": [{"url": "https://www.youtube.com/watch?v=i9PVV4QqtXE"}], "maxResults": 1, "maxComments": 20, "commentsSortBy": "top", "maxReplyDepth": 1, "maxRepliesPerComment": 3}`
+- **Input:** `{"startUrls": "[1 link]", "maxResults": 1, "maxComments": 20, "commentsSortBy": "top", "maxReplyDepth": 1, "maxRepliesPerComment": 3}`
 - **Output:** 1 returned · 0 in window · 0 kept · USD 0.0194
 
 ### yt_own_check
@@ -509,7 +509,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### yt_comments_own
 - **Scraper:** [apidojo/youtube-comments-scraper](https://apify.com/apidojo/youtube-comments-scraper), 2026-10-18
 - **Why:** comments on V7 Egypt’s YouTube videos
-- **Input:** `{"startUrls": [{"url": "https://www.youtube.com/watch?v=kFBGmVsoIl0"}, {"url": "https://www.youtube.com/watch?v=VnwmP0cikgY"}, {"url": "https://www.youtube.com/watch?v=Wf5eeMBgnTM"}, {"url": "https://www.youtube.com/shorts/wVXIkk3rep4"}, {"url": "https://www.youtube.com/shorts/-tPy_PzO7ts"}, {"url": "https://www.youtube.com/shorts/E_T3XQDQyoI"}, {"url": "https://www.youtube.com/shorts/ylarnKrzju4"}], "sort": "top", "maxItems": 115, "includeReplies": true}`
+- **Input:** `{"startUrls": "[7 links]", "sort": "top", "maxItems": 115, "includeReplies": true}`
 - **Output:** 58 returned · 58 in window · 55 kept · USD 0.0115
 
 ### yt_comments_public
@@ -611,13 +611,13 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### kw_transcript_test
 - **Scraper:** [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper), 2026-10-18
 - **Why:** 19 Oct test: speech of 3 Egyptian Arabic reels
-- **Input:** `{"bulkUrls": ["https://www.instagram.com/p/DeRGJd2gP0M/", "https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/p/DbymwFMIxIz/"], "resultsLimit": 3}`
+- **Input:** `{"bulkUrls": "[3 links]", "resultsLimit": 3}`
 - **Output:** 3 returned · 0 in window · 0 kept · USD 0.0205
 
 ### ig_profiles
 - **Scraper:** [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper), 2026-10-18
 - **Why:** follower counts of the 175 Instagram accounts that posted about V7 without one
-- **Input:** `{"usernames": "[175 items]"}`
+- **Input:** `{"usernames": "[175 accounts]"}`
 - **Output:** 175 returned · 0 in window · 0 kept · USD 0.4025
 
 ### igspeech_about
@@ -635,37 +635,37 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### vis_posts
 - **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
 - **Why:** 19 Oct test: 8 sample posts fetched again by link, for their full-size pictures and videos
-- **Input:** `{"username": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/p/DZYSInqKZh0/", "https://www.instagram.com/p/DZK_YHGCL9i/", "https://www.instagram.com/p/DZK7ldYjYq5/", "https://www.instagram.com/p/DcRR5rTDZMS/", "https://www.instagram.com/p/DdSBnmsR-se/", "https://www.instagram.com/p/DdEtK7uICS0/"]}`
+- **Input:** `{"username": "[8 links]"}`
 - **Output:** 8 returned · 0 in window · 0 kept · USD 0.0184
 
 ### vis_afanasenko
 - **Scraper:** [afanasenko/instagram-reel-script-extractor](https://apify.com/afanasenko/instagram-reel-script-extractor), 2026-10-19
 - **Why:** 19 Oct test: on-screen text of 3 music reels, to compare with Claude reading their frames
-- **Input:** `{"reelUrls": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/reel/DZYSInqKZh0/"], "maxItemsMode1": 3}`
+- **Input:** `{"reelUrls": "[3 links]", "maxItemsMode1": 3}`
 - **Output:** 3 returned · 0 in window · 0 kept · USD 0.2250
 
 ### vis_cm_scrapesmith
 - **Scraper:** [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper), 2026-10-19
 - **Why:** 19 Oct test: the comments on the 8 sample posts
-- **Input:** `{"postUrls": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/p/DZYSInqKZh0/", "https://www.instagram.com/p/DZK_YHGCL9i/", "https://www.instagram.com/p/DZK7ldYjYq5/", "https://www.instagram.com/p/DcRR5rTDZMS/", "https://www.instagram.com/p/DdSBnmsR-se/", "https://www.instagram.com/p/DdEtK7uICS0/"], "maxCommentsPerPost": 20, "sortOrder": "popular"}`
+- **Input:** `{"postUrls": "[8 links]", "maxCommentsPerPost": 20, "sortOrder": "popular"}`
 - **Output:** 86 returned · 0 in window · 0 kept · USD 0.0431
 
 ### vis_cm_apify
 - **Scraper:** [apify/instagram-comment-scraper](https://apify.com/apify/instagram-comment-scraper), 2026-10-19
 - **Why:** 19 Oct test: the same comments with Apify’s own scraper
-- **Input:** `{"directUrls": ["https://www.instagram.com/reel/Db0cx1pMQ37/", "https://www.instagram.com/reel/DeFaRKwo4zU/", "https://www.instagram.com/p/DZYSInqKZh0/", "https://www.instagram.com/p/DZK_YHGCL9i/", "https://www.instagram.com/p/DZK7ldYjYq5/", "https://www.instagram.com/p/DcRR5rTDZMS/", "https://www.instagram.com/p/DdSBnmsR-se/", "https://www.instagram.com/p/DdEtK7uICS0/"], "resultsLimit": 20}`
+- **Input:** `{"directUrls": "[8 links]", "resultsLimit": 20}`
 - **Output:** 86 returned · 0 in window · 0 kept · USD 0.1978
 
 ### cov_audio
 - **Scraper:** [apidojo/instagram-scraper-api](https://apify.com/apidojo/instagram-scraper-api), 2026-10-19
 - **Why:** 19 Oct test: reels that use the audio of V7’s own ads
-- **Input:** `{"startUrls": ["https://www.instagram.com/reels/audio/27762052746747139/", "https://www.instagram.com/reels/audio/40046659618266325/"], "maxItems": 20}`
+- **Input:** `{"startUrls": "[2 links]", "maxItems": 20}`
 - **Output:** 2 returned · 0 in window · 0 kept · USD 0.0100
 
 ### cov_google_month
 - **Scraper:** [apify/google-search-scraper](https://apify.com/apify/google-search-scraper), 2026-10-19
 - **Why:** 19 Oct test: Google limited to one month (June)
-- **Input:** `{"queries": "https://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026&num=10\nhttps://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026&num=10", "maxPagesPerQuery": 1, "countryCode": "eg"}`
+- **Input:** `{"queries": "[1 link]", "maxPagesPerQuery": 1, "countryCode": "eg"}`
 - **Output:** 2 returned · 0 in window · 0 kept · USD 0.0050
 
 ### cov_tags
@@ -677,7 +677,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### ig_google_months
 - **Scraper:** [apify/google-search-scraper](https://apify.com/apify/google-search-scraper), 2026-10-19
 - **Why:** public posts: Google search of instagram.com, 12 exact phrases, one month at a time
-- **Input:** `{"queries": "https://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A4%2F20%2F2026%2Ccd_max%3A4%2F30%2F2026\nhttps://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A5%2F1%2F2026%2Ccd_max%3A5%2F31%2F2026\nhttps://www.google.com/search?q=%22V7%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026\nhttps://www.google.com/search?… (12026 characters)", "maxPagesPerQuery": 3, "countryCode": "eg"}`
+- **Input:** `{"queries": "[1 link]", "maxPagesPerQuery": 3, "countryCode": "eg"}`
 - **Output:** 190 returned · 0 in window · 0 kept · USD 0.4476
 
 ### ig_google2_posts
@@ -689,7 +689,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### ig_tagged_v7_full
 - **Scraper:** [apify/instagram-tagged-scraper](https://apify.com/apify/instagram-tagged-scraper), 2026-10-19
 - **Why:** public posts: every Instagram post tagging @v7egypt back to 20 Apr
-- **Input:** `{"username": ["v7egypt"], "resultsLimit": 520}`
+- **Input:** `{"username": "[1 account]", "resultsLimit": 520}`
 - **Output:** 520 returned · 264 in window · 228 kept · USD 1.1960
 
 ### ig_tags2
@@ -851,13 +851,13 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### igspeech_tagged_202610190625
 - **Scraper:** [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper), 2026-10-19
 - **Why:** speech of the new reels that tag V7
-- **Input:** `{"bulkUrls": ["https://www.instagram.com/p/DZnApdJotKC/", "https://www.instagram.com/p/DYjrAXLszxK/", "https://www.instagram.com/p/DaP60RZsloV/", "https://www.instagram.com/p/DaJoWszRytU/", "https://www.instagram.com/p/DXzblhsMN3P/", "https://www.instagram.com/p/DZxH4MUJ7Vd/", "https://www.instagram.com/p/DY52w2biDGz/", "https://www.instagram.com/p/DZp1ZufoTRj/"], "resultsLimit": 8}`
+- **Input:** `{"bulkUrls": "[8 links]", "resultsLimit": 8}`
 - **Output:** 8 returned · 0 in window · 0 kept · USD 0.0395
 
 ### ig_profiles_202610190635
 - **Scraper:** [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper), 2026-10-19
 - **Why:** follower counts of the new Instagram accounts
-- **Input:** `{"usernames": "[110 items]"}`
+- **Input:** `{"usernames": "[110 accounts]"}`
 - **Output:** 110 returned · 0 in window · 0 kept · USD 0.2530
 
 ### igcm_202610190646
@@ -1145,7 +1145,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fbgoogle_month
 - **Scraper:** [apify/google-search-scraper](https://apify.com/apify/google-search-scraper), 2026-10-19
 - **Why:** 19 Oct Facebook comparison: Google of facebook.com one month at a time
-- **Input:** `{"queries": "https://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026\nhttps://www.google.com/search?q=%22V7+cream+soda%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2026%2Ccd_max%3A8%2F31%2F2026\nhttps://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min… (440 characters)", "maxPagesPerQuery": 2, "countryCode": "eg"}`
+- **Input:** `{"queries": "[1 link]", "maxPagesPerQuery": 2, "countryCode": "eg"}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0100
 
 ### fbdeep_silentflow_top
@@ -1199,73 +1199,73 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fbgap_danek
 - **Scraper:** [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast), 2026-10-19
 - **Why:** 19 Oct gap test: 8 posts by link
-- **Input:** `{"direct_urls": [{"url": "https://www.facebook.com/reel/1807300737278091/"}, {"url": "https://www.facebook.com/reel/1740716823817554/"}, {"url": "https://www.facebook.com/reel/2258238494941774/"}, {"url": "https://www.facebook.com/reel/1376978311275889/"}, {"url": "https://www.facebook.com/reel/1130641049532209/"}, {"url": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"}, {"url": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl"}, {"url": "https://www.facebook.com/nancy.wahba.104/posts/pfbid06bLP5LWzDtFyaSqipxpyviv4e71Y7fho1X6e2x27RbUy5vqFH7UAkLMzVV1T2CQSl"}]}`
+- **Input:** `{"direct_urls": "[8 links]"}`
 - **Output:** 8 returned · 8 in window · 8 kept · USD 0.0187
 
 ### fbgap_apifyposts
 - **Scraper:** [apify/facebook-posts-scraper](https://apify.com/apify/facebook-posts-scraper), 2026-10-19
 - **Why:** 19 Oct gap test: 8 posts by link, with captions
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/reel/1807300737278091/"}, {"url": "https://www.facebook.com/reel/1740716823817554/"}, {"url": "https://www.facebook.com/reel/2258238494941774/"}, {"url": "https://www.facebook.com/reel/1376978311275889/"}, {"url": "https://www.facebook.com/reel/1130641049532209/"}, {"url": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"}, {"url": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl"}, {"url": "https://www.facebook.com/nancy.wahba.104/posts/pfbid06bLP5LWzDtFyaSqipxpyviv4e71Y7fho1X6e2x27RbUy5vqFH7UAkLMzVV1T2CQSl"}], "captionText": true}`
+- **Input:** `{"startUrls": "[8 links]", "captionText": true}`
 - **Output:** 8 returned · 0 in window · 0 kept · USD 0.0330
 
 ### fbgap_playcount
 - **Scraper:** [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper), 2026-10-19
 - **Why:** 19 Oct gap test: plays of 5 reels
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/reel/1807300737278091/"}, {"url": "https://www.facebook.com/reel/1740716823817554/"}, {"url": "https://www.facebook.com/reel/2258238494941774/"}, {"url": "https://www.facebook.com/reel/1376978311275889/"}, {"url": "https://www.facebook.com/reel/1130641049532209/"}]}`
+- **Input:** `{"startUrls": "[5 links]"}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0202
 
 ### fbgap_reeldetails
 - **Scraper:** [alpha-scraper/facebook-reels-details-scraper-pro](https://apify.com/alpha-scraper/facebook-reels-details-scraper-pro), 2026-10-19
 - **Why:** 19 Oct gap test: details of 5 reels
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/reel/1807300737278091/"}, {"url": "https://www.facebook.com/reel/1740716823817554/"}, {"url": "https://www.facebook.com/reel/2258238494941774/"}, {"url": "https://www.facebook.com/reel/1376978311275889/"}, {"url": "https://www.facebook.com/reel/1130641049532209/"}]}`
+- **Input:** `{"startUrls": "[5 links]"}`
 - **Output:** 5 returned · 5 in window · 5 kept · USD 0.0189
 
 ### fbsp_piotr
 - **Scraper:** [piotrv1001/facebook-video-transcript-scraper](https://apify.com/piotrv1001/facebook-video-transcript-scraper), 2026-10-19
 - **Why:** 19 Oct speech test: 5 reels
-- **Input:** `{"pages": [], "videoUrls": ["https://www.facebook.com/reel/1807300737278091/", "https://www.facebook.com/reel/1740716823817554/", "https://www.facebook.com/reel/2258238494941774/", "https://www.facebook.com/reel/1376978311275889/", "https://www.facebook.com/reel/1130641049532209/"], "transcribeWithAI": true, "language": "auto", "maxResults": 5}`
+- **Input:** `{"pages": [], "videoUrls": "[5 links]", "transcribeWithAI": true, "language": "auto", "maxResults": 5}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0751
 
 ### fbsp_invideo
 - **Scraper:** [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber), 2026-10-19
 - **Why:** 19 Oct speech test: 5 reels
-- **Input:** `{"video_urls": ["https://www.facebook.com/reel/1807300737278091/", "https://www.facebook.com/reel/1740716823817554/", "https://www.facebook.com/reel/2258238494941774/", "https://www.facebook.com/reel/1376978311275889/", "https://www.facebook.com/reel/1130641049532209/"]}`
+- **Input:** `{"video_urls": "[5 links]"}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.1750
 
 ### fbsp_codenest
 - **Scraper:** [codenest/facebook-video-transcript-scraper](https://apify.com/codenest/facebook-video-transcript-scraper), 2026-10-19
 - **Why:** 19 Oct speech test: 5 reels
-- **Input:** `{"post_urls": [{"url": "https://www.facebook.com/reel/1807300737278091/"}, {"url": "https://www.facebook.com/reel/1740716823817554/"}, {"url": "https://www.facebook.com/reel/2258238494941774/"}, {"url": "https://www.facebook.com/reel/1376978311275889/"}, {"url": "https://www.facebook.com/reel/1130641049532209/"}]}`
+- **Input:** `{"post_urls": "[5 links]"}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0245
 
 ### fbsp_viral
 - **Scraper:** [viralanalyzer/video-transcriber](https://apify.com/viralanalyzer/video-transcriber), 2026-10-19
 - **Why:** 19 Oct speech test: 5 reels
-- **Input:** `{"mediaUrls": ["https://www.facebook.com/reel/1807300737278091/", "https://www.facebook.com/reel/1740716823817554/", "https://www.facebook.com/reel/2258238494941774/", "https://www.facebook.com/reel/1376978311275889/", "https://www.facebook.com/reel/1130641049532209/"], "language": "ar", "model": "small", "maxMinutesPerItem": 5}`
+- **Input:** `{"mediaUrls": "[5 links]", "language": "ar", "model": "small", "maxMinutesPerItem": 5}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.1945
 
 ### fbsp_alpha
 - **Scraper:** [alpha-scraper/facebook-transcript-subtitle-scraper](https://apify.com/alpha-scraper/facebook-transcript-subtitle-scraper), 2026-10-19
 - **Why:** 19 Oct speech test: 5 reels
-- **Input:** `{"videoUrls": [{"url": "https://www.facebook.com/reel/1807300737278091/"}, {"url": "https://www.facebook.com/reel/1740716823817554/"}, {"url": "https://www.facebook.com/reel/2258238494941774/"}, {"url": "https://www.facebook.com/reel/1376978311275889/"}, {"url": "https://www.facebook.com/reel/1130641049532209/"}], "outputFormat": "all_type"}`
+- **Input:** `{"videoUrls": "[5 links]", "outputFormat": "all_type"}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0129
 
 ### fbcm_apify
 - **Scraper:** [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper), 2026-10-19
 - **Why:** 19 Oct comment test: 3 posts
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"}, {"url": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl"}, {"url": "https://www.facebook.com/reel/1807300737278091/"}], "resultsLimit": 30, "includeNestedComments": false}`
+- **Input:** `{"startUrls": "[3 links]", "resultsLimit": 30, "includeNestedComments": false}`
 - **Output:** 26 returned · 0 in window · 0 kept · USD 0.0530
 
 ### fbcm_thedoor
 - **Scraper:** [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper), 2026-10-19
 - **Why:** 19 Oct comment test: 3 posts
-- **Input:** `{"postUrls": ["https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl", "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl", "https://www.facebook.com/reel/1807300737278091/"], "targetComments": 30, "includeReplies": false, "orderingMode": "MOST_RELEVANT"}`
+- **Input:** `{"postUrls": "[3 links]", "targetComments": 30, "includeReplies": false, "orderingMode": "MOST_RELEVANT"}`
 - **Output:** 25 returned · 0 in window · 0 kept · USD 0.0126
 
 ### fbpages_apify
 - **Scraper:** [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper), 2026-10-19
 - **Why:** 19 Oct page test: 5 pages
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/MaxABco"}, {"url": "https://www.facebook.com/AkramTasteTest"}, {"url": "https://www.facebook.com/cairo360"}, {"url": "https://www.facebook.com/SeoudiSupermarket"}, {"url": "https://www.facebook.com/TalabatEG"}]}`
+- **Input:** `{"startUrls": "[5 links]"}`
 - **Output:** 5 returned · 0 in window · 0 kept · USD 0.0410
 
 ### fbc_silent_00
@@ -1973,7 +1973,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fbc_google_months
 - **Scraper:** [apify/google-search-scraper](https://apify.com/apify/google-search-scraper), 2026-10-19
 - **Why:** Google of facebook.com, 12 exact phrases, one month at a time (stopped at its cap after 114 of 168 pages)
-- **Input:** `{"queries": "https://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A4%2F20%2F2026%2Ccd_max%3A4%2F30%2F2026\nhttps://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A5%2F1%2F2026%2Ccd_max%3A5%2F31%2F2026\nhttps://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr… (12516 characters)", "maxPagesPerQuery": 2, "countryCode": "eg"}`
+- **Input:** `{"queries": "[1 link]", "maxPagesPerQuery": 2, "countryCode": "eg"}`
 - **Output:** 121 returned · 0 in window · 0 kept · USD 0.2851
 
 ### fbd_posts
@@ -1991,7 +1991,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fbcm_official_202610191241
 - **Scraper:** [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper), 2026-10-19
 - **Why:** comments under the posts thedoor returned nothing for
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/shery.pinkywinky.58/posts/pfbid0uDABzDtJdy5yNqnQ7DY9jtWHpW4B8oPfReqABAyEJTXQCPoxyHSbvs9yuRYswFVml"}, {"url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0s8UtZ3GEwzyyYtG3btibFQZmVZJ5coi9PxHARJN1U7KD3KYr9ihFhroYFgKJTHkCl&id=61590549725426"}, {"url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02hdjXbmEdkYfXo1g9QbL27CmwdAT4wRNS6bqpYRu35ine9q3DL9t9tcNGq462QJmVl&id=61590563344087"}, {"url": "https://www.facebook.com/Bensolimaneg/posts/pfbid0bFjPZajThsnsvtbdXPFQYKPgAHPDDKhY9yhG8mdeLykbNE2m8atv4rq42rQqHf1Ll"}, {"url": "https://www.facebook.com/osama.lopos.9/posts/pfbid02oGbmmaoCCY5cdMdCvzvdCUThQTvVbWpTX4Ep9PqKhHVwGutYgPaAB59UqPcSsyLMl"}, {"url": "https://www.facebook.com/aley.mahmoud.7/posts/pfbid02GjkzTo3pN72eCCgV3MAHLhgD1YaxjsmStR6JvmQjFHinoH9SKo8henzwVb4cvfSkl"}, {"url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0YQwBDTkrK96jhWwWMXoxuWqhwvaoak55EuDLfXKAWhUagCFNg2wJbsEKffwhLg9zl&id=61579023140086"}, {"url": "https://www.facebook.com/ahmd.sbry.505709/posts/pfbid02fc1NgEBzKsD7j77rjfoZpe23qFJdykvrHnU4yHq6RGkAEqfSfzEfgS3eEXMskxLzl"}, {"url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0ntS4qNQQgyMxomA1SFa6xTrNhm3qL4Xqaws1VTCfC4PudEopdr7tyyVpVnpz528Fl&id=100066653587357"}, {"url": "https://www.facebook.com/reel/1508366414415457/"}, {"url": "https://www.facebook.com/burgerstormrestaurant/posts/pfbid02X3RodTmfBu9GbrsFxNkuJC9JMBvMhuc9SxBxsE7cn2eVuoBHzrAmD14vAGM9ntjNl"}, {"url": "https://www.facebook.com/reel/1028797039869237/"}], "resultsLimit": 100, "includeNestedComments": false}`
+- **Input:** `{"startUrls": "[12 links]", "resultsLimit": 100, "includeNestedComments": false}`
 - **Output:** 50 returned · 44 in window · 43 kept · USD 0.1010
 
 ### fbf_pages_202610191228
@@ -2021,7 +2021,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fbd_posts_names
 - **Scraper:** [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast), 2026-10-19
 - **Why:** the posts whose search row came without the account name, by link
-- **Input:** `{"direct_urls": [{"url": "https://www.facebook.com/V7SYRIA/posts/pfbid05rXQT8JS9FNovoZvXtS7RkEVy4QBD3MW1VTEzRSyu2yRfNwXe2f44tzKwsArZbUrl"}, {"url": "https://www.facebook.com/reel/1335221125444964/"}, {"url": "https://www.facebook.com/reel/957718373546606/"}, {"url": "https://www.facebook.com/groups/171095983238060/posts/2971892603158370/"}, {"url": "https://www.facebook.com/groups/TANTATOWN/posts/28540367075559869/"}]}`
+- **Input:** `{"direct_urls": "[5 links]"}`
 - **Output:** 5 returned · 3 in window · 3 kept · USD 0.0117
 
 ### fbrt_apifyreels_1
@@ -2345,7 +2345,7 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 ### fbcm_official_202610191510
 - **Scraper:** [apify/facebook-comments-scraper](https://apify.com/apify/facebook-comments-scraper), 2026-10-19
 - **Why:** comments under the new posts thedoor returned nothing for
-- **Input:** `{"startUrls": [{"url": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"}], "resultsLimit": 100, "includeNestedComments": false}`
+- **Input:** `{"startUrls": "[1 link]", "resultsLimit": 100, "includeNestedComments": false}`
 - **Output:** 4 returned · 4 in window · 3 kept · USD 0.0090
 
 ### fbd_posts_views_202610191511
@@ -2713,6 +2713,72 @@ Total for these runs: USD 71.00 (Apify’s meter for the month also counts platf
 - **Why:** Facebook public posts, a fifth search: keyword 30 of 30
 - **Input:** `{"query": "V7 كانز", "resultsCount": 20, "searchType": "top", "startDate": "2026-04-20", "endDate": "2026-10-16"}`
 - **Output:** 20 returned · 20 in window · 13 kept · USD 0.1200
+
+### igst_google
+- **Scraper:** [simple.actor/google-short-videos](https://apify.com/simple.actor/google-short-videos), 2026-10-19
+- **Why:** 19 Oct test: Google's short videos limited to Instagram, 6 exact phrases (36 reels about V7, 4 of them new)
+- **Input:** `{"queries": ["\"V7 soda\"", "\"V7 cream soda\"", "\"V7 كريم صودا\"", "\"V Cola\"", "\"ڤي سڤن\"", "\"ڤي كولا\""], "maxItems": 24, "platform": "instagram", "timeRange": "year", "country": "EG", "language": "ar"}`
+- **Output:** 89 returned · 0 in window · 0 kept · USD 0.1004
+
+### igst_posts
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** the new Instagram reels from that test, by link
+- **Input:** `{"username": "[11 links]"}`
+- **Output:** 11 returned · 11 in window · 4 kept · USD 0.0253
+
+### fbf_plays_202610191732
+- **Scraper:** [social_developer/facebook-playcount-scraper](https://apify.com/social_developer/facebook-playcount-scraper), 2026-10-19
+- **Why:** pipeline fill run (pipeline.py): plays of the Facebook videos still without a view count
+- **Input:** `{"startUrls": "[17 links]"}`
+- **Output:** 17 returned · 0 in window · 0 kept · USD 0.0682
+
+### fbcm_door_202610191732
+- **Scraper:** [thedoor/facebook-comment-scraper](https://apify.com/thedoor/facebook-comment-scraper), 2026-10-19
+- **Why:** pipeline fill run: comments under the Facebook posts that had none collected
+- **Input:** `{"postUrls": "[3 links]", "targetComments": 100, "includeReplies": false, "orderingMode": "MOST_RELEVANT"}`
+- **Output:** 77 returned · 77 in window · 77 kept · USD 0.0386
+
+### fbf_speech_202610191732
+- **Scraper:** [invideoiq/video-transcriber](https://apify.com/invideoiq/video-transcriber), 2026-10-19
+- **Why:** pipeline fill run: a second try for the 35 videos the transcriber had returned nothing for (3 read). The budget guard had skipped it, and the old fallback started it with a USD 0.50 cap; fixed the same day
+- **Input:** `{"video_urls": "[35 links]"}`
+- **Output:** 3 returned · 0 in window · 0 kept · USD 0.1050
+
+### fbf_pages_202610191732
+- **Scraper:** [apify/facebook-pages-scraper](https://apify.com/apify/facebook-pages-scraper), 2026-10-19
+- **Why:** pipeline fill run: followers of the pages still without them
+- **Input:** `{"startUrls": "[27 links]"}`
+- **Output:** 27 returned · 0 in window · 0 kept · USD 0.2214
+
+### fbd_posts_views_202610191733
+- **Scraper:** [danek/facebook-posts-fast](https://apify.com/danek/facebook-posts-fast), 2026-10-19
+- **Why:** pipeline fill run: video posts behind a post link, for their plays
+- **Input:** `{"direct_urls": "[17 links]"}`
+- **Output:** 17 returned · 17 in window · 17 kept · USD 0.0397
+
+### igspeech_about_202610191734
+- **Scraper:** [apple_yang/instagram-transcripts-scraper](https://apify.com/apple_yang/instagram-transcripts-scraper), 2026-10-19
+- **Why:** pipeline fill run: speech of the new Instagram reels about V7
+- **Input:** `{"bulkUrls": "[5 links]", "resultsLimit": 5}`
+- **Output:** 5 returned · 0 in window · 0 kept · USD 0.0225
+
+### ig_profiles_202610191735
+- **Scraper:** [apify/instagram-profile-scraper](https://apify.com/apify/instagram-profile-scraper), 2026-10-19
+- **Why:** pipeline fill run: follower counts of the Instagram accounts still without one
+- **Input:** `{"usernames": "[30 accounts]"}`
+- **Output:** 30 returned · 0 in window · 0 kept · USD 0.0690
+
+### igcm_202610191736
+- **Scraper:** [scrapesmith/instagram-comments-scraper](https://apify.com/scrapesmith/instagram-comments-scraper), 2026-10-19
+- **Why:** pipeline fill run: comments under the Instagram posts that had none collected
+- **Input:** `{"postUrls": "[40 links]", "maxCommentsPerPost": 100, "sortOrder": "popular"}`
+- **Output:** 76 returned · 76 in window · 58 kept · USD 0.0381
+
+### vis_posts_202610191737
+- **Scraper:** [apify/instagram-post-scraper](https://apify.com/apify/instagram-post-scraper), 2026-10-19
+- **Why:** pipeline fill run: fresh media links for the Instagram posts whose pictures were not read yet
+- **Input:** `{"username": "[7 links]"}`
+- **Output:** 7 returned · 0 in window · 0 kept · USD 0.0161
 
 ## Without Apify
 

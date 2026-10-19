@@ -6,12 +6,15 @@ Stages, in order: test, own, comments, abroad, ugc; then test2 and wide (18 Oct,
 - Every run has a USD cap (Apify's maxTotalChargeUsd), and the whole collection stops at BUDGET, read from Apify's usage meter.
 - The token is read from the environment only:  set -a; . ./.env.apify; set +a
 """
-import json, os, pathlib, re, sys, time, urllib.error, urllib.request
+import collections, json, math, os, pathlib, re, sys, time, urllib.error, urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
-RAW = HERE / 'raw'
+RAW = pathlib.Path(os.environ['V7_RAW']) if os.environ.get('V7_RAW') else HERE / 'raw'   # (pipeline tests point these at a temporary folder)
+RUNLOG = pathlib.Path(os.environ['V7_RUNLOG']) if os.environ.get('V7_RUNLOG') else HERE / 'run.log'
+API_BASE = os.environ.get('APIFY_API_BASE', 'https://api.apify.com/v2')
+POLL = float(os.environ.get('V7_POLL', '8'))                 # seconds between checks on a running scraper
 TOK = os.environ['APIFY_API_TOKEN']
-SINCE, UNTIL = '2026-04-20', '2026-10-16'       # 180 days: the dashboard's range
+SINCE, UNTIL = os.environ.get('V7_SINCE', '2026-04-20'), os.environ.get('V7_UNTIL', '2026-10-16')   # 180 days: the dashboard's range
 BUDGET = 14.00                                   # of the USD 19 a month; the rest is the reserve
 BUDGET_YTC = 16.45                               # 18 Oct: YouTube comments, after the wider search
 BUDGET_WIDE = 15.60                              # 18 Oct: the wider search for public posts may spend up to here (DECISIONS #127)
@@ -34,7 +37,7 @@ X_NOISE = ' -هافال -Haval -Raptor -midjourney -Vivo -Honor -Jaecoo -Chery'
 
 def api(method, path, body=None, timeout=60):
     for attempt in range(4):   # 19 Oct: a 502 from Apify's API stopped a stage mid-way; reads are retried, starting a run is not
-        req = urllib.request.Request('https://api.apify.com/v2' + path, method=method,
+        req = urllib.request.Request(API_BASE + path, method=method,
                                      data=None if body is None else json.dumps(body).encode(),
                                      headers={'Authorization': 'Bearer ' + TOK, 'Content-Type': 'application/json'})
         try:
@@ -42,7 +45,7 @@ def api(method, path, body=None, timeout=60):
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
             if method != 'GET' or attempt == 3 or (isinstance(e, urllib.error.HTTPError) and e.code < 500):
                 raise
-            time.sleep(10 * (attempt + 1))
+            time.sleep(float(os.environ.get('V7_RETRY_WAIT', '10')) * (attempt + 1))
 
 
 def spent():
@@ -51,8 +54,11 @@ def spent():
 
 def log(line):
     print(line, flush=True)
-    with open(HERE / 'run.log', 'a', encoding='utf-8') as f:
+    with open(RUNLOG, 'a', encoding='utf-8') as f:
         f.write(time.strftime('%Y-%m-%d %H:%M  ') + line + '\n')
+
+
+SKIPS = []   # runs skipped over a budget line or refused by Apify (pipeline.py reports them)
 
 
 def run(name, actor, body, cap_usd, max_items=None, budget=None):
@@ -64,18 +70,26 @@ def run(name, actor, body, cap_usd, max_items=None, budget=None):
     before, budget = spent(), budget or BUDGET
     if budget - before < cap_usd:
         log(f'{name}: skipped, only ${budget - before:.2f} of the ${budget:.2f} budget left (needs a ${cap_usd:.2f} cap)')
+        SKIPS.append(f'{name} (over the budget line)')
         return []
     q = f'?maxTotalChargeUsd={cap_usd:.3f}' + (f'&maxItems={max_items}' if max_items else '')
     try:
         r = api('POST', f'/acts/{actor}/runs{q}', body)['data']
     except urllib.error.HTTPError as e:
-        log(f'{name}: could not start: HTTP {e.code} {e.read()[:200]!r}')
+        err = e.read()[:300]
+        low = re.search(rb'below-minimum.*?minimum of \$(\d+(?:\.\d+)?)', err, re.S)
+        if low and float(low.group(1)) > cap_usd:   # the scraper's lowest cap (a ceiling, not the cost): asked again with it, if it fits the line
+            low = math.ceil(float(low.group(1)) * 100) / 100
+            log(f'{name}: the scraper takes a cap of at least ${low:.2f}; asked again with it')
+            return run(name, actor, body, low, max_items, budget)
+        log(f'{name}: could not start: HTTP {e.code} {err[:200]!r}')
+        SKIPS.append(f'{name} (could not start: HTTP {e.code})')
         return []
     while r['status'] in ('READY', 'RUNNING'):
-        time.sleep(8)
+        time.sleep(POLL)
         r = api('GET', f"/actor-runs/{r['id']}")['data']
     items = api('GET', f"/datasets/{r['defaultDatasetId']}/items?clean=true&format=json", timeout=300)
-    time.sleep(6)
+    time.sleep(min(6, POLL))
     after = spent()
     RAW.mkdir(exist_ok=True)
     keep = {k: r.get(k) for k in ('id', 'status', 'startedAt', 'finishedAt', 'chargedEventCounts', 'usageTotalUsd')}
@@ -351,9 +365,7 @@ def stage_kwtest():
     K = ['V7 soda', 'ڤي سڤن', 'V7 كريم صودا']; Q = ['"%s"' % k for k in K]
 
     def go(name, actor, body, cap, n):
-        run(name, actor, body, cap, n, budget=B)
-        if not (RAW / (name + '.json')).exists():    # some scrapers refuse a cap under USD 0.50 (the cap is a ceiling, not the cost)
-            run(name, actor, body, 0.50, n, budget=B)
+        run(name, actor, body, cap, n, budget=B)     # a scraper that refuses a cap under its minimum is asked again with it (run)
     for i, k in enumerate(K, 1):
         go(f'kw_apidojo_{i}', 'apidojo~instagram-scraper-api', {"keywords": [k], "maxItems": 10, "until": SINCE}, 0.10, 10)
     go('kw_apify_search', 'apify~instagram-search-scraper', {"search": ', '.join(K), "searchType": "popular", "searchLimit": 10}, 0.12, 30)
@@ -470,7 +482,9 @@ def stage_igspeech():
     for f in list(RAW.glob('igspeech_*.json')) + [RAW / 'kw_transcript_test.json']:
         if f.exists():
             done |= {x.get('code') for x in json.load(open(f, encoding='utf-8'))['items'] if x.get('code')}
-    reels = [i for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'ig' and i.get('fmt') == 'Reel' and i.get('url') and i['id'][3:] not in done]
+    tried = attempts()['igspeech']   # (pipeline.py) a reel asked for twice and never returned isn't paid for again
+    reels = [i for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'ig' and i.get('fmt') == 'Reel' and i.get('url') and i['id'][3:] not in done
+             and tried.get(i['url'], 0) < 2]
     first = sorted((i for i in reels if about(i)), key=lambda i: -(i.get('views') or 0))
     second = sorted((i for i in reels if not about(i) and any(r.startswith('ig_tagged') for r in i['found_by'])), key=lambda i: -(i.get('views') or 0))
     secs = _seconds()
@@ -487,7 +501,8 @@ def stage_igprofiles():
     items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
     labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
     handles = sorted({(i.get('author') or {}).get('handle') for i in items if i['src'] == 'ugc' and i['kind'] == 'post' and i['pl'] == 'ig'
-                      and (labels.get(i['id']) or {}).get('about') and (i.get('author') or {}).get('handle') and (i.get('author') or {}).get('followers') is None})
+                      and (labels.get(i['id']) or {}).get('about') and (i.get('author') or {}).get('handle') and (i.get('author') or {}).get('followers') is None}
+                     - {h for h, n in attempts()['ig_profiles'].items() if n >= 1})   # (pipeline.py) an account asked for once and not returned: private or gone
     log(f'  igprofiles: {len(handles)} accounts without a follower count')
     if handles:
         run('ig_profiles_' + time.strftime('%Y%m%d%H%M'), PROFILES, {"usernames": handles}, round(len(handles) * 0.0023 * 1.3 + 0.05, 2), len(handles) + 5, budget=BUDGET_SPEECH)
@@ -620,15 +635,14 @@ FB_TEST_K = ['V7 soda', 'ڤي سڤن', 'V7 كريم صودا']   # the three key
 
 
 def parallel(todo, budget, workers=8):
-    """Runs (name, actor, body, cap, n) in parallel threads; a scraper that refuses a cap under USD 0.50 is retried with 0.50
-    (the cap is a ceiling, not the cost). Costs per run are read later from the run records (scrapers_report.py)."""
+    """Runs (name, actor, body, cap, n) in parallel threads. A scraper that refuses a cap under its minimum is asked again with that
+    minimum by run() itself (the cap is a ceiling, not the cost). Until 19 Oct this retried any run that left no file with a USD 0.50
+    cap, which also started runs the budget guard had skipped. Costs per run are read later from the run records (scrapers_report.py)."""
     import concurrent.futures
 
     def one(t):
         name, actor, body, cap, n = t
         run(name, actor, body, cap, n, budget=budget)
-        if not (RAW / (name + '.json')).exists():
-            run(name, actor, body, 0.50, n, budget=budget)
     with concurrent.futures.ThreadPoolExecutor(workers) as ex:
         list(ex.map(one, todo))
 
@@ -771,7 +785,8 @@ def fb_known():
     """The post ids and video ids in every Facebook row that has an exact time and its numbers (normalize.py reads these)."""
     import re as _re
     ids = set()
-    pats = ('fb_search_*', 'fbc_one_*', 'fbc_silent_*', 'fbc_apify_*', 'fbc_vheadply', 'fbc_groups', 'fbd_*', 'fbkw_*', 'fbdeep_*', 'fbgap_*', 'fbvs_headply', 'fbgroups_lofo')
+    pats = ('fb_search_*', 'fbc_one_*', 'fbc_silent_*', 'fbc_apify_*', 'fbc_vheadply', 'fbc_groups', 'fbd_*', 'fbkw_*', 'fbdeep_*', 'fbgap_*', 'fbvs_headply', 'fbgroups_lofo',
+            'fbp_*')   # fbp_*: pipeline.py's runs (its link-only finds, fbl_*, are not known until fetched)
     for pat in pats:
         for f in RAW.glob(pat + '.json'):
             for x in json.load(open(f, encoding='utf-8')).get('items', []):
@@ -835,6 +850,19 @@ def _fb_public():
     return posts, labels
 
 
+def attempts():
+    """How many times each link was already asked for, by kind of run (the inputs saved with every run)."""
+    out = {k: collections.Counter() for k in ('fbf_speech', 'fbf_plays', 'fbf_pages', 'igspeech', 'ig_profiles')}
+    for k in out:
+        for f in RAW.glob(k + '_*.json'):
+            inp = json.load(open(f, encoding='utf-8')).get('input') or {}
+            links = (inp.get('video_urls') or inp.get('bulkUrls') or inp.get('usernames')
+                     or [x.get('url') if isinstance(x, dict) else x for x in inp.get('startUrls') or []])
+            for u in links:
+                if u: out[k][u] += 1
+    return out
+
+
 def stage_fbfill():
     """19 Oct: fills the gaps of the public Facebook posts about V7 (after normalize.py and label.py):
     - exact plays for reels and videos without a view count (social_developer, USD 0.004 a video);
@@ -846,15 +874,17 @@ def stage_fbfill():
     posts, labels = _fb_public()
     about = lambda i: (labels.get(i['id']) or {}).get('about')
     tag = time.strftime('%Y%m%d%H%M')
+    tried = attempts()   # 19 Oct (pipeline.py): a video or page asked for before and not returned isn't paid for again and again
     vids = [i for i in posts if i.get('fmt') in ('Reel', 'Video') and (about(i) or len(i.get('text') or '') < 30)]
     done_sp = set()
     for f in RAW.glob('fbf_speech_*.json'):
         done_sp |= {(x.get('video_url') or x.get('url') or '').split('?')[0].rstrip('/') for x in json.load(open(f, encoding='utf-8'))['items']}
-    nosp = [i for i in vids if not i.get('speech') and i['url'].split('?')[0].rstrip('/') not in done_sp]
-    noviews = [i for i in vids if about(i) and not i.get('views')]
+    nosp = [i for i in vids if not i.get('speech') and i['url'].split('?')[0].rstrip('/') not in done_sp and tried['fbf_speech'].get(i['url'], 0) < 2]
+    noviews = [i for i in vids if about(i) and not i.get('views') and tried['fbf_plays'].get(i['url'], 0) < 2]
     seg_ok = ('page', 'creator', 'business', 'news')
     page_urls = sorted({(i.get('author') or {}).get('url').split('?')[0].rstrip('/') for i in posts if about(i) and (labels.get(i['id']) or {}).get('seg') in seg_ok
-                        and (i.get('author') or {}).get('url') and not (i.get('author') or {}).get('followers')})
+                        and (i.get('author') or {}).get('url') and not (i.get('author') or {}).get('followers')}
+                       - {u.split('?')[0].rstrip('/') for u, n in tried['fbf_pages'].items() if n >= 1})   # a profile the page scraper can't read: asked once
     done_cm = set()
     for f in RAW.glob('fbcm_*.json'):
         done_cm |= {x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') for x in json.load(open(f, encoding='utf-8'))['items']}
@@ -976,6 +1006,30 @@ def stage_fbmore():
     parallel(todo, BUDGET_FBMORE)
 
 
+IG_GOOGLE_SHORTS_K = ['V7 soda', 'V7 cream soda', 'V7 كريم صودا', 'V Cola', 'ڤي سڤن', 'ڤي كولا']   # 4 the Instagram reel searches used, 2 Arabic (Google reads Arabic)
+
+
+def stage_igshortstest():
+    """19 Oct (user: "yes run the instagram reels test"): Google's short-videos search limited to Instagram, which on Facebook found 17 of
+    its 25 V7 reels that no Facebook search found. Six keywords, 24 results each (past year, from Egypt); the reels the collection lacks
+    are fetched by link (Apify's Instagram post scraper) so they can be dated, labelled and compared (igshorts_report in the stage log)."""
+    run('igst_google', 'simple.actor~google-short-videos', {"queries": ['"%s"' % k for k in IG_GOOGLE_SHORTS_K], "maxItems": 24, "platform": "instagram",
+                                                          "timeRange": "year", "country": "EG", "language": "ar"}, 0.30, 144, budget=BUDGET_IGST)
+    known = known_keys()
+    import re as _re
+    new = {}
+    for x in (json.load(open(RAW / 'igst_google.json', encoding='utf-8'))['items'] if (RAW / 'igst_google.json').exists() else []):
+        m = _re.search(r'instagram\.com/(?:[\w.]+/)?(?:p|reel|reels|tv)/([\w-]{8,})', json.dumps(x))
+        if m and ('ig:' + m.group(1)) not in known and SINCE <= (id_day('ig', m.group(1)) or '') <= UNTIL:
+            new[m.group(1)] = 'https://www.instagram.com/reel/%s/' % m.group(1)
+    log(f'  igshortstest: {len(new)} new reels inside the window to fetch')
+    if new:
+        run('igst_posts', IG_POSTS, {"username": list(new.values())}, round(len(new) * 0.0023 * 1.3 + 0.05, 2), len(new), budget=BUDGET_IGST)
+
+
+BUDGET_IGST = 73.00   # 19 Oct: the Instagram short-videos test may spend up to here on the meter (71.08 spent before it)
+
+
 def stage_fbfill2():
     """19 Oct: the posts thedoor returned no comments for get them from Apify's own comment scraper (USD 0.0023 a comment), up to 100 a post."""
     posts, labels = _fb_public()
@@ -994,7 +1048,7 @@ BUDGET_FBTEST2 = 36.00   # 19 Oct: the depth and gap tests may spend up to here 
 BUDGET_FBTEST = 34.00   # 19 Oct: the Facebook comparison may spend up to here on the meter (about USD 3.7 over the 30.31 spent; expected about 2)
 
 
-STAGES = {'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+STAGES = {'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

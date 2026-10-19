@@ -2576,7 +2576,7 @@
   "added": "2026-10-17"
  },
  "https://www.facebook.com/reel/2463671100744074/": {
-  "error": "cannot identify image file <_io.BytesIO object at 0x776d1a2d4e00>",
+  "error": "cannot identify image file <_io.BytesIO object at 0x71e74e561ee0>",
   "pl": "fb"
  },
  "https://www.facebook.com/kebda.aboelaraby/posts/pfbid02tscHZVFPBt7gwhoA63kUKdejrQtHenuxWb5bPce3gYSBquWKVwGaW2Qo7GoKfHCgl": {
@@ -2642,7 +2642,7 @@
   "added": "2026-10-17"
  },
  "https://www.facebook.com/reel/2258238494941774/": {
-  "error": "cannot identify image file <_io.BytesIO object at 0x74f645b943b0>",
+  "error": "cannot identify image file <_io.BytesIO object at 0x71e74d4ab330>",
   "pl": "fb"
  },
  "https://www.facebook.com/permalink.php?story_fbid=pfbid0jR3jCi7bRMKS8tYbtAXYbtFcwBs9FtiniU83EQTdBSS2nC4KYYWyrisjYeGXiG2wl&id=61594071931456": {
@@ -6642,8 +6642,13 @@
   "added": "2026-10-17"
  },
  "https://www.instagram.com/reel/DcV1qPgo0nb/": {
-  "error": "<urlopen error timed out>",
-  "pl": "ig"
+  "file": "99880dbb998a.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 5299,
+  "added": "2026-10-17"
  },
  "https://www.instagram.com/p/DcJPgx3NctX/": {
   "file": "2288e42f1fbc.jpg",
@@ -6826,8 +6831,13 @@
   "added": "2026-10-17"
  },
  "https://www.facebook.com/reel/2224479267956621/": {
-  "error": "<urlopen error timed out>",
-  "pl": "fb"
+  "file": "c61ed8c19d0c.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8367,
+  "added": "2026-10-17"
  },
  "https://www.instagram.com/p/Dc601pWxtlM/": {
   "file": "babcc4b7a09e.jpg",
@@ -6876,6 +6886,581 @@
   "kind": "video",
   "pl": "ig",
   "bytes": 5643,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1203725022180077/": {
+  "file": "73563cd36716.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 10149,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/Deg7HXpNxMl/": {
+  "file": "439a8c0969cb.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8771,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/Db-q7xNtdJj/": {
+  "file": "748c8ed801d5.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8988,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DcgEMPQAXyS/": {
+  "file": "9076bd7303ff.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 5335,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DcG9W-KRF2f/": {
+  "file": "9b4f6d11af27.jpg",
+  "w": 300,
+  "h": 169,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8935,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1309930637707673/": {
+  "file": "7a5a53bd7565.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7434,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1783179779567004/": {
+  "file": "4b01ac3e53f0.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 6596,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/reel/DX_UKHZvTZt/": {
+  "file": "b5e079f5c680.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 7950,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DcP7UiaMw6Z/": {
+  "file": "aec4cfb9ec9e.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 9192,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdPEuloMXQ8/": {
+  "file": "c47598abfab0.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 6955,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DbGPL5uM6av/": {
+  "file": "d7d2ecdc40de.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 10046,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/Db8y-HlsVSY/": {
+  "file": "1a132b7dc2f4.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 3838,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DYUj8oupsIW/": {
+  "file": "4078fa43c42e.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 7751,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1452379146902150/": {
+  "file": "c81b8471f5af.jpg",
+  "w": 300,
+  "h": 225,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 15208,
+  "added": "2026-10-17"
+ },
+ "https://www.tiktok.com/@hossamahmad_official_/video/7682197120136285448": {
+  "file": "d9d08a7c68e2.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "tt",
+  "bytes": 5483,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DcPG-IXRKZm/": {
+  "file": "6f3c30d2854e.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 6159,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdHHJBoKzRF/": {
+  "file": "e4168282d0a0.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 6256,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1769362354443071/": {
+  "file": "48bb84668995.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 4020,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1519684709457958/": {
+  "file": "70577eb41f73.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 6526,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1730234564657670/": {
+  "file": "6d46fa489776.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 3331,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/826106193480473/": {
+  "file": "2596f7a9f7b1.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 1599,
+  "added": "2026-10-17"
+ },
+ "https://www.tiktok.com/@crepe.9/video/7677678107029146901": {
+  "file": "defcded4526f.jpg",
+  "w": 167,
+  "h": 300,
+  "kind": "video",
+  "pl": "tt",
+  "bytes": 7034,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/28387043564227024/": {
+  "file": "ddac1af75a64.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8191,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/3489594471218258/": {
+  "file": "5d18e05e8d62.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8279,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1388687126129119/": {
+  "file": "e74506942431.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 6951,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1781592256220226/": {
+  "file": "627b6871dcd8.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7253,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1393584532249826/": {
+  "file": "3377b2640909.jpg",
+  "w": 170,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 11510,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1025194526677123/": {
+  "file": "d235fe28702d.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 5718,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdMCIhEho2x/": {
+  "file": "2210ee6e0415.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 9148,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdBhUsDM9zp/": {
+  "file": "ccec52bd03a7.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 6266,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/reel/DeW8NCFMeBP/": {
+  "file": "830eed78a9cb.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 7242,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1445715630701160/": {
+  "file": "e006a8037403.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7522,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DeR7WksofBv/": {
+  "file": "bd7f72924937.jpg",
+  "w": 240,
+  "h": 135,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 4653,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/2501321646972974/": {
+  "file": "a539830a95e2.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7531,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1042316545036418/": {
+  "file": "936dfbf25b08.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8739,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1009456314814136/": {
+  "file": "b8c8194fa782.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8008,
+  "added": "2026-10-17"
+ },
+ "https://www.tiktok.com/@hassan.bonna1/video/7695860036542762260": {
+  "file": "83b2123aeb70.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "tt",
+  "bytes": 6509,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DYVCVYTs3P0/": {
+  "file": "a04b1d8b7993.jpg",
+  "w": 300,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8571,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1017547827537317/": {
+  "file": "0acdf309a26b.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8661,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/Dblnz6ToVvs/": {
+  "file": "2b98b16eaa6d.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 2835,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/967261332896352/": {
+  "file": "d2985403eb2d.jpg",
+  "w": 300,
+  "h": 170,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 5937,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/2441715316267286/": {
+  "file": "2c783a0b0e1c.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 12651,
+  "added": "2026-10-17"
+ },
+ "https://www.tiktok.com/@thegaragesoundstudios/video/7646415591963659527": {
+  "file": "cc62229be4f3.jpg",
+  "w": 225,
+  "h": 300,
+  "kind": "video",
+  "pl": "tt",
+  "bytes": 9928,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/3328485757333586/": {
+  "file": "7187c1635c8c.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 9882,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1340197117640096/": {
+  "file": "4bd6aec5e73a.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 8430,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/Dax-U4ZsmGh/": {
+  "file": "1e96206d14e6.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 7346,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1962237494403918/": {
+  "file": "3898a72d8ad8.jpg",
+  "w": 300,
+  "h": 240,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 5623,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdtzbZChmSr/": {
+  "file": "9af294aa5ebe.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 6681,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1376714627638530/": {
+  "file": "8a135a530825.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 4851,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1357397009914004/": {
+  "file": "9ac584e2535d.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7812,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DZk374WtZdR/": {
+  "file": "bc2baf86f4b9.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8703,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DXhQ8LYkjKi/": {
+  "file": "4471a83554f5.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8006,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DZ2MiFAAiiL/": {
+  "file": "016edf8a8130.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8306,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DZviAcrozcb/": {
+  "file": "624272d6c09e.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 6505,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/877870718700782/": {
+  "error": "<urlopen error timed out>",
+  "pl": "fb"
+ },
+ "https://www.facebook.com/reel/1041728351580792/": {
+  "file": "25497f0a97f9.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 10075,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DcbXAGrv3_r/": {
+  "file": "7c04fed62a34.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 7825,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/1779456933416265/": {
+  "file": "1c94c11956a2.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7880,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/reel/26689177420716651/": {
+  "file": "eb61778d8f33.jpg",
+  "w": 300,
+  "h": 169,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 7611,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdoCHQUIqrn/": {
+  "file": "9a26eb5ee409.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 7048,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/DdENW8uIFRm/": {
+  "file": "e1b715e871db.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "ig",
+  "bytes": 8343,
+  "added": "2026-10-17"
+ },
+ "https://www.tiktok.com/@yrouchdi/video/7695396707747630356": {
+  "file": "0777e5c53519.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "tt",
+  "bytes": 7278,
+  "added": "2026-10-17"
+ },
+ "https://www.facebook.com/groups/667202683323743/posts/26934728472811139/": {
+  "file": "e72dec91e131.jpg",
+  "w": 300,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 14473,
+  "added": "2026-10-17"
+ },
+ "https://www.instagram.com/p/Dc-p9VOsaxk/": {
+  "error": "<urlopen error timed out>",
+  "pl": "ig"
+ },
+ "https://www.facebook.com/reel/896573359982466/": {
+  "file": "65a6a0b384af.jpg",
+  "w": 169,
+  "h": 300,
+  "kind": "video",
+  "pl": "fb",
+  "bytes": 5764,
   "added": "2026-10-17"
  }
 }

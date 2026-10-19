@@ -9,11 +9,11 @@ Nothing here judges meaning: Claude labels the items next (label.py).
 
 Usage: python3 normalize.py
 """
-import collections, datetime, json, pathlib, re
+import collections, datetime, json, os, pathlib, re
 
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = HERE / 'raw'
-SINCE, UNTIL = '2026-04-20', '2026-10-16'
+SINCE, UNTIL = os.environ.get('V7_SINCE', '2026-04-20'), os.environ.get('V7_UNTIL', '2026-10-16')   # the window (pipeline.py can set it)
 # V Super Soda is Benefit's page for the V Cola line; it answers comments under V7Egypt's posts like V7's own team (17 Oct check)
 OWN_IG = {'v7egypt', 'vsupersoda'}
 ABROAD_IG = {'v7tunisia', 'v7uzbekistan', 'v7ldnuk', 'drinkv7', 'thehalaldrinksco'}
@@ -248,8 +248,10 @@ def ugc():
                 WHY_OUT['V7 itself in the search'] += 1; continue
             fb_post(fb_one_item(p, body), f.stem)   # 19 Oct: the shared Facebook reader (reels and videos told apart from photos)
     # Instagram: the 17 Oct hashtags, then (18 Oct) posts tagging V7's accounts, Google's finds and Instagram's keyword search
-    for name in ('ig_tags', 'ig_tags2', 'ig_tagged_v7', 'ig_tagged_v7_full', 'ig_tagged_vss', 'ig_google_posts', 'ig_google2_posts', 'ig_kw_wide', 'ig_kw_wide2') + tuple(f.stem for f in sorted(RAW.glob('igkw_*_refetch.json'))):
-        kw = name.startswith('ig_kw_wide')           # seemuapps' keyword search names its fields differently
+    for name in (('ig_tags', 'ig_tags2', 'ig_tagged_v7', 'ig_tagged_v7_full', 'ig_tagged_vss', 'ig_google_posts', 'ig_google2_posts', 'ig_kw_wide', 'ig_kw_wide2', 'igst_posts')
+                 + tuple(f.stem for f in sorted(RAW.glob('igkw_*_refetch.json'))) + tuple(f.stem for f in sorted(RAW.glob('igp_post_*.json')))
+                 + tuple(f.stem for f in sorted(RAW.glob('igp_seemu_*.json')))):   # igp_*: pipeline.py's runs, named by format family
+        kw = name.startswith(('ig_kw_wide', 'igp_seemu'))   # seemuapps' keyword search names its fields differently
         for p in load(name):
             code = p.get('shortcode') if kw else p.get('shortCode')
             if not code:
@@ -268,7 +270,7 @@ def ugc():
                  'url': p.get('url'), 'author': {'name': p.get('ownerFullName'), 'handle': p.get('ownerUsername')}, 'likes': num(p.get('likesCount')),
                  'comments': num(p.get('commentsCount')), 'shares': num(p.get('sharesCount')), 'views': num(p.get('videoPlayCount')) or num(p.get('videoViewCount')),
                  'fmt': fmt_ig(p), 'hashtags': p.get('hashtags') or [], 'place': p.get('locationName')}, name)
-    for f in sorted(RAW.glob('igkw_*.json')):      # 19 Oct on: Instagram keyword search with apidojo (DECISIONS #133)
+    for f in sorted(RAW.glob('igkw_*.json')) + sorted(RAW.glob('igp_apidojo_*.json')):      # 19 Oct on: Instagram keyword search with apidojo (DECISIONS #133)
         if f.stem.endswith('_refetch'):
             continue                               # (read above, with the other post-scraper files)
         for p in json.load(open(f, encoding='utf-8'))['items']:
@@ -283,7 +285,7 @@ def ugc():
                  'likes': num(p.get('likeCount')), 'comments': num(p.get('commentCount')), 'shares': None, 'views': num((p.get('video') or {}).get('playCount')),
                  'fmt': 'Album' if p.get('isCarousel') else 'Reel' if p.get('isVideo') else 'Image', 'hashtags': re.findall(r'#(\w+)', cap),
                  'place': (p.get('location') or {}).get('name') if isinstance(p.get('location'), dict) else None, 'query': p.get('inputSource')}, f.stem)
-    for f in sorted(RAW.glob('igreels_*.json')):   # 19 Oct on: Instagram's Reels search with dami_studio (DECISIONS #134)
+    for f in sorted(RAW.glob('igreels_*.json')) + sorted(RAW.glob('igp_dami_*.json')):   # 19 Oct on: Instagram's Reels search with dami_studio (DECISIONS #134)
         for p in json.load(open(f, encoding='utf-8'))['items']:
             if p.get('recordType') != 'instagram_reel' or not p.get('shortcode'):
                 WHY_OUT['not a post (a run summary or error row)'] += 1; continue
@@ -441,12 +443,13 @@ def fb_files(*patterns):
 
 
 FB_SILENT_FILES = ('fbc_silent_*', 'fbd_posts*', 'fbkw_silentflow_*', 'fbkw_scrapeforge_*', 'fbkw_danek_*', 'fbkw_igview_*', 'fbdeep_silentflow_*',
-                   'fbdeep_scrapeforge_top', 'fbdeep_month_*', 'fbgap_danek', 'fbkw_topapi', 'fbdeep_topapi_*', 'fbgap_topapi_details', 'fbm_forge_*')
-FB_ONE_FILES = ('fbc_one_*', 'fbkw_scraperone_*', 'fbkw_fetchcat_*', 'fbm_fetchcat_*')
-FB_APIFY_FILES = ('fbc_apify_*', 'fbkw_apify_*')
-FB_HEADPLY_FILES = ('fbc_vheadply', 'fbvs_headply', 'fbkw_headply')
+                   'fbdeep_scrapeforge_top', 'fbdeep_month_*', 'fbgap_danek', 'fbkw_topapi', 'fbdeep_topapi_*', 'fbgap_topapi_details', 'fbm_forge_*',
+                   'fbp_sf_*')   # fbp_*: pipeline.py's runs, named by format family
+FB_ONE_FILES = ('fbc_one_*', 'fbkw_scraperone_*', 'fbkw_fetchcat_*', 'fbm_fetchcat_*', 'fbp_one_*')
+FB_APIFY_FILES = ('fbc_apify_*', 'fbkw_apify_*', 'fbp_ap_*')
+FB_HEADPLY_FILES = ('fbc_vheadply', 'fbvs_headply', 'fbkw_headply', 'fbp_hp_*')
 FB_ALPHA_FILES = ('fbd_reels*', 'fbd_videos*', 'fbgap_reeldetails')
-FB_LOFO_FILES = ('fbc_groups', 'fbgroups_lofo')
+FB_LOFO_FILES = ('fbc_groups', 'fbgroups_lofo', 'fbp_lofo_*')
 
 
 def fb_vid(url):

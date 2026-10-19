@@ -19,7 +19,7 @@ async def main():
         await pg.goto(SRC); await pg.wait_for_timeout(1500)
         import urllib.parse
         size=os.path.getsize(urllib.parse.unquote(urllib.parse.urlparse(SRC).path))
-        check('the page stays under 15 MB (1,251 public posts, 9,700 comments and 774 images; the artifact limit is 16 MB)', size<15e6, size)   # Version 26: 586 public posts and 431 images (Version 25: real data everywhere; the data block and the new images added about 1.5 MB)
+        check('the page stays under 13 MB: the images have a 6 MB budget (build_media.py) and the artifact limit is 16 MB', size<13e6, size)   # Version 26: 586 public posts and 431 images (Version 25: real data everywhere; the data block and the new images added about 1.5 MB)
         # Overview: what needs attention comes first
         first=await J("document.querySelector('#content .panel h2').textContent")
         cards=await J("[...document.querySelectorAll('.atc')].map(c=>[c.querySelector('.atc-t').textContent,!!c.querySelector('.atc-n'),(c.querySelector('.atc-f .tg')||{}).textContent||''])")

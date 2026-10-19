@@ -1072,3 +1072,30 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Pushed** at the user's request ("yes push"). `docs/index.html` was rebuilt (14.2 MB), and all 24 suites pass on it.
 - **What the site now shows:** Facebook from five post searches and two reel searches (590 public posts about V7, 192 reels). The Telegram bot reads this copy.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+
+### Version 32: the refresh pipeline, made robust (19 Oct 2026)
+- **Why:** the user: "then make the pipeline robust", after Versions 29 to 31 ran every step by hand. Before it, at the user's request ("yes run the instagram reels test"), Google's short videos were tested for Instagram.
+- **`pipeline.py`** (new, in `data/raw/real_17oct/`, with `PIPELINE.md`): one command for the Facebook and Instagram collection and everything after it (DECISIONS #152-#154).
+  - 16 jobs, one a route. Each has a main scraper and standbys that write the same format, for example silentflow, then scrapeforge, then topapi; scraper_one, then fetch_cat; alien_force, then Apify's reel search; apidojo, then seemuapps.
+  - Every run is checked: it must end SUCCEEDED and at least half its rows must carry the fields its reader needs. A run that fails, can't start or comes back in another shape goes to the standby, and so does a job whose every keyword comes back empty though it found posts before. Reads from Apify's API are retried on 5xx errors.
+  - A spending line per run (`--max-usd`, default 10) that the gap fillers obey too; every run that doesn't start is reported. A lock, a ledger of every Apify run, a report per run and a Telegram message to the bot's admins.
+  - Modes: sweep (the whole window, searches up to USD 24.53), daily (the core routes over the last 2 days, up to USD 2.29), weekly (the other routes over the last 8 days, up to USD 6.39) and fill (no searches).
+  - After the searches: new links fetched by link, normalize, label, the gap fillers, the pictures, the build, the images and the quick tests. Publishing stays manual.
+  - Not scheduled: the systemd files are ready in `deploy/` and not installed. A schedule needs the window to roll forward past 16 Oct, V7's own posts refreshed and the user's OK for the spending (DECISIONS #154).
+- **Fixed on the way:**
+  - the gap fillers' parallel runner started a run the budget guard had skipped with a USD 0.50 cap. Now a scraper is asked again only when it refused a cap under its own minimum, and only if that minimum fits (DECISIONS #153);
+  - the first real run's report said "Everything ran without a problem" though two gap-filler runs hadn't fit under its line. It lists them now;
+  - a link a gap filler returned nothing for is no longer paid for on every run: speech and plays are asked for at most twice, pages and accounts once (DECISIONS #155);
+  - `collect.py`, `normalize.py` and `build_real.py` take their folders, the API address, the polling and the window from the environment, so the tests run them against stand-ins;
+  - the schedule files' install line missed the weekly service.
+- **The first real run** (fill mode, a USD 1 line): 23 steps, none failed, USD 0.62.
+  - Facebook: plays for 17 videos, speech for 3 of the 35 videos that had failed before (the other 32 failed again and won't be asked for again), followers for 27 pages, and comments under the posts that had none.
+  - Instagram: speech for 5 reels, followers for 30 accounts, comments under 40 posts, pictures for 7 posts.
+- **Instagram, Google's short videos** (`collect.py igshortstest`, USD 0.13): 36 reels about V7 on 6 exact phrases, only 4 of them new. Kept as a weekly route (DECISIONS #158). Instagram public posts about V7: 479 to 483.
+- **Page size:** the images have a 6,000 KB budget (`build_media.py`, DECISIONS #156): V7's own posts first, then the pages abroad, then the public posts by views. 522 images; the page went from 14.2 MB to 11.6 MB. Posts past the budget show without a picture.
+- **Privacy:** `SCRAPERS.md` counts the links and accounts each run was given instead of printing them, since links to private people's posts carry their handle on Facebook, X and TikTok (DECISIONS #157). The dashboard keeps each post's link (DECISIONS #75), so the same handles sit in 111 of its post links (X 58, Facebook 41, TikTok 12); that is left for the user to decide.
+- **Dashboard:** public posts about V7 1,255 (Facebook 590, Instagram 483); comments shown 9,172.
+- **Tests:** new `tests/test_pipeline.py` (19 checks against stand-ins for Apify and Telegram, no token, no cost). `test_v23.py` holds the page under 13 MB. `test_v25.py` checks every image key against the post links, since the budget left no image keyed by an `&id=` link. All 24 suites pass.
+- **Published** privately (Version 32). Public site: Version 31 until a push.
+- **Spend:** USD 0.75 this round (the Instagram test 0.13, the fill run 0.62). Apify's meter: USD 71.83 of the USD 100 limit, so USD 28.17 is left until the cycle resets on 16 Nov. `SCRAPERS.md` lists 451 runs from 63 scrapers.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 31 saved in `archive/dashboard_versions/`). In `data/raw/real_17oct/`: new `pipeline.py` and `PIPELINE.md`; `collect.py`, `normalize.py`, `build_real.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json` and `run.log`. In `data/raw/media_13oct/`: `build_media.py`, `index.json` and 65 new images. New in `deploy/`: `v7pulse-pipeline.service`, `.timer`, `-weekly.service` and `-weekly.timer`. Tests: new `tests/test_pipeline.py`, plus `tests/test_v23.py` and `tests/test_v25.py`. Also `.gitignore` (the pipeline's lock, ledger and reports) and the notes.
