@@ -645,3 +645,220 @@
 2026-10-20 14:16    dateslice fetch: Instagram 355 new in the window, Facebook 278 new links
 2026-10-20 14:18  igp_post_ds_links instagram-post-scraper       SUCCEEDED    355 items  $0.8564  (cap $1.11)  total $74.1184  events {'post': 354, 'post-details': 354, 'music-data': 0}
 2026-10-20 14:36  fbp_sf_ds_links  facebook-posts-fast          SUCCEEDED    267 items  $1.4352  (cap $0.89)  total $74.6973  events {'apify-actor-start': 1, 'apify-default-dataset-item': 267}
+2026-10-20 17:23  --- stage fbdays, spent so far this cycle $74.7033, budget $14.00
+2026-10-20 17:23    fbdays: 30 days (2026-05-05 to 2026-10-14), 3 keywords, 214 posts collected on them
+2026-10-20 17:23  fbp_one_dd_0816_1 facebook-posts-search        SUCCEEDED      4 items  $0.0000  (cap $0.09)  total $74.7033  events {'result-item': 0, 'init': 1}
+2026-10-20 17:23  fbp_one_dd_0606_2 facebook-posts-search        SUCCEEDED      0 items  $0.0000  (cap $0.09)  total $74.7033  events {'result-item': 0, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_0816_2 facebook-posts-search        SUCCEEDED     10 items  $0.0000  (cap $0.09)  total $74.7033  events {'result-item': 10, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_0606_3 facebook-posts-search        SUCCEEDED      0 items  $0.0003  (cap $0.09)  total $74.7037  events {'result-item': 0, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_0520_1 facebook-posts-search        SUCCEEDED      0 items  $0.0003  (cap $0.09)  total $74.7037  events {'result-item': 0, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_0520_2 facebook-posts-search        SUCCEEDED      0 items  $0.0605  (cap $0.09)  total $74.7638  events {'result-item': 0, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_1010_1 facebook-posts-search        SUCCEEDED     10 items  $0.0605  (cap $0.09)  total $74.7638  events {'result-item': 6, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_0520_3 facebook-posts-search        SUCCEEDED      4 items  $0.0601  (cap $0.09)  total $74.7638  events {'result-item': 0, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_1010_2 facebook-posts-search        SUCCEEDED     10 items  $0.0605  (cap $0.09)  total $74.7638  events {'result-item': 6, 'init': 1}
+2026-10-20 17:24  fbp_one_dd_0910_1 facebook-posts-search        SUCCEEDED      8 items  $0.1384  (cap $0.09)  total $74.8421  events {'result-item': 8, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_0816_3 facebook-posts-search        SUCCEEDED      0 items  $0.1389  (cap $0.09)  total $74.8422  events {'result-item': 0, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_0808_3 facebook-posts-search        SUCCEEDED      4 items  $0.0001  (cap $0.09)  total $74.8422  events {'result-item': 0, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_0606_1 facebook-posts-search        SUCCEEDED      4 items  $0.1389  (cap $0.09)  total $74.8422  events {'result-item': 0, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_0910_2 facebook-posts-search        SUCCEEDED     10 items  $0.0935  (cap $0.09)  total $74.8572  events {'result-item': 10, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_1010_3 facebook-posts-search        SUCCEEDED     10 items  $0.1540  (cap $0.09)  total $74.8573  events {'result-item': 10, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_1009_1 facebook-posts-search        SUCCEEDED     10 items  $0.1024  (cap $0.09)  total $74.9445  events {'result-item': 10, 'init': 1}
+2026-10-20 17:25  fbp_one_dd_0808_1 facebook-posts-search        SUCCEEDED      3 items  $0.1808  (cap $0.09)  total $74.9445  events {'result-item': 3, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0615_2 facebook-posts-search        SUCCEEDED     10 items  $0.1863  (cap $0.09)  total $75.0436  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0910_3 facebook-posts-search        SUCCEEDED     10 items  $0.2799  (cap $0.09)  total $75.0436  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0615_1 facebook-posts-search        SUCCEEDED     10 items  $0.1864  (cap $0.09)  total $75.0436  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0808_2 facebook-posts-search        SUCCEEDED     10 items  $0.2799  (cap $0.09)  total $75.0436  events {'result-item': 5, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_1009_2 facebook-posts-search        SUCCEEDED     10 items  $0.2015  (cap $0.09)  total $75.0436  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0615_3 facebook-posts-search        SUCCEEDED     10 items  $0.2011  (cap $0.09)  total $75.1456  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_1012_3 facebook-posts-search        SUCCEEDED      0 items  $0.0000  (cap $0.09)  total $75.1456  events {'result-item': 0, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0505_1 facebook-posts-search        SUCCEEDED     10 items  $0.2013  (cap $0.09)  total $75.1458  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0911_1 facebook-posts-search        SUCCEEDED     10 items  $0.0002  (cap $0.09)  total $75.1458  events {'result-item': 10, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_1009_3 facebook-posts-search        SUCCEEDED     10 items  $0.3789  (cap $0.09)  total $75.2211  events {'result-item': 5, 'init': 1}
+2026-10-20 17:26  fbp_one_dd_0911_2 facebook-posts-search        SUCCEEDED     10 items  $0.1086  (cap $0.09)  total $75.2542  events {'result-item': 10, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_0911_3 facebook-posts-search        SUCCEEDED      0 items  $0.1385  (cap $0.09)  total $75.2843  events {'result-item': 0, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_0505_2 facebook-posts-search        SUCCEEDED     10 items  $0.2407  (cap $0.09)  total $75.2843  events {'result-item': 10, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_0817_1 facebook-posts-search        SUCCEEDED      8 items  $0.0301  (cap $0.09)  total $75.3143  events {'result-item': 6, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_0505_3 facebook-posts-search        SUCCEEDED      6 items  $0.2709  (cap $0.09)  total $75.3145  events {'result-item': 6, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_1012_1 facebook-posts-search        SUCCEEDED      8 items  $0.1689  (cap $0.09)  total $75.3145  events {'result-item': 8, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_0823_3 facebook-posts-search        SUCCEEDED      8 items  $0.0604  (cap $0.09)  total $75.3145  events {'result-item': 8, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_1012_2 facebook-posts-search        SUCCEEDED      6 items  $0.1689  (cap $0.09)  total $75.3145  events {'result-item': 6, 'init': 1}
+2026-10-20 17:27  fbp_one_dd_0817_2 facebook-posts-search        SUCCEEDED     10 items  $0.0303  (cap $0.09)  total $75.3146  events {'result-item': 10, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_0823_1 facebook-posts-search        SUCCEEDED      0 items  $0.2890  (cap $0.09)  total $75.4348  events {'result-item': 0, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_1003_3 facebook-posts-search        SUCCEEDED      6 items  $0.1203  (cap $0.09)  total $75.4348  events {'result-item': 6, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_0825_1 facebook-posts-search        SUCCEEDED      0 items  $0.1203  (cap $0.09)  total $75.4348  events {'result-item': 0, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_0823_2 facebook-posts-search        SUCCEEDED      7 items  $0.2137  (cap $0.09)  total $75.4348  events {'result-item': 7, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_0817_3 facebook-posts-search        SUCCEEDED      4 items  $0.1204  (cap $0.09)  total $75.4348  events {'result-item': 4, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_0920_3 facebook-posts-search        SUCCEEDED     10 items  $0.0361  (cap $0.09)  total $75.4709  events {'result-item': 0, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_1013_1 facebook-posts-search        SUCCEEDED      4 items  $0.1264  (cap $0.09)  total $75.5612  events {'result-item': 4, 'init': 1}
+2026-10-20 17:28  fbp_one_dd_0825_2 facebook-posts-search        SUCCEEDED     10 items  $0.2467  (cap $0.09)  total $75.5612  events {'result-item': 10, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1003_1 facebook-posts-search        SUCCEEDED      2 items  $0.2437  (cap $0.09)  total $75.5583  events {'result-item': 2, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1003_2 facebook-posts-search        SUCCEEDED      5 items  $0.2437  (cap $0.09)  total $75.5583  events {'result-item': 5, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1014_1 facebook-posts-search        SUCCEEDED      9 items  $0.0182  (cap $0.09)  total $75.5794  events {'result-item': 9, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1014_3 facebook-posts-search        SUCCEEDED      0 items  $0.0211  (cap $0.09)  total $75.5794  events {'result-item': 0, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1013_2 facebook-posts-search        SUCCEEDED     10 items  $0.1085  (cap $0.09)  total $75.5794  events {'result-item': 10, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_0825_3 facebook-posts-search        SUCCEEDED     10 items  $0.2076  (cap $0.09)  total $75.6424  events {'result-item': 10, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1013_3 facebook-posts-search        SUCCEEDED     10 items  $0.0812  (cap $0.09)  total $75.6424  events {'result-item': 10, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_0920_1 facebook-posts-search        SUCCEEDED     10 items  $0.3097  (cap $0.09)  total $75.7446  events {'result-item': 10, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_1014_2 facebook-posts-search        SUCCEEDED      3 items  $0.1863  (cap $0.09)  total $75.7446  events {'result-item': 3, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_0920_2 facebook-posts-search        SUCCEEDED     10 items  $0.3097  (cap $0.09)  total $75.7446  events {'result-item': 10, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_0803_1 facebook-posts-search        SUCCEEDED      6 items  $0.2044  (cap $0.09)  total $75.7838  events {'result-item': 6, 'init': 1}
+2026-10-20 17:29  fbp_one_dd_0810_3 facebook-posts-search        SUCCEEDED      0 items  $0.0392  (cap $0.09)  total $75.7838  events {'result-item': 0, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0821_1 facebook-posts-search        SUCCEEDED     10 items  $0.0392  (cap $0.09)  total $75.7838  events {'result-item': 10, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0821_2 facebook-posts-search        SUCCEEDED      9 items  $0.0604  (cap $0.09)  total $75.8050  events {'result-item': 6, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0803_2 facebook-posts-search        SUCCEEDED     10 items  $0.2256  (cap $0.09)  total $75.8050  events {'result-item': 10, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0604_2 facebook-posts-search        SUCCEEDED      4 items  $0.0995  (cap $0.09)  total $75.8832  events {'result-item': 4, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0821_3 facebook-posts-search        SUCCEEDED      4 items  $0.0996  (cap $0.09)  total $75.8833  events {'result-item': 4, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0803_3 facebook-posts-search        SUCCEEDED      3 items  $0.2680  (cap $0.09)  total $75.9104  events {'result-item': 3, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0604_3 facebook-posts-search        SUCCEEDED     10 items  $0.1054  (cap $0.09)  total $75.9104  events {'result-item': 5, 'init': 1}
+2026-10-20 17:30  fbp_one_dd_0810_1 facebook-posts-search        SUCCEEDED      2 items  $0.2680  (cap $0.09)  total $75.9104  events {'result-item': 2, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0818_3 facebook-posts-search        SUCCEEDED      2 items  $0.0271  (cap $0.09)  total $75.9104  events {'result-item': 0, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0810_2 facebook-posts-search        SUCCEEDED      5 items  $0.3250  (cap $0.09)  total $75.9675  events {'result-item': 5, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0818_1 facebook-posts-search        SUCCEEDED      2 items  $0.1625  (cap $0.09)  total $75.9675  events {'result-item': 2, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0903_1 facebook-posts-search        SUCCEEDED      1 items  $0.0571  (cap $0.09)  total $75.9675  events {'result-item': 1, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0903_2 facebook-posts-search        SUCCEEDED      4 items  $0.1324  (cap $0.09)  total $76.0428  events {'result-item': 4, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0822_3 facebook-posts-search        SUCCEEDED     10 items  $0.0753  (cap $0.09)  total $76.0428  events {'result-item': 10, 'init': 1}
+2026-10-20 17:31  fbp_one_dd_0604_1 facebook-posts-search        SUCCEEDED     10 items  $0.2590  (cap $0.09)  total $76.0428  events {'result-item': 10, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0818_2 facebook-posts-search        SUCCEEDED      7 items  $0.1747  (cap $0.09)  total $76.0579  events {'result-item': 7, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0822_2 facebook-posts-search        SUCCEEDED      7 items  $0.0904  (cap $0.09)  total $76.0579  events {'result-item': 7, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0903_3 facebook-posts-search        SUCCEEDED      0 items  $0.2226  (cap $0.09)  total $76.1330  events {'result-item': 0, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0902_1 facebook-posts-search        SUCCEEDED     10 items  $0.1173  (cap $0.09)  total $76.1330  events {'result-item': 10, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0822_1 facebook-posts-search        SUCCEEDED      3 items  $0.2226  (cap $0.09)  total $76.1330  events {'result-item': 3, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_1007_1 facebook-posts-search        SUCCEEDED     10 items  $0.0902  (cap $0.09)  total $76.1330  events {'result-item': 10, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0824_1 facebook-posts-search        SUCCEEDED      5 items  $0.0211  (cap $0.09)  total $76.1541  events {'result-item': 0, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0902_2 facebook-posts-search        SUCCEEDED      0 items  $0.1114  (cap $0.09)  total $76.1541  events {'result-item': 0, 'init': 1}
+2026-10-20 17:32  fbp_one_dd_0824_2 facebook-posts-search        SUCCEEDED      4 items  $0.0363  (cap $0.09)  total $76.1693  events {'result-item': 4, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_0702_1 facebook-posts-search        SUCCEEDED      5 items  $0.0272  (cap $0.09)  total $76.1966  events {'result-item': 5, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_0824_3 facebook-posts-search        SUCCEEDED     10 items  $0.0635  (cap $0.09)  total $76.1966  events {'result-item': 10, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_0902_3 facebook-posts-search        SUCCEEDED      0 items  $0.1538  (cap $0.09)  total $76.1966  events {'result-item': 0, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_0702_2 facebook-posts-search        SUCCEEDED      2 items  $0.0300  (cap $0.09)  total $76.2266  events {'result-item': 0, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_1007_2 facebook-posts-search        SUCCEEDED      0 items  $0.1687  (cap $0.09)  total $76.2266  events {'result-item': 0, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_1007_3 facebook-posts-search        SUCCEEDED      6 items  $0.1687  (cap $0.09)  total $76.2266  events {'result-item': 6, 'init': 1}
+2026-10-20 17:33  fbp_one_dd_0702_3 facebook-posts-search        SUCCEEDED      2 items  $0.0301  (cap $0.09)  total $76.2267  events {'result-item': 0, 'init': 1}
+2026-10-20 17:34  fbp_one_dd_1005_1 facebook-posts-search        SUCCEEDED      7 items  $0.1387  (cap $0.09)  total $76.2718  events {'result-item': 7, 'init': 1}
+2026-10-20 17:34  fbp_one_dd_1005_2 facebook-posts-search        SUCCEEDED     10 items  $0.1686  (cap $0.09)  total $76.3228  events {'result-item': 10, 'init': 1}
+2026-10-20 17:34  fbp_one_dd_1005_3 facebook-posts-search        SUCCEEDED     10 items  $0.1686  (cap $0.09)  total $76.3228  events {'result-item': 10, 'init': 1}
+2026-10-20 17:34  --- stage fbdays done, spent this cycle $76.3228
+2026-10-20 17:34  --- stage gweeks, spent so far this cycle $76.3228, budget $14.00
+2026-10-20 17:34    gweeks: 26 week slices, 286 searches
+2026-10-20 17:48  igl_gw           google-search-scraper        SUCCEEDED    230 items  $1.1805  (cap $1.02)  total $77.5033  events {'search-page-scraped': 223, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-20 17:48  fbl_gw           google-search-scraper        SUCCEEDED    271 items  $1.1805  (cap $1.22)  total $77.5033  events {'search-page-scraped': 243, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+2026-10-20 17:48  --- stage gweeks done, spent this cycle $77.5033
+2026-10-20 17:48  --- stage slicefetch, spent so far this cycle $77.5033, budget $14.00
+2026-10-20 17:48    slicefetch: Instagram 954 found, 646 new inside the window; Facebook 1094 found, 862 new
+2026-10-20 18:01  igp_post_gw_links instagram-post-scraper       SUCCEEDED    646 items  $1.8851  (cap $1.98)  total $79.3884  events {'post': 643, 'post-details': 643, 'music-data': 0}
+2026-10-20 18:48  fbp_sf_gw_links  facebook-posts-fast          TIMED-OUT    808 items  $3.3668  (cap $2.66)  total $80.8700  events {'apify-actor-start': 1, 'apify-default-dataset-item': 806}
+2026-10-20 18:48  --- stage slicefetch done, spent this cycle $80.8700
+2026-10-20 18:49  --- stage igrepeat, spent so far this cycle $80.8747, budget $14.00
+2026-10-20 18:49  igkw_rep1_01     instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $80.8747  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_05     instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $80.8747  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_00     instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $80.8747  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_03     instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $80.8747  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_02     instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $80.8747  events {'dataset-item': 4, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_04     instagram-scraper-api        SUCCEEDED     10 items  $0.0000  (cap $0.04)  total $80.8747  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_06     instagram-scraper-api        SUCCEEDED     10 items  $0.1200  (cap $0.04)  total $80.9947  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_08     instagram-scraper-api        SUCCEEDED     10 items  $0.1212  (cap $0.04)  total $80.9959  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_07     instagram-scraper-api        SUCCEEDED     10 items  $0.1212  (cap $0.04)  total $80.9959  events {'dataset-item': 6, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_11     instagram-scraper-api        SUCCEEDED     10 items  $0.1212  (cap $0.04)  total $80.9959  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:49  igkw_rep1_09     instagram-scraper-api        SUCCEEDED     10 items  $0.1212  (cap $0.04)  total $80.9959  events {'dataset-item': 2, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:50  igkw_rep1_10     instagram-scraper-api        SUCCEEDED     10 items  $0.1606  (cap $0.04)  total $81.0353  events {'dataset-item': 4, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:50  igkw_rep1_12     instagram-scraper-api        SUCCEEDED     10 items  $0.1606  (cap $0.04)  total $81.0353  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:50  igkw_rep1_13     instagram-scraper-api        SUCCEEDED     10 items  $0.2466  (cap $0.04)  total $81.1213  events {'dataset-item': 10, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:50  igkw_rep1_14     instagram-scraper-api        SUCCEEDED     10 items  $0.1266  (cap $0.04)  total $81.1213  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:50  igreels_rep1_04  instagram-reels-search-scrap SUCCEEDED     10 items  $0.1093  (cap $0.12)  total $81.1446  events {'item': 7, 'apify-actor-start': 1, 'reel-checked': 5}
+2026-10-20 18:50  igreels_rep1_01  instagram-reels-search-scrap SUCCEEDED     32 items  $0.1753  (cap $0.12)  total $81.1713  events {'item': 30, 'apify-actor-start': 1, 'reel-checked': 8}
+2026-10-20 18:50  igreels_rep1_02  instagram-reels-search-scrap SUCCEEDED     22 items  $0.1753  (cap $0.12)  total $81.1713  events {'item': 20, 'apify-actor-start': 1, 'reel-checked': 23}
+2026-10-20 18:50  igreels_rep1_00  instagram-reels-search-scrap SUCCEEDED     30 items  $0.1753  (cap $0.12)  total $81.1713  events {'item': 29, 'apify-actor-start': 1, 'reel-checked': 17}
+2026-10-20 18:51  igreels_rep1_03  instagram-reels-search-scrap SUCCEEDED     33 items  $0.1537  (cap $0.12)  total $81.1887  events {'item': 32, 'apify-actor-start': 1, 'reel-checked': 13}
+2026-10-20 18:51  igkw_rep1_refetch instagram-post-scraper       SUCCEEDED     28 items  $0.0674  (cap $0.13)  total $81.2560  events {'post': 28, 'post-details': 28, 'music-data': 0}
+2026-10-20 18:51    igrepeat: session 1 added 57 posts in the window that no earlier search had returned
+2026-10-20 18:51  igkw_rep2_00     instagram-scraper-api        SUCCEEDED     10 items  $0.0046  (cap $0.04)  total $81.2606  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_01     instagram-scraper-api        SUCCEEDED     10 items  $0.0046  (cap $0.04)  total $81.2606  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_04     instagram-scraper-api        SUCCEEDED     10 items  $0.0046  (cap $0.04)  total $81.2606  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_05     instagram-scraper-api        SUCCEEDED     10 items  $0.1246  (cap $0.04)  total $81.3806  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_02     instagram-scraper-api        SUCCEEDED     10 items  $0.1248  (cap $0.04)  total $81.3808  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_03     instagram-scraper-api        SUCCEEDED     10 items  $0.1248  (cap $0.04)  total $81.3808  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_07     instagram-scraper-api        SUCCEEDED     10 items  $0.1248  (cap $0.04)  total $81.3808  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_06     instagram-scraper-api        SUCCEEDED     10 items  $0.1248  (cap $0.04)  total $81.3808  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_08     instagram-scraper-api        SUCCEEDED     10 items  $0.1203  (cap $0.04)  total $81.3809  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_09     instagram-scraper-api        SUCCEEDED     10 items  $0.0003  (cap $0.04)  total $81.3809  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_11     instagram-scraper-api        SUCCEEDED     10 items  $0.0251  (cap $0.04)  total $81.4059  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_10     instagram-scraper-api        SUCCEEDED     10 items  $0.0253  (cap $0.04)  total $81.4059  events {'dataset-item': 3, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_12     instagram-scraper-api        SUCCEEDED     10 items  $0.0251  (cap $0.04)  total $81.4059  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_13     instagram-scraper-api        SUCCEEDED     10 items  $0.0251  (cap $0.04)  total $81.4059  events {'dataset-item': 10, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igkw_rep2_14     instagram-scraper-api        SUCCEEDED     10 items  $0.0251  (cap $0.04)  total $81.4059  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:52  igreels_rep2_04  instagram-reels-search-scrap SUCCEEDED      3 items  $0.1264  (cap $0.12)  total $81.5323  events {'item': 0, 'apify-actor-start': 1, 'reel-checked': 3}
+2026-10-20 18:53  igreels_rep2_02  instagram-reels-search-scrap SUCCEEDED     21 items  $0.1713  (cap $0.12)  total $81.5522  events {'item': 19, 'apify-actor-start': 1, 'reel-checked': 16}
+2026-10-20 18:53  igreels_rep2_00  instagram-reels-search-scrap SUCCEEDED     41 items  $0.1714  (cap $0.12)  total $81.5522  events {'item': 40, 'apify-actor-start': 1, 'reel-checked': 14}
+2026-10-20 18:53  igreels_rep2_01  instagram-reels-search-scrap SUCCEEDED     33 items  $0.1958  (cap $0.12)  total $81.5767  events {'item': 31, 'apify-actor-start': 1, 'reel-checked': 13}
+2026-10-20 18:53  igreels_rep2_03  instagram-reels-search-scrap SUCCEEDED     32 items  $0.1708  (cap $0.12)  total $81.5767  events {'item': 31, 'apify-actor-start': 1, 'reel-checked': 14}
+2026-10-20 18:53  igkw_rep2_refetch instagram-post-scraper       SUCCEEDED     14 items  $0.0024  (cap $0.09)  total $81.5791  events {'post': 14, 'post-details': 14, 'music-data': 0}
+2026-10-20 18:53    igrepeat: session 2 added 30 posts in the window that no earlier search had returned
+2026-10-20 18:54  igkw_rep3_05     instagram-scraper-api        SUCCEEDED     10 items  $0.0046  (cap $0.04)  total $81.6113  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_06     instagram-scraper-api        SUCCEEDED     10 items  $0.0046  (cap $0.04)  total $81.6113  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_00     instagram-scraper-api        SUCCEEDED     10 items  $0.0048  (cap $0.04)  total $81.6115  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_01     instagram-scraper-api        SUCCEEDED     10 items  $0.0048  (cap $0.04)  total $81.6115  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_02     instagram-scraper-api        SUCCEEDED     10 items  $0.0048  (cap $0.04)  total $81.6115  events {'dataset-item': 4, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_03     instagram-scraper-api        SUCCEEDED     10 items  $0.0048  (cap $0.04)  total $81.6115  events {'dataset-item': 4, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_04     instagram-scraper-api        SUCCEEDED     10 items  $0.0048  (cap $0.04)  total $81.6115  events {'dataset-item': 2, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_07     instagram-scraper-api        SUCCEEDED     10 items  $0.0048  (cap $0.04)  total $81.6115  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_09     instagram-scraper-api        SUCCEEDED     10 items  $0.1202  (cap $0.04)  total $81.7315  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_11     instagram-scraper-api        SUCCEEDED     10 items  $0.1200  (cap $0.04)  total $81.7315  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_12     instagram-scraper-api        SUCCEEDED     10 items  $0.1200  (cap $0.04)  total $81.7315  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_08     instagram-scraper-api        SUCCEEDED     10 items  $0.1202  (cap $0.04)  total $81.7315  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_10     instagram-scraper-api        SUCCEEDED     10 items  $0.1605  (cap $0.04)  total $81.7720  events {'dataset-item': 3, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_13     instagram-scraper-api        SUCCEEDED     10 items  $0.1609  (cap $0.04)  total $81.7724  events {'dataset-item': 10, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:54  igkw_rep3_14     instagram-scraper-api        SUCCEEDED     10 items  $0.1610  (cap $0.04)  total $81.7725  events {'dataset-item': 10, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+2026-10-20 18:55  igreels_rep3_04  instagram-reels-search-scrap SUCCEEDED      3 items  $0.1382  (cap $0.12)  total $81.8697  events {'item': 0, 'apify-actor-start': 1, 'reel-checked': 3}
+2026-10-20 18:55  igreels_rep3_02  instagram-reels-search-scrap SUCCEEDED     31 items  $0.1978  (cap $0.12)  total $81.9293  events {'item': 29, 'apify-actor-start': 1, 'reel-checked': 11}
+2026-10-20 18:55  igreels_rep3_00  instagram-reels-search-scrap SUCCEEDED     37 items  $0.3178  (cap $0.12)  total $81.9293  events {'item': 36, 'apify-actor-start': 1, 'reel-checked': 19}
+2026-10-20 18:55  igreels_rep3_01  instagram-reels-search-scrap SUCCEEDED     39 items  $0.1978  (cap $0.12)  total $81.9293  events {'item': 37, 'apify-actor-start': 1, 'reel-checked': 11}
+2026-10-20 18:55  igreels_rep3_03  instagram-reels-search-scrap SUCCEEDED     27 items  $0.1978  (cap $0.12)  total $81.9293  events {'item': 26, 'apify-actor-start': 1, 'reel-checked': 15}
+2026-10-20 18:56  igkw_rep3_refetch instagram-post-scraper       SUCCEEDED     15 items  $0.0077  (cap $0.09)  total $81.9371  events {'post': 15, 'post-details': 15, 'music-data': 0}
+2026-10-20 18:56    igrepeat: session 3 added 40 posts in the window that no earlier search had returned
+2026-10-20 18:56  --- stage igrepeat done, spent this cycle $81.9371
+2026-10-20 18:56  --- stage accounts, spent so far this cycle $81.9371, budget $14.00
+2026-10-20 18:56    accounts: Instagram 10 accounts (47 posts about V7 collected), Facebook 10 pages (55 posts about V7 collected)
+2026-10-20 18:56  fbp_ap_acct_t1   facebook-posts-scraper       SUCCEEDED    143 items  $0.8852  (cap $1.03)  total $82.8223  events {'post': 143, 'actor-start': 1, 'filter-applied': 143}
+2026-10-20 18:57  igp_post_acct_t1 instagram-post-scraper       SUCCEEDED    195 items  $1.1532  (cap $0.65)  total $83.0903  events {'post': 195, 'post-details': 195, 'music-data': 0}
+2026-10-20 18:57  --- stage accounts done, spent this cycle $83.0903
+2026-10-20 19:11  --- pipeline fill 2026-04-20..2026-10-16, spent so far this cycle $83.1375, stops at $88.14
+2026-10-20 19:11    fbfill: 25 videos without views, 80 videos to transcribe, 25 pages, 53 posts with about 824 comments
+2026-10-20 19:11  fbcm_door_202610201911: skipped, only $0.20 of the $88.14 budget left ($4.80 held by runs going on) (needs a $0.64 cap)
+2026-10-20 19:11  fbf_pages_202610201911 facebook-pages-scraper       SUCCEEDED     25 items  $0.1590  (cap $0.32)  total $83.2965  events {'apify-default-dataset-item': 24, 'page': 0}
+2026-10-20 19:12  fbf_plays_202610201911 facebook-playcount-scraper   SUCCEEDED     25 items  $1.3823  (cap $0.18)  total $84.5198  events {'apify-actor-start': 4, 'apify-default-dataset-item': 24}
+2026-10-20 19:12  fbf_speech_202610201911 video-transcriber            ABORTED       37 items  $1.3823  (cap $4.30)  total $84.5198  events {'apify-default-dataset-item': 37, 'extra-10-minutes': 0}
+2026-10-20 19:12    fbfill2: 53 posts without comments, about 824 comments
+2026-10-20 19:13  fbcm_official_202610201912 facebook-comments-scraper    ABORTED      363 items  $0.2190  (cap $2.32)  total $84.7388  events {'comment': 363, 'actor-start': 1, 'filter-applied': 0}
+2026-10-20 19:13    fbviews: 40 video posts without plays
+2026-10-20 19:16  fbd_posts_views_202610201913 facebook-posts-fast          SUCCEEDED     40 items  $0.8035  (cap $0.17)  total $85.5423  events {'apify-actor-start': 1, 'apify-default-dataset-item': 40}
+2026-10-20 19:16    fbnames: 0 posts without the account name
+2026-10-20 19:16    igspeech_about_202610201916: 38 reels, cap $0.30
+2026-10-20 19:20  igspeech_about_202610201916 instagram-transcripts-scrape SUCCEEDED     38 items  $0.1841  (cap $0.30)  total $85.7357  events {'apify-default-dataset-item': 37, 'speech2text': 40}
+2026-10-20 19:20    igspeech_tagged_202610201916: 0 reels, cap $0.05
+2026-10-20 19:20    igprofiles: 34 accounts without a follower count
+2026-10-20 19:21  ig_profiles_202610201920 instagram-profile-scraper    SUCCEEDED     34 items  $0.0748  (cap $0.15)  total $85.8105  events {'profile': 34, 'about-account': 0}
+2026-10-20 19:21    igcomments: 69 posts, about 691 comments
+2026-10-20 19:21  igcm_202610201921 instagram-comments-scraper   SUCCEEDED      0 items  $0.0115  (cap $0.50)  total $85.8220  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+2026-10-20 19:21    igcomments2: 69 posts without comments, about 691 comments
+2026-10-20 19:23  igcm_official_202610201921 instagram-comment-scraper    SUCCEEDED    500 items  $0.9687  (cap $1.96)  total $86.7907  events {'comment': 500}
+2026-10-20 19:23    igvisfetch: 91 posts (90 about V7, 1 to check)
+2026-10-20 19:35  vis_posts_202610201923 instagram-post-scraper       SUCCEEDED     91 items  $0.3845  (cap $0.32)  total $87.1752  events {'post': 91, 'post-details': 91, 'music-data': 0}
+2026-10-20 23:40  --- pipeline fill 2026-04-20..2026-10-16, spent so far this cycle $87.1834, stops at $89.18
+2026-10-20 23:40    fbfill: 1 videos without views, 2 videos to transcribe, 4 pages, 1 posts with about 9 comments
+2026-10-20 23:40  fbf_plays_202610202340 facebook-playcount-scraper   SUCCEEDED      1 items  $0.0001  (cap $0.06)  total $87.1835  events {'apify-actor-start': 4, 'apify-default-dataset-item': 1}
+2026-10-20 23:40  fbf_speech_202610202340 video-transcriber            SUCCEEDED      1 items  $0.0001  (cap $0.21)  total $87.1835  events {'apify-default-dataset-item': 0, 'extra-10-minutes': 0}
+2026-10-20 23:40  fbf_pages_202610202340 facebook-pages-scraper       SUCCEEDED      4 items  $0.0001  (cap $0.09)  total $87.1835  events {'apify-default-dataset-item': 0, 'page': 0}
+2026-10-20 23:41  fbcm_door_202610202340 facebook-comment-scraper     SUCCEEDED      4 items  $0.0044  (cap $0.11)  total $87.1877  events {'apify-default-dataset-item': 4, 'apify-actor-start': 1}
+2026-10-20 23:41    fbfill2: 0 posts thedoor returned no comments for, about 0 comments
+2026-10-20 23:41    fbviews: 16 video posts without plays
+2026-10-20 23:42  fbd_posts_views_202610202341 facebook-posts-fast          SUCCEEDED     16 items  $0.1002  (cap $0.10)  total $87.2879  events {'apify-actor-start': 1, 'apify-default-dataset-item': 14}
+2026-10-20 23:42    fbnames: 0 posts without the account name
+2026-10-20 23:42    igspeech_about_202610202342: 0 reels, cap $0.05
+2026-10-20 23:42    igspeech_tagged_202610202342: 0 reels, cap $0.05
+2026-10-20 23:42    igprofiles: 0 accounts without a follower count
+2026-10-20 23:42    igcomments: 20 posts, about 79 comments
+2026-10-20 23:42  igcm_202610202342 instagram-comments-scraper   SUCCEEDED      0 items  $0.0070  (cap $0.10)  total $87.2949  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+2026-10-20 23:42    igcomments2: 20 posts scrapesmith returned no comments for, about 79 comments
+2026-10-20 23:44  igcm_official_202610202342 instagram-comment-scraper    SUCCEEDED     20 items  $0.0438  (cap $0.27)  total $87.3387  events {'comment': 20}
+2026-10-20 23:44    igvisfetch: 3 posts (2 about V7, 1 to check)
+2026-10-20 23:44  vis_posts_202610202344 instagram-post-scraper       SUCCEEDED      3 items  $0.0069  (cap $0.06)  total $87.3456  events {'post': 3, 'post-details': 3, 'music-data': 0}

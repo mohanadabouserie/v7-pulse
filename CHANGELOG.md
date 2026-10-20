@@ -1132,3 +1132,34 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Spend:** USD 2.87 by Apify's meter (71.83 to 74.70), more than the USD 2 estimate because the slices found more posts to fetch. USD 25.30 is left until 16 Nov. `SCRAPERS.md` lists 479 runs.
 - **Tests:** `tests/test_pipeline.py` has 20 checks (one new, for runs started together); all pass.
 - **Files:** in `data/raw/real_17oct/`: new `dateslice_test.py` and `DATESLICE_TEST.md`; `collect.py`, `build_real.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `run.log`. Also `tests/test_pipeline.py` and the notes.
+
+### Version 33: date slices, repeated searches and account feeds (20 Oct 2026)
+- **Why:** the user: "yes go ahead" (Facebook by day on the busiest days, Google by week, the pipeline sorting by latest, the gaps filled), then "and think of any workarounds like this that can make us cover all the posts and avoid this shuffling", then "do 1 and 2" (repeat Instagram's searches; read the feeds of the accounts that post about V7 most).
+- **What ran** (`collect.py fbdays`, `gweeks`, `slicefetch`, `igrepeat`, `accounts`; scored by `routes_report.py` in `ROUTES_20OCT.md`):
+
+  | Route | New posts about V7 | Cost (USD) |
+  |---|---:|---:|
+  | Facebook's own search by day, 30 busiest days (sorted by latest) | 45 | 1.63 |
+  | Google by week, Instagram (the months other than August) | 63 | 2.04 |
+  | Google by week, Facebook (the months other than August) | 32 | 2.49 |
+  | Instagram's searches repeated in 3 new sessions (idea 1) | 9 | 1.09 |
+  | Feeds of 20 accounts that post about V7 often (idea 2) | 3 | 1.17 |
+  | The date-slice test of the same day (August) | 33 | 2.87 |
+
+  - New "about V7" means no earlier route had found the post. Ideas 1 and 2 added little: the shuffle brings in mostly off-topic posts or ones other routes had, and the accounts' other posts are rarely about V7 (DECISIONS #166, #167).
+- **Public posts about V7: 1,255 to 1,438** (Facebook 590 to 685, Instagram 483 to 571); comments shown 9,172 to 9,607. 183 posts are new.
+- **Gaps filled** (two `pipeline.py run --mode fill` passes, USD 4.21): speech for the new Facebook videos about V7 and 38 Instagram reels, plays, page and account followers, comments, and pictures read for 133 posts.
+- **Fixed on the way:**
+  - one speech run picked 80 Facebook videos, 52 of them off-topic short videos from the one-day searches. It was stopped after USD 1.30; videos are now transcribed only when labelled about V7, or when a keyword search over a long window found them (DECISIONS #164);
+  - with the cheap comment scraper skipped for the budget, the fallback got all 53 posts at about 4.6 times the price. It was stopped after USD 0.73; the fallbacks now take only what the cheap scraper was asked about and missed (DECISIONS #165);
+  - `known_keys()` now counts Instagram posts apidojo returns under `code`, so they aren't fetched again;
+  - the Hashtags view filtered generic tags by exact name, and the new posts brought variants (#viralvideos, #fypシ゚viral). They're now matched by prefix.
+- **Pipeline:** daily and weekly runs sort Facebook's search by latest (DECISIONS #162); `tests/test_pipeline.py` has 21 checks (new: the speech rule).
+- **Dashboard copy:** collected on 17 to 20 Oct; speech and pictures read on 19 and 20 Oct. The data sources name the new routes. Posts first read on 20 Oct say "as of 20 Oct" (DECISIONS #161).
+- **Found, for the user:**
+  - V7-branded distributor pages (V7 Aleppo, V7 Syria, V Super Soda Syria and drinkv7 on Facebook; V7 Malawi and V7 Lebanon on Instagram) count as public posts by businesses, about 80 posts;
+  - the cheap Instagram comment scraper (scrapesmith) returned nothing for all 89 posts it was given on 20 Oct; the fallback covered them.
+- **Tests:** all 24 suites pass, and `test_pipeline.py` too.
+- **Published** privately (Version 33).
+- **Spend:** USD 12.65 on 20 Oct after the test: the rollout 6.17, ideas 1 and 2 2.22, the gap fills 4.21 (with the two runs stopped). Apify's meter: USD 87.35 of the USD 100 limit, so USD 12.65 is left until 16 Nov. `SCRAPERS.md` lists 656 runs.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 32 saved in `archive/dashboard_versions/`). In `data/raw/real_17oct/`: `collect.py`, `pipeline.py`, `PIPELINE.md`, new `routes_report.py` and `ROUTES_20OCT.md`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`. In `data/raw/media_13oct/`: `index.json` and new images. Tests: `tests/test_pipeline.py`, `test_v23.py`, `test_v25.py` and `test_v29.py` (the new dates). Also the notes.

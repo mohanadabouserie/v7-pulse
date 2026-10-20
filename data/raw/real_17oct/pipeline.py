@@ -151,12 +151,13 @@ def inputs(actor, kw, n, since, until, mode):
     g = lambda q, site: [('https://www.google.com/search?' + urllib.parse.urlencode({'q': q + ' site:' + site, 'tbs': 'cdr:1,cd_min:%s,cd_max:%s' % (
         a.strftime('%-m/%-d/%Y'), b.strftime('%-m/%-d/%Y'))})) for a, b in months(since, until)]
     rng = 'year' if mode == SWEEP else 'week' if mode == WEEKLY else 'day'
+    order = 'top' if mode == SWEEP else 'latest'   # a short window sorted by latest lists those days' posts (20 Oct date-slice test, DATESLICE_TEST.md)
     return {
         'silentflow': {"query": kw, "search_type": "posts", "max_posts": n, "start_date": since, "end_date": until},
         'scrapeforge': {"query": kw, "search_type": "posts", "max_results": n, "start_date": since, "end_date": until},
         'topapi': {"searchQueries": [kw], "sortBy": "top", "startDate": since, "endDate": until, "maxPostsPerQuery": n},
-        'scraper_one': {"query": kw, "resultsCount": n, "searchType": "top", "startDate": since, "endDate": until},
-        'fetch_cat': {"query": kw, "resultsCount": n, "searchType": "top", "startDate": since, "endDate": until},
+        'scraper_one': {"query": kw, "resultsCount": n, "searchType": order, "startDate": since, "endDate": until},
+        'fetch_cat': {"query": kw, "resultsCount": n, "searchType": order, "startDate": since, "endDate": until},
         'apify_search': {"categories": [kw], "searchType": "posts", "resultsLimit": n},
         'fb_shorts': {"queries": ['"%s"' % kw], "maxItems": n, "platform": "facebook", "timeRange": rng, "country": "EG", "language": "ar"},
         'alien_reels': {"search_type": "posts", "keyword": kw, "only_reels": True, "follow_post_scraping": True, "results_limit": max(10, n), "start_date": since, "end_date": until},

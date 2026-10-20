@@ -147,6 +147,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   5. `build_real.py --inject`: writes the three blocks. Private people anonymous, @mentions masked (DECISIONS #122); off-topic comments dropped but emoji and tags kept (#120).
   6. `fetch_media.py`, then `../media_13oct/build_media.py --inject`: images for V7's posts, the top abroad posts and the top 80 public posts.
   7. `scrapers_report.py` (with the Apify token in the environment): `SCRAPERS.md` and `runs_final.json`, each run's final charge. It counts the links and accounts a run was given instead of printing them (DECISIONS #157).
+  - 20 Oct (Version 33): `fbdays` (Facebook's own search one day at a time, sorted by latest, on the busiest days), `gweeks` (Google's site search one week at a time), `slicefetch` (their new finds by link), `igrepeat` and `accounts` (ideas 1 and 2, tried and not taken further). `routes_report.py` writes `ROUTES_20OCT.md`: what each route added.
   8. `pipeline.py plan|run|status` (`--mode sweep|daily|weekly|fill`, `--max-usd`, default 10): steps 1 to 6 for Facebook and Instagram in one command (`PIPELINE.md`, DECISIONS #152–158).
      - Each route has standby scrapers that write the same format, every run is health-checked, and each run has a spending line that the gap fillers obey too.
      - It also keeps a lock, a ledger and a report per run (git-ignored), and sends a Telegram message to the bot's admins. `plan` spends nothing.
@@ -212,6 +213,9 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - Facebook's own search takes a one-day window (start = end date) on scraper_one and silentflow. scraper_one sorted by latest found posts on a busy day that no search over the whole window had (15 Aug: 7 new from one keyword); a month sorted by top returns filler.
   - Google's site search with one-day ranges keeps to the day, but quiet days are filled with near matches (Cambodia's V-Cola, other colas): 10 of 295 new Instagram finds were about V7. Week ranges did better per dollar. The snippet can't pre-filter: the phrase is missing from it for about half the posts about V7.
 - Runs started together (`parallel()`) each hold their cap against the budget line until they end (`collect.run`, DECISIONS #160).
+- One-day Facebook searches pad their results with that day's other posts: only about a quarter are about V7. So a short-caption video is transcribed only when a keyword search over a long window found it (`collect.wide_search`, DECISIONS #164), and the comment fallbacks only take what the cheap scraper was asked about and missed (#165).
+- scrapesmith (cheap Instagram comments) returned nothing for all 89 posts on 20 Oct; `igcomments2` sends those to Apify's own scraper.
+- The Hashtags view drops generic tags by prefix (`GENERIC_RX`: #fyp, #foryou, #viral, #explore and their variants).
 - The images in the page have a budget: `build_media.py` takes V7's own posts first, then the pages abroad, then public posts by views, and stops at `V7_MEDIA_KB` (default 6,000 KB). The artifact limit is 16 MB; `test_v23.py` holds the page under 13 MB.
 - The artifact publish guard:
   - it takes a page for a code-review page, and refuses it over 512 KB, when an `id=` is followed by more than 2,048 characters with no space (a Facebook link ending in `&id=…` before image data did it);

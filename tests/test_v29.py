@@ -23,12 +23,12 @@ async def main():
                                                           for c in igc if c.get('a')))
     check('no scraper placeholder shows as an account name', not any(re.search(r'access delayed|only the owner of the page', a['name'], re.I) for a in d['au']))
     check('posts first collected on 19 Oct say so', sum(1 for u in ig if u.get('asof') == 19) >= 150)
-    check('the sidebar and the post view say collected on 17–19 Oct', 'collected on 17–19 Oct.' in html and html.count('collected on 17–19 Oct 2026') == 2)
+    check('the sidebar and the post view say collected on 17–20 Oct', 'collected on 17–20 Oct.' in html and html.count('collected on 17–20 Oct 2026') == 2)
     check('Ask V7 Pulse knows comments under public Instagram posts are collected', 'only the comments on public Instagram and Facebook posts and YouTube videos about V7 are collected' in html
           and 'Comments under other people’s posts aren’t collected' not in html)
     vs = [u for u in ig if u.get('vs')]
     check('photos and silent reels read from their pictures', len(vs) >= 100, len(vs))
-    check('the data sources say pictures were read', 'the text written on them and what they show (19 Oct)' in html)
+    check('the data sources say pictures were read', 'the text written on them and what they show (19 and 20 Oct)' in html)
     check('the help says Instagram comments under public posts are collected', 'the comments on public Instagram and Facebook posts and YouTube videos about V7 are collected' in html)
     top = max(vs, key=lambda u: (u.get('views') or 0, u.get('likes') or 0))
     async with async_playwright() as p:

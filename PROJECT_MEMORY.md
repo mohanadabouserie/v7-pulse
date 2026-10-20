@@ -14,7 +14,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 32, 19 Oct 2026) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 33, 20 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
 | Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 32 since 20 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
@@ -26,7 +26,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Refresh pipeline, Facebook and Instagram | `data/raw/real_17oct/pipeline.py` (notes in `PIPELINE.md`): the searches with standby scrapers, the gap fillers, the pictures, the build and the quick tests in one command (`plan`, `run`, `status`). Not scheduled; the systemd files in `deploy/` aren't installed (DECISIONS #154). Tests: `tests/test_pipeline.py` |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v31.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v32.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -83,7 +83,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 32)
+## 4. The dashboard today (Version 33)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -161,6 +161,12 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Images:** a 6,000 KB budget (own posts first), 522 images; the page went from 14.2 MB to 11.6 MB.
   - **Totals:** 1,255 public posts about V7 (Facebook 590, Instagram 483), 9,172 comments shown.
   - Published privately on 19 Oct and on the public site on 20 Oct; the bot reads that copy.
+- **Version 33, date slices, repeated searches and account feeds (20 Oct, DECISIONS #160–167; `data/raw/real_17oct/ROUTES_20OCT.md`):**
+  - **Why:** the user's idea of searching one day at a time ("yes go ahead"), then "do 1 and 2" (repeat Instagram's searches; read the feeds of the accounts that post about V7 most).
+  - **New posts about V7, by route:** Facebook's own search by day on the 30 busiest days 45 (USD 1.63), Google by week 63 Instagram (USD 2.04) and 32 Facebook (USD 2.49), the August test 33; Instagram's searches repeated 9 (USD 1.09), account feeds 3 (USD 1.17).
+  - **Totals:** 1,438 public posts about V7 (Facebook 685, Instagram 571), 9,607 comments shown, 521 images, 11.96 MB.
+  - **Pipeline:** daily and weekly runs sort Facebook's search by latest. Speech only for videos about V7 or found by a long keyword search, and comment fallbacks only for what the cheap scraper missed (DECISIONS #164, #165).
+  - Published privately on 20 Oct.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
@@ -488,7 +494,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 ## 9. Apify account and spend
 - **Plan:** Starter since 16 Oct 2026: USD 19 of usage a month included. On 19 Oct the user raised the usage limit to USD 100; usage above USD 19 is billed as overage. The cycle runs 16 Oct to 15 Nov 2026. (Before: the Free plan, USD 4.64 of 5 spent by 13 Oct.)
 - **Spent this cycle:** USD 16.33 by Apify's meter on 18 Oct (17 Oct: USD 12.04; 18 Oct: 4.28, by the final run charges). About USD 2.67 left until 15 Nov. Every run, with its input, output and cost: `data/raw/real_17oct/SCRAPERS.md`.
-- **19 Oct:** a comparison of 7 Instagram keyword scrapers (`data/raw/real_17oct/KEYWORD_SCRAPERS.md`) cost USD 0.26 by the run records; with the follow-up checks (USD 0.03) and the re-fetch test (USD 0.04), Apify's meter reads USD 16.74 of 19. The transcript test (USD 0.016) brought it to USD 16.76. Version 28's follower counts (USD 0.40) and speech (USD 0.98) bring it to USD 18.14. Version 29 (USD 12.13 by the final run charges) brought it to USD 30.31. Version 30, Facebook (USD 24.88), brought it to USD 55.21. Version 31, Facebook reels and two more searches (USD 15.87), brought it to USD 71.08. Version 32, the Instagram short-videos test (USD 0.13) and the pipeline's first fill run (USD 0.62), brought it to USD 71.83. The date-slice test (20 Oct, USD 2.87) brings it to **USD 74.70**: USD 55.70 of overage so far, and USD 25.30 left under the USD 100 limit until 15 Nov.
+- **19 Oct:** a comparison of 7 Instagram keyword scrapers (`data/raw/real_17oct/KEYWORD_SCRAPERS.md`) cost USD 0.26 by the run records; with the follow-up checks (USD 0.03) and the re-fetch test (USD 0.04), Apify's meter reads USD 16.74 of 19. The transcript test (USD 0.016) brought it to USD 16.76. Version 28's follower counts (USD 0.40) and speech (USD 0.98) bring it to USD 18.14. Version 29 (USD 12.13 by the final run charges) brought it to USD 30.31. Version 30, Facebook (USD 24.88), brought it to USD 55.21. Version 31, Facebook reels and two more searches (USD 15.87), brought it to USD 71.08. Version 32, the Instagram short-videos test (USD 0.13) and the pipeline's first fill run (USD 0.62), brought it to USD 71.83. The date-slice test (20 Oct, USD 2.87) brought it to USD 74.70. Version 33 (20 Oct: the date slices 6.17, ideas 1 and 2 2.22, the gap fills 4.21) brings it to **USD 87.35**: USD 68.35 of overage so far, and USD 12.65 left under the USD 100 limit until 15 Nov.
 - **Prices at Starter (BRONZE tier, checked 17 Oct):** Facebook posts USD 0.004 (+0.001 date filter), Facebook comments 0.002, Instagram posts 0.0015 (+0.0008 details), Instagram comments and hashtags 0.0023, TikTok 0.003 (+0.001 date filter), TikTok comments 0.001, YouTube 0.003, X 0.00022, Facebook search 0.003, Reddit 0.0038 (+0.02 a run). Facebook's comment date filter is charged per comment: don't use it when the posts are already in the window.
 
 **Spend log**
@@ -515,6 +521,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | 19 Oct | Version 31, Facebook reels and five post searches (DECISIONS #149–151): reel comparison 4.23; reel search 3.47 and fetch 0.67; scrapeforge and fetch_cat 4.76; filling the new posts 2.72 | 15.87 (Apify's meter) | 71.08 (Apify's meter; USD 100 limit) |
 | 19 Oct | Version 32 (DECISIONS #152–158): the Instagram short-videos test 0.13; the pipeline's first fill run 0.62 (Facebook plays, speech, pages and comments; Instagram speech, followers, comments and pictures) | 0.75 (final run charges) | 71.83 (Apify's meter; USD 100 limit) |
 | 20 Oct | Date-slice test, August (`DATESLICE_TEST.md`): checks 0.02; Google day and week slices 1.13; Facebook's own search by day 0.27; fetching the 622 new finds by link 1.44 | 2.87 (Apify's meter) | 74.70 (Apify's meter; USD 100 limit) |
+| 20 Oct | Version 33 (`ROUTES_20OCT.md`): Facebook by day on 30 days 1.62; Google by week 1.18; fetching the 1,454 new finds by link 3.37; Instagram's searches repeated 1.06; account feeds 1.15; gap fills 4.21 (a speech run and a fallback comment run stopped at 1.30 and 0.73) | 12.65 (Apify's meter) | 87.35 (Apify's meter; USD 100 limit) |
 
 ## 10. Raw data map (`data/raw/`)
 | Folder | What's in it |
@@ -533,7 +540,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
 | `media_13oct/` | The cover image of 183 real posts (`fetch_media.py`, 360 px JPEGs in `img/`, `index.json`) and `build_media.py --inject`, which writes the dashboard's MEDIA block |
 | `own_backfill_13oct/` | V7 Egypt's older posts back to 16 Apr (`pull.py test|full`: Facebook and TikTok with date filters, Instagram 45 latest, YouTube channel) and `yt_pages.py` (exact dates and likes from the videos' public pages). Merged by `../verify_13oct/build_own_posts.py` |
 | `social/rumors_11oct/` | Rumors & attacks, real. Raw pulls (`x_*`, `fb_*`, `ig_v7`, `tt_rumor`, `x_coke2024`), `collect.py` (full / extra / test), `run.log`, `normalize.py` → `posts.json` (368 unique), `labels.json` (177 posts about V7, labelled by Claude on 11 Oct), `build_rumors.py` → `rumors_dashboard.json` and the dashboard's `RUMOR_DATA` block |
-| `real_17oct/` | The real social data since Version 25: `PLAN.md`, `collect.py` (every stage), `normalize.py` → `items.json`, `label.py` → `labels.json`, `vis_media.py` and `vis_read.py` (pictures → `vis_read.json`), `build_real.py --inject`, `fetch_media.py`, `scrapers_report.py` → `SCRAPERS.md`, `KEYWORD_SCRAPERS.md` (Instagram), `fbtest_report.py` → `FB_KEYWORD_SCRAPERS.md` (Facebook), `pipeline.py` (the refresh pipeline, `PIPELINE.md`; its `pipeline_ledger.json` and `pipeline_runs/` stay local), `dateslice_test.py` → `DATESLICE_TEST.md` (the 20 Oct date-slice test), `run.log`. `raw/`, `items.json`, `labels.json`, `vis/` and `vis_read.json` name or show private people and stay on this machine (git-ignored) |
+| `real_17oct/` | The real social data since Version 25: `PLAN.md`, `collect.py` (every stage), `normalize.py` → `items.json`, `label.py` → `labels.json`, `vis_media.py` and `vis_read.py` (pictures → `vis_read.json`), `build_real.py --inject`, `fetch_media.py`, `scrapers_report.py` → `SCRAPERS.md`, `KEYWORD_SCRAPERS.md` (Instagram), `fbtest_report.py` → `FB_KEYWORD_SCRAPERS.md` (Facebook), `pipeline.py` (the refresh pipeline, `PIPELINE.md`; its `pipeline_ledger.json` and `pipeline_runs/` stay local), `dateslice_test.py` → `DATESLICE_TEST.md` (the 20 Oct date-slice test), `routes_report.py` → `ROUTES_20OCT.md` (what each 20 Oct route added), `run.log`. `raw/`, `items.json`, `labels.json`, `vis/` and `vis_read.json` name or show private people and stay on this machine (git-ignored) |
 | `apify_actor_pages/` | Apify Store pages for the actors we considered |
 
 Scripts in `data/raw/*` were written to run from the old temporary folder, so paths may need adjusting before rerunning.
@@ -554,18 +561,16 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
   - their policy for reposting customers' content.
 
 **Waiting on the user**
-- Keep the real data fresh: `data/raw/real_17oct/pipeline.py` does it in one command (`run --mode sweep` over the whole window, or `daily` and `weekly` once the window rolls). USD 25.30 is left under the USD 100 limit until 15 Nov (above USD 19 is overage).
+- Keep the real data fresh: `data/raw/real_17oct/pipeline.py` does it in one command (`run --mode sweep` over the whole window, or `daily` and `weekly` once the window rolls). USD 12.65 is left under the USD 100 limit until 15 Nov (above USD 19 is overage).
   - Before a schedule (DECISIONS #154): the dashboard's window rolls forward past 16 Oct (`END`, the dates in the copy, the tests that pin them), V7's own posts and their comments are refreshed too, and the user approves the spending and a monthly line.
   - By the plan's caps (Facebook pads its results, so most runs cost close to them): daily searches up to USD 2.29 a day and weekly ones up to USD 6.39 a week, so up to about USD 97 a month for both. One weekly run of every route costs up to about USD 38 a month. The gap fillers add a few dollars a month.
 - Gaps left on 18 Oct: the posts tagging @v7egypt before 19 Jun and the Instagram spellings were closed in Version 29. Still open: 2 of the 10 TikTok keywords (فيسفن, V7 drink; about USD 0.15).
 - Offered, not built: speech to text and picture reading for TikTok and YouTube (Instagram and Facebook so far); comments under public TikTok posts. Facebook reels are still under-covered (about 192 of perhaps 500, Version 31). Done in Version 32: the images have a 6 MB budget and the page is 11.6 MB.
 - Decided 20 Oct: post links stay as they are, even where a private person's username is part of the link (111 posts; DECISIONS #159).
-- Date slicing (the user's idea; tested 20 Oct on August, `data/raw/real_17oct/DATESLICE_TEST.md`, USD 2.87):
-  - Facebook's own search one day at a time did best: 12 new posts about V7 for USD 0.27, mostly scraper_one sorted by latest on 15 Aug (6 of the 12 are copies of one copy-and-paste post by different people). A month sorted by top (the 19 Oct June test) returned filler.
-  - Google a week at a time: 7 new Instagram and about 7 new Facebook posts about V7 in August, about USD 0.05 to 0.07 a post. Google a day at a time fills quiet days with near matches (Instagram 10 of 295 new finds about V7, Facebook 1 of 125): not worth it.
-  - Instagram's own keyword search has no date filter of its own.
-  - Offered, waiting for the user: Facebook's own search day by day over the busiest days first (30 days, 3 keywords, about USD 2.70; the whole window about USD 16), Google week slices for the other months (about USD 4 with fetching), and scraper_one sorted by latest in the pipeline (no extra cost).
-  - The test's 33 new posts about V7 (Instagram 14, Facebook 19) are collected and labelled but not in the dashboard: their speech, pictures, comments and followers aren't filled yet.
+- Date slicing (the user's idea): done in Version 33 (`DATESLICE_TEST.md`, `ROUTES_20OCT.md`). Facebook's own search by day and Google by week found 173 posts about V7 no route had; Google by day and Facebook's search by month sorted by top bring mostly noise. Left: Facebook by day on the other ~147 days (about USD 13 for 3 keywords), when the budget allows.
+- Ideas 1 and 2 of 20 Oct (repeat Instagram's searches, read accounts' feeds) were tried and added 12 posts about V7 for USD 2.26; not taken further (DECISIONS #166, #167). Ideas 3 to 8 of that list (hashtag feeds sorted by recent, the words people use, copy-and-paste chains, deeper searches on busy days, Bing, Meta's API through V7's accounts) are still offered.
+- To decide: V7-branded distributor pages (V7 Aleppo, V7 Syria, V Super Soda Syria and drinkv7 on Facebook; V7 Malawi and V7 Lebanon on Instagram, about 80 posts) count as public posts by businesses. They could move to V7's pages abroad instead.
+- Watch: the cheap Instagram comment scraper (scrapesmith) returned nothing for all 89 posts it was given on 20 Oct; Apify's own scraper covered them at about 4.6 times the price.
 - Done in Version 27: likes hidden by their owner now say "likes hidden" (37 Instagram posts).
 - Done in Version 28: what's said in Instagram reels is read with the caption (146 reels), and Instagram accounts have follower counts (174 of 175).
 - Not done: TikTok's own subtitles (74 of 96 videos about V7, free to download) and YouTube subtitles (about USD 0.03) could be read the same way.

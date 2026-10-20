@@ -6,7 +6,7 @@ Stages, in order: test, own, comments, abroad, ugc; then test2 and wide (18 Oct,
 - Every run has a USD cap (Apify's maxTotalChargeUsd), and the whole collection stops at BUDGET, read from Apify's usage meter.
 - The token is read from the environment only:  set -a; . ./.env.apify; set +a
 """
-import collections, json, math, os, pathlib, re, sys, threading, time, urllib.error, urllib.request
+import collections, datetime, json, math, os, pathlib, re, sys, threading, time, urllib.error, urllib.parse, urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = pathlib.Path(os.environ['V7_RAW']) if os.environ.get('V7_RAW') else HERE / 'raw'   # (pipeline tests point these at a temporary folder)
@@ -284,7 +284,7 @@ def known_keys():
     for f in RAW.glob('*.json'):
         for x in json.load(open(f, encoding='utf-8')).get('items', []):
             if isinstance(x, dict):
-                k = x.get('shortCode') or x.get('shortcode')
+                k = x.get('shortCode') or x.get('shortcode') or (x.get('code') if 'instagram.com' in str(x.get('url') or '') else None)   # apidojo: code (20 Oct)
                 if k: keys.add('ig:' + k)
                 if x.get('webVideoUrl'): keys.add('tt:' + str(x.get('id')))
     return keys
@@ -641,9 +641,13 @@ def stage_igcomments2():
     done = set()
     for f in RAW.glob('igcm_*.json'):
         done |= {(x.get('postUrl') or '').rstrip('/').split('/')[-1] for x in json.load(open(f, encoding='utf-8'))['items']}
-    todo = [i for i in posts if (i.get('comments') or 0) > 0 and i['id'][3:] not in done]
+    asked = set()   # only what scrapesmith was asked for and returned nothing (20 Oct, as in fbfill2)
+    for f in RAW.glob('igcm_*.json'):
+        if not f.stem.startswith('igcm_official'):
+            asked |= {u.rstrip('/').split('/')[-1] for u in (json.load(open(f, encoding='utf-8')).get('input') or {}).get('postUrls') or []}
+    todo = [i for i in posts if (i.get('comments') or 0) > 0 and i['id'][3:] not in done and i['id'][3:] in asked]
     n = sum(min(i['comments'], 100) for i in todo)
-    log(f'  igcomments2: {len(todo)} posts without comments, about {n} comments')
+    log(f'  igcomments2: {len(todo)} posts scrapesmith returned no comments for, about {n} comments')
     if todo:
         run('igcm_official_' + time.strftime('%Y%m%d%H%M'), IG_COMMENTS, {"directUrls": [i['url'] for i in todo], "resultsLimit": 100, "includeNestedComments": False},
             round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_IG)
@@ -882,6 +886,28 @@ def attempts():
     return out
 
 
+WIDE = {}
+
+
+def wide_search(name):
+    """True when a run searched by keyword over a long window (30 days or more, or no dates): its results matched the keyword. False for
+    one-day or few-day searches, which Facebook pads with that day's other posts, for posts fetched by link and for account feeds (20 Oct)."""
+    if name not in WIDE:
+        try:
+            inp = json.load(open(RAW / (name + '.json'), encoding='utf-8')).get('input') or {}
+        except (OSError, ValueError):
+            inp = {}
+        if not any(k in inp for k in ('query', 'searchQueries', 'keyword', 'categories', 'searchTerm', 'queries')):
+            WIDE[name] = False
+        else:
+            a, b = inp.get('startDate') or inp.get('start_date'), inp.get('endDate') or inp.get('end_date')
+            try:
+                WIDE[name] = not (a and b) or (datetime.date.fromisoformat(str(b)[:10]) - datetime.date.fromisoformat(str(a)[:10])).days >= 30
+            except ValueError:
+                WIDE[name] = True
+    return WIDE[name]
+
+
 def stage_fbfill():
     """19 Oct: fills the gaps of the public Facebook posts about V7 (after normalize.py and label.py):
     - exact plays for reels and videos without a view count (social_developer, USD 0.004 a video);
@@ -894,7 +920,9 @@ def stage_fbfill():
     about = lambda i: (labels.get(i['id']) or {}).get('about')
     tag = time.strftime('%Y%m%d%H%M')
     tried = attempts()   # 19 Oct (pipeline.py): a video or page asked for before and not returned isn't paid for again and again
-    vids = [i for i in posts if i.get('fmt') in ('Reel', 'Video') and (about(i) or len(i.get('text') or '') < 30)]
+    # a short caption that can't tell is transcribed only when a keyword search over a long window found the video (20 Oct: the one-day
+    # searches and Google's links brought 52 off-topic short videos into one speech run; DATESLICE_TEST.md)
+    vids = [i for i in posts if i.get('fmt') in ('Reel', 'Video') and (about(i) or (len(i.get('text') or '') < 30 and any(wide_search(r) for r in i.get('found_by') or [])))]
     done_sp = set()
     for f in RAW.glob('fbf_speech_*.json'):
         done_sp |= {(x.get('video_url') or x.get('url') or '').split('?')[0].rstrip('/') for x in json.load(open(f, encoding='utf-8'))['items']}
@@ -1055,9 +1083,12 @@ def stage_fbfill2():
     got = set()
     for f in RAW.glob('fbcm_*.json'):
         got |= {(x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') or '') for x in json.load(open(f, encoding='utf-8'))['items']}
-    cm = [i for i in posts if (labels.get(i['id']) or {}).get('about') and (i.get('comments') or 0) > 0 and i['url'] not in got]
+    asked = set()   # only what thedoor was asked for and returned nothing (20 Oct: a thedoor run skipped for the budget sent 53 posts here at 4.6 times the price)
+    for f in RAW.glob('fbcm_door_*.json'):
+        asked |= set((json.load(open(f, encoding='utf-8')).get('input') or {}).get('postUrls') or [])
+    cm = [i for i in posts if (labels.get(i['id']) or {}).get('about') and (i.get('comments') or 0) > 0 and i['url'] not in got and i['url'] in asked]
     n = sum(min(i['comments'], 100) for i in cm)
-    log(f'  fbfill2: {len(cm)} posts without comments, about {n} comments')
+    log(f'  fbfill2: {len(cm)} posts thedoor returned no comments for, about {n} comments')
     if cm:
         run('fbcm_official_' + time.strftime('%Y%m%d%H%M'), FB_COMMENTS, {"startUrls": [{"url": i['url']} for i in cm], "resultsLimit": 100,
                                                                            "includeNestedComments": False}, round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_FB)
@@ -1067,7 +1098,179 @@ BUDGET_FBTEST2 = 36.00   # 19 Oct: the depth and gap tests may spend up to here 
 BUDGET_FBTEST = 34.00   # 19 Oct: the Facebook comparison may spend up to here on the meter (about USD 3.7 over the 30.31 spent; expected about 2)
 
 
-STAGES = {'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+# ------------------------------------------------------------------ 20 Oct: date slices (the user's idea; DATESLICE_TEST.md)
+BUDGET_SLICES = 84.00   # 20 Oct: Facebook by day on the 30 busiest days, Google by week and fetching the finds may spend up to here on the
+                        # meter (USD 74.70 before; expected about USD 6.70)
+SLICE_KW_FB = ['ڤي كولا', 'V7 كريم صودا', 'ڤي سڤن']   # the date-slice test's keywords
+SLICE_G_IG = ['"@v7egypt"', '"V7 cream soda"', '"V Cola"', '"مشروب V7"', '"ڤي سڤن"']
+SLICE_G_FB = ['"مشروب V7"', '"V Super Soda"', '"ڤى كولا"', '"V Cola" مصر', '"V7 cream soda"', '"ڤي كولا"']
+FB_LINK_RE = re.compile(r'facebook\.com/(?:reel/|watch/?\?v=|[^"\s?]+/videos/(?:[^/"\s?]+/)?|[^"\s?]+/posts/(?:[^/"\s?]+/)?|permalink\.php\?story_fbid=|groups/\d+/posts/)([\w]{8,})')
+IG_LINK_RE = re.compile(r'instagram\.com/(?:[\w.]+/)?(?:p|reel|reels|tv)/([\w-]{8,})')
+OWN_PAGES_RE = re.compile(r'facebook\.com/(?:V7Egypt|Vsupersoda)/|instagram\.com/(?:v7egypt|vsupersoda)/', re.I)
+
+
+def g_url(term, site, a, b):
+    """Google's site search for a phrase between two days (the form of the 19 Oct month searches)."""
+    tbs = 'cdr:1,cd_min:%d/%d/%d,cd_max:%d/%d/%d' % (a.month, a.day, a.year, b.month, b.day, b.year)
+    return 'https://www.google.com/search?q=' + urllib.parse.quote_plus(term + ' site:' + site) + '&tbs=' + urllib.parse.quote(tbs, safe='')
+
+
+def fb_item_keys():
+    """The link keys (post ids, pfbid strings) of every Facebook item collected, so a link Google gives in another form isn't fetched twice."""
+    keys = set()
+    for it in json.load(open(HERE / 'items.json', encoding='utf-8'))['items']:
+        if it['pl'] == 'fb':
+            for u in [it.get('url')] + (it.get('urls') or []):
+                m = FB_LINK_RE.search(u or '')
+                if m: keys.add(m.group(1))
+    return keys
+
+
+def slice_days_done():
+    """The days Facebook's own search has been asked about one day at a time (the test and fbdays)."""
+    done = set()
+    for f in RAW.glob('fbp_one_d[sd]_*.json'):
+        inp = json.load(open(f, encoding='utf-8')).get('input') or {}
+        if inp.get('startDate') and inp.get('startDate') == inp.get('endDate'):
+            done.add(inp['startDate'])
+    return done
+
+
+def stage_fbdays():
+    """20 Oct (user: "yes go ahead"): Facebook's own search one day at a time, sorted by latest (scraper_one, 10 results), for the date-slice
+    test's three keywords, on the 30 busiest days for public Facebook posts about V7 not searched that way yet. In the test it found 12 posts
+    about V7 that no other route had, for USD 0.27 (DATESLICE_TEST.md)."""
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    per_day = collections.Counter(i['date'][:10] for i in items if i['pl'] == 'fb' and i['kind'] == 'post' and i['src'] == 'ugc'
+                                  and (labels.get(i['id']) or {}).get('about'))
+    done = slice_days_done()
+    days = [d for d, n in per_day.most_common() if d not in done and SINCE <= d <= UNTIL][:30]
+    log(f'  fbdays: {len(days)} days ({min(days)} to {max(days)}), {len(SLICE_KW_FB)} keywords, {sum(per_day[d] for d in days)} posts collected on them')
+    parallel([(f'fbp_one_dd_{d[5:].replace("-", "")}_{i}', FB_SEARCH, {"query": k, "resultsCount": 10, "searchType": "latest", "startDate": d, "endDate": d},
+               0.09, 10) for d in days for i, k in enumerate(SLICE_KW_FB, 1)], BUDGET_SLICES)
+
+
+def gweek_slices():
+    """Seven-day slices of each month in the window (1-7, 8-14, 15-21, 22-28, 29 to the end), August left out (the test did it)."""
+    out, d0, d1 = [], datetime.date.fromisoformat(SINCE), datetime.date.fromisoformat(UNTIL)
+    m = d0.replace(day=1)
+    while m <= d1:
+        nxt = (m.replace(day=28) + datetime.timedelta(days=4)).replace(day=1)
+        last = (nxt - datetime.timedelta(days=1)).day
+        if m.month != 8:
+            for a, b in ((1, 7), (8, 14), (15, 21), (22, 28), (29, last)):
+                if a <= last:
+                    s_, e_ = max(m.replace(day=a), d0), min(m.replace(day=b), d1)
+                    if s_ <= e_: out.append((s_, e_))
+        m = nxt
+    return out
+
+
+def stage_gweeks():
+    """20 Oct (user: "yes go ahead"): Google's site search of instagram.com and facebook.com one week at a time over the window (August was
+    the test), for the date-slice test's phrases, 3 pages each. In August it found 7 new Instagram and about 7 new Facebook posts about V7,
+    about USD 0.05 to 0.07 a post with fetching; most of what it finds is off topic, so every new find is fetched and labelled (slicefetch)."""
+    sl, todo = gweek_slices(), []
+    for name, terms, site in (('igl_gw', SLICE_G_IG, 'instagram.com'), ('fbl_gw', SLICE_G_FB, 'facebook.com')):
+        urls = [g_url(t, site, a, b) for t in terms for a, b in sl]
+        todo.append((name, GOOGLE, {"queries": '\n'.join(urls), "maxPagesPerQuery": 3, "countryCode": "eg"}, round(len(urls) * 3 * 0.0025 + 0.05, 2), len(urls) * 3))
+    log(f'  gweeks: {len(sl)} week slices, {sum(t[4] for t in todo) // 3} searches')
+    parallel(todo, BUDGET_SLICES)
+
+
+def stage_slicefetch():
+    """20 Oct: the posts the week slices found that the collection lacks, fetched by link (Instagram: Apify's post scraper, inside the window
+    by the shortcode's date; Facebook: danek), so normalize.py and label.py keep the ones about V7."""
+    ig, fb = {}, {}
+    for name in ('igl_gw', 'fbl_gw'):
+        f = RAW / (name + '.json')
+        for x in (json.load(open(f, encoding='utf-8')).get('items') or []) if f.exists() else []:
+            for r in (x.get('organicResults') or []) if isinstance(x, dict) else []:
+                u = (r.get('url') or '').split('#')[0]
+                if OWN_PAGES_RE.search(u):
+                    continue
+                m = IG_LINK_RE.search(u)
+                if m: ig[m.group(1)] = 'https://www.instagram.com/p/%s/' % m.group(1)
+                m = FB_LINK_RE.search(u)
+                if m: fb[m.group(1)] = u
+    known_ig, known_fb = known_keys(), fb_known() | fb_item_keys()
+    new_ig = {k: u for k, u in ig.items() if 'ig:' + k not in known_ig and SINCE <= (id_day('ig', k) or '') <= UNTIL}
+    new_fb = {k: u for k, u in fb.items() if k not in known_fb}
+    log(f'  slicefetch: Instagram {len(ig)} found, {len(new_ig)} new inside the window; Facebook {len(fb)} found, {len(new_fb)} new')
+    todo = []
+    if new_ig:
+        todo.append(('igp_post_gw_links', IG_POSTS, {"username": sorted(new_ig.values())}, round(len(new_ig) * 0.0023 * 1.3 + 0.05, 2), len(new_ig)))
+    if new_fb:
+        todo.append(('fbp_sf_gw_links', FB_POST_LINK, {"direct_urls": [{"url": u} for u in sorted(new_fb.values())]},
+                     round(len(new_fb) * 0.00233 * 1.3 + 0.05, 2), len(new_fb)))
+    parallel(todo, BUDGET_SLICES)
+
+
+# ------------------------------------------------------------------ 20 Oct: the user's "do 1 and 2" (repeat Instagram's searches; read accounts' feeds)
+BUDGET_IDEAS = 86.00   # 20 Oct: the repeated Instagram searches and the account test may spend up to here on the meter (expected about USD 2.50)
+
+
+def stage_igrepeat():
+    """20 Oct (user: "do 1 and 2", idea 1): Instagram's keyword searches shuffle their results between sessions (the same phrase searched
+    twice on 19 Oct gave 10 and 10 posts, only 5 to 7 in both), so the igkw searches are run again in new sessions and every post they
+    return is kept: apidojo (10 a phrase) and dami_studio's Reels search (30 a phrase) over the whole window, then the rows without a caption
+    or likes re-fetched by link. One session at a time; it stops early when a session adds fewer than 5 new posts in the window.
+    Usage: python3 collect.py igrepeat [--times 3]"""
+    a = sys.argv
+    times = int(a[a.index('--times') + 1]) if '--times' in a else 3
+    done = [int(m.group(1)) for f in RAW.glob('igkw_rep*_00.json') for m in [re.match(r'igkw_rep(\d+)_00$', f.stem)] if m]
+    for r in range(max(done, default=0) + 1, max(done, default=0) + 1 + times):
+        before = known_keys()
+        todo = [('igkw_rep%d_%02d' % (r, i), IG_KW, {"keywords": [kw], "maxItems": 10, "until": SINCE}, round(0.03 + 10 * 0.0005 * 1.5, 2), 10)
+                for i, kw in enumerate(KW_IG_EN)]
+        for k in range(0, len(KW_IG_EN), 3):
+            kws = KW_IG_EN[k:k + 3]
+            todo.append(('igreels_rep%d_%02d' % (r, k // 3), IG_REELS, {"searchQueries": kws, "maxReelsPerTerm": 30, "maxReels": 30 * len(kws), "newerThan": SINCE},
+                         round(30 * len(kws) * 0.000395 * 2 + 0.05, 2), 30 * len(kws) + 5))
+        parallel(todo, BUDGET_IDEAS)
+        gaps = [u for u in ig_gaps('rep%d' % r) if 'ig:' + u.rstrip('/').rsplit('/', 1)[-1] not in before]
+        if gaps:
+            run('igkw_rep%d_refetch' % r, IG_POSTS, {"username": gaps}, round(len(gaps) * 0.0023 * 1.3 + 0.05, 2), len(gaps), budget=BUDGET_IDEAS)
+        new = {k for k in known_keys() - before if k.startswith('ig:') and SINCE <= (id_day('ig', k[3:]) or '') <= UNTIL}
+        log(f'  igrepeat: session {r} added {len(new)} posts in the window that no earlier search had returned')
+        if len(new) < 5:
+            break
+
+
+def stage_accounts():
+    """20 Oct (user: "do 1 and 2", idea 2): the accounts that posted about V7 more than once, read from their own feeds, which are complete
+    and in date order (no search, no shuffle). A test on the 10 busiest shops, pages, creators and news outlets per platform (private people
+    are left out): their latest posts in the window, Instagram 20 an account (Apify's post scraper), Facebook 15 a page (Apify's posts
+    scraper). label.py keeps the ones about V7. V7-branded accounts (distributors such as V7 Aleppo or V7 Lebanon) are left out too: their
+    feeds are all about V7, which would say nothing about the idea."""
+    brand = re.compile(r'v7|v\W?super|v\W?cola|ڤي', re.I)
+    items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
+    labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
+    acc = {'ig': collections.Counter(), 'fb': collections.Counter()}
+    for i in items:
+        lab = labels.get(i['id']) or {}
+        if i['kind'] != 'post' or i['src'] != 'ugc' or i['pl'] not in acc or not lab.get('about') or lab.get('seg') not in ('business', 'page', 'creator', 'news'):
+            continue
+        a = i.get('author') or {}
+        if brand.search(' '.join(str(a.get(k) or '') for k in ('handle', 'name', 'url'))):
+            continue
+        if i['pl'] == 'ig' and a.get('handle') and a['handle'].lower() not in IG_OWN:
+            acc['ig'][a['handle'].lower()] += 1
+        elif i['pl'] == 'fb' and a.get('url') and not OWN_PAGES_RE.search(a['url'] + '/') and 'pfbid' not in a['url']:   # (a post link isn't a page)
+            m = re.search(r'(\d{10,})', a['url'])   # the same account as profile.php?id=N and people/<name>/N
+            u = 'https://www.facebook.com/profile.php?id=' + m.group(1) if m else a['url'].split('?')[0].rstrip('/')
+            acc['fb'][u] += 1
+    ig = [h for h, n in acc['ig'].most_common(10) if n >= 2]
+    fb = [u for u, n in acc['fb'].most_common(10) if n >= 2]
+    log(f"  accounts: Instagram {len(ig)} accounts ({sum(acc['ig'][h] for h in ig)} posts about V7 collected), Facebook {len(fb)} pages "
+        f"({sum(acc['fb'][u] for u in fb)} posts about V7 collected)")
+    parallel([('igp_post_acct_t1', IG_POSTS, {"username": ig, "resultsLimit": 20, "onlyPostsNewerThan": SINCE}, round(len(ig) * 20 * 0.0023 * 1.3 + 0.05, 2), len(ig) * 20),
+              ('fbp_ap_acct_t1', FB_POSTS, {"startUrls": [{"url": u} for u in fb], "resultsLimit": 15, "onlyPostsNewerThan": SINCE},
+               round(len(fb) * 15 * 0.005 * 1.3 + 0.05, 2), len(fb) * 15)], BUDGET_IDEAS)
+
+
+STAGES = {'igrepeat': stage_igrepeat, 'accounts': stage_accounts, 'fbdays': stage_fbdays, 'gweeks': stage_gweeks, 'slicefetch': stage_slicefetch, 'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

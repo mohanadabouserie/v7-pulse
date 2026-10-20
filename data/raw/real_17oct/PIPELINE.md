@@ -26,6 +26,9 @@ The user asked for it ("make the pipeline robust") after Versions 29 to 31 close
    | `ig_google_web` | Google's site search of instagram.com | none | sweep, weekly |
    | `ig_hashtags` | Apify's hashtag scraper | none | sweep, weekly |
 
+   In daily and weekly runs Facebook's own search (scraper_one, fetch_cat) is sorted by latest: limited to a day or two, it then lists
+   those days' posts, which found posts no search over the whole window had (the 20 Oct date-slice test, `DATESLICE_TEST.md`).
+   Sweeps over the whole window keep its top results.
 2. **Links fetched by link:** reels, videos and posts that Google and the reel searches return as bare links, when the collection
    doesn't have them yet: Facebook with danek (standby: Apify's posts scraper), Instagram with Apify's post scraper.
 3. **The chain:** `normalize.py`, `label.py` (Claude), the gap fillers in `collect.py` (`fbfill`, `fbfill2`, `fbviews`, `fbnames`,

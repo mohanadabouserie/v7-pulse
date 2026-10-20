@@ -194,4 +194,20 @@ print('SKIPS ' + json.dumps(C.SKIPS))
 code, led, rep, out, files = scenario({}, [], code=PAR)
 check('runs started together hold their caps: of two USD 0.40 runs under a USD 0.60 line, only one starts',
       len(Fake.posts) == 1 and 'over the budget line' in out and 'held by runs going on' in out, (Fake.posts, out[-300:]))
+WIDE = r'''
+import json
+import collect as C
+runs = {'fbp_one_dd_0815_1': {"query": "x", "searchType": "latest", "startDate": "2026-08-15", "endDate": "2026-08-15"},
+        'fbc_one_00': {"query": "x", "startDate": "2026-04-20", "endDate": "2026-10-16"},
+        'fbc_apify_00': {"categories": ["x"], "searchType": "posts"},
+        'fbp_sf_gw_links': {"direct_urls": [{"url": "https://www.facebook.com/a/posts/1"}]},
+        'fbp_ap_acct_t1': {"startUrls": [{"url": "https://www.facebook.com/a"}], "resultsLimit": 15}}
+for n, inp in runs.items():
+    json.dump({'input': inp, 'items': []}, open(C.RAW / (n + '.json'), 'w'))
+print('WIDE ' + json.dumps({n: C.wide_search(n) for n in runs}))
+'''
+code, led, rep, out, files = scenario({}, [], code=WIDE)
+w = json.loads(out.split('WIDE ', 1)[1].splitlines()[0]) if 'WIDE ' in out else {}
+check('a short video is transcribed only when a keyword search over a long window found it (not a one-day search, a link or an account feed)',
+      w == {'fbp_one_dd_0815_1': False, 'fbc_one_00': True, 'fbc_apify_00': True, 'fbp_sf_gw_links': False, 'fbp_ap_acct_t1': False}, (w, out[-300:]))
 print('FAIL', fails)

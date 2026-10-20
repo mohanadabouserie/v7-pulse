@@ -48,7 +48,7 @@ async def main():
         per = await J("document.getElementById('period').textContent")
         check('the period ends on 16 Oct 2026', '16 Oct 2026' in per, per)
         foot = await J("document.querySelector('.side-foot').textContent")
-        check('the sidebar says all data is real', foot.startswith('All data is real.') and 'collected on 17–19 Oct' in foot, foot)
+        check('the sidebar says all data is real', foot.startswith('All data is real.') and 'collected on 17–20 Oct' in foot, foot)
         bad = []
         for v in VIEWS:
             await J(f"document.querySelector('.side .nav[data-view={v}]').click()"); await pg.wait_for_timeout(500)

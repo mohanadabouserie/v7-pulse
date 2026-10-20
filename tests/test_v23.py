@@ -40,7 +40,7 @@ async def main():
         # a public post opens in the post view, its numbers real as of 17 Oct   # Version 25: real data everywhere
         await click('.plist .pc [data-act=postview]',600)
         dv=await J("[!!document.querySelector('#drBody .pv-media'),document.querySelector('#drBody .pv-t').textContent.length,document.getElementById('drBody').innerText]")
-        check('a public post opens in the post view: its full text, real, collected on 17–19 Oct', dv[1]>0 and 'collected on 17–19 Oct 2026' in dv[2], dv[2][-120:])
+        check('a public post opens in the post view: its full text, real, collected on 17–20 Oct', dv[1]>0 and 'collected on 17–20 Oct 2026' in dv[2], dv[2][-120:])
         await click('#drClose',300)
         # V7's real posts show their images; the post view shows the post and its comments
         await nav('owned')

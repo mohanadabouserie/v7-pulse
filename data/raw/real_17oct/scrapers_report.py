@@ -235,10 +235,41 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
      for d in ('1015', '0815', '0804') for i in (1, 2, 3) for fam, act in (('fbp_one', 'FB_SEARCH'), ('fbp_sf', 'FB_SILENT'))] + [
     ('igp_post_ds_links', 'IG_POSTS', 'the new Instagram posts the date slices found, by link'),
     ('fbp_sf_ds_links', 'FB_POST_LINK', 'the new Facebook links the date slices found, by link'),
+] + [(f.stem, 'FB_SEARCH', "20 Oct: Facebook's own search limited to one day (%s/%s), sorted by latest, keyword %s of 3" % (f.stem[13:15], f.stem[11:13], f.stem[-1]))
+     for f in sorted((HERE / 'raw').glob('fbp_one_dd_*.json'))] + [
+    ('igl_gw', 'GOOGLE', '20 Oct: Google of instagram.com one week at a time, the months other than August, 5 phrases'),
+    ('fbl_gw', 'GOOGLE', '20 Oct: Google of facebook.com one week at a time, the months other than August, 6 phrases'),
+    ('igp_post_gw_links', 'IG_POSTS', 'the new Instagram posts the week slices found, by link'),
+    ('fbp_sf_gw_links', 'FB_POST_LINK', 'the new Facebook links the week slices found, by link (timed out after 808 of 862)'),
+] + [(f'igkw_rep{r}_{i:02d}', 'APIDOJO', f'20 Oct: Instagram keyword search repeated in a new session ({r} of 3), phrase {i + 1} of 15') for r in (1, 2, 3) for i in range(15)] + [
+] + [(f'igreels_rep{r}_{i:02d}', 'DAMI', f'20 Oct: Instagram Reels search repeated in a new session ({r} of 3), phrases {3 * i + 1} to {3 * i + 3}') for r in (1, 2, 3) for i in range(5)] + [
+] + [(f'igkw_rep{r}_refetch', 'IG_POSTS', f'the posts session {r} returned without a caption or likes, by link') for r in (1, 2, 3)] + [
+    ('igp_post_acct_t1', 'IG_POSTS', "20 Oct: the latest posts of the 10 Instagram accounts that posted about V7 most often (not V7's own or V7-branded), 20 each"),
+    ('fbp_ap_acct_t1', 'FB_POSTS', "20 Oct: the latest posts of the 10 Facebook pages that posted about V7 most often (not V7's own or V7-branded), 15 each"),
 ]
 
 
 PEOPLE_KEYS = {'username', 'usernames', 'profiles', 'handles'}
+
+FILL_PATTERNS = [   # 20 Oct: the gap fills pipeline.py runs (timestamped names) are listed by pattern, so new runs need no hand edit here
+    ('fbf_plays_2', 'FB_PLAYS', 'gap fill: plays of the Facebook videos about V7 without a view count'),
+    ('fbf_speech_2', 'FB_SPEECH', 'gap fill: what is said in the Facebook videos about V7'),
+    ('fbf_pages_2', 'FB_PAGES', 'gap fill: followers of the pages that posted about V7'),
+    ('fbcm_door_2', 'FB_CM_CHEAP', 'gap fill: comments under the Facebook posts about V7'),
+    ('fbcm_official_2', 'FB_COMMENTS', 'gap fill: comments under the posts thedoor returned nothing for'),
+    ('fbd_posts_views_2', 'FB_POST_LINK', 'gap fill: video posts behind a post link, for their plays'),
+    ('igspeech_about_2', 'SPEECH', 'gap fill: what is said in the Instagram reels about V7'),
+    ('igspeech_tagged_2', 'SPEECH', 'gap fill: what is said in the reels that tag V7'),
+    ('ig_profiles_2', 'PROFILES', 'gap fill: follower counts of the Instagram accounts that posted about V7'),
+    ('igcm_official_2', 'IG_COMMENTS', 'gap fill: comments under the Instagram posts scrapesmith returned nothing for'),
+    ('igcm_2', 'IG_CM_CHEAP', 'gap fill: comments under the Instagram posts about V7'),
+    ('vis_posts_2', 'IG_POSTS', 'gap fill: fresh media links for the Instagram posts whose pictures are read'),
+]
+_listed = {n for n, _, _ in RUNS}
+for _pre, _actor, _why in FILL_PATTERNS:
+    for _f in sorted((HERE / 'raw').glob(_pre + '*.json')):
+        if _f.stem not in _listed:
+            RUNS.append((_f.stem, _actor, _why)); _listed.add(_f.stem)
 
 
 def short_input(inp):
