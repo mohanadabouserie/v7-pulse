@@ -1169,3 +1169,13 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **What the site now shows:** 1,438 public posts about V7 (Facebook 685, Instagram 571) from the date slices of 20 Oct, with their speech, pictures, comments and followers. The Telegram bot reads this copy.
 - **Also public now:** the date-slice test and its report, the new collection stages, `routes_report.py` and `ROUTES_20OCT.md`.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+
+### Version 34: Kareem Elsayed's reel back in the Egypt views (21 Oct 2026)
+- **Why:** the user: "there is a post from kareem el sayed on facebook and instgram that is very popular, why I can't find it?", then "yes apply it and push".
+- **Cause:** in the reel Kareem says it was filmed in England. Once the reels' speech was read (Versions 28 and 30), Claude placed the post in the United Kingdom, and every Egypt view only shows posts placed in Egypt. So his Facebook reel (1.46M views, 47,834 likes), his Instagram reel (903K views) and a second Facebook reel (360K) sat under Outside Egypt, United Kingdom. The YouTube copy (1.47M views) was in Egypt because its speech wasn't read.
+- **Fix** (`build_real.py`, DECISIONS #168): a creator posting in Egyptian Arabic counts in Egypt wherever the video is filmed. A blanket rule for Egyptian Arabic would have been wrong: of the 40 Egyptian-Arabic items placed abroad, 31 are comments by Egyptians abroad (where they found V7, where they want it) and 6 are businesses abroad or a local creator. It moved his 3 posts and the 261 comments under them that name no country; nothing else changed.
+- **Correction:** his own reply under the reel was already shown under his name (the builder reuses his account), so nothing changed there.
+- **Tests:** new `tests/test_v34.py`; all 25 suites pass.
+- **Published** privately (Version 34) and on the public site at the user's request.
+- **Spend:** nothing on Apify.
+- **Files:** `V7_Pulse_Dashboard.html` (Version 33 saved in `archive/dashboard_versions/`), `data/raw/real_17oct/build_real.py`, `real_dashboard.json`, `tests/test_v34.py`, `docs/index.html`, the notes.

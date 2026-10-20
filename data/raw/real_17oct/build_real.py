@@ -142,6 +142,8 @@ if __name__ == '__main__':
         if not lab['about']:
             report['public posts not about V7'] += 1; continue
         cty = lab['cty'] or (i.get('region') if i.get('region') and len(i['region']) == 2 else '') or ('EG' if lab['lang'] in ('ar', 'fr', 'en', 'msa', 'other') else '')
+        if lab['lang'] == 'ar' and lab['seg'] == 'creator':   # a creator speaking Egyptian Arabic speaks to Egyptians wherever the video is filmed
+            cty = 'EG'                                         # (Kareem Elsayed's reel filmed in England; DECISIONS #168). Businesses, Egyptians abroad and locals keep theirs
         off = 'cairo' if cty in ('', 'EG') else 0
         d, hh, mi = local(i['date'], off if off == 'cairo' else 3)
         k = 'u%d' % len(UGC); ugc_id[i['id']] = k; ugc_cty[i['id']] = cty or 'XX'

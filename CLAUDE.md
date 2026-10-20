@@ -39,7 +39,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 | `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
 | `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches; `test_pipeline.py` the refresh pipeline, against stand-ins for Apify and Telegram. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches; `test_v34.py` creators speaking Egyptian Arabic in the Egypt views; `test_pipeline.py` the refresh pipeline, against stand-ins for Apify and Telegram. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
@@ -92,7 +92,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_v27 test_v28 test_v29 test_v30 test_v31 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_v27 test_v28 test_v29 test_v30 test_v31 test_v34 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.
@@ -184,6 +184,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - "في سفن" means "in ships", and in Saudi posts "سفن" is 7UP;
   - Cambodia has its own "V-Cola".
 - Self-declared profile locations are unreliable. Don't use them to place posts (DECISIONS #76).
+- A post's country comes from Claude's label, and reading a video's speech can move it abroad ("filmed here in England"). A creator posting in Egyptian Arabic still counts in Egypt (`build_real.py`, DECISIONS #168); businesses, Egyptians abroad and locals keep their country. Every Egypt view filters on `cty === 'EG'`.
 - TikTok (`clockworks`): its own date filter (`videoSearchDateFilter`) returns unrelated videos. Search with `proxyCountryCode: "EG"` and no date filter, then check dates.
 - Instagram: the hashtag #vcola is mostly Cambodia's V-Cola. Its keyword search returns the top results for a word (a few hundred), so add the posts that tag @v7egypt and Google's finds.
   - The keyword search (seemuapps, 19 Oct check) matches loosely: Arabic spellings returned almost nothing about V7 (ڤي سڤن 1 of 30, في سفن 0 of 30: ships, Starbucks, BTS's "V"); English and mixed phrases worked (V7 soda 24 of 30, V7 Egypt 22, مشروب V7 19). Use English or mixed phrases there; its counts matched Apify's own scrapers.

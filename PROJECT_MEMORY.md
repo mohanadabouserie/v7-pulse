@@ -14,9 +14,9 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 33, 20 Oct 2026) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 34, 21 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 33 since 21 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 34 since 21 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -26,7 +26,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Refresh pipeline, Facebook and Instagram | `data/raw/real_17oct/pipeline.py` (notes in `PIPELINE.md`): the searches with standby scrapers, the gap fillers, the pictures, the build and the quick tests in one command (`plan`, `run`, `status`). Not scheduled; the systemd files in `deploy/` aren't installed (DECISIONS #154). Tests: `tests/test_pipeline.py` |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v32.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v33.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -83,7 +83,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - "V7" also means the Haval and Changan cars, Vivo and Honor phones, Midjourney V7 and the Dyson V7.
   - "في سفن" also means "in ships". Search "ڤي سڤن" or the exact phrase instead.
 
-## 4. The dashboard today (Version 33)
+## 4. The dashboard today (Version 34)
 **Look (since 7 Oct, see `DESIGN.md`):**
 - V7's green master brand: a green sidebar with a white pill for the current tab, green pill buttons, uppercase titles in Nunito Sans.
 - Navy for quantities, gold for events, green / grey / red for sentiment. V7 is green against PepsiCo blue and Coca-Cola red.
@@ -167,6 +167,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Totals:** 1,438 public posts about V7 (Facebook 685, Instagram 571), 9,607 comments shown, 521 images, 11.96 MB.
   - **Pipeline:** daily and weekly runs sort Facebook's search by latest. Speech only for videos about V7 or found by a long keyword search, and comment fallbacks only for what the cheap scraper missed (DECISIONS #164, #165).
   - Published privately on 20 Oct and on the public site on 21 Oct; the bot reads that copy.
+- **Version 34, Kareem Elsayed's reel in the Egypt views (21 Oct, DECISIONS #168):** a creator posting in Egyptian Arabic counts in Egypt wherever the video is filmed. His reel says it was filmed in England, so since its speech was read it had sat under Outside Egypt, United Kingdom (Facebook 1.46M views, Instagram 903K, a second Facebook reel 360K). Businesses, Egyptians abroad and locals keep their country. Published privately and on the public site on 21 Oct.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
