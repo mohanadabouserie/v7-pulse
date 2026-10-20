@@ -1113,3 +1113,22 @@ The user asked for an expert UI/UX pass over every page and element, with real A
   - Facebook's own search limited to June returned 19 posts, 1 about V7.
   - Nothing collected and nothing spent.
 - **Files:** `DECISIONS.md`, `PROJECT_MEMORY.md`, `CHANGELOG.md`.
+
+### Date-slice test (20 Oct 2026)
+- **Why:** the user: "maybe having date filter can solve this problem with getting different posts everytime we search, I mean if we go day by day", then "yes run the test".
+- **What ran** (`data/raw/real_17oct/dateslice_test.py`, report in `DATESLICE_TEST.md`; tiny checks first): August 2026, the busiest month.
+  - Google's site search one day and one week at a time: 5 Instagram phrases and the 6 Facebook phrases whose month searches were cut off most often.
+  - Facebook's own search limited to one day on the three busiest days (15 Oct, 15 Aug, 4 Aug), three keywords, scraper_one sorted by latest and silentflow by top.
+  - The new finds were fetched by link and labelled.
+- **Results:** 661 new posts collected, 33 about V7 (Instagram 14, Facebook 19).
+  - **Facebook's own search, one day at a time, did best:** 12 new posts about V7 for USD 0.27, 10 of them from scraper_one on 15 Aug. 6 of the 12 are different people posting the same copy-and-paste text.
+  - **Google, a week at a time:** 7 new Instagram and about 7 new Facebook posts about V7, about USD 0.05 to 0.07 a post with fetching.
+  - **Google, a day at a time:** quiet days are filled with near matches (Cambodia's V-Cola, other colas): Instagram 10 of 295 new finds about V7, Facebook 1 of 125. Not worth it.
+  - Google's snippet can't pre-filter the finds: the phrase is missing from it for about half the posts about V7.
+- **Not in the dashboard yet:** the 33 posts are collected and labelled, but their speech, pictures, comments and followers aren't filled. They go in with the next build.
+- **Fixed on the way:**
+  - runs started together can no longer pass the spending line between them: each holds its cap until it ends (DECISIONS #160). In this test the two fetches went USD 0.20 past the USD 74.50 line;
+  - posts read by runs after 19 Oct are dated by their run's day in the post view, not "as of 17 Oct" (DECISIONS #161). Today's build is unchanged.
+- **Spend:** USD 2.87 by Apify's meter (71.83 to 74.70), more than the USD 2 estimate because the slices found more posts to fetch. USD 25.30 is left until 16 Nov. `SCRAPERS.md` lists 479 runs.
+- **Tests:** `tests/test_pipeline.py` has 20 checks (one new, for runs started together); all pass.
+- **Files:** in `data/raw/real_17oct/`: new `dateslice_test.py` and `DATESLICE_TEST.md`; `collect.py`, `build_real.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `run.log`. Also `tests/test_pipeline.py` and the notes.

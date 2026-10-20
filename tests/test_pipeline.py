@@ -2,7 +2,7 @@
 It checks that a failed run or a changed output format sends the job to a standby scraper, that Apify's 502s are retried, that the
 budget guard skips runs that don't fit, that one run at a time holds, that the admin gets a Telegram message, and that no token is
 ever written to a file or printed. It also checks that the gap fillers' runs that don't start (over the budget line, or refused by
-Apify) reach the report."""
+Apify) reach the report, and that runs started together can't pass the line between them."""
 import http.server, json, os, pathlib, shutil, subprocess, sys, tempfile, threading, urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -183,4 +183,15 @@ check('a run the budget guard skipped is never started, not even with a smaller 
 check('a scraper that refuses a cap under its minimum is asked again with that minimum',
       [c for a, c in Fake.posts if a == 'clockworks~tiktok-scraper'] == [0.1, 0.5] and 'fbf_tt_t' not in ' '.join(probs), Fake.posts)
 check('the gap filler that fitted under the line ran', ('social_developer~facebook-playcount-scraper', 0.05) in Fake.posts, Fake.posts)
+PAR = r'''
+import json
+import collect as C
+line = C.spent() + 0.6
+C.parallel([('par_a', 'invideoiq~video-transcriber', {'video_urls': []}, 0.4, 1),
+            ('par_b', 'social_developer~facebook-playcount-scraper', {'urls': []}, 0.4, 1)], line)
+print('SKIPS ' + json.dumps(C.SKIPS))
+'''
+code, led, rep, out, files = scenario({}, [], code=PAR)
+check('runs started together hold their caps: of two USD 0.40 runs under a USD 0.60 line, only one starts',
+      len(Fake.posts) == 1 and 'over the budget line' in out and 'held by runs going on' in out, (Fake.posts, out[-300:]))
 print('FAIL', fails)

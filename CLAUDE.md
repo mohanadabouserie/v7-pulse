@@ -208,6 +208,10 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - `streamers/youtube-channel-scraper` returns English machine translations of V7's Arabic titles; `calm_builder/youtube-scraper` gives the originals.
   - Comment dates are relative ("8 days ago", "4 months ago"); apidojo turns some into a date on the run's day of the month (18 May …), which is still month-only.
 - Minimum cost caps: USD 0.50 for TikTok, Google search and calm_builder. `collect.run` asks again with the scraper's own minimum when a start is refused for that reason, and only if it fits under the budget line. Never retry a run the budget guard skipped.
+- Date slices (20 Oct test, `DATESLICE_TEST.md`):
+  - Facebook's own search takes a one-day window (start = end date) on scraper_one and silentflow. scraper_one sorted by latest found posts on a busy day that no search over the whole window had (15 Aug: 7 new from one keyword); a month sorted by top returns filler.
+  - Google's site search with one-day ranges keeps to the day, but quiet days are filled with near matches (Cambodia's V-Cola, other colas): 10 of 295 new Instagram finds were about V7. Week ranges did better per dollar. The snippet can't pre-filter: the phrase is missing from it for about half the posts about V7.
+- Runs started together (`parallel()`) each hold their cap against the budget line until they end (`collect.run`, DECISIONS #160).
 - The images in the page have a budget: `build_media.py` takes V7's own posts first, then the pages abroad, then public posts by views, and stops at `V7_MEDIA_KB` (default 6,000 KB). The artifact limit is 16 MB; `test_v23.py` holds the page under 13 MB.
 - The artifact publish guard:
   - it takes a page for a code-review page, and refuses it over 512 KB, when an `id=` is followed by more than 2,048 characters with no space (a Facebook link ending in `&id=…` before image data did it);

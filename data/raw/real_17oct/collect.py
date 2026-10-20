@@ -6,7 +6,7 @@ Stages, in order: test, own, comments, abroad, ugc; then test2 and wide (18 Oct,
 - Every run has a USD cap (Apify's maxTotalChargeUsd), and the whole collection stops at BUDGET, read from Apify's usage meter.
 - The token is read from the environment only:  set -a; . ./.env.apify; set +a
 """
-import collections, json, math, os, pathlib, re, sys, time, urllib.error, urllib.request
+import collections, json, math, os, pathlib, re, sys, threading, time, urllib.error, urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = pathlib.Path(os.environ['V7_RAW']) if os.environ.get('V7_RAW') else HERE / 'raw'   # (pipeline tests point these at a temporary folder)
@@ -59,6 +59,8 @@ def log(line):
 
 
 SKIPS = []   # runs skipped over a budget line or refused by Apify (pipeline.py reports them)
+GUARD, HELD = threading.Lock(), [0.0]   # the caps of the runs going on now count against the line until they end (20 Oct: runs started
+                                        # together in parallel() each saw the same budget left, and together went past the line)
 
 
 def run(name, actor, body, cap_usd, max_items=None, budget=None):
@@ -67,11 +69,25 @@ def run(name, actor, body, cap_usd, max_items=None, budget=None):
     if out.exists() and '--force' not in sys.argv:
         print(f'{name}: already collected, skipped')
         return json.load(open(out, encoding='utf-8'))['items']
-    before, budget = spent(), budget or BUDGET
-    if budget - before < cap_usd:
-        log(f'{name}: skipped, only ${budget - before:.2f} of the ${budget:.2f} budget left (needs a ${cap_usd:.2f} cap)')
-        SKIPS.append(f'{name} (over the budget line)')
-        return []
+    budget = budget or BUDGET
+    with GUARD:
+        before = spent()
+        left = budget - before - HELD[0]
+        if left < cap_usd:
+            log(f'{name}: skipped, only ${left:.2f} of the ${budget:.2f} budget left' + (f' (${HELD[0]:.2f} held by runs going on)' if HELD[0] else '')
+                + f' (needs a ${cap_usd:.2f} cap)')
+            SKIPS.append(f'{name} (over the budget line)')
+            return []
+        HELD[0] += cap_usd
+    held_ref = [cap_usd]
+    try:
+        return _start(name, actor, body, cap_usd, max_items, budget, before, out, held_ref)
+    finally:
+        with GUARD:
+            HELD[0] -= held_ref[0]
+
+
+def _start(name, actor, body, cap_usd, max_items, budget, before, out, held_ref):
     q = f'?maxTotalChargeUsd={cap_usd:.3f}' + (f'&maxItems={max_items}' if max_items else '')
     try:
         r = api('POST', f'/acts/{actor}/runs{q}', body)['data']
@@ -81,6 +97,9 @@ def run(name, actor, body, cap_usd, max_items=None, budget=None):
         if low and float(low.group(1)) > cap_usd:   # the scraper's lowest cap (a ceiling, not the cost): asked again with it, if it fits the line
             low = math.ceil(float(low.group(1)) * 100) / 100
             log(f'{name}: the scraper takes a cap of at least ${low:.2f}; asked again with it')
+            with GUARD:                              # this run's hold goes; the new ask holds its own
+                HELD[0] -= held_ref[0]
+                held_ref[0] = 0.0
             return run(name, actor, body, low, max_items, budget)
         log(f'{name}: could not start: HTTP {e.code} {err[:200]!r}')
         SKIPS.append(f'{name} (could not start: HTTP {e.code})')

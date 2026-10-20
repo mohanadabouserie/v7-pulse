@@ -44,6 +44,20 @@ def local(t, hours):
     return d.date().isoformat(), d.hour, d.minute
 
 
+RUN_DAY = {}
+
+
+def run_day(name):
+    """The day of the month (Cairo time) a run started, from its saved record: the day its counts were read. None if unknown."""
+    if name not in RUN_DAY:
+        try:
+            t = (json.load(open(HERE / 'raw' / (name + '.json'), encoding='utf-8')).get('run') or {}).get('startedAt')
+            RUN_DAY[name] = (datetime.datetime.fromisoformat(t.replace('Z', '+00:00')) + datetime.timedelta(hours=3)).day
+        except (OSError, ValueError, TypeError, AttributeError):
+            RUN_DAY[name] = None
+    return RUN_DAY[name]
+
+
 def mask(text):
     """@mentions of private people become @…; the official handles stay."""
     return re.sub(r'@([\w.]+)', lambda m: m.group(0) if m.group(1).lower() in OFFICIAL else '@…', text or '')
@@ -138,7 +152,8 @@ if __name__ == '__main__':
                     'shares': i.get('shares') or 0, 'gov': lab['gov'], 'cty': cty or 'XX', 'seg': lab['seg'], 'en': lab['en'], 'url': i['url'], 'fmt': i.get('fmt') or 'Text',
                     'needsReply': bool(lab['reply'] and i['pl'] in ('fb', 'ig', 'tt', 'yt')), 'place': i.get('place') or i.get('region') or None,
                     'claim': lab['claim'], 'stance': lab['stance'], 'isReply': 1 if i.get('is_reply') else 0,
-                    'asof': 19 if (i.get('counts_from') or '').startswith(RUNS_19) else 18 if i.get('counts_from') in RUNS_18 else 0,   # its numbers are as of 19 Oct, 18 Oct (the wider search) or 17 Oct
+                    'asof': 19 if (i.get('counts_from') or '').startswith(RUNS_19) else 18 if i.get('counts_from') in RUNS_18
+                            else (lambda d: d if d and d > 19 else 0)(run_day(i.get('counts_from') or '')),   # its numbers are as of 19 Oct, 18 Oct (the wider search), the day of a later run (the pipeline, 20 Oct on) or 17 Oct
                     'lh': 1 if i.get('likes') is None else 0,   # no like count from any source: on Instagram, the account hid it
                     'sp': 1 if i.get('speech') and lab.get('sp') else 0,   # labelled with what's said in the video (19 Oct)
                     'vs': 1 if i.get('seen') and lab.get('vs') else 0})   # labelled with what's written or shown in its pictures (19 Oct)

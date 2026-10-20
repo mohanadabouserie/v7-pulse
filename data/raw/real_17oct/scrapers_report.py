@@ -223,6 +223,18 @@ RUNS = [   # run name (raw/<name>.json) -> actor, why
     ('ig_profiles_202610191735', 'PROFILES', 'pipeline fill run: follower counts of the Instagram accounts still without one'),
     ('igcm_202610191736', 'IG_CM_CHEAP', 'pipeline fill run: comments under the Instagram posts that had none collected'),
     ('vis_posts_202610191737', 'IG_POSTS', 'pipeline fill run: fresh media links for the Instagram posts whose pictures were not read yet'),
+    ('fbp_one_dst_1015_1', 'FB_SEARCH', '20 Oct date-slice test, check: one day (15 Oct), 3 results'),
+    ('fbp_sf_dst_1015_1', 'FB_SILENT', '20 Oct date-slice test, check: one day (15 Oct), 3 results'),
+    ('fbl_dst_google', 'GOOGLE', '20 Oct date-slice test, check: Google of facebook.com for one day'),
+    ('igl_dst_google2', 'GOOGLE', '20 Oct date-slice test, check: Google for one day and one week, Instagram and Facebook'),
+    ('igl_ds_day', 'GOOGLE', "20 Oct date-slice test: Google of instagram.com one day at a time, August, 5 phrases"),
+    ('igl_ds_week', 'GOOGLE', "20 Oct date-slice test: Google of instagram.com one week at a time, August, 5 phrases"),
+    ('fbl_ds_day', 'GOOGLE', "20 Oct date-slice test: Google of facebook.com one day at a time, August, 6 phrases"),
+    ('fbl_ds_week', 'GOOGLE', "20 Oct date-slice test: Google of facebook.com one week at a time, August, 6 phrases"),
+] + [(f'{fam}_ds_{d}_{i}', act, f"20 Oct date-slice test: Facebook's own search limited to one day ({d[2:]}/{d[:2]}), keyword {i} of 3")
+     for d in ('1015', '0815', '0804') for i in (1, 2, 3) for fam, act in (('fbp_one', 'FB_SEARCH'), ('fbp_sf', 'FB_SILENT'))] + [
+    ('igp_post_ds_links', 'IG_POSTS', 'the new Instagram posts the date slices found, by link'),
+    ('fbp_sf_ds_links', 'FB_POST_LINK', 'the new Facebook links the date slices found, by link'),
 ]
 
 

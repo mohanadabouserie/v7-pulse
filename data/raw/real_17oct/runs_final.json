@@ -5329,5 +5329,374 @@
    "post-details": 7,
    "music-data": 0
   }
+ },
+ "fbp_one_dst_1015_1": {
+  "id": "StcAFvAIgELPmdOwd",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:55:01.490Z",
+  "finishedAt": "2026-10-20T10:55:08.984Z",
+  "usageTotalUsd": 0.00905,
+  "chargedEventCounts": {
+   "result-item": 3,
+   "init": 1
+  }
+ },
+ "fbp_sf_dst_1015_1": {
+  "id": "OPu12wx18ifTo0gma",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:55:18.063Z",
+  "finishedAt": "2026-10-20T10:55:22.048Z",
+  "usageTotalUsd": 0.00665,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 3
+  }
+ },
+ "fbl_dst_google": {
+  "id": "Qu7QMpgKvgFMRcqx8",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:55:34.645Z",
+  "finishedAt": "2026-10-20T10:56:04.913Z",
+  "usageTotalUsd": 0.00255,
+  "chargedEventCounts": {
+   "search-page-scraped": 1,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "igl_dst_google2": {
+  "id": "q1J7exHHn2mQtBgBl",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:56:34.663Z",
+  "finishedAt": "2026-10-20T10:57:16.425Z",
+  "usageTotalUsd": 0.01005,
+  "chargedEventCounts": {
+   "search-page-scraped": 4,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "igl_ds_day": {
+  "id": "nPsUvXQrgbacrxUn1",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.571Z",
+  "finishedAt": "2026-10-20T11:15:59.218Z",
+  "usageTotalUsd": 0.42755,
+  "chargedEventCounts": {
+   "search-page-scraped": 171,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "igl_ds_week": {
+  "id": "KkY9vqI5PNcjqJGHC",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.443Z",
+  "finishedAt": "2026-10-20T11:11:14.012Z",
+  "usageTotalUsd": 0.11005,
+  "chargedEventCounts": {
+   "search-page-scraped": 44,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "fbl_ds_day": {
+  "id": "qEUinG2PYR5TPLKs2",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.581Z",
+  "finishedAt": "2026-10-20T11:10:38.761Z",
+  "usageTotalUsd": 0.46755,
+  "chargedEventCounts": {
+   "search-page-scraped": 187,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "fbl_ds_week": {
+  "id": "rFsiuWKbf9LBB6cVL",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.420Z",
+  "finishedAt": "2026-10-20T11:11:19.496Z",
+  "usageTotalUsd": 0.12755,
+  "chargedEventCounts": {
+   "search-page-scraped": 51,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  }
+ },
+ "fbp_one_ds_1015_1": {
+  "id": "3mWIuMsI8abnUenEv",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.397Z",
+  "finishedAt": "2026-10-20T10:57:54.204Z",
+  "usageTotalUsd": 0.03005,
+  "chargedEventCounts": {
+   "result-item": 10,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_1015_1": {
+  "id": "mAMChcHTuUhlOP27x",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.777Z",
+  "finishedAt": "2026-10-20T10:57:42.640Z",
+  "usageTotalUsd": 0.022050000000000004,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 10
+  }
+ },
+ "fbp_one_ds_1015_2": {
+  "id": "q5dCBFGxOUSFwTmAt",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.362Z",
+  "finishedAt": "2026-10-20T10:57:47.336Z",
+  "usageTotalUsd": 0.03005,
+  "chargedEventCounts": {
+   "result-item": 10,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_1015_2": {
+  "id": "kAJaesh0pYln4SsTU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:35.387Z",
+  "finishedAt": "2026-10-20T10:57:40.912Z",
+  "usageTotalUsd": 0.01545,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 7
+  }
+ },
+ "fbp_one_ds_1015_3": {
+  "id": "ieEKNOvcV1Rw4WmXf",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:52.047Z",
+  "finishedAt": "2026-10-20T10:58:20.706Z",
+  "usageTotalUsd": 0.03005,
+  "chargedEventCounts": {
+   "result-item": 10,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_1015_3": {
+  "id": "rMbiTVyLiaYh5KNUg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:57:52.562Z",
+  "finishedAt": "2026-10-20T10:58:11.855Z",
+  "usageTotalUsd": 0.00885,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 4
+  }
+ },
+ "fbp_one_ds_0815_1": {
+  "id": "d5dVHZdrjxteOyFve",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:00.412Z",
+  "finishedAt": "2026-10-20T10:58:39.359Z",
+  "usageTotalUsd": 0.02705,
+  "chargedEventCounts": {
+   "result-item": 9,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_0815_1": {
+  "id": "MSYp6NgYeRnbIGQsi",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:10.046Z",
+  "finishedAt": "2026-10-20T10:58:27.181Z",
+  "usageTotalUsd": 0.022050000000000004,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 10
+  }
+ },
+ "fbp_one_ds_0815_2": {
+  "id": "Td07MzWzFjtpWCrgt",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:25.992Z",
+  "finishedAt": "2026-10-20T10:58:43.464Z",
+  "usageTotalUsd": 0.03005,
+  "chargedEventCounts": {
+   "result-item": 10,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_0815_2": {
+  "id": "fES0LwpMvUm0fOJ6x",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:34.027Z",
+  "finishedAt": "2026-10-20T10:58:41.207Z",
+  "usageTotalUsd": 0.00445,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 2
+  }
+ },
+ "fbp_one_ds_0815_3": {
+  "id": "0bBYo0mV04uYm8Ky9",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:43.650Z",
+  "finishedAt": "2026-10-20T10:58:51.156Z",
+  "usageTotalUsd": 5e-05,
+  "chargedEventCounts": {
+   "result-item": 0,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_0815_3": {
+  "id": "eOA9ZTGaAAmUIYLTC",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:50.523Z",
+  "finishedAt": "2026-10-20T10:58:58.540Z",
+  "usageTotalUsd": 5e-05,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  }
+ },
+ "fbp_one_ds_0804_1": {
+  "id": "KfuxqaFKXklBrVDRA",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:50.891Z",
+  "finishedAt": "2026-10-20T11:08:20.254Z",
+  "usageTotalUsd": 0.01505,
+  "chargedEventCounts": {
+   "result-item": 5,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_0804_1": {
+  "id": "hbv3C7OwxVRHFGWhp",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:59.518Z",
+  "finishedAt": "2026-10-20T10:59:12.081Z",
+  "usageTotalUsd": 0.01105,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 5
+  }
+ },
+ "fbp_one_ds_0804_2": {
+  "id": "gRNf1ypzbp8Q4ahe7",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:59:00.118Z",
+  "finishedAt": "2026-10-20T10:59:33.003Z",
+  "usageTotalUsd": 0.00905,
+  "chargedEventCounts": {
+   "result-item": 3,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_0804_2": {
+  "id": "pz70faBGBvxlsCd4E",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:59:07.051Z",
+  "finishedAt": "2026-10-20T10:59:12.614Z",
+  "usageTotalUsd": 5e-05,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  }
+ },
+ "fbp_one_ds_0804_3": {
+  "id": "IzZ7WwVPxkt1eMfLP",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:59:23.553Z",
+  "finishedAt": "2026-10-20T10:59:32.483Z",
+  "usageTotalUsd": 0.01505,
+  "chargedEventCounts": {
+   "result-item": 5,
+   "init": 1
+  }
+ },
+ "fbp_sf_ds_0804_3": {
+  "id": "RAYYnB8VWtSPXXpKg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:59:24.687Z",
+  "finishedAt": "2026-10-20T10:59:33.574Z",
+  "usageTotalUsd": 5e-05,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  }
+ },
+ "igp_post_ds_links": {
+  "id": "3Qksm8dWvavJEJVBJ",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T11:16:29.640Z",
+  "finishedAt": "2026-10-20T11:17:59.916Z",
+  "usageTotalUsd": 0.8165,
+  "chargedEventCounts": {
+   "post": 355,
+   "post-details": 355,
+   "music-data": 0
+  }
+ },
+ "fbp_sf_ds_links": {
+  "id": "EJaMr4R7hi4iWFWwT",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T11:16:29.774Z",
+  "finishedAt": "2026-10-20T11:35:57.312Z",
+  "usageTotalUsd": 0.62216,
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 267
+  }
  }
 }
