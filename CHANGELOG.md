@@ -1099,3 +1099,9 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** privately (Version 32). Public site: Version 31 until a push.
 - **Spend:** USD 0.75 this round (the Instagram test 0.13, the fill run 0.62). Apify's meter: USD 71.83 of the USD 100 limit, so USD 28.17 is left until the cycle resets on 16 Nov. `SCRAPERS.md` lists 451 runs from 63 scrapers.
 - **Files:** `V7_Pulse_Dashboard.html` (Version 31 saved in `archive/dashboard_versions/`). In `data/raw/real_17oct/`: new `pipeline.py` and `PIPELINE.md`; `collect.py`, `normalize.py`, `build_real.py`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json` and `run.log`. In `data/raw/media_13oct/`: `build_media.py`, `index.json` and 65 new images. New in `deploy/`: `v7pulse-pipeline.service`, `.timer`, `-weekly.service` and `-weekly.timer`. Tests: new `tests/test_pipeline.py`, plus `tests/test_v23.py` and `tests/test_v25.py`. Also `.gitignore` (the pipeline's lock, ledger and reports) and the notes.
+
+### Public copy: Version 32 (20 Oct 2026)
+- **Pushed** at the user's request ("yes push"). `docs/index.html` was rebuilt (11.6 MB), and all 24 suites pass on it.
+- **What the site now shows:** Version 32. That means 483 Instagram posts about V7 (4 new reels from Google's short videos), the gaps filled by the pipeline's first run, and images within the 6 MB budget; posts past the budget show without a picture. The Telegram bot reads this copy.
+- **Also public now:** `pipeline.py`, its tests and notes, and the regenerated `SCRAPERS.md`, which counts input links instead of printing them. Its earlier versions in the repo's history still list them.
+- **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.

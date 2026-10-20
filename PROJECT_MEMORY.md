@@ -16,7 +16,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 |---|---|
 | Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 32, 19 Oct 2026) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 31 since 19 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 32 since 20 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -160,7 +160,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Instagram:** Google's short videos were tested and added as a weekly route: 36 reels about V7, 4 new.
   - **Images:** a 6,000 KB budget (own posts first), 522 images; the page went from 14.2 MB to 11.6 MB.
   - **Totals:** 1,255 public posts about V7 (Facebook 590, Instagram 483), 9,172 comments shown.
-  - Published privately on 19 Oct; the public site and the bot stay on Version 31 until a push.
+  - Published privately on 19 Oct and on the public site on 20 Oct; the bot reads that copy.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
