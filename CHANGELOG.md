@@ -1105,3 +1105,11 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **What the site now shows:** Version 32. That means 483 Instagram posts about V7 (4 new reels from Google's short videos), the gaps filled by the pipeline's first run, and images within the 6 MB budget; posts past the budget show without a picture. The Telegram bot reads this copy.
 - **Also public now:** `pipeline.py`, its tests and notes, and the regenerated `SCRAPERS.md`, which counts input links instead of printing them. Its earlier versions in the repo's history still list them.
 - **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
+
+### Notes (20 Oct 2026)
+- **Decided:** post links stay as they are, including the 111 links that contain a private person's username (user: "no"; DECISIONS #159).
+- **Found, for the user's date-slicing idea:**
+  - Google's month-by-month site searches were cut off before the end: 47 of 84 Instagram month searches and 32 of 84 Facebook ones still had a next page.
+  - Facebook's own search limited to June returned 19 posts, 1 about V7.
+  - Nothing collected and nothing spent.
+- **Files:** `DECISIONS.md`, `PROJECT_MEMORY.md`, `CHANGELOG.md`.
