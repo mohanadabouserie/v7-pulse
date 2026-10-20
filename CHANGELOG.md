@@ -1163,3 +1163,9 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** privately (Version 33).
 - **Spend:** USD 12.65 on 20 Oct after the test: the rollout 6.17, ideas 1 and 2 2.22, the gap fills 4.21 (with the two runs stopped). Apify's meter: USD 87.35 of the USD 100 limit, so USD 12.65 is left until 16 Nov. `SCRAPERS.md` lists 656 runs.
 - **Files:** `V7_Pulse_Dashboard.html` (Version 32 saved in `archive/dashboard_versions/`). In `data/raw/real_17oct/`: `collect.py`, `pipeline.py`, `PIPELINE.md`, new `routes_report.py` and `ROUTES_20OCT.md`, `scrapers_report.py`, `SCRAPERS.md`, `runs_final.json`, `real_dashboard.json`, `run.log`. In `data/raw/media_13oct/`: `index.json` and new images. Tests: `tests/test_pipeline.py`, `test_v23.py`, `test_v25.py` and `test_v29.py` (the new dates). Also the notes.
+
+### Public copy: Version 33 (21 Oct 2026)
+- **Pushed** at the user's request ("yes push"). `docs/index.html` was rebuilt (11.96 MB), and all 24 suites pass on it.
+- **What the site now shows:** 1,438 public posts about V7 (Facebook 685, Instagram 571) from the date slices of 20 Oct, with their speech, pictures, comments and followers. The Telegram bot reads this copy.
+- **Also public now:** the date-slice test and its report, the new collection stages, `routes_report.py` and `ROUTES_20OCT.md`.
+- **Files:** `docs/index.html`, `CHANGELOG.md`, `PROJECT_MEMORY.md`.
