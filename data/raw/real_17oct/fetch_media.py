@@ -1,6 +1,6 @@
 """17 Oct 2026 (Version 25), widened 18 Oct (Version 26): cover images for the real posts that have none yet, so they can be seen, not only linked.
-Which: every V7 Egypt post without one, the 40 most-engaged posts of the pages abroad, and the top 80 public posts about V7 (by views,
-then likes, comments and shares). Image links come from the 17 Oct pulls in raw/ (Facebook, Instagram and X give one with the post;
+Which: every post in the dashboard without one (V7 Egypt, the pages abroad, then the public posts about V7 by views; until 21 Oct only
+the top 40 abroad and top 80 public posts). Image links come from the 17 Oct pulls in raw/ (Facebook, Instagram and X give one with the post;
 TikTok covers expire within hours, so a fresh link is read from each video's public page; YouTube thumbnails come from i.ytimg.com).
 One request at a time, 1 second apart. Each image is shrunk to 300 px on its long side (JPEG quality 52) and saved, like the 13 Oct ones,
 in ../media_13oct/img/ with ../media_13oct/index.json, which ../media_13oct/build_media.py --inject turns into the MEDIA block.
@@ -71,9 +71,9 @@ for it in json.load(open(HERE / 'items.json', encoding='utf-8'))['items']:   # 1
                 img_of[u] = (m.get('cover') or m['images'][0], k, 'fb')
 
 want = [u for u in own_urls if u not in have]
-want += [u for lk, cm, u in sorted(x_rows, key=lambda r: -(int(r[0]) + int(r[1]))) if u not in have][:40]
+want += [u for lk, cm, u in sorted(x_rows, key=lambda r: -(int(r[0]) + int(r[1]))) if u not in have]
 ugc = sorted(data['ugc'], key=lambda r: (-(r.get('views') or 0), -(r.get('likes', 0) + r.get('comments', 0) + r.get('shares', 0))))   # zero counts are left out of the data
-want += [r['url'] for r in ugc if r['url'] not in have and r['url'] in img_of][:80]
+want += [r['url'] for r in ugc if r['url'] not in have and r['url'] in img_of]   # 21 Oct: every post, no top-80 limit (DECISIONS #170)
 print(len(want), 'images to fetch')
 
 def get(u, timeout=20):

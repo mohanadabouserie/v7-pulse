@@ -14,9 +14,9 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 ## 2. Deliverables and where they are
 | What | Where |
 |---|---|
-| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html`, published privately at https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (Version 34, 21 Oct 2026) |
+| Dashboard (main deliverable) | `V7_Pulse_Dashboard.html` (Version 35), published as the public site below. The claude.ai copy, https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc, is retired at Version 34 (DECISIONS #170) |
 | Design system | `DESIGN.md`: V7 brand colors, can color per product, type, shapes, layout and chart rules. Guarded by `tests/test_v15.py` |
-| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 34 since 21 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
+| Dashboard, public site | https://mohanadabouserie.github.io/v7-pulse/ (GitHub Pages, public, noindex; Version 34 since 21 Oct; Version 35 since 22 Oct). Served from `docs/` of https://github.com/mohanadabouserie/v7-pulse, which is now **this whole project folder** (pushed 11 Oct for a collaborator). Built by `python3 deploy/build_sites.py dashboard`. Ask V7 Pulse gives built-in answers only there. The old clone `deploy/v7-pulse/` was deleted on 12 Oct |
 | Earlier proposal page | `V7_Pulse_Proposal.html`, https://claude.ai/artifact/5vu6KEfGcuAqHi6j9M1b2g |
 | Cost calculator | `V7_Pulse_Costs.html`, published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P (Version 3). Yearly fixed and variable costs. The controls include questions a day, refresh rate, and a "Claude models" panel with a model for answers, analysis runs and reading posts and comments, plus batches. Old versions are in `archive/costs_versions/`; test: `tests/test_costs.py` |
 | Cost calculator, public site | https://mohanadabouserie.github.io/v7-pulse-costs/ (GitHub Pages, public, noindex). Repo https://github.com/mohanadabouserie/v7-pulse-costs, local clone `deploy/v7-pulse-costs/`. Built from `V7_Pulse_Costs.html` by `deploy/build_sites.py` |
@@ -26,7 +26,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Refresh pipeline, Facebook and Instagram | `data/raw/real_17oct/pipeline.py` (notes in `PIPELINE.md`): the searches with standby scrapers, the gap fillers, the pictures, the build and the quick tests in one command (`plan`, `run`, `status`). Not scheduled; the systemd files in `deploy/` aren't installed (DECISIONS #154). Tests: `tests/test_pipeline.py` |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v33.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v34.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -168,6 +168,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - **Pipeline:** daily and weekly runs sort Facebook's search by latest. Speech only for videos about V7 or found by a long keyword search, and comment fallbacks only for what the cheap scraper missed (DECISIONS #164, #165).
   - Published privately on 20 Oct and on the public site on 21 Oct; the bot reads that copy.
 - **Version 34, Kareem Elsayed's reel in the Egypt views (21 Oct, DECISIONS #168):** a creator posting in Egyptian Arabic counts in Egypt wherever the video is filmed. His reel says it was filmed in England, so since its speech was read it had sat under Outside Egypt, United Kingdom (Facebook 1.46M views, Instagram 903K, a second Facebook reel 360K). Businesses, Egyptians abroad and locals keep their country. Published privately and on the public site on 21 Oct.
+- **Version 35, every picture on the public site; the claude.ai copy retired (21 Oct, DECISIONS #170, #171):** the dashboard links its post images as files (no size budget) and is a complete page; `build_sites.py` copies it and the images into `docs/`. 630 of the 1,207 public posts that aren't text-only have a picture (was 198); the page is 5.9 MB. 577 still have none (Facebook 308, Instagram 268, TikTok 1): never downloaded, and their image links have expired. The claude.ai copy stays as Version 34.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.
@@ -573,6 +574,7 @@ Scripts in `data/raw/*` were written to run from the old temporary folder, so pa
 - To decide: V7-branded distributor pages (V7 Aleppo, V7 Syria, V Super Soda Syria and drinkv7 on Facebook; V7 Malawi and V7 Lebanon on Instagram, about 80 posts) count as public posts by businesses. They could move to V7's pages abroad instead.
 - Watch: the cheap Instagram comment scraper (scrapesmith) returned nothing for all 89 posts it was given on 20 Oct; Apify's own scraper covered them at about 4.6 times the price.
 - Done in Version 27: likes hidden by their owner now say "likes hidden" (37 Instagram posts).
+- Pictures for the remaining 577 public posts that aren't text-only (Facebook 308, Instagram 268, TikTok 1), asked for 21 Oct: needs fresh image links by link through Apify, then `fetch_media.py` and a site build (DECISIONS #170; `fetch_media.py` no longer stops at the top 80).
 - Done in Version 28: what's said in Instagram reels is read with the caption (146 reels), and Instagram accounts have follower counts (174 of 175).
 - Not done: TikTok's own subtitles (74 of 96 videos about V7, free to download) and YouTube subtitles (about USD 0.03) could be read the same way.
 - Instagram is not complete (19 Oct check):

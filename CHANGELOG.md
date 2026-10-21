@@ -1179,3 +1179,18 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** privately (Version 34) and on the public site at the user's request.
 - **Spend:** nothing on Apify.
 - **Files:** `V7_Pulse_Dashboard.html` (Version 33 saved in `archive/dashboard_versions/`), `data/raw/real_17oct/build_real.py`, `real_dashboard.json`, `tests/test_v34.py`, `docs/index.html`, the notes.
+
+### Version 35: every picture on the public site, and the claude.ai copy retired (21 Oct 2026)
+- **Why:** Mahmoud (collaborator) asked why some posts show a picture and others don't, then: "I want all posts to have pictures except certainly those who are text-only ... I am concerned only with the published site", and: "I am not interested in the claude.ai version at all ... let's do the necessary changes to simplify things for ourselves. also yes remove the 80 limit." Plus: the site will be published one day, so it mustn't depend on local files.
+- **Cause of the missing pictures:** 961 post images were downloaded, but the page embedded only 521 under its 6,000 KB budget, kept for the claude.ai 16 MB page limit. Public posts past about the 213th by views lost their picture.
+- **Changes** (DECISIONS #170, #171):
+  - `V7_Pulse_Dashboard.html` is a complete page now (doctype, viewport, noindex, which the build used to add), and the chat's fallback line no longer points to claude.ai.
+  - `build_media.py` links the image files (`data/raw/media_13oct/img/…`) instead of embedding them, with no budget: 961 images, the page 11.96 MB to 5.9 MB. Post images load when they scroll into view.
+  - `build_sites.py dashboard` copies the page to `docs/index.html`, points its image links at `media/` (or `MEDIA_BASE`) and copies the images into `docs/media/`. It stops if a `data/` path is left in the page.
+  - `fetch_media.py` downloads an image for every post that has one (no top-40 abroad, top-80 public limit).
+  - CLAUDE.md: Publishing rewritten, a new "Hosting" section (the site is `docs/`, relative links only, a CDN through `MEDIA_BASE`, what to change before a real launch).
+- **Result:** public posts with a picture 198 to 630 of the 1,207 that aren't text-only. Still without one: 577 (Facebook 308, Instagram 268, TikTok 1), never downloaded; their image links from the Apify pulls have expired, so they need a fresh fetch by link (Apify, and the raw files that stay on the original machine), then `fetch_media.py`.
+- **Tests:** all 24 dashboard suites pass on the dashboard and on `docs/index.html`, and `test_pipeline.py`.
+- **Published** on the public site at the user's request ("yes", 22 Oct).
+- **The claude.ai copy** stays as Version 34 (saved in `archive/dashboard_versions/`), not updated again. Ask V7 Pulse gives its short built-in answers on the site, as before.
+- **Files:** `V7_Pulse_Dashboard.html`, `data/raw/media_13oct/build_media.py`, `data/raw/real_17oct/fetch_media.py`, `deploy/build_sites.py`, `data/raw/real_17oct/pipeline.py` (docstring), `PIPELINE.md`, `tests/test_v23.py` and `test_v25.py` (wording), `docs/index.html`, new `docs/media/`, the notes.

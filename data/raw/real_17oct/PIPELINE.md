@@ -37,7 +37,7 @@ The user asked for it ("make the pipeline robust") after Versions 29 to 31 close
    (`test_v25`, `test_v29`, `test_v30`, `test_v31`).
 4. **Report and alert:** `pipeline_runs/<time>.json` and `.md`, and a Telegram message to the bot's admin.
 
-Publishing stays manual: the private artifact needs a Claude session, and the public site needs the user's OK each time.
+Publishing stays manual: `deploy/build_sites.py dashboard`, then a push, which needs the user's OK each time.
 
 ## What makes it robust
 
@@ -54,9 +54,8 @@ Publishing stays manual: the private artifact needs a Claude session, and the pu
   Until the fix of 19 Oct, the gap fillers' parallel runner started a skipped run again with a USD 0.50 cap.
 - **No paying twice for nothing:** a video the speech or play scraper returned nothing for is asked for at most twice, and a page or
   Instagram account the follower scrapers couldn't read only once (`collect.attempts`).
-- **The page stays under the artifact limit:** the images embedded in the dashboard have a budget (`V7_MEDIA_KB`, default 6,000 KB;
-  `build_media.py`): V7's own posts first, then the pages abroad by engagement, then the public posts by views. The rest show without
-  a picture.
+- **Every picture:** `fetch_media.py` downloads an image for every post that has one, and `build_media.py` links them all (no budget
+  since 21 Oct, DECISIONS #170; until then they were embedded under 6,000 KB for the claude.ai page limit).
 - **One run at a time:** `pipeline.lock` (a stale lock from a run that died is taken over).
 - **Ledger:** `pipeline_ledger.json`, every Apify run with its scraper, status, rows, usable rows and whether it stood in for another.
   The ledger, the lock and the reports stay on the machine that runs the pipeline (git-ignored).

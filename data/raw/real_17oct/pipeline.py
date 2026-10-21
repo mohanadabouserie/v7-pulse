@@ -20,8 +20,8 @@ What makes it robust:
   The token stays in .env.telegram and is never printed or written.
 - After the searches, the chain: normalize, label (Claude), fill the gaps (collect.py fbfill/fbfill2/fbviews/fbnames/igspeech/
   igprofiles/igcomments/igcomments2/igvisfetch), the pictures (vis_media.py, vis_read.py), label again, build_real.py --inject,
-  fetch_media.py, build_media.py --inject, then the quick tests. Publishing stays manual: the private artifact needs a Claude
-  session and the public site needs the user's OK each time.
+  fetch_media.py, build_media.py --inject, then the quick tests. Publishing stays manual: build_sites.py dashboard, then a push,
+  which needs the user's OK each time.
 """
 import argparse, datetime, json, os, pathlib, re, subprocess, sys, time, traceback, urllib.parse, urllib.request
 

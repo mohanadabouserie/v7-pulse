@@ -1,11 +1,13 @@
-"""Writes the dashboard's MEDIA block: each real post's cover image (from fetch_media.py) as a small data: URI, keyed by
-the post's link, with its kind (video, image or carousel). The dashboard stays one self-contained file.
+"""Writes the dashboard's MEDIA block: each real post's cover image (from fetch_media.py), keyed by the post's link, with its kind
+(video, image or carousel). Since 21 Oct 2026 (DECISIONS #170) the block links to the image files instead of embedding them, with
+no size budget: the paths are relative to the repo root (data/raw/media_13oct/img/…), so the dashboard shows them when opened from
+this folder, and deploy/build_sites.py copies the files next to the published page and rewrites the paths (MEDIA_BASE).
 Usage: python3 build_media.py [--inject]"""
-import base64, json, os, re, sys
+import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 DASH = os.path.abspath(os.path.join(HERE, '..', '..', '..', 'V7_Pulse_Dashboard.html'))
 idx = json.load(open(os.path.join(HERE, 'index.json'), encoding='utf-8'))
-BUDGET_KB = int(os.environ.get('V7_MEDIA_KB', '6000'))   # 19 Oct: the images may take this much of the page (it must stay under 16 MB)
+IMG_BASE = 'data/raw/media_13oct/img/'   # relative to V7_Pulse_Dashboard.html
 
 
 def wanted():
@@ -19,22 +21,14 @@ def wanted():
     return own + [u for lk, cm, u in sorted(ab, key=lambda r: -(int(r[0]) + int(r[1])))] + [r['url'] for r in ugc]
 
 
-media, used, dropped = {}, 0, 0
+media = {}
 for url in dict.fromkeys(wanted()):
     v = idx.get(url) or {}
-    if 'file' not in v: continue
-    b = open(os.path.join(HERE, 'img', v['file']), 'rb').read()
-    entry = {'s': 'data:image/jpeg;base64,' + base64.b64encode(b).decode(), 'k': v['kind']}
-    size = len(json.dumps({url: entry}, separators=(',', ':')))
-    if used + size > BUDGET_KB * 1024:
-        dropped += 1; continue
-    media[url] = entry; used += size
-if dropped:
-    print(f'{dropped} images left out to keep the page small (V7_MEDIA_KB={BUDGET_KB})')
+    if 'file' in v and os.path.exists(os.path.join(HERE, 'img', v['file'])):
+        media[url] = {'s': IMG_BASE + v['file'], 'k': v['kind']}
 blob = json.dumps(media, separators=(',', ':')).replace('</', '<\\/')
-# The artifact publish guard takes a page for a code-review page when an `id=` is followed by a long unbroken run of text, as with a
-# Facebook link ending in &id=… right before its image data, and then refuses it (review pages may be 512 KB at most). Inside the
-# JSON strings `=` is written \u003d, which reads back as the same link.
+# Post links with &id= are written \u003d inside the JSON strings (read back as the same link); kept from the claude.ai days, and
+# tests/test_v25.py checks it.
 blob = re.sub(r'(?i)\b(id[\t\n\f\r ]*)=', r'\1\\u003d', blob)
 print(f'{len(media)} images, {len(blob)/1024:.0f} KB in the page')
 if '--inject' in sys.argv:

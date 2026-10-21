@@ -33,12 +33,12 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 ## Repository map
 | Path | What it is |
 |---|---|
-| `V7_Pulse_Dashboard.html` | **The dashboard.** One self-contained HTML file (about 4,600 lines, 11.6 MB with its 522 images; the images have a 6 MB budget): CSS, data and a vanilla-JS app in one IIFE. No build step and no dependencies apart from Google Fonts. |
+| `V7_Pulse_Dashboard.html` | **The dashboard.** One complete HTML page (about 4,600 lines, 5.9 MB): CSS, data and a vanilla-JS app in one IIFE. No dependencies apart from Google Fonts. Its post images are files it links to in `data/raw/media_13oct/img/` (no size budget since DECISIONS #170), so it shows them when opened from this folder. |
 | `V7_Pulse_Costs.html` | Yearly cost calculator for the hosted version (fixed plus variable costs, three Claude model pickers). |
 | `V7_Pulse_Proposal.html` | The first proposal page (3 Oct 2026; its cost box is out of date). |
-| `docs/` | The **public copy** of the dashboard, built by `deploy/build_sites.py`. GitHub Pages serves this folder. Never edit it by hand. |
-| `deploy/build_sites.py` | Builds `docs/index.html` (adds doctype, viewport and noindex, and swaps the claude.ai-only chat line) and the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
-| `archive/dashboard_versions/`, `archive/costs_versions/` | Every earlier published version, saved before the next edit. |
+| `docs/` | The **public site**: `index.html` (the dashboard with its image links pointed at `media/`) and `media/` (the post images), built by `deploy/build_sites.py`. GitHub Pages serves this folder. It's the whole site: see "Hosting". Never edit it by hand. |
+| `deploy/build_sites.py` | `dashboard`: copies the dashboard to `docs/index.html` and the images it links to into `docs/media/`. `costs`: the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
+| `archive/dashboard_versions/`, `archive/costs_versions/` | Earlier versions, saved before the next edit. Up to v33 they embed their images; v34 is the last copy published to claude.ai. |
 | `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches; `test_v34.py` creators speaking Egyptian Arabic in the Egypt views; `test_pipeline.py` the refresh pipeline, against stand-ins for Apify and Telegram. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
@@ -85,7 +85,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - **Generated blocks, don't hand-edit:**
   - `/*RUMOR_DATA*/…/*END_RUMOR_DATA*/` is written by `build_rumors.py --inject`;
   - `/*REAL_OWN*/…/*END_REAL_OWN*/` and `/*REAL_OWN_X*/…/*END_REAL_OWN_X*/` (V7's own posts, in Egypt and abroad) are written by `data/raw/verify_13oct/build_own_posts.py --inject`;
-  - `/*MEDIA*/…/*END_MEDIA*/` (each real post's image as a data: URI, keyed by the post link) is written by `data/raw/media_13oct/build_media.py --inject`;
+  - `/*MEDIA*/…/*END_MEDIA*/` (each real post's image file, `data/raw/media_13oct/img/…`, keyed by the post link) is written by `data/raw/media_13oct/build_media.py --inject`;
   - `/*REAL_OWN*/`, `/*REAL_OWN_X*/` and `/*REAL_DATA*/…/*END_REAL_DATA*/` (public posts, comments, anonymous authors) are written by `data/raw/real_17oct/build_real.py --inject` since Version 25.
 - **The file has very long lines** (one data line is 137K characters). Edit with exact-match replacements, not by retyping lines. Read with offsets.
 - **Class names:** never reuse `demo`, `real`, `st` or `pill` for new elements; they're badge styles (DECISIONS #69).
@@ -101,13 +101,18 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - Tests find the dashboard relative to the `tests/` folder, so they run from any checkout.
 
 ## Publishing
-- **The private, full version** is a claude.ai artifact owned by Mohanad: https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc (declares the `sample` capability for Ask V7 Pulse).
-  - Only a session with access to that artifact can republish it. Publish to the same URL and omit `capabilities`, so the stored declaration carries forward.
-  - Before editing, copy the current file to `archive/dashboard_versions/V7_Pulse_Dashboard_vN.html` (N = the published version you're replacing).
-- **The public copy** is https://mohanadabouserie.github.io/v7-pulse/, served from `docs/` in this repo.
-  - Steps: run `python3 deploy/build_sites.py dashboard`, run the dashboard tests (also with `DASH_SRC` on `docs/index.html`), then commit and push.
+- **The dashboard is published only as the public site,** https://mohanadabouserie.github.io/v7-pulse/, served from `docs/` in this repo.
+  - Steps: before editing, copy the dashboard to `archive/dashboard_versions/V7_Pulse_Dashboard_vN.html` (N = the version you're replacing); then run `python3 deploy/build_sites.py dashboard`, run the dashboard tests (also with `DASH_SRC` on `docs/index.html`), and commit and push.
   - Pushing changes a public site, so ask the user first.
-  - The build swaps the chat line that points to claude.ai. If that text changes, update the swap in `deploy/build_sites.py`; the build stops if it can't find it.
+- **The claude.ai copy is retired** (DECISIONS #170, 21 Oct 2026): https://claude.ai/artifact/JLUFSZEvjwCY3GVepHc7oc stays as Version 34 and is no longer updated. Nothing has to fit it any more: no 16 MB page limit, no embedded images, no missing doctype. Ask V7 Pulse's Claude path (`window.claude.use('sample')`) only worked there; on the site the chat gives its short built-in answers. Claude answers on the site would need a small server holding an API key (`Ask_V7_Pulse/`, `PROJECT_MEMORY.md` section 8).
+
+## Hosting
+The site must keep working wherever it's hosted (GitHub Pages now; perhaps V7's own domain later). Rules:
+- **`docs/` is the whole site.** `index.html` and `media/` go together; the page needs nothing else from this repo or this machine. Its only outside requests are Google Fonts and the links people click.
+- **Every link inside the site is relative** (`media/<file>.jpg`), so `docs/` can be copied to any web host or folder as it is. Never point the page at `data/…`, a local path (`/Users/…`, `file://`) or `localhost`; `build_sites.py` stops if a `data/raw/media_13oct/img/` path is left in the built page.
+- **The images could move to a CDN or object storage** (S3, Cloudflare R2): upload `docs/media/` and build with `MEDIA_BASE=https://…/ python3 deploy/build_sites.py dashboard`.
+- **Data is built in, not fetched.** Posts, comments and numbers are inside `index.html`; a data refresh means rebuilding and redeploying. A live site that refreshes itself would need the pipeline on a server and the data as a separate file or an API: a later step, not built.
+- **Before a real launch:** remove `<meta name="robots" content="noindex, nofollow">` from the dashboard if it should appear in search engines; it's there because the site is a demo. And check the privacy rules (private people anonymous, DECISIONS #75, #122) still hold for a wider audience: the images of public posts show what their authors posted.
 - **The calculator** is published privately at https://claude.ai/artifact/7W1HvsWL1brdpe7eNxEx4P, with a public copy at https://mohanadabouserie.github.io/v7-pulse-costs/ (its own repo, cloned to `deploy/v7-pulse-costs/`).
   - On a new machine, clone it first: `git clone https://github.com/mohanadabouserie/v7-pulse-costs deploy/v7-pulse-costs`.
   - Before editing, copy it to `archive/costs_versions/V7_Pulse_Costs_vN.html`.
@@ -174,7 +179,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - **Polite fetching:** fetch talabat.com and other sites one request at a time, at least 1 second apart.
 
 ## Known quirks
-- The artifact viewer adds the page skeleton when publishing, so the source HTML has no doctype or viewport. Standalone copies get them from `build_sites.py`.
+- The dashboard has its own doctype and viewport since 21 Oct (DECISIONS #170). `V7_Pulse_Costs.html` still has none (the claude.ai viewer adds it); `build_sites.py costs` adds it for its public copy.
 - X actor (`kaitoeasyapi`):
   - returns at least 20 items a run, padding with filler rows ("From KaitoEasyAPI, a reminder…");
   - its search reaches back years, so check dates.
@@ -217,8 +222,8 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 - One-day Facebook searches pad their results with that day's other posts: only about a quarter are about V7. So a short-caption video is transcribed only when a keyword search over a long window found it (`collect.wide_search`, DECISIONS #164), and the comment fallbacks only take what the cheap scraper was asked about and missed (#165).
 - scrapesmith (cheap Instagram comments) returned nothing for all 89 posts on 20 Oct; `igcomments2` sends those to Apify's own scraper.
 - The Hashtags view drops generic tags by prefix (`GENERIC_RX`: #fyp, #foryou, #viral, #explore and their variants).
-- The images in the page have a budget: `build_media.py` takes V7's own posts first, then the pages abroad, then public posts by views, and stops at `V7_MEDIA_KB` (default 6,000 KB). The artifact limit is 16 MB; `test_v23.py` holds the page under 13 MB.
-- The artifact publish guard:
+- Images: `fetch_media.py` downloads one for every post in the dashboard that has an image link, and `build_media.py` links every downloaded one (no budget since DECISIONS #170; until then 6,000 KB embedded, for the claude.ai limit). `test_v23.py` still holds the page under 13 MB.
+- The artifact publish guard (claude.ai, retired; the escaping is kept and still tested):
   - it takes a page for a code-review page, and refuses it over 512 KB, when an `id=` is followed by more than 2,048 characters with no space (a Facebook link ending in `&id=…` before image data did it);
   - the data builders write that `=` as `\u003d`, and `test_v25.py` checks the page (DECISIONS #124);
   - it also refuses U+FFFD characters, which `normalize.py` strips.

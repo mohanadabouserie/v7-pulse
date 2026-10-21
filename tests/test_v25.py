@@ -35,7 +35,7 @@ async def main():
     trips += re.findall(r'(?i)(?<!-)\bid\s*=\s*["\']?prr-(?:anchor|decisions|stamp)', html)
     check('the publish guard won’t take the page for a code-review page', not trips, trips[:2])
     media = json.loads(re.search(r'/\*MEDIA\*/var MEDIA=(.*?);/\*END_MEDIA\*/', html, re.S).group(1))
-    # Since Version 32 the images have a size budget (build_media.py) and no image key may carry an &id= link, so the escaping is checked
+    # Since Version 32 no image key may carry an &id= link (and since 21 Oct the images are files, not data: URIs), so the escaping is checked
     # on the post links themselves: every image key is a post's link, and the links with &id= read back whole though none is written raw.
     own = ''.join(re.search(r'/\*%s\*/(.*?)/\*END_%s\*/' % (b, b), html, re.S).group(1) for b in ('REAL_OWN', 'REAL_OWN_X'))
     links = {json.loads('"%s"' % u) for u in re.findall(r"url:'([^']*)'", own)} | {u['url'] for u in d['ugc'] if u.get('url')}
