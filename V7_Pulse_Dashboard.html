@@ -743,6 +743,12 @@ button.flag:hover{text-decoration:underline}
 .pgrid.mz>*{margin-bottom:14px}
 .gc{padding:0;gap:0;overflow:hidden;border-radius:16px}
 .pgrid .pc.cm{border-radius:16px}
+.gc-own{display:flex;gap:4px 14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)}
+.gc-own b{font-weight:800;color:var(--ink)}
+.gc-q{display:flex;gap:8px;align-items:center;width:100%;text-align:start;border:0;border-left:2px solid var(--hair-strong);background:var(--surface);border-radius:0 8px 8px 0;padding:6px 8px;cursor:pointer;color:var(--muted);font:inherit;font-size:12px}
+.gc-q img{width:34px;height:34px;object-fit:cover;border-radius:6px;flex:none}
+.gc-q span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.gc-q:hover span{color:var(--ink-2);text-decoration:underline}
 .gc-h{display:flex;align-items:center;gap:10px;padding:12px 14px;min-width:0}
 .gc-av{position:relative;flex:none;width:36px;height:36px;border-radius:50%;background:var(--sunk);color:var(--ink-2);display:grid;place-items:center;font-weight:800;font-size:15px}
 .gc-av .pl{position:absolute;right:-4px;bottom:-4px;width:17px;height:17px;border-radius:5px;font-size:9px;box-shadow:0 0 0 2px var(--paper)}
@@ -849,11 +855,11 @@ button.flag:hover{text-decoration:underline}
     <button type="button" class="nav" data-view="overview"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>Overview</button>
     <div class="side-sec">Conversation</div>
     <button type="button" class="nav" data-view="posts"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 3h10M3 6.5h10M3 10h10M3 13.5h6"/></svg><span id="navPosts">All posts</span></button>
+    <button type="button" class="nav" data-view="owned"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="m6.5 6 3.5 2-3.5 2z"/></svg>Our content</button>
     <button type="button" class="nav" data-view="products"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h4M6.5 2v2.5L5 7v6.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V7L9.5 4.5V2"/><path d="M5 9.5h6"/></svg>Products</button>
     <button type="button" class="nav" data-view="voice"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4h12v7H6l-4 3z"/><path d="M8 6.2v1.6M8 9.2v.1"/></svg>Customer voice</button>
     <button type="button" class="nav" data-view="people"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="5.5" r="2.8"/><path d="M2.8 14c.9-2.8 9.5-2.8 10.4 0"/></svg>People</button>
     <button type="button" class="nav" data-view="hashtags"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2 4.5 14M11.5 2 10 14M2.5 5.5h11M2 10.5h11"/></svg>Hashtags</button>
-    <button type="button" class="nav" data-view="owned"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="m6.5 6 3.5 2-3.5 2z"/></svg>Our content</button>
     <div class="side-sec">To act on</div>
     <button type="button" class="nav" data-view="brief"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="2" width="10" height="12" rx="1.5"/><path d="M5.5 5.5h5M5.5 8h5M5.5 10.5h3"/></svg>Daily brief</button>
     <button type="button" class="nav" data-view="alerts"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2.2 14 13H2z"/><path d="M8 6.8v3M8 11.2v.1"/></svg>Alerts<span class="count" id="alertCount" hidden></span></button>
@@ -1988,7 +1994,7 @@ var GI={
 };
 function gStat(icon,n,word){return '<span class="gs" title="'+fmtN(n)+' '+word+'">'+GI[icon]+compact(n)+'<span class="sr"> '+word+'</span></span>';}
 function gridCard(p){
-  if(p.kind==='comment')return commentCard(p);
+  if(p.kind==='comment')return gridComment(p);
   var a=AUTH[p.a],M=MEDIA[p.url],priv=/ user$/.test(a.name);
   var flag='';
   if(p.needsReply&&!p.replied)flag=CL[p.c].intent==='Sales lead'?'<span class="flag lead">Sales lead · no reply yet</span>':'<span class="flag">No reply from V7 yet</span>';
@@ -1999,6 +2005,7 @@ function gridCard(p){
     st.push(gStat('com',p.comments,'comments'));
     if(p.shares)st.push(gStat('share',p.shares,'shares'));
   }
+  var ownX=p.owned&&p.er!=null?'<div class="gc-own"><span title="Engagement ÷ the account’s followers"><b>'+p.er.toFixed(2)+'%</b> engagement rate</span>'+(p.cpos!=null&&(KIDS[p.id]||[]).length>=5?'<span title="Share of its collected comments that are positive"><b>'+p.cpos+'%</b> positive comments</span>':'')+'</div>':'';
   var tags=p.tags.slice(0,3).map(function(t){return '<button type="button" class="chip tag" dir="ltr" data-act="tag" data-v="'+esc(t)+'">'+esc(t)+'</button>';}).join('')+(p.tags.length>3?'<span class="tg" title="'+esc(p.tags.slice(3).join(' '))+'">+'+(p.tags.length-3)+'</span>':'');
   var sub=[authorKind(a)];if(p.grp)sub.push('in a Facebook group');if(p.sr)sub.push('in '+p.sr);
   var r=M&&M.r?Math.min(Math.max(M.r,.8),1.91):1;
@@ -2009,20 +2016,37 @@ function gridCard(p){
       '<div class="gc-s">'+esc(sub.join(' · '))+' · <span class="when">'+fmtD(p.d)+', '+hhmm(p)+'</span></div></div></div>'+
     (M?'<button type="button" class="gc-media" style="aspect-ratio:'+r+'" data-act="postview" data-v="'+p.id+'" aria-label="View the post"><img src="'+M.s+'" alt="" loading="lazy" decoding="async">'+(M.k==='video'?'<span class="pc-play" aria-hidden="true"></span>':M.k==='carousel'?'<span class="pc-multi" aria-hidden="true"></span>':'')+'</button>':'')+
     '<div class="gc-b"><p class="pc-t" dir="auto">'+esc(p.text)+'</p>'+
-      '<div class="gc-tags"><span class="pill '+p.s+'">'+SENT[p.s]+'</span>'+[CL[p.c].intent,CL[p.c].topic].filter(function(x,i,a){return x&&a.indexOf(x)===i;}).map(function(x){return '<span class="tg">'+esc(x)+'</span>';}).join('')+(p.prods.length?prodChips(p):'')+campFlag(p)+flag+tags+'</div>'+
-      '<div class="gc-m">'+[place(p),LANG[p.lang]||p.lang].filter(Boolean).map(esc).join(' · ')+'</div></div>'+
+      '<div class="gc-tags">'+(p.owned?'':'<span class="pill '+p.s+'">'+SENT[p.s]+'</span>'+[CL[p.c].intent,CL[p.c].topic].filter(function(x,i,a){return x&&a.indexOf(x)===i;}).map(function(x){return '<span class="tg">'+esc(x)+'</span>';}).join(''))+(p.prods.length?prodChips(p):'')+campFlag(p)+flag+tags+'</div>'+   /* V7's own posts carry no sentiment or type of their own */
+      (p.owned?'':'<div class="gc-m">'+[place(p),LANG[p.lang]||p.lang].filter(Boolean).map(esc).join(' · ')+'</div>')+ownX+'</div>'+
     '<div class="pc-f">'+st.join('')+'<span class="gc-act"><button type="button" class="linkbtn pv-open" data-act="postview" data-v="'+p.id+'">View post</button><a href="'+esc(p.url)+'" target="_blank" rel="noopener">Open ↗</a></span></div>'+
   '</article>';
 }
+/* A comment in the grid (Version 38): who, on whose post (with that post's picture), the comment, tags, likes and replies */
+function gridComment(k){
+  var a=AUTH[k.a],par=PIDX[k.parent],pa=AUTH[par.a],PM=MEDIA[par.url],priv=/ user$/.test(a.name);
+  var flag=k.needsReply?(!k.replied?(CL[k.c].intent==='Sales lead'?'<span class="flag lead">Sales lead · no reply yet</span>':'<span class="flag">No reply from V7 yet</span>'):'<span class="tg">V7 replied</span>'):'';
+  var st=[gStat('heart',k.likes,k.likes===1?'like':'likes')];if(k.comments)st.push(gStat('com',k.comments,k.comments===1?'reply':'replies'));
+  return '<article class="pc gc gcm">'+
+    '<div class="gc-h"><span class="gc-av" aria-hidden="true">'+(priv?'':esc(Array.from(a.name.trim())[0]||'').toUpperCase())+plBadge(k.pl)+'</span>'+
+      '<div class="gc-who"><div class="gc-n"><button type="button" class="au" data-act="person" data-v="'+a.id+'" dir="auto">'+esc(a.name)+'</button>'+(k.owned?'<span class="tg">V7 reply</span>':'')+'</div>'+
+      '<div class="gc-s">On '+(par.owned?'V7’s post':esc(pa.name)+'’s post')+' · <span class="when">'+whenTxt(k)+'</span></div></div></div>'+
+    '<div class="gc-b"><p class="pc-t" dir="auto">'+esc(k.text)+'</p>'+
+      '<button type="button" class="gc-q" data-act="postview" data-v="'+par.id+'" title="View the post">'+(PM?'<img src="'+PM.s+'" alt="" loading="lazy" decoding="async">':'')+'<span dir="auto">'+esc(par.text)+'</span></button>'+
+      '<div class="gc-tags"><span class="pill '+k.s+'">'+SENT[k.s]+'</span>'+[CL[k.c].intent,CL[k.c].topic].filter(function(x,i,l){return x&&l.indexOf(x)===i;}).map(function(x){return '<span class="tg">'+esc(x)+'</span>';}).join('')+(k.prods.length?prodChips(k):'')+flag+'</div>'+
+      '<div class="gc-m">'+[place(k),LANG[k.lang]||k.lang].filter(Boolean).map(esc).join(' · ')+'</div></div>'+
+    '<div class="pc-f">'+st.join('')+'<span class="gc-act"><button type="button" class="linkbtn pv-open" data-act="postview" data-v="'+par.id+'">View post</button><a href="'+esc(k.url)+'" target="_blank" rel="noopener">Open ↗</a></span></div>'+
+  '</article>';
+}
 /* Masonry for .pgrid: each card spans as many 4 px rows as it is tall, so cards stack without gaps and keep reading order left to right */
-var MZ_RO=null;
-function masonry(grid){
-  if(!grid)return;
-  var cards=[].slice.call(grid.children);
+var MZ_RO=[];
+function masonry(){
+  MZ_RO.forEach(function(o){o.disconnect();});MZ_RO=[];
   function fit(c){c.style.gridRowEnd='span '+Math.max(1,Math.ceil((c.getBoundingClientRect().height+14)/4));}
-  cards.forEach(fit);grid.classList.add('mz');
-  if(MZ_RO)MZ_RO.disconnect();
-  if(window.ResizeObserver){MZ_RO=new ResizeObserver(function(es){es.forEach(function(e){fit(e.target);});});cards.forEach(function(c){MZ_RO.observe(c);});}
+  document.querySelectorAll('#content .pgrid').forEach(function(grid){
+    var cards=[].slice.call(grid.children);
+    cards.forEach(fit);grid.classList.add('mz');
+    if(window.ResizeObserver){var o=new ResizeObserver(function(es){es.forEach(function(e){fit(e.target);});});cards.forEach(function(c){o.observe(c);});MZ_RO.push(o);}
+  });
 }
 function sortTable(id,cols,rows,o){
   var st=state.sorts[id]||(state.sorts[id]={k:o.sort,dir:-1});
@@ -2295,7 +2319,7 @@ function postsExplorer(list,key,abroad){
   h+='<div class="resbar"><span title="Totals for these '+NP()+' since they went up, including views and engagement they got after this period"><b>'+fmtN(L.length)+'</b> '+N1(L.length)+' · net sentiment '+signed(s.net)+' · '+(s.views&&!cm?compact(s.views)+' views and ':'')+compact(s.eng)+(cm?' likes and replies':' engagement')+' so far</span><span style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn" data-act="pfreset" data-k="'+key+'">Clear these filters</button><button type="button" class="btn" data-act="copycsv" data-k="'+key+'">Copy for Excel</button></span></div>';
   var grid=key==='pf';
   h+=shown.length?'<div class="plist'+(grid?' pgrid':'')+'">'+shown.map(grid?gridCard:postCard).join('')+'</div>':'<div class="empty">No '+NP()+' match. Clear a filter or choose a longer date range.</div>';
-  if(grid)HOOKS.push(function(){masonry(document.querySelector('#content .pgrid'));});
+  if(grid)HOOKS.push(masonry);
   if(L.length>per||page>1)h+='<div class="morebar">'+(L.length>per?'<button type="button" class="btn" data-act="pfmore" data-k="'+key+'">Show 25 more ('+fmtN(L.length-per)+' left)</button>':'')+(page>1?'<button type="button" class="btn" data-act="pfless" data-k="'+key+'">Show less</button>':'')+'</div>';
   HOOKS.push(function(){bindExplorer(key);});
   return h;
@@ -2528,18 +2552,18 @@ function vOwned(c){
   h+='<div class="g"><section class="panel s4"><div class="ph"><h2>Best formats'+info('Average engagement rate by platform and format, for V7’s own posts in this period. Posts with views 20+ times the followers, most likely promoted, are left out.')+'</h2></div>'+bars(frows.map(function(r){return {l:r.l,v:r.v,vl:r.v.toFixed(1)+'%',title:r.n+' posts'};}))+'</section>'+
     '<section class="panel s4"><div class="ph"><h2>What we post vs what people discuss'+info('Each product’s share of V7’s own posts compared with its share of audience posts. A big gap means a product people talk about more than V7 does, or the reverse.')+'</h2></div>'+pairBars(gapRows,'Share of our posts','Share of audience posts')+'</section>'+
     '<section class="panel s4"><div class="ph"><h2>When people comment'+info('The comments on V7’s posts in this period, by day and 3-hour window, Cairo time. Posting just before the busiest window gives a post the most people.')+'</h2><span class="hint">from '+fmtN(KT.length)+' comments</span></div>'+(KT.length?hmH+'<p style="font-size:12.5px;color:var(--ink-2);margin:10px 0 0">Busiest: <b>'+WDN[bestC[0]]+' '+String(bestC[1]*3).padStart(2,'0')+':00–'+String(bestC[1]*3+3).padStart(2,'0')+':00</b>. Post just before this window.</p>':'<div class="empty">No comments in this period.</div>')+'</section></div>';
-  h+='<section class="panel"><div class="ph"><h2>Our posts</h2><span class="hint">V7 Egypt accounts · '+own.length+' posts'+' · counts as of 17 Oct'+' · pages abroad are under Outside Egypt</span></div>'+sortTable('own',[
-    {k:'d',l:'Date',f:function(r){return fmtD(r.d);},sv:function(r){return r.t;}},
-    {k:'pl',l:'Platform',f:function(r){return plBadge(r.pl)+' '+esc(r.fmt);},sv:function(r){return r.pl;}},
-    {k:'text',l:'Caption',f:function(r){var M=MEDIA[r.url];return '<button type="button" class="tcap" data-act="postview" data-v="'+r.id+'" title="View the post">'+(M?'<img class="tthumb" src="'+M.s+'" alt="" loading="lazy" decoding="async">':'')+'<span dir="auto" class="tcap-t">'+esc(r.text)+'</span></button>';}},
-    {k:'pr',l:'Product',f:function(r){return r.prods.map(function(x){return '<span class="tg">'+esc(prodLabel(x))+'</span>';}).join(' ');},sv:function(r){return r.prods[0];}},
-    {k:'views',l:'Views',r:1,f:function(r){return r.views?compact(r.views):'—';}},
-    {k:'likes',l:'Likes',r:1,f:function(r){return compact(r.likes);}},
-    {k:'comments',l:'Comments',r:1,f:function(r){return compact(r.comments);}},
-    {k:'er',l:'Eng. rate',r:1,f:function(r){return r.er.toFixed(2)+'%';}},
-    {k:'cpos',l:'Positive comments',r:1,f:function(r){return r.cpos==null||(KIDS[r.id]||[]).length<5?'—':r.cpos+'%';},sv:function(r){return r.cpos==null||(KIDS[r.id]||[]).length<5?-1:r.cpos;}},
-    {k:'url',l:'',nosort:1,f:function(r){return '<a href="'+esc(r.url)+'" target="_blank" rel="noopener" style="white-space:nowrap">Open ↗</a>';}}
-  ],own,{sort:'d',limit:25})+'</section>';
+  /* Our posts and Top comments as grids, like Posts & comments (Version 38) */
+  var OS={new:SORTERS.new,eng:byEng,views:SORTERS.views,er:function(a,b){return b.er-a.er;}},os=OS[state.ownSort]?state.ownSort:'new';
+  var ownL=own.slice().sort(OS[os]),ownShow=state.ownAll?ownL:ownL.slice(0,12);
+  h+='<section class="panel"><div class="ph"><h2>Our posts</h2><span class="hint">V7 Egypt accounts · '+own.length+' posts'+' · counts as of 17 Oct'+' · pages abroad are under Outside Egypt</span></div>'+
+    '<div class="seg" role="group" aria-label="Sort our posts" style="margin-bottom:12px">'+[['new','Newest'],['eng','Most engagement'],['views','Most views'],['er','Engagement rate']].map(function(x){return '<button type="button" data-act="ownsort" data-v="'+x[0]+'" aria-pressed="'+(x[0]===os)+'">'+x[1]+'</button>';}).join('')+'</div>'+
+    (ownShow.length?'<div class="pgrid">'+ownShow.map(gridCard).join('')+'</div>':'<div class="empty">No posts from V7’s accounts in this period.</div>')+
+    (ownL.length>12?'<div class="morebar"><button type="button" class="btn" data-act="ownall">'+(state.ownAll?'Show fewer':'Show all '+fmtN(ownL.length)+' posts')+'</button></div>':'')+'</section>';
+  var topK=K.slice().sort(function(a,b){return (b.eng-a.eng)||(b.t-a.t);}),topShow=state.ownCmAll?topK.slice(0,60):topK.slice(0,12);
+  h+='<section class="panel"><div class="ph"><h2>Top comments'+info('Public comments on V7 Egypt’s posts in this period, the most engagement first: likes plus replies. V7’s own replies are left out.')+'</h2><span class="hint">'+fmtN(K.length)+' comments on our posts · most engagement first</span></div>'+
+    (topShow.length?'<div class="pgrid">'+topShow.map(gridComment).join('')+'</div>':'<div class="empty">No comments on V7’s posts in this period.</div>')+
+    (topK.length>12?'<div class="morebar"><button type="button" class="btn" data-act="owncmall">'+(state.ownCmAll?'Show fewer':'Show the top '+fmtN(Math.min(60,topK.length)))+'</button>'+(state.ownCmAll?'<button type="button" class="btn" data-act="cmposts" data-k="" data-v="">Read them all →</button>':'')+'</div>':'')+'</section>';
+  HOOKS.push(masonry);
   content.innerHTML=h;
 }
 
@@ -4547,6 +4571,9 @@ function onAct(e){
     case 'sort':var st=state.sorts[k]||(state.sorts[k]={k:v,dir:-1});if(st.k===v)st.dir*=-1;else{st.k=v;st.dir=-1;}render();break;
     case 'more':state.limits[k]=1e9;render();break;
     case 'less':delete state.limits[k];render();keepInView(content.querySelector('[data-tbl="'+k+'"]'));break;
+    case 'ownsort':state.ownSort=v;render();break;
+    case 'ownall':state.ownAll=!state.ownAll;render();break;
+    case 'owncmall':state.ownCmAll=!state.ownCmAll;render();break;
     case 'pfless':state[(k||'pf')+'Page']=1;render();keepInView(content.querySelector('.resbar'));break;
     case 'metric':state.metric=v;render();break;
     case 'comp':state.comp=v==='1';render();break;
@@ -4609,6 +4636,7 @@ document.getElementById('drBody').addEventListener('keydown',rowKey);
 var VIEWS={brief:vBrief,radar:vRadar,overview:vOverview,posts:vPosts,products:vProducts,voice:vVoice,people:vPeople,hashtags:vHashtags,owned:vOwned,alerts:vAlerts,events:vEvents,abroad:vAbroad,stores:vStores,restaurants:vRestaurants,trends:vTrends};
 function render(){
   hideTip();HOOKS=[];
+  if(state.view==='overview'||state.view==='posts')state.source='earned';   /* public posts only here; V7's own are on Our content (Version 38) */
   var c=ctxGet();
   document.querySelectorAll('.side .nav').forEach(function(b){if(b.getAttribute('data-view')===state.view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
   var allLbl='Posts & comments';   /* one name whatever the Posts / Comments / Both switch says (Version 37) */
@@ -4633,7 +4661,8 @@ function render(){
   document.getElementById('fToggle').hidden=document.getElementById('filtersRow').hidden;
   document.getElementById('rangeWrap').hidden=V==='alerts';
   platChips.hidden=V==='radar'||storeHist;prodBtn.parentNode.hidden=V==='radar';
-  document.getElementById('srcSeg').hidden=document.getElementById('kindSeg').hidden=V==='alerts'||V==='radar'||V==='owned'||storeHist;
+  document.getElementById('kindSeg').hidden=V==='alerts'||V==='radar'||V==='owned'||storeHist;
+  document.getElementById('srcSeg').hidden=document.getElementById('kindSeg').hidden||V==='overview'||V==='posts';
   /* Every view is real (Version 25). The badge says when each source was checked. */
   badge.textContent='Real data';badge.classList.add('isreal');badge.classList.remove('mixed');
   badge.title=market?(V==='stores'?'Online stores checked 4–5 Oct 2026, with daily checks since.':V==='restaurants'?'Talabat menus checked 5 Oct 2026.':'Google Trends, checked 5 Oct 2026.'):

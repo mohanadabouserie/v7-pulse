@@ -39,7 +39,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 | `docs/` | The **public site**: `index.html` (the dashboard with its image links pointed at `media/`) and `media/` (the post images), built by `deploy/build_sites.py`. GitHub Pages serves this folder. It's the whole site: see "Hosting". Never edit it by hand. |
 | `deploy/build_sites.py` | `dashboard`: copies the dashboard to `docs/index.html` and the images it links to into `docs/media/`. `costs`: the calculator copy in `deploy/v7-pulse-costs/` (a separate clone of `mohanadabouserie/v7-pulse-costs`, not in this repo). |
 | `archive/dashboard_versions/`, `archive/costs_versions/` | Earlier versions, saved before the next edit. Up to v33 they embed their images; v34 is the last copy published to claude.ai. |
-| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches; `test_v34.py` creators speaking Egyptian Arabic in the Egypt views; `test_v37.py` the Posts & comments grid, name, default sort and filters; `test_pipeline.py` the refresh pipeline, against stand-ins for Apify and Telegram. |
+| `tests/` | Playwright checks, one file per version that changed something (`test_v5.py` … `test_v24.py`), plus `test_ai.py`, `test_market.py`, `test_reg5.py`, `test_costs.py`, `test_noon_llm.py`, `test_bot.py` (with `fake_claude.py`, a stand-in for Claude Code). `test_v25.py` checks the real data, the privacy rules and that no demo is left outside Market; `test_v26.py` the wider search and the YouTube comments; `test_v27.py` "likes hidden"; `test_v28.py` the reels' speech and follower counts; `test_v29.py` the wider Instagram search, the comments under public Instagram posts and the pictures read; `test_v30.py` the same for Facebook; `test_v31.py` Facebook reels and the five post searches; `test_v34.py` creators speaking Egyptian Arabic in the Egypt views; `test_v37.py` the Posts & comments grid, name, default sort and filters; `test_v38.py` Our content's grids and the switch removed from Overview and Posts & comments; `test_pipeline.py` the refresh pipeline, against stand-ins for Apify and Telegram. |
 | `data/collect_store_history.py`, `data/noon_llm.py` | The daily online-store check (Amazon.eg, Carrefour, Noon). Noon is read by Claude from the page. Not scheduled. |
 | `data/store_history/` | One JSON snapshot per real check (from 4 Oct 2026). |
 | `data/raw/` | Raw data from every test and collection, with the scripts that made it. The map is in `PROJECT_MEMORY.md` section 10. |
@@ -82,6 +82,8 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - Not shown, because they need V7's own account insights: profile visits and follower details.
   - The header badge (`#dataBadge`) says "Real data" on every view, with the check date in its tooltip. Keep it honest when you add a view.
   - Views and engagement count on the day the post went up (DECISIONS #114). No estimated reach: views, otherwise engagement (#115).
+  - Engagement is likes + comments + shares for a post, likes + replies for a comment (`p.eng`); views are never part of it (DECISIONS #176).
+  - Overview and Posts & comments are public posts only (`state.source` forced to `earned`); V7's own content is on Our content (DECISIONS #175).
 - **Generated blocks, don't hand-edit:**
   - `/*RUMOR_DATA*/…/*END_RUMOR_DATA*/` is written by `build_rumors.py --inject`;
   - `/*REAL_OWN*/…/*END_REAL_OWN*/` and `/*REAL_OWN_X*/…/*END_REAL_OWN_X*/` (V7's own posts, in Egypt and abroad) are written by `data/raw/verify_13oct/build_own_posts.py --inject`;
@@ -92,7 +94,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
 
 ## Running the tests
 - **All dashboard suites** (each prints `FAIL 0` when clean):
-  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_v27 test_v28 test_v29 test_v30 test_v31 test_v34 test_v37 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
+  `for t in test_v5 test_v8 test_v11 test_v13 test_v14 test_v15 test_v16 test_v18 test_v20 test_v21 test_v22 test_v23 test_v24 test_v25 test_v26 test_v27 test_v28 test_v29 test_v30 test_v31 test_v34 test_v37 test_v38 test_ai test_market test_reg5; do python3 tests/$t.py | tail -1; done`
 - **The public copy:** prefix with `DASH_SRC=file://$PWD/docs/index.html`.
 - **The calculator:** `python3 tests/test_costs.py`. Prefix with `COSTS_SRC=…` for its hosted copy.
 - **The Noon reader:** `data/.venv/bin/python tests/test_noon_llm.py`. It uses a local stand-in for the API, so it needs no key and costs nothing.

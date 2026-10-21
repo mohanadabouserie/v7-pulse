@@ -58,11 +58,11 @@ async def main():
         await pg.fill('#dFrom', '2026-04-20'); await pg.fill('#dTo', '2026-10-16')
         await J("document.getElementById('dateForm').requestSubmit()"); await pg.wait_for_timeout(900)
         await J("document.querySelector('.side .nav[data-view=owned]').click()"); await pg.wait_for_timeout(900)
-        await J("(()=>{const b=[...document.querySelectorAll('#content button')].find(x=>/^Show all/.test(x.textContent)&&x.closest('.panel')&&x.closest('.panel').querySelector('h2')&&x.closest('.panel').querySelector('h2').textContent==='Our posts');if(b)b.click();})()")
+        await J("(()=>{const b=document.querySelector('[data-act=ownall]');if(b)b.click();})()")   # Version 38: Our posts is a grid with Show all
         await pg.wait_for_timeout(600)
         found, pv = False, ''
         for k in range(6):    # V7 posted the same video on Instagram and YouTube: open the rows with its caption until the YouTube one
-            ok = await J(f"(()=>{{const r=[...document.querySelectorAll('[data-tbl] tbody tr')].filter(t=>t.textContent.includes('رفعوا علم'))[{k}];if(!r)return false;r.querySelector('[data-act=postview]').click();return true;}})()")
+            ok = await J(f"(()=>{{const r=[...document.querySelectorAll('#content .gc')].filter(t=>t.textContent.includes('رفعوا علم'))[{k}];if(!r)return false;r.querySelector('[data-act=postview]').click();return true;}})()")
             if not ok: break
             await pg.wait_for_timeout(700)
             pv = await J("document.getElementById('drBody')?document.getElementById('drBody').innerText:''")

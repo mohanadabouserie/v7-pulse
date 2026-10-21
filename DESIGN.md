@@ -84,7 +84,7 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
 ## 6. Layout and order
 - **Navigation:**
   - Overview;
-  - **Conversation**: All posts, Products, Customer voice, People, Facebook groups, Hashtags & words, Our content;
+  - **Conversation**: Posts & comments, Our content, Products, Customer voice, People, Hashtags & words (Version 38: Our content right under Posts & comments);
   - **To act on**: Alerts, Rumors & attacks, Events;
   - **Market**: Online stores, Restaurants, Search trends;
   - **International**: Outside Egypt.
@@ -147,7 +147,7 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - On phones the cards are a row to swipe, so the KPI numbers still start in the first screen.
 - **Posts show their image:**
   - On list cards: a 112 px square (84 px on phones), with a play mark for videos and an album mark for carousels.
-  - On All posts (Version 36, `gridCard`): cards in a masonry grid (`.pgrid`, at least 260 px wide, one column on phones). Header: a round initial (none for private people) with the platform badge on its corner, the name, then kind and date. The image runs edge to edge at its own shape, held between 4:5 and 1.91:1. Then the caption (4 lines), tags (sentiment pill first, type and topic, flavors, flags, up to 3 hashtags), place and language, and a footer of icon counts (views, likes, comments, shares) with View post and Open. 16 px radius, no shadow. Comments keep their card.
+  - On All posts (Version 36, `gridCard`): cards in a masonry grid (`.pgrid`, at least 260 px wide, one column on phones). Header: a round initial (none for private people) with the platform badge on its corner, the name, then kind and date. The image runs edge to edge at its own shape, held between 4:5 and 1.91:1. Then the caption (4 lines), tags (sentiment pill first, type and topic, flavors, flags, up to 3 hashtags), place and language, and a footer of icon counts (views, likes, comments, shares) with View post and Open. 16 px radius, no shadow. Comments get a grid comment card (`gridComment`, Version 38): who, “On V7’s post” or whose post and when, the comment, the post it's under (its picture and first line, opening it), tags, likes and replies. V7's own posts (Our content, Our posts) show their engagement rate and positive-comment share in place of sentiment and type.
   - Card text stops at 6 lines; the full text is in the post view.
   - Posts never get an invented image: a post without a collected cover shows its text only.
   - Images are JPEG files the page links to (`data/raw/media_13oct/img/`, copied to `docs/media/`; DECISIONS #170): 360 px, quality 55 for the 13 Oct set; 300 px, quality 52 from 17 Oct; 640 px, quality 72 from 22 Oct (DECISIONS #172).

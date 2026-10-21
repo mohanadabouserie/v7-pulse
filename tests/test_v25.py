@@ -75,7 +75,8 @@ async def main():
         await J("document.querySelector('#rangeSeg [data-r=\"90\"]').click()"); await pg.wait_for_timeout(800)
         pv = ''
         for k in range(8):   # V7 answers on some posts and not others: open V7's posts with comments until one shows a reply
-            ok = await J(f"(()=>{{const r=[...document.querySelectorAll('[data-tbl] tbody tr')].filter(t=>+((t.children[6]||{{}}).textContent||'0').replace(/[^0-9]/g,'')>5)[{k}];if(!r)return false;r.querySelector('[data-act=postview]').click();return true;}})()")
+            if k == 0: await J("(()=>{const b=document.querySelector('[data-act=ownall]');if(b&&!/fewer/.test(b.textContent))b.click();})()"); await pg.wait_for_timeout(600)   # Version 38: Our posts is a grid
+            ok = await J(f"(()=>{{const r=[...document.querySelectorAll('#content .gc')].filter(t=>!t.classList.contains('gcm')&&+(([...t.querySelectorAll('.gs')].find(x=>/ comments$/.test(x.title))||{{title:'0'}}).title.replace(/[^0-9]/g,''))>5)[{k}];if(!r)return false;r.querySelector('[data-act=postview]').click();return true;}})()")
             if not ok: break
             await pg.wait_for_timeout(600)
             await J("(()=>{const b=document.querySelector('#drBody [data-act=postall]');if(b)b.click();})()"); await pg.wait_for_timeout(600)

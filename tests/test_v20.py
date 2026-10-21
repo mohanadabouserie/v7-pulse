@@ -57,8 +57,8 @@ async def main():
         await nav('owned')
         otxt=await J("document.getElementById('content').innerText")
         check('no follower details or profile visits; the heatmap is when people comment', 'Who follows us' not in otxt and 'Profile visits' not in otxt and 'When people comment' in otxt)   # Version 25: real data everywhere
-        tt=await J("[...document.querySelectorAll('table.t tbody tr')].filter(r=>r.textContent.includes('Summer of Colors')||r.textContent.includes('11M')).map(r=>r.textContent)")
-        check('V7’s real TikTok videos are in Our posts', await J("[...document.querySelectorAll('#content table.t tbody tr')].filter(r=>r.children[1].textContent.trim().startsWith('tt')).length")>=1)   # Version 25: real data everywhere
+        await J("(()=>{const b=document.querySelector('[data-act=ownall]');if(b)b.click();})()"); await pg.wait_for_timeout(600)   # Version 38: Our posts is a grid
+        check('V7’s real TikTok videos are in Our posts', await J("document.querySelectorAll('#content .gc .gc-av .pl.tt').length")>=1)   # Version 25: real data everywhere
         # alerts: thresholds for real volumes
         await nav('alerts')
         rules=await J("[...document.querySelectorAll('.rule')].map(r=>[r.querySelector('span').textContent,r.querySelector('.switch').getAttribute('aria-checked')])")

@@ -26,7 +26,8 @@ async def main():
         check('180 days: every V7 Egypt post is real, counts as of 17 Oct (Instagram included, from 7 May)', m and 120<=int(m.group(1))<=140 and 'counts as of 17 Oct' in hint and 'demo' not in hint, hint)   # Version 25
         # the V Lemon relaunch week: the real reels lead
         await span('2026-05-19','2026-05-25')
-        top=await J("[..."+panel('Our posts')+".querySelectorAll('tbody tr')].map(r=>[r.children[2].textContent.trim().slice(0,40),r.children[4].textContent.trim()])")
+        await J("(()=>{const b=document.querySelector('[data-act=ownsort][data-v=views]');if(b)b.click();})()"); await pg.wait_for_timeout(600)   # Version 38: Our posts is a grid
+        top=await J("[..."+panel('Our posts')+".querySelectorAll('.pgrid > .gc')].map(c=>[c.querySelector('.pc-t').textContent.trim().slice(0,40),(c.querySelector('.gs[title$=\" views\"]')||{textContent:''}).textContent.replace(' views','').trim()])")
         check('19–25 May: the real V Lemon videos, 11.8M views on Facebook among them', any('V Lemon' in t[0] and t[1]=='12M' for t in top), top[:5])
         # events
         await nav('events')

@@ -39,12 +39,12 @@ async def main():
         check('Our content is real data', badge=='Real data', badge)   # Version 25: real data everywhere
         fol=await J("[...document.querySelectorAll('#content .tiles.seven a.tile')].map(t=>t.querySelector('.k-v').textContent+' '+t.querySelector('p').textContent)")
         check('followers are the 13 Oct counts (80K, 39K, 37K, 2.5K)', [f.split(' ')[0] for f in fol]==['80K','39K','37K','2.5K'] and all('13 Oct' in f for f in fol), fol)   # Version 25: real data everywhere
-        rows=await J(panel('Our posts')+".querySelectorAll('tbody tr').length")
-        real=await J(panel('Our posts')+".querySelectorAll('tbody tr .real').length")
+        rows=await J(panel('Our posts')+".querySelectorAll('.pgrid > .gc').length")   # Version 38: a grid of cards (12 shown, Show all for the rest)
         hint=await J(panel('Our posts')+".querySelector('.hint').textContent")
         check('the last 30 days: V7’s posts, all real, counts as of 17 Oct', rows>=10 and 'counts as of 17 Oct' in hint, (rows,hint))   # Version 25: real data everywhere
-        small=await J(panel('Our posts')+".querySelectorAll('tbody tr').length&&[..."+panel('Our posts')+".querySelectorAll('tbody tr')].filter(r=>+r.children[6].textContent.replace(/[^0-9]/g,'')<5).map(r=>r.children[8].textContent.trim())")
-        check('no positive-comment share on posts with fewer than 5 comments', small and all(x=='—' for x in small), small)
+        await J("(()=>{const b=document.querySelector('[data-act=ownall]');if(b)b.click();})()"); await pg.wait_for_timeout(600)
+        small=await J("[..."+panel('Our posts')+".querySelectorAll('.pgrid > .gc')].map(c=>[+(c.querySelector('.gs[title$=\" comments\"]')||{title:'0'}).title.replace(/[^0-9]/g,''),(c.querySelector('.gc-own')||{textContent:''}).textContent])")
+        check('no positive-comment share on posts with fewer than 5 comments', small and all('positive comments' not in t for n,t in small if n<5) and all('engagement rate' in t for n,t in small), small[:4])
         await click('#rangeSeg [data-r="90"]',700)
         hint90=await J(panel('Our posts')+".querySelector('.hint').textContent")
         check('90 days of V7’s posts are all real', 'counts as of 17 Oct' in hint90 and 'demo' not in hint90, hint90)   # Version 25: real data everywhere

@@ -44,9 +44,9 @@ async def main():
         await click('#drClose',300)
         # V7's real posts show their images; the post view shows the post and its comments
         await nav('owned')
-        th=await J("document.querySelectorAll('.tcap .tthumb').length")
+        th=await J(panel('Our posts')+".querySelectorAll('.gc-media img').length")   # Version 38: Our posts is a grid of cards
         check('Our posts shows each real post’s image', th>=5, th)
-        await J("[...document.querySelectorAll('.tcap')].find(b=>b.textContent.includes('V Orange is here 🍊')).click()"); await pg.wait_for_timeout(700)
+        await J("[...document.querySelectorAll('#content .gc')].find(c=>c.querySelector('.pc-t').textContent.includes('V Orange is here 🍊')).querySelector('[data-act=postview]').click()"); await pg.wait_for_timeout(700)
         pv=await J("[(document.querySelector('#drBody .pv-media')||{}).offsetHeight>150,document.getElementById('drMeta').textContent,document.querySelectorAll('#drBody .pv-c').length,document.querySelectorAll('#drBody .pv-r').length,document.getElementById('drBody').innerText]")
         check('the real V Orange post opens with its image', pv[0] and pv[1].startswith('V7 post'), pv[1])   # Version 25: real data everywhere: no “Real post” tag, everything is real
         check('its comments show under it, with V7’s replies', pv[2]>=5 and pv[3]>=1, (pv[2],pv[3]))
@@ -101,7 +101,7 @@ async def main():
             for v in ('overview','brief','alerts','owned'):
                 await q.evaluate(f"document.querySelector('.side .nav[data-view={v}]').click()"); await q.wait_for_timeout(500)
                 w.append(await q.evaluate("Math.max(document.documentElement.scrollWidth,document.body.scrollWidth)"))
-            await q.evaluate("document.querySelector('.tcap').click()"); await q.wait_for_timeout(500)
+            await q.evaluate("document.querySelector('#content .gc [data-act=postview]').click()"); await q.wait_for_timeout(500)   # Version 38: Our posts is a grid
             dw=await q.evaluate("(()=>{const b=document.getElementById('drBody');return b.scrollWidth<=b.clientWidth+1})()")
             check(f'[390 {cs}] nothing scrolls sideways, the post view fits', max(w)<=390 and dw, w)
             await q.close()

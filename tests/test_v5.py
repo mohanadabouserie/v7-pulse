@@ -22,7 +22,9 @@ async def main():
         await nav('radar'); v=await J(vis); check('radar uses real posts across all dates, so the filter row is hidden', not v['row'], v)
         await nav('owned'); v=await J(vis); check('owned hides src/kind', v['row'] and not v['src'] and not v['kind'] and v['pl'], v)
         await nav('events'); v=await J(vis); check('events hides filter row', not v['row'], v)
-        await nav('overview'); v=await J(vis); check('overview shows all filters', all(v.values()), v)
+        await nav('overview'); v=await J(vis); check('overview shows its filters, without the UGC/BGC switch (Version 38: public posts only)', v['row'] and v['range'] and v['kind'] and v['pl'] and not v['src'], v)
+        await nav('products'); v=await J(vis); check('products keeps the UGC/BGC switch', v['src'], v)
+        await nav('overview')
         # --- overview KPIs: no Accounts posting
         labels = await J("[...document.querySelectorAll('.kpi .k-l')].map(e=>e.textContent)")
         check('overview has no Accounts posting', not any('Accounts' in l for l in labels), labels)
@@ -99,10 +101,10 @@ async def main():
         check('explorer default sort is most engagement (Version 37)', sortv=='eng', sortv)
         await click('[data-act=pfreset][data-k=pf]')
         # --- BGC + comments = V7 replies
-        await click('#srcSeg [data-src=owned]'); await click('#kindSeg [data-kind=comments]'); await nav('posts')
-        tags = await J("[...document.querySelectorAll('.plist .pc')].slice(0,5).map(c=>c.querySelector('.tg')?c.querySelector('.tg').textContent:'')")
-        check('BGC comments are V7 replies', all(t=='V7 reply' for t in tags) and len(tags)>0, tags)
-        await click('#srcSeg [data-src=earned]'); await click('#kindSeg [data-kind=posts]')
+        # --- Version 38: BGC chosen on another page doesn't reach Posts & comments, which shows public posts only
+        await nav('products'); await click('#srcSeg [data-src=owned]'); await nav('posts')
+        src = await J("[document.getElementById('srcSeg').hidden,document.querySelector('#srcSeg [aria-pressed=true]').dataset.src,[...document.querySelectorAll('.plist .pc')].filter(c=>c.textContent.includes('V7 reply')).length]")
+        check('Posts & comments has no BGC switch and shows public posts only', src==[True,'earned',0], src)
         # --- owned: comments on our posts -> explorer
         await nav('owned')
         await click('[data-act=cmposts][data-k=reply]')

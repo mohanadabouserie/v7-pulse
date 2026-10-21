@@ -1216,3 +1216,15 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - All 25 dashboard suites pass on the dashboard and on `docs/index.html`. **Published** on the public site at the user's request ("yes push once the tests pass", 22 Oct).
 - **Files:** `V7_Pulse_Dashboard.html` (Version 36 saved in `archive/dashboard_versions/`), `tests/test_v5.py`, new `tests/test_v37.py`, `docs/index.html`, the notes.
 
+### Version 38: BGC moves to Our content, with Our posts and Top comments as grids (22 Oct 2026)
+- **Why:** Mahmoud: "remove the option of bgc in the overview page and in the posts and comments page and I want to instead have a separate page for it"; then: keep the name Our content, put it right under Posts & comments, make Our posts like the Posts & comments grid, and add a Top comments grid sorted by most engagement. He also asked how engagement is calculated and, once shown what adding views would do, kept views separate (DECISIONS #176).
+- **What changed** (DECISIONS #175):
+  - Overview and Posts & comments: no UGC / BGC / All switch, public posts only (a BGC choice made on another page doesn't carry over). Products, Customer voice, People and Hashtags keep the switch.
+  - The sidebar: Our content right under Posts & comments.
+  - Our content, Our posts: the table became the card grid, 12 shown with Show all, sorted Newest, Most engagement, Most views or Engagement rate. Each card shows its engagement rate and, from 5 comments, its share of positive comments; V7's posts no longer show the placeholder "Positive" and "V7 post" tags.
+  - Our content, Top comments (new): the public comments on V7's posts in the period, most engagement first (likes plus replies), V7's replies left out; 12 shown, then the top 60, then "Read them all" in Posts & comments. Each card shows the post it's under, with its picture, and opens it.
+  - Comments in the Posts & comments grid use the same new comment card.
+- **Tests:** new `tests/test_v38.py`; `test_v5`, `test_v20`, `test_v21`, `test_v22`, `test_v23`, `test_v25` and `test_v26` read the new grid and the hidden switch. All 26 dashboard suites pass on the dashboard and on `docs/index.html`.
+- **Published** on the public site at the user's request ("yes", 22 Oct).
+- **Files:** `V7_Pulse_Dashboard.html` (Version 37 saved in `archive/dashboard_versions/`), the tests, `docs/index.html`, `DESIGN.md`, the notes.
+
