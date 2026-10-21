@@ -1741,8 +1741,8 @@ POSTS.forEach(function(p){if(!p.owned)return;var l=KIDS[p.id]||[];p.cpos=l.lengt
 var state={view:'overview',range:30,products:[],platforms:[],source:'earned',
   pf:null,pfPage:1,briefDay:NDAYS-1,pfx:null,pfxPage:1,sorts:{},limits:{},peopleSeg:'all',xPeopleSeg:'all',dd:null,xtab:'overview',xmk:'all',selCamp:null,campOver:{},campChecks:{},campLim:{},gtTerm:'V7',gtAll:false,
   kind:'both',metric:'posts',evEdit:null,comp:true,rArea:'all',rCui:'all',custom:null,stab:'summary',pseg:'cola',sOpen:{},hStore:'all',hRate:'both',hRank:'Amazon.eg'};
-function blankPF(){return {q:'',s:'',intent:'',topic:'',type:'',gap:'',lang:'',tag:'',person:'',group:'',cluster:'',reply:'',seg:'',day:'',onown:'',amp:'',sort:'reach'};}
-state.pf=blankPF();state.pfx=blankPF();
+function blankPF(k){return {q:'',s:'',intent:'',topic:'',type:'',gap:'',lang:'',tag:'',person:'',group:'',cluster:'',reply:'',seg:'',day:'',onown:'',amp:'',sort:k==='pfx'?'reach':'eng'};}
+state.pf=blankPF();state.pfx=blankPF('pfx');
 /* Posts, comments or both, from the Posts / Comments / Both switch */
 function ITEMS(){return state.kind==='posts'?POSTS:state.kind==='comments'?COMMENTS:ALLITEMS;}
 function NP(){return state.kind==='comments'?'comments':state.kind==='both'?'posts and comments':'posts';}
@@ -2170,7 +2170,7 @@ function insights(c){
    ========================================================= */
 var content=document.getElementById('content');
 var HOOKS=[];
-var TITLES={brief:'Daily brief',radar:'Rumors & attacks',overview:'Overview',posts:'All posts',products:'Products',voice:'Customer voice',people:'People',hashtags:'Hashtags',owned:'Our content',alerts:'Alerts',events:'Events',abroad:'Outside Egypt',stores:'Online stores',restaurants:'Restaurants',trends:'Search trends'};
+var TITLES={brief:'Daily brief',radar:'Rumors & attacks',overview:'Overview',posts:'Posts & comments',products:'Products',voice:'Customer voice',people:'People',hashtags:'Hashtags',owned:'Our content',alerts:'Alerts',events:'Events',abroad:'Outside Egypt',stores:'Online stores',restaurants:'Restaurants',trends:'Search trends'};
 
 function vOverview(c){
   var cs=stats(c.cur),ps=stats(c.prev),cm=isCm();
@@ -2280,14 +2280,14 @@ function postsExplorer(list,key,abroad){
   var page=state[key+'Page'],per=25*page,shown=L.slice(0,per),s=stats(L);
   var whoSel=abroad?
     '<select class="sel" id="'+key+'_seg" aria-label="'+(cm?'Who commented':'Who posted')+'">'+opt('','Anyone',f.seg)+['diaspora','local','business','creator','page','brand'].map(function(k){return opt(k,SEGL[k],f.seg);}).join('')+'</select>':
-    '<select class="sel" id="'+key+'_type" aria-label="'+(cm?'Commented by':'Posted by')+'">'+opt('','Anyone',f.type)+opt('person','People',f.type)+opt('group','In Facebook groups',f.type)+opt('creator','Creators',f.type)+opt('page','Pages',f.type)+opt('news','News',f.type)+opt('official','V7 official',f.type)+'</select>';
+    '<select class="sel" id="'+key+'_type" aria-label="'+(cm?'Commented by':'Posted by')+'">'+opt('','Anyone',f.type)+opt('person','People',f.type)+opt('group','In Facebook groups',f.type)+opt('creator','Creators',f.type)+opt('page','Pages',f.type)+opt('news','News',f.type)+'</select>';
   var h='<section class="panel"><div class="ptools">'+
     '<label class="search"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><input id="'+key+'_q" type="search" placeholder="'+(cm?'Search comments or people (Arabic, English, Franco)':'Search '+NP()+', people or hashtags (Arabic, English, Franco)')+'" value="'+esc(f.q)+'" aria-label="Search '+NP()+'"></label>'+
     '<select class="sel" id="'+key+'_s" aria-label="Sentiment">'+opt('','Any sentiment',f.s)+opt('pos','Positive',f.s)+opt('neu','Neutral',f.s)+opt('neg','Negative',f.s)+opt('mix','Mixed',f.s)+'</select>'+
     '<select class="sel" id="'+key+'_intent" aria-label="Type of '+(cm?'comment':'post')+'">'+opt('','Any type of '+(cm?'comment':'post'),f.intent)+intents.map(function(x){return opt(x,x,f.intent);}).join('')+'</select>'+
     '<select class="sel" id="'+key+'_topic" aria-label="Topic">'+opt('','Any topic',f.topic)+topics.map(function(x){return opt(x,x,f.topic);}).join('')+'</select>'+
     whoSel+
-    '<select class="sel" id="'+key+'_lang" aria-label="Language">'+opt('','Any language',f.lang)+langs.map(function(k){return opt(k,LANG[k]||k,f.lang);}).join('')+'</select>'+
+    (abroad?'<select class="sel" id="'+key+'_lang" aria-label="Language">'+opt('','Any language',f.lang)+langs.map(function(k){return opt(k,LANG[k]||k,f.lang);}).join('')+'</select>':'')+
     '<select class="sel" id="'+key+'_sort" aria-label="Sort">'+opt('reach','Most views',f.sort)+opt('new','Newest first',f.sort)+(cm?opt('eng','Most likes and replies',f.sort)+opt('com','Most replies',f.sort):opt('eng','Most engagement',f.sort)+opt('views','Most views',f.sort)+opt('com','Most comments',f.sort))+'</select>'+
   '</div>'+
   (special.length?'<div class="activef" style="margin-top:10px">Showing only: '+special.map(function(x){return '<button type="button" class="chip" data-act="pfclear" data-k="'+key+'" data-v="'+x[0]+'" dir="auto" title="Remove this filter">'+esc(x[1])+' ✕</button>';}).join('')+'</div>':'')+
@@ -4509,7 +4509,7 @@ function go(v){state.view=v;render();window.scrollTo(0,0);}
 function keepInView(el,always){if(!el)return;var p=el.closest('.panel')||el,top=document.querySelector('.top'),off=(top?top.offsetHeight:0)+12,r=p.getBoundingClientRect();
   if(always||r.top<off||r.top>window.innerHeight-80)window.scrollTo({top:Math.max(0,window.scrollY+r.top-off),behavior:always?'smooth':'auto'});}
 function goPosts(k,v){state.pf=blankPF();if(k)state.pf[k]=v;state.pfPage=1;closePanels();go('posts');}
-function goXPosts(k,v,m){state.pfx=blankPF();if(k)state.pfx[k]=v;if(m)state.xmk=m;state.pfxPage=1;state.xtab='posts';closePanels();go('abroad');}
+function goXPosts(k,v,m){state.pfx=blankPF('pfx');if(k)state.pfx[k]=v;if(m)state.xmk=m;state.pfxPage=1;state.xtab='posts';closePanels();go('abroad');}
 function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(function(){t.hidden=true;},2400);}
 function csv(list){
   var rows=[['kind','source','date','time','platform','author','author_type','group_or_subreddit','country','products','sentiment','type','topic','language','views','likes_or_upvotes','comments_or_replies','shares','hashtags','on_post','url','text']];
@@ -4571,7 +4571,7 @@ function onAct(e){
     case 'gtall':var wasAll=state.gtAll;state.gtAll=!state.gtAll;render();if(wasAll)keepInView(content.querySelector('[data-act="gtall"]').closest('.panel'));break;
     case 'seg':state.peopleSeg=v;render();break;
     case 'pfclear':state[k||'pf'][v]='';state[(k||'pf')+'Page']=1;render();break;
-    case 'pfreset':state[k||'pf']=blankPF();state[(k||'pf')+'Page']=1;render();break;
+    case 'pfreset':state[k||'pf']=blankPF(k||'pf');state[(k||'pf')+'Page']=1;render();break;
     case 'pfmore':state[(k||'pf')+'Page']++;render();break;
     case 'rule':el.setAttribute('aria-checked',el.getAttribute('aria-checked')!=='true');RULES[+v][2]=el.getAttribute('aria-checked')==='true';toast(RULES[+v][0]+(RULES[+v][2]?' alerts on':' alerts off'));break;
     case 'alert':if(k==='person')openPerson(v);else if(k==='gap')goPosts('gap',v);else if(k==='reply'){if(state.kind==='posts')state.kind='both';goPosts('reply','no');}else if(k==='amp'){if(state.kind==='comments')state.kind='both';goPosts('amp','1');}else if(k==='launch'){state.products=[v];goPosts('gap','1');}else if(k==='view')go(v);else if(k==='cluster')goPosts('cluster',v);else if(k==='xcluster')goXPosts('cluster',v);else if(k==='country')openCountry(v);else if(k==='camp'){state.selCamp=v;state.view='radar';render();window.scrollTo(0,0);}else if(k==='day'){state.custom=null;state.range=(NDAYS-1-Number(v))<7?7:30;go('overview');}break;
@@ -4611,7 +4611,7 @@ function render(){
   hideTip();HOOKS=[];
   var c=ctxGet();
   document.querySelectorAll('.side .nav').forEach(function(b){if(b.getAttribute('data-view')===state.view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
-  var allLbl=state.kind==='comments'?'All comments':state.kind==='both'?'Posts & comments':'All posts';
+  var allLbl='Posts & comments';   /* one name whatever the Posts / Comments / Both switch says (Version 37) */
   document.getElementById('vTitle').textContent=state.view==='posts'?allLbl:TITLES[state.view];
   document.getElementById('navPosts').textContent=allLbl;
   document.querySelectorAll('#rangeSeg [data-r]').forEach(function(b){var r=b.getAttribute('data-r');b.setAttribute('aria-pressed',String(r==='custom'?!!state.custom:!state.custom&&+r===state.range));});

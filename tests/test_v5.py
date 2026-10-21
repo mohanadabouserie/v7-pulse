@@ -43,7 +43,7 @@ async def main():
         h2 = await J("document.getElementById('tchart').closest('.panel').querySelector('h2').textContent")
         check('comments chart title', h2.startswith('Likes and replies per day') or h2.startswith('Comments per day'), h2)
         title = await J("document.getElementById('navPosts').textContent")
-        check('nav label follows kind', title=='All comments', title)
+        check('the page keeps its name in every mode (Version 37)', title=='Posts & comments', title)
         await click('#kindSeg [data-kind=posts]')
         await click('[data-act=metric][data-v=posts]')
         # --- events approve flow
@@ -96,7 +96,7 @@ async def main():
         # --- explorer sorted by reach
         rs = await J("[...document.querySelectorAll('.plist .pc')].length")
         sortv = await J("document.getElementById('pf_sort').value")
-        check('explorer default sort is reach', sortv=='reach', sortv)
+        check('explorer default sort is most engagement (Version 37)', sortv=='eng', sortv)
         await click('[data-act=pfreset][data-k=pf]')
         # --- BGC + comments = V7 replies
         await click('#srcSeg [data-src=owned]'); await click('#kindSeg [data-kind=comments]'); await nav('posts')

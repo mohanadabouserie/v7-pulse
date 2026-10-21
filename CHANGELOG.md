@@ -1205,3 +1205,14 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** on the public site at the user's request ("yes", 22 Oct).
 - **Files:** `V7_Pulse_Dashboard.html` (Version 35 saved in `archive/dashboard_versions/`), `data/raw/media_13oct/build_media.py`, `data/raw/real_17oct/fetch_media.py`, `docs/index.html`, `DESIGN.md`, the notes.
 
+### Version 37: Posts & comments, fixed name, sorted by engagement, fewer filters (22 Oct 2026)
+- **Why:** Mahmoud: "I want it to be fixed on this name and not change when I filter to posts only or filter to comments only. I want the sorting to default to most engagement instead of most views. I want to remove the language filtering option. I want to remove the V7 official page filtering option."
+- **What changed** (DECISIONS #174):
+  - the page title and the sidebar say "Posts & comments" whatever the Posts / Comments / Both switch says;
+  - the default sort is most engagement (most likes and replies when only comments show); "Clear these filters" goes back to it;
+  - no language filter, and no "V7 official" under "Posted by";
+  - Outside Egypt's posts keep their language filter and most views.
+- **Tests:** new `tests/test_v37.py` (this version and the Version 36 grid); `test_v5.py` checks the fixed name and the new default sort.
+- All 25 dashboard suites pass on the dashboard and on `docs/index.html`. **Published** on the public site at the user's request ("yes push once the tests pass", 22 Oct).
+- **Files:** `V7_Pulse_Dashboard.html` (Version 36 saved in `archive/dashboard_versions/`), `tests/test_v5.py`, new `tests/test_v37.py`, `docs/index.html`, the notes.
+
