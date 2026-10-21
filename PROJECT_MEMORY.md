@@ -26,7 +26,7 @@ V7 Pulse is a social listening and market dashboard for V7's marketing team. Moh
 | Store history | `data/store_history/YYYY-MM-DD.json` (real from 4 Oct 2026) |
 | Refresh pipeline, Facebook and Instagram | `data/raw/real_17oct/pipeline.py` (notes in `PIPELINE.md`): the searches with standby scrapers, the gap fillers, the pictures, the build and the quick tests in one command (`plan`, `run`, `status`). Not scheduled; the systemd files in `deploy/` aren't installed (DECISIONS #154). Tests: `tests/test_pipeline.py` |
 | Raw data from every test and collection | `data/raw/` (map in section 10) |
-| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v34.html` (the current version is the main file) |
+| Old dashboard versions | `archive/dashboard_versions/V7_Pulse_Dashboard_v3.html` to `_v35.html` (the current version is the main file) |
 | Helper scripts | `scripts/` (Apify runners) |
 | Browser tests | `tests/` (Playwright) |
 
@@ -169,6 +169,7 @@ The dashboard artifact is private. People can't open it until it's shared from t
   - Published privately on 20 Oct and on the public site on 21 Oct; the bot reads that copy.
 - **Version 34, Kareem Elsayed's reel in the Egypt views (21 Oct, DECISIONS #168):** a creator posting in Egyptian Arabic counts in Egypt wherever the video is filmed. His reel says it was filmed in England, so since its speech was read it had sat under Outside Egypt, United Kingdom (Facebook 1.46M views, Instagram 903K, a second Facebook reel 360K). Businesses, Egyptians abroad and locals keep their country. Published privately and on the public site on 21 Oct.
 - **Version 35, every picture on the public site; the claude.ai copy retired (21 Oct, DECISIONS #170, #171):** the dashboard links its post images as files (no size budget) and is a complete page; `build_sites.py` copies it and the images into `docs/`. 630 of the 1,207 public posts that aren't text-only have a picture (was 198); the page is 5.9 MB. 577 still have none (Facebook 308, Instagram 268, TikTok 1): never downloaded, and their image links have expired. The claude.ai copy stays as Version 34.
+- **Version 36, All posts as a grid (22 Oct, DECISIONS #172, #173):** picture-first cards in a masonry grid, like the post grid of the social listening tools the user pointed to. New images download at 640 px.
 - **Version 24, Telegram (DECISIONS #105–107):**
   - **@v7_pulse_bot** sends the daily brief at 09:00 and Act now alerts, and answers questions like Ask V7 Pulse. See `bot/README.md`.
   - Join link: `t.me/v7_pulse_bot?start=<code from .env.telegram>`.

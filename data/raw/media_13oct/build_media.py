@@ -26,6 +26,7 @@ for url in dict.fromkeys(wanted()):
     v = idx.get(url) or {}
     if 'file' in v and os.path.exists(os.path.join(HERE, 'img', v['file'])):
         media[url] = {'s': IMG_BASE + v['file'], 'k': v['kind']}
+        if v.get('w') and v.get('h'): media[url]['r'] = round(v['w'] / v['h'], 3)   # width / height, so the posts grid can size the card before the image loads
 blob = json.dumps(media, separators=(',', ':')).replace('</', '<\\/')
 # Post links with &id= are written \u003d inside the JSON strings (read back as the same link); kept from the claude.ai days, and
 # tests/test_v25.py checks it.

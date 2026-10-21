@@ -146,10 +146,11 @@ The tokens live at the top of the `<style>` block; `tests/test_v15.py` checks th
   - Order: urgent items, then social issues, replies waiting, posts worth amplifying, and at most one store item.
   - On phones the cards are a row to swipe, so the KPI numbers still start in the first screen.
 - **Posts show their image:**
-  - A 112 px square on the card (84 px on phones), with a play mark for videos and an album mark for carousels.
+  - On list cards: a 112 px square (84 px on phones), with a play mark for videos and an album mark for carousels.
+  - On All posts (Version 36, `gridCard`): cards in a masonry grid (`.pgrid`, at least 260 px wide, one column on phones). Header: a round initial (none for private people) with the platform badge on its corner, the name, then kind and date. The image runs edge to edge at its own shape, held between 4:5 and 1.91:1. Then the caption (4 lines), tags (sentiment pill first, type and topic, flavors, flags, up to 3 hashtags), place and language, and a footer of icon counts (views, likes, comments, shares) with View post and Open. 16 px radius, no shadow. Comments keep their card.
   - Card text stops at 6 lines; the full text is in the post view.
   - Posts never get an invented image: a post without a collected cover shows its text only.
-  - Images are embedded as small JPEGs, so the dashboard stays one file: 360 px, quality 55 for the 13 Oct set; 300 px, quality 52 for those added on 17 Oct (V7's newest posts, the most-engaged posts abroad, the top public posts).
+  - Images are JPEG files the page links to (`data/raw/media_13oct/img/`, copied to `docs/media/`; DECISIONS #170): 360 px, quality 55 for the 13 Oct set; 300 px, quality 52 from 17 Oct; 640 px, quality 72 from 22 Oct (DECISIONS #172).
 - **Post view:**
   - A drawer that opens from "View post", the image or the caption in Our posts.
   - Order: the image (shown whole on black), "the video plays on …", the full text, chips, the numbers, buttons to open and copy the link.

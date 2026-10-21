@@ -1194,3 +1194,14 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** on the public site at the user's request ("yes", 22 Oct).
 - **The claude.ai copy** stays as Version 34 (saved in `archive/dashboard_versions/`), not updated again. Ask V7 Pulse gives its short built-in answers on the site, as before.
 - **Files:** `V7_Pulse_Dashboard.html`, `data/raw/media_13oct/build_media.py`, `data/raw/real_17oct/fetch_media.py`, `deploy/build_sites.py`, `data/raw/real_17oct/pipeline.py` (docstring), `PIPELINE.md`, `tests/test_v23.py` and `test_v25.py` (wording), `docs/index.html`, new `docs/media/`, the notes.
+
+### Version 36: All posts as a grid of picture-first cards (22 Oct 2026)
+- **Why:** Mahmoud: "I need the all posts page to be better and more visually appealing. I need it to be something like this", with a screenshot of another tool's post grid (the chat window in it left out).
+- **What changed** (DECISIONS #173): All posts shows its posts as cards in a masonry grid (3 to 4 across on a laptop, 1 on phones), each with the author (initial, platform badge, kind, date), the image at its own shape, the caption, sentiment, type, topic, flavors, flags and up to 3 hashtags, then icon counts (views, likes, comments, shares), View post and Open. Comments keep their card in the grid. Outside Egypt and the other lists keep the list card.
+- **Data:** the MEDIA block carries each image's shape (`r`, width / height), so cards are sized before the image loads (`build_media.py`).
+- **Images:** new downloads are 640 px, quality 72 (DECISIONS #172); the 961 already saved stay at 300 px, so they look slightly soft in the bigger cards.
+- **Checked:** desktop, phone (no sideways scroll) and dark mode; no cards overlap with posts and comments mixed.
+- **Tests:** all 24 dashboard suites pass on the dashboard and on `docs/index.html`.
+- **Published** on the public site at the user's request ("yes", 22 Oct).
+- **Files:** `V7_Pulse_Dashboard.html` (Version 35 saved in `archive/dashboard_versions/`), `data/raw/media_13oct/build_media.py`, `data/raw/real_17oct/fetch_media.py`, `docs/index.html`, `DESIGN.md`, the notes.
+

@@ -2,7 +2,7 @@
 Which: every post in the dashboard without one (V7 Egypt, the pages abroad, then the public posts about V7 by views; until 21 Oct only
 the top 40 abroad and top 80 public posts). Image links come from the 17 Oct pulls in raw/ (Facebook, Instagram and X give one with the post;
 TikTok covers expire within hours, so a fresh link is read from each video's public page; YouTube thumbnails come from i.ytimg.com).
-One request at a time, 1 second apart. Each image is shrunk to 300 px on its long side (JPEG quality 52) and saved, like the 13 Oct ones,
+One request at a time, 1 second apart. Each image is shrunk to 640 px on its long side (JPEG quality 72; 300 px, quality 52 until 21 Oct) and saved, like the 13 Oct ones,
 in ../media_13oct/img/ with ../media_13oct/index.json, which ../media_13oct/build_media.py --inject turns into the MEDIA block.
 Usage: python3 fetch_media.py"""
 import hashlib, io, json, os, pathlib, re, socket, time, urllib.request
@@ -89,7 +89,7 @@ for post in want:
         im = Image.open(io.BytesIO(get(img))).convert('RGB'); w, h = im.size
         if pl == 'yt' and h and abs(w / h - 4 / 3) < .05:   # YouTube pads 16:9 frames to 4:3 with black bars
             im = im.crop((0, int(h * .125), w, int(h * .875)))
-        im.thumbnail((300, 300)); out = io.BytesIO(); im.save(out, 'JPEG', quality=52, optimize=True, progressive=True)
+        im.thumbnail((640, 640)); out = io.BytesIO(); im.save(out, 'JPEG', quality=72, optimize=True, progressive=True)   # 21 Oct: 300 px / q52 until the images left the page (DECISIONS #172)
         name = hashlib.sha1(post.encode()).hexdigest()[:12] + '.jpg'
         (MED / 'img' / name).write_bytes(out.getvalue())
         idx[post] = {'file': name, 'w': im.size[0], 'h': im.size[1], 'kind': kind, 'pl': pl, 'bytes': len(out.getvalue()), 'added': '2026-10-17'}; done += 1
