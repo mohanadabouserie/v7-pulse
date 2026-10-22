@@ -1228,3 +1228,11 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Published** on the public site at the user's request ("yes", 22 Oct).
 - **Files:** `V7_Pulse_Dashboard.html` (Version 37 saved in `archive/dashboard_versions/`), the tests, `docs/index.html`, `DESIGN.md`, the notes.
 
+
+### The collected data in the repo (22 Oct 2026)
+- **Why:** the user: "remove the unnecessary things from the gitignore like names of users and those things, just hide the keys and push again please, put pull first now".
+- **Pulled first:** Versions 35 to 38 from GitHub (made with Mahmoud in another session: every picture on the public site, the claude.ai copy retired, All posts and Our posts as card grids, Posts & comments sorting by engagement). The pull was a fast-forward; nothing local was lost.
+- **Asked first:** un-ignoring the data publishes the names, handles, profile links, posts and comments of about 10,500 private people and 3,733 photos and frames from their posts (about 780 MB), reverses DECISIONS #122 and can't be undone once public. The user chose "Publish all in public repo" over a private data repo, a copy without names, or no change (DECISIONS #177).
+- **`.gitignore`** now keeps only keys (`.env*`, `apify_key`, `telegram_key`), the bot's state (its Claude sign-in, subscribers' chat ids, logs), machine files (caches, the virtual environment, Node modules), the calculator's own repo, test screenshots, other companies' PDFs (`Reference docs/`) and the pipeline's lock.
+- **Committed:** `data/raw/real_17oct/raw/` (656 raw pulls), `items.json`, `labels.json`, `labels_sample.json`, `vis_read.json`, `vis/` (3,733 pictures and frames), 69 run logs (`*.out`) and `pipeline_runs/`. All 4,468 files were scanned first: no keys, tokens, join code or blocked organisation's name.
+- **Files:** `.gitignore`, the data above, `CLAUDE.md`, `DECISIONS.md`, `PROJECT_MEMORY.md`, `CHANGELOG.md`.

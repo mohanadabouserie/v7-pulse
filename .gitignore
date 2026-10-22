@@ -1,42 +1,27 @@
+# Keys and sign-ins: never committed (the repo is public)
 .env
 .env.*
 apify_key
-node_modules/
+telegram_key
+
+# The Telegram bot's local state: its Claude sign-in (bot/state/claude/), subscribers' chat ids, logs and process id
+bot/state/
+
+# Machine files: Python caches, the project's virtual environment, Node modules
 __pycache__/
 *.pyc
-
-# project Python for the store collector (Anthropic SDK)
+node_modules/
 data/.venv/
 
-# local clone of the cost calculator's Pages repo (mohanadabouserie/v7-pulse-costs);
-# the dashboard publishes from docs/ in this repo
+# The cost calculator's site is its own repo (mohanadabouserie/v7-pulse-costs), cloned here
 deploy/v7-pulse-costs/
 
-# test screenshots
+# Test screenshots
 shots5/
 tests/shots5/
 
-# third-party reference documents (not ours to publish)
+# Other companies' documents (not ours to publish)
 Reference docs/
 
-# Telegram bot: the token file, and the bot's local state (chat ids of subscribers, what was already sent)
-telegram_key
-bot/state/
-
-# Version 25 real data: the raw pulls, the merged list and the labels name private people (commenters), so they stay on
-# this machine (DECISIONS #122). The anonymous build (real_dashboard.json) and the scripts are committed.
-data/raw/real_17oct/raw/
-data/raw/real_17oct/items.json
-data/raw/real_17oct/labels.json
-data/raw/real_17oct/labels_sample.json
-data/raw/real_17oct/*.out
-
-# post images and video frames read for on-screen text (people's media): local only
-data/raw/real_17oct/vis/
-data/raw/real_17oct/vis_read.json
-
-# the refresh pipeline's state (data/raw/real_17oct/pipeline.py): its lock, its ledger of Apify runs and its run reports stay on
-# the machine that runs it, like the bot's state
+# The refresh pipeline's lock, only while a run is going
 data/raw/real_17oct/pipeline.lock
-data/raw/real_17oct/pipeline_ledger.json
-data/raw/real_17oct/pipeline_runs/
