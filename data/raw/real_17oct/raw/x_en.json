@@ -1,0 +1,712 @@
+{
+ "input": {
+  "twitterContent": "(\"V7 drink\" OR \"V7 soda\" OR \"V7 Egypt\" OR \"V7 cream soda\" OR \"V7 pomegranate\" OR \"v7 7elwa\" OR \"v7 gamda\" OR \"V7 malt\") -هافال -Haval -Raptor -midjourney -Vivo -Honor -Jaecoo -Chery since:2026-04-20 until:2026-10-17",
+  "maxItems": 120,
+  "queryType": "Latest"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "EljCMbucBJWP8oNGr",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:59:57.233Z",
+  "finishedAt": "2026-10-16T22:00:13.711Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 15
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.0091,
+ "items": [
+  {
+   "type": "tweet",
+   "id": "2109699580270911673",
+   "url": "https://x.com/_a_osamaa/status/2109699580270911673",
+   "twitterUrl": "https://twitter.com/_a_osamaa/status/2109699580270911673",
+   "text": "قررت أشرب V7 cream soda وأ rewatch فيلم بحبه عشان الدكتور قالي أتجنب ال stress ✋🏻",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 0,
+   "quoteCount": 0,
+   "viewCount": 36,
+   "createdAt": "Mon Oct 12 17:35:50 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2109690150716404130",
+   "conversationId": "2109690150716404130",
+   "inReplyToUserId": "1666567184607326210",
+   "inReplyToUsername": "_a_osamaa",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "_a_osamaa",
+    "url": "https://x.com/_a_osamaa",
+    "twitterUrl": "https://twitter.com/_a_osamaa",
+    "id": "1666567184607326210",
+    "name": "أمينة ❣",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2108279658500235264/8ApPzInJ_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1666567184607326210/1780762577",
+    "description": "",
+    "location": "🇪🇬",
+    "followers": 316,
+    "following": 278,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Wed Jun 07 22:06:33 +0000 2023",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 6574,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 31,
+    "statusesCount": 399,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1845135904224018720"
+    ],
+    "profile_bio": {
+     "description": "ومَا أُنسُ دارٍ ليسَ فيها مُؤانسٌ؟",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": {
+    "rest_id": "1666567184607326210",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "_a_osamaa"
+     },
+     "rest_id": "1666567184607326210"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2109447399282516176",
+   "url": "https://x.com/Someone45431253/status/2109447399282516176",
+   "twitterUrl": "https://twitter.com/Someone45431253/status/2109447399282516176",
+   "text": "I❤️ V7 drink🇪🇬",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 1,
+   "quoteCount": 0,
+   "viewCount": 60,
+   "createdAt": "Mon Oct 12 00:53:46 +0000 2026",
+   "lang": "en",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2109447399282516176",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Someone45431253",
+    "url": "https://x.com/Someone45431253",
+    "twitterUrl": "https://twitter.com/Someone45431253",
+    "id": "1229089627140755457",
+    "name": "Ms. Someone somewhere",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1828878189206155264/Dn5r7HEN_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1229089627140755457/1684679343",
+    "description": "",
+    "location": "",
+    "followers": 543,
+    "following": 36,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Feb 16 17:06:29 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 141558,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1293,
+    "statusesCount": 72861,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1477710003255623681"
+    ],
+    "profile_bio": {
+     "description": "Do Not Resuscitate",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2108914669146575110",
+   "url": "https://x.com/urfavabyss/status/2108914669146575110",
+   "twitterUrl": "https://twitter.com/urfavabyss/status/2108914669146575110",
+   "text": "انا بقى عندي ادمان V7 cream soda",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 3,
+   "likeCount": 10,
+   "quoteCount": 1,
+   "viewCount": 331,
+   "createdAt": "Sat Oct 10 13:36:53 +0000 2026",
+   "lang": "und",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2108914669146575110",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "urfavabyss",
+    "url": "https://x.com/urfavabyss",
+    "twitterUrl": "https://twitter.com/urfavabyss",
+    "id": "900512484838264837",
+    "name": "RITA🦩",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2107210868488343553/zp52G3A-_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/900512484838264837/1791233276",
+    "description": "",
+    "location": "yourmind",
+    "followers": 263,
+    "following": 54,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Thu Aug 24 00:18:01 +0000 2017",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 2762,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 6,
+    "statusesCount": 1139,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2102210686361514294"
+    ],
+    "profile_bio": {
+     "description": "عندي فراغ جايه املاه ف خليك لذيذ",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "ngl.link/urfavabyss2",
+         "expanded_url": "https://ngl.link/urfavabyss2",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/FJf5nvHF0R"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2099395065693065701",
+   "url": "https://x.com/zserahsi/status/2099395065693065701",
+   "twitterUrl": "https://twitter.com/zserahsi/status/2099395065693065701",
+   "text": "allah nasip kısmet eder bi süpermarket bulursam V7 soda/cola ve fayrouz stoklamayı düşünüyorum\nbi de al batal mamoul 🙏🏻 tüm valizi seninle doldurmak istiyorum",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 5,
+   "quoteCount": 0,
+   "viewCount": 257,
+   "createdAt": "Mon Sep 14 07:09:23 +0000 2026",
+   "lang": "tr",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2099395065693065701",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "zserahsi",
+    "url": "https://x.com/zserahsi",
+    "twitterUrl": "https://twitter.com/zserahsi",
+    "id": "1558774549910638594",
+    "name": "mecrûh",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1950644385340686336/EWJQlEWY_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1558774549910638594/1745613937",
+    "description": "",
+    "location": "e",
+    "followers": 75,
+    "following": 106,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sun Aug 14 11:17:22 +0000 2022",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 13506,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 259,
+    "statusesCount": 1821,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1925571920767946860"
+    ],
+    "profile_bio": {
+     "description": "sana gül bahçesi vadetmedim",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2092981673277182166",
+   "url": "https://x.com/sreffaie/status/2092981673277182166",
+   "twitterUrl": "https://twitter.com/sreffaie/status/2092981673277182166",
+   "text": "v7 cream soda eh elhalawa de",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "viewCount": 88,
+   "createdAt": "Thu Aug 27 14:24:51 +0000 2026",
+   "lang": "tl",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2092981673277182166",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "sreffaie",
+    "url": "https://x.com/sreffaie",
+    "twitterUrl": "https://twitter.com/sreffaie",
+    "id": "3032372187",
+    "name": "𝒔𝒖𝒉𝒂𝒊𝒍𝒂.",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2110059563185545216/jZ3ZA_Ze_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/3032372187/1533511841",
+    "description": "",
+    "location": "",
+    "followers": 637,
+    "following": 489,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Thu Feb 12 11:34:41 +0000 2015",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 34466,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1143,
+    "statusesCount": 17051,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "♋︎",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2088718319096312074",
+   "url": "https://x.com/YamIfeelingshit/status/2088718319096312074",
+   "twitterUrl": "https://twitter.com/YamIfeelingshit/status/2088718319096312074",
+   "text": "V7 Cream soda ta3maha 5ara neik",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 201,
+   "createdAt": "Sat Aug 15 20:03:48 +0000 2026",
+   "lang": "tl",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2088718319096312074",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "YamIfeelingshit",
+    "url": "https://x.com/YamIfeelingshit",
+    "twitterUrl": "https://twitter.com/YamIfeelingshit",
+    "id": "917109126005739520",
+    "name": "actually mike",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1952768403992674304/4EH6uDx-_normal.jpg",
+    "coverPicture": "",
+    "description": "",
+    "location": "☦️ /♱ ~ Eskandarani (duh) ☭",
+    "followers": 150,
+    "following": 411,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Oct 08 19:27:09 +0000 2017",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 29088,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 939,
+    "statusesCount": 10645,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1885937631344607649"
+    ],
+    "profile_bio": {
+     "description": "Professional virgin. Powered by Redbull™",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2088638109332251076",
+   "url": "https://x.com/Zasrrh/status/2088638109332251076",
+   "twitterUrl": "https://twitter.com/Zasrrh/status/2088638109332251076",
+   "text": "V7 cream soda 6/10 \nMy nails 10/10 https://t.co/Ythy0hPW8L",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 27,
+   "quoteCount": 0,
+   "viewCount": 435,
+   "createdAt": "Sat Aug 15 14:45:04 +0000 2026",
+   "lang": "en",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2088638109332251076",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Zasrrh",
+    "url": "https://x.com/Zasrrh",
+    "twitterUrl": "https://twitter.com/Zasrrh",
+    "id": "1785652493503942657",
+    "name": "سارة",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2104650789176197120/GGX6Hl3I_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1785652493503942657/1790622825",
+    "description": "",
+    "location": "",
+    "followers": 1124,
+    "following": 218,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Wed May 01 12:48:46 +0000 2024",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 33001,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 386,
+    "statusesCount": 4171,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1947314257588035835"
+    ],
+    "profile_bio": {
+     "description": "All art is erotic ✩\nINTJ_A\n🌻",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/theclayz_?stkn…",
+         "expanded_url": "https://www.instagram.com/theclayz_?stkn=MjZzOGRxenlpcXdo",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/PuVuQXllnM"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/Ythy0hPW8L",
+      "expanded_url": "https://x.com/Zasrrh/status/2088638109332251076/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "2088638086594859008",
+      "indices": [
+       35,
+       58
+      ],
+      "media_key": "3_2088638086594859008",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARz8VUYP1pAACgACHPxVS1sXocQAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHPxVRg/WkAAKAAIc/FVLWxehxAAA",
+        "media_key": "3_2088638086594859008"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HPxVRg_WkAA4W-o.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 605,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1080,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1231,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 1920,
+         "w": 960,
+         "x": 120,
+         "y": 0
+        },
+        {
+         "h": 1920,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1920,
+       "width": 1080
+      },
+      "sizes": {
+       "large": {
+        "h": 1920,
+        "w": 1080
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/Ythy0hPW8L"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  }
+ ]
+}

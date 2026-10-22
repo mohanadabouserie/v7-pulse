@@ -1,0 +1,23 @@
+{
+ "input": {
+  "searchQuery": "\"V7 soda\"",
+  "resultsLimit": 10,
+  "contentType": "posts_and_reels",
+  "oldestPostDate": "2026-04-20",
+  "newestPostDate": "2026-10-16"
+ },
+ "cap_usd": 0.1,
+ "run": {
+  "id": "DbHGdZjyeWJcNzAP6",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T22:16:23.342Z",
+  "finishedAt": "2026-10-18T22:16:49.104Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "search-page": 4
+  },
+  "usageTotalUsd": 0.04
+ },
+ "cost_usd": 0.03,
+ "items": []
+}

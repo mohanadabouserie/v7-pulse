@@ -1,0 +1,1354 @@
+{
+ "input": {
+  "query": "V7 drink",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "69t3yJWKGfOedtZlP",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:38:46.896Z",
+  "finishedAt": "2026-10-19T11:39:19.457Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.5109,
+ "items": [
+  {
+   "post_id": "1715751803893233",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1973683579958662/",
+   "message": "New drink 🥤 \nV7\n\n#food #video #viral #fypシ #foodie",
+   "message_rich": "New drink 🥤 \nV7\n\n#food #video #viral #fypシ #foodie",
+   "timestamp": 1786993311,
+   "comments_count": 0,
+   "reactions_count": 647,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 9,
+    "love": 638,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063752903979",
+    "name": "Food addiction",
+    "url": "https://www.facebook.com/foodaddiction1",
+    "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/385689773_811750790960010_1619769661006001789_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DcFGnUqQ2aYQ7kNvwG96k_x&_nc_oc=AdoSvAzLZ1At5tZTlihJPZrB-4H8pIfRuO3GdA-IQ2ygtGV1HQyE_pXGU3aOjzubWwU&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNRadWckoMGmd1PVONwtigYXT-PiJWJzaWYZHJuTMMllA&oe=6ADBEE5C",
+    "delegate_page_id": "102640518093046"
+   },
+   "authors": [
+    {
+     "id": "100063752903979",
+     "name": "Food addiction",
+     "url": "https://www.facebook.com/foodaddiction1",
+     "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/385689773_811750790960010_1619769661006001789_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DcFGnUqQ2aYQ7kNvwG96k_x&_nc_oc=AdoSvAzLZ1At5tZTlihJPZrB-4H8pIfRuO3GdA-IQ2ygtGV1HQyE_pXGU3aOjzubWwU&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNRadWckoMGmd1PVONwtigYXT-PiJWJzaWYZHJuTMMllA&oe=6ADBEE5C",
+     "delegate_page_id": "102640518093046"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1973683579958662/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fagr1-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQMky3_g-EbmrEIz8z-Cy16q961661TVAIzKzTUHW2PU3x0tmFW5t3NhfyDgY9Nw5eUtUGVjyYNPWquNH-KIxBtUBJO0cV7A-vK9Adjd1Q.mp4?_nc_cat=104&_nc_oc=AdoFmV0ly6KXh7f-5XZV7i-hocUqqsnuVTpQBHSDo6FL-Ka3ihVghWQH2NGTE9pYkG4&_nc_sid=8bf8fe&_nc_ht=video.fagr1-1.fna.fbcdn.net&_nc_ohc=-gsMBifacuwQ7kNvwGV7Dig&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxMDMwMTY3NTM5OTk1NDg1LCJhc3NldF9hZ2VfZGF5cyI6NjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQNTgjHrRncC4bxUaWy3HdH4GeV8ZSWl1DNAhXG0s4p58Q&oe=6ADBE502&bitrate=524515&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video.fagr1-2.fna.fbcdn.net/o1/v/t2/f2/m367/AQN72oeC9k9AMUVREhaAyo3BjvrxRFVuM6TJehO6D7Yel3TqxpQ7xJFSE19YyBIo-AYgQD7OV0gS42QZVl5CB1cqt9WQXl252yPx4r2vyA.mp4?_nc_cat=100&_nc_oc=AdrtsEkGWDTN3hYledKgf_gOb_MnhFy-bueGUDa96jb_VxuAC1PgNMW5ykpHpTm3Q7Y&_nc_sid=8bf8fe&_nc_ht=video.fagr1-2.fna.fbcdn.net&_nc_ohc=5vymCmETWcwQ7kNvwFh7xf2&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMDMwMTY3NTM5OTk1NDg1LCJhc3NldF9hZ2VfZGF5cyI6NjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQOMh9ES78X7p5_m3ALabvz8lpM4GFXqqqmkWy5JNqQc4w&oe=6ADBC1EA&bitrate=2784341&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fagr1-1.fna.fbcdn.net/v/t51.82787-10/774904749_18199492303373482_7612354558055893692_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=OC_XmNo_QogQ7kNvwEMuVws&_nc_oc=AdpIpf1Jsx05p6Y0EVN8Q3hF7yq3tbq77L1y9ByphF_SND-L7pNjfNwOim-CIknEXp4&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQOdAOahhOnUhuA5ck-bF2C85EsZH0AoZfMfh-06Ivat3w&oe=6ADBBF24",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1715751803893233",
+   "shares_id": "1715751803893233",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122126510096883058",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2201716157059208/",
+   "message": "V cream soda ..تجربة لذيذة \nV7 \n\n#explore #drink #viral #explorepage✨ #reels",
+   "message_rich": "V cream soda ..تجربة لذيذة \nV7 \n\n#explore #drink #viral #explorepage✨ #reels",
+   "timestamp": 1786887449,
+   "comments_count": 0,
+   "reactions_count": 26,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 21,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61576491766979",
+    "name": "Ahwacookies",
+    "url": "https://www.facebook.com/people/Ahwacookies/61576491766979/",
+    "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/660537632_122103571070883058_7430018130735082540_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=IBQrOgQaVMMQ7kNvwF3Z1Fi&_nc_oc=AdqyAd9FoaHe85oCzyRMqm5YwT9c5KBtSOFHt4VfMd-l3jxXJE1XINHo-tZszDbt0YI&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPXD94SJtA4P342jYKzvGLEc-FSVsDqMxitp7TkBhkVIA&oe=6ADBE36B",
+    "delegate_page_id": "1033116249887761"
+   },
+   "authors": [
+    {
+     "id": "61576491766979",
+     "name": "Ahwacookies",
+     "url": "https://www.facebook.com/people/Ahwacookies/61576491766979/",
+     "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/660537632_122103571070883058_7430018130735082540_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=IBQrOgQaVMMQ7kNvwF3Z1Fi&_nc_oc=AdqyAd9FoaHe85oCzyRMqm5YwT9c5KBtSOFHt4VfMd-l3jxXJE1XINHo-tZszDbt0YI&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPXD94SJtA4P342jYKzvGLEc-FSVsDqMxitp7TkBhkVIA&oe=6ADBE36B",
+     "delegate_page_id": "1033116249887761"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2201716157059208/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fagr1-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQPsmHXLvtjpz9ft-ojRC0ZAexZMzoeVkczhgxajnc-G0oStM-U8O3vKfydE8rKGE5by5FdZyoKj0HOFYHJMknNiN14k059g6wIG9mxcIQ.mp4?_nc_cat=101&_nc_oc=AdosqGs7n6sCKXqA4Xxu0GW3qR6wZNUQnLYJjNMlJN6QlWWT-zgyjblFt0IvVcZXFB4&_nc_sid=8bf8fe&_nc_ht=video.fagr1-1.fna.fbcdn.net&_nc_ohc=M3h640_p0vgQ7kNvwH902rs&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxODQ2ODg1MTIzMzg3MDcyLCJhc3NldF9hZ2VfZGF5cyI6NjMsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPTmtZze711LFhiVevMhlOvYSxmKnH20RNoLYQ3hcrwSg&oe=6ADBE125&bitrate=354741&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video.fagr1-4.fna.fbcdn.net/o1/v/t2/f2/m367/AQNdPGPf0V9LIYjE2W7PBHh6yjU6jyZApNQc5Ca5Jo2IschuCu5qxVmocg_l_bD6d4mAcW2yD2OfMOP7n5yWwl5Kie3UHtgx_GOGkR4beg.mp4?_nc_cat=104&_nc_oc=Ado97v3xZ-qqyWwCePcLHyNVWG2vEuMzszHEOIRNfn7Y5MhRTK6UfOBCMRVgiCWHmeY&_nc_sid=8bf8fe&_nc_ht=video.fagr1-4.fna.fbcdn.net&_nc_ohc=_-dIUjSw3IIQ7kNvwEobeNo&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxODQ2ODg1MTIzMzg3MDcyLCJhc3NldF9hZ2VfZGF5cyI6NjMsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQO75WZEy7uTfz5o-PuXKBznyTntkoRkGIV-RwHT5B6QPQ&oe=6ADBE9CA&bitrate=1400930&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fagr1-1.fna.fbcdn.net/v/t51.82787-10/774059516_17942817027312707_428455641921112630_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=IkDu7_fXS44Q7kNvwHbKwYP&_nc_oc=AdrXNALX_rPzB_MxW2EVtwL7s68T75htlEHmGQT-jpcOs5fb60E952hsyg63DTMtkE0&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNeBlSVqpUBT8NDSK3Wl0dlKye8BZ1Bqi6ekLdy_q0smw&oe=6ADBE790",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122126510096883058",
+   "shares_id": "122126510096883058",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1556567559832608",
+   "type": "post",
+   "url": "https://www.facebook.com/killymurrispresbyterian/posts/pfbid02wBHQRFxq2kSPsnP4UWy7vGxPosSsVz9UvVASbiwoF87ntVQZrdo6dVkfippigFUUl",
+   "message": "Thanks to Colin Jenkins from Seafarers' Christian Friend Society - SCFS in the Port of Cork for coming and updating us on the work. It was good to welcome friends from Dunloy and Rasharkin as well. Thanks to some of the folks in the Monday Club for knitting 122 woolly hats for the seafarers. 🧶⚓️🚢🌊😁\n“A woman from Samaria came to draw water. Jesus said to her, “Give me a drink.” John 4 v7",
+   "message_rich": "Thanks to Colin Jenkins from Seafarers' Christian Friend Society - SCFS in the Port of Cork for coming and updating us on the work. It was good to welcome friends from Dunloy and Rasharkin as well. Thanks to some of the folks in the Monday Club for knitting 122 woolly hats for the seafarers. 🧶⚓️🚢🌊😁\n“A woman from Samaria came to draw water. Jesus said to her, “Give me a drink.” John 4 v7",
+   "timestamp": 1792045327,
+   "comments_count": 2,
+   "reactions_count": 76,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 65,
+    "love": 9,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "100064381373507",
+    "name": "Killymurris Presbyterian Church",
+    "url": "https://www.facebook.com/killymurrispresbyterian",
+    "profile_picture_url": "https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-1/671455763_1390453926443973_2951993143244863152_n.jpg?stp=c0.123.745.745a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=SNEMpEm1U7kQ7kNvwGYks6k&_nc_oc=Adq62hXmpqh39yjJEdJZO6H-mJrl5hCcOPnrxIb0uwckjGqLidt641728YjQaCAFGlc&_nc_zt=24&_nc_ht=scontent.fagr1-2.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPTiY0l0G8e_mnA8qhOtNmq1rilSG2vfikmpPcJu2p3GA&oe=6ADBBD30",
+    "delegate_page_id": "2016983671928399"
+   },
+   "authors": [
+    {
+     "id": "100064381373507",
+     "name": "Killymurris Presbyterian Church",
+     "url": "https://www.facebook.com/killymurrispresbyterian",
+     "profile_picture_url": "https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-1/671455763_1390453926443973_2951993143244863152_n.jpg?stp=c0.123.745.745a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=SNEMpEm1U7kQ7kNvwGYks6k&_nc_oc=Adq62hXmpqh39yjJEdJZO6H-mJrl5hCcOPnrxIb0uwckjGqLidt641728YjQaCAFGlc&_nc_zt=24&_nc_ht=scontent.fagr1-2.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPTiY0l0G8e_mnA8qhOtNmq1rilSG2vfikmpPcJu2p3GA&oe=6ADBBD30",
+     "delegate_page_id": "2016983671928399"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/851129926_1556567709832593_9201035210337929881_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=d4NrX8exeH4Q7kNvwEc16yy&_nc_oc=Adr_JNyf6rFgOHJh38oAO1cipqLFUoBcpuVTwfe5l78--UDdnHXuE3y7-fewlTH9DSM&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQMIu4NilOe7NGRCtb9XqdiQfnf8dMeQStPblqknEuip1A&oe=6ADBC321",
+     "url": "https://www.facebook.com/photo.php?fbid=1556562386499792&set=a.553703663452341&type=3",
+     "id": "1556562386499792"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-6/850304437_1556567723165925_9004873146239698499_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jQRFkDoAImkQ7kNvwG1SoJP&_nc_oc=AdopR9tNjT6cbte1UEahHSwMRT9S7My7z01mPpmGrQl0ZrOYcS2HItIh-hqod4iYbLw&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQOgBKwQ8EADx5trbESCY7_ktTgEDh_8uGkLZ881bwB1cw&oe=6ADBCD43",
+     "url": "https://www.facebook.com/photo.php?fbid=1556562419833122&set=a.553703663452341&type=3",
+     "id": "1556562419833122"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/849272228_1556567746499256_8188323832767243865_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eQHVCrAVd6oQ7kNvwE-4vNb&_nc_oc=AdrwyJaF011cA-Tv-lveKoUUh_YTrfODQXnRZdAJe1Uz9GruSoHK5uxKlPlfTGFEIMo&_nc_zt=23&_nc_ht=scontent.fagr1-2.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNwElDkPi4cxmljnP3IVWPsZ8l0UhifGTaog4P0EiIc6Q&oe=6ADBCFD5",
+     "url": "https://www.facebook.com/photo.php?fbid=1556562476499783&set=a.553703663452341&type=3",
+     "id": "1556562476499783"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1556567559832608",
+   "shares_id": "1556567559832608",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 3,
+   "top_comments": []
+  },
+  {
+   "post_id": "1548363857325551",
+   "type": "post",
+   "url": "https://www.facebook.com/7Eleven.Singapore/posts/pfbid02HaMjFDYdL2ct4wf7p3wD6bjXLy1a1iCuHvRamB55oChvBZQJNkkVSuZW2j2N6KaEl",
+   "message": "🔥 Super Deals From $1 at 7-Eleven! 🥤✨ Stock up on 17 irresistible drinks — perfect for cooling down anytime, anywhere! 🤩💧 Refresh, recharge, repeat! ⚡ Head down to your nearest 7-Eleven today!\n\n🍇 Pokka Kiyo Kyoho Grape Juice 500ml — $1 each\n🍵 Pokka Ice Lychee Tea 500ml — $1 each\n💧 Fuze Tea Peach Mint Green Tea 500ml — $1 each\n🥛 Milo Protomalt Original 240ml — $1 each\n☕ Nescafe Gold Latte 240ml — $1 each\n✨ Curated Culture Refresh Prebiotic Soda Lychee 245ml — $1 each (Exclusive)\n💧 100 Plus Isotonic Drink Original 500ml — $1.20 each\n🍵 Authentic Tea House Ayataka Japanese Green Tea 500ml — $1.20 each\n☕ Nescafé Tiramisu Latte 280ml — $1.20 each\n⚡ Mountain Dew Neon 400ml — $1.20 each\n🍑 Chi Forest Sparkling Water White Peach 480ml — $1.20 each\n🥤 Coca-Cola Zero Sugar / Original Taste 500ml — $1.60 each\n🍵 Pokka Ice Peach Tea / Ice Lemon Tea / Jasmine Green Tea 500ml — $1.70 each\n☕ Suntory Boss Coffee Latte / Black 250ml — $1.70 each\n\nDon’t miss out—grab your favourites from $1 at 7-Eleven today! 🥤✨ Promotion availability varies by store, while stocks last. Valid till 06 Oct 2026.",
+   "message_rich": "🔥 Super Deals From $1 at 7-Eleven! 🥤✨ Stock up on 17 irresistible drinks — perfect for cooling down anytime, anywhere! 🤩💧 Refresh, recharge, repeat! ⚡ Head down to your nearest 7-Eleven today!\n\n🍇 Pokka Kiyo Kyoho Grape Juice 500ml — $1 each\n🍵 Pokka Ice Lychee Tea 500ml — $1 each\n💧 Fuze Tea Peach Mint Green Tea 500ml — $1 each\n🥛 Milo Protomalt Original 240ml — $1 each\n☕ Nescafe Gold Latte 240ml — $1 each\n✨ Curated Culture Refresh Prebiotic Soda Lychee 245ml — $1 each (Exclusive)\n💧 100 Plus Isotonic Drink Original 500ml — $1.20 each\n🍵 Authentic Tea House Ayataka Japanese Green Tea 500ml — $1.20 each\n☕ Nescafé Tiramisu Latte 280ml — $1.20 each\n⚡ Mountain Dew Neon 400ml — $1.20 each\n🍑 Chi Forest Sparkling Water White Peach 480ml — $1.20 each\n🥤 Coca-Cola Zero Sugar / Original Taste 500ml — $1.60 each\n🍵 Pokka Ice Peach Tea / Ice Lemon Tea / Jasmine Green Tea 500ml — $1.70 each\n☕ Suntory Boss Coffee Latte / Black 250ml — $1.70 each\n\nDon’t miss out—grab your favourites from $1 at 7-Eleven today! 🥤✨ Promotion availability varies by store, while stocks last. Valid till 06 Oct 2026.",
+   "timestamp": 1790125215,
+   "comments_count": 0,
+   "reactions_count": 40,
+   "reshare_count": 6,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 39,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064558549327",
+    "name": "7-Eleven Singapore",
+    "url": "https://www.facebook.com/7Eleven.Singapore",
+    "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/448266976_866564668838810_4182862328049368786_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Q-M8Tb1mW3MQ7kNvwFoxrnP&_nc_oc=AdrTYCtFDRQiTCTXGL1whczHPrkUhJ3RqYJA3waKNbxYz8cGMJORo_wXgPeFnMDkYFU&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQOxVGL4fCMiHaAkKK1t_Wb-UAaIk0rM4A8lOh4Nx85idw&oe=6ADBEDEA",
+    "delegate_page_id": "14121632961"
+   },
+   "authors": [
+    {
+     "id": "100064558549327",
+     "name": "7-Eleven Singapore",
+     "url": "https://www.facebook.com/7Eleven.Singapore",
+     "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/448266976_866564668838810_4182862328049368786_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Q-M8Tb1mW3MQ7kNvwFoxrnP&_nc_oc=AdrTYCtFDRQiTCTXGL1whczHPrkUhJ3RqYJA3waKNbxYz8cGMJORo_wXgPeFnMDkYFU&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQOxVGL4fCMiHaAkKK1t_Wb-UAaIk0rM4A8lOh4Nx85idw&oe=6ADBEDEA",
+     "delegate_page_id": "14121632961"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-6/796941397_1547744120720858_2424087460702308797_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0X4oy3Ljdm4Q7kNvwFv3Cpb&_nc_oc=AdrBIXvF5lSi5YaJh_1VxLPxFX80_O8UpyajHRuhzplPak_hQv0ZzaXSyWcY3cA8050&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQOVz7vxdnJXS0iPOuZukLXwZfqlolfYbd8LeyIMrJ3gCA&oe=6ADBC3FA",
+     "url": "https://www.facebook.com/photo.php?fbid=1548363817325555&set=a.637122631783016&type=3",
+     "id": "1548363817325555"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/818714500_1547744157387521_7816798305683724865_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_d5B5ocdbLoQ7kNvwHtf3FN&_nc_oc=Adoz_B9QmhIYfShP3jLIF83E7ccx106Urat9EP7vzXEagrNgShJBvsNS_C-dSzqnavc&_nc_zt=23&_nc_ht=scontent.fagr1-2.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNdVA6c2F-R_u0y3yd0dZIjmCq5v4A-XdcEBqvdwfDDIg&oe=6ADBEFD3",
+     "url": "https://www.facebook.com/photo.php?fbid=1548363813992222&set=a.637122631783016&type=3",
+     "id": "1548363813992222"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-6/819300752_1547744154054188_8075309040075336375_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lmaOrfIMNywQ7kNvwGWgBgv&_nc_oc=Adqq4sMLbhtFATB7MnnyOVH6oQgb5ucEH1tUiNRVX5Q7DxvQCK-y5qxwSWlRq4mM2r8&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQP92pQkScSnmexEaTiFCt_GLznfA140wyiepSwzwRAq1Q&oe=6ADBD9B1",
+     "url": "https://www.facebook.com/photo.php?fbid=1548363810658889&set=a.637122631783016&type=3",
+     "id": "1548363810658889"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/796691331_1547744150720855_782032558253828002_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NPn2oe7hUEcQ7kNvwHQ8DF9&_nc_oc=AdpYF-aPhTgkZmL8eOH-O4lzdamrTarceqKPKbsSgJQr0HPZHUFNIxzWTfMHI_cUJcg&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQN7eA_E5cq5BkRie983WPQ5kvz-K1-oTIpVj8fjF4bC6g&oe=6ADBE845",
+     "url": "https://www.facebook.com/photo.php?fbid=1548363820658888&set=a.637122631783016&type=3",
+     "id": "1548363820658888"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1548363857325551",
+   "shares_id": "1548363857325551",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "122186791496761719",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1361726852769136/",
+   "message": "Thailand’s 7-Eleven drink station is the perfect place to create your own refreshing combo 🇹🇭🥤\n\nTry mixing flavors like:\n\n🍓 Pink milk\n🧋 Thai milk tea\n🍵 Matcha latte\n🍫 Coco chocolate\n🍋 Honey lemon soda\n💜 Taro milk\n🍯 Yuzu honey\n🍓 Strawberry yogurt\n\nAdd plenty of ice, adjust the sweetness and mix it your way. Products and flavors may vary between branches, so check what is available before buying.\n\nWhich combo would you try first? 👇\nSave this for your Thailand trip and follow @thailandcheapo for more local finds.\n\n#Thailand #SevenElevenThailand #ThailandDrinks #ThailandFood #thailandtravel",
+   "message_rich": "Thailand’s 7-Eleven drink station is the perfect place to create your own refreshing combo 🇹🇭🥤\n\nTry mixing flavors like:\n\n🍓 Pink milk\n🧋 Thai milk tea\n🍵 Matcha latte\n🍫 Coco chocolate\n🍋 Honey lemon soda\n💜 Taro milk\n🍯 Yuzu honey\n🍓 Strawberry yogurt\n\nAdd plenty of ice, adjust the sweetness and mix it your way. Products and flavors may vary between branches, so check what is available before buying.\n\nWhich combo would you try first? 👇\nSave this for your Thailand trip and follow @thailandcheapo for more local finds.\n\n#Thailand #SevenElevenThailand #ThailandDrinks #ThailandFood #thailandtravel",
+   "timestamp": 1784704770,
+   "comments_count": 2,
+   "reactions_count": 392,
+   "reshare_count": 51,
+   "reactions": {
+    "angry": 0,
+    "care": 3,
+    "haha": 0,
+    "like": 370,
+    "love": 18,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "61572851570556",
+    "name": "VisitThailand",
+    "url": "https://www.facebook.com/people/VisitThailand/61572851570556/",
+    "profile_picture_url": "https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-1/772001840_122188902272761719_1689715844207286870_n.jpg?stp=c91.91.1072.1072a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oXj_q-_ZTLEQ7kNvwH3V6SI&_nc_oc=Adp-rzyvz4n4YTyfpI_2ihoEQPx18ASPU5lUbZt6Es7EEjde_Z6uj9zAqqtWnFcFwgQ&_nc_zt=24&_nc_ht=scontent.fagr1-2.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPI_zDMO6SFB2UfjK4NeTrIFbX35ZrALV1MYkCQGtZuig&oe=6ADBD519",
+    "delegate_page_id": "550232104841312"
+   },
+   "authors": [
+    {
+     "id": "61572851570556",
+     "name": "VisitThailand",
+     "url": "https://www.facebook.com/people/VisitThailand/61572851570556/",
+     "profile_picture_url": "https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-1/772001840_122188902272761719_1689715844207286870_n.jpg?stp=c91.91.1072.1072a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oXj_q-_ZTLEQ7kNvwH3V6SI&_nc_oc=Adp-rzyvz4n4YTyfpI_2ihoEQPx18ASPU5lUbZt6Es7EEjde_Z6uj9zAqqtWnFcFwgQ&_nc_zt=24&_nc_ht=scontent.fagr1-2.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPI_zDMO6SFB2UfjK4NeTrIFbX35ZrALV1MYkCQGtZuig&oe=6ADBD519",
+     "delegate_page_id": "550232104841312"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1361726852769136/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fagr1-2.fna.fbcdn.net/o1/v/t2/f2/m367/AQNGoqavzwv3GYgtFrIUDQo4r2C3R0OxCJc88wQDjgdfeswHzKe8ENdKTKBw5w1AeyCjZtjvAhSPqZ41sZ9U0z4MbK2ufWkONO6wxhDCww.mp4?_nc_cat=110&_nc_oc=AdqQTHNVWiMGwx8iB0hsVmq0ITOwlmratX5RRaidVRbIFV-zDWev2WCMMACr7-BTR-4&_nc_sid=8bf8fe&_nc_ht=video.fagr1-2.fna.fbcdn.net&_nc_ohc=SQGZFepSRLUQ7kNvwETQIjd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNzQ1NzY5MTgzNDM1NTM2LCJhc3NldF9hZ2VfZGF5cyI6ODksInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoyOCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQNhjcf__wK88RsL0S-WvBf3UyIwTGGFFbr63sY72LMdrA&oe=6ADBE70C&bitrate=289832&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video.fagr1-2.fna.fbcdn.net/o1/v/t2/f2/m367/AQPCx4Xk83Z8shwUEqHhZbb9w_9XEVXyXpHxUuZUXK7etRTfX6RlA7uScAyKWT9OBmr7TiXsbtHgAkkPKolLk-0L__2jZxgLFRKg0qa6WQ.mp4?_nc_cat=108&_nc_oc=Adp33q6IS8fOwK-La6r5MubLr56OMI4NhC5wk6JWhbD1BRoKqOKi4SIxiBB9uKP4AkM&_nc_sid=8bf8fe&_nc_ht=video.fagr1-2.fna.fbcdn.net&_nc_ohc=q--UuTGAf0cQ7kNvwEYS6sD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxNzQ1NzY5MTgzNDM1NTM2LCJhc3NldF9hZ2VfZGF5cyI6ODksInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoyOCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPmAXVREa7vE7V1BsDROF-CMYmAUx6UoFDGisX9nF4psw&oe=6ADBD6C6&bitrate=1044083&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fagr1-1.fna.fbcdn.net/v/t51.71878-10/750922282_2155140241719135_6558182418676627905_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=wx0zdFeMAXQQ7kNvwGV31WT&_nc_oc=AdqsZa4dP3OD8rvlqrKF2BHO9REz7fIs9s-mq8kP0H9FbGoZheWdw4RXq1PoUZqOhHA&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQPx6AkytS9eD7-2P0BduUPgCRWkprDmhI7ClEK_qm-QMw&oe=6ADBD098",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122186791496761719",
+   "shares_id": "122186791496761719",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1534436758723378",
+   "type": "post",
+   "url": "https://www.facebook.com/7ElevenMalaysia/posts/pfbid02z7ejbRMFHiSg64Zhi2agSe5zWWGjgF1uL6u9iqt1AxfZ3ZEz5T2MeQypDvYvpS4xl",
+   "message": "FREE Tealive Tea? Yes, it’s FREE! 🍎🍋🍍✨\n\nNeed a refreshing pick-me-up? Head to the My7E App and collect your voucher for a FREE Tealive Apple Lemon Tea or PassionFruit Pineapple Tea 250ml! 👀💚\n\nJust collect your voucher on My7E, then redeem it at 7-Eleven. \n\n🕙 Voucher Collection: 25 Sep 2026, 10:00 AM – 26 Sep 2026\n📅 Redemption Period: 25 – 28 Sep 2026\n🎫 1 voucher per My7E member\n📍 Peninsular Malaysia only\n⏳ While stocks last\n\nDon’t just scroll past this one, open My7E App and grab your FREE Tealive Tea!\n\nDownload My7E App here: https://onelink.to/my7e \n\n#7ElevenMalaysia #My7E #My7EBelanja #Tealive",
+   "message_rich": "FREE Tealive Tea? Yes, it’s FREE! 🍎🍋🍍✨\n\nNeed a refreshing pick-me-up? Head to the My7E App and collect your voucher for a FREE Tealive Apple Lemon Tea or PassionFruit Pineapple Tea 250ml! 👀💚\n\nJust collect your voucher on My7E, then redeem it at 7-Eleven. \n\n🕙 Voucher Collection: 25 Sep 2026, 10:00 AM – 26 Sep 2026\n📅 Redemption Period: 25 – 28 Sep 2026\n🎫 1 voucher per My7E member\n📍 Peninsular Malaysia only\n⏳ While stocks last\n\nDon’t just scroll past this one, open My7E App and grab your FREE Tealive Tea!\n\nDownload My7E App here: https://onelink.to/my7e \n\n#7ElevenMalaysia #My7E #My7EBelanja #Tealive",
+   "timestamp": 1790254812,
+   "comments_count": 29,
+   "reactions_count": 202,
+   "reshare_count": 45,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 1,
+    "like": 195,
+    "love": 3,
+    "sad": 0,
+    "wow": 2
+   },
+   "author": {
+    "id": "100064712045041",
+    "name": "7-Eleven Malaysia",
+    "url": "https://www.facebook.com/7ElevenMalaysia",
+    "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/444468683_862072035959857_3778485469828856784_n.png?stp=cp0_dst-png_s80x80&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=IqB1AK9a_jgQ7kNvwFFwbl8&_nc_oc=Ado3ic07BIlKHhr0e1b_MTHAAx_a6YHhgih9jxkZF0xdiOYd6YuKMbhmvhH6SG89cS8&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNVlIXqxGytUvtBLMBj8ZMF6vrV_Co1DKcipRazZhMlwQ&oe=6ADBEEF9",
+    "delegate_page_id": "184626841574407"
+   },
+   "authors": [
+    {
+     "id": "100064712045041",
+     "name": "7-Eleven Malaysia",
+     "url": "https://www.facebook.com/7ElevenMalaysia",
+     "profile_picture_url": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-1/444468683_862072035959857_3778485469828856784_n.png?stp=cp0_dst-png_s80x80&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=IqB1AK9a_jgQ7kNvwFFwbl8&_nc_oc=Ado3ic07BIlKHhr0e1b_MTHAAx_a6YHhgih9jxkZF0xdiOYd6YuKMbhmvhH6SG89cS8&_nc_zt=24&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQNVlIXqxGytUvtBLMBj8ZMF6vrV_Co1DKcipRazZhMlwQ&oe=6ADBEEF9",
+     "delegate_page_id": "184626841574407"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fagr1-1.fna.fbcdn.net/v/t39.30808-6/819287191_1534014308765623_3896667416362495105_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cQObX2oSFwwQ7kNvwEm6-GU&_nc_oc=AdpHupm-rlNYh9Eudh0dOOfOunpBZvkmyGVqqNBOpHthOPA1C236G4-LtVik4fhsnNg&_nc_zt=23&_nc_ht=scontent.fagr1-1.fna&_nc_gid=X-jm3xJXq2CPEHBEkSpeXA&_nc_ss=70289&oh=00_AQOTrxnqVcDnJWC_iuSgXoT3ct0RfwoTWKfnaS97LCcDqw&oe=6ADBEEAE",
+    "height": 1350,
+    "width": 1080,
+    "id": "1534436702056717"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1534436758723378",
+   "shares_id": "1534436758723378",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "28884291744541855",
+   "type": "post",
+   "url": "https://www.facebook.com/ashley.richmond.315/posts/pfbid02Ku87dJtWwN4Q8Y2hCZ8nH4YdHUEjb2sdKvFLCTwczXvMUqYWdP4UGbN1prD9geZDl",
+   "message": "Aliciaa Brant",
+   "message_rich": "Aliciaa Brant",
+   "timestamp": 1791805528,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid026xdazaMHBZoqcZh3GgmZvoXyusPEhn22x3b3wGeq9pdWAuKeVwCwVNkDPeeD9peVl",
+    "name": "Ashley Richmond",
+    "url": "https://www.facebook.com/ashley.richmond.315",
+    "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.6435-1/39070096_1890182197712842_4813512669174693888_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=NnDUNv4M3DoQ7kNvwG4BXFZ&_nc_oc=AdpgIsUKvIvyDFKWToN3HKZxL5fLzjt9O4cD0OQTMKVGEPRs05WxDsmjCAM0GMewrxU&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQMEybWdhFKqy2nZoQSfCIQeucPYPT3PCSEl99Td5lR1Vg&oe=6AFD7E47",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid026xdazaMHBZoqcZh3GgmZvoXyusPEhn22x3b3wGeq9pdWAuKeVwCwVNkDPeeD9peVl",
+     "name": "Ashley Richmond",
+     "url": "https://www.facebook.com/ashley.richmond.315",
+     "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.6435-1/39070096_1890182197712842_4813512669174693888_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=NnDUNv4M3DoQ7kNvwG4BXFZ&_nc_oc=AdpgIsUKvIvyDFKWToN3HKZxL5fLzjt9O4cD0OQTMKVGEPRs05WxDsmjCAM0GMewrxU&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQMEybWdhFKqy2nZoQSfCIQeucPYPT3PCSEl99Td5lR1Vg&oe=6AFD7E47",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "1490103203177778",
+    "url": "https://www.facebook.com/groups/1268696028651831/permalink/1490103203177778/",
+    "timestamp": null,
+    "message": "Berry vanilla Red Bull dupe 😍⚡️💙\n\nHonestly 1000000x better than Red Bull IMO 🤤💣\n\n7 Energy + blue raspberry + vanilla (or cupcake) + cream ☁️🔥\n\n2x sweet 😭✨\n\nMy go-to 7 Energy order 👀💙",
+    "photo_url": null,
+    "author": {
+     "id": "pfbid0pvdW6Ci3DoaMkkx79wc8Ah1tPbacycTQ22hq8VpJQ9BdSBX8tW3P7UYYtLU9dPBl",
+     "name": "Dana Maka",
+     "url": "https://www.facebook.com/people/Dana-Maka/pfbid0pvdW6Ci3DoaMkkx79wc8Ah1tPbacycTQ22hq8VpJQ9BdSBX8tW3P7UYYtLU9dPBl/"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/groups/1268696028651831/permalink/1490103203177778/",
+   "text_format_metadata": null,
+   "comments_id": "28884291744541855",
+   "shares_id": "28884291744541855",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1086184811080464",
+   "type": "post",
+   "url": "https://www.facebook.com/christine.thornton.238638/posts/pfbid024TpTPqa8AV9jDZPQ867BRDZBazK3v1HmtT4m2GWLc7tTJ2rgwzAnhPRCNcbnUAKal",
+   "message": "Trying energy drinks from 7 Brew! 🤪🥤 I got it at Walmart. I didn’t even know they had these ! ￼💕 This one is SUGAR-FREE, and so far, I’m loving them! 😍 I’ve tried a couple of different ones, and I haven’t had one I didn’t like yet! 😂👏🏼 I still have plenty more flavors to try, though!\n\nMy ONLY complaint is I wish they had more sugar-free coffee options because y’all know I LOVE my coffee! & they have the coffee, but not sugar-free unless I haven’t seen it 👀🤪￼☕️😭😂\n\nHave y’all tried 7 Brew yet energy drinks yet?! 👀\n\nhttps://walmrt.us/4egRrgP\n#7brewcoffee #energy #mamacookie",
+   "message_rich": "Trying energy drinks from 7 Brew! 🤪🥤 I got it at Walmart. I didn’t even know they had these ! ￼💕 This one is SUGAR-FREE, and so far, I’m loving them! 😍 I’ve tried a couple of different ones, and I haven’t had one I didn’t like yet! 😂👏🏼 I still have plenty more flavors to try, though!\n\nMy ONLY complaint is I wish they had more sugar-free coffee options because y’all know I LOVE my coffee! & they have the coffee, but not sugar-free unless I haven’t seen it 👀🤪￼☕️😭😂\n\nHave y’all tried 7 Brew yet energy drinks yet?! 👀\n\nhttps://walmrt.us/4egRrgP\n#7brewcoffee #energy #mamacookie",
+   "timestamp": 1791925778,
+   "comments_count": 61,
+   "reactions_count": 473,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 10,
+    "haha": 0,
+    "like": 300,
+    "love": 160,
+    "sad": 0,
+    "wow": 3
+   },
+   "author": {
+    "id": "100090668644429",
+    "name": "Christine Thornton",
+    "url": "https://www.facebook.com/christine.thornton.238638",
+    "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-1/528326313_719826564382959_8812850449430559027_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-eaJevens4gQ7kNvwH3chmB&_nc_oc=AdpBIoPL89d0D3Zd8Gb4XkAxGBoYmnkA6Llx4PvcSZ3YXLt5qsfy9W2okFXFIFhnBrY&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQMPo_q4PylnIy3sXMmMwZbAzyYOgP2s5aI1fS0yH9Vv7Q&oe=6ADBE3A5",
+    "delegate_page_id": "111886571843593"
+   },
+   "authors": [
+    {
+     "id": "100090668644429",
+     "name": "Christine Thornton",
+     "url": "https://www.facebook.com/christine.thornton.238638",
+     "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-1/528326313_719826564382959_8812850449430559027_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-eaJevens4gQ7kNvwH3chmB&_nc_oc=AdpBIoPL89d0D3Zd8Gb4XkAxGBoYmnkA6Llx4PvcSZ3YXLt5qsfy9W2okFXFIFhnBrY&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQMPo_q4PylnIy3sXMmMwZbAzyYOgP2s5aI1fS0yH9Vv7Q&oe=6ADBE3A5",
+     "delegate_page_id": "111886571843593"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/849694623_1086183167747295_3893928262886118797_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0bCHMZlHrkAQ7kNvwGVi4WC&_nc_oc=Adp351-EUYYWv30q6lKW1DX7mShk1qXE1H-YlE9ozgOmTDUycJeiPve9-sQIcZhkDus&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQOj8EcnCYz6Elbl_Uy-tUVGEYfYRjCGqYClVnX0_kGdjQ&oe=6ADBD152",
+    "height": 1920,
+    "width": 1080,
+    "id": "1086183164413962"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1086184811080464",
+   "shares_id": "1086184811080464",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "3913831388759263",
+   "type": "post",
+   "url": "https://www.facebook.com/kassidy.cupp.12/posts/pfbid02JeAsuvj4nh2qTTMq6FDCVgz9o3DWueHjAmnauXpoog6fSbB1z4UhAPtXESqz1GMbl",
+   "message": "Sooo tasty 😋🍏🍋‍🟩🥝💚\n\n7energy w/ green apple, blue raspberry, lime, kiwi & cream",
+   "message_rich": "Sooo tasty 😋🍏🍋‍🟩🥝💚\n\n7energy w/ green apple, blue raspberry, lime, kiwi & cream",
+   "timestamp": 1790281826,
+   "comments_count": 5,
+   "reactions_count": 14,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 7,
+    "love": 7,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100003973225670",
+    "name": "Kassidy Cupp",
+    "url": "https://www.facebook.com/100003973225670",
+    "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-1/686967299_3747753818700355_5184923878272193125_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=BhZcyc3vcfoQ7kNvwEyR94x&_nc_oc=Adq6RObaH40mPXON9nqip-eQiD3WJ4u_7vV3dnUiYpcWNJKnYdWF6TrFGwJVq2QQojs&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQOdE7kPIQyp8rvOtq-7TEU8Pg0hiyrpEl6D__A-pD04Ow&oe=6ADBDAB7",
+    "delegate_page_id": "112124614877656"
+   },
+   "authors": [
+    {
+     "id": "100003973225670",
+     "name": "Kassidy Cupp",
+     "url": "https://www.facebook.com/100003973225670",
+     "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-1/686967299_3747753818700355_5184923878272193125_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=BhZcyc3vcfoQ7kNvwEyR94x&_nc_oc=Adq6RObaH40mPXON9nqip-eQiD3WJ4u_7vV3dnUiYpcWNJKnYdWF6TrFGwJVq2QQojs&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQOdE7kPIQyp8rvOtq-7TEU8Pg0hiyrpEl6D__A-pD04Ow&oe=6ADBDAB7",
+     "delegate_page_id": "112124614877656"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/823849542_3913830742092661_3108238051547165548_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UvHBAaFjZhkQ7kNvwECPgu1&_nc_oc=Adr-w0OOJhXxLNStvWHFCSh2bmOb6OL_ovQoT19VkjUJ0bjrjjN6bsSqhQfBElCQAWI&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQMS8WqL1unodFd6Ii-JXKjaDMcxq7YDXYW2XoLHL1Hd0w&oe=6ADBBD53",
+    "height": 1507,
+    "width": 1080,
+    "id": "3913830735425995"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "3913831388759263",
+   "shares_id": "3913831388759263",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122153135427113252",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02L6NWcwzCis2DABsvc2tjMRRp8gJdCqPsqeTU3oPpjafZjsdAB4F3BfPK9fRFSNgvl&id=61583397578949",
+   "message": "عملت ل V7 فوتوسيشن ☺️🫣\nطعمها منعش جدااا جربوها وبإذن الله تعجبكم 🩵\n\n.\n\n.\n\n.\n\n.\n#drink",
+   "message_rich": "عملت ل V7 فوتوسيشن ☺️🫣\nطعمها منعش جدااا جربوها وبإذن الله تعجبكم 🩵\n\n.\n\n.\n\n.\n\n.\n#drink",
+   "timestamp": 1787603744,
+   "comments_count": 0,
+   "reactions_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61583397578949",
+    "name": "Lifewithrano3",
+    "url": "https://www.facebook.com/people/Lifewithrano3/61583397578949/",
+    "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-1/755034740_122149969995113252_6288392610616802158_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rdLmdpDyRjoQ7kNvwFz3qAk&_nc_oc=AdqdMaQNkKCkwGVtHL3BR5wekq2kLXcod45oDCHigOgkL8EMb__zhg0tJNm5led7g6A&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQM6yVIWG7Cjunaobn3lg-GAq9DKkkdDo6XAxzkXHdWZSw&oe=6ADBE133",
+    "delegate_page_id": "909693742222428"
+   },
+   "authors": [
+    {
+     "id": "61583397578949",
+     "name": "Lifewithrano3",
+     "url": "https://www.facebook.com/people/Lifewithrano3/61583397578949/",
+     "profile_picture_url": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-1/755034740_122149969995113252_6288392610616802158_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rdLmdpDyRjoQ7kNvwFz3qAk&_nc_oc=AdqdMaQNkKCkwGVtHL3BR5wekq2kLXcod45oDCHigOgkL8EMb__zhg0tJNm5led7g6A&_nc_zt=24&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQM6yVIWG7Cjunaobn3lg-GAq9DKkkdDo6XAxzkXHdWZSw&oe=6ADBE133",
+     "delegate_page_id": "909693742222428"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/786035756_122153135379113252_369168920395311396_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lRn9RvmFKW0Q7kNvwFQqC9A&_nc_oc=Ado8pXCpXsKN92pYqqrwWyxOYGy-BrVxXhZ4NVT8vSrIcFmLD3ZqLzfB5aF4kkEDSRs&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQMoGHJB9HCaONmW5_y5YAHwZPk9CgWKtfTUJ3pauZoWTA&oe=6ADBC4BB",
+     "url": "https://www.facebook.com/photo.php?fbid=122153135331113252&set=a.122100860001113252&type=3",
+     "id": "122153135331113252"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/786467972_122153135397113252_8985621571488889485_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hBATFeC4VP0Q7kNvwGnnjeS&_nc_oc=AdqmKuABA8hFs8liisEfKFIKRtWccvRhZ4GJygrVPsr2FkGGj17WT-dc4hB0MGKatD0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQNv0zw9Es6uUwhuSXZD4HxpGJDk8j7H05jIxI75LPqexA&oe=6ADBBF45",
+     "url": "https://www.facebook.com/photo.php?fbid=122153135373113252&set=a.122100860001113252&type=3",
+     "id": "122153135373113252"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/784215137_122153135391113252_8471095709032767167_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sLUbJZHyDqAQ7kNvwE7h3_C&_nc_oc=AdqSYDbbfcElZK2DcbvGYjoUyl_RkqaIHBJTD_mQ-WNd4rNfYAxUiWStyh22C20s518&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQOGz5rMMjOaxbqX550D11_sfav_aZWTD2OsAftVgGU7sg&oe=6ADBE0E9",
+     "url": "https://www.facebook.com/photo.php?fbid=122153135361113252&set=a.122100860001113252&type=3",
+     "id": "122153135361113252"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-bos5-1.xx.fbcdn.net/v/t39.30808-6/786069945_122153135385113252_5897915566335885268_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WzN8AW_DIKgQ7kNvwElILhZ&_nc_oc=AdqNaon-RnOcXJ4_SAUIf8mAUnO_UUvt0JxrF9RWCOtmPkoyewqtAq5fjrIIlmBrMBA&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=mmU6G62plWi4YWWF3e-RUA&_nc_ss=70289&oh=00_AQNrgDLkozkj297QrPwTb2NzvTfxN2nOpZNkIH9lE3kBpw&oe=6ADBE346",
+     "url": "https://www.facebook.com/photo.php?fbid=122153135349113252&set=a.122100860001113252&type=3",
+     "id": "122153135349113252"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122153135427113252",
+   "shares_id": "122153135427113252",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "28762167450082890",
+   "type": "post",
+   "url": "https://www.facebook.com/sj.sonday/posts/pfbid031iv9wjXsxMpESV16AqR6qfqjEREYucCJJTMZMhAjFyKkLzFWicUrxooszoPcvXKGl",
+   "message": "A workplace that celebrates together, grows stronger together! 💚🏆\n\nMore than colleagues, we’re a family built on teamwork, dedication, and shared victories. Grateful for the people who make every achievement more meaningful! 🥰🤝\n\n#WorkFamily #Teamwork #SharedSuccess #WorkplaceBonding #GratefulHearts",
+   "message_rich": "A workplace that celebrates together, grows stronger together! 💚🏆\n\nMore than colleagues, we’re a family built on teamwork, dedication, and shared victories. Grateful for the people who make every achievement more meaningful! 🥰🤝\n\n#WorkFamily #Teamwork #SharedSuccess #WorkplaceBonding #GratefulHearts",
+   "timestamp": 1792040215,
+   "comments_count": 5,
+   "reactions_count": 107,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 96,
+    "love": 11,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100001490528076",
+    "name": "Kuya Sheen",
+    "url": "https://www.facebook.com/sj.sonday",
+    "profile_picture_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/763944338_27818888761077435_6629616723794752513_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=MqtjaraeDlMQ7kNvwFqARDk&_nc_oc=AdqEz4uMll3FA2zlMYHCSDwYhjTuNBguTGVv5bqLDj0AE8ss2fFeH4tCeQAl0pVQreg&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQM2Mkd7RSd3KyiRG_XRFJtocB-Bm9sAAFwCQWrKnQlTuQ&oe=6ADBD3C3",
+    "delegate_page_id": "1074119845778581"
+   },
+   "authors": [
+    {
+     "id": "100001490528076",
+     "name": "Kuya Sheen",
+     "url": "https://www.facebook.com/sj.sonday",
+     "profile_picture_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/763944338_27818888761077435_6629616723794752513_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=MqtjaraeDlMQ7kNvwFqARDk&_nc_oc=AdqEz4uMll3FA2zlMYHCSDwYhjTuNBguTGVv5bqLDj0AE8ss2fFeH4tCeQAl0pVQreg&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQM2Mkd7RSd3KyiRG_XRFJtocB-Bm9sAAFwCQWrKnQlTuQ&oe=6ADBD3C3",
+     "delegate_page_id": "1074119845778581"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/850185320_28762167150082920_1791532581369765350_n.jpg?stp=dst-jpegr_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pYHmXZBGL94Q7kNvwGFUlZY&_nc_oc=AdogCcDIVrHxv1GKm82kR3sV_QXzP-NtDDr5b14bX9pfkucbAnGgLCk0GM5L8G6EIrE&_nc_zt=23&se=-1&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQMPQHT5-o8lX273phxFL3jJQ07xMuGjBnxRdCXMQGNpcg&oe=6ADBE924",
+    "height": 1536,
+    "width": 2048,
+    "id": "28762167136749588"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28762167450082890",
+   "shares_id": "28762167450082890",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1534047492095638",
+   "type": "post",
+   "url": "https://www.facebook.com/7ElevenMalaysia/posts/pfbid06CwyLjMbGSJMW8GJpE54tYMZRZQc1H4AhhWVAAtwXRhhTTHrP6xH7ZnWeNbXZz1pl",
+   "message": "Enjoy your Hot Cappuccino at CAFé by 7-Eleven, for just RM3.90!\n\nNeed a little extra boost? Add an Espresso Shot for a richer, bolder coffee taste that keeps you going throughout the day! 🤎 \n\nBest part is you can add an Espresso Shot to any coffee of your choice, not just Cappuccino, so feel free to customise your cup exactly how you like it.\n\n☕ Hot Cappuccino – RM3.90\n➕ Add an Espresso Shot to any coffee – +RM1\n\nWhether it's your morning pick-me-up or an afternoon recharge, this extra shot is here to power you through the day.\n\nDrop by at any CAFé by 7-Eleven and give your coffee an extra kick! ✨\n\nDon’t forget to use the My7E app to collect rewards along the way.\n\n📲 https://onelink.to/my7e\n\n#7ElevenMalaysia #CAFéby7Eleven #ExtraShot #HotCappuccino",
+   "message_rich": "Enjoy your Hot Cappuccino at CAFé by 7-Eleven, for just RM3.90!\n\nNeed a little extra boost? Add an Espresso Shot for a richer, bolder coffee taste that keeps you going throughout the day! 🤎 \n\nBest part is you can add an Espresso Shot to any coffee of your choice, not just Cappuccino, so feel free to customise your cup exactly how you like it.\n\n☕ Hot Cappuccino – RM3.90\n➕ Add an Espresso Shot to any coffee – +RM1\n\nWhether it's your morning pick-me-up or an afternoon recharge, this extra shot is here to power you through the day.\n\nDrop by at any CAFé by 7-Eleven and give your coffee an extra kick! ✨\n\nDon’t forget to use the My7E app to collect rewards along the way.\n\n📲 https://onelink.to/my7e\n\n#7ElevenMalaysia #CAFéby7Eleven #ExtraShot #HotCappuccino",
+   "timestamp": 1790222405,
+   "comments_count": 4,
+   "reactions_count": 53,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 48,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064712045041",
+    "name": "7-Eleven Malaysia",
+    "url": "https://www.facebook.com/7ElevenMalaysia",
+    "profile_picture_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/444468683_862072035959857_3778485469828856784_n.png?stp=cp0_dst-png_s80x80&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=IqB1AK9a_jgQ7kNvwHSKuDD&_nc_oc=Adq8UykpHLpHiPmMkXHTWCyl9FkfMpIZSojzmKHsashIljfQEalGHcCfurYHGZDD_Rw&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQOBb3IEjz2LVmaPK8mpLhjHUpnfWdZzB8GKqUb6hcEUqg&oe=6ADBEEF9",
+    "delegate_page_id": "184626841574407"
+   },
+   "authors": [
+    {
+     "id": "100064712045041",
+     "name": "7-Eleven Malaysia",
+     "url": "https://www.facebook.com/7ElevenMalaysia",
+     "profile_picture_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/444468683_862072035959857_3778485469828856784_n.png?stp=cp0_dst-png_s80x80&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=IqB1AK9a_jgQ7kNvwHSKuDD&_nc_oc=Adq8UykpHLpHiPmMkXHTWCyl9FkfMpIZSojzmKHsashIljfQEalGHcCfurYHGZDD_Rw&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQOBb3IEjz2LVmaPK8mpLhjHUpnfWdZzB8GKqUb6hcEUqg&oe=6ADBEEF9",
+     "delegate_page_id": "184626841574407"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/820307890_1533374255496295_136139647111106552_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gRKsrLZQ80UQ7kNvwHHCFGu&_nc_oc=Adr0FcvHnyWMLyO9MLXxQcw9n4nq9dtlJuXN8NY8j0Zi39_cZFuj5rkOf0HuCd9hXyU&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQMbJHXbiaJLAG9iPGqnHgKpTwCRdjqhXcE44JWbOZ7h7A&oe=6ADBED61",
+    "height": 1350,
+    "width": 1080,
+    "id": "1534047418762312"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1534047492095638",
+   "shares_id": "1534047492095638",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1787057845968353",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/gujranwalapk/posts/1787057845968353/",
+   "message": "Chilling Time 🥤🥤",
+   "message_rich": "Chilling Time 🥤🥤",
+   "timestamp": 1790009760,
+   "comments_count": 1,
+   "reactions_count": 6,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 5,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100003601170432",
+    "name": "Xu Fy An",
+    "url": "https://www.facebook.com/muhammad.sufyan.319",
+    "profile_picture_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/587205721_3706339019496101_2150677767827826873_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=C0rQcbPaqKQQ7kNvwGiKQ7y&_nc_oc=AdotQrBPEScNB4d-jRyC4nKnL5j-5xbJpDjKWCcYnEFJbwFBZcDQcnf8YCAiDVO1kIM&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQNBX4qqEUnVJD60fCJ0u1lkLlFQkeskqb7RhU3GYqdU6Q&oe=6ADBDECF",
+    "delegate_page_id": "906650322539558"
+   },
+   "authors": [
+    {
+     "id": "100003601170432",
+     "name": "Xu Fy An",
+     "url": "https://www.facebook.com/muhammad.sufyan.319",
+     "profile_picture_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/587205721_3706339019496101_2150677767827826873_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=C0rQcbPaqKQQ7kNvwGiKQ7y&_nc_oc=AdotQrBPEScNB4d-jRyC4nKnL5j-5xbJpDjKWCcYnEFJbwFBZcDQcnf8YCAiDVO1kIM&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQNBX4qqEUnVJD60fCJ0u1lkLlFQkeskqb7RhU3GYqdU6Q&oe=6ADBDECF",
+     "delegate_page_id": "906650322539558"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/818291925_4066957303434269_5078930393824171490_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Nf05KexS1fcQ7kNvwHhtuQf&_nc_oc=AdrUmbrqJynHkCjD-dnOjwBEXGbMscc91R58f_R6picJg77oKH5QzmAe7sddRip82Vk&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQM8Eio1_rVAWNIdL_drNIegP14JyVeeyRIKzb3fYGIVlg&oe=6ADBC5B5",
+    "height": 1440,
+    "width": 1080,
+    "id": "4066957300100936"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1787057845968353",
+   "shares_id": "1787057845968353",
+   "associated_group_id": "584007929606690",
+   "associated_group": {
+    "group_id": "584007929606690",
+    "name": "Gujranwala",
+    "url": "https://www.facebook.com/groups/gujranwalapk/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1495999982561939",
+   "type": "post",
+   "url": "https://www.facebook.com/7Eleven.Singapore/posts/pfbid02Dm6fgcTETApR1XrXXz5kHZchjAz1w6vPPqbRkRzAA1DGDqXXmQp6wtyqRuqY8TVml",
+   "message": "👀 Something seriously refreshing is about to hit the chill zone... A brand new exclusive is landing at 7-Eleven, and trust us, you'll want first sip. ❄️💚\n\nCan you guess what's coming?\n\nHint: SPRITE C _ _ _ L 😉\n\nDrop your guesses below! 👇\n\n#7ElevenSG #Sprite #CocaColaSG",
+   "message_rich": "👀 Something seriously refreshing is about to hit the chill zone... A brand new exclusive is landing at 7-Eleven, and trust us, you'll want first sip. ❄️💚\n\nCan you guess what's coming?\n\nHint: SPRITE C _ _ _ L 😉\n\nDrop your guesses below! 👇\n\n#7ElevenSG #Sprite #CocaColaSG",
+   "timestamp": 1785202060,
+   "comments_count": 4,
+   "reactions_count": 20,
+   "reshare_count": 3,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 20,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064558549327",
+    "name": "7-Eleven Singapore",
+    "url": "https://www.facebook.com/7Eleven.Singapore",
+    "profile_picture_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/448266976_866564668838810_4182862328049368786_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Q-M8Tb1mW3MQ7kNvwFVBn6o&_nc_oc=Adq7VCk05CR9Ck3AbggyH-omq17w1Pp6JMSvuARvJpCHh7GsqkUC9k1w11rv7Le6yI0&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQOX2HjVRVy2m1JoB6xEclP0Sp1vBtQ_jkn0ipZZAMvTWw&oe=6ADBEDEA",
+    "delegate_page_id": "14121632961"
+   },
+   "authors": [
+    {
+     "id": "100064558549327",
+     "name": "7-Eleven Singapore",
+     "url": "https://www.facebook.com/7Eleven.Singapore",
+     "profile_picture_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/448266976_866564668838810_4182862328049368786_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Q-M8Tb1mW3MQ7kNvwFVBn6o&_nc_oc=Adq7VCk05CR9Ck3AbggyH-omq17w1Pp6JMSvuARvJpCHh7GsqkUC9k1w11rv7Le6yI0&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQOX2HjVRVy2m1JoB6xEclP0Sp1vBtQ_jkn0ipZZAMvTWw&oe=6ADBEDEA",
+     "delegate_page_id": "14121632961"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/758765294_1495997615895509_3946401692264296534_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lREz-5k8REgQ7kNvwHG65Jf&_nc_oc=Adpsxo2fk3JOTvetDDtqCV9DXGvP1HADJrKOm-EGkM3bYqQA9dX2bIaK3fFyuA4-9nQ&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQPX3wkgk9PV_2Y41bd9HQvUmHEUiDbBPvaLR4C2GbhMAw&oe=6ADBCF07",
+    "height": 1350,
+    "width": 1080,
+    "id": "1495997612562176"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1495999982561939",
+   "shares_id": "1495999982561939",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "28290406757232296",
+   "type": "post",
+   "url": "https://www.facebook.com/pauline.lawrence.501/posts/pfbid02edYbmSzWMtY2vN3ro8j1xKuGb29r8KkQ4AvWQTSo3R8KXYct22R5YzoFVoGx1dHUl",
+   "message": ":WISDOM LIVES HERE \"👋 ‼️ \n\n\"THE FREE STUFF TRAP\"\n... A \"Selfish Person\" Provides Meals To Catch Our Eyes, BUT It Will Dull Our Senses‼️\n\n🩵 PROVERBS 23:6-8 (NASB)...\n(V6) \" Do Not Eat the Bread of a Selfish Man, Or Desire His Delicacies;\n(V6) For as He Thinks Within Himself,  So He Is. He Says to You, \n\"Eat and Drink !\" ...\nBUT His Heart IS Not with You.\n(V8) You WILL Vomit Up  the Morsel You have Eaten,\nAND Waste Your Compliments  \"... AMEN❗️\n\nThis Passage  WARNS ...\n◾️Against  Accepting  Hospitality from \"Stingy, Selfish  Miser\", Who has Ulterior Motives.\n◾️Advise that It Is Better to Stay away from the Company of Deceitful People. It Is a Trap Rather than Genuine Kindness ❗️\n\n✅️ BREAKING IT DOWN...\nV6... AVOID STINGY HOST :-\nSolomon  Warns Not to eat the food of a Miser. They may offer food, But it us a Trap to put You in Their Debt. \n\nV7... INSINCERE INTENTION :-\nWhile They maybe saying, \"Eat and Drink\", with a smiling face, They are secretly Calculating  the cost and Expecting some thing in return. 🤔\n\nV8... THE REGRET :-\nEventually, the Feeling of Nausea You Experience  when You Realized You have been Manipulated  makes You want to \"Vomit Up the food You have just eaten\" ❗️\nAND...\nAny \"Sweet Words\" Or \"Compliments\" You offer in return will be a Complete \"Waste  of Time\", because  the Host's (the Miser's)  heart is hard... A Hidden Agenda was there from the beginning ❗️\n\n🤔WHY WOULD THIS MAN DO THIS?\n▪︎Greed and Selfishness \n▪︎Offering to get something in return\n▪︎An attempt to buy someone's favor \n\n🤔 NB...The Cost in The End makes You Feel  like a Complete Idiot and You will \"Kick\" Yourself for ever accepting  the Invitation for Lunch or Dinner. \n\n✅️ LEARN...\n▪︎ There is no Free Lunch with a Manipulative Person. Their hospitality is used as leverage to control or buy Your favor.\n▪︎True generosity comes from a Joyful Sincere Heart. A simple meal shared is better than \"Lavish Feast\" (Delicacies)\n▪︎ An Excellent lesson in Setting Boundaries and Being Discerning about Who You allow unto Your \" Inner Circle\" ❗️❗️❗️\n\n⚠️ GOD WARNS US TO STAY AWAY AND NOT TO BE DRAWN IN BY THE DELICACIES OF SELFISH PEOPLE. \n\nAMEN⁉️\n\nMore Next Month on This Chapter 😉 \n#Godisgood #GloryToGod #JesusIsLord #thewordofGodispowerful #TheWordOfGodIsAlive #JesusIsComingSoon #judgment #evangelistpauline 💞",
+   "message_rich": ":WISDOM LIVES HERE \"👋 ‼️ \n\n\"THE FREE STUFF TRAP\"\n... A \"Selfish Person\" Provides Meals To Catch Our Eyes, BUT It Will Dull Our Senses‼️\n\n🩵 PROVERBS 23:6-8 (NASB)...\n(V6) \" Do Not Eat the Bread of a Selfish Man, Or Desire His Delicacies;\n(V6) For as He Thinks Within Himself,  So He Is. He Says to You, \n\"Eat and Drink !\" ...\nBUT His Heart IS Not with You.\n(V8) You WILL Vomit Up  the Morsel You have Eaten,\nAND Waste Your Compliments  \"... AMEN❗️\n\nThis Passage  WARNS ...\n◾️Against  Accepting  Hospitality from \"Stingy, Selfish  Miser\", Who has Ulterior Motives.\n◾️Advise that It Is Better to Stay away from the Company of Deceitful People. It Is a Trap Rather than Genuine Kindness ❗️\n\n✅️ BREAKING IT DOWN...\nV6... AVOID STINGY HOST :-\nSolomon  Warns Not to eat the food of a Miser. They may offer food, But it us a Trap to put You in Their Debt. \n\nV7... INSINCERE INTENTION :-\nWhile They maybe saying, \"Eat and Drink\", with a smiling face, They are secretly Calculating  the cost and Expecting some thing in return. 🤔\n\nV8... THE REGRET :-\nEventually, the Feeling of Nausea You Experience  when You Realized You have been Manipulated  makes You want to \"Vomit Up the food You have just eaten\" ❗️\nAND...\nAny \"Sweet Words\" Or \"Compliments\" You offer in return will be a Complete \"Waste  of Time\", because  the Host's (the Miser's)  heart is hard... A Hidden Agenda was there from the beginning ❗️\n\n🤔WHY WOULD THIS MAN DO THIS?\n▪︎Greed and Selfishness \n▪︎Offering to get something in return\n▪︎An attempt to buy someone's favor \n\n🤔 NB...The Cost in The End makes You Feel  like a Complete Idiot and You will \"Kick\" Yourself for ever accepting  the Invitation for Lunch or Dinner. \n\n✅️ LEARN...\n▪︎ There is no Free Lunch with a Manipulative Person. Their hospitality is used as leverage to control or buy Your favor.\n▪︎True generosity comes from a Joyful Sincere Heart. A simple meal shared is better than \"Lavish Feast\" (Delicacies)\n▪︎ An Excellent lesson in Setting Boundaries and Being Discerning about Who You allow unto Your \" Inner Circle\" ❗️❗️❗️\n\n⚠️ GOD WARNS US TO STAY AWAY AND NOT TO BE DRAWN IN BY THE DELICACIES OF SELFISH PEOPLE. \n\nAMEN⁉️\n\nMore Next Month on This Chapter 😉 \n#Godisgood #GloryToGod #JesusIsLord #thewordofGodispowerful #TheWordOfGodIsAlive #JesusIsComingSoon #judgment #evangelistpauline 💞",
+   "timestamp": 1784884302,
+   "comments_count": 2,
+   "reactions_count": 10,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 8,
+    "love": 2,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100000690504647",
+    "name": "Pauline Lawrence",
+    "url": "https://www.facebook.com/pauline.lawrence.501",
+    "profile_picture_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/547227186_25124319330507737_880759291717265787_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=V4SWhFBEclcQ7kNvwHbekpW&_nc_oc=AdpgCfL59TUegbS94XelU-as2rQfZmRfD_aDe4DWgnoRhn9QRjxzNbXe7G3Ox9lCSuY&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQMCZy_TOPm_a4NVisy71S8g-9PTcBwoCX6QBHqtQzx9ag&oe=6ADBE073",
+    "delegate_page_id": "103237065922961"
+   },
+   "authors": [
+    {
+     "id": "100000690504647",
+     "name": "Pauline Lawrence",
+     "url": "https://www.facebook.com/pauline.lawrence.501",
+     "profile_picture_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/547227186_25124319330507737_880759291717265787_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=V4SWhFBEclcQ7kNvwHbekpW&_nc_oc=AdpgCfL59TUegbS94XelU-as2rQfZmRfD_aDe4DWgnoRhn9QRjxzNbXe7G3Ox9lCSuY&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQMCZy_TOPm_a4NVisy71S8g-9PTcBwoCX6QBHqtQzx9ag&oe=6ADBE073",
+     "delegate_page_id": "103237065922961"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "image_file_uri": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/754949663_28290405610565744_6063953155001470343_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iatPtp3Ea8UQ7kNvwGUunYe&_nc_oc=Adq4uw0ai9JqQ5RGPY4YdolrSWERr4DMIaHK7w7oFJDPjxgVPCqxyyCMx5QRmHSWe98&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQN6XHXGgskzLomw9wfNmVYIlIq-341rlCHsw1dzszLgfg&oe=6ADBC08D",
+     "url": "https://www.facebook.com/28290405573899081",
+     "id": "28290405573899081"
+    },
+    {
+     "image_file_uri": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/755736344_28290405867232385_1321891140326728685_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SQnctM3IZaQQ7kNvwFD2chA&_nc_oc=AdoAQxpNn99UvgjR7t1piAgvmh6qc4iOBPLqkUNCz1uJ2yNJNVtiPPd7q5_ZaNPna68&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQNVDqqxoZO6NkkbHD1ALYsdKBBOIeAHY0eCNLpTG5Ye_g&oe=6ADBBCA1",
+     "url": "https://www.facebook.com/28290405857232386",
+     "id": "28290405857232386"
+    },
+    {
+     "image_file_uri": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/755736354_28290406197232352_3191180492186165156_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XOMhYbBiKFsQ7kNvwH_bHK3&_nc_oc=AdqBAlgT2wUCSCjB5bnMfBcxcRbVL0Yhd41Gz_Pu408HzWBxmNXJV7EYNM-jvI8nzaE&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQPOKkfWAIl90U25acYzyWtV3p1v_enE2kfaFkQ8i_JlDg&oe=6ADBEA81",
+     "url": "https://www.facebook.com/28290406160565689",
+     "id": "28290406160565689"
+    },
+    {
+     "image_file_uri": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/753169630_28290406590565646_6134562970295192357_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=E1o8fptd2e0Q7kNvwE1WCF1&_nc_oc=AdoXijsVy98xa86Qu7t_vMG8I7rBClGbZdydzJDzlwUvkJghVxw-BPfdANtX4GR9_6Y&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQPHC6pEYgpkdBeVP9wILp-aHcdcnHYkjqsyicHnC2Z8kg&oe=6ADBCD68",
+     "url": "https://www.facebook.com/28290406577232314",
+     "id": "28290406577232314"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28290406757232296",
+   "shares_id": "28290406757232296",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1474674158011758",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1364497285222869/",
+   "message": "Trying a VIRAL 7-Eleven drink mix in Thailand 🇹🇭🥤\nRedeem Agoda Code Use Later:\n🔗https://ago-da.co/JOYCEAGODA\n🔗https://ago-da.co/JOYCEACTIV\n\nVisit Kreator Shop for must book list:https://www.klook.com/kreatorshop/JOYCEUYKLOOK?aid=127707\n\n✨️ Agoda Hotel Code: 𝙅𝙊𝙔𝘾𝙀𝘼𝙂𝙊𝘿𝘼\n✨ Agoda Activities Code: 𝙅𝙊𝙔𝘾𝙀𝘼𝘾𝙏𝙄𝙑\n✨ Klook Code: 𝙅𝙊𝙔𝘾𝙀𝙐𝙔𝙆𝙇𝙊𝙊𝙆\n✨️ GetYourGuide Code: 𝗝𝗢𝗬𝗖𝗘𝗨𝗬𝟱\n\n#bangkok #thailand #travelreels #7eleven #711",
+   "message_rich": "Trying a VIRAL 7-Eleven drink mix in Thailand 🇹🇭🥤\nRedeem Agoda Code Use Later:\n🔗https://ago-da.co/JOYCEAGODA\n🔗https://ago-da.co/JOYCEACTIV\n\nVisit Kreator Shop for must book list:https://www.klook.com/kreatorshop/JOYCEUYKLOOK?aid=127707\n\n✨️ Agoda Hotel Code: 𝙅𝙊𝙔𝘾𝙀𝘼𝙂𝙊𝘿𝘼\n✨ Agoda Activities Code: 𝙅𝙊𝙔𝘾𝙀𝘼𝘾𝙏𝙄𝙑\n✨ Klook Code: 𝙅𝙊𝙔𝘾𝙀𝙐𝙔𝙆𝙇𝙊𝙊𝙆\n✨️ GetYourGuide Code: 𝗝𝗢𝗬𝗖𝗘𝗨𝗬𝟱\n\n#bangkok #thailand #travelreels #7eleven #711",
+   "timestamp": 1786281912,
+   "comments_count": 6,
+   "reactions_count": 414,
+   "reshare_count": 30,
+   "reactions": {
+    "angry": 0,
+    "care": 2,
+    "haha": 0,
+    "like": 394,
+    "love": 16,
+    "sad": 1,
+    "wow": 1
+   },
+   "author": {
+    "id": "100064075627831",
+    "name": "Joyce Uy",
+    "url": "https://www.facebook.com/iamjoyceuy",
+    "profile_picture_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/769363676_1475549417924232_5737300536265647144_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=MJ4jQOosxioQ7kNvwHnfmeU&_nc_oc=AdoxW39yLCf_N_JmO397la0WX_IgxnAjkpkThESPm5ZqkC8TXh2YfbTolVB6u7Zeswg&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQOtHYxTOpms6JimfJtKvipV9Msn7-7zWKQMtqnNX6Dn1Q&oe=6ADBE81B",
+    "delegate_page_id": "791479917712698"
+   },
+   "authors": [
+    {
+     "id": "100064075627831",
+     "name": "Joyce Uy",
+     "url": "https://www.facebook.com/iamjoyceuy",
+     "profile_picture_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/769363676_1475549417924232_5737300536265647144_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=MJ4jQOosxioQ7kNvwHnfmeU&_nc_oc=AdoxW39yLCf_N_JmO397la0WX_IgxnAjkpkThESPm5ZqkC8TXh2YfbTolVB6u7Zeswg&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQOtHYxTOpms6JimfJtKvipV9Msn7-7zWKQMtqnNX6Dn1Q&oe=6ADBE81B",
+     "delegate_page_id": "791479917712698"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1364497285222869/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQPj91QKdas6X3DGUV3nWCD1xLW0va83NuKj2QIIPHbPIbwsp9X5B4hKMxQDiNdP-KDxfkD22LSVwt1RaN0uG_GemPMSSHoyQJs7QmA2Tw.mp4?_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-ord5-1.xx.fbcdn.net&_nc_ohc=RbKfutThc3wQ7kNvwEu65_m&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzIuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxMDQwNDcyODk1NDU5NDMxLCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&_nc_zt=28&oh=00_AQOzSum03Cs7YC5wiJpHSu9h-4QBVNG2r45GBCb7X1JZCg&oe=6ADBDDEF&bitrate=469556&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQNeVzgQHIaX4xGYiP2npovJpgUUE97FDK2qLnC_d2ZLSezyGTA2I490LXZT-1EUywncqVvPz5kiQgkrZzK2UCCbFRR6-E3vUkQuiJvorw.mp4?_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-ord5-1.xx.fbcdn.net&_nc_ohc=YFQp-Vh8HKYQ7kNvwFeMu-T&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzIuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMDQwNDcyODk1NDU5NDMxLCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&_nc_zt=28&oh=00_AQPOdTa2LHXLs2dQOy6Zb-WLNfZCpbaRR9_LDSLwMvMpgQ&oe=6ADBDC34&bitrate=1688829&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/769168372_1932294674133650_4356353237979024771_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=OV1M4FZ99fMQ7kNvwHpD8yP&_nc_oc=AdqXasg-o4P51PMXpeWk0tjlAYr-3FfJAQpdTn-i8npyhGvs71xuVztOal2QLkce-8w&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=o0_V-endYfyCifE-fuDBHA&_nc_ss=70289&oh=00_AQMhGmeuuSKuxJX093rcvbNXKYOa70YXBr9x4EDvJ3zMVQ&oe=6ADBD8D4",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1474674158011758",
+   "shares_id": "1474674158011758",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1516466053848665",
+   "type": "post",
+   "url": "https://www.facebook.com/7Eleven.Singapore/posts/pfbid01PNRvfbSoTDkg39JEhTzxKJDWUgKRvxWxBG2yAqvAqMM16T98a6qF7zqgp2MJVxGl",
+   "message": "🥥✨ BACK IN STOCK! The coconut water you’ve been spotting all over Xiaohongshu is back at 7-Eleven Singapore! 👀💚\n\nBeat the heat with 7-Select Coconut Water — made with 100% real coconut water for a refreshing sip whenever you need a cool-down. ☀️🥥💦\n\nMissed it the last time? Now’s your chance to grab yours at your nearest 7-Eleven before it’s gone again! 🏃‍♀️💨 Product availability varies by store, while stocks last.\n\n#7ElevenSG #7Select #CoconutWater",
+   "message_rich": "🥥✨ BACK IN STOCK! The coconut water you’ve been spotting all over Xiaohongshu is back at 7-Eleven Singapore! 👀💚\n\nBeat the heat with 7-Select Coconut Water — made with 100% real coconut water for a refreshing sip whenever you need a cool-down. ☀️🥥💦\n\nMissed it the last time? Now’s your chance to grab yours at your nearest 7-Eleven before it’s gone again! 🏃‍♀️💨 Product availability varies by store, while stocks last.\n\n#7ElevenSG #7Select #CoconutWater",
+   "timestamp": 1787111654,
+   "comments_count": 1,
+   "reactions_count": 51,
+   "reshare_count": 5,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 51,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064558549327",
+    "name": "7-Eleven Singapore",
+    "url": "https://www.facebook.com/7Eleven.Singapore",
+    "profile_picture_url": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/448266976_866564668838810_4182862328049368786_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Q-M8Tb1mW3MQ7kNvwFugOL8&_nc_oc=AdrAl8EoTxJfe568iSquwwTGfSCTPUvSHV2Jz-ESYZntp1E_9vM302H1rKzPqB-6reZc1TTtxOFkaENeKhxOEs_l&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNWwgUSFdEpthpQvokkAvh4lthaEVl-5MGtK_wt29A8ng&oe=6ADBEDEA",
+    "delegate_page_id": "14121632961"
+   },
+   "authors": [
+    {
+     "id": "100064558549327",
+     "name": "7-Eleven Singapore",
+     "url": "https://www.facebook.com/7Eleven.Singapore",
+     "profile_picture_url": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/448266976_866564668838810_4182862328049368786_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Q-M8Tb1mW3MQ7kNvwFugOL8&_nc_oc=AdrAl8EoTxJfe568iSquwwTGfSCTPUvSHV2Jz-ESYZntp1E_9vM302H1rKzPqB-6reZc1TTtxOFkaENeKhxOEs_l&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNWwgUSFdEpthpQvokkAvh4lthaEVl-5MGtK_wt29A8ng&oe=6ADBEDEA",
+     "delegate_page_id": "14121632961"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/776163754_1516465837182020_1649770954903867126_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bePRrnjXTnUQ7kNvwGiWxCY&_nc_oc=AdrFf90Nl7_FoAwkUzoz8wrx6u43dY46RFLqGLdKrSAdeTZa8oN2DKLduMFeR0EnmSS2HdxIdW1IPzvAJGnFZ4Yv&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQOcPE1WU0F0u_L_zB19jwsJxJFDNbANrEwdUFJzvOk8iA&oe=6ADBD65B",
+    "height": 1350,
+    "width": 1080,
+    "id": "1516465830515354"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1516466053848665",
+   "shares_id": "1516466053848665",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1469400401890531",
+   "type": "post",
+   "url": "https://www.facebook.com/thedesignfinder/posts/pfbid0Wj5kDsWnVhycNk8R629c89LY3TroS4e4zbLzQxhiSckB3xU5CuoHgkfU3sfNyrH3l",
+   "message": "@7up by @wearedeutsch 7UP is undergoing its biggest U.S. brand evolution in more than 15 years, introducing a new lime-forward formula alongside a refreshed visual identity. The challenge was to modernise one of the category’s most recognisable soft drink brands while creating a stronger visual presence around its renewed citrus proposition. The identity streamlines the familiar 7UP logo into an all-caps lockup with a consistent baseline and visual height, supported by richer colours and a prominent Lime Lemon label. Developed in-house by Keurig Dr Pepper with Deutsch, the system gives 7UP a bolder, more contemporary expression while reinforcing its distinctive citrus character.\n\n#branding #creativedirector #brandinginspiration #brandcuration #designfinder",
+   "message_rich": "@7up by @wearedeutsch 7UP is undergoing its biggest U.S. brand evolution in more than 15 years, introducing a new lime-forward formula alongside a refreshed visual identity. The challenge was to modernise one of the category’s most recognisable soft drink brands while creating a stronger visual presence around its renewed citrus proposition. The identity streamlines the familiar 7UP logo into an all-caps lockup with a consistent baseline and visual height, supported by richer colours and a prominent Lime Lemon label. Developed in-house by Keurig Dr Pepper with Deutsch, the system gives 7UP a bolder, more contemporary expression while reinforcing its distinctive citrus character.\n\n#branding #creativedirector #brandinginspiration #brandcuration #designfinder",
+   "timestamp": 1786802443,
+   "comments_count": 2,
+   "reactions_count": 96,
+   "reshare_count": 21,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 79,
+    "love": 16,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "100064617553186",
+    "name": "Design finder",
+    "url": "https://www.facebook.com/thedesignfinder",
+    "profile_picture_url": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-1/834023238_1515331010630803_4240767509550142267_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=u9V2CO9Hk7AQ7kNvwFo14_9&_nc_oc=AdrVBuu4XWbBX3cEATgzPF_WJQQuW7Z4FPSKX-tbUs41rP2KuWopdh5TUfTNEr49YMKpQKxdhFQQXtwQzr5MHSt_&_nc_zt=24&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNqmlSs8huMjzWPvH1hZHGA7yFxKn_hRAdkMbe_o4Q61w&oe=6ADBCBE7",
+    "delegate_page_id": "248711238584601"
+   },
+   "authors": [
+    {
+     "id": "100064617553186",
+     "name": "Design finder",
+     "url": "https://www.facebook.com/thedesignfinder",
+     "profile_picture_url": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-1/834023238_1515331010630803_4240767509550142267_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=u9V2CO9Hk7AQ7kNvwFo14_9&_nc_oc=AdrVBuu4XWbBX3cEATgzPF_WJQQuW7Z4FPSKX-tbUs41rP2KuWopdh5TUfTNEr49YMKpQKxdhFQQXtwQzr5MHSt_&_nc_zt=24&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNqmlSs8huMjzWPvH1hZHGA7yFxKn_hRAdkMbe_o4Q61w&oe=6ADBCBE7",
+     "delegate_page_id": "248711238584601"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/774503973_1469400158557222_7145945162319043823_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AvDi05-LcToQ7kNvwHY7qm2&_nc_oc=AdrOJBAb22WpUSBhw2WjNtEOerNs4rGroOz87PTS1wnmfoE-ccMQUn0YQKLBzLUldzwfWc_xdzjXiq8JvSK-r4Qh&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQPHB6ZYQ7TyER6kMu39MOFejxdj7RZlTlIITWjPPOzAmQ&oe=6ADBD278",
+     "url": "https://www.facebook.com/photo.php?fbid=1469400155223889&set=a.437769975053584&type=3",
+     "id": "1469400155223889"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/774467888_1469400188557219_266391963757713223_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LxuWR2-X2McQ7kNvwFmlQN1&_nc_oc=AdpwcX8KnUr2pcMKOWpVCPO5jHcNteIURdPvuiMis_00MgyaW9yS2HO1Fjb-YtTypEGlgqO-kJonynbLb0ky2O-L&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQPADy9XREA2Id4qfqV6iIRN1aM0FcPyoHV5j7Lb2RkuOA&oe=6ADBD122",
+     "url": "https://www.facebook.com/photo.php?fbid=1469400181890553&set=a.437769975053584&type=3",
+     "id": "1469400181890553"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/774468145_1469400228557215_1199354598809524517_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kC3QD3Gr1wkQ7kNvwGY-fnP&_nc_oc=Ado1x5hiPdzewITop6wwvhFOpx2Gx2_xDULpGrD4oB26qVg8awPN65UWcF2J373EHi8ozd31OpihfMEViTlpbem1&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQOkvqkpTHtyZ6_5P2QCnwjFC_Nm-SnKRnetaFly3oWTEw&oe=6ADBB979",
+     "url": "https://www.facebook.com/photo.php?fbid=1469400225223882&set=a.437769975053584&type=3",
+     "id": "1469400225223882"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/774730241_1469400258557212_5964882733558958952_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JjOFnvnQSKoQ7kNvwE3FZdq&_nc_oc=AdoIBogQTwB8k_HxWmH-P9e2ZoZwe6GOUGgR4ivkkpmNErb34m0fbjL3JUgs9LSeMGlA_pgPT1RGekU7wsY2pbHt&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQMXzRGUx5eGE7ft-IzJ6AI7aegd7SUuVzJyCggvn6GVhg&oe=6ADBC754",
+     "url": "https://www.facebook.com/photo.php?fbid=1469400255223879&set=a.437769975053584&type=3",
+     "id": "1469400255223879"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/774284206_1469400321890539_5546843555058619363_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6MzxCircBh8Q7kNvwGoHTMn&_nc_oc=AdpODYgvZSdergz0oJDXCq5qnKkbgXy2O5Lq_EvPqXV3sbJmfex_oewN2xRUsDXRGmEsxb-ei9irxMdbjHJbAJEt&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQPX7HG9Kp1pSi2GziUby0yVSK_ooZrlIETBCKjBG4-BEg&oe=6ADBEE58",
+     "url": "https://www.facebook.com/photo.php?fbid=1469400318557206&set=a.437769975053584&type=3",
+     "id": "1469400318557206"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1469400401890531",
+   "shares_id": "1469400401890531",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 7,
+   "top_comments": []
+  },
+  {
+   "post_id": "28143225718685170",
+   "type": "post",
+   "url": "https://www.facebook.com/lhoraine.reyes.7/posts/pfbid0yDZQuCt1j4JWHDvQf5DGJyzYEYips7Wh2z7AjeVZA3Kn4PVDVYM9e8wn7RaBXu1hl",
+   "message": "✨ “Life is a beautiful journey, and every destination brings a new adventure. Traveling with a grateful heart, a positive mind, and dreams waiting to come true. Here’s to new places, \n\n#journey #traveldiaries #positivevibes #mindset #blessedandgrateful",
+   "message_rich": "✨ “Life is a beautiful journey, and every destination brings a new adventure. Traveling with a grateful heart, a positive mind, and dreams waiting to come true. Here’s to new places, \n\n#journey #traveldiaries #positivevibes #mindset #blessedandgrateful",
+   "timestamp": 1792191031,
+   "comments_count": 61,
+   "reactions_count": 56,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 3,
+    "haha": 0,
+    "like": 31,
+    "love": 22,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100002733565418",
+    "name": "Lhoraine D. Reyes",
+    "url": "https://www.facebook.com/lhoraine.reyes.7",
+    "profile_picture_url": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/482030869_8721495844618114_5015182187275398314_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ZleskAEvjUgQ7kNvwGluIDv&_nc_oc=AdrtbVy28ctm3TJgfPcVfSvMgJGMKOgtm_dMr1DBUc0t1aHx-NwieWMMyMUV1dbUAXlnMPeOX2uCxIwHDeFEaqrM&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNP8jVnv7pKZgCkA9BnfMTKcDyD1BpR6Q60mO91GDGjQA&oe=6ADBC86F",
+    "delegate_page_id": "111072245183534"
+   },
+   "authors": [
+    {
+     "id": "100002733565418",
+     "name": "Lhoraine D. Reyes",
+     "url": "https://www.facebook.com/lhoraine.reyes.7",
+     "profile_picture_url": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/482030869_8721495844618114_5015182187275398314_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ZleskAEvjUgQ7kNvwGluIDv&_nc_oc=AdrtbVy28ctm3TJgfPcVfSvMgJGMKOgtm_dMr1DBUc0t1aHx-NwieWMMyMUV1dbUAXlnMPeOX2uCxIwHDeFEaqrM&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNP8jVnv7pKZgCkA9BnfMTKcDyD1BpR6Q60mO91GDGjQA&oe=6ADBC86F",
+     "delegate_page_id": "111072245183534"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/853003712_28143225322018543_7278735358525161741_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1S3wzXlt6mEQ7kNvwG9yTpx&_nc_oc=AdrSJmTHZ6VjlCBsSiOjFHmu1Sh-4RVOFdvwHkRCgrOYxMBQ8GVcm3Jm5WaRUgyJUhnZF_8pGPlyol3Y4BDOs8Eg&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQPcohDyeHBLQ5ZmpN5b1e99Gr7AWDwR7RKtpbDWuYEl-Q&oe=6ADBCD0A",
+    "height": 1440,
+    "width": 1080,
+    "id": "28143225258685216"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28143225718685170",
+   "shares_id": "28143225718685170",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "3426368060871289",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/ImporternExporterClub/posts/3426368060871289/",
+   "message": "**SEN FOOD AND DRINK Co., LTD**\n\n(BEVERAGES MANUFACTURER FROM VIETNAM)\n\n**E: info@senbeverage.com**\n\n**WA: (+84) 39 39 48 257**\n\n**Web: **www.senbeverage.com\n\n \n\n- OEM/ ODM services,\n\n- Fast delivery,\n\n- Competitive price,\n\n- The best quality",
+   "message_rich": "SEN FOOD AND DRINK Co., LTD\n(BEVERAGES MANUFACTURER FROM VIETNAM)\nE: info@senbeverage.com\nWA: (+84) 39 39 48 257\nWeb: www.senbeverage.com\n \n- OEM/ ODM services,\n- Fast delivery,\n- Competitive price,\n- The best quality",
+   "timestamp": 1790667167,
+   "comments_count": 0,
+   "reactions_count": 5,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 5,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0Akh2pB3KH83EAUHGTg8CQSBBLaZZ73mzCZiAQGc4QQdJNxoZyuvVsQbe8uENb3sQl",
+    "name": "Sen Sen Drinks",
+    "url": "https://www.facebook.com/sen.sendrinks.7",
+    "profile_picture_url": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/493032754_1053838353300617_3303814009440124853_n.jpg?stp=c283.0.1101.1101a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aJBNClo4C2gQ7kNvwFVrg67&_nc_oc=AdrnJlL0u3vsz_3ynMuI7FIzHxle6Ce6ypojH1z2VIhkrpoSBhhwdAUZc-qRQ12P04sBNWV2pZEDPWi7KxEBz3jC&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQOW_Z8DA9-Um2jrf9BTPZ4_Zc8buHwW7k6SWSEtnimjEw&oe=6ADBE1D9",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0Akh2pB3KH83EAUHGTg8CQSBBLaZZ73mzCZiAQGc4QQdJNxoZyuvVsQbe8uENb3sQl",
+     "name": "Sen Sen Drinks",
+     "url": "https://www.facebook.com/sen.sendrinks.7",
+     "profile_picture_url": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-1/493032754_1053838353300617_3303814009440124853_n.jpg?stp=c283.0.1101.1101a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aJBNClo4C2gQ7kNvwFVrg67&_nc_oc=AdrnJlL0u3vsz_3ynMuI7FIzHxle6Ce6ypojH1z2VIhkrpoSBhhwdAUZc-qRQ12P04sBNWV2pZEDPWi7KxEBz3jC&_nc_zt=24&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQOW_Z8DA9-Um2jrf9BTPZ4_Zc8buHwW7k6SWSEtnimjEw&oe=6ADBE1D9",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/830325453_1471265674891214_7260205348420237861_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=ilJ_PQOCMNUQ7kNvwESeO1T&_nc_oc=AdpZoR0EE9B9dD43H2qZHbSgwUY4Nhr_IPXboLsNsZ1IuzGO5SXM2Gb586UGqwVpW82uzbwarb40ugDHlVcySjUR&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNRfwn1iQBd1YnckmikfTt90P4jmWGiYSOL45XdPBunmA&oe=6ADBBE98",
+     "url": "https://www.facebook.com/photo.php?fbid=1471265671557881&set=gm.3426368050871290&type=3",
+     "id": "1471265671557881"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/825426986_1471265828224532_4258675941858173634_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=XdX3-5hQ4I0Q7kNvwFK9WN3&_nc_oc=Adrh_Jidx9R4WFqq5WHTAl5WOEFrEuALWI4UFyGpRSAJuQ-s7aaLn16T3r43ImsU0eQXXUoMMHkxRiqr3bu8vgrT&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQOa-y8mxEIhMnvl1CVQT8a2GLpaKYlV1FZI0Rg8WobgRw&oe=6ADBD809",
+     "url": "https://www.facebook.com/photo.php?fbid=1471265824891199&set=gm.3426368054204623&type=3",
+     "id": "1471265824891199"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/828872582_1471265854891196_5108509254895663518_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=1SLWcFWL-3EQ7kNvwF3B3lf&_nc_oc=Adq9NtfT5Xwfn0gH__YF8KtQauS4UIKI_1_tEsioa5NZMwdtt-EQzemaVBlJndbtGy1n-qYCkQhxrex2htULKiHA&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQNOA-nzR9rZi-mvOkOsb2vD9YdS0UbNdOkaN_Zp_SgigQ&oe=6ADBEB5A",
+     "url": "https://www.facebook.com/photo.php?fbid=1471265851557863&set=gm.3426368057537956&type=3",
+     "id": "1471265851557863"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/829198429_1471266061557842_3807056402264245799_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=OACK98JKWwYQ7kNvwH9sOBZ&_nc_oc=AdoOrRGeKb7GwxFQBV6DUJbkgKnZJisSnWthmf0-ZfY486s4jehU7SshzxHrgfjpdAMMYnbEezXkhfKKzGvK37un&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=Ci1rDD7EiAReegycGVLn6g&_nc_ss=70289&oh=00_AQPVhAfUJFTdGxkgdo_kE9RdJN6Z1NAKZl4i6O5mF8Chtw&oe=6ADBEB40",
+     "url": "https://www.facebook.com/photo.php?fbid=1471266058224509&set=gm.3426368064204622&type=3",
+     "id": "1471266058224509"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "3426368060871289",
+   "shares_id": "3426368060871289",
+   "associated_group_id": "886188314889289",
+   "associated_group": {
+    "group_id": "886188314889289",
+    "name": "Importer & Exporter Club",
+    "url": "https://www.facebook.com/groups/ImporternExporterClub/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": 4,
+   "top_comments": []
+  }
+ ]
+}

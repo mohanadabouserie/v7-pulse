@@ -1,0 +1,25 @@
+{
+ "input": {
+  "search_type": "posts",
+  "keyword": "ڤي سڤن",
+  "only_reels": true,
+  "follow_post_scraping": true,
+  "results_limit": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.3,
+ "run": {
+  "id": "x7db3sZBU0TNUbS5z",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T10:55:02.086Z",
+  "finishedAt": "2026-10-19T10:57:00.105Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 0.006358551778356235
+ },
+ "cost_usd": 1.6227,
+ "items": []
+}

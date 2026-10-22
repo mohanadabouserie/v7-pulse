@@ -1,0 +1,9 @@
+--- stage comments, spent so far this cycle $0.5219, budget $14.00
+  fb: 31 posts with comments, 1132 comments by their counts
+  ig: 36 posts with comments, 1195 comments by their counts
+  tt: 17 posts with comments, 1016 comments by their counts
+  yt: 0 posts with comments, 0 comments by their counts
+fb_comments      facebook-comments-scraper    SUCCEEDED    898 items  $2.9760  (cap $4.17)  total $3.4980  events {'comment': 898, 'actor-start': 1, 'filter-applied': 563}
+ig_comments      instagram-comment-scraper    SUCCEEDED   1141 items  $1.9519  (cap $4.67)  total $5.4498  events {'comment': 1141}
+tt_comments      tiktok-comments-scraper      SUCCEEDED    883 items  $0.8839  (cap $1.90)  total $6.3912  events {'result': 883}
+--- stage comments done, spent this cycle $6.3912

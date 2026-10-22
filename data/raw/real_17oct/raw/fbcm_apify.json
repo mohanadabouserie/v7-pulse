@@ -1,0 +1,1360 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+   },
+   {
+    "url": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1807300737278091/"
+   }
+  ],
+  "resultsLimit": 30,
+  "includeNestedComments": false
+ },
+ "cap_usd": 0.3,
+ "run": {
+  "id": "bCgiAo0XSegIDMmG9",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:14:44.959Z",
+  "finishedAt": "2026-10-19T08:14:54.372Z",
+  "chargedEventCounts": {
+   "comment": 26,
+   "actor-start": 1,
+   "filter-applied": 0
+  },
+  "usageTotalUsd": 0.035
+ },
+ "cost_usd": 0.5057,
+ "items": [
+  {
+   "facebookUrl": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl",
+   "commentUrl": "https://www.facebook.com/MaxABco/posts/pfbid034WL4J3PgF9PHNxhn1xhFM1Hh6CB5UTH2HN25jgL8KGp5bSSXWxvHmVPxSpdrjNXul?comment_id=974875028471873",
+   "commentId": "974875028471873",
+   "id": "Y29tbWVudDoxNDkxNjQxNzEyOTc1OTg5Xzk3NDg3NTAyODQ3MTg3Mw==",
+   "feedbackId": "ZmVlZGJhY2s6MTQ5MTY0MTcxMjk3NTk4OV85NzQ4NzUwMjg0NzE4NzM=",
+   "date": "2026-05-05T08:46:05.000Z",
+   "text": "ممكن تفاصيل اكتر لو سمحت",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02927AM4PcymitykFCTAAk6r3EkGfkLhstKaZ4YTYkjkYAWAgN4HKVnpWv1SvXi6Hjl",
+    "name": "Hamza Yassin",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwHczxKu&_nc_oc=AdrSWKcclVKnHeLLQ5HTJES03cMss4c9NN36UXa_vaKVB9LRCUMWj039j56-mPyl5Zo&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_ss=70289&oh=00_AQMWWwF0XRLM-zUfv_9BS5pAoH20HNtf3L3HI_ljKEN0Qg&oe=6AFD2F7A"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s40x40&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwHczxKu&_nc_oc=AdrSWKcclVKnHeLLQ5HTJES03cMss4c9NN36UXa_vaKVB9LRCUMWj039j56-mPyl5Zo&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_ss=70289&oh=00_AQMWWwF0XRLM-zUfv_9BS5pAoH20HNtf3L3HI_ljKEN0Qg&oe=6AFD2F7A"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwHczxKu&_nc_oc=AdrSWKcclVKnHeLLQ5HTJES03cMss4c9NN36UXa_vaKVB9LRCUMWj039j56-mPyl5Zo&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_ss=70289&oh=00_AQMWWwF0XRLM-zUfv_9BS5pAoH20HNtf3L3HI_ljKEN0Qg&oe=6AFD2F7A"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Hamza",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/people/Hamza-Yassin/pfbid02927AM4PcymitykFCTAAk6r3EkGfkLhstKaZ4YTYkjkYAWAgN4HKVnpWv1SvXi6Hjl/",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/people/Hamza-Yassin/pfbid02927AM4PcymitykFCTAAk6r3EkGfkLhstKaZ4YTYkjkYAWAgN4HKVnpWv1SvXi6Hjl/",
+   "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwHczxKu&_nc_oc=AdrSWKcclVKnHeLLQ5HTJES03cMss4c9NN36UXa_vaKVB9LRCUMWj039j56-mPyl5Zo&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_ss=70289&oh=00_AQMWWwF0XRLM-zUfv_9BS5pAoH20HNtf3L3HI_ljKEN0Qg&oe=6AFD2F7A",
+   "profileId": "pfbid02927AM4PcymitykFCTAAk6r3EkGfkLhstKaZ4YTYkjkYAWAgN4HKVnpWv1SvXi6Hjl",
+   "profileName": "Hamza Yassin",
+   "likesCount": "1",
+   "commentsCount": 2,
+   "comments": [
+    {
+     "commentUrl": "https://www.facebook.com/MaxABco/posts/pfbid034WL4J3PgF9PHNxhn1xhFM1Hh6CB5UTH2HN25jgL8KGp5bSSXWxvHmVPxSpdrjNXul?comment_id=974875028471873&reply_comment_id=1416404633509065",
+     "commentId": "974875028471873",
+     "id": "Y29tbWVudDoxNDkxNjQxNzEyOTc1OTg5XzE0MTY0MDQ2MzM1MDkwNjU=",
+     "feedbackId": "ZmVlZGJhY2s6MTQ5MTY0MTcxMjk3NTk4OV8xNDE2NDA0NjMzNTA5MDY1",
+     "date": "2026-05-05T12:28:55.000Z",
+     "text": "Hamza Yassin اهلا بيك، دلوقتي كل منتجات في سفن متاحة من خلال تطبيق مكسب \nتقدر تطلبها من خلال اللينك دا: https://bit.ly/4tnxSI0",
+     "attachments": [
+      {
+       "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fbit.ly%2F4tnxSI0&h=AUBzXM_r6C3QdcLQmUeUg7BdH2AEmo8jcTaSb7gALdzdpzGQ437qXcghZmAUJVPO-aKR_J3x5Eeu0ShI53uRM5hFCnrlaA0v0HeCWZus0iuijA-bMmeiPqm8MdIYBXvGyXyu15EXdno6Ph5GbYvwDtmyKd0hdiEx&s=1",
+       "source": {
+        "text": "deeplink.maxab.info"
+       },
+       "title_with_entities": {
+        "text": "deeplink.maxab.info"
+       },
+       "target": {
+        "__typename": "ExternalUrl",
+        "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fbit.ly%2F4tnxSI0&h=AUBzXM_r6C3QdcLQmUeUg7BdH2AEmo8jcTaSb7gALdzdpzGQ437qXcghZmAUJVPO-aKR_J3x5Eeu0ShI53uRM5hFCnrlaA0v0HeCWZus0iuijA-bMmeiPqm8MdIYBXvGyXyu15EXdno6Ph5GbYvwDtmyKd0hdiEx&s=1",
+        "id": "226547524203272:1492363289570498"
+       },
+       "action_links": [],
+       "media": null,
+       "tracking": "{}"
+      }
+     ],
+     "author": {
+      "__typename": "User",
+      "__isActor": "User",
+      "name": "Maxab - مكسب",
+      "id": "100063905241251",
+      "profile_picture_depth_0": {
+       "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=E_TZ7JEkYw0Q7kNvwG-OJwm&_nc_oc=Adqw8Sd9xvd5nKFRuNRa8gDdga95BFrvQN7m5k4UP6MgSZvI-KN2FsGFqLYTj76hF1U&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQOtyt-bKgs0MjCtOdJD6eDlRqegjJFmto808RSCVm3Ypg&oe=6ADBAD5C"
+      },
+      "profile_picture_depth_0_increased": {
+       "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s40x40&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=E_TZ7JEkYw0Q7kNvwG-OJwm&_nc_oc=Adqw8Sd9xvd5nKFRuNRa8gDdga95BFrvQN7m5k4UP6MgSZvI-KN2FsGFqLYTj76hF1U&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQOtyt-bKgs0MjCtOdJD6eDlRqegjJFmto808RSCVm3Ypg&oe=6ADBAD5C"
+      },
+      "profile_picture_depth_1": {
+       "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s24x24&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=E_TZ7JEkYw0Q7kNvwG-OJwm&_nc_oc=Adqw8Sd9xvd5nKFRuNRa8gDdga95BFrvQN7m5k4UP6MgSZvI-KN2FsGFqLYTj76hF1U&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQOtyt-bKgs0MjCtOdJD6eDlRqegjJFmto808RSCVm3Ypg&oe=6ADBAD5C"
+      },
+      "gender": "NEUTER",
+      "is_verified": false,
+      "short_name": "Maxab - مكسب",
+      "subscribe_status": "CANNOT_SUBSCRIBE",
+      "__isEntity": "User",
+      "url": "https://www.facebook.com/MaxABco",
+      "work_info": null
+     },
+     "profileUrl": "https://www.facebook.com/MaxABco",
+     "profilePicture": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=E_TZ7JEkYw0Q7kNvwG-OJwm&_nc_oc=Adqw8Sd9xvd5nKFRuNRa8gDdga95BFrvQN7m5k4UP6MgSZvI-KN2FsGFqLYTj76hF1U&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQOtyt-bKgs0MjCtOdJD6eDlRqegjJFmto808RSCVm3Ypg&oe=6ADBAD5C",
+     "profileId": "100063905241251",
+     "profileName": "Maxab - مكسب",
+     "likesCount": "0",
+     "threadingDepth": 1,
+     "parentReply": {
+      "author": {
+       "__typename": "User",
+       "name": "Hamza Yassin",
+       "gender": "MALE",
+       "id": "pfbid02927AM4PcymitykFCTAAk6r3EkGfkLhstKaZ4YTYkjkYAWAgN4HKVnpWv1SvXi6Hjl"
+      },
+      "id": "Y29tbWVudDoxNDkxNjQxNzEyOTc1OTg5Xzk3NDg3NTAyODQ3MTg3Mw=="
+     }
+    },
+    {
+     "commentUrl": "https://www.facebook.com/MaxABco/posts/pfbid034WL4J3PgF9PHNxhn1xhFM1Hh6CB5UTH2HN25jgL8KGp5bSSXWxvHmVPxSpdrjNXul?comment_id=974875028471873&reply_comment_id=958741590276601",
+     "commentId": "974875028471873",
+     "id": "Y29tbWVudDoxNDkxNjQxNzEyOTc1OTg5Xzk1ODc0MTU5MDI3NjYwMQ==",
+     "feedbackId": "ZmVlZGJhY2s6MTQ5MTY0MTcxMjk3NTk4OV85NTg3NDE1OTAyNzY2MDE=",
+     "date": "2026-05-05T14:50:10.000Z",
+     "text": "Hamza Yassin شركه حراميه",
+     "author": {
+      "__typename": "User",
+      "__isActor": "User",
+      "name": "ابو عبده",
+      "id": "pfbid0vZ2YERvv5pKeytfGVw5zPz746TVZv6cQpTrT2TzEwL2eeRYYaXfHdccWmEWc5JvGl",
+      "profile_picture_depth_0": {
+       "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2"
+      },
+      "profile_picture_depth_0_increased": {
+       "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2"
+      },
+      "profile_picture_depth_1": {
+       "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2"
+      },
+      "gender": "MALE",
+      "is_verified": false,
+      "short_name": "ابو",
+      "subscribe_status": "CANNOT_SUBSCRIBE",
+      "__isEntity": "User",
+      "url": "https://www.facebook.com/abw.bdh.335824",
+      "work_info": null
+     },
+     "profileUrl": "https://www.facebook.com/abw.bdh.335824",
+     "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2",
+     "profileId": "pfbid0vZ2YERvv5pKeytfGVw5zPz746TVZv6cQpTrT2TzEwL2eeRYYaXfHdccWmEWc5JvGl",
+     "profileName": "ابو عبده",
+     "likesCount": "0",
+     "threadingDepth": 1,
+     "parentReply": {
+      "author": {
+       "__typename": "User",
+       "name": "Hamza Yassin",
+       "gender": "MALE",
+       "id": "pfbid02927AM4PcymitykFCTAAk6r3EkGfkLhstKaZ4YTYkjkYAWAgN4HKVnpWv1SvXi6Hjl"
+      },
+      "id": "Y29tbWVudDoxNDkxNjQxNzEyOTc1OTg5Xzk3NDg3NTAyODQ3MTg3Mw=="
+     }
+    }
+   ],
+   "threadingDepth": 0,
+   "facebookId": "1491641712975989",
+   "postTitle": "كل منتجات ڤي سڤن متوفرة على مكسب!🤩👌\nدلوقتي تقدر تطلب كل منتجات ڤي سڤن لأول مرة من على مكسب وانت قاعد في محلك  وبأحسن الأسعار, كل اللى عليك انك تطلب كل الكمية اللى انت محتجها من قسم طلبات, وهتوصلك لحد باب محلك.😉\n✅اطلب دلوقتي : https://bit.ly/4tnxSI0",
+   "pageAdLibrary": {
+    "is_business_page_active": true,
+    "id": "100398661440632"
+   },
+   "inputUrl": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl",
+   "commentUrl": "https://www.facebook.com/MaxABco/posts/pfbid034WL4J3PgF9PHNxhn1xhFM1Hh6CB5UTH2HN25jgL8KGp5bSSXWxvHmVPxSpdrjNXul?comment_id=1145909187681628",
+   "commentId": "1145909187681628",
+   "id": "Y29tbWVudDoxNDkxNjQxNzEyOTc1OTg5XzExNDU5MDkxODc2ODE2Mjg=",
+   "feedbackId": "ZmVlZGJhY2s6MTQ5MTY0MTcxMjk3NTk4OV8xMTQ1OTA5MTg3NjgxNjI4",
+   "date": "2026-05-05T13:19:15.000Z",
+   "attachments": [
+    {
+     "__typename": "Photo",
+     "blurred_image": {
+      "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-6/691036949_4530987053894965_1968815362492127361_n.jpg?stp=dst-jpg_fb30_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=QCkkeQzlZ60Q7kNvwE7f7Sa&_nc_oc=Adr1Yw2-MAR0cT2Chdm3Aqytv0vqqtym8JOd8lIuhKlTMtDZU2qOh6mvqUlbDvaQUy8&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQNCjswMwZeksnQFqsQ0Bd1qRZW17xVnOGyOFQl05CHjSQ&oe=6ADB94CB"
+     },
+     "id": "4530987050561632",
+     "cix_screen": null,
+     "massive_image": {
+      "width": 429,
+      "height": 960
+     },
+     "image": {
+      "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-6/691036949_4530987053894965_1968815362492127361_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1610&ctp=p100x100&_nc_cat=105&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=QCkkeQzlZ60Q7kNvwE7f7Sa&_nc_oc=Adr1Yw2-MAR0cT2Chdm3Aqytv0vqqtym8JOd8lIuhKlTMtDZU2qOh6mvqUlbDvaQUy8&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQN5fyngYpRqxDtdc0Ub_0ft8bebnJK6htRMF0qyyiMlWg&oe=6ADB94CB",
+      "width": 100,
+      "height": 224
+     },
+     "ocrText": "No photo description available."
+    }
+   ],
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0vZ2YERvv5pKeytfGVw5zPz746TVZv6cQpTrT2TzEwL2eeRYYaXfHdccWmEWc5JvGl",
+    "name": "ابو عبده",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "ابو",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/abw.bdh.335824",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/abw.bdh.335824",
+   "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/846504329_4715878495405819_213936940251756425_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1223&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=W2EMyNVwNJwQ7kNvwEXBkxL&_nc_oc=AdosEHxRgMvgFrsRgT6I0KqMNPyo5uRalDdGrrsgEEGcU_XtriFHyph_HvC00gAcuhI&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=ayfDNRO8RQaVtiYNCG2oqA&_nc_ss=70289&oh=00_AQPPNAoPKw2Fu2g0FZsGNpVsbbBVmhhU_Dn3FI77Flazdg&oe=6ADBA9F2",
+   "profileId": "pfbid0vZ2YERvv5pKeytfGVw5zPz746TVZv6cQpTrT2TzEwL2eeRYYaXfHdccWmEWc5JvGl",
+   "profileName": "ابو عبده",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "1491641712975989",
+   "postTitle": "كل منتجات ڤي سڤن متوفرة على مكسب!🤩👌\nدلوقتي تقدر تطلب كل منتجات ڤي سڤن لأول مرة من على مكسب وانت قاعد في محلك  وبأحسن الأسعار, كل اللى عليك انك تطلب كل الكمية اللى انت محتجها من قسم طلبات, وهتوصلك لحد باب محلك.😉\n✅اطلب دلوقتي : https://bit.ly/4tnxSI0",
+   "pageAdLibrary": {
+    "is_business_page_active": true,
+    "id": "100398661440632"
+   },
+   "inputUrl": "https://www.facebook.com/MaxABco/posts/pfbid034CXY2Y6DF2Vvb6g8yLjjrdBnMLVz352LjVPbr3Raivr6UX3wMatDwARchZxK7f9Hl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1687118193418576",
+   "commentId": "1687118193418576",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTY4NzExODE5MzQxODU3Ng==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE2ODcxMTgxOTM0MTg1NzY=",
+   "date": "2026-10-08T19:26:17.000Z",
+   "text": "عايزين تجربة عصير بيست فواكه والحلقة الي بعدها تجربة بيست تفاح",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid08gEQ9PvoSuyaU6ioszbA8KzsUNdVGM4fdKaviwHwxcCZH6gmtm6c7aMTpQFXkRQul",
+    "name": "Medo Ahmed",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/458954399_1522335091819264_4268845966518723092_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx563x553&ctp=p32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0CRjkf6RDQQ7kNvwFv3c7J&_nc_oc=AdoT-1cuSh5W5-gJk1y1FzexzOdSG6laX6Cfw25aISPdnz6FBwP62AKSfT6l5MeqQMk&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQOobSljyi4GBa3pTM2bzFQymbQNVm5QfkLmtAPbS_p8OQ&oe=6ADB89B1"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/458954399_1522335091819264_4268845966518723092_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx563x553&ctp=p40x40&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0CRjkf6RDQQ7kNvwFv3c7J&_nc_oc=AdoT-1cuSh5W5-gJk1y1FzexzOdSG6laX6Cfw25aISPdnz6FBwP62AKSfT6l5MeqQMk&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQOobSljyi4GBa3pTM2bzFQymbQNVm5QfkLmtAPbS_p8OQ&oe=6ADB89B1"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/458954399_1522335091819264_4268845966518723092_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx563x553&ctp=p24x24&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0CRjkf6RDQQ7kNvwFv3c7J&_nc_oc=AdoT-1cuSh5W5-gJk1y1FzexzOdSG6laX6Cfw25aISPdnz6FBwP62AKSfT6l5MeqQMk&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQOobSljyi4GBa3pTM2bzFQymbQNVm5QfkLmtAPbS_p8OQ&oe=6ADB89B1"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Medo",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/458954399_1522335091819264_4268845966518723092_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx563x553&ctp=p32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0CRjkf6RDQQ7kNvwFv3c7J&_nc_oc=AdoT-1cuSh5W5-gJk1y1FzexzOdSG6laX6Cfw25aISPdnz6FBwP62AKSfT6l5MeqQMk&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQOobSljyi4GBa3pTM2bzFQymbQNVm5QfkLmtAPbS_p8OQ&oe=6ADB89B1",
+   "profileId": "pfbid08gEQ9PvoSuyaU6ioszbA8KzsUNdVGM4fdKaviwHwxcCZH6gmtm6c7aMTpQFXkRQul",
+   "profileName": "Medo Ahmed",
+   "likesCount": "11",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1934379134638148",
+   "commentId": "1934379134638148",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTkzNDM3OTEzNDYzODE0OA==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE5MzQzNzkxMzQ2MzgxNDg=",
+   "date": "2026-10-08T22:02:59.000Z",
+   "text": "ختم الاستمناء",
+   "author": {
+    "__typename": "User",
+    "id": "100001671769851",
+    "name": "Eslam Gaber",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/255884844_4812923658773312_3509186922555528493_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x957&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=oqoTBG3s89QQ7kNvwGkeGQY&_nc_oc=AdpsbCxyeQ7ghpRqKJaEI3rDgLTFwn7884blj_XbkfUaUFiXUoVCDmYNYY9s4ypC3g8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPaQK5k7b4e47BGSmtymkI7W8NWqBNxzyIJC2MiGljbEA&oe=6ADB9CF8"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/255884844_4812923658773312_3509186922555528493_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x957&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=oqoTBG3s89QQ7kNvwGkeGQY&_nc_oc=AdpsbCxyeQ7ghpRqKJaEI3rDgLTFwn7884blj_XbkfUaUFiXUoVCDmYNYY9s4ypC3g8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPaQK5k7b4e47BGSmtymkI7W8NWqBNxzyIJC2MiGljbEA&oe=6ADB9CF8"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/255884844_4812923658773312_3509186922555528493_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x957&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=oqoTBG3s89QQ7kNvwGkeGQY&_nc_oc=AdpsbCxyeQ7ghpRqKJaEI3rDgLTFwn7884blj_XbkfUaUFiXUoVCDmYNYY9s4ypC3g8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPaQK5k7b4e47BGSmtymkI7W8NWqBNxzyIJC2MiGljbEA&oe=6ADB9CF8"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Eslam",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/EslamGaber88",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/EslamGaber88",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/255884844_4812923658773312_3509186922555528493_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x957&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=oqoTBG3s89QQ7kNvwGkeGQY&_nc_oc=AdpsbCxyeQ7ghpRqKJaEI3rDgLTFwn7884blj_XbkfUaUFiXUoVCDmYNYY9s4ypC3g8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPaQK5k7b4e47BGSmtymkI7W8NWqBNxzyIJC2MiGljbEA&oe=6ADB9CF8",
+   "profileId": "100001671769851",
+   "profileName": "Eslam Gaber",
+   "likesCount": "21",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1892660162142119",
+   "commentId": "1892660162142119",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTg5MjY2MDE2MjE0MjExOQ==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE4OTI2NjAxNjIxNDIxMTk=",
+   "date": "2026-10-10T00:20:03.000Z",
+   "text": "ليه ياعم صبيتها كلها كنت تعمل بيها اربع حلقات وتعمل تجربه للمكرونه القلم برضو",
+   "author": {
+    "__typename": "User",
+    "id": "100080041790868",
+    "name": "Ahmed Visa",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/786106872_1071551965522853_8057904979705016771_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=FVHikNnwZwMQ7kNvwE3-NpZ&_nc_oc=AdqtSyuorjfw0HNvDUQ0v1rjtHfHhXqo7SH5VFnitKpohcGU-u2FZk7T8QgHNsrLy-8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNF106kNp-GDxLZh4mybkIy4IUyw5Sk9vC3mD2Byii7PA&oe=6ADB9A18"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/786106872_1071551965522853_8057904979705016771_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s40x40&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=FVHikNnwZwMQ7kNvwE3-NpZ&_nc_oc=AdqtSyuorjfw0HNvDUQ0v1rjtHfHhXqo7SH5VFnitKpohcGU-u2FZk7T8QgHNsrLy-8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNF106kNp-GDxLZh4mybkIy4IUyw5Sk9vC3mD2Byii7PA&oe=6ADB9A18"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/786106872_1071551965522853_8057904979705016771_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s24x24&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=FVHikNnwZwMQ7kNvwE3-NpZ&_nc_oc=AdqtSyuorjfw0HNvDUQ0v1rjtHfHhXqo7SH5VFnitKpohcGU-u2FZk7T8QgHNsrLy-8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNF106kNp-GDxLZh4mybkIy4IUyw5Sk9vC3mD2Byii7PA&oe=6ADB9A18"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Ahmed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/people/Ahmed-Visa/100080041790868/",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/people/Ahmed-Visa/100080041790868/",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/786106872_1071551965522853_8057904979705016771_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=FVHikNnwZwMQ7kNvwE3-NpZ&_nc_oc=AdqtSyuorjfw0HNvDUQ0v1rjtHfHhXqo7SH5VFnitKpohcGU-u2FZk7T8QgHNsrLy-8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNF106kNp-GDxLZh4mybkIy4IUyw5Sk9vC3mD2Byii7PA&oe=6ADB9A18",
+   "profileId": "100080041790868",
+   "profileName": "Ahmed Visa",
+   "likesCount": "3",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1322171076547707",
+   "commentId": "1322171076547707",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTMyMjE3MTA3NjU0NzcwNw==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzEzMjIxNzEwNzY1NDc3MDc=",
+   "date": "2026-10-09T07:39:38.000Z",
+   "text": "اى ختم الاستمناء دا ؟",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid056qodmKtK5AhWHLog7wHkgExE9XBmgsgsr1kMxxuAJD2ai5uN2VNfkGcNj4oSuq5l",
+    "name": "Mohamed Hamada",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/436235347_1781290769037888_828155699473225293_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx956x960&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=eVkDbh2g1AIQ7kNvwEjqs3o&_nc_oc=AdrEAwdh7cI1bQGTXMe8bFXaWGBysgQd01Mf3-DPGHX1pfjPdC0WHfR7FSPOD38HADU&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPnCmuXS4rKtz-dMoaZ1IRAThblXymKA_JwaOaGRZWIjw&oe=6ADB8E68"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/436235347_1781290769037888_828155699473225293_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx956x960&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=eVkDbh2g1AIQ7kNvwEjqs3o&_nc_oc=AdrEAwdh7cI1bQGTXMe8bFXaWGBysgQd01Mf3-DPGHX1pfjPdC0WHfR7FSPOD38HADU&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPnCmuXS4rKtz-dMoaZ1IRAThblXymKA_JwaOaGRZWIjw&oe=6ADB8E68"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/436235347_1781290769037888_828155699473225293_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx956x960&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=eVkDbh2g1AIQ7kNvwEjqs3o&_nc_oc=AdrEAwdh7cI1bQGTXMe8bFXaWGBysgQd01Mf3-DPGHX1pfjPdC0WHfR7FSPOD38HADU&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPnCmuXS4rKtz-dMoaZ1IRAThblXymKA_JwaOaGRZWIjw&oe=6ADB8E68"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/el.bsa.3",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/el.bsa.3",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/436235347_1781290769037888_828155699473225293_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx956x960&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=eVkDbh2g1AIQ7kNvwEjqs3o&_nc_oc=AdrEAwdh7cI1bQGTXMe8bFXaWGBysgQd01Mf3-DPGHX1pfjPdC0WHfR7FSPOD38HADU&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPnCmuXS4rKtz-dMoaZ1IRAThblXymKA_JwaOaGRZWIjw&oe=6ADB8E68",
+   "profileId": "pfbid056qodmKtK5AhWHLog7wHkgExE9XBmgsgsr1kMxxuAJD2ai5uN2VNfkGcNj4oSuq5l",
+   "profileName": "Mohamed Hamada",
+   "likesCount": "5",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1103142132698747",
+   "commentId": "1103142132698747",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTEwMzE0MjEzMjY5ODc0Nw==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzExMDMxNDIxMzI2OTg3NDc=",
+   "date": "2026-10-10T10:03:13.000Z",
+   "text": "جريت المايه من الحنفيه يا نجم",
+   "author": {
+    "__typename": "User",
+    "id": "100083137368058",
+    "name": "Mohamed M. Rushdy",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/798716707_1074095638705005_519444104767355800_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1076&ctp=s32x32&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dvWankRKy08Q7kNvwFltxon&_nc_oc=AdqO4lqoBgZz7zeHQgMkYwWMXn9LHxpnwzRcb6AwcFmRQbesg80tFEfc0_-WUaR6mkc&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPm_agWA_vIufaAjYucnjUHOyoanR2l3W9qnVfhN2o6pA&oe=6ADBB371"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/798716707_1074095638705005_519444104767355800_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1076&ctp=s40x40&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dvWankRKy08Q7kNvwFltxon&_nc_oc=AdqO4lqoBgZz7zeHQgMkYwWMXn9LHxpnwzRcb6AwcFmRQbesg80tFEfc0_-WUaR6mkc&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPm_agWA_vIufaAjYucnjUHOyoanR2l3W9qnVfhN2o6pA&oe=6ADBB371"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/798716707_1074095638705005_519444104767355800_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1076&ctp=s24x24&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dvWankRKy08Q7kNvwFltxon&_nc_oc=AdqO4lqoBgZz7zeHQgMkYwWMXn9LHxpnwzRcb6AwcFmRQbesg80tFEfc0_-WUaR6mkc&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPm_agWA_vIufaAjYucnjUHOyoanR2l3W9qnVfhN2o6pA&oe=6ADBB371"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Mohamed M.",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/mohamed.m.rushdy.739554",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/mohamed.m.rushdy.739554",
+   "profilePicture": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/798716707_1074095638705005_519444104767355800_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1076&ctp=s32x32&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dvWankRKy08Q7kNvwFltxon&_nc_oc=AdqO4lqoBgZz7zeHQgMkYwWMXn9LHxpnwzRcb6AwcFmRQbesg80tFEfc0_-WUaR6mkc&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQPm_agWA_vIufaAjYucnjUHOyoanR2l3W9qnVfhN2o6pA&oe=6ADBB371",
+   "profileId": "100083137368058",
+   "profileName": "Mohamed M. Rushdy",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1095978029514387",
+   "commentId": "1095978029514387",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTA5NTk3ODAyOTUxNDM4Nw==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzEwOTU5NzgwMjk1MTQzODc=",
+   "date": "2026-10-08T18:57:54.000Z",
+   "text": "عايزين المره الجاية تجربة العلبة بقا يا دكتور عبدالله و اللي بعدها تجربة اللسان اللي فتحت بيه العلبة",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02Efr5aVzNrhny1yD5gp7pwJBAHSVbTZcKxJxpyFTY58Qr33Nq82WeYaVrR6ZwDu5sl",
+    "name": "Here's Man",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/608966456_879560358154533_5954892118293668172_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YefhcgdDh4sQ7kNvwFyI34C&_nc_oc=Adp5ByDjmyXLiQkOYuPdHTerP0xzVKmn8oMXg5JcdaqMR2kBtD3mbUiIdAFcxH8-5eQ&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMksLe1ed7-ScEBIzsuTyQ0jJc1aJbVBOZ551u2YgAWLw&oe=6ADBB94D"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/608966456_879560358154533_5954892118293668172_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s40x40&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YefhcgdDh4sQ7kNvwFyI34C&_nc_oc=Adp5ByDjmyXLiQkOYuPdHTerP0xzVKmn8oMXg5JcdaqMR2kBtD3mbUiIdAFcxH8-5eQ&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMksLe1ed7-ScEBIzsuTyQ0jJc1aJbVBOZ551u2YgAWLw&oe=6ADBB94D"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/608966456_879560358154533_5954892118293668172_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s24x24&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YefhcgdDh4sQ7kNvwFyI34C&_nc_oc=Adp5ByDjmyXLiQkOYuPdHTerP0xzVKmn8oMXg5JcdaqMR2kBtD3mbUiIdAFcxH8-5eQ&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMksLe1ed7-ScEBIzsuTyQ0jJc1aJbVBOZ551u2YgAWLw&oe=6ADBB94D"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Here's",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/here.s.man",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/here.s.man",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/608966456_879560358154533_5954892118293668172_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx736x736&ctp=s32x32&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YefhcgdDh4sQ7kNvwFyI34C&_nc_oc=Adp5ByDjmyXLiQkOYuPdHTerP0xzVKmn8oMXg5JcdaqMR2kBtD3mbUiIdAFcxH8-5eQ&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMksLe1ed7-ScEBIzsuTyQ0jJc1aJbVBOZ551u2YgAWLw&oe=6ADBB94D",
+   "profileId": "pfbid02Efr5aVzNrhny1yD5gp7pwJBAHSVbTZcKxJxpyFTY58Qr33Nq82WeYaVrR6ZwDu5sl",
+   "profileName": "Here's Man",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=2154133405314232",
+   "commentId": "2154133405314232",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMjE1NDEzMzQwNTMxNDIzMg==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzIxNTQxMzM0MDUzMTQyMzI=",
+   "date": "2026-10-10T03:20:18.000Z",
+   "text": "عايزين تجربة جبنة عبور لاند الصفرا",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02LnZWvmNNCgdtWbK7TuK8DA1csKGWMgPmTw25BfWn7R1SiHb6FaxxxGxaojqXXDtHl",
+    "name": "Jušt Ǿŋẻ Magican",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/654409033_3099611800235939_5055716109371601721_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1024x1024&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=59uM5wWA_G0Q7kNvwF8YIPw&_nc_oc=Adpg_pPOgf6dxgSFkecrbZZUtVNj7oqsK5GcAuzZjoLESWur1CFPsyiD7BArqIWHuTY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMR2096Sd-2gX_N1RsKVg1kiqdsY6l3zGYBBMytzx7hdQ&oe=6ADB9209"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/654409033_3099611800235939_5055716109371601721_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1024x1024&ctp=s40x40&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=59uM5wWA_G0Q7kNvwF8YIPw&_nc_oc=Adpg_pPOgf6dxgSFkecrbZZUtVNj7oqsK5GcAuzZjoLESWur1CFPsyiD7BArqIWHuTY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMR2096Sd-2gX_N1RsKVg1kiqdsY6l3zGYBBMytzx7hdQ&oe=6ADB9209"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/654409033_3099611800235939_5055716109371601721_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1024x1024&ctp=s24x24&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=59uM5wWA_G0Q7kNvwF8YIPw&_nc_oc=Adpg_pPOgf6dxgSFkecrbZZUtVNj7oqsK5GcAuzZjoLESWur1CFPsyiD7BArqIWHuTY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMR2096Sd-2gX_N1RsKVg1kiqdsY6l3zGYBBMytzx7hdQ&oe=6ADB9209"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Magican",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/654409033_3099611800235939_5055716109371601721_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1024x1024&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=59uM5wWA_G0Q7kNvwF8YIPw&_nc_oc=Adpg_pPOgf6dxgSFkecrbZZUtVNj7oqsK5GcAuzZjoLESWur1CFPsyiD7BArqIWHuTY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQMR2096Sd-2gX_N1RsKVg1kiqdsY6l3zGYBBMytzx7hdQ&oe=6ADB9209",
+   "profileId": "pfbid02LnZWvmNNCgdtWbK7TuK8DA1csKGWMgPmTw25BfWn7R1SiHb6FaxxxGxaojqXXDtHl",
+   "profileName": "Jušt Ǿŋẻ Magican",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1179831911239908",
+   "commentId": "1179831911239908",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTE3OTgzMTkxMTIzOTkwOA==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzExNzk4MzE5MTEyMzk5MDg=",
+   "date": "2026-10-09T12:10:42.000Z",
+   "text": "Hàmi Ðo طعمها بتنجان مقلي حمضان",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0jEZkCCDdf266nKUwon52Z8LTXTdEXcta8Umy98pkkczoZo4Kp4XSj7CegsjqVezbl",
+    "name": "Ahmed M. Salah",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/488573294_1318452095881483_5310067173013545930_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x958&ctp=s32x32&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=dxS9Nv5Ilh4Q7kNvwEOi4Su&_nc_oc=AdoYoQsPq9NBrlVGcavShVXjFP6QnCBjWQKfYaFude7TRS2eYGNxiOIGKcPzpUHCAHs&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNhWVP8gSG0A1wMEXc3i2HodhdTSvrJtVH2UuEJhPE1RA&oe=6ADBB52C"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/488573294_1318452095881483_5310067173013545930_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x958&ctp=s40x40&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=dxS9Nv5Ilh4Q7kNvwEOi4Su&_nc_oc=AdoYoQsPq9NBrlVGcavShVXjFP6QnCBjWQKfYaFude7TRS2eYGNxiOIGKcPzpUHCAHs&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNhWVP8gSG0A1wMEXc3i2HodhdTSvrJtVH2UuEJhPE1RA&oe=6ADBB52C"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/488573294_1318452095881483_5310067173013545930_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x958&ctp=s24x24&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=dxS9Nv5Ilh4Q7kNvwEOi4Su&_nc_oc=AdoYoQsPq9NBrlVGcavShVXjFP6QnCBjWQKfYaFude7TRS2eYGNxiOIGKcPzpUHCAHs&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNhWVP8gSG0A1wMEXc3i2HodhdTSvrJtVH2UuEJhPE1RA&oe=6ADBB52C"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Ahmed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/ahmed.mostafa.432861",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/ahmed.mostafa.432861",
+   "profilePicture": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/488573294_1318452095881483_5310067173013545930_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x958&ctp=s32x32&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=dxS9Nv5Ilh4Q7kNvwEOi4Su&_nc_oc=AdoYoQsPq9NBrlVGcavShVXjFP6QnCBjWQKfYaFude7TRS2eYGNxiOIGKcPzpUHCAHs&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNhWVP8gSG0A1wMEXc3i2HodhdTSvrJtVH2UuEJhPE1RA&oe=6ADBB52C",
+   "profileId": "pfbid0jEZkCCDdf266nKUwon52Z8LTXTdEXcta8Umy98pkkczoZo4Kp4XSj7CegsjqVezbl",
+   "profileName": "Ahmed M. Salah",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1144033981484522",
+   "commentId": "1144033981484522",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTE0NDAzMzk4MTQ4NDUyMg==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzExNDQwMzM5ODE0ODQ1MjI=",
+   "date": "2026-10-08T21:54:31.000Z",
+   "text": "وربنا بضاني وجعتني منك🤙🏻",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02mXkLfD84gMWrqmR5pHDNrqPwmDXmczJZJ5u1QVhaBAFeFojcqUAnEAjgK99WJp3l",
+    "name": "MoŠtâfă Ăli",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/547584507_122132013812928988_6786818056792548174_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=RLCWOTbG1NcQ7kNvwFok5hf&_nc_oc=Adqq90tF12Ys2slTlq7szuSnrE-IqoHWaktWy3bVFY7eVrFezS4mhCVvi1oHOWRCTY8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQONgF5xt1vYxj0ytf-zmWHgLWMuNpUJcmwivdF-nz3eDQ&oe=6ADB9021"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/547584507_122132013812928988_6786818056792548174_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s40x40&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=RLCWOTbG1NcQ7kNvwFok5hf&_nc_oc=Adqq90tF12Ys2slTlq7szuSnrE-IqoHWaktWy3bVFY7eVrFezS4mhCVvi1oHOWRCTY8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQONgF5xt1vYxj0ytf-zmWHgLWMuNpUJcmwivdF-nz3eDQ&oe=6ADB9021"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/547584507_122132013812928988_6786818056792548174_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s24x24&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=RLCWOTbG1NcQ7kNvwFok5hf&_nc_oc=Adqq90tF12Ys2slTlq7szuSnrE-IqoHWaktWy3bVFY7eVrFezS4mhCVvi1oHOWRCTY8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQONgF5xt1vYxj0ytf-zmWHgLWMuNpUJcmwivdF-nz3eDQ&oe=6ADB9021"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "MoŠtâfă",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/Mostafaali.Xox",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/Mostafaali.Xox",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/547584507_122132013812928988_6786818056792548174_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=RLCWOTbG1NcQ7kNvwFok5hf&_nc_oc=Adqq90tF12Ys2slTlq7szuSnrE-IqoHWaktWy3bVFY7eVrFezS4mhCVvi1oHOWRCTY8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQONgF5xt1vYxj0ytf-zmWHgLWMuNpUJcmwivdF-nz3eDQ&oe=6ADB9021",
+   "profileId": "pfbid02mXkLfD84gMWrqmR5pHDNrqPwmDXmczJZJ5u1QVhaBAFeFojcqUAnEAjgK99WJp3l",
+   "profileName": "MoŠtâfă Ăli",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1408711734795306",
+   "commentId": "1408711734795306",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTQwODcxMTczNDc5NTMwNg==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE0MDg3MTE3MzQ3OTUzMDY=",
+   "date": "2026-10-08T17:51:28.000Z",
+   "text": "استاذ عبد الله استمر انا بيج فان ليك 🙏🙏🙏",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0HXxSHyqkLbetN9zt78L3uPJGf4vMexCaf6eKWir2AuKu27VYaZPTv9CGpbrM8HEal",
+    "name": "Ziad Said",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/435878512_2668136010031075_1421252063586389840_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s32x32&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bGT2Sw2bWVwQ7kNvwH5230i&_nc_oc=Adp0GMXgT8NkN3WNeMQ7oWQD_RSezgxLcgJwILNYtLDig64JduXdXsZZS23zTNrGVME&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNfpqhK8FRo78uqrjMezZ-BIiifQhbqNP5fZ5zOSD9tbg&oe=6ADB942B"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/435878512_2668136010031075_1421252063586389840_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s40x40&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bGT2Sw2bWVwQ7kNvwH5230i&_nc_oc=Adp0GMXgT8NkN3WNeMQ7oWQD_RSezgxLcgJwILNYtLDig64JduXdXsZZS23zTNrGVME&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNfpqhK8FRo78uqrjMezZ-BIiifQhbqNP5fZ5zOSD9tbg&oe=6ADB942B"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/435878512_2668136010031075_1421252063586389840_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s24x24&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bGT2Sw2bWVwQ7kNvwH5230i&_nc_oc=Adp0GMXgT8NkN3WNeMQ7oWQD_RSezgxLcgJwILNYtLDig64JduXdXsZZS23zTNrGVME&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNfpqhK8FRo78uqrjMezZ-BIiifQhbqNP5fZ5zOSD9tbg&oe=6ADB942B"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Ziad",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/ziad.said.885696",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/ziad.said.885696",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/435878512_2668136010031075_1421252063586389840_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s32x32&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bGT2Sw2bWVwQ7kNvwH5230i&_nc_oc=Adp0GMXgT8NkN3WNeMQ7oWQD_RSezgxLcgJwILNYtLDig64JduXdXsZZS23zTNrGVME&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=ywP3XCDdJpoT9zJ6YbYY8w&_nc_ss=70289&oh=00_AQNfpqhK8FRo78uqrjMezZ-BIiifQhbqNP5fZ5zOSD9tbg&oe=6ADB942B",
+   "profileId": "pfbid0HXxSHyqkLbetN9zt78L3uPJGf4vMexCaf6eKWir2AuKu27VYaZPTv9CGpbrM8HEal",
+   "profileName": "Ziad Said",
+   "likesCount": "2",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=930843920108710",
+   "commentId": "930843920108710",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfOTMwODQzOTIwMTA4NzEw",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzkzMDg0MzkyMDEwODcxMA==",
+   "date": "2026-10-08T22:03:19.000Z",
+   "text": "هو كل حاجه الكميه ممتازه خخخ",
+   "author": {
+    "__typename": "User",
+    "id": "100059638870489",
+    "name": "Hesham Fathi",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/687705051_1332978152033468_8205699264966289911_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1197x1191&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=efB-GL7Umf8Q7kNvwFJnaj2&_nc_oc=AdqcBMfY_Bwtb-DKQr8RlO3jKbZ_yWfvqzifY5oHxOEf6S1as_4BnTCjDmEolLQBBfc&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQPflauB-1GN9mC1qz-Cgd8zJQ-C--bgc7oOxhB2KggaGw&oe=6ADBBA43"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/687705051_1332978152033468_8205699264966289911_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1197x1191&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=efB-GL7Umf8Q7kNvwFJnaj2&_nc_oc=AdqcBMfY_Bwtb-DKQr8RlO3jKbZ_yWfvqzifY5oHxOEf6S1as_4BnTCjDmEolLQBBfc&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQPflauB-1GN9mC1qz-Cgd8zJQ-C--bgc7oOxhB2KggaGw&oe=6ADBBA43"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/687705051_1332978152033468_8205699264966289911_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1197x1191&ctp=s24x24&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=efB-GL7Umf8Q7kNvwFJnaj2&_nc_oc=AdqcBMfY_Bwtb-DKQr8RlO3jKbZ_yWfvqzifY5oHxOEf6S1as_4BnTCjDmEolLQBBfc&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQPflauB-1GN9mC1qz-Cgd8zJQ-C--bgc7oOxhB2KggaGw&oe=6ADBBA43"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Hesham",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/heshamfathicris7",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/heshamfathicris7",
+   "profilePicture": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/687705051_1332978152033468_8205699264966289911_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1197x1191&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=efB-GL7Umf8Q7kNvwFJnaj2&_nc_oc=AdqcBMfY_Bwtb-DKQr8RlO3jKbZ_yWfvqzifY5oHxOEf6S1as_4BnTCjDmEolLQBBfc&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQPflauB-1GN9mC1qz-Cgd8zJQ-C--bgc7oOxhB2KggaGw&oe=6ADBBA43",
+   "profileId": "100059638870489",
+   "profileName": "Hesham Fathi",
+   "likesCount": "1",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1841177633968194",
+   "commentId": "1841177633968194",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTg0MTE3NzYzMzk2ODE5NA==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE4NDExNzc2MzM5NjgxOTQ=",
+   "date": "2026-10-08T17:14:20.000Z",
+   "text": "اذكرو الله سبحانه وتعالى 🤍",
+   "attachments": [
+    {
+     "__typename": "Photo",
+     "blurred_image": {
+      "uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/839618506_122144258463107001_1912501990584009022_n.jpg?stp=dst-jpg_fb30_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=TIacDe9xB_UQ7kNvwFNGGLW&_nc_oc=AdqdB1ARqdZq2QXEtF-iI1wKak1zgRB8_eshOWGAB2x1EV8UElYXh4hkxs6RLoSd7jo&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQMbqKQ3wrLv3Tin5DuaVs7jM9-FuqwPCjbLCSMGEKLaww&oe=6ADBAF89"
+     },
+     "id": "122144258457107001",
+     "cix_screen": null,
+     "massive_image": {
+      "width": 550,
+      "height": 960
+     },
+     "image": {
+      "uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/839618506_122144258463107001_1912501990584009022_n.jpg?stp=dst-jpg_tt6&cstp=mx688x1200&ctp=p75x225&_nc_cat=110&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=TIacDe9xB_UQ7kNvwFNGGLW&_nc_oc=AdqdB1ARqdZq2QXEtF-iI1wKak1zgRB8_eshOWGAB2x1EV8UElYXh4hkxs6RLoSd7jo&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQOr0SXPT18ZM6zzYWGDR6oDey3AteTH2stkID5q8uKlHw&oe=6ADBAF89",
+      "width": 129,
+      "height": 225
+     },
+     "ocrText": "May be an image of road and text"
+    }
+   ],
+   "author": {
+    "__typename": "User",
+    "id": "61583210032191",
+    "name": "زوالي لكن خشمي عالي",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/800781212_122142333501107001_1042259262635028779_n.jpg?stp=c0.0.320.320a_cp0_dst-jpg_tt6&cstp=mx320x320&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=5NdNqFEmOrQQ7kNvwFAGnUi&_nc_oc=AdrMScqg9-R1J9FNJXbeDN2l7_mteiwxF4-4qGxLegc_dskpjeaKeAYx00G8cWHClXQ&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQNhB92lskUYg8vwTfXXtAhr-PoqLhn51i7VgoVYI4-1DQ&oe=6ADBA5B7"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/800781212_122142333501107001_1042259262635028779_n.jpg?stp=c0.0.320.320a_cp0_dst-jpg_tt6&cstp=mx320x320&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=5NdNqFEmOrQQ7kNvwFAGnUi&_nc_oc=AdrMScqg9-R1J9FNJXbeDN2l7_mteiwxF4-4qGxLegc_dskpjeaKeAYx00G8cWHClXQ&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQNhB92lskUYg8vwTfXXtAhr-PoqLhn51i7VgoVYI4-1DQ&oe=6ADBA5B7"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/800781212_122142333501107001_1042259262635028779_n.jpg?stp=c0.0.320.320a_cp0_dst-jpg_tt6&cstp=mx320x320&ctp=s24x24&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=5NdNqFEmOrQQ7kNvwFAGnUi&_nc_oc=AdrMScqg9-R1J9FNJXbeDN2l7_mteiwxF4-4qGxLegc_dskpjeaKeAYx00G8cWHClXQ&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQNhB92lskUYg8vwTfXXtAhr-PoqLhn51i7VgoVYI4-1DQ&oe=6ADBA5B7"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "زوالي",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/people/%D8%B2%D9%88%D8%A7%D9%84%D9%8A-%D9%84%D9%83%D9%86-%D8%AE%D8%B4%D9%85%D9%8A-%D8%B9%D8%A7%D9%84%D9%8A/61583210032191/",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/people/%D8%B2%D9%88%D8%A7%D9%84%D9%8A-%D9%84%D9%83%D9%86-%D8%AE%D8%B4%D9%85%D9%8A-%D8%B9%D8%A7%D9%84%D9%8A/61583210032191/",
+   "profilePicture": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/800781212_122142333501107001_1042259262635028779_n.jpg?stp=c0.0.320.320a_cp0_dst-jpg_tt6&cstp=mx320x320&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=5NdNqFEmOrQQ7kNvwFAGnUi&_nc_oc=AdrMScqg9-R1J9FNJXbeDN2l7_mteiwxF4-4qGxLegc_dskpjeaKeAYx00G8cWHClXQ&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQNhB92lskUYg8vwTfXXtAhr-PoqLhn51i7VgoVYI4-1DQ&oe=6ADBA5B7",
+   "profileId": "61583210032191",
+   "profileName": "زوالي لكن خشمي عالي",
+   "likesCount": "1",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1406125031605210",
+   "commentId": "1406125031605210",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTQwNjEyNTAzMTYwNTIxMA==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE0MDYxMjUwMzE2MDUyMTA=",
+   "date": "2026-10-09T11:36:22.000Z",
+   "text": "خخخخخخخخخ",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02cquTV7kPLYN4siKM9vomRGTJmqybZi4umCHZ52Fd8tcb13T5ACivYC3hZ9Xxq8qJl",
+    "name": "Hakim Zahran",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/726061414_1010028104900022_3662922598053000057_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2043x2048&ctp=s32x32&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bt4DULXFiMMQ7kNvwGzcW5L&_nc_oc=AdpQdmLsMcMTnLtrmxLhVT2H18AOWWEb-dKurBN3CH081YIPjnX2mjqLTa5AgmyBMpM&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQOWfxJb9HvzydBGb3JR6IIoSwkgJXOKMHxo2dstF4Rmxg&oe=6ADB97D0"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/726061414_1010028104900022_3662922598053000057_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2043x2048&ctp=s40x40&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bt4DULXFiMMQ7kNvwGzcW5L&_nc_oc=AdpQdmLsMcMTnLtrmxLhVT2H18AOWWEb-dKurBN3CH081YIPjnX2mjqLTa5AgmyBMpM&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQOWfxJb9HvzydBGb3JR6IIoSwkgJXOKMHxo2dstF4Rmxg&oe=6ADB97D0"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/726061414_1010028104900022_3662922598053000057_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2043x2048&ctp=s24x24&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bt4DULXFiMMQ7kNvwGzcW5L&_nc_oc=AdpQdmLsMcMTnLtrmxLhVT2H18AOWWEb-dKurBN3CH081YIPjnX2mjqLTa5AgmyBMpM&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQOWfxJb9HvzydBGb3JR6IIoSwkgJXOKMHxo2dstF4Rmxg&oe=6ADB97D0"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Hakim",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/hakim.zahran.2025",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/hakim.zahran.2025",
+   "profilePicture": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/726061414_1010028104900022_3662922598053000057_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2043x2048&ctp=s32x32&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bt4DULXFiMMQ7kNvwGzcW5L&_nc_oc=AdpQdmLsMcMTnLtrmxLhVT2H18AOWWEb-dKurBN3CH081YIPjnX2mjqLTa5AgmyBMpM&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQOWfxJb9HvzydBGb3JR6IIoSwkgJXOKMHxo2dstF4Rmxg&oe=6ADB97D0",
+   "profileId": "pfbid02cquTV7kPLYN4siKM9vomRGTJmqybZi4umCHZ52Fd8tcb13T5ACivYC3hZ9Xxq8qJl",
+   "profileName": "Hakim Zahran",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=1475912351043325",
+   "commentId": "1475912351043325",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfMTQ3NTkxMjM1MTA0MzMyNQ==",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4XzE0NzU5MTIzNTEwNDMzMjU=",
+   "date": "2026-10-12T13:56:22.000Z",
+   "text": "يعني احنا طايقينك بالعربي لما تعمل نفسك بالاتجليزي",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02EA2r5AwuQtt1P8firojLvRw74tQG6PBHxzwQmfDZweY599bRYCa6hKSbwRyKJi8gl",
+    "name": "Abdelhamid Abdullrahman",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia5-2.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwF5Dlav&_nc_oc=AdqmppUE9SJOGJY4B1-Eb6QvNVl1PMJwQedA0cfYC5V5UQD6GjJ0_dZdKHKrQkO6nLo&_nc_zt=24&_nc_ht=scontent-mia5-2.xx&_nc_ss=70289&oh=00_AQNzPIvAQK8s_MnVKIQeJlvege4xsR2s3PFBxq6qwnEJTw&oe=6AFD2F7A"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia5-2.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s40x40&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwF5Dlav&_nc_oc=AdqmppUE9SJOGJY4B1-Eb6QvNVl1PMJwQedA0cfYC5V5UQD6GjJ0_dZdKHKrQkO6nLo&_nc_zt=24&_nc_ht=scontent-mia5-2.xx&_nc_ss=70289&oh=00_AQNzPIvAQK8s_MnVKIQeJlvege4xsR2s3PFBxq6qwnEJTw&oe=6AFD2F7A"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia5-2.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwF5Dlav&_nc_oc=AdqmppUE9SJOGJY4B1-Eb6QvNVl1PMJwQedA0cfYC5V5UQD6GjJ0_dZdKHKrQkO6nLo&_nc_zt=24&_nc_ht=scontent-mia5-2.xx&_nc_ss=70289&oh=00_AQNzPIvAQK8s_MnVKIQeJlvege4xsR2s3PFBxq6qwnEJTw&oe=6AFD2F7A"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Abdelhamid",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-mia5-2.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwF5Dlav&_nc_oc=AdqmppUE9SJOGJY4B1-Eb6QvNVl1PMJwQedA0cfYC5V5UQD6GjJ0_dZdKHKrQkO6nLo&_nc_zt=24&_nc_ht=scontent-mia5-2.xx&_nc_ss=70289&oh=00_AQNzPIvAQK8s_MnVKIQeJlvege4xsR2s3PFBxq6qwnEJTw&oe=6AFD2F7A",
+   "profileId": "pfbid02EA2r5AwuQtt1P8firojLvRw74tQG6PBHxzwQmfDZweY599bRYCa6hKSbwRyKJi8gl",
+   "profileName": "Abdelhamid Abdullrahman",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1807300737278091/",
+   "commentUrl": "https://www.facebook.com/reel/1807300737278091/?comment_id=962047400277781",
+   "commentId": "962047400277781",
+   "id": "Y29tbWVudDoxMjIxOTAwMTM1MDg4MDQ5NzhfOTYyMDQ3NDAwMjc3Nzgx",
+   "feedbackId": "ZmVlZGJhY2s6MTIyMTkwMDEzNTA4ODA0OTc4Xzk2MjA0NzQwMDI3Nzc4MQ==",
+   "date": "2026-10-08T20:59:19.000Z",
+   "text": "كداب كدب السنين",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0317RX6dc2PrVnmeY2x4rgS7ZJoBuELqBEntZu9HAAm66GXC3tVMoFEgFKc1Rr6YBQl",
+    "name": "Tarek Soliman",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-1/530310079_4164602153819049_2964144398432524314_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx652x647&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=U66jUqVR1FIQ7kNvwE6SXKD&_nc_oc=AdpX0cuB2N_aqkbTwQma1XEcScz3BO0R4N108eVgyhqmfSb9xKftlh7vTc1aKh4vqSM&_nc_zt=24&_nc_ht=scontent-mia3-1.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQND9bmZFXJWJZsM_9GI8mK4VN8_g4iRHERg6UrMlxxoIA&oe=6ADBAE61"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-1/530310079_4164602153819049_2964144398432524314_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx652x647&ctp=s40x40&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=U66jUqVR1FIQ7kNvwE6SXKD&_nc_oc=AdpX0cuB2N_aqkbTwQma1XEcScz3BO0R4N108eVgyhqmfSb9xKftlh7vTc1aKh4vqSM&_nc_zt=24&_nc_ht=scontent-mia3-1.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQND9bmZFXJWJZsM_9GI8mK4VN8_g4iRHERg6UrMlxxoIA&oe=6ADBAE61"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-1/530310079_4164602153819049_2964144398432524314_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx652x647&ctp=s24x24&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=U66jUqVR1FIQ7kNvwE6SXKD&_nc_oc=AdpX0cuB2N_aqkbTwQma1XEcScz3BO0R4N108eVgyhqmfSb9xKftlh7vTc1aKh4vqSM&_nc_zt=24&_nc_ht=scontent-mia3-1.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQND9bmZFXJWJZsM_9GI8mK4VN8_g4iRHERg6UrMlxxoIA&oe=6ADBAE61"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Tarek",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/tarek.mazzika.3",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/tarek.mazzika.3",
+   "profilePicture": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-1/530310079_4164602153819049_2964144398432524314_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx652x647&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=U66jUqVR1FIQ7kNvwE6SXKD&_nc_oc=AdpX0cuB2N_aqkbTwQma1XEcScz3BO0R4N108eVgyhqmfSb9xKftlh7vTc1aKh4vqSM&_nc_zt=24&_nc_ht=scontent-mia3-1.xx&_nc_gid=iXn2ycHDg4Fywee4UjhGnA&_nc_ss=70289&oh=00_AQND9bmZFXJWJZsM_9GI8mK4VN8_g4iRHERg6UrMlxxoIA&oe=6ADBAE61",
+   "profileId": "pfbid0317RX6dc2PrVnmeY2x4rgS7ZJoBuELqBEntZu9HAAm66GXC3tVMoFEgFKc1Rr6YBQl",
+   "profileName": "Tarek Soliman",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "122190013508804978",
+   "postTitle": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "pageAdLibrary": {
+    "id": "643647425487938",
+    "uri_token": "61574149360419",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1807300737278091/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=1596376298560534",
+   "commentId": "1596376298560534",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8xNTk2Mzc2Mjk4NTYwNTM0",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMTU5NjM3NjI5ODU2MDUzNA==",
+   "date": "2026-09-29T18:24:48.000Z",
+   "text": "خلوا التليفونات مع زيزي \nواعملوا خيم بمخدات الانتريه وولعوا ف شوية خشب ع جنب لزوم الڤايبس وولا أجدعها كامبينج 🙂😇😂",
+   "author": {
+    "__typename": "User",
+    "id": "100054798943627",
+    "name": "Yomna Ibrahim Abdallah",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/853759310_1547158587120758_5300964182436718291_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx900x912&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=D8X249htcc4Q7kNvwEEj_vd&_nc_oc=AdpX8dy5h_6i_Dg_ANiTx38b6PwC2sH8QKPqdHa1QvTMC4s7guLl1_cvXmr9rhp1ZL4&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPbOjAg6vtA53mXQFKx_E92k5saQuqQK0GqVE3QPuY_1g&oe=6ADBA2CE"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/853759310_1547158587120758_5300964182436718291_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx900x912&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=D8X249htcc4Q7kNvwEEj_vd&_nc_oc=AdpX8dy5h_6i_Dg_ANiTx38b6PwC2sH8QKPqdHa1QvTMC4s7guLl1_cvXmr9rhp1ZL4&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPbOjAg6vtA53mXQFKx_E92k5saQuqQK0GqVE3QPuY_1g&oe=6ADBA2CE"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/853759310_1547158587120758_5300964182436718291_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx900x912&ctp=s24x24&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=D8X249htcc4Q7kNvwEEj_vd&_nc_oc=AdpX8dy5h_6i_Dg_ANiTx38b6PwC2sH8QKPqdHa1QvTMC4s7guLl1_cvXmr9rhp1ZL4&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPbOjAg6vtA53mXQFKx_E92k5saQuqQK0GqVE3QPuY_1g&oe=6ADBA2CE"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Yomna",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/853759310_1547158587120758_5300964182436718291_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx900x912&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=D8X249htcc4Q7kNvwEEj_vd&_nc_oc=AdpX8dy5h_6i_Dg_ANiTx38b6PwC2sH8QKPqdHa1QvTMC4s7guLl1_cvXmr9rhp1ZL4&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPbOjAg6vtA53mXQFKx_E92k5saQuqQK0GqVE3QPuY_1g&oe=6ADBA2CE",
+   "profileId": "100054798943627",
+   "profileName": "Yomna Ibrahim Abdallah",
+   "likesCount": "2",
+   "commentsCount": 1,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=1403523165329238",
+   "commentId": "1403523165329238",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8xNDAzNTIzMTY1MzI5MjM4",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMTQwMzUyMzE2NTMyOTIzOA==",
+   "date": "2026-09-29T18:28:48.000Z",
+   "text": "طب واللي عايز يقرب من مراته 🥴",
+   "author": {
+    "__typename": "User",
+    "id": "1577597145",
+    "name": "Mohamed Galal",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/788716369_10238856272056829_3884811352782507188_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx896x897&ctp=s32x32&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dqE6b0aFxqkQ7kNvwEZLrhk&_nc_oc=AdrvEhHCW6bq15w8VGDUWfY5Ix5y8yr6qNc9ZAJHQj8hPN_XfXj-PDXuSyz2ThzLDS0&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQOTb032IqKizq82dL9VsMH80iuYyYNUPW9flnHMe7bpMQ&oe=6ADBA8E6"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/788716369_10238856272056829_3884811352782507188_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx896x897&ctp=s40x40&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dqE6b0aFxqkQ7kNvwEZLrhk&_nc_oc=AdrvEhHCW6bq15w8VGDUWfY5Ix5y8yr6qNc9ZAJHQj8hPN_XfXj-PDXuSyz2ThzLDS0&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQOTb032IqKizq82dL9VsMH80iuYyYNUPW9flnHMe7bpMQ&oe=6ADBA8E6"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/788716369_10238856272056829_3884811352782507188_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx896x897&ctp=s24x24&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dqE6b0aFxqkQ7kNvwEZLrhk&_nc_oc=AdrvEhHCW6bq15w8VGDUWfY5Ix5y8yr6qNc9ZAJHQj8hPN_XfXj-PDXuSyz2ThzLDS0&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQOTb032IqKizq82dL9VsMH80iuYyYNUPW9flnHMe7bpMQ&oe=6ADBA8E6"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/mohamedgalal.footballer",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/mohamedgalal.footballer",
+   "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/788716369_10238856272056829_3884811352782507188_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx896x897&ctp=s32x32&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dqE6b0aFxqkQ7kNvwEZLrhk&_nc_oc=AdrvEhHCW6bq15w8VGDUWfY5Ix5y8yr6qNc9ZAJHQj8hPN_XfXj-PDXuSyz2ThzLDS0&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQOTb032IqKizq82dL9VsMH80iuYyYNUPW9flnHMe7bpMQ&oe=6ADBA8E6",
+   "profileId": "1577597145",
+   "profileName": "Mohamed Galal",
+   "likesCount": "0",
+   "commentsCount": 1,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=2627963817641117",
+   "commentId": "2627963817641117",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8yNjI3OTYzODE3NjQxMTE3",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMjYyNzk2MzgxNzY0MTExNw==",
+   "date": "2026-09-29T18:53:42.000Z",
+   "text": "في كمبات ب١٧ الف وارقام غريبه كده",
+   "author": {
+    "__typename": "User",
+    "id": "100000639003520",
+    "name": "Asmaa Attallah",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/825266947_29071310402473541_6795523392628829003_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1440x1440&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=xGJcYadrYLgQ7kNvwG4SPzT&_nc_oc=AdpHLRhdm9xhkb1dwQz9H6vVfFoRm6NDIouSg-2wQA00gI59CksP2f2NMbBXkhH63Jk&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQP-IPFwPA8FyE4uqEOI2VJB2CKsm1I3aPwov2QisxbvcQ&oe=6ADBA0D2"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/825266947_29071310402473541_6795523392628829003_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1440x1440&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=xGJcYadrYLgQ7kNvwG4SPzT&_nc_oc=AdpHLRhdm9xhkb1dwQz9H6vVfFoRm6NDIouSg-2wQA00gI59CksP2f2NMbBXkhH63Jk&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQP-IPFwPA8FyE4uqEOI2VJB2CKsm1I3aPwov2QisxbvcQ&oe=6ADBA0D2"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/825266947_29071310402473541_6795523392628829003_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1440x1440&ctp=s24x24&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=xGJcYadrYLgQ7kNvwG4SPzT&_nc_oc=AdpHLRhdm9xhkb1dwQz9H6vVfFoRm6NDIouSg-2wQA00gI59CksP2f2NMbBXkhH63Jk&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQP-IPFwPA8FyE4uqEOI2VJB2CKsm1I3aPwov2QisxbvcQ&oe=6ADBA0D2"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Asmaa",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/asmaa.atallh",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/asmaa.atallh",
+   "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/825266947_29071310402473541_6795523392628829003_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1440x1440&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=xGJcYadrYLgQ7kNvwG4SPzT&_nc_oc=AdpHLRhdm9xhkb1dwQz9H6vVfFoRm6NDIouSg-2wQA00gI59CksP2f2NMbBXkhH63Jk&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQP-IPFwPA8FyE4uqEOI2VJB2CKsm1I3aPwov2QisxbvcQ&oe=6ADBA0D2",
+   "profileId": "100000639003520",
+   "profileName": "Asmaa Attallah",
+   "likesCount": "0",
+   "commentsCount": 2,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=1053547610835580",
+   "commentId": "1053547610835580",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8xMDUzNTQ3NjEwODM1NTgw",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMTA1MzU0NzYxMDgzNTU4MA==",
+   "date": "2026-09-29T19:04:40.000Z",
+   "text": "لأ طبعا لازم تشوف ذراع المجرة وتعيش جو الصحرا وجو زا هيلز هاڤ آيييز 🧟‍♀️🧟‍♂️",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02Eq8V7j9DmRnvSrwCQ4B9zDvbJEstQRfrDYeELVgcarNVD44QDezGgK5vE1iKNLVEl",
+    "name": "Dina Mahmoud",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/844685417_28780945428182395_341364018113089597_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x956&ctp=s32x32&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=WJrJQXEp_f4Q7kNvwGbN5Cz&_nc_oc=Adov4aefutXItzIwSEGdLEyxw2gXEFRnOONUirwTEEslbx0XVGOqY6UNPA6QzvzM00A&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQMmrgZ64LaZBNkXQC2i0NGNhK3umqI9C09oZ-DFXUnCug&oe=6ADBAB78"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/844685417_28780945428182395_341364018113089597_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x956&ctp=s40x40&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=WJrJQXEp_f4Q7kNvwGbN5Cz&_nc_oc=Adov4aefutXItzIwSEGdLEyxw2gXEFRnOONUirwTEEslbx0XVGOqY6UNPA6QzvzM00A&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQMmrgZ64LaZBNkXQC2i0NGNhK3umqI9C09oZ-DFXUnCug&oe=6ADBAB78"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/844685417_28780945428182395_341364018113089597_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x956&ctp=s24x24&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=WJrJQXEp_f4Q7kNvwGbN5Cz&_nc_oc=Adov4aefutXItzIwSEGdLEyxw2gXEFRnOONUirwTEEslbx0XVGOqY6UNPA6QzvzM00A&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQMmrgZ64LaZBNkXQC2i0NGNhK3umqI9C09oZ-DFXUnCug&oe=6ADBAB78"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Dina",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/844685417_28780945428182395_341364018113089597_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x956&ctp=s32x32&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=WJrJQXEp_f4Q7kNvwGbN5Cz&_nc_oc=Adov4aefutXItzIwSEGdLEyxw2gXEFRnOONUirwTEEslbx0XVGOqY6UNPA6QzvzM00A&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQMmrgZ64LaZBNkXQC2i0NGNhK3umqI9C09oZ-DFXUnCug&oe=6ADBAB78",
+   "profileId": "pfbid02Eq8V7j9DmRnvSrwCQ4B9zDvbJEstQRfrDYeELVgcarNVD44QDezGgK5vE1iKNLVEl",
+   "profileName": "Dina Mahmoud",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=3055563144799877",
+   "commentId": "3055563144799877",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8zMDU1NTYzMTQ0Nzk5ODc3",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMzA1NTU2MzE0NDc5OTg3Nw==",
+   "date": "2026-09-29T19:06:28.000Z",
+   "text": "نفس الكامب ده سالت والفضول قتلنى لو عايز تقضى يومين بالعدد مع ابنك تلعبوا وتقضوا تايم لذيذ قلت جميل اسال لقيته ب ١٤٠٠٠ خدت الصدمة بجد 🫪🫪",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02wri53f4a1b3dLTfFZUzBZDvJjGTW3mEocfRKzM5mBKXcAksuDS7YQ7rapBS3gvcZl",
+    "name": "Nour El Hoda Abdallah",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/845542959_4221233294679643_3677656719496768958_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x966&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=q1WG1yALJC4Q7kNvwHdpVTm&_nc_oc=Adq5g5ml2FSPgAz4bnMRumTkCNevZa9cbbBE7upYgxJvxF3q1gPvwgbEW5iQ3wowK7I&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQNcj7zL7eBGhB1KuMgqpIc4heYsXB_JZyzvEfkSel9wVA&oe=6ADBA362"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/845542959_4221233294679643_3677656719496768958_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x966&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=q1WG1yALJC4Q7kNvwHdpVTm&_nc_oc=Adq5g5ml2FSPgAz4bnMRumTkCNevZa9cbbBE7upYgxJvxF3q1gPvwgbEW5iQ3wowK7I&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQNcj7zL7eBGhB1KuMgqpIc4heYsXB_JZyzvEfkSel9wVA&oe=6ADBA362"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/845542959_4221233294679643_3677656719496768958_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x966&ctp=s24x24&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=q1WG1yALJC4Q7kNvwHdpVTm&_nc_oc=Adq5g5ml2FSPgAz4bnMRumTkCNevZa9cbbBE7upYgxJvxF3q1gPvwgbEW5iQ3wowK7I&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQNcj7zL7eBGhB1KuMgqpIc4heYsXB_JZyzvEfkSel9wVA&oe=6ADBA362"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Nour El Hoda",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/nourelhoda.abdallah",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/nourelhoda.abdallah",
+   "profilePicture": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/845542959_4221233294679643_3677656719496768958_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x966&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=q1WG1yALJC4Q7kNvwHdpVTm&_nc_oc=Adq5g5ml2FSPgAz4bnMRumTkCNevZa9cbbBE7upYgxJvxF3q1gPvwgbEW5iQ3wowK7I&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQNcj7zL7eBGhB1KuMgqpIc4heYsXB_JZyzvEfkSel9wVA&oe=6ADBA362",
+   "profileId": "pfbid02wri53f4a1b3dLTfFZUzBZDvJjGTW3mEocfRKzM5mBKXcAksuDS7YQ7rapBS3gvcZl",
+   "profileName": "Nour El Hoda Abdallah",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=1441751678017847",
+   "commentId": "1441751678017847",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8xNDQxNzUxNjc4MDE3ODQ3",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMTQ0MTc1MTY3ODAxNzg0Nw==",
+   "date": "2026-09-29T19:05:22.000Z",
+   "text": "الانسان بقا يسمع ارقام غريبه في كامبات مع شوية تسويق بكلام يضغط الاهل ف يحسو انهم مقصرين مع طفلهم علشان مش قادرين يشتركو في الحاجات دي \nمع ان ممكن ننزل بالاطفال يوم كدا في اى حديقة او مكان مفتوح ونقضي وقت لطيف \nوالولد ممكن يخرج مع باباه يخلصو شوية مشاوير مع بعض وهيكتسب شوية مهارات زى الفل والله \nبس ازاى لازم نحسس الاهالي بالذنب والتقصير \nانا معنديش مشكلة ف الكامبات والحاجات دي بس الطريقة التسويقية ليه ضاغطة جداً بجد ومستفزة لناس كتير \n🤦🏻‍♀️🤦🏻‍♀️",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0wrP8NGhQfFUGvDLCJAG7okJrzEVRZBpHts14HPhDNSF9NaEcvEoiTavCVvLXEFBNl",
+    "name": "أسماء عبد الله",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/767001879_4458170284468718_3755370508047095134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx958x958&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=TnAFoIguqIoQ7kNvwFlbbek&_nc_oc=AdoMTu0jxZj_-jS5IkhZUsFEO3i4daKipd-5_U5PS3eSNrma4mk4yggvPvF7Gse95kA&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPwKdjTlWbhhGpvEUOBIHZ3aa6-80tO0rvz6ZpBsGm3xQ&oe=6ADB96C7"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/767001879_4458170284468718_3755370508047095134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx958x958&ctp=s40x40&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=TnAFoIguqIoQ7kNvwFlbbek&_nc_oc=AdoMTu0jxZj_-jS5IkhZUsFEO3i4daKipd-5_U5PS3eSNrma4mk4yggvPvF7Gse95kA&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPwKdjTlWbhhGpvEUOBIHZ3aa6-80tO0rvz6ZpBsGm3xQ&oe=6ADB96C7"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/767001879_4458170284468718_3755370508047095134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx958x958&ctp=s24x24&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=TnAFoIguqIoQ7kNvwFlbbek&_nc_oc=AdoMTu0jxZj_-jS5IkhZUsFEO3i4daKipd-5_U5PS3eSNrma4mk4yggvPvF7Gse95kA&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPwKdjTlWbhhGpvEUOBIHZ3aa6-80tO0rvz6ZpBsGm3xQ&oe=6ADB96C7"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "أسماء",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/767001879_4458170284468718_3755370508047095134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx958x958&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=TnAFoIguqIoQ7kNvwFlbbek&_nc_oc=AdoMTu0jxZj_-jS5IkhZUsFEO3i4daKipd-5_U5PS3eSNrma4mk4yggvPvF7Gse95kA&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPwKdjTlWbhhGpvEUOBIHZ3aa6-80tO0rvz6ZpBsGm3xQ&oe=6ADB96C7",
+   "profileId": "pfbid0wrP8NGhQfFUGvDLCJAG7okJrzEVRZBpHts14HPhDNSF9NaEcvEoiTavCVvLXEFBNl",
+   "profileName": "أسماء عبد الله",
+   "likesCount": "1",
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=1661312115655196",
+   "commentId": "1661312115655196",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8xNjYxMzEyMTE1NjU1MTk2",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMTY2MTMxMjExNTY1NTE5Ng==",
+   "date": "2026-10-02T14:19:45.000Z",
+   "text": "أنا سألت لقيته ب ٧٠٠٠",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02SjzXJZxQo7ksHkWZCNhkShiqjBRVBsCQpxFf1ope7jmtifquyNo1wuXQQT1AvTRQl",
+    "name": "Aya Reda",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-1/187928903_2914965238759900_755828791709362576_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx641x643&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=MozuHJftf0cQ7kNvwEN6Umv&_nc_oc=Ado8fooIWRQfkmwN-UmNVBunSTkz2cHNQLWMlkhCvT9uASQlyAp02hIC_laUIT9JmrU&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQO2QSaxYJrtKwOt_PB7s4AeiUmSqhySBucN9L3cUSoAkw&oe=6AFD2A17"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-1/187928903_2914965238759900_755828791709362576_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx641x643&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=MozuHJftf0cQ7kNvwEN6Umv&_nc_oc=Ado8fooIWRQfkmwN-UmNVBunSTkz2cHNQLWMlkhCvT9uASQlyAp02hIC_laUIT9JmrU&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQO2QSaxYJrtKwOt_PB7s4AeiUmSqhySBucN9L3cUSoAkw&oe=6AFD2A17"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-1/187928903_2914965238759900_755828791709362576_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx641x643&ctp=s24x24&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=MozuHJftf0cQ7kNvwEN6Umv&_nc_oc=Ado8fooIWRQfkmwN-UmNVBunSTkz2cHNQLWMlkhCvT9uASQlyAp02hIC_laUIT9JmrU&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQO2QSaxYJrtKwOt_PB7s4AeiUmSqhySBucN9L3cUSoAkw&oe=6AFD2A17"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Aya",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-1/187928903_2914965238759900_755828791709362576_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx641x643&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=MozuHJftf0cQ7kNvwEN6Umv&_nc_oc=Ado8fooIWRQfkmwN-UmNVBunSTkz2cHNQLWMlkhCvT9uASQlyAp02hIC_laUIT9JmrU&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQO2QSaxYJrtKwOt_PB7s4AeiUmSqhySBucN9L3cUSoAkw&oe=6AFD2A17",
+   "profileId": "pfbid02SjzXJZxQo7ksHkWZCNhkShiqjBRVBsCQpxFf1ope7jmtifquyNo1wuXQQT1AvTRQl",
+   "profileName": "Aya Reda",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=4269022826721916",
+   "commentId": "4269022826721916",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV80MjY5MDIyODI2NzIxOTE2",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfNDI2OTAyMjgyNjcyMTkxNg==",
+   "date": "2026-09-29T18:40:01.000Z",
+   "text": "ههههه ههههه ههههه ههههه ههههه ههههه",
+   "attachments": [
+    {
+     "__typename": "Photo",
+     "blurred_image": {
+      "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/825350941_122129298284955021_1576101287572300917_n.jpg?stp=dst-jpg_fb30_tt6&_nc_cat=111&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=huVUM11cqLwQ7kNvwE1O6MC&_nc_oc=AdqHMs7EEqlanLITQTTEu4bhcOrqtl2-QFa7TJoJgZFwjiAjczWMuKetnvkp-9uMQi0&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQNK8P4jYKEPmuyv_j_x69X6jfIE8U2TmbNi4YlLeHoOPw&oe=6ADBAFCB"
+     },
+     "id": "122129298278955021",
+     "cix_screen": null,
+     "massive_image": {
+      "width": 540,
+      "height": 540
+     },
+     "image": {
+      "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/825350941_122129298284955021_1576101287572300917_n.jpg?stp=dst-jpg_tt6&cstp=mx540x540&ctp=p75x225&_nc_cat=111&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=huVUM11cqLwQ7kNvwE1O6MC&_nc_oc=AdqHMs7EEqlanLITQTTEu4bhcOrqtl2-QFa7TJoJgZFwjiAjczWMuKetnvkp-9uMQi0&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPjJHuk7HNIEqe2MGOz0TVAzCzC2ArMzv4QLSiaZSPxhg&oe=6ADBAFCB",
+      "width": 225,
+      "height": 225
+     },
+     "ocrText": "May be an image of text"
+    }
+   ],
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0dJZ4MnoZHq8mPC7dxdUZ4oMdu1roquhopstmiW3R7SQ7Mf3KMY51NyoRbpcC7QGpl",
+    "name": "عادل محمد ايمن",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/653776961_122095308038955021_8125703806668364956_n.jpg?stp=c0.0.600.600a_cp0_dst-jpg_tt6&cstp=mx600x600&ctp=s32x32&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=mDul-7SdrsgQ7kNvwErNMCK&_nc_oc=Adou4DrnMU75DRsHYAAbwnFu6Uu14EID0ct21q62ZOPyLkDFfFuVC1jCoBZ21Hbw4Yc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQON_qw0w42bIZ8yqHOWgAMO9I_0feYutfkyuBZ4MjLqIQ&oe=6ADBB912"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/653776961_122095308038955021_8125703806668364956_n.jpg?stp=c0.0.600.600a_cp0_dst-jpg_tt6&cstp=mx600x600&ctp=s40x40&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=mDul-7SdrsgQ7kNvwErNMCK&_nc_oc=Adou4DrnMU75DRsHYAAbwnFu6Uu14EID0ct21q62ZOPyLkDFfFuVC1jCoBZ21Hbw4Yc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQON_qw0w42bIZ8yqHOWgAMO9I_0feYutfkyuBZ4MjLqIQ&oe=6ADBB912"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/653776961_122095308038955021_8125703806668364956_n.jpg?stp=c0.0.600.600a_cp0_dst-jpg_tt6&cstp=mx600x600&ctp=s24x24&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=mDul-7SdrsgQ7kNvwErNMCK&_nc_oc=Adou4DrnMU75DRsHYAAbwnFu6Uu14EID0ct21q62ZOPyLkDFfFuVC1jCoBZ21Hbw4Yc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQON_qw0w42bIZ8yqHOWgAMO9I_0feYutfkyuBZ4MjLqIQ&oe=6ADBB912"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "عادل محمد",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/653776961_122095308038955021_8125703806668364956_n.jpg?stp=c0.0.600.600a_cp0_dst-jpg_tt6&cstp=mx600x600&ctp=s32x32&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=mDul-7SdrsgQ7kNvwErNMCK&_nc_oc=Adou4DrnMU75DRsHYAAbwnFu6Uu14EID0ct21q62ZOPyLkDFfFuVC1jCoBZ21Hbw4Yc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQON_qw0w42bIZ8yqHOWgAMO9I_0feYutfkyuBZ4MjLqIQ&oe=6ADBB912",
+   "profileId": "pfbid0dJZ4MnoZHq8mPC7dxdUZ4oMdu1roquhopstmiW3R7SQ7Mf3KMY51NyoRbpcC7QGpl",
+   "profileName": "عادل محمد ايمن",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl",
+   "commentUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid02U74VtY2LmukV11TsMXaNhj48HZg3moJr756KMotwZy7oihw9Z28PPNa3eTSUxVg6l?comment_id=2664279200657527",
+   "commentId": "2664279200657527",
+   "id": "Y29tbWVudDoxMDE3NjY5MDkzMTU4MDE1MV8yNjY0Mjc5MjAwNjU3NTI3",
+   "feedbackId": "ZmVlZGJhY2s6MTAxNzY2OTA5MzE1ODAxNTFfMjY2NDI3OTIwMDY1NzUyNw==",
+   "date": "2026-09-29T19:39:48.000Z",
+   "text": "كل الكامبين اسعارها استعباط خزعبلية بجد",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0wYUKb2vNQTfGHnpMdLUnjf3DdJzuRzFBQbbb7gNMh4XeMKByLi6Lsjp8hKNZSW6gl",
+    "name": "Jojaya Mustafa",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/384187869_3053284054807577_7754941185527705539_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx319x319&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_Pr70H3W9qUQ7kNvwH2tOrI&_nc_oc=Adpu5_wDcQ3dx--pFAwQcsLe_BSJTw58bz0LK3IrkcQreO5ESaudRKmEHyt40I5glAc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPEQyjzT_RxTUwfYOZXUDR9ahh_7DUR8WPmf2KlZWuvHw&oe=6ADB9AA7"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/384187869_3053284054807577_7754941185527705539_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx319x319&ctp=s40x40&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_Pr70H3W9qUQ7kNvwH2tOrI&_nc_oc=Adpu5_wDcQ3dx--pFAwQcsLe_BSJTw58bz0LK3IrkcQreO5ESaudRKmEHyt40I5glAc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPEQyjzT_RxTUwfYOZXUDR9ahh_7DUR8WPmf2KlZWuvHw&oe=6ADB9AA7"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/384187869_3053284054807577_7754941185527705539_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx319x319&ctp=s24x24&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_Pr70H3W9qUQ7kNvwH2tOrI&_nc_oc=Adpu5_wDcQ3dx--pFAwQcsLe_BSJTw58bz0LK3IrkcQreO5ESaudRKmEHyt40I5glAc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPEQyjzT_RxTUwfYOZXUDR9ahh_7DUR8WPmf2KlZWuvHw&oe=6ADB9AA7"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Jojaya",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/384187869_3053284054807577_7754941185527705539_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx319x319&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_Pr70H3W9qUQ7kNvwH2tOrI&_nc_oc=Adpu5_wDcQ3dx--pFAwQcsLe_BSJTw58bz0LK3IrkcQreO5ESaudRKmEHyt40I5glAc&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=IocIg1Ctzz5DYbL8sxOOjw&_nc_ss=70289&oh=00_AQPEQyjzT_RxTUwfYOZXUDR9ahh_7DUR8WPmf2KlZWuvHw&oe=6ADB9AA7",
+   "profileId": "pfbid0wYUKb2vNQTfGHnpMdLUnjf3DdJzuRzFBQbbb7gNMh4XeMKByLi6Lsjp8hKNZSW6gl",
+   "profileName": "Jojaya Mustafa",
+   "likesCount": "0",
+   "threadingDepth": 0,
+   "facebookId": "10176690931580151",
+   "postTitle": "من شوية ظهرلي اعلان عن مكان كدا زي camping  والاعلان بيقول يعني هتقضي انت وطفلك وقت ليكم بس من غير موبايلات من غير اي حاجة تضغلكم عن بعض لمدة يومين، تخييم وشوي وتلعبوا سوا وتشوفوا فيلم وتعملوا movie night وتقربوا من بعض \n\nالمهم الفضول طبعا وداني ابص على سعر القصه دي بكام لقيتها ب 4000 جنيه 🙂\n\nيا باشا احلى شوكلاتاية وكيس لب وواحدة ڤي كولا وهنشغل ام بي سي تو ومش هدفع ٢٠٠ جنيه وهقرب من طفلي وكل حاجة 😂",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "265954189934718"
+   },
+   "inputUrl": "https://www.facebook.com/kareem.hesham.1988/posts/pfbid0QRmo11NFjsvnvZFByBk9ETsjv2bxf1nTdqZrofFsBGH4QL7qQQR3DBj6CLqBWgRSl"
+  }
+ ]
+}

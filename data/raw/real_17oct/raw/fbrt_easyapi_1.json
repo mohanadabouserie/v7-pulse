@@ -1,0 +1,20 @@
+{
+ "input": {
+  "query": "V7 كريم صودا",
+  "maxItems": 20
+ },
+ "cap_usd": 0.2,
+ "run": {
+  "id": "ISPokhIqXxLMHQl10",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T10:53:37.927Z",
+  "finishedAt": "2026-10-19T10:54:12.360Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "apify-actor-start": 2
+  },
+  "usageTotalUsd": 0.18239886401616534
+ },
+ "cost_usd": 0.8512,
+ "items": []
+}

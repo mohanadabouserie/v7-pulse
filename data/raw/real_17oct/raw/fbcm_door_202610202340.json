@@ -1,0 +1,119 @@
+{
+ "input": {
+  "postUrls": [
+   "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/"
+  ],
+  "targetComments": 100,
+  "includeReplies": false,
+  "orderingMode": "MOST_RELEVANT"
+ },
+ "cap_usd": 0.11,
+ "run": {
+  "id": "ycC3hTWT5rPvVVcfy",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:40:37.951Z",
+  "finishedAt": "2026-10-20T20:40:50.101Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 4,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.0044,
+ "items": [
+  {
+   "post_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/",
+   "id": "1337240771711179",
+   "comment_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/?comment_id=1337240771711179",
+   "text": "المكان فين",
+   "timestamp": 1790943317,
+   "comment_time": "2026-10-02T12:15:17.000Z",
+   "author_name": "ايمن رجب",
+   "author_id": "pfbid02h64mCQCbZYzgW7dfrNC6TVge6mHmoKNzmrVCVU4R3TNHrgS5B1FwdF3uuewLDYi5l",
+   "author_profile_picture": "https://scontent-qro3-1.xx.fbcdn.net/v/t39.30808-1/470171022_607381151974129_6919604812360623808_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx546x539&ctp=p32x32&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Jyx0WiGvqbEQ7kNvwG7fAsc&_nc_oc=AdqXpWascoH8zu0qfUwNqtTmsHXfJB9QWnI8YtL40rzzNm8chjDKLhcCZPplNAyF3fI&_nc_zt=24&_nc_ht=scontent-qro3-1.xx&_nc_gid=CrA5dGRhHy8ptYK5g6UJEA&_nc_ss=7d289&oh=00_AQOHC6D5vp7jQOj0rQdIkGZWHrOcLQxF-Aef3DlQU2BOVA&oe=6ADDA99E",
+   "author_profile_url": "https://www.facebook.com/aymn.rjb.777941",
+   "image_url": null,
+   "media": [],
+   "shared_link": null,
+   "shared_link_title": null,
+   "shared_link_source": null,
+   "shared_post": null,
+   "reactions_count": 1,
+   "reaction_types": {
+    "like": 1
+   },
+   "replies_count": 0,
+   "is_reply": false,
+   "depth": 0
+  },
+  {
+   "post_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/",
+   "id": "1337578838344039",
+   "comment_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/?comment_id=1337578838344039",
+   "text": "رقم تليفون",
+   "timestamp": 1790970069,
+   "comment_time": "2026-10-02T19:41:09.000Z",
+   "author_name": "RelaxedPoodle691",
+   "author_id": "1878257913606049",
+   "author_profile_picture": "https://scontent-qro3-1.xx.fbcdn.net/v/t39.35477-6/555666655_24482839941324384_1695826834437303311_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx688x688&ctp=s34x34&_nc_cat=1&ccb=1-7&_nc_sid=d7e6db&_nc_ohc=NKx_d8PHJG8Q7kNvwGWrUDL&_nc_oc=AdqKWx3jr961G2aqqsSY8r5R8bQuWlxl483Ppzwq2yyyOkHh5NHpn2DkewKTMUcp6w8&_nc_zt=14&_nc_ht=scontent-qro3-1.xx&_nc_gid=CrA5dGRhHy8ptYK5g6UJEA&_nc_ss=7d289&oh=00_AQN0c8eT6z0TjRqmwknjVbtVJnqkGB8Nd4v3sisa3HJDmw&oe=6ADDC081",
+   "author_profile_url": "https://www.facebook.com/profile.php?id=1878257913606049",
+   "image_url": null,
+   "media": [],
+   "shared_link": null,
+   "shared_link_title": null,
+   "shared_link_source": null,
+   "shared_post": null,
+   "reactions_count": 0,
+   "reaction_types": {},
+   "replies_count": 0,
+   "is_reply": false,
+   "depth": 0
+  },
+  {
+   "post_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/",
+   "id": "1337264608375462",
+   "comment_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/?comment_id=1337264608375462",
+   "text": "لو عايز انت ب 12 موجود",
+   "timestamp": 1790945195,
+   "comment_time": "2026-10-02T12:46:35.000Z",
+   "author_name": "Abdelrahman Mabrok",
+   "author_id": "pfbid0hMMcFzmCxypFFVq3YynpCquJvZhgUm2wHAE396pQWc4Sz6dkuZECsMhkMF7R4wR3l",
+   "author_profile_picture": "https://scontent-qro1-2.xx.fbcdn.net/v/t39.30808-1/241360829_2815758631978214_1688862953249085202_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx854x853&ctp=s32x32&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=-f-0xoCSl_kQ7kNvwFtPdl5&_nc_oc=Adrt7gzinJrqSIuylewAqQwdyGrb-0dXI3Szpcr-R3gZXKH9XsZnBHcJCLqlupIt2_4&_nc_zt=24&_nc_ht=scontent-qro1-2.xx&_nc_gid=CrA5dGRhHy8ptYK5g6UJEA&_nc_ss=7d289&oh=00_AQMv-Jh0tvCd38ZonW-QChUsNbQPfI7w21_xOwovNRdZTg&oe=6ADDBF47",
+   "author_profile_url": "https://www.facebook.com/abdelrahman.mabrok.324772",
+   "image_url": null,
+   "media": [],
+   "shared_link": null,
+   "shared_link_title": null,
+   "shared_link_source": null,
+   "shared_post": null,
+   "reactions_count": 0,
+   "reaction_types": {},
+   "replies_count": 5,
+   "is_reply": false,
+   "depth": 0
+  },
+  {
+   "post_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/",
+   "id": "1337244881710768",
+   "comment_url": "https://www.facebook.com/groups/364606598974606/posts/1336837351751521/?comment_id=1337244881710768",
+   "text": "المنصوره خلف الامن المركزي",
+   "timestamp": 1790943654,
+   "comment_time": "2026-10-02T12:20:54.000Z",
+   "author_name": "Ahmed Adel",
+   "author_id": "pfbid0fXe6GaYGTnSbsaUXXNG6eujBnfoSoXP4sW1i9xgS1tbnN1AiRSkbqcwY4L7icYC9l",
+   "author_profile_picture": "https://scontent-qro3-1.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png&cstp=mx2048x2048&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwH_RDAr&_nc_oc=AdocK19r6vHcYDqUkeL7IRhRlr60TuLPbUkoTxgmrVKHbMqeJDE99qWvWT18M-cja2s&_nc_zt=24&_nc_ht=scontent-qro3-1.xx&_nc_ss=7d289&oh=00_AQMoLr9XHUwzfyK8q1OniY5xJwZXRtAFWUhw8drOIK7HCw&oe=6AFF29BA",
+   "author_profile_url": "https://www.facebook.com/pfbid0fXe6GaYGTnSbsaUXXNG6eujBnfoSoXP4sW1i9xgS1tbnN1AiRSkbqcwY4L7icYC9l",
+   "image_url": null,
+   "media": [],
+   "shared_link": null,
+   "shared_link_title": null,
+   "shared_link_source": null,
+   "shared_post": null,
+   "reactions_count": 0,
+   "reaction_types": {},
+   "replies_count": 0,
+   "is_reply": false,
+   "depth": 0
+  }
+ ]
+}

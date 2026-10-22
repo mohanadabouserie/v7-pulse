@@ -1,0 +1,1329 @@
+{
+ "input": {
+  "query": "V Super Soda",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "Queegs7DVapZpBK9I",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:27:18.431Z",
+  "finishedAt": "2026-10-19T08:27:28.381Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 20
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.4751,
+ "items": [
+  {
+   "post_id": "122110088505498731",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qu4RwSE39ufXsVSTmus9iMz4WLnrXzYN5f1mTo8DLDKMgX49Dw92eHAxLz7F7T3Jl&id=61594961940763",
+   "message": "BRANDS NEWS 🍊\n\nV SUPER SODA INTRODUCES V ORANGE\n\nV Super Soda has expanded its beverage range with V Orange, a new 300ml orange drink made with 100% natural flavours, with no caffeine.\n\nEach can contains 96 calories and is enriched with Vitamin D, bringing a new citrus option to the brand’s lineup.\n\n#nextscene_eg #NextBrands #VOrange #VSuperSoda",
+   "author": {
+    "id": "61594961940763",
+    "name": "Next Scene",
+    "url": "https://www.facebook.com/people/Next-Scene/61594961940763/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/829874674_122097617055498731_3416667953216240724_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=tjtqnYvYmusQ7kNvwHIgg7X&_nc_oc=Adqq5eoyeI3zHefRki9GX1xyQvfvnlJua0sAb1kJ-SlTH93jFqbG3qi90sM93lEcW8Y&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQM3yHcIr-nAbsg65yw8hE95t0oo06dryN-dHoPw7fqmTg&oe=6ADBB11C"
+   },
+   "timestamp": 1792026257,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/845881419_122110088451498731_3822270992727169790_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eztCcDcGBLAQ7kNvwGs0ZkV&_nc_oc=AdqOjvSTWPUZrsnf1cuPjR_sfD6oEIC2mEcEbhaCKwcsWM5lZDaOVDTznBK25e3EdgM&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQMZjBZb4Q5zqNdo8l4G-eNvslYxRmn-ZbohnJeh6ttgIg&oe=6ADB8E86",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTEwMDg4NTA1NDk4NzMx",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTEwMDg4NTA1NDk4NzMx",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "29492409157027192",
+     "url": "https://www.facebook.com/hashtag/nextscene_eg?__eep__=6",
+     "offset": 301,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "770340036397766",
+     "url": "https://www.facebook.com/hashtag/nextbrands?__eep__=6",
+     "offset": 315,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "475170575887139",
+     "url": "https://www.facebook.com/hashtag/vorange?__eep__=6",
+     "offset": 327,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "8216565948452213",
+     "url": "https://www.facebook.com/hashtag/vsupersoda?__eep__=6",
+     "offset": 336,
+     "length": 11
+    }
+   ]
+  },
+  {
+   "post_id": "122175308408980270",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0UjyVK2PE9zX86N37sXsPzjWuubmQTVhHtnNHjmmZ6nfN7mskZA4red5XNsiDDLaUl&id=61579408109660",
+   "message": "انتعاش الكولا اللي بتحبه، بس بطريقة صحية أكثر. \nV Super Soda \nبتقدملك طعم طبيعي 100%، بدون كافيين، ومدعم بفيتامينات B6 و B12\n\nThe cola refreshment you love, but healthier. \n\nV Super Soda offers a 100% natural taste, caffeine-free, and fortified with vitamins B6 and B12",
+   "author": {
+    "id": "61579408109660",
+    "name": "distrimart.co",
+    "url": "https://www.facebook.com/people/distrimartco/61579408109660/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/519408728_24813324071585371_5811412549488074104_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=n_vZ6c0-UNUQ7kNvwF5znVP&_nc_oc=AdrdZzthc4opqna1Cwn2ZT0imrTQmZA1U57-TNSomsUBHBazIxDSltEasbeAM9q_QGQ&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQP2xAJxYG7hb9ME3HXCIpfaypEup4ygP5GOP-83DyZ03g&oe=6ADBBF46"
+   },
+   "timestamp": 1790791203,
+   "reactions_count": 7,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 5,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/825292143_122174784866980270_8543723324678393826_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cdkOJOVNQgEQ7kNvwF4sBy0&_nc_oc=AdodW4gs1vobRdkOTeoK8qhWsWeTIipHTG3tP28hPKOajdmQ3Y4WF7LQc5DB4OSKiz4&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQMhHISwE5p2MlPDAtFjcVsm2E0DRCfoVLtx4bS6aW1txQ&oe=6ADB8D7B",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTc1MzA4NDA4OTgwMjcw",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTc1MzA4NDA4OTgwMjcw",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122118201135259336",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid021BMcM9g5FMXYEwFaYswAg3nwz4UsPRcPCPtiiWwUvyRcYQxK1w3dUaan457ZRKgAl&id=61587780084595",
+   "message": "🔥 Say YES to V Cola! 🔥\n\nDiscover the World’s First Caffeine-Free Cola with 100% Natural Flavors and an incredibly refreshing cola taste.\n\n🥤 Great Cola Taste\n🌿 100% Natural Flavors\n🚫 No Caffeine\n\nNow available across Malawi. Ask for V Super Soda Cola today!\n\n#SayYesToVCola #VSuperSoda #WorldsFirst #CaffeineFreeCola #NaturalFlavors #NutriNova #Malawi",
+   "author": {
+    "id": "61587780084595",
+    "name": "V7Malawi",
+    "url": "https://www.facebook.com/people/V7Malawi/61587780084595/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/641435153_122094694755259336_4958722998738740815_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nGoypx-DpMUQ7kNvwGY8u2P&_nc_oc=AdqiAJ8IU2t_Va6BpXjq9qwuxsS-tZRyixsa6xGAcDXRwBzzbkkThoFCbQlfwZDYjNY&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQNb55NXAjvmgEI0750c8BvYR-VrJ95NAN_Lt2LKMAJScQ&oe=6ADBBFD4"
+   },
+   "timestamp": 1783876460,
+   "reactions_count": 984,
+   "comments_count": 32,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 728,
+    "love": 234,
+    "haha": 1,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 20
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTE4MjAxMTM1MjU5MzM2",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTE4MjAxMTM1MjU5MzM2",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "37536536972604234",
+     "url": "https://www.facebook.com/hashtag/sayyestovcola?__eep__=6",
+     "offset": 258,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "8216565948452213",
+     "url": "https://www.facebook.com/hashtag/vsupersoda?__eep__=6",
+     "offset": 273,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "239035562908466",
+     "url": "https://www.facebook.com/hashtag/worldsfirst?__eep__=6",
+     "offset": 285,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "138080376383779",
+     "url": "https://www.facebook.com/hashtag/caffeinefreecola?__eep__=6",
+     "offset": 298,
+     "length": 17
+    },
+    {
+     "type": "Hashtag",
+     "id": "427524954001069",
+     "url": "https://www.facebook.com/hashtag/naturalflavors?__eep__=6",
+     "offset": 316,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "367590650007139",
+     "url": "https://www.facebook.com/hashtag/nutrinova?__eep__=6",
+     "offset": 332,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "360021697447446",
+     "url": "https://www.facebook.com/hashtag/malawi?__eep__=6",
+     "offset": 343,
+     "length": 7
+    }
+   ]
+  },
+  {
+   "post_id": "27050539271206614",
+   "url": "https://www.facebook.com/rachel.cutemama/posts/pfbid05cL1ZFTw8jVbq3kcmDgPFs2n2p7rPCcQ8PNVPuQQP11Gk9NW5eA2dK3UR6GbZDB3l",
+   "message": "Di sini tin Coca-Cola pun sangat standard, tapi kali ini kita cuba Great Cola Taste dari V Super Soda tapi yang ini versi 'V' pula. Janji rasa cola dan 100% bahan semulajadi. Cantikkan tinnya.😊\n#minumanringan\n#SuperSoda",
+   "author": {
+    "id": "100000317210131",
+    "name": "Rahel Binti Sarah",
+    "url": "https://www.facebook.com/rachel.cutemama",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/842056142_29013195034941018_7412692465998164903_n.jpg?stp=cp6_dst-jpg_s100x100_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=q275Lu0H6xMQ7kNvwFNzuvn&_nc_oc=AdpeW4tDu3pdvRmHmBSLV_wOyYqC8Ckp0DB-PSbt2qJ__uPKLC9sg6mwsyKYmwMZJCc&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQMDetqqUeCJgx6bGQsD-2CmRp33k0uKQWnIdP6KBAKulw&oe=6ADBB581"
+   },
+   "timestamp": 1778058975,
+   "reactions_count": 21,
+   "comments_count": 29,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 18,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/690661804_27050535741206967_6683847071758461747_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Keiu9nOJZQ8Q7kNvwHfXXx5&_nc_oc=Adr2nIr8THq0xWEx0kv4k4vR1pnASQoezsjyN1h3HE9TCeFT2eAHJg3RRgeBUNLSa2I&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQMTEd1_cS_aCO-cIxg2ERvxEJYlFUKhVs8URy2pgWirOw&oe=6ADB97F3",
+    "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/689039793_27050538547873353_5414438644175754949_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5PrWsvopCYIQ7kNvwGjZduv&_nc_oc=Ado--EGnzuxCRXp2PzU-skxdzFg0pLBRy7-yUlqr_Ifxkmr0T8-kvkn4BD-DHnO4yfE&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQPKFbr230Ycr_bwJdfoLkwj9Nszs3w8Fz1sz-pouwm1tw&oe=6ADBA925"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjcwNTA1MzkyNzEyMDY2MTQ=",
+   "shares_id": "ZmVlZGJhY2s6MjcwNTA1MzkyNzEyMDY2MTQ=",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "388822494561747",
+     "url": "https://www.facebook.com/hashtag/minumanringan?__eep__=6",
+     "offset": 194,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "291140864352257",
+     "url": "https://www.facebook.com/hashtag/supersoda?__eep__=6",
+     "offset": 209,
+     "length": 10
+    }
+   ]
+  },
+  {
+   "post_id": "1463233062492713",
+   "url": "https://www.facebook.com/aswaqalkhair3/posts/pfbid0EEHwUJHH3rm6osHYQ17a577nmvobd8HQhE6f8aFhnnJ3bNQtUD8Pa7oofbpmRW6ql",
+   "message": "🥤 استمتع بالانتعاش الطبيعي مع V - Super Soda! 🌿\n​تبحث عن الطعم الحقيقي والبرودة اللي تروي عطشك؟ اكتشف عالم النكهات مع V-Soda، المشروب المثالي لكل أوقاتك!\n​✨ لماذا تختار V - Super Soda؟\n​طبيعي 100%: نكهات مستخلصة من الطبيعة مباشرة.\n​تنوع يرضي ذوقك: (ليمون نعناع 🍋، رمان ❤️، توت أزرق 🫐، بينا كولادا 🥥، وأناناس 🍍).\n​خيار صحي: متوفر بنكهة الكولا \"بدون سكر\" وبدون كافيين لمتعة بلا حدود.\n​💰 عرض خاص لفترة محدودة:\nاحصل على الطرد الآن بسعر مميز جداً:\n🔥 فقط بـ 5 دولار للطرد! 🔥\n​📍 اطلب الآن واستمتع بالانتعاش الذي تستحقه.\n💬 استفسر أو اطلب عبر الرسائل، أو اترك تعليقاً وسنتواصل معك! \n​#V_Super_Soda #انتعاش #مشروبات_طبيعية #عرض_خاص #سوبر_صودا #طبيعي #تذوق_الفرقأسواق الخير.. لأهل الخير ✨\n\n📍 المكان: ريف دمشق المليحة بعد دوار الشهداء 250 متر باتجاه طريق جسر الكباس \n\nأسواق الخير.. لأهل الخير 💚✨\n#اسواق_الخير \n#شركة_سمايل_فود \n#المليحة \n#ريف_دمشق \n#عروض \n#رباح\n#عرووض\n\nhttps://whatsapp.com/channel/0029VbC0Y6Z6GcGFqMHQlf03\n\nتبعونا على واتس اب 💚\n\nللتواصل واتس اب ⬇️\nhttps://wa.me/963987111982",
+   "author": {
+    "id": "100064180988077",
+    "name": "أسواق الخير",
+    "url": "https://www.facebook.com/aswaqalkhair3",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/608174630_1361203219362365_2288641985235431720_n.jpg?stp=dst-jpg_p100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=GIG7h89CM_sQ7kNvwElqFsD&_nc_oc=AdrvVi2_BiQJfBK4nBgBT4lyOVp5ZGF9i4Np0IxptfzCEl5bap1LBn_jAoX2Fc8dpSc&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=eS9r938-BIZb1LONdPPjIQ&_nc_ss=7c180&oh=00_AQNFSKEm1o8xsAWdJqW25EeEeVZU-L8UBM_WP7wprM_swA&oe=6ADBA03B"
+   },
+   "timestamp": 1777752543,
+   "reactions_count": 1869,
+   "comments_count": 10,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 1846,
+    "love": 20,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 3
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://fb.me/",
+   "comments_id": "ZmVlZGJhY2s6MTQ2MzIzMzA2MjQ5MjcxMw==",
+   "shares_id": "ZmVlZGJhY2s6MTQ2MzIzMzA2MjQ5MjcxMw==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3doYXRzYXBwLmNvbS9jaGFubmVsLzAwMjlWYkMwWTZaNkdjR0ZxTUhRbGYwMzo6RGVmYXVsdDo6OjE0NjMyMzMwNjI0OTI3MTM6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwhatsapp.com%2Fchannel%2F0029VbC0Y6Z6GcGFqMHQlf03&h=AUC9MgCDFiDVfKcLrj3nbzkfuDaBcp2RqTY8i8xDepgAyZuLzBIMhQec3sZyvFqwrKK51uqRD4-nbkGc4V-6GtyTQ2J849nFvh3lq1SMcCA-PLDhPOgb2RW-dkThoOq9WzG249tDezYxqF8rFcEJ9DH4wlzUrXJQyhAgMw&s=1",
+     "offset": 857,
+     "length": 53
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3dhLm1lLzk2Mzk4NzExMTk4Mjo6RGVmYXVsdDo6OjE0NjMyMzMwNjI0OTI3MTM6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2F963987111982&h=AUCGI829RwtyyuUXFXIHRafGQ7jMHkQ-qZm0whxOAlhmu_kHl5MP84dmSq7lwlKk2YTK5eoQFucqqQohACQoQO0ivlNY-ncq2T32GGEfZi5TrsGO1FCWx6nGw-Xq6c-XGJ8Vi2qL1yEgyODYMqeDD1pg2p5p8turmLuDEA&s=1",
+     "offset": 953,
+     "length": 26
+    },
+    {
+     "type": "Hashtag",
+     "id": "7489903584405361",
+     "url": "https://www.facebook.com/hashtag/v_super_soda?__eep__=6",
+     "offset": 575,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "348342208615980",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%86%D8%AA%D8%B9%D8%A7%D8%B4?__eep__=6",
+     "offset": 589,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "253377124787000",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA_%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9?__eep__=6",
+     "offset": 597,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "408072312624550",
+     "url": "https://www.facebook.com/hashtag/%D8%B9%D8%B1%D8%B6_%D8%AE%D8%A7%D8%B5?__eep__=6",
+     "offset": 613,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "8052263728211964",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D9%88%D8%A8%D8%B1_%D8%B5%D9%88%D8%AF%D8%A7?__eep__=6",
+     "offset": 622,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "141928192643914",
+     "url": "https://www.facebook.com/hashtag/%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A?__eep__=6",
+     "offset": 633,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "27315421768041450",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%B0%D9%88%D9%82_%D8%A7%D9%84%D9%81%D8%B1%D9%82%D8%A3%D8%B3%D9%88%D8%A7%D9%82?__eep__=6",
+     "offset": 640,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "135080893366229",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D8%B3%D9%88%D8%A7%D9%82_%D8%A7%D9%84%D8%AE%D9%8A%D8%B1?__eep__=6",
+     "offset": 784,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "26289175524046227",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D8%B1%D9%83%D8%A9_%D8%B3%D9%85%D8%A7%D9%8A%D9%84_%D9%81%D9%88%D8%AF?__eep__=6",
+     "offset": 798,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "304630139662952",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D9%85%D9%84%D9%8A%D8%AD%D8%A9?__eep__=6",
+     "offset": 815,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "240468752760303",
+     "url": "https://www.facebook.com/hashtag/%D8%B1%D9%8A%D9%81_%D8%AF%D9%85%D8%B4%D9%82?__eep__=6",
+     "offset": 825,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "518916551480872",
+     "url": "https://www.facebook.com/hashtag/%D8%B9%D8%B1%D9%88%D8%B6?__eep__=6",
+     "offset": 836,
+     "length": 5
+    },
+    {
+     "type": "Hashtag",
+     "id": "499025930156570",
+     "url": "https://www.facebook.com/hashtag/%D8%B1%D8%A8%D8%A7%D8%AD?__eep__=6",
+     "offset": 843,
+     "length": 5
+    },
+    {
+     "type": "Hashtag",
+     "id": "169410263219838",
+     "url": "https://www.facebook.com/hashtag/%D8%B9%D8%B1%D9%88%D9%88%D8%B6?__eep__=6",
+     "offset": 849,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122107529348509016",
+   "url": "https://www.facebook.com/supermarkethejazy/posts/pfbid02fc7i4RwmFiz1FdNVftM3umnfY4pifptSFwFXBa7yMm1J33bbZ82QKW782TV6TYkSl",
+   "message": "استمتع بتجربة انتعاش لا تُنسى مع مشروب \"فِي سُوبر سُودَا\" (V Super Soda)، المشروب الغازي الفاخر بوزن 300 مل، المصنوع بنكهات طبيعية غنية 100% ليمنحك الطاقة والانتعاش الذي تستحقه في كل وقت.\n​الخيار الأمثل ليوم مفعم بالحيوية، الجلسات العائلية الممتعة، والمناسبات الخاصة.\n​💎 ارتقِ بانتعاشك واطلب \"فِي سُوبر سُودَا\" الآن من سوبر ماركت حجازي!\n​#V_Super_Soda #فِي_سُوبر_سُودَا #مشروبات_غازية #انتعاش_طبيعي #جودة_عالية #سوبر_ماركت_حجازي",
+   "author": {
+    "id": "61565270496210",
+    "name": "سوبر ماركت حجازيHijazi Super",
+    "url": "https://www.facebook.com/supermarkethejazy",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/789617989_122106101036509016_848416283780858229_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=_KaowkGvgx4Q7kNvwGtdVrK&_nc_oc=Adq4dDsZrIz5rm28CaQPFdQt781KieeXeBwdfU3AbieKluWFe_gDwsV2gXYn3oyz60U&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQOab87oGt23dRB8c8iAnLDcc6wBqWAKYA0j3ydzf0JxPQ&oe=6ADBB0AA"
+   },
+   "timestamp": 1792004355,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/849809166_122107529156509016_2327912544283027081_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Yi4X2wOCo1gQ7kNvwFDEB27&_nc_oc=AdpfvpjfQHmwrwvPYJP8sU66xHVKfKe4ZtOKhmlxoG2tvimTXCJVX_1f8TC3WQH2VJk&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQMRF50JsL7nnfjrTMnEBzoF2_My6p52_Hx3qhYtJ3Fbyw&oe=6ADBACFE",
+    "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/846911171_122107529228509016_7719834001596424465_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u_u2UtVVxAAQ7kNvwHGMX-p&_nc_oc=AdrYADiLcPa8Zqe8muv9xRgsm6VD3C2A6yWOD3pAXbuo8-dG8D1wklXiAOi72EtYWr4&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQPr2Ur-Vq9TVkXDvVDm_XXFzCQpG0r8BlHYnwOEigcCMw&oe=6ADBA13B",
+    "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/849414797_122107529294509016_1885142635300468467_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kYjsCD1dVa0Q7kNvwGHDhXc&_nc_oc=AdoA_PcRp_ykVQIghwrVbecV_RAlbNrVUcfgSDHjMuXjIeCGjrEvvsN4EZaA9RGtPdY&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQPJ-pNK4trFuXZbeRpRQOknfAG2f4DMH8qsqeGLN-8VRg&oe=6ADBBC00"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTA3NTI5MzQ4NTA5MDE2",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTA3NTI5MzQ4NTA5MDE2",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "7489903584405361",
+     "url": "https://www.facebook.com/hashtag/v_super_soda?__eep__=6",
+     "offset": 338,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "28670006989292335",
+     "url": "https://www.facebook.com/hashtag/%D9%81%D9%90%D9%8A_%D8%B3%D9%8F%D9%88%D8%A8%D8%B1_%D8%B3%D9%8F%D9%88%D8%AF%D9%8E%D8%A7?__eep__=6",
+     "offset": 352,
+     "length": 17
+    },
+    {
+     "type": "Hashtag",
+     "id": "409915289115625",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA_%D8%BA%D8%A7%D8%B2%D9%8A%D8%A9?__eep__=6",
+     "offset": 370,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "457228504397739",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%86%D8%AA%D8%B9%D8%A7%D8%B4_%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A?__eep__=6",
+     "offset": 385,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "141394382714469",
+     "url": "https://www.facebook.com/hashtag/%D8%AC%D9%88%D8%AF%D8%A9_%D8%B9%D8%A7%D9%84%D9%8A%D8%A9?__eep__=6",
+     "offset": 399,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "1602107526556578",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D9%88%D8%A8%D8%B1_%D9%85%D8%A7%D8%B1%D9%83%D8%AA_%D8%AD%D8%AC%D8%A7%D8%B2%D9%8A?__eep__=6",
+     "offset": 411,
+     "length": 17
+    }
+   ]
+  },
+  {
+   "post_id": "122129665928736902",
+   "url": "https://www.facebook.com/Movmarteg/posts/pfbid0nLKpHnWfkaFpjgp6KJ6L3zui8r2S42KZFa33CiyidyWuTyYgPyGkTvBRTimSG3rFl",
+   "message": "متحتارش.. اجمع كل نكهاتك المفضلة في باكيت واحد! 🌈🤩\n\nمع MOV Mart، دلوقتي تقدر تجيب باكيت السعادة اللي فيه ٦ نكهات مختلفة من V Super Soda (ليمون نعناع، رمان، كรีم صودا، بينك ليمونيد، بلوبيري، وبينا كولادا)! 🍹🍋🍓\n\n١٠٠٪ مكونات طبيعية.. انتعاش يناسب كل الأذواق وكل اللحظات الجدعة. ❄️🔥\n\n🛒 كل احتياجاتك في مكان واحد!\nاطلبها دلوقتي وخلي \"Good Vibes Only\" هي عنوان يومك! ✨\n🛒 Shop Fast ....... Move On\n📌 طلباتك بتوصلك لحد باب البيت بسرعة وسهولة.\n📞 للطلب والاستفسار:\n📍 فرع المستقبل:\n * 📱 تليفون: 01115177764 | 01115177734\n * 🗺️ اللوكيشن: https://maps.app.goo.gl/tr8dg1w9SRY3W4HQ7?g_st=ac\n📍 فرع المهندسين:\n * 📱 تليفون: 01101040128 | 01101040129\n * 🗺️ اللوكيشن: https://maps.app.goo.gl/gVPdVQhmqv5SpnYC7?g_st=ac\n#MOV_Mart #shopfastmoveon #vcola #v_cola",
+   "author": {
+    "id": "61572107077563",
+    "name": "موف مارت - Mov Mart",
+    "url": "https://www.facebook.com/Movmarteg",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/679776975_122105507810736902_6443509168805859501_n.jpg?stp=c139.0.693.693a_dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=mfEyND09axoQ7kNvwH839hJ&_nc_oc=Adpg0Pm-w4xHSBxa9zdRaNh0PEdVJ1q8tCZmcQifV2THY0-_vfSh9UM_tuqrmK3id68&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQOid58b-DoeWo1C4Kh8A2BDHbX18FvL-5w1yJ8wnwWz3g&oe=6ADB96EA"
+   },
+   "timestamp": 1789567234,
+   "reactions_count": 9,
+   "comments_count": 4,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 7,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://maps.app.goo.gl/tr8dg1w9SRY3W4HQ7?g_st=ac",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTI5NjY1OTI4NzM2OTAy",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTI5NjY1OTI4NzM2OTAy",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL21hcHMuYXBwLmdvby5nbC90cjhkZzF3OVNSWTNXNEhRNz9nXGJzdD1hYzo6RGVmYXVsdDo6OjEyMjEyOTY2NTkyODczNjkwMjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fmaps.app.goo.gl%2Ftr8dg1w9SRY3W4HQ7%3Fg_st%3Dac&h=AUCM80zKQO8Zjyw7etQ99HnZOTkB5VIpWVkDoJRlMAEvicV6bwB6YIBBOkPyDmszAEbYP_VK3Z3-wPN1pHnAKgCHLLTlgmJTxNiVAF_UG2WSuPh5dox6BuW9T4qC7Db1VSEA0fum7rp791s_xYWp6WlTMdJeBURPwrEzCXc&s=1",
+     "offset": 526,
+     "length": 49
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL21hcHMuYXBwLmdvby5nbC9nVlBkVlFobXF2NVNwbllDNz9nXGJzdD1hYzo6RGVmYXVsdDo6OjEyMjEyOTY2NTkyODczNjkwMjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fmaps.app.goo.gl%2FgVPdVQhmqv5SpnYC7%3Fg_st%3Dac&h=AUAWi3wNuieNQFccRu4y0Ew6pQbMmjhXeLhsC9-XolmBNegjwRMK3yvxrlg004vFVvFr_rxx6BYypjdTJEttYOdTLvSzJ-BEhbAZ5dpjt97xwMoncfVYiWttq27r_xWiQOCs72vok9emq0w08VSGT1PrUcgKa_sl5ASVzRM&s=1",
+     "offset": 648,
+     "length": 49
+    },
+    {
+     "type": "Hashtag",
+     "id": "1273183632736440",
+     "url": "https://www.facebook.com/hashtag/mov_mart?__eep__=6",
+     "offset": 698,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "26541094352250967",
+     "url": "https://www.facebook.com/hashtag/shopfastmoveon?__eep__=6",
+     "offset": 708,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 724,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "676940399094986",
+     "url": "https://www.facebook.com/hashtag/v_cola?__eep__=6",
+     "offset": 731,
+     "length": 7
+    }
+   ]
+  },
+  {
+   "post_id": "122250329516519829",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid03QzNeB5pVa2eXSPmstr3xVjgftpW3CnFXXQt6XZDBJZmHMyiinLLHDpDhjiWENcml&id=61565594882118",
+   "message": "V Super Soda expands its lineup with V Orange, a new 300ml drink made with 100% natural flavors and no caffeine. Each can contains 96 calories and is enriched with Vitamin D, offering a fresh new addition to the brand’s range.\n\nأطلقت V Super Soda مشروبها الجديد V Orange بحجم 300 مل، بنكهات طبيعية 100% وبدون كافيين. ويحتوي كل عبوة على 96 سعرة حرارية، بالإضافة إلى فيتامين D، ليقدّم خيارًا جديدًا ضمن مجموعة مشروبات العلامة التجارية.",
+   "author": {
+    "id": "61565594882118",
+    "name": "Cairo Buzz",
+    "url": "https://www.facebook.com/people/Cairo-Buzz/61565594882118/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/459075596_122098133840519829_2277272662907349941_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=qmi6pHMgVR4Q7kNvwFRxMOp&_nc_oc=AdqN_KGcwwrYiFpFBvEu7wxWJ5p8OWscXFtjoJp5yDbTfP-yEi3sbwLBeCAWv_ul5YQ&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQMCdd7DahdZvie_nFrGAlDKnI5xBcuv_htmIuIp1Id52w&oe=6ADB9838"
+   },
+   "timestamp": 1791832818,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t51.82787-15/845543073_18078178070541058_6888843481635489029_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KGe-cOditNYQ7kNvwHxLUHb&_nc_oc=Adr1tgZRHWYucsz5VaoaRp-Vo0xWRI0SOdHa69ahX-UcJQm2cOtzdwlWHxUUocGrBgI&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQPLfYohzhnq2i1AzxyiWA9ZDB1l62LEF2AQxU1h78zbVQ&oe=6ADBB7EB",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjUwMzI5NTE2NTE5ODI5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjUwMzI5NTE2NTE5ODI5",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1098009822978203",
+   "url": "https://www.facebook.com/abujbara.center/posts/pfbid0EbUmjchZ9sgTWi4nzYVbMZiRLocmsHZ5vkhJGppwsjZEAQV9qAipDmnjdiZraheBl",
+   "message": "🥤✨ V Super Soda… كولا بنكهة منعشة!\n\nاستمتعوا بـ V Cola بطعم الكولا المميز، أو V Diet Cola كخيار خالٍ من السكر، مع انتعاش غازي ومنعش بكل رشفة. 🥤❄️\n\n💙 اختيارك المفضل… كلاسيك أو دايت!\n\n💳 طرق الدفع المتوفرة:\n• بنك فلسطين\n• محفظة بال باي\n• جوال باي\n• البطاقات البنكية\n\n🛒 كل أنواع المشروبات الغازية والمشروبات المنعشة والمواد الغذائية تجدونها في مركز أبو جبارة التجاري!\n\n📍 مركز أبو جبارة التجاري\n\n#مركز_أبو_جبارة_التجاري #V7 #VSuperSoda #VCola #VDietCola #كولا #مشروبات_غازية #مشروبات #انتعاش",
+   "author": {
+    "id": "100083075873592",
+    "name": "مركز أبو جبارة التجاري",
+    "url": "https://www.facebook.com/abujbara.center",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/480780700_621172470661943_144354111504586399_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kjIQRbQCPqEQ7kNvwFQd1Gr&_nc_oc=AdqdMDXnD1bNvnRNTmXskLqLdfCEnR1Eh75HD4bmCc0RMjNVZIK14nUC4CaJucNXqgk&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQPtT1jlimskJ86TSj8uMtTsIyF8aO8z7re6BRmNR6oWTg&oe=6ADB9B8F"
+   },
+   "timestamp": 1791277207,
+   "reactions_count": 3,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/839559502_1097946119651240_8971599930474001803_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=G4lJE_Xv89kQ7kNvwE38XYv&_nc_oc=Ado7VSg7fIqxQG1zJVPRn5CcsPzrX5Bku8F9fbjClqOo5IVbufBK5qJd9IAWf99RtIk&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQM9NX182XAeN9hwhNKc3NvLbmP1Q048W-CYIprG3ZfdGw&oe=6ADB8AF9",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTA5ODAwOTgyMjk3ODIwMw==",
+   "shares_id": "ZmVlZGJhY2s6MTA5ODAwOTgyMjk3ODIwMw==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "2158995907515619",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B1%D9%83%D8%B2_%D8%A3%D8%A8%D9%88_%D8%AC%D8%A8%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A?__eep__=6",
+     "offset": 391,
+     "length": 23
+    },
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 415,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "8216565948452213",
+     "url": "https://www.facebook.com/hashtag/vsupersoda?__eep__=6",
+     "offset": 419,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 431,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "9169756613103104",
+     "url": "https://www.facebook.com/hashtag/vdietcola?__eep__=6",
+     "offset": 438,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "430458190369067",
+     "url": "https://www.facebook.com/hashtag/%D9%83%D9%88%D9%84%D8%A7?__eep__=6",
+     "offset": 449,
+     "length": 5
+    },
+    {
+     "type": "Hashtag",
+     "id": "409915289115625",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA_%D8%BA%D8%A7%D8%B2%D9%8A%D8%A9?__eep__=6",
+     "offset": 455,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "545401415481151",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA?__eep__=6",
+     "offset": 470,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "348342208615980",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%86%D8%AA%D8%B9%D8%A7%D8%B4?__eep__=6",
+     "offset": 479,
+     "length": 7
+    }
+   ]
+  },
+  {
+   "post_id": "1621650939969528",
+   "url": "https://www.facebook.com/v7aleppo/posts/pfbid0mFkJWRQhxNWY75xaeCZ6SwPC2mENSTCYEDxB14rSbNyew5TqndvY5sYoEzKTmTvHl",
+   "message": "أصبحنا الوحيدين بالصدارة\nلأننا الأفضل و بجدارة\n\n#بس_دقت_علقت\n\nv7 aleppo\n\n v super soda \n\nV SUPER SODA SYRIA\n\n v7 Latakia",
+   "author": {
+    "id": "100063739119718",
+    "name": "حلب يا عشقي الأبدي",
+    "url": "https://www.facebook.com/v7aleppo",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/227514142_209060777895225_2345502211650533050_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=6Bnv9L7pB1cQ7kNvwHZqhV9&_nc_oc=AdqT-ztKbYYJexDDQF32Xj0zYWbH_bPVQ6ipvtMGjL7wSRaTqknw95bhZwutrN2PSIQ&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQN7hoOP-rWUyyHObYUGpo5Oi7YqGyMnkG8jDP6s5kAZ3g&oe=6ADB9720"
+   },
+   "timestamp": 1782073688,
+   "reactions_count": 14,
+   "comments_count": 0,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 14,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYyMTY1MDkzOTk2OTUyOA==",
+   "shares_id": "ZmVlZGJhY2s6MTYyMTY1MDkzOTk2OTUyOA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "801732419943208",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%B3_%D8%AF%D9%82%D8%AA_%D8%B9%D9%84%D9%82%D8%AA?__eep__=6",
+     "offset": 48,
+     "length": 12
+    }
+   ]
+  },
+  {
+   "post_id": "977501171695736",
+   "url": "https://www.facebook.com/abujbara.center/posts/pfbid0nVwDycvqSscEbhY8WefyTr5Am9DmzJa23wsJpF881WHEqc1HFDuemH7rc2AS5QTZl",
+   "message": "🥤✨ مشروب V الغازي… انتعاش بطعم لا يُقاوم 😍🔥\nتشكيلة منعشة تناسب كل الأذواق في كل وقت 🤍❄️\n\n🥤 Super Soda Cola بطعم كلاسيكي\n🍎🍇 نكهة الرمان\n🍍 شعير الأناناس\n🍋🍓 ليمونادة وفراولة\n🍋🌿 ليمون ونعناع\n\n✨ تنوع منعش لكل اللحظات\n❄️ مثالي مع الوجبات أو السناكات\n\n💳 طرق الدفع المتاحة:\n• بنك فلسطين 🏦\n• محفظة بال باي 📱\n• جوال بال باي 📲\n• البطاقات البنكية 💳\n\n🔥 انتعاش بنكهات متعددة! ✨",
+   "author": {
+    "id": "100083075873592",
+    "name": "مركز أبو جبارة التجاري",
+    "url": "https://www.facebook.com/abujbara.center",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/480780700_621172470661943_144354111504586399_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kjIQRbQCPqEQ7kNvwFQd1Gr&_nc_oc=AdqdMDXnD1bNvnRNTmXskLqLdfCEnR1Eh75HD4bmCc0RMjNVZIK14nUC4CaJucNXqgk&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQPtT1jlimskJ86TSj8uMtTsIyF8aO8z7re6BRmNR6oWTg&oe=6ADB9B8F"
+   },
+   "timestamp": 1779275702,
+   "reactions_count": 19,
+   "comments_count": 0,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 19,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/703474341_977441615035025_5337477737701702639_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jTqKDKDgWPQQ7kNvwEFQatK&_nc_oc=AdqUMZ0HMx0QoHu2zAT60MAobZ4w2ud0_zVbL668gWofJYvAJsA18wOWTWIGIVWTv7o&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zg17Wa4osoQSlFBOc5UkTA&_nc_ss=7c180&oh=00_AQM3K3fjh_bpY9KIDD6nyp8gS0kRpe_1KvjD9vdhVX6v2w&oe=6ADBA83D",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6OTc3NTAxMTcxNjk1NzM2",
+   "shares_id": "ZmVlZGJhY2s6OTc3NTAxMTcxNjk1NzM2",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122113944663405178",
+   "url": "https://www.facebook.com/molalfateh/posts/pfbid02fmwnWfsUonDuJVKAcqmmyZHbtMVJGCmuf4dyTqNVfvMSWsBHqWhkpKpTbBfvcrQZl",
+   "message": "انتعاش يفوق التوقعات في مول الفاتح!\nجرب الآن V Super Soda\nنكهتان لا تقاومان:\n🍋 Lemon ليمون\n🥤 Cola الكلاسيكية\n✅ نكهات طبيعية 100%\n✅ خالية من الكافيين\n✅ 330 مل من الانتعاش الخالص\nمتوفرة الآن في مول الفاتح\nعلق بنقطة ليصلك السعر",
+   "author": {
+    "id": "61592155365650",
+    "name": "mol alfateh ",
+    "url": "https://www.facebook.com/molalfateh",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/756444324_122102362599405178_1263767452828086081_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=7Qci8jsjITQQ7kNvwEPPHk1&_nc_oc=Adr2ivIPd-O_G9fF1CeLjkMQBzeDn7qgWebM-f6x3Rj6uGzeUOfiZ7lMHDoGIjwspNw&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQPYn2nrfJLLksDBiH-8mi4EHvpMl5PkO6EhsJSLSV-85A&oe=6ADBAE99"
+   },
+   "timestamp": 1790182171,
+   "reactions_count": 8,
+   "comments_count": 3,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 3,
+    "love": 5,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/823235169_122113944615405178_5001293613947706109_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PL9udYsKElQQ7kNvwH_kKny&_nc_oc=AdrjJaFo9MzMD9EgKARKjvJYA1jlPb9vhvLm9RXygzO6jwfEU2soRVNH-CNNYJJQ3Tw&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQNPdTpCi-YsPHkEuXnD6bTgFhyLQembFen9Raj8xkWQ-A&oe=6ADBA972",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTEzOTQ0NjYzNDA1MTc4",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTEzOTQ0NjYzNDA1MTc4",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122111038077340673",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid08JAvFh7RkpMGtp66UyPNZMMrAmv65j1uaA8x5wi3gUaVTqi1GcYkPTZy2Zr4ZfWwl&id=61590220212602",
+   "message": "في واحد ما بينذكر اسمواا مشان الصفحة تتم نضيفة عزموا أردوغان ع مرطبات قام صار يتمسوك و هلق عم يعض الشوئمسموا ندم \n#V7 \nهي المرطبات و المياه الغازية اللي إذا دقتها ما رح تندم\nلأنوا ...\n#بس_دقت_علقت\n#إجى_وقتا\nv7 aleppo \nV SUPER SODA SYRIA",
+   "author": {
+    "id": "61590220212602",
+    "name": "v super soda",
+    "url": "https://www.facebook.com/people/v-super-soda/61590220212602/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/709347822_27275394912118449_5880133900743089009_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=fbqRnuygZcwQ7kNvwFcopAM&_nc_oc=AdqopRn0fiHWiDSVy590B0rzK2LQ8GUmF5b-iCF3IkI6pKGQjHIIYmJFAo71fYWQnMM&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQOgeR9FmucjcXYy3VA1Z6Rz9-lwBdB9rvfusytQbfissg&oe=6ADBADF3"
+   },
+   "timestamp": 1781886288,
+   "reactions_count": 22,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 22,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/724744433_122111038035340673_8589589641119298463_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=uejb5_NijKUQ7kNvwG2Yw7h&_nc_oc=AdoYpIIJjimUgdKzEtOu6dfkCnxEq6-xxlKGF_CAoKhwK4sI9EEiRlhOTsXUo7r5Wu8&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQNYfnqv6b_lhUt9A3uKm9I5vaEha7TzRCqCf1wVgrwzBA&oe=6ADBAB2C",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTExMDM4MDc3MzQwNjcz",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTExMDM4MDc3MzQwNjcz",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "User",
+     "id": "61588548033959",
+     "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/",
+     "offset": 207,
+     "length": 9
+    },
+    {
+     "type": "User",
+     "id": "61590549725426",
+     "url": "https://www.facebook.com/people/V-SUPER-SODA-SYRIA/61590549725426/",
+     "offset": 218,
+     "length": 18
+    },
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 114,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "801732419943208",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%B3_%D8%AF%D9%82%D8%AA_%D8%B9%D9%84%D9%82%D8%AA?__eep__=6",
+     "offset": 184,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "26707152748958478",
+     "url": "https://www.facebook.com/hashtag/%D8%A5%D8%AC%D9%89_%D9%88%D9%82%D8%AA%D8%A7?__eep__=6",
+     "offset": 197,
+     "length": 9
+    }
+   ]
+  },
+  {
+   "post_id": "122107460913340673",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0QVhu61TSgXCbncrGE63dF8o4hQixGZM5pVXmDMKd768W96LbMbdnzyQaVhyKn5fBl&id=61590220212602",
+   "message": "وَأَذَّنْ فِي النَّاسِ بِالْحَجِّ يَأْتُوكَ رِجَالًا وَعَلَى كُلِّ ضَامِرٍ يَأْتِينَ مِنْ كُلِّ فَجٍّ عَمِيقٍ (۲۷) لِيَشْهَدُوا مَنَافِعَ لَهُمْ وَيَذْكُرُوا اسْمَ اللَّهِ فِي أَيَّامٍ مَعْلُومَاتٍ عَلَى مَا رَزَقَهُمْ مِنْ بَهِيمَةِ الْأَنْعَامِ فَكُلُوا مِنْهَا وَأَطْعِمُوا الْبَائِسَ الْفَقِيرَ (۲۸) الحج",
+   "author": {
+    "id": "61590220212602",
+    "name": "v super soda",
+    "url": "https://www.facebook.com/people/v-super-soda/61590220212602/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/709347822_27275394912118449_5880133900743089009_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=fbqRnuygZcwQ7kNvwFcopAM&_nc_oc=AdqopRn0fiHWiDSVy590B0rzK2LQ8GUmF5b-iCF3IkI6pKGQjHIIYmJFAo71fYWQnMM&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQOgeR9FmucjcXYy3VA1Z6Rz9-lwBdB9rvfusytQbfissg&oe=6ADBADF3"
+   },
+   "timestamp": 1780994680,
+   "reactions_count": 20,
+   "comments_count": 0,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 20,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/720695122_122107460883340673_4510593318182299338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=atnVm3s2mgoQ7kNvwH_SoAS&_nc_oc=AdonqdE9OYZJ4PWykmKe2xz4VVvaqAY43LZ8QiYICo1t23mS-YTGX4zOOYy0H5-tF5M&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQMKlBCRlU33OjGYeeFzCdbaiPXTi6jWQUNAzkgvpVfcmg&oe=6ADBB5BF",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTA3NDYwOTEzMzQwNjcz",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTA3NDYwOTEzMzQwNjcz",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1527869122706205",
+   "url": "https://www.facebook.com/NationOnlineMw/posts/pfbid0HcS8zHnWQ9wQSM3qpe8Wj8rXFUTJ26wwCw2W7T7BNqD7y1HcJDBayMELCR5NfHoCl",
+   "message": "#advertising\n\n🏆 V COLA FIRST LUCKY WINNER RECEIVES HIS TV PRIZE! 🎉\n\nExcitement continues in the WIN WITH V COLA national consumer promotion as Edson Chirombo, one of the campaign’s first lucky winners, has officially collected his brand-new LED television!\n\nEdson entered the competition after purchasing V Cola from Chipiku Clocktower in Blantyre and was announced as the TV winner during the campaign’s first lucky draw held on 13 October 2026.\n\nThe promotion, organised by Nutrinova Food and Beverages, the official distributor of V Super Soda in Malawi, gives customers across the country the opportunity to win exciting prizes, including a MK5 million grand prize, MK2 million second prize, MK1 million third prize, televisions and smartphones.\n\nTo participate, customers simply purchase 5 V Cola drinks in one transaction, scan the promotional QR code, submit their details and upload a photo of their receipt. Original receipts must be retained for prize verification.\n\n🥤 The winning continues!\n\n💰 MK5 MILLION GRAND PRIZE STILL UP FOR GRABS!\n\nFollow @V7malawi for campaign updates and upcoming draws.\n\nTerms and conditions apply.\n\n#WinWithVCola #VColaMalawi #Nutrinova #NationOnline #LuckyWinner",
+   "author": {
+    "id": "100064493957817",
+    "name": "Nation Publications Limited",
+    "url": "https://www.facebook.com/NationOnlineMw",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/339744569_142291575229552_8577691719106860157_n.png?stp=dst-png_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=tj220r0eFZ0Q7kNvwFpE-cm&_nc_oc=AdqwFxxIvd_sjhyMCdIE4OTTDgLc9cXxayY2lrzFbo8yaFwcYxL2xGw-yAS05oMaTls&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQP8KyC2EC_qz0IR1I8oxhOLNGa9zJvW6sop230PlqIvhw&oe=6ADBB8BB"
+   },
+   "timestamp": 1791980711,
+   "reactions_count": 8,
+   "comments_count": 2,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 8,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/845865577_1527868906039560_528324209502721584_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qyL7yG57qhwQ7kNvwEJzoBx&_nc_oc=AdrDI__gE2_aI_oOS2EkTUAAfc6yy_zIrE08S57nwCFCU9ZIey3CZJwUOdIrKk9yMCI&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQOEFqk4HNxjZ8SbSbZ9_j-Phub6gWJ-HcNgR_ziHJ7txw&oe=6ADB953E",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTUyNzg2OTEyMjcwNjIwNQ==",
+   "shares_id": "ZmVlZGJhY2s6MTUyNzg2OTEyMjcwNjIwNQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "595853347110374",
+     "url": "https://www.facebook.com/hashtag/advertising?__eep__=6",
+     "offset": 0,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "28775286448775212",
+     "url": "https://www.facebook.com/hashtag/winwithvcola?__eep__=6",
+     "offset": 1138,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "28052362927781446",
+     "url": "https://www.facebook.com/hashtag/vcolamalawi?__eep__=6",
+     "offset": 1152,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "367590650007139",
+     "url": "https://www.facebook.com/hashtag/nutrinova?__eep__=6",
+     "offset": 1165,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "701865249839325",
+     "url": "https://www.facebook.com/hashtag/nationonline?__eep__=6",
+     "offset": 1176,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "452025871534957",
+     "url": "https://www.facebook.com/hashtag/luckywinner?__eep__=6",
+     "offset": 1190,
+     "length": 12
+    }
+   ]
+  },
+  {
+   "post_id": "1523735939116391",
+   "url": "https://www.facebook.com/groups/1007970134026310/permalink/1523735939116391/",
+   "message": "v cola .. v super soda",
+   "author": {
+    "id": "61584556592044",
+    "name": "دهب ..Dahab",
+    "url": "https://www.facebook.com/Dahab525",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/634355850_122117885367151886_6937901416515328930_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=eu-O6WwJh10Q7kNvwG3sIM5&_nc_oc=Ado5MSoUsEYEcZlDplya5Q_g7rpVfWK5-K1768EJAVPNPNi0noLTFdY7k2TWhxUrurQ&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQNQ5IxScy_rrRhIMrXoQ85ry7Lszd-zV6xW44EIKE2LOA&oe=6ADBA093"
+   },
+   "timestamp": 1777310333,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t15.5256-10/683296747_845633577897334_5961268316429437367_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3yI3wMgo7AkQ7kNvwESeJqD&_nc_oc=AdpL3bCwrq_HrmZPbjkLAaIyTBajtClxCyy7pfJp8futuK19WnniLYkLBEeQUSQ5AYw&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQMN7sI9C5vPoEyiyCTB6jF8wpurKOVL0RD9L-XOlRAilw&oe=6ADB90C3",
+   "video": "https://www.facebook.com/watch/?v=27205363382389467",
+   "video_thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t15.5256-10/683296747_845633577897334_5961268316429437367_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3yI3wMgo7AkQ7kNvwESeJqD&_nc_oc=AdpL3bCwrq_HrmZPbjkLAaIyTBajtClxCyy7pfJp8futuK19WnniLYkLBEeQUSQ5AYw&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQMN7sI9C5vPoEyiyCTB6jF8wpurKOVL0RD9L-XOlRAilw&oe=6ADB90C3",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTUyMzczNTkzOTExNjM5MQ==",
+   "shares_id": "ZmVlZGJhY2s6MTUyMzczNTkzOTExNjM5MQ==",
+   "associated_group_id": "1007970134026310",
+   "attached_post": {
+    "post_id": "122126211615151886",
+    "url": "https://www.facebook.com/reel/27205363382389467/",
+    "message": "#v_cola  #v_super_soda \n#Voiceover #voice_over_acting",
+    "author": {
+     "id": "61584556592044",
+     "name": "دهب ..Dahab",
+     "url": "https://www.facebook.com/Dahab525",
+     "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/634355850_122117885367151886_6937901416515328930_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=eu-O6WwJh10Q7kNvwG3sIM5&_nc_oc=Ado5MSoUsEYEcZlDplya5Q_g7rpVfWK5-K1768EJAVPNPNi0noLTFdY7k2TWhxUrurQ&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQNQ5IxScy_rrRhIMrXoQ85ry7Lszd-zV6xW44EIKE2LOA&oe=6ADBA093"
+    }
+   }
+  },
+  {
+   "post_id": "122277141302167354",
+   "url": "https://www.facebook.com/Vsupersoda/posts/pfbid0kijPns4iJJ69NnM93TSwktyoKY7TNKL8Ri1BKdpDb6xnCoDhStrnBnjoMaCfchW4l",
+   "message": "كل عام وأنتم بخير٫ بمناسبة المولد النبوي الشريف.",
+   "author": {
+    "id": "61555020627449",
+    "name": "V Super Soda",
+    "url": "https://www.facebook.com/Vsupersoda",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwHa9SJd&_nc_oc=Ado_e3snaOYajWy8p18BNjE3nfsLM-qucP0c3tVszkvASntpLlW7FquWWxWdZek208U&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQPQa9CifvNn-YGklRrrBHwLIms2SmYSj_x4ajxKjsBgZg&oe=6ADBBEA5"
+   },
+   "timestamp": 1787651083,
+   "reactions_count": 22,
+   "comments_count": 3,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 12,
+    "love": 10,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/780157344_122277141236167354_3870255881770736062_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RstK5g6A2TcQ7kNvwHamMPV&_nc_oc=AdoqJLZqipaiW33Yed38c-D_hBNVY7Ye2oc8ef2CAqlFR9UuNTLmrFxjjaqHERT0epk&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=mHq2RQCAJRGiy7rwV1yAAQ&_nc_ss=7c180&oh=00_AQOMtg3aPbmH1WZexztIZSpINoHw_av68OLz-Ll2Vl_g5Q&oe=6ADBA4BF",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjc3MTQxMzAyMTY3MzU0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjc3MTQxMzAyMTY3MzU0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122105099133330744",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02Y2mH36eSRcFL6dy2VDUCFANWZkLvDrTMiRPektgBHumkPLsN15M6w7qNHXoT29Xtl&id=61589922341073",
+   "message": "عصير شعير \nمشروبات طبيعية غازية \nطعمتي التفاح و الأناناس \n100% ومُحلّاة بالعسل\nغنية بالفيتامينات\nعبوة تنك 300 مل\nالطرد 24 قطعة \nالغطاء للحماية من التلوث و الغبار \nمنتج مصري متوفر الآن بالأسواق السورية \n\nمستورد من شركة #V7\n حلب دمشق \nv7 aleppo \nv super soda \nv7 Latakia \nv7 Homs \nV SUPER SODA SYRIA \n#اللاذقية\n#طرطوس\n\nيوجد توصيل و شحن",
+   "author": {
+    "id": "61589922341073",
+    "name": "v7 Latakia",
+    "url": "https://www.facebook.com/people/v7-Latakia/61589922341073/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/702325042_122097624441330744_4982986379233878028_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=SwNnlG28Fa8Q7kNvwF64Tlb&_nc_oc=AdriSQXN9N-KUyyVOuKSca8ul8t93XeOdt-EvnvTu-sQWrZGddTAqL2Omi4gMJEb8a4&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=IsTwF_Q8d__tqhS43jTXMw&_nc_ss=7c180&oh=00_AQMY1usJxanFSFAUYCH0yv2ElDmnQaHgmPcoY6qtQW_aug&oe=6ADB9088"
+   },
+   "timestamp": 1783017208,
+   "reactions_count": 15,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 15,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTA1MDk5MTMzMzMwNzQ0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTA1MDk5MTMzMzMwNzQ0",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "User",
+     "id": "100063739119718",
+     "url": "https://www.facebook.com/v7aleppo",
+     "offset": 223,
+     "length": 3
+    },
+    {
+     "type": "User",
+     "id": "100057657091230",
+     "url": "https://www.facebook.com/Damas.University",
+     "offset": 227,
+     "length": 4
+    },
+    {
+     "type": "User",
+     "id": "61588548033959",
+     "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/",
+     "offset": 233,
+     "length": 9
+    },
+    {
+     "type": "User",
+     "id": "61590220212602",
+     "url": "https://www.facebook.com/people/v-super-soda/61590220212602/",
+     "offset": 244,
+     "length": 12
+    },
+    {
+     "type": "User",
+     "id": "61589922341073",
+     "url": "https://www.facebook.com/people/v7-Latakia/61589922341073/",
+     "offset": 258,
+     "length": 10
+    },
+    {
+     "type": "User",
+     "id": "61589929752352",
+     "url": "https://www.facebook.com/people/v7-Homs/61589929752352/",
+     "offset": 270,
+     "length": 7
+    },
+    {
+     "type": "User",
+     "id": "61590549725426",
+     "url": "https://www.facebook.com/people/V-SUPER-SODA-SYRIA/61590549725426/",
+     "offset": 279,
+     "length": 18
+    },
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 218,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "418696861554553",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9?__eep__=6",
+     "offset": 299,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "348091011968189",
+     "url": "https://www.facebook.com/hashtag/%D8%B7%D8%B1%D8%B7%D9%88%D8%B3?__eep__=6",
+     "offset": 309,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122111798697340673",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02UYwhcZtvo5fiRZDk7UG9G9g8zdbYcuxGQkDUQwCPhyzFVK32fRmhKS4ZybHe87wTl&id=61590220212602",
+   "message": "#صار_وقتا\nلسى ما جربت\n#إي_صار_بدها\n#بس_دقت_علقت\n\nبدون كافيين \nبدون مواد حافظة\nبدون طول سيرة انت بتحكم بس تدوق\n\nv7 aleppo \nV SUPER SODA SYRIA \nv7 Latakia",
+   "author": {
+    "id": "61590220212602",
+    "name": "v super soda",
+    "url": "https://www.facebook.com/people/v-super-soda/61590220212602/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/709347822_27275394912118449_5880133900743089009_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=fbqRnuygZcwQ7kNvwFcopAM&_nc_oc=AdqopRn0fiHWiDSVy590B0rzK2LQ8GUmF5b-iCF3IkI6pKGQjHIIYmJFAo71fYWQnMM&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=IsTwF_Q8d__tqhS43jTXMw&_nc_ss=7c180&oh=00_AQMjspzQcx5tvaamT654m4NFZC5hVOPc_-vd6eC0PJa5rg&oe=6ADBADF3"
+   },
+   "timestamp": 1782076180,
+   "reactions_count": 17,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 17,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/726447121_122111798661340673_4894676223376123943_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8q7rplKCHhcQ7kNvwGXWfNt&_nc_oc=AdpoUdVYIl8b98shKUJ_jM2x9itWgnIG3391Jm4yTujbmCr8sxz0liO4vSLc5_OLg8g&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=IsTwF_Q8d__tqhS43jTXMw&_nc_ss=7c180&oh=00_AQOhSwyWQaaI7qagkFlj7QuI4Ma4PaOPSe5r8B_Is6FLng&oe=6ADB9BE7",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTExNzk4Njk3MzQwNjcz",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTExNzk4Njk3MzQwNjcz",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "User",
+     "id": "61588548033959",
+     "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/",
+     "offset": 111,
+     "length": 9
+    },
+    {
+     "type": "User",
+     "id": "61590549725426",
+     "url": "https://www.facebook.com/people/V-SUPER-SODA-SYRIA/61590549725426/",
+     "offset": 122,
+     "length": 18
+    },
+    {
+     "type": "User",
+     "id": "61589922341073",
+     "url": "https://www.facebook.com/people/v7-Latakia/61589922341073/",
+     "offset": 142,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "922445054437446",
+     "url": "https://www.facebook.com/hashtag/%D8%B5%D8%A7%D8%B1_%D9%88%D9%82%D8%AA%D8%A7?__eep__=6",
+     "offset": 0,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "27173952318935499",
+     "url": "https://www.facebook.com/hashtag/%D8%A5%D9%8A_%D8%B5%D8%A7%D8%B1_%D8%A8%D8%AF%D9%87%D8%A7?__eep__=6",
+     "offset": 22,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "801732419943208",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%B3_%D8%AF%D9%82%D8%AA_%D8%B9%D9%84%D9%82%D8%AA?__eep__=6",
+     "offset": 35,
+     "length": 12
+    }
+   ]
+  },
+  {
+   "post_id": "122102898129351657",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02bDz4GpgCwMWL89t9JXgaCDmdiV1yTZCNUCn7PEV6fszXJk6inVmC76iZJYSffwkLl&id=61590549725426",
+   "message": "عم تدور علينا\nإختصرنا المسافة\nلنكون أقرب إليك\nنزلنا عروض ناااااار \nبمحلات #شي_جنون #حلب\n\nشركة #v7\nv7 aleppo \nV SUPER SODA SYRIA",
+   "author": {
+    "id": "61590549725426",
+    "name": "V SUPER SODA SYRIA",
+    "url": "https://www.facebook.com/people/V-SUPER-SODA-SYRIA/61590549725426/",
+    "profile_picture_url": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-1/717960074_27378216798502926_4338803382081493206_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=8-xHW_hmtWcQ7kNvwFYBPI1&_nc_oc=Ado09UZgHfJAKNyPCf9yS4wUvIaVci84xbvrxnx_-qOPeFc-4XucDfpYRtBULt3JtLw&_nc_zt=24&_nc_ht=scontent-den2-1.xx&_nc_gid=IsTwF_Q8d__tqhS43jTXMw&_nc_ss=7c180&oh=00_AQNnHeclmqRYFJs_ZZwPMSE39FbqTQ6yOhWyWcXB6xjeew&oe=6ADBA66C"
+   },
+   "timestamp": 1780737994,
+   "reactions_count": 21,
+   "comments_count": 2,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 21,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/710782045_122102898099351657_7715886474197889942_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-rSO5nESKzcQ7kNvwEfDlQU&_nc_oc=Adp49cnlFh23khzCT-ErX78Eo3NNZ5La5mupAJi9hh_JJZLufVazk7c9ddcLRF-kDhM&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=IsTwF_Q8d__tqhS43jTXMw&_nc_ss=7c180&oh=00_AQMINUkfP6St0SPYZnFWau1QAyvWSEvPpYpvZe1qZKc6aA&oe=6ADB8C72",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTAyODk4MTI5MzUxNjU3",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTAyODk4MTI5MzUxNjU3",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "User",
+     "id": "61588548033959",
+     "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/",
+     "offset": 98,
+     "length": 9
+    },
+    {
+     "type": "User",
+     "id": "61590549725426",
+     "url": "https://www.facebook.com/people/V-SUPER-SODA-SYRIA/61590549725426/",
+     "offset": 109,
+     "length": 18
+    },
+    {
+     "type": "Hashtag",
+     "id": "481926968561303",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D9%8A_%D8%AC%D9%86%D9%88%D9%86?__eep__=6",
+     "offset": 74,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "515873945121410",
+     "url": "https://www.facebook.com/hashtag/%D8%AD%D9%84%D8%A8?__eep__=6",
+     "offset": 83,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 94,
+     "length": 3
+    }
+   ]
+  }
+ ]
+}

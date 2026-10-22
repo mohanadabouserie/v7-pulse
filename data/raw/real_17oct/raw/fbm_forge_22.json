@@ -1,0 +1,1238 @@
+{
+ "input": {
+  "query": "V7 pink lemonade",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "vDsiyzXwgNdGSSh4g",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:38:29.888Z",
+  "finishedAt": "2026-10-19T11:39:01.381Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.7818,
+ "items": [
+  {
+   "post_id": "1625000669198831",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1710627840222631/",
+   "message": "Refreshing summer drink 🍹\nmojito passionfruit \n\nV7 + Dara’s pink lemonade \nBoba passionfruit\nPassionfruit syrup\nRosemary\nIce\nV7 \n#viral \n#blogger \n#food #foodblogger #drink",
+   "message_rich": "Refreshing summer drink 🍹\nmojito passionfruit \n\nV7 + Dara’s pink lemonade \nBoba passionfruit\nPassionfruit syrup\nRosemary\nIce\nV7 \n#viral \n#blogger \n#food #foodblogger #drink",
+   "timestamp": 1785349231,
+   "comments_count": 0,
+   "reactions_count": 11,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 9,
+    "love": 2,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100050667391150",
+    "name": "Makeup by dina adel",
+    "url": "https://www.facebook.com/people/Makeup-by-dina-adel/100050667391150/",
+    "profile_picture_url": "https://scontent.fgyd21-1.fna.fbcdn.net/v/t39.30808-1/471168919_1153420146356888_1109976211960705163_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=wh6CS9BaLUYQ7kNvwFoHTWc&_nc_oc=AdqQuMbEOdipISMbEwBJvo7iLh78_9jNGwPDu2gZDdw6z-EPeOMS1vG4qP7wiii9FE8&_nc_zt=24&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQO1-6RwNjjkD2_GG5LwHWT3PtwpBN7C4tPqCZo3g65YFw&oe=6ADBD53B",
+    "delegate_page_id": "154844708041722"
+   },
+   "authors": [
+    {
+     "id": "100050667391150",
+     "name": "Makeup by dina adel",
+     "url": "https://www.facebook.com/people/Makeup-by-dina-adel/100050667391150/",
+     "profile_picture_url": "https://scontent.fgyd21-1.fna.fbcdn.net/v/t39.30808-1/471168919_1153420146356888_1109976211960705163_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=wh6CS9BaLUYQ7kNvwFoHTWc&_nc_oc=AdqQuMbEOdipISMbEwBJvo7iLh78_9jNGwPDu2gZDdw6z-EPeOMS1vG4qP7wiii9FE8&_nc_zt=24&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQO1-6RwNjjkD2_GG5LwHWT3PtwpBN7C4tPqCZo3g65YFw&oe=6ADBD53B",
+     "delegate_page_id": "154844708041722"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1710627840222631/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fgyd21-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMAaJHOjbVRpx_dunOyFgh_TEG9j3iDaX4-Rt-N4hmXN3r0fKN-WfQ3InMbfwjqDIR4-Of2m32qzRpm7hpPsNZZQmIBVGPgJ1ejdrA.mp4?_nc_cat=105&_nc_oc=AdoKz2PXWhWgFCNamHzudDg_9WaPIiuIod8x0JMqtF1og8_g83l7WRVFdR8f6voaTdM&_nc_sid=5e9851&_nc_ht=video.fgyd21-1.fna.fbcdn.net&_nc_ohc=YFH7xsl3xs4Q7kNvwF-fxxT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MzM3NzE5NDEyNTc5MzU0OSwiYXNzZXRfYWdlX2RheXMiOjgxLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=6963b56e73ea4561&_nc_vs=HBkcFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83QTRFQzMwNjAxQjM0OEVCRjBBRkNBQ0Q0QkM2MzdBN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmmuSkg8ni_wsVAigCQzMsF0BNKp--dsi0GBJkYXNoX2Jhc2VsaW5lXzNfdjERAHUCZeadAQA&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPEFQC5eazw0Q9N88YMIB3ySR5OeDvQKFB_ML8mcf54Hg&oe=6AD7DCE2&bitrate=0&tag=dash_baseline_3_v1",
+    "video_hd_file": "https://video.fgyd4-2.fna.fbcdn.net/o1/v/t2/f2/m86/AQMKA0GDgoDXkJYIflVHDkVGLQ0YbbLkeNx9_o8seTu1IMgACsaKFAf0AM7ilJWLOSgAU_KdEDBd1i454ax1cSoW0xIITPJBZvpV17g.mp4?_nc_cat=105&_nc_oc=Adp1mXyOwzb661VR3EkU7gRHoYaMWaQqF5_KMhVk2mDpdGsMYRkTxKjHfwgLOxZq1jU&_nc_sid=5e9851&_nc_ht=video.fgyd4-2.fna.fbcdn.net&_nc_ohc=Jwvqx_4kph8Q7kNvwHvF3hB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MzM3NzE5NDEyNTc5MzU0OSwiYXNzZXRfYWdlX2RheXMiOjgxLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=689396baf7e59c61&_nc_vs=HBkcFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81OTRGRkExMjRDQzQ1QTkyMTdENUMwRUI2N0FCMjE5Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmmuSkg8ni_wsVAigCQzMsF0BNKp--dsi0GBJkYXNoX2Jhc2VsaW5lXzFfdjERAHUCZeadAQA&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQNcwFgKEz9fHJV1sx3W10IOE926R7raR01h4YHSkLgalg&oe=6AD7D506&bitrate=0&tag=dash_baseline_1_v1"
+   },
+   "video_thumbnail": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t51.82787-10/760890969_18618985753063355_6894616297842561520_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=BbRXDAoCXmEQ7kNvwHdiFOt&_nc_oc=AdqLo7Ud-pf2V7KSWPD8zAFhVQLrFvBVGDCCOi--4A-90q1v1TLKMjyBwvwVIyeGHu8&_nc_zt=23&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQPY6oi1jtDE9tdeQye8FDVn9_Tm-Ifx-aGBW9LwWP6s3w&oe=6ADBEF1F",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1625000669198831",
+   "shares_id": "1625000669198831",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122094051573520555",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1681306320088841/",
+   "message": "Comment PINK  for the product link! \nDelicious and Nutritious Elevate your pink lemonade  #electrolytes #pinklemonade #keynutrients #dealsforyoudays #hydration #ad  https://scaledcreator.com/amazon/B093BDH42Y?tag=vanessajamil-20",
+   "message_rich": "Comment PINK  for the product link! \nDelicious and Nutritious Elevate your pink lemonade  #electrolytes #pinklemonade #keynutrients #dealsforyoudays #hydration #ad  https://scaledcreator.com/amazon/B093BDH42Y?tag=vanessajamil-20",
+   "timestamp": 1792129934,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61595616653132",
+    "name": "Vanessa Inspires ",
+    "url": "https://www.facebook.com/people/Vanessa-Inspires/61595616653132/",
+    "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/848440442_122094111759520555_7980977557969919426_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=PXpRBoZ1KVcQ7kNvwG9wM1-&_nc_oc=AdoN2TnnYgwfGockLLpH4LDSr9ahAeD3pIdCd2r6NKMXltL8hMSxEEz2iwbMSNW1BBQ&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQOHiGM_MnQSBt3PkSk91kVAvNRjyU2mJxZltVoEV7xu1A&oe=6ADBD13F",
+    "delegate_page_id": "1430962543426499"
+   },
+   "authors": [
+    {
+     "id": "61595616653132",
+     "name": "Vanessa Inspires ",
+     "url": "https://www.facebook.com/people/Vanessa-Inspires/61595616653132/",
+     "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/848440442_122094111759520555_7980977557969919426_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=PXpRBoZ1KVcQ7kNvwG9wM1-&_nc_oc=AdoN2TnnYgwfGockLLpH4LDSr9ahAeD3pIdCd2r6NKMXltL8hMSxEEz2iwbMSNW1BBQ&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQOHiGM_MnQSBt3PkSk91kVAvNRjyU2mJxZltVoEV7xu1A&oe=6ADBD13F",
+     "delegate_page_id": "1430962543426499"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1681306320088841/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fgyd21-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPlflLbTDb5O5CUGUZQmVtZ_nZ-P2c6ZyYDx0m03JgyIYEuxkRYHm2kFmhg2tbvbddnbfCSQnlD11QsTQ4YOyLK14pPyDnZcgXHC2tsKA.mp4?_nc_cat=111&_nc_oc=AdpxVE1TTbFxHzM1aTjt52c9XwIiYYmMT_LEMysxfRXpdPR3MptmZy4srrKHPMBWjpg&_nc_sid=8bf8fe&_nc_ht=video.fgyd21-1.fna.fbcdn.net&_nc_ohc=twrMrKcLtPEQ7kNvwH10KZu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6ODgzNTMzNTM4MDgzMDgwLCJhc3NldF9hZ2VfZGF5cyI6MywidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjMwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQOQHoV4-9qcuItGNAGbAvZgYA1ejaepnviEAreVSDpc5w&oe=6ADBE08F&bitrate=263409&tag=sve_sd",
+    "video_hd_file": "https://video.fgyd4-2.fna.fbcdn.net/o1/v/t2/f2/m366/AQMgn66Ks17HmcDwTQ1vyCcQLbIJt1Ysy2-A20WT-wWwytksotheJOoDEfiUq8dMp9-XPZcKF8F8KyxQ0p3It_WXNn6KP71EpnEdV92X_Z4nSg.mp4?_nc_cat=101&_nc_oc=Adp-pWzh9ZamduItvqnd0TZrZKkQa8do4tRKuwjwhS0RZlKjkpL9Xlvg6uzlol3WFFk&_nc_sid=5e9851&_nc_ht=video.fgyd4-2.fna.fbcdn.net&_nc_ohc=kIxWRboSdW8Q7kNvwE-5Q9V&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjg4MzUzMzUzODA4MzA4MCwiYXNzZXRfYWdlX2RheXMiOjMsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjozMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=13879f3a4b1ede81&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yREJDRUQ0QzlDRjk0RjEwOUQ1Q0I4OTFGM0E2MzgyMl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzQ3RDI1NTI3NEVCRTQ3RTBBNDdEQTU0MDk4NTBGMTU4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaQhPrqteSRAxUCKAJDMywXQD6iDEm6XjUYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPK1CEeWs1QhKUGfnkQLApODewXXF3mrmBCiKuPMrAdvQ&oe=6ADBC4FB&bitrate=934469&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t15.5256-10/851042801_1436830205070000_5787134918281986705_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=5Yek6tv29TkQ7kNvwEKrM_-&_nc_oc=AdppTCt5vU-3ypEMMg0DnoKRxHykgm3a2CvN5PA_lBBrpnTX-L0ApwZLtO01jpbGFu0&_nc_zt=23&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQPnr7p0cGsCEbHbbS5nc5ZMHoRlqg4Ht-phMLXP26jEUw&oe=6ADBCD1D",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122094051573520555",
+   "shares_id": "122094051573520555",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122102104203377981",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2133884664233835/",
+   "message": "💗 Naturally pink. Naturally refreshing. 🥤✨\n\nExperience the crisp taste of V7 Pink Lemonade, crafted with 100% natural flavors and enriched with vitamins & honey. Every sip delivers the perfect balance of refreshment and flavor.\n\n🍋 Refresh naturally. Sip happily.\nDM for order",
+   "message_rich": "💗 Naturally pink. Naturally refreshing. 🥤✨\n\nExperience the crisp taste of V7 Pink Lemonade, crafted with 100% natural flavors and enriched with vitamins & honey. Every sip delivers the perfect balance of refreshment and flavor.\n\n🍋 Refresh naturally. Sip happily.\nDM for order",
+   "timestamp": 1782983678,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61591339450029",
+    "name": "V7 India",
+    "url": "https://www.facebook.com/drinkv7",
+    "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/732889134_27215566338111358_1538364967665581945_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=80bYneqilPcQ7kNvwGrFu2w&_nc_oc=Ado39vZwaW8ANc3r7vy-Bf734dhg9zav3rAl6Wz6Drhf2TXyLhMiKtzr0VPuxw8wcDY&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQNBQxul1fotKmed69nrP6RxhNVuzwE6iOQinEHekNSEJA&oe=6ADBE9BF",
+    "delegate_page_id": "1198822759979989"
+   },
+   "authors": [
+    {
+     "id": "61591339450029",
+     "name": "V7 India",
+     "url": "https://www.facebook.com/drinkv7",
+     "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/732889134_27215566338111358_1538364967665581945_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=80bYneqilPcQ7kNvwGrFu2w&_nc_oc=Ado39vZwaW8ANc3r7vy-Bf734dhg9zav3rAl6Wz6Drhf2TXyLhMiKtzr0VPuxw8wcDY&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQNBQxul1fotKmed69nrP6RxhNVuzwE6iOQinEHekNSEJA&oe=6ADBE9BF",
+     "delegate_page_id": "1198822759979989"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2133884664233835/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fgyd21-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMYEyon0HnazB6eF_Py4fn0XcYk9eHvnlfHBcjmVd5Eli2A2A3CHDbd3vHT0oKKIKD32Hjgdy7PDU8SVxlI9x2cDmJ9LdM9awe5UhE.mp4?_nc_cat=108&_nc_oc=AdruFTH36q_y3je5fMl6YNByIO67sul-hqsr9AHPltkcdGNvhsYaarhzNI-JxSQmDFg&_nc_sid=5e9851&_nc_ht=video.fgyd21-1.fna.fbcdn.net&_nc_ohc=8Bncz4f0qX4Q7kNvwHvvHCT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTY1NzYyNDIzODY2NTE3NiwiYXNzZXRfYWdlX2RheXMiOjEwOSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=49e98f7afa9e3395&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83NDQ0RTY2QjUwRjZFOTEwRUY2QkRGNjlFQzREN0FBMV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzAwNEMxNEVEQTQ3MzhEQUNDNTJBRTBCNUE2RUNBMUIxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACawt9X-tubxBRUCKAJDMywXQChR64UeuFIYEmRhc2hfYmFzZWxpbmVfM192MREAdQJl5p0BAA&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQP2Sm1HyWiNKDSmheSkRryownaHNzfHjvXWhMtUZB_YQA&oe=6AD7CCE9&bitrate=310412&tag=dash_baseline_3_v1",
+    "video_hd_file": "https://video.fgyd4-2.fna.fbcdn.net/o1/v/t2/f2/m266/AQNBLN7d6Udhe7hfbJc2jc0f7afbLE5Q3fNX59TNBWRkQO7m9n1Y_A2JRnXUsukCQLInNHHvDG9OVVCfHfqXDrjrmWvEXuYLRB0.mp4?strext=1&_nc_cat=105&_nc_oc=AdpLNYaZddu2KglB-iAgb44_gpyoi4MpT86Td5aSOIeNopcZxSIp-FjMQThf0eZY_yc&_nc_sid=8bf8fe&_nc_ht=video.fgyd4-2.fna.fbcdn.net&_nc_ohc=CvlsebnfZhQQ7kNvwG89wg2&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjoxNjU3NjI0MjM4NjY1MTc2LCJhc3NldF9hZ2VfZGF5cyI6MTA5LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQNNZMOc3vteGzR4jUhHH3LqepTwhnFeENLpGNPgE7DT8Q&oe=6AD7C639&bitrate=935477&tag=compressed_source"
+   },
+   "video_thumbnail": "https://scontent.fgyd21-1.fna.fbcdn.net/v/t51.71878-10/735636485_1533318478326106_5283630829031612846_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=y5-a_zrE_CEQ7kNvwH_0a5i&_nc_oc=AdpkGDb1c5b1eNLw8Lj89Gml1UXMdoB0TeFmg5U1FNmdoPQLYMoTvz5RS7daELJRRxw&_nc_zt=23&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQNo0iKLZkxFZobKX-S8O-x4rDysp0vzv7YBXLjWyaLpeA&oe=6ADBD6A5",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122102104203377981",
+   "shares_id": "122102104203377981",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "971735858935721",
+   "type": "post",
+   "url": "https://www.facebook.com/AlaLamy.z/posts/pfbid02qJ7RyMozeFbXyuRePTabpxrpgNVVAwCGxsB5ga9dFcpc4oHjZS5JcyhVjkS1wNEEl",
+   "message": "🔥 انتعاش مختلف وطعم يفتح النفس 👌🏽\nدلوقتي مشروب\nV7 Pink Lemonade\nوصل ماركت الأمانة للمواد الغذائية 💖🍋\n✔️ مشروب غازي بالفيتامينات\n✔️ طعم بينك ليمونيد منعش\n✔️ دعم للمناعة\n✔️ مناسب لأجواء الصيف والخروجات\nجرب الانتعاش الحقيقي مع كل رشفة 😍\n📍متوفر الآن بماركت الأمانة للمواد الغذائية\nكل عام وأنتم بخير ❤️❤️",
+   "message_rich": "🔥 انتعاش مختلف وطعم يفتح النفس 👌🏽\nدلوقتي مشروب\nV7 Pink Lemonade\nوصل ماركت الأمانة للمواد الغذائية 💖🍋\n✔️ مشروب غازي بالفيتامينات\n✔️ طعم بينك ليمونيد منعش\n✔️ دعم للمناعة\n✔️ مناسب لأجواء الصيف والخروجات\nجرب الانتعاش الحقيقي مع كل رشفة 😍\n📍متوفر الآن بماركت الأمانة للمواد الغذائية\nكل عام وأنتم بخير ❤️❤️",
+   "timestamp": 1779703741,
+   "comments_count": 2,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100082979480338",
+    "name": "Alalamy photographer",
+    "url": "https://www.facebook.com/AlaLamy.z",
+    "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/758830830_1026938420082131_2432515908532526980_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=0kteF8qEmAYQ7kNvwEeyVxE&_nc_oc=AdqQiHFS9t6WNd0MixUXQnlSSYN_lnLCTzejnWJyzXu3QGjqhUUpl1lpZdrNOgrk3So&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQPKdHki8jp1gvo24zogVUWBnnsesNjnEtABU3x4BnNK5g&oe=6ADBD73C",
+    "delegate_page_id": "109679418462091"
+   },
+   "authors": [
+    {
+     "id": "100082979480338",
+     "name": "Alalamy photographer",
+     "url": "https://www.facebook.com/AlaLamy.z",
+     "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/758830830_1026938420082131_2432515908532526980_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=0kteF8qEmAYQ7kNvwEeyVxE&_nc_oc=AdqQiHFS9t6WNd0MixUXQnlSSYN_lnLCTzejnWJyzXu3QGjqhUUpl1lpZdrNOgrk3So&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQPKdHki8jp1gvo24zogVUWBnnsesNjnEtABU3x4BnNK5g&oe=6ADBD73C",
+     "delegate_page_id": "109679418462091"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/705246548_971735838935723_7319998563454959380_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2bmRFG89AGkQ7kNvwFQvCke&_nc_oc=AdpboCKmpVpUYwWCRtHz8p-DjADbDfyOCe_3q5mJTH9nZbA3Lni9reRJTFoKU1evD4A&_nc_zt=23&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQOzlo7xFnsxs91ISoiZcYcq6Xg0v3dBFbGu0u8SVVu7Ig&oe=6ADBC120",
+    "height": 1350,
+    "width": 1080,
+    "id": "971735835602390"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "971735858935721",
+   "shares_id": "971735858935721",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1693235862810499",
+   "type": "post",
+   "url": "https://www.facebook.com/pinklemonadegr/posts/pfbid028zaUzDpmz35S5tiYPvy3my3VVEFLfX4RWZqLbgGNpG2cH7794fWmd9j1pdx64eXQl",
+   "message": "7 things we hear on repeat at Pink Lemonade 🩷🍋➡️➡️",
+   "message_rich": "7 things we hear on repeat at Pink Lemonade 🩷🍋➡️➡️",
+   "timestamp": 1790598035,
+   "comments_count": 0,
+   "reactions_count": 27,
+   "reshare_count": 4,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 20,
+    "love": 7,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063723046852",
+    "name": "Pink Lemonade GR Children.Home.Her",
+    "url": "https://www.facebook.com/pinklemonadegr",
+    "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/271053237_2380233368774305_1509004198704501952_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Oe4y8WpAb9QQ7kNvwEixZIb&_nc_oc=AdoTVesrQtbj1wEiIGwVqghqJ3jqTgCYiZgbhWflEE5N6ib8fOeJKSy0feiCcSj6rZA&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQNsWfbeWkG0Wo6qUoYkOKlJpOXUlr19qZxkMaBz4_TDdg&oe=6ADBBD3A",
+    "delegate_page_id": "679775582153434"
+   },
+   "authors": [
+    {
+     "id": "100063723046852",
+     "name": "Pink Lemonade GR Children.Home.Her",
+     "url": "https://www.facebook.com/pinklemonadegr",
+     "profile_picture_url": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-1/271053237_2380233368774305_1509004198704501952_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Oe4y8WpAb9QQ7kNvwEixZIb&_nc_oc=AdoTVesrQtbj1wEiIGwVqghqJ3jqTgCYiZgbhWflEE5N6ib8fOeJKSy0feiCcSj6rZA&_nc_zt=24&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQNsWfbeWkG0Wo6qUoYkOKlJpOXUlr19qZxkMaBz4_TDdg&oe=6ADBBD3A",
+     "delegate_page_id": "679775582153434"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgyd21-1.fna.fbcdn.net/v/t51.82787-15/825320582_18587043541068481_6761956500820006632_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_P5-N3bAPM0Q7kNvwGoKbHj&_nc_oc=AdoDL37YM50BCytKBG7fTqDuQRB4ReuR4nXrqkp0KY5gR5tS5C17iXElVyudlXEPyCg&_nc_zt=23&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQPwrBuyHPqGuTHbR9zH8jR-baCIffOL4xhSPv6irtbyrQ&oe=6ADBE5D9",
+     "url": "https://www.facebook.com/photo.php?fbid=1693235799477172&set=a.480503520750412&type=3",
+     "id": "1693235799477172"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgyd21-1.fna.fbcdn.net/v/t51.82787-15/825320353_18587043565068481_2986724313080291298_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lK4drIQXAXUQ7kNvwHyHBRz&_nc_oc=AdpOvz4oLx1relolCPyry_TLHbta7Eduny5qT90SDZiZb5cuKz815zDjF25zsJW-0xk&_nc_zt=23&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQPIUxQGOKmt28jTTrAbZMusgTYzGOBK3TKG7Yi9U-wdGw&oe=6ADBBD36",
+     "url": "https://www.facebook.com/photo.php?fbid=1693235809477171&set=a.480503520750412&type=3",
+     "id": "1693235809477171"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t51.82787-15/828255310_18587043577068481_5587162258416533877_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SUSlwWLAUP0Q7kNvwGnWwbd&_nc_oc=AdqebIdudNGZGoKnaBKPVZe2fszItx5AZSWODUiNJwASLr6UJmj4OLZAIewIrGfX4Ac&_nc_zt=23&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQMyxTUGo0xMFvFtkct3ABdKgEvXeT9ai7_ue72hV-5_HQ&oe=6ADBC281",
+     "url": "https://www.facebook.com/photo.php?fbid=1693235806143838&set=a.480503520750412&type=3",
+     "id": "1693235806143838"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t51.82787-15/825320387_18587043550068481_6088152219029236094_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Imi0qM-nVkoQ7kNvwGMjQA5&_nc_oc=Adp2ZgSR2hOwumsGKs-iPqw3x7Mg7rvfOUclFQxP1FKcl9dysPOWck3b30rpllooa-c&_nc_zt=23&_nc_ht=scontent.fgyd4-2.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQOn4yijUbRUp9057ZoWmjwg69hYtMrpr_ZAgpELXWs7gQ&oe=6ADBC473",
+     "url": "https://www.facebook.com/photo.php?fbid=1693235789477173&set=a.480503520750412&type=3",
+     "id": "1693235789477173"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgyd21-1.fna.fbcdn.net/v/t51.82787-15/825320234_18587043649068481_1604045255902179941_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=q8UKq3J7ATkQ7kNvwGbWR4X&_nc_oc=AdqY5cmRBhhuRzRfPzvj7OIqB1LUdhOAo2GnImUEl5ILo3swiTUfvjxhBOMnCx_ut3k&_nc_zt=23&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=V_hx_886dGKPyfH6vb8W6A&_nc_ss=70289&oh=00_AQNfRql5ivJ3Y_djQs4TRqJvKh_N06HHw_JgVt9EpKqKXw&oe=6ADBDD52",
+     "url": "https://www.facebook.com/photo.php?fbid=1693235792810506&set=a.480503520750412&type=3",
+     "id": "1693235792810506"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1693235862810499",
+   "shares_id": "1693235862810499",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 8,
+   "top_comments": []
+  },
+  {
+   "post_id": "122169792224967438",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0YQwBDTkrK96jhWwWMXoxuWqhwvaoak55EuDLfXKAWhUagCFNg2wJbsEKffwhLg9zl&id=61579023140086",
+   "message": "🇪🇬✨ من مصر إلى ألمانيا وهولندا… V7 وصلت! 🇩🇪🇳🇱\n\nتعلن Montana Frost عن وصول منتجات V7 Sparkling Drink لأول مرة إلى السوق الألماني والهولندي، كمستورد حصري للمنتج.\nV7 Sparkling Drink – 300 ml Can😍\n\n🥤 مجموعة متنوعة من النكهات :\n🍍 Pineapple Malt\n🍎 Apple Malt\n🍋 Lemon Mint & Lime\n🫐 Blueberry\n🍓 Pink Lemonade\n❤️ Pomegranate\n🍍 Piña Colada\n🥤 Super Soda Cola& Diet\n\nنكهات طبيعية 100% مع تشكيلة مميزة تناسب مختلف الأذواق.\n🇪🇬  منتج مصري بمواصفات عالميه\n🇩🇪 متوفر في ألمانيا\n🇳🇱 متوفر في هولندا\n📦 للطلبات والاستفسارات – واتساب فقط:\n📱 +49 2822 95 95 583\n\n الآن في السوق الأوروبي. 🇪🇬🇪🇺\n#V7 #V7SparklingDrink #MontanaFrost #MadeInEgypt #EgyptianProduct #Germany #Netherlands #مشروبات #منتج_مصري #ألمانيا #هولندا",
+   "message_rich": "🇪🇬✨ من مصر إلى ألمانيا وهولندا… V7 وصلت! 🇩🇪🇳🇱\n\nتعلن Montana Frost عن وصول منتجات V7 Sparkling Drink لأول مرة إلى السوق الألماني والهولندي، كمستورد حصري للمنتج.\nV7 Sparkling Drink – 300 ml Can😍\n\n🥤 مجموعة متنوعة من النكهات :\n🍍 Pineapple Malt\n🍎 Apple Malt\n🍋 Lemon Mint & Lime\n🫐 Blueberry\n🍓 Pink Lemonade\n❤️ Pomegranate\n🍍 Piña Colada\n🥤 Super Soda Cola& Diet\n\nنكهات طبيعية 100% مع تشكيلة مميزة تناسب مختلف الأذواق.\n🇪🇬  منتج مصري بمواصفات عالميه\n🇩🇪 متوفر في ألمانيا\n🇳🇱 متوفر في هولندا\n📦 للطلبات والاستفسارات – واتساب فقط:\n📱 +49 2822 95 95 583\n\n الآن في السوق الأوروبي. 🇪🇬🇪🇺\n#V7 #V7SparklingDrink #MontanaFrost #MadeInEgypt #EgyptianProduct #Germany #Netherlands #مشروبات #منتج_مصري #ألمانيا #هولندا",
+   "timestamp": 1786370456,
+   "comments_count": 10,
+   "reactions_count": 10,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 4,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+    "name": "Montana Frost",
+    "url": "https://www.facebook.com/pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+    "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/536370851_122112187256967438_2801261395210380990_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tm4t8ayoHBAQ7kNvwGQyv4b&_nc_oc=Adr9ktn16McPrLW3Ie7OymM0NCmS0EVPCB-PP2ew13qJ9ACh6FOfniGVowESoXV2ZHM&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQOWxkLxX7ss2ZFp0TIEhjNERs7zWkSOCiOsVw1aPaw4oA&oe=6ADBDCB3",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+     "name": "Montana Frost",
+     "url": "https://www.facebook.com/pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+     "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/536370851_122112187256967438_2801261395210380990_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tm4t8ayoHBAQ7kNvwGQyv4b&_nc_oc=Adr9ktn16McPrLW3Ie7OymM0NCmS0EVPCB-PP2ew13qJ9ACh6FOfniGVowESoXV2ZHM&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQOWxkLxX7ss2ZFp0TIEhjNERs7zWkSOCiOsVw1aPaw4oA&oe=6ADBDCB3",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/768452777_122169792194967438_8785150555074443172_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OHwbYXhRt_gQ7kNvwHiMfed&_nc_oc=AdpdNxY3oixA3zpavbBvtKuPg5U_Bh7HMnPcDszrhfV7GYaRknRPH9I1eWR-XHEQGZM&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQNHBji_GboMSmpXSkO_wEfR9IC7fdwv2QEaPKPcDqlxlw&oe=6ADBCDAC",
+    "height": 1122,
+    "width": 1402,
+    "id": "122169792188967438"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122169792224967438",
+   "shares_id": "122169792224967438",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122102569257313870",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/3814689002160374/",
+   "message": "Découvrez V7 Pink Lemonade : la boisson pétillante qui va réveiller vos papilles ! ✨\n\nUn goût frais, fruité et incroyablement délicieux 😍\nLa saveur Pink Lemonade de V7 offre un mélange parfait entre douceur, fraîcheur et sensation pétillante pour un pur moment de plaisir 🍋💖\n\n✔ Saveurs naturelles\n✔ Enrichie en vitamines\n✔ Une boisson rafraîchissante à savourer à tout moment de la journée\n\nUne seule gorgée… et vous allez l’adorer ! 🔥\n\n📦 Disponible en gros\n🚚 Livraison possible partout au Sénégal\n📞 Contactez-nous 78 593 57 57 pour vos commandes\n\n#V7 #PinkLemonade #BoissonPétillante #BoissonVitaminée #FreshDrink #DistributionSénégal #VERO #SaveurNaturelle",
+   "message_rich": "Découvrez V7 Pink Lemonade : la boisson pétillante qui va réveiller vos papilles ! ✨\n\nUn goût frais, fruité et incroyablement délicieux 😍\nLa saveur Pink Lemonade de V7 offre un mélange parfait entre douceur, fraîcheur et sensation pétillante pour un pur moment de plaisir 🍋💖\n\n✔ Saveurs naturelles\n✔ Enrichie en vitamines\n✔ Une boisson rafraîchissante à savourer à tout moment de la journée\n\nUne seule gorgée… et vous allez l’adorer ! 🔥\n\n📦 Disponible en gros\n🚚 Livraison possible partout au Sénégal\n📞 Contactez-nous 78 593 57 57 pour vos commandes\n\n#V7 #PinkLemonade #BoissonPétillante #BoissonVitaminée #FreshDrink #DistributionSénégal #VERO #SaveurNaturelle",
+   "timestamp": 1778848709,
+   "comments_count": 0,
+   "reactions_count": 3,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 3,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61589416114425",
+    "name": "VERO SN CORP",
+    "url": "https://www.facebook.com/people/VERO-SN-CORP/61589416114425/",
+    "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/696314672_122098302675313870_2285005070457639246_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vUcTiiUr6DEQ7kNvwFxY4G5&_nc_oc=AdqM-R2VUcvTpX_h5zg6kdF8w9zsrhOjK7u6sWpkzkBGfLZcW3nPlAxVr_afYChiHGI&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQMFsDD_3DJrVjT6DWzXbMbpUnvT2u8zM6zWABB5d4JtJg&oe=6ADBD1C6",
+    "delegate_page_id": "1117456184784455"
+   },
+   "authors": [
+    {
+     "id": "61589416114425",
+     "name": "VERO SN CORP",
+     "url": "https://www.facebook.com/people/VERO-SN-CORP/61589416114425/",
+     "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/696314672_122098302675313870_2285005070457639246_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vUcTiiUr6DEQ7kNvwFxY4G5&_nc_oc=AdqM-R2VUcvTpX_h5zg6kdF8w9zsrhOjK7u6sWpkzkBGfLZcW3nPlAxVr_afYChiHGI&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQMFsDD_3DJrVjT6DWzXbMbpUnvT2u8zM6zWABB5d4JtJg&oe=6ADBD1C6",
+     "delegate_page_id": "1117456184784455"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/3814689002160374/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://z-p3-video.fadd2-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPXYTVlBWublKHtFACy2n4g75l9VkZ7Q8HPYnw7ntHqtkS75ly6HsGpn-x3QsK84AQCxyonO1p2jPt7hLQAA_nx8K-MvLIMsOPeRyJf4Q.mp4?_nc_cat=102&_nc_oc=AdoUbC45qvBX0ft32qAe4R2VdF2QtRg1J85DbMSr2DysCIMAHEdtOCJY1R46ej3-hL0&_nc_sid=8bf8fe&_nc_ht=z-p3-video.fadd2-1.fna.fbcdn.net&_nc_ohc=9kYT4N8SVxQQ7kNvwGR61lH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6OTk1MjEyNDM5NjY5OTY5LCJhc3NldF9hZ2VfZGF5cyI6MTU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPnf9Rw4s_s9HW7HvXJBWCFu79p13wweTF4FCUSsARZNQ&oe=6ADBD1E0&bitrate=286682&tag=sve_sd",
+    "video_hd_file": "https://z-p3-video.fadd2-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOdyk3UwjwzUQBATyrVlw6vGVlHiV7u-2ScFh7ADlrTuGKh1NBspoFDzT0ljW3nyzy2r-FUVEF-yZ5H2eRc68jDIEg9CJcn8Ho.mp4?strext=1&_nc_cat=102&_nc_oc=AdqxLrcxGERYPDOPeTPlmnavjjUzVXj5JGB_XBMngo65m4m4-evWIybUe48JGvDV53s&_nc_sid=8bf8fe&_nc_ht=z-p3-video.fadd2-1.fna.fbcdn.net&_nc_ohc=2jl4UmslBKIQ7kNvwEPkH7A&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6OTk1MjEyNDM5NjY5OTY5LCJhc3NldF9hZ2VfZGF5cyI6MTU2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMkFSwnuhJ1eNolZc1e2YXG4k6U2Pyfk4TPzlqulA42Yw&oe=6ADBD528&bitrate=614243&tag=av1_compressed_source"
+   },
+   "video_thumbnail": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t15.5256-10/700092069_27073057908990523_1687186419163572878_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=MHWjJ_-Zw4AQ7kNvwET3jyZ&_nc_oc=AdpFqavw_pmZv4V7tixMoFAF56mXCm3tkfKXnWxhnTaXtGaTnsi_So1pj--uQu5_XsY&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQPhEctB5mW1G0YedOj8bfoO4wSmdU-8_9ma-rPlGbbDZA&oe=6ADBC266",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122102569257313870",
+   "shares_id": "122102569257313870",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1597018645117890",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2152666331960857/",
+   "message": "#360 - Last summer, V7 Pink Lemonade took over everyone’s feed. This summer, V7 is back with another summer-edition flavor that’s already sparking curiosity.\n\nInspired by the nostalgic taste so many grew up with, the new V7 Cream Soda brings a favorite into their V7 range following the reveal of their refreshed identity. Its the kind of flavor that instantly feels familiar while giving Gen Z a new reason to join the conversation.\n\nLooks like this could be the next drink you’ll be seeing all over your feed this summer.\n\n#V7 #CreamSoda #SummerEdition",
+   "message_rich": "#360 - Last summer, V7 Pink Lemonade took over everyone’s feed. This summer, V7 is back with another summer-edition flavor that’s already sparking curiosity.\n\nInspired by the nostalgic taste so many grew up with, the new V7 Cream Soda brings a favorite into their V7 range following the reveal of their refreshed identity. Its the kind of flavor that instantly feels familiar while giving Gen Z a new reason to join the conversation.\n\nLooks like this could be the next drink you’ll be seeing all over your feed this summer.\n\n#V7 #CreamSoda #SummerEdition",
+   "timestamp": 1786213268,
+   "comments_count": 0,
+   "reactions_count": 2,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100044293096770",
+    "name": "Cairo 360",
+    "url": "https://www.facebook.com/cairo360",
+    "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/274921363_5062311443807259_7581086536073810774_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=-S762kw2LZ8Q7kNvwHUZu9T&_nc_oc=AdqxBX5Al2yVfbiSnhajFWgmQpDXWTd8Vw1ksvS8Cp3mTANgiszv63HYbjk_SE4YENQ&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQNRW1ESKqyhwmNwe6N0N7sqz_mqMqsfgo4DuJM0KfvfDw&oe=6ADBD49F",
+    "delegate_page_id": "144470402258079"
+   },
+   "authors": [
+    {
+     "id": "100044293096770",
+     "name": "Cairo 360",
+     "url": "https://www.facebook.com/cairo360",
+     "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/274921363_5062311443807259_7581086536073810774_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=-S762kw2LZ8Q7kNvwHUZu9T&_nc_oc=AdqxBX5Al2yVfbiSnhajFWgmQpDXWTd8Vw1ksvS8Cp3mTANgiszv63HYbjk_SE4YENQ&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQNRW1ESKqyhwmNwe6N0N7sqz_mqMqsfgo4DuJM0KfvfDw&oe=6ADBD49F",
+     "delegate_page_id": "144470402258079"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2152666331960857/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://z-p3-video.fadd2-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQMr7wxD4guJgoHRg5AP97DSbORP3Iss2NP_GAiR6C9Xr31pT0zkJbc2l2P1TJcEPIM9zsHaJDt3JKb5V3lB8EC_6CwHygc-ZEYxsnW3UA.mp4?_nc_cat=111&_nc_oc=Adr_u-ONjWf9ieN93WXCWwkmx5f4FmnBBTVctvbZQHgwOPPCHLpBbnKHSDyPj82PZ4w&_nc_sid=8bf8fe&_nc_ht=z-p3-video.fadd2-1.fna.fbcdn.net&_nc_ohc=UTe5wOgFSAQQ7kNvwE-wHu9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxMDE0MDcyNzg4Mjc5ODE4LCJhc3NldF9hZ2VfZGF5cyI6NzEsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjoyNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMIedr4Z86CJ8Wy4sD4eRKdYsoNhSb4F1sP2Zuj_KWdtQ&oe=6ADBD9C7&bitrate=263468&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://z-p3-video.fadd1-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQO0V-48y2JcSqar7Utf7X42i03KFV1Gq2WbBxBDKmoHDxytns8LZy1E8aUajywN1smlNbslOlc4yErU_TxOghtXmleQJQMgB6I9cMqRkA.mp4?_nc_cat=101&_nc_oc=Adp8NNi_rzuPSfXSSwnxLW1E-6x7KmnKlg1letxHBX_3KYzoHdxD5_5sDFJ7B8L4Mqc&_nc_sid=8bf8fe&_nc_ht=z-p3-video.fadd1-1.fna.fbcdn.net&_nc_ohc=1y5KOnioXL0Q7kNvwHQTnmo&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMDE0MDcyNzg4Mjc5ODE4LCJhc3NldF9hZ2VfZGF5cyI6NzEsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjoyNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQNwUenchgAhAcZnLd7f290s4BYD7et3_OGkqWu_UuHfLw&oe=6ADBBD95&bitrate=992381&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://z-p3-scontent.fadd1-1.fna.fbcdn.net/v/t51.82787-10/767640622_18615707584022400_7060079358165920126_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=MYVifKs_QnIQ7kNvwFaRDnV&_nc_oc=AdrhLLzDl08bdXRfXbnkF2ZMzEMCT_xDc8AtqaeWc8pc4cyRiUcnp0lmimPEOHFTKUU&_nc_zt=23&_nc_ht=z-p3-scontent.fadd1-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQOJXSlIAnXzGe3F6u-yuiYacAbwMgt_D65CqA7Nd_NEyw&oe=6ADBC31D",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1597018645117890",
+   "shares_id": "1597018645117890",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1665280375600039",
+   "type": "post",
+   "url": "https://www.facebook.com/CuchifuTienda/posts/pfbid02nduZTC8DnYMuCjTpTBvB4Ki5G2J6HovqRVJEtr1udTxgA2QsNzuwCAeFTf4QPiDUl",
+   "message": "¿Buscas un proyecto dulce, frutal y repleto de la calidez más irresistible? 🫐🍌🥣 Crea a esta hermosa Niñita del Bowl de Açaí y Arándanos (Açaí Bowl Girl with Blueberries & Bananas) luciendo su gorrito acanalado en espiral en tono morado/açaí con detalle de arándanos y hojas en el lateral, melena corta con flequillo morado, vestido de gala con delantal bordado de frutas, zapatitos morados con calcetas dobles, sosteniendo un tazón lleno de crema de açaí, rodajas de plátano y frutos rojos, y enamórate de cada detalle hecho a mano.\n\nPATRÓN PROFESIONAL NIÑITA DEL BOWL DE AÇAÍ AMIGURUMI / AÇAÍ BOWL GIRL PATTERN\n\nDetalles del proyecto:\n\nTamaño final: 22–24 cm de alto aprox.\n\nNivel: Intermedio – Avanzado\n\nMateriales principales:\n\nHilo de algodón Sport/DK (Tono piel clara/sonrojada, Morado intenso/Açaí para el gorro, melena y vestido, Blanco marfil/crema para el delantal, bordes y calcetas, Azul arándano/mora y Verde hoja para los detalles de frutas, Amarillo crema para las rodajas de plátano, Marrón/Café para el cuenco de mimbre)\n\nGanchillos de 2.5 mm y 2.0 mm\n\nOjos de seguridad negros de 10 mm\n\nRelleno sintético (poliéster), aguja lanera y tijeras\n\nRubor rosado acentuado para las mejillas y pecas en marrón claro\n\nABREVIATURAS (ES):\nAM = Anillo Mágico | pb = Punto Bajo | aum = Aumento | dism = Disminución\ncad = Cadena | pr = Punto Raso | mpa = Medio Punto Alto | pa = Punto Alto\nBLO = Hebra Trasera | FLO = Hebra Delantera | [ ] = Puntos totales\n\nPASO A PASO COMPLETO:\n1. ZAPATITOS MORADOS, CALCETAS Y VESTIDO DE AÇAÍ (Ganchillo 2.5 mm)\nZapatitos con Arándanos y Piernas (Haz 2):\n\nEn Morado Intenso: V1: 6 pb en AM [6] -> V2: 6 aum [12] -> V3–V5: 12 pb -> V6: 3 pb, 3 dism, 3 pb [9] (zapatos redondeados con arándano y hojita bordada en la punta).\n\nCambiar a Blanco Crema (Calcetas dobladas): En BLO V7–V11: 9 pb [9] con borde festoneado.\n\nCambiar a Piel Clara: En BLO V12–V20: 9 pb [9]. Rellenar firme y unir piernas con 3 cad.\n\nTorso, Vestido Morado y Delantal Bordado:\n\nVestido: V21–V28: 24 pb en Morado Intenso con manguitas abullonadas en FLO.\n\nDelantal Festoneado (Blanco Crema): Enganchar Blanco Crema en FLO de la cintura:\n\nTejer delantal acanalado en FLO con dobladillo en conchas festoneadas (1 pr, 3 mpa en un pto, 1 pr). Bordar ramilletes de arándanos morados con hojitas verdes intercaladas por todo el delantal.\n\nBrazos y Manos (Haz 2):\n\nEn Piel Clara (Manitas): AM 6 pb -> V2–V4: 6 pb -> V5–V14: 8 pb con puños abullonados en Morado. Coser ambas manos sosteniendo el bowl de açaí contra el pecho.\n\n--\n\n2. CABEZA, FLEQUILLO MORADO Y GORRO EN ESPIRAL (Ganchillo 2.5 mm)\nCabeza (Color Piel Clara):\n\nV1: 6 pb en AM [6] -> V2: 6 aum [12] -> V3: (1 pb, 1 aum) x6 [18] -> V4: (2 pb, 1 aum) x6 [24] -> V5: (3 pb, 1 aum) x6 [30] -> V6: (4 pb, 1 aum) x6 [36] -> V7: (5 pb, 1 aum) x6 [42].\n\nV8–V15: 42 pb rectas (8 vueltas) [42]. Colocar ojos de 10 mm entre V10 y V11 a 7 ptos de distancia. Bordar pestañas largas, cejas finas, pecas marrón claro y sonrojado acentuado en las mejillas. Rellenar y cerrar.\n\nMelena Corta y Gorro en Espiral:\n\nCabello Morado: Casquete base en Morado Intenso con melena recta tipo \"bob\" y flequillo tupido al frente.\n\nGorro de Açaí en Espiral: En Morado Intenso tejer gorro alto en espiral en BLO formando la cima de remolino (AM 6 pb -> aumentos progresivos hasta 48 pb -> V9–V18: 48 pb acanaladas). Tejer dobladillo crema en FLO y coser ramillete de 3 arándanos con hojas verdes en un costado.\n\n--\n\n3. TAZÓN DE AÇAÍ CON FRUTAS (Ganchillo 2.0 mm)\nCuenco de Mimbre (Marrón/Café):\n\nAM 6 pb -> 12 pb -> 18 pb -> 24 pb -> En BLO V5–V10: 24 pb acanalados formando el bowl.\n\nCrema de Açaí, Plátanos y Frutos Rojos:\n\nLlenar el bowl con crema en Morado Intenso en relieve rematada en espiral. Tejer 6 rodajas de plátano en Amarillo Crema con centro bordado, arándanos azules y frambuesas/moras rojas. Acomodar bordeando la crema.\n\nEnsamblaje Final:\n\nFijar la cabeza de la niñita al torso del vestido morado.\n\nColocar la peluca morada y el gorro en espiral de açaí sobre su cabeza.\n\nPosicionar el tazón de açaí lleno de frutas entre sus manos contra su vestido.\n\n⭐ ⭐ ⭐ ⭐ ⭐\n\nLooking for a sweet, fruity, irresistible project filled with cozy charm? 🫐🍌🥣 Craft this stunning Açaí Bowl Girl with Blueberries & Bananas wearing a spiral swirl hat in purple/açaí tone with blueberry and leaf details on the side, short purple bob hair with bangs, a gown with an embroidered fruit apron, purple shoes with double folded socks, holding a bowl filled with açaí cream, banana slices, and berries, and fall in love with every handmade detail!\n\nPROFESSIONAL PATTERN: AÇAÍ BOWL GIRL AMIGURUMI / AÇAÍ BOWL GIRL PATTERN\n\nProject Details:\n\nFinal Size: Approx. 22–24 cm tall\n\nSkill Level: Intermediate – Advanced\n\nKey Materials:\n\nSport/DK Cotton yarn (Light Rosy Peach skin tone, Deep Purple/Açaí for hat, bob hair, and gown, Off-White/Cream for apron, trims, and socks, Blueberry Blue and Leaf Green for fruit details, Cream Yellow for banana slices, Brown/Coffee for wicker bowl)\n\n2.5 mm and 2.0 mm crochet hooks\n\n10 mm black safety eyes\n\nPolyester stuffing, tapestry needle, and scissors\n\nPronounced pink blush for cheeks and light brown freckles\n\nABBREVIATIONS (US Terms):\nMR = Magic Ring | sc = Single Crochet | inc = Increase | dec = Decrease\nch = Chain | sl st = Slip Stitch | hdc = Half Double Crochet | dc = Double Crochet\nBLO = Back Loops Only | FLO = Front Loops Only | [ ] = Total stitches\n\nFULL STEP-BY-STEP PATTERN:\n1. PURPLE SHOES, SOCKS & AÇAÍ DRESS (2.5 mm Hook)\nBlueberry Shoes & Legs (Make 2):\n\nIn Deep Purple: R1: 6 sc in MR [6] -> R2: 6 inc [12] -> R3–R5: 12 sc -> R6: 3 sc, 3 dec, 3 sc [9] (rounded shoes with embroidered blueberry and leaf on tip).\n\nSwitch to Off-White (Folded socks): In BLO R7–R11: 9 sc [9] with scalloped edge.\n\nSwitch to Light Peach: In BLO R12–R20: 9 sc [9]. Stuff firmly and join legs with ch 3.\n\nTorso, Purple Dress & Embroidered Apron:\n\nDress: R21–R28: 24 sc in Deep Purple with puffed sleeves in FLO.\n\nScalloped Apron (Off-White): Attach Off-White in FLO at waist:\n\nWork ribbed apron in FLO with scalloped shell hem (1 sl st, 3 hdc in same st, 1 sl st). Embroider purple blueberry clusters with green leaves scattered across apron.\n\nArms & Hands (Make 2):\n\nIn Light Peach (Hands): MR 6 sc -> R2–R4: 6 sc -> R5–R14: 8 sc with purple puffed cuffs. Sew both hands holding açaí bowl against chest.\n\n--\n\n2. HEAD, PURPLE BANGS & SPIRAL HAT (2.5 mm Hook)\nHead (Light Peach Skin):\n\nR1: 6 sc in MR [6] -> R2: 6 inc [12] -> R3: (1 sc, 1 inc) x6 [18] -> R4: (2 sc, 1 inc) x6 [24] -> R5: (3 sc, 1 inc) x6 [30] -> R6: (4 sc, 1 inc) x6 [36] -> R7: (5 sc, 1 inc) x6 [42].\n\nR8–R15: 42 sc straight (8 rounds) [42]. Place 10 mm eyes between R10 and R11, 7 sts apart. Embroider long lashes, fine brows, light brown freckles, and pronounced rosy blush on cheeks. Stuff and close.\n\nShort Bob Hair & Spiral Swirl Hat:\n\nPurple Hair: Base wig cap in Deep Purple with straight bob hair and full front bangs.\n\nAçaí Swirl Hat: In Deep Purple work tall spiral hat in BLO forming swirl peak (MR 6 sc -> progressive increases to 48 sc -> R9–R18: 48 ribbed sc). Work cream brim in FLO and sew cluster of 3 blueberries with green leaves on one side.\n\n--\n\n3. AÇAÍ BOWL WITH FRUIT (2.0 mm Hook)\nWicker Bowl (Brown/Coffee):\n\nMR 6 sc -> 12 sc -> 18 sc -> 24 sc -> In BLO R5–R10: 24 ribbed sc forming bowl.\n\nAçaí Cream, Bananas & Berries:\n\nFill bowl with Deep Purple cream topped in swirl. Work 6 banana slices in Cream Yellow with embroidered centers, blueberry spheres, and red raspberries/blackberries. Arrange surrounding cream.\n\nFinal Assembly:\n\nAttach girl's head to purple dress torso.\n\nPosition purple bob wig and spiral açaí hat on head.\n\nPlace fruit-filled açaí bowl between her hands against her dress.\n\n💬 ¡Vota con un emoji / Vote with an emoji!\n¿Qué otra dulce ilustración frutal o recolectora tejemos a continuación? / Which other sweet fruity illustration or foraging girl scene should we craft next?\n\n🫐 Açaí Bowl Girl with Blueberries & Bananas (Niñita del bowl de açaí)\n🍓 Strawberry Shortcake Girl with Cream Crown (Niñita de frutilla con corona de crema)\n🍋 Lemonade Cottagecore Girl with Citrus Basket (Niñita de las limonadas con canasta de cítricos)\n\n¡Los leo en los comentarios! / Let me know below! 👇🫐🍌🥣✨\n\n #patroncrochet #EEUU #crochet #amigurumidoll",
+   "message_rich": "¿Buscas un proyecto dulce, frutal y repleto de la calidez más irresistible? 🫐🍌🥣 Crea a esta hermosa Niñita del Bowl de Açaí y Arándanos (Açaí Bowl Girl with Blueberries & Bananas) luciendo su gorrito acanalado en espiral en tono morado/açaí con detalle de arándanos y hojas en el lateral, melena corta con flequillo morado, vestido de gala con delantal bordado de frutas, zapatitos morados con calcetas dobles, sosteniendo un tazón lleno de crema de açaí, rodajas de plátano y frutos rojos, y enamórate de cada detalle hecho a mano.\n\nPATRÓN PROFESIONAL NIÑITA DEL BOWL DE AÇAÍ AMIGURUMI / AÇAÍ BOWL GIRL PATTERN\n\nDetalles del proyecto:\n\nTamaño final: 22–24 cm de alto aprox.\n\nNivel: Intermedio – Avanzado\n\nMateriales principales:\n\nHilo de algodón Sport/DK (Tono piel clara/sonrojada, Morado intenso/Açaí para el gorro, melena y vestido, Blanco marfil/crema para el delantal, bordes y calcetas, Azul arándano/mora y Verde hoja para los detalles de frutas, Amarillo crema para las rodajas de plátano, Marrón/Café para el cuenco de mimbre)\n\nGanchillos de 2.5 mm y 2.0 mm\n\nOjos de seguridad negros de 10 mm\n\nRelleno sintético (poliéster), aguja lanera y tijeras\n\nRubor rosado acentuado para las mejillas y pecas en marrón claro\n\nABREVIATURAS (ES):\nAM = Anillo Mágico | pb = Punto Bajo | aum = Aumento | dism = Disminución\ncad = Cadena | pr = Punto Raso | mpa = Medio Punto Alto | pa = Punto Alto\nBLO = Hebra Trasera | FLO = Hebra Delantera | [ ] = Puntos totales\n\nPASO A PASO COMPLETO:\n1. ZAPATITOS MORADOS, CALCETAS Y VESTIDO DE AÇAÍ (Ganchillo 2.5 mm)\nZapatitos con Arándanos y Piernas (Haz 2):\n\nEn Morado Intenso: V1: 6 pb en AM [6] -> V2: 6 aum [12] -> V3–V5: 12 pb -> V6: 3 pb, 3 dism, 3 pb [9] (zapatos redondeados con arándano y hojita bordada en la punta).\n\nCambiar a Blanco Crema (Calcetas dobladas): En BLO V7–V11: 9 pb [9] con borde festoneado.\n\nCambiar a Piel Clara: En BLO V12–V20: 9 pb [9]. Rellenar firme y unir piernas con 3 cad.\n\nTorso, Vestido Morado y Delantal Bordado:\n\nVestido: V21–V28: 24 pb en Morado Intenso con manguitas abullonadas en FLO.\n\nDelantal Festoneado (Blanco Crema): Enganchar Blanco Crema en FLO de la cintura:\n\nTejer delantal acanalado en FLO con dobladillo en conchas festoneadas (1 pr, 3 mpa en un pto, 1 pr). Bordar ramilletes de arándanos morados con hojitas verdes intercaladas por todo el delantal.\n\nBrazos y Manos (Haz 2):\n\nEn Piel Clara (Manitas): AM 6 pb -> V2–V4: 6 pb -> V5–V14: 8 pb con puños abullonados en Morado. Coser ambas manos sosteniendo el bowl de açaí contra el pecho.\n\n--\n\n2. CABEZA, FLEQUILLO MORADO Y GORRO EN ESPIRAL (Ganchillo 2.5 mm)\nCabeza (Color Piel Clara):\n\nV1: 6 pb en AM [6] -> V2: 6 aum [12] -> V3: (1 pb, 1 aum) x6 [18] -> V4: (2 pb, 1 aum) x6 [24] -> V5: (3 pb, 1 aum) x6 [30] -> V6: (4 pb, 1 aum) x6 [36] -> V7: (5 pb, 1 aum) x6 [42].\n\nV8–V15: 42 pb rectas (8 vueltas) [42]. Colocar ojos de 10 mm entre V10 y V11 a 7 ptos de distancia. Bordar pestañas largas, cejas finas, pecas marrón claro y sonrojado acentuado en las mejillas. Rellenar y cerrar.\n\nMelena Corta y Gorro en Espiral:\n\nCabello Morado: Casquete base en Morado Intenso con melena recta tipo \"bob\" y flequillo tupido al frente.\n\nGorro de Açaí en Espiral: En Morado Intenso tejer gorro alto en espiral en BLO formando la cima de remolino (AM 6 pb -> aumentos progresivos hasta 48 pb -> V9–V18: 48 pb acanaladas). Tejer dobladillo crema en FLO y coser ramillete de 3 arándanos con hojas verdes en un costado.\n\n--\n\n3. TAZÓN DE AÇAÍ CON FRUTAS (Ganchillo 2.0 mm)\nCuenco de Mimbre (Marrón/Café):\n\nAM 6 pb -> 12 pb -> 18 pb -> 24 pb -> En BLO V5–V10: 24 pb acanalados formando el bowl.\n\nCrema de Açaí, Plátanos y Frutos Rojos:\n\nLlenar el bowl con crema en Morado Intenso en relieve rematada en espiral. Tejer 6 rodajas de plátano en Amarillo Crema con centro bordado, arándanos azules y frambuesas/moras rojas. Acomodar bordeando la crema.\n\nEnsamblaje Final:\n\nFijar la cabeza de la niñita al torso del vestido morado.\n\nColocar la peluca morada y el gorro en espiral de açaí sobre su cabeza.\n\nPosicionar el tazón de açaí lleno de frutas entre sus manos contra su vestido.\n\n⭐ ⭐ ⭐ ⭐ ⭐\n\nLooking for a sweet, fruity, irresistible project filled with cozy charm? 🫐🍌🥣 Craft this stunning Açaí Bowl Girl with Blueberries & Bananas wearing a spiral swirl hat in purple/açaí tone with blueberry and leaf details on the side, short purple bob hair with bangs, a gown with an embroidered fruit apron, purple shoes with double folded socks, holding a bowl filled with açaí cream, banana slices, and berries, and fall in love with every handmade detail!\n\nPROFESSIONAL PATTERN: AÇAÍ BOWL GIRL AMIGURUMI / AÇAÍ BOWL GIRL PATTERN\n\nProject Details:\n\nFinal Size: Approx. 22–24 cm tall\n\nSkill Level: Intermediate – Advanced\n\nKey Materials:\n\nSport/DK Cotton yarn (Light Rosy Peach skin tone, Deep Purple/Açaí for hat, bob hair, and gown, Off-White/Cream for apron, trims, and socks, Blueberry Blue and Leaf Green for fruit details, Cream Yellow for banana slices, Brown/Coffee for wicker bowl)\n\n2.5 mm and 2.0 mm crochet hooks\n\n10 mm black safety eyes\n\nPolyester stuffing, tapestry needle, and scissors\n\nPronounced pink blush for cheeks and light brown freckles\n\nABBREVIATIONS (US Terms):\nMR = Magic Ring | sc = Single Crochet | inc = Increase | dec = Decrease\nch = Chain | sl st = Slip Stitch | hdc = Half Double Crochet | dc = Double Crochet\nBLO = Back Loops Only | FLO = Front Loops Only | [ ] = Total stitches\n\nFULL STEP-BY-STEP PATTERN:\n1. PURPLE SHOES, SOCKS & AÇAÍ DRESS (2.5 mm Hook)\nBlueberry Shoes & Legs (Make 2):\n\nIn Deep Purple: R1: 6 sc in MR [6] -> R2: 6 inc [12] -> R3–R5: 12 sc -> R6: 3 sc, 3 dec, 3 sc [9] (rounded shoes with embroidered blueberry and leaf on tip).\n\nSwitch to Off-White (Folded socks): In BLO R7–R11: 9 sc [9] with scalloped edge.\n\nSwitch to Light Peach: In BLO R12–R20: 9 sc [9]. Stuff firmly and join legs with ch 3.\n\nTorso, Purple Dress & Embroidered Apron:\n\nDress: R21–R28: 24 sc in Deep Purple with puffed sleeves in FLO.\n\nScalloped Apron (Off-White): Attach Off-White in FLO at waist:\n\nWork ribbed apron in FLO with scalloped shell hem (1 sl st, 3 hdc in same st, 1 sl st). Embroider purple blueberry clusters with green leaves scattered across apron.\n\nArms & Hands (Make 2):\n\nIn Light Peach (Hands): MR 6 sc -> R2–R4: 6 sc -> R5–R14: 8 sc with purple puffed cuffs. Sew both hands holding açaí bowl against chest.\n\n--\n\n2. HEAD, PURPLE BANGS & SPIRAL HAT (2.5 mm Hook)\nHead (Light Peach Skin):\n\nR1: 6 sc in MR [6] -> R2: 6 inc [12] -> R3: (1 sc, 1 inc) x6 [18] -> R4: (2 sc, 1 inc) x6 [24] -> R5: (3 sc, 1 inc) x6 [30] -> R6: (4 sc, 1 inc) x6 [36] -> R7: (5 sc, 1 inc) x6 [42].\n\nR8–R15: 42 sc straight (8 rounds) [42]. Place 10 mm eyes between R10 and R11, 7 sts apart. Embroider long lashes, fine brows, light brown freckles, and pronounced rosy blush on cheeks. Stuff and close.\n\nShort Bob Hair & Spiral Swirl Hat:\n\nPurple Hair: Base wig cap in Deep Purple with straight bob hair and full front bangs.\n\nAçaí Swirl Hat: In Deep Purple work tall spiral hat in BLO forming swirl peak (MR 6 sc -> progressive increases to 48 sc -> R9–R18: 48 ribbed sc). Work cream brim in FLO and sew cluster of 3 blueberries with green leaves on one side.\n\n--\n\n3. AÇAÍ BOWL WITH FRUIT (2.0 mm Hook)\nWicker Bowl (Brown/Coffee):\n\nMR 6 sc -> 12 sc -> 18 sc -> 24 sc -> In BLO R5–R10: 24 ribbed sc forming bowl.\n\nAçaí Cream, Bananas & Berries:\n\nFill bowl with Deep Purple cream topped in swirl. Work 6 banana slices in Cream Yellow with embroidered centers, blueberry spheres, and red raspberries/blackberries. Arrange surrounding cream.\n\nFinal Assembly:\n\nAttach girl's head to purple dress torso.\n\nPosition purple bob wig and spiral açaí hat on head.\n\nPlace fruit-filled açaí bowl between her hands against her dress.\n\n💬 ¡Vota con un emoji / Vote with an emoji!\n¿Qué otra dulce ilustración frutal o recolectora tejemos a continuación? / Which other sweet fruity illustration or foraging girl scene should we craft next?\n\n🫐 Açaí Bowl Girl with Blueberries & Bananas (Niñita del bowl de açaí)\n🍓 Strawberry Shortcake Girl with Cream Crown (Niñita de frutilla con corona de crema)\n🍋 Lemonade Cottagecore Girl with Citrus Basket (Niñita de las limonadas con canasta de cítricos)\n\n¡Los leo en los comentarios! / Let me know below! 👇🫐🍌🥣✨\n\n #patroncrochet #EEUU #crochet #amigurumidoll",
+   "timestamp": 1788973206,
+   "comments_count": 0,
+   "reactions_count": 53,
+   "reshare_count": 6,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 41,
+    "love": 12,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063542772753",
+    "name": "Cuchifu",
+    "url": "https://www.facebook.com/CuchifuTienda",
+    "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/615482464_1449138467214232_5747570929979637334_n.jpg?stp=c0.146.1366.1366a_cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=4c0z6Si2jDsQ7kNvwF0RWS7&_nc_oc=Ado675qK3G-F5Lmz0CEHverhEFAiYouRzyhfxpEdyzQRx0aOUD1emF77Vpz-zBrPFQE&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQN9PKXsGHpZDzjWPoDMa_oYw9qls3YWXrwaRGWKhYFUVA&oe=6ADBEF28",
+    "delegate_page_id": "1491811327703158"
+   },
+   "authors": [
+    {
+     "id": "100063542772753",
+     "name": "Cuchifu",
+     "url": "https://www.facebook.com/CuchifuTienda",
+     "profile_picture_url": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-1/615482464_1449138467214232_5747570929979637334_n.jpg?stp=c0.146.1366.1366a_cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=4c0z6Si2jDsQ7kNvwF0RWS7&_nc_oc=Ado675qK3G-F5Lmz0CEHverhEFAiYouRzyhfxpEdyzQRx0aOUD1emF77Vpz-zBrPFQE&_nc_zt=24&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQN9PKXsGHpZDzjWPoDMa_oYw9qls3YWXrwaRGWKhYFUVA&oe=6ADBEF28",
+     "delegate_page_id": "1491811327703158"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/794328206_1664382125689864_1511090055698458498_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8OLAEJSxws4Q7kNvwHpyPpM&_nc_oc=Adqd0eN---xwlkQGVpOTeA3lhHpb9tt3SW1lNZOG-1sJjK6hFC2aFBQM5qT5dgXGcSk&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=R7Zs30egfDGTiWG3mTAsEQ&_nc_ss=70289&oh=00_AQPvi6wOqqQ8hSY60gF483tvNasH-jkoXc-gWXVUfy3XzQ&oe=6ADBDD00",
+    "height": 1080,
+    "width": 1080,
+    "id": "1665280352266708"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1665280375600039",
+   "shares_id": "1665280375600039",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1536709938498407",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1367017642290092/",
+   "message": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "message_rich": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "timestamp": 1787577619,
+   "comments_count": 13,
+   "reactions_count": 18,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 10,
+    "love": 7,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064782469962",
+    "name": "وكالة أبو صالح - Wakalet Abo Saleh",
+    "url": "https://www.facebook.com/people/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B5%D8%A7%D9%84%D8%AD-Wakalet-Abo-Saleh/100064782469962/",
+    "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/598889198_1314918294010907_7437168259871512680_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=NX39qPW2abgQ7kNvwEFZriX&_nc_oc=AdoKDohFD4G9o7ldmMdIZuQK58NbZIkvNfYv-ZHbGks-7qXTfDkECbW0rHV6MwaVD0Q&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQPa5L-hNBbl-JlpIzqS73Zf865XZf2DVeR9t5Xq94HyCQ&oe=6ADBDF25",
+    "delegate_page_id": "307347326365021"
+   },
+   "authors": [
+    {
+     "id": "100064782469962",
+     "name": "وكالة أبو صالح - Wakalet Abo Saleh",
+     "url": "https://www.facebook.com/people/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B5%D8%A7%D9%84%D8%AD-Wakalet-Abo-Saleh/100064782469962/",
+     "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/598889198_1314918294010907_7437168259871512680_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=NX39qPW2abgQ7kNvwEFZriX&_nc_oc=AdoKDohFD4G9o7ldmMdIZuQK58NbZIkvNfYv-ZHbGks-7qXTfDkECbW0rHV6MwaVD0Q&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQPa5L-hNBbl-JlpIzqS73Zf865XZf2DVeR9t5Xq94HyCQ&oe=6ADBDF25",
+     "delegate_page_id": "307347326365021"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1367017642290092/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fbdj6-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQN2trfdpgbUJf7-NMuewRuxAEQxhV-7nV6VQ1ipT5Yj4nD-fWI4vHjPlbblBttUa7zCT42pafrplmKjz38Usmu_n_8Bmb-NMg7b3QiYgA.mp4?_nc_cat=103&_nc_oc=AdrOilSQB8U6fLaOSfGZYMCNhz29ic0xJGnngmR3w42YDwtmVoyxHCvQo5OSMliY0QE&_nc_sid=8bf8fe&_nc_ht=video.fbdj6-1.fna.fbcdn.net&_nc_ohc=U8Gu4Dl8djoQ7kNvwHiIhsg&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTA3OTEyMTM5NzkyODcwMiwiYXNzZXRfYWdlX2RheXMiOjU1LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MzYsIndhdGNoX3RpbWVfcyI6MTUyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMRTGU-wT15rjN5tonJDQ2VNSn4lJZnPv5tfKVT23PfGQ&oe=6ADBE747&bitrate=185479&tag=sve_sd",
+    "video_hd_file": "https://video.fbdj6-1.fna.fbcdn.net/o1/v/t2/f2/m266/AQOgqq3MnU6qFI3zzdlsIRyqyXB4L5CaN8uiBQ1-Pxw-RCg20fyD5trBKCD8S1rTZbab__y06QyJYtBIo2gaWZKd9VaSerEjgwE.mp4?strext=1&_nc_cat=100&_nc_oc=AdorDrV4Yno4jtzgylrJeU5jd9QJO2ILsWDpLjnBmMbN_FpMdqZ1F0VqeCs8XZLrWTo&_nc_sid=8bf8fe&_nc_ht=video.fbdj6-1.fna.fbcdn.net&_nc_ohc=V1FSgTawNZsQ7kNvwErj-wQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjEwNzkxMjEzOTc5Mjg3MDIsImFzc2V0X2FnZV9kYXlzIjo1NSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjM2LCJ3YXRjaF90aW1lX3MiOjE1MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPcuB-FvIzne9wUw_Alasw0Ep970Rg072i1jo5CayqJxQ&oe=6AD7E40A&bitrate=471774&tag=av1_compressed_source"
+   },
+   "video_thumbnail": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t15.5256-10/785721917_1283794357055220_8264780805491466510_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=d2b52d&_nc_ohc=HG5dW0E803UQ7kNvwGAG7cB&_nc_oc=AdpiAYkTbXa8mF6PvOow-cKFogGINdP_QBtVlZHk7-BBPzHxHfvDEqEsKBLMxCARo9U&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQMsMkrU6BQhDIaQWjQSlEWpUIb0jm6WnVgSdculYbFhaw&oe=6ADBD065",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1536709938498407",
+   "shares_id": "1536709938498407",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122137668825148727",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2478159575926818/",
+   "message": "💗 ✨\n\nDécouvrez la V7 Pink Lemonade 🍓🍋, une boisson pétillante et fruitée, enrichie en vitamines !\n\nUne nouveauté originale à découvrir bien fraîche 🧊 : idéale pour celles et ceux qui aiment tester de nouvelles boissons et de nouvelles saveurs. 😍\n\n👉 Disponible dès maintenant chez Presles City Market !\n\n#PreslesCityMarket #V7Drinks #PinkLemonade #Nouveauté #Boisson #Presles #ValDOise #Epicerie #Nouveautés",
+   "message_rich": "💗 ✨\n\nDécouvrez la V7 Pink Lemonade 🍓🍋, une boisson pétillante et fruitée, enrichie en vitamines !\n\nUne nouveauté originale à découvrir bien fraîche 🧊 : idéale pour celles et ceux qui aiment tester de nouvelles boissons et de nouvelles saveurs. 😍\n\n👉 Disponible dès maintenant chez Presles City Market !\n\n#PreslesCityMarket #V7Drinks #PinkLemonade #Nouveauté #Boisson #Presles #ValDOise #Epicerie #Nouveautés",
+   "timestamp": 1791045476,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61584461831946",
+    "name": "Presles City Market",
+    "url": "https://www.facebook.com/people/Presles-City-Market/61584461831946/",
+    "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/595851039_3289184597911638_250999272406216282_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=fgSTJVqNJ_kQ7kNvwEAWbxv&_nc_oc=Adoetdp_e3eN86W_gL-4WnFWyzU0J6Fd42ZVwW9SPj3IYYJ47OvHPqogw91S59P6KcU&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQM260vGMQXDrp_AZxkrDvKtNHQr9rkcVii0nqY_PgrVxw&oe=6ADBC60D",
+    "delegate_page_id": "926579463864596"
+   },
+   "authors": [
+    {
+     "id": "61584461831946",
+     "name": "Presles City Market",
+     "url": "https://www.facebook.com/people/Presles-City-Market/61584461831946/",
+     "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/595851039_3289184597911638_250999272406216282_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=fgSTJVqNJ_kQ7kNvwEAWbxv&_nc_oc=Adoetdp_e3eN86W_gL-4WnFWyzU0J6Fd42ZVwW9SPj3IYYJ47OvHPqogw91S59P6KcU&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQM260vGMQXDrp_AZxkrDvKtNHQr9rkcVii0nqY_PgrVxw&oe=6ADBC60D",
+     "delegate_page_id": "926579463864596"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2478159575926818/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fbdj6-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNoLXTcLzhUfDA9D5WqAjk2xOCfB6MOn8XIVBLK4jphIPDmJJH9SWHjezVTVlIoVjnMkzF61VosTiruNKe8glYkkmCWYpEwPRn5aeaP0g.mp4?_nc_cat=104&_nc_oc=AdokZDmhQlATLMyAXBI4EKrj6-msMaYoYkSAa7_biD_IzkqKlpgOLA95UJEAVyW95NM&_nc_sid=8bf8fe&_nc_ht=video.fbdj6-1.fna.fbcdn.net&_nc_ohc=3bzRS1t07jkQ7kNvwE3rcTZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NDA0MDAzNzMwNjI5MDMyOCwiYXNzZXRfYWdlX2RheXMiOjE1LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTIsIndhdGNoX3RpbWVfcyI6MTEzMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMUWg7quQO53MURkFY2Yu1ykqAMpGSRp282n7o2dAncNg&oe=6ADBBC5E&bitrate=160620&tag=sve_sd",
+    "video_hd_file": "https://video.fbdj6-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOwqdFotRy6599IZVf9GUUUafLFCQHC7pspdaSDYREXeCOB-jLmsxvtV7t3z_4dVaiXHy7VqbRZDCkQoFYAdD6L0PSSe4TJ1XCIHNfeqmblxQ.mp4?_nc_cat=108&_nc_oc=AdoMt1jQO6vwbM2K_JGF74LN5uMJqx2X9OVLz_afsgNYv5o_E3xAnB_tmOMhL8wt5MA&_nc_sid=5e9851&_nc_ht=video.fbdj6-1.fna.fbcdn.net&_nc_ohc=FXNLjO80zBUQ7kNvwHcZh3Y&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjQwNDAwMzczMDYyOTAzMjgsImFzc2V0X2FnZV9kYXlzIjoxNSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJ3YXRjaF90aW1lX3MiOjExMzAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=538b99416c1e625c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FNTg2OTQ3Njg2QTY0MzE5OTQzRDMzRUE0MkE5MDdGMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0NEMjMxREI0NUMxQTQ1RUI5RkI5QThDODBCRENDODY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACawwqrIj5mtDhUCKAJDMywXQCgAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPnAUuCItzx8RbWNtoqaZcsOtwOBDGrqgwUI7ciMspSiw&oe=6ADBDFFC&bitrate=438189&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t15.5256-10/836503002_1448194394074459_1293744992655068571_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=gpeUAhiYW9UQ7kNvwEc6Id4&_nc_oc=AdqFuQVcGWfBaHbWRl8ivkNoL0wuTUH_kNLJMNk-JRIjhLlf3N_FTt79rReW6r3uOy0&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQNrYO5GpA68NKxSRJaG2gd1D38m0SADjXDk5TQ4dqrG9A&oe=6ADBD446",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122137668825148727",
+   "shares_id": "122137668825148727",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122228091800356919",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0RRDg6Yv7RLz64J2tkAeUphKPqhFHf7heYCgLPXL7rSAG1XfWj7RTVGTwNy5vEFfdl&id=61560707596161",
+   "message": "Good food, good company, and a table full of smiles.\nNothing beats an outdoor kain with this team. Thank you for the laughter and the busog!Rice is life, but this circle is lifer.\nKwentuhan, tawanan, at unli kanin sa gitna ng nature. Salamat sa masayang salo-salo!From work to kainan — still complete! Small breaks, big memories with this team. Till the next food trip!\n\n#SaloSalo #KainanTime #FoodTrip #OutdoorDining #GoodFoodGoodCompany #TaraKain #RiceIsLife #BarkadaGoals #WorkFam #TeamLunch #PinoySaloSalo #busoglusog#meta",
+   "message_rich": "Good food, good company, and a table full of smiles.\nNothing beats an outdoor kain with this team. Thank you for the laughter and the busog!Rice is life, but this circle is lifer.\nKwentuhan, tawanan, at unli kanin sa gitna ng nature. Salamat sa masayang salo-salo!From work to kainan — still complete! Small breaks, big memories with this team. Till the next food trip!\n\n#SaloSalo #KainanTime #FoodTrip #OutdoorDining #GoodFoodGoodCompany #TaraKain #RiceIsLife #BarkadaGoals #WorkFam #TeamLunch #PinoySaloSalo #busoglusog#meta",
+   "timestamp": 1790933101,
+   "comments_count": 56,
+   "reactions_count": 177,
+   "reshare_count": 7,
+   "reactions": {
+    "angry": 0,
+    "care": 2,
+    "haha": 0,
+    "like": 158,
+    "love": 17,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61560707596161",
+    "name": "Yeng Ma",
+    "url": "https://www.facebook.com/people/Yeng-Ma/61560707596161/",
+    "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/756909129_122221292318356919_7397034339513820892_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=RPI65hgi-M0Q7kNvwE4H9rE&_nc_oc=AdrkTr1q8jbCOhl5e68eVU3yiqZBLroRbc8zAfYOzk0LDTZxDGXvBM-O-xARSsQ2uv0&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQNzM0fkGspVjSXCchOX7u3YaGc0SuPsoDv5Hr2qTYJh1Q&oe=6ADBCB2E",
+    "delegate_page_id": "1244459648748769"
+   },
+   "authors": [
+    {
+     "id": "61560707596161",
+     "name": "Yeng Ma",
+     "url": "https://www.facebook.com/people/Yeng-Ma/61560707596161/",
+     "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/756909129_122221292318356919_7397034339513820892_n.png?stp=cp0_dst-png_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=RPI65hgi-M0Q7kNvwE4H9rE&_nc_oc=AdrkTr1q8jbCOhl5e68eVU3yiqZBLroRbc8zAfYOzk0LDTZxDGXvBM-O-xARSsQ2uv0&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQNzM0fkGspVjSXCchOX7u3YaGc0SuPsoDv5Hr2qTYJh1Q&oe=6ADBCB2E",
+     "delegate_page_id": "1244459648748769"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/830342969_122228091194356919_4859847339077392472_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oAytpBM2tHgQ7kNvwGBWjej&_nc_oc=AdohN5T-bypBIcXKXZ16QYAzYwu-mh7Zkt4otRk-WQgjyPlEQbj_jH84Ap1t3Cy5Eh8&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQMN4c7QxcyGfzfXHstitOPQDCl3BkG4j71BaCd5KgJhig&oe=6ADBE5E3",
+     "url": "https://www.facebook.com/photo.php?fbid=122228091188356919&set=a.122222052896356919&type=3",
+     "id": "122228091188356919"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/833039340_122228091284356919_4059961071897676618_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BrHQObYuFYYQ7kNvwF0QFUU&_nc_oc=AdoSWYyVvnGvmUSAz_VZ9aWwSGQuoRpMRXujbz1rehziXRPo7U0_p-bCc6ow4A5BorU&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQOmoAM81pY6ieP_rF1NdE7ooGcGBBvU-VKoNX35Tn6uAQ&oe=6ADBCF33",
+     "url": "https://www.facebook.com/photo.php?fbid=122228091278356919&set=a.122222052896356919&type=3",
+     "id": "122228091278356919"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/831325029_122228091458356919_2634565217385867369_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=p9wdgxGV4g0Q7kNvwGCnWT9&_nc_oc=AdrSCsSnUX3L1pnT3d79K27V3Yszbp94LoPWp3q8yt8HBRSkamjlLX3KP2y-dGlByJw&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQP0Kko2YG6XZz-F8Hn7LBO-8POW2X4-JVefx3PuSyoU8Q&oe=6ADBECFB",
+     "url": "https://www.facebook.com/photo.php?fbid=122228091452356919&set=a.122222052896356919&type=3",
+     "id": "122228091452356919"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/830872634_122228095982356919_5178681383719214885_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ttZS8sJksncQ7kNvwH4N6Fb&_nc_oc=AdqTwMS8hI7qQH50fE-jR4CJvESLGN0RMqqRykZ1oU2RkqS1zWUlyfx67EHOUvpz1hg&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQN5sa3sMUOVxZzFLfOtYynyf_mONU7CkNrYqFOWRQ1F5Q&oe=6ADBD412",
+     "url": "https://www.facebook.com/photo.php?fbid=122228095976356919&set=a.122222052896356919&type=3",
+     "id": "122228095976356919"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122228091800356919",
+   "shares_id": "122228091800356919",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "28788230424143259",
+   "type": "post",
+   "url": "https://www.facebook.com/sj.sonday/posts/pfbid02HRBf6C9ZM9qvr8EALy2bHaJU3aQQACBQeNw1y6Aa7MCLVYNzHGVubc9qjsikpXKDl",
+   "message": "THE BEST FAMILY MOMENTS AREN’T PERFECT—THEY’RE LOUD, LAUGHING, AND FULL OF LOVE!” ❤️🍽️\n\nGood food, endless kwentuhan, laughter, and happy memories with the people who matter most. Sometimes, all we need is a simple meal together to remind us how blessed we are to have family by our side. 🏡❤️\n\nBecause at the end of the day, it’s not just about the food on the table, but the love, stories, and happiness we share around it. 🙏💕\n\nWhat makes your family gatherings special—the food, the laughter, or the endless kwentuhan? 😍👇\n\n#FamilyBonding #FamilyIsEverything #SimpleJoys #MakingMemories #BlessedAndGrateful",
+   "message_rich": "THE BEST FAMILY MOMENTS AREN’T PERFECT—THEY’RE LOUD, LAUGHING, AND FULL OF LOVE!” ❤️🍽️\n\nGood food, endless kwentuhan, laughter, and happy memories with the people who matter most. Sometimes, all we need is a simple meal together to remind us how blessed we are to have family by our side. 🏡❤️\n\nBecause at the end of the day, it’s not just about the food on the table, but the love, stories, and happiness we share around it. 🙏💕\n\nWhat makes your family gatherings special—the food, the laughter, or the endless kwentuhan? 😍👇\n\n#FamilyBonding #FamilyIsEverything #SimpleJoys #MakingMemories #BlessedAndGrateful",
+   "timestamp": 1792188129,
+   "comments_count": 9,
+   "reactions_count": 83,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 1,
+    "like": 77,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100001490528076",
+    "name": "Kuya Sheen",
+    "url": "https://www.facebook.com/sj.sonday",
+    "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/763944338_27818888761077435_6629616723794752513_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=MqtjaraeDlMQ7kNvwFRLhYu&_nc_oc=AdoDdLCGBJV3I71epTOo0lmwY8ZK1GndAr1sdQ9wvVB5Kx5mvXs-2OjQmsqzSWW7iM8&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQOQH1iYreSaozv30lcZIduc0mN-MuKD01C4jDA1EKqv-g&oe=6ADBD3C3",
+    "delegate_page_id": "1074119845778581"
+   },
+   "authors": [
+    {
+     "id": "100001490528076",
+     "name": "Kuya Sheen",
+     "url": "https://www.facebook.com/sj.sonday",
+     "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/763944338_27818888761077435_6629616723794752513_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=1d2534&_nc_ohc=MqtjaraeDlMQ7kNvwFRLhYu&_nc_oc=AdoDdLCGBJV3I71epTOo0lmwY8ZK1GndAr1sdQ9wvVB5Kx5mvXs-2OjQmsqzSWW7iM8&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQOQH1iYreSaozv30lcZIduc0mN-MuKD01C4jDA1EKqv-g&oe=6ADBD3C3",
+     "delegate_page_id": "1074119845778581"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/854711374_28788229550810013_5762860145327759078_n.jpg?stp=dst-jpegr_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FEh7upgBHpcQ7kNvwHG5aCV&_nc_oc=Ado-vtsVgL1xHTjxljhZMNlnryK8gvWK-WFGf1cSsZxCZFd1D6WV33kOsJPFJYU0yoI&_nc_zt=23&se=-1&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQOAz7Q85sgYU-KUnXvM_K4j_274kVkwc6NtyY6y2dcxxA&oe=6ADBB91E",
+     "url": "https://www.facebook.com/photo.php?fbid=28788229480810020&set=a.1025706884155653&type=3",
+     "id": "28788229480810020"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/854045024_28788230094143292_5763642472683840976_n.jpg?stp=dst-jpegr_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2Gve9Vfk0AwQ7kNvwGExICl&_nc_oc=Adp7p_h43FCP0eAngNdgf2VrgsO5rLin8Y6H9TNPUzHi66-q1QB_duAY5Nl9rorz5hg&_nc_zt=23&se=-1&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQMqHoTH0baxBSPkZ_xB1dun2lSZlseoaOJDT2hZmv0oJg&oe=6ADBD88D",
+     "url": "https://www.facebook.com/photo.php?fbid=28788230067476628&set=a.1025706884155653&type=3",
+     "id": "28788230067476628"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28788230424143259",
+   "shares_id": "28788230424143259",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "1646469900310598",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1337903197833938/posts/1646469900310598/",
+   "message": "omg soooooo good 🤤✨❤️\nHow to order -👇🏻\n \"A Venti Lemonade Add light peach juice 1 Pump of Classic syrup 4 Pumps of Raspberry syrup Strawberry base on top\"",
+   "message_rich": "omg soooooo good 🤤✨❤️\nHow to order -👇🏻\n \"A Venti Lemonade Add light peach juice 1 Pump of Classic syrup 4 Pumps of Raspberry syrup Strawberry base on top\"",
+   "timestamp": 1791764729,
+   "comments_count": 0,
+   "reactions_count": 14,
+   "reshare_count": 10,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 13,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100003576656096",
+    "name": "Ika Astriyanah R",
+    "url": "https://www.facebook.com/iykha.syifaajjha",
+    "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/583916152_24779278998441312_3545905476081083346_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=RkN1o7ZQIYkQ7kNvwHTxuHI&_nc_oc=AdrEoz7_SLWTMmJMHMBjQ1nMZs4FS8qjD83nOY-Tb3ohucm8hCGv0OHCA8S5cpvn1J4&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQM3VYiTx-XzS_kNwz76UsJKMhizG3GrEkj84DFr8GVW-Q&oe=6ADBDFF8",
+    "delegate_page_id": "444334592093184"
+   },
+   "authors": [
+    {
+     "id": "100003576656096",
+     "name": "Ika Astriyanah R",
+     "url": "https://www.facebook.com/iykha.syifaajjha",
+     "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/583916152_24779278998441312_3545905476081083346_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=RkN1o7ZQIYkQ7kNvwHTxuHI&_nc_oc=AdrEoz7_SLWTMmJMHMBjQ1nMZs4FS8qjD83nOY-Tb3ohucm8hCGv0OHCA8S5cpvn1J4&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQM3VYiTx-XzS_kNwz76UsJKMhizG3GrEkj84DFr8GVW-Q&oe=6ADBDFF8",
+     "delegate_page_id": "444334592093184"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/844296517_28287568594278984_2624014492222442358_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=R8TfWYsRQgkQ7kNvwE7ABdr&_nc_oc=Ado7AnsGqJ-p_BK8mYHGqwgfeQ_B_aeeWgoC-qzmKUkWNzQiYGqBw602NnUtgKv6VKI&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQMKTNXmtBJHNIYVwcDX_6Nnv018L92ctjXLRbykMzbdjg&oe=6ADBDD11",
+    "height": 1672,
+    "width": 941,
+    "id": "28287581370944373"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1646469900310598",
+   "shares_id": "1646469900310598",
+   "associated_group_id": "1337903197833938",
+   "associated_group": {
+    "group_id": "1337903197833938",
+    "name": "Starbucks Recipes",
+    "url": "https://www.facebook.com/groups/1337903197833938/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1498096239037646",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1387077520139519/posts/1498096239037646/",
+   "message": "🍋💗 Pink Paradise Lemonade 💗🍋\nA refreshing burst of cherry + raspberry + watermelon in every sip! 🍒🍓🍉✨\nSweet, fruity, and seriously refreshing—your perfect pink lemonade treat! 💕🥤\n\n#7Brew #PinkParadise #Lemonade #DrinkRecipe #CherryRaspberryWatermelon #SummerSips",
+   "message_rich": "🍋💗 Pink Paradise Lemonade 💗🍋\nA refreshing burst of cherry + raspberry + watermelon in every sip! 🍒🍓🍉✨\nSweet, fruity, and seriously refreshing—your perfect pink lemonade treat! 💕🥤\n\n#7Brew #PinkParadise #Lemonade #DrinkRecipe #CherryRaspberryWatermelon #SummerSips",
+   "timestamp": 1791459651,
+   "comments_count": 0,
+   "reactions_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 1,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0iQJ2zcdFKMAkfwwShpKck9p1MvbSaBtcuvQQ5d4R1yT1vnKBimV9dmn4oqQzdhWMl",
+    "name": "Maisie Akhtar",
+    "url": "https://www.facebook.com/maisie.akhtar.90",
+    "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/448564419_1404201986907171_1430489567999406658_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aoJEXYWhFHcQ7kNvwFVq78r&_nc_oc=AdoeZFMkVNVowFqPAD_eUJ6ToY4X_cOvkZPThNfmOj-qneiKJkOKniGcE56wfyHf4s8&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQNZ8H5wmG318to9QX4ytYPRCJMGXwJ8n_eew3SuV1yvjg&oe=6ADBC68A",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0iQJ2zcdFKMAkfwwShpKck9p1MvbSaBtcuvQQ5d4R1yT1vnKBimV9dmn4oqQzdhWMl",
+     "name": "Maisie Akhtar",
+     "url": "https://www.facebook.com/maisie.akhtar.90",
+     "profile_picture_url": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-1/448564419_1404201986907171_1430489567999406658_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aoJEXYWhFHcQ7kNvwFVq78r&_nc_oc=AdoeZFMkVNVowFqPAD_eUJ6ToY4X_cOvkZPThNfmOj-qneiKJkOKniGcE56wfyHf4s8&_nc_zt=24&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQNZ8H5wmG318to9QX4ytYPRCJMGXwJ8n_eew3SuV1yvjg&oe=6ADBC68A",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fbdj6-1.fna.fbcdn.net/v/t39.30808-6/839287452_2007461729914524_6235867771569533281_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=uSTQcOVxUKUQ7kNvwGGKsYg&_nc_oc=AdoKNDEJBgKBWqpwWvP34M0xW_Svz_ffzmzpoVx6Vi0h73g_crBM-Ug2IsDX6gfXW1w&_nc_zt=23&_nc_ht=scontent.fbdj6-1.fna&_nc_gid=k5FUiZ8Cgr0YJc5TZM2FHg&_nc_ss=70289&oh=00_AQOtI7TzDw0hcQoyJCez0wWjc5F2ar0ggGfuFdIKT2Bk7A&oe=6ADBE9AF",
+    "height": 910,
+    "width": 736,
+    "id": "2007462236581140"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1498096239037646",
+   "shares_id": "1498096239037646",
+   "associated_group_id": "1387077520139519",
+   "associated_group": {
+    "group_id": "1387077520139519",
+    "name": "Ice Coffee Recipes",
+    "url": "https://www.facebook.com/groups/1387077520139519/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1530707102399923",
+   "type": "post",
+   "url": "https://www.facebook.com/dantinafoods/posts/pfbid029rGZbfsLECg4Ntp32bkovArtEfs2rFxXaRKDJYdygJCwTgcHySDZAPJGTDCr5RsLl",
+   "message": "🔥7UP PINK LEMONADE - 330ML CANS - 4 FOR £1🔥\n\n#DANTINAFOODS #STALL34 #UPSTAIRS",
+   "message_rich": "🔥7UP PINK LEMONADE - 330ML CANS - 4 FOR £1🔥\n\n#DANTINAFOODS #STALL34 #UPSTAIRS",
+   "timestamp": 1780515659,
+   "comments_count": 1,
+   "reactions_count": 10,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 10,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063819421039",
+    "name": "Dantina Foods Barnsley",
+    "url": "https://www.facebook.com/dantinafoods",
+    "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/305567948_486712460132731_2696937408898245391_n.jpg?stp=c8.0.666.666a_cp0_dst-jpg_s80x80_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=lMw9SBgOg1kQ7kNvwGB2jQJ&_nc_oc=Adp7r2bVL1zPiYBXuY1KWhw8Lp8v3-GIcQDCnJbEaK7A7CyBWlOxjbRawEDiu9VQSck&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQN_j65EWYtatIQYNRIBVUUXEDm_7Ha8PCWfiXQ7w7pFSw&oe=6ADBBA32",
+    "delegate_page_id": "323000884557964"
+   },
+   "authors": [
+    {
+     "id": "100063819421039",
+     "name": "Dantina Foods Barnsley",
+     "url": "https://www.facebook.com/dantinafoods",
+     "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/305567948_486712460132731_2696937408898245391_n.jpg?stp=c8.0.666.666a_cp0_dst-jpg_s80x80_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=lMw9SBgOg1kQ7kNvwGB2jQJ&_nc_oc=Adp7r2bVL1zPiYBXuY1KWhw8Lp8v3-GIcQDCnJbEaK7A7CyBWlOxjbRawEDiu9VQSck&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQN_j65EWYtatIQYNRIBVUUXEDm_7Ha8PCWfiXQ7w7pFSw&oe=6ADBBA32",
+     "delegate_page_id": "323000884557964"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-6/710598352_1530707079066592_986795372489075452_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=uv0Rdd_2Cw8Q7kNvwF-MIku&_nc_oc=Adqur-EDtOzdiMlKTRwMtWf4m2OXpEIfOP10GiFyDF1tlWg3ftoD7Hmkd4RtiH-Q6dc&_nc_zt=23&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQNv3rFFy_SFJJo_sh660kbcS_he5qkEy-2DYAi81YRVAw&oe=6ADBCC7D",
+    "height": 691,
+    "width": 720,
+    "id": "1530707075733259"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1530707102399923",
+   "shares_id": "1530707102399923",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2436690277155129",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/koreanstorenearme/posts/2436690277155129/",
+   "message": "VTALK DRINKS 24 pcs/case\nFlavors:\n• Peach Ade\n• Blue Lemonade\n\n✅ Cash/Bank Transfer on Pick-up\n✅ Bulk Orders Accepted\n✅ Best Prices Guaranteed\n✅ Long Expiry \n\nSend me a message!",
+   "message_rich": "VTALK DRINKS 24 pcs/case\nFlavors:\n• Peach Ade\n• Blue Lemonade\n\n✅ Cash/Bank Transfer on Pick-up\n✅ Bulk Orders Accepted\n✅ Best Prices Guaranteed\n✅ Long Expiry \n\nSend me a message!",
+   "timestamp": 1790820671,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0fZ4PNk58rNTFJkMbRFZMYgAtxMECNGL5ibQVUi5HpcDbJTHpcWn4MFkDaEEQorCNl",
+    "name": "Janna Sy",
+    "url": "https://www.facebook.com/pfbid0fZ4PNk58rNTFJkMbRFZMYgAtxMECNGL5ibQVUi5HpcDbJTHpcWn4MFkDaEEQorCNl",
+    "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/558786966_1284093506734097_7904109490583347122_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=sydrcXxJht8Q7kNvwHB7ZtN&_nc_oc=AdrqQMZ5fWrq2jx4fIGG82klDK3UxtXqDcplbGQKUDnC5M-fmKBjrlmkCEUaJ-5J9wI&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQMMmz3oGayVM88zg1gbuIALnC_tm28DvnOjUO9_T5Gimg&oe=6ADBBDBB",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0fZ4PNk58rNTFJkMbRFZMYgAtxMECNGL5ibQVUi5HpcDbJTHpcWn4MFkDaEEQorCNl",
+     "name": "Janna Sy",
+     "url": "https://www.facebook.com/pfbid0fZ4PNk58rNTFJkMbRFZMYgAtxMECNGL5ibQVUi5HpcDbJTHpcWn4MFkDaEEQorCNl",
+     "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/558786966_1284093506734097_7904109490583347122_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=sydrcXxJht8Q7kNvwHB7ZtN&_nc_oc=AdrqQMZ5fWrq2jx4fIGG82klDK3UxtXqDcplbGQKUDnC5M-fmKBjrlmkCEUaJ-5J9wI&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQMMmz3oGayVM88zg1gbuIALnC_tm28DvnOjUO9_T5Gimg&oe=6ADBBDBB",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-6/830197939_1586365786506866_2329536836627342497_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=9BzHd7xhUMEQ7kNvwEzuMLX&_nc_oc=Adqgp0bHX1jGB-8QjKUgXjrxGquatU7v7gxOrlbYeINbEMrdtMlb_HNaFLMrYa777IM&_nc_zt=23&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQN8ecbYKOpvGrrd4WwPylnaaT3SwiNywj8VUWGS3OqnPA&oe=6ADBBC36",
+     "url": "https://www.facebook.com/photo.php?fbid=1586366446506800&set=gm.2436690280488462&type=3",
+     "id": "1586366446506800"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-6/833083425_1586365819840196_3446395903136679671_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=g2KX9vpNixoQ7kNvwHNTCM8&_nc_oc=AdpnQxU_hXyWrNViebEOMxw26bwObtOR988M8S3gRnvYNIoUGovSdkdsMNcWAbhoMtw&_nc_zt=23&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQPxmkykcdwnZdlCnxqp_Vg8AmRNe1ax0uk-hUMst9JmXg&oe=6ADBEAE9",
+     "url": "https://www.facebook.com/photo.php?fbid=1586366443173467&set=gm.2436690283821795&type=3",
+     "id": "1586366443173467"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2436690277155129",
+   "shares_id": "2436690277155129",
+   "associated_group_id": "1308180500006118",
+   "associated_group": {
+    "group_id": "1308180500006118",
+    "name": "KOREAN STORE",
+    "url": "https://www.facebook.com/groups/koreanstorenearme/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "4521937408133628",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1495414820785917/posts/4521937408133628/",
+   "message": "ฉะเกรดพิธีการตัวนี้มา บอกเลยว่านัววววมากกก! ✨\n\nน้องคือ Pretty Rare - Yame Saemidori ชาเขียวเกรดพรีเมียมจากเมืองยาเมะ 🇯🇵\nโน้ตคือปังไม่ไหว! ได้รสสัมผัสหอมมันแบบ อะโวคาโด 🥑 + นัตตี้ถั่วๆ 🌰 + ช็อกโกแลต🍫 แถมละมุนครีมมี่สุดๆ ไม่ขมติดลิ้นเลย ชงกับนมคือฟินเหมือนยกคาเฟ่ญี่ปุ่นมาไว้ที่บ้าน! 🥛✨\n\nต้องลองเลยค่า 👉🏻 https://s.shopee.co.th/2gBWav0pB7",
+   "message_rich": "ฉะเกรดพิธีการตัวนี้มา บอกเลยว่านัววววมากกก! ✨\n\nน้องคือ Pretty Rare - Yame Saemidori ชาเขียวเกรดพรีเมียมจากเมืองยาเมะ 🇯🇵\nโน้ตคือปังไม่ไหว! ได้รสสัมผัสหอมมันแบบ อะโวคาโด 🥑 + นัตตี้ถั่วๆ 🌰 + ช็อกโกแลต🍫 แถมละมุนครีมมี่สุดๆ ไม่ขมติดลิ้นเลย ชงกับนมคือฟินเหมือนยกคาเฟ่ญี่ปุ่นมาไว้ที่บ้าน! 🥛✨\n\nต้องลองเลยค่า 👉🏻 https://s.shopee.co.th/2gBWav0pB7",
+   "timestamp": 1790679652,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid02DcFbgCKVFo2Aoob8BUTDvUALaPkuuepgKN5wze8X47pLqWmbborjuDg8yjFnYaZUl",
+    "name": "พัชราภา อรุณ",
+    "url": "https://www.facebook.com/phachra.pha.xrun",
+    "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/602455712_884999140663606_6866977462703637064_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=yyfRfM0uq6oQ7kNvwF2Y4Tk&_nc_oc=AdrbJVo8q14q6tgv08Zb7lbEa6e9HexdXK9XiEi2k1QClMmvQiQDDvyZPvIS2w_iS0U&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQNBpgctlorsnxEDSIZky8Uy3J24x-wFAfJMwcd9GX-E4g&oe=6ADBEABD",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid02DcFbgCKVFo2Aoob8BUTDvUALaPkuuepgKN5wze8X47pLqWmbborjuDg8yjFnYaZUl",
+     "name": "พัชราภา อรุณ",
+     "url": "https://www.facebook.com/phachra.pha.xrun",
+     "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/602455712_884999140663606_6866977462703637064_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=yyfRfM0uq6oQ7kNvwF2Y4Tk&_nc_oc=AdrbJVo8q14q6tgv08Zb7lbEa6e9HexdXK9XiEi2k1QClMmvQiQDDvyZPvIS2w_iS0U&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQNBpgctlorsnxEDSIZky8Uy3J24x-wFAfJMwcd9GX-E4g&oe=6ADBEABD",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-6/825327617_1115128204317364_9212938830054193507_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=mQAx9XqIG1MQ7kNvwFWxl01&_nc_oc=Ado681Co66vo5ilS9eXZ_MdJup8bATJvrBmytmQhCVsf3qUJA-7C6fv9qRhJy8SrPMg&_nc_zt=23&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQNWMZjaDsDol3DUrWxGBCcWcBSEGcVtyLs6r097LC3AgA&oe=6ADBB8A4",
+    "height": 1195,
+    "width": 896,
+    "id": "1115128687650649"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "4521937408133628",
+   "shares_id": "4521937408133628",
+   "associated_group_id": "1495414820785917",
+   "associated_group": {
+    "group_id": "1495414820785917",
+    "name": "ชาเขียวมัทฉะ",
+    "url": "https://www.facebook.com/groups/1495414820785917/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "10175582573600436",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/3216788285187022/",
+   "message": "You guys gave me SO many mixed opinions about the Pink Lemonade 7UP 😂🩷 Some of you LOVE it, others said it’s horrible… so obviously I had to try it with you!\n\nMy verdict? Why does it remind me of blue Gatorade?! 😂 I’m not a huge fan of soft drinks anyway, so I still have mixed feelings about this one.\n\nIt’s not bad… but I don’t think it’s something I’d buy again. 😅\n\nHave you tried it? What’s your verdict? 👀\n\n#7UPPinkLemonade #PinkLemonade #TasteTest #TryingItForTheFirstTime #Malta",
+   "message_rich": "You guys gave me SO many mixed opinions about the Pink Lemonade 7UP 😂🩷 Some of you LOVE it, others said it’s horrible… so obviously I had to try it with you!\n\nMy verdict? Why does it remind me of blue Gatorade?! 😂 I’m not a huge fan of soft drinks anyway, so I still have mixed feelings about this one.\n\nIt’s not bad… but I don’t think it’s something I’d buy again. 😅\n\nHave you tried it? What’s your verdict? 👀\n\n#7UPPinkLemonade #PinkLemonade #TasteTest #TryingItForTheFirstTime #Malta",
+   "timestamp": 1786715038,
+   "comments_count": 137,
+   "reactions_count": 166,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 10,
+    "like": 151,
+    "love": 5,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "853900435",
+    "name": "Deborah Seychell",
+    "url": "https://www.facebook.com/dbezzina",
+    "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/833298686_10176036001930436_2915959256524660509_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=gidy9kxyyrwQ7kNvwEoCDN1&_nc_oc=AdpYlzuv36slhvYbtVi7LnGw3uzF8NuNZk5jYULiXAPvzgy33w9LWbPU3-UtEPbklx0&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQNq1Oxchv0dbEtphgLd2OTbw1WnF4bHoenz5ouoUTxHww&oe=6ADBBF89",
+    "delegate_page_id": "365616363302389"
+   },
+   "authors": [
+    {
+     "id": "853900435",
+     "name": "Deborah Seychell",
+     "url": "https://www.facebook.com/dbezzina",
+     "profile_picture_url": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-1/833298686_10176036001930436_2915959256524660509_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=gidy9kxyyrwQ7kNvwEoCDN1&_nc_oc=AdpYlzuv36slhvYbtVi7LnGw3uzF8NuNZk5jYULiXAPvzgy33w9LWbPU3-UtEPbklx0&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQNq1Oxchv0dbEtphgLd2OTbw1WnF4bHoenz5ouoUTxHww&oe=6ADBBF89",
+     "delegate_page_id": "365616363302389"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/3216788285187022/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fnbo10-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQPmyRLVnVD7FpyQhs6_jaT0heV_cJ9urMtt6VkwkXwHW7nVzcl6qsM5cjhNG9UF3n6we3hBdfJcuXhoWJ-DpshUabjymnvoKcq6Zalkfw.mp4?_nc_cat=100&_nc_oc=Ado5nB-VBkQXNCUL7j0IhJH-_EgUytMjYbzyUCcX3_mxjqDs2fg27BzB0gsQGD5VxpI&_nc_sid=8bf8fe&_nc_ht=video.fnbo10-1.fna.fbcdn.net&_nc_ohc=9T0JKy4_vS0Q7kNvwF6IHR4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoyMzM2Mjg5Nzk3MTQzMDYzLCJhc3NldF9hZ2VfZGF5cyI6NjUsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPnfaAe3KTZgx3M8l2fjQnKNDdgF9hUVbFJ0zLWhCzSog&oe=6ADBD0CE&bitrate=280633&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video.fnbo10-1.fna.fbcdn.net/o1/v/t2/f2/m266/AQM93CMV1AJdicrnAZIvvzT5vlC50z6C044rZpfdc0IIGUNdYyIucg0I5yKOzhfgEYnuqlveazE9g5cTDYws5fflvX7VacnGB4M.mp4?strext=1&_nc_cat=102&_nc_oc=AdpjZndTVpmaAtA1KXT3JPi-aSz5FM1DxGWRkUTTmnWLGnW1Vb4wA__3Dgu9iF9fgGs&_nc_sid=8bf8fe&_nc_ht=video.fnbo10-1.fna.fbcdn.net&_nc_ohc=4QtceHEqoB4Q7kNvwGPFJEf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjMzNjI4OTc5NzE0MzA2MywiYXNzZXRfYWdlX2RheXMiOjY1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTUxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQNA28RAHLBp9OBVxHtB3clXTx4ljLV_tHj8k0outwQUsA&oe=6AD7ED5C&bitrate=3657507&tag=compressed_source"
+   },
+   "video_thumbnail": "https://scontent.fnbo10-1.fna.fbcdn.net/v/t51.82787-10/774018644_18618173938053085_4635671034828695191_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=X01TmbDbBF8Q7kNvwFvIUH9&_nc_oc=AdpyugAXAcjL_dhpgzZw0TdOE8iNWelkstgZ3NO88NJIUmOjbmvd-kh0zde0WVMD4UE&_nc_zt=23&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=6MueP0mM3uduKlUIv4Di5A&_nc_ss=70289&oh=00_AQN98TC_LK9fpmAN8-2o2CDXPGFQavNz3hp7yJ_UuTOvxw&oe=6ADBBC62",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "10175582573600436",
+   "shares_id": "10175582573600436",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  }
+ ]
+}

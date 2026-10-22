@@ -1,0 +1,942 @@
+{
+ "input": {
+  "query": "مشروب V7",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "6lncPj0XTfKq9FDjS",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:24:52.947Z",
+  "finishedAt": "2026-10-19T08:25:06.045Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 16
+  },
+  "usageTotalUsd": 0.01105
+ },
+ "cost_usd": 0.4161,
+ "items": [
+  {
+   "post_id": "1383627887192335",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0niGxoHaGWgcsraf1MGhvPoteHsGCQMa5KrJJQP8RCHgAhr4vAFDHdZWr6U6eP92ul&id=100066354109040",
+   "message": "متوفر الان لدى سوق الخير الوفير🤩\nمشروب V7 نكهات❤️\nالصندوق 36.00 دينار فقط🔥🔥\nنقبل السداد بالخدمات المصرفيه موبي كاش وادفع لي ويسر باي وجميع البطاقات المصرفيه بنفس سعر الكاش\n📍العنوان السلماني الشرقي بجوار مبني الجوازات 602",
+   "author": {
+    "id": "100066354109040",
+    "name": "سوق الخير الوفير",
+    "url": "https://www.facebook.com/people/%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AE%D9%8A%D8%B1-%D8%A7%D9%84%D9%88%D9%81%D9%8A%D8%B1/100066354109040/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/469016801_873125194891493_4262202257180402954_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=NjS84cYxwn8Q7kNvwGkYOWY&_nc_oc=AdrETNQ82f02CNKKAkRrPtdt7ZKG-jK5tcD8dVtlEoG0E-R61RlUX-5KKoOc3i3qlqc&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQP-Bs9Y2dxkn3UZ17H7JRnPw2hQ8ochWAMOD31vo9-NSA&oe=6ADB9A6E"
+   },
+   "timestamp": 1788348779,
+   "reactions_count": 279,
+   "comments_count": 4,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 269,
+    "love": 10,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/793802888_1383627763859014_4579919491413111468_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nGPenLLmebwQ7kNvwF4mOAb&_nc_oc=AdqnHE_-cYbiC8dlUlHGnLqYyHko4_t-ViwB6cXn5s6Ts9jP3Ybn5PBtwzseKgpAzdY&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQPqSSB7ZNO7Oie8UHFq9PucEjABvqGs69Zhq23GKTFgaw&oe=6ADB9D4D",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/791045633_1383627780525679_8742743208789206067_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9Q8R91YDB2IQ7kNvwELb0dM&_nc_oc=AdozVd4SQtdE5DP6yR8D7qLDwmGdBOmiRnXjeDQyaY9JkHDdEDsK7HZIrVp8ooGSRZc&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQMNpmQGdkUZHfr_3cmWf2y1Md0_g6aM8_F9FWQVP9X7wA&oe=6ADBA755",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/792093182_1383627767192347_50132403591482517_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Lyw-IIm9kIQ7kNvwFQJA3t&_nc_oc=AdonTmweLRbQGVOqL3VavxT0n0xL_qSh5ml9U_Kuq_Z395P3tylFqyRMEzy7J7BLvFU&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQOXhxCSAo9O6FEx84fMPOCKvKkdhRqw-RC2KAa0IO8TyQ&oe=6ADBB67E",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/791045603_1383627790525678_317081517989926642_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CRod33CQ_M4Q7kNvwFIaxyN&_nc_oc=AdprYJdjgiKhNbuKMi3gvDaxBd46jZ8mUlxE6LhpYz4iNX0xV-4Oqv0oKRwChz8rIrY&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQNSlU-wnXc_LJFy4DhfY2doiPhhrf4ibYheRsdY0sEPlQ&oe=6ADB8DC2",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/793868457_1383627843859006_7835901969391029701_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HPvfa1qgwBoQ7kNvwGbBKbY&_nc_oc=AdpIMpwun3pTk0mvBXQN5OKNkpNNHGj06kDflH_-PYyP5aswubvK8DEJ6UpRvpgRwgY&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQOjTNAwxVTLW4_hC4tpyhlnXvo7nyiEETKQM2Dk9JZmZQ&oe=6ADB99C2"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTM4MzYyNzg4NzE5MjMzNQ==",
+   "shares_id": "ZmVlZGJhY2s6MTM4MzYyNzg4NzE5MjMzNQ==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1066489979603680",
+   "url": "https://www.facebook.com/PandaMallps/posts/pfbid02Z7T5LCDyU9M6XjZpTB7mXsxYvdtKEXbSeJogTfAs7BjCmt5HKUBpoW2hmVc4D3yCl",
+   "message": "مشروب غازي V7… نكهات مميزة وانتعاش بكل رشفة! 😋🥤✨\n\nاستمتعوا بتشكيلة مشروب V7 الغازي بنكهاتها المميزة والمنعشة، خيار رائع مع الوجبات أو لأي وقت بدكم فيه انتعاش وطعم لذيذ! 🧊🥤✨\n\n📲 للطلب والاستفسار عبر واتساب: +972 593 555 782\n\n🛒 متوفر الآن في باندا مول\n\n📍 شارع الشهداء – دوار حيدر عبد الشافي – مقابل الصليب الأحمر\n\n#V7 #مشروب_V7 #مشروبات_غازية #مشروبات #نكهات_مميزة #انتعاش #سناكات #باندا_مول",
+   "author": {
+    "id": "100087280621792",
+    "name": "باندا مول - Panda Mall",
+    "url": "https://www.facebook.com/PandaMallps",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/658975540_916770157908997_1796501365977065725_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ucSZ83CJz6gQ7kNvwH6Md4e&_nc_oc=AdpUKmwWFEn2Npcjy9AuTh1z9sGqCM8yx9Ml7JOi6BYX5ffDZtQ8Ife65ORVSfd3alQ&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQOxLHIg8jN8V6zWBkHCMKSgRsbxFayt41dDkCIXXMJV9w&oe=6ADBB814"
+   },
+   "timestamp": 1790089994,
+   "reactions_count": 11,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 11,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/816987575_1066488656270479_6228961537455323905_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=agbMgg0iUowQ7kNvwEkwmI1&_nc_oc=Adplnw-zHAWiVjc99YcHx4PiNMWafLn2wHN-oft_ggyW43K1-buzuVFqrecIxENtBL0&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQPdDHdkeXagDp2l5NUvOIm0sgODwtYkScG02iqx9VvEMw&oe=6ADB9056",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTA2NjQ4OTk3OTYwMzY4MA==",
+   "shares_id": "ZmVlZGJhY2s6MTA2NjQ4OTk3OTYwMzY4MA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 311,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "6136263899761154",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8_v7?__eep__=6",
+     "offset": 315,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "409915289115625",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA_%D8%BA%D8%A7%D8%B2%D9%8A%D8%A9?__eep__=6",
+     "offset": 325,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "545401415481151",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA?__eep__=6",
+     "offset": 340,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "1104099009618339",
+     "url": "https://www.facebook.com/hashtag/%D9%86%D9%83%D9%87%D8%A7%D8%AA_%D9%85%D9%85%D9%8A%D8%B2%D8%A9?__eep__=6",
+     "offset": 349,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "348342208615980",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%86%D8%AA%D8%B9%D8%A7%D8%B4?__eep__=6",
+     "offset": 362,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "595849237122961",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D9%86%D8%A7%D9%83%D8%A7%D8%AA?__eep__=6",
+     "offset": 370,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "1918633211515451",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%A7%D9%86%D8%AF%D8%A7_%D9%85%D9%88%D9%84?__eep__=6",
+     "offset": 378,
+     "length": 10
+    }
+   ]
+  },
+  {
+   "post_id": "1107011738559161",
+   "url": "https://www.facebook.com/ElMashana.ismailia/posts/pfbid0hkj3sfMg7fDZfSAR3JAEPF6ajWDrHN9P3dxnHBawijjPrZZyMvUrDDQofJfwi3sRl",
+   "message": "�✨ انتعاش الصيف وصل! ✨🩵\n\nجربوا V7 Cream Soda 😍🥤\nمشروب غازي بنكهة كريمي صيفية مختلفة ومنعشة، ومعزز بفيتامينات B6 & B12 💙\n\n❄️ طعم منعش\n🥤 نكهة Cream Soda المميزة\n☀️ إصدار صيفي يظبط مزاجك\n\nخدها ساقعة… واستمتع بالانتعاش من أول رشفة! 😋",
+   "author": {
+    "id": "100077510340493",
+    "name": "هايبر ومخبوزات المشنة",
+    "url": "https://www.facebook.com/ElMashana.ismailia",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/850382151_1154927230434278_5766580194573151763_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DrvRJ49wuisQ7kNvwHKr5Uz&_nc_oc=Ado6sk9aXlucinGZ16xDvtzxD7zI3wPCk2YjbESgvgcSywhmtX_Cw202-cRCguO7xYo&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQPuXkh7SreRrGgcaAYHv7CJYdXbE_7Wgu8pE8WFpMraSw&oe=6ADBBB25"
+   },
+   "timestamp": 1787494964,
+   "reactions_count": 10,
+   "comments_count": 9,
+   "reshare_count": 63,
+   "reactions": {
+    "like": 9,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/783029302_1107011718559163_1358065323293460407_n.jpg?stp=cp6_dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3O7OPJaaTlUQ7kNvwGoohE1&_nc_oc=AdrUeekG_D0na5ctQvwRd7yIaVCbPee2FftwT8-xmcrMcjj8bpBetxx_DI4VP5LRfjA&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQM8hywpzUZoH54OlqO4mRnM0ZK1sNm67LB0uONOzV4PTQ&oe=6ADB9A0C",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTEwNzAxMTczODU1OTE2MQ==",
+   "shares_id": "ZmVlZGJhY2s6MTEwNzAxMTczODU1OTE2MQ==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1586963973445294",
+   "url": "https://www.facebook.com/candy.valley.eg/posts/pfbid0WyiXX2eau4Hxuy6ZHn17cUC5phuGWQMu9aSHBjAPAzsYCLCAEAkmtstxm8XYdFTpl",
+   "message": "🥤💙 مين جاهز لتجربة مختلفةً😍\nوصلت V7 Cream Soda – Summer Edition ❄️✨\nطعم الـ Cream Soda المنعش في مشروب غازي مميز… مناسب لأجواء الصيف 🔥🧊\nبس السؤال الأهم 👇😏\nلو قدامك V7 دلوقتي… هتشربه:\n💙 ساقع جدًا من التلاجة\n🧊 على تلج\n😎 ولا من غير تلج؟\nاكتب اختيارك في الكومنت 👇👇\nوعايزين نعرف كمان… مين جرب الـ Cream Soda قبل كده؟ 🤔❤️\n📍 متوفر الآن في Candy Valley 🍭\n📲 للطلب والاستفسار: 01066050050\n#CandyValley #V7 #CreamSoda #SummerEdition #مشروبات #صيف #جربه",
+   "author": {
+    "id": "100063951197004",
+    "name": "Candy Valley",
+    "url": "https://www.facebook.com/candy.valley.eg",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/658223406_1450052693803090_6542569343915831997_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ddgK47HxneUQ7kNvwEz8xpD&_nc_oc=AdrZUT3qJU4nkjQwqrl2QrbQfMHNrYoZ_jQWTcEbTf7CgKgljR3spRuhjTGUczugFrE&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQPu-r6NYElrBQ4-kI2OyyC6EOhCIXwGtPwbui1JaW9mwg&oe=6ADBA4C5"
+   },
+   "timestamp": 1788008156,
+   "reactions_count": 1,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/788838323_1586963933445298_2519236626266557361_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=m42nPwuBMpYQ7kNvwFR4ll5&_nc_oc=AdqOxeDwTBExYMay2ooUvSskOLMg3tdIvlx91sSK7LwGD4snSDs4VeryhWH7wQjFBn4&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQMTxCpXDMpAHWUmFbU2ncIHKKlW-eyn5ILuw69iBRlwFA&oe=6ADBC026",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTU4Njk2Mzk3MzQ0NTI5NA==",
+   "shares_id": "ZmVlZGJhY2s6MTU4Njk2Mzk3MzQ0NTI5NA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "369256003197534",
+     "url": "https://www.facebook.com/hashtag/candyvalley?__eep__=6",
+     "offset": 379,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 392,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "151243165038846",
+     "url": "https://www.facebook.com/hashtag/creamsoda?__eep__=6",
+     "offset": 396,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "162685247222166",
+     "url": "https://www.facebook.com/hashtag/summeredition?__eep__=6",
+     "offset": 407,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "545401415481151",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA?__eep__=6",
+     "offset": 422,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "155998444565896",
+     "url": "https://www.facebook.com/hashtag/%D8%B5%D9%8A%D9%81?__eep__=6",
+     "offset": 431,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "362802960488567",
+     "url": "https://www.facebook.com/hashtag/%D8%AC%D8%B1%D8%A8%D9%87?__eep__=6",
+     "offset": 436,
+     "length": 5
+    }
+   ]
+  },
+  {
+   "post_id": "1445166187753510",
+   "url": "https://www.facebook.com/wafarcashcom/posts/pfbid0azfKc5rmGXQnR2CoHwJvpfynwV5oJzcWKzGELxQNwfBV1Wvi1iLnGWXXRgcDJ31Xl",
+   "message": "📦 مشروب فيتامين فوار من V7 بنكهات طبيعية 100% - بينا كولادا، 300 مل\n\n🔥 نسبة الخصم: 13.3% ⚡️\n❌ السعر قبل الخصم: ‏15.00 جنيه\n✅ السعر بعد الخصم: 13‎\n\n🔗 الحقة دلوقتي: https://www.amazon.eg/dp/B0BK4JH5BV?tag=wafarcash05-21\n\n🌐 زيارة موقعنا الإلكتروني: https://www.wafarcash.com\n👍 تابعنا على صفحة الفيسبوك: https://www.facebook.com/wafarcashcom👍 لعروض اسرع تابعنا علي تيليجرام: https://t.me/wafarcash",
+   "author": {
+    "id": "100067804272320",
+    "name": "وفر كاش - Wafar Cash",
+    "url": "https://www.facebook.com/wafarcashcom",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/252801622_953384088862386_7617591235382645660_n.png?stp=cp0_dst-png_s50x50&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=PXPsy65UdHkQ7kNvwHMD71D&_nc_oc=AdrS5Kpzaeol5o6DOJLztOsa9VI57VO0KzoH6Gk3Kqx-UW8bgOaM6Cm55dfl-05GVIM&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQMsOF5-QAW7HJLhB7IP2jOZwJ9tAdRYkR6d_HpM93E97w&oe=6ADB903A"
+   },
+   "timestamp": 1792072928,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/847763374_1445166174420178_7386399912013342984_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PlRnMuNyTasQ7kNvwG381UL&_nc_oc=Adp6a2-d_D_zNhNpMvI_z6kxHfzrQTN9WKbdY1zlt_BCDmedmv6tvOabbo5jDf1sTTs&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=AQQJ0RMLtMHtgcMrumv7pg&_nc_ss=72180&oh=00_AQP3jk57_n2DEIyLDWMt54itkG5CDm2uJ8t3L1MxlBOmNQ&oe=6ADBA9AA",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://www.amazon.eg/dp/B0BK4JH5BV?tag=wafarcash05-21&content_source=fb&fb_content_id=Q9-wBQF3ISEuS-As4sh1wIx64GxHm6jnWX-LfGGiEuCbzPa7uR8KOwViBTreEhElAg",
+   "comments_id": "ZmVlZGJhY2s6MTQ0NTE2NjE4Nzc1MzUxMA==",
+   "shares_id": "ZmVlZGJhY2s6MTQ0NTE2NjE4Nzc1MzUxMA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3d3dy5hbWF6b24uZWcvZHAvQjBCSzRKSDVCVj90YWc9d2FmYXJjYXNoMDUtMjEmY29udGVudFxic291cmNlPWZiJmZiXGJjb250ZW50XGJpZD1ROS13QlFGM0lTRXVTLUFzNHNoMXdJeDY0R3hIbTZqbldYLUxmR0dpRXVDYnpQYTd1UjhLT3dWaUJUcmVFaEVsQWc6OkRlZmF1bHQ6OjoxNDQ1MTY2MTg3NzUzNTEwOg==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.amazon.eg%2Fdp%2FB0BK4JH5BV%3Ftag%3Dwafarcash05-21%26content_source%3Dfb%26fb_content_id%3DQ9-wBQF3ISEuS-As4sh1wIx64GxHm6jnWX-LfGGiEuCbzPa7uR8KOwViBTreEhElAg&h=AUDhL0auAH02OGF5nBRWIaWv81_S5ngiEPvnaIUW5Lnokp00MNKQbaeRisFVOYGSbh1a1W3a-RBVN2ofF3y1ZxJjYWTOqz8QTeYkCSCLGng554QTHM5B272OnnjeQszBvDuwmYiSmCH9PsflhlUWlqb8tqOFNoOg&s=1",
+     "offset": 163,
+     "length": 54
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3d3dy53YWZhcmNhc2guY29tLzo6RGVmYXVsdDo6OjE0NDUxNjYxODc3NTM1MTA6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafarcash.com%2F&h=AUCLmKCbBWiaLlb8lwbniLCD_q_-yRa0oJf6rbOFSEHCBPdvkAvq5InR2r5s7gx_TZj93xg39hgL0XizfEU1pmN6VZC7pXAvoM7iQMdrOXArdGbePc0VR8FWyYgqZpS8MU3g7NrSy9BiRiUgUlnPm5YVPrQRvfGf&s=1",
+     "offset": 246,
+     "length": 25
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3d3dy5mYWNlYm9vay5jb20vd2FmYXJjYXNoY29t8J+RjTo6RGVmYXVsdDo6OjE0NDUxNjYxODc3NTM1MTA6",
+     "url": "https://www.facebook.com/wafarcashcom%F0%9F%91%8D",
+     "offset": 300,
+     "length": 38
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3QubWUvd2FmYXJjYXNoOjpEZWZhdWx0Ojo6MTQ0NTE2NjE4Nzc1MzUxMDo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Ft.me%2Fwafarcash&h=AUDQOmYA1DVt_vZCDRg4bG7VSfhDU_OPdsdcv9O7lcthWTRBWcw6VhqwJ1Xv8tmhTZmXg8YoIIwyGJfpZK6e1IN065Yxd0ExFWc466VM06JSmHhURGsqXisFSHM7N7bNaUXzuk2jLiEZG-KZRxVhdtJa2yv-QofA&s=1",
+     "offset": 371,
+     "length": 22
+    }
+   ]
+  },
+  {
+   "post_id": "122181026828718299",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0bnRNSEjS6TFY7Fu4Dnm6dkN2JgycFUJLBsc23r18DE1bAn9TY4TSDz1h1p51fKJrl&id=61571548997310",
+   "message": "عروض على  مشروب غازي V7  ب 13.5 جنيه\n\nhttps://3rrood.com/wQ47rxdH",
+   "author": {
+    "id": "61571548997310",
+    "name": "كوبونات خصم عروض مطرقعة",
+    "url": "https://www.facebook.com/people/%D9%83%D9%88%D8%A8%D9%88%D9%86%D8%A7%D8%AA-%D8%AE%D8%B5%D9%85-%D8%B9%D8%B1%D9%88%D8%B6-%D9%85%D8%B7%D8%B1%D9%82%D8%B9%D8%A9/61571548997310/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/777515550_122173801160718299_8287048768334759196_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nVDD_Wah0eQQ7kNvwEiSl-U&_nc_oc=AdoD5zkCKujKe6GHLerVVU_MEXea49GbK4wBCBMAO6zoxNWKonwCQfI8lz2ZovSc4rY&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQOBFpjUQLIrBIkEtdeTldRjs9rvhjVmV1Eh6Z3L7Zfd9g&oe=6ADBB0C9"
+   },
+   "timestamp": 1792158693,
+   "reactions_count": 1,
+   "comments_count": 4,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/854316208_122181026804718299_4106190022119811709_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7Up4-Srn4VUQ7kNvwGOTOfh&_nc_oc=Adqox-WahSb9LCz0tuIX8p1MAIcaoQnG2KC2oSc6_ol6omAht5lH-0-NAtBQ6xaZGD8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQNDpD13eaAb_YqgU-cCB5GXY89f3FHXJRqaCpd3XwPUAQ&oe=6ADBAE19",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://3rrood.com/wQ47rxdH",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgxMDI2ODI4NzE4Mjk5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgxMDI2ODI4NzE4Mjk5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvLzNycm9vZC5jb20vd1E0N3J4ZEg6OkRlZmF1bHQ6OjoxMjIxODEwMjY4Mjg3MTgyOTk6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2F3rrood.com%2FwQ47rxdH&h=AUBIpfOZ30tynnlMhlapBqHhy09CJ7IBnULxqLMfHk3r46cBz5nfo6FfvIoViZwVkVGRirsUgfJDCQl9_TQCVl5h-o6F_zu29Qwl_tMF06N_SFRSYC6v3Q3mYeDASw97u-AsURDxl1LBH_qBLl7j7zN9nYmXUXNrLg&s=1",
+     "offset": 38,
+     "length": 27
+    }
+   ]
+  },
+  {
+   "post_id": "122194364252913300",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0b684BTEbXbFJdgkcA1FEMeWoAqDbVJSW8Pg7b7mev9DffZJpbTWMSE8tL9CjndBzl&id=61577399012043",
+   "message": "مشروب V7 الغازي ✅\nمتوفر ب 8 نكهات مميزه ❤️‍🔥\nمتوفر الآن ميني ماركت الآمير",
+   "author": {
+    "id": "61577399012043",
+    "name": "ميني ماركت الآمير ",
+    "url": "https://www.facebook.com/people/%D9%85%D9%8A%D9%86%D9%8A-%D9%85%D8%A7%D8%B1%D9%83%D8%AA-%D8%A7%D9%84%D8%A2%D9%85%D9%8A%D8%B1/61577399012043/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/842344083_122196780272913300_198774509261858444_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=6bqquuZUM8EQ7kNvwFzhRgQ&_nc_oc=Adq_Dm8xrpNRX0T_Cah3Un8VXq_9Nx6SwDy7MOgIVV46zGBdhzkEOodgsJbcn4F6BD0&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQM7i0iwdSAmV_JQyTIvcHC61UCrmS8qBD49Hwoqw4bKQQ&oe=6ADBAA32"
+   },
+   "timestamp": 1790430611,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/825279923_122194364102913300_3034685676710862289_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BKV8MmP5lxkQ7kNvwFJaE2N&_nc_oc=Ado-GQlFZJ_qmbf-bIicobuDSnCPg5fesLj2ITt5jLOa1-v3nDWMplPrac7rC9xeUmE&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQO8wqSzQpHsZQ9it0KPR8Ye6a1aKzloqEBC_D4kmpRQvQ&oe=6ADBBDEF",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/825279292_122194364150913300_4710607543674029262_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Vk4K6LSQm4UQ7kNvwHrHUwt&_nc_oc=AdoWzjUtEsS71OIDnAeuGTSJrLD5Lweayoy02FI2snfmHRfOWQZtTsnVYRlhw6H4VRg&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQNzqrGyNQV6-kAAYlvxPW3RHZRCuj-iQhuGm5tFx7gtAw&oe=6ADB9A3C",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/825279225_122194364222913300_5722011231133003847_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VV6ViVh6uJkQ7kNvwGr44ym&_nc_oc=AdrE6Xs8sN3xG1fRmrNIxnjr4nn9egpDEPltjUvtOydDNgPHfX2b3wYr4esPlYBozwg&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQMN_Strtfvy8leSBOqp12uejtgNVZDQxClou6G9DhmH4w&oe=6ADBB643"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTk0MzY0MjUyOTEzMzAw",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTk0MzY0MjUyOTEzMzAw",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "2054468405222271",
+   "url": "https://www.facebook.com/groups/1369159683753150/permalink/2054468405222271/",
+   "message": "عرض على مناديل تنظيف الأحذية TC Co Enterprise 80 منديل\nبـ 25 جنيه بعد خصم 5٪\n\nhttps://3rrood.com/AS5JQbuk\n\nعرض على مشروب فيتامين فوار V7 طعم الرمان 300 مل\n\nبـ 10 جنيه بعد خصم 25٪\n\nhttps://3rrood.com/bGHPBNnc\n\nلينك الشراء المجمع : https://3rrood.com/WHQYdl3W",
+   "author": {
+    "id": "61564978451778",
+    "name": "عروض مطرقعة",
+    "url": "https://www.facebook.com/people/%D8%B9%D8%B1%D9%88%D8%B6-%D9%85%D8%B7%D8%B1%D9%82%D8%B9%D8%A9/61564978451778/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/458137279_3884879378498408_7527215777042884799_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=y9F1T6iFeYAQ7kNvwHzt6WP&_nc_oc=AdpYfF2jf-yb1sVXNOC5be81fdlO14PUCe9S9IOF1AAb3YF0EJZRADv_uEtEB0JNIOs&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQO_Fn2LX8PXypB-8gY_HKKDZr2hBcJ7iNkad7vAx3SBNQ&oe=6ADB99C7"
+   },
+   "timestamp": 1792014660,
+   "reactions_count": 0,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/848455231_122224251608499281_440223583282878970_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=fsK7YpCqCQsQ7kNvwFeWBJ1&_nc_oc=AdpS_XIqYkVUrklwD0tiCvrUBN-n2DnMD5CtTprhAJk9JOchqurdCgRCplfT82uCMCE&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQORMNGvNGTy0KnWRYpdiIZ5AX7Hbp0BEN89bR5G_5xs_w&oe=6ADBC161",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://3rrood.com/AS5JQbuk?fbclid=IwZXh0bgNhZW0CMTEAcGRvZgFzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR6m4RfH8mv0NPAKC4rp6-b2U5_7qCPXW9YcfM9AULBSE2spvGMv4ihvLw8N3g_aem_WNofHP8YKr2oV1am9RcXFg",
+   "comments_id": "ZmVlZGJhY2s6MjA1NDQ2ODQwNTIyMjI3MQ==",
+   "shares_id": "ZmVlZGJhY2s6MjA1NDQ2ODQwNTIyMjI3MQ==",
+   "associated_group_id": "1369159683753150",
+   "author_title": "عروض مطرقعة"
+  },
+  {
+   "post_id": "1467486841889816",
+   "url": "https://www.facebook.com/groups/937544671550705/permalink/1467486841889816/",
+   "message": "مطلوب v7 بلكن هايبرد",
+   "author": {
+    "id": "pfbid029SMML3wb5XmpTbCS8YRbwSFNLfRaCKx9HfkNXeEmMsyyiyDVMephcEMwDNQrsQP9l",
+    "name": "عبدالله موفق",
+    "url": "https://www.facebook.com/abdulla.abd.522",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/583126024_2710623942614506_7627055619307812855_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=JsFoGptEnx0Q7kNvwGhIdRI&_nc_oc=Ado9eatkWX_g0h9rFCTGbeElklwS-1SF0wbRVFgv0M35h3CkeUoOLyQmam3T3bVHVXE&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQMYg_b7rneiaUI4WPiLZvhryuAYCxRF71I_lto7OCrKoQ&oe=6ADBB31A"
+   },
+   "timestamp": 1788541495,
+   "reactions_count": 29,
+   "comments_count": 18,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 28,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/792963134_2995568667453364_6107447343607849078_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=MCfwv9kUHvoQ7kNvwEcgT6e&_nc_oc=Ado_BHCMM4-z-qZb9ysRotyr-mOofr1cHDcoeZPmGGLogMs5Ljo18f9pM2pi1eVb8PU&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQMQDUOQvWJJu38zBCN_TyCzQ4BpWb-WA5ljeDPvmlgnzw&oe=6ADB9E42",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQ2NzQ4Njg0MTg4OTgxNg==",
+   "shares_id": "ZmVlZGJhY2s6MTQ2NzQ4Njg0MTg4OTgxNg==",
+   "associated_group_id": "937544671550705",
+   "author_title": "كروب هافال العراق :: GWM IRAQ"
+  },
+  {
+   "post_id": "122158985120995731",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ouJ8hPJmemjoBhRn65E2feBUmuSHxjKv3SPM81dQPgCombS99k4PoArVmgBUvGakl&id=61579871939927",
+   "message": "اكتب HV7 في الكومنتات وهيوصلك البروشور 😉\n.\nعربية جديدة وخطة جديدة... النهاردة الاطلاق بعيدا عن الميديا والصحافة وده هيتم فى حدث خاص بالموزعين فقط\n\nهل هافال V7 هتقلب سوق الـ Boxy وتسعيره، ولا هتكون مجرد عربية حلوة تبلعها دوامة الأوفر برايس؟ 📦🚗\nبعيد تماماً عن أي إعلانات رسمية هافال V7 اللي الدفعة الأولى منها وصلت بالفعل من كام اسبوع وخرجت من المينا والنهاردة هتتوزع على المعارض عشان تكون جاهزة تنزل الشارع 🚢🛣️\n * حجم الدفعة الاولى: أكتر من 400 عربية متقسمين بالنص تقريباً؛ نصهم بلج إن هايبرد (PHEV) والنص التاني هايبرد (HEV) 🔋.\nعربية فى حجم ال Ti7 اللى محتلة قمة مبيعات الفئة دى حاليا فى العربيات الهايبرد واكبر بشوية من T2 اللى برده محتلة قمة مبيعات العربية البنزين فى فئتها 📏.\nلكن التسعير اللى احنا متوقعينه مش هيكون بعيد عنها، فئة الـ HEV متوقع تنزل برقم بين 1,850,000 و1,950,000 جنيه، أما فئة الـ PHEV فمتوقع تكون في حدود 2,150,000 جنيه 💸.\n * بسبب التصميم الصندوقي (Boxy) والطلب العالي عموما عليه فى السوق المصرى، هل هيخلوا التجار يستغلوا الزحمة ونشوف أوفر برايس يضيع ميزة التسعير القوي؟ 🤔\n * كمان التسعير ده لو نزل رسمي هيحط الـ H7 في مأزق؛ هل الوكيل هيضطر ينزل سعر الـ H7 لتفادي تضارب الفئات؟ 📉\nتفتكروا الـ V7 هتعيد كتابة قواعد المنافسة في فئتها، ولا التجار هيكون ليهم رأي تاني؟ شاركونا توقعاتكم في التعليقات! 👇\nواستنوا مننا تغطية حصرية وتفاصيل أكتر وقت الإطلاق الرسمي! 🔥\n\n#بتوع_عربيات #عربية_جديدة #Haval #boxy",
+   "author": {
+    "id": "61579871939927",
+    "name": "بتوع عربيات",
+    "url": "https://www.facebook.com/people/%D8%A8%D8%AA%D9%88%D8%B9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A7%D8%AA/61579871939927/",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/538319766_122096809448995731_7856011881390935273_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yH_3Rz9r_hoQ7kNvwFkbZe8&_nc_oc=Adp1wNtrS1_akpmj0habrgPqVQolHiYDC9g8msOW99ozDwrD1OZAQFM74JOfaX12bFk&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQOCy1pZSkX94P2eM_4r45y8ZxjSCfA1LDNBqbVxGMEbKg&oe=6ADBC1DB"
+   },
+   "timestamp": 1788853502,
+   "reactions_count": 38,
+   "comments_count": 72,
+   "reshare_count": 26,
+   "reactions": {
+    "like": 33,
+    "love": 0,
+    "haha": 3,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/799675923_122158985090995731_6062926291733199998_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BvM5_XrxquUQ7kNvwEsTTyw&_nc_oc=Adp_i6FVUc_ZqQVKRTSBLDlJlK_Pc5sBxQhCKxatZzhRuseLcJxAJtnMv2SQKQ8elf8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=dMqhTQytoshfEGn2ptKCmA&_nc_ss=72180&oh=00_AQPq6CzPEv2sIoxDJRj_IC4kt8XJfTB-AnDtG7D-7p8Epw&oe=6ADBB460",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTU4OTg1MTIwOTk1NzMx",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTU4OTg1MTIwOTk1NzMx",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "839556319507177",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%AA%D9%88%D8%B9_%D8%B9%D8%B1%D8%A8%D9%8A%D8%A7%D8%AA?__eep__=6",
+     "offset": 1279,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "455677724533191",
+     "url": "https://www.facebook.com/hashtag/%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9?__eep__=6",
+     "offset": 1292,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 1305,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "224181981058701",
+     "url": "https://www.facebook.com/hashtag/boxy?__eep__=6",
+     "offset": 1312,
+     "length": 5
+    }
+   ]
+  },
+  {
+   "post_id": "1123642696891750",
+   "url": "https://www.facebook.com/marchdair/posts/pfbid02VNHgfWUfbEThRFcyzkxxY8cYAoxpzx6oerLKQmgq2ir9SnxxyQF4exjNZcoMFWbl",
+   "message": "تكشف قدرات SUV الهجينة الجديدة\nتجربة قيادة استثنائية مع هافال V7 على الطرق المتنوعة\n\nالتفاصيل في التعليقات",
+   "author": {
+    "id": "100077380907209",
+    "name": "مارشدير",
+    "url": "https://www.facebook.com/marchdair",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/327435681_875159077022327_1659132071115384021_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ehhprk3ZLRMQ7kNvwHMdud1&_nc_oc=Adogd-RrmAeIZvWF6h5Sh8saf_vzaQwj39LN88R0UMVhjEvRPRvRZFQiRCiTF1gFGHM&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQNfiKX2iU-PRZuWfAi6exye7GIjjK589UAOCjgQLKd4aA&oe=6ADBB6DA"
+   },
+   "timestamp": 1790163299,
+   "reactions_count": 12,
+   "comments_count": 1,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 12,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTEyMzY0MjY5Njg5MTc1MA==",
+   "shares_id": "ZmVlZGJhY2s6MTEyMzY0MjY5Njg5MTc1MA==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "4261676617465423",
+   "url": "https://www.facebook.com/drkhaldoon.horany/posts/pfbid02cVUwTyyRteqwrAEpjFxabH3zXz1j5zz9RA1YsDYen9rJbcwK8hZX6bVbxwEkMS9dl",
+   "message": "الكركديه مش بس مشروب منعش!\n\nغني بمضادات الأكسدة، وقد يكون له فوائد صحية محتملة مثل دعم صحة القلب والمساعدة في ترطيب الجسم.\n\n☕️ كوب من الكركديه البارد أو الدافئ ممكن يكون إضافة لطيفة لنظامك الغذائي، لكن بدون الإفراط وبدون إضافة كميات كبيرة من السكر.\n\n⚠️ وإذا كنت تتناول أدوية أو لديك حالة صحية مزمنة، الأفضل استشارة الطبيب قبل الإكثار منه.\n\nبتحب الكركديه بارد ولا ساخن؟",
+   "author": {
+    "id": "100008693807472",
+    "name": "Khaldoun Alhorani",
+    "url": "https://www.facebook.com/drkhaldoon.horany",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/773939404_4243883429244742_7771732390326367908_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=LOmA-7ShrnQQ7kNvwHQWhUq&_nc_oc=AdoXOatTv6_BAIQ-NqAaC82Gqj467wJJM8K9f2NsXxHUZEhzUkB491ShwgGWowrNdAE&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQOVQpFvMEHT32n7LyqgacgrsDSnImTlBsycLwEEt1scuA&oe=6ADBB690"
+   },
+   "timestamp": 1788349342,
+   "reactions_count": 1067,
+   "comments_count": 90,
+   "reshare_count": 15,
+   "reactions": {
+    "like": 1034,
+    "love": 29,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 1,
+    "care": 3
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/791274697_4261676304132121_8676201212056008192_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nkvkNlOjMNAQ7kNvwFKzrTC&_nc_oc=AdrvNa035wFF6bjB2kqUiJKjabIxXt4K0EmFOj5bfbWSGQq1HKrXLdtLR85wh4_j7oc&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQMFrPvxO5x9VvTtbUhxEaNhqaxKUV3NeH7PwwGSSFhUxA&oe=6ADBC193",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NDI2MTY3NjYxNzQ2NTQyMw==",
+   "shares_id": "ZmVlZGJhY2s6NDI2MTY3NjYxNzQ2NTQyMw==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1955897895107217",
+   "url": "https://www.facebook.com/groups/214244552605902/permalink/1955897895107217/",
+   "message": "ضروري اراء الجميع  حتى  انتقل الى الاصدار v7  الذي  ينفي الكلام الي يقولنه  لانه بعض العقول تركز على الاشياء البسيطه وليس على الاهم  دام انا كاتب بمنشوري  لجميع الاصدارات  في الاصدار v7 صح مختلف  على الاصدار v6 الا ان الثغره  تتجاوز حمايه جميع الاصدارات وشكرا",
+   "author": {
+    "id": "100004547268527",
+    "name": "نسيم العكيشي",
+    "url": "https://www.facebook.com/nasimalokaishi",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/481259781_2891674840994063_7804895277975248282_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=_mN0fmOaRnYQ7kNvwFR0QAw&_nc_oc=AdoTPB98vgIJm6PFwIbX9Vqdnuzlxp95e9LrmU28rOm-E5H03qpXpJs11iWhIIBtklQ&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQPwJGcxYP-6RqX5xMACU5ElzMjP2NMynUUmVyw3l7_C2w&oe=6ADB94CE"
+   },
+   "timestamp": 1786633377,
+   "reactions_count": 4,
+   "comments_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTk1NTg5Nzg5NTEwNzIxNw==",
+   "shares_id": "ZmVlZGJhY2s6MTk1NTg5Nzg5NTEwNzIxNw==",
+   "associated_group_id": "214244552605902",
+   "author_title": "ملتقى مهندسين الشبكات Networkars"
+  },
+  {
+   "post_id": "1446014970703670",
+   "url": "https://www.facebook.com/groups/937544671550705/permalink/1446014970703670/",
+   "message": "السلام عليكم اخوان عفوا اكو شخص اشترى v7 plugin اريد استعلم عن السيارة وصرفيتها الحقيقة  بالاستخدام اليومي وشكرا جزيلا لكم",
+   "author": {
+    "id": "pfbid0Gu3TUF6pi4ww9RtTCrxkZkyH2yY19gD5tFJq1fLeXZvtgpLfCRDCcLV1iN5yN1vSl",
+    "name": "Ubai Khalid",
+    "url": "",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-1/68504696_2989509734455905_9157873317439340544_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=QJMOc6U75n8Q7kNvwHkMO0L&_nc_oc=Adpcv-co5jfzMnzbUPtys0f38MPtJk1jrReoQCx03naCwugqN95oA7V3oPvAS2md91Q&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQO531FfqnanNFUd5uT-1856epwU4r99MwiQRXcSVh_FcA&oe=6AFD2B68"
+   },
+   "timestamp": 1786253398,
+   "reactions_count": 6,
+   "comments_count": 8,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 6,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQ0NjAxNDk3MDcwMzY3MA==",
+   "shares_id": "ZmVlZGJhY2s6MTQ0NjAxNDk3MDcwMzY3MA==",
+   "associated_group_id": "937544671550705",
+   "author_title": "كروب هافال العراق :: GWM IRAQ"
+  },
+  {
+   "post_id": "29022449717356744",
+   "url": "https://www.facebook.com/groups/220508021310964/permalink/29022449717356744/",
+   "message": "ياشباب الي حدث للاصدار v7 اليوزر منجر ينتقل بكل سهوله مافي اي مشكله.   والذي مايشتي الاصدار v7 يحدث الاصدار v6  اذا الحل كله  مافي اي مشاكل بالتحديثات  دمتم وادام الوطن بالف خير\nللعلم الشركه نزلت التحديث للحمايه \nلحمايه حقوق كل  الناس. اذا الشي الصح",
+   "author": {
+    "id": "100004547268527",
+    "name": "نسيم العكيشي",
+    "url": "https://www.facebook.com/nasimalokaishi",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/481259781_2891674840994063_7804895277975248282_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=_mN0fmOaRnYQ7kNvwFR0QAw&_nc_oc=AdoTPB98vgIJm6PFwIbX9Vqdnuzlxp95e9LrmU28rOm-E5H03qpXpJs11iWhIIBtklQ&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQPwJGcxYP-6RqX5xMACU5ElzMjP2NMynUUmVyw3l7_C2w&oe=6ADB94CE"
+   },
+   "timestamp": 1788490792,
+   "reactions_count": 0,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjkwMjI0NDk3MTczNTY3NDQ=",
+   "shares_id": "ZmVlZGJhY2s6MjkwMjI0NDk3MTczNTY3NDQ=",
+   "associated_group_id": "220508021310964",
+   "author_title": "مهندسين الاتصالات والالكترونيات/لتعليم كل ما يتعلق بGSM",
+   "attached_post": {
+    "post_id": "3473207752840766",
+    "url": "https://www.facebook.com/nasimalokaishi/posts/pfbid033JYY7mknreDzFmDUQvcdsLLVPhuBreZKkeRxBSpVueBcNueHJKHwBWTVLEEXTMyMl",
+    "message": "ياشباب الي حدث للاصدار v7 اليوزر منجر ينتقل بكل سهوله مافي اي مشكله.   والذي مايشتي الاصدار v7 يحدث الاصدار v6  اذا الحل كله  مافي اي مشاكل بالتحديثات  دمتم وادام الوطن بالف خير\nللعلم الشركه نزلت التحديث للحمايه \nلحمايه حقوق كل  الناس. اذا الشي الصح",
+    "author": {
+     "id": "100004547268527",
+     "name": "نسيم العكيشي",
+     "url": "https://www.facebook.com/nasimalokaishi",
+     "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/481259781_2891674840994063_7804895277975248282_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=_mN0fmOaRnYQ7kNvwFR0QAw&_nc_oc=AdoTPB98vgIJm6PFwIbX9Vqdnuzlxp95e9LrmU28rOm-E5H03qpXpJs11iWhIIBtklQ&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQPwJGcxYP-6RqX5xMACU5ElzMjP2NMynUUmVyw3l7_C2w&oe=6ADB94CE"
+    }
+   }
+  },
+  {
+   "post_id": "1531752712328374",
+   "url": "https://www.facebook.com/AlamElSyarat.net/posts/pfbid0vL95dHEQhNa1KSGnPnBzuRUZ3rko6W2u5T1DXUkttaT1FZNRLnLKYbYEHsx6GF4gl",
+   "message": "بمدى 1,000 كم.. أسعار ومواصفات هافال V7 الهجينة بعد طرحها لدى الموزعين في السوق المصري\n\nللتفاصيل 👇 \nhttps://www.alamelsyarat.net/523367",
+   "author": {
+    "id": "100064809789710",
+    "name": "Alam ElSyarat - مجلة عالم السيارات",
+    "url": "https://www.facebook.com/AlamElSyarat.net",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/825266995_1548600743976904_7009891937723989794_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=K30e7PwPqtcQ7kNvwHmRl3L&_nc_oc=AdqM2V14QEm6hv1mY7uwk09hMgvp1m1zc2FDCXvtcSV61bA6DlYzhDUnIocxaCeqRvI&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQNIxtsDSNVu3I93cxSi3x2dTDcaEAv2vmCqGJIrjiXxhg&oe=6ADB8B05"
+   },
+   "timestamp": 1788894182,
+   "reactions_count": 18,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 18,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/799972294_1531752645661714_3232002342202008574_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=QaPKEMIywsoQ7kNvwGCGBaU&_nc_oc=AdpILvsaT2W-KndxSyEh0nWgFs3FoAwdoolWSURXZN6lqNB8A15ueFdcKmuJucv06KU&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQOrDXZ2aIhjfiGfmDfd_6aPw8SNurRrAgiAL-u8QLtb1Q&oe=6ADB9B3E",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/800958917_1531752652328380_42112441103030619_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=m-JO9HQ61mIQ7kNvwEnvRJX&_nc_oc=AdqNKFu6TAp-pKJPOPuUJeAvB9fmrSX7NYcuyD2FRzdrne5NMnb1SwGU2YTr1Cpbmso&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQNWEuFMgSALsZ9C-r1604WKozegVG1p9wrKD3wk0JAgmA&oe=6ADB9DFA",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/800540578_1531753595661619_6659519291683686662_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LaSPrYjzCJAQ7kNvwGW3rGl&_nc_oc=AdpwDAUTjRfpbBj64YLxF__DYwdcgq7lEdsoqo3KdR4RsLl4HZSuomIl7hA-81XAmPY&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQNeguWvJy09CojdXMwQR1Z8uXAVSRAWXUJEi1mgq5gQvg&oe=6ADBABD8",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/800595069_1531753635661615_7393233729028000657_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Fv48DIKBaBoQ7kNvwFpRT4I&_nc_oc=AdobPezOg2WLE4DekHiEyqtLowEFhGLbf6nmJji8sUtRPRrUa8aRYdu7GHdvUxc2EJo&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQNaxXmG_BraeaTItORcwMLMks53lu3yckT7K6ns-Df6JA&oe=6ADBA2AD",
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/800086907_1531753698994942_9124501139834788331_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-SP4Fpo78xEQ7kNvwH3LNwH&_nc_oc=AdrB4YeKdRmUywGiAn0Um6QGDeaaSSTlF_yPOMMgSRRoeAjWHTtEvC9I6x_UjWnwhsE&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=Eja8LWY4S3dJIfxrQvK74g&_nc_ss=72180&oh=00_AQNvbOPheHF9uOVvEc0r7Y21cOSqDWo9Hd8-J6C7JiQKzg&oe=6ADB9E87"
+   ],
+   "external_url": "https://www.alamelsyarat.net/523367",
+   "comments_id": "ZmVlZGJhY2s6MTUzMTc1MjcxMjMyODM3NA==",
+   "shares_id": "ZmVlZGJhY2s6MTUzMTc1MjcxMjMyODM3NA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3d3dy5hbGFtZWxzeWFyYXQubmV0LzUyMzM2Nzo6RGVmYXVsdDo6OjE1MzE3NTI3MTIzMjgzNzQ6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.alamelsyarat.net%2F523367&h=AUDXs75gXRc8KGik-kprzKh69cg_VHXw1WA05pDiOy3ioJQ6PfIURWCx_p-uNz1tUEd0K1aILEezK5e2S-Tp1Oke4ax071a9WWmqZI9R8TBNvARCvbI_1xKTLLvkRtKwN01LP8bu26PjJONe8hxXr5EHqsyIbUbz&s=1",
+     "offset": 100,
+     "length": 35
+    }
+   ]
+  },
+  {
+   "post_id": "122298874802174849",
+   "url": "https://www.facebook.com/NosignalAuto/posts/pfbid0FqzfvBqubA5sWFjYLdAgbmaqShDZddDUfXRMHERnkhJvTzTpk9nQvZ2PQF3sf5Xfl",
+   "message": ".\nللبيع هافال V7 \n2027 \n‏ماشي 6900 بدون حوادث صبغ وكاله\nتأمين شامل \nمطلوب 102000 \nللاستفسار 33567788",
+   "author": {
+    "id": "61555245496968",
+    "name": "Nosignal Auto",
+    "url": "https://www.facebook.com/NosignalAuto",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/419862817_122110140062174849_8971031019321489478_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=pzskwJB_N9sQ7kNvwHKbMfl&_nc_oc=Adrt2dcABnqIEThgWvkbNVF6kQc0xuNDCCSEI_0_1lBxQopeiJIVsI55BynqYFcIlUc&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQP2tDuZY4hMUzxLr2VFyarnfU5Zu1pmQpW9ihDa-7P2GQ&oe=6ADB998B"
+   },
+   "timestamp": 1788883287,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/800755754_18627821662000285_2661546458554251130_n.webp?stp=dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_aid=0&_nc_ohc=2n6_W8L2K7kQ7kNvwHvr2bg&_nc_oc=AdrsezHAS-PRin0lsjcv_DP-5pvfwxuPiu4qoZLNzDYXBU1whypd6TxrLqy0UP_5Mm4&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQNf7aiUANKc2FXW8LIpvrqNRfMdjiuTxQHmrQcrW-FBYA&oe=6ADBA6D5",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/800317210_18627821731000285_2582456715633550436_n.webp?stp=dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_aid=0&_nc_ohc=xv8gEaG6ArsQ7kNvwEdhm4t&_nc_oc=AdpkC8mcwBb3xImI_G35-RPYZmS_LogPIhmFkgLPQOlZYEjYaXNNil8krk8Dh3hFwEk&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQOnfVMGrmxaSng8rvesQeeoEuNmO0XoS-JxMmNRmEsmdw&oe=6ADBA914"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjk4ODc0ODAyMTc0ODQ5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjk4ODc0ODAyMTc0ODQ5",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122305532726174849",
+   "url": "https://www.facebook.com/NosignalAuto/posts/pfbid02SB1bhN2URiWwRpg55mGve75xy7sjksbaF9aPVQZF8QLJChawM87J6BEfF23aA77Dl",
+   "message": "..\nوصول دفعه من هافال V7 \nموديلات 2027 \nتسليم فوري\nجميع الالوان الخارجية جميع الالوان الداخلية \n\nارقام فريق المبيعات\n\n0097460003591\n0097460003592",
+   "author": {
+    "id": "61555245496968",
+    "name": "Nosignal Auto",
+    "url": "https://www.facebook.com/NosignalAuto",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/419862817_122110140062174849_8971031019321489478_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=pzskwJB_N9sQ7kNvwHKbMfl&_nc_oc=Adrt2dcABnqIEThgWvkbNVF6kQc0xuNDCCSEI_0_1lBxQopeiJIVsI55BynqYFcIlUc&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQP2tDuZY4hMUzxLr2VFyarnfU5Zu1pmQpW9ihDa-7P2GQ&oe=6ADB998B"
+   },
+   "timestamp": 1792080142,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/845844732_122305229960174849_3276322896843546375_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=q7qHY7Q72PwQ7kNvwEd4T-p&_nc_oc=AdqT5HEZRJzPemZlSB6RagHnN-QwB1Wbzt_Prf4ZgJUV4Jdp0hpuCC3SzMMaItQpx9o&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQP7LaGI4qVPFZ6QYkZWNfvJDJU9m9RSsv46kQRJd7oGrg&oe=6ADB9AF1",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMzA1NTMyNzI2MTc0ODQ5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMzA1NTMyNzI2MTc0ODQ5",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122274131804930611",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0nPpWYGfTTWZscmtPm85H9GsBWDkUwtBQwQvnaSa47bd3eHpxPupZBpr16Ei2dXzXl&id=61577918340455",
+   "message": "هفال V7\nموديل 2027\nعداد 4000 كم \nاسود داخل  ابيض \nالسياره بحاله الشركه \nالسعر 98000 الف ريال \nتحت الضمان \nمعرض وادي الريان للسيارات \n55465166\n70330707",
+   "author": {
+    "id": "61577918340455",
+    "name": "معرض وادي الريان للسيارات",
+    "url": "https://www.facebook.com/people/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/61577918340455/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/517841763_122108528660930611_1677130135127364463_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vUcsmnjoFrkQ7kNvwHSCG5x&_nc_oc=AdpMt3t95ZxvcqazCMgtYcrLUiOO-zSwxNb6ycsFVQkW6cU1bS-uQNgoUbzk7OmDXm4&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQMUiqoE_t6A2f-qjf8TC3BK_m4quDXzO4aBWb1KqVhuWw&oe=6ADB8F72"
+   },
+   "timestamp": 1790862802,
+   "reactions_count": 2,
+   "comments_count": 0,
+   "reshare_count": 8,
+   "reactions": {
+    "like": 2,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjc0MTMxODA0OTMwNjEx",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjc0MTMxODA0OTMwNjEx",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1072365515746558",
+   "url": "https://www.facebook.com/quwatasad/posts/pfbid0P34vrBBD2qTuCQE2X9BPL84FDanJfbCo52LBi18gXx8HDdK5c5262623GVuvNU5zl",
+   "message": "لحظات لا تُنسى.. وفرحة تستحق الانتظار. 💚😍\n\nاستقبلنا في مقر شركة طريق الجبل بصنعاء الفائزين من فئات:\n 💵 200,000 ريال\n 💵 500,000 ريال\n 👑 الجائزة الكبرى: 1,000,000 ريال\n\nحيث تم تكريمهم وتسليم جوائزهم وسط أجواء مليئة بالفرحة. 👏🏼 \n\nأما الفائزون من المحافظات الأخرى، فقد تم إرسال جوائزهم عبر الحوالات المالية، ليصل حق كل فائز أينما كان.🙏🏼\n\nنبارك لجميع الفائزين، ونشكر كل من شارك في مسابقة توقع بطل كأس العالم 2026.\nالقادم بإذن الله... أقوى. 🦁💚\n\n#مشروب_قوة_أسد\n#شجع_بقلب_أسد",
+   "author": {
+    "id": "100089193587475",
+    "name": "مشروب قوة أسد",
+    "url": "https://www.facebook.com/quwatasad",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/346042288_768275485033332_732050327370923415_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R2eAOOndotQQ7kNvwGW8bl9&_nc_oc=AdqlMxzS8S7kJjwUtjTgJtyBLuBzBPB-znVcrwqnxGt3ROTCOwASgN15v9XwE5fLM_I&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=0DQ8SEfelFUGs8Ud7Tvy7g&_nc_ss=72180&oh=00_AQNDiSiRtFe3Fef31dR37luR92wIMrNJQQodCZ3NCha_0w&oe=6ADBA3CA"
+   },
+   "timestamp": 1786001413,
+   "reactions_count": 504,
+   "comments_count": 92,
+   "reshare_count": 7,
+   "reactions": {
+    "like": 480,
+    "love": 22,
+    "haha": 1,
+    "wow": 0,
+    "sad": 1,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTA3MjM2NTUxNTc0NjU1OA==",
+   "shares_id": "ZmVlZGJhY2s6MTA3MjM2NTUxNTc0NjU1OA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "5683004808462958",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8_%D9%82%D9%88%D8%A9_%D8%A3%D8%B3%D8%AF?__eep__=6",
+     "offset": 439,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "27449250494713392",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D8%AC%D8%B9_%D8%A8%D9%82%D9%84%D8%A8_%D8%A3%D8%B3%D8%AF?__eep__=6",
+     "offset": 454,
+     "length": 13
+    }
+   ]
+  }
+ ]
+}

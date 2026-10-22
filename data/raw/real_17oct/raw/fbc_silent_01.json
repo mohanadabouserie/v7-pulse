@@ -1,0 +1,922 @@
+{
+ "input": {
+  "query": "ڤيسڤن",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "WA6U7bhzWcC1aa8cz",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:21:47.095Z",
+  "finishedAt": "2026-10-19T08:22:08.900Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 18
+  },
+  "usageTotalUsd": 0.039650000000000005
+ },
+ "cost_usd": 0.286,
+ "items": [
+  {
+   "post_id": "3666001826884510",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xkUXxwhuVZk1Ci1XcECZmMyH51pA1R1v1vjU3bjRdXbNLpBaaS49vXvsnbLqdo99l&id=100004241860406",
+   "message": "Some people think that my appearance and success are a threat to their position. \n\n But I tell them: Rest assured, I have come to rewrite my story, not to replace anyone. The fabric I bought was cut only to my height. I sewed it for myself, not for the tailor.",
+   "author": {
+    "id": "pfbid0Fryevmzn7A8sfLtvEszM8Ge16eomajWQhdxWRdpaS36uXc3XNvBYkTn9BoP2Ln1hl",
+    "name": "Memo Yetkin",
+    "url": "https://www.facebook.com/people/Memo-Yetkin/pfbid0Fryevmzn7A8sfLtvEszM8Ge16eomajWQhdxWRdpaS36uXc3XNvBYkTn9BoP2Ln1hl/",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/649796791_3508206369330724_3154464297313740510_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=uozXghm8u6oQ7kNvwH_xebG&_nc_oc=AdqGOAP9_E61gIyFZ7aBOAUfd7iX-21Wc7mvpEQQaoy1b62EEIqVOMf7xx8VJQD5yk6yGq6kbjDfK4FPnVbPr4Ys&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQP5DcAuo3Yoek_MYcGhiBHLtrBX9i0fjpUkVaGhggvGdQ&oe=6ADBADB1"
+   },
+   "timestamp": 1785932328,
+   "reactions_count": 4,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 3,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-6/764006301_10238774519040518_5588547899410120687_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u_Q6RiabH1EQ7kNvwGDVUeC&_nc_oc=AdoBtfRkL50_Je6rblnCzCRXwNl3r_reH3s7_UEA3z30O7XnT9RjclHZ3EEiDOazgz67Ha11a2et1LcHs8OyqFJ7&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQN46qEZIcOv9LtFsb9sBRjNcrIAqK7Q_W3WzdLQZFrBEQ&oe=6ADBBA5D",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MzY2NjAwMTgyNjg4NDUxMA==",
+   "shares_id": "ZmVlZGJhY2s6MzY2NjAwMTgyNjg4NDUxMA==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "10238774519960541",
+    "url": "https://www.facebook.com/harmenahmed/posts/pfbid02YFsNyRDPq4t1ZAFj6DnGoQAfHVLNrD4xhS1XGgCRhM86T5sFhxMwwzUBnCHCC6fXl",
+    "message": "هەندێک کەس وا دەزانن دەرکەوتن و سەرکەوتنی ( من ) هەڕەشەیە بۆ سەر پێگەی ئەوان. \n\nبەڵام پێیان دەڵێم: دڵنیابە، من هاتووم بۆ ئەوەی چیرۆکی خۆم بنووسمەوە، نەک جێگەی کەس بگرم , ئەو قوماشەی کڕیومە، تەنیا بە باڵای خۆمدا بڕاوە ، بۆ خۆمم دووریوە نەک بۆ بەرگدروو .\n\nHinek kes wiha dizanin ku derketin û serkeftina (min) gefek e li ser pêgeha wan.\n\nLê belê ez ji wan re dibêjim: Piştrast bin, ez hatime da ku çîroka xwe binivîsim, ne ku cihê kesekî bigirim. Ew qumaşê ku min kiriye, bi tenê li gor bejna min hatiye birîn; min ji bo xwe dirûtiye, ne ji bo dirûtingehan.\"",
+    "author": {
+     "id": "1201492672",
+     "name": "Harmn Ahmad",
+     "url": "",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/565645697_10234732850681335_6378965628934254266_n.jpg?stp=cp6_dst-jpg_s50x50_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=s02P1WE2bD0Q7kNvwFgQ_8L&_nc_oc=AdoI1x7QJAIZPT6_5lvZebcvniDCcwMxbshml--lcwQiMn69ZqA3hiBZWz91LsndBK7bIoq-uPd2R8KbnAwEcmQb&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQNzsLwZWP35ew7lJlf33szEnzN72tZ-2Q68GI4q4vqb6A&oe=6ADBA6CB"
+    }
+   }
+  },
+  {
+   "post_id": "2183718849077371",
+   "url": "https://www.facebook.com/Hemn.luqman.16/posts/pfbid07cRFUgkMzV4nN4NspEUxyhQvWsbvRBru66pYGcwJdf9yDxskQivnkTzfAKLUZ8rjl",
+   "message": "Leaders for leading the future. 🌺",
+   "author": {
+    "id": "pfbid0aHbh77ic3UrbbxaaBiu2dz8LE72X1cmvb2Wvpm5rVBACHzEUkoAB1SzaLAufvEKjl",
+    "name": "Hemn Luqman",
+    "url": "https://www.facebook.com/Hemn.luqman.16",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/400960161_1466783797437550_2440762170876273570_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=haOHTbswo94Q7kNvwGEBPBQ&_nc_oc=AdrubPlYhuDJIQIY7D_qOduh3cQw_KwK1OFhFlynCL6JoPZEr77Udj5nMU3phYbc_5i3yUCf6BK-1JPvqcqXkMnP&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQNvjvjhP4TofVw25wWu5hnB5ibsX869T9R9B6VmQ3ua0g&oe=6ADB9CE5"
+   },
+   "timestamp": 1783866533,
+   "reactions_count": 19,
+   "comments_count": 12,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 13,
+    "love": 6,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjE4MzcxODg0OTA3NzM3MQ==",
+   "shares_id": "ZmVlZGJhY2s6MjE4MzcxODg0OTA3NzM3MQ==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "122329698704053387",
+    "url": "https://www.facebook.com/lpskg.kalar/posts/pfbid02CGvzehy3yCMXE8Zprt7C97ZdBhHMCGZuYuURARRjxjhrFXKu1wP2s5B2rwxfUsGWl",
+    "message": "#کۆبونەوەی_دەستەی_گشتی_لیدەرس \nبەڕۆژبوون، زامنی مانەوەی هەر دامەزراوەیەکە بە بەهێزی.\n\nلیدەرس لە شاری هەڵەبجە کۆبونەوەی دەستەی گشتی ئەنجامدا و کۆبونەوەکەی تایبەت کرد بە خستنەڕوو و شرۆڤەی پلانی ستراتیژی لیدەرس تا ساڵی ٢٠٣٠.\n\nپلانەکە بەهەماهەنگی دامەزراوەی نێودەوڵەتی ولیام گلاسەر و بەستانداردەکانی قوتابخانەی کوالیتی گلاسەری نوسراوە.",
+    "author": {
+     "id": "61551601631486",
+     "name": "باخچە وقوتابخانەی لیدەرسی ناحكومی- كەلار::Leaders School & Kg-Kalar",
+     "url": "https://www.facebook.com/lpskg.kalar",
+     "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/474848603_122228780216053387_2938264602612264605_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=CvkLVwUGfCUQ7kNvwEVgtRs&_nc_oc=AdpfiausmMnKvJUpQO3l98nAyb9YoKSe7Jq81N7q4g6Z-zirGDgjN5dnr6RlTIO7J-n_Qs0Vdez28VTkPP5eenHM&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQPSr3-PKY94xW1s8H_OJWNTHd2wKKFB3aLIIBkW1w2Hog&oe=6ADB95D8"
+    }
+   }
+  },
+  {
+   "post_id": "1548092684016376",
+   "url": "https://www.facebook.com/hotechetool/posts/pfbid0o85qghkEjrnoukkoARB4PVutALhU16js89XEJC6KMj3EivpAZHDKcNoJNdHSWZWPl",
+   "message": "Kurdish :\n🛠️ هەموو پێویستییەکانت لە یەک شوێن.\n\nArabic:\n🛠️ كل ما تحتاجه… في مكان واحد.\n\nEnglish:\n🛠️ Everything You Need, All in One Place.",
+   "author": {
+    "id": "100064469781982",
+    "name": "Hoteche",
+    "url": "https://www.facebook.com/hotechetool",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/447489296_880586820766969_1680128113684613705_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=igbndyHO2BIQ7kNvwGNccdd&_nc_oc=AdpfBmMUzr-smRtiZhllKGSwTqX1R647gLYGP_JTY70hcYRSup1LqLQoqhvajNVbNBd1SJB5KghzSKg8pteooYQo&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQNfg3bL95k3RTEcHoWVBIJ81wLe0b2f9ScRQ_OT-RZKdg&oe=6ADB9750"
+   },
+   "timestamp": 1783867612,
+   "reactions_count": 258,
+   "comments_count": 2,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 257,
+    "love": 0,
+    "haha": 1,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-6/743777755_1548092634016381_2001662933306876253_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7tlmh2oJaWQQ7kNvwHm8Kf5&_nc_oc=Adq_6Scx5uVz2NCPNueqykDRXadd9UHF2u0hX58S340HrMXT6IbYgW8wIo2iNsJ3IihHxtrXSszUZ7H-vQhA6QL6&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQOOJ0w_Ws-q7-F4WhaVK33fVmws5qCYxoDk-QOXRnXtIQ&oe=6ADB96F8",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTU0ODA5MjY4NDAxNjM3Ng==",
+   "shares_id": "ZmVlZGJhY2s6MTU0ODA5MjY4NDAxNjM3Ng==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "10244703276700661",
+   "url": "https://www.facebook.com/kerstin.spriesterbach/posts/pfbid0MdVHtnPZYTpJXXrFaErQsW66dw7jZqyHKoPeEQeLq3TJMZN4iZCpmVoKN5civjosl",
+   "message": "Thank you Dr for your time and for the great cooperation 🙏🏻",
+   "author": {
+    "id": "pfbid0hJWsSFrs9VKJU4579S64LkkDFEKFJhta5avS14UvW4M4jSvUERgF7qmH59TmyACWl",
+    "name": "Kerstin Spriesterbach",
+    "url": "",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t1.6435-1/124162958_10225073881258043_4230657966799959984_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YuyfE5qbPWkQ7kNvwE4fQZV&_nc_oc=AdoZdG9HOdRb69KqNasDF5R-2Xu00fsWCokSqwHbgclbnVgg5puSdQvY44zcQG2ur2xhAVWBI8TW7N9RzGIYQcXr&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQOSOZxZb2lgzCGx6km419_j5GIIABq-Q988GpAVG09m5w&oe=6AFD4CBE"
+   },
+   "timestamp": 1780422791,
+   "reactions_count": 114,
+   "comments_count": 14,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 90,
+    "love": 21,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 3
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-6/710986212_2286718665494576_8753432862970357412_n.jpg?stp=cp6_dst-jpg_s565x565_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j54B67eKHIIQ7kNvwGXcX8T&_nc_oc=AdonYt-jIDaQyynf7KodsXzE5gFFp_cfKIpK5_-F-R4a_wYVAzQe71-8okSlT3pg7HlY_pnbFWPKHS3DbsDtxPwU&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQNUR7Mh2xDytMMHn0eQC9pX9T-cSS3_cgTqNVEwVoArhA&oe=6ADBB171",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTAyNDQ3MDMyNzY3MDA2NjE=",
+   "shares_id": "ZmVlZGJhY2s6MTAyNDQ3MDMyNzY3MDA2NjE=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "2286718695494573",
+    "url": "https://www.facebook.com/kanar.fadhilhidayat/posts/pfbid02EDXYKf6h7sdQgo4UKUnY9g2i9sv4m4cy6q926bijQNy9Cy6jMdUYGft5YDgmKoZYl",
+    "message": "ئەمڕۆ ١-٦-٢٠٢٦ پێشوازیمان کرد لە بەڕێز کێرستن قونسوڵی ئابوری و پەرەپێدانی ووڵاتی ئەڵمانیا لە هەرێمی کوردستان.\nبەخێر هاتنەوەمان کرد کە چەند ماوەیەک بە هۆی شەڕ لە ناوچەکە گەڕابۆوە بۆ ئەڵمانیا.\nگفتوگۆی چڕمان کرد لەسەر هەماهەنگی و کاری داهاتومان پێکەوە. جەختمان کردەوە لە پێویسیمان بە هاوکاری ووڵاتی ئەڵمانیا و بە پلانێکی چڕ و بە هاوکاری لایەنە پەیوەندیدارەکانی حکومەت پێویستە هاوکاری و بەرنامەی تایبەت بە هەموو ناوچەکانی هەرێم هەبێت.",
+    "author": {
+     "id": "pfbid02Vh8CA9dFYjvsP7ttxMdE1b6danjaP47nzZqUUqcGUEpg3f9j3huVAyUq8HT6ka2jl",
+     "name": "Kanar Fadhil Hidayat",
+     "url": "https://www.facebook.com/kanar.fadhilhidayat",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/703948659_2275873363245773_1255018117368531376_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_0R6w7qaDO8Q7kNvwGZnK8_&_nc_oc=AdoMfjBc5fpjncLlXoWOUZRo-RP9S0dS1EAAlZ22ijZF9GqxHZTg31Wqr30QuOcOLU5rwJ8xtOipllaz-MuirEBm&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQP3bD4QboFo-zptePO08txEKdWXdBMnQ9U7z9bmQ5nQcw&oe=6ADBA048"
+    }
+   }
+  },
+  {
+   "post_id": "3323684864480428",
+   "url": "https://www.facebook.com/astykaws/posts/pfbid02RoiTV5VXESd9qPMonQxbQnp8reoyPQztjUMAmxKNpxWQt7N1w1y7MUpzTgSecuXwl",
+   "message": "Day one but big day 😍",
+   "author": {
+    "id": "100005168402556",
+    "name": "ڕاستی کاوێس",
+    "url": "https://www.facebook.com/astykaws",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/322169026_659955082495407_286252786119830850_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=W2VmlIUCQB0Q7kNvwFXWeA6&_nc_oc=AdqNYUvp6MBBRHesl74KEvHZXenFID9wmGrxHIaJnurD0ikNwGcplMnHQf8HHul0sdxC3IdbTRClReB4th-NJbbp&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQOkDlxAQAFjkS8Xw6Q1dP4mk3OI7VYb5rBoEZ1AoXM5XQ&oe=6ADB9621"
+   },
+   "timestamp": 1787856979,
+   "reactions_count": 18,
+   "comments_count": 2,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 16,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MzMyMzY4NDg2NDQ4MDQyOA==",
+   "shares_id": "ZmVlZGJhY2s6MzMyMzY4NDg2NDQ4MDQyOA==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1586338663285191",
+    "url": "https://www.facebook.com/architecturecriticism/posts/pfbid0vL2kF5UdmUg17aWuDrNgAJwNyR21yRgVraiWiQWo1paQTYBLW9orR7EBDiX8JeCEl",
+    "message": "ئەلبوومی یەکەمین ڕۆژی بەڕێوەچوونی، ١٦هەمین پێشانگای نێودەوڵەتی هەولێر EIF",
+    "author": {
+     "id": "100057272177736",
+     "name": "ڕەخنەی تەلارسازی",
+     "url": "https://www.facebook.com/architecturecriticism",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/327125176_589454035852339_6459400454561068901_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ioXljTq-3MQQ7kNvwE8DsLl&_nc_oc=AdqcbTa80EoYzAl2DiXf24dRi7Iw8h7sUh5xezWkU6jIOUUCfTpiXf2w3IBEHdWj9WMTw3kxwcDLYawzeY6orq1F&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQMYolT83oui9L3rzZtYYRHNyf5Ib5WMiBTln_lQ1f8gKw&oe=6ADBA70A"
+    }
+   }
+  },
+  {
+   "post_id": "27782155084737872",
+   "url": "https://www.facebook.com/abdullah.a.agha/posts/pfbid025s56Cd6SsQtf4rVCZBeMpPTtEbAYUtxMQKvG8YS3TuW5LNwffCnCUvRTSJXS69yVl",
+   "message": "Glad to have accompanied the Head of the EU Liaison Office during an official meeting with H.E. Safeen Dizayee, Head of the Department of Foreign Relations, where discussions focused on strengthening cooperation between the Kurdistan Region and the European Union, as well as recent regional developments.",
+   "author": {
+    "id": "pfbid0PiGuGw8JKS81BCJvnfsWhUf2pddBE63Tn9gT8PhY8krzZN1TZe3tNvLXdwTVhd8Sl",
+    "name": "Abdullah Asoss Agha",
+    "url": "https://www.facebook.com/abdullah.a.agha",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t1.6435-1/69895385_2485453678168028_2032607424749240320_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Ik20_aBwl3sQ7kNvwEymmjT&_nc_oc=AdoUMISxMbbwyGk96ubC9xGbB16yvC3jpuRvaXx4mK5FIxgq5V3TVfpl-OMQjx_GJDjt72tGmKRR7FMwTzDBpnaw&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQPxUvUF-hBklPl1uZkphITWJ0Ykg23hQvYmE-_u9eqTQw&oe=6AFD3C76"
+   },
+   "timestamp": 1784727408,
+   "reactions_count": 31,
+   "comments_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 25,
+    "love": 6,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6Mjc3ODIxNTUwODQ3Mzc4NzI=",
+   "shares_id": "ZmVlZGJhY2s6Mjc3ODIxNTUwODQ3Mzc4NzI=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1598527744964467",
+    "url": "https://www.facebook.com/KRG.DFR.Official/posts/pfbid0365r8X7Vv4SY5tHsbiruGLm2bgELjpEWBn1AZ7Usf39VGJfM3sx4L8gpCwNBiL9hel",
+    "message": "بەرپرسى فەرمانگەی پەیوەندییەکانی دەرەوە پێشوازى لە بەرپرسی نووسینگەى پەیوەندییەکانى یەکێتى ئەوروپا لە هەرێم کرد\n\nئەمڕۆ چوارشەممە، 22 تەمووز 2026، سەفین موحسین دزەیی، بەرپرسى فەرمانگەی پەیوەندییەکانی دەرەوە، پێشوازى لە رادۆ بۆتوم، بەرپرسی نووسینگەى پەیوەندییەکانى یەکێتى ئەوروپا لە هەرێم کرد. \n\nلەکۆبوونەوەکەدا هەردوولا باسیان لە پتەوکردنی پەیوەندییە دووقۆڵیەکانى نێوان هەرێمى کوردستان و یەکێتى ئەوروپا کرد و جەختیان لە هەماهەنگی زیاتر کردەوە لەو بوارانەى کە جێگەى بایەخی هەردوولان.\n\nپرسە ناوخۆییەکانى هەرێمى کوردستان و پەیوەندییەکانى نێوان هەولێر و بەغدا و دوایین پێشهاتەکانى ناوچەکە تاوتوێ کرا.",
+    "author": {
+     "id": "100044217710173",
+     "name": "فەرمانگەی پەیوەندییەکانی دەرەوە -Department of Foreign Relations",
+     "url": "https://www.facebook.com/KRG.DFR.Official",
+     "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/271765934_485683766248876_1478295793573206043_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=eszcuR7_vHoQ7kNvwGr0JIX&_nc_oc=AdrHqUBc39_CGgFs_U0tBHeuvubpdvVNw8I2VbD9qhEJkzHjmHvxo2t0Ihxu-uVCxxd5sFvbmofRIWfWgiaPJjoh&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=7NZm2GGQQ880XTagLQxJbA&_nc_ss=72180&oh=00_AQOLoohwEZiEJKwIigxAPLTBNEacwB9_AmkyGGzo_mqHsA&oe=6ADBBB20"
+    }
+   }
+  },
+  {
+   "post_id": "37730976549849348",
+   "url": "https://www.facebook.com/edmond.aragon/posts/pfbid0PajpRiQkRQytXPUG2uabyUJfjZCRsrTLPLxjJnKDCSCXXpFqSTJ28eFiiLpiwsEGl",
+   "message": "May we encounter people that are willing to lend a hand in times of life turbulences. The one that will never ever leave you in your darkest moment.",
+   "author": {
+    "id": "100000914277051",
+    "name": "Edmond Aragon",
+    "url": "https://www.facebook.com/edmond.aragon",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/825273518_39288850760728578_3768908789768601457_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=4AR-1YWIYt0Q7kNvwE0y3Aq&_nc_oc=AdpV3fQwfRbHmMeOM6tOoi6A9Hh38nb5q0k5lSDKo3-onUuGNmhiRIYE9bVyFVBir9OLuZLFyEl9U9g5YtQAOSu6&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQPgdYiPkAtOkF9nS9wsxqjSv53ixBf9sQYaWxf2x6uIBg&oe=6ADBA62E"
+   },
+   "timestamp": 1784947701,
+   "reactions_count": 5,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 2,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/754057726_1029825020058557_7612028213437134712_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=ICTkmhyW4gwQ7kNvwFCqKw9&_nc_oc=AdqqyUElgy8nD8HnJJVEbGWyCK4kydubV3tf3WWKlkTJV-kEoKCjPApSo320aDZyJ5EJbgEffCBjEzj6G0mM0HKo&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQMIv3oeKnWNm2qLc4Unm15Yn95LLVil_5rw2CBBqlN-rg&oe=6ADB9859",
+   "video": "https://www.facebook.com/watch/?v=1936404210336722",
+   "video_thumbnail": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/754057726_1029825020058557_7612028213437134712_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=ICTkmhyW4gwQ7kNvwFCqKw9&_nc_oc=AdqqyUElgy8nD8HnJJVEbGWyCK4kydubV3tf3WWKlkTJV-kEoKCjPApSo320aDZyJ5EJbgEffCBjEzj6G0mM0HKo&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQMIv3oeKnWNm2qLc4Unm15Yn95LLVil_5rw2CBBqlN-rg&oe=6ADB9859",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6Mzc3MzA5NzY1NDk4NDkzNDg=",
+   "shares_id": "ZmVlZGJhY2s6Mzc3MzA5NzY1NDk4NDkzNDg=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1471600905167220",
+    "url": "https://www.facebook.com/reel/1936404210336722/",
+    "message": "#فاکت_چێک؛ راستییە یان AI؟ بارهەڵگرێک تایەی دەتەقێت و خەریکە وەربگەڕێت، بەڵام بارهەڵگرێکی دیکە فریای دەکەوێت. شوێنەکە میسرە و ڤیدیۆکە لە دوێنێوە سۆشیاڵ میدیای تەنیوە و شۆفێرەکە بە 'قارەمان' وەسف دەکەن.\n\nئەو ڤیدیۆیەی بڵاوکراوەتەوە خولەکێک و 8 چرکەیە؛ رووداو فاکت چێکی بۆ کردووە و دەرکەوت بە ژیریی دەستکرد دروست کراوە ( شێوازی تەقین و بەجێمانی دوو تایە و گۆڕانی نووسینی دواوەی بارهەڵگر). بەڵام لەسەر بنەمای رووداوێکی راستەقینەوە دروستکراوەتەوە. شۆفێرەکەی ناوی عیماد جەلالە و رووداوەکە لە شاری دێمیاتی میسر روویداوە.\n\nتەواوی ڤیدیۆ راستەقینەکە لە کۆمێنت دانراوە",
+    "author": {
+     "id": "100069519723536",
+     "name": "Rudaw",
+     "url": "https://www.facebook.com/Rudaw.net",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/452451388_852100317117285_924594494557552691_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=TI3IvAeuQzwQ7kNvwGMma9e&_nc_oc=AdpiwjJ-QTi-ljoj0XQncoqZAKV3KLhc6_VFpXiTDapuTgjEa_aIZkC-Kv74yAXpMXIvClXaRMrTneukp1FBJDf3&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQMvoqVHs_TzE0N6UaBSMJgupQM0q83rogORtWGd4iGroQ&oe=6ADB91F4"
+    }
+   }
+  },
+  {
+   "post_id": "122176456652984119",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02e5z28sse4RcBf9Rq8Q1db64jnaJwDxSJNsr6rPFBvepbUoxDGqRBZzVntmY89DL5l&id=61579523585221",
+   "message": "Sénégal nomendily 🤣🤣🤣😂😂",
+   "author": {
+    "id": "pfbid0oErXz2uATVbYH7KJAoKy2kiAaosEeJP4nFTuPtPXYm4Xgjjm39PJ2RkRLYuQACAGl",
+    "name": "Théodord Rovaniaina",
+    "url": "https://www.facebook.com/people/Th%C3%A9odord-Rovaniaina/pfbid0oErXz2uATVbYH7KJAoKy2kiAaosEeJP4nFTuPtPXYm4Xgjjm39PJ2RkRLYuQACAGl/",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/827539092_122179226960984119_3706066252200994728_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=0VflhrSM2T0Q7kNvwHwaF-i&_nc_oc=AdpyzFbHTNXQrTIrJkaW9b6K92D1CKZ1s1LMxJ1Szhy5GAlFKR3y29j9cK4HEoUGyHXwKpfTKQJo3Tuo4r4Waytv&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQMTu5Vj7mOTdgTDJG8dZpRjle97dgUN0nKW2qH777Nrew&oe=6ADB9A96"
+   },
+   "timestamp": 1789072108,
+   "reactions_count": 5,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 4,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/789237013_1084716451173382_4942757995594964890_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=i3mhXme2bewQ7kNvwEDn6O5&_nc_oc=Ado1vGPfhvyLL1BbikqCq1TnpLV6oRbXMb5bd937lGSl502dy2kKUPEBqB5-zDTS-USOdRisMumX-IuCeJbfWAIl&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQNcizPuyPWN8TmMqG8jRik83EAbPIPxoT7DrFQ3ty6q9A&oe=6ADBAD46",
+   "video": "https://www.facebook.com/watch/?v=1767902690775406",
+   "video_thumbnail": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/789237013_1084716451173382_4942757995594964890_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=i3mhXme2bewQ7kNvwEDn6O5&_nc_oc=Ado1vGPfhvyLL1BbikqCq1TnpLV6oRbXMb5bd937lGSl502dy2kKUPEBqB5-zDTS-USOdRisMumX-IuCeJbfWAIl&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQNcizPuyPWN8TmMqG8jRik83EAbPIPxoT7DrFQ3ty6q9A&oe=6ADBAD46",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTc2NDU2NjUyOTg0MTE5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTc2NDU2NjUyOTg0MTE5",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1559576022868883",
+    "url": "https://www.facebook.com/reel/1767902690775406/",
+    "message": "ئەو بەزمەش پەیدا بووە 🤣\n\nئێستا ناهێڵن مێسی بەتەنیا پیاسە بکات، فیری فێڵی مێسی بوونە.. لەم دیمەنەدا دەردەکەوێت، تیپی دژبەر ناهێڵن ئەو پیاوە 39 ساڵە بەتەنیا پیاسە دەکات، دوو کەسیان بۆ داناوە بۆ ئەوەی پێکەوە پیاسە بکەن.",
+    "author": {
+     "id": "100064495007902",
+     "name": "Rudaw Sports",
+     "url": "https://www.facebook.com/RudawSports",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/721051494_1483778157115337_8966267485430355294_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=sl8euSQ7FRAQ7kNvwFyvK4T&_nc_oc=AdqmWpRt0ZSOEJ1ZxWr4liTBdrsEocPf6mG3_NocDCZvUdt6Eb66VIYSlXY8dKIcXvZcwphZhLVyUtF4784bdAy0&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQPx7aNDMaibEHCX_dslYRHRhCYwQ9f8zLtAMrcZJxBBKA&oe=6ADB89AA"
+    }
+   }
+  },
+  {
+   "post_id": "1559685279130133",
+   "url": "https://www.facebook.com/zeckson.santos/posts/pfbid0xNXLayN73tBBdNHxiE5U2efDk27W3cQ2cEgAmGpdf2vcemAZBx66B7R7ecj5G129l",
+   "message": "D. JOTA 21🥹🫡",
+   "author": {
+    "id": "100052660261269",
+    "name": "Zecson Ds",
+    "url": "https://www.facebook.com/zeckson.santos",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/762655571_1583519620080032_8985005959436434880_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=E0m-Y9RUQh0Q7kNvwF1jq_-&_nc_oc=AdqPLWAeNFPjdBx6itjxoSaUNXB4EU7n4uY8apNlLtkYvOs59ORdRlznMZVJ82MKQyP6_TAImY5hrf5vArCDl5i4&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQNU-djuRm8bkiueyibU02JULUMrGTMjPQWX1QlljaK0Mg&oe=6ADB9796"
+   },
+   "timestamp": 1783326298,
+   "reactions_count": 2,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t51.82787-15/730189075_18603336868013360_4719708500322099131_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=q-FUQ2qHm10Q7kNvwHeDprj&_nc_oc=Adrxrecmp37jfW37QuPFg72xq22ye5J8aMfTC5LsGq2xvEuxalAg7eMXGSrZtwY1fNIb_vBS6_-QfnbZ2VhALWFK&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQNtu2nr363VdOQVzG4ZhSeXjTmU9qv2zTC5jJs3M0wUSg&oe=6ADB9BEC",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTU1OTY4NTI3OTEzMDEzMw==",
+   "shares_id": "ZmVlZGJhY2s6MTU1OTY4NTI3OTEzMDEzMw==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1585818903162700",
+    "url": "https://www.facebook.com/abdulsamad.abdulstar.hamad/posts/pfbid048P2iz8QM7h3aeVCHe2VMWTsBokkXhcfvy7tJrodpGhY7Q2i6GAUkSSqZt6UEuAql",
+    "message": "ڕەنگە ئەمە لەلای زۆرکەس فەرامۆش کرابێت، بەڵام شایەنی ئەوەیە ئاماژەی پێ بکرێت. هەموومان لە ژیانماندا پێویستمان بە هاوڕێیەکی وەک ڕۆبن نێڤس هەیە! 🫂🥺\n\nڕێک ساڵێک دوای کۆچی دوایی هاوڕێکەی، لە یاری نێوان پورتوگال و کرواتیا، ڕۆبن بە درێسێکی “دیۆگۆ جۆتا”وە کە لە ژێر درێسەکەی خۆیەوە پۆشیبووی، چووە ناو یاریگا.\n\nجوانترین شت ئەوەیە کە نەیویست نیشانی بدات بۆ ئەوەی بیسەلمێنێت کە ئەو کارەی کردووە. پێویستی بەوە نەبوو بڵاوی بکاتەوە یان وێنەی بۆ بگرێت، یان لە تۆڕە کۆمەڵایەتییەکاندا پۆستی بکات. تەنها بۆ خۆی کردی. بۆ ئەوەی هەست بکات هاوڕێکەی لەگەڵ خۆی بردووە. چونکە ئەگەر هیچ کام لەمانە ڕووی نەدایە، ئەگەری زۆر بوو دیۆگۆ لەو یارییەدا لە تەنیشتی بوایە!\n\nتەنها کەسە زۆر وریایەکان لە کۆتایی یارییەکەدا تێبینییان کرد، کاتێک ڕۆبن ئەو درێسانەی لە ژێر جلە فەرمییەکەیەوە پۆشیبووی دایەکەند. لەو کاتەدا بوو کە مرۆڤ درکی بەم کارە سادەیە بەڵام خاوەن مانا گەورەیە کرد.\n\nهەموومان پێویستمان بە هاوڕێیەکی ئاوایە. کەسێک کە پێویست نەکات ئەو کارانەی دەیکات نیشانی جیهانی بدات، بەڵام هەرگیز ئەو کەسانە لەبیر ناکات کە خۆشی دەوێن. 🫂❤️\n\n🗣️ “لەو کاتەوەی دیۆگۆم لەدەستداوە، هەموو ڕۆژەکان بۆ من وەک یەکن و ئەمڕۆش جیاواز نابێت. هەموو ڕۆژێک یادی دەکەمەوە و ئەمڕۆش ڕۆژێکی وەک ڕۆژانی ترە، چونکە لە ساڵی ڕابردووەوە بەو شێوەیە دەژیم.” - ئەمانە تەنها قسەکانی ڕۆبن بوون سەبارەت بەو بابەتە لە کۆتایی یارییەکەدا.\n\nئەم مۆندیالە دەبێت بۆ تۆ بێت، دیۆگۆ. 🤍💫",
+    "author": {
+     "id": "100052038174235",
+     "name": "Abdulsamad Xoshnaw - عبدالصمد خوشناو",
+     "url": "https://www.facebook.com/abdulsamad.abdulstar.hamad",
+     "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/273850486_1322775834855229_9212438195932865747_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=145r5i1pEdMQ7kNvwHAhQqb&_nc_oc=Adron6ZvjVoZOSI3-30_0WbNzUzBmIOTP646UaOoLxydRf9A9IqaKEVlokPYvd-LW5vjNEmub1xOAnMPesEhOIGD&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQNMEnpnHXmMjqubuVz6KFx1obi9pksEolaGyx5f1879tQ&oe=6ADB8BA3"
+    }
+   }
+  },
+  {
+   "post_id": "28537048362614977",
+   "url": "https://www.facebook.com/barzingi.f/posts/pfbid02XyVE7nN6jSKGYT2AVJAhWVRZuMVzrnizTGU2BVtzWh75EJS2toLbjXbFYEQXCh17l",
+   "message": "وته‌ی پێشمه‌رگه‌یه‌ دێرین ڕۆژانی ئه‌نفال و گه‌رمیان\nباسی کاتێ دیوار ڕوخا له‌ نێوان مردن و ژیان\nله‌ چوارلاوه‌ سوپای دوژمن هێرشی هێنابوو بۆمان\nلادێ نه‌ما نه‌یسوتێنن خه‌ڵکه‌کانی ڕاپێچ کران\n\nپاش شه‌ڕو پێکدادان وتی کۆڕێ هاوڕێی ڕۆژانی ژان\nشه‌و به ‌ڕێوه‌ به‌ ڕۆژ که‌ڵۆز ببۆ جێی پشوو په‌نامان\nچونکه‌ به‌ ڕۆژ فڕۆکه‌کان چه‌م و هه‌رده‌کان ئه‌گه‌ڕان\nمرۆڤ و ئاژه‌ڵی ماڵی ببینرایه‌ له‌ شوێن خۆیانا ئه‌کوژران\n\nبێ له‌وه‌ هێزی ئاسمانی به‌و ناوه‌یا دا ئه‌باران\nدیلیان ئه‌کوشت یا ئه‌یانبرد یا له‌ ئاسمان‌ فڕێ ئه‌دران\nئێمه‌ش ته‌نها چه‌کمان پێ بوو له‌ گه‌ڵ فه‌رده‌یه‌ وشکه‌ نان\nکه‌رێکیش جاشێکی هه‌بوو نانه‌که‌مان لێ بار ئه‌کرد له‌ ڕێگاو بان\n\nله‌ بن که‌ڵۆز به‌ ڕۆژا ئه‌مانبه‌سته‌وه‌ پووش و گیامان بۆ ئه‌هێنان\nهه‌تاکو نه‌بینه‌ نیشان بۆ فڕۆکه‌  به‌رده‌وامه‌کانی ئاسمان\nبه‌ڵام جاشک به‌ره‌ڵابوو ڕاگیر نه‌ده‌کرا بۆمان\nله‌ پڕ له‌ که‌ڵۆز ده‌ر ئه‌چوو له‌و ناوه‌ ئه‌یدایه‌ غاردان\n\nهه‌تا ده‌هات زیادی ئه‌کرد مه‌ترسی ئاشکرا بونمان\nله‌ پاش چه‌ن ڕاوێژکاریه‌ بۆ چاره‌سه‌ر براده‌ران\nله‌ جێگایه‌ دوور له‌ دایکی له‌ چه‌مو شیوێکا کوشتمان\nهاتینه‌وه‌ به‌ره‌و که‌ڵۆز بیر ناچێ ئه‌وه‌ی بینیمان\n\nدایکی هه‌ر خۆی ڕائه‌پسکان ئه‌تووت گڕی تێ به‌ر ببوو\nپاوه‌ن و مێخسکه‌ی بچڕان هه‌رچه‌ن‌ چاوی له‌ هیچ نه‌بوو\nگه‌شته‌لای فرمێسکی باران ده‌می دای له‌ به‌چکه‌ی مردوو\nئه‌ویش به‌ لایه‌وه‌ که‌وتوو له‌ جێی خۆیا گیانی ده‌رچوو",
+   "author": {
+    "id": "100002095804394",
+    "name": "Fatih Barzingi",
+    "url": "https://www.facebook.com/barzingi.f",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/853280661_28742101075443037_6927410008312038396_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=JnaPR9eF4FIQ7kNvwEF2Enm&_nc_oc=Adr_TwHTl4GjhzGHQgWkBLKNjbWINc_2qUZFFniUYt8n4U6jo7X1xM13mjSF80irs_dnQK5WCKE2UPVKNnZd2f7t&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQMFO_JGJzuR6iiwF4hCrajjhL7Ccbs0dr09VZARbMzTGQ&oe=6ADBB8A1"
+   },
+   "timestamp": 1790842048,
+   "reactions_count": 1,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6Mjg1MzcwNDgzNjI2MTQ5Nzc=",
+   "shares_id": "ZmVlZGJhY2s6Mjg1MzcwNDgzNjI2MTQ5Nzc=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "357656940980830",
+    "url": "https://www.facebook.com/barzingi.f/posts/pfbid0EqnXSvvvvqL8H3gWXL9KunBTdoa4QYSYtb3MUUdBhUdfvyGDu5Nu4K4eMugxtW9Rl",
+    "message": "وته‌ی پێشمه‌رگه‌یه‌ دێرین ڕۆژانی ئه‌نفال و گه‌رمیان\nباسی کاتێ دیوار ڕوخا له‌ نێوان مردن و ژیان\nله‌ چوارلاوه‌ سوپای دوژمن هێرشی هێنابوو بۆمان\nلادێ نه‌ما نه‌یسوتێنن خه‌ڵکه‌کانی ڕاپێچ کران\n\nپاش شه‌ڕو پێکدادان وتی کۆڕێ هاوڕێی ڕۆژانی ژان\nشه‌و به ‌ڕێوه‌ به‌ ڕۆژ که‌ڵۆز ببۆ جێی پشوو په‌نامان\nچونکه‌ به‌ ڕۆژ فڕۆکه‌کان چه‌م و هه‌رده‌کان ئه‌گه‌ڕان\nمرۆڤ و ئاژه‌ڵی ماڵی ببینرایه‌ له‌ شوێن خۆیانا ئه‌کوژران\n\nبێ له‌وه‌ هێزی ئاسمانی به‌و ناوه‌یا دا ئه‌باران\nدیلیان ئه‌کوشت یا ئه‌یانبرد یا له‌ ئاسمان‌ فڕێ ئه‌دران\nئێمه‌ش ته‌نها چه‌کمان پێ بوو له‌ گه‌ڵ فه‌رده‌یه‌ وشکه‌ نان\nکه‌رێکیش جاشێکی هه‌بوو نانه‌که‌مان لێ بار ئه‌کرد له‌ ڕێگاو بان\n\nله‌ بن که‌ڵۆز به‌ ڕۆژا ئه‌مانبه‌سته‌وه‌ پووش و گیامان بۆ ئه‌هێنان\nهه‌تاکو نه‌بینه‌ نیشان بۆ فڕۆکه‌  به‌رده‌وامه‌کانی ئاسمان\nبه‌ڵام جاشک به‌ره‌ڵابوو ڕاگیر نه‌ده‌کرا بۆمان\nله‌ پڕ له‌ که‌ڵۆز ده‌ر ئه‌چوو له‌و ناوه‌ ئه‌یدایه‌ غاردان\n\nهه‌تا ده‌هات زیادی ئه‌کرد مه‌ترسی ئاشکرا بونمان\nله‌ پاش چه‌ن ڕاوێژکاریه‌ بۆ چاره‌سه‌ر براده‌ران\nله‌ جێگایه‌ دوور له‌ دایکی له‌ چه‌مو شیوێکا کوشتمان\nهاتینه‌وه‌ به‌ره‌و که‌ڵۆز بیر ناچێ ئه‌وه‌ی بینیمان\n\nدایکی هه‌ر خۆی ڕائه‌پسکان ئه‌تووت گڕی تێ به‌ر ببوو\nپاوه‌ن و مێخسکه‌ی بچڕان هه‌رچه‌ن‌ چاوی له‌ هیچ نه‌بوو\nگه‌شته‌لای فرمێسکی باران ده‌می دای له‌ به‌چکه‌ی مردوو\nئه‌ویش به‌ لایه‌وه‌ که‌وتوو له‌ جێی خۆیا گیانی ده‌رچوو",
+    "author": {
+     "id": "100002095804394",
+     "name": "Fatih Barzingi",
+     "url": "https://www.facebook.com/barzingi.f",
+     "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/853280661_28742101075443037_6927410008312038396_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=JnaPR9eF4FIQ7kNvwEF2Enm&_nc_oc=Adr_TwHTl4GjhzGHQgWkBLKNjbWINc_2qUZFFniUYt8n4U6jo7X1xM13mjSF80irs_dnQK5WCKE2UPVKNnZd2f7t&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=0lrCgV3wpj_tzfY_sJUV9g&_nc_ss=72180&oh=00_AQMFO_JGJzuR6iiwF4hCrajjhL7Ccbs0dr09VZARbMzTGQ&oe=6ADBB8A1"
+    }
+   }
+  },
+  {
+   "post_id": "10235247868403810",
+   "url": "https://www.facebook.com/dr.ahmed.erfan/posts/pfbid02Laz4v3j9xDbv2F9hcur22QryVpKctkshnCLkMhzRpxWQzqS775JXxURu4LfLs9wCl",
+   "message": "Nuxsha bet la asnanakan",
+   "author": {
+    "id": "1422097150",
+    "name": "Ahmed Erfan Qassab",
+    "url": "https://www.facebook.com/dr.ahmed.erfan",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/707669167_10235611020202378_6211336364636961835_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=X0TmmSa202oQ7kNvwEB_F1B&_nc_oc=AdqfNk17zSs6bHP1EMMyHqp2zTuf4qIIJLairpbi6s7Rp6l4SL6c3fkVn3XnlD8CAO-M4Rd-mRxlvHOxQPkeytYr&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQMAHyw3jqq_N3JTlgX0VkdHYVtoKrYVMxJxnHnVdCVAnw&oe=6ADB9D5A"
+   },
+   "timestamp": 1777379857,
+   "reactions_count": 5,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 0,
+    "haha": 2,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/680200326_3324473927731538_8525274882656427121_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=pzfEQ1Q3wZUQ7kNvwFLnIi9&_nc_oc=Adr3GkCFO33lvqxtoSd94_GUr64q8nXImtJ4JQBo5vJJi2AcIVNInjLG9c53BJJMRrMVN_ncM_egAY-ulVmYSAwm&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQMOM7W2qe5BSlDuTvNfiowhxSSS6bdpF0dWU1p0BngISw&oe=6ADB8AF3",
+   "video": "https://www.facebook.com/watch/?v=993489333239528",
+   "video_thumbnail": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/680200326_3324473927731538_8525274882656427121_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=pzfEQ1Q3wZUQ7kNvwFLnIi9&_nc_oc=Adr3GkCFO33lvqxtoSd94_GUr64q8nXImtJ4JQBo5vJJi2AcIVNInjLG9c53BJJMRrMVN_ncM_egAY-ulVmYSAwm&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQMOM7W2qe5BSlDuTvNfiowhxSSS6bdpF0dWU1p0BngISw&oe=6ADB8AF3",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTAyMzUyNDc4Njg0MDM4MTA=",
+   "shares_id": "ZmVlZGJhY2s6MTAyMzUyNDc4Njg0MDM4MTA=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1400735028748200",
+    "url": "https://www.facebook.com/reel/993489333239528/",
+    "message": "سەعاتی دووەمی بەڕێوەچوونی هەڵبژاردنەکان",
+    "author": {
+     "id": "100064351494766",
+     "name": "Kurdistan Engineering Syndicate",
+     "url": "https://www.facebook.com/KurdEngSyndicate",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=cp0_dst-png_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=3e70f4&_nc_ohc=IZeZjuD71-MQ7kNvwG1_ptZ&_nc_oc=AdqFDcEIIfAiDsw-YGSGmat-TIgcVJfYLctdiTq6cJxIvxiNFjgI6aTjb0113Vb3uGim6hppcJdgy6YtUnmINcNv&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_ss=72180&oh=00_AQMCEZsIl4DhM0ExSlun38cnIedWwhosdwrxPinv8ZGJoA&oe=6AFD2F7A"
+    }
+   }
+  },
+  {
+   "post_id": "1630466701850379",
+   "url": "https://www.facebook.com/hagar.yasser.1618/posts/pfbid0bytSCHLfjY22LMcZbUbBf4aFNxKjUXmByxrHBu1nADr1Hh62nqZcrJCDAj1z7rSyl",
+   "message": "نو كومنتتت",
+   "author": {
+    "id": "100046611931351",
+    "name": "Hagar Yasser",
+    "url": "https://www.facebook.com/hagar.yasser.1618",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/531681453_1295207205376332_7114282979790536134_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=HLB99rzJQkAQ7kNvwEOo28H&_nc_oc=AdoGlOGo6aDwrzLQaAPXd1nnCOiaanBh1q9WD2VcflUe8kqgWs7ACBjgFdMjd0E5-nNBMSxZxp2ifOMRnucffllb&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQOpml7U_jz37ItAuVkM-rokExigQTjcMnSJNhM7_3uvbg&oe=6ADB9CAE"
+   },
+   "timestamp": 1790689255,
+   "reactions_count": 23,
+   "comments_count": 6,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 23,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-2.fna.fbcdn.net/v/t15.5256-10/825755298_2515469122283080_4049931017083852871_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=pv-0Tom3tL4Q7kNvwHVeJBy&_nc_oc=AdrrFPI5skBJB94o-niedCJANZYJacdhDDyu6G9ISRLvVOwuOuwryK1KMFDEQEuFJ-bDre5n7oPH27hCz51DHDYB&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQNYzmhDVrWU3QoLRPTCJu-8lgi34_bnsTNXmSc8G2zBHQ&oe=6ADBB2CB",
+   "video": "https://www.facebook.com/watch/?v=2146971562559144",
+   "video_thumbnail": "https://scontent.fagc1-2.fna.fbcdn.net/v/t15.5256-10/825755298_2515469122283080_4049931017083852871_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=pv-0Tom3tL4Q7kNvwHVeJBy&_nc_oc=AdrrFPI5skBJB94o-niedCJANZYJacdhDDyu6G9ISRLvVOwuOuwryK1KMFDEQEuFJ-bDre5n7oPH27hCz51DHDYB&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQNYzmhDVrWU3QoLRPTCJu-8lgi34_bnsTNXmSc8G2zBHQ&oe=6ADBB2CB",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYzMDQ2NjcwMTg1MDM3OQ==",
+   "shares_id": "ZmVlZGJhY2s6MTYzMDQ2NjcwMTg1MDM3OQ==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "122249249756558855",
+    "url": "https://www.facebook.com/reel/2146971562559144/",
+    "message": "الناس بتستغرب ليه دايما بكتب ومبسجلش ڤويس\n اللي هيسمعوه في بيتنا لو سجلت ڤويس",
+    "author": {
+     "id": "61566765656867",
+     "name": "Memes may be ordinary but in reality they are your daily life",
+     "url": "https://www.facebook.com/people/Memes-may-be-ordinary-but-in-reality-they-are-your-daily-life/61566765656867/",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/674195156_122218067528558855_5782975913483097256_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rbRyTd7ka58Q7kNvwEC2NC4&_nc_oc=AdpCR7OuMg21dJdUF-G2rH2OjF27AQGcVTTqBFrh7onscwYy6dK3LS8FnndWUx6EuSwdOjyFw6rmxpyMjhPU5fii&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=fqFMNJbzIZ7U1WJVIraFCA&_nc_ss=72180&oh=00_AQPwg9ACsecP3DHYT4tqQez4PKvrWfuDlXwygvLqwOK9nQ&oe=6ADBBF58"
+    }
+   }
+  },
+  {
+   "post_id": "122164603328696575",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid022N3qZs3R2mv7MdEnrnzDaLuQevKQWyTPB6APMprXo4JajyfLvB4TwCLGPX3ZPP5Bl&id=61570897257809",
+   "message": "the city of culture❤️",
+   "author": {
+    "id": "pfbid02HQxzKne1VKmuJXYxXqnCRFyNhQrUER5c4c1wP9kJQ7j69z1WYT1xhK8LMPdAx7zDl",
+    "name": "San Mohsen",
+    "url": "https://www.facebook.com/people/San-Mohsen/pfbid02HQxzKne1VKmuJXYxXqnCRFyNhQrUER5c4c1wP9kJQ7j69z1WYT1xhK8LMPdAx7zDl/",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/808971964_122166717320696575_3458166418466363840_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=J_Tv9pgfIv0Q7kNvwGSW8Qg&_nc_oc=AdrqILNDwq6XCQW5kkb1XjPi0wWAjPxIhPVjmjclN9jL28MVUa4YwY2BT9iAzrx0GPSP2o67jKKddH4fRL4tSnK8&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQP098BDiQ2w4PEnctBQ-47KhjN91_NWLw9gpiuLm5aWgg&oe=6ADBBD21"
+   },
+   "timestamp": 1786736189,
+   "reactions_count": 3,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-2.fna.fbcdn.net/v/t51.82787-10/773555917_18616030207013360_8857986072904774913_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=o1Hun2ni3cYQ7kNvwF-Isrt&_nc_oc=Adp-oy-KuVlLJcA8f-3OmcWFUGHN9V4SAiz7YJqwljKx9yjFM3u9yjG6GHLSHkTkaZY0kJQfco4RS__jpOGWjn6i&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQORMjpdgOgJCenjNDsrDwzvNWxEmu1oeUAz7H3d87xMXw&oe=6ADBB73E",
+   "video": "https://www.facebook.com/watch/?v=1075668958213566",
+   "video_thumbnail": "https://scontent.fagc1-2.fna.fbcdn.net/v/t51.82787-10/773555917_18616030207013360_8857986072904774913_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=o1Hun2ni3cYQ7kNvwF-Isrt&_nc_oc=Adp-oy-KuVlLJcA8f-3OmcWFUGHN9V4SAiz7YJqwljKx9yjFM3u9yjG6GHLSHkTkaZY0kJQfco4RS__jpOGWjn6i&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQORMjpdgOgJCenjNDsrDwzvNWxEmu1oeUAz7H3d87xMXw&oe=6ADBB73E",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTY0NjAzMzI4Njk2NTc1",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTY0NjAzMzI4Njk2NTc1",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1620596206351636",
+    "url": "https://www.facebook.com/reel/1075668958213566/",
+    "message": "بەڕاستی دڵم پێ خۆش بوو لە تەك ئاڵای عێراق ئاڵای كوردستانیش بەشێك بوو لەو جوانیە ، جیا لەوە گوتنەوەی ئەیرەقیب لە ڕێوڕەسمی یاری كردنەوەی خولی عێراقی یەكێكی تر بوو لە شانازیەكان✌️💚☀️❤️",
+    "author": {
+     "id": "100052038174235",
+     "name": "Abdulsamad Xoshnaw - عبدالصمد خوشناو",
+     "url": "https://www.facebook.com/abdulsamad.abdulstar.hamad",
+     "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/273850486_1322775834855229_9212438195932865747_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=145r5i1pEdMQ7kNvwHAhQqb&_nc_oc=Adron6ZvjVoZOSI3-30_0WbNzUzBmIOTP646UaOoLxydRf9A9IqaKEVlokPYvd-LW5vjNEmub1xOAnMPesEhOIGD&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQNXUxjJD52kDun67j9N3rBPF_dEeHEHrWhKBGhBqx35Xg&oe=6ADB8BA3"
+    }
+   }
+  },
+  {
+   "post_id": "1624513615964172",
+   "url": "https://www.facebook.com/darsem.sanhan.9/posts/pfbid0JpsfTmx3MqEDr4irixphpyyJUQixhJ2odGRTCAAS4PEQy1NGQLr1vmoYE9vxcXWkl",
+   "message": "Printway is the best",
+   "author": {
+    "id": "pfbid02kDMSM89B8jPkxzsCLBRevqSRG5V3VHVNWkLj1PsAzzPbXVjx4SSvBkaU47uiDFoWl",
+    "name": "Darsem Sanan",
+    "url": "https://www.facebook.com/darsem.sanhan.9",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/757128366_1581273270288207_7094535933799872687_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oF186v5EJbEQ7kNvwGOk7IT&_nc_oc=Ado4aS0VyF7L8IBQCeecSt_gObYYuFolBFVqD5cNZcs4ijzH0ROrBaqFqLki3v23WE017BQijf1nTxuidlgd8YeK&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQNgg4HAQGTy8QfP_DJe95IrbKYOW6MTjHcJFWoaMAAwew&oe=6ADBA736"
+   },
+   "timestamp": 1789580854,
+   "reactions_count": 2,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 2,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-2.fna.fbcdn.net/v/t15.5256-10/795253084_4586736054987388_5325944603278863589_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=pIb3_qfQpjcQ7kNvwFdNsBx&_nc_oc=AdoFbOUI8ay3C9hNRfi7OeXIIs-juHTikoOB2tJglqfIEZA860s4DbuW8t1fH83cP4Ze5DypLFx7FVX_vcdLqSEO&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQNCTFhaSWMtrxpwwE0GifoiULDKtqh_pltUDyhq6IpBGg&oe=6ADBBAE1",
+   "video": "https://www.facebook.com/watch/?v=4607834546207147",
+   "video_thumbnail": "https://scontent.fagc1-2.fna.fbcdn.net/v/t15.5256-10/795253084_4586736054987388_5325944603278863589_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=pIb3_qfQpjcQ7kNvwFdNsBx&_nc_oc=AdoFbOUI8ay3C9hNRfi7OeXIIs-juHTikoOB2tJglqfIEZA860s4DbuW8t1fH83cP4Ze5DypLFx7FVX_vcdLqSEO&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQNCTFhaSWMtrxpwwE0GifoiULDKtqh_pltUDyhq6IpBGg&oe=6ADBBAE1",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYyNDUxMzYxNTk2NDE3Mg==",
+   "shares_id": "ZmVlZGJhY2s6MTYyNDUxMzYxNTk2NDE3Mg==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1055672650801617",
+    "url": "https://www.facebook.com/reel/4607834546207147/",
+    "message": "كوردى /  عربي\nهەڵبژاردەیەکی شیک و پڕۆفیشناڵن بۆ ئەو کۆمپانیا و براندانەی دەیانەوێت دیارییەکانیان بە شێوەیەکی تایبەت پێشکەش بکەن.\nدەتوانیت لەناو بۆکسەکەدا دەفتەر و قەڵەم دابنێیت و کۆمەڵێک دیارییەکی بەهێز بۆ کڕیارەکانت دروست بکەیت. \nبۆ دیاریی کۆمپانیا و کارمەندان\n بۆ کڕیارەکان و VIP بۆ پرۆمۆشن و Eventبازرگانی\n بۆ پیشاندانی براند\nکاتێک دیارییەک بە شێوەیەکی جوان پێشکەش دەکرێت، تەنها بەرهەم نادات — بەڵکو هەست و یادەوەری دروست دەکات.\n📩 بۆ نرخ و داواکاری، نامه بنێرە.\n0751 101 0400\n0751 101 0600\n..................................................................................................................\n هدية بمستوى مختلف!\nخيار أنيق واحترافي للشركات والبراندات اللي تريد تقدم هداياها بطريقة مميزة وراقية.\nتقدر ترتّب داخل البوكس دفتر وقلم وتحوله إلى هدية متكاملة وقوية لعملائك. \nهدايا الشركات والموظفين\nهدايا العملاء والـ VIP للبروموشن والفعاليات\n📩 للسعر والطلب، راسلنا هسه.\n 0751 101 0400\n0751 101 0600",
+    "author": {
+     "id": "100090766751832",
+     "name": "Print Way",
+     "url": "https://www.facebook.com/people/Print-Way/100090766751832/",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/756345053_1013130438389172_6343663574100791697_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=7nEuZzi4VeAQ7kNvwFfwkb4&_nc_oc=Adpq9-C7F-BQlexzQb8jUdbtSzrUMpb-weoPSWyCtj2OhK57VnM8X-68nIcGBbaC_W9xs78GZ0iPPHiX_Q0AoUGr&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=BBctQUgOfZjY7sPb2TjqZw&_nc_ss=72180&oh=00_AQPgpIE1rPpKyTa-9wb2qTf2INXJuSaXgRIZDTEXuydgOw&oe=6ADBC194"
+    }
+   }
+  },
+  {
+   "post_id": "27259810447023600",
+   "url": "https://www.facebook.com/aso.ahmed.39/posts/pfbid02zu5nGxxbL1rBKg4SSuZZBSeZNosn3Zu1XZ9YhS6umsW5LVichPWPhHoeSKjTqWbHl",
+   "message": "NUQTA",
+   "author": {
+    "id": "pfbid0zmYkty9CsAaER2QRpoM71pWGFT8gaMsuvrkcXaNPtoygeWBH4eUwQ2o47sEx9UHgl",
+    "name": "Aso Ahmed",
+    "url": "https://www.facebook.com/aso.ahmed.39",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/710020472_26752489327755717_355719689990531164_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=VCJ_M4lFoaUQ7kNvwEQAQrP&_nc_oc=AdqHIYATtFC6ycRU7h3eFtkRXAG0inM7CKyjAKsOEWlQZjfovncK6wPcAbG3Ihb_tcJMPKG9DcBHeuj9Irn8mSYN&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQOpQlx05VqrcdGTQOQMVA9TBW0lNuubi6mcM_pKkW-ecA&oe=6ADB9368"
+   },
+   "timestamp": 1783462708,
+   "reactions_count": 11,
+   "comments_count": 4,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 6,
+    "love": 0,
+    "haha": 5,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-6/740611405_1477585714405656_5258824071977905299_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fxGKuZokvEMQ7kNvwHP6igi&_nc_oc=Adq_Z6Azw_uBh4_p_z-761FAOJKXtfJyuRPYZka1p86jXdT5gh083-MNHKo-CLKuqtuqRC9bk-jfifXqtr5Q1CRo&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQOKpkfs5MqVC8gxXND0au3tYEgDRMZpkMWsjeL6SDGSXA&oe=6ADBB85C",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjcyNTk4MTA0NDcwMjM2MDA=",
+   "shares_id": "ZmVlZGJhY2s6MjcyNTk4MTA0NDcwMjM2MDA=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1477586901072204",
+    "url": "https://www.facebook.com/K24Sport/posts/pfbid0v3DJj6tSdzPBEyFp68PM3BnFpeva2gMqWgYjonGTi8RE5EfZLJFYeBXQPywS6Ncfl",
+    "message": "🚨 محەمەد ئەبوو تریکە:\nـ ئەوەی لە میسری برەدەوە ئەرجەنتین نەبوو، ئینفانتینۆ و ناوبژیوان بوون.\nـ کاتێک لێدانی پێناڵتی بۆ محەمەد سەڵاح هەژمار ناکرێت، دواتر ئەرجەنتین گۆڵ دەکات و ناچیتەوە بۆ ڤار، ئەمە زوڵمە.\n\nـ  ئێمە وەکو میسر زوڵممان لێکرا، نازانم بۆ وەرگرتنەوەی مافەکانمان پەنا بۆ کێ ببەین.\n\nـ ئێمە ناتوانین لە یەککاتدا لە دژی مێسی یاری بکەین و رووبەڕووی فیفا و ڤاڕیش ببەینەوە.",
+    "author": {
+     "id": "100064627244805",
+     "name": "Kurdistan24 Sport",
+     "url": "https://www.facebook.com/K24Sport",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/687382732_1418216863675875_6095772394765140591_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R_sphJASPrUQ7kNvwEWvwEg&_nc_oc=Adoj0UqJKHD_EsBetX6ILu3KNuGt_f0kM-oOQN7x6tuLl5aQl3lzgXDsfdjY-liBE5sjnxFfckEvT2N27clL2L-b&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQMCaoISc5AP9EV8YSSu1jByS4jfqzc-ute_C_jl_GEZqw&oe=6ADBB734"
+    }
+   }
+  },
+  {
+   "post_id": "3770922736382877",
+   "url": "https://www.facebook.com/ADMINnajaah/posts/pfbid0MZtEprqu4qWfDmwtvbTgCS3KeWxSfzX5cMUB9pyK4wziK78q8HpEsH9rGGhhWX8Pl",
+   "message": "Naushaad Abdulla beyskaigen thibeythi😏😏",
+   "author": {
+    "id": "pfbid02Lh6ondddnFBkrxG4BFtrYey8HtEef7Ak2vPBfr9ZbZKvjND5mzKwKAtjXu4mbeefl",
+    "name": "Bondaa D Najaah",
+    "url": "https://www.facebook.com/ADMINnajaah",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/721842217_3762710697204081_652508036972749918_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=iB0XK_CyUswQ7kNvwFREVYF&_nc_oc=AdqpL1Ywe2tC4btz8PoorLYswbb0-uUy9Wd9gYMaKoG9S6UAVd8pCPMcATvAFQVQigL30bX-57uacVhBS4Alclw1&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQP1HIS9txBwNlyU20LBWCrmcnB2DmRfvuE1TLYHeqNFuQ&oe=6ADB8F82"
+   },
+   "timestamp": 1781884089,
+   "reactions_count": 1,
+   "comments_count": 2,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 1,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/723791122_4377132229194365_7246064685496837082_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=-o2WBYsdvXoQ7kNvwEvo6v0&_nc_oc=AdqJrx4thllKteuP-NNNTH3bjQ6XtDVZnZv26xcQMUWOyFf9_n3KbshrGfwue6gJezYJLGazEcyXUW-KJP-hHiLJ&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQOrjTwIMTgTNkBAHQ3r2Yv8ElQP6N37ruZxKsRVVEslnA&oe=6ADB9F88",
+   "video": "https://www.facebook.com/watch/?v=1471776381355467",
+   "video_thumbnail": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/723791122_4377132229194365_7246064685496837082_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=-o2WBYsdvXoQ7kNvwEvo6v0&_nc_oc=AdqJrx4thllKteuP-NNNTH3bjQ6XtDVZnZv26xcQMUWOyFf9_n3KbshrGfwue6gJezYJLGazEcyXUW-KJP-hHiLJ&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQOrjTwIMTgTNkBAHQ3r2Yv8ElQP6N37ruZxKsRVVEslnA&oe=6ADB9F88",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6Mzc3MDkyMjczNjM4Mjg3Nw==",
+   "shares_id": "ZmVlZGJhY2s6Mzc3MDkyMjczNjM4Mjg3Nw==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "User",
+     "id": "pfbid02ybwruXhecHo8okdRuvmSEp33KwFoeLGMeWieU264P9TSFNvBTTFoUatJHEqHQGfZl",
+     "url": "https://www.facebook.com/naushaad.dmorison",
+     "offset": 0,
+     "length": 16
+    }
+   ],
+   "attached_post": {
+    "post_id": "1490586589767827",
+    "url": "https://www.facebook.com/reel/1471776381355467/",
+    "message": "واز لە گۆڵەکە بێنە، تاوەکو کۆتایی سەیری بکە، بزانە ئەرجەنتینییەکان چۆن شێتی مێسین!!",
+    "author": {
+     "id": "100064495007902",
+     "name": "Rudaw Sports",
+     "url": "https://www.facebook.com/RudawSports",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/721051494_1483778157115337_8966267485430355294_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=sl8euSQ7FRAQ7kNvwFyvK4T&_nc_oc=AdqmWpRt0ZSOEJ1ZxWr4liTBdrsEocPf6mG3_NocDCZvUdt6Eb66VIYSlXY8dKIcXvZcwphZhLVyUtF4784bdAy0&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQOQDn54y_KAhUzuQBQUuqnkSEWVEgZAmZwfBzWyNhewoA&oe=6ADBC1EA"
+    }
+   }
+  },
+  {
+   "post_id": "10233172337626814",
+   "url": "https://www.facebook.com/wafri.adi/posts/pfbid028py6jd3i88wWT1h1H9wRaki6MEjuiCP8afqCAfWAZdPV712grhXmEgZ5dJDhW96el",
+   "message": "🥹 alhamdulillah~^^",
+   "author": {
+    "id": "pfbid022vbReFxFgpP7doR4WFKqgZaGPBRTQ3JYrJ1eBkQzV8imrSKkoTSNFGYpPymqPqW3l",
+    "name": "Wafri Adi",
+    "url": "",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/440941955_10224240644420066_2489909571390127975_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=IrC99-lIr0wQ7kNvwHSGYdC&_nc_oc=AdpU_RGdlTqzlJkiaRU2w8ksuFihaxbNH-1ZBJW8mcEuHIwQQXa4gXXm7tSrEHsFScKEAz7zIkoC8D2F4JYQTI16&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQP5Xs0gaQodDT4GQIksiW3QfnqOf0najQcGBHOiQurG-A&oe=6ADB9D6E"
+   },
+   "timestamp": 1787556850,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTAyMzMxNzIzMzc2MjY4MTQ=",
+   "shares_id": "ZmVlZGJhY2s6MTAyMzMxNzIzMzc2MjY4MTQ=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1603668354758725",
+    "url": "https://www.facebook.com/UtusanOnline/posts/pfbid0JCHjf7keCFAes6LqvFvaePx1B57ZZLkvSK8wndaZ2QEgXGoevYFQB9eSrd58DCWAl",
+    "message": "کوالا لومڤور: ڤکرجا ڤمبرسيه باڠونن تيڠݢي مڠڬوناکن تالي کسلامتن کتيک ملاکوکن کرجا٢ ڤمبرسيهن چرمين دان/دن باڠونن دسبواه باڠونن ڤنچاکر لاڠيت دأيبو نݢارا.\nوالاوڤون کليهتن موده، کرجاي منچابر اين ممرلوکن تومڤوان سڤنوهڽ سرتا ڤماتوهن کتت کڤد ڤروسيدور کسلامتن ستندرد سوڤ)) ممندڠکن تردده کڤد ريسيکو بهاي چواچ دان کتيڠݢين. –اوتوسن/فاءوزي بهارودين",
+    "author": {
+     "id": "100053467264823",
+     "name": "Utusan Online",
+     "url": "https://www.facebook.com/UtusanOnline",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/339072684_3538321659730401_5168559381920371018_n.png?stp=cp0_dst-png_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=CcYLcrU1jqwQ7kNvwF53QQ3&_nc_oc=AdpPcSOws-VbJ6oar53AOXsRwWdd02YfIgk0bl5cTBGnlXNIkwOfuYxZEXB2orN3GeXcz5DAQ1nSPhhTgNjwxWuB&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQNr0frbFwpapXUgjWkc7VHuoj0hukIr8uD1EtAqWIN1ig&oe=6ADBB351"
+    }
+   }
+  },
+  {
+   "post_id": "3619302368226798",
+   "url": "https://www.facebook.com/mimi.gidey.1/posts/pfbid02UWS1ouY7Skoqpu59FJFSQV4Ep76KrzhRJ9SsuaDNe8q3gV5WkAxK2xJXpuBnXpm1l",
+   "message": "Pawor of Bismillah 🤲🤲🤲🤲🤲👍👍👍👍👍👍💪💪💪💪",
+   "author": {
+    "id": "100004412118534",
+    "name": "Mimi Gidey",
+    "url": "https://www.facebook.com/mimi.gidey.1",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/347419094_2594801010676944_518669419002465873_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=1dVz6JacES0Q7kNvwHwj6z-&_nc_oc=AdrxB_DR1z6H-J0Ji35RGByXFAR0vhlAEZeTdNc9lY37Njp_IKW3Qqtzi9yDCzr2nEIpcxtELRFxU7bVhi572rGG&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQPca5vn0nojey3_EzsPGDmwCh2Ngwjxk-9UUF82A5W00w&oe=6ADB917F"
+   },
+   "timestamp": 1783156893,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/739450877_871799455543420_4779664013842983289_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=9oz4WOw_Xq4Q7kNvwGVqw8o&_nc_oc=AdrPrWPPZKYTRloA3qhe81SlHgm99Czd2Z5aHN56tGvMlR3zna61T-OeR5MXQIBoGVV6AyT8gjwN9GGCLuBJhIO4&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQMNJqQfpUWc5fMpKUA2e6O4Z_UvuUURtoNjOwU6FGBDBw&oe=6ADB8B1C",
+   "video": "https://www.facebook.com/watch/?v=2425938887817536",
+   "video_thumbnail": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/739450877_871799455543420_4779664013842983289_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=9oz4WOw_Xq4Q7kNvwGVqw8o&_nc_oc=AdrPrWPPZKYTRloA3qhe81SlHgm99Czd2Z5aHN56tGvMlR3zna61T-OeR5MXQIBoGVV6AyT8gjwN9GGCLuBJhIO4&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQMNJqQfpUWc5fMpKUA2e6O4Z_UvuUURtoNjOwU6FGBDBw&oe=6ADB8B1C",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MzYxOTMwMjM2ODIyNjc5OA==",
+   "shares_id": "ZmVlZGJhY2s6MzYxOTMwMjM2ODIyNjc5OA==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "122181825638821526",
+    "url": "https://www.facebook.com/reel/2425938887817536/",
+    "message": "کریستیانۆ دووجار دەڵێت: بسم الله. لەبەر ئەم هۆکارەیە زۆربەی سەرچاوەکان دەڵێن ئەو یاریزانە بە نهێنی بۆتە موسڵمان.  کۆمێنتی ئێوە چیە؟",
+    "author": {
+     "id": "61574645796223",
+     "name": "Kurdbin",
+     "url": "https://www.facebook.com/people/Kurdbin/61574645796223/",
+     "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/488600997_122112460508821526_5159482181807926035_n.jpg?stp=c348.348.1304.1304a_cp0_dst-jpg_s50x50_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=15T997UIKEEQ7kNvwEnYsxY&_nc_oc=AdqXhLZUXCIWkAQ0vjlqrSSnHs_RX-fu55ibtXwGi4biCfuXqPPV7pcBoX_Un0VI2FgLohDSdTFKglpLOG501CzO&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=9rlC7MJbUva4xTwDtwWU7Q&_nc_ss=72180&oh=00_AQMeEy9sFqQ4G2HAFyGOzk0oM0NHhQMsLOHMt7_eaAfvCw&oe=6ADB912E"
+    }
+   }
+  },
+  {
+   "post_id": "3472502152928163",
+   "url": "https://www.facebook.com/Uthmern.Jr/posts/pfbid0twm9KMPPFqXPPej9QyKd1yp7b1wWkjMWUgJKkBrnfN3qVj8iNV7RZHzdryW9gdzVl",
+   "message": "Nice one keeper 👏 👍",
+   "author": {
+    "id": "100005052370356",
+    "name": "Junaidu Usman",
+    "url": "",
+    "profile_picture_url": "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-1/769251915_3508307539347624_6299831166408326336_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-Tu93Rn81gkQ7kNvwHFO_q3&_nc_oc=AdqIvm6n810c7lV4T4y_7IaXP5hJKqUur7fAxySAtwF86_j3VpvloAF-KuCuhu9rpXyOHPeuw9k2_G4I_SKWK-xB&_nc_zt=24&_nc_ht=scontent.fagc1-1.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQMCgk8irfkMFbkKCID1LPrXEc0fLeQMTymX8o_mX6AIIg&oe=6ADB9E6E"
+   },
+   "timestamp": 1783445961,
+   "reactions_count": 1,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/741592051_1402885598316315_8152005485110120069_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=bZGupNZVrGQQ7kNvwGd6dEH&_nc_oc=AdrNDPokGphT_FWyfw-EgvrQB0qPezm2gHMMh6FNkOg7jtr7gVelZkPIqG0MRnuNMZS6L4A2j_H4KD5RroHNmFHf&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQOMbJNsj5NU9DlNAnoi8k_I-VRDUgj8nDL_Af56SkYf3Q&oe=6ADBA6B0",
+   "video": "https://www.facebook.com/watch/?v=1690917912157856",
+   "video_thumbnail": "https://scontent.fagc1-1.fna.fbcdn.net/v/t15.5256-10/741592051_1402885598316315_8152005485110120069_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=bZGupNZVrGQQ7kNvwGd6dEH&_nc_oc=AdrNDPokGphT_FWyfw-EgvrQB0qPezm2gHMMh6FNkOg7jtr7gVelZkPIqG0MRnuNMZS6L4A2j_H4KD5RroHNmFHf&_nc_zt=23&_nc_ht=scontent.fagc1-1.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQOMbJNsj5NU9DlNAnoi8k_I-VRDUgj8nDL_Af56SkYf3Q&oe=6ADBA6B0",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MzQ3MjUwMjE1MjkyODE2Mw==",
+   "shares_id": "ZmVlZGJhY2s6MzQ3MjUwMjE1MjkyODE2Mw==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1477455687751992",
+    "url": "https://www.facebook.com/reel/1690917912157856/",
+    "message": "لە دوو گۆشەی جیاواز، ببینە مێسی چۆن پێناڵتی بەرامبەر میسر دەفەوتێنێت 🤯",
+    "author": {
+     "id": "100064627244805",
+     "name": "Kurdistan24 Sport",
+     "url": "https://www.facebook.com/K24Sport",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/687382732_1418216863675875_6095772394765140591_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R_sphJASPrUQ7kNvwEWvwEg&_nc_oc=Adoj0UqJKHD_EsBetX6ILu3KNuGt_f0kM-oOQN7x6tuLl5aQl3lzgXDsfdjY-liBE5sjnxFfckEvT2N27clL2L-b&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQPDuT_Y-3iL2Mqx2oVSh6M1QiF55pVlhsP6p_frhv0Alg&oe=6ADBB734"
+    }
+   }
+  },
+  {
+   "post_id": "4656281488030363",
+   "url": "https://www.facebook.com/Rosaclarafonsecalajuniorista/posts/pfbid02BYEKyTsAyc2Vr8rhpoiNcktQL7qpJSWzJjgWbvkVzC9WqxwUDobMKg8aWdbzLAa4l",
+   "message": "Vamosssss Mi Leoooo🙌🙌🙌",
+   "author": {
+    "id": "100009456733397",
+    "name": "Rosa Clara Fonseca La Juniorista",
+    "url": "https://www.facebook.com/Rosaclarafonsecalajuniorista",
+    "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/271132303_3239486043043255_9000613361719729445_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=2cybsnwmypYQ7kNvwEJ_Rmh&_nc_oc=Adragi4X7Kux_qq6U2ewjZcuplg28kOfjdHFuzelN5DQNWmVOl1KzVwGc_kJuQBlhYdHWimcwbT06Qqht3Cyj3q2&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQPMslqCpklZs5hcRhvhwQOI4vfeEWZ8Eusg_Nna7rluug&oe=6ADBAEC3"
+   },
+   "timestamp": 1783466879,
+   "reactions_count": 5,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-6/741620194_1510185181141301_2852055966893115542_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NnD1qL9VVYYQ7kNvwFmN-fL&_nc_oc=AdqowC7FzXrfFXNGOUJ5HZPz7baelC_5b9HxKXhHLdyi8gjvHdod-fmyX8MtaHd0a9sbDobH8XxuAE7s534QOA2L&_nc_zt=23&_nc_ht=scontent.fagc1-2.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQP9bNRxvJMx_EOmnQLgjNm5KrO9-Q0oCCiPMsAhsodAXw&oe=6ADB9AB1",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NDY1NjI4MTQ4ODAzMDM2Mw==",
+   "shares_id": "ZmVlZGJhY2s6NDY1NjI4MTQ4ODAzMDM2Mw==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1510185207807965",
+    "url": "https://www.facebook.com/RudawSports/posts/pfbid02gCqynsx6UYHwdiNrHNHSUy1F962Dox3qF98mkENExc1AKTWJG9G6k5mNGeVPosrAl",
+    "message": "مێسی لە هەژماری خۆی:\n\nئەم تیپە هەرگیز کۆڵ نادات.\nشەوێکی شێتانەی دیکە بوو.. ئەم تیپە بڕواپێنەکراوە!\n\nبەرەو پێش ئەرجەنتین! 🇦🇷🩵",
+    "author": {
+     "id": "100064495007902",
+     "name": "Rudaw Sports",
+     "url": "https://www.facebook.com/RudawSports",
+     "profile_picture_url": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/721051494_1483778157115337_8966267485430355294_n.avif?stp=cp0_dst-avif_s50x50&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=sl8euSQ7FRAQ7kNvwFyvK4T&_nc_oc=AdqmWpRt0ZSOEJ1ZxWr4liTBdrsEocPf6mG3_NocDCZvUdt6Eb66VIYSlXY8dKIcXvZcwphZhLVyUtF4784bdAy0&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=b5biz54UAE-xJwIHu3bMOA&_nc_ss=72180&oh=00_AQNRkwOYMBKpyk-00sdEQr3ot7OLXfKdR7toCKsW1gELww&oe=6ADBC1EA"
+    }
+   }
+  }
+ ]
+}

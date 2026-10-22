@@ -1,0 +1,327 @@
+{
+ "input": {
+  "query": "V7 cream soda",
+  "maxPages": 2
+ },
+ "cap_usd": 0.12,
+ "run": {
+  "id": "pOh7T51tU77p1E2cU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T10:54:03.180Z",
+  "finishedAt": "2026-10-19T10:54:14.294Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "apify-actor-start": 4
+  },
+  "usageTotalUsd": 0.005452816137529082
+ },
+ "cost_usd": 0.5511,
+ "items": [
+  {
+   "type": "search_video",
+   "video_id": "1052326230778325",
+   "video_url": "https://www.facebook.com/reel/1052326230778325/",
+   "description": "The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.",
+   "title": "The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "url": "https://www.facebook.com/V7Egypt",
+    "is_verified": true,
+    "id": "100087617073692"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/777851427_1050425907776125_9095046727982786104_n.jpg?stp=c0.868.2160.1210a_dst-jpg_s403x403_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e3495b&_nc_ohc=6vucboe9WMsQ7kNvwH75c77&_nc_oc=Ado7PFlL-b0u0Pf1WhIqukfgkdc_JpWVQ2N1dOmLwDSRkkuAASNthSaetByuCwRVMYo&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQM10Y2swdDSBaNqeODUTEOpt5WBGac-FcwK6YcBtBfh3Q&oe=6ADBE129",
+   "time_and_views_raw": "21 Aug · 2.2K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 1,
+   "scraped_at": "2026-10-19T10:54:08.454Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2411179272742599",
+   "video_url": "https://www.facebook.com/reel/2411179272742599/",
+   "description": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "title": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Omar Dash",
+    "url": "https://www.facebook.com/people/Omar-Dash/61550227269762/",
+    "is_verified": false,
+    "id": "61550227269762"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t51.82787-15/788133303_18557551003074956_862993043095920469_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e3495b&_nc_ohc=pHMsV6xX8iwQ7kNvwE7mtfw&_nc_oc=AdpWP-VwBLyEgMElCcAshY3OMzFVsI4cRjqC-Lrdl5baCAxDTFS4Jbv9lXWP5Iic-i8&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQNH6Cr4hGp83AgI10g4OULpDl6nd5pvAfSGuUoi3wqXLw&oe=6ADBB271",
+   "time_and_views_raw": "27 Aug · 3.1K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 3,
+   "scraped_at": "2026-10-19T10:54:08.455Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1406499131375557",
+   "video_url": "https://www.facebook.com/reel/1406499131375557/",
+   "description": "Lets try together the new V7 cream soda",
+   "title": "Lets try together the new V7 cream soda",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Sensawyy",
+    "url": "https://www.facebook.com/AhmeddOssman",
+    "is_verified": false,
+    "id": "100064175916195"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t51.82787-15/770139543_18615710686036286_4593098994023924782_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=Oit4gaPMiOEQ7kNvwHcmBAj&_nc_oc=Ado9en8H_1LqspqxLU_O2ATOjZcb2xQh1pUUPBhc14DACAo8YRmB8KZpxOuVRtdbye0&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQO0s5bdAS43FHP1D4dbzEOJ_SbrsvdKg3zvUBBTez5H0Q&oe=6ADBE362",
+   "time_and_views_raw": "9 Aug · 33K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 5,
+   "scraped_at": "2026-10-19T10:54:08.455Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2201716157059208",
+   "video_url": "https://www.facebook.com/reel/2201716157059208/",
+   "description": "V cream soda ..تجربة لذيذة \nV7 \n\n#explore #drink #viral #explorepage✨ #reels",
+   "title": "V cream soda ..تجربة لذيذة \nV7 \n\n#explore #drink #viral #explorepage✨ #reels",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Ahwacookies",
+    "url": "https://www.facebook.com/people/Ahwacookies/61576491766979/",
+    "is_verified": false,
+    "id": "61576491766979"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t51.82787-15/774059516_17942817027312707_428455641921112630_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e3495b&_nc_ohc=IkDu7_fXS44Q7kNvwGF7f2s&_nc_oc=AdqmTNrS8dX0mJWyl23CJwaCDWy4g0Jocjoak3jVpixcRWLtxuP666UGuf8xsrrXpYg&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQMFTBEImKUu8sYPlCP3t4zAMTeQvCpomkyYYpGyrarKwQ&oe=6ADBB422",
+   "time_and_views_raw": "16 Aug · 6.8K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 7,
+   "scraped_at": "2026-10-19T10:54:08.455Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1362800929364202",
+   "video_url": "https://www.facebook.com/reel/1362800929364202/",
+   "description": "V7 Cream Soda \nGarabtoooha??? \n.\n.\n.\n.\n\n#reem_kitchen__ #reelsinstagram #explorar \n#v7 @\n#creamsoda",
+   "title": "V7 Cream Soda \nGarabtoooha??? \n.\n.\n.\n.\n\n#reem_kitchen__ #reelsinstagram #explorar \n#v7 @\n#creamsoda",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Reem Kitchen",
+    "url": "https://www.facebook.com/reemkitchen25",
+    "is_verified": false,
+    "id": "100087666025410"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t51.82787-15/771940665_18453578518140131_1649638391370099029_n.jpg?stp=c0.231.576.323a_dst-jpg_s403x403_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e3495b&_nc_ohc=wqFk89wsueIQ7kNvwGTAYAq&_nc_oc=Adp6p48FrHZb9rVD5myZbrtJIuHFvnCEx5IYVFprm3ZlafMrWlYa-l8Sifif9ZJTzwk&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQODp19lmclIh7UG9LQGAxE63Bm66mIXsZJQVSuE5E0G1Q&oe=6ADBCC66",
+   "time_and_views_raw": "10 Aug · 477 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 9,
+   "scraped_at": "2026-10-19T10:54:08.455Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1305102008366166",
+   "video_url": "https://www.facebook.com/reel/1305102008366166/",
+   "description": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "title": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Kholoud E. Muhamed",
+    "url": "https://www.facebook.com/kholoud.emad221",
+    "is_verified": false,
+    "id": "100001479351447"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t51.82787-15/772495302_18616822567029112_5383867561107771896_n.jpg?stp=c0.579.1440.806a_dst-jpg_s403x403_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=AGCagt_RaYAQ7kNvwHjiWIh&_nc_oc=AdoiiIgyrtHcZehshaP0S6HqSwcBsKWQgIlI1FijYVli2GjJ3FIgJ0u_AzjaEK_8KAo&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQO3nPiJ5OibKhOZE1rAl5kPZcySIq9JcovgmicpluBgVQ&oe=6ADBBE9B",
+   "time_and_views_raw": "9 Aug · 730 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 11,
+   "scraped_at": "2026-10-19T10:54:08.455Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1367017642290092",
+   "video_url": "https://www.facebook.com/reel/1367017642290092/",
+   "description": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "title": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "وكالة أبو صالح - Wakalet Abo Saleh",
+    "url": "https://www.facebook.com/people/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B5%D8%A7%D9%84%D8%AD-Wakalet-Abo-Saleh/100064782469962/",
+    "is_verified": false,
+    "id": "100064782469962"
+   },
+   "thumbnail": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/785721917_1283794357055220_8264780805491466510_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=HG5dW0E803UQ7kNvwHNZG81&_nc_oc=AdolMVn9n0tznoY2-bgJd2H4eanWCckZv7oQRi18XL-9psRbBqUd5BxmbcT9nNV4hAU&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=jnHFjEA2bEGeec_CPsAbdA&_nc_ss=70289&oh=00_AQPjFNInzfRx3iBwqXHskiaRsCt-a1pAFoxcGToFDLV3YQ&oe=6ADBD065",
+   "time_and_views_raw": "24 Aug · 301 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 1,
+   "position": 13,
+   "scraped_at": "2026-10-19T10:54:08.455Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1052326230778325",
+   "video_url": "https://www.facebook.com/reel/1052326230778325/",
+   "description": "The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.",
+   "title": "The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "url": "https://www.facebook.com/V7Egypt",
+    "is_verified": true,
+    "id": "100087617073692"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t15.5256-10/777851427_1050425907776125_9095046727982786104_n.jpg?stp=c0.868.2160.1210a_dst-jpg_s403x403_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e3495b&_nc_ohc=6vucboe9WMsQ7kNvwGlgk9V&_nc_oc=AdqBoo0Uily82cObazDxV4VpJX6KGynJeOoRD2NuGNGytw8LHIEkAx7DEBKqOgB465U&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQMP3lrfniLzqBonv712r6u5YedxJI6_WOOtuwmyxhAqUw&oe=6ADBE129",
+   "time_and_views_raw": "21 Aug · 2.2K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 8,
+   "scraped_at": "2026-10-19T10:54:14.191Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1406499131375557",
+   "video_url": "https://www.facebook.com/reel/1406499131375557/",
+   "description": "Lets try together the new V7 cream soda",
+   "title": "Lets try together the new V7 cream soda",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Sensawyy",
+    "url": "https://www.facebook.com/AhmeddOssman",
+    "is_verified": false,
+    "id": "100064175916195"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t51.82787-15/770139543_18615710686036286_4593098994023924782_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=Oit4gaPMiOEQ7kNvwF3Xwhb&_nc_oc=AdpQj3qrOCzBxzJ3BLeMxgD88cJN_96y6NpG67-6VKibIxZQhKL6kOn32u6fmN9hZhw&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQNi5lkF-hSsicXuuFRAOI_4gfOGN-K-EIVboF4K40CbvQ&oe=6ADBE362",
+   "time_and_views_raw": "9 Aug · 33K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 10,
+   "scraped_at": "2026-10-19T10:54:14.191Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2411179272742599",
+   "video_url": "https://www.facebook.com/reel/2411179272742599/",
+   "description": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "title": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Omar Dash",
+    "url": "https://www.facebook.com/people/Omar-Dash/61550227269762/",
+    "is_verified": false,
+    "id": "61550227269762"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t51.82787-15/788133303_18557551003074956_862993043095920469_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e3495b&_nc_ohc=pHMsV6xX8iwQ7kNvwFm_g-g&_nc_oc=AdqsHxFvC5ZvMEIlaijQGGeqL_dRFnz0xK2bpvYMRI8H2VKtGq8cL6CoAXrugPNM_HU&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQNYvd3ekDRbB8L8lbzjfsXugKQ7Pdd0_EbKlo0_ReOKbg&oe=6ADBB271",
+   "time_and_views_raw": "27 Aug · 3.1K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 12,
+   "scraped_at": "2026-10-19T10:54:14.191Z"
+  },
+  {
+   "type": "search_video_reel",
+   "video_id": "122126510096883058",
+   "video_url": "https://www.facebook.com/reel/2201716157059208/",
+   "description": "V cream soda ..تجربة لذيذة \nV7 \n\n#explore #drink #viral #explorepage✨ #reels",
+   "title": null,
+   "author": {
+    "__typename": "User",
+    "id": "61576491766979",
+    "name": "Ahwacookies",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/people/Ahwacookies/61576491766979/"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t51.82787-10/774059516_17942817027312707_428455641921112630_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=IkDu7_fXS44Q7kNvwHQs8a7&_nc_oc=Adp_JTL70unyLW9ZB7uxYMP7_XHY3mp88kdpo4DG9K0u9muDUxP0J7cep8TMzhpSuLg&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQNJdz4KzNVLg7PpAuq2WGiLgQOJsYVSzLQjUe3jhucmzQ&oe=6ADBAF50",
+   "time_and_views_raw": null,
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 14,
+   "scraped_at": "2026-10-19T10:54:14.255Z"
+  },
+  {
+   "type": "search_video_reel",
+   "video_id": "1040214672244057",
+   "video_url": "https://www.facebook.com/reel/1362800929364202/",
+   "description": "V7 Cream Soda \nGarabtoooha??? \n.\n.\n.\n.\n\n#reem_kitchen__ #reelsinstagram #explorar \n#v7 @\n#creamsoda",
+   "title": null,
+   "author": {
+    "__typename": "User",
+    "id": "100087666025410",
+    "name": "Reem Kitchen",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/reemkitchen25"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t51.82787-10/771940665_18453578518140131_1649638391370099029_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=wqFk89wsueIQ7kNvwE7DttD&_nc_oc=Adrt30e97D7eho8uCvRj5twQJNUao_xbBodlNTybjJNSy7Ymk-JzY89FXezOKWIbqPY&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQMQDIssI8CeFuomTOQCTM1My4QPcgG-27p0-sZO0M3KNg&oe=6ADBC936",
+   "time_and_views_raw": null,
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 16,
+   "scraped_at": "2026-10-19T10:54:14.255Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1367017642290092",
+   "video_url": "https://www.facebook.com/reel/1367017642290092/",
+   "description": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "title": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "وكالة أبو صالح - Wakalet Abo Saleh",
+    "url": "https://www.facebook.com/people/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B5%D8%A7%D9%84%D8%AD-Wakalet-Abo-Saleh/100064782469962/",
+    "is_verified": false,
+    "id": "100064782469962"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t15.5256-10/785721917_1283794357055220_8264780805491466510_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=HG5dW0E803UQ7kNvwGCkmBg&_nc_oc=AdpeDi8pdF_g3K7IKXSqnGsEhCyWBsd-C6qQPyoOLVa6m8I5sayXHMPIs1Qf9861Vg4&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQNIt7YsZ4jZNjwCNKj4nFfMn4q1P_FnKNSsyzLvYbRK_A&oe=6ADBD065",
+   "time_and_views_raw": "24 Aug · 301 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 18,
+   "scraped_at": "2026-10-19T10:54:14.255Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1305102008366166",
+   "video_url": "https://www.facebook.com/reel/1305102008366166/",
+   "description": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "title": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Kholoud E. Muhamed",
+    "url": "https://www.facebook.com/kholoud.emad221",
+    "is_verified": false,
+    "id": "100001479351447"
+   },
+   "thumbnail": "https://scontent-den2-1.xx.fbcdn.net/v/t51.82787-15/772495302_18616822567029112_5383867561107771896_n.jpg?stp=c0.579.1440.806a_dst-jpg_s403x403_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=AGCagt_RaYAQ7kNvwEvsMQ4&_nc_oc=AdrGZh9xCVVV0HIOSO1ifSCFB7zoHsjXEtE4y7p9-d6RURDa7vAizZue4zdLx9YdxY0&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ISn2e4r3jk0-R3VhrpW9DQ&_nc_ss=70289&oh=00_AQM7df8xOQunLH7JuXXjtv4w6hmTtmumFR4Ihr-pGChAww&oe=6ADBBE9B",
+   "time_and_views_raw": "9 Aug · 730 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 cream soda",
+   "page_number": 2,
+   "position": 20,
+   "scraped_at": "2026-10-19T10:54:14.255Z"
+  }
+ ]
+}

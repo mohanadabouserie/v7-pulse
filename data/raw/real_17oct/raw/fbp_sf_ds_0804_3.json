@@ -1,0 +1,23 @@
+{
+ "input": {
+  "query": "ڤي سڤن",
+  "search_type": "posts",
+  "max_posts": 10,
+  "start_date": "2026-08-04",
+  "end_date": "2026-08-04"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "RAYYnB8VWtSPXXpKg",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:59:24.687Z",
+  "finishedAt": "2026-10-20T10:59:33.574Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.0937,
+ "items": []
+}

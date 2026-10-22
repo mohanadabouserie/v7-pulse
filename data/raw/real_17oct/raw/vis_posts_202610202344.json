@@ -1,0 +1,48 @@
+{
+ "input": {
+  "username": [
+   "https://www.instagram.com/p/DeZLUFijmOt/",
+   "https://www.instagram.com/p/DdMOYr1Mzii/",
+   "https://www.instagram.com/p/DebfVpFMAKb/"
+  ]
+ },
+ "cap_usd": 0.06,
+ "run": {
+  "id": "FIx5fHTUYNoCD5RYr",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:44:06.379Z",
+  "finishedAt": "2026-10-20T20:44:41.951Z",
+  "chargedEventCounts": {
+   "post": 3,
+   "post-details": 3,
+   "music-data": 0
+  },
+  "usageTotalUsd": 0.006900000000000001
+ },
+ "cost_usd": 0.0069,
+ "items": [
+  {
+   "url": "https://www.instagram.com/p/DdMOYr1Mzii/",
+   "failure_reason": "MA",
+   "restricted_age": 18,
+   "page_type": "MEDIA",
+   "show_lox_redesigned_404_page": true,
+   "error": "restricted_page",
+   "errorDescription": "Restricted access, only partial data available. Reason: The post is age-restricted."
+  },
+  {
+   "url": "https://www.instagram.com/p/DebfVpFMAKb/",
+   "failure_reason": "MA",
+   "restricted_age": 18,
+   "page_type": "MEDIA",
+   "show_lox_redesigned_404_page": true,
+   "error": "restricted_page",
+   "errorDescription": "Restricted access, only partial data available. Reason: The post is age-restricted."
+  },
+  {
+   "url": "https://www.instagram.com/p/DeZLUFijmOt/",
+   "error": "not_found",
+   "errorDescription": "Post does not exist"
+  }
+ ]
+}

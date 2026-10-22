@@ -1,0 +1,40 @@
+{
+ "input": {
+  "shouldDownloadVideos": false,
+  "shouldDownloadCovers": false,
+  "shouldDownloadSlideshowImages": false,
+  "shouldDownloadAvatars": false,
+  "shouldDownloadMusicCovers": false,
+  "searchQueries": [
+   "V7 مشروب"
+  ],
+  "searchSection": "/video",
+  "videoSearchDateFilter": "PAST_MONTH",
+  "resultsPerPage": 5,
+  "proxyCountryCode": "EG"
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "hjnuUoDgCfCqXoWfU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:32:04.966Z",
+  "finishedAt": "2026-10-18T14:38:08.853Z",
+  "chargedEventCounts": {
+   "result": 0,
+   "filter-applied": 0,
+   "popularity-filter-applied": 0,
+   "follower-dataset-item": 0,
+   "mobile-filter-sorting-applied": 0,
+   "video-download": 0,
+   "comment-dataset-item": 0,
+   "scrape-as-in-country": 0,
+   "transcription-minute": 0,
+   "ai-video-description": 0,
+   "ai-video-summary": 0,
+   "actor-start": 1
+  },
+  "usageTotalUsd": 0.001
+ },
+ "cost_usd": 0.0261,
+ "items": []
+}

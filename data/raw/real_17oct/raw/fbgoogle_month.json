@@ -1,0 +1,515 @@
+{
+ "input": {
+  "queries": "https://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026\nhttps://www.google.com/search?q=%22V7+cream+soda%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2026%2Ccd_max%3A8%2F31%2F2026\nhttps://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026",
+  "maxPagesPerQuery": 2,
+  "countryCode": "eg"
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "bxH3HKRlqXaS1K7Bd",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T07:59:23.251Z",
+  "finishedAt": "2026-10-19T08:10:42.654Z",
+  "chargedEventCounts": {
+   "search-page-scraped": 4,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 0.01005
+ },
+ "cost_usd": 0.2761,
+ "items": [
+  {
+   "searchQuery": {
+    "term": "\"ڤي كولا\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026",
+   "hasNextPage": true,
+   "serpProviderCode": "O",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "بدأت من ڤي كولا على الكان، وكبرت مع سعودي على الكيس ...",
+     "websiteTitle": "Facebook · Seoudi Supermarket",
+     "url": "https://www.facebook.com/SeoudiSupermarket/videos/%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D9%86-%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%83%D8%A7%D9%86-%D9%88%D9%83%D8%A8%D8%B1%D8%AA-%D9%85%D8%B9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%83%D9%8A%D8%B3%D9%88%D8%AF%D9%84%D9%88%D9%82%D8%AA%D9%8A-%D8%A7%D9%84%D8%AF%D9%88%D8%B1-%D8%B9%D9%84%D9%89-%D8%B3%D8%A8%D8%A7%D8%AF%D8%B2-%D9%88%D8%B2%D8%A8%D8%A7%D8%AF%D9%88/1688718745742153/",
+     "displayedUrl": "1.6K+ reactions  ·  4 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "استمتع بأجواء المباراة مع ڤي كولا 🥤⚽️ تتوقعون الفوز اليوم ...",
+     "websiteTitle": "Facebook",
+     "url": "https://www.facebook.com/trolleykw/posts/%D8%A7%D8%B3%D8%AA%D9%85%D8%AA%D8%B9-%D8%A8%D8%A3%D8%AC%D9%88%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D9%85%D8%B9-%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%EF%B8%8F%D8%AA%D8%AA%D9%88%D9%82%D8%B9%D9%88%D9%86-%D8%A7%D9%84%D9%81%D9%88%D8%B2-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A8%D9%8A%D9%83%D9%88%D9%86-%D9%85%D9%86-%D9%86%D8%B5%D9%8A%D8%A8-%D8%A3%D9%8A-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-/1447862027359662/",
+     "displayedUrl": "https://www.facebook.com › trolleykw › posts › استمت...",
+     "description": "استمتع بأجواء المباراة مع ڤي كولا ⚽️ تتوقعون الفوز اليوم بيكون من نصيب أي منتخب؟ · خلصت تمرينك؟ كافئ نفسك بوجبة تشبعك بدون ما تخرب نظامك · خلصت ...Read more",
+     "emphasizedKeywords": [
+      "ڤي كولا"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "ڤي كولا نادت… وأوسكار كان حاضر 🇪🇬 بنقولها من القلب: كلنا ...",
+     "websiteTitle": "Facebook · Oscar Grand Stores",
+     "url": "https://www.facebook.com/oscargrandstores/videos/%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%D9%86%D8%A7%D8%AF%D8%AA-%D9%88%D8%A3%D9%88%D8%B3%D9%83%D8%A7%D8%B1-%D9%83%D8%A7%D9%86-%D8%AD%D8%A7%D8%B6%D8%B1-%EF%B8%8F%D8%A8%D9%86%D9%82%D9%88%D9%84%D9%87%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D9%84%D8%A8-%D9%83%D9%84%D9%86%D8%A7-%D9%87%D9%86%D8%B4%D8%AC%D8%B9-%D9%88%D9%86%D8%B1%D9%81%D8%B9-%D8%B9%D9%84%D9%85-%D9%85%D8%B5%D8%B1-%D9%88%D8%A8%D9%86%D8%B4%D8%AC%D8%B9-/1508366414415457/",
+     "displayedUrl": "90+ reactions  ·  4 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "شجّع مصر مع ڤي كولا وBreadfast 🇪🇬 أكتر 10 أشخاص هيطلبوا ...",
+     "websiteTitle": "Facebook · V Super Soda",
+     "url": "https://www.facebook.com/Vsupersoda/posts/%D8%B4%D8%AC%D9%91%D8%B9-%D9%85%D8%B5%D8%B1-%D9%85%D8%B9-%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%D9%88breadfast-%D8%A3%D9%83%D8%AA%D8%B1-10-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D9%87%D9%8A%D8%B7%D9%84%D8%A8%D9%88%D8%A7-%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%D9%85%D9%86-breadfast-%D9%87%D9%8A%D9%83%D8%B3%D8%A8%D9%88/122269816490167354/",
+     "displayedUrl": "10+ reactions  ·  3 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    },
+    {
+     "title": "قررنا نرفع العلم مع ڤى كولا ونشجع مصر على طول الخط انت كمان ...",
+     "websiteTitle": "Facebook · Talabat",
+     "url": "https://www.facebook.com/TalabatEG/videos/%D9%82%D8%B1%D8%B1%D9%86%D8%A7-%D9%86%D8%B1%D9%81%D8%B9-%D8%A7%D9%84%D8%B9%D9%84%D9%85-%D9%85%D8%B9-%DA%A4%D9%89-%D9%83%D9%88%D9%84%D8%A7-%D9%88%D9%86%D8%B4%D8%AC%D8%B9-%D9%85%D8%B5%D8%B1-%D8%B9%D9%84%D9%89-%D8%B7%D9%88%D9%84-%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D9%86%D8%AA-%D9%83%D9%85%D8%A7%D9%86-%D8%AF%D9%88%D8%B1%D9%83-%D8%AA%D8%B1%D9%81%D8%B9-%D8%A7%D9%84%D8%B9%D9%84%D9%85-%D9%88%D8%AA%D9%82%D9%81-/2494208011053130/",
+     "displayedUrl": "70+ reactions  ·  4 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 5
+    },
+    {
+     "title": "ڤي كولا تبدأ رفع علم مصر… وطلبات وسعودي وجهينة وبافلو ...",
+     "websiteTitle": "Facebook · جريدة الدستور - ElDostor News",
+     "url": "https://www.facebook.com/ElDostorEgypt/posts/%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%D8%AA%D8%A8%D8%AF%D8%A3-%D8%B1%D9%81%D8%B9-%D8%B9%D9%84%D9%85-%D9%85%D8%B5%D8%B1-%D9%88%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D9%88%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%88%D8%AC%D9%87%D9%8A%D9%86%D8%A9-%D9%88%D8%A8%D8%A7%D9%81%D9%84%D9%88-%D8%A8%D8%B1%D8%AC%D8%B1-%D9%88%D8%B3%D8%A8%D8%A7%D8%AF%D8%B2-%D9%8A%D9%86%D8%B6%D9%85%D9%88%D9%86-%D8%A5%D9%84%D9%89-%D9%87%D8%B0%D9%87-/1505327891641780/",
+     "displayedUrl": "160+ reactions",
+     "description": "ڤي كولا تبدأ رفع علم مصر… وطلبات وسعودي وجهينة وبافلو برجر وسبادز ينضمون إلى هذه المبادرة ; Ebrahim naser. احلي كولا في العالم ; Hassan Ashraf. منتج يشرف بصراحة ...Read more",
+     "emphasizedKeywords": [
+      "ڤي كولا"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 6
+    },
+    {
+     "title": "باكيت الكانز ٢٤ قطعة من ڤي كولا او فيروز او راني عامل كام ؟ لو ...",
+     "websiteTitle": "Facebook · اسأل في مصر - Ask in Egypt",
+     "url": "https://www.facebook.com/groups/171095983238060/posts/2971892603158370/",
+     "displayedUrl": "1 comment",
+     "description": "باكيت الكانز ٢٤ قطعة من ڤي كولا او فيروز او راني عامل كام ؟ لو هشتريه للبيت عادي مش محل ؟ وبيفرق عن سعر لما اشتري بالقطعة ولا لا؟ · Other posts · ٥٠٠ الف جنيه في ...Read more",
+     "emphasizedKeywords": [
+      "ڤي كولا"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 7
+    },
+    {
+     "title": "السلام عليكم لو سمحتوا مين بيبيع ڤي كولا بسعر المصنع في",
+     "websiteTitle": "Facebook · Review Elmansoura",
+     "url": "https://www.facebook.com/groups/360192471538891/posts/2078135229744598/",
+     "displayedUrl": "2 comments",
+     "description": "السلام عليكم لو سمحتوا مين بيبيع ڤي كولا بسعر المصنع في المنصورة محتاج كمية.",
+     "emphasizedKeywords": [
+      "ڤي كولا"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 8
+    },
+    {
+     "title": "وبنشجع كل منتج مصري  Oscar × Vcola مع بعض نشجع مصر 🇪 ...",
+     "websiteTitle": "Facebook · Oscar Grand Stores",
+     "url": "https://www.facebook.com/oscargrandstores/posts/%DA%A4%D9%8A-%D9%83%D9%88%D9%84%D8%A7-%D9%86%D8%A7%D8%AF%D8%AA-%D9%88%D8%A3%D9%88%D8%B3%D9%83%D8%A7%D8%B1-%D9%83%D8%A7%D9%86-%D8%AD%D8%A7%D8%B6%D8%B1-%EF%B8%8F%D8%A8%D9%86%D9%82%D9%88%D9%84%D9%87%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D9%84%D8%A8-%D9%83%D9%84%D9%86%D8%A7-%D9%87%D9%86%D8%B4%D8%AC%D8%B9-%D9%88%D9%86%D8%B1%D9%81%D8%B9-%D8%B9%D9%84%D9%85-%D9%85%D8%B5%D8%B1-%D9%88%D8%A8%D9%86%D8%B4%D8%AC%D8%B9-/1498926718936937/",
+     "displayedUrl": "100+ reactions  ·  4 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 9
+    },
+    {
+     "title": "اقوى عرض فى مصر  ساندوتش شاورما فراخ + ساندوتش كفته + ...",
+     "websiteTitle": "Facebook · Shawerma el Reem",
+     "url": "https://www.facebook.com/SHAWERMAELREEM/videos/%D8%A7%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D8%B6-%D9%81%D9%89-%D9%85%D8%B5%D8%B1-%D8%B3%D8%A7%D9%86%D8%AF%D9%88%D8%AA%D8%B4-%D8%B4%D8%A7%D9%88%D8%B1%D9%85%D8%A7-%D9%81%D8%B1%D8%A7%D8%AE-%D8%B3%D8%A7%D9%86%D8%AF%D9%88%D8%AA%D8%B4-%D9%83%D9%81%D8%AA%D9%87-%D8%A8%D8%B7%D8%A7%D8%B7%D8%B3-%DA%A4%D9%89-%D9%83%D9%88%D9%84%D8%A7-%D8%AA%D9%81%D8%AA%D9%83%D8%B1-%D9%83%D9%84-%D8%AF%D9%87-%D8%A8%D9%83%D8%A7%D9%85-/971550929027391/",
+     "displayedUrl": "2.4K+ reactions  ·  3 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 10
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/csJ3gq6Aey5c2gUpx/records/p7GrA5jMtDcYUuL-0.html?signature=npz6CK1CH9tH3SE7isLs"
+  },
+  {
+   "searchQuery": {
+    "term": "\"ڤي سڤن\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026",
+   "hasNextPage": false,
+   "serpProviderCode": "O",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "بعد ما تدووووء كل هالحب هاد صار بدها غبة طويلة من ڤي سڤن ...",
+     "websiteTitle": "Facebook · v7 aleppo",
+     "url": "https://www.facebook.com/61588548033959/videos/%D8%A8%D8%B9%D8%AF-%D9%85%D8%A7-%D8%AA%D8%AF%D9%88%D9%88%D9%88%D9%88%D8%A1-%D9%83%D9%84-%D9%87%D8%A7%D9%84%D8%AD%D8%A8-%D9%87%D8%A7%D8%AF-%D8%B5%D8%A7%D8%B1-%D8%A8%D8%AF%D9%87%D8%A7-%D8%BA%D8%A8%D8%A9-%D8%B7%D9%88%D9%8A%D9%84%D8%A9-%D9%85%D9%86-%DA%A4%D9%8A-%D8%B3%DA%A4%D9%86%D8%B5%D8%AD%D8%AA%D9%8A%D9%86_%D9%88%D9%87%D9%86%D8%A7/2463671100744074/",
+     "displayedUrl": "20+ reactions",
+     "description": "بعد ما تدووووء كل هالحب هاد صار بدها غبة طويلة من ڤي سڤن #صحتين_وهنا · فؤاد أبو عبيدة and 23 others.Read more",
+     "emphasizedKeywords": [
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "v7 aleppo added a new photo.",
+     "websiteTitle": "Facebook · v7 aleppo",
+     "url": "https://www.facebook.com/61588548033959/photos/122113933041284934/",
+     "displayedUrl": "1 reaction",
+     "description": "... ڤي سڤن ليمون بالنعناع كرعا و تعبا و لحقا ب ڤي سڤن شعير تفاح و مانزلت الا فاضية كبا و لما مد إيدوا ع الرمان سألته ماشاء الله كل هاد عطشان و ماارتويت او كل ...Read more",
+     "emphasizedKeywords": [
+      "ڤي سڤن",
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "عرض خاااص 🤩✨🤩✨🤩🤩 عصير ✨ سيلفر ✨ 24 طرف 😮😮😮 ...",
+     "websiteTitle": "Facebook · محل أبناء الجروشي للمواد الغذائية",
+     "url": "https://www.facebook.com/AlJaroushi0/posts/%D8%B9%D8%B1%D8%B6-%D8%AE%D8%A7%D8%A7%D8%A7%D8%B5-%D8%B9%D8%B5%D9%8A%D8%B1-%D8%B3%D9%8A%D9%84%D9%81%D8%B1-24-%D8%B7%D8%B1%D9%81-%D8%A7%D9%84%D8%B3%D8%B9%D8%B1-30-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D9%86%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%B3%D9%84%D9%85%D8%A7%D9%86%D9%89-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A-%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%A8%D8%AB-%D9%8A%D9%88%D8%AC/1472334908244291/",
+     "displayedUrl": "170+ reactions",
+     "description": "عرض خاااص ✨✨  ✨   مشروب غازي ✨ ڤي سڤن ✨ 250 ملى السعر 1.75 دينار العنوان السلمانى الشرقي شارع البث يوجد لدينا خدمات مصرفية موبي كاش ...Read more",
+     "emphasizedKeywords": [
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "عماد الأبرش",
+     "websiteTitle": "Facebook · عماد الأبرش",
+     "url": "https://www.facebook.com/61551659740422/posts/122236762886055324/",
+     "displayedUrl": "4 reactions",
+     "description": "... ڤي سڤن ليمون بالنعناع كرعا و تعبا و لحقا ب ڤي سڤن شعير تفاح و مانزلت الا فاضية كبا و لما مد إيدوا ع الرمان سألته ماشاء الله كل هاد عطشان و ماارتويت او كل ...Read more",
+     "emphasizedKeywords": [
+      "ڤي سڤن",
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/csJ3gq6Aey5c2gUpx/records/Pt6Bcia0tchhj8E-0.html?signature=1DfY1G8ai4EFnM683U7AO"
+  },
+  {
+   "searchQuery": {
+    "term": "\"V7 cream soda\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22V7+cream+soda%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2026%2Ccd_max%3A8%2F31%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22V7+cream+soda%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2026%2Ccd_max%3A8%2F31%2F2026",
+   "hasNextPage": true,
+   "serpProviderCode": "O",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "Say hello to our NEW Summer Edition, V7 Cream Soda is here!",
+     "websiteTitle": "Facebook · V7Egypt",
+     "url": "https://www.facebook.com/V7Egypt/posts/say-hello-to-our-new-summer-edition-v7-cream-soda-is-here/1020455300885030/",
+     "displayedUrl": "950+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "#360 - Last summer, V7 Pink Lemonade took over everyone's ...",
+     "websiteTitle": "Facebook · Cairo 360",
+     "url": "https://www.facebook.com/cairo360/videos/360-last-summer-v7-pink-lemonade-took-over-everyones-feed-this-summer-v7-is-back/2152666331960857/",
+     "displayedUrl": "2 reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "Lets try together the new V7 cream soda",
+     "websiteTitle": "Facebook · Sensawyy",
+     "url": "https://www.facebook.com/AhmeddOssman/posts/lets-try-together-the-new-v7-cream-soda/1476598194489364/",
+     "displayedUrl": "130+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "The creamiest take on your summer refreshment, made with ...",
+     "websiteTitle": "Facebook · V7Egypt",
+     "url": "https://www.facebook.com/V7Egypt/videos/the-creamiest-take-on-your-summer-refreshment-made-with-100-natural-flavors-v7-c/1052326230778325/",
+     "displayedUrl": "110+ reactions  ·  1 month ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    },
+    {
+     "title": "Say hello to our NEW Summer Edition, V7 Cream Soda is here!",
+     "websiteTitle": "Facebook · V7Egypt",
+     "url": "https://www.facebook.com/V7Egypt/videos/say-hello-to-our-new-summer-edition-v7-cream-soda-is-here/1311620121046511/",
+     "displayedUrl": "920+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 5
+    },
+    {
+     "title": "Every summer has a flavor that stands out, and this season V7 ...",
+     "websiteTitle": "Facebook · Cairo Buzz",
+     "url": "https://www.facebook.com/61565594882118/videos/every-summer-has-a-flavor-that-stands-out-and-this-season-v7-is-bringing-back-a-/2176314349607574/",
+     "displayedUrl": "2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 6
+    },
+    {
+     "title": "V7 Cream Soda #wheretoeat #wheretoeategypt #fy #products",
+     "websiteTitle": "Facebook · Mon3esh - منعش",
+     "url": "https://www.facebook.com/mon3esh.zone/videos/v7-cream-sodawheretoeat-wheretoeategypt-fy-products/1036524789086888/",
+     "displayedUrl": "7.3K+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 7
+    },
+    {
+     "title": "V7 CREAM SODA. . V7Egypt  #akram_benefit #فى #سفن ...",
+     "websiteTitle": "Facebook · Akram Taste Test",
+     "url": "https://www.facebook.com/AkramTasteTest/posts/v7-cream-sodav7egypt-%EF%B8%8F-akram_benefit-%D9%81%D9%89-%D8%B3%D9%81%D9%86-%D9%83%D8%B1%D9%8A%D9%85-%D8%B5%D9%88%D8%AF%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%A8-%D8%B3%D9%86%D8%A7%D9%83%D8%B3-%D8%A7%D9%83%D8%B3%D8%A8%D9%84%D9%88%D8%B1-%D9%85%D8%B5%D8%B1v7-/1686505826809369/",
+     "displayedUrl": "10+ reactions  ·  1 month ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 8
+    },
+    {
+     "title": "V7 is bringing a familiar favorite back into the spotlight this ...",
+     "websiteTitle": "Facebook · The Briefline",
+     "url": "https://www.facebook.com/61592652657225/videos/v7-is-bringing-a-familiar-favorite-back-into-the-spotlight-this-summer-with-the-/1967322297310521/",
+     "displayedUrl": "1 reaction  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 9
+    },
+    {
+     "title": "V7 Cream Soda #wheretoeat #wheretoeategypt #fy #products",
+     "websiteTitle": "Facebook · Mon3esh - منعش",
+     "url": "https://www.facebook.com/mon3esh.zone/posts/v7-cream-sodawheretoeat-wheretoeategypt-fy-products/1367442865544912/",
+     "displayedUrl": "7.4K+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 10
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/csJ3gq6Aey5c2gUpx/records/BOUNQNymUNkyGvC-3.html?signature=etTOE42ldOPN6ZV0SQ0n"
+  },
+  {
+   "searchQuery": {
+    "term": "\"V7 cream soda\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22V7+cream+soda%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2026%2Ccd_max%3A8%2F31%2F2026&start=10",
+    "device": "DESKTOP",
+    "page": 2,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22V7+cream+soda%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2026%2Ccd_max%3A8%2F31%2F2026&start=10",
+   "hasNextPage": true,
+   "serpProviderCode": "O",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "Say hello to our NEW Summer Edition, V7 Cream Soda is here!",
+     "websiteTitle": "Facebook · V7Egypt",
+     "url": "https://www.facebook.com/V7Egypt/videos/say-hello-to-our-new-summer-edition-v7-cream-soda-is-here/1311620121046511/",
+     "displayedUrl": "920+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 11
+    },
+    {
+     "title": "#360 - Last summer, V7 Pink Lemonade took over everyone's ...",
+     "websiteTitle": "Facebook · Cairo 360",
+     "url": "https://www.facebook.com/cairo360/videos/360-last-summer-v7-pink-lemonade-took-over-everyones-feed-this-summer-v7-is-back/2152666331960857/",
+     "displayedUrl": "2 reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 12
+    },
+    {
+     "title": "V7 Cream Soda #wheretoeat #wheretoeategypt #fy #products",
+     "websiteTitle": "Facebook · Mon3esh - منعش",
+     "url": "https://www.facebook.com/mon3esh.zone/videos/v7-cream-sodawheretoeat-wheretoeategypt-fy-products/1036524789086888/",
+     "displayedUrl": "7.3K+ reactions  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 13
+    },
+    {
+     "title": "Every summer has a flavor that stands out, and this season V7 ...",
+     "websiteTitle": "Facebook · Cairo Buzz",
+     "url": "https://www.facebook.com/61565594882118/videos/every-summer-has-a-flavor-that-stands-out-and-this-season-v7-is-bringing-back-a-/2176314349607574/",
+     "displayedUrl": "2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 14
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/csJ3gq6Aey5c2gUpx/records/uYW7AjRyipoPL5w-0.html?signature=J6bPewTc0wPAGUhFWQiJ"
+  },
+  {
+   "searchQuery": {
+    "term": "\"ڤي كولا\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026&start=10",
+    "device": "DESKTOP",
+    "page": 2,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A6%2F1%2F2026%2Ccd_max%3A6%2F30%2F2026&start=10",
+   "hasNextPage": true,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/csJ3gq6Aey5c2gUpx/records/ePnddjKTslJzNkp-3.html?signature=PHJw3dBPdZmy4tv1i13F"
+  }
+ ]
+}

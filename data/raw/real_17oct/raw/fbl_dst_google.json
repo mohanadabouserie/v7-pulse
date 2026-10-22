@@ -1,0 +1,57 @@
+{
+ "input": {
+  "queries": "https://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F15%2F2026%2Ccd_max%3A8%2F15%2F2026",
+  "maxPagesPerQuery": 1,
+  "countryCode": "eg"
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "Qu7QMpgKvgFMRcqx8",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:55:34.645Z",
+  "finishedAt": "2026-10-20T10:56:04.913Z",
+  "chargedEventCounts": {
+   "search-page-scraped": 0,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.0067,
+ "items": [
+  {
+   "searchQuery": {
+    "term": "\"ڤي كولا\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F15%2F2026%2Ccd_max%3A8%2F15%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F15%2F2026%2Ccd_max%3A8%2F15%2F2026",
+   "hasNextPage": false,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/hoPtDJKSMz0n0ntcd/records/jPtHXpJKbByHAud-0.html?signature=16ZoBGdC4UFSBipl3889R"
+  }
+ ]
+}

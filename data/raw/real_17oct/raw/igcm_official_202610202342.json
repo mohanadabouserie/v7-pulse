@@ -1,0 +1,222 @@
+{
+ "input": {
+  "directUrls": [
+   "https://www.instagram.com/p/DeP7yeNjRKn/",
+   "https://www.instagram.com/p/DeP88JoDUZv/",
+   "https://www.instagram.com/p/Dc7OSujCKIT/",
+   "https://www.instagram.com/p/DcduDFviuty/",
+   "https://www.instagram.com/p/DcEDmH8Midl/",
+   "https://www.instagram.com/p/Db31GyEuJUW/",
+   "https://www.instagram.com/p/DaxnY-AMvyK/",
+   "https://www.instagram.com/p/DYR4-0GtSXO/",
+   "https://www.instagram.com/p/DXpQh2dji2q/",
+   "https://www.instagram.com/p/DXrIUbMlzkZ/",
+   "https://www.instagram.com/p/DX_4CClF5Ng/",
+   "https://www.instagram.com/p/DX9_WSUsUwe/",
+   "https://www.instagram.com/p/DXrURkMoMCT/",
+   "https://www.instagram.com/p/DXujKBQkURQ/",
+   "https://www.instagram.com/p/DYAHWxdCI_H/",
+   "https://www.instagram.com/p/DbjdjRHEcK4/",
+   "https://www.instagram.com/reel/DcT2CInMcIJ/",
+   "https://www.instagram.com/reel/DZVlIYxkyMN/",
+   "https://www.instagram.com/reel/Da9yKUWDqTk/",
+   "https://www.instagram.com/reel/DcOVzGCkWmi/"
+  ],
+  "resultsLimit": 100,
+  "includeNestedComments": false
+ },
+ "cap_usd": 0.27,
+ "run": {
+  "id": "FnNFh7VgVJBn6AeKY",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:42:49.700Z",
+  "finishedAt": "2026-10-20T20:43:51.953Z",
+  "chargedEventCounts": {
+   "comment": 20
+  },
+  "usageTotalUsd": 0.046
+ },
+ "cost_usd": 0.0438,
+ "items": [
+  {
+   "url": "https://www.instagram.com/p/DeP88JoDUZv/",
+   "inputUrl": "https://www.instagram.com/p/DeP88JoDUZv/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/Db31GyEuJUW/",
+   "inputUrl": "https://www.instagram.com/p/Db31GyEuJUW/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DcEDmH8Midl/",
+   "inputUrl": "https://www.instagram.com/p/DcEDmH8Midl/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/Dc7OSujCKIT/",
+   "inputUrl": "https://www.instagram.com/p/Dc7OSujCKIT/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DaxnY-AMvyK/",
+   "inputUrl": "https://www.instagram.com/p/DaxnY-AMvyK/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DcduDFviuty/",
+   "inputUrl": "https://www.instagram.com/p/DcduDFviuty/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DYR4-0GtSXO/",
+   "inputUrl": "https://www.instagram.com/p/DYR4-0GtSXO/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DXpQh2dji2q/",
+   "inputUrl": "https://www.instagram.com/p/DXpQh2dji2q/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DXrIUbMlzkZ/",
+   "inputUrl": "https://www.instagram.com/p/DXrIUbMlzkZ/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DYAHWxdCI_H/",
+   "inputUrl": "https://www.instagram.com/p/DYAHWxdCI_H/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DbjdjRHEcK4/",
+   "inputUrl": "https://www.instagram.com/p/DbjdjRHEcK4/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DX_4CClF5Ng/",
+   "inputUrl": "https://www.instagram.com/p/DX_4CClF5Ng/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DX9_WSUsUwe/",
+   "inputUrl": "https://www.instagram.com/p/DX9_WSUsUwe/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DXrURkMoMCT/",
+   "inputUrl": "https://www.instagram.com/p/DXrURkMoMCT/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DXujKBQkURQ/",
+   "inputUrl": "https://www.instagram.com/p/DXujKBQkURQ/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/p/DeP7yeNjRKn/",
+   "inputUrl": "https://www.instagram.com/p/DeP7yeNjRKn/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/reel/DZVlIYxkyMN/",
+   "inputUrl": "https://www.instagram.com/reel/DZVlIYxkyMN/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/reel/DcT2CInMcIJ/",
+   "inputUrl": "https://www.instagram.com/reel/DcT2CInMcIJ/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/reel/Da9yKUWDqTk/",
+   "inputUrl": "https://www.instagram.com/reel/Da9yKUWDqTk/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  },
+  {
+   "url": "https://www.instagram.com/reel/DcOVzGCkWmi/",
+   "inputUrl": "https://www.instagram.com/reel/DcOVzGCkWmi/",
+   "requestErrorMessages": [
+    "HTTP 404 Not found"
+   ],
+   "error": "no_items",
+   "errorDescription": "Empty or private data for provided input"
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "input": {
+  "query": "V7 كريم صودا",
+  "resultsCount": 10,
+  "searchType": "latest",
+  "startDate": "2026-10-13",
+  "endDate": "2026-10-13"
+ },
+ "cap_usd": 0.09,
+ "run": {
+  "id": "Kl2xqgxnkSirdwGvm",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T14:28:30.548Z",
+  "finishedAt": "2026-10-20T14:29:15.163Z",
+  "chargedEventCounts": {
+   "result-item": 10,
+   "init": 1
+  },
+  "usageTotalUsd": 0.03005
+ },
+ "cost_usd": 0.1085,
+ "items": [
+  {
+   "url": "https://www.facebook.com/m.ha.ed.ha.dy/posts/pfbid06bfWQ7ypCy7gjGdawtvo6MQmZsBPd3ETNx6SridgX4HFoQdWWrc39azWSojbno8wl",
+   "timestamp": 1791924184000,
+   "postText": "Sodo cream",
+   "reactionsCount": 7,
+   "reactions": {
+    "haha": 7
+   },
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "4566355226843533",
+   "author": {
+    "id": "100004073033585",
+    "name": "MØĥaɱeď Ĥãɱďy",
+    "profilePicture": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/846432483_4564998486979207_8083605333796966290_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s40x40&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=fw57O8pjm1wQ7kNvwH9jjAF&_nc_oc=Adp7AxIbFG1GUOl1T71MtgZcHDHkU6m6-PY8x2vbeox8xwRx3nestgcjLKSBEHoW6EY&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQPJ_zeM9fcYVzwjvEE2do-7NU7yXnsF6dI_U4gsrkDiQg&oe=6ADD3DAF",
+    "profileUrl": "https://www.facebook.com/m.ha.ed.ha.dy"
+   },
+   "isReshare": true,
+   "sharedPost": {
+    "postId": "2741276952715730",
+    "url": "https://www.facebook.com/moaz.uy/videos/910965080437874/",
+    "postText": "لما متبقاش عارف تلمها من فين ويتقالك البامبرز خلص 🥹",
+    "author": {
+     "id": "100005003563193",
+     "name": "Muaz Mohammed",
+     "profilePicture": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/711986532_3557064874470263_6133702543699884554_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s40x40&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=wXLWcapUG28Q7kNvwGFhEZK&_nc_oc=AdpecH0dObA5dPHalUf1HhqwCJPR3r6LwKJzDk8w3YAOHWln1wXs9IjdAZaZXNAIzJs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQOI-S2HGQrtAwz79jR7uAg5DykA2vUIYshwZ47ci1uhIg&oe=6ADD3267",
+     "profileUrl": "https://www.facebook.com/moaz.uy"
+    },
+    "timestamp": 1706568978000,
+    "attachments": [
+     {
+      "type": "video",
+      "url": "https://video-iad3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPv0GFqS3Tf8J6Oh7qHHXXE8Meqndf7Hw_Rh9ra51iwIdhhR5L8rGrYeQ5VG1uU-7ci6zfB67baay8oJyrvquFQQsSYUFX-ZNBh94wYo2-LKg.mp4?_nc_cat=105&_nc_sid=5e9851&_nc_ht=video-iad3-2.xx.fbcdn.net&_nc_ohc=MntkcFRO1SUQ7kNvwHgfZJT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuODg4LmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjkxMTkxMjgwMzU1Nzg4NiwiYXNzZXRfYWdlX2RheXMiOjk5NCwidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=d6fcfef5314a957d&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GNjQ2RjNDNzlDQUEzNkY0QjU3NDA1MEI0ODE3Q0Y5Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhg0ZmJfcGVybWFuZW50LzQwNjI2NDc0MTkyNzk1Ml82NjY1NDUyMTM1NDY2MDI3NTc2Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb8h8frp9ieAxUCKAJDMywXQCJ4UeuFHrgYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZaeAQA&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&_nc_zt=28&oh=00_AQNAtEEWhXBcj1Ja_C8uxmBd4_ioKJdGIhiyqtdK8oeJgQ&oe=6ADD3723&bitrate=329775&tag=dash_h264-basic-gen2_720p",
+      "id": "910965080437874"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02RkYnpSFA9kQor3rp72umUuB616n9pzqC5jHqkoMzdY1uUSTPZtQhhFvcuZMRTzkYl&id=61584517559871",
+   "timestamp": 1791388542000,
+   "postText": "\"الآن هو الوقت\": ناشطون في مجال الإسكان في مخيم مدريد يعلقون آمالاً حذرة على الانتخابات الإسبانية المبكرة\n\nفي منصة غداء مؤقتة موضوعة داخل متاهة من الخيام في...",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "122145499617150585",
+   "author": {
+    "id": "61584517559871",
+    "name": "XXInfos",
+    "profilePicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/592500100_122096016495150585_3739362480039600699_n.png?stp=cp0_dst-png&cstp=mx1290x1290&ctp=s40x40&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rk5yn7V68DoQ7kNvwHaboPI&_nc_oc=Adqti_8mDytOpIFGkh9OK56ByO073ZYPmbKr6KOsscTPPSLD5NxEpe0NX7rqBTdpf4k&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQMlpzgZcyf8k08mf2j3X7THkjtUHY0CbJnYvgt_HRxwyA&oe=6ADD4974",
+    "profileUrl": "https://www.facebook.com/profile.php?id=61584517559871"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/AlMajallaEN/posts/pfbid0h899WEoNnt5Z9JwaGKnFt6aCJ5XrpshdWg4RfJJW3LoHtqz4ZneT7tMaxRMsX5Vgl",
+   "timestamp": 1790967601000,
+   "postText": "Saudi Arabia’s first EV brand is taking shape. With CEER’s EXOBOT due to hit the roads in 2027, the Kingdom is combining global expertise with local investment to build a homegrown automotive industry.\n\nDiscover how in Marco Mossad’s piece for #AlMajalla👇\n\nhttps://en.majalla.com/node/333347",
+   "reactionsCount": 1,
+   "reactions": {
+    "like": 1
+   },
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "1724886226306664",
+   "author": {
+    "id": "100063559091466",
+    "name": "Al Majalla",
+    "profilePicture": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/514089959_10164129010132994_477476388565475963_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2048x2048&ctp=s40x40&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=bJu-_TPi-kMQ7kNvwHC0I_U&_nc_oc=AdryVdb7l9Qv23tkmqNY65tinmuVEumntE0O2OwTXodiG2hARfXCr-3W5j36X8FYgmM&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQMn5-VGPNzycNjKKwE9A1YBsUZ35jDszMldBRePDTvmPA&oe=6ADD5306",
+    "profileUrl": "https://www.facebook.com/AlMajallaEN"
+   },
+   "attachments": [
+    {
+     "type": "photo",
+     "url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.99422-6/831726568_2179874145899764_1555220504533882007_n.png?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s640x640&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hkessqox4w0Q7kNvwHOTFZ6&_nc_oc=AdpVVRsj5C9lJTZjBQN9LcTU9bTbzGVMnZrgLxoFMQ1qM6g_Dt6QL0ivCFFuOlhhc7c&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQMcCInQ5VZ9-d2ugDTBmFy-A27S8svHCSDKG_ef-gWUhw&oe=6ADD3661",
+     "id": "1724886179640002",
+     "accessibilityCaption": "May be an image of text"
+    }
+   ],
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/mahmoud.mahmoud.237929/posts/pfbid02TkChD4WVHzAr2EUSUEbMNJKLSFsDG9f1ADVrapE9mi9rTBWZSN8WHMwcPtjRQgNol",
+   "timestamp": 1792443216000,
+   "postText": "أوربا في حاجة مستمرة لليد العاملة",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "4513645938965649",
+   "author": {
+    "id": "100009608622332",
+    "name": "Mahmoud Mahmoud",
+    "profilePicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/467899437_3762441007419483_2395871269701740802_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x958&ctp=s40x40&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=So2uRAAUIHoQ7kNvwHYhMak&_nc_oc=Adoe5tFyuINNIehECLHEaa-25fXL9oXIwQUyyITI4lEP2h4cABE_1nlc41VuzRVU3mc&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQMmmbxwu1zI93lzZ2xT6Hk0lRecT6Fk2vih09gQGgo17Q&oe=6ADD63DB",
+    "profileUrl": "https://www.facebook.com/mahmoud.mahmoud.237929"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/Alamir.Kamal.Farag/posts/pfbid0Y3kNPNyg3pB2zzD8WJ6MwHZkPdumhMQSVHV2FssKqGhWjg6TxXGQyQVpWhtgeh8Al",
+   "timestamp": 1788885143000,
+   "postText": "",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "10228952822365655",
+   "author": {
+    "id": "1843970015",
+    "name": "Alamir Kamal Farag",
+    "profilePicture": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/313395636_10218859551480191_5986563550923349139_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x956&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=pPIqRLzSvD0Q7kNvwFPrj8T&_nc_oc=AdoQAHnz8rpNBNt0XRUtXP60WY5S6nn4DoTwlhV-GOSASdqer5abKOeZJOr3q4DhIAc&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQMpzO2ZYd_IC_yNiTnR08TfISsJYaFzTFAsgqoEOtL3UQ&oe=6ADD32FD",
+    "profileUrl": "https://www.facebook.com/Alamir.Kamal.Farag"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02FkCvbTano4Vk6f1hWjSrc9rP7tNgxVxdHftdWL3YFXeg4BmtxMASCJ2SjCjwUZWpl&id=61572760810866",
+   "timestamp": 1792436329000,
+   "postText": "مؤتمر أميركي لثلاثة أيام دعماً لاتفاق الإطار",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "122241616304758693",
+   "author": {
+    "id": "61572760810866",
+    "name": "Sawti News",
+    "profilePicture": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/476445595_1209186647443765_1720425892112346859_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2048x2048&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=U4A6dw8H9pgQ7kNvwFcrp3Q&_nc_oc=AdriEWLeWPdCVzk4rlp-48unz6earVhBM3fNPD_Yfm-H0hpwuRSPyWcpWGes4iEY2AA&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=V96JWH7mUaU8X-BoQlotDg&_nc_ss=792a8&oh=00_AQMDBzAovLxd2ge_gJbSqBWaSswNljoSAlZEI4lTtz5U-w&oe=6ADD3DE8",
+    "profileUrl": "https://www.facebook.com/profile.php?id=61572760810866"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/salah.dakhli.96/posts/pfbid02J13HCFknyx3dnqHpsdZvREJ59xE8BugZBn9kTZmQsBcuD9nyxsJABCQBgn4RF9TEl",
+   "timestamp": 1792434310000,
+   "postText": "",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "2385608045567367",
+   "author": {
+    "id": "100023545853538",
+    "name": "Salah Dakhli",
+    "profilePicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/731366018_2279861669475339_1843789449213486854_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx950x946&ctp=s40x40&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=L3wFOXQJF7sQ7kNvwHDcMYq&_nc_oc=AdqkRrQmE3xVpWfmBErJpcoz5wSqo6yeEFNmhTx4BdQxnV-_n3m2ICEnVtlimEch1-Y&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=BGABDOXfFP2_EjUl4l99JQ&_nc_ss=792a8&oh=00_AQMxIg81l7BnTBD-H3NZHKsf1F46IKF7AOpaG-ahIc4mOw&oe=6ADD54B2",
+    "profileUrl": "https://www.facebook.com/salah.dakhli.96"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/raf.al.skwr/posts/pfbid0ctrZj3fZg8zdttEMoXJePThNPmnaFtgzgaWfAXGtDzRbnYpkZ5JyyJDQoqkHFsqul",
+   "timestamp": 1792430866000,
+   "postText": "",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "1716603616554947",
+   "author": {
+    "id": "100046159750911",
+    "name": "رافع أل عسكور",
+    "profilePicture": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/395412663_915213336693983_8372683023113879217_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx950x960&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=0BHgE4Rh3TwQ7kNvwF9M7bg&_nc_oc=AdryW51FR4DWmPtkFPho4xwyqB4_37Wbe5U_ZvwLjVT2EyMf-_fBOdQTePSfcwEd7Yc&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=BGABDOXfFP2_EjUl4l99JQ&_nc_ss=792a8&oh=00_AQOv2XDEiziRKwkNNrmyxKFbPXn_QsVTlTonOneDKbzWXw&oe=6ADD4512",
+    "profileUrl": "https://www.facebook.com/raf.al.skwr"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/fananews/posts/pfbid02TxDUkbAoFmhdDBLY9hZR2SYhXTpxHPPtF6TZTBNWbLFuD9iT8o8wSKtUB22eaQ3tl",
+   "timestamp": 1792422315000,
+   "postText": "",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "1453988116938327",
+   "author": {
+    "id": "100069814570493",
+    "name": "اتحاد وكالات الانباء العربية - فانا",
+    "profilePicture": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/323993043_645912293959620_6114729007337852423_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx376x376&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=VNdGdh0JlUIQ7kNvwE-H9qN&_nc_oc=AdpjybDtazHU4wUfK4uw_qKAukEyTxGk-RA-dpjL9ov6V_fyx-iLfRxC1QnLK6ZyWlc&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=BGABDOXfFP2_EjUl4l99JQ&_nc_ss=792a8&oh=00_AQN8Uoxz1egzhToR0xXa_GyDJXQYf50AEE2WVge6v5EkuQ&oe=6ADD6546",
+    "profileUrl": "https://www.facebook.com/fananews"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  },
+  {
+   "url": "https://www.facebook.com/abdo.aomar.37/posts/pfbid0bE6VzicLybWJiHX1vyVPhfh7PkCAnFjRdNiw1xNc9hYgyGKVPiZ6ezjcj3cQYQEhl",
+   "timestamp": 1792420341000,
+   "postText": "",
+   "reactionsCount": 0,
+   "reactions": {},
+   "commentsCount": 0,
+   "sharesCount": 0,
+   "postId": "2403171706755438",
+   "author": {
+    "id": "100011878952509",
+    "name": "Abdo Omar",
+    "profilePicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/657141689_2224913144581296_7196262786245805969_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx640x640&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=P0CIBjVxx0EQ7kNvwG1Pm9p&_nc_oc=AdrhViuW99q1oGOf4vfcgjVt4PoOv53dxUnnfeSViXKCae7uCLbW5xK5pj9EmLagiFw&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=BGABDOXfFP2_EjUl4l99JQ&_nc_ss=792a8&oh=00_AQOxAjV96M_Tq3_ZMiP-zW1VLgSARdW1bv3TKEnrvONWfQ&oe=6ADD5130",
+    "profileUrl": "https://www.facebook.com/abdo.aomar.37"
+   },
+   "isReshare": false,
+   "sharedPost": null
+  }
+ ]
+}

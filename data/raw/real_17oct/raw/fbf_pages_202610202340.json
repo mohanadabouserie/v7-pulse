@@ -1,0 +1,308 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://web.facebook.com/OnTimeSports"
+   },
+   {
+    "url": "https://www.facebook.com/nada.dodoo.3"
+   },
+   {
+    "url": "https://www.facebook.com/people/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA/61578891750660"
+   },
+   {
+    "url": "https://www.facebook.com/people/AhmedFood/61584863624781"
+   }
+  ]
+ },
+ "cap_usd": 0.09,
+ "run": {
+  "id": "juidX61qAnWd76upo",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:40:38.160Z",
+  "finishedAt": "2026-10-20T20:40:43.673Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "page": 0
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.0001,
+ "items": [
+  {
+   "facebookUrl": "https://web.facebook.com/OnTimeSports",
+   "categories": [
+    "Page",
+    "TV channel"
+   ],
+   "info": [
+    "ON Sport. 12,087,471 followers",
+    "1,175,743 talking about this. ‎الصفحة الرسمية لقناة ON SPORT‎"
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "ON Sport",
+   "pageId": "100044215730239",
+   "pageName": "OnTimeSports",
+   "pageUrl": "https://web.facebook.com/OnTimeSports",
+   "intro": "الصفحة الرسمية لقناة ON SPORT",
+   "websites": [
+    "https://www.instagram.com/onsport",
+    "https://x.com/ONTimeSports",
+    "https://tiktok.com/@onsport",
+    "https://youtube.com/@ONSporteg"
+   ],
+   "CONFIRMED_OWNER_LABEL": "UNITED MEDIA SERVICES",
+   "alternativeSocialMedia": "https://youtube.com/@ONSporteg",
+   "followers": 12087471,
+   "followings": 8,
+   "profilePictureUrl": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/481024681_1189463932537453_3764492491894630096_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=1&ccb=1-7&_nc_sid=f907e8&_nc_ohc=G_Maf62pIpEQ7kNvwGGiyUa&_nc_oc=Adr2Zk4r338E370SnClh3xyLk7aFp5t1Zo6-EMz6dbXZ2gg5NAfv4W-Eg2Mq7_RSjqliX5rW0eFDXr7R3iEHVHbo&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=Ck4OVWMQHibk93TkHqMCkA&_nc_ss=73289&oh=00_AQOm0KJTBtShM71WLErRvCEhzOuSXBliIt6cQcHOfCAZwQ&oe=6ADD9A58",
+   "coverPhotoUrl": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/498162289_1262155078601671_9059751170927536895_n.jpg?stp=dst-jpg_tt6&cstp=mx820x312&ctp=s820x312&_nc_cat=1&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=WyfnOTQe7i8Q7kNvwEyO5WG&_nc_oc=AdpwUYC6LTsEuO8PjV2XMeSSEZoJyOY0Jchqwxp-Pvd5sOhv6zHlWIFsTX2Thga0cKsHySKsYOKCKkw692SSkBj-&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=wp3sF7kQiibK2F6Mpp8ecw&_nc_ss=73289&oh=00_AQMzNTjzSwaY0t7sSxZIoRmZu743F7XkdFNNmN7ZUIKbdw&oe=6ADD9FF0",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=1189463929204120&set=a.796367501847100",
+   "category": "TV channel",
+   "x": [
+    {
+     "username": "ONTimeSports",
+     "url": "https://x.com/ONTimeSports"
+    }
+   ],
+   "instagram": [
+    {
+     "username": "onsport",
+     "url": "https://www.instagram.com/onsport"
+    }
+   ],
+   "tiktok": [
+    {
+     "username": "onsport",
+     "url": "https://tiktok.com/@onsport"
+    }
+   ],
+   "youtube": [
+    {
+     "username": "ONSporteg",
+     "url": "https://youtube.com/@ONSporteg"
+    }
+   ],
+   "creation_date": "September 6, 2016",
+   "ad_status": "This Page isn't currently running ads.",
+   "confirmed_owner": "UNITED MEDIA SERVICES is responsible for this Page.",
+   "additionalProperties": {
+    "messenger": null,
+    "CONFIRMED_OWNER_LABEL": "UNITED MEDIA SERVICES",
+    "alternativeSocialMedia": "https://youtube.com/@ONSporteg",
+    "profilePictureUrl": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/481024681_1189463932537453_3764492491894630096_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=1&ccb=1-7&_nc_sid=f907e8&_nc_ohc=G_Maf62pIpEQ7kNvwGGiyUa&_nc_oc=Adr2Zk4r338E370SnClh3xyLk7aFp5t1Zo6-EMz6dbXZ2gg5NAfv4W-Eg2Mq7_RSjqliX5rW0eFDXr7R3iEHVHbo&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=Ck4OVWMQHibk93TkHqMCkA&_nc_ss=73289&oh=00_AQOm0KJTBtShM71WLErRvCEhzOuSXBliIt6cQcHOfCAZwQ&oe=6ADD9A58",
+    "coverPhotoUrl": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/498162289_1262155078601671_9059751170927536895_n.jpg?stp=dst-jpg_tt6&cstp=mx820x312&ctp=s820x312&_nc_cat=1&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=WyfnOTQe7i8Q7kNvwEyO5WG&_nc_oc=AdpwUYC6LTsEuO8PjV2XMeSSEZoJyOY0Jchqwxp-Pvd5sOhv6zHlWIFsTX2Thga0cKsHySKsYOKCKkw692SSkBj-&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=wp3sF7kQiibK2F6Mpp8ecw&_nc_ss=73289&oh=00_AQMzNTjzSwaY0t7sSxZIoRmZu743F7XkdFNNmN7ZUIKbdw&oe=6ADD9FF0",
+    "category": "TV channel",
+    "x": [
+     {
+      "username": "ONTimeSports",
+      "url": "https://x.com/ONTimeSports"
+     }
+    ],
+    "instagram": [
+     {
+      "username": "onsport",
+      "url": "https://www.instagram.com/onsport"
+     }
+    ],
+    "tiktok": [
+     {
+      "username": "onsport",
+      "url": "https://tiktok.com/@onsport"
+     }
+    ],
+    "youtube": [
+     {
+      "username": "ONSporteg",
+      "url": "https://youtube.com/@ONSporteg"
+     }
+    ],
+    "ad_status": "This Page isn't currently running ads.",
+    "confirmed_owner": "UNITED MEDIA SERVICES is responsible for this Page."
+   },
+   "facebookId": "100044215730239",
+   "pageAdLibrary": {
+    "id": "1788305591458560",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/nada.dodoo.3",
+   "categories": [
+    "Profile",
+    "Public figure"
+   ],
+   "info": [
+    "Na Da Na Gy. 1,982 followers",
+    "14 talking about this. ‎لا تجعلنى ثقيل على قلب احد يا الله و ابعدنى عن من يتمنى بُعدى ولو كان احب عبادك لقلبى🤲🏻🖤‎"
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "Na Da Na Gy",
+   "pageId": "100006061803927",
+   "pageName": "nada.dodoo.3",
+   "pageUrl": "https://www.facebook.com/nada.dodoo.3",
+   "intro": "لا تجعلنى ثقيل على قلب احد يا الله و ابعدنى عن من يتمنى بُعدى ولو كان احب عبادك لقلبى🤲🏻🖤",
+   "websites": [
+    "https://www.instagram.com/bynadanagy",
+    "https://tiktok.com/@nadanagy79"
+   ],
+   "WORK": "Former Sales Team Leader at Coursera House of English",
+   "HOMETOWN": "From Cairo, Egypt",
+   "alternativeSocialMedia": "https://tiktok.com/@nadanagy79",
+   "followers": 1982,
+   "followings": 2400,
+   "profilePictureUrl": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-1/758636034_4377362715809079_8032092843457245519_n.jpg?stp=dst-jpg_tt6&cstp=mx1290x1291&ctp=s200x200&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fe59b0&_nc_ohc=eRw1-QmdvqUQ7kNvwFa09H5&_nc_oc=AdrFJByxaSyL20nBJ_RMgH6pCWlOIYvKP7W07bEp_vtZugdyYMBVDGZf9aMAnWlYo-kIY4gVQdLqfkCeLW8VrhS8&_nc_zt=24&_nc_ht=scontent.fric1-2.fna&_nc_gid=-AjBr_dmBR2DfnQ9aSAQHA&_nc_ss=73289&oh=00_AQNuhjwGRhHxvIgLPktcCVoHRGayzZaw-gzE4VIryROp7Q&oe=6ADD9388",
+   "coverPhotoUrl": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-6/494069779_3933849996827022_6128567568870707778_n.jpg?stp=dst-jpg_tt6&cstp=mx500x700&ctp=s500x700&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=J3cBAMUvqGIQ7kNvwEfb_pz&_nc_oc=Ado41mur46NGwo0wnNCMO-75ieiMsh_lUKplrqKFS_DTwOKahJtPG10WcU-TjEW83jhZDJCKCaHLmDDqBJaYWg7q&_nc_zt=23&_nc_ht=scontent.fric1-2.fna&_nc_gid=-AjBr_dmBR2DfnQ9aSAQHA&_nc_ss=73289&oh=00_AQPaD0ii23BShqgvuFodxsR6nOZbTnZL7MZoqI2woBj2WQ&oe=6ADDAB69",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=4377362712475746&set=a.1375858052626242",
+   "work": "Works at ‎Banque Misr بنك مصر‎",
+   "null_state": "No relationship info to show",
+   "hometown": "From Cairo, Egypt",
+   "creation_date": "June 4, 2013",
+   "ad_status": "This page isn't currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "WORK": "Former Sales Team Leader at Coursera House of English",
+    "HOMETOWN": "From Cairo, Egypt",
+    "alternativeSocialMedia": "https://tiktok.com/@nadanagy79",
+    "profilePictureUrl": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-1/758636034_4377362715809079_8032092843457245519_n.jpg?stp=dst-jpg_tt6&cstp=mx1290x1291&ctp=s200x200&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fe59b0&_nc_ohc=eRw1-QmdvqUQ7kNvwFa09H5&_nc_oc=AdrFJByxaSyL20nBJ_RMgH6pCWlOIYvKP7W07bEp_vtZugdyYMBVDGZf9aMAnWlYo-kIY4gVQdLqfkCeLW8VrhS8&_nc_zt=24&_nc_ht=scontent.fric1-2.fna&_nc_gid=-AjBr_dmBR2DfnQ9aSAQHA&_nc_ss=73289&oh=00_AQNuhjwGRhHxvIgLPktcCVoHRGayzZaw-gzE4VIryROp7Q&oe=6ADD9388",
+    "coverPhotoUrl": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-6/494069779_3933849996827022_6128567568870707778_n.jpg?stp=dst-jpg_tt6&cstp=mx500x700&ctp=s500x700&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=J3cBAMUvqGIQ7kNvwEfb_pz&_nc_oc=Ado41mur46NGwo0wnNCMO-75ieiMsh_lUKplrqKFS_DTwOKahJtPG10WcU-TjEW83jhZDJCKCaHLmDDqBJaYWg7q&_nc_zt=23&_nc_ht=scontent.fric1-2.fna&_nc_gid=-AjBr_dmBR2DfnQ9aSAQHA&_nc_ss=73289&oh=00_AQPaD0ii23BShqgvuFodxsR6nOZbTnZL7MZoqI2woBj2WQ&oe=6ADDAB69",
+    "work": "Works at ‎Banque Misr بنك مصر‎",
+    "null_state": "No relationship info to show",
+    "hometown": "From Cairo, Egypt",
+    "ad_status": "This page isn't currently running ads."
+   },
+   "facebookId": "100006061803927",
+   "pageAdLibrary": {
+    "id": "695031477020922",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/people/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA/61578891750660",
+   "categories": [
+    "Page",
+    "Digital creator"
+   ],
+   "info": [
+    "‎عروض ومشتريات البيت ‎, 6 October City. 5,005 followers",
+    "2,046 talking about this. ‎صفحه تستهدف عروض السوبرماركت والمحلات لشراء مستلزمات البيت وبروموكود..."
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "عروض ومشتريات البيت  | 6 October City",
+   "address": "شارع 12, 6 October City, Egypt",
+   "pageId": "61578891750660",
+   "pageName": "%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA",
+   "pageUrl": "https://www.facebook.com/people/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA/61578891750660",
+   "intro": "صفحه تستهدف عروض السوبرماركت والمحلات لشراء مستلزمات البيت وبروموكود للمشتريات من الهايبرات\n\n\nhttps://www.instagram.com/moshtryatelbeet?igsh=MWp6NjJiaTJ5NGk0dQ==",
+   "websites": [
+    "https://maps.google.com/maps?q=%D8%B4%D8%A7%D8%B1%D8%B9+12%2C+6+October+City%2C+Egypt&hl=en"
+   ],
+   "followers": 5000,
+   "followings": 37,
+   "profilePictureUrl": "https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-1/526266522_4228437747405001_505039781864592736_n.jpg?stp=dst-jpg_tt6&cstp=mx554x554&ctp=s200x200&_nc_cat=109&ccb=1-7&_nc_sid=f907e8&_nc_ohc=pb6T_ATmWqQQ7kNvwFkWftP&_nc_oc=Adr8AX4d09_sCHyHKbVgNt3gAClryvyvxxY-DC75aNO1600-g4b3Y-ke90mDAbuJSOjXX-79kZoK2usC8TMOjsNI&_nc_zt=24&_nc_ht=scontent.ftpa1-1.fna&_nc_gid=_22ezb7rceU2ZpqrkN6jlg&_nc_ss=70289&oh=00_AQPjoTcDQ0lPH9ZepiQ8HwYuW5cQ42PwpZ3csPbEHFFzVQ&oe=6ADDAC7B",
+   "coverPhotoUrl": "https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/525984209_122097595790963058_1107517991546445955_n.jpg?stp=dst-jpg_tt6&cstp=mx719x923&ctp=s719x923&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_CX6bGszyjQQ7kNvwG6uMra&_nc_oc=Ado8lMiRkkrpNXf4nlx6ZfxnT8DvDLjcY7z2K9bqXssPGj6PbftuplmcgQZE898OhlyQtOCPl-cr5e6rwFLBa6GB&_nc_zt=23&_nc_ht=scontent.ftpa1-2.fna&_nc_gid=j0NbbNqSKb344HiY12-oiA&_nc_ss=70289&oh=00_AQNWsAD6h5ktSYb91tJkfu967-Q3Ob4Z9heuto_4yutHPQ&oe=6ADD9AB4",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=122097594764963058&set=a.122097594782963058",
+   "category": "Digital creator",
+   "addressUrl": "https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9+12%2C+6+October+City%2C+Egypt&FORM=FBKPL1&mkt=en-US",
+   "business_service_area": "Giza, Giza Governorate, Egypt",
+   "business_hours": "Always open",
+   "creation_date": "July 29, 2025",
+   "ad_status": "This Page isn't currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "address": "شارع 12, 6 October City, Egypt",
+    "profilePictureUrl": "https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-1/526266522_4228437747405001_505039781864592736_n.jpg?stp=dst-jpg_tt6&cstp=mx554x554&ctp=s200x200&_nc_cat=109&ccb=1-7&_nc_sid=f907e8&_nc_ohc=pb6T_ATmWqQQ7kNvwFkWftP&_nc_oc=Adr8AX4d09_sCHyHKbVgNt3gAClryvyvxxY-DC75aNO1600-g4b3Y-ke90mDAbuJSOjXX-79kZoK2usC8TMOjsNI&_nc_zt=24&_nc_ht=scontent.ftpa1-1.fna&_nc_gid=_22ezb7rceU2ZpqrkN6jlg&_nc_ss=70289&oh=00_AQPjoTcDQ0lPH9ZepiQ8HwYuW5cQ42PwpZ3csPbEHFFzVQ&oe=6ADDAC7B",
+    "coverPhotoUrl": "https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/525984209_122097595790963058_1107517991546445955_n.jpg?stp=dst-jpg_tt6&cstp=mx719x923&ctp=s719x923&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_CX6bGszyjQQ7kNvwG6uMra&_nc_oc=Ado8lMiRkkrpNXf4nlx6ZfxnT8DvDLjcY7z2K9bqXssPGj6PbftuplmcgQZE898OhlyQtOCPl-cr5e6rwFLBa6GB&_nc_zt=23&_nc_ht=scontent.ftpa1-2.fna&_nc_gid=j0NbbNqSKb344HiY12-oiA&_nc_ss=70289&oh=00_AQNWsAD6h5ktSYb91tJkfu967-Q3Ob4Z9heuto_4yutHPQ&oe=6ADD9AB4",
+    "category": "Digital creator",
+    "addressUrl": "https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9+12%2C+6+October+City%2C+Egypt&FORM=FBKPL1&mkt=en-US",
+    "business_service_area": "Giza, Giza Governorate, Egypt",
+    "business_hours": "Always open",
+    "ad_status": "This Page isn't currently running ads."
+   },
+   "facebookId": "61578891750660",
+   "pageAdLibrary": {
+    "id": "756652520859514",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/people/AhmedFood/61584863624781",
+   "categories": [
+    "Page",
+    "Digital creator"
+   ],
+   "info": [
+    "AhmedFood , Alexandria. 132 followers",
+    "5 talking about this. ‎فى صفحتنا بنعمل شوية اختراعات بفلوس قليله ونجرب منتجات جديدة وساعات ممكن نجرب مطاعم لو..."
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "AhmedFood  | Alexandria",
+   "address": "Alexandria, Egypt, 21500",
+   "pageId": "61584863624781",
+   "pageName": "AhmedFood",
+   "pageUrl": "https://www.facebook.com/people/AhmedFood/61584863624781",
+   "intro": "فى صفحتنا بنعمل شوية اختراعات بفلوس قليله ونجرب منتجات جديدة وساعات ممكن نجرب مطاعم لو ميزانية تسمح 😂 ، #ahmedfood",
+   "websites": [
+    "https://www.instagram.com/ahmedfood77",
+    "https://tiktok.com/@ahmedfood777",
+    "https://www.youtube.com/@ahmed.food90"
+   ],
+   "alternativeSocialMedia": "https://tiktok.com/@ahmedfood777",
+   "website": "https://www.youtube.com/@ahmed.food90",
+   "followers": 132,
+   "followings": 1,
+   "profilePictureUrl": "https://scontent.fosu2-1.fna.fbcdn.net/v/t39.30808-1/599937888_122102525913162120_2548772114062299344_n.jpg?stp=dst-jpg_tt6&cstp=mx639x640&ctp=s200x200&_nc_cat=107&ccb=1-7&_nc_sid=f907e8&_nc_ohc=It52JKgKXkAQ7kNvwHSiM3j&_nc_oc=Adru1HaDmpvStbkoFjMy8f_ITRyWIR3iCch4N5iBEHP0epAqIB8M1j--_dyNIt9sqaQIR_nrLmKx1I5N9yySw3UV&_nc_zt=24&_nc_ht=scontent.fosu2-1.fna&_nc_gid=e8YW4bGLEpvGeUHwMTC6MA&_nc_ss=72289&oh=00_AQOyjYQ4S07zrJL1wnyN1836RUKncXQZTB0UwElXeZPFpw&oe=6ADDA655",
+   "coverPhotoUrl": "https://scontent.fosu2-1.fna.fbcdn.net/v/t39.30808-6/600281555_122102526135162120_1835780045257560808_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=d0AaoH5f6yQQ7kNvwFzIkeg&_nc_oc=AdrR3iExsEM14cs9NbBpNmnDfgTVpj_BSwOwahrbdAQcYBxG9wAboqLYhtyOzgeuyxEXmvQj_dwqXQo-MrZ8tbot&_nc_zt=23&_nc_ht=scontent.fosu2-1.fna&_nc_gid=9GqQ1N7hbDYcrl539nB_5Q&_nc_ss=72289&oh=00_AQN1MUKcfxGApM8_hkFAquiGPhqsgJEtCpMGfcnh5uDh5w&oe=6ADDB56B",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=122102525895162120&set=a.122102523405162120",
+   "category": "Digital creator",
+   "addressUrl": "https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=Alexandria%2C+Egypt%2C+21500&FORM=FBKPL1&mkt=en-US",
+   "instagram": [
+    {
+     "username": "https://www.instagram.com/ahmedfood77?igsh=MWE5cWNxdG5zNzR3cA==",
+     "url": "https://www.instagram.com/ahmedfood77"
+    }
+   ],
+   "tiktok": [
+    {
+     "username": "tiktok.com/@ahmedfood777",
+     "url": "https://tiktok.com/@ahmedfood777"
+    }
+   ],
+   "business_hours": "Always open",
+   "creation_date": "December 16, 2025",
+   "ad_status": "This Page isn't currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "address": "Alexandria, Egypt, 21500",
+    "alternativeSocialMedia": "https://tiktok.com/@ahmedfood777",
+    "profilePictureUrl": "https://scontent.fosu2-1.fna.fbcdn.net/v/t39.30808-1/599937888_122102525913162120_2548772114062299344_n.jpg?stp=dst-jpg_tt6&cstp=mx639x640&ctp=s200x200&_nc_cat=107&ccb=1-7&_nc_sid=f907e8&_nc_ohc=It52JKgKXkAQ7kNvwHSiM3j&_nc_oc=Adru1HaDmpvStbkoFjMy8f_ITRyWIR3iCch4N5iBEHP0epAqIB8M1j--_dyNIt9sqaQIR_nrLmKx1I5N9yySw3UV&_nc_zt=24&_nc_ht=scontent.fosu2-1.fna&_nc_gid=e8YW4bGLEpvGeUHwMTC6MA&_nc_ss=72289&oh=00_AQOyjYQ4S07zrJL1wnyN1836RUKncXQZTB0UwElXeZPFpw&oe=6ADDA655",
+    "coverPhotoUrl": "https://scontent.fosu2-1.fna.fbcdn.net/v/t39.30808-6/600281555_122102526135162120_1835780045257560808_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=d0AaoH5f6yQQ7kNvwFzIkeg&_nc_oc=AdrR3iExsEM14cs9NbBpNmnDfgTVpj_BSwOwahrbdAQcYBxG9wAboqLYhtyOzgeuyxEXmvQj_dwqXQo-MrZ8tbot&_nc_zt=23&_nc_ht=scontent.fosu2-1.fna&_nc_gid=9GqQ1N7hbDYcrl539nB_5Q&_nc_ss=72289&oh=00_AQN1MUKcfxGApM8_hkFAquiGPhqsgJEtCpMGfcnh5uDh5w&oe=6ADDB56B",
+    "category": "Digital creator",
+    "addressUrl": "https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=Alexandria%2C+Egypt%2C+21500&FORM=FBKPL1&mkt=en-US",
+    "instagram": [
+     {
+      "username": "https://www.instagram.com/ahmedfood77?igsh=MWE5cWNxdG5zNzR3cA==",
+      "url": "https://www.instagram.com/ahmedfood77"
+     }
+    ],
+    "tiktok": [
+     {
+      "username": "tiktok.com/@ahmedfood777",
+      "url": "https://tiktok.com/@ahmedfood777"
+     }
+    ],
+    "business_hours": "Always open",
+    "ad_status": "This Page isn't currently running ads."
+   },
+   "facebookId": "61584863624781",
+   "pageAdLibrary": {
+    "id": "899340746601352",
+    "pamv_comms_data": null
+   }
+  }
+ ]
+}

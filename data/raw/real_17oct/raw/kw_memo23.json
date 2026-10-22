@@ -1,0 +1,105 @@
+{
+ "input": {
+  "queries": [
+   "\"V7 soda\"",
+   "\"ڤي سڤن\"",
+   "\"V7 كريم صودا\""
+  ],
+  "maxResultsPerQuery": 10,
+  "oldestPostDate": "2026-04-20",
+  "newestPostDate": "2026-10-16",
+  "contentType": "posts_and_reels"
+ },
+ "cap_usd": 0.1,
+ "run": {
+  "id": "OHCFfMJ7nKZncu1va",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T22:14:32.909Z",
+  "finishedAt": "2026-10-18T22:16:13.688Z",
+  "chargedEventCounts": {
+   "reel-scraped": 2,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 0.0026999999999999997
+ },
+ "cost_usd": 0.0303,
+ "items": [
+  {
+   "query": "\"ڤي سڤن\"",
+   "mediaPk": "3967329126585573486",
+   "shortCode": "DcOyNIhMaBu",
+   "url": "https://www.instagram.com/reel/DcOyNIhMaBu/",
+   "playCount": 372,
+   "likeCount": 12,
+   "commentCount": 0,
+   "videoDuration": 62.345001220703125,
+   "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m86/AQPZQeDCIybrC3TIpkgEoqojOVJsrHocY7yza3K_QotxwgtYnL51lO9cp0fLjsdz9L1lY8ObpJRxauCC9t6G1O0eyLHP82jSjJwq9xA.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=ETPiRJnC2FoQ7kNvwFSFfZM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTQwNTgzMjM1NDk0MjYyNSwiYXNzZXRfYWdlX2RheXMiOjYwLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=eb6a87561ebede06&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80NDQzOEQ5NjJDNjkyQ0M1RDBGODU1MUMxRjFGRTE5RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg0NEMwNzhCNTc0RURFMUE2REZDMDA1ODFCODBDOUFCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbCuoqim6b_BBUCKAJDMywXQE8rhR64UewYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=auO9BuE6XU6Onq2WxYp1tA&_nc_ss=7a3ba&_nc_zt=28&oh=00_AQM9w7YVF9fBbEvVnTlJvDDKFqgCKmOsmT4omKtKGcbRRw&oe=6AD72E55",
+   "thumbnailUrl": "https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/778139942_2489336758159860_1536903081390191912_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzk2NzMyOTEyNjU4NTU3MzQ4NjE0MDU4MzYwODQ5NDIyNTI%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=afpO3K1QqgUQ7kNvwGu81qE&_nc_oc=AdrX5AWQuic1dDt9RHATDkEflc4xJHbDLGgsJ9sDgupX5BjYVSgMMNP9kQrcALF58S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_gid=auO9BuE6XU6Onq2WxYp1tA&_nc_ss=7a3ba&oh=00_AQPMc4o5S75FyYVJj_jejzwQrbwkzTOcJfWvwucIhSXRyQ&oe=6ADB3384",
+   "caption": "كريم صودا من ڤي سڤن منتج جديد تعالوا نجربه 💗🤔\n#review \n#cola\n#vseven\n#supermarket \n#تجارب",
+   "takenAt": "2026-08-19T18:08:44.000Z",
+   "username": "ran281185",
+   "userId": "36650560263",
+   "userFullName": "Rania Amer",
+   "userIsVerified": false,
+   "musicTitle": "Original audio",
+   "musicArtist": null,
+   "downloadUrl": null,
+   "shareCount": 0,
+   "locationId": null,
+   "locationName": null,
+   "locationLat": null,
+   "locationLon": null,
+   "accessibilityCaption": null,
+   "contentKind": "reel",
+   "matchedTerms": [
+    "ڤي سڤن"
+   ],
+   "matchType": "caption",
+   "normalizedQuery": "\"ڤي سڤن\"",
+   "hashtags": [
+    "review",
+    "cola",
+    "vseven",
+    "supermarket"
+   ],
+   "discoveryType": "keyword_serp",
+   "discoveryQuery": "ڤي سڤن"
+  },
+  {
+   "query": "\"V7 كريم صودا\"",
+   "mediaPk": "4003543050468164693",
+   "shortCode": "DePcTFWI4RV",
+   "url": "https://www.instagram.com/reel/DePcTFWI4RV/",
+   "playCount": 8528,
+   "likeCount": 139,
+   "commentCount": 29,
+   "videoDuration": 44.395999908447266,
+   "videoUrl": "https://scontent-atl3-2.cdninstagram.com/o1/v/t2/f2/m86/AQPHb7FMRw-ninsgqyN7DNcPxKaR4-98bKk200HI3T1aEYPRgHzCUsLDKsGqWx2cjVW1fL_2u0Bm0I1-7HXEkz8N8lmgBaJZBCptIM8.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_ohc=9GdIZCa0wIAQ7kNvwFawgIa&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjM2MDkzODk3NDY2MDg1MywiYXNzZXRfYWdlX2RheXMiOjEwLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NDQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=bc87de53e630b7db&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82Q0Q5NjZFOUZFOUY0RkIwOTM3NDA5NDQwQkEwNjEwNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzU1MkJGMEEyNTQxQjQ4RjY4RkJCMDM4OUU1QjA0NEQ2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbqo96O3tCxCBUCKAJDMywXQEYu2RaHKwIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=RN2WM6qzflpPN3Mw65uEMA&_nc_ss=7a3ba&_nc_zt=28&oh=00_AQPOu9kdJOiyGWXimaUKSmq0oRnS6GOWXUDNlmrU8gOV4Q&oe=6AD70749",
+   "thumbnailUrl": "https://scontent-atl3-1.cdninstagram.com/v/t51.71878-15/837011587_1981287225779566_4249957135306385911_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=NDAwMzU0MzA1MDQ2ODE2NDY5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=3Tme7BgrwewQ7kNvwEIg4bR&_nc_oc=Adpohek3nAO-Nnl706drk_IeHOSI5f7d73L6GMQ2zpDtH9vm7KjiJ0SCeSEFzaWXlRY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=RN2WM6qzflpPN3Mw65uEMA&_nc_ss=7a3ba&oh=00_AQNSBQcx5lkSxb3xJo243BAVGE0HVe66kt4zGCEO2G9akQ&oe=6ADB2BC8",
+   "caption": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "takenAt": "2026-10-08T17:16:03.000Z",
+   "username": "abdallahfood308",
+   "userId": "74929562703",
+   "userFullName": "عبدالله فود",
+   "userIsVerified": false,
+   "musicTitle": "Original audio",
+   "musicArtist": null,
+   "downloadUrl": null,
+   "shareCount": 280,
+   "locationId": null,
+   "locationName": null,
+   "locationLat": null,
+   "locationLon": null,
+   "accessibilityCaption": null,
+   "contentKind": "reel",
+   "matchedTerms": [
+    "V7 كريم صودا"
+   ],
+   "matchType": "caption",
+   "normalizedQuery": "\"v7 كريم صودا\"",
+   "hashtags": [],
+   "discoveryType": "keyword_serp",
+   "discoveryQuery": "V7 كريم صودا"
+  }
+ ]
+}

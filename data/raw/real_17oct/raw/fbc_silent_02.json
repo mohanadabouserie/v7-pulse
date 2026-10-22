@@ -1,0 +1,688 @@
+{
+ "input": {
+  "query": "مشروب ڤي سڤن",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "Wn1fePG2RNKMj4f10",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:21:47.109Z",
+  "finishedAt": "2026-10-19T08:22:03.772Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 10
+  },
+  "usageTotalUsd": 0.01105
+ },
+ "cost_usd": 0.0323,
+ "items": [
+  {
+   "post_id": "1566063982204716",
+   "url": "https://www.facebook.com/AlJaroushi0/posts/pfbid02MTYpb7oudKKc6VwMvsLTP2GKbmNiFA5oVwMp6Lyxqa31drGDjTJAGAY2mJ6zT5sGl",
+   "message": "عرض خاااص ✨✨🤩✨🤩 \nمشروب غازي ✨ ڤي سڤن ✨ 250 ملى 😮😮 \nالسعر 🔥🔥🔥 1.75 دينار 🔥🔥🔥 \nالعنوان السلمانى الشرقي شارع البث \nيوجد لدينا خدمات مصرفية موبي كاش وادفعلى ويسر باي وان باي بطقات مصرفية",
+   "author": {
+    "id": "100064033869555",
+    "name": "محل أبناء الجروشي للمواد الغذائية",
+    "url": "https://www.facebook.com/AlJaroushi0",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/294314946_431725782305214_1383828647028776843_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=V11YwBhqfp4Q7kNvwH7-M6v&_nc_oc=AdpUXS2Yvm9rRvxjIN1xcLIKT26PADPAJ7RTjmkgW6UfioBVR4pyXumSxDG8JYeNFJb2qt7SE_18DbedvpbkIkZ2&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQM_7wcpzsKSXGcuRwW5nkYKvDhNx3DYTsUWYs5NL3zo0A&oe=6ADBBAC5"
+   },
+   "timestamp": 1790249681,
+   "reactions_count": 210,
+   "comments_count": 4,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 208,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/799503722_1566063955538052_2800158010407530514_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9jGs1ApaGtkQ7kNvwE2nEtg&_nc_oc=AdoOMgc4joYpd5KYWU75Ilg1fTCiHr-5Mdw72mRGXRp9K6PNadOHgx4CE1VJfbOL-OjCh0ATy8BC43rldHqHRu-J&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQNjbQoLsclOVCuLt-KbWFPOvdBVdtkhgQrHcJEJ4wgwHw&oe=6ADB94FF",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTU2NjA2Mzk4MjIwNDcxNg==",
+   "shares_id": "ZmVlZGJhY2s6MTU2NjA2Mzk4MjIwNDcxNg==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1158901100146119",
+   "url": "https://www.facebook.com/abwmikky/posts/pfbid0dxzh78UE5JrGYEEP86kG8q5bTuoFCze82RZJcyQZ1FdAcuKSjvQfxdd4YpV989S3l",
+   "message": "🤩مشروب ڤي سفن تشكيل كامل 👀\n\n🎯بسعر 311جنيه 👀⚡⚡🤩\n\n💥💥💥💥💥💥💥💥💥",
+   "author": {
+    "id": "100080787197094",
+    "name": "ابو مكي للتجاره والتوزيع- Abo mikky",
+    "url": "https://www.facebook.com/abwmikky",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/742800119_1084083610961202_9132867187606801901_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=4BCPzupIcoYQ7kNvwHYqihO&_nc_oc=AdpnxQ8qWaxmJ2MZd5U-Y8qZ0Mq_srz9RIclUzV07fVAt8qIjHLdClYlkAk1d4MFIEJAm-YCg-f7Y5c_Z4875RFL&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQM24EjQVNRK7Q5ZuQ6vYF48-neq4gfUzYgF1nPiia-Qew&oe=6ADBB2F8"
+   },
+   "timestamp": 1791645821,
+   "reactions_count": 3,
+   "comments_count": 0,
+   "reshare_count": 13,
+   "reactions": {
+    "like": 3,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/843299943_1158901056812790_1139461289272382950_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2ETyaVnMdSMQ7kNvwF4dOoY&_nc_oc=AdrybVoF35k38m2JttoM6VXu03r1F1oEYHHMCyx5LKl3GVFVrRBAn3eGU0DmE4yAjC0b8-WfJ028EuOXN6wpwQt8&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQMnEEBHLG42E2OITFF0a6PlX6Dvq2ID2JcIs3DcoC6f0A&oe=6ADBB4F6",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTE1ODkwMTEwMDE0NjExOQ==",
+   "shares_id": "ZmVlZGJhY2s6MTE1ODkwMTEwMDE0NjExOQ==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1553606280117153",
+   "url": "https://www.facebook.com/AlJaroushi0/posts/pfbid024VtnETGjxojfohmcdNSoiGvXC39A3J1WBVLEfEkVTYPzBVrfQu6fYZH33nRubBM3l",
+   "message": "عرض خاااص ✨✨🤩✨🤩✨ \nمشروب غازي ✨ سڤن ماريندا ✨ 150 ملى 😮 \nالسعر 🔥🔥🔥 1 دينار 🔥🔥🔥 \nالعنوان السلمانى الشرقي شارع البث \nيوجد لدينا خدمات مصرفية موبي كاش وادفعلى ويسر باي وان باي بطقات مصرفية",
+   "author": {
+    "id": "100064033869555",
+    "name": "محل أبناء الجروشي للمواد الغذائية",
+    "url": "https://www.facebook.com/AlJaroushi0",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/294314946_431725782305214_1383828647028776843_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=V11YwBhqfp4Q7kNvwH7-M6v&_nc_oc=AdpUXS2Yvm9rRvxjIN1xcLIKT26PADPAJ7RTjmkgW6UfioBVR4pyXumSxDG8JYeNFJb2qt7SE_18DbedvpbkIkZ2&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQM_7wcpzsKSXGcuRwW5nkYKvDhNx3DYTsUWYs5NL3zo0A&oe=6ADBBAC5"
+   },
+   "timestamp": 1789059251,
+   "reactions_count": 315,
+   "comments_count": 12,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 311,
+    "love": 3,
+    "haha": 0,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/802700552_1553606256783822_1229153727052163946_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7R2fcb0UDo0Q7kNvwHpdOPe&_nc_oc=AdpzeyHOOLElsGQSzyL9AzkI8xeWweFOvslGQH-07U80bNCRndqzFxoM8YsQYf612iwlSXLzG8ONXcbNFSP6T3Ok&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQMHYrFHBiXvNvqPCJtSDq-9emMQXrJcihcqWpD3cpz0PA&oe=6ADBBC24",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTU1MzYwNjI4MDExNzE1Mw==",
+   "shares_id": "ZmVlZGJhY2s6MTU1MzYwNjI4MDExNzE1Mw==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "29089352214085967",
+   "url": "https://www.facebook.com/groups/8099116833536144/permalink/29089352214085967/",
+   "message": "مساء الخير علي احلي متابعين 🥰❤️\n\nمبدئيا كدا البوست دا هيكون في جوايز بقيمة 1500 جنيه ، ااه زي م شوفتي كدا 👀\n\n- طيب هيكونوا لفايز واحد بس ؟!\n• لا هيتقسموا علي تلاته 👌\n\nكل بنوته في التلاته الفايزين ليها بوكس منتجات من البراند بتاعنا \"spirit” من اختيارها بقيمة 500 جنيه 🙈\n\n• وقبل اي حاجة هنختار بنوته عشوائية من اللي عاملين لايك علي البوست تختار اي منتج من البراند هدية مننا 😍\n\n- طيب المسابقة عبارة عن اي ؟!👀\n• بصي بق علشان منخليهاش مركزه علي حاجة واحده ، احنا هننوع….\n\n- طيب يعني اي ؟!\n• هيبقوا عبارة عن تلت مسابقات بحيث ندي فرصة لأكبر عدد من الناس 😍❤️\n\n- يلا بينا نعرفهم 👇\n\n1️⃣ أكتر كومنت هيجيب عدد من اللايكات.\n\n2️⃣ أكتر بنوتة هتعمل إضافات للناس.\n\n3️⃣ أكتر حد هيشير البوست في جروبات.\n\nملحوظة:-\n\n• لازم تكوني متابعة الصفحة.\n\n• لازم تكوني عامله لايك ع البوست.\n\n• واللي هيعمل اضافة للناس ياخد اسكرينات ويبعتها علي رسايل الصفحة فقط.\n\n• واللي هيشير البوست يبعتلنا علي رسايل الصفحة الرابط.\n\n- المسابقة مستمرة طول الأسبوع لحد يوم الجمعة الجاي الساعة 8 بالليل 🙈❤️\n\n• كدا كلو 🤝 \n\nيلا بينا ❤️❤️❤️😍",
+   "author": {
+    "id": "pfbid06u8xDK6euW2oghQmu4Au9dsKAHg1kH5Lf5FiovnScYhMtrGEEnSAr8RTSwJnUo26l",
+    "name": "آل كوين",
+    "url": "https://www.facebook.com/people/%D8%A2%D9%84-%D9%83%D9%88%D9%8A%D9%86/pfbid06u8xDK6euW2oghQmu4Au9dsKAHg1kH5Lf5FiovnScYhMtrGEEnSAr8RTSwJnUo26l/",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwHFZuY0&_nc_oc=AdrUcmuYZnzBCq8yxSQoHwJF1rtXQ_-llgQnJ54lnsjOPl3wQdQu66rddwLCKoiXem3Wg7726ntqwzUyoVNJfWA8&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_ss=78180&oh=00_AQOUdzgDwagTnC87b3nNk3sVMr_Ar6L2PWz7mM5zBEjQIw&oe=6AFD2F7A"
+   },
+   "timestamp": 1792104266,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/843666835_122236816496360612_397479259736059705_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=P4akull9QdQQ7kNvwHT4OLx&_nc_oc=AdpqnZs3BAQ8xVyQRXyLL7d4M-9Mgcn01CCdulVWBBZ1jndc05uVuwNPfH2J_3lz2_E0D90utMHAjbyBhQsUDS-S&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQNGPFeGZ77TSSGCbyS2hBqf_bOSNPCLYD6UtA1tqVV4zQ&oe=6ADBA237",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjkwODkzNTIyMTQwODU5Njc=",
+   "shares_id": "ZmVlZGJhY2s6MjkwODkzNTIyMTQwODU5Njc=",
+   "associated_group_id": "8099116833536144",
+   "attached_post": {
+    "post_id": "122236818338360612",
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02UCxYZUnAuTACs8DQq7gtnYEPyMwnsuAur6q8DBVZhixzrAs2AQk4rQ2X5z3mztoql&id=61560818360542",
+    "message": "مساء الخير علي احلي متابعين 🥰❤️\n\nمبدئيا كدا البوست دا هيكون في جوايز بقيمة 1500 جنيه ، ااه زي م شوفتي كدا 👀\n\n- طيب هيكونوا لفايز واحد بس ؟!\n• لا هيتقسموا علي تلاته 👌\n\nكل بنوته في التلاته الفايزين ليها بوكس منتجات من البراند بتاعنا \"spirit” من اختيارها بقيمة 500 جنيه 🙈\n\n• وقبل اي حاجة هنختار بنوته عشوائية من اللي عاملين لايك علي البوست تختار اي منتج من البراند هدية مننا 😍\n\n- طيب المسابقة عبارة عن اي ؟!👀\n• بصي بق علشان منخليهاش مركزه علي حاجة واحده ، احنا هننوع….\n\n- طيب يعني اي ؟!\n• هيبقوا عبارة عن تلت مسابقات بحيث ندي فرصة لأكبر عدد من الناس 😍❤️\n\n- يلا بينا نعرفهم 👇\n\n1️⃣ أكتر كومنت هيجيب عدد من اللايكات.\n\n2️⃣ أكتر بنوتة هتعمل إضافات للناس.\n\n3️⃣ أكتر حد هيشير البوست في جروبات.\n\nملحوظة:-\n\n• لازم تكوني متابعة الصفحة.\n\n• لازم تكوني عامله لايك ع البوست.\n\n• واللي هيعمل اضافة للناس ياخد اسكرينات ويبعتها علي رسايل الصفحة فقط.\n\n• واللي هيشير البوست يبعتلنا علي رسايل الصفحة الرابط.\n\n- المسابقة مستمرة طول الأسبوع لحد يوم الجمعة الجاي الساعة 8 بالليل 🙈❤️\n\n• كدا كلو 🤝 \n\nيلا بينا ❤️❤️❤️😍",
+    "author": {
+     "id": "61560818360542",
+     "name": "Drspirit",
+     "url": "https://www.facebook.com/people/Drspirit/61560818360542/",
+     "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/591738206_122195515928360612_7211682110844959138_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=coZnbI-WoUIQ7kNvwHJBr85&_nc_oc=AdqkvKnW5LGM2QdHdIhcf_BPo_KnUH3cVzTXBJnJBx4kANd7nCPQM3I5ZpDuB-RJRuDzDQ8efkeCd6zts9olr8PV&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQN0qH27cFSU3DuDFIEnZ5FFu4LT8mvssrqExH65lvnuXA&oe=6ADBAD49"
+    }
+   }
+  },
+  {
+   "post_id": "1452005943790420",
+   "url": "https://www.facebook.com/groups/319316483726044/permalink/1452005943790420/",
+   "message": "سي ار سڤن 🔥💥\n#جملة #شروال #جوده #جديد 💥💯\nلسه بدري🤌🤌🔥💥",
+   "author": {
+    "id": "61552007048635",
+    "name": "سى ار سفن جروب",
+    "url": "https://www.facebook.com/CR7Elzabalawy",
+    "profile_picture_url": "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-1/780672271_122325215558066901_1169840589925149640_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=S3IldD2OS1wQ7kNvwH9K6Yz&_nc_oc=AdrMlzLH8uBLkN9cNE90kSXzXh5TyNAsDPHfFUjGhPGqlXDBET6yEIWgp4qf4in1adKVyECmBsIjnr1OWOQuk5JI&_nc_zt=24&_nc_ht=scontent.flas1-1.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQOh8c0ibYrNtQJqXrStJiDGVSjxFr3SjKA-rv3NyrFYvg&oe=6ADB922A"
+   },
+   "timestamp": 1789983728,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t15.5256-10/819236556_1976008973748064_6797673930404819828_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=u-YHk5ybS1QQ7kNvwEzNXge&_nc_oc=Adqfu-cOcp6XMK9VD0eF9J-B3YtFQUOw82wqjcBlC3FwaNCr77Uxmap-64DJYrX0ZebD0EWpME3hahUGAjkdvkCf&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQM7Nora3QJMyQWrlMJsplrQaQM3zMyg6iu5Vv4u3pn1mg&oe=6ADBA1C3",
+   "video": "https://www.facebook.com/watch/?v=1655074612900765",
+   "video_thumbnail": "https://scontent.flas1-1.fna.fbcdn.net/v/t15.5256-10/819236556_1976008973748064_6797673930404819828_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=u-YHk5ybS1QQ7kNvwEzNXge&_nc_oc=Adqfu-cOcp6XMK9VD0eF9J-B3YtFQUOw82wqjcBlC3FwaNCr77Uxmap-64DJYrX0ZebD0EWpME3hahUGAjkdvkCf&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQM7Nora3QJMyQWrlMJsplrQaQM3zMyg6iu5Vv4u3pn1mg&oe=6ADBA1C3",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQ1MjAwNTk0Mzc5MDQyMA==",
+   "shares_id": "ZmVlZGJhY2s6MTQ1MjAwNTk0Mzc5MDQyMA==",
+   "associated_group_id": "319316483726044",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "414116535348069",
+     "url": "https://www.facebook.com/hashtag/%D8%AC%D9%85%D9%84%D8%A9?__eep__=6",
+     "offset": 13,
+     "length": 5
+    },
+    {
+     "type": "Hashtag",
+     "id": "655184404501407",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D8%B1%D9%88%D8%A7%D9%84?__eep__=6",
+     "offset": 19,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "489892534394033",
+     "url": "https://www.facebook.com/hashtag/%D8%AC%D9%88%D8%AF%D9%87?__eep__=6",
+     "offset": 26,
+     "length": 5
+    },
+    {
+     "type": "Hashtag",
+     "id": "168831449932947",
+     "url": "https://www.facebook.com/hashtag/%D8%AC%D8%AF%D9%8A%D8%AF?__eep__=6",
+     "offset": 32,
+     "length": 5
+    }
+   ],
+   "attached_post": {
+    "post_id": "122329201838066901",
+    "url": "https://www.facebook.com/reel/1655074612900765/",
+    "message": "سي ار سڤن 🔥💥\n#جملة #شروال #جوده #جديد 💥💯\nلسه بدري🤌🤌🔥💥",
+    "author": {
+     "id": "61552007048635",
+     "name": "سى ار سفن جروب",
+     "url": "https://www.facebook.com/CR7Elzabalawy",
+     "profile_picture_url": "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-1/780672271_122325215558066901_1169840589925149640_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=S3IldD2OS1wQ7kNvwH9K6Yz&_nc_oc=AdrMlzLH8uBLkN9cNE90kSXzXh5TyNAsDPHfFUjGhPGqlXDBET6yEIWgp4qf4in1adKVyECmBsIjnr1OWOQuk5JI&_nc_zt=24&_nc_ht=scontent.flas1-1.fna&_nc_gid=oze7Cg23zhYAyUw0QcwDgw&_nc_ss=78180&oh=00_AQOh8c0ibYrNtQJqXrStJiDGVSjxFr3SjKA-rv3NyrFYvg&oe=6ADB922A"
+    }
+   }
+  },
+  {
+   "post_id": "4294720127338513",
+   "url": "https://www.facebook.com/reel/27490017060675314/",
+   "message": "مشروب سافانا ، الابتكار السوداني المقدّم إلى أنحاء العالم كافة . غني بالحديد و المعادن و الفيتامينات. سافانا .. سر القوة الجوانا ❤️",
+   "author": {
+    "id": "100004017049378",
+    "name": "Hajer Mohamed Hassan",
+    "url": "https://www.facebook.com/hajersudania",
+    "profile_picture_url": "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-1/273695517_2604250949718781_2767277721068124205_n.jpg?stp=c0.213.854.854a_dst-jpg_s100x100_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ITT6gwvefioQ7kNvwFpVUQ7&_nc_oc=AdoxZWzG5OaOLg8ZqNVDizWSwIfAlj-39WfwiB6HfNUWEbmA6p7ndb-xPvEOlOmwxUNifn5x7H8792Cel3EB65Js&_nc_zt=24&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQNih3iSMaLcRht4cd20w6_o7bfshLM_0fwEINzzlzIzSQ&oe=6ADBA655"
+   },
+   "timestamp": 1790701852,
+   "reactions_count": 4655,
+   "comments_count": 273,
+   "reshare_count": 26,
+   "reactions": {
+    "like": 3684,
+    "love": 848,
+    "haha": 12,
+    "wow": 2,
+    "sad": 0,
+    "angry": 1,
+    "care": 108
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t51.82787-10/825325760_18445756177124405_5363400941423201044_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3-Giv5cfV-gQ7kNvwFydOM5&_nc_oc=AdpxnlE-WLT9MZVihaz7o8SaNyXJahNiUSihJlumZsWcUSBfUHpq6P29TDMo5tloaCqGTkFUMr7uyVNgh8MLsoOU&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQPIhXbIJDkwpxhDE0TZoTXhc_6h3c4tkQ636wd7irjXdg&oe=6ADBABF7",
+   "video": "https://www.facebook.com/watch/?v=27490017060675314",
+   "video_thumbnail": "https://scontent.flas1-1.fna.fbcdn.net/v/t51.82787-10/825325760_18445756177124405_5363400941423201044_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3-Giv5cfV-gQ7kNvwFydOM5&_nc_oc=AdpxnlE-WLT9MZVihaz7o8SaNyXJahNiUSihJlumZsWcUSBfUHpq6P29TDMo5tloaCqGTkFUMr7uyVNgh8MLsoOU&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQPIhXbIJDkwpxhDE0TZoTXhc_6h3c4tkQ636wd7irjXdg&oe=6ADBABF7",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NDI5NDcyMDEyNzMzODUxMw==",
+   "shares_id": "ZmVlZGJhY2s6NDI5NDcyMDEyNzMzODUxMw==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "28437953382558296",
+   "url": "https://www.facebook.com/groups/651024678344540/permalink/28437953382558296/",
+   "message": "صحصح معايا كده… 👀🔥  \nلأن اللي جاي مش مجرد بوست… المره دي الكل هيكسب معانا! 😎🔥\n\nقاع الهامور وصل ثري سفن VIP 😂🌊👟  \nوالصورة دي وراها مفاجأة… والمفاجأة مش لشخص واحد بس! 👀\n\nعايزين نعملها بشكل مختلف…  \nهنكسب ناس جديدة، وهنفرح ناس من اللي واقفين معانا من زمان ❤️🔥\n\nبس قبل ما أقولكم إيه اللي هيحصل…  \nعايز أشوف مين صاحي ومركز معانا 👇😂\n\n💬 اكتب في الكومنت: \"أنا جاهز\"  \n👥 ومنشن 2 من صحابك لازم يشوفوا قاع الهامور  \n🔄 والشير عندك ممكن يكون سبب إن حد يكسب معانا ❤️\n\nاستنوا اللي جاي…  \nلأن المرة دي مش واحد اللي هيكسب… إن شاء الله الكل هيكسب مع ثري سفن VIP 🔥🔥\n\n📍 ثري سفن VIP – الفيوم  \n📞 01111717140  \n📞 0101017822",
+   "author": {
+    "id": "61570306227975",
+    "name": "Three seven clothes",
+    "url": "https://www.facebook.com/people/Three-seven-clothes/61570306227975/",
+    "profile_picture_url": "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-1/692502057_122163844592676874_6778119733391148091_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DXxsKo7BqOYQ7kNvwGhd0ps&_nc_oc=AdpTnuYrVWOpJQKFo3Eg3N7ZlozfeDBpRwH6uRBLONIsIxOkjSFM2XsPIaI0UcmKajlxY18b1T34zM-zt5J_mSdR&_nc_zt=24&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQPavO_HFOXlIXdLzVFscSbvs3GfimipRFJKyX4P9p6DRw&oe=6ADB8A36"
+   },
+   "timestamp": 1787476213,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/784005086_122193130904858404_3655951741343913511_n.jpg?stp=dst-jpg_s565x565_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NQzyFayZi4QQ7kNvwFLeajG&_nc_oc=AdpitI-8MxFdrbBf4QmItTDo5D5blhzZHxbYMewu74mDwI7dBTWkwHqm7UjAWbvqpJ4Vs5pZlhM_PSGXeNxZ89EL&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQO7J3JIqBBkYB0gB_b3Xt0U13N8N9gOsU_zJHk5wlk7eg&oe=6ADB973A",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6Mjg0Mzc5NTMzODI1NTgyOTY=",
+   "shares_id": "ZmVlZGJhY2s6Mjg0Mzc5NTMzODI1NTgyOTY=",
+   "associated_group_id": "651024678344540",
+   "attached_post": {
+    "post_id": "122193130970858404",
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02uBxXcUbvWdyQLGTA4rJwefXhLttxMsv8kZnzvaZ9BHxn354qRu39cpdCCnWCnursl&id=61575752125324",
+    "message": "صحصح معايا كده… 👀🔥  \nلأن اللي جاي مش مجرد بوست… المره دي الكل هيكسب معانا! 😎🔥\n\nقاع الهامور وصل ثري سفن VIP 😂🌊👟  \nوالصورة دي وراها مفاجأة… والمفاجأة مش لشخص واحد بس! 👀\n\nعايزين نعملها بشكل مختلف…  \nهنكسب ناس جديدة، وهنفرح ناس من اللي واقفين معانا من زمان ❤️🔥\n\nبس قبل ما أقولكم إيه اللي هيحصل…  \nعايز أشوف مين صاحي ومركز معانا 👇😂\n\n💬 اكتب في الكومنت: \"أنا جاهز\"  \n👥 ومنشن 2 من صحابك لازم يشوفوا قاع الهامور  \n🔄 والشير عندك ممكن يكون سبب إن حد يكسب معانا ❤️\n\nاستنوا اللي جاي…  \nلأن المرة دي مش واحد اللي هيكسب… إن شاء الله الكل هيكسب مع ثري سفن VIP 🔥🔥\n\n📍 ثري سفن VIP – الفيوم  \n📞 01111717140  \n📞 0101017822",
+    "author": {
+     "id": "61575752125324",
+     "name": "ثري سفن VIP",
+     "url": "https://www.facebook.com/people/%D8%AB%D8%B1%D9%8A-%D8%B3%D9%81%D9%86-VIP/61575752125324/",
+     "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/492829088_122095194056858404_3863146558535085972_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oId5m6M-fhAQ7kNvwFnPQiS&_nc_oc=AdpGXHl9EZkproMUFNUKLSgaFYlGCcG2NBMqNQq9sQQcG-PZmVdaGkJkKxwtuhLUpJcu69L3O8PbxQDlz2HIvV3j&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQMeMN3BRNPn4TxgkQ_aIKS18g9j74BWCv6GeQrdGbpcOA&oe=6ADBA238"
+    }
+   }
+  },
+  {
+   "post_id": "1635773167957493",
+   "url": "https://www.facebook.com/groups/562293391972148/permalink/1635773167957493/",
+   "message": "💙",
+   "author": {
+    "id": "100004100781409",
+    "name": "عمران سويسي سويسي محمد",
+    "url": "https://www.facebook.com/mranswysyswysymhmd",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/462511474_3629313767215280_8431684500607025963_n.jpg?stp=c0.0.240.240a_dst-jpg_s100x100_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=lNCPbIXXPQgQ7kNvwHMtG8F&_nc_oc=Adpdsw7F3Q_gSSdL6VgC5MW06dtMDkOj2biINf5o-Capr1k-KpyYSxVYDKZVbe3RNEaxpv8pvlQ2Yo2u6cjmCQuh&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQOscSMmz4TTXkSFktneO9q2j3jN3askWXNesH95VGw6Vg&oe=6ADB9115"
+   },
+   "timestamp": 1785689981,
+   "reactions_count": 6,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 6,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t15.5256-10/758244897_1393674015990872_1327964778557505896_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=JjEox0MCwXoQ7kNvwE9VS9f&_nc_oc=Adr7nY4Il-MON40zWT5s-mnIzVuERFo499S1ub3F-OR-1u-fXY2q-kC3ehZoaSOLZUXi_q9nAp1NexIyNnJSbeII&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQM-apWAWaDvjhknWfyFrw26BEZAQ2F6-gbpWUEro0Iovw&oe=6ADBC0E8",
+   "video": "https://www.facebook.com/watch/?v=1024459237159170",
+   "video_thumbnail": "https://scontent.flas1-2.fna.fbcdn.net/v/t15.5256-10/758244897_1393674015990872_1327964778557505896_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=JjEox0MCwXoQ7kNvwE9VS9f&_nc_oc=Adr7nY4Il-MON40zWT5s-mnIzVuERFo499S1ub3F-OR-1u-fXY2q-kC3ehZoaSOLZUXi_q9nAp1NexIyNnJSbeII&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQM-apWAWaDvjhknWfyFrw26BEZAQ2F6-gbpWUEro0Iovw&oe=6ADBC0E8",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYzNTc3MzE2Nzk1NzQ5Mw==",
+   "shares_id": "ZmVlZGJhY2s6MTYzNTc3MzE2Nzk1NzQ5Mw==",
+   "associated_group_id": "562293391972148",
+   "author_title": "اين اجد حاجتي في بلدية سيناون",
+   "attached_post": {
+    "post_id": "1539431538228070",
+    "url": "https://www.facebook.com/reel/1024459237159170/",
+    "message": "💙",
+    "author": {
+     "id": "100064837144589",
+     "name": "صحاري وبرور",
+     "url": "https://www.facebook.com/sahariwbrour86",
+     "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/375906983_713784094126156_2749672648699887179_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=0yimpFtWl9wQ7kNvwHn7IDH&_nc_oc=AdrzvGApXHMeESeX5DXOHh0b2lM278bzZj557oxxlmfnjg1N8KrftNOsFwxwNiX_VgPXD_rlZ2jNLfBSp2gHo1h-&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQM1xDkn6srr_KpeyDGOYytWN8OHb6OCF3aBRTgXl1geLA&oe=6ADB99C0"
+    }
+   }
+  },
+  {
+   "post_id": "1059114857071624",
+   "url": "https://www.facebook.com/quwatasad/posts/pfbid02LYh3snstTZP2kUtjjBfnbEXLrypfbtW5RBZGf9CetiZYBz3gdrK8MncqC7dVdhFSl",
+   "message": "في زمن كثرت فيه الوعود..🤷‍♂️\nاخترنا أن نؤخر الإعلان قليلًا، ولا نُعلن اسمًا واحدًا قبل أن نتأكد من كل شيء.😎\n\nلأن الجوائز الحقيقية.. تستحق إجراءات حقيقية. 🦁🙏\n\nباقي القليل.. وترقبوا إعلان الفائزين. 💚",
+   "author": {
+    "id": "100089193587475",
+    "name": "مشروب قوة أسد",
+    "url": "https://www.facebook.com/quwatasad",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/346042288_768275485033332_732050327370923415_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R2eAOOndotQQ7kNvwFXmsBd&_nc_oc=Ado4eKkfcGRUexE9_hgloDHI3kyygEdendG9EeA1Orwwenyx0-4T9QemiKqjxV0fmv7s5pPlmvAcg1gYABTvDl3u&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQOfXK-yZkRZ2WpU3MWTrmsI1YDNCi53AMZJyt7VhAnOtw&oe=6ADBA3CA"
+   },
+   "timestamp": 1784707070,
+   "reactions_count": 951,
+   "comments_count": 309,
+   "reshare_count": 10,
+   "reactions": {
+    "like": 883,
+    "love": 57,
+    "haha": 1,
+    "wow": 0,
+    "sad": 1,
+    "angry": 1,
+    "care": 8
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-6/753881059_1059114567071653_4262311390800261596_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=x9o_e8QQZdwQ7kNvwEdrx3w&_nc_oc=AdrPGMkJQrw0T8GJOYxfr5BXugGWEuYQKXw-atkDLQKHrN5yYerfsfnA5Xz1EOALqSaO8LAt-u_imtgZcO3nx8pR&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQNV_k2AYuig4uytMWqfhEDnamfWq4wVygM1XFYh4Lj22w&oe=6ADB99DC",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTA1OTExNDg1NzA3MTYyNA==",
+   "shares_id": "ZmVlZGJhY2s6MTA1OTExNDg1NzA3MTYyNA==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122272643288135196",
+   "url": "https://www.facebook.com/reel/1762882604992837/",
+   "message": "اهم مشروب الفترة دي واللي جايه بيقوي المناعة وطعمه لذيذ جداً ❣️\nالمكونات في اول كمنت\n\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#nody_elhazmy #winter #hotdrink #وصفات #مشروبات",
+   "author": {
+    "id": "61554055892030",
+    "name": "NoDy El hazmy",
+    "url": "https://www.facebook.com/people/NoDy-El-hazmy/61554055892030/",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/616315979_122242456352135196_8724749850288372096_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=NY5DDF00_4YQ7kNvwESyGXf&_nc_oc=AdroLyHyuYe8kPS06GvA1b4-qwDT0F9NFaYHLtKwNsVS45nQJdwpz1WgX8-64KwmO8K1AROfTGmFXiSCLQS01Wdz&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQNatIJssC_PtRCRdcwrjzzpTEtQF86b4IF38diJ-MM1kA&oe=6ADBA902"
+   },
+   "timestamp": 1791828449,
+   "reactions_count": 826,
+   "comments_count": 5,
+   "reshare_count": 44,
+   "reactions": {
+    "like": 713,
+    "love": 105,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 8
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t51.82787-10/841707443_18639904096025171_3204490283234569248_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=qEEvlE-00joQ7kNvwGeIM96&_nc_oc=AdqPZCmQ25DuZ61LmnPJAegUqg1YZOrmw6k2SO6pz6cygbzJMnkt6cGBqVRUzEkDk2aAIFmTtMaaJ1JAa7tW9RIn&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQMDt6h-j0yZqlgrbopWpIp9_PVYhvC07yJXbeHzEyYR3g&oe=6ADBBF41",
+   "video": "https://www.facebook.com/watch/?v=1762882604992837",
+   "video_thumbnail": "https://scontent.flas1-1.fna.fbcdn.net/v/t51.82787-10/841707443_18639904096025171_3204490283234569248_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=qEEvlE-00joQ7kNvwGeIM96&_nc_oc=AdqPZCmQ25DuZ61LmnPJAegUqg1YZOrmw6k2SO6pz6cygbzJMnkt6cGBqVRUzEkDk2aAIFmTtMaaJ1JAa7tW9RIn&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=CQKdvsdrAMPB794Qh0qgCA&_nc_ss=78180&oh=00_AQMDt6h-j0yZqlgrbopWpIp9_PVYhvC07yJXbeHzEyYR3g&oe=6ADBBF41",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjcyNjQzMjg4MTM1MTk2",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjcyNjQzMjg4MTM1MTk2",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "936391983045384",
+     "url": "https://www.facebook.com/hashtag/nody_elhazmy?__eep__=6",
+     "offset": 108,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "354961991276895",
+     "url": "https://www.facebook.com/hashtag/winter?__eep__=6",
+     "offset": 122,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "262058193929556",
+     "url": "https://www.facebook.com/hashtag/hotdrink?__eep__=6",
+     "offset": 130,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "439167866164230",
+     "url": "https://www.facebook.com/hashtag/%D9%88%D8%B5%D9%81%D8%A7%D8%AA?__eep__=6",
+     "offset": 140,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "545401415481151",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA?__eep__=6",
+     "offset": 147,
+     "length": 8
+    }
+   ]
+  },
+  {
+   "post_id": "1072365515746558",
+   "url": "https://www.facebook.com/quwatasad/posts/pfbid0P34vrBBD2qTuCQE2X9BPL84FDanJfbCo52LBi18gXx8HDdK5c5262623GVuvNU5zl",
+   "message": "لحظات لا تُنسى.. وفرحة تستحق الانتظار. 💚😍\n\nاستقبلنا في مقر شركة طريق الجبل بصنعاء الفائزين من فئات:\n 💵 200,000 ريال\n 💵 500,000 ريال\n 👑 الجائزة الكبرى: 1,000,000 ريال\n\nحيث تم تكريمهم وتسليم جوائزهم وسط أجواء مليئة بالفرحة. 👏🏼 \n\nأما الفائزون من المحافظات الأخرى، فقد تم إرسال جوائزهم عبر الحوالات المالية، ليصل حق كل فائز أينما كان.🙏🏼\n\nنبارك لجميع الفائزين، ونشكر كل من شارك في مسابقة توقع بطل كأس العالم 2026.\nالقادم بإذن الله... أقوى. 🦁💚\n\n#مشروب_قوة_أسد\n#شجع_بقلب_أسد",
+   "author": {
+    "id": "100089193587475",
+    "name": "مشروب قوة أسد",
+    "url": "https://www.facebook.com/quwatasad",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/346042288_768275485033332_732050327370923415_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R2eAOOndotQQ7kNvwFXmsBd&_nc_oc=Ado4eKkfcGRUexE9_hgloDHI3kyygEdendG9EeA1Orwwenyx0-4T9QemiKqjxV0fmv7s5pPlmvAcg1gYABTvDl3u&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQOi8ELm5i3G0qBur5l2nGc1MayRc5pxmaDSweVu0w-V-Q&oe=6ADBA3CA"
+   },
+   "timestamp": 1786001413,
+   "reactions_count": 504,
+   "comments_count": 92,
+   "reshare_count": 7,
+   "reactions": {
+    "like": 480,
+    "love": 22,
+    "haha": 1,
+    "wow": 0,
+    "sad": 1,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-6/766914657_1072131082436668_7040315308909587488_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rMEm6wUGAiYQ7kNvwGIVFuZ&_nc_oc=AdpfNuFqWKFq4uK6wJ-fwDZvw0h6Jxpzu7gpBMoeefJtVSzKl5V5Qzi7aEqdRwjBOQFGHLoN8G7J_koSvCCvMC0D&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQPpe3_9r5VTYhQ3qWLHcRyCDT4sby49DX3c6Zgtv0OlVw&oe=6ADBA991",
+    "https://scontent.flas1-1.fna.fbcdn.net/v/t39.30808-6/767190426_1072131085770001_4768904235315180825_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SBkVvNusmCgQ7kNvwEa-sHR&_nc_oc=AdpfAVNJrAA0SmV2QWPiFbc2-QYJuweZQ0bT6HZL3QmTUs49SOUehCg4Vid1CHEp8hImKC7tCWueAVHFG3z-Vlmt&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQNlklcqvnYObf1uEUSMnGt8saUUPlvkp8UDrjE5Zea7Yg&oe=6ADBAC83",
+    "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/761370253_1072131179103325_7070102619988822138_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=uWdiYRG2wLYQ7kNvwGxivWN&_nc_oc=AdqYvi64UonNbN-oL1t2GRoWAuRAqeWRlpg6Far_YPp23ulQZDxAtEwHWDPeli-rmJwfa9XOxbop4vIFcjJW6aaT&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQMQm5_vvwFYfB-AkWxR9tkDIMsWsf-mcUpPn6RcW17Dvw&oe=6ADB9AFC",
+    "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/762631032_1072131089103334_9186160202704395925_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wmzrdRHHE-UQ7kNvwEkVkfE&_nc_oc=Adp8Xkp0Zhd0dEP27E5Dd9ljzxxLdS9AQPV_JkbXwynC9iIFM9aoX9ruLIhRchlEwBljEaEQ8WHS6_8KhPRBcVX5&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQMPKdcvuqq0u1ZzWEXrEuCQHnpAi72wAdvPtngLYxe6Xw&oe=6ADBBD07",
+    "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-6/766861666_1072131175769992_4398741353725283492_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dndsysgeJTkQ7kNvwHN3vZM&_nc_oc=Adrt1qH2hHsoqvTNKrY3kyNhlvVg2l4GeubSXS3YxjjF74KzUYx-qBF4RVbdGZ7sZ6ffLvqPfHDrD5Zt-6hWnJA8&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQOTxaag63HQOuKNjn1sFD8U9tdMARcFZR_VgaEFkZQQDQ&oe=6ADBAA67"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTA3MjM2NTUxNTc0NjU1OA==",
+   "shares_id": "ZmVlZGJhY2s6MTA3MjM2NTUxNTc0NjU1OA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "5683004808462958",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8_%D9%82%D9%88%D8%A9_%D8%A3%D8%B3%D8%AF?__eep__=6",
+     "offset": 439,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "27449250494713392",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D8%AC%D8%B9_%D8%A8%D9%82%D9%84%D8%A8_%D8%A3%D8%B3%D8%AF?__eep__=6",
+     "offset": 454,
+     "length": 13
+    }
+   ]
+  },
+  {
+   "post_id": "122272349030135196",
+   "url": "https://www.facebook.com/reel/1636037291341550/",
+   "message": "مشروب الشتاء الرسمي ❄️❣️\nالمكونات \nحليب \nبودر هوت شوكلت او ممكن كاكاو خام\nشيكولاته اي نوع بتحبوه \nالكراميل دي بتدي طعم لذيذ اوي \n\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#nody_elhazmy #winter #hotchocolate ##مشروبات وصفات",
+   "author": {
+    "id": "61554055892030",
+    "name": "NoDy El hazmy",
+    "url": "https://www.facebook.com/people/NoDy-El-hazmy/61554055892030/",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/616315979_122242456352135196_8724749850288372096_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=NY5DDF00_4YQ7kNvwESyGXf&_nc_oc=AdroLyHyuYe8kPS06GvA1b4-qwDT0F9NFaYHLtKwNsVS45nQJdwpz1WgX8-64KwmO8K1AROfTGmFXiSCLQS01Wdz&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQPTFO96eVTA03kIuwa8eBioBR5e9zmyVT4_OasP10u1ZQ&oe=6ADBA902"
+   },
+   "timestamp": 1791656032,
+   "reactions_count": 4736,
+   "comments_count": 15,
+   "reshare_count": 95,
+   "reactions": {
+    "like": 4231,
+    "love": 439,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 66
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-2.fna.fbcdn.net/v/t51.82787-10/842529430_18639123253025171_6530321839234951028_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=2J_pa7OwUJ0Q7kNvwFOWHpd&_nc_oc=AdqyqufMcbAK9wbp7-9UXfFKN7bBnja2NYFVxx1EaxWbr3FUMfEyCHrOWTXrtISjhAXE73t1DDDNIFTIh6Rb9KWD&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQNDsgGY4Pyi8BLsLHM88JWl-9HVV7xQu774HsuS8VH1eg&oe=6ADBADB9",
+   "video": "https://www.facebook.com/watch/?v=1636037291341550",
+   "video_thumbnail": "https://scontent.flas1-2.fna.fbcdn.net/v/t51.82787-10/842529430_18639123253025171_6530321839234951028_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ce42&_nc_ohc=2J_pa7OwUJ0Q7kNvwFOWHpd&_nc_oc=AdqyqufMcbAK9wbp7-9UXfFKN7bBnja2NYFVxx1EaxWbr3FUMfEyCHrOWTXrtISjhAXE73t1DDDNIFTIh6Rb9KWD&_nc_zt=23&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQNDsgGY4Pyi8BLsLHM88JWl-9HVV7xQu774HsuS8VH1eg&oe=6ADBADB9",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjcyMzQ5MDMwMTM1MTk2",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjcyMzQ5MDMwMTM1MTk2",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "936391983045384",
+     "url": "https://www.facebook.com/hashtag/nody_elhazmy?__eep__=6",
+     "offset": 148,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "354961991276895",
+     "url": "https://www.facebook.com/hashtag/winter?__eep__=6",
+     "offset": 162,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "496473760388021",
+     "url": "https://www.facebook.com/hashtag/hotchocolate?__eep__=6",
+     "offset": 170,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "545401415481151",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA?__eep__=6",
+     "offset": 185,
+     "length": 8
+    }
+   ]
+  },
+  {
+   "post_id": "1624459449470436",
+   "url": "https://www.facebook.com/reel/2063715824340805/",
+   "message": "اعملوه بالطريقة الإيطالية ☕ هي دي الطريقة الأصلية.. من ألذ المشروبات الساخنة اللي ممكن تجربوها .. وصفة سهلة وسريعة ..هوت شوكليت.. هوت تشوكليب .. مشروب الكاكاو بالحليب والشوكولاتة #matbakheno #مطبخينو #مشروبات / Hot chocolate Recipe",
+   "author": {
+    "id": "100057191900439",
+    "name": "مطبخينو - Matbakheno",
+    "url": "https://www.facebook.com/Matbakheno",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.30808-1/274780595_490127062778659_7372480221303485657_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=x3Vt-fc-zeYQ7kNvwEBnNAJ&_nc_oc=AdqLORddjyRwq_T_bWwyM6Hgdbsd_XUZTh4-Xz2hPZW2zjxbIndIcn4xstqzzQb6RQuNJNRwfHCxdpzPuCnKCgj3&_nc_zt=24&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQPhBaXsTwUHW5Cx8hq7laB2uBT5weHg94OSU-EWPJXVJA&oe=6ADB93CD"
+   },
+   "timestamp": 1791638841,
+   "reactions_count": 8285,
+   "comments_count": 106,
+   "reshare_count": 1065,
+   "reactions": {
+    "like": 8053,
+    "love": 199,
+    "haha": 1,
+    "wow": 5,
+    "sad": 0,
+    "angry": 0,
+    "care": 27
+   },
+   "type": "post",
+   "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t15.5256-10/843118718_1610506843788383_8129604807433585557_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=jbIenvfqqrsQ7kNvwE-yiCx&_nc_oc=AdoepXUj0Y5x7-aCIk4dnJFRUS3VKvh9AOuZsV1cdHsgUkqT3TwgOmbVs2chhOYD_H-ONv73crxtxE5kxo4rTOYe&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQOb1tfcK0u5bQCEBJsTQ0N1Ylp0H16xsRm5iKhoKaIthw&oe=6ADB97F7",
+   "video": "https://www.facebook.com/watch/?v=2063715824340805",
+   "video_thumbnail": "https://scontent.flas1-1.fna.fbcdn.net/v/t15.5256-10/843118718_1610506843788383_8129604807433585557_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=be8305&_nc_ohc=jbIenvfqqrsQ7kNvwE-yiCx&_nc_oc=AdoepXUj0Y5x7-aCIk4dnJFRUS3VKvh9AOuZsV1cdHsgUkqT3TwgOmbVs2chhOYD_H-ONv73crxtxE5kxo4rTOYe&_nc_zt=23&_nc_ht=scontent.flas1-1.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQOb1tfcK0u5bQCEBJsTQ0N1Ylp0H16xsRm5iKhoKaIthw&oe=6ADB97F7",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYyNDQ1OTQ0OTQ3MDQzNg==",
+   "shares_id": "ZmVlZGJhY2s6MTYyNDQ1OTQ0OTQ3MDQzNg==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "3887726247965088",
+     "url": "https://www.facebook.com/hashtag/matbakheno?__eep__=6",
+     "offset": 179,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "2120835694626162",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B7%D8%A8%D8%AE%D9%8A%D9%86%D9%88?__eep__=6",
+     "offset": 191,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "545401415481151",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA?__eep__=6",
+     "offset": 200,
+     "length": 8
+    }
+   ]
+  },
+  {
+   "post_id": "3580545488775442",
+   "url": "https://www.facebook.com/groups/501014193395269/permalink/3580545488775442/",
+   "message": "على فحص كلية الامير فيصل احلق لحيتي؟ وهل لازم اخفف شعري او احلقه حلاقه معينه؟",
+   "author": {
+    "id": "1649456480041872",
+    "name": "مَشروب طائة",
+    "url": "",
+    "profile_picture_url": "https://scontent.flas1-2.fna.fbcdn.net/v/t39.35477-6/555028262_24760896316856065_6521720747768932615_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=1&ccb=1-7&_nc_sid=d7e6db&_nc_ohc=UFmJaJWuTRgQ7kNvwGlDwI9&_nc_oc=Adr82hqiU_NiuTU4s0eaEaxtd7C-CpjiH-lYNShRlFZSUsl2YztNqzwP7b9QueK2LIfJLOK12BUJSZi744RCaUTd&_nc_zt=14&_nc_ht=scontent.flas1-2.fna&_nc_gid=PURc8b7eBzuiuDvZoBnHLg&_nc_ss=78180&oh=00_AQMQ8BBwnfFXCRySKkD2V7qIgSeoMykvBld4_3XHHraEvQ&oe=6ADBB4EE"
+   },
+   "timestamp": 1791499076,
+   "reactions_count": 3,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MzU4MDU0NTQ4ODc3NTQ0Mg==",
+   "shares_id": "ZmVlZGJhY2s6MzU4MDU0NTQ4ODc3NTQ0Mg==",
+   "associated_group_id": "501014193395269",
+   "author_title": "استفسارات عن الكليات العسكرية"
+  }
+ ]
+}

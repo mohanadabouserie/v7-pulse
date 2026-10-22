@@ -1,0 +1,51 @@
+--- stage fbtest, spent so far this cycle $30.3089, budget $14.00
+fbkw_powerai_1   facebook-post-search-scraper ABORTED        0 items  $0.0922  (cap $0.12)  total $30.4011  events {'apify-default-dataset-item': 0, 'apify-actor-start': 2}
+fbkw_apify_1     facebook-search-scraper      SUCCEEDED     10 items  $0.0922  (cap $0.08)  total $30.4011  events {'facebook-result': 5, 'google-result': 0, 'page-profile': 0, 'actor-start': 1}
+fbkw_danek_1     facebook-search-ppr          SUCCEEDED     11 items  $0.1183  (cap $0.06)  total $30.4271  events {'apify-default-dataset-item': 11, 'apify-actor-start': 1}
+fbkw_fetchcat_1  facebook-post-search-scraper SUCCEEDED     10 items  $0.1183  (cap $0.08)  total $30.4271  events {'result': 10}
+fbvs_powerai_1: could not start: HTTP 400 b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.09499"\n  }\n}'
+fbkw_scraperone_1 facebook-posts-search        SUCCEEDED     10 items  $0.2961  (cap $0.06)  total $30.6049  events {'result-item': 10, 'init': 1}
+fbkw_mina_1      facebook-search-actor        SUCCEEDED     10 items  $0.2961  (cap $0.05)  total $30.6049  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_silentflow_1 facebook-search-scraper      SUCCEEDED     10 items  $0.2038  (cap $0.05)  total $30.6049  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_igview_1    facebook-old-posts-search    SUCCEEDED     10 items  $0.2066  (cap $0.07)  total $30.6077  events {'apify-default-dataset-item': 5, 'apify-actor-start': 4}
+fbkw_scrapeforge_1 facebook-search-posts        SUCCEEDED     10 items  $0.2989  (cap $0.06)  total $30.6077  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbreels_apify_1  facebook-search-scraper      SUCCEEDED     10 items  $0.3601  (cap $0.08)  total $30.9650  events {'facebook-result': 10, 'google-result': 0, 'page-profile': 0, 'actor-start': 1}
+fbvs_apify_1     facebook-video-search-scrape SUCCEEDED     10 items  $0.5378  (cap $0.07)  total $30.9650  events {'apify-default-dataset-item': 0}
+fbvs_powerai_1   facebook-video-search-scrape SUCCEEDED     10 items  $0.5378  (cap $0.50)  total $30.9650  events {'apify-default-dataset-item': 7, 'apify-actor-start': 2}
+fbkw_scraperone_2 facebook-posts-search        SUCCEEDED     10 items  $0.5261  (cap $0.06)  total $31.1310  events {'result-item': 10, 'init': 1}
+fbkw_danek_2     facebook-search-ppr          SUCCEEDED     11 items  $0.5233  (cap $0.06)  total $31.1310  events {'apify-default-dataset-item': 0, 'apify-actor-start': 1}
+fbkw_scrapeforge_2 facebook-search-posts        SUCCEEDED      9 items  $0.5260  (cap $0.06)  total $31.1310  events {'apify-actor-start': 1, 'apify-default-dataset-item': 9}
+fbkw_powerai_2   facebook-post-search-scraper ABORTED        0 items  $0.3463  (cap $0.12)  total $31.3113  events {'apify-default-dataset-item': 0, 'apify-actor-start': 2}
+fbkw_apify_2     facebook-search-scraper      SUCCEEDED     10 items  $0.7036  (cap $0.08)  total $31.3114  events {'facebook-result': 10, 'google-result': 0, 'page-profile': 0, 'actor-start': 1}
+fbkw_fetchcat_2  facebook-post-search-scraper SUCCEEDED     10 items  $0.3464  (cap $0.08)  total $31.3114  events {'result': 10}
+fbvs_powerai_2: could not start: HTTP 400 b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.09499"\n  }\n}'
+fbkw_mina_2      facebook-search-actor        SUCCEEDED     10 items  $0.1804  (cap $0.05)  total $31.3114  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_silentflow_2 facebook-search-scraper      SUCCEEDED     10 items  $0.1804  (cap $0.05)  total $31.3114  events {'apify-actor-start': 1, 'apify-default-dataset-item': 5}
+fbkw_alienforce_1 facebook-search-scraper      SUCCEEDED      6 items  $1.1237  (cap $0.15)  total $31.4326  events {'apify-actor-start': 1, 'apify-default-dataset-item': 6}
+fbreels_apify_2  facebook-search-scraper      SUCCEEDED     10 items  $0.1212  (cap $0.08)  total $31.4326  events {'facebook-result': 7, 'google-result': 0, 'page-profile': 0, 'actor-start': 1}
+fbkw_igview_2    facebook-old-posts-search    SUCCEEDED     11 items  $0.3015  (cap $0.07)  total $31.4326  events {'apify-default-dataset-item': 11, 'apify-actor-start': 4}
+fbvs_apify_2     facebook-video-search-scrape SUCCEEDED     10 items  $0.4343  (cap $0.07)  total $31.7457  events {'apify-default-dataset-item': 0}
+fbvs_powerai_2   facebook-video-search-scrape SUCCEEDED     10 items  $0.4345  (cap $0.50)  total $31.7458  events {'apify-default-dataset-item': 7, 'apify-actor-start': 2}
+fbkw_powerai_3   facebook-post-search-scraper ABORTED        0 items  $0.5363  (cap $0.12)  total $31.9688  events {'apify-default-dataset-item': 0, 'apify-actor-start': 2}
+fbkw_scraperone_3 facebook-posts-search        SUCCEEDED     10 items  $0.5413  (cap $0.06)  total $31.9688  events {'result-item': 10, 'init': 1}
+fbkw_scrapeforge_3 facebook-search-posts        SUCCEEDED      9 items  $0.5413  (cap $0.06)  total $31.9688  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_fetchcat_3  facebook-post-search-scraper SUCCEEDED     10 items  $0.2488  (cap $0.08)  total $31.9946  events {'result': 0}
+fbkw_danek_3     facebook-search-ppr          SUCCEEDED     11 items  $0.5621  (cap $0.06)  total $31.9946  events {'apify-default-dataset-item': 11, 'apify-actor-start': 1}
+fbvs_powerai_3: could not start: HTTP 400 b'{\n  "error": {\n    "type": "max-total-charge-usd-below-minimum",\n    "message": "Maximum cost per run is less than the allowed minimum of $0.09499"\n  }\n}'
+fbkw_mina_3      facebook-search-actor        SUCCEEDED     10 items  $0.0259  (cap $0.05)  total $31.9947  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_silentflow_3 facebook-search-scraper      SUCCEEDED     10 items  $0.0259  (cap $0.05)  total $31.9947  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_apify_3     facebook-search-scraper      SUCCEEDED     10 items  $0.5621  (cap $0.08)  total $31.9947  events {'facebook-result': 10, 'google-result': 0, 'page-profile': 0, 'actor-start': 1}
+fbkw_igview_3    facebook-old-posts-search    SUCCEEDED     11 items  $0.1908  (cap $0.07)  total $32.1596  events {'apify-default-dataset-item': 11, 'apify-actor-start': 4}
+fbreels_apify_3  facebook-search-scraper      SUCCEEDED     10 items  $0.5101  (cap $0.08)  total $32.5048  events {'facebook-result': 7, 'google-result': 0, 'page-profile': 0, 'actor-start': 1}
+fbkw_topapi      facebook-search-posts-scrape SUCCEEDED     30 items  $0.5101  (cap $0.12)  total $32.5048  events {'post-scraped': 10, 'post-details': 0}
+fbvs_powerai_3   facebook-video-search-scrape SUCCEEDED     10 items  $0.5102  (cap $0.50)  total $32.5048  events {'apify-default-dataset-item': 7, 'apify-actor-start': 2}
+fbvs_apify_3     facebook-video-search-scrape SUCCEEDED     10 items  $0.7606  (cap $0.07)  total $32.7552  events {'apify-default-dataset-item': 0}
+fbkw_headply     facebook-post-search-scraper SUCCEEDED     30 items  $0.8958  (cap $0.20)  total $32.8905  events {'post-scraped': 30, 'reel-scraped': 0, 'listing-scraped': 0, 'feed-item': 0, 'monitor-check': 0, 'apify-actor-start': 1}
+fbvs_axesso      facebook-video-search-scrape SUCCEEDED     30 items  $0.3856  (cap $0.05)  total $32.8905  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbkw_alienforce_2 facebook-search-scraper      SUCCEEDED      4 items  $1.9255  (cap $0.15)  total $32.8905  events {'apify-actor-start': 1, 'apify-default-dataset-item': 4}
+fbtags_apify     facebook-hashtag-scraper     SUCCEEDED      2 items  $0.3856  (cap $0.25)  total $32.8905  events {'apify-default-dataset-item': 2}
+fbgroups_lofo    facebook-groups-posts-search SUCCEEDED     10 items  $0.3856  (cap $0.10)  total $32.8905  events {'apify-default-dataset-item': 10, 'apify-actor-start': 1}
+fbvs_headply     facebook-video-search-scrape SUCCEEDED     22 items  $0.7893  (cap $0.20)  total $32.9489  events {'post-scraped': 19, 'reel-scraped': 0, 'listing-scraped': 0, 'feed-item': 0, 'monitor-check': 0, 'apify-actor-start': 1}
+fbkw_alienforce_3 facebook-search-scraper      SUCCEEDED      7 items  $1.2736  (cap $0.15)  total $33.0193  events {'apify-actor-start': 1, 'apify-default-dataset-item': 7}
+fbgoogle_month   google-search-scraper        SUCCEEDED      5 items  $0.2761  (cap $0.50)  total $33.0313  events {'search-page-scraped': 4, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+--- stage fbtest done, spent this cycle $33.0313

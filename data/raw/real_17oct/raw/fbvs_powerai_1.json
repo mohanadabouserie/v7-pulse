@@ -1,0 +1,200 @@
+{
+ "input": {
+  "query": "V7 soda",
+  "maxResults": 10,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "Bi8Ve1qZHRpnntNBU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T07:57:26.358Z",
+  "finishedAt": "2026-10-19T07:57:39.422Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 7,
+   "apify-actor-start": 2
+  },
+  "usageTotalUsd": 0.21492999999999998
+ },
+ "cost_usd": 0.5378,
+ "items": [
+  {
+   "type": "search_video",
+   "video_id": "1052326230778325",
+   "video_url": "https://www.facebook.com/reel/1052326230778325/",
+   "description": "The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.",
+   "title": "The creamiest take on your summer refreshment, made with 100% natural flavors. V7 Cream Soda Summer Edition.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "url": "https://www.facebook.com/V7Egypt",
+    "is_verified": true,
+    "id": "100087617073692"
+   },
+   "thumbnail": "https://scontent.fhnl3-1.fna.fbcdn.net/v/t15.5256-10/777851427_1050425907776125_9095046727982786104_n.jpg?stp=c0.868.2160.1210a_dst-jpg_s403x403_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=6vucboe9WMsQ7kNvwGkcl9T&_nc_oc=AdojasfjKUcnkT0-Gge-BIm2PRi_Lzv27ERAzF9Kn73uxi9k1vTaQ9FVwZs3vVMlAMo&_nc_zt=23&_nc_ht=scontent.fhnl3-1.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQOeWR7t9QAf321RmAqs2dzGzp9XvCyfojtC-XD5V6j8Gg&oe=6ADBA8E9",
+   "time_and_views_raw": "21 Aug · 2.2K views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1406499131375557",
+   "video_url": "https://www.facebook.com/reel/1406499131375557/",
+   "description": "Lets try together the new V7 cream soda",
+   "title": "Lets try together the new V7 cream soda",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Sensawyy",
+    "url": "https://www.facebook.com/AhmeddOssman",
+    "is_verified": false,
+    "id": "100064175916195"
+   },
+   "thumbnail": "https://scontent.fhnl3-2.fna.fbcdn.net/v/t51.82787-15/770139543_18615710686036286_4593098994023924782_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=Oit4gaPMiOEQ7kNvwFuVlSd&_nc_oc=AdoGfpAFhTt70dCygti6Ej-Y75N1N8aU95C1ZDl9Bd4UhTNbvYw--ehv0w_f__5DFRI&_nc_zt=23&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQNdpQfqM58b0kFMBRS8JMHrO-sgNfI-q8GNyZnQannQPg&oe=6ADBAB22",
+   "time_and_views_raw": "9 Aug · 33K views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2411179272742599",
+   "video_url": "https://www.facebook.com/reel/2411179272742599/",
+   "description": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "title": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Omar Dash",
+    "url": "https://www.facebook.com/people/Omar-Dash/61550227269762/",
+    "is_verified": false,
+    "id": "61550227269762"
+   },
+   "thumbnail": "https://scontent.fhnl3-2.fna.fbcdn.net/v/t51.82787-15/788133303_18557551003074956_862993043095920469_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=pHMsV6xX8iwQ7kNvwHbkptt&_nc_oc=AdpDVUKLcj1Xo1WnPzsXYXV5sEA0WFgHB60xK6gmMkhCsRfARCDRH9_aAbK7roNWymA&_nc_zt=23&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQPgqvmSS9EKCSpmruT9hXrcOvViFvjNyw1Cni-_DGvXsA&oe=6ADBB271",
+   "time_and_views_raw": "27 Aug · 3.1K views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1028797039869237",
+   "video_url": "https://www.facebook.com/reel/1028797039869237/",
+   "description": "من شركة #V7\n#بولو\n- نكهة الليمون بالنعناع القوية لصيف رايق و منعش\n\nمشروب غازي طبيعي و صحي\n100% ومُحلّا بالعسل\nغني بالفيتامينات\nعبوة تنك 300 مل\nالطرد 24 قطعة \n- مع غطا حماية من الغبار و التلوث .\n\n- متوفر بالاسواق السورية \nاطلبه الآن\nv7 aleppo \nv super soda \nV SUPER SODA SYRIA",
+   "title": "من شركة #V7\n#بولو\n- نكهة الليمون بالنعناع القوية لصيف رايق و منعش\n\nمشروب غازي طبيعي و صحي\n100% ومُحلّا بالعسل\nغني بالفيتامينات\nعبوة تنك 300 مل\nالطرد 24 قطعة \n- مع غطا حماية من الغبار و التلوث .\n\n- متوفر بالاسواق السورية \nاطلبه الآن\nv7 aleppo \nv super soda \nV SUPER SODA SYRIA",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "v7 aleppo",
+    "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/",
+    "is_verified": false,
+    "id": "61588548033959"
+   },
+   "thumbnail": "https://scontent.fhnl3-2.fna.fbcdn.net/v/t15.5256-10/753105188_1354556986852206_3977852496131820649_n.jpg?stp=c0.290.708.396a_dst-jpg_s403x403_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=dE1R1e7aFS0Q7kNvwEEwu3v&_nc_oc=AdprWqlvMbCk234XUmT-5rIEus6I2b1kbVziLGmdo5hJGekHOefrZfx9ATvPV4vjHX8&_nc_zt=23&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQOEG3mRlS1VOY2EgC1cI9UOkmD3OgO9UWPDCkhfn8Kqiw&oe=6ADBB243",
+   "time_and_views_raw": "24 Jul · 43 views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1362800929364202",
+   "video_url": "https://www.facebook.com/reel/1362800929364202/",
+   "description": "V7 Cream Soda \nGarabtoooha??? \n.\n.\n.\n.\n\n#reem_kitchen__ #reelsinstagram #explorar \n#v7 @\n#creamsoda",
+   "title": "V7 Cream Soda \nGarabtoooha??? \n.\n.\n.\n.\n\n#reem_kitchen__ #reelsinstagram #explorar \n#v7 @\n#creamsoda",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Reem Kitchen",
+    "url": "https://www.facebook.com/reemkitchen25",
+    "is_verified": false,
+    "id": "100087666025410"
+   },
+   "thumbnail": "https://scontent.fhnl3-2.fna.fbcdn.net/v/t51.82787-15/771940665_18453578518140131_1649638391370099029_n.jpg?stp=c0.231.576.323a_dst-jpg_s403x403_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=wqFk89wsueIQ7kNvwGApc4O&_nc_oc=AdpClmaeALqLtKL_yYyCGnHsH_OodXMf7SEjxnKv1qtlyRseLDcsaBH87Pu1la-z9yk&_nc_zt=23&_nc_ht=scontent.fhnl3-2.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQMyseS7WL4m1F1bId5CeXPvTkM6KZoT6PYzrJc5QzeXJA&oe=6ADB9426",
+   "time_and_views_raw": "10 Aug · 476 views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1710059006773428",
+   "video_url": "https://www.facebook.com/reel/1710059006773428/",
+   "description": "Refreshments just got an upgrade at On the Run!\nTry our new On the Run × V7 Refreshment Menu, crafted with On the Run recipes and V7 sparkling soda base.\nNow available exclusively at all On the Run branches.",
+   "title": "Refreshments just got an upgrade at On the Run!\nTry our new On the Run × V7 Refreshment Menu, crafted with On the Run recipes and V7 sparkling soda base.\nNow available exclusively at all On the Run branches.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "On The Run Egypt",
+    "url": "https://www.facebook.com/people/On-The-Run-Egypt/61564258740170/",
+    "is_verified": false,
+    "id": "61564258740170"
+   },
+   "thumbnail": "https://scontent.fhnl3-1.fna.fbcdn.net/v/t15.5256-10/784350990_28478503745109218_1918392641351370611_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=Ef7yTcXl1HcQ7kNvwGiWG32&_nc_oc=AdqNbR6k1SW1jZ2qXdchhEgn8Q4j_HgoPVQxwyzWzGvSQEXaMkm7GZxRmr3o5SfHdec&_nc_zt=23&_nc_ht=scontent.fhnl3-1.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQOU49L5Pcet7hBwnm-UvpTkTPTqGiAehg2MjN14ILBb7w&oe=6ADB8E8D",
+   "time_and_views_raw": "29 Aug · 305 views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1367017642290092",
+   "video_url": "https://www.facebook.com/reel/1367017642290092/",
+   "description": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "title": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "وكالة أبو صالح - Wakalet Abo Saleh",
+    "url": "https://www.facebook.com/people/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B5%D8%A7%D9%84%D8%AD-Wakalet-Abo-Saleh/100064782469962/",
+    "is_verified": false,
+    "id": "100064782469962"
+   },
+   "thumbnail": "https://scontent.fhnl3-1.fna.fbcdn.net/v/t15.5256-10/785721917_1283794357055220_8264780805491466510_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e3495b&_nc_ohc=HG5dW0E803UQ7kNvwFbwZfZ&_nc_oc=AdqUYae93SHHJMR7TEtGfvdwWfZahwWobBKOXhNfuG9Sq79j_ak3nPVFB_uDTUl9sRA&_nc_zt=23&_nc_ht=scontent.fhnl3-1.fna&_nc_gid=Y3jIms7VGlOILvsyJwFduA&_nc_ss=70289&oh=00_AQODPKmgdIaX17tEe7GqN484YDPhjQ2KV-iyoO1CuZIuzg&oe=6ADB9825",
+   "time_and_views_raw": "24 Aug · 301 views",
+   "scrapedAt": "2026-10-19T07:57:31.328Z"
+  },
+  {
+   "type": "search_video_reel",
+   "video_id": "28256083687357565",
+   "video_url": "https://www.facebook.com/reel/1305102008366166/",
+   "description": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "title": null,
+   "author": {
+    "__typename": "User",
+    "id": "100001479351447",
+    "name": "Kholoud E. Muhamed",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/kholoud.emad221"
+   },
+   "thumbnail": "https://scontent-dfw6-1.xx.fbcdn.net/v/t51.82787-10/772495302_18616822567029112_5383867561107771896_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=AGCagt_RaYAQ7kNvwFg0lgQ&_nc_oc=AdqmRRmjB8MSTbX1kFgjV5hyoLWByra4FIUFbMCwllLuOgi_YtmoFnkGpT1VqkdfHh0&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&_nc_gid=PTU7552UNxAGP7hac5pMIA&_nc_ss=70289&oh=00_AQM3gpCypH4Hizx7n4CSz-dFRveIrdrLQYwxsVePbvJ41g&oe=6ADBB0CB",
+   "time_and_views_raw": null,
+   "scrapedAt": "2026-10-19T07:57:39.372Z"
+  },
+  {
+   "type": "search_video_reel",
+   "video_id": "1600459025422053",
+   "video_url": "https://www.facebook.com/reel/1025194526677123/",
+   "description": "v super soda \nv7 aleppo",
+   "title": null,
+   "author": {
+    "__typename": "User",
+    "id": "100063739119718",
+    "name": "حلب يا عشقي الأبدي",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/v7aleppo"
+   },
+   "thumbnail": "https://scontent-dfw6-2.xx.fbcdn.net/v/t15.5256-10/712783326_1276936951131608_5733499662374621522_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=NaEgcMB23GYQ7kNvwGfDGNy&_nc_oc=Adpr9-KQboffelSXSc6nvU2resSe1OCCdoJodHsOHjF9jCIIWSXXQ8xn_O4ge_fzpok&_nc_zt=23&_nc_ht=scontent-dfw6-2.xx&_nc_gid=PTU7552UNxAGP7hac5pMIA&_nc_ss=70289&oh=00_AQOBl4ql4qmS14TQCrMiPBIo8bjamQb1_7kJLyKqOu1rXw&oe=6ADBB555",
+   "time_and_views_raw": null,
+   "scrapedAt": "2026-10-19T07:57:39.372Z"
+  },
+  {
+   "type": "search_video_reel",
+   "video_id": "122118897873284934",
+   "video_url": "https://www.facebook.com/reel/1519684709457958/",
+   "description": "#V7 و #V_SUPER_SODA\nمن شركة #V7 الأولى مبيعا في مصر و رائجة في 30 دولة  ،\nاليوم صارت بسوريا\nطبيعية 100%\nمدعمة بالفيتامينات و محلاة بعسل النحل .\n و #الكولا خالية من الكافيين و بدون مواد حافظة .\nو كل الأصناف مع غطا حماية من الغبار و التلوث .\n\nv7 aleppo \nv super soda",
+   "title": null,
+   "author": {
+    "__typename": "User",
+    "id": "61588548033959",
+    "name": "v7 aleppo",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/"
+   },
+   "thumbnail": "https://scontent-dfw5-1.xx.fbcdn.net/v/t15.5256-10/762070459_2321471478678306_2423530258869352323_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=m6yzoOI6oo0Q7kNvwEGHIJH&_nc_oc=Adr5ByEiSF-bvHWQtncbWnzet2_9y1LShVJdDKm_aSqM_BJeeugvDM5szzKA2O6TeNg&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=PTU7552UNxAGP7hac5pMIA&_nc_ss=70289&oh=00_AQPQUQ91V0PO5qEO1Ny1xJsm5DDfYI26FvfVbWjDrdOX_g&oe=6ADBB586",
+   "time_and_views_raw": null,
+   "scrapedAt": "2026-10-19T07:57:39.372Z"
+  }
+ ]
+}

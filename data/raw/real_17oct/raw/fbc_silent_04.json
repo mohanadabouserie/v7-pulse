@@ -1,0 +1,67 @@
+{
+ "input": {
+  "query": "ڤي سڤن رمان",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "dyIbFDMkXwmgsyb7B",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:22:20.755Z",
+  "finishedAt": "2026-10-19T08:22:26.786Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.0808,
+ "items": [
+  {
+   "post_id": "122094593721465591",
+   "url": "https://www.facebook.com/reel/2258238494941774/",
+   "message": "#يلاـنجرب ڤي سڤن كريم صودا",
+   "author": {
+    "id": "61593967732248",
+    "name": "يلا نجرب",
+    "url": "https://www.facebook.com/yallangrab26",
+    "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/784787567_122204682344521171_8363795935105367377_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=KhZMYEFGhdUQ7kNvwEsT687&_nc_oc=AdqwP74EK2vXPdm62sQ0upOX8MWLM3trEDCfFDbWgT_-8BJRL4KoNvRDslLRSSYo0M_q-lB2_RLjxOxNy09l8GDj&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=0H_hnQVLuOA6mdl9XoNg4g&_nc_ss=7c180&oh=00_AQMz2QGc9pj_9MDRJpq-MWZvBU4Hl9ogFp1MEfq5VpFzkw&oe=6ADB8AFA"
+   },
+   "timestamp": 1787766011,
+   "reactions_count": 14,
+   "comments_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 8,
+    "love": 5,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t15.5256-10/787715257_28202021499428856_136830274913727145_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=be8305&_nc_ohc=I9m4oAuLIwQQ7kNvwE8X_sW&_nc_oc=AdrBuVq6RwnDa7DOwGlgPB0sX7YzY9HcJuO5cuF5JZmYEh5cB8ef8EPFeuPqBkG-I1bUocJk02EwFOJOnIpUFmO5&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=0H_hnQVLuOA6mdl9XoNg4g&_nc_ss=7c180&oh=00_AQMQoLsh4JFRW-4HmcmXOjn_UjL_wD0kKVBQjtfqNsADXw&oe=6ADB89FD",
+   "video": "https://www.facebook.com/watch/?v=2258238494941774",
+   "video_thumbnail": "https://scontent-sjc6-1.xx.fbcdn.net/v/t15.5256-10/787715257_28202021499428856_136830274913727145_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=be8305&_nc_ohc=I9m4oAuLIwQQ7kNvwE8X_sW&_nc_oc=AdrBuVq6RwnDa7DOwGlgPB0sX7YzY9HcJuO5cuF5JZmYEh5cB8ef8EPFeuPqBkG-I1bUocJk02EwFOJOnIpUFmO5&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=0H_hnQVLuOA6mdl9XoNg4g&_nc_ss=7c180&oh=00_AQMQoLsh4JFRW-4HmcmXOjn_UjL_wD0kKVBQjtfqNsADXw&oe=6ADB89FD",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMDk0NTkzNzIxNDY1NTkx",
+   "shares_id": "ZmVlZGJhY2s6MTIyMDk0NTkzNzIxNDY1NTkx",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "1116315621824127",
+     "url": "https://www.facebook.com/hashtag/%D9%8A%D9%84%D8%A7%D9%80%D9%86%D8%AC%D8%B1%D8%A8?__eep__=6",
+     "offset": 0,
+     "length": 9
+    }
+   ]
+  }
+ ]
+}

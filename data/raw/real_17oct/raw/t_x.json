@@ -1,0 +1,3464 @@
+{
+ "input": {
+  "twitterContent": "(V7 OR \"في سفن\" OR \"ڤي سڤن\") (مشروب OR كانز OR صودا) -هافال -Haval -Raptor -midjourney -Vivo -Honor -Jaecoo -Chery since:2026-04-20 until:2026-10-17",
+  "maxItems": 20,
+  "queryType": "Latest"
+ },
+ "cap_usd": 0.02,
+ "run": {
+  "id": "QV1EXwes5kN5cVoo9",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:42:01.407Z",
+  "finishedAt": "2026-10-16T21:42:17.225Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 15
+  },
+  "usageTotalUsd": 0.0033
+ },
+ "cost_usd": 0.004,
+ "items": [
+  {
+   "type": "tweet",
+   "id": "2110312687125365225",
+   "url": "https://x.com/YussufL_gendy/status/2110312687125365225",
+   "twitterUrl": "https://twitter.com/YussufL_gendy/status/2110312687125365225",
+   "text": "@Bassem_261 ده احلى كانز بيبسي موجودة في السوق حاليا من حيث الطعم و الصودا هيسبق V7 لانهم بيلعبوا على السعر",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 0,
+   "quoteCount": 0,
+   "viewCount": 51,
+   "createdAt": "Wed Oct 14 10:12:06 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2109680394643665405",
+   "conversationId": "2109680394643665405",
+   "inReplyToUserId": "238897491",
+   "inReplyToUsername": "Bassem_261",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "YussufL_gendy",
+    "url": "https://x.com/YussufL_gendy",
+    "twitterUrl": "https://twitter.com/YussufL_gendy",
+    "id": "756818543140823040",
+    "name": "ظفلطون",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1475827761130491913/LthsGv3N_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/756818543140823040/1640699350",
+    "description": "",
+    "location": "Cairo, Egypt",
+    "followers": 137,
+    "following": 165,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sat Jul 23 11:49:36 +0000 2016",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 4497,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 65,
+    "statusesCount": 888,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "I am not gonna leave a constructive bio for you .. I’ll keep it till we meet and get some coffee.",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "238897491",
+      "indices": [
+       0,
+       11
+      ],
+      "name": "Bassem Amin",
+      "screen_name": "Bassem_261"
+     }
+    ]
+   },
+   "reply_to_user_results": {
+    "rest_id": "238897491",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "Bassem_261"
+     },
+     "rest_id": "238897491"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2110243265458864572",
+   "url": "https://x.com/Esoo06485173/status/2110243265458864572",
+   "twitterUrl": "https://twitter.com/Esoo06485173/status/2110243265458864572",
+   "text": "@Bassem_261 بشوفه في بيم ماركت و الفترة الأخيرة نزل كانز...\nبس اللي واكل السوق فعلا V7 بسم الله ما شاء الله ربنا يبارك لهم",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 1,
+   "likeCount": 7,
+   "quoteCount": 0,
+   "viewCount": 1316,
+   "createdAt": "Wed Oct 14 05:36:15 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2109680394643665405",
+   "conversationId": "2109680394643665405",
+   "inReplyToUserId": "238897491",
+   "inReplyToUsername": "Bassem_261",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Esoo06485173",
+    "url": "https://x.com/Esoo06485173",
+    "twitterUrl": "https://twitter.com/Esoo06485173",
+    "id": "1520345700533420035",
+    "name": "Esraa Samy",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2059610718618439680/xqFdpra9_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1520345700533420035/1779884764",
+    "description": "",
+    "location": "Cairo, Egypt",
+    "followers": 118,
+    "following": 475,
+    "status": "",
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sat Apr 30 10:14:19 +0000 2022",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 3563,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 53,
+    "statusesCount": 1434,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "و لسوف يعطيك ربك فترضى",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "238897491",
+      "indices": [
+       0,
+       11
+      ],
+      "name": "Bassem Amin",
+      "screen_name": "Bassem_261"
+     }
+    ]
+   },
+   "reply_to_user_results": {
+    "rest_id": "238897491",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "Bassem_261"
+     },
+     "rest_id": "238897491"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2101738112254693660",
+   "url": "https://x.com/AhmedBargal6/status/2101738112254693660",
+   "twitterUrl": "https://twitter.com/AhmedBargal6/status/2101738112254693660",
+   "text": "V7 بيناكولادا \nبينك ليموناد \nكريم صودا \nمفيش أي شركة أجنبية جابت الجودة دي في مصر طول عمرها",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 1,
+   "likeCount": 5,
+   "quoteCount": 0,
+   "viewCount": 329,
+   "createdAt": "Sun Sep 20 18:19:49 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2101738112254693660",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "AhmedBargal6",
+    "url": "https://x.com/AhmedBargal6",
+    "twitterUrl": "https://twitter.com/AhmedBargal6",
+    "id": "932190384020746240",
+    "name": "Ahmed Bargal",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1880357952470609920/HiCfshcF_normal.jpg",
+    "coverPicture": "",
+    "description": "",
+    "location": "",
+    "followers": 463,
+    "following": 382,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Nov 19 10:14:41 +0000 2017",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 23898,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 234,
+    "statusesCount": 2469,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "Normal One",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "2101644952505589805",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1258851194950356999",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 43414
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/2109062012252610560/gLWxXzUq_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1258851194950356999/1787019278"
+        },
+        "core": {
+         "created_at": "Fri May 08 20:08:21 +0000 2020",
+         "name": "shimaa",
+         "screen_name": "shimaas2122"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": "Cairo, Egypt"
+        },
+        "media_permissions": {
+         "can_media_tag": false
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {},
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "",
+         "entities": {
+          "description": {}
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 3686,
+         "following": 289
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1258851194950356999",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 942,
+         "tweets": 15785
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": ""
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "2101644952505589805"
+      ],
+      "editable_until_msecs": "1789909778000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 44,
+      "bookmarked": false,
+      "conversation_id_str": "2101644952505589805",
+      "created_at": "Sun Sep 20 12:09:38 +0000 2026",
+      "display_text_range": [
+       0,
+       77
+      ],
+      "entities": {},
+      "extended_entities": {
+       "media": [
+        {
+         "allow_download_status": {
+          "allow_download": true
+         },
+         "display_url": "pic.x.com/TBzOn0j5n3",
+         "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2101644944985264128",
+         "indices": [
+          78,
+          101
+         ],
+         "media_key": "3_2101644944985264128",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFF15AACgACHSqK8wYWoC0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHSqK8UXXkAAKAAIdKorzBhagLQAA",
+           "media_key": "3_2101644944985264128"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HSqK8UXXkAAxAgE.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 660,
+            "w": 1179,
+            "x": 0,
+            "y": 514
+           },
+           {
+            "h": 1174,
+            "w": 1174,
+            "x": 2,
+            "y": 0
+           },
+           {
+            "h": 1174,
+            "w": 1030,
+            "x": 74,
+            "y": 0
+           },
+           {
+            "h": 1174,
+            "w": 587,
+            "x": 296,
+            "y": 0
+           },
+           {
+            "h": 1174,
+            "w": 1179,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1174,
+          "width": 1179
+         },
+         "sizes": {
+          "large": {
+           "h": 1174,
+           "w": 1179
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/TBzOn0j5n3"
+        },
+        {
+         "allow_download_status": {
+          "allow_download": true
+         },
+         "display_url": "pic.x.com/TBzOn0j5n3",
+         "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2101644944980979712",
+         "indices": [
+          78,
+          101
+         ],
+         "media_key": "3_2101644944980979712",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFFljAACgACHSqK8wYWoC0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHSqK8UWWMAAKAAIdKorzBhagLQAA",
+           "media_key": "3_2101644944980979712"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HSqK8UWWMAAlpjf.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 660,
+            "w": 1179,
+            "x": 0,
+            "y": 553
+           },
+           {
+            "h": 1179,
+            "w": 1179,
+            "x": 0,
+            "y": 34
+           },
+           {
+            "h": 1213,
+            "w": 1064,
+            "x": 0,
+            "y": 0
+           },
+           {
+            "h": 1213,
+            "w": 607,
+            "x": 0,
+            "y": 0
+           },
+           {
+            "h": 1213,
+            "w": 1179,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1213,
+          "width": 1179
+         },
+         "sizes": {
+          "large": {
+           "h": 1213,
+           "w": 1179
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/TBzOn0j5n3"
+        }
+       ]
+      },
+      "favorite_count": 605,
+      "favorited": false,
+      "full_text": "موضوع إن المطاعم بقت بتطفحنا ماية الغسيل الل اسمها ڤي كولا وماكسي بالعافية دة https://t.co/TBzOn0j5n3",
+      "is_quote_status": false,
+      "lang": "ar",
+      "possibly_sensitive": false,
+      "possibly_sensitive_editable": true,
+      "quote_count": 28,
+      "reply_count": 47,
+      "retweet_count": 10,
+      "retweeted": false,
+      "user_id_str": "1258851194950356999"
+     },
+     "rest_id": "2101644952505589805",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEdKorzBhagLQ8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "96426",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "2101644952505589805",
+    "url": "https://x.com/shimaas2122/status/2101644952505589805",
+    "twitterUrl": "https://twitter.com/shimaas2122/status/2101644952505589805",
+    "text": "موضوع إن المطاعم بقت بتطفحنا ماية الغسيل الل اسمها ڤي كولا وماكسي بالعافية دة https://t.co/TBzOn0j5n3",
+    "source": "",
+    "retweetCount": 10,
+    "replyCount": 47,
+    "likeCount": 605,
+    "quoteCount": 28,
+    "viewCount": 96426,
+    "createdAt": "Sun Sep 20 12:09:38 +0000 2026",
+    "lang": "ar",
+    "bookmarkCount": 44,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2101644952505589805",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "shimaas2122",
+     "url": "https://x.com/shimaas2122",
+     "twitterUrl": "https://twitter.com/shimaas2122",
+     "id": "1258851194950356999",
+     "name": "shimaa",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/2109062012252610560/gLWxXzUq_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1258851194950356999/1787019278",
+     "description": "",
+     "location": "Cairo, Egypt",
+     "followers": 3686,
+     "following": 289,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": false,
+     "createdAt": "Fri May 08 20:08:21 +0000 2020",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 43414,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 942,
+     "statusesCount": 15785,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [],
+     "profile_bio": {
+      "description": "",
+      "entities": {
+       "description": {}
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/TBzOn0j5n3",
+       "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2101644944985264128",
+       "indices": [
+        78,
+        101
+       ],
+       "media_key": "3_2101644944985264128",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFF15AACgACHSqK8wYWoC0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHSqK8UXXkAAKAAIdKorzBhagLQAA",
+         "media_key": "3_2101644944985264128"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HSqK8UXXkAAxAgE.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 660,
+          "w": 1179,
+          "x": 0,
+          "y": 514
+         },
+         {
+          "h": 1174,
+          "w": 1174,
+          "x": 2,
+          "y": 0
+         },
+         {
+          "h": 1174,
+          "w": 1030,
+          "x": 74,
+          "y": 0
+         },
+         {
+          "h": 1174,
+          "w": 587,
+          "x": 296,
+          "y": 0
+         },
+         {
+          "h": 1174,
+          "w": 1179,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1174,
+        "width": 1179
+       },
+       "sizes": {
+        "large": {
+         "h": 1174,
+         "w": 1179
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/TBzOn0j5n3"
+      },
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/TBzOn0j5n3",
+       "expanded_url": "https://x.com/shimaas2122/status/2101644952505589805/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2101644944980979712",
+       "indices": [
+        78,
+        101
+       ],
+       "media_key": "3_2101644944980979712",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0qivFFljAACgACHSqK8wYWoC0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHSqK8UWWMAAKAAIdKorzBhagLQAA",
+         "media_key": "3_2101644944980979712"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HSqK8UWWMAAlpjf.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 660,
+          "w": 1179,
+          "x": 0,
+          "y": 553
+         },
+         {
+          "h": 1179,
+          "w": 1179,
+          "x": 0,
+          "y": 34
+         },
+         {
+          "h": 1213,
+          "w": 1064,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1213,
+          "w": 607,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1213,
+          "w": 1179,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1213,
+        "width": 1179
+       },
+       "sizes": {
+        "large": {
+         "h": 1213,
+         "w": 1179
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/TBzOn0j5n3"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2095589350222504064",
+   "url": "https://x.com/M7MD_A98/status/2095589350222504064",
+   "twitterUrl": "https://twitter.com/M7MD_A98/status/2095589350222504064",
+   "text": "نظرة على بوابة ومنطقة ترانسفورمرز في سفن الحمراء بالرياض 👇🏻\n\nمعلومات اضافية:\n\n🔹️سيتم افتتاح 3 مراكز ترفيهية لترانسفورمرز في المملكة ( الرياض،جدة،الدمام).\n🔹️مساحة كل مركز 10 الاف متر مربع.\n🔹️يضم العاب متطورة و فريدة و متاجر بعلامة ترانسفورمرز.\n🔹️سيحتوي على مطاعم حصرية ومشروبات ذات طابع خاص.\n🔹️افعوانية مخصصة لترانسفورمرز.\n\nمتوقع الافتتاح نهاية عام 2026 📅",
+   "source": "",
+   "retweetCount": 13,
+   "replyCount": 4,
+   "likeCount": 78,
+   "quoteCount": 0,
+   "viewCount": 12450,
+   "createdAt": "Thu Sep 03 19:06:49 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 11,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2095589350222504064",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "M7MD_A98",
+    "url": "https://x.com/M7MD_A98",
+    "twitterUrl": "https://twitter.com/M7MD_A98",
+    "id": "1787910634455052288",
+    "name": "محمد | 🇸🇦 Qiddiya",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1787911937172377601/shFOdEi6_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1787910634455052288/1765932160",
+    "description": "",
+    "location": "مدينة القدية",
+    "followers": 10216,
+    "following": 90,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Tue May 07 18:21:39 +0000 2024",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 3266,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 2792,
+    "statusesCount": 5289,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1787912578317828174"
+    ],
+    "profile_bio": {
+     "description": "مهتم بمشروع #مدينة_القدية وجميع المنتزهات #Qiddiya #SixFlags #Aquarabia #DragonBall 🎢",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          12,
+          25
+         ],
+         "text": "مدينة_القدية"
+        },
+        {
+         "indices": [
+          42,
+          50
+         ],
+         "text": "Qiddiya"
+        },
+        {
+         "indices": [
+          51,
+          60
+         ],
+         "text": "SixFlags"
+        },
+        {
+         "indices": [
+          61,
+          71
+         ],
+         "text": "Aquarabia"
+        },
+        {
+         "indices": [
+          72,
+          83
+         ],
+         "text": "DragonBall"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/csdFxttK2n",
+      "expanded_url": "https://x.com/M7MD_A98/status/2095589350222504064/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "2095589316437360640",
+      "indices": [
+       268,
+       291
+      ],
+      "media_key": "3_2095589316437360640",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VB2FhWkAACgACHRUHaT8aoIAAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHRUHYWFaQAAKAAIdFQdpPxqggAAA",
+        "media_key": "3_2095589316437360640"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HRUHYWFaQAA8h7X.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 709,
+         "w": 1266,
+         "x": 0,
+         "y": 1027
+        },
+        {
+         "h": 1266,
+         "w": 1266,
+         "x": 0,
+         "y": 748
+        },
+        {
+         "h": 1443,
+         "w": 1266,
+         "x": 0,
+         "y": 605
+        },
+        {
+         "h": 2048,
+         "w": 1024,
+         "x": 242,
+         "y": 0
+        },
+        {
+         "h": 2048,
+         "w": 1266,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 2048,
+       "width": 1266
+      },
+      "sizes": {
+       "large": {
+        "h": 2048,
+        "w": 1266
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/csdFxttK2n"
+     },
+     {
+      "display_url": "pic.x.com/csdFxttK2n",
+      "expanded_url": "https://x.com/M7MD_A98/status/2095589350222504064/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 72,
+          "w": 72,
+          "x": 1136,
+          "y": 740
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 72,
+          "w": 72,
+          "x": 1136,
+          "y": 740
+         }
+        ]
+       }
+      },
+      "id_str": "2095589325966872577",
+      "indices": [
+       268,
+       291
+      ],
+      "media_key": "3_2095589325966872577",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VB2OZWxABCgACHRUHaT8aoIAAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHRUHY5lbEAEKAAIdFQdpPxqggAAA",
+        "media_key": "3_2095589325966872577"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HRUHY5lbEAEr5cp.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 1120,
+         "w": 2000,
+         "x": 0,
+         "y": 189
+        },
+        {
+         "h": 1499,
+         "w": 1499,
+         "x": 200,
+         "y": 0
+        },
+        {
+         "h": 1499,
+         "w": 1315,
+         "x": 292,
+         "y": 0
+        },
+        {
+         "h": 1499,
+         "w": 750,
+         "x": 574,
+         "y": 0
+        },
+        {
+         "h": 1499,
+         "w": 2000,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1499,
+       "width": 2000
+      },
+      "sizes": {
+       "large": {
+        "h": 1499,
+        "w": 2000
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/csdFxttK2n"
+     },
+     {
+      "display_url": "pic.x.com/csdFxttK2n",
+      "expanded_url": "https://x.com/M7MD_A98/status/2095589350222504064/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": []
+       },
+       "orig": {
+        "faces": []
+       }
+      },
+      "id_str": "2095589334892359680",
+      "indices": [
+       268,
+       291
+      ],
+      "media_key": "3_2095589334892359680",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VB2WtWzAACgACHRUHaT8aoIAAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHRUHZa1bMAAKAAIdFQdpPxqggAAA",
+        "media_key": "3_2095589334892359680"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HRUHZa1bMAA4kW_.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 1028,
+         "w": 1836,
+         "x": 54,
+         "y": 0
+        },
+        {
+         "h": 1028,
+         "w": 1028,
+         "x": 862,
+         "y": 0
+        },
+        {
+         "h": 1028,
+         "w": 902,
+         "x": 988,
+         "y": 0
+        },
+        {
+         "h": 1028,
+         "w": 514,
+         "x": 1376,
+         "y": 0
+        },
+        {
+         "h": 1028,
+         "w": 1890,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1028,
+       "width": 1890
+      },
+      "sizes": {
+       "large": {
+        "h": 1028,
+        "w": 1890
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/csdFxttK2n"
+     },
+     {
+      "display_url": "pic.x.com/csdFxttK2n",
+      "expanded_url": "https://x.com/M7MD_A98/status/2095589350222504064/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 73,
+          "w": 73,
+          "x": 1088,
+          "y": 284
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 73,
+          "w": 73,
+          "x": 1088,
+          "y": 284
+         }
+        ]
+       }
+      },
+      "id_str": "2095589342236344322",
+      "indices": [
+       268,
+       291
+      ],
+      "media_key": "3_2095589342236344322",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VB2djF4ACCgACHRUHaT8aoIAAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHRUHZ2MXgAIKAAIdFQdpPxqggAAA",
+        "media_key": "3_2095589342236344322"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HRUHZ2MXgAIA4Xq.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 1043,
+         "w": 1863,
+         "x": 27,
+         "y": 0
+        },
+        {
+         "h": 1043,
+         "w": 1043,
+         "x": 563,
+         "y": 0
+        },
+        {
+         "h": 1043,
+         "w": 915,
+         "x": 627,
+         "y": 0
+        },
+        {
+         "h": 1043,
+         "w": 522,
+         "x": 823,
+         "y": 0
+        },
+        {
+         "h": 1043,
+         "w": 1890,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 1043,
+       "width": 1890
+      },
+      "sizes": {
+       "large": {
+        "h": 1043,
+        "w": 1890
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/csdFxttK2n"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "urls": [],
+    "user_mentions": []
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "2095584358019289117",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1787910634455052288",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 3266
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/1787911937172377601/shFOdEi6_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1787910634455052288/1765932160"
+        },
+        "core": {
+         "created_at": "Tue May 07 18:21:39 +0000 2024",
+         "name": "محمد | 🇸🇦 Qiddiya",
+         "screen_name": "M7MD_A98"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": "مدينة القدية"
+        },
+        "media_permissions": {
+         "can_media_tag": true
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "1787912578317828174"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "مهتم بمشروع #مدينة_القدية وجميع المنتزهات #Qiddiya #SixFlags #Aquarabia #DragonBall 🎢",
+         "entities": {
+          "description": {
+           "hashtags": [
+            {
+             "indices": [
+              12,
+              25
+             ],
+             "text": "مدينة_القدية"
+            },
+            {
+             "indices": [
+              42,
+              50
+             ],
+             "text": "Qiddiya"
+            },
+            {
+             "indices": [
+              51,
+              60
+             ],
+             "text": "SixFlags"
+            },
+            {
+             "indices": [
+              61,
+              71
+             ],
+             "text": "Aquarabia"
+            },
+            {
+             "indices": [
+              72,
+              83
+             ],
+             "text": "DragonBall"
+            }
+           ]
+          }
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 10216,
+         "following": 90
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1787910634455052288",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 2792,
+         "tweets": 5289
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": ""
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "2095584358019289117"
+      ],
+      "editable_until_msecs": "1788464819000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 21,
+      "bookmarked": false,
+      "conversation_id_str": "2095584358019289117",
+      "created_at": "Thu Sep 03 18:46:59 +0000 2026",
+      "display_text_range": [
+       0,
+       48
+      ],
+      "entities": {},
+      "extended_entities": {
+       "media": [
+        {
+         "display_url": "pic.x.com/FRwYXTSq18",
+         "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2095584327455461376",
+         "indices": [
+          49,
+          72
+         ],
+         "media_key": "3_2095584327455461376",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAtfK29AACgACHRUC3uia0B0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHRUC18rb0AAKAAIdFQLe6JrQHQAA",
+           "media_key": "3_2095584327455461376"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HRUC18rb0AAh0JG.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 1029,
+            "w": 1838,
+            "x": 52,
+            "y": 0
+           },
+           {
+            "h": 1029,
+            "w": 1029,
+            "x": 572,
+            "y": 0
+           },
+           {
+            "h": 1029,
+            "w": 903,
+            "x": 635,
+            "y": 0
+           },
+           {
+            "h": 1029,
+            "w": 515,
+            "x": 829,
+            "y": 0
+           },
+           {
+            "h": 1029,
+            "w": 1890,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1029,
+          "width": 1890
+         },
+         "sizes": {
+          "large": {
+           "h": 1029,
+           "w": 1890
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/FRwYXTSq18"
+        },
+        {
+         "display_url": "pic.x.com/FRwYXTSq18",
+         "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2095584334845542402",
+         "indices": [
+          49,
+          72
+         ],
+         "media_key": "3_2095584334845542402",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAtmDV4ACCgACHRUC3uia0B0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHRUC2YNXgAIKAAIdFQLe6JrQHQAA",
+           "media_key": "3_2095584334845542402"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HRUC2YNXgAICRrJ.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 1006,
+            "w": 1796,
+            "x": 94,
+            "y": 0
+           },
+           {
+            "h": 1006,
+            "w": 1006,
+            "x": 884,
+            "y": 0
+           },
+           {
+            "h": 1006,
+            "w": 882,
+            "x": 1008,
+            "y": 0
+           },
+           {
+            "h": 1006,
+            "w": 503,
+            "x": 1387,
+            "y": 0
+           },
+           {
+            "h": 1006,
+            "w": 1890,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1006,
+          "width": 1890
+         },
+         "sizes": {
+          "large": {
+           "h": 1006,
+           "w": 1890
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/FRwYXTSq18"
+        },
+        {
+         "display_url": "pic.x.com/FRwYXTSq18",
+         "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "2095584342928248832",
+         "indices": [
+          49,
+          72
+         ],
+         "media_key": "3_2095584342928248832",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAttlG9AACgACHRUC3uia0B0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHRUC22Ub0AAKAAIdFQLe6JrQHQAA",
+           "media_key": "3_2095584342928248832"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HRUC22Ub0AAsd4T.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 1022,
+            "w": 1825,
+            "x": 0,
+            "y": 0
+           },
+           {
+            "h": 1022,
+            "w": 1022,
+            "x": 292,
+            "y": 0
+           },
+           {
+            "h": 1022,
+            "w": 896,
+            "x": 355,
+            "y": 0
+           },
+           {
+            "h": 1022,
+            "w": 511,
+            "x": 548,
+            "y": 0
+           },
+           {
+            "h": 1022,
+            "w": 1890,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1022,
+          "width": 1890
+         },
+         "sizes": {
+          "large": {
+           "h": 1022,
+           "w": 1890
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/FRwYXTSq18"
+        },
+        {
+         "display_url": "pic.x.com/FRwYXTSq18",
+         "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": [
+            {
+             "h": 70,
+             "w": 70,
+             "x": 1090,
+             "y": 284
+            }
+           ]
+          },
+          "orig": {
+           "faces": [
+            {
+             "h": 70,
+             "w": 70,
+             "x": 1090,
+             "y": 284
+            }
+           ]
+          }
+         },
+         "id_str": "2095584352046305283",
+         "indices": [
+          49,
+          72
+         ],
+         "media_key": "3_2095584352046305283",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAt2EllADCgACHRUC3uia0B0AAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABHRUC3YSWUAMKAAIdFQLe6JrQHQAA",
+           "media_key": "3_2095584352046305283"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/HRUC3YSWUAMzoDw.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 1003,
+            "w": 1791,
+            "x": 99,
+            "y": 0
+           },
+           {
+            "h": 1003,
+            "w": 1003,
+            "x": 584,
+            "y": 0
+           },
+           {
+            "h": 1003,
+            "w": 880,
+            "x": 645,
+            "y": 0
+           },
+           {
+            "h": 1003,
+            "w": 502,
+            "x": 834,
+            "y": 0
+           },
+           {
+            "h": 1003,
+            "w": 1890,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1003,
+          "width": 1890
+         },
+         "sizes": {
+          "large": {
+           "h": 1003,
+           "w": 1890
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/FRwYXTSq18"
+        }
+       ]
+      },
+      "favorite_count": 144,
+      "favorited": false,
+      "full_text": "صور جديدة من مجمع سفن الحمراء في الرياض 🏗\n\n(1/3) https://t.co/FRwYXTSq18",
+      "is_quote_status": false,
+      "lang": "ar",
+      "possibly_sensitive": false,
+      "possibly_sensitive_editable": true,
+      "quote_count": 1,
+      "reply_count": 2,
+      "retweet_count": 16,
+      "retweeted": false,
+      "user_id_str": "1787910634455052288"
+     },
+     "rest_id": "2095584358019289117",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEdFQLe6JrQHQ8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "39657",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "2095584358019289117",
+    "url": "https://x.com/M7MD_A98/status/2095584358019289117",
+    "twitterUrl": "https://twitter.com/M7MD_A98/status/2095584358019289117",
+    "text": "صور جديدة من مجمع سفن الحمراء في الرياض 🏗\n\n(1/3) https://t.co/FRwYXTSq18",
+    "source": "",
+    "retweetCount": 16,
+    "replyCount": 2,
+    "likeCount": 144,
+    "quoteCount": 1,
+    "viewCount": 39657,
+    "createdAt": "Thu Sep 03 18:46:59 +0000 2026",
+    "lang": "ar",
+    "bookmarkCount": 21,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2095584358019289117",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "M7MD_A98",
+     "url": "https://x.com/M7MD_A98",
+     "twitterUrl": "https://twitter.com/M7MD_A98",
+     "id": "1787910634455052288",
+     "name": "محمد | 🇸🇦 Qiddiya",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1787911937172377601/shFOdEi6_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1787910634455052288/1765932160",
+     "description": "",
+     "location": "مدينة القدية",
+     "followers": 10216,
+     "following": 90,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Tue May 07 18:21:39 +0000 2024",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 3266,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 2792,
+     "statusesCount": 5289,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "1787912578317828174"
+     ],
+     "profile_bio": {
+      "description": "مهتم بمشروع #مدينة_القدية وجميع المنتزهات #Qiddiya #SixFlags #Aquarabia #DragonBall 🎢",
+      "entities": {
+       "description": {
+        "hashtags": [
+         {
+          "indices": [
+           12,
+           25
+          ],
+          "text": "مدينة_القدية"
+         },
+         {
+          "indices": [
+           42,
+           50
+          ],
+          "text": "Qiddiya"
+         },
+         {
+          "indices": [
+           51,
+           60
+          ],
+          "text": "SixFlags"
+         },
+         {
+          "indices": [
+           61,
+           71
+          ],
+          "text": "Aquarabia"
+         },
+         {
+          "indices": [
+           72,
+           83
+          ],
+          "text": "DragonBall"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "display_url": "pic.x.com/FRwYXTSq18",
+       "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2095584327455461376",
+       "indices": [
+        49,
+        72
+       ],
+       "media_key": "3_2095584327455461376",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAtfK29AACgACHRUC3uia0B0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHRUC18rb0AAKAAIdFQLe6JrQHQAA",
+         "media_key": "3_2095584327455461376"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HRUC18rb0AAh0JG.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 1029,
+          "w": 1838,
+          "x": 52,
+          "y": 0
+         },
+         {
+          "h": 1029,
+          "w": 1029,
+          "x": 572,
+          "y": 0
+         },
+         {
+          "h": 1029,
+          "w": 903,
+          "x": 635,
+          "y": 0
+         },
+         {
+          "h": 1029,
+          "w": 515,
+          "x": 829,
+          "y": 0
+         },
+         {
+          "h": 1029,
+          "w": 1890,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1029,
+        "width": 1890
+       },
+       "sizes": {
+        "large": {
+         "h": 1029,
+         "w": 1890
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/FRwYXTSq18"
+      },
+      {
+       "display_url": "pic.x.com/FRwYXTSq18",
+       "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2095584334845542402",
+       "indices": [
+        49,
+        72
+       ],
+       "media_key": "3_2095584334845542402",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAtmDV4ACCgACHRUC3uia0B0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHRUC2YNXgAIKAAIdFQLe6JrQHQAA",
+         "media_key": "3_2095584334845542402"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HRUC2YNXgAICRrJ.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 1006,
+          "w": 1796,
+          "x": 94,
+          "y": 0
+         },
+         {
+          "h": 1006,
+          "w": 1006,
+          "x": 884,
+          "y": 0
+         },
+         {
+          "h": 1006,
+          "w": 882,
+          "x": 1008,
+          "y": 0
+         },
+         {
+          "h": 1006,
+          "w": 503,
+          "x": 1387,
+          "y": 0
+         },
+         {
+          "h": 1006,
+          "w": 1890,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1006,
+        "width": 1890
+       },
+       "sizes": {
+        "large": {
+         "h": 1006,
+         "w": 1890
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/FRwYXTSq18"
+      },
+      {
+       "display_url": "pic.x.com/FRwYXTSq18",
+       "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2095584342928248832",
+       "indices": [
+        49,
+        72
+       ],
+       "media_key": "3_2095584342928248832",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAttlG9AACgACHRUC3uia0B0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHRUC22Ub0AAKAAIdFQLe6JrQHQAA",
+         "media_key": "3_2095584342928248832"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HRUC22Ub0AAsd4T.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 1022,
+          "w": 1825,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1022,
+          "w": 1022,
+          "x": 292,
+          "y": 0
+         },
+         {
+          "h": 1022,
+          "w": 896,
+          "x": 355,
+          "y": 0
+         },
+         {
+          "h": 1022,
+          "w": 511,
+          "x": 548,
+          "y": 0
+         },
+         {
+          "h": 1022,
+          "w": 1890,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1022,
+        "width": 1890
+       },
+       "sizes": {
+        "large": {
+         "h": 1022,
+         "w": 1890
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/FRwYXTSq18"
+      },
+      {
+       "display_url": "pic.x.com/FRwYXTSq18",
+       "expanded_url": "https://x.com/M7MD_A98/status/2095584358019289117/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": [
+          {
+           "h": 70,
+           "w": 70,
+           "x": 1090,
+           "y": 284
+          }
+         ]
+        },
+        "orig": {
+         "faces": [
+          {
+           "h": 70,
+           "w": 70,
+           "x": 1090,
+           "y": 284
+          }
+         ]
+        }
+       },
+       "id_str": "2095584352046305283",
+       "indices": [
+        49,
+        72
+       ],
+       "media_key": "3_2095584352046305283",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0VAt2EllADCgACHRUC3uia0B0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHRUC3YSWUAMKAAIdFQLe6JrQHQAA",
+         "media_key": "3_2095584352046305283"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HRUC3YSWUAMzoDw.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 1003,
+          "w": 1791,
+          "x": 99,
+          "y": 0
+         },
+         {
+          "h": 1003,
+          "w": 1003,
+          "x": 584,
+          "y": 0
+         },
+         {
+          "h": 1003,
+          "w": 880,
+          "x": 645,
+          "y": 0
+         },
+         {
+          "h": 1003,
+          "w": 502,
+          "x": 834,
+          "y": 0
+         },
+         {
+          "h": 1003,
+          "w": 1890,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1003,
+        "width": 1890
+       },
+       "sizes": {
+        "large": {
+         "h": 1003,
+         "w": 1890
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/FRwYXTSq18"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2095254494661460194",
+   "url": "https://x.com/leh_kedaa/status/2095254494661460194",
+   "twitterUrl": "https://twitter.com/leh_kedaa/status/2095254494661460194",
+   "text": "مش عايزة المح اي جريمة قتل او اغتصاب او قضايا شرف عندي على اي بلاتفورم انا عايزة اشوف الوان وحب وكرينجات وواحدة بتبدا سمول بيزنس وواحد بيجرب الكريم صودا من v7 ابعدوا عن نفسيتي وجسمي كمية الخراب والسلبية اللي في كل حتة يارب عافينا واحمينا",
+   "source": "",
+   "retweetCount": 1,
+   "replyCount": 0,
+   "likeCount": 7,
+   "quoteCount": 0,
+   "viewCount": 584,
+   "createdAt": "Wed Sep 02 20:56:14 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2095254494661460194",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "leh_kedaa",
+    "url": "https://x.com/leh_kedaa",
+    "twitterUrl": "https://twitter.com/leh_kedaa",
+    "id": "773178261564190720",
+    "name": "لينا",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2106944288961544192/oPOfguy6_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/773178261564190720/1776371305",
+    "description": "",
+    "location": "Cairo",
+    "followers": 5802,
+    "following": 92,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Sep 06 15:17:17 +0000 2016",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 12135,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 164,
+    "statusesCount": 8153,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "بحب بابا والفن",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/lina.abdalhake…",
+         "expanded_url": "https://www.instagram.com/lina.abdalhakeem?igsh=MWY5dDZ4YXJpYmt2Yw==",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/XvwwYEItZh"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2090882438562042309",
+   "url": "https://x.com/Mannozaa/status/2090882438562042309",
+   "twitterUrl": "https://twitter.com/Mannozaa/status/2090882438562042309",
+   "text": "@StarGirlivyy انا بقرف من اي مشروب بلاقيه مسكر و الكوكاكولا بجد الوحيده اللي مش مسكره و مفيهاش افتر تيست بشع زي البيبسي و v7",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 1,
+   "likeCount": 22,
+   "quoteCount": 0,
+   "viewCount": 7694,
+   "createdAt": "Fri Aug 21 19:23:14 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2090881741674205390",
+   "conversationId": "2090873044482797883",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Mannozaa",
+    "url": "https://x.com/Mannozaa",
+    "twitterUrl": "https://twitter.com/Mannozaa",
+    "id": "1276872255436455937",
+    "name": "منوزة",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2108965002392518657/p0cP1Amk_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1276872255436455937/1790792091",
+    "description": "",
+    "location": "",
+    "followers": 14204,
+    "following": 191,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sat Jun 27 13:37:44 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 121806,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 4131,
+    "statusesCount": 30399,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "\"Honestly, Nevermind\" is the greatest album of all time",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "instagram.com/mennadawoodd?i…",
+         "expanded_url": "https://www.instagram.com/mennadawoodd?igsh=Ym5zajlhangwbXVw&utm_source=qr",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/CwGC8nQxRZ"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {
+    "user_mentions": [
+     {
+      "id_str": "1920593533473599488",
+      "indices": [
+       0,
+       13
+      ],
+      "name": "الكيوي باشا",
+      "screen_name": "StarGirlivyy"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2089686204895674392",
+   "url": "https://x.com/MotazAssal/status/2089686204895674392",
+   "twitterUrl": "https://twitter.com/MotazAssal/status/2089686204895674392",
+   "text": "فخر الصناعات المصرية \"ڤي سڤن V7\" يعيد طرح المشروب الأسطوري لشويبس  \"كريم صودا\" .. \nمشروب جيل الطيبين ..\nhttps://t.co/t5NT1cD2pz https://t.co/844IhhbY3f",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 9,
+   "quoteCount": 0,
+   "viewCount": 578,
+   "createdAt": "Tue Aug 18 12:09:50 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 1,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2089686204895674392",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "MotazAssal",
+    "url": "https://x.com/MotazAssal",
+    "twitterUrl": "https://twitter.com/MotazAssal",
+    "id": "1463319795034644487",
+    "name": "Motaz Assal",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/1644168663518289922/hXEsMDxT_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1463319795034644487/1704316465",
+    "description": "",
+    "location": "Mansoura - Jeddah - Sarajevo ",
+    "followers": 16242,
+    "following": 1913,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Wed Nov 24 01:33:42 +0000 2021",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 168081,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 8480,
+    "statusesCount": 88223,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1636291499506688001"
+    ],
+    "profile_bio": {
+     "description": "University Lecturer, Academic Researcher, Economist and Certified English Translator\nمقدم محتوى #في_الكريزة\n#Fel_Kreza\nhttps://t.co/nqz7uCP3sA",
+     "entities": {
+      "description": {
+       "hashtags": [
+        {
+         "indices": [
+          96,
+          107
+         ],
+         "text": "في_الكريزة"
+        },
+        {
+         "indices": [
+          108,
+          118
+         ],
+         "text": "Fel_Kreza"
+        }
+       ],
+       "urls": [
+        {
+         "display_url": "youtube.com/@felkreza",
+         "expanded_url": "http://youtube.com/@felkreza",
+         "indices": [
+          119,
+          142
+         ],
+         "url": "https://t.co/nqz7uCP3sA"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "allow_download_status": {
+       "allow_download": true
+      },
+      "display_url": "pic.x.com/844IhhbY3f",
+      "expanded_url": "https://x.com/MotazAssal/status/2089686204895674392/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "features": {
+       "large": {
+        "faces": [
+         {
+          "h": 37,
+          "w": 37,
+          "x": 409,
+          "y": 613
+         }
+        ]
+       },
+       "orig": {
+        "faces": [
+         {
+          "h": 37,
+          "w": 37,
+          "x": 409,
+          "y": 613
+         }
+        ]
+       }
+      },
+      "id_str": "2089685644503040000",
+      "indices": [
+       128,
+       151
+      ],
+      "media_key": "3_2089685644503040000",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0ADgWk1kAACgACHQAOiB7XQBgAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAABCgABHQAOBaTWQAAKAAIdAA6IHtdAGAAA",
+        "media_key": "3_2089685644503040000"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/media/HQAOBaTWQAArvcQ.jpg",
+      "original_info": {
+       "focus_rects": [
+        {
+         "h": 605,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 818,
+         "x": 158,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 718,
+         "x": 208,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 409,
+         "x": 363,
+         "y": 0
+        },
+        {
+         "h": 818,
+         "w": 1080,
+         "x": 0,
+         "y": 0
+        }
+       ],
+       "height": 818,
+       "width": 1080
+      },
+      "sizes": {
+       "large": {
+        "h": 818,
+        "w": 1080
+       }
+      },
+      "type": "photo",
+      "url": "https://t.co/844IhhbY3f"
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/MotazAssal/sta…",
+      "expanded_url": "https://x.com/MotazAssal/status/1928134633973076441?s=20",
+      "indices": [
+       104,
+       127
+      ],
+      "url": "https://t.co/t5NT1cD2pz"
+     }
+    ]
+   },
+   "reply_to_user_results": null,
+   "quoted_tweet_results": {
+    "rest_id": "1928134633973076441",
+    "result": {
+     "__typename": "Tweet",
+     "core": {
+      "user_results": {
+       "rest_id": "1463319795034644487",
+       "result": {
+        "__typename": "User",
+        "action_counts": {
+         "favorites_count": 168081
+        },
+        "avatar": {
+         "image_url": "https://pbs.twimg.com/profile_images/1644168663518289922/hXEsMDxT_normal.jpg"
+        },
+        "banner": {
+         "image_url": "https://pbs.twimg.com/profile_banners/1463319795034644487/1704316465"
+        },
+        "core": {
+         "created_at": "Wed Nov 24 01:33:42 +0000 2021",
+         "name": "Motaz Assal",
+         "screen_name": "MotazAssal"
+        },
+        "dm_permissions": {
+         "can_dm": true
+        },
+        "exclusive_tweet_following": false,
+        "follow_request_sent": false,
+        "identity_profile_labels_highlighted_label": {},
+        "location": {
+         "location": "Mansoura - Jeddah - Sarajevo "
+        },
+        "media_permissions": {
+         "can_media_tag": true
+        },
+        "notifications_settings": {
+         "notifications_enabled": false
+        },
+        "pinned_items": {
+         "tweet_ids_str": [
+          "1636291499506688001"
+         ]
+        },
+        "privacy": {
+         "protected": false,
+         "suspended": false
+        },
+        "private_super_following": false,
+        "profile_bio": {
+         "description": "University Lecturer, Academic Researcher, Economist and Certified English Translator\nمقدم محتوى #في_الكريزة\n#Fel_Kreza\nhttps://t.co/nqz7uCP3sA",
+         "entities": {
+          "description": {
+           "hashtags": [
+            {
+             "indices": [
+              96,
+              107
+             ],
+             "text": "في_الكريزة"
+            },
+            {
+             "indices": [
+              108,
+              118
+             ],
+             "text": "Fel_Kreza"
+            }
+           ],
+           "urls": [
+            {
+             "display_url": "youtube.com/@felkreza",
+             "expanded_url": "http://youtube.com/@felkreza",
+             "indices": [
+              119,
+              142
+             ],
+             "url": "https://t.co/nqz7uCP3sA"
+            }
+           ]
+          }
+         }
+        },
+        "profile_image_shape": "Circle",
+        "profile_metadata": {
+         "profile_interstitial_type": "",
+         "profile_link_color": "1DA1F2"
+        },
+        "profile_translation": {
+         "translator_type_enum": "None"
+        },
+        "properties": {
+         "has_extended_profile": true,
+         "has_no_screen_name": false
+        },
+        "relationship_counts": {
+         "followers": 16242,
+         "following": 1913
+        },
+        "relationship_perspectives": {
+         "blocked_by": false,
+         "blocking": false,
+         "followed_by": false,
+         "following": false,
+         "live_following": false,
+         "muting": false
+        },
+        "rest_id": "1463319795034644487",
+        "smart_blocked_by": false,
+        "smart_blocking": false,
+        "super_follow_eligible": false,
+        "super_followed_by": false,
+        "super_following": false,
+        "tweet_counts": {
+         "media_tweets": 8480,
+         "tweets": 88223
+        },
+        "verification": {
+         "is_blue_verified": true,
+         "verified": false
+        },
+        "website": {
+         "url": ""
+        }
+       }
+      }
+     },
+     "edit_control": {
+      "__typename": "EditControlInitial",
+      "edit_tweet_ids": [
+       "1928134633973076441"
+      ],
+      "editable_until_msecs": "1748541694000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+     },
+     "is_translatable": true,
+     "legacy": {
+      "bookmark_count": 1,
+      "bookmarked": false,
+      "conversation_id_str": "1928134633973076441",
+      "created_at": "Thu May 29 17:01:34 +0000 2025",
+      "display_text_range": [
+       0,
+       77
+      ],
+      "entities": {},
+      "extended_entities": {
+       "media": [
+        {
+         "allow_download_status": {
+          "allow_download": true
+         },
+         "display_url": "pic.x.com/1cZAOA86J5",
+         "expanded_url": "https://x.com/MotazAssal/status/1928134633973076441/photo/1",
+         "ext_master_playlist_only": [],
+         "ext_media_availability": {
+          "status": "Available"
+         },
+         "ext_playlists": [],
+         "features": {
+          "large": {
+           "faces": []
+          },
+          "orig": {
+           "faces": []
+          }
+         },
+         "id_str": "1928134388081897473",
+         "indices": [
+          78,
+          101
+         ],
+         "media_key": "3_1928134388081897473",
+         "media_results": {
+          "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrCHAKg1jABCgACGsIcO+EX0dkAAA==",
+          "result": {
+           "__typename": "ApiMedia",
+           "id": "QXBpTWVkaWE6DAABCgABGsIcAqDWMAEKAAIawhw74RfR2QAA",
+           "media_key": "3_1928134388081897473"
+          }
+         },
+         "media_url_https": "https://pbs.twimg.com/media/GsIcAqDWMAESIuk.jpg",
+         "original_info": {
+          "focus_rects": [
+           {
+            "h": 369,
+            "w": 659,
+            "x": 0,
+            "y": 633
+           },
+           {
+            "h": 659,
+            "w": 659,
+            "x": 0,
+            "y": 488
+           },
+           {
+            "h": 751,
+            "w": 659,
+            "x": 0,
+            "y": 442
+           },
+           {
+            "h": 1211,
+            "w": 606,
+            "x": 53,
+            "y": 0
+           },
+           {
+            "h": 1211,
+            "w": 659,
+            "x": 0,
+            "y": 0
+           }
+          ],
+          "height": 1211,
+          "width": 659
+         },
+         "sizes": {
+          "large": {
+           "h": 1211,
+           "w": 659
+          }
+         },
+         "type": "photo",
+         "url": "https://t.co/1cZAOA86J5"
+        }
+       ]
+      },
+      "favorite_count": 11,
+      "favorited": false,
+      "full_text": "مشروب جيل الطيبين ..\nشويبس \"كريم صودا\" .. كان طعمها مالوش حل ..\nإنتاج ٢٠٠٣ .. https://t.co/1cZAOA86J5",
+      "is_quote_status": false,
+      "lang": "ar",
+      "possibly_sensitive": false,
+      "possibly_sensitive_editable": true,
+      "quote_count": 2,
+      "reply_count": 1,
+      "retweet_count": 1,
+      "retweeted": false,
+      "user_id_str": "1463319795034644487"
+     },
+     "rest_id": "1928134633973076441",
+     "unmention_data": {
+      "id": "VW5tZW50aW9uczoKAAEawhw74RfR2Q8AAgoAAAAAAA=="
+     },
+     "view_count_info": {
+      "count": "1723",
+      "state": "EnabledWithCount"
+     }
+    }
+   },
+   "quoted_tweet": {
+    "type": "tweet",
+    "id": "1928134633973076441",
+    "url": "https://x.com/MotazAssal/status/1928134633973076441",
+    "twitterUrl": "https://twitter.com/MotazAssal/status/1928134633973076441",
+    "text": "مشروب جيل الطيبين ..\nشويبس \"كريم صودا\" .. كان طعمها مالوش حل ..\nإنتاج ٢٠٠٣ .. https://t.co/1cZAOA86J5",
+    "source": "",
+    "retweetCount": 1,
+    "replyCount": 1,
+    "likeCount": 11,
+    "quoteCount": 2,
+    "viewCount": 1723,
+    "createdAt": "Thu May 29 17:01:34 +0000 2025",
+    "lang": "ar",
+    "bookmarkCount": 1,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "1928134633973076441",
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "isPinned": false,
+    "author": {
+     "type": "user",
+     "userName": "MotazAssal",
+     "url": "https://x.com/MotazAssal",
+     "twitterUrl": "https://twitter.com/MotazAssal",
+     "id": "1463319795034644487",
+     "name": "Motaz Assal",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1644168663518289922/hXEsMDxT_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/1463319795034644487/1704316465",
+     "description": "",
+     "location": "Mansoura - Jeddah - Sarajevo ",
+     "followers": 16242,
+     "following": 1913,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Wed Nov 24 01:33:42 +0000 2021",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 168081,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 8480,
+     "statusesCount": 88223,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "1636291499506688001"
+     ],
+     "profile_bio": {
+      "description": "University Lecturer, Academic Researcher, Economist and Certified English Translator\nمقدم محتوى #في_الكريزة\n#Fel_Kreza\nhttps://t.co/nqz7uCP3sA",
+      "entities": {
+       "description": {
+        "hashtags": [
+         {
+          "indices": [
+           96,
+           107
+          ],
+          "text": "في_الكريزة"
+         },
+         {
+          "indices": [
+           108,
+           118
+          ],
+          "text": "Fel_Kreza"
+         }
+        ],
+        "urls": [
+         {
+          "display_url": "youtube.com/@felkreza",
+          "expanded_url": "http://youtube.com/@felkreza",
+          "indices": [
+           119,
+           142
+          ],
+          "url": "https://t.co/nqz7uCP3sA"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/1cZAOA86J5",
+       "expanded_url": "https://x.com/MotazAssal/status/1928134633973076441/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "1928134388081897473",
+       "indices": [
+        78,
+        101
+       ],
+       "media_key": "3_1928134388081897473",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARrCHAKg1jABCgACGsIcO+EX0dkAAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABGsIcAqDWMAEKAAIawhw74RfR2QAA",
+         "media_key": "3_1928134388081897473"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/GsIcAqDWMAESIuk.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 369,
+          "w": 659,
+          "x": 0,
+          "y": 633
+         },
+         {
+          "h": 659,
+          "w": 659,
+          "x": 0,
+          "y": 488
+         },
+         {
+          "h": 751,
+          "w": 659,
+          "x": 0,
+          "y": 442
+         },
+         {
+          "h": 1211,
+          "w": 606,
+          "x": 53,
+          "y": 0
+         },
+         {
+          "h": 1211,
+          "w": 659,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1211,
+        "width": 659
+       },
+       "sizes": {
+        "large": {
+         "h": 1211,
+         "w": 659
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/1cZAOA86J5"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {},
+    "reply_to_user_results": null,
+    "quoted_tweet_results": null,
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isConversationControlled": false
+   },
+   "retweeted_tweet": null,
+   "isConversationControlled": false,
+   "isQuote": true
+  },
+  {
+   "type": "tweet",
+   "id": "2088269435735781729",
+   "url": "https://x.com/xoxoshahadG/status/2088269435735781729",
+   "twitterUrl": "https://twitter.com/xoxoshahadG/status/2088269435735781729",
+   "text": "ياترى هلاقي V7 كريم صودا الجديده وكولا عم جمعه امتى\nعايزه اجربهم https://t.co/LP1mWcYWJW",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 2,
+   "likeCount": 22,
+   "quoteCount": 1,
+   "viewCount": 3023,
+   "createdAt": "Fri Aug 14 14:20:06 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2088269435735781729",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "xoxoshahadG",
+    "url": "https://x.com/xoxoshahadG",
+    "twitterUrl": "https://twitter.com/xoxoshahadG",
+    "id": "996292173158109185",
+    "name": "Shahad🦦",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2097343682999373824/zL4X7TcX_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/996292173158109185/1777157064",
+    "description": "",
+    "location": "",
+    "followers": 1259,
+    "following": 586,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue May 15 07:32:19 +0000 2018",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 33849,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 332,
+    "statusesCount": 2604,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "2000660885854150897"
+    ],
+    "profile_bio": {
+     "description": "I thought somebody could tell me how- but I found nobody could.\n\nmedical student (5/5)🦤",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {
+    "media": [
+     {
+      "display_url": "pic.x.com/LP1mWcYWJW",
+      "expanded_url": "https://x.com/xoxoshahadG/status/2088269435735781729/photo/1",
+      "ext_master_playlist_only": [],
+      "ext_media_availability": {
+       "status": "Available"
+      },
+      "ext_playlists": [],
+      "id_str": "2088269386419245056",
+      "indices": [
+       65,
+       88
+      ],
+      "media_key": "16_2088269386419245056",
+      "media_results": {
+       "id": "QXBpTWVkaWFSZXN1bHRzOgwAAgoAARz7BfFc15AACgACHPsF/NhWMWEAAA==",
+       "result": {
+        "__typename": "ApiMedia",
+        "id": "QXBpTWVkaWE6DAACCgABHPsF8VzXkAAKAAIc+wX82FYxYQAA",
+        "media_key": "16_2088269386419245056"
+       }
+      },
+      "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HPsF8VzXkAAWgXE.jpg",
+      "original_info": {
+       "focus_rects": [],
+       "height": 360,
+       "width": 480
+      },
+      "sizes": {
+       "large": {
+        "h": 360,
+        "w": 480
+       }
+      },
+      "type": "animated_gif",
+      "url": "https://t.co/LP1mWcYWJW",
+      "video_info": {
+       "aspect_ratio": [
+        4,
+        3
+       ],
+       "variants": [
+        {
+         "bitrate": 0,
+         "content_type": "video/mp4",
+         "url": "https://video-s.twimg.com/tweet_video/HPsF8VzXkAAWgXE.mp4"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2080367794722423280",
+   "url": "https://x.com/M7mwagih/status/2080367794722423280",
+   "twitterUrl": "https://twitter.com/M7mwagih/status/2080367794722423280",
+   "text": "بجد يعني عاملين اعلان عن stroopwafel مصري\nجبته فتحته لقيت بسكوتتين\nحاجه ملهاش علاقه بالوافل اساسا\nال v7 diet cola دي طعمها وحش جدا مقارنه بالكوكاكولا\nباقي منتجات الصودا توزيعها زي الخرا وموجوده عند شويه فلاحين وصعايده في الاكشاك بيبيعوها ب اغلي من تمنها ٣٠٪",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 2,
+   "quoteCount": 0,
+   "viewCount": 49,
+   "createdAt": "Thu Jul 23 19:01:48 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": true,
+   "inReplyToId": "2080367345818653131",
+   "conversationId": "2080367345818653131",
+   "inReplyToUserId": "1293626368387883011",
+   "inReplyToUsername": "M7mwagih",
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "M7mwagih",
+    "url": "https://x.com/M7mwagih",
+    "twitterUrl": "https://twitter.com/M7mwagih",
+    "id": "1293626368387883011",
+    "name": "Mohammed-Wagih",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2049524346272829440/NC7CGHQe_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1293626368387883011/1638641910",
+    "description": "",
+    "location": "",
+    "followers": 290,
+    "following": 60,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Wed Aug 12 19:12:29 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 7903,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 2737,
+    "statusesCount": 32342,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [
+     "1355306855728295940"
+    ],
+    "profile_bio": {
+     "description": "A depressing/sarcastic/random account.\nMostly football,memes,venting,sometimes chess/movies\n,+18\nAmateur writer,pharmacist\nI return insults,",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "wlahyma3rf.wordpress.com",
+         "expanded_url": "https://wlahyma3rf.wordpress.com",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/a3FfGo0AnN"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": {
+    "rest_id": "1293626368387883011",
+    "result": {
+     "__typename": "User",
+     "core": {
+      "screen_name": "M7mwagih"
+     },
+     "rest_id": "1293626368387883011"
+    }
+   },
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2074886165165920387",
+   "url": "https://x.com/mktbha1/status/2074886165165920387",
+   "twitterUrl": "https://twitter.com/mktbha1/status/2074886165165920387",
+   "text": "في بقالة فتحت جديدة رحت لقافه اقول اشوف هل في نموذج عمل جديد ولا نسخ لصق\nهل سوا شيء مختلف لانه فاتحه قدام بقالة ثانية \nرحت دخلت اقل من عادية وبعدين جيت سالته عن في سفن دايت او لا \nمافي ولا مشروب دايت \nياخي اذا بتفتح مشروع ادرس نموذج العمل\nادرس المنافسين\nخل يكون عندك ميزة تنافسية",
+   "source": "",
+   "retweetCount": 0,
+   "replyCount": 0,
+   "likeCount": 3,
+   "quoteCount": 0,
+   "viewCount": 192,
+   "createdAt": "Wed Jul 08 15:59:45 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 0,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2074886165165920387",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "mktbha1",
+    "url": "https://x.com/mktbha1",
+    "twitterUrl": "https://twitter.com/mktbha1",
+    "id": "2055951422093422593",
+    "name": "يوميات مكتئب",
+    "isVerified": false,
+    "isBlueVerified": false,
+    "profilePicture": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+    "coverPicture": "",
+    "description": "",
+    "location": "",
+    "followers": 1985,
+    "following": 17,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Sun May 17 10:00:02 +0000 2026",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 161,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 67,
+    "statusesCount": 1033,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "صاحب هذا الحساب وصل للحد الاعلى من الحياة وبانتظار الموت",
+     "entities": {
+      "description": {}
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "tweet",
+   "id": "2046371817443426320",
+   "url": "https://x.com/Bojjaan_Krikc/status/2046371817443426320",
+   "twitterUrl": "https://twitter.com/Bojjaan_Krikc/status/2046371817443426320",
+   "text": "يجدعان المنتج اللي اسمه V7 دا فاجر بجد\nلامين يامال المشروبات الغازية دلوقتي\nبيبسي بقت زي الزفت طعمها ماية والV7 دي كل شوية بتبقى أفجر",
+   "source": "",
+   "retweetCount": 2,
+   "replyCount": 15,
+   "likeCount": 322,
+   "quoteCount": 2,
+   "viewCount": 26655,
+   "createdAt": "Mon Apr 20 23:33:55 +0000 2026",
+   "lang": "ar",
+   "bookmarkCount": 18,
+   "isReply": false,
+   "inReplyToId": null,
+   "conversationId": "2046371817443426320",
+   "inReplyToUserId": null,
+   "inReplyToUsername": null,
+   "isPinned": false,
+   "author": {
+    "type": "user",
+    "userName": "Bojjaan_Krikc",
+    "url": "https://x.com/Bojjaan_Krikc",
+    "twitterUrl": "https://twitter.com/Bojjaan_Krikc",
+    "id": "1262197940862554116",
+    "name": "Sofiiiaaan",
+    "isVerified": false,
+    "isBlueVerified": true,
+    "profilePicture": "https://pbs.twimg.com/profile_images/2076032841830248448/EXYvtVKB_normal.jpg",
+    "coverPicture": "https://pbs.twimg.com/profile_banners/1262197940862554116/1787910104",
+    "description": "",
+    "location": "Prison (room previously)",
+    "followers": 15741,
+    "following": 3107,
+    "status": "",
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Mon May 18 01:47:03 +0000 2020",
+    "entities": {
+     "description": {
+      "urls": []
+     },
+     "url": {}
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 43323,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "mediaCount": 1660,
+    "statusesCount": 16354,
+    "withheldInCountries": [],
+    "affiliatesHighlightedLabel": {},
+    "possiblySensitive": false,
+    "pinnedTweetIds": [],
+    "profile_bio": {
+     "description": "وَإِلَيْهِ يُرْجَعُ الْأَمْرُ كُلُّهُ فَاعْبُدْهُ وَتَوَكَّلْ عَلَيْهِ",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "ngl.link/kg_sofiiaaan1",
+         "expanded_url": "https://ngl.link/kg_sofiiaaan1",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/e277qHE2ez"
+        }
+       ]
+      }
+     }
+    },
+    "isAutomated": false,
+    "automatedBy": null
+   },
+   "extendedEntities": {},
+   "card": null,
+   "place": {},
+   "entities": {},
+   "reply_to_user_results": null,
+   "quoted_tweet_results": null,
+   "quoted_tweet": null,
+   "retweeted_tweet": null,
+   "isConversationControlled": false
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  },
+  {
+   "type": "mock_tweet",
+   "id": -1,
+   "text": "From KaitoEasyAPI, a reminder:Our API pricing is based on the volume of data returned. However, to ensure we can cover our costs on the Apify platform, we have a minimum charge of $X per API call,even if the response contains no results.Thus, we returned N pieces of mock data. We will monitor and adjust the size of N based on the infrastructure costs incurred by Apify.This helps offset the infrastructure costs we incur for each API request, regardless of the data returned. We want to be upfront about this policy so you understand the pricing structure when using our service.Despite adding mock data when no results are found, we're still barely breaking even. Our prices are already very reasonable, but we're committed to maintaining this service to support the growth of your project.Please let us know if you have any other questions!"
+  }
+ ]
+}

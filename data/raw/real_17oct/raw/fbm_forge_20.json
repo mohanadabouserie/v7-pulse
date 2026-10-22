@@ -1,0 +1,849 @@
+{
+ "input": {
+  "query": "V7 شعير",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "zzdWDeTl54CDxy1j9",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:38:04.886Z",
+  "finishedAt": "2026-10-19T11:38:21.309Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.2684,
+ "items": [
+  {
+   "post_id": "1110048614873676",
+   "type": "post",
+   "url": "https://www.facebook.com/Allouzitrading/posts/pfbid02ddfUt2yxKjE8RehYd72RHFepSf1ps3VTvYphKEM1AF42KYw3BESgawTzXGhgRyWql",
+   "message": "انتعاش لا يُقاوم مع تشكيلة مشروبات V7! 🥤✨\nنكهات طبيعية 100% تناسب جميع الأوقات:\n🔹 سوبر صودا: كولا، برتقال، ليمون (بدون كافيين).\n🔹 فوار بالفيتامينات: رمان، بلوبيري، بينا كولادا، وغيرها.\n🔹 شعير منكه: تفاح، وأناناس بالعسل.\n📍 متوفرة الآن لدى الوكيل المعتمد: اللوزي وبركات.\nللتواصل:\n📍 إدلب – سرمدا، الشارع العام\n📞 +905353722571\n📍 حلب – حلب الجديدة، آخر نزلة نفيسة بعد صيدلية الرعاية\n📞 +963933643955 | +963947175203\n\n#تجارة #جملة #سوريا #براندات #عالمية",
+   "message_rich": "انتعاش لا يُقاوم مع تشكيلة مشروبات V7! 🥤✨\nنكهات طبيعية 100% تناسب جميع الأوقات:\n🔹 سوبر صودا: كولا، برتقال، ليمون (بدون كافيين).\n🔹 فوار بالفيتامينات: رمان، بلوبيري، بينا كولادا، وغيرها.\n🔹 شعير منكه: تفاح، وأناناس بالعسل.\n📍 متوفرة الآن لدى الوكيل المعتمد: اللوزي وبركات.\nللتواصل:\n📍 إدلب – سرمدا، الشارع العام\n📞 +905353722571\n📍 حلب – حلب الجديدة، آخر نزلة نفيسة بعد صيدلية الرعاية\n📞 +963933643955 | +963947175203\n\n#تجارة #جملة #سوريا #براندات #عالمية",
+   "timestamp": 1789995603,
+   "comments_count": 3,
+   "reactions_count": 14,
+   "reshare_count": 11,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 11,
+    "love": 3,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100076056421135",
+    "name": "شركة اللوزي و بركات  التجارية",
+    "url": "https://www.facebook.com/Allouzitrading",
+    "profile_picture_url": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/724024667_1026039583274580_7148228454643941697_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DwIWmKnoT3gQ7kNvwEUAhFL&_nc_oc=AdpaQCjPy4iUaAwVCn_RadQIZW9UomrQDUEyXRkFSaouxYsBZNdL6r1DnIz0ARizTCs&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNzexPh-4LAXaiIUHCYQdRDah-iHQsBS8m_GHG8apoTrA&oe=6ADBD1BD",
+    "delegate_page_id": "439872289747626"
+   },
+   "authors": [
+    {
+     "id": "100076056421135",
+     "name": "شركة اللوزي و بركات  التجارية",
+     "url": "https://www.facebook.com/Allouzitrading",
+     "profile_picture_url": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/724024667_1026039583274580_7148228454643941697_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DwIWmKnoT3gQ7kNvwEUAhFL&_nc_oc=AdpaQCjPy4iUaAwVCn_RadQIZW9UomrQDUEyXRkFSaouxYsBZNdL6r1DnIz0ARizTCs&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNzexPh-4LAXaiIUHCYQdRDah-iHQsBS8m_GHG8apoTrA&oe=6ADBD1BD",
+     "delegate_page_id": "439872289747626"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/799334025_1110046671540537_7669986967122414321_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XPhSftYr06EQ7kNvwFiZov2&_nc_oc=AdoENj867Ts505hENi5L6SkwCr5G0iDYRaVmdEVsrvGliR6SaI--CntMAafqwrhM0LE&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQMx6XyO2SMgw_z_vZMfU1GnRYdfB4O-_W4DMLxdtLO6jA&oe=6ADBD903",
+     "url": "https://www.facebook.com/photo.php?fbid=1110046668207204&set=a.939214418623764&type=3",
+     "id": "1110046668207204"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/800450037_1110046698207201_1969432414438415185_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Fukji9Nq87sQ7kNvwH8QvUV&_nc_oc=Adq-Z5x8NdBbsyMIdc8oOyPggj8k2cT58op8--E6kzQDN32aSLYn6VqQxLOg3VSZfyA&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQPxxaRf4_OxMre08MT0kNHQpeWt-EWZgNYGfxb6d_bJ1A&oe=6ADBCC03",
+     "url": "https://www.facebook.com/photo.php?fbid=1110046691540535&set=a.939214418623764&type=3",
+     "id": "1110046691540535"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/794413787_1110046718207199_2990110366380616292_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wTNWZ5bSfPAQ7kNvwHOBiya&_nc_oc=AdqItAsSQu2n9AEo9h_oXBzjOzKDJcUyZo5f5WuhWJ-JLmINZKWLzrzXvphVhFqRPEs&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNpIT8iwku3SMGlBiTNAy70Bk7P2S1BIg8_aCOyv9NH8A&oe=6ADBD1E1",
+     "url": "https://www.facebook.com/photo.php?fbid=1110046711540533&set=a.939214418623764&type=3",
+     "id": "1110046711540533"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/815766746_1110047798207091_4960905514406216766_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2d4lrg14F_IQ7kNvwFUwDMz&_nc_oc=AdrRAe_JF1lPzRsJuFBAaixCaXaCmhPdybZYO6BF5GelWvVzLDIj6MD77axJtK70ZVM&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQPil0ZUNRuXunsJD0weHTh-wfwb1DWw7_1fcfEzi6peaw&oe=6ADBD360",
+     "url": "https://www.facebook.com/photo.php?fbid=1110047791540425&set=a.939214418623764&type=3",
+     "id": "1110047791540425"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/817903225_1110047808207090_9135151083019969997_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XUdKbEtPox4Q7kNvwHpe9ok&_nc_oc=AdocNXkilr8JxdSe8M1g0iJWth9lTd7imwJEPJ0hvMBYuZcwTQEh401QdIRVjyqy6BE&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNTnz_fEaGlAMb16ONjl7Uobn5yi66IDAhn0UP7GN8nrw&oe=6ADBE10E",
+     "url": "https://www.facebook.com/photo.php?fbid=1110047804873757&set=a.939214418623764&type=3",
+     "id": "1110047804873757"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1110048614873676",
+   "shares_id": "1110048614873676",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 11,
+   "top_comments": []
+  },
+  {
+   "post_id": "1660880969381762",
+   "type": "post",
+   "url": "https://www.facebook.com/MotoGuzziUK/posts/pfbid038PCAva2jbeMBaNKJi3PBv96YuRtVPkUUH9tTHtHXw9m31wogxVGFKvuC6VZGmqtSl",
+   "message": "V7 Stone in Nero Ruvido: essential, bold, impossible ​\nto ignore.​\n​\nDiscover it on our website or come see it in our showrooms.​\n\n#MyMotoGuzzi #MotoGuzzi #V7 #V7Stone",
+   "message_rich": "V7 Stone in Nero Ruvido: essential, bold, impossible ​\nto ignore.​\n​\nDiscover it on our website or come see it in our showrooms.​\n\n#MyMotoGuzzi #MotoGuzzi #V7 #V7Stone",
+   "timestamp": 1790328001,
+   "comments_count": 8,
+   "reactions_count": 158,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 147,
+    "love": 11,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063796249551",
+    "name": "Moto Guzzi",
+    "url": "https://www.facebook.com/MotoGuzziUK",
+    "profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/359833201_716671487136053_7162038332591341690_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=WpkXjoNyK44Q7kNvwHJEC8M&_nc_oc=Adqx4N875EUjanpzP7il7lWnh7cV7Dn_4ZtCVu0ggbgzz0HmMmBIbu3C2crX0WAIOdY&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNPXyWadh8W0xccslAu8QAJgw8Q2HMYi_3jIYcljIe1DQ&oe=6ADBE1DE",
+    "delegate_page_id": "241649753039548"
+   },
+   "authors": [
+    {
+     "id": "100063796249551",
+     "name": "Moto Guzzi",
+     "url": "https://www.facebook.com/MotoGuzziUK",
+     "profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/359833201_716671487136053_7162038332591341690_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=WpkXjoNyK44Q7kNvwHJEC8M&_nc_oc=Adqx4N875EUjanpzP7il7lWnh7cV7Dn_4ZtCVu0ggbgzz0HmMmBIbu3C2crX0WAIOdY&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNPXyWadh8W0xccslAu8QAJgw8Q2HMYi_3jIYcljIe1DQ&oe=6ADBE1DE",
+     "delegate_page_id": "241649753039548"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/824390022_1660880959381763_3343666760576023294_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9mgU7FXq-_YQ7kNvwGpAPpm&_nc_oc=AdpbOjQOZL9w1n9Eln0ixJ-Q9dW73LXNCmI7o7h07XhMtzWBIlSmTriSvjSGG2s5G2o&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQODwxcWiNd3lBlsTYEXa6-DhYtLq5VYEuF5BrC2seID1A&oe=6ADBC2C8",
+    "height": 1350,
+    "width": 1080,
+    "id": "1660880956048430"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1660880969381762",
+   "shares_id": "1660880969381762",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1620006206163628",
+   "type": "post",
+   "url": "https://www.facebook.com/Askkhairy/posts/pfbid0t654huLq1QqiSsqt1359JZYKAAxywg8rfxeEDziJNWot7wpnKsgwQ8XiKHY9wLUWl",
+   "message": "لا انت تسيب اللى فى أيدك \n\nعلشان سوق العربيات البوكسى اتحسم\n\nهافال V7 انزل أحجزها حالا\n\nالنسخه الهايبريد اللى كانت معايا الكامله واللى جربتها شهر رائعه استهلاك واداء وفيها كل حاجه\n\nمليون ٨٢٥ الف اتسعرت\n\nوالنسخه البلج ان هيبريد دفع كلى ديف لوك 760 نيوتن متر عزم بطاريه ٢٨ كيلو واط قابله للشحن وبتمشى مدى كهربا منفصل ومدى مجمع فوق ١٠٠٠ كيلو  \n\nالسعر 2 مليون ١٠٠ الف \n\nروح احجز حالا عربيات رهيبه وسعرها ممتاز عن تجربة شهر كامل \n\nرقم التوكيل 15050 \n\nالتسعير أفضل تسعير السنه دى ولو اتحط جنيه أوفربرايس انا نفسى اللى ههاجمها الصراحه علشان التسعير الحلو ده مينفعش يبوظ",
+   "message_rich": "لا انت تسيب اللى فى أيدك \n\nعلشان سوق العربيات البوكسى اتحسم\n\nهافال V7 انزل أحجزها حالا\n\nالنسخه الهايبريد اللى كانت معايا الكامله واللى جربتها شهر رائعه استهلاك واداء وفيها كل حاجه\n\nمليون ٨٢٥ الف اتسعرت\n\nوالنسخه البلج ان هيبريد دفع كلى ديف لوك 760 نيوتن متر عزم بطاريه ٢٨ كيلو واط قابله للشحن وبتمشى مدى كهربا منفصل ومدى مجمع فوق ١٠٠٠ كيلو  \n\nالسعر 2 مليون ١٠٠ الف \n\nروح احجز حالا عربيات رهيبه وسعرها ممتاز عن تجربة شهر كامل \n\nرقم التوكيل 15050 \n\nالتسعير أفضل تسعير السنه دى ولو اتحط جنيه أوفربرايس انا نفسى اللى ههاجمها الصراحه علشان التسعير الحلو ده مينفعش يبوظ",
+   "timestamp": 1788876495,
+   "comments_count": 261,
+   "reactions_count": 1110,
+   "reshare_count": 21,
+   "reactions": {
+    "angry": 1,
+    "care": 14,
+    "haha": 15,
+    "like": 977,
+    "love": 98,
+    "sad": 1,
+    "wow": 4
+   },
+   "author": {
+    "id": "100044627914911",
+    "name": "Mahmoud Khairy - محمود خيرى",
+    "url": "https://www.facebook.com/Askkhairy",
+    "profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/342538253_1417383578807187_100219975372775006_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=gX2JfRGQnaYQ7kNvwE0Rl6I&_nc_oc=Ado-4n8sKBH4BSv4-QZ3t42fu_Ft70oAuyY4Dd9Tp1o12iF6tOG3ouL8qOWwakhSea4&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQM6TNagk-zuVen2wijuwy5XDvUdjpWj8pQCvSAjwRS-YA&oe=6ADBDD76",
+    "delegate_page_id": "346509766110692"
+   },
+   "authors": [
+    {
+     "id": "100044627914911",
+     "name": "Mahmoud Khairy - محمود خيرى",
+     "url": "https://www.facebook.com/Askkhairy",
+     "profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/342538253_1417383578807187_100219975372775006_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=gX2JfRGQnaYQ7kNvwE0Rl6I&_nc_oc=Ado-4n8sKBH4BSv4-QZ3t42fu_Ft70oAuyY4Dd9Tp1o12iF6tOG3ouL8qOWwakhSea4&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQM6TNagk-zuVen2wijuwy5XDvUdjpWj8pQCvSAjwRS-YA&oe=6ADBDD76",
+     "delegate_page_id": "346509766110692"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t51.82787-15/800755763_18626763664047765_6150868497990559637_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7CYOLsChwN8Q7kNvwGuavXD&_nc_oc=AdoLzeRE7UhI8GiIvbgrABy7zz7FxRK7xXfIVkc5ERxhy8IBH1HLsg31Nh055mfgUcQ&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQO_N0F_6hQNlAreRHdrEuxF-meo3p6QCSno7rSEVorvVA&oe=6ADBB896",
+    "height": 1348,
+    "width": 1080,
+    "id": "1620006176163631"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1620006206163628",
+   "shares_id": "1620006206163628",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122158985120995731",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ouJ8hPJmemjoBhRn65E2feBUmuSHxjKv3SPM81dQPgCombS99k4PoArVmgBUvGakl&id=61579871939927",
+   "message": "اكتب HV7 في الكومنتات وهيوصلك البروشور 😉\n.\nعربية جديدة وخطة جديدة... النهاردة الاطلاق بعيدا عن الميديا والصحافة وده هيتم فى حدث خاص بالموزعين فقط\n\nهل هافال V7 هتقلب سوق الـ Boxy وتسعيره، ولا هتكون مجرد عربية حلوة تبلعها دوامة الأوفر برايس؟ 📦🚗\nبعيد تماماً عن أي إعلانات رسمية هافال V7 اللي الدفعة الأولى منها وصلت بالفعل من كام اسبوع وخرجت من المينا والنهاردة هتتوزع على المعارض عشان تكون جاهزة تنزل الشارع 🚢🛣️\n * حجم الدفعة الاولى: أكتر من 400 عربية متقسمين بالنص تقريباً؛ نصهم بلج إن هايبرد (PHEV) والنص التاني هايبرد (HEV) 🔋.\nعربية فى حجم ال Ti7 اللى محتلة قمة مبيعات الفئة دى حاليا فى العربيات الهايبرد واكبر بشوية من T2 اللى برده محتلة قمة مبيعات العربية البنزين فى فئتها 📏.\nلكن التسعير اللى احنا متوقعينه مش هيكون بعيد عنها، فئة الـ HEV متوقع تنزل برقم بين 1,850,000 و1,950,000 جنيه، أما فئة الـ PHEV فمتوقع تكون في حدود 2,150,000 جنيه 💸.\n * بسبب التصميم الصندوقي (Boxy) والطلب العالي عموما عليه فى السوق المصرى، هل هيخلوا التجار يستغلوا الزحمة ونشوف أوفر برايس يضيع ميزة التسعير القوي؟ 🤔\n * كمان التسعير ده لو نزل رسمي هيحط الـ H7 في مأزق؛ هل الوكيل هيضطر ينزل سعر الـ H7 لتفادي تضارب الفئات؟ 📉\nتفتكروا الـ V7 هتعيد كتابة قواعد المنافسة في فئتها، ولا التجار هيكون ليهم رأي تاني؟ شاركونا توقعاتكم في التعليقات! 👇\nواستنوا مننا تغطية حصرية وتفاصيل أكتر وقت الإطلاق الرسمي! 🔥\n\n#بتوع_عربيات #عربية_جديدة #Haval #boxy",
+   "message_rich": "اكتب HV7 في الكومنتات وهيوصلك البروشور 😉\n.\nعربية جديدة وخطة جديدة... النهاردة الاطلاق بعيدا عن الميديا والصحافة وده هيتم فى حدث خاص بالموزعين فقط\n\nهل هافال V7 هتقلب سوق الـ Boxy وتسعيره، ولا هتكون مجرد عربية حلوة تبلعها دوامة الأوفر برايس؟ 📦🚗\nبعيد تماماً عن أي إعلانات رسمية هافال V7 اللي الدفعة الأولى منها وصلت بالفعل من كام اسبوع وخرجت من المينا والنهاردة هتتوزع على المعارض عشان تكون جاهزة تنزل الشارع 🚢🛣️\n * حجم الدفعة الاولى: أكتر من 400 عربية متقسمين بالنص تقريباً؛ نصهم بلج إن هايبرد (PHEV) والنص التاني هايبرد (HEV) 🔋.\nعربية فى حجم ال Ti7 اللى محتلة قمة مبيعات الفئة دى حاليا فى العربيات الهايبرد واكبر بشوية من T2 اللى برده محتلة قمة مبيعات العربية البنزين فى فئتها 📏.\nلكن التسعير اللى احنا متوقعينه مش هيكون بعيد عنها، فئة الـ HEV متوقع تنزل برقم بين 1,850,000 و1,950,000 جنيه، أما فئة الـ PHEV فمتوقع تكون في حدود 2,150,000 جنيه 💸.\n * بسبب التصميم الصندوقي (Boxy) والطلب العالي عموما عليه فى السوق المصرى، هل هيخلوا التجار يستغلوا الزحمة ونشوف أوفر برايس يضيع ميزة التسعير القوي؟ 🤔\n * كمان التسعير ده لو نزل رسمي هيحط الـ H7 في مأزق؛ هل الوكيل هيضطر ينزل سعر الـ H7 لتفادي تضارب الفئات؟ 📉\nتفتكروا الـ V7 هتعيد كتابة قواعد المنافسة في فئتها، ولا التجار هيكون ليهم رأي تاني؟ شاركونا توقعاتكم في التعليقات! 👇\nواستنوا مننا تغطية حصرية وتفاصيل أكتر وقت الإطلاق الرسمي! 🔥\n\n#بتوع_عربيات #عربية_جديدة #Haval #boxy",
+   "timestamp": 1788853502,
+   "comments_count": 72,
+   "reactions_count": 38,
+   "reshare_count": 26,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 3,
+    "like": 33,
+    "love": 0,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "61579871939927",
+    "name": "بتوع عربيات",
+    "url": "https://www.facebook.com/people/%D8%A8%D8%AA%D9%88%D8%B9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A7%D8%AA/61579871939927/",
+    "profile_picture_url": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/538319766_122096809448995731_7856011881390935273_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yH_3Rz9r_hoQ7kNvwFSYbHg&_nc_oc=Adr21fYQht5YDbp7xbmy3vE5yldA49kRjuIO1tZTFhlSUoz7VlAhXIe4q_FtBtzScw0&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQN6CiM0l8q6j6amLfhdN71xVQh63Ss6uTQaX4wJnsiRLA&oe=6ADBC1DB",
+    "delegate_page_id": "801520016369213"
+   },
+   "authors": [
+    {
+     "id": "61579871939927",
+     "name": "بتوع عربيات",
+     "url": "https://www.facebook.com/people/%D8%A8%D8%AA%D9%88%D8%B9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A7%D8%AA/61579871939927/",
+     "profile_picture_url": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/538319766_122096809448995731_7856011881390935273_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yH_3Rz9r_hoQ7kNvwFSYbHg&_nc_oc=Adr21fYQht5YDbp7xbmy3vE5yldA49kRjuIO1tZTFhlSUoz7VlAhXIe4q_FtBtzScw0&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQN6CiM0l8q6j6amLfhdN71xVQh63Ss6uTQaX4wJnsiRLA&oe=6ADBC1DB",
+     "delegate_page_id": "801520016369213"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/799675923_122158985090995731_6062926291733199998_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BvM5_XrxquUQ7kNvwHRpTTw&_nc_oc=Adp_r1eEGbrCa3DmwHg-9sKWSW7bIO5HRZ9dWECvc6UXpEpaxXFNDE8yv7_wKnjx0sM&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQM7D30TWldWZx-_jfxVFx3Rr6ZmG3iV_K5raay3rr8iLg&oe=6ADBECA0",
+    "height": 1440,
+    "width": 1080,
+    "id": "122158985078995731"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122158985120995731",
+   "shares_id": "122158985120995731",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122274131804930611",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0nPpWYGfTTWZscmtPm85H9GsBWDkUwtBQwQvnaSa47bd3eHpxPupZBpr16Ei2dXzXl&id=61577918340455",
+   "message": "هفال V7\nموديل 2027\nعداد 4000 كم \nاسود داخل  ابيض \nالسياره بحاله الشركه \nالسعر 98000 الف ريال \nتحت الضمان \nمعرض وادي الريان للسيارات \n55465166\n70330707",
+   "message_rich": "هفال V7\nموديل 2027\nعداد 4000 كم \nاسود داخل  ابيض \nالسياره بحاله الشركه \nالسعر 98000 الف ريال \nتحت الضمان \nمعرض وادي الريان للسيارات \n55465166\n70330707",
+   "timestamp": 1790862802,
+   "comments_count": 0,
+   "reactions_count": 2,
+   "reshare_count": 8,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61577918340455",
+    "name": "معرض وادي الريان للسيارات",
+    "url": "https://www.facebook.com/people/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/61577918340455/",
+    "profile_picture_url": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/517841763_122108528660930611_1677130135127364463_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vUcsmnjoFrkQ7kNvwGGCUr5&_nc_oc=AdqpeXG3XbPYC_z4ikTzo3K8k5z-2yZboUHEFF_JMqN1sHukseHwvSZOSdgGQTqsGDc&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNfgVrLdoyqDJyLQh6CihUXQkR-wGpXBRGX-vFGTpJrjA&oe=6ADBC7B2",
+    "delegate_page_id": "680232525177138"
+   },
+   "authors": [
+    {
+     "id": "61577918340455",
+     "name": "معرض وادي الريان للسيارات",
+     "url": "https://www.facebook.com/people/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/61577918340455/",
+     "profile_picture_url": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/517841763_122108528660930611_1677130135127364463_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vUcsmnjoFrkQ7kNvwGGCUr5&_nc_oc=AdqpeXG3XbPYC_z4ikTzo3K8k5z-2yZboUHEFF_JMqN1sHukseHwvSZOSdgGQTqsGDc&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNfgVrLdoyqDJyLQh6CihUXQkR-wGpXBRGX-vFGTpJrjA&oe=6ADBC7B2",
+     "delegate_page_id": "680232525177138"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/825266881_122274132548930611_8473274166013729457_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-iw2a_dHHxcQ7kNvwGuU40R&_nc_oc=AdrfMHKZ0800aWlkYZcfSwU8KXBSyyr-gLbPoTdrFMdWrJws00OGIhY6eJrAqwsDc0E&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQMtWYxhOl_A2ExNwAKjJiWHopyIivAlOlOg4n2Imkskhg&oe=6ADBCD3A",
+     "url": "https://www.facebook.com/photo.php?fbid=122274129980930611&set=a.122100049220930611&type=3",
+     "id": "122274129980930611"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/825351082_122274132932930611_2471908145347236666_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jJR5sA_aARIQ7kNvwHHtb59&_nc_oc=AdqfsDixwYPeDuI0SbxPGPhuBupLxirPL_USgBL7-Kq2samPRUYWiSD3FsLtvYNwQFs&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQP7TRrhmQjTJruTPZO5hohz0FMvIlU1-ttjnhGQALfWmA&oe=6ADBD97E",
+     "url": "https://www.facebook.com/photo.php?fbid=122274130460930611&set=a.122100049220930611&type=3",
+     "id": "122274130460930611"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/825267102_122274133004930611_8730374728220728044_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Np1Y5y3yVckQ7kNvwEp8OjS&_nc_oc=AdprF1qfNY6A2tApIbrYPBS1yI3mERimGEp79nLbU3SRklLXKPAGH7ySIjR3aJuzQls&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQMyP3RbL7J0cqZyP7zFRijhTGQmW0KWMsepgJNlkw0xkA&oe=6ADBE00C",
+     "url": "https://www.facebook.com/photo.php?fbid=122274130664930611&set=a.122100049220930611&type=3",
+     "id": "122274130664930611"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/825350851_122274132560930611_5482598897893556451_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SRM5QBFZar8Q7kNvwEl1pE8&_nc_oc=AdoUaNFs6vPJGi1e2Jj_ybJJOEysoxTbDNgT6w27ghgc17ixpZR7RH5pZ0fuw8nrP_M&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNjULSDOba4mIqjuhQ6oi_TPH0nBtq9BXUqUsiMg8LBfw&oe=6ADBCD1F",
+     "url": "https://www.facebook.com/photo.php?fbid=122274130004930611&set=a.122100049220930611&type=3",
+     "id": "122274130004930611"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/825267236_122274132728930611_3131881932836853964_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cPcEK5CadwoQ7kNvwH-XKyA&_nc_oc=AdrFAWlj4odqVwfzfDpbO-9q7GCknD6dLekp09d43TiFMobqo2NOY5rbyNneM13LS-c&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=etcxEQZ08oVUl0TjHzEIdw&_nc_ss=70289&oh=00_AQNtykpDbG4icURg1AVfKfBqdL7k9Wco-zc0ASqmFLnbRA&oe=6ADBD999",
+     "url": "https://www.facebook.com/photo.php?fbid=122274130238930611&set=a.122100049220930611&type=3",
+     "id": "122274130238930611"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122274131804930611",
+   "shares_id": "122274131804930611",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 16,
+   "top_comments": []
+  },
+  {
+   "post_id": "1663822512102520",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/956504212834357/posts/1663822512102520/",
+   "message": "È dura!\nFinalmente è arrivata! Lo scorso mercoledì 7 ottobre.  L'ho presa es è venuto giù il diluvio che è continuato fino a sabato! E va beh, fatto una passeggiata domenica, sono contento ma è durissima! Scendo da una Versys che ammortizzava tutto. Avete qualche consiglio su gonfiaggio ruote o posizioni degli ammortizzatori? Sono un asino quindi scendete nei dettagli.  Grazie a tutti e buona serata",
+   "message_rich": "È dura!\nFinalmente è arrivata! Lo scorso mercoledì 7 ottobre.  L'ho presa es è venuto giù il diluvio che è continuato fino a sabato! E va beh, fatto una passeggiata domenica, sono contento ma è durissima! Scendo da una Versys che ammortizzava tutto. Avete qualche consiglio su gonfiaggio ruote o posizioni degli ammortizzatori? Sono un asino quindi scendete nei dettagli.  Grazie a tutti e buona serata",
+   "timestamp": 1791908824,
+   "comments_count": 37,
+   "reactions_count": 153,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 1,
+    "like": 146,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0xuYFJXi6hvRBKyXt6AyGnKENs63nd21KtTP1LgLn72bBAaSQfFEN5DAvonCiDQ8rl",
+    "name": "Nicola D'Auria",
+    "url": "https://www.facebook.com/nicola.dauria.79",
+    "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/310521790_10221025177755933_6822670776594641514_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=cpviGcMXJrUQ7kNvwHO3PH3&_nc_oc=Adquye2jCwjRulXsTRNpKN4t5oS4S-B1qIaUeK-rW5OcY1zevaIsacKalJT13q37BAU&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQMI32WMcEp2JV-vqKPrHojYZqF8-AkEpzG7KSM6YSSTHA&oe=6ADBC4D1",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0xuYFJXi6hvRBKyXt6AyGnKENs63nd21KtTP1LgLn72bBAaSQfFEN5DAvonCiDQ8rl",
+     "name": "Nicola D'Auria",
+     "url": "https://www.facebook.com/nicola.dauria.79",
+     "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/310521790_10221025177755933_6822670776594641514_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=cpviGcMXJrUQ7kNvwHO3PH3&_nc_oc=Adquye2jCwjRulXsTRNpKN4t5oS4S-B1qIaUeK-rW5OcY1zevaIsacKalJT13q37BAU&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQMI32WMcEp2JV-vqKPrHojYZqF8-AkEpzG7KSM6YSSTHA&oe=6ADBC4D1",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/841501306_10233287231939624_2588239015016216472_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=pPpsYxMsUEsQ7kNvwHfAGQ5&_nc_oc=Adohqf_9VQl6w0vDWg6ZYtkWp2nK9j6-BZwRRxvmITCbMhL1sd7JYUPZo-tvJ1s-2dQ&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQOMK4NhbG_MvKPFselSg1GBkFcrYVJBFBNBx_LVQb0ieQ&oe=6ADBBBF6",
+    "height": 1200,
+    "width": 1600,
+    "id": "10233287231859622"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1663822512102520",
+   "shares_id": "1663822512102520",
+   "associated_group_id": "956504212834357",
+   "associated_group": {
+    "group_id": "956504212834357",
+    "name": "Moto Guzzi V7",
+    "url": "https://www.facebook.com/groups/956504212834357/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1607176084433830",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/956504212834357/posts/1607176084433830/",
+   "message": "Ciao a tutti,\nHo serie difficoltà nel trovare il \"folle\", sulla mia guzzi v7 del 2025. Guido la moto da anni, ho avuto in precedenza ktm duke 790 e ducati scrambler nightshift e solo sulla guzzi ho riscontrato questo problema.\n\nInoltre sono deluso dal \"sound\", che è sempre stato un segno distintivo della guzzi ma con queste regole euro 5 purtroppo si è perso la magia. La soluzione potrebbe essere montare un Mistral/Agostini ma il prezzo è troppo alto...\n\nC'è qualcun'altro che ha riscontrato lo stesso problema con il folle? Soluzioni alternative per il sound??\n\nA parte ciò sono lo stesso felice della mia Guzzi!\n\nBuona strada a tutti!",
+   "message_rich": "Ciao a tutti,\nHo serie difficoltà nel trovare il \"folle\", sulla mia guzzi v7 del 2025. Guido la moto da anni, ho avuto in precedenza ktm duke 790 e ducati scrambler nightshift e solo sulla guzzi ho riscontrato questo problema.\n\nInoltre sono deluso dal \"sound\", che è sempre stato un segno distintivo della guzzi ma con queste regole euro 5 purtroppo si è perso la magia. La soluzione potrebbe essere montare un Mistral/Agostini ma il prezzo è troppo alto...\n\nC'è qualcun'altro che ha riscontrato lo stesso problema con il folle? Soluzioni alternative per il sound??\n\nA parte ciò sono lo stesso felice della mia Guzzi!\n\nBuona strada a tutti!",
+   "timestamp": 1786453450,
+   "comments_count": 84,
+   "reactions_count": 102,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 98,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0HByHEtizSsp8185fAqXaQTntWejTtGXvoqh1ZMbv2Fc9g7jfurpJpo91G8i7D5q9l",
+    "name": "Mariano Silvestro",
+    "url": "https://www.facebook.com/mariano.silvestro.7",
+    "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/132034990_10225599185436598_8488789016579744167_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=NEre2kT_IHcQ7kNvwHf2Ht4&_nc_oc=AdpiXMSnfMkBx2h8qOle8qMqSWKq_aUboddT7WMDH9i4dgsHpiSL5t4m4T-EbuDtnpg&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNE3gSUFSxW15dZ9y72CiM-wEwOpINqbYQnmnvd4Gbv3g&oe=6AFD6087",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0HByHEtizSsp8185fAqXaQTntWejTtGXvoqh1ZMbv2Fc9g7jfurpJpo91G8i7D5q9l",
+     "name": "Mariano Silvestro",
+     "url": "https://www.facebook.com/mariano.silvestro.7",
+     "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/132034990_10225599185436598_8488789016579744167_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=NEre2kT_IHcQ7kNvwHf2Ht4&_nc_oc=AdpiXMSnfMkBx2h8qOle8qMqSWKq_aUboddT7WMDH9i4dgsHpiSL5t4m4T-EbuDtnpg&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNE3gSUFSxW15dZ9y72CiM-wEwOpINqbYQnmnvd4Gbv3g&oe=6AFD6087",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/770641583_10243207786200612_8779897363594276974_n.jpg?stp=cp6_dst-jpegr_s1080x2048_tt6&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=fzoaJc9snmYQ7kNvwEnzFR1&_nc_oc=Adr58Z3A2ocGmp1CUni2OhHC1g3lXBmmLW1QeIiRQm4jSXu1_PYXi-gHKKSCVaoM1dA&_nc_zt=23&se=-1&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQMnBkCq09UqWSkxuRarkHm5I6w8SOoXbUZjEhY9quXrXg&oe=6ADBD5C2",
+    "height": 1080,
+    "width": 1080,
+    "id": "10243207786160611"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1607176084433830",
+   "shares_id": "1607176084433830",
+   "associated_group_id": "956504212834357",
+   "associated_group": {
+    "group_id": "956504212834357",
+    "name": "Moto Guzzi V7",
+    "url": "https://www.facebook.com/groups/956504212834357/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122129240529118475",
+   "type": "post",
+   "url": "https://www.facebook.com/carzoneeiraq/posts/pfbid0335SQkDYjcaWhomGPxyMBLqD7eVthd1FF1qja58Tcp9LwVVuMCdnWWdRFEhDU2TtSl",
+   "message": "بۆ فرۆشتن/للبيع\n\nهافال V7 HEV 2026\n📍 المنصور\nعدد الأميال: 500 كم\n\n💰 السعر :: اطلبه بالتعليقات يصلك خاص\n\n#CarZoneIQ",
+   "message_rich": "بۆ فرۆشتن/للبيع\n\nهافال V7 HEV 2026\n📍 المنصور\nعدد الأميال: 500 كم\n\n💰 السعر :: اطلبه بالتعليقات يصلك خاص\n\n#CarZoneIQ",
+   "timestamp": 1792012885,
+   "comments_count": 1,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61583554255160",
+    "name": "CarZone IQ",
+    "url": "https://www.facebook.com/carzoneeiraq",
+    "profile_picture_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/646814139_1759108895473867_848740770995297140_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=J7D5Ydb7DXAQ7kNvwH806KH&_nc_oc=AdpFL3A5Noh3tdRVdhofHcFgDPfzfJMwAbLeQ7xo4MMfHkDHygeD2S8sp2u7qRBd9QQ&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQM2EGoZEuoW0JJa1Bm4m8zqqF4RsoPQf0bYtoVYhJ32SA&oe=6ADBEA0B",
+    "delegate_page_id": "1068940156291712"
+   },
+   "authors": [
+    {
+     "id": "61583554255160",
+     "name": "CarZone IQ",
+     "url": "https://www.facebook.com/carzoneeiraq",
+     "profile_picture_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/646814139_1759108895473867_848740770995297140_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=J7D5Ydb7DXAQ7kNvwH806KH&_nc_oc=AdpFL3A5Noh3tdRVdhofHcFgDPfzfJMwAbLeQ7xo4MMfHkDHygeD2S8sp2u7qRBd9QQ&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQM2EGoZEuoW0JJa1Bm4m8zqqF4RsoPQf0bYtoVYhJ32SA&oe=6ADBEA0B",
+     "delegate_page_id": "1068940156291712"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/846368180_122129240319118475_3510452431739338038_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Bihh_hzNw0kQ7kNvwF5UaVN&_nc_oc=AdoqoHNe1LNcyt_bLdgYMO30LM47GBd-iFJiONdyOLC-LD-zoeXmb2-NwuSHsJFIqNU&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQM8zw3NVBRaP3HBsfyS1b_L-qJjoq4M5aayJBdBrF1HaQ&oe=6ADBEF1B",
+     "url": "https://www.facebook.com/photo.php?fbid=122129240277118475&set=a.122094339753118475&type=3",
+     "id": "122129240277118475"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/849076624_122129240439118475_3367048312276884522_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-P4c5pPWYK0Q7kNvwGmU8ap&_nc_oc=AdrrqUUp4FCSa6joUjLiG1k3Ybzqp0dnsqtH9YAhgZWgfKgzq_G8a891J_1L-PmWFkg&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNUODp_fOr3bq61_g_DW0vEkXjDes3B4k4wXtFs7uRZNg&oe=6ADBD858",
+     "url": "https://www.facebook.com/photo.php?fbid=122129240427118475&set=a.122094339753118475&type=3",
+     "id": "122129240427118475"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/850961323_122129240247118475_1474850669277998617_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=krhVpPG17pwQ7kNvwEQGRnJ&_nc_oc=AdpM098skZDGKAkIf0Moo5VR9hEAyzUTG8BN6KAd4kMb0nDGi8zS7o2afbC8Ml94R9Q&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNhLH8rCkEkQH1P2DpmsRVEvzexESuUdaVmq3Vg2sxrBQ&oe=6ADBCE1D",
+     "url": "https://www.facebook.com/photo.php?fbid=122129240241118475&set=a.122094339753118475&type=3",
+     "id": "122129240241118475"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/848045206_122129240325118475_7127135425476763389_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=e_QPA0gbpSYQ7kNvwGOHclk&_nc_oc=Adr3gAM8CE-rz7XYETYV3-fc_MZOsmEwwcE2Pen14I98jJ77ofk5EwXkPePMThMurOk&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNzaL6-8SF4BE1knmI38hghvjJVrgVLYd833TMu7vi06A&oe=6ADBD7BD",
+     "url": "https://www.facebook.com/photo.php?fbid=122129240289118475&set=a.122094339753118475&type=3",
+     "id": "122129240289118475"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/850534819_122129240229118475_3265366586258870372_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dcY09y5I6xkQ7kNvwGJJd-S&_nc_oc=AdodP0qqu0xeFVXby0sxygv_VyC9vlqys17igFkzq40K7wdpjVZvQb-JXqqHHukZvf0&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNjaEj3KtyeTbfGSAv9tPBk1KwBzm66baduR2DQ9WQWsA&oe=6ADBD646",
+     "url": "https://www.facebook.com/photo.php?fbid=122129240217118475&set=a.122094339753118475&type=3",
+     "id": "122129240217118475"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122129240529118475",
+   "shares_id": "122129240529118475",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 6,
+   "top_comments": []
+  },
+  {
+   "post_id": "122305532726174849",
+   "type": "post",
+   "url": "https://www.facebook.com/NosignalAuto/posts/pfbid0NdNQnCQ7aVgCb1StS3gdKk243xjWvf31ffNBXpWFifndp36ybGy3jdQj2RNnFDwNl",
+   "message": "..\nوصول دفعه من هافال V7 \nموديلات 2027 \nتسليم فوري\nجميع الالوان الخارجية جميع الالوان الداخلية \n\nارقام فريق المبيعات\n\n0097460003591\n0097460003592",
+   "message_rich": "..\nوصول دفعه من هافال V7 \nموديلات 2027 \nتسليم فوري\nجميع الالوان الخارجية جميع الالوان الداخلية \n\nارقام فريق المبيعات\n\n0097460003591\n0097460003592",
+   "timestamp": 1792080142,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61555245496968",
+    "name": "Nosignal Auto",
+    "url": "https://www.facebook.com/NosignalAuto",
+    "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/419862817_122110140062174849_8971031019321489478_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=pzskwJB_N9sQ7kNvwGG4iRz&_nc_oc=Adru-M1yBSoqNB8SUxwG0GqbkTkGeyxp-z1yJEdnEEN6YnAFJ4nyZs4DoCQBnKBnIhY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNLBN5yDOy6PajgTnICEffcrh7o3twtre3lMdQKNTxdBQ&oe=6ADBD1CB",
+    "delegate_page_id": "160207053852451"
+   },
+   "authors": [
+    {
+     "id": "61555245496968",
+     "name": "Nosignal Auto",
+     "url": "https://www.facebook.com/NosignalAuto",
+     "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/419862817_122110140062174849_8971031019321489478_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=pzskwJB_N9sQ7kNvwGG4iRz&_nc_oc=Adru-M1yBSoqNB8SUxwG0GqbkTkGeyxp-z1yJEdnEEN6YnAFJ4nyZs4DoCQBnKBnIhY&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNLBN5yDOy6PajgTnICEffcrh7o3twtre3lMdQKNTxdBQ&oe=6ADBD1CB",
+     "delegate_page_id": "160207053852451"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/845844732_122305229960174849_3276322896843546375_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=q7qHY7Q72PwQ7kNvwE9okLq&_nc_oc=AdpEIS38K1W4sTRra33A4W1Qv3W08LhziHxxUT2jfXCzV6j_LYUpeeBK9EYsl9VAEUA&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQPpt1PWVXSHp2eh8uKHz27bjSxNowbo4Og-cPqaCQMuWg&oe=6ADBD331",
+    "height": 1350,
+    "width": 1080,
+    "id": "122305532684174849"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122305532726174849",
+   "shares_id": "122305532726174849",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1544573707712941",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2475696519587630/",
+   "message": "بسعر يبدأ من 1,825 مليون .. أول ظهور لهافال V7 الهجينة في مصر",
+   "message_rich": "بسعر يبدأ من 1,825 مليون .. أول ظهور لهافال V7 الهجينة في مصر",
+   "timestamp": 1790096516,
+   "comments_count": 5,
+   "reactions_count": 215,
+   "reshare_count": 5,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 214,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064809789710",
+    "name": "Alam ElSyarat - مجلة عالم السيارات",
+    "url": "https://www.facebook.com/AlamElSyarat.net",
+    "profile_picture_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/825266995_1548600743976904_7009891937723989794_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=K30e7PwPqtcQ7kNvwE_YHrj&_nc_oc=AdogHquQ-XE_ML9ieN8V9uL-DXef2uzZMXt0pMWUdxGwjniG-pyuHfoAKyTTK5vQgss&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNwDCWUfnpvBJfP9PcACTRRxLwRNkUCsYJBQbuLzjEYTA&oe=6ADBC345",
+    "delegate_page_id": "440178909470492"
+   },
+   "authors": [
+    {
+     "id": "100064809789710",
+     "name": "Alam ElSyarat - مجلة عالم السيارات",
+     "url": "https://www.facebook.com/AlamElSyarat.net",
+     "profile_picture_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-1/825266995_1548600743976904_7009891937723989794_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=K30e7PwPqtcQ7kNvwE_YHrj&_nc_oc=AdogHquQ-XE_ML9ieN8V9uL-DXef2uzZMXt0pMWUdxGwjniG-pyuHfoAKyTTK5vQgss&_nc_zt=24&_nc_ht=scontent-atl3-2.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQNwDCWUfnpvBJfP9PcACTRRxLwRNkUCsYJBQbuLzjEYTA&oe=6ADBC345",
+     "delegate_page_id": "440178909470492"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2475696519587630/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-atl3-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQPFtPH6nnXnd8FggtDRxD4zovAsCKREPQxan5Hzse3eVTP7UGJcEAAntJG42QbhrQYG7hlWvFiMff7s_sRs5l315IPQf1MRC7vxiBic8A.mp4?_nc_cat=110&_nc_sid=8bf8fe&_nc_ht=video-atl3-1.xx.fbcdn.net&_nc_ohc=qCxoT0yQ8f0Q7kNvwHnbkxH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNTk4MzEyMTY1MDAzNjU1LCJhc3NldF9hZ2VfZGF5cyI6MjYsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&_nc_zt=28&oh=00_AQPe2xIvpIsqzWedJzidtLYq_wAzd0uWw_H3SttXlNMe0A&oe=6ADBB84C&bitrate=320913&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video-atl3-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQPJgf58D65pdCKRWNfPMYOdNURQz_xsVGZ7xcIK2ZvBlHqt9QSdZQkJvPTkMaE-4uqMK6u_sr_RRhnyFfyseQe4x9HvBmQrYxkcZ4nwdQ.mp4?_nc_cat=110&_nc_sid=8bf8fe&_nc_ht=video-atl3-1.xx.fbcdn.net&_nc_ohc=Gkl4TetkyisQ7kNvwFKkWE3&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxNTk4MzEyMTY1MDAzNjU1LCJhc3NldF9hZ2VfZGF5cyI6MjYsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&_nc_zt=28&oh=00_AQPonuD3mtH1yYgaX7kVPF5_2CWCEEbASSbfLbT9K752Bg&oe=6ADBE35C&bitrate=1611625&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-atl3-1.xx.fbcdn.net/v/t51.82787-10/808210133_18471063979118168_7143467686304484603_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=oPFAB_HCvBYQ7kNvwFiMMa2&_nc_oc=Adr6Nl_fKNku9j28XizgUToq_lj08vYMmBZ4LRezVjtPgNXuNLzVFbL1CJOO7pKjtmw&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQMq32OxG5LJwIvCYCR5ETqFdUph12snytYEqZS4M4ZqZg&oe=6ADBD13B",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1544573707712941",
+   "shares_id": "1544573707712941",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1662176305600474",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/956504212834357/posts/1662176305600474/",
+   "message": "Rte 66 in Arcadia Oklahoma…\nSuch an unexpectedly fun bike to ride…love the exhaust notes.",
+   "message_rich": "Rte 66 in Arcadia Oklahoma…\nSuch an unexpectedly fun bike to ride…love the exhaust notes.",
+   "timestamp": 1791766686,
+   "comments_count": 12,
+   "reactions_count": 189,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 173,
+    "love": 16,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100004492721842",
+    "name": "Hugh Hightower",
+    "url": "https://www.facebook.com/hugh.hightower",
+    "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/384470723_2488071728019227_1099869352354392104_n.jpg?stp=c342.0.1365.1365a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Tsvaoa4AjJgQ7kNvwFm1Liu&_nc_oc=Adq4XlZF0SVp2u6YswQkxIwfu5eEC4DxEdBdtlOO-oe1HYYv5i_6oT1BCvMLlOe76pQ&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQOk9QxWJUy9ssnAX0rWI-ywWgOsYafY_0TBw2jY1h104w&oe=6ADBE224",
+    "delegate_page_id": "164807630053024"
+   },
+   "authors": [
+    {
+     "id": "100004492721842",
+     "name": "Hugh Hightower",
+     "url": "https://www.facebook.com/hugh.hightower",
+     "profile_picture_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/384470723_2488071728019227_1099869352354392104_n.jpg?stp=c342.0.1365.1365a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Tsvaoa4AjJgQ7kNvwFm1Liu&_nc_oc=Adq4XlZF0SVp2u6YswQkxIwfu5eEC4DxEdBdtlOO-oe1HYYv5i_6oT1BCvMLlOe76pQ&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQOk9QxWJUy9ssnAX0rWI-ywWgOsYafY_0TBw2jY1h104w&oe=6ADBE224",
+     "delegate_page_id": "164807630053024"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/840363812_3513014525524937_7665125635186607117_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=C9TLFZ-7xFcQ7kNvwGhL7HR&_nc_oc=AdoO2VzaKeny7vFyXgDlF4YDXlVzg9m3wLkXf1WD19Opq1fo2BXS8D_oVUL-E1Vr4co&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=Usaq3HOpevlwR98pvLLdHA&_nc_ss=70289&oh=00_AQMo4ZvqOqTFyhWATneA_a6uIuX0bg3o9WtbtTCuOhkEpw&oe=6ADBD790",
+    "height": 1440,
+    "width": 1080,
+    "id": "3513018515524538"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1662176305600474",
+   "shares_id": "1662176305600474",
+   "associated_group_id": "956504212834357",
+   "associated_group": {
+    "group_id": "956504212834357",
+    "name": "Moto Guzzi V7",
+    "url": "https://www.facebook.com/groups/956504212834357/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122306849030238454",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0ai4XRH92AAvQz5oTJmuHPcpCits4SEzGNVhxNQZJnET19xcSP7x93yRQii6VHTb1l&id=61557153634350",
+   "message": "جديد بمجمع SEVEN رهط\nضيف جديد وصل \nARAD 😍",
+   "message_rich": "جديد بمجمع SEVEN رهط\nضيف جديد وصل \nARAD 😍",
+   "timestamp": 1785223371,
+   "comments_count": 0,
+   "reactions_count": 5,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 4,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61557153634350",
+    "name": "رهط SEVEN",
+    "url": "https://www.facebook.com/people/%D8%B1%D9%87%D8%B7-SEVEN/61557153634350/",
+    "profile_picture_url": "https://scontent.fsrz1-2.fna.fbcdn.net/v/t39.30808-1/778950245_122310239852238454_4877562984997169377_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=lw7Oiwzjt2gQ7kNvwE8Gg_5&_nc_oc=AdpZ20fcv2TEgNeNEwHgrt9DibxCIvlMzrMRUSosyjMGCc8ExrIMwzcb62ITYq4Hgfk&_nc_zt=24&_nc_ht=scontent.fsrz1-2.fna&_nc_gid=EY-uuv48wzuOLtHI5dbyMg&_nc_ss=70289&oh=00_AQPeIwgrWQgDHlTP1ormMfm8dz3GIJSVtzKKuerd0OP9Lg&oe=6ADBEF58",
+    "delegate_page_id": "217981221407745"
+   },
+   "authors": [
+    {
+     "id": "61557153634350",
+     "name": "رهط SEVEN",
+     "url": "https://www.facebook.com/people/%D8%B1%D9%87%D8%B7-SEVEN/61557153634350/",
+     "profile_picture_url": "https://scontent.fsrz1-2.fna.fbcdn.net/v/t39.30808-1/778950245_122310239852238454_4877562984997169377_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=lw7Oiwzjt2gQ7kNvwE8Gg_5&_nc_oc=AdpZ20fcv2TEgNeNEwHgrt9DibxCIvlMzrMRUSosyjMGCc8ExrIMwzcb62ITYq4Hgfk&_nc_zt=24&_nc_ht=scontent.fsrz1-2.fna&_nc_gid=EY-uuv48wzuOLtHI5dbyMg&_nc_ss=70289&oh=00_AQPeIwgrWQgDHlTP1ormMfm8dz3GIJSVtzKKuerd0OP9Lg&oe=6ADBEF58",
+     "delegate_page_id": "217981221407745"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsrz1-2.fna.fbcdn.net/v/t39.30808-6/757563650_122306848910238454_6018967745332613799_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=q2H0Q2Qkn_YQ7kNvwGQY7SJ&_nc_oc=Adqz020HJ8IeuAdALE8neAly5LG5OuQjVRiHbeatGVBDNiOdksS80w31s3bx9qRr-nI&_nc_zt=23&_nc_ht=scontent.fsrz1-2.fna&_nc_gid=EY-uuv48wzuOLtHI5dbyMg&_nc_ss=70289&oh=00_AQM5yPdZWBy2PGDbEFYn5rO4qSTSHayiNhCnBaIimAZ_Ig&oe=6ADBBB47",
+     "url": "https://www.facebook.com/photo.php?fbid=122306848904238454&set=a.122120965958238454&type=3",
+     "id": "122306848904238454"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fsrz1-1.fna.fbcdn.net/v/t39.30808-6/758647337_122306848940238454_7034862797032263499_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xrn1mprXYO8Q7kNvwF0WtXn&_nc_oc=AdoV43IwLqfhGHTotvMyatsmzBMncj-EmsupEq7556Xzs1GuYefMpjvToP6aPi3t7Dw&_nc_zt=23&_nc_ht=scontent.fsrz1-1.fna&_nc_gid=EY-uuv48wzuOLtHI5dbyMg&_nc_ss=70289&oh=00_AQPeitdKBYjn0o3xwoIzpJnuKsHVSDNAQ3cmirsZJu7qzg&oe=6ADBE002",
+     "url": "https://www.facebook.com/photo.php?fbid=122306848934238454&set=a.122120965958238454&type=3",
+     "id": "122306848934238454"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122306849030238454",
+   "shares_id": "122306849030238454",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  }
+ ]
+}

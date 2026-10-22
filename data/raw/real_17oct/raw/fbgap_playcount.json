@@ -1,0 +1,66 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/reel/1807300737278091/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1740716823817554/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/2258238494941774/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1376978311275889/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1130641049532209/"
+   }
+  ]
+ },
+ "cap_usd": 0.05,
+ "run": {
+  "id": "A1h3qvpfyFNh0bBKY",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:14:18.619Z",
+  "finishedAt": "2026-10-19T08:14:26.825Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 4,
+   "apify-default-dataset-item": 1
+  },
+  "usageTotalUsd": 0.0042
+ },
+ "cost_usd": 0.1178,
+ "items": [
+  {
+   "url": "https://www.facebook.com/reel/1130641049532209/",
+   "video_id": "1130641049532209",
+   "play_count": 7681,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1807300737278091/",
+   "video_id": "1807300737278091",
+   "play_count": 15787,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/2258238494941774/",
+   "video_id": "2258238494941774",
+   "play_count": 1319,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1740716823817554/",
+   "video_id": "1740716823817554",
+   "play_count": 1213,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1376978311275889/",
+   "video_id": "1376978311275889",
+   "play_count": 2185,
+   "status": "ok"
+  }
+ ]
+}

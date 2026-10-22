@@ -1,0 +1,642 @@
+{
+ "input": {
+  "query": "V7 soda",
+  "search_type": "posts",
+  "max_results": 10,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.06,
+ "run": {
+  "id": "0qljcuQm5g3pHtmDa",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T07:57:00.342Z",
+  "finishedAt": "2026-10-19T07:57:27.702Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.2989,
+ "items": [
+  {
+   "post_id": "28256083687357565",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1305102008366166/",
+   "message": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "message_rich": "Tried the new Cream Soda from V7 🩵🍦🍒",
+   "timestamp": 1786275567,
+   "comments_count": 4,
+   "reactions_count": 23,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 3,
+    "haha": 0,
+    "like": 12,
+    "love": 8,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100001479351447",
+    "name": "Kholoud E. Muhamed",
+    "url": "https://www.facebook.com/kholoud.emad221",
+    "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/677595421_26977682358531044_6690423613977353096_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=cdgbiekeLDIQ7kNvwFplY23&_nc_oc=AdoMgKxGC-HspKgrfPveLTdAlKrKXATVO42YYxThqyYmUor3OPTBEUNxYvZ9Tp_hrPg&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQOhy4hQVaZAZVMhKKTdiMgu0RClS2EkeAIbvanUepY6Ug&oe=6ADBABB4",
+    "delegate_page_id": "510230408834923"
+   },
+   "authors": [
+    {
+     "id": "100001479351447",
+     "name": "Kholoud E. Muhamed",
+     "url": "https://www.facebook.com/kholoud.emad221",
+     "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/677595421_26977682358531044_6690423613977353096_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=cdgbiekeLDIQ7kNvwFplY23&_nc_oc=AdoMgKxGC-HspKgrfPveLTdAlKrKXATVO42YYxThqyYmUor3OPTBEUNxYvZ9Tp_hrPg&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQOhy4hQVaZAZVMhKKTdiMgu0RClS2EkeAIbvanUepY6Ug&oe=6ADBABB4",
+     "delegate_page_id": "510230408834923"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1305102008366166/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQM2-_7MgSPtjmWaVp4WvSNTy9J04oFN64NCeXMh0y4YPWOzj9UFUrNaQKUVuATEolGiye_hFq1UfpDeHOcQXM18LW_aLZvuMzzQDsNw9A.mp4?_nc_cat=102&_nc_sid=8bf8fe&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=nloZ0McS4pkQ7kNvwFx6I_W&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxODMxNjg3ODE0NjM3NDkxLCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjozNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&_nc_zt=28&oh=00_AQO3ejN9nKL7Si2ECzN_duqFV-9frjbbiV6AZ73ErKMidg&oe=6ADBB634&bitrate=314620&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQOmuKwBt7ODV5DMcJfFcsgL4aZkokxL5D62XBCdjYYR8-wOdIkinrCdIsicTelkKWgi5aiKS-JDK7lcioT5sVMuRhm8fNzBotsN-SECWQ.mp4?_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=e9fEuSU1Q70Q7kNvwHEmE22&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxODMxNjg3ODE0NjM3NDkxLCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjozNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&_nc_zt=28&oh=00_AQPtkpjeenVoG315YYh3UayZud5PMVPu7Sott3O1LILn3A&oe=6ADB9D0D&bitrate=1262824&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-xxc1-1.xx.fbcdn.net/v/t51.82787-10/772495302_18616822567029112_5383867561107771896_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=AGCagt_RaYAQ7kNvwGxyxl3&_nc_oc=AdqaVkPll4mTlZeCBvV1xCEBlRhxpF9IyRflmrwaHznyzdj-Pwj1mdQ0eZWFn82LWZM&_nc_zt=23&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQOCmp7EKClHWwOrxkyMgtri5e2DVzF6C1HLBd8x9aGOGA&oe=6ADBB0CB",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28256083687357565",
+   "shares_id": "28256083687357565",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1756654146467932",
+   "type": "post",
+   "url": "https://www.facebook.com/SnackWire/posts/pfbid0DnC3YdG3L85hw4nbQcVWUebQFDEnRwFrA1oJgtpPruspZVDZZMxwyJq4imtrg9Ezl",
+   "message": "New & upcoming sodas! There are a lot of new flavors coming through the end of 2026 and into 2027:\n\nPepsi Strawberry Shortcake (Rumored Feb 2027)\nPepsi Vanilla & Cream (Oct 2026)\nSprite Winter Spiced Cranberry (Oct 2026)\nCoca-Cola Holiday Creamy Vanilla (Oct 2026)\n\nMr. Pibb Black Currant (Mar 2027)\nMtn Dew Code Red (May 2027)\nSprite Chill (May 2027)\nCrystal Pepsi (Rumored May 2027)\n\nDr Pepper Ice Cream Float (Feb 2027)\nCoca-Cola Strawberry Float (May 2027)\nCoca-Cola Cherry Lime (Feb 2027)\n7UP Shirley Temple (Oct 2026)\n7UP Miami Vice (Apr 2027)\n\nNote: Some products and dates have not been officially announced and are subject to change.\n\nBig thanks to Team Supernova, SodaSeekers, and Dewspaper for some of the info/images\n\nThoughts?!",
+   "message_rich": "New & upcoming sodas! There are a lot of new flavors coming through the end of 2026 and into 2027:\n\nPepsi Strawberry Shortcake (Rumored Feb 2027)\nPepsi Vanilla & Cream (Oct 2026)\nSprite Winter Spiced Cranberry (Oct 2026)\nCoca-Cola Holiday Creamy Vanilla (Oct 2026)\n\nMr. Pibb Black Currant (Mar 2027)\nMtn Dew Code Red (May 2027)\nSprite Chill (May 2027)\nCrystal Pepsi (Rumored May 2027)\n\nDr Pepper Ice Cream Float (Feb 2027)\nCoca-Cola Strawberry Float (May 2027)\nCoca-Cola Cherry Lime (Feb 2027)\n7UP Shirley Temple (Oct 2026)\n7UP Miami Vice (Apr 2027)\n\nNote: Some products and dates have not been officially announced and are subject to change.\n\nBig thanks to Team Supernova, SodaSeekers, and Dewspaper for some of the info/images\n\nThoughts?!",
+   "timestamp": 1790804368,
+   "comments_count": 440,
+   "reactions_count": 4078,
+   "reshare_count": 2233,
+   "reactions": {
+    "angry": 1,
+    "care": 37,
+    "haha": 4,
+    "like": 3292,
+    "love": 662,
+    "sad": 1,
+    "wow": 81
+   },
+   "author": {
+    "id": "100063700893964",
+    "name": "SnackWire",
+    "url": "https://www.facebook.com/SnackWire",
+    "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/788780822_1725468902919790_156694596187348538_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R1uhKwbCHrwQ7kNvwEc8cGu&_nc_oc=AdpFIeE1Olty4a8JvTaw2RXvzKz5xCoENtvF0KgoJHUn3LsPYRSEbBO7raSDRhQjfEc&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQPp8IqO-mWJOu-S9lZ7qAuF4ERndCWUh67M6PTQBQb8Fw&oe=6ADB880F",
+    "delegate_page_id": "1996359997252320"
+   },
+   "authors": [
+    {
+     "id": "100063700893964",
+     "name": "SnackWire",
+     "url": "https://www.facebook.com/SnackWire",
+     "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/788780822_1725468902919790_156694596187348538_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=R1uhKwbCHrwQ7kNvwEc8cGu&_nc_oc=AdpFIeE1Olty4a8JvTaw2RXvzKz5xCoENtvF0KgoJHUn3LsPYRSEbBO7raSDRhQjfEc&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQPp8IqO-mWJOu-S9lZ7qAuF4ERndCWUh67M6PTQBQb8Fw&oe=6ADB880F",
+     "delegate_page_id": "1996359997252320"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-6/832322362_1756653433134670_7158996144470480060_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jaFYyJ57JPMQ7kNvwHCSN_Z&_nc_oc=Adp8a0b1WLFo9eoEV04mzW69N0jSwMy8Bi974pG10gaybV9Sgirt5H7iWiIcdSoaZuU&_nc_zt=23&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQNM9uAtr1wOkhfkRXU1kCoN8KSPgtTe4t7LLsjmx-qdRA&oe=6ADB9B9A",
+    "height": 1440,
+    "width": 1080,
+    "id": "1756653426468004"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1756654146467932",
+   "shares_id": "1756654146467932",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1507863564692241",
+   "type": "post",
+   "url": "https://www.facebook.com/Lekkerchocolat/posts/pfbid0xmnX8986ntzAhJGXfb1zX4kvRZgKjyHtNwLgNNMsyEiXuzNDdie9tgEBkWiGydKzl",
+   "message": "✨ جاهزين تجربوا الطعم اللي هيخطف قلوبكم؟ 😍\n\nوصل V7 Cream Soda الجديد! 💙🤍\nطعم كريمي منعش ومختلف، هيخليك تستمتع بكل رشفة من أول مرة! 😋\n\n✅ نكهة كريمية مميزة\n✅ إحساس منعش يناسب حر الصيف ☀️\n✅ مدعم بفيتامينات B6 & B12\n✅ لازم يتجرب وهو ساقع أوي! 🧊\n\nلو من عشاق المشروبات الجديدة… فـ V7 Cream Soda هيبقى اختيارك الجديد بدون منافس! 💥\n\n📍موجود دلوقتي في ليكر بكميات محدودة… الحق جرّبه قبل ما يخلص! 💙\n\n#ليكر_بيحبكم 🤍 #Lekker #V7 #CreamSoda #NewFlavor #مشروبات_مستوردة #صيف_منعش #دمنهو",
+   "message_rich": "✨ جاهزين تجربوا الطعم اللي هيخطف قلوبكم؟ 😍\n\nوصل V7 Cream Soda الجديد! 💙🤍\nطعم كريمي منعش ومختلف، هيخليك تستمتع بكل رشفة من أول مرة! 😋\n\n✅ نكهة كريمية مميزة\n✅ إحساس منعش يناسب حر الصيف ☀️\n✅ مدعم بفيتامينات B6 & B12\n✅ لازم يتجرب وهو ساقع أوي! 🧊\n\nلو من عشاق المشروبات الجديدة… فـ V7 Cream Soda هيبقى اختيارك الجديد بدون منافس! 💥\n\n📍موجود دلوقتي في ليكر بكميات محدودة… الحق جرّبه قبل ما يخلص! 💙\n\n#ليكر_بيحبكم 🤍 #Lekker #V7 #CreamSoda #NewFlavor #مشروبات_مستوردة #صيف_منعش #دمنهو",
+   "timestamp": 1786391015,
+   "comments_count": 53,
+   "reactions_count": 42,
+   "reshare_count": 3,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 21,
+    "love": 20,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064058349659",
+    "name": "Lekker",
+    "url": "https://www.facebook.com/Lekkerchocolat",
+    "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/630346023_1352381046907161_2800026013817928167_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xJ2tVfkYTmkQ7kNvwGDMGDY&_nc_oc=AdrXeeLMLpkv-EIVCHTnKETtcM4OG2OhWdHF6m0ZcYAiiN0V8PzMD14FC-zagK98Mao&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQOLSt9NrXrJpm25KwP79q-ngVdpksgLSj-jwRuyU1iTIg&oe=6ADB8601",
+    "delegate_page_id": "111748840431771"
+   },
+   "authors": [
+    {
+     "id": "100064058349659",
+     "name": "Lekker",
+     "url": "https://www.facebook.com/Lekkerchocolat",
+     "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/630346023_1352381046907161_2800026013817928167_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=xJ2tVfkYTmkQ7kNvwGDMGDY&_nc_oc=AdrXeeLMLpkv-EIVCHTnKETtcM4OG2OhWdHF6m0ZcYAiiN0V8PzMD14FC-zagK98Mao&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQOLSt9NrXrJpm25KwP79q-ngVdpksgLSj-jwRuyU1iTIg&oe=6ADB8601",
+     "delegate_page_id": "111748840431771"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-6/771971701_1507863721358892_3054940925007671200_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iBESCEITv-IQ7kNvwHSoYwb&_nc_oc=AdrjhXWGbNzfiHslLGp6xNoFwGC4hzF3fhVJLl2oJ7KU_Egkdup3sbwi2n9EqjxqvYU&_nc_zt=23&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQMTYoU4yjG_8zXcG8ev03OqtZTMin4XeOCA9gqlPjvF_g&oe=6ADBA493",
+     "url": null,
+     "id": "1507860864692511"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-6/771621567_1507863731358891_5169929981250412921_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Wm-Cpkai5EkQ7kNvwH40lcN&_nc_oc=AdpUId116gf0bK0xLvXE7TtQAMqQwkxi7gg4N5LbZZ_XoXB8EY_IGwgtD2v0pp-di_Y&_nc_zt=23&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQO_Ah340K8YYrY5VN63NhWrj0PTPp8K3U5FbuJJ__QFjA&oe=6ADB9EEC",
+     "url": null,
+     "id": "1507860874692510"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1507863564692241",
+   "shares_id": "1507863564692241",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "1620089363498065",
+   "type": "post",
+   "url": "https://www.facebook.com/7brewcoffee/posts/pfbid02osL7ojipwUEaoAHe7yyxocXrEjavov7Gep544HymmwGKJR3XeANEwDQ4s55NDLm8l",
+   "message": "A scary good sip has surfaced 🍏\n\nDrizzled Apple 7 Fizz™ Soda w/ caramel drizzle: green apple",
+   "message_rich": "A scary good sip has surfaced 🍏\n\nDrizzled Apple 7 Fizz™ Soda w/ caramel drizzle: green apple",
+   "timestamp": 1791122483,
+   "comments_count": 45,
+   "reactions_count": 418,
+   "reshare_count": 45,
+   "reactions": {
+    "angry": 0,
+    "care": 4,
+    "haha": 0,
+    "like": 328,
+    "love": 82,
+    "sad": 0,
+    "wow": 4
+   },
+   "author": {
+    "id": "100064910490989",
+    "name": "7 Brew Coffee",
+    "url": "https://www.facebook.com/7brewcoffee",
+    "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/784232176_1588277353345933_4924522576770228358_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=qAgOKtdDDGkQ7kNvwHMqHYI&_nc_oc=AdpUVSFHm42r865tS2-81L6ue8DdUvzjZ9c5bqsie5BQCNA7tZtR4ICkvB3x3CV5HSA&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQM9SAHOSsXtc6bH904Xce1bpP6u-FwpSRqDb4p-4xNFTw&oe=6ADB9759",
+    "delegate_page_id": "1109462255772119"
+   },
+   "authors": [
+    {
+     "id": "100064910490989",
+     "name": "7 Brew Coffee",
+     "url": "https://www.facebook.com/7brewcoffee",
+     "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/784232176_1588277353345933_4924522576770228358_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=qAgOKtdDDGkQ7kNvwHMqHYI&_nc_oc=AdpUVSFHm42r865tS2-81L6ue8DdUvzjZ9c5bqsie5BQCNA7tZtR4ICkvB3x3CV5HSA&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQM9SAHOSsXtc6bH904Xce1bpP6u-FwpSRqDb4p-4xNFTw&oe=6ADB9759",
+     "delegate_page_id": "1109462255772119"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-6/834420775_1620089250164743_4094464450423125478_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=i3GgQdvqP3cQ7kNvwGdRejB&_nc_oc=AdpnqMJFjlDwvgGuV-RKxrX7nSLZ_kuHuoRJDRaJl8J7RBAcnC41UdaQdx2T03n3vDs&_nc_zt=23&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQOUkBcq2GNgLS9Qt7JOHeBsaO_MVdQMYeC7cC2pO1cOFQ&oe=6ADB8FD8",
+    "height": 1350,
+    "width": 1080,
+    "id": "1620089246831410"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1620089363498065",
+   "shares_id": "1620089363498065",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122384778998007575",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2411179272742599/",
+   "message": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "message_rich": "Cream Soda V7 👀 #omydash #v7 #creamsoda #experiment #drink",
+   "timestamp": 1787841304,
+   "comments_count": 3,
+   "reactions_count": 81,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 75,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61550227269762",
+    "name": "Omar Dash",
+    "url": "https://www.facebook.com/people/Omar-Dash/61550227269762/",
+    "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/465024220_122237752646007575_375717744379079438_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=kIFvL9-b3w8Q7kNvwGt7te4&_nc_oc=Adp6LQFe-rWEhXVb0b1Wk0X4eJu84yV9eYMRpiXjxZHj2aN7-BnMmxQxI_SMRZDeJjc&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQMmhFcu8v2IpDXzinkxUQWgttTVLduT3LizkkLNes-Kug&oe=6ADB8A4B",
+    "delegate_page_id": "120481081141154"
+   },
+   "authors": [
+    {
+     "id": "61550227269762",
+     "name": "Omar Dash",
+     "url": "https://www.facebook.com/people/Omar-Dash/61550227269762/",
+     "profile_picture_url": "https://scontent-xxc1-1.xx.fbcdn.net/v/t39.30808-1/465024220_122237752646007575_375717744379079438_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=kIFvL9-b3w8Q7kNvwGt7te4&_nc_oc=Adp6LQFe-rWEhXVb0b1Wk0X4eJu84yV9eYMRpiXjxZHj2aN7-BnMmxQxI_SMRZDeJjc&_nc_zt=24&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQMmhFcu8v2IpDXzinkxUQWgttTVLduT3LizkkLNes-Kug&oe=6ADB8A4B",
+     "delegate_page_id": "120481081141154"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2411179272742599/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQNmMQN-uAsJoXnzINXpTIRmiLPk05lUtpX0xRjA0xrIsNvVLGM-Ytc7YcAlzgmXWvPdFYvn7dboayMR63GSWRfu4Hpc7b8B_WUfuVGDxw.mp4?_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=6-rt20tJRoUQ7kNvwEz_VnK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjo5NDQ1NjMxOTEyOTA5MzAsImFzc2V0X2FnZV9kYXlzIjo1MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE1MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&_nc_zt=28&oh=00_AQNoPFL7cUKbMd1fGaHkdWTfYA3wNiTNiqmP2MjqjhkEOg&oe=6ADB89F4&bitrate=397489&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video-xxc1-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQPnqg8E550Kz0P13h-6DXcBUcV7wuB8yXIlOzCrPO3Xti8pYomgtdAKUUStW8WAfifZEypHD_VZL_xwaSmoi7KihnKm3-mPhoBKhfvWIg.mp4?_nc_cat=100&_nc_sid=8bf8fe&_nc_ht=video-xxc1-1.xx.fbcdn.net&_nc_ohc=m_AItFmDfzUQ7kNvwH7Q9O6&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjo5NDQ1NjMxOTEyOTA5MzAsImFzc2V0X2FnZV9kYXlzIjo1MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE1MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&_nc_zt=28&oh=00_AQO-kFKjMOVxCnkAGmNdv5-A297YGdA3DyeZVAUV-V3-Hw&oe=6ADB858E&bitrate=2233462&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-xxc1-1.xx.fbcdn.net/v/t51.82787-10/788133303_18557551003074956_862993043095920469_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=pHMsV6xX8iwQ7kNvwEQaHiJ&_nc_oc=AdpGbdnT90d2aaMf2tJ2_r3jSDNcoGOby6iXsmpCsDrOKc5VPo-Q2tLlwd9lLJ4qMW4&_nc_zt=23&_nc_ht=scontent-xxc1-1.xx&_nc_gid=R1kLOlLIHgiV9NBdNWCXCA&_nc_ss=70289&oh=00_AQNB8nOM236rM4ODYz3MhpFkIxy2XBioKoqhtomx9YWqpg&oe=6ADB849F",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122384778998007575",
+   "shares_id": "122384778998007575",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122169792224967438",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0YQwBDTkrK96jhWwWMXoxuWqhwvaoak55EuDLfXKAWhUagCFNg2wJbsEKffwhLg9zl&id=61579023140086",
+   "message": "🇪🇬✨ من مصر إلى ألمانيا وهولندا… V7 وصلت! 🇩🇪🇳🇱\n\nتعلن Montana Frost عن وصول منتجات V7 Sparkling Drink لأول مرة إلى السوق الألماني والهولندي، كمستورد حصري للمنتج.\nV7 Sparkling Drink – 300 ml Can😍\n\n🥤 مجموعة متنوعة من النكهات :\n🍍 Pineapple Malt\n🍎 Apple Malt\n🍋 Lemon Mint & Lime\n🫐 Blueberry\n🍓 Pink Lemonade\n❤️ Pomegranate\n🍍 Piña Colada\n🥤 Super Soda Cola& Diet\n\nنكهات طبيعية 100% مع تشكيلة مميزة تناسب مختلف الأذواق.\n🇪🇬  منتج مصري بمواصفات عالميه\n🇩🇪 متوفر في ألمانيا\n🇳🇱 متوفر في هولندا\n📦 للطلبات والاستفسارات – واتساب فقط:\n📱 +49 2822 95 95 583\n\n الآن في السوق الأوروبي. 🇪🇬🇪🇺\n#V7 #V7SparklingDrink #MontanaFrost #MadeInEgypt #EgyptianProduct #Germany #Netherlands #مشروبات #منتج_مصري #ألمانيا #هولندا",
+   "message_rich": "🇪🇬✨ من مصر إلى ألمانيا وهولندا… V7 وصلت! 🇩🇪🇳🇱\n\nتعلن Montana Frost عن وصول منتجات V7 Sparkling Drink لأول مرة إلى السوق الألماني والهولندي، كمستورد حصري للمنتج.\nV7 Sparkling Drink – 300 ml Can😍\n\n🥤 مجموعة متنوعة من النكهات :\n🍍 Pineapple Malt\n🍎 Apple Malt\n🍋 Lemon Mint & Lime\n🫐 Blueberry\n🍓 Pink Lemonade\n❤️ Pomegranate\n🍍 Piña Colada\n🥤 Super Soda Cola& Diet\n\nنكهات طبيعية 100% مع تشكيلة مميزة تناسب مختلف الأذواق.\n🇪🇬  منتج مصري بمواصفات عالميه\n🇩🇪 متوفر في ألمانيا\n🇳🇱 متوفر في هولندا\n📦 للطلبات والاستفسارات – واتساب فقط:\n📱 +49 2822 95 95 583\n\n الآن في السوق الأوروبي. 🇪🇬🇪🇺\n#V7 #V7SparklingDrink #MontanaFrost #MadeInEgypt #EgyptianProduct #Germany #Netherlands #مشروبات #منتج_مصري #ألمانيا #هولندا",
+   "timestamp": 1786370456,
+   "comments_count": 10,
+   "reactions_count": 10,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 4,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+    "name": "Montana Frost",
+    "url": "https://www.facebook.com/pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+    "profile_picture_url": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/536370851_122112187256967438_2801261395210380990_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tm4t8ayoHBAQ7kNvwH3SWic&_nc_oc=Adp8GuyVG9Y_2GoS9kJ1TCdo_gMGmHI-Y3NJZSX-VxqonLR_eH5sXDci4ykG3moKFVVfEqaK6FXbHukmk5j8994Y&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQM6co3aOeD7_5XayAAQtPFTmzjgKdUtrNSWtQAs3E4trA&oe=6ADBA473",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+     "name": "Montana Frost",
+     "url": "https://www.facebook.com/pfbid0q3v3gEbTPTpXsdzYLKayJ88taHjG14WccbkNFJBoBK9vPvWFxxzy93jNDgMJGTzAl",
+     "profile_picture_url": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/536370851_122112187256967438_2801261395210380990_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tm4t8ayoHBAQ7kNvwH3SWic&_nc_oc=Adp8GuyVG9Y_2GoS9kJ1TCdo_gMGmHI-Y3NJZSX-VxqonLR_eH5sXDci4ykG3moKFVVfEqaK6FXbHukmk5j8994Y&_nc_zt=24&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQM6co3aOeD7_5XayAAQtPFTmzjgKdUtrNSWtQAs3E4trA&oe=6ADBA473",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/768452777_122169792194967438_8785150555074443172_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JTiN6dm9huQQ7kNvwGWRAWp&_nc_oc=Ado0SZXEG_yFNPwDcdh0Xt11t1tncnhTL1xdWbULj2coNc1xys2XPwhqJKPfU0Yj8ApgkftnuH-mV0iiwds6WnxP&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQO9jgTdMTV5h6VrokWYuqaT54nIOmMveDubEz06XKF5Zw&oe=6ADB956C",
+    "height": 1122,
+    "width": 1402,
+    "id": "122169792188967438"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122169792224967438",
+   "shares_id": "122169792224967438",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122118201135259336",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid021BMcM9g5FMXYEwFaYswAg3nwz4UsPRcPCPtiiWwUvyRcYQxK1w3dUaan457ZRKgAl&id=61587780084595",
+   "message": "🔥 Say YES to V Cola! 🔥\n\nDiscover the World’s First Caffeine-Free Cola with 100% Natural Flavors and an incredibly refreshing cola taste.\n\n🥤 Great Cola Taste\n🌿 100% Natural Flavors\n🚫 No Caffeine\n\nNow available across Malawi. Ask for V Super Soda Cola today!\n\n#SayYesToVCola #VSuperSoda #WorldsFirst #CaffeineFreeCola #NaturalFlavors #NutriNova #Malawi",
+   "message_rich": "🔥 Say YES to V Cola! 🔥\n\nDiscover the World’s First Caffeine-Free Cola with 100% Natural Flavors and an incredibly refreshing cola taste.\n\n🥤 Great Cola Taste\n🌿 100% Natural Flavors\n🚫 No Caffeine\n\nNow available across Malawi. Ask for V Super Soda Cola today!\n\n#SayYesToVCola #VSuperSoda #WorldsFirst #CaffeineFreeCola #NaturalFlavors #NutriNova #Malawi",
+   "timestamp": 1783876460,
+   "comments_count": 32,
+   "reactions_count": 984,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 20,
+    "haha": 1,
+    "like": 728,
+    "love": 234,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "61587780084595",
+    "name": "V7Malawi",
+    "url": "https://www.facebook.com/people/V7Malawi/61587780084595/",
+    "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/641435153_122094694755259336_4958722998738740815_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nGoypx-DpMUQ7kNvwHounE1&_nc_oc=AdrHwlJ_CZQuEvbHnMXH-e_Vf8YhJrGHP1-NC3kuHRZ7--9WZ842eZxtlkaeyOyrzG9D50nB3lTDRSh6X9vo0y4N&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPWHxUTTijic8yXe_7Ewetjg1R8ANcf9Uy4Zacv7auZsg&oe=6ADB8794",
+    "delegate_page_id": "976210378915532"
+   },
+   "authors": [
+    {
+     "id": "61587780084595",
+     "name": "V7Malawi",
+     "url": "https://www.facebook.com/people/V7Malawi/61587780084595/",
+     "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/641435153_122094694755259336_4958722998738740815_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nGoypx-DpMUQ7kNvwHounE1&_nc_oc=AdrHwlJ_CZQuEvbHnMXH-e_Vf8YhJrGHP1-NC3kuHRZ7--9WZ842eZxtlkaeyOyrzG9D50nB3lTDRSh6X9vo0y4N&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPWHxUTTijic8yXe_7Ewetjg1R8ANcf9Uy4Zacv7auZsg&oe=6ADB8794",
+     "delegate_page_id": "976210378915532"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/743261674_122118201267259336_1813625834524891063_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=k74ebnEr-gEQ7kNvwFTmjBN&_nc_oc=AdrM5ubKWJeEZIQU8D3HBjyXN26JSvRAQFXFDxvZviP0smVrSDHLurpFaAyFuyNppPFESi7cIMiuFI5ra8tg-9yh&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPbMb5hB5ohT-YYj-SJYkYC-5mJ-8SHc4ytBaAGKtsUWQ&oe=6ADBA7EA",
+     "url": "https://www.facebook.com/photo.php?fbid=122118200799259336&set=a.122108693283259336&type=3",
+     "id": "122118200799259336"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/745235911_122118201321259336_3270152325825488166_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OhQ-TUWnRHYQ7kNvwGfkGrB&_nc_oc=AdpFyDpJTAdzvdBdTHXogsbs_cbDNey0_GAgaSf02SbGQKTPAjH5KQ2PH0EmRvQAaxVql7pYvWYzW-IQer025Uir&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQM8rwwkWd5gJyjk4h5Sz52zwKpg-kDDHdIz_aPouC9fqQ&oe=6ADBA9BE",
+     "url": "https://www.facebook.com/photo.php?fbid=122118200829259336&set=a.122108693283259336&type=3",
+     "id": "122118200829259336"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/745907821_122118201375259336_1676710889654515749_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Mnva0Wi4Vg8Q7kNvwHM9pNo&_nc_oc=AdouQwhKHaZSrTmtWJfFqVXHyVlQIe-NSl7cnUfnNTTQ9o29d5Ecp6BOzJhdXZXlBU1DtTmSK6KKY__QYHCQ3ARm&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQOkYbOx0w-WXPAPj-LzeLQ6G5wmkj0reEwGTCPfy-NNUw&oe=6ADB9B18",
+     "url": "https://www.facebook.com/photo.php?fbid=122118200889259336&set=a.122108693283259336&type=3",
+     "id": "122118200889259336"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122118201135259336",
+   "shares_id": "122118201135259336",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 3,
+   "top_comments": []
+  },
+  {
+   "post_id": "28625200727144462",
+   "type": "post",
+   "url": "https://www.facebook.com/basil.hany.73/posts/pfbid02y2JuZsbxqLHhbqTFojrU3R7m2j7LRmZEuPibP7oKbh5uVEmmKGazC7srrUDhC9dal",
+   "message": "From concept to content 🥤 \nB studio presents our work with V7 \n#photographer #content #dop #advertising #soda",
+   "message_rich": "From concept to content 🥤 \nB studio presents our work with V7 \n#photographer #content #dop #advertising #soda",
+   "timestamp": 1792078208,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100002437497875",
+    "name": "Basil Hany",
+    "url": "https://www.facebook.com/basil.hany.73",
+    "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/716470706_26973036252360926_1628686888360122510_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=qYlZAU72nOgQ7kNvwGLjFz4&_nc_oc=AdoAX8uAiv4DSdk0fDqw-2FzyQR1RNb17SDkTqKwvF9hR6XQQ5KkTX8pYrPh6qw1CT7wPBwfJp0rPBgcfYJQtZ4H&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQOx-ampNd-A0vLK_hu-ihkjyEPtkn-aXDuTZ_0OgOKqPA&oe=6ADBB10F",
+    "delegate_page_id": "1025959697258235"
+   },
+   "authors": [
+    {
+     "id": "100002437497875",
+     "name": "Basil Hany",
+     "url": "https://www.facebook.com/basil.hany.73",
+     "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/716470706_26973036252360926_1628686888360122510_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=qYlZAU72nOgQ7kNvwGLjFz4&_nc_oc=AdoAX8uAiv4DSdk0fDqw-2FzyQR1RNb17SDkTqKwvF9hR6XQQ5KkTX8pYrPh6qw1CT7wPBwfJp0rPBgcfYJQtZ4H&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQOx-ampNd-A0vLK_hu-ihkjyEPtkn-aXDuTZ_0OgOKqPA&oe=6ADBB10F",
+     "delegate_page_id": "1025959697258235"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-lax7-1.xx.fbcdn.net/v/t51.82787-15/813101501_17934452838379684_725230362742942647_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gIeC8bDUT6gQ7kNvwGn1jHw&_nc_oc=Adr6O39hleHwpfVma_wadL7X_VelOo7vLk3iVSGC5Weyh4t-XfTbUQn421-pzf2uTA1pS9wc7bXvqp3jqfKtLexG&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPy_OcZq9xD2Xy9097sDv5IBzIbBW8aHAT-7kxP3rqZ_w&oe=6ADB9AAA",
+    "height": 1350,
+    "width": 1080,
+    "id": "28625200217144513"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28625200727144462",
+   "shares_id": "28625200727144462",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122136340689046092",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid036c6hZFZVDgLLEEDr4By4k3QQjahnGmWXVgCuQoh9tXoW1Hp3QzQRaHE3xkYiTjGDl&id=61581382774955",
+   "message": "🎯 لكل تجار الجملة، الماركت، وأصحاب شبكات التوزيع.. التشكيلة الكاملة من V7 متوفرة الآن بأقوى سعر في السوق! 🎯\n\nعايز منتج سريع الدوران وهامش ربحه مضمون؟ 🤔\nمؤسسة نجلاء البسيوني لتجارة الجملة بتوفرلك مشروب الطاقة والانتعاش V7 بجميع نكهاته المطلوبة في السوق في مكان واحد:\n\n🥤 V7 Super Soda Cola (الطلب الأول في السوق)\n🍇 Blueberry & 🍋 Lemon Mint\n🥥 Pinacolada & 🍎 Pomegranate\n\n💼 مميزات التعامل معانا:\n📦 توافر دائم للكميات: مفيش نقص في أي طعم، طلبك جاهز للتحميل فوراً.\n\n💰 أسعار خاصة وحصرية: خصومات تصاعدية ممتازة للكميات الكبيرة تضمن لك أعلى مكسب.\n\n🤝 شريك معتمد: التزام تام بمواعيد التسليم وجودة البضاعة.\n\nاملا مخزنك وتأكد من مكسبك مع أقوى مشروب في الصيف! 📈\n\n📞 للطلب والاستفسار عن كشف الأسعار وحجم الخصومات:\nتواصل معنا مباشرة عبر الهاتف أو الواتساب على الرقم: 01151937707\n\n#مؤسسة_نجلاء_البسيوني #تجارة_جملة #مواد_غذائية #V7_Egypt #تجار_مصر #سعر_جملة #توزيع #سوبر_ماركت #خصم_كميات",
+   "message_rich": "🎯 لكل تجار الجملة، الماركت، وأصحاب شبكات التوزيع.. التشكيلة الكاملة من V7 متوفرة الآن بأقوى سعر في السوق! 🎯\n\nعايز منتج سريع الدوران وهامش ربحه مضمون؟ 🤔\nمؤسسة نجلاء البسيوني لتجارة الجملة بتوفرلك مشروب الطاقة والانتعاش V7 بجميع نكهاته المطلوبة في السوق في مكان واحد:\n\n🥤 V7 Super Soda Cola (الطلب الأول في السوق)\n🍇 Blueberry & 🍋 Lemon Mint\n🥥 Pinacolada & 🍎 Pomegranate\n\n💼 مميزات التعامل معانا:\n📦 توافر دائم للكميات: مفيش نقص في أي طعم، طلبك جاهز للتحميل فوراً.\n\n💰 أسعار خاصة وحصرية: خصومات تصاعدية ممتازة للكميات الكبيرة تضمن لك أعلى مكسب.\n\n🤝 شريك معتمد: التزام تام بمواعيد التسليم وجودة البضاعة.\n\nاملا مخزنك وتأكد من مكسبك مع أقوى مشروب في الصيف! 📈\n\n📞 للطلب والاستفسار عن كشف الأسعار وحجم الخصومات:\nتواصل معنا مباشرة عبر الهاتف أو الواتساب على الرقم: 01151937707\n\n#مؤسسة_نجلاء_البسيوني #تجارة_جملة #مواد_غذائية #V7_Egypt #تجار_مصر #سعر_جملة #توزيع #سوبر_ماركت #خصم_كميات",
+   "timestamp": 1782996378,
+   "comments_count": 26,
+   "reactions_count": 42,
+   "reshare_count": 15,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 37,
+    "love": 5,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61581382774955",
+    "name": "جملة نجلاء البسيوني",
+    "url": "https://www.facebook.com/people/%D8%AC%D9%85%D9%84%D8%A9-%D9%86%D8%AC%D9%84%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B3%D9%8A%D9%88%D9%86%D9%8A/61581382774955/",
+    "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/685611875_122130822657046092_7566849801256995487_n.jpg?stp=c239.239.546.546a_cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=nSvoqorhL_gQ7kNvwGjXLxd&_nc_oc=Adr3xHk2jWq1cHfo6PQY7P5jNjhKfrYM1Wb3pRqH21P0FXc-3TZSpsRdof5A98hLoR9sO5vnKzbrGGvOs7enffW4&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPUuMdNdGb8SPMuI56sJEhr2Q3B2MfuVx3FhR0-haZXNA&oe=6ADBA025",
+    "delegate_page_id": "850528894800797"
+   },
+   "authors": [
+    {
+     "id": "61581382774955",
+     "name": "جملة نجلاء البسيوني",
+     "url": "https://www.facebook.com/people/%D8%AC%D9%85%D9%84%D8%A9-%D9%86%D8%AC%D9%84%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B3%D9%8A%D9%88%D9%86%D9%8A/61581382774955/",
+     "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/685611875_122130822657046092_7566849801256995487_n.jpg?stp=c239.239.546.546a_cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=nSvoqorhL_gQ7kNvwGjXLxd&_nc_oc=Adr3xHk2jWq1cHfo6PQY7P5jNjhKfrYM1Wb3pRqH21P0FXc-3TZSpsRdof5A98hLoR9sO5vnKzbrGGvOs7enffW4&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPUuMdNdGb8SPMuI56sJEhr2Q3B2MfuVx3FhR0-haZXNA&oe=6ADBA025",
+     "delegate_page_id": "850528894800797"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/736260989_122136340359046092_4937210495403847940_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fJ1oU5YwLFAQ7kNvwGE985H&_nc_oc=AdrsYXtlaeZLMH1I0PfhhZ1mtM3d8GcohgRT3tRZ0k3vf_rqZQJVEH2Y96JLMgWtno32SBH814_ikBm59kafzoWn&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQPQH_eA7nuJm5cpV_ETdCta_tuhpDzpFolPCdabjqclzw&oe=6ADBB3EE",
+    "height": 976,
+    "width": 1076,
+    "id": "122136340353046092"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122136340689046092",
+   "shares_id": "122136340689046092",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1098009822978203",
+   "type": "post",
+   "url": "https://www.facebook.com/abujbara.center/posts/pfbid0EbUmjchZ9sgTWi4nzYVbMZiRLocmsHZ5vkhJGppwsjZEAQV9qAipDmnjdiZraheBl",
+   "message": "🥤✨ V Super Soda… كولا بنكهة منعشة!\n\nاستمتعوا بـ V Cola بطعم الكولا المميز، أو V Diet Cola كخيار خالٍ من السكر، مع انتعاش غازي ومنعش بكل رشفة. 🥤❄️\n\n💙 اختيارك المفضل… كلاسيك أو دايت!\n\n💳 طرق الدفع المتوفرة:\n• بنك فلسطين\n• محفظة بال باي\n• جوال باي\n• البطاقات البنكية\n\n🛒 كل أنواع المشروبات الغازية والمشروبات المنعشة والمواد الغذائية تجدونها في مركز أبو جبارة التجاري!\n\n📍 مركز أبو جبارة التجاري\n\n#مركز_أبو_جبارة_التجاري #V7 #VSuperSoda #VCola #VDietCola #كولا #مشروبات_غازية #مشروبات #انتعاش",
+   "message_rich": "🥤✨ V Super Soda… كولا بنكهة منعشة!\n\nاستمتعوا بـ V Cola بطعم الكولا المميز، أو V Diet Cola كخيار خالٍ من السكر، مع انتعاش غازي ومنعش بكل رشفة. 🥤❄️\n\n💙 اختيارك المفضل… كلاسيك أو دايت!\n\n💳 طرق الدفع المتوفرة:\n• بنك فلسطين\n• محفظة بال باي\n• جوال باي\n• البطاقات البنكية\n\n🛒 كل أنواع المشروبات الغازية والمشروبات المنعشة والمواد الغذائية تجدونها في مركز أبو جبارة التجاري!\n\n📍 مركز أبو جبارة التجاري\n\n#مركز_أبو_جبارة_التجاري #V7 #VSuperSoda #VCola #VDietCola #كولا #مشروبات_غازية #مشروبات #انتعاش",
+   "timestamp": 1791277207,
+   "comments_count": 1,
+   "reactions_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 3,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100083075873592",
+    "name": "مركز أبو جبارة التجاري",
+    "url": "https://www.facebook.com/abujbara.center",
+    "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/480780700_621172470661943_144354111504586399_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kjIQRbQCPqEQ7kNvwGB1i2d&_nc_oc=AdoDmechebCKTJo7Iu4cDb5JQ_TQ7l2qAPldXhrse8ehYtNw805t5PtY9DSHICUbp5p0qabOgnUg1rdjqlbKIzqB&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQOYpmbnr8SsHDsnhLrPg_Rq1CG3AYzZcn64Id1d-4dzSw&oe=6ADB9B8F",
+    "delegate_page_id": "2134375540109826"
+   },
+   "authors": [
+    {
+     "id": "100083075873592",
+     "name": "مركز أبو جبارة التجاري",
+     "url": "https://www.facebook.com/abujbara.center",
+     "profile_picture_url": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-1/480780700_621172470661943_144354111504586399_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kjIQRbQCPqEQ7kNvwGB1i2d&_nc_oc=AdoDmechebCKTJo7Iu4cDb5JQ_TQ7l2qAPldXhrse8ehYtNw805t5PtY9DSHICUbp5p0qabOgnUg1rdjqlbKIzqB&_nc_zt=24&_nc_ht=scontent-lax7-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQOYpmbnr8SsHDsnhLrPg_Rq1CG3AYzZcn64Id1d-4dzSw&oe=6ADB9B8F",
+     "delegate_page_id": "2134375540109826"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/839559502_1097946119651240_8971599930474001803_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=G4lJE_Xv89kQ7kNvwFErqN_&_nc_oc=Adph5acFzzKckbQjV7Xk4q1viX0UdY3uQ0YF3746MhHoOkl-T4LZz6l3PD8BWmi2C1Sbj9qwjipNQCtPbBEi_XwU&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=1ZCtMhrl-pHxI1mHkr7aaA&_nc_ss=70289&oh=00_AQOA4RZeTy8lIukzF-31FWtMxoTI4bpC4dlfWy-Md8bhSA&oe=6ADB8AF9",
+    "height": 1350,
+    "width": 1080,
+    "id": "1098009799644872"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1098009822978203",
+   "shares_id": "1098009822978203",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  }
+ ]
+}

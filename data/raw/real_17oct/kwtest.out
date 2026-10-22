@@ -1,0 +1,15 @@
+--- stage kwtest, spent so far this cycle $16.3291, budget $14.00
+kw_apidojo_1     instagram-scraper-api        SUCCEEDED     10 items  $0.0001  (cap $0.10)  total $16.3292  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+kw_apidojo_2     instagram-scraper-api        SUCCEEDED     10 items  $0.0300  (cap $0.10)  total $16.3592  events {'dataset-item': 0, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+kw_apidojo_3     instagram-scraper-api        SUCCEEDED     10 items  $0.0150  (cap $0.10)  total $16.3742  events {'dataset-item': 1, 'audio-query': 0, 'user-query': 0, 'location-query': 0, 'tag-query': 1, 'single-item-query': 0, 'story-query': 0}
+kw_apify_search  instagram-search-scraper     SUCCEEDED     12 items  $0.0000  (cap $0.12)  total $16.3742  events {'result': 12, 'live-search-result': 0}
+kw_memo23        instagram-reels-search-scrap SUCCEEDED      2 items  $0.0303  (cap $0.10)  total $16.4051  events {'reel-scraped': 2, 'apify-actor-start': 1}
+kw_boolean_1     instagram-boolean-search-scr SUCCEEDED      0 items  $0.0300  (cap $0.10)  total $16.4351  events {'apify-default-dataset-item': 0, 'search-page': 4}
+kw_boolean_2     instagram-boolean-search-scr SUCCEEDED      0 items  $0.0200  (cap $0.10)  total $16.4551  events {'apify-default-dataset-item': 0, 'search-page': 3}
+kw_boolean_3     instagram-boolean-search-scr SUCCEEDED      1 items  $0.0200  (cap $0.10)  total $16.4751  events {'apify-default-dataset-item': 1, 'search-page': 4}
+kw_dataslayer_1  instagram-search-reels       SUCCEEDED     12 items  $0.0415  (cap $0.05)  total $16.5165  events {'apify-actor-start': 1, 'apify-default-dataset-item': 12}
+kw_dataslayer_2  instagram-search-reels       SUCCEEDED      0 items  $0.0020  (cap $0.05)  total $16.5185  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+kw_dataslayer_3  instagram-search-reels       SUCCEEDED     12 items  $0.0281  (cap $0.05)  total $16.5467  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+kw_dami          instagram-reels-search-scrap SUCCEEDED     26 items  $0.0418  (cap $0.05)  total $16.5884  events {'item': 25, 'apify-actor-start': 1, 'reel-checked': 18}
+kw_seemuapps     instagram-keyword-posts-scra SUCCEEDED     24 items  $0.0044  (cap $0.10)  total $16.5928  events {'post-result': 24, 'filtered-search-page': 5}
+--- stage kwtest done, spent this cycle $16.5928

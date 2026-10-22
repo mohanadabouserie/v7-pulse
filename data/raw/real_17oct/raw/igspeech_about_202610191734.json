@@ -1,0 +1,336 @@
+{
+ "input": {
+  "bulkUrls": [
+   "https://www.instagram.com/p/Deg7HXpNxMl/",
+   "https://www.instagram.com/p/DdMOYr1Mzii/",
+   "https://www.instagram.com/p/Db-q7xNtdJj/",
+   "https://www.instagram.com/p/DcgEMPQAXyS/",
+   "https://www.instagram.com/p/DdENW8uIFRm/"
+  ],
+  "resultsLimit": 5
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "vd4GXSTn0TUhyqPR5",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:34:54.416Z",
+  "finishedAt": "2026-10-19T14:35:26.832Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 4,
+   "speech2text": 4
+  },
+  "usageTotalUsd": 0.0125
+ },
+ "cost_usd": 0.0273,
+ "items": [
+  {
+   "url": "https://www.instagram.com/p/Deg7HXpNxMl/",
+   "code": "Deg7HXpNxMl",
+   "pk": "4008463659527770917",
+   "id": "POLARIS_4008463659527770917",
+   "title": "سمعت عن عرض الديو ولا لسه 😉\n٢ دابل سماش و ٢ فرايز و ٢ ڤي-كولا بسعر خطير من Four bros 🔥\n\nألحق اطلب دلوقت ومتضيعش الوقت 😎",
+   "img": "",
+   "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m367/AQO_JHmmlmzWv3dWt0vYI1NDXHBgZrHLf3oOp38Dx48tmF8R_q5YFCH-X4MBHZ9LfS3Sh8h4VDoxKulm-FT0g4pM08WeZvyfsDbdg54.mp4?_nc_cat=104&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=KOOYYevpdisQ7kNvwFtfLw-&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfcjJldmV2cDktcjFnZW4ydnA5LWhmcl9xOTAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MTEzMzk3NTA2MjQ0OTU5MSwiYXNzZXRfYWdlX2RheXMiOjQsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozMSwiYml0cmF0ZSI6MzU0Njk5NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=qZzIj_Bch7qEcH4BKdkfHw&_nc_ss=70689&_nc_zt=28&oh=00_AQO-T8cUDQSyhEGkNyciu9tZyrcPdSTw49uB5WuOp6EvpQ&oe=6ADBE12D",
+   "audioUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m78/AQO8WCAEwiIJdPRmkvlGvpfUFu2IMb-0rSXdQmUoy1P19n947x-5hUBBVAyZ3IhIebVdftqfe90Z44FlpN5E2OYisgzN07egUPTET5Q.mp4?_nc_cat=110&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=TL6lcbPsY3EQ7kNvwFJm13K&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxMTMzOTc1MDYyNDQ5NTkxLCJhc3NldF9hZ2VfZGF5cyI6NCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjMxLCJiaXRyYXRlIjo3MDE5MCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=qZzIj_Bch7qEcH4BKdkfHw&_nc_ss=70689&_nc_zt=28&oh=00_AQO9w3I2RiiEwrkQF-R18bTMAxKinOKmXPbsKnkSpY-DUA&oe=6AD7FB33",
+   "duration": 31.466667,
+   "createTime": 1792066268,
+   "likeCount": 56,
+   "commentCount": 0,
+   "userPk": "77461706272",
+   "userName": "fourbroseg",
+   "userFullName": "Four Bros Burger",
+   "avatarUri": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/634915063_17865857028578273_2978943860973606959_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ZTGNMVNoUpAQ7kNvwEAR4NI&_nc_oc=AdosGsUW-pUfDcZtvAnBMW8Vwob7C0CYM1g26inFsHhAraRyNqUaPPIJRZBuehDymLs&_nc_zt=24&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_gid=qZzIj_Bch7qEcH4BKdkfHw&_nc_ss=70689&oh=00_AQOF7sWbfJn0F36Xq6O2yoi1K-7s1K8NXR2ph9FYaiAupQ&oe=6ADC101A",
+   "text": "Walk in the spot, head high by the spot Shorty looking at me like she wanna take it to the top I ain't playing games, I'm just saying what I see You got the curse, I got the keys to the VIP She moves to the left, she drop it to the right Team mic on the mic, she gonna be here all night I ain't talking love, I'm talking good vibes on it You brought your girls, I brought the rum in the corner You want a king, I'm the prince of the flirt Hot damn, got the tits in the ass, I got the strap in the back Hot damn",
+   "segments": [
+    {
+     "start": 0.02,
+     "end": 2.16,
+     "text": " Walk in the spot, head high by the spot"
+    },
+    {
+     "start": 2.16,
+     "end": 4.8,
+     "text": " Shorty looking at me like she wanna take it to the top"
+    },
+    {
+     "start": 4.8,
+     "end": 7.18,
+     "text": " I ain't playing games, I'm just saying what I see"
+    },
+    {
+     "start": 7.18,
+     "end": 9.64,
+     "text": " You got the curse, I got the keys to the VIP"
+    },
+    {
+     "start": 9.64,
+     "end": 12.38,
+     "text": " She moves to the left, she drop it to the right"
+    },
+    {
+     "start": 12.38,
+     "end": 14.96,
+     "text": " Team mic on the mic, she gonna be here all night"
+    },
+    {
+     "start": 14.96,
+     "end": 17.56,
+     "text": " I ain't talking love, I'm talking good vibes on it"
+    },
+    {
+     "start": 17.56,
+     "end": 20.02,
+     "text": " You brought your girls, I brought the rum in the corner"
+    },
+    {
+     "start": 22.8,
+     "end": 25.16,
+     "text": " You want a king, I'm the prince of the flirt"
+    },
+    {
+     "start": 25.16,
+     "end": 30.3,
+     "text": " Hot damn, got the tits in the ass, I got the strap in the back"
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-19T14:34:58.982Z"
+  },
+  {
+   "url": "https://www.instagram.com/p/DdMOYr1Mzii/",
+   "code": "",
+   "pk": "",
+   "id": "",
+   "title": "",
+   "img": "",
+   "videoUrl": "",
+   "audioUrl": "",
+   "duration": 0,
+   "createTime": 0,
+   "likeCount": 0,
+   "commentCount": 0,
+   "userPk": "",
+   "userName": "",
+   "userFullName": "",
+   "avatarUri": "",
+   "text": "",
+   "segments": [],
+   "errMsg": "no audio url found",
+   "timestamp": "2026-10-19T14:35:03.515Z"
+  },
+  {
+   "url": "https://www.instagram.com/p/Db-q7xNtdJj/",
+   "code": "Db-q7xNtdJj",
+   "pk": "3962793547378578019",
+   "id": "POLARIS_3962793547378578019",
+   "title": "تجربه تريند V7 الجديد Cream soda 🥤🥤",
+   "img": "",
+   "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m367/AQPMuocBUcoEGMJIscmT86W0LWfqTC10qG_vKkkk5XddEQE2jjlB086WjxbYV2U-YnfkY5LX-_1f7kq_Z_eLIo5cldpWdRq6zBS24KBqfLHmdA.mp4?_nc_cat=101&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=WDStxXlXpOgQ7kNvwFQzr2a&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MTY0MjU5OTgxNDIzNDcwOCwiYXNzZXRfYWdlX2RheXMiOjY3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NjAsImJpdHJhdGUiOjI2NDk4NzUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=QsiJ_mnAih7cvP5uqPmO1Q&_nc_ss=70689&_nc_zt=28&oh=00_AQPhjEGSFA4YR3vkyn_Ovyien6x0OELh_vfsNTd9_bMquA&oe=6ADC14DB",
+   "audioUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m78/AQOCW0cVKOl8idhPhyUEGa3rDcBAQoo-kajaHLrEa1VHIknyd7YyO4NZT-hUS3GJ_2zPyeftXC-cqRfswKx-KW6yU34l0MkbuaDm7do.mp4?_nc_cat=107&_nc_sid=9ca052&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=lGf4ayx6Yk0Q7kNvwGzDI2o&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxNjQyNTk5ODE0MjM0NzA4LCJhc3NldF9hZ2VfZGF5cyI6NjcsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo2MCwiYml0cmF0ZSI6NTc2OTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=QsiJ_mnAih7cvP5uqPmO1Q&_nc_ss=70689&_nc_zt=28&oh=00_AQP1eHHgLA8Lz6x-6NsR0knHoM3X7NORLZ85yPjOZ9eBZw&oe=6AD803D8",
+   "duration": 60.866665,
+   "createTime": 1786622610,
+   "likeCount": 30,
+   "commentCount": 3,
+   "userPk": "523677685",
+   "userName": "ronyelmasry",
+   "userFullName": "Traveling | Food | Coffee",
+   "avatarUri": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/657363204_18570946486029686_2622946857428928386_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AteK70h4NUAQ7kNvwGLCkR8&_nc_oc=Adq6UC-7xdv0f9ZHo6Qp6SipPyKoVn-J3iAVlbS-wpAKMRjVKhrK8nv8f9KRnErHcqw&_nc_zt=24&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_gid=QsiJ_mnAih7cvP5uqPmO1Q&_nc_ss=70689&oh=00_AQP0AX4R_KxKkEEzdSA1WacW4wvEGocknx6LronX0DF3lA&oe=6ADC14F2",
+   "text": "ترند جديد هنجربه سوا ونشوف هل فعلا هستهل التقربة ولا لا الترند ده حرفيا في كل حتة في التيك توك وانستجرام في كل حتة فأنا لو بيجوا بتاع مبايرات شها روح بيكون في حتة مش لطيفة فيالله بي نجربه سوا ونشوف هل فعلا هستهل التقربة ولا لا يالله بي سبين كريم سودا نسمع التك يا جماعة أوه هيفان شايفين يالله يالله يالله محمسة حسا كنها فيها كوكونات بسم الله حسنا كنها فيها كريمة على نفعة جوز هند التست الكريمة باين فيها اوى اكين فيها وابد كريم كده اللي بنجيبها من ستاربوكس يا جماعة لذيذة منعشة وخصوصا في الحر ده اللي ستين فيها عالي جدا جدا والتوضع فيها حلو اوى فهي منعشة جدا جدا لو انتم من عشاء الوابد كريم هتحبوها اوي اوي اوي هذه يا جماعة كانت اجربة في سيفن بنكهة كلم صودة يا جماعة بس كده هسن لكم بها تجربوها هتقوموا رعائكم في الكومنت اشتركوا في القناة",
+   "segments": [
+    {
+     "start": 0.4,
+     "end": 4.7,
+     "text": " ترند جديد هنجربه سوا ونشوف هل فعلا هستهل التقربة ولا لا"
+    },
+    {
+     "start": 4.7,
+     "end": 9.42,
+     "text": " الترند ده حرفيا في كل حتة في التيك توك وانستجرام في كل حتة"
+    },
+    {
+     "start": 9.42,
+     "end": 12.52,
+     "text": " فأنا لو بيجوا بتاع مبايرات شها روح بيكون في حتة مش لطيفة"
+    },
+    {
+     "start": 12.52,
+     "end": 15,
+     "text": " فيالله بي نجربه سوا ونشوف هل فعلا هستهل التقربة ولا لا"
+    },
+    {
+     "start": 15,
+     "end": 16.82,
+     "text": " يالله بي سبين كريم سودا"
+    },
+    {
+     "start": 16.82,
+     "end": 18.34,
+     "text": " نسمع التك يا جماعة"
+    },
+    {
+     "start": 22,
+     "end": 22.32,
+     "text": " أوه"
+    },
+    {
+     "start": 22.64,
+     "end": 23.22,
+     "text": " هيفان"
+    },
+    {
+     "start": 24.06,
+     "end": 24.42,
+     "text": " شايفين"
+    },
+    {
+     "start": 25.06,
+     "end": 26.84,
+     "text": " يالله يالله يالله محمسة"
+    },
+    {
+     "start": 30.43,
+     "end": 32.71,
+     "text": " حسا كنها فيها كوكونات"
+    },
+    {
+     "start": 32.71,
+     "end": 33.79,
+     "text": " بسم الله حسنا"
+    },
+    {
+     "start": 35.01,
+     "end": 43.01,
+     "text": " كنها فيها كريمة على نفعة جوز هند التست الكريمة باين فيها اوى اكين فيها وابد كريم كده اللي بنجيبها من ستاربوكس يا جماعة"
+    },
+    {
+     "start": 43.01,
+     "end": 47.05,
+     "text": " لذيذة منعشة وخصوصا في الحر ده اللي ستين فيها عالي جدا جدا"
+    },
+    {
+     "start": 47.05,
+     "end": 49.09,
+     "text": " والتوضع فيها حلو اوى فهي منعشة جدا جدا"
+    },
+    {
+     "start": 49.09,
+     "end": 52.01,
+     "text": " لو انتم من عشاء الوابد كريم هتحبوها اوي اوي اوي"
+    },
+    {
+     "start": 52.01,
+     "end": 55.93,
+     "text": " هذه يا جماعة كانت اجربة في سيفن بنكهة كلم صودة يا جماعة"
+    },
+    {
+     "start": 55.93,
+     "end": 59.25,
+     "text": " بس كده هسن لكم بها تجربوها هتقوموا رعائكم في الكومنت"
+    },
+    {
+     "start": 59.25,
+     "end": 60.83,
+     "text": " اشتركوا في القناة"
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-19T14:35:13.124Z"
+  },
+  {
+   "url": "https://www.instagram.com/p/DcgEMPQAXyS/",
+   "code": "DcgEMPQAXyS",
+   "pk": "3972193304535202962",
+   "id": "POLARIS_3972193304535202962",
+   "title": "يالا نجرب v7 cream soda newest addition \n@v7egypt",
+   "img": "",
+   "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m367/AQOpNzE6GblmKOAZIWyXZ0hmhmjWjfhy2At2rD1GPbEHZfFJ4mEsQqow1RVuBOFpbqsbn1WpATL00XqXyUCgubW2-iCC72wuCD0wh0N79EkFTg.mp4?_nc_cat=110&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=xpcLj6lDIqYQ7kNvwFtSx-x&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MTA5NjE2ODU5OTczMDQ1NSwiYXNzZXRfYWdlX2RheXMiOjU0LCJ2aV91c2VjYXNlX2lkIjoxMDgyNywiZHVyYXRpb25fcyI6NDUsImJpdHJhdGUiOjEwNzc2NjMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=hea0eEFINSkJy5ekMc3vXw&_nc_ss=70689&_nc_zt=28&oh=00_AQMd9w60HH5PA5u1pqZMEyj_MXZRJ0pG2k-HWzEOnj_Zog&oe=6ADBF832",
+   "audioUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m78/AQMvs8lkr1XGrI3eiWancJsOfU8lShpmgaUa4TgzkVZOmsVH2lY6g4BuhAB5L3xNs5-DgZaNlFvVCBGkCiFHWj3kmyJBFMHUBKIqD18.mp4?_nc_cat=102&_nc_sid=9ca052&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=i94qMwl5nMkQ7kNvwEEup9R&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxMDk2MTY4NTk5NzMwNDU1LCJhc3NldF9hZ2VfZGF5cyI6NTQsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo0NSwiYml0cmF0ZSI6NTIyNDksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=hea0eEFINSkJy5ekMc3vXw&_nc_ss=70689&_nc_zt=28&oh=00_AQOWqAL_id6Vr5jWKBRhz9urTF8RzxSjaoSQcp4a5mQ-MA&oe=6AD81A87",
+   "duration": 45.718639,
+   "createTime": 1787743121,
+   "likeCount": 3,
+   "commentCount": 5,
+   "userPk": "61139257968",
+   "userName": "ria.okasha",
+   "userFullName": "Ria",
+   "avatarUri": "https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/418352684_7037660436314506_7869380713446703023_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=105&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=a-bclYnoHtYQ7kNvwHVuVSy&_nc_oc=AdpwWH6bn6gvBfe9oARHeh2GeuyB7vPSCiVJl8WnUk8m0llU7lDdb7tuquXTlXb9gmw&_nc_zt=24&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_ss=70689&oh=00_AQONWL7OvIAQHH_gc70928ivEOqtLdSt-_9eT_EXRTYepA&oe=6ADBF8F7",
+   "text": "اه هي الحكة بتدخل في عيني. اجرب معاكم ال V7 كريم صودا الجليدة. يعني كزا حد اجربها خلينا نشوف طعمها عمل ايه مع بعض. ايه والله مش وحشة بس فانيليا. يعني فانيليا. حسنا باكل ايس كريم فانيليا سيح. على كوكتيل يعني لو محطوط فيها سابن ولمونة. هو السامري دي وبيحط فيها فاكهة. يعني لايق انها تكون كوكتيل مش نادي تشرب كده مسلا دو ايه اقولي رأيك. صدا فيها عالية. بيت? اجابتك ما هي? دي طحفة. غريب ما اقرب حاليا. اه يا طعمها بنتي على جوز الهند شوية صح? ممكن عشان كده.",
+   "segments": [
+    {
+     "start": 1.84,
+     "end": 6.34,
+     "text": " اه هي الحكة بتدخل في عيني. اجرب معاكم ال V7 كريم صودا الجليدة."
+    },
+    {
+     "start": 6.56,
+     "end": 18.27,
+     "text": " يعني كزا حد اجربها خلينا نشوف طعمها عمل ايه مع بعض. ايه والله"
+    },
+    {
+     "start": 18.27,
+     "end": 23.11,
+     "text": " مش وحشة بس فانيليا. يعني فانيليا. حسنا باكل ايس كريم فانيليا"
+    },
+    {
+     "start": 23.11,
+     "end": 27.95,
+     "text": " سيح. على كوكتيل يعني لو محطوط فيها سابن ولمونة. هو السامري دي"
+    },
+    {
+     "start": 27.95,
+     "end": 31.63,
+     "text": " وبيحط فيها فاكهة. يعني لايق انها تكون كوكتيل مش نادي تشرب كده"
+    },
+    {
+     "start": 31.63,
+     "end": 37.01,
+     "text": " مسلا دو ايه اقولي رأيك. صدا فيها عالية. بيت? اجابتك ما هي?"
+    },
+    {
+     "start": 37.19,
+     "end": 42.33,
+     "text": " دي طحفة. غريب ما اقرب حاليا. اه يا طعمها بنتي على جوز الهند"
+    },
+    {
+     "start": 42.33,
+     "end": 45.57,
+     "text": " شوية صح? ممكن عشان كده."
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-19T14:35:21.014Z"
+  },
+  {
+   "url": "https://www.instagram.com/p/DdENW8uIFRm/",
+   "code": "DdENW8uIFRm",
+   "pk": "3982366722133873766",
+   "id": "POLARIS_3982366722133873766",
+   "title": "From static design to a character with attitude. 🎨🥤😉\n\n“أنا عطشان… لو عايز تشرب حاجة، مفيش أحسن من V Cola!”\n\nBringing this playful graffiti character to life through AI animation & product storytelling — walk, sip, refresh… and of course, a little wink at the end. ✨\n—\n\nP.s: The coffee table product from the website: AuraMexixo\n\n#AIAnimation #AIProductVideo #ProductAnimation #AICommercial #ProductVisualization",
+   "img": "",
+   "videoUrl": "",
+   "audioUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m78/AQMrIJ7X0AmlJGWG1dlbdDMgyPIRrYlw7D7xg_WSWBL62yb5-8kppSGrK7He6ZCE_2fpTkQL6-fuaTjYRN3iv8ijQfWq1dlDI2deGnI.mp4?_nc_cat=100&_nc_sid=9ca052&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=4gdhK_p-SksQ7kNvwEYlPhw&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxMDk0MzA5ODAwMDQ3NDMxLCJhc3NldF9hZ2VfZGF5cyI6NDAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMCwiYml0cmF0ZSI6NzA2MDgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=ZZod8x3HoLwNx6ow9iA4OA&_nc_ss=70689&_nc_zt=28&oh=00_AQODwnDi8sNCuE2DLbBpIWyPEMdnUXb2-O82gzAJH5BfWw&oe=6AD82401",
+   "duration": 10.052789,
+   "createTime": 1788955162,
+   "likeCount": 2,
+   "commentCount": 0,
+   "userPk": "44257460452",
+   "userName": "mennaviz",
+   "userFullName": "",
+   "avatarUri": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-19/755264054_18116758853476453_8394519702022186069_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=FOE-s2jYoD4Q7kNvwHtJIJ9&_nc_oc=AdrKTQ2V7N8GZbdnmgpAlkhiTC7ZRE4G4KCliH1TNsxr9RCvcks1LrdA5eV_b_3qYfQ&_nc_zt=24&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_gid=ZZod8x3HoLwNx6ow9iA4OA&_nc_ss=70689&oh=00_AQMbBUHGALaujcrZQn_k8WCCSR8FfE-dL9GJw7ElJkgNDQ&oe=6ADBF3EC",
+   "text": "I was thirsty. If you want to drink something, nothing is better than V-Cola.",
+   "segments": [
+    {
+     "start": 2.64,
+     "end": 3.94,
+     "text": " I was thirsty."
+    },
+    {
+     "start": 4.3,
+     "end": 9.18,
+     "text": " If you want to drink something, nothing is better than V-Cola."
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-19T14:35:26.394Z"
+  }
+ ]
+}

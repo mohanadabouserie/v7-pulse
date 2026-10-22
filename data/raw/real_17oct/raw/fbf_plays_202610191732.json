@@ -1,0 +1,174 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0s8UtZ3GEwzyyYtG3btibFQZmVZJ5coi9PxHARJN1U7KD3KYr9ihFhroYFgKJTHkCl&id=61590549725426"
+   },
+   {
+    "url": "https://www.facebook.com/top.one.57024/posts/pfbid0HCBrGMg8wnNVaWP9gZEoDNTbirfazHDWQmyNdS1WP9vEw36o6nTxgYmMqTeTfdxkl"
+   },
+   {
+    "url": "https://www.facebook.com/amira.elkordy/posts/pfbid031ZdkQWP33XbbhCxKS3mGjLhZjPe6qcSu6Px4oGaXN2rEjrtXo97Vpg8CAHm8bDCpl"
+   },
+   {
+    "url": "https://www.facebook.com/hsham.jwkr/posts/pfbid02J6wGzjERS9W51JBZDWFXsQowMEHXKm6nYx2B9M3bt4BojRPc9inexSVqqyEpsN5vl"
+   },
+   {
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0RiN9CNQjB4ifnR1RTtMnWy242jYZf8Eh1eLADvJS4zf14Uac7AQcQ4QdYcL7Zotnl&id=100012093462332"
+   },
+   {
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0BWbMGQoceKVtf6pWMMFg6QmFFJqc6PWrWz5qeHJPe4tpPRp4irtQnCm6kFwAhALsl&id=61590549725426"
+   },
+   {
+    "url": "https://www.facebook.com/XeiNaZz/posts/pfbid0sLH5dsLJa3NCJc1aPThsHFoFP3fC3K2d9NDcRMfjY9M7FDGGcuN9LU4sRUAx6P4el"
+   },
+   {
+    "url": "https://www.facebook.com/groups/pakistaniinmississauga/permalink/3536361196532417/"
+   },
+   {
+    "url": "https://www.facebook.com/geeboooo/posts/pfbid0149dzEQDFHumUdonKwXvXFN8K1r2hFUR5zbbxSsvTbFs1ps8L2WLiGAieFt7yayfl"
+   },
+   {
+    "url": "https://www.facebook.com/groups/1007970134026310/permalink/1523735939116391/"
+   },
+   {
+    "url": "https://www.facebook.com/61578580977326/videos/1353467173322322/?idorvanity=233015961570400"
+   },
+   {
+    "url": "https://www.facebook.com/groups/901969584514305/posts/1824694352241819/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1421557583161165/"
+   },
+   {
+    "url": "https://www.facebook.com/os.sa3d/posts/pfbid0YhyHVqrbJUu9MVHFDM6DdyJUNFpqAiEYVfAnQg7WE29q6v576LW4SDgKCiv9FGU5l"
+   },
+   {
+    "url": "https://www.facebook.com/groups/677423669726563/posts/2204110210391227/"
+   },
+   {
+    "url": "https://www.facebook.com/groups/7687336457980081/posts/27511637128456720/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1203725022180077/"
+   }
+  ]
+ },
+ "cap_usd": 0.14,
+ "run": {
+  "id": "d9wP9ll2mbvnuZyQI",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T14:32:35.598Z",
+  "finishedAt": "2026-10-19T14:32:47.228Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 4,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 0.0002
+ },
+ "cost_usd": 0.0002,
+ "items": [
+  {
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0s8UtZ3GEwzyyYtG3btibFQZmVZJ5coi9PxHARJN1U7KD3KYr9ihFhroYFgKJTHkCl&id=61590549725426",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/top.one.57024/posts/pfbid0HCBrGMg8wnNVaWP9gZEoDNTbirfazHDWQmyNdS1WP9vEw36o6nTxgYmMqTeTfdxkl",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/amira.elkordy/posts/pfbid031ZdkQWP33XbbhCxKS3mGjLhZjPe6qcSu6Px4oGaXN2rEjrtXo97Vpg8CAHm8bDCpl",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/hsham.jwkr/posts/pfbid02J6wGzjERS9W51JBZDWFXsQowMEHXKm6nYx2B9M3bt4BojRPc9inexSVqqyEpsN5vl",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0RiN9CNQjB4ifnR1RTtMnWy242jYZf8Eh1eLADvJS4zf14Uac7AQcQ4QdYcL7Zotnl&id=100012093462332",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0BWbMGQoceKVtf6pWMMFg6QmFFJqc6PWrWz5qeHJPe4tpPRp4irtQnCm6kFwAhALsl&id=61590549725426",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/XeiNaZz/posts/pfbid0sLH5dsLJa3NCJc1aPThsHFoFP3fC3K2d9NDcRMfjY9M7FDGGcuN9LU4sRUAx6P4el",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/groups/pakistaniinmississauga/permalink/3536361196532417/",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/geeboooo/posts/pfbid0149dzEQDFHumUdonKwXvXFN8K1r2hFUR5zbbxSsvTbFs1ps8L2WLiGAieFt7yayfl",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/groups/1007970134026310/permalink/1523735939116391/",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/groups/901969584514305/posts/1824694352241819/",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/os.sa3d/posts/pfbid0YhyHVqrbJUu9MVHFDM6DdyJUNFpqAiEYVfAnQg7WE29q6v576LW4SDgKCiv9FGU5l",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/groups/677423669726563/posts/2204110210391227/",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/groups/7687336457980081/posts/27511637128456720/",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/61578580977326/videos/1353467173322322/?idorvanity=233015961570400",
+   "video_id": "1353467173322322",
+   "play_count": null,
+   "status": "play_count_not_found"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1203725022180077/",
+   "video_id": "1203725022180077",
+   "play_count": 8519,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1421557583161165/",
+   "video_id": "1421557583161165",
+   "play_count": 50,
+   "status": "ok"
+  }
+ ]
+}

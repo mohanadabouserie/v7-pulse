@@ -1,0 +1,723 @@
+{
+ "input": {
+  "query": "ڤي سڤن",
+  "search_type": "posts",
+  "max_posts": 30,
+  "start_date": "2026-06-01",
+  "end_date": "2026-06-30"
+ },
+ "cap_usd": 0.1,
+ "run": {
+  "id": "Rr63KZrmWhIRedVNb",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:13:44.879Z",
+  "finishedAt": "2026-10-19T08:14:07.640Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 15
+  },
+  "usageTotalUsd": 0.03305
+ },
+ "cost_usd": 0.1968,
+ "items": [
+  {
+   "post_id": "122134510635030226",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0MUyE2yX98ZZMC3JYeGqn9p3SnS2UcwEzFsuQAcJ57kj94cc37sWp3r6LACKXwxLEl&id=61580906801719",
+   "message": "ڤي سڤن.. اللي كلنا بنحبه ❤️\n\nمش بس لأنه سهل علينا المقاطعة، لكن كمان علشان جودته البريميوم وطعمه المنعش اللي مفيش عليه كلام 😍\n\n🎉 عرض خاص من النهارده وحتى يوم الخميس:\n\nاشترِ 5 عبوات وخد الـ6 مجانًا 🎁\n\nسارع بالعرض قبل نفاد الكمية!\n\n📌 مع خالد ماركت .. دايماً كسبان 💯\n\nدليفري 🛵 : 01025794322",
+   "author": {
+    "id": "61580906801719",
+    "name": "خــالــد مــاركــت",
+    "url": "https://www.facebook.com/people/%D8%AE%D9%80%D9%80%D8%A7%D9%84%D9%80%D9%80%D8%AF-%D9%85%D9%80%D9%80%D8%A7%D8%B1%D9%83%D9%80%D9%80%D8%AA/61580906801719/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/551086611_122100029541030226_5845200068647975252_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=kg_zUAEx6sUQ7kNvwFB_5MN&_nc_oc=AdovfUoINbjAuGVhB72FeRMq6HA7dsgOxLauHljqnxUb_C9yQJBjXErYO1TmjEP04evgE_hw2K8Fg67tim8dQY7B&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQOmVVFBjKAvBOKW5nOy-5CKoz_qlkxMlPQ5Vgn5LNQdyQ&oe=6ADBB591"
+   },
+   "timestamp": 1780991021,
+   "reactions_count": 9,
+   "comments_count": 2,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 4,
+    "love": 3,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/719202876_122134510611030226_2095061493186311841_n.jpg?stp=dst-jpg_s565x565_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mRge-Ujr-_YQ7kNvwEI3K-l&_nc_oc=Adqcd2nRJlWuITPKeeq88FMmC5TI8yPWTIJEVWlcEWwkHshXobubhn3Blr0R5N94Xd6Ca4k8mi4sFgSYGa6FfOrm&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQOG5Dpu2ugLbul2YDQRS_d0vunGyph0xyeVfcJCm0uj9w&oe=6ADBB669",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTM0NTEwNjM1MDMwMjI2",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTM0NTEwNjM1MDMwMjI2",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "874852475676828",
+   "url": "https://www.facebook.com/Jeonphile/posts/pfbid0c9AqjWVWeUceCatRiHrzPyKw62rE1gVhy9XPE6xBR71kMs8KQWaFKhGMnbsaCc1sl",
+   "message": "وانتو بتنزلو مقاطع من ام ڤي سيڤين ليه دلوقتي",
+   "author": {
+    "id": "pfbid0fTVNHeDjM464tvih8SJvcv9n4rTeCLQ2AqpMunE2g43uFHTJyGoogyJQ6gNkxkEHl",
+    "name": "جونغكوكـ فيليا",
+    "url": "https://www.facebook.com/Jeonphile",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/827855926_961280163700725_6692033413430396187_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=OUgvw_0LCvoQ7kNvwFxP8IP&_nc_oc=AdpnkZRv4s0dc6doiXi9KbzGjkaXjPyA3aJSbjsV9I8i8LPWLqxi7KVy4kbFZcuOElolV3bXG3H8SLRd2Kjo7aND&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQNdZfpwKgJLkDDZS36uxBK_7Qd-eQM3jUABRdiz6zqA0g&oe=6ADB9AC3"
+   },
+   "timestamp": 1782066385,
+   "reactions_count": 3,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 3,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6ODc0ODUyNDc1Njc2ODI4",
+   "shares_id": "ZmVlZGJhY2s6ODc0ODUyNDc1Njc2ODI4",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "992398320179862",
+   "url": "https://www.facebook.com/sti.ven.583431/posts/pfbid02DvbjzF7dDo9sv1qGpFnBtkdwnnAwYmBngZ6JgDeJ7PDYTuh8nXdf4pt3FkMxDCk3l",
+   "message": "🤲🏼🤲🏼\n. \n. \n. \n#بر #شاي #اكسبلور_explore #رمله",
+   "author": {
+    "id": "100082291088938",
+    "name": "Sti Ven",
+    "url": "",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/632300481_892796023473426_8452074156280876173_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=2_uRSApN3gEQ7kNvwHBsJdV&_nc_oc=AdoYxwSMvy3ZTeY7ikEmHX3n3d12GToc6staaiYuUQzgAoMjxxP9mf9MA9ErGZuJEF0yQkBe6jCldQ_ofRRRiHXZ&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQPgxNdylbPV4qoO5d33N2zJ1Kux34hgndnQP0m6YKhRjA&oe=6ADBA1E6"
+   },
+   "timestamp": 1781436614,
+   "reactions_count": 1,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.71878-10/688433415_775258595540931_2558857769656905316_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=--AwHvIO_JsQ7kNvwFQPhDH&_nc_oc=AdqpNnVGwbzesTP4kD3hqmcPgTL80MphC5VkmOXr5o6XxR1s6A53y2W1zKRJ4137ptCsA5qc8Mcl8CaxUoPrmxF8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQOB8vEpkV73nRJZrkCS1L3IfRefcB2tgbApibZO32bWWA&oe=6ADBBEDD",
+   "video": "https://www.facebook.com/watch/?v=2442234352906067",
+   "video_thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.71878-10/688433415_775258595540931_2558857769656905316_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=--AwHvIO_JsQ7kNvwFQPhDH&_nc_oc=AdqpNnVGwbzesTP4kD3hqmcPgTL80MphC5VkmOXr5o6XxR1s6A53y2W1zKRJ4137ptCsA5qc8Mcl8CaxUoPrmxF8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQOB8vEpkV73nRJZrkCS1L3IfRefcB2tgbApibZO32bWWA&oe=6ADBBEDD",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6OTkyMzk4MzIwMTc5ODYy",
+   "shares_id": "ZmVlZGJhY2s6OTkyMzk4MzIwMTc5ODYy",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "518587241517676",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%B1?__eep__=6",
+     "offset": 14,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "435293946549551",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D8%A7%D9%8A?__eep__=6",
+     "offset": 18,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "1659791930710746",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%83%D8%B3%D8%A8%D9%84%D9%88%D8%B1_explore?__eep__=6",
+     "offset": 23,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "170675489756111",
+     "url": "https://www.facebook.com/hashtag/%D8%B1%D9%85%D9%84%D9%87?__eep__=6",
+     "offset": 40,
+     "length": 5
+    }
+   ],
+   "attached_post": {
+    "post_id": "854744407643544",
+    "url": "https://www.facebook.com/reel/2442234352906067/",
+    "message": "🤲🏼🤲🏼\n. \n. \n. \n#بر #شاي #اكسبلور_explore #رمله",
+    "author": {
+     "id": "pfbid0PXgTi3H4RmZNWT8ukebCMWMKFxAm3hYgtb9im5aHKDXRBzE1MdjqRqxrhQc41Y11l",
+     "name": "Hamad Ahmed",
+     "url": "https://www.facebook.com/people/Hamad-Ahmed/pfbid0PXgTi3H4RmZNWT8ukebCMWMKFxAm3hYgtb9im5aHKDXRBzE1MdjqRqxrhQc41Y11l/",
+     "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_ohc=IZeZjuD71-MQ7kNvwG3QiGA&_nc_oc=AdowY2yA6S8QcqCo5TDWwSZ7-SYOPvo8HX-oyjF8aSKyfqSkMJqs8v7iO8Oe3imf_whsTOXeOGQQoA3B-mxsu4so&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_ss=78180&oh=00_AQMwywiltTxIUUJp0F3Nf2LlsPAzBf-IgNP4zvvUfO_5oA&oe=6AFD2F7A"
+    }
+   }
+  },
+  {
+   "post_id": "2172420293606966",
+   "url": "https://www.facebook.com/se.ven.10485546/posts/pfbid02KbecweVUZVPytzzHupYyLF8eqttByffhPD9d5Db6nRNCPYGAVQ6CBJQKF3G8aEZul",
+   "message": "ياكورتوا مفيش حارس بيعرف يصدها",
+   "author": {
+    "id": "100025170492211",
+    "name": "SE V EN",
+    "url": "https://www.facebook.com/se.ven.10485546",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/814670512_2256217448560583_1334257340418815932_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-a3v2RC9rDAQ7kNvwEbzHbI&_nc_oc=AdpM6SB3MvWwOz9XTArtUQSVbLKn1BBlYUBRmd8QSz_QHy6kBY_qfrH3L3cIpxd_b1xrTWrr3_FQb6KxF5ad78k7&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQO3Ij8_OR2SzkFcIZk431SBWIxAM04jJETNnldSfsgi-g&oe=6ADB94E2"
+   },
+   "timestamp": 1781557316,
+   "reactions_count": 5,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 4,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/723066078_1690125435470530_8919684808799443149_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ce42&_nc_ohc=lzK9YCPRyRcQ7kNvwHqCwAE&_nc_oc=AdoWq0gDegldp9fl_z1EfrJDHSGpYk113UqeE_4q-R1isW6AwF_66B6KD7LU_qIcwWvqorMo4frhyuduDNuyTnB8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQNGyuhUHjfXRZhJGNMOR-wVjhAPJ-emvSvyZ6U-MOuycQ&oe=6ADBA9B7",
+   "video": "https://www.facebook.com/watch/?v=1570950441274299",
+   "video_thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/723066078_1690125435470530_8919684808799443149_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ce42&_nc_ohc=lzK9YCPRyRcQ7kNvwHqCwAE&_nc_oc=AdoWq0gDegldp9fl_z1EfrJDHSGpYk113UqeE_4q-R1isW6AwF_66B6KD7LU_qIcwWvqorMo4frhyuduDNuyTnB8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQNGyuhUHjfXRZhJGNMOR-wVjhAPJ-emvSvyZ6U-MOuycQ&oe=6ADBA9B7",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjE3MjQyMDI5MzYwNjk2Ng==",
+   "shares_id": "ZmVlZGJhY2s6MjE3MjQyMDI5MzYwNjk2Ng==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1385766420053568",
+    "url": "https://www.facebook.com/reel/1570950441274299/",
+    "message": "ياكورتوا مفيش حارس بيعرف يصدها",
+    "author": {
+     "id": "100058606692230",
+     "name": "Mostafa Haany",
+     "url": "https://www.facebook.com/mostafa.haany",
+     "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/681063879_1344595637503980_4909722061158784448_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-Inpxduz6sQQ7kNvwE5Xmo6&_nc_oc=Adon_bVOHIMzcf2v3vR9k47aaLGk5ctTK-q0mb87gQBp0n9iTeUArH6q-Bw6Z7lvgB937jljCZ5PfCjdx8l-6QsO&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQP68Xcbb3S9cLDDTCYwg_6uFZFKIdP0FwQKnTG7iIeueQ&oe=6ADBAF67"
+    }
+   }
+  },
+  {
+   "post_id": "122276087144165150",
+   "url": "https://www.facebook.com/svvnmkt/posts/pfbid0TjDioDyaXoRDNvxYijQdbDdjFjZWPQT3AMS3QTbiUy7eUs1AM6Df4geF88B7mRf7l",
+   "message": "محتوى صادم، قادم! 🍿\nلا يُقاوم …",
+   "author": {
+    "id": "61554954502688",
+    "name": "Seven سڤن",
+    "url": "https://www.facebook.com/svvnmkt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/768577079_122283703946165150_1853301339850419921_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=bNKdWrSa0k4Q7kNvwEPq-Vo&_nc_oc=AdqNXl0-DOicFDEBkcKrYKkAdXe4tFr0aDJXbV_4Uj49cxY_ALP1D6SuPcxexM0bIWwXLnoCnE8ClXZReFJQUMa1&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQO2BYhRh-hf7xrf1ES-GiHKUf799ivGfwGD_gDyZhbEuw&oe=6ADBB4D7"
+   },
+   "timestamp": 1782130621,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t51.82787-15/728457371_17954115357158376_6618423505093279180_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2plQLDWNbhMQ7kNvwGb0EMR&_nc_oc=AdpKQitMlZjRKhowrQIvymwgTMYc8166teP7q_xnOLXLFmp2p9wa0pQ-xMcFiXpY8hlygCg7rVEiHcWZFltzyMDR&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=mzaoJWbCJSO44lO5ejBcJA&_nc_ss=78180&oh=00_AQN6B3f0Cx9okCuOgXeC_fxJ-pJ6CuQqIL7JxGex7KmB0g&oe=6ADB87C2",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjc2MDg3MTQ0MTY1MTUw",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjc2MDg3MTQ0MTY1MTUw",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122114053113125599",
+   "url": "https://www.facebook.com/photo.php?fbid=122114053113125599&set=a.122094586377125599&type=3",
+   "message": "لزمن بقية",
+   "author": {
+    "id": "pfbid0jnfyJYUGktFNXPUoFMDppxZKjJ52XaKMVeFBSCBeETUciCvfeA3Th9GkWP3Pu1yvl",
+    "name": "سفيان مصطفي",
+    "url": "https://www.facebook.com/people/%D8%B3%D9%81%D9%8A%D8%A7%D9%86-%D9%85%D8%B5%D8%B7%D9%81%D9%8A/pfbid0jnfyJYUGktFNXPUoFMDppxZKjJ52XaKMVeFBSCBeETUciCvfeA3Th9GkWP3Pu1yvl/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/710586630_122114053119125599_2384293945018417159_n.jpg?stp=dst-jpg_p100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=DChf-rcaGWEQ7kNvwFJs-I9&_nc_oc=AdrYbeJZvjkbIP-7yjspl_xDBO3iYZ3xnEl3T1eZpR0trGYBCLLg-QKx0KfhNJmsFV4BYLhNrtLx-3mwLb9_5BLv&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=ehlS7z0p98cFOopucNOOuw&_nc_ss=78180&oh=00_AQNC0TjCPB64NZpMpb2S1R_Vrf2uFLwxkogOjZdayzZ0wQ&oe=6ADB9911"
+   },
+   "timestamp": 1780400112,
+   "reactions_count": 0,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTE0MDUzMTEzMTI1NTk5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTE0MDUzMTEzMTI1NTk5",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1752441135914399",
+   "url": "https://www.facebook.com/photo.php?fbid=1752441135914399&set=a.102086877616508&type=3",
+   "message": "ونعم بالله العلي العظيم",
+   "author": {
+    "id": "pfbid07dwxGkxJq2wsDRZnuvNtQUmCdEkk42kcsjkxfWuafEEQcHZgK3FnUb1bCq6dLqV5l",
+    "name": "سأكتفي بنڤسي",
+    "url": "https://www.facebook.com/saktfy.bnvsy",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/817296969_1845801426578369_5870323465837610799_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=d31kHx3qbTkQ7kNvwF3j9-u&_nc_oc=AdoqSdGseJF1Cxc34Na8s2MWqdoRmFiXAZsZEv1pa0-A-LBHRTCr4Y5sVwDqHPAmkZMiSrLgctoEit0Y75OqBOlx&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=mjCa3BnoPshTjRYW9B591Q&_nc_ss=78180&oh=00_AQP5gJOlw4ByblOKoWuDGp-0xNGfhAaJIKr53uu9EAjsdw&oe=6ADB8EBF"
+   },
+   "timestamp": 1780517592,
+   "reactions_count": 5,
+   "comments_count": 7,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 2,
+    "love": 3,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/714347399_1752441139247732_5268996721706245536_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=oSQBGZslwT4Q7kNvwEVXO6q&_nc_oc=AdrhF8YECaYPC2XB4dZUaaqxC9uvvpmvy1my6lmyHP7qt5aIed4HOU3XXTAHNJueP50AxFb-djOqAN7Ai3DxBhxG&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=mjCa3BnoPshTjRYW9B591Q&_nc_ss=78180&oh=00_AQNZZD0fAVoeElhDzljOV0mOkV6NHeHaoDrzcZDUMfdwqQ&oe=6ADBA11B",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTc1MjQ0MTEzNTkxNDM5OQ==",
+   "shares_id": "ZmVlZGJhY2s6MTc1MjQ0MTEzNTkxNDM5OQ==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1687530569171691",
+   "url": "https://www.facebook.com/photo.php?fbid=1687530569171691&set=a.102383497686414&type=3",
+   "message": "",
+   "author": {
+    "id": "100037442916481",
+    "name": "ســــــــــــــجــــــــــى بــــــــــــن",
+    "url": "https://www.facebook.com/benhaddad.saja",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/840379334_1792843488640398_4168365180142405653_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=y3ggJlNeBX4Q7kNvwEFSodi&_nc_oc=AdrE6emFh70-cW728RQNpzSW0gya5Y2Fv1OkKQG-Um54oKdgep8HoPgyzh7FeszKek0v5WvJFytXcKr6gxfIlMfa&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=49xZ4Cu7JaATAuuQLHvC_g&_nc_ss=78180&oh=00_AQNQvJlndigf1fdgEdA8roV8ObLWtDbWO-SnbMbCL_3GPQ&oe=6ADB99B4"
+   },
+   "timestamp": 1781104872,
+   "reactions_count": 6,
+   "comments_count": 17,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 2,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/719883353_1687530535838361_1948093255200607700_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=OrfK6w0lQdYQ7kNvwE-AfXQ&_nc_oc=AdohwQvbZ4qEpyngNpyh5eyi_7P4sJkQv8S1nOXeXemX4mU4YINlWVUGKm4qhHakoxHHAkY2zpV7vkqOnFScskB0&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=49xZ4Cu7JaATAuuQLHvC_g&_nc_ss=78180&oh=00_AQN0wV5TN1XbPfy7y_C4rmCFEvNy1Tm-NthlfQJwoBM04g&oe=6ADB96D9",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTY4NzUzMDU2OTE3MTY5MQ==",
+   "shares_id": "ZmVlZGJhY2s6MTY4NzUzMDU2OTE3MTY5MQ==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122109441981339042",
+   "url": "https://www.facebook.com/photo.php?fbid=122109441981339042&set=a.122099124879339042&type=3",
+   "message": "",
+   "author": {
+    "id": "pfbid083D8oviJa5EUiMRrKTvNFL2W7RJE4zP5Pc1q1dYVUUuodznXyVnY6am61J2dkh6ul",
+    "name": "يـٰٰٖٖټنڪڕۆن-ٻـٰٰݪٻاٱڛ ڣـٰٰڕڛان-ۆهم ذئاٻ- يټقنۆن'نڛيآن",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%B0%D9%B0%D9%96%D9%96%D9%BC%D9%86%DA%AA%DA%95%DB%86%D9%86-%D9%BB%D9%80%D9%B0%D9%B0%DD%AA%D9%BB%D8%A7%D9%B1%DA%9B-%DA%A3%D9%80%D9%B0%D9%B0%DA%95%DA%9B%D8%A7%D9%86-%DB%86%D9%87%D9%85-%D8%B0%D8%A6%D8%A7%D9%BB-%D9%8A%D9%BC%D9%82%D9%86%DB%86%D9%86%D9%86%DA%9B%D9%8A%D8%A2%D9%86/pfbid083D8oviJa5EUiMRrKTvNFL2W7RJE4zP5Pc1q1dYVUUuodznXyVnY6am61J2dkh6ul/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/831959053_122123137671339042_2368775729834825408_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=hxnRJcrY7Z8Q7kNvwGbbYjw&_nc_oc=AdqDiwZYT65rI7zEk9JoN0rGmUHbM5aAioeP813723eItbQrDcKneGdWm3IozJgcWZR2ZYuhkwZBb3s0Z7JlCchl&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=49xZ4Cu7JaATAuuQLHvC_g&_nc_ss=78180&oh=00_AQN5RmqMXpuCAauMQ9TjzrfGC6_0d5IGjKKI4gZnDopU4w&oe=6ADBA49C"
+   },
+   "timestamp": 1782804466,
+   "reactions_count": 8,
+   "comments_count": 4,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 4,
+    "love": 3,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/733684868_122109441963339042_8369041466096413720_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=H1jN_e7GkHIQ7kNvwHHN8qk&_nc_oc=AdqnwGRNH-ZWnuHqfvljnnt0fuUxZPeC4Vzmf4r-pyQdnjuugsMoZhrGUVuxSVkHMja07qarA5YvwQQop30jKBYT&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=49xZ4Cu7JaATAuuQLHvC_g&_nc_ss=78180&oh=00_AQMAkF0QD6FfTjhbfdBWeR_qpD1pVwsbr2tj0jNfnp9M_w&oe=6ADBAEDB",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTA5NDQxOTgxMzM5MDQy",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTA5NDQxOTgxMzM5MDQy",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122242161638091771",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ZY8bqzo3HBrzC7hZ7ufG6g5p9rC6DzLPojb1LK5x2sczykZ7hd5Tm6XXrbSQYabXl&id=61552753136674",
+   "message": "أسأل علي العرض🔥🔥",
+   "author": {
+    "id": "61552753136674",
+    "name": "سڤن اسكآى للوبريات ",
+    "url": "https://www.facebook.com/people/%D8%B3%DA%A4%D9%86-%D8%A7%D8%B3%D9%83%D8%A2%D9%89-%D9%84%D9%84%D9%88%D8%A8%D8%B1%D9%8A%D8%A7%D8%AA/61552753136674/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/584858085_122219570810091771_2938978501785593243_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=_UkRKxuCK4UQ7kNvwFkZavw&_nc_oc=AdoSqOIs3DiuSJaS1eiMlTm7xMwVoM016kL74aCwvuZHCmjXpbRuOQvoTbMB-KUuYoR6M8V3-56tjX-5_TIadKLH&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQNi-JyYIp27Nd17PydQzBeG4p-2yu6TrltRS_MfQTP_iw&oe=6ADB98B8"
+   },
+   "timestamp": 1782128859,
+   "reactions_count": 28,
+   "comments_count": 66,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 22,
+    "love": 3,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 1,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/728195918_122242161596091771_510526995319246350_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DppqwpKLDCIQ7kNvwGuXZGi&_nc_oc=AdoaYGlaKU4fEHTuzz3VVrQd_1N5YJXbXnZSApAV2K7siToxh0Du5Eyh6aEsoTYcoz6Jp9NcfDPamD30z1hfrtPq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQNTlu7i3Ygu5HYuMBIoC779GmlhRQQVJYeeyh7YdoQGAQ&oe=6ADBAC48",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjQyMTYxNjM4MDkxNzcx",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjQyMTYxNjM4MDkxNzcx",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1636534707421102",
+   "url": "https://www.facebook.com/groups/250635946010992/permalink/1636534707421102/",
+   "message": "السلام عليكم محتاجه رقم  صنايعي  يعمل وصلة تكيف",
+   "author": {
+    "id": "pfbid025XjwSkWLYxC481UPoDVB96mzjhiADiVrfD6PrYqcS3Ari9XocEqKCR1arDmwbWecl",
+    "name": "يس وزين",
+    "url": "https://www.facebook.com/ys.wzyn",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/464312065_1093636682437548_3002596653284419582_n.jpg?stp=dst-jpg_p100x100_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=BYtD6uAdy8gQ7kNvwGk1Kcn&_nc_oc=Ado8JuKOXjCverfjpxhkA9ZLxaZYPTiqAVbY6tb6SEwep5Li7e-Jk6ocElTDPHu73Od0554IPpMdsVr_LXg0MU4n&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQP3Xe17ZT4ZS1zrHXqUogF-Q2s-B52DSDQWnHMgx5tQFA&oe=6ADBBAD6"
+   },
+   "timestamp": 1780418118,
+   "reactions_count": 8,
+   "comments_count": 19,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 8,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYzNjUzNDcwNzQyMTEwMg==",
+   "shares_id": "ZmVlZGJhY2s6MTYzNjUzNDcwNzQyMTEwMg==",
+   "associated_group_id": "250635946010992",
+   "author_title": "صنايعية أسوان في جميع المجالات"
+  },
+  {
+   "post_id": "122128608531162734",
+   "url": "https://www.facebook.com/photo.php?fbid=122128608531162734&set=a.122098613361162734&type=3",
+   "message": "",
+   "author": {
+    "id": "61584882034651",
+    "name": "يـــــــّوًُسًــــــــفــــــ ٻږڹﭳﻲ",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%91%D9%88%D9%8B%D9%8F%D8%B3%D9%8B%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%81%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80-%D9%BB%DA%96%DA%B9%EF%AD%B3%EF%BB%B2/61584882034651/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/777220396_122136407205162734_4313683739135071607_n.jpg?stp=c0.36.1080.1080a_dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=pQoYznUekJoQ7kNvwGfs4KE&_nc_oc=AdpbnIFwOa8-4CEHGSLsZy0DRJ44IQipNrwcQgW4sdHm_GMCNynRg0OTjTBx6qp6QBfvKuKsVSi3Sbky9UZQd7sw&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQOXhJx10oJ5SAmQCL_YLorIFcd8o2W7_PHvQ-nKMn_BMw&oe=6ADB884E"
+   },
+   "timestamp": 1780850240,
+   "reactions_count": 2,
+   "comments_count": 2,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/719204067_122128608507162734_7588699856216779922_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=K3VegORYpBEQ7kNvwFWl8mf&_nc_oc=AdrbOPMezs__AbBM6GRvzTt2Pjda_KDUENWBB9Ckbw5a985JPM79ZjwllSZAXo8nhAN28QhwBBYA73dln88quqpS&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQO4086XmN9eRgbE3ndMwUSt8LJOVVPkmPYjicwaot6o8A&oe=6ADB9277",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTI4NjA4NTMxMTYyNzM0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTI4NjA4NTMxMTYyNzM0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1683524499572298",
+   "url": "https://www.facebook.com/photo.php?fbid=1683524499572298&set=a.102383497686414&type=3",
+   "message": "",
+   "author": {
+    "id": "100037442916481",
+    "name": "ســــــــــــــجــــــــــى بــــــــــــن",
+    "url": "https://www.facebook.com/benhaddad.saja",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/840379334_1792843488640398_4168365180142405653_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=y3ggJlNeBX4Q7kNvwEFSodi&_nc_oc=AdrE6emFh70-cW728RQNpzSW0gya5Y2Fv1OkKQG-Um54oKdgep8HoPgyzh7FeszKek0v5WvJFytXcKr6gxfIlMfa&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQOPSzVeOUgko5qsjFttFAJQsSL1TZnrV_WOtTO_1iEdGg&oe=6ADB99B4"
+   },
+   "timestamp": 1780712352,
+   "reactions_count": 6,
+   "comments_count": 11,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 3,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/711670491_1683524466238968_1591646231536075951_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=xpaYzvaHnYYQ7kNvwFK4I0c&_nc_oc=AdrugNsnR4ZsStuN0t6fcBPFcjJXwMOn3c1hik3Blt27s_7mBQMsO3N8iFeHuYvxDQDdxn445CG_LiMZc8n0Psgz&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=WNh0mdF9NU5IZiwIy56S3w&_nc_ss=78180&oh=00_AQO93doEP5NYSzKH4ioo5YrKWX_TVkUc3PbRZeSRIxSIrg&oe=6ADBBCB3",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTY4MzUyNDQ5OTU3MjI5OA==",
+   "shares_id": "ZmVlZGJhY2s6MTY4MzUyNDQ5OTU3MjI5OA==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "966643349313590",
+   "url": "https://www.facebook.com/photo.php?fbid=966643349313590&set=a.843623561615570&type=3",
+   "message": "",
+   "author": {
+    "id": "100079038010272",
+    "name": "يــــاســــيــــن شــــاهـــــيـــن",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%80%D9%80%D9%80%D8%A7%D8%B3%D9%80%D9%80%D9%80%D9%80%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%86-%D8%B4%D9%80%D9%80%D9%80%D9%80%D8%A7%D9%87%D9%80%D9%80%D9%80%D9%80%D9%80%D9%8A%D9%80%D9%80%D9%80%D9%86/100079038010272/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/853660508_1077917988186125_8268136204372169954_n.jpg?stp=c0.0.736.736a_dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=DVc99ZWVgesQ7kNvwGJt4Ua&_nc_oc=AdoYd1MJTSxhmpMI1OMEkAibVlVdRt9UUsBg1PhliH1ugoNzdy5d531UnHrhxk2jBccSp7DM5TqUKMiNrek4mqYN&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=CsCyEN5ldG8hHbQ7DV-54A&_nc_ss=78180&oh=00_AQMN6vuXyOs71kq2HO77a0Zm2zYBkaqN9zFFtIKKj3N1Mg&oe=6ADBAE9C"
+   },
+   "timestamp": 1780699769,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/716011531_966643335980258_1897746697046265138_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qhd3Uvgdri0Q7kNvwGxbYQ0&_nc_oc=Adr8gRJhYqVQ7UEcwUv2HP0wGzIwxdxDub2o9UaWU4PP_sPryqLUSp--oDj2-QOZixy8KSoo45zlJxL7P8iircbd&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=CsCyEN5ldG8hHbQ7DV-54A&_nc_ss=78180&oh=00_AQMnuGTi05R7attQZOnkIUWJIRbtMv_WKoOQveBAJYoRyg&oe=6ADBABC0",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6OTY2NjQzMzQ5MzEzNTkw",
+   "shares_id": "ZmVlZGJhY2s6OTY2NjQzMzQ5MzEzNTkw",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "987299350581323",
+   "url": "https://www.facebook.com/photo.php?fbid=987299350581323&set=a.843623561615570&type=3",
+   "message": "",
+   "author": {
+    "id": "100079038010272",
+    "name": "يــــاســــيــــن شــــاهـــــيـــن",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%80%D9%80%D9%80%D8%A7%D8%B3%D9%80%D9%80%D9%80%D9%80%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%86-%D8%B4%D9%80%D9%80%D9%80%D9%80%D8%A7%D9%87%D9%80%D9%80%D9%80%D9%80%D9%80%D9%8A%D9%80%D9%80%D9%80%D9%86/100079038010272/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/853660508_1077917988186125_8268136204372169954_n.jpg?stp=c0.0.736.736a_dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=DVc99ZWVgesQ7kNvwGJt4Ua&_nc_oc=AdoYd1MJTSxhmpMI1OMEkAibVlVdRt9UUsBg1PhliH1ugoNzdy5d531UnHrhxk2jBccSp7DM5TqUKMiNrek4mqYN&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=CsCyEN5ldG8hHbQ7DV-54A&_nc_ss=78180&oh=00_AQMN6vuXyOs71kq2HO77a0Zm2zYBkaqN9zFFtIKKj3N1Mg&oe=6ADBAE9C"
+   },
+   "timestamp": 1782856803,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/734023064_987299353914656_2278999620770568927_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=zXgdku3FmX4Q7kNvwENP7y2&_nc_oc=AdoAm0mHUInRmXxGLmhG431lBeTO9HK2Jvu_cGv_jCCIHUq0bHScDwerqF7dnt3lB58z23yhs6uBwvb087rvNSy8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=CsCyEN5ldG8hHbQ7DV-54A&_nc_ss=78180&oh=00_AQNKaep3zbLswnPZ3_uXDbl0TobvRfskLuRxkkruxBHu1g&oe=6ADBB093",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6OTg3Mjk5MzUwNTgxMzIz",
+   "shares_id": "ZmVlZGJhY2s6OTg3Mjk5MzUwNTgxMzIz",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "1699659417958806",
+   "url": "https://www.facebook.com/photo.php?fbid=1699659417958806&set=a.102383497686414&type=3",
+   "message": "",
+   "author": {
+    "id": "100037442916481",
+    "name": "ســــــــــــــجــــــــــى بــــــــــــن",
+    "url": "https://www.facebook.com/benhaddad.saja",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/840379334_1792843488640398_4168365180142405653_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=y3ggJlNeBX4Q7kNvwEFSodi&_nc_oc=AdrE6emFh70-cW728RQNpzSW0gya5Y2Fv1OkKQG-Um54oKdgep8HoPgyzh7FeszKek0v5WvJFytXcKr6gxfIlMfa&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=FGz8Oh_KIMbtO7457TBFKQ&_nc_ss=78180&oh=00_AQNITHMQ5Pl8rtMxhfztx-On4519nOu5Jx4AydcMEypBzw&oe=6ADB99B4"
+   },
+   "timestamp": 1782345477,
+   "reactions_count": 5,
+   "comments_count": 12,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 2,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/730543560_1699659391292142_7046017304460853548_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=5-VqKlXdquMQ7kNvwEHfm7h&_nc_oc=AdqlqxtwI0hK_JbxUqq3qf2MZf5NDSw_01iL8uLKKMvyqvz099xhlKLhuGjfxUTc2T0qnFyuN50O_5y8tfxrPLth&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=FGz8Oh_KIMbtO7457TBFKQ&_nc_ss=78180&oh=00_AQOQnHJh2D1e5aqI5KOAnpVHHj0FTguXQ7hxrwq5c3OyZw&oe=6ADB9CF0",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTY5OTY1OTQxNzk1ODgwNg==",
+   "shares_id": "ZmVlZGJhY2s6MTY5OTY1OTQxNzk1ODgwNg==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122130237765162734",
+   "url": "https://www.facebook.com/photo.php?fbid=122130237765162734&set=a.122098613361162734&type=3",
+   "message": "",
+   "author": {
+    "id": "61584882034651",
+    "name": "يـــــــّوًُسًــــــــفــــــ ٻږڹﭳﻲ",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%91%D9%88%D9%8B%D9%8F%D8%B3%D9%8B%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%81%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80-%D9%BB%DA%96%DA%B9%EF%AD%B3%EF%BB%B2/61584882034651/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/777220396_122136407205162734_4313683739135071607_n.jpg?stp=c0.36.1080.1080a_dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=pQoYznUekJoQ7kNvwGfs4KE&_nc_oc=AdpbnIFwOa8-4CEHGSLsZy0DRJ44IQipNrwcQgW4sdHm_GMCNynRg0OTjTBx6qp6QBfvKuKsVSi3Sbky9UZQd7sw&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=su2Vd-_SwQAlwf8MCkuBZA&_nc_ss=78180&oh=00_AQNE6bZlNyKnbnD9EYBrxVACTF6KjhFEA9Y0tdMzvW4KzA&oe=6ADB884E"
+   },
+   "timestamp": 1781802292,
+   "reactions_count": 4,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 3,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/726308186_122130237735162734_8753736508371175514_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=r0KuyXzqGzcQ7kNvwE76A7P&_nc_oc=AdoTTWFvp-pmriCVSsxw6tngI-O7VAUSfVAclfNJUAlyverorC2VXFQsLNoP1eg0sqiHLSsqDT22QdDbnmDVWmB4&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=su2Vd-_SwQAlwf8MCkuBZA&_nc_ss=78180&oh=00_AQOXt47yXZtNkaGu8oqu4lepn-5cHckqlvm8pMdnDyfYJA&oe=6ADBAC3F",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTMwMjM3NzY1MTYyNzM0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTMwMjM3NzY1MTYyNzM0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122129161821162734",
+   "url": "https://www.facebook.com/photo.php?fbid=122129161821162734&set=a.122098613361162734&type=3",
+   "message": "",
+   "author": {
+    "id": "61584882034651",
+    "name": "يـــــــّوًُسًــــــــفــــــ ٻږڹﭳﻲ",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%91%D9%88%D9%8B%D9%8F%D8%B3%D9%8B%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%81%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80-%D9%BB%DA%96%DA%B9%EF%AD%B3%EF%BB%B2/61584882034651/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/777220396_122136407205162734_4313683739135071607_n.jpg?stp=c0.36.1080.1080a_dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=pQoYznUekJoQ7kNvwGfs4KE&_nc_oc=AdpbnIFwOa8-4CEHGSLsZy0DRJ44IQipNrwcQgW4sdHm_GMCNynRg0OTjTBx6qp6QBfvKuKsVSi3Sbky9UZQd7sw&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=su2Vd-_SwQAlwf8MCkuBZA&_nc_ss=78180&oh=00_AQNE6bZlNyKnbnD9EYBrxVACTF6KjhFEA9Y0tdMzvW4KzA&oe=6ADB884E"
+   },
+   "timestamp": 1781242344,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/721464262_122129161803162734_2130182378424694332_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=BD4BR8FQgHEQ7kNvwFSpK3T&_nc_oc=AdrzE71QkQLCX480nNc36sumMktxHeuxLK6w-m5_dsRv901I8SjPQH-65O4FMLHyYXOhbX9tL6cIoEw2tZOdngrG&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=su2Vd-_SwQAlwf8MCkuBZA&_nc_ss=78180&oh=00_AQNzKm6FelhcK5m7aLTIzK_nkJHnmY_MnKs0-xfeBhS0Fg&oe=6ADBA294",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTI5MTYxODIxMTYyNzM0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTI5MTYxODIxMTYyNzM0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "962655106379081",
+   "url": "https://www.facebook.com/photo.php?fbid=962655106379081&set=a.843623561615570&type=3",
+   "message": "",
+   "author": {
+    "id": "100079038010272",
+    "name": "يــــاســــيــــن شــــاهـــــيـــن",
+    "url": "https://www.facebook.com/people/%D9%8A%D9%80%D9%80%D9%80%D9%80%D8%A7%D8%B3%D9%80%D9%80%D9%80%D9%80%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%86-%D8%B4%D9%80%D9%80%D9%80%D9%80%D8%A7%D9%87%D9%80%D9%80%D9%80%D9%80%D9%80%D9%8A%D9%80%D9%80%D9%80%D9%86/100079038010272/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/853660508_1077917988186125_8268136204372169954_n.jpg?stp=c0.0.736.736a_dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=DVc99ZWVgesQ7kNvwGJt4Ua&_nc_oc=AdoYd1MJTSxhmpMI1OMEkAibVlVdRt9UUsBg1PhliH1ugoNzdy5d531UnHrhxk2jBccSp7DM5TqUKMiNrek4mqYN&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=aQP__Qij2760aFMzynW1LA&_nc_ss=78180&oh=00_AQNlUOX1ZTQHZIy49bpFLzco5chEttPpNMlwjVYsOkeaOQ&oe=6ADBAE9C"
+   },
+   "timestamp": 1780310536,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/712153493_962655073045751_1487923957208030535_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=eQkwNtgoIWQQ7kNvwGn7WFq&_nc_oc=AdqwqPtnam5XIhOStjfkKZMECDEFaZpIUXCY9xYGqWjcvo9VPAd7HvtWtJojtZiafPO-dgJWxgCuSJkxx7VMBtgU&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=aQP__Qij2760aFMzynW1LA&_nc_ss=78180&oh=00_AQPemY0TomSrLk3ZYsY682bhOsA7lKt5vW3B33UECfdd1Q&oe=6ADBA446",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6OTYyNjU1MTA2Mzc5MDgx",
+   "shares_id": "ZmVlZGJhY2s6OTYyNjU1MTA2Mzc5MDgx",
+   "associated_group_id": ""
+  }
+ ]
+}

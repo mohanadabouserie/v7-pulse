@@ -1,0 +1,140 @@
+{
+ "mode": "fill",
+ "since": "2026-04-20",
+ "until": "2026-10-16",
+ "tag": "202610191732",
+ "started": "2026-10-19T17:32:29",
+ "jobs": {},
+ "problems": [],
+ "standbys": [],
+ "errors": [],
+ "steps": [
+  {
+   "step": "normalize",
+   "ok": true,
+   "seconds": 4,
+   "last": "V7 replies: 644 | replies linked: 1050"
+  },
+  {
+   "step": "label",
+   "ok": true,
+   "seconds": 0,
+   "last": "done: 15927 labels in labels.json, 0 batches failed. Run again to retry what is missing."
+  },
+  {
+   "step": "fill fbfill",
+   "ok": true
+  },
+  {
+   "step": "fill fbfill2",
+   "ok": true
+  },
+  {
+   "step": "fill fbviews",
+   "ok": true
+  },
+  {
+   "step": "fill fbnames",
+   "ok": true
+  },
+  {
+   "step": "fill igspeech",
+   "ok": true
+  },
+  {
+   "step": "fill igprofiles",
+   "ok": true
+  },
+  {
+   "step": "fill igcomments",
+   "ok": true
+  },
+  {
+   "step": "fill igcomments2",
+   "ok": true
+  },
+  {
+   "step": "fill igvisfetch",
+   "ok": true
+  },
+  {
+   "step": "pictures, Instagram",
+   "ok": true,
+   "seconds": 27,
+   "last": "media saved for 4 posts in /home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/vis"
+  },
+  {
+   "step": "pictures, Facebook",
+   "ok": true,
+   "seconds": 46,
+   "last": "media saved for 2 Facebook posts in /home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/vis"
+  },
+  {
+   "step": "read pictures",
+   "ok": true,
+   "seconds": 24,
+   "last": "6/6 fb_122179745810718299: V7 True | An Amazon.eg product page screenshot for a V7 Piña Colada vitamin sparkling drin"
+  },
+  {
+   "step": "normalize again",
+   "ok": true,
+   "seconds": 4,
+   "last": "V7 replies: 644 | replies linked: 1050"
+  },
+  {
+   "step": "label again",
+   "ok": true,
+   "seconds": 73,
+   "last": "done: 16080 labels in labels.json, 0 batches failed. Run again to retry what is missing."
+  },
+  {
+   "step": "build",
+   "ok": true,
+   "seconds": 2,
+   "last": "injected into V7_Pulse_Dashboard.html"
+  },
+  {
+   "step": "images",
+   "ok": true,
+   "seconds": 222,
+   "last": "65 saved now, 18 failed; 839 images in all, 6849 KB"
+  },
+  {
+   "step": "embed images",
+   "ok": true,
+   "seconds": 1,
+   "last": "injected into V7_Pulse_Dashboard.html"
+  },
+  {
+   "step": "test test_v25",
+   "ok": true,
+   "seconds": 39,
+   "last": "FAIL 0"
+  },
+  {
+   "step": "test test_v29",
+   "ok": true,
+   "seconds": 26,
+   "last": "FAIL 0"
+  },
+  {
+   "step": "test test_v30",
+   "ok": true,
+   "seconds": 29,
+   "last": "FAIL 0"
+  },
+  {
+   "step": "test test_v31",
+   "ok": true,
+   "seconds": 12,
+   "last": "FAIL 0"
+  }
+ ],
+ "spent_before": 71.2067,
+ "limit": 100,
+ "budget_line": 72.2067,
+ "spent": 0.6192,
+ "spent_after": 71.8259,
+ "finished": "2026-10-19T17:46:18",
+ "not_started": 0
+}

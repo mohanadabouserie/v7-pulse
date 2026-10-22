@@ -1,0 +1,866 @@
+{
+ "input": {
+  "query": "V Orange",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "Qe8oTLGrrzbITgv7b",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:39:11.471Z",
+  "finishedAt": "2026-10-19T11:39:41.947Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.9298,
+ "items": [
+  {
+   "post_id": "1608880651251792",
+   "type": "post",
+   "url": "https://www.facebook.com/OrangeMotorGroup/posts/pfbid022i2yBiX55pstYWciSkqm6WDuhvVPkvviH7YPPCqBPBevHXdLwfHsudqapkHLygVBl",
+   "message": "BYD Orange Experience Centre, come & secure our special offers with BYD this October, it’s time to switch to a new energy vehicle from the World’s fastest growing automotive company.\nIt simply makes good sense!\nCall ☎️ (02) 6362-7169\n\n#orangensw #CustomerExperience #orangemotorgroup #centralwestnsw #newsouthwales #centraltablelands #DriveAwayHappy #WiradjuriCountry #BYD #BYDTestDrive #bydaustralia #bydorange #highdemand #orangenswaustralia #centraltablelandsnsw #bydtestdrive #NewEnergyVehicles #make #the #switch #maketheswitch",
+   "message_rich": "BYD Orange Experience Centre, come & secure our special offers with BYD this October, it’s time to switch to a new energy vehicle from the World’s fastest growing automotive company.\nIt simply makes good sense!\nCall ☎️ (02) 6362-7169\n\n#orangensw #CustomerExperience #orangemotorgroup #centralwestnsw #newsouthwales #centraltablelands #DriveAwayHappy #WiradjuriCountry #BYD #BYDTestDrive #bydaustralia #bydorange #highdemand #orangenswaustralia #centraltablelandsnsw #bydtestdrive #NewEnergyVehicles #make #the #switch #maketheswitch",
+   "timestamp": 1791794678,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063896169792",
+    "name": "Orange Motor Group",
+    "url": "https://www.facebook.com/OrangeMotorGroup",
+    "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/849694347_1610384444434746_5081102031443798102_n.jpg?stp=c31.31.258.258a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=w2WtcfjrKUgQ7kNvwGxoNK3&_nc_oc=Adq9zqnjcgFbpjt3wzcNh-8R_9O28o3QNw721CRcvmyn7qRhfUfdSEIQJ1HSa8I1IVY&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQOQ9hwl5JyjSE_O-DkIGuceYFN_TWSFP4FyywEAbFVZ0g&oe=6ADBE57C",
+    "delegate_page_id": "1438329739749756"
+   },
+   "authors": [
+    {
+     "id": "100063896169792",
+     "name": "Orange Motor Group",
+     "url": "https://www.facebook.com/OrangeMotorGroup",
+     "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/849694347_1610384444434746_5081102031443798102_n.jpg?stp=c31.31.258.258a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=w2WtcfjrKUgQ7kNvwGxoNK3&_nc_oc=Adq9zqnjcgFbpjt3wzcNh-8R_9O28o3QNw721CRcvmyn7qRhfUfdSEIQJ1HSa8I1IVY&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQOQ9hwl5JyjSE_O-DkIGuceYFN_TWSFP4FyywEAbFVZ0g&oe=6ADBE57C",
+     "delegate_page_id": "1438329739749756"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-6/843103700_1608880477918476_4286827831278032374_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1z6Ft8mw7ckQ7kNvwHnbNSg&_nc_oc=AdqGF3d3Rd9H_c9mcXdGfcrWFxtWwLalMGVOUDPFELXhkx8ouIm-53r91irhnu4OdYY&_nc_zt=23&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQPjOKHaW9HYnsBZ-IwcanQ3Rj2pyKfjmDZfrmLC8plRiQ&oe=6ADBB8C0",
+     "url": "https://www.facebook.com/photo.php?fbid=1608880431251814&set=a.492423339564201&type=3",
+     "id": "1608880431251814"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-6/845120848_1608880474585143_3661741485581410334_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-Hgr6FistAYQ7kNvwET7N6Q&_nc_oc=Adrp7yFYUYxWyXX4iy62eMO6X6K5OwCnZvT8-MPskIPJnAzQLCn8nOm7Kb9Guu7ltnc&_nc_zt=23&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMpTkS-bcbJ__aKl08yI2lL9uGqlv3CbXLG6VbvYUsePg&oe=6ADBD0E9",
+     "url": "https://www.facebook.com/photo.php?fbid=1608880444585146&set=a.492423339564201&type=3",
+     "id": "1608880444585146"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-6/843839678_1608880484585142_5079754350644738114_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=s9WKz9beG4wQ7kNvwHIFu7l&_nc_oc=AdpjPjMR7n1Q3AJgBwABLaJZiTrSwiegoG9OlvJ5485BZ3QJcJHXS_BtY_8dbatc7Aw&_nc_zt=23&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMxBNNP08JBPZXsu17I_3X7_nxi4Gn6OM1XPM4JhiZwcw&oe=6ADBBF44",
+     "url": "https://www.facebook.com/photo.php?fbid=1608880464585144&set=a.492423339564201&type=3",
+     "id": "1608880464585144"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-6/844630127_1608880487918475_7786516408458780354_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Llac0a4Cg0YQ7kNvwFW3eFJ&_nc_oc=Adoq3zrlEbQxxUBFanp9ywXPbeuF9_Oh3Bk05Sow0YmKTDzr7aH5dKiKebcbOXRwk3s&_nc_zt=23&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQODdCqKzlRvjRX6BDM86k2XFMCBaF-HXlornMhJ2HJ1MA&oe=6ADBE8D9",
+     "url": "https://www.facebook.com/photo.php?fbid=1608880457918478&set=a.492423339564201&type=3",
+     "id": "1608880457918478"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-6/845941282_1608880511251806_3892671539721849001_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=tIcnW7ZBhZAQ7kNvwEYrlme&_nc_oc=AdqeLrqWcNx1h4GR5NMCwcmIV_JGyl3pil9GIjc-XKNEoBitHEicCZjfgem-IapoDCQ&_nc_zt=23&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQNKoZRCAvHmrEPwxpizigqIL21rgJWQq4p9sQ1vNZ7y-Q&oe=6ADBEB79",
+     "url": "https://www.facebook.com/photo.php?fbid=1608880471251810&set=a.492423339564201&type=3",
+     "id": "1608880471251810"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1608880651251792",
+   "shares_id": "1608880651251792",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 10,
+   "top_comments": []
+  },
+  {
+   "post_id": "2255674521952383",
+   "type": "post",
+   "url": "https://www.facebook.com/VnOutlets/posts/pfbid0zCnXVQMvCAeCz4jKshjJBGvhJC55bsPpTMKXsUk59MrkBLtEf8dGYhUQj9dUogH8l",
+   "message": null,
+   "message_rich": null,
+   "timestamp": 1790300932,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100025295711145",
+    "name": "Vn OutLets",
+    "url": "https://www.facebook.com/VnOutlets",
+    "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/519759745_1890303135156192_5688586043137756097_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=qY8A97mzF9wQ7kNvwHh2xVV&_nc_oc=Adqye0UHTucz3G-ugVLdr3Ir1b4D8OL_lmTkB9i9zhynDXMSvGhJmQSGphwFNQ3G9_U&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMnj1vyHprPAg6avQgFHYli-UTMGKosM6s6EzsHfTLQUA&oe=6ADBEFC2",
+    "delegate_page_id": "636619886211197"
+   },
+   "authors": [
+    {
+     "id": "100025295711145",
+     "name": "Vn OutLets",
+     "url": "https://www.facebook.com/VnOutlets",
+     "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/519759745_1890303135156192_5688586043137756097_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=qY8A97mzF9wQ7kNvwHh2xVV&_nc_oc=Adqye0UHTucz3G-ugVLdr3Ir1b4D8OL_lmTkB9i9zhynDXMSvGhJmQSGphwFNQ3G9_U&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMnj1vyHprPAg6avQgFHYli-UTMGKosM6s6EzsHfTLQUA&oe=6ADBEFC2",
+     "delegate_page_id": "636619886211197"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": "https://www.ebay.com/itm/277395896753?var&mkevt=1&mkcid=16&mkrid=711-127632-2357-0&sssrc=4429486&ssuid=CkG-nPxaTOO&ssspo=CkG-nPxaTOO&stype=1&widget_ver=artemis&media=MORE&content_source=fb&fb_content_id=Q9-wBQFpDhuUJW_zMUzYwD64AXTJmE3tXyulrwmw5b9wK7nFt6rLymMWysPCv3TJwg&encrypted_payload=IyXw_GcBbYiWpyS-jFII5p0H9ZRWTiCPkuUwBp_u4EIakMudmctYAq7zsLgDcgNGLNtyO6Q5w-0Vk0ZesGzMgYkFNB3JFqdWPJ7Fb6xdcef7W5iNTghYph3cdQU8CH5crF3bbh9mCCDdNQ4m8J0JbE7IdxXA1oJlmrV2DUHyljlU922xp0__I5xavGmPY6shuEAR4U3rY5A7O2eCKyE",
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2255674521952383",
+   "shares_id": "2255674521952383",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "26976767912006123",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/3135475776562004/posts/26976767912006123/",
+   "message": "Boa tarde\nAlguém que tem Modolo fecho central.\nFica no interior da porta frente direita, para o\nRange Rover DS P 38 1996.\nObrigado bons passeios.",
+   "message_rich": "Boa tarde\nAlguém que tem Modolo fecho central.\nFica no interior da porta frente direita, para o\nRange Rover DS P 38 1996.\nObrigado bons passeios.",
+   "timestamp": 1781547516,
+   "comments_count": 5,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "585595478",
+    "name": "Vitor Manuel Pereira Rodrigues",
+    "url": "https://www.facebook.com/vitor.m.rodrigues.5",
+    "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/518412887_10163583206395479_6019528021164394440_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=xw30r2Z9NIUQ7kNvwF0zncc&_nc_oc=AdoNUtqcvLedsgWB4FuEN0Z1yWRSBwHo7ofPHBjUO7EjH_ikDvig5sPbqOP3KIr6GkY&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQOAs9QWDV8qr-Jl7uPYFSoCWnDNqo7GkbjOtm_kl6doBw&oe=6ADBEF86",
+    "delegate_page_id": "750393878151850"
+   },
+   "authors": [
+    {
+     "id": "585595478",
+     "name": "Vitor Manuel Pereira Rodrigues",
+     "url": "https://www.facebook.com/vitor.m.rodrigues.5",
+     "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/518412887_10163583206395479_6019528021164394440_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=xw30r2Z9NIUQ7kNvwF0zncc&_nc_oc=AdoNUtqcvLedsgWB4FuEN0Z1yWRSBwHo7ofPHBjUO7EjH_ikDvig5sPbqOP3KIr6GkY&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQOAs9QWDV8qr-Jl7uPYFSoCWnDNqo7GkbjOtm_kl6doBw&oe=6ADBEF86",
+     "delegate_page_id": "750393878151850"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "26976767912006123",
+   "shares_id": "26976767912006123",
+   "associated_group_id": "3135475776562004",
+   "associated_group": {
+    "group_id": "3135475776562004",
+    "name": "Range Rover Classic Parts & Services",
+    "url": "https://www.facebook.com/groups/3135475776562004/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122209969568351663",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2423256474831113/",
+   "message": "Red v Orange ❤️🧡 Which is better？\n\n#makeuphack #makeup #colourcorrecto...",
+   "message_rich": "Red v Orange ❤️🧡 Which is better？\n\n#makeuphack #makeup #colourcorrecto...",
+   "timestamp": 1780326052,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61560549890558",
+    "name": "Andrea",
+    "url": "https://www.facebook.com/people/Andrea/61560549890558/",
+    "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/658124889_122203656314351663_1128505361706097711_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=elcraTW_I3sQ7kNvwF2-vxJ&_nc_oc=AdqCpnhaw676cdh54RVkMv-8jNQKrbs9wN2ZkhKaDb0Z3S4i_tEfWIlyyROlwU0JHI8&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMx2ouQPlxhpps4qS5gHPhchIx7wjdzGiL30PcANDbYzQ&oe=6ADBE9A8",
+    "delegate_page_id": "334161126444682"
+   },
+   "authors": [
+    {
+     "id": "61560549890558",
+     "name": "Andrea",
+     "url": "https://www.facebook.com/people/Andrea/61560549890558/",
+     "profile_picture_url": "https://scontent.fiev13-1.fna.fbcdn.net/v/t39.30808-1/658124889_122203656314351663_1128505361706097711_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=elcraTW_I3sQ7kNvwF2-vxJ&_nc_oc=AdqCpnhaw676cdh54RVkMv-8jNQKrbs9wN2ZkhKaDb0Z3S4i_tEfWIlyyROlwU0JHI8&_nc_zt=24&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMx2ouQPlxhpps4qS5gHPhchIx7wjdzGiL30PcANDbYzQ&oe=6ADBE9A8",
+     "delegate_page_id": "334161126444682"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2423256474831113/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fiev13-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPM6wkvSdHFU3BGhVwbuXUFoB8n69HsIbabioiXg7pFtICiA5NNiYgizS6ArqD36TgN6OrRboxSm3PImm--5FlrjM8QBRYNWSJp4wkPeA.mp4?_nc_cat=108&_nc_oc=Adp1MBnsKUFm-9RljgDPiLTpJbV7vyJ0GiYo3PKnsg0ULEvRRSIMdy19s5R1Ld5igaU&_nc_sid=8bf8fe&_nc_ht=video.fiev13-1.fna.fbcdn.net&_nc_ohc=XKcpQWPhuacQ7kNvwGirHw0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6OTg0MDA5ODc0Mzg4Mjg4LCJhc3NldF9hZ2VfZGF5cyI6MTM5LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQPy6LPWpRpQFpYiwrD8NSV-68YyiJOniTsiSp8Dp2PMCw&oe=6ADBCA82&bitrate=338249&tag=sve_sd",
+    "video_hd_file": "https://video.fiev13-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQM_01vbOCew9fE1tSq2fj-GOxzESoMkWCaH5YFLBM6BLYl8SoJLnpk3x0YP6TYzFICq-8MMgr8dn95X9Qdxs61JpUvcNmC-11ryfvz1l9Uvlw.mp4?_nc_cat=102&_nc_oc=AdrhS1LbQNuWovChvd8kcwDftgQ1rrYHstO6qnbEZ63DI7Kc-sgPGgrK9sVevYjaWjs&_nc_sid=5e9851&_nc_ht=video.fiev13-1.fna.fbcdn.net&_nc_ohc=WjGTpg76wV0Q7kNvwH1vc1g&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjk4NDAwOTg3NDM4ODI4OCwiYXNzZXRfYWdlX2RheXMiOjEzOSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=a16403539352e3b1&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yNTcwM0RBNkI2MjY0QjdEOTdGQTE4NjEzRDk3Nzg1RF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzlCNEQ2MTYxNTk1QjFEMzFBM0IyNDNFMjQ2OUE4QkI4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaA1aXw9Ly_AxUCKAJDMywXQCiqfvnbItEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQN2VhEAwt_kqSyYf4a8PjBIKDZqgcshFDHugLmtV0RVjg&oe=6ADBC68E&bitrate=1199950&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fiev13-1.fna.fbcdn.net/v/t15.5256-10/712339516_4549467108714618_3672170547546809282_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=kMTpbj0XdUkQ7kNvwHFofRf&_nc_oc=AdpPskifCQmXac_2wyLt3gANr0ubaNqqV4H-VJbxbldUKB-jWZxvyB7DWafIwNnJzZg&_nc_zt=23&_nc_ht=scontent.fiev13-1.fna&_nc_gid=PNTOOr_6sRAKSJQMqp1PmA&_nc_ss=70289&oh=00_AQMDnfKN5QOu6EiTEkhRIchZO5pA8yAe1RGBHR77-spqDQ&oe=6ADBC6FA",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122209969568351663",
+   "shares_id": "122209969568351663",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1573953631441138",
+   "type": "post",
+   "url": "https://www.facebook.com/venergyaustralia/posts/pfbid02Ja29vzQXfvFdCLmcJrDMA55f2dkd4o6Gi4pGbG1Tpu2TAB9pt9MvLAUfkt7MyW6Rl",
+   "message": "Think our new flavours are iconic? Wait until you see what else we've been cooking up...😉👚8.8.26",
+   "message_rich": "Think our new flavours are iconic? Wait until you see what else we've been cooking up...😉👚8.8.26",
+   "timestamp": 1785134722,
+   "comments_count": 18,
+   "reactions_count": 28,
+   "reshare_count": 5,
+   "reactions": {
+    "angry": 1,
+    "care": 0,
+    "haha": 0,
+    "like": 27,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064795473427",
+    "name": "V Energy Australia",
+    "url": "https://www.facebook.com/venergyaustralia",
+    "profile_picture_url": "https://scontent.fist20-1.fna.fbcdn.net/v/t39.30808-1/475980477_1089043663265473_9132289368578444387_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=_aVTOYiNwZIQ7kNvwEbgZg4&_nc_oc=AdoEoy6b1ayTPkx2eR0hX09Ceysj7Z03I0JKBqRWI3gn_AFXZ--Eb0cprC2eadWlVSs&_nc_zt=24&_nc_ht=scontent.fist20-1.fna&_nc_gid=nTuDkLGkZXmatnCPM2m_Mg&_nc_ss=70289&oh=00_AQPBA-zy4oLj0jvTp0_E1opaI90dYPy7GOPXkNZHdDPgKg&oe=6ADBEA82",
+    "delegate_page_id": "117633891627784"
+   },
+   "authors": [
+    {
+     "id": "100064795473427",
+     "name": "V Energy Australia",
+     "url": "https://www.facebook.com/venergyaustralia",
+     "profile_picture_url": "https://scontent.fist20-1.fna.fbcdn.net/v/t39.30808-1/475980477_1089043663265473_9132289368578444387_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=_aVTOYiNwZIQ7kNvwEbgZg4&_nc_oc=AdoEoy6b1ayTPkx2eR0hX09Ceysj7Z03I0JKBqRWI3gn_AFXZ--Eb0cprC2eadWlVSs&_nc_zt=24&_nc_ht=scontent.fist20-1.fna&_nc_gid=nTuDkLGkZXmatnCPM2m_Mg&_nc_ss=70289&oh=00_AQPBA-zy4oLj0jvTp0_E1opaI90dYPy7GOPXkNZHdDPgKg&oe=6ADBEA82",
+     "delegate_page_id": "117633891627784"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fist20-2.fna.fbcdn.net/v/t39.30808-6/758883711_1573953578107810_131035091549893049_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Hl8PCMBiiiUQ7kNvwG3bk3o&_nc_oc=AdqBhQGn3p7E-2XAzAOvSnyvcpDXZmJQR0FXEOy6tGVJTJ1zLVI0scHU-FLjnAiUmYQ&_nc_zt=23&_nc_ht=scontent.fist20-2.fna&_nc_gid=nTuDkLGkZXmatnCPM2m_Mg&_nc_ss=70289&oh=00_AQOsHFM-vFai-JUVeue6zyIg_UMH6qY8K4finTR9orIA_Q&oe=6ADBD53B",
+     "url": "https://www.facebook.com/photo.php?fbid=1573953568107811&set=a.550628627106982&type=3",
+     "id": "1573953568107811"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fist20-2.fna.fbcdn.net/v/t39.30808-6/758055130_1573953574774477_8642283560626627564_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OMAwOi1hdWkQ7kNvwHWXJcL&_nc_oc=AdpNzsyKAAZESriPUf7o6Ep6dOIIkgPd3C8ZUmxr5kxIBSoS16sxSCP6xvmQzx8QEpM&_nc_zt=23&_nc_ht=scontent.fist20-2.fna&_nc_gid=nTuDkLGkZXmatnCPM2m_Mg&_nc_ss=70289&oh=00_AQOeDuTCgTpqPtlZ4mXSllcc1XxJRPcTs8KfACI0Fnzuag&oe=6ADBD459",
+     "url": "https://www.facebook.com/photo.php?fbid=1573953558107812&set=a.550628627106982&type=3",
+     "id": "1573953558107812"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fist20-1.fna.fbcdn.net/v/t39.30808-6/755351228_1573953548107813_671679437697071261_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3FiWDg4xroIQ7kNvwH6Cc4W&_nc_oc=AdqPUOMs9fFO8yr5Cb5xqecS-Coy3Ox1UlLWgAv30cEplupjDdQ7Kbhso7FpHNyZkdc&_nc_zt=23&_nc_ht=scontent.fist20-1.fna&_nc_gid=nTuDkLGkZXmatnCPM2m_Mg&_nc_ss=70289&oh=00_AQOh-wPWr4aguWrdO3bpBfE-m8gZyaCGndvpEown6RZlnA&oe=6ADBBAFA",
+     "url": "https://www.facebook.com/photo.php?fbid=1573953544774480&set=a.550628627106982&type=3",
+     "id": "1573953544774480"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1573953631441138",
+   "shares_id": "1573953631441138",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 3,
+   "top_comments": []
+  },
+  {
+   "post_id": "27646908001654093",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/569971003107826/posts/27646908001654093/",
+   "message": "Kids bike in the 3-5 y/o range. No training wheels included. Chain and tires still good.",
+   "message_rich": "Kids bike in the 3-5 y/o range. No training wheels included. Chain and tires still good.",
+   "timestamp": 1788814795,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "1333705749",
+    "name": "Austin Hatcher",
+    "url": "https://www.facebook.com/austin.hatcher",
+    "profile_picture_url": "https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-1/796666109_10235945941172246_4392469151268287089_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=58_tTlPTlzUQ7kNvwE2YabG&_nc_oc=AdoHVWXfNZlI8wWoAOv6rAMt8AYPQhiCTkGUOvmRW9CDC3Yq6ljz9Y37ecWoOi-a0Is&_nc_zt=24&_nc_ht=scontent-cdg4-2.xx&_nc_gid=EM_4nXSi18Tv5v2bPOl4gQ&_nc_ss=70289&oh=00_AQM0sH8QankHj9RgO2g5MMT6tKa2tSP6WUUMTAuKId6PTw&oe=6ADBDD71",
+    "delegate_page_id": "996399313552998"
+   },
+   "authors": [
+    {
+     "id": "1333705749",
+     "name": "Austin Hatcher",
+     "url": "https://www.facebook.com/austin.hatcher",
+     "profile_picture_url": "https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-1/796666109_10235945941172246_4392469151268287089_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=58_tTlPTlzUQ7kNvwE2YabG&_nc_oc=AdoHVWXfNZlI8wWoAOv6rAMt8AYPQhiCTkGUOvmRW9CDC3Yq6ljz9Y37ecWoOi-a0Is&_nc_zt=24&_nc_ht=scontent-cdg4-2.xx&_nc_gid=EM_4nXSi18Tv5v2bPOl4gQ&_nc_ss=70289&oh=00_AQM0sH8QankHj9RgO2g5MMT6tKa2tSP6WUUMTAuKId6PTw&oe=6ADBDD71",
+     "delegate_page_id": "996399313552998"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "27646908001654093",
+   "shares_id": "27646908001654093",
+   "associated_group_id": "569971003107826",
+   "associated_group": {
+    "group_id": "569971003107826",
+    "name": "Paso Robles Buy and Sell",
+    "url": "https://www.facebook.com/groups/569971003107826/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "10175770091670048",
+   "type": "post",
+   "url": "https://www.facebook.com/case.atchison/posts/pfbid02A1fJX6mx4ysjfoqp1FgKrT9JrUCHCiVA2TKFUHMTAEyQXf5H4hrrQ4SpFTDHYhE9l",
+   "message": "O-Range kitty energy",
+   "message_rich": "O-Range kitty energy",
+   "timestamp": 1790394630,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0H7AaPyWubm7hqYYdvTjo4Hu2pqTrePPaMRiRoMi828SU9FNT2H5XWU7HVL5ZyxnNl",
+    "name": "Case Atchison",
+    "url": "https://www.facebook.com/pfbid0H7AaPyWubm7hqYYdvTjo4Hu2pqTrePPaMRiRoMi828SU9FNT2H5XWU7HVL5ZyxnNl",
+    "profile_picture_url": "https://scontent-cdg6-1.xx.fbcdn.net/v/t39.30808-1/519831988_10172141343735048_2109444804338569070_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tGd3Na-theQQ7kNvwFxSn4N&_nc_oc=AdpmkjVaNWXy0kMNOOsnBRWAbZhgZhWf4XQjO3ZI9kd1r21iEcS6UyuwyXvf8dzKHIk&_nc_zt=24&_nc_ht=scontent-cdg6-1.xx&_nc_gid=EM_4nXSi18Tv5v2bPOl4gQ&_nc_ss=70289&oh=00_AQNFppMhhPbXMeRIWmVlXbpKFcWGnoSOePFCfByQ8VIcIA&oe=6ADBCFA9",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0H7AaPyWubm7hqYYdvTjo4Hu2pqTrePPaMRiRoMi828SU9FNT2H5XWU7HVL5ZyxnNl",
+     "name": "Case Atchison",
+     "url": "https://www.facebook.com/pfbid0H7AaPyWubm7hqYYdvTjo4Hu2pqTrePPaMRiRoMi828SU9FNT2H5XWU7HVL5ZyxnNl",
+     "profile_picture_url": "https://scontent-cdg6-1.xx.fbcdn.net/v/t39.30808-1/519831988_10172141343735048_2109444804338569070_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=tGd3Na-theQQ7kNvwFxSn4N&_nc_oc=AdpmkjVaNWXy0kMNOOsnBRWAbZhgZhWf4XQjO3ZI9kd1r21iEcS6UyuwyXvf8dzKHIk&_nc_zt=24&_nc_ht=scontent-cdg6-1.xx&_nc_gid=EM_4nXSi18Tv5v2bPOl4gQ&_nc_ss=70289&oh=00_AQNFppMhhPbXMeRIWmVlXbpKFcWGnoSOePFCfByQ8VIcIA&oe=6ADBCFA9",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "122115237087472137",
+    "url": "https://www.facebook.com/reel/1362627018971657/",
+    "timestamp": null,
+    "message": "Comment “Pope” if you want this one for your cat 🙏🤣\n🛍️ Link in my bio or you can find us at father-doggy.com ✨\n #pope #nun #cat #Halloween",
+    "photo_url": null,
+    "author": {
+     "id": "61594164116220",
+     "name": "Father Doggy Store",
+     "url": "https://www.facebook.com/people/Father-Doggy-Store/61594164116220/"
+    },
+    "video_url": "https://video-cdg4-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPR-tY4Fq5KMZEuKYu7O97wRl0MsvfRWUoN_ax9fLfC-97wLhLZevKhak1Qhxd2M3LaGIodpjM63GaBUlOaZhGSecRF73eRbvlEowSAJYEiMw.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=video-cdg4-2.xx.fbcdn.net&_nc_ohc=1jKrHahrU5AQ7kNvwF-h7-v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0MTEyNjE3Mjc2NTQzMDksImFzc2V0X2FnZV9kYXlzIjoyMywidmlfdXNlY2FzZV9pZCI6MTIzNzksImR1cmF0aW9uX3MiOjE0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7a79a870f67fd819&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xNzQ2QkZBQzhDN0E5M0JGMjYzRTZCODg5OUNGOTA5Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0QwNDVGOTM3RDZERUE4OTlDRkNGRUUyRkE3Njg5NEE0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbKhrKfn-KBBRUCKAJDMywXQC0Q5WBBiTcYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZbbBAQA&_nc_gid=EM_4nXSi18Tv5v2bPOl4gQ&_nc_ss=70289&_nc_zt=28&oh=00_AQMC3ZwPEUEKFlGPlBpQ2G8ymkT2MQ_vv3yrJ3v-XrgL8g&oe=6ADBBC2F&bitrate=1420384&tag=dash_h264-basic-gen2_720p",
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/reel/1362627018971657/",
+   "text_format_metadata": null,
+   "comments_id": "10175770091670048",
+   "shares_id": "10175770091670048",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122134135557350047",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0T2GNozJzZ7n1Ss2UvmByLJRXzpyTFfBqjxPFdQfWFxBrxWZPWccjzQzJ92TUd8rel&id=61590501436400",
+   "message": "💰 JUST DROPPED TO $1,778,000 IN HUNTINGTON BEACH\n💰 Offered at $1,778,000\n\nThis 4-bed Huntington Beach home just got a price drop, and at this number, it won't stay quiet for long.\n\n✅ Property Highlights\n✅ 4 bedrooms, 2.5 baths\n✅ 1,698 sqft of living space\n✅ Freshly reduced price\n✅ Prime Huntington Beach location\n✅ Close to shopping, dining, and the coast\n\n💡 Price just dropped after 71 days on market — motivated seller, real opportunity to negotiate.\n\nOpportunities like this don't come often.\n\n━━━━━━━━━━━━━━\n\n💰 GIẢM GIÁ CÒN $1,778,000 TẠI HUNTINGTON BEACH\n💰 Giá bán: $1,778,000\n\nCăn nhà 4 phòng ngủ tại Huntington Beach vừa được giảm giá, và với mức giá này chắc chắn sẽ được nhiều người để ý ngay.\n\n✅ Điểm Nổi Bật\n✅ 4 phòng ngủ, 2.5 phòng tắm\n✅ Diện tích 1,698 sqft\n✅ Vừa mới giảm giá\n✅ Vị trí đẹp tại Huntington Beach\n✅ Gần khu mua sắm, ăn uống và biển\n\n💡 Giá vừa giảm sau 71 ngày trên thị trường — chủ nhà có thiện chí bán, cơ hội thương lượng tốt.\n\nHãy liên hệ để Vy đưa bạn đi xem nhà.\n\n━━━━━━━━━━━━━━\n\n📍 Just Minutes From:\n🌊 Huntington Beach Pier\n🛍️ Bella Terra Shopping Center\n⛳ Meadowlark Golf Course\n🎓 Edison High School\n🌳 Huntington Central Park\n🚗 Easy Freeway Access\n\nVy Tran | First Team Real Estate\nThe V Estate | Orange County Luxury Real Estate\n📞 (714) 909-8808 📧 vytran@firstteam.com\nDRE #02227752\n\n#OrangeCountyHomes #OrangeCountyRealEstate #VyTranRealEstate #JustListed #PriceDrop #HuntingtonBeachHomes #HuntingtonBeachRealEstate\n— Presented by agent Patricia Vidal|Remax",
+   "message_rich": "💰 JUST DROPPED TO $1,778,000 IN HUNTINGTON BEACH\n💰 Offered at $1,778,000\n\nThis 4-bed Huntington Beach home just got a price drop, and at this number, it won't stay quiet for long.\n\n✅ Property Highlights\n✅ 4 bedrooms, 2.5 baths\n✅ 1,698 sqft of living space\n✅ Freshly reduced price\n✅ Prime Huntington Beach location\n✅ Close to shopping, dining, and the coast\n\n💡 Price just dropped after 71 days on market — motivated seller, real opportunity to negotiate.\n\nOpportunities like this don't come often.\n\n━━━━━━━━━━━━━━\n\n💰 GIẢM GIÁ CÒN $1,778,000 TẠI HUNTINGTON BEACH\n💰 Giá bán: $1,778,000\n\nCăn nhà 4 phòng ngủ tại Huntington Beach vừa được giảm giá, và với mức giá này chắc chắn sẽ được nhiều người để ý ngay.\n\n✅ Điểm Nổi Bật\n✅ 4 phòng ngủ, 2.5 phòng tắm\n✅ Diện tích 1,698 sqft\n✅ Vừa mới giảm giá\n✅ Vị trí đẹp tại Huntington Beach\n✅ Gần khu mua sắm, ăn uống và biển\n\n💡 Giá vừa giảm sau 71 ngày trên thị trường — chủ nhà có thiện chí bán, cơ hội thương lượng tốt.\n\nHãy liên hệ để Vy đưa bạn đi xem nhà.\n\n━━━━━━━━━━━━━━\n\n📍 Just Minutes From:\n🌊 Huntington Beach Pier\n🛍️ Bella Terra Shopping Center\n⛳ Meadowlark Golf Course\n🎓 Edison High School\n🌳 Huntington Central Park\n🚗 Easy Freeway Access\n\nVy Tran | First Team Real Estate\nThe V Estate | Orange County Luxury Real Estate\n📞 (714) 909-8808 📧 vytran@firstteam.com\nDRE #02227752\n\n#OrangeCountyHomes #OrangeCountyRealEstate #VyTranRealEstate #JustListed #PriceDrop #HuntingtonBeachHomes #HuntingtonBeachRealEstate\n— Presented by agent Patricia Vidal|Remax",
+   "timestamp": 1787798620,
+   "comments_count": 0,
+   "reactions_count": 2,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61590501436400",
+    "name": "The V Estate - Orange County Real Estate",
+    "url": "https://www.facebook.com/people/The-V-Estate-Orange-County-Real-Estate/61590501436400/",
+    "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/723186810_122111345715350047_4557617746686274781_n.jpg?stp=c0.0.1284.1284a_cp6_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kLZX0_pIo3YQ7kNvwFxz_NS&_nc_oc=AdonMdwGVbctBqQk8yVDmMy7aBAtOuvRJzC96146k-8lUY8N7YuD4BnWnzRNIEhk8D4&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPcBbTD3ITLAKY94Y_7wh7ONWVABxtHXjuVf14-x_WJ1Q&oe=6ADBDFEE",
+    "delegate_page_id": "1169353809593735"
+   },
+   "authors": [
+    {
+     "id": "61590501436400",
+     "name": "The V Estate - Orange County Real Estate",
+     "url": "https://www.facebook.com/people/The-V-Estate-Orange-County-Real-Estate/61590501436400/",
+     "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/723186810_122111345715350047_4557617746686274781_n.jpg?stp=c0.0.1284.1284a_cp6_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kLZX0_pIo3YQ7kNvwFxz_NS&_nc_oc=AdonMdwGVbctBqQk8yVDmMy7aBAtOuvRJzC96146k-8lUY8N7YuD4BnWnzRNIEhk8D4&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPcBbTD3ITLAKY94Y_7wh7ONWVABxtHXjuVf14-x_WJ1Q&oe=6ADBDFEE",
+     "delegate_page_id": "1169353809593735"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/786375697_122134135347350047_1250928376520737140_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=X5_5P5BcPNYQ7kNvwGFQ6n7&_nc_oc=AdqIEPD5s1eQHZFeycsPHoQ5d5IufFW7tRBMvlRZWyJ55Zy6qT6DaRpZv_EC2BBrVpE&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQNzDkwd71dTQsk5yRYP20izYYAWcuMK3wskbGiKjaYLlA&oe=6ADBD18E",
+     "url": "https://www.facebook.com/photo.php?fbid=122134135341350047&set=a.122111338455350047&type=3",
+     "id": "122134135341350047"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/785722727_122134135395350047_7245952573051506205_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qk9ablWkQ78Q7kNvwHQeZHt&_nc_oc=Adra4qufaUKtWfsHp3P72ORBHSjutxHT4JBxqXrkSzY2m0f0p1rMdtN0Uto_E99BeZw&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPY6IlKqMWk9IhZ0YX3pYMWRgWKaSfHvnuNEH9ZCd5g9g&oe=6ADBC70A",
+     "url": "https://www.facebook.com/photo.php?fbid=122134135389350047&set=a.122111338455350047&type=3",
+     "id": "122134135389350047"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/784981924_122134135527350047_996995863448804159_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zo2hfX8T0ugQ7kNvwFO94e4&_nc_oc=Adpv0d-qEXXC7fu5dpOXqzeYdR4p4eS5rMOSO6LHNozhgYy0X7xx9MLT548BLZDfqd8&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQN4sZC2V9idsfOybs1ygH1_UV1q5hpuyFQfLRR7b964Qw&oe=6ADBE614",
+     "url": "https://www.facebook.com/photo.php?fbid=122134135521350047&set=a.122111338455350047&type=3",
+     "id": "122134135521350047"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122134135557350047",
+   "shares_id": "122134135557350047",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 3,
+   "top_comments": []
+  },
+  {
+   "post_id": "122133889311350047",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02cWTyM3QW65RYoaka7hVkfYQGSnratsDJ77DkUPV4cuEqGnzBpgBSwNecqUQVUTfrl&id=61590501436400",
+   "message": "🏡 HOT IN FOUNTAIN VALLEY — MOVE-IN READY!\n📍 17777 Joshua Cir, Fountain Valley, CA 💰 Offered at $3,188,000\n\nImagine settling into a brand new 4,029 sqft home in one of Fountain Valley's most sought-after pockets. With 5 spacious bedrooms and 4.5 baths, you'll have all the room you need for family, guests, and everything in between. This is the kind of space that lets your lifestyle breathe.\n\n✨ Property Highlights\n✅ 5 Bedrooms | 4.5 Bathrooms\n✅ 4,029 Sqft of Living Space\n✅ Move-In Ready Condition\n✅ Modern Open-Concept Layout\n✅ Room for Multi-Gen Living or Home Office\n✅ Prime Fountain Valley Location\n✅ 108 Days on Market — Room to Negotiate\n\n📍 Just Minutes From:\n🌳 Minutes from Mile Square Park\n🍜 Close to Little Saigon Dining & Shops\n🛍️ Near Fountain Valley's Local Favorites\n🏫 Zoned for Sought-After FV Schools\n🌊 Short Drive to Huntington Beach Coastline\n🚗 Easy Freeway Access\n\n💡 This home has been on the market for over 100 days — a great sign for buyers who want room to negotiate on price or terms.\n\nHomes of this size and quality in Fountain Valley are rare, and I can get you in to see it.\n\n📲 Schedule your private showing today!\n\nVy Tran | First Team Real Estate\nThe V Estate | Orange County Luxury Real Estate\n📞 (714) 909-8808 📧 vytran@firstteam.com\nDRE #02227752\n\n#OrangeCountyHomes #OrangeCountyRealEstate #VyTranRealEstate #JustListed #MoveInReady #FamilyHome #SingleFamilyHome #FountainValley\n— Presented by agent Tram|Compass",
+   "message_rich": "🏡 HOT IN FOUNTAIN VALLEY — MOVE-IN READY!\n📍 17777 Joshua Cir, Fountain Valley, CA 💰 Offered at $3,188,000\n\nImagine settling into a brand new 4,029 sqft home in one of Fountain Valley's most sought-after pockets. With 5 spacious bedrooms and 4.5 baths, you'll have all the room you need for family, guests, and everything in between. This is the kind of space that lets your lifestyle breathe.\n\n✨ Property Highlights\n✅ 5 Bedrooms | 4.5 Bathrooms\n✅ 4,029 Sqft of Living Space\n✅ Move-In Ready Condition\n✅ Modern Open-Concept Layout\n✅ Room for Multi-Gen Living or Home Office\n✅ Prime Fountain Valley Location\n✅ 108 Days on Market — Room to Negotiate\n\n📍 Just Minutes From:\n🌳 Minutes from Mile Square Park\n🍜 Close to Little Saigon Dining & Shops\n🛍️ Near Fountain Valley's Local Favorites\n🏫 Zoned for Sought-After FV Schools\n🌊 Short Drive to Huntington Beach Coastline\n🚗 Easy Freeway Access\n\n💡 This home has been on the market for over 100 days — a great sign for buyers who want room to negotiate on price or terms.\n\nHomes of this size and quality in Fountain Valley are rare, and I can get you in to see it.\n\n📲 Schedule your private showing today!\n\nVy Tran | First Team Real Estate\nThe V Estate | Orange County Luxury Real Estate\n📞 (714) 909-8808 📧 vytran@firstteam.com\nDRE #02227752\n\n#OrangeCountyHomes #OrangeCountyRealEstate #VyTranRealEstate #JustListed #MoveInReady #FamilyHome #SingleFamilyHome #FountainValley\n— Presented by agent Tram|Compass",
+   "timestamp": 1787712382,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61590501436400",
+    "name": "The V Estate - Orange County Real Estate",
+    "url": "https://www.facebook.com/people/The-V-Estate-Orange-County-Real-Estate/61590501436400/",
+    "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/723186810_122111345715350047_4557617746686274781_n.jpg?stp=c0.0.1284.1284a_cp6_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kLZX0_pIo3YQ7kNvwFxz_NS&_nc_oc=AdonMdwGVbctBqQk8yVDmMy7aBAtOuvRJzC96146k-8lUY8N7YuD4BnWnzRNIEhk8D4&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPcBbTD3ITLAKY94Y_7wh7ONWVABxtHXjuVf14-x_WJ1Q&oe=6ADBDFEE",
+    "delegate_page_id": "1169353809593735"
+   },
+   "authors": [
+    {
+     "id": "61590501436400",
+     "name": "The V Estate - Orange County Real Estate",
+     "url": "https://www.facebook.com/people/The-V-Estate-Orange-County-Real-Estate/61590501436400/",
+     "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/723186810_122111345715350047_4557617746686274781_n.jpg?stp=c0.0.1284.1284a_cp6_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kLZX0_pIo3YQ7kNvwFxz_NS&_nc_oc=AdonMdwGVbctBqQk8yVDmMy7aBAtOuvRJzC96146k-8lUY8N7YuD4BnWnzRNIEhk8D4&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPcBbTD3ITLAKY94Y_7wh7ONWVABxtHXjuVf14-x_WJ1Q&oe=6ADBDFEE",
+     "delegate_page_id": "1169353809593735"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/780817373_122133889281350047_4755908943319317156_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3Gd8Q0rzRmQQ7kNvwElf0ab&_nc_oc=AdoSepdkXyTSX8u3OCBOxkB34wDUigqy8VAbYZ6v1gMthfWYMk_3Tvim3zFxrujA8ew&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPijTXi7mrHm0-4KarOG-nPcelL6BHe-LpCsxIFkTzh0g&oe=6ADBBA1E",
+    "height": 360,
+    "width": 640,
+    "id": "122133889275350047"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122133889311350047",
+   "shares_id": "122133889311350047",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2048664639246229",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1154684268644275/posts/2048664639246229/",
+   "message": "Won Wins??? Blue Ford v Orange Chevy \nVintage Trucks & The Kid thinks Ford🤷‍♂️  #VintageCars #Trucks #race #questionoftheday",
+   "message_rich": "Won Wins??? Blue Ford v Orange Chevy \nVintage Trucks & The Kid thinks Ford🤷‍♂️  #VintageCars #Trucks #race #questionoftheday",
+   "timestamp": 1791199929,
+   "comments_count": 20,
+   "reactions_count": 44,
+   "reshare_count": 4,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 36,
+    "love": 8,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100006687873624",
+    "name": "Mark Riendeau",
+    "url": "https://www.facebook.com/mark.riendeau.942",
+    "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/691989670_4552532124979672_1444826499375615119_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_ohc=QEPP-YjHBxwQ7kNvwGCEfLP&_nc_oc=Adr03-ZkyrcKVstx9BNAToJi2bxU-mqw-sAPLuHmXZcudT4tlkwZBra20IO3pZQRAWk&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQMyu6BD6WB3rgu7WLy4fGZ1zCqKcPl2V43S_a81Ul9mnA&oe=6ADBCB25",
+    "delegate_page_id": "189456047577426"
+   },
+   "authors": [
+    {
+     "id": "100006687873624",
+     "name": "Mark Riendeau",
+     "url": "https://www.facebook.com/mark.riendeau.942",
+     "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/691989670_4552532124979672_1444826499375615119_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_ohc=QEPP-YjHBxwQ7kNvwGCEfLP&_nc_oc=Adr03-ZkyrcKVstx9BNAToJi2bxU-mqw-sAPLuHmXZcudT4tlkwZBra20IO3pZQRAWk&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQMyu6BD6WB3rgu7WLy4fGZ1zCqKcPl2V43S_a81Ul9mnA&oe=6ADBCB25",
+     "delegate_page_id": "189456047577426"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/mark.riendeau.942/videos/1119836744067637/?idorvanity=1154684268644275",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m412/AQNx_bUSbztZQYUp0_GJJZvg-V8FzLZvqkZDxJF8YAgfPEJiccW5_fUkRJRlMtt8Dj-hf86Z9PgRLXSXu1IOivS2TANyUKeYX3DY_XGL6w.mp4?_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=TjTdbwxtTd4Q7kNvwFrdwMv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTY3Njc4NzkwNzQ1NDgzNywiYXNzZXRfYWdlX2RheXMiOjE0LCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6OSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&_nc_zt=28&oh=00_AQN0KuYI_1Ig8XMzKrJkDVwuqbj2JUn3kE38jXOZFxF7pw&oe=6ADBBAE7&bitrate=551344&tag=sve_sd",
+    "video_hd_file": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPQPzzZm0NQxbDqCDUJZKJ_c9oIJj39q7vfD3OXQZUVVB0sxIxg1WRy-WC_1bIhAYWJPeOy28nVmQgEieygBxEcAKwBFj9ZCcXK45xQ_YH4Qw.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=wdsy0uJIEhQQ7kNvwHZJYhW&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2NzY3ODc5MDc0NTQ4MzcsImFzc2V0X2FnZV9kYXlzIjoxNCwidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=c0a90b198d9c236c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yN0NBNzFCNzE3NzE0OEExQTQxRjFCRUYyMDkyMTg2RF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzVGRjRCMDM0MkU0QTQwQTNCRkY2MEQ2NjE2RDVFOEM2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbqnbO588H6BRUCKAJDMywXQCNrAgxJul4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZaeAQA&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&_nc_zt=28&oh=00_AQNviBLXy1oOd1gPQI1Q3LtVvmrbN--_iCHi-wyPvfTHMw&oe=6ADBE0B8&bitrate=3116604&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-phl2-1.xx.fbcdn.net/v/t15.5256-10/831572263_1456382219327531_495530680329163131_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=d83a4a&_nc_ohc=W0gd4wc6hxgQ7kNvwHxNiZA&_nc_oc=AdqUzykMrv1BxAh9tioMhF_sRc3uJkam5tzV-ZlnFgQoL43VgVrtu6YQrt5BnqAcm60&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQNcjI_39vFptvYmzFxb8vws2SrLvvhvXEjY173Bf9bUeA&oe=6ADBC8AD",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2048664639246229",
+   "shares_id": "2048664639246229",
+   "associated_group_id": "1154684268644275",
+   "associated_group": {
+    "group_id": "1154684268644275",
+    "name": "Chevy sucks, get a Ford",
+    "url": "https://www.facebook.com/groups/1154684268644275/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "10164979866124339",
+   "type": "post",
+   "url": "https://www.facebook.com/theccmoreno/posts/pfbid0YdpcPNpFrw9MFcoEq1irvK1Mg9ZgiD8RvBHaesmRA2d9pcXKw2AUJCPUkx8yzZsCl",
+   "message": "Now, I’ve let y’all nurse your hangovers off…. 💤 \n\nSo, here’s part III of V….\n\nPUBLIC MONEY DOESN’T BECOME LESS PUBLIC BECAUSE THE DEAL HAS A PRETTY NAME. 💰\n\nNow that you’ve seen most of the players, now we look at the paperwork…. 📋 \n\nAnd, the CoastAL arrangement needs to be understood from a City of Orange Beach TAXPAYER’S side of the closing table. \n\nIn 2021, the City announced a beachfront purchase alongside Orange Beach Land Company, owned by John McInnis and Cameron Price, the Flora-Bama co-owners. The announcement also identified the seller of the larger tract as 68 Ventures’ Nathan Cox.\n\nNow, the announced cost for the City’s parcel and improvements was about $13 MILLION, roughly $10 million for the acquisition and another $3 million for improvements.\n\nPublic land and parking, but conveniently beside a PRIVATE restaurant development. 🏖️\n\nThe part that got missed by the TAXPAYERS and was conveniently glazed over by Tony Kennon was that the current recorded deed for this property references PREEXISTING 👏🏻 EASEMENTS 👏🏻 \n\nNow, guess what those easements say they do……\n\nTo paraphrase, an easement existing and benefiting the City of Orange Beach for beach access and related work, including sand placement, vegetation, irrigation, and access structures to include bathrooms and outdoor showers.\n\nWe ALREADY had the SAME legal rights associated with that property.\n\nTo be clear, an easement and ownership give you different rights. \n\nSo, the accounting starts with the access we already had, then identifies what additional ownership and control we purchased, what restrictions accompanied it, and what the private development received.\n\nBut, you don’t get to start the public’s side of the transaction at ZERO and sell us the whole thing as newly acquired access. 🧾\n\nThe City’s announced parking arrangement included approximately 107 resident-priority spaces during designated periods, another 56 spaces available for resident-exclusive use for limited days, and shared parking benefiting the adjacent development. \n\nThe private company also had specified rights involving use and charging for some parking.\n\nThat’s more complicated than “we bought a beach parking lot.” 🫪\n\nWho could use it? When? Who controlled it? Who could charge? What do  residents ACTUALLY receive when demand was highest?\n\nWhat taxpayers gave up included MILLIONS of dollars available for other public needs. 🙈\n\nWhat the arrangement committed included shared use of PUBLICLY supported property and improvements that helped a private business operate.\n\nThat’s a PRIVATE BUSINESS BENEFITING FROM PUBLIC INVESTMENT. \n\nYou can call it support, an incentive, or a public-private arrangement, but you damn sure better account for it. 🚗\n\nThe City also obtained beach ownership and avoided the much larger condominium proposal. Those benefits belong in the calculation, too. \n\nBut, so do the rights we already had, the parking restrictions, and the business benefits our spending helped provide.\n\n“Historic investment” still needs an explanation of who got what.\n\nThen came Beech’s and Pirate’s Voyage. 🏴‍☠️\n\nResidents were being asked to consider traffic, drainage, trees, and a major attraction on the campground property. \n\nThen, after the worst case scenario was shoved down our throat and citizens revolted like the magical plan Tony Kennon had been orchestrating all along, the discussion shifted toward the City buying land…… \n\nNow, back to the players…. It’s been reported that John McInnis III held the underlying purchase contract at around $10 million, while the proposed City purchase was being discussed around $14 million.\n\nAgain, I’m no mathemagician, but that’s roughly a FOUR MILLION DOLLAR DIFFERENCE. ‼️\n\nThe contract and assignment terms matter to the final accounting. But, when TAXPAYERS are being considered as the buyer, the difference between the underlying price and the price offered to the City is something they’re entitled to understand.\n\nWho actually held the contract when it was pitched to the city? Who stood to receive the spread? What did the council know? What was Tony negotiating, and with whom? Who else was there? 👀\n\nBy June 29th, the City and Pirate’s Voyage had withdrawn from the purchase negotiations. That proposed acquisition fell apart. The approximately $4 million was a proposed price difference, not a profit I’m saying somebody collected from the City.\n\nThe paperwork still matters. A transaction doesn’t become immune from scrutiny because public opposition helped make it untenable.\n\nAnd the McInnis’s history with infrastructure reaches further back than CoastAL, doesn’t it? 📌\n\nThe McInnis family’s business interests included ownership in the original Foley Beach Express toll bridge venture, alongside the James family. \n\nJohn McInnis III has publicly discussed selling the bridge interests before his Flora-Bama involvement. Federal highway records document the original private bridge company, McInnis Corporation’s construction role, and the earlier sale to Macquarie. 📌\n\nThe James family was also the connection through which Cameron Price entered Flora-Bama ownership. \n\nThat’s another relationship connecting the earlier business history to the people who later appeared together in the CoastAL and Orange Beach Land Company transactions. 📌\n\nThat’s a longstanding history involving PRIVATE COMMERCIAL INTERESTS and the infrastructure people use to reach this area. The bridge passed through later owners and eventually into state ownership. 🛣️\n\nIt belongs in the context because access, traffic, development, and commercial value are related. \n\nThe SAME people involved in those transactions understood that relationship long before residents were being told what their roads could supposedly handle, didn’t they? \n\nSo, when the same business interests appear around CoastAL, Beech’s, and discussions about public infrastructure, it’s NORMAL to want the underlying documents. But, ALDOT says they never existed. \n\nSo, while no scrutiny was on, CoastAL closed. \n\nBut, under slight pressure, both proposed Beech’s deals collapsed. And, y’all know the toll bridge and the new bridge has its own history. 🥴\n\nBut, “trust us” isn’t a substitute for any of them.\n\nPart IV is what happened when ALL these relationships intersected with public office, school decisions, and the treatment of people asking questions. 🗺️ \n\nJack Robertson, you’re up. 📱",
+   "message_rich": "Now, I’ve let y’all nurse your hangovers off…. 💤 \n\nSo, here’s part III of V….\n\nPUBLIC MONEY DOESN’T BECOME LESS PUBLIC BECAUSE THE DEAL HAS A PRETTY NAME. 💰\n\nNow that you’ve seen most of the players, now we look at the paperwork…. 📋 \n\nAnd, the CoastAL arrangement needs to be understood from a City of Orange Beach TAXPAYER’S side of the closing table. \n\nIn 2021, the City announced a beachfront purchase alongside Orange Beach Land Company, owned by John McInnis and Cameron Price, the Flora-Bama co-owners. The announcement also identified the seller of the larger tract as 68 Ventures’ Nathan Cox.\n\nNow, the announced cost for the City’s parcel and improvements was about $13 MILLION, roughly $10 million for the acquisition and another $3 million for improvements.\n\nPublic land and parking, but conveniently beside a PRIVATE restaurant development. 🏖️\n\nThe part that got missed by the TAXPAYERS and was conveniently glazed over by Tony Kennon was that the current recorded deed for this property references PREEXISTING 👏🏻 EASEMENTS 👏🏻 \n\nNow, guess what those easements say they do……\n\nTo paraphrase, an easement existing and benefiting the City of Orange Beach for beach access and related work, including sand placement, vegetation, irrigation, and access structures to include bathrooms and outdoor showers.\n\nWe ALREADY had the SAME legal rights associated with that property.\n\nTo be clear, an easement and ownership give you different rights. \n\nSo, the accounting starts with the access we already had, then identifies what additional ownership and control we purchased, what restrictions accompanied it, and what the private development received.\n\nBut, you don’t get to start the public’s side of the transaction at ZERO and sell us the whole thing as newly acquired access. 🧾\n\nThe City’s announced parking arrangement included approximately 107 resident-priority spaces during designated periods, another 56 spaces available for resident-exclusive use for limited days, and shared parking benefiting the adjacent development. \n\nThe private company also had specified rights involving use and charging for some parking.\n\nThat’s more complicated than “we bought a beach parking lot.” 🫪\n\nWho could use it? When? Who controlled it? Who could charge? What do  residents ACTUALLY receive when demand was highest?\n\nWhat taxpayers gave up included MILLIONS of dollars available for other public needs. 🙈\n\nWhat the arrangement committed included shared use of PUBLICLY supported property and improvements that helped a private business operate.\n\nThat’s a PRIVATE BUSINESS BENEFITING FROM PUBLIC INVESTMENT. \n\nYou can call it support, an incentive, or a public-private arrangement, but you damn sure better account for it. 🚗\n\nThe City also obtained beach ownership and avoided the much larger condominium proposal. Those benefits belong in the calculation, too. \n\nBut, so do the rights we already had, the parking restrictions, and the business benefits our spending helped provide.\n\n“Historic investment” still needs an explanation of who got what.\n\nThen came Beech’s and Pirate’s Voyage. 🏴‍☠️\n\nResidents were being asked to consider traffic, drainage, trees, and a major attraction on the campground property. \n\nThen, after the worst case scenario was shoved down our throat and citizens revolted like the magical plan Tony Kennon had been orchestrating all along, the discussion shifted toward the City buying land…… \n\nNow, back to the players…. It’s been reported that John McInnis III held the underlying purchase contract at around $10 million, while the proposed City purchase was being discussed around $14 million.\n\nAgain, I’m no mathemagician, but that’s roughly a FOUR MILLION DOLLAR DIFFERENCE. ‼️\n\nThe contract and assignment terms matter to the final accounting. But, when TAXPAYERS are being considered as the buyer, the difference between the underlying price and the price offered to the City is something they’re entitled to understand.\n\nWho actually held the contract when it was pitched to the city? Who stood to receive the spread? What did the council know? What was Tony negotiating, and with whom? Who else was there? 👀\n\nBy June 29th, the City and Pirate’s Voyage had withdrawn from the purchase negotiations. That proposed acquisition fell apart. The approximately $4 million was a proposed price difference, not a profit I’m saying somebody collected from the City.\n\nThe paperwork still matters. A transaction doesn’t become immune from scrutiny because public opposition helped make it untenable.\n\nAnd the McInnis’s history with infrastructure reaches further back than CoastAL, doesn’t it? 📌\n\nThe McInnis family’s business interests included ownership in the original Foley Beach Express toll bridge venture, alongside the James family. \n\nJohn McInnis III has publicly discussed selling the bridge interests before his Flora-Bama involvement. Federal highway records document the original private bridge company, McInnis Corporation’s construction role, and the earlier sale to Macquarie. 📌\n\nThe James family was also the connection through which Cameron Price entered Flora-Bama ownership. \n\nThat’s another relationship connecting the earlier business history to the people who later appeared together in the CoastAL and Orange Beach Land Company transactions. 📌\n\nThat’s a longstanding history involving PRIVATE COMMERCIAL INTERESTS and the infrastructure people use to reach this area. The bridge passed through later owners and eventually into state ownership. 🛣️\n\nIt belongs in the context because access, traffic, development, and commercial value are related. \n\nThe SAME people involved in those transactions understood that relationship long before residents were being told what their roads could supposedly handle, didn’t they? \n\nSo, when the same business interests appear around CoastAL, Beech’s, and discussions about public infrastructure, it’s NORMAL to want the underlying documents. But, ALDOT says they never existed. \n\nSo, while no scrutiny was on, CoastAL closed. \n\nBut, under slight pressure, both proposed Beech’s deals collapsed. And, y’all know the toll bridge and the new bridge has its own history. 🥴\n\nBut, “trust us” isn’t a substitute for any of them.\n\nPart IV is what happened when ALL these relationships intersected with public office, school decisions, and the treatment of people asking questions. 🗺️ \n\nJack Robertson, you’re up. 📱",
+   "timestamp": 1788720385,
+   "comments_count": 56,
+   "reactions_count": 138,
+   "reshare_count": 16,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 116,
+    "love": 17,
+    "sad": 0,
+    "wow": 4
+   },
+   "author": {
+    "id": "693764338",
+    "name": "C.C. Dixon-Moreno",
+    "url": "https://www.facebook.com/theccmoreno",
+    "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/849099523_10165148784214339_6721280889372530312_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=10sdRCeWMDMQ7kNvwHcj_-b&_nc_oc=Adp70ocUJ_2-vvY3Qtls6PLzogCWKnMRoZo5loon5KX_4sH5Zztz3ATHt-aN6bYd6G4&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQMnTbbYl_s_gad_KD-aQNF7vXOufrTeDbrYE2Xw5Yq3MQ&oe=6ADBCF8A",
+    "delegate_page_id": "611722908693682"
+   },
+   "authors": [
+    {
+     "id": "693764338",
+     "name": "C.C. Dixon-Moreno",
+     "url": "https://www.facebook.com/theccmoreno",
+     "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/849099523_10165148784214339_6721280889372530312_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=10sdRCeWMDMQ7kNvwHcj_-b&_nc_oc=Adp70ocUJ_2-vvY3Qtls6PLzogCWKnMRoZo5loon5KX_4sH5Zztz3ATHt-aN6bYd6G4&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQMnTbbYl_s_gad_KD-aQNF7vXOufrTeDbrYE2Xw5Yq3MQ&oe=6ADBCF8A",
+     "delegate_page_id": "611722908693682"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/793204052_10164979864654339_6441132054197182876_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=V2PhqoD6ai4Q7kNvwF-aP7_&_nc_oc=AdoKdoYiuU_N6ngw6Oa0J3-Kkuz4S9O67DnbDBdK9cYd6TkMeAQj1kPIJgaZr97_bJE&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQP3XKaGxkBrryGySRf-g6TGmGDzvdg_zEdQBN_kX40RGQ&oe=6ADBD7D8",
+    "height": 387,
+    "width": 516,
+    "id": "10164979864639339"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "10164979866124339",
+   "shares_id": "10164979866124339",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122104205751363551",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02r6xoCJbJv59pZbdwcpyekgLxR5xA7juu5CGRSR3R99PmRNofaaAAnDeHepp8yKvfl&id=61590906556163",
+   "message": "اقوى عروض اورنج في العريش🎉 لفتره محدوده جداً\nإللحق العرض  قبل ميروح عليك😉\n واشتري دلوقتي خط وهينزلك عليه 3400 وحده مجاناً تستخدمهم نت ومكالمات براحتك طول الشهر\nوكمان متنساش تسأل علي عرض الخط عليه خط هديه\n+ عرض الخطين عليهم خط تالت هديه وكمان شنطه🎒 وهينزلك عليهم 3400 وحده لكل خط مجاانا 🎉هتشبع نت طوول الشهر وحرفيا ببلاش منتظراك جوايز كتير  في اورانج العريش 😉🎉🥰 زورنا باسرع وقت 🏃🏻 والحق العروض المجانيه ..العرووض لفتره محدوده  جددا⚠️\nعنوان الفرع : العريش شارع 23 يوليو امام مول القصاص🏫",
+   "message_rich": "اقوى عروض اورنج في العريش🎉 لفتره محدوده جداً\nإللحق العرض  قبل ميروح عليك😉\n واشتري دلوقتي خط وهينزلك عليه 3400 وحده مجاناً تستخدمهم نت ومكالمات براحتك طول الشهر\nوكمان متنساش تسأل علي عرض الخط عليه خط هديه\n+ عرض الخطين عليهم خط تالت هديه وكمان شنطه🎒 وهينزلك عليهم 3400 وحده لكل خط مجاانا 🎉هتشبع نت طوول الشهر وحرفيا ببلاش منتظراك جوايز كتير  في اورانج العريش 😉🎉🥰 زورنا باسرع وقت 🏃🏻 والحق العروض المجانيه ..العرووض لفتره محدوده  جددا⚠️\nعنوان الفرع : العريش شارع 23 يوليو امام مول القصاص🏫",
+   "timestamp": 1782167492,
+   "comments_count": 26,
+   "reactions_count": 69,
+   "reshare_count": 5,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 1,
+    "like": 67,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61590906556163",
+    "name": "Orange V ElArish",
+    "url": "https://www.facebook.com/people/Orange-V-ElArish/61590906556163/",
+    "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/731079785_122106637737363551_3892944241754779122_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ch8avZ9gsAgQ7kNvwH00rl-&_nc_oc=Adps2UNsSN2M1TG8_bNUG-z1XImPdYT3QpAooUC2YOW4755vP2ubCl8ISp7RIEmKFRU&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQP1zLB3Xlt_WVjjig0UgTCbRMjc_c4lkrKim-IbzwoCHg&oe=6ADBE2E4",
+    "delegate_page_id": "1088039187737204"
+   },
+   "authors": [
+    {
+     "id": "61590906556163",
+     "name": "Orange V ElArish",
+     "url": "https://www.facebook.com/people/Orange-V-ElArish/61590906556163/",
+     "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/731079785_122106637737363551_3892944241754779122_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ch8avZ9gsAgQ7kNvwH00rl-&_nc_oc=Adps2UNsSN2M1TG8_bNUG-z1XImPdYT3QpAooUC2YOW4755vP2ubCl8ISp7RIEmKFRU&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQP1zLB3Xlt_WVjjig0UgTCbRMjc_c4lkrKim-IbzwoCHg&oe=6ADBE2E4",
+     "delegate_page_id": "1088039187737204"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-6/727001854_122104205709363551_6968776117560895596_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nuDvLngppCMQ7kNvwHb5poO&_nc_oc=AdrDvKlLnxQhBtf81wC3qEn-41k-7_96F1MrNzJ7EA9Tvhlo1WD30ipCCI_WZPjP7mU&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQMuHElxGWjZYhCfEVcdbNW6PhLBxhFB92vr1kJz3R8Gsw&oe=6ADBE714",
+    "height": 1440,
+    "width": 1080,
+    "id": "122104205697363551"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122104205751363551",
+   "shares_id": "122104205751363551",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "10164651422252412",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1783179779567004/",
+   "message": "V orange night! 🍊🎃",
+   "message_rich": "V orange night! 🍊🎃",
+   "timestamp": 1792047964,
+   "comments_count": 1,
+   "reactions_count": 16,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 15,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0k3XSoLkirMq6sUfs1yiLMnhYzTyTGegdxGt7911PLkvwnRKbUvT9igZ8kE1i7AvRl",
+    "name": "Michelle Moyano",
+    "url": "https://www.facebook.com/pfbid0k3XSoLkirMq6sUfs1yiLMnhYzTyTGegdxGt7911PLkvwnRKbUvT9igZ8kE1i7AvRl",
+    "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/802243838_10164494722207412_5028836016807678709_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=cqp2u8ulzwwQ7kNvwFcst2U&_nc_oc=AdrGDr51RUsUPbbRbBNHKERBsls6mFnB_bDLZ8MkKiGoDqeH97jwc_Kqw59GwPtWJxM&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQN6qtaHitFYVSGrcP6NyQ4q5CCuwmd8DeuM3Ni5dIfqgw&oe=6ADBEF2E",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0k3XSoLkirMq6sUfs1yiLMnhYzTyTGegdxGt7911PLkvwnRKbUvT9igZ8kE1i7AvRl",
+     "name": "Michelle Moyano",
+     "url": "https://www.facebook.com/pfbid0k3XSoLkirMq6sUfs1yiLMnhYzTyTGegdxGt7911PLkvwnRKbUvT9igZ8kE1i7AvRl",
+     "profile_picture_url": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/802243838_10164494722207412_5028836016807678709_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=cqp2u8ulzwwQ7kNvwFcst2U&_nc_oc=AdrGDr51RUsUPbbRbBNHKERBsls6mFnB_bDLZ8MkKiGoDqeH97jwc_Kqw59GwPtWJxM&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQN6qtaHitFYVSGrcP6NyQ4q5CCuwmd8DeuM3Ni5dIfqgw&oe=6ADBEF2E",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1783179779567004/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQNSqpftNeZJj5jJmhfwo-XnO4S2MjFW0f5yTsr2fYlu5Y3rsFV71f8xoV5MTtZibp3D0BlNrBO40zooOPZBM8q2yXReaO0_pdQS9ViXBQ.mp4?_nc_cat=110&_nc_sid=8bf8fe&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=8WnfJ2tU35MQ7kNvwFpDU71&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNjY4ODg4NDYxNTY0NTU1LCJhc3NldF9hZ2VfZGF5cyI6NCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&_nc_zt=28&oh=00_AQNDwNXpw-YiTj0RqQUKWbDAnfNzkyAt-db_48xDRPVScg&oe=6ADBCF78&bitrate=154291&tag=progressive_h264-basic-gen2_360p",
+    "video_hd_file": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQMvJU5o9ZU0gwoH9vPe3sb652GC4yPbpQBe_U0ygNy3mlDdz0GrHVrce-I_MoKO3jq4_rtOggbb3vJ4yWocZCuzf8VfUGGuHhbPzqvyXQ.mp4?_nc_cat=102&_nc_sid=8bf8fe&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hASUjLmf4zgQ7kNvwEsmTxG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxNjY4ODg4NDYxNTY0NTU1LCJhc3NldF9hZ2VfZGF5cyI6NCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&_nc_zt=28&oh=00_AQPMYGq9Aa6du13LWWDHbGcRJtCj528UVcRgG7R3NKwLuw&oe=6ADBD770&bitrate=543394&tag=progressive_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-phl2-1.xx.fbcdn.net/v/t51.82787-10/845819346_18641770210059376_6178009502374766398_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=f1CR1miuaGYQ7kNvwHhzKLR&_nc_oc=Ado7N8KRYjgFrqR0A-_dviZEvF5EnSQDlNWVjdxDR4j7mDV5fRHsZJcCLtGxaH8aS2g&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=t0EN4itNCRGNN_Yec90hxg&_nc_ss=70289&oh=00_AQPtUdt6G3GEuaN5u_M3ybG29k_7x_-vD280yU8-6ldb6g&oe=6ADBCFCE",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "10164651422252412",
+   "shares_id": "10164651422252412",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  }
+ ]
+}

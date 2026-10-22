@@ -1,0 +1,103 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.youtube.com/watch?v=i9PVV4QqtXE"
+   }
+  ],
+  "maxResults": 1,
+  "maxComments": 20,
+  "commentsSortBy": "top",
+  "maxReplyDepth": 1,
+  "maxRepliesPerComment": 3
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "UsmOJjmfZ1NoEFvD4",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T15:01:14.284Z",
+  "finishedAt": "2026-10-18T15:01:22.987Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "video": 1,
+   "channel": 0,
+   "comment": 43,
+   "transcript": 0,
+   "post": 0,
+   "playlist": 0,
+   "video-extras": 0,
+   "shorts-sound": 0
+  },
+  "usageTotalUsd": 0.0194
+ },
+ "cost_usd": 0.001,
+ "items": [
+  {
+   "type": "video",
+   "id": "i9PVV4QqtXE",
+   "url": "https://www.youtube.com/watch?v=i9PVV4QqtXE",
+   "title": "هل ممكن شركة مصرية تنافس بيبسي وكوكاكولا؟",
+   "description": "For business inquiries: \nbusiness@kelsayed.com\nاشترك فى القناة : https://goo.gl/xvt9rg\nFollow me on Facebook : \nhttps://www.facebook.com/kareemelsayedvlogs\nFollow me on Instagram\nhttps://www.instagram.com/Kareemelsayedvlogs/\n\nلشراء الكاب:\nhttp://bit.ly/2MK3FDV\n\nEnglish subtitle by Heba Mahmoud",
+   "descriptionLinks": [
+    "https://goo.gl/xvt9rg",
+    "https://www.facebook.com/kareemelsayedvlogs",
+    "https://www.instagram.com/Kareemelsayedvlogs/",
+    "http://bit.ly/2MK3FDV"
+   ],
+   "hashtags": [],
+   "tags": [
+    "kareem elsayed",
+    "kareem elsayed vlogs",
+    "diary of an egyptian abroad",
+    "vlogs",
+    "vlogger",
+    "كريم السيد",
+    "فلوج",
+    "فلوق",
+    "يوميات مصرى فى الغربه"
+   ],
+   "thumbnailUrl": "https://i.ytimg.com/vi/i9PVV4QqtXE/fhddefault.jpg",
+   "viewCount": 1581807,
+   "likeCount": 16326,
+   "commentCount": 970,
+   "commentsTurnedOff": false,
+   "duration": "11:24",
+   "durationSeconds": 684,
+   "publishedAt": "2026-10-09T12:17:29Z",
+   "publishedTimeText": null,
+   "category": "Entertainment",
+   "language": "ar",
+   "isLive": false,
+   "isUpcoming": false,
+   "liveStartedAt": null,
+   "liveEndedAt": null,
+   "scheduledStartAt": null,
+   "concurrentViewers": null,
+   "madeForKids": false,
+   "isAgeRestricted": false,
+   "isUnlisted": false,
+   "license": "standard",
+   "definition": "hd",
+   "is360": false,
+   "is3D": false,
+   "hasCaptions": false,
+   "hasPaidPromotion": false,
+   "regionRestriction": null,
+   "topics": [
+    "Society"
+   ],
+   "recordingLocation": null,
+   "channel": {
+    "id": "UCX5lX80yKjkzyXQWkkm3rOQ",
+    "name": "Kareem Elsayed كريم السيد",
+    "handle": null,
+    "url": "https://www.youtube.com/channel/UCX5lX80yKjkzyXQWkkm3rOQ"
+   },
+   "source": {
+    "input": "https://www.youtube.com/watch?v=i9PVV4QqtXE",
+    "type": "url"
+   },
+   "scrapedAt": "2026-10-18T15:01:18Z"
+  }
+ ]
+}

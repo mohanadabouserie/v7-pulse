@@ -1,0 +1,23 @@
+{
+ "input": {
+  "query": "ڤي سڤن",
+  "resultsCount": 10,
+  "searchType": "latest",
+  "startDate": "2026-08-16",
+  "endDate": "2026-08-16"
+ },
+ "cap_usd": 0.09,
+ "run": {
+  "id": "k1wq8CZwMDy1M6WHq",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T14:23:40.791Z",
+  "finishedAt": "2026-10-20T14:24:54.372Z",
+  "chargedEventCounts": {
+   "result-item": 0,
+   "init": 1
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.1389,
+ "items": []
+}

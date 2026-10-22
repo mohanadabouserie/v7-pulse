@@ -1,0 +1,60 @@
+scraper                                kind     posts  inWin aboutV7 useful     cost  per keyword (useful / returned)
+scraper_one (used since 17 Oct)        posts       30     30     21     21  $0.090  V7 soda 2/10  ڤي سڤن 9/10  V7 كريم صودا 10/10 | 2 by V7’s own pages
+                                                fields: date 30, reactions 30, comments 30, shares 30, views 0 (videos 7, with views 0), followers 0 of 30 | per useful post $0.0043
+scrapeforge                            posts       28     28     25     25  $0.073  V7 soda 8/10  ڤي سڤن 8/9  V7 كريم صودا 9/9 | 0 by V7’s own pages
+                                                fields: date 28, reactions 28, comments 28, shares 28, views 0 (videos 4, with views 0), followers 0 of 28 | per useful post $0.0029
+apify search (posts)                   posts       30     21     27     19  $0.153  V7 soda 7/10  ڤي سڤن 4/10  V7 كريم صودا 8/10 | 1 by V7’s own pages
+                                                fields: date 30, reactions 30, comments 22, shares 30, views 4 (videos 4, with views 4), followers 0 of 30 | per useful post $0.0081
+danek                                  posts       32     30     24     24  $0.132  V7 soda 5/11  ڤي سڤن 9/10  V7 كريم صودا 10/11 | 0 by V7’s own pages
+                                                fields: date 32, reactions 32, comments 32, shares 32, views 0 (videos 4, with views 0), followers 0 of 32 | per useful post $0.0055
+powerai                                posts        0      0      0      0  $0.270  V7 soda 0/0  ڤي سڤن 0/0  V7 كريم صودا 0/0 | fbkw_powerai_1 ABORTED; fbkw_powerai_2 ABORTED; fbkw_powerai_3 ABORTED; 0 by V7’s own pages
+                                                fields: date 0, reactions 0, comments 0, shares 0, views 0 (videos 0, with views 0), followers 0 of 0
+alien_force                            posts       16     16     15     15  $0.210  V7 soda 6/6  ڤي سڤن 4/4  V7 كريم صودا 5/6 | 0 by V7’s own pages
+                                                fields: date 16, reactions 16, comments 16, shares 16, views 1 (videos 1, with views 1), followers 0 of 16 | per useful post $0.0140
+fetch_cat                              posts       30     30     30     30  $0.180  V7 soda 10/10  ڤي سڤن 10/10  V7 كريم صودا 10/10 | 0 by V7’s own pages
+                                                fields: date 30, reactions 30, comments 30, shares 30, views 0 (videos 1, with views 0), followers 0 of 30 | per useful post $0.0060
+mina_safwat                            posts       30      0      1      0  $0.060  V7 soda 0/10  ڤي سڤن 0/10  V7 كريم صودا 0/10 | 0 by V7’s own pages
+                                                fields: date 0, reactions 30, comments 30, shares 30, views 2 (videos 2, with views 2), followers 0 of 30
+igview-owner (old posts)               posts       27     27     26     26  $0.200  V7 soda 8/8  ڤي سڤن 8/9  V7 كريم صودا 10/10 | 0 by V7’s own pages
+                                                fields: date 27, reactions 27, comments 27, shares 27, views 0 (videos 3, with views 0), followers 0 of 27 | per useful post $0.0077
+silentflow                             posts       30     30     30     30  $0.066  V7 soda 10/10  ڤي سڤن 10/10  V7 كريم صودا 10/10 | 0 by V7’s own pages
+                                                fields: date 30, reactions 30, comments 30, shares 30, views 0 (videos 1, with views 0), followers 0 of 30 | per useful post $0.0022
+topapi                                 posts       30     30     30     30  $0.072  V7 soda 10/10  ڤي سڤن 10/10  V7 كريم صودا 10/10 | 0 by V7’s own pages
+                                                fields: date 30, reactions 30, comments 30, shares 30, views 3 (videos 3, with views 3), followers 0 of 30 | per useful post $0.0024
+headply (posts)                        posts       30     13     28     12  $0.070  V7 soda 0/0  ڤي سڤن 0/0  V7 كريم صودا 0/0 | 1 by V7’s own pages
+                                                fields: date 30, reactions 30, comments 30, shares 30, views 0 (videos 5, with views 0), followers 0 of 30 | per useful post $0.0058
+apify search (reels)                   reels       30      0     14      0  $0.153  V7 soda 0/10  ڤي سڤن 0/10  V7 كريم صودا 0/10 | 5 by V7’s own pages
+                                                fields: date 7, reactions 7, comments 7, shares 7, views 0 (videos 30, with views 0), followers 0 of 30
+apify video search                     videos      24      8     15      6  $0.150  V7 soda 2/5  ڤي سڤن 0/10  V7 كريم صودا 4/9 | 4 by V7’s own pages
+                                                fields: date 24, reactions 0, comments 0, shares 0, views 19 (videos 24, with views 19), followers 0 of 24 | per useful post $0.0250
+powerai video search                   videos      30     22     11      8  $0.690  V7 soda 6/10  ڤي سڤن 1/10  V7 كريم صودا 1/10 | 1 by V7’s own pages
+                                                fields: date 24, reactions 0, comments 0, shares 0, views 24 (videos 30, with views 24), followers 0 of 30 | per useful post $0.0862
+headply video search                   videos      22     10      8      7  $0.052  V7 soda 0/0  ڤي سڤن 0/0  V7 كريم صودا 0/0 | 1 by V7’s own pages
+                                                fields: date 22, reactions 22, comments 22, shares 22, views 3 (videos 22, with views 3), followers 0 of 22 | per useful post $0.0074
+axesso video search                    videos      30      7      8      3  $0.008  V7 soda 3/10  ڤي سڤن 0/10  V7 كريم صودا 0/10 | 8 by V7’s own pages
+                                                fields: date 27, reactions 0, comments 0, shares 0, views 18 (videos 30, with views 18), followers 0 of 30 | per useful post $0.0025
+apify hashtags (4 tags)                hashtags     1      0      0      0  $0.010  V7 soda 0/0  ڤي سڤن 0/0  V7 كريم صودا 0/0 | 0 by V7’s own pages
+                                                fields: date 0, reactions 0, comments 0, shares 0, views 1 (videos 1, with views 1), followers 0 of 1
+lofomachines groups (2 other keywords) groups      10      9      9      8  $0.070  V7 soda 0/0  ڤي سڤن 0/0  V7 كريم صودا 0/0 | 0 by V7’s own pages
+                                                fields: date 10, reactions 10, comments 10, shares 10, views 0 (videos 0, with views 0), followers 0 of 10 | per useful post $0.0087
+
+Useful posts found by all the post searches together: 68
+  scraper_one (used since 17 Oct)         21 useful,   6 found by no other scraper
+  scrapeforge                             25 useful,   0 found by no other scraper
+  apify search (posts)                    19 useful,   1 found by no other scraper
+  danek                                   24 useful,   0 found by no other scraper
+  powerai                                  0 useful,   0 found by no other scraper
+  alien_force                             15 useful,   1 found by no other scraper
+  fetch_cat                               30 useful,   1 found by no other scraper
+  mina_safwat                              0 useful,   0 found by no other scraper
+  igview-owner (old posts)                26 useful,   0 found by no other scraper
+  silentflow                              30 useful,   1 found by no other scraper
+  topapi                                  30 useful,   0 found by no other scraper
+  headply (posts)                         12 useful,   0 found by no other scraper
+  apify search (reels)                     0 useful,   0 found by no other scraper
+  apify video search                       6 useful,   2 found by no other scraper
+  powerai video search                     8 useful,   1 found by no other scraper
+  headply video search                     7 useful,   3 found by no other scraper
+  axesso video search                      3 useful,   0 found by no other scraper
+  apify hashtags (4 tags)                  0 useful,   0 found by no other scraper
+  lofomachines groups (2 other keywords)   8 useful,   8 found by no other scraper

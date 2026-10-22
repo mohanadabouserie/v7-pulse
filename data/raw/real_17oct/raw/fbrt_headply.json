@@ -1,0 +1,1177 @@
+{
+ "input": {
+  "searchQueries": [
+   "V7 كريم صودا",
+   "V7 cream soda",
+   "ڤي كولا",
+   "ڤي سڤن"
+  ],
+  "maxItemsPerTarget": 20,
+  "mode": "videoSearch"
+ },
+ "cap_usd": 0.45,
+ "run": {
+  "id": "6Xg4FyCL9PLvRgUdZ",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T10:55:27.366Z",
+  "finishedAt": "2026-10-19T10:56:26.883Z",
+  "chargedEventCounts": {
+   "post-scraped": 39,
+   "reel-scraped": 0,
+   "listing-scraped": 0,
+   "feed-item": 0,
+   "monitor-check": 0,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 0.0907
+ },
+ "cost_usd": 0.732,
+ "items": [
+  {
+   "dataType": "post",
+   "postId": "1536709938498407",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1367017642290092/",
+   "text": "☀️🥤 الصيف قال كلمته… وV7 رد عليه بـ Cream Soda! 😂🔥\n\nيعني إيه Summer Edition؟\nيعني حتى المشروب قرر يعيش أجواء الصيف بطريقته! 😎☀️\n\n🥤 V7 Cream Soda – Summer Edition\nطعم مختلف… وشكل يخليك تقول:\n«طب واحدة كده عشان نجرب» 👀😂\nوبعدها تلاقي نفسك بتدور على التانية! 😅🔥\n\nولو بتحب تغيّر وتجرّب، V7 عنده اختيارات كتير 👇\n\n🍋 Lemon\n🍓 Pink Lemonade\n🥤 Super Soda Cola\n🥤 Super Soda Diet Cola\n🫐 Blueberry\n🍏 Flavored Malt Apple\n🍋🌿 Lemon Mint\n✨ وطبعًا Cream Soda – Summer Edition\n\nاختار مزاجك… وسيب الباقي على V7! 😎🥤\n\n📍 وكالة أبو صالح – وكالة الجملة\nاختيارات أكتر… ومزاج أحلى 💛🔥\n\n وكالة أبو صالح - Wakalet Abo Saleh  @أبرز المعجبين \n#وكالة_أبو_صالح #V7 #CreamSoda #SummerEdition #مشروبات #وكالة_الجملة",
+   "createdAt": "2026-08-24T13:20:19.000Z",
+   "authorName": "وكالة أبو صالح - Wakalet Abo Saleh",
+   "authorId": "100064782469962",
+   "authorUrl": "https://www.facebook.com/people/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B5%D8%A7%D9%84%D8%AD-Wakalet-Abo-Saleh/100064782469962/",
+   "reactionCount": 18,
+   "commentCount": 13,
+   "shareCount": 0,
+   "videoViewCount": 301,
+   "videoDurationSec": 36,
+   "videoUrl": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQOgqq3MnU6qFI3zzdlsIRyqyXB4L5CaN8uiBQ1-Pxw-RCg20fyD5trBKCD8S1rTZbab__y06QyJYtBIo2gaWZKd9VaSerEjgwE.mp4?strext=1&_nc_cat=100&_nc_sid=8bf8fe&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=V1FSgTawNZsQ7kNvwHLTB-G&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjEwNzkxMjEzOTc5Mjg3MDIsImFzc2V0X2FnZV9kYXlzIjo1NSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjM2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=Uu0z_vOtLtu7MVllEti45g&_nc_ss=70289&_nc_zt=28&oh=00_AQMA2O2EJi_Kdm3A6g6WHCkBg05VJF48TpUtusB1f4ZF-g&oe=6AD7E40A&bitrate=471774&tag=av1_compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQOgqq3MnU6qFI3zzdlsIRyqyXB4L5CaN8uiBQ1-Pxw-RCg20fyD5trBKCD8S1rTZbab__y06QyJYtBIo2gaWZKd9VaSerEjgwE.mp4?strext=1&_nc_cat=100&_nc_sid=8bf8fe&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=V1FSgTawNZsQ7kNvwHLTB-G&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjEwNzkxMjEzOTc5Mjg3MDIsImFzc2V0X2FnZV9kYXlzIjo1NSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjM2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=Uu0z_vOtLtu7MVllEti45g&_nc_ss=70289&_nc_zt=28&oh=00_AQMA2O2EJi_Kdm3A6g6WHCkBg05VJF48TpUtusB1f4ZF-g&oe=6AD7E40A&bitrate=471774&tag=av1_compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-3.xx.fbcdn.net/v/t15.5256-10/785721917_1283794357055220_8264780805491466510_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s960x960&_nc_cat=106&ccb=1-7&_nc_sid=be8305&_nc_ohc=HG5dW0E803UQ7kNvwGEJeV0&_nc_oc=AdqIhGmSfl_LUmsN1TI88wdEjsCxh7lRIqMbe3-_bKA7g38YByGfN43ZZJ09ufpcmLKstBKuigYnraLWYkLibg4T&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=Uu0z_vOtLtu7MVllEti45g&_nc_ss=70289&oh=00_AQMf3EzbqHn5bvo2bQEvmiolXVNy9tI1mJBMb7d79JgFbw&oe=6ADBD065"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:33.114Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "1040214672244057",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1362800929364202/",
+   "text": "V7 Cream Soda \nGarabtoooha??? \n.\n.\n.\n.\n\n#reem_kitchen__ #reelsinstagram #explorar \n#v7 @\n#creamsoda",
+   "createdAt": "2026-08-10T10:34:59.000Z",
+   "authorName": "Reem Kitchen",
+   "authorId": "100087666025410",
+   "authorUrl": "https://www.facebook.com/reemkitchen25",
+   "reactionCount": 5,
+   "commentCount": 0,
+   "shareCount": 0,
+   "videoViewCount": 477,
+   "videoDurationSec": 41,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m367/AQPz5d7GaSP1v33-zrDy1PNekySitO84-gl3MmhasUwVtrNs2TBO6niue1MNd_XHFNpiX90L9eDB9wKjrv3ohfanCjnmNag22jKPrglXFA.mp4?_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=4NON-FHsETwQ7kNvwE8J-3r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNTc2LnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMzU2NjM5MjY5OTk5NTk0LCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo0MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Uu0z_vOtLtu7MVllEti45g&_nc_ss=70289&_nc_zt=28&oh=00_AQPvNc79yCdBovOD9NlYR4BJArr1EKbYymGT8b2E0rJ3DQ&oe=6ADBD86A&bitrate=988060&tag=progressive_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m367/AQPz5d7GaSP1v33-zrDy1PNekySitO84-gl3MmhasUwVtrNs2TBO6niue1MNd_XHFNpiX90L9eDB9wKjrv3ohfanCjnmNag22jKPrglXFA.mp4?_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=4NON-FHsETwQ7kNvwE8J-3r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNTc2LnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMzU2NjM5MjY5OTk5NTk0LCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo0MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Uu0z_vOtLtu7MVllEti45g&_nc_ss=70289&_nc_zt=28&oh=00_AQPvNc79yCdBovOD9NlYR4BJArr1EKbYymGT8b2E0rJ3DQ&oe=6ADBD86A&bitrate=988060&tag=progressive_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t51.82787-10/771940665_18453578518140131_1649638391370099029_n.jpg?stp=dst-jpg_tt6&cstp=mx576x1024&ctp=s960x960&_nc_cat=110&ccb=1-7&_nc_sid=50ce42&_nc_ohc=wqFk89wsueIQ7kNvwGBDD5Q&_nc_oc=AdoV_kEwULOgZ0hYx-jkw1gs8mcKEEMq3tmJMxlhXoB897YeDUf-qaNzTnjpK2Enhr6OwlmnaLTNA_nxwDJ9dyP2&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=Uu0z_vOtLtu7MVllEti45g&_nc_ss=70289&oh=00_AQPAwYIRiKhAiP0ZVXs_-3Qti3yXkFVXTglZ_D7qLyEsSA&oe=6ADBC936"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:33.120Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "1442112624634745",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1543143167107864/",
+   "text": "Cream Soda from V7 🍦\n⭐️⭐️⭐️⭐️\n\n#instafood #delicious #viral #foodporn #food",
+   "createdAt": "2026-08-24T18:42:29.000Z",
+   "authorName": "Food Rating",
+   "authorId": "100065080629281",
+   "authorUrl": "https://www.facebook.com/foodratings2",
+   "reactionCount": 1,
+   "commentCount": 0,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 17,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQO5j38MIHqdCCWVpsE_C2aZvfXO_0z4mibkeZj-lzTEArb0d2hKQK2xyd6JcYtcLgJpfp8zjCkjYTk2gKYr1S8sMrAzFKwwff3jxYlBJw.mp4?_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=FqO-c1lDUiEQ7kNvwE5rbbh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMjY0ODU0MjQ2NzE0NzM1LCJhc3NldF9hZ2VfZGF5cyI6NTUsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoxNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=26rgZXf4i4vAQhN94xPs_A&_nc_ss=70289&_nc_zt=28&oh=00_AQMsrJWz-fv7HVprq64uVqyz9pjcY1h6DDjOQAFIZvnRMA&oe=6ADBCD0B&bitrate=1648905&tag=progressive_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQO5j38MIHqdCCWVpsE_C2aZvfXO_0z4mibkeZj-lzTEArb0d2hKQK2xyd6JcYtcLgJpfp8zjCkjYTk2gKYr1S8sMrAzFKwwff3jxYlBJw.mp4?_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=FqO-c1lDUiEQ7kNvwE5rbbh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMjY0ODU0MjQ2NzE0NzM1LCJhc3NldF9hZ2VfZGF5cyI6NTUsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoxNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=26rgZXf4i4vAQhN94xPs_A&_nc_ss=70289&_nc_zt=28&oh=00_AQMsrJWz-fv7HVprq64uVqyz9pjcY1h6DDjOQAFIZvnRMA&oe=6ADBCD0B&bitrate=1648905&tag=progressive_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/786166663_2205512153352821_8239075836595826894_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=50ce42&_nc_ohc=dXOJjh1vTO0Q7kNvwH47NGk&_nc_oc=Adqj7HlH1mFlrkkVgnx9rmoTyRYNd1QqjxoeJ1YITaoCwvDq6-bxWrMl1gkhHhGkarJJEV54Lsk_pav4skCRirDc&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=26rgZXf4i4vAQhN94xPs_A&_nc_ss=70289&oh=00_AQMP5F4zDqAPtGuyTelSnjV3bgWX2ieyRHwqiRe0F1z7Rw&oe=6ADBBB6C"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:34.354Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "408098612235658",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/408098612235658/",
+   "text": null,
+   "createdAt": "2024-07-17T13:49:10.000Z",
+   "authorName": "Rabbit Egypt",
+   "authorId": "17841447797691908",
+   "authorUrl": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Frabbit_eg&h=AUCzhJLaYPbXqrHCARSY5em4lsHYub9fCDcF-HBzQCUtbIWWQutQnaCWVG6nP6ch5ziifdm-7a2CRAsHhHlcxnMi3d9PSlsfC64J5YFe6eSXNTVG1Udjcs2OUBE68nk8NbtS6eSYchnQHpncMuKo&s=1",
+   "reactionCount": 739,
+   "commentCount": 0,
+   "shareCount": 0,
+   "videoViewCount": 0,
+   "videoDurationSec": 147,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQOS5osHQRZvcZhbyPsvgmF2cr_h_LuZOcLL8CBwDJFntWtbWBYVStUnZrn16SRBTpc40yT7xJkpOETSyMFXbm3A1b_iEEAmu0jOiqg.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=l-a6hAHO1usQ7kNvwF4ZGkA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDI4OTAwNTE2ODEwNjAxLCJhc3NldF9hZ2VfZGF5cyI6ODIzLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTQ3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=cd109f91d4712521&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CNjREOUJCRTkzOUVDMEIzNzgzODMxRTdDNUJFNkE4N192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85OTU1MDE2MTg3NDY0NDFfNTM0ODI4ODY2MTk3ODcyODYwMi5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm0r2W76WFwwEVAigCQzMsF0Bib1wo9cKPGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHUCZeadAQA&_nc_gid=j0uao0703BqZw4dhRZpStA&_nc_ss=70289&_nc_zt=28&oh=00_AQORLWrOf5wT1-oZZPBMGYZj_DI1JmCAhf5AxNaqFOeydg&oe=6AD7D446&bitrate=840855&tag=dash_baseline_1_v1",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQOS5osHQRZvcZhbyPsvgmF2cr_h_LuZOcLL8CBwDJFntWtbWBYVStUnZrn16SRBTpc40yT7xJkpOETSyMFXbm3A1b_iEEAmu0jOiqg.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=l-a6hAHO1usQ7kNvwF4ZGkA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDI4OTAwNTE2ODEwNjAxLCJhc3NldF9hZ2VfZGF5cyI6ODIzLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTQ3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=cd109f91d4712521&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CNjREOUJCRTkzOUVDMEIzNzgzODMxRTdDNUJFNkE4N192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85OTU1MDE2MTg3NDY0NDFfNTM0ODI4ODY2MTk3ODcyODYwMi5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm0r2W76WFwwEVAigCQzMsF0Bib1wo9cKPGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHUCZeadAQA&_nc_gid=j0uao0703BqZw4dhRZpStA&_nc_ss=70289&_nc_zt=28&oh=00_AQORLWrOf5wT1-oZZPBMGYZj_DI1JmCAhf5AxNaqFOeydg&oe=6AD7D446&bitrate=840855&tag=dash_baseline_1_v1",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.29350-10/451510767_501757029080237_2902985054709138439_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s960x960&_nc_cat=100&ccb=1-7&_nc_sid=cb5bf7&_nc_ohc=eDC31lRvON0Q7kNvwESFosx&_nc_oc=Adp3qJjY_f06aFTjSb89xg2Hgsx7W0W3k2340HGGoBcU6dWLZsbNNZfHnbaE8BCJba8&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=j0uao0703BqZw4dhRZpStA&_nc_ss=70289&oh=00_AQNxx2iUiifIk7OCyH_8eI3zu6AwZnmGVHvcnZI2sp9F5A&oe=6ADBADB5"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:35.296Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "10160335685963228",
+   "postType": "reel",
+   "url": "https://www.facebook.com/711philippines/videos/873477373177525/",
+   "text": "FINALLY SOME GOOD NEWS!\n\nCuzco mo bang malaman ang lasa ng Yellow Kola? Be one of the firsts to try the new \"CHILL\" in town! 😎\n\nMaking its first appearance in the PH, cop this new cream soda drink at 7-Eleven stores nationwide!\n\n#GetItFirstat711ph #CuzcoKolaPH",
+   "createdAt": "2020-08-06T23:00:01.000Z",
+   "authorName": "7-Eleven Philippines",
+   "authorId": "100064768362907",
+   "authorUrl": "https://www.facebook.com/711philippines",
+   "reactionCount": 281,
+   "commentCount": 12,
+   "shareCount": 913,
+   "videoViewCount": null,
+   "videoDurationSec": 6,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQPYb7VMxnghufI3v5NZpDqrW--eJiuQs39vpymxbt-1xLQ98zUkbcZm6nU79OgSigA2llDHf2b9q3seePVjPi8jqjqkyp4Qg2M.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=tnZ-gs_n_LAQ7kNvwGaejRE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuODAwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjozMzE3NzczMjMxNTczNzcsImFzc2V0X2FnZV9kYXlzIjoyMjY1LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&_nc_zt=28&oh=00_AQODGg58NSUx3ZKbBxpahj7jMHSIyJQ-uPey1zUuH1EMIg&oe=6AD7EB6B&bitrate=1187244&tag=compressed_source",
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/118368942_10216866400643618_6497698453479919043_n.jpg?stp=dst-jpg_fb30_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=V-CKbDNlNZIQ7kNvwFGF2mK&_nc_oc=AdptDDvf7_9Z04YPZtJQoXLHKTHNQ4ek34WM1m14IKfA7KL05y6-NPiw5kybQIpyzjP1WKu3ZXhB-rbyjpkyD2SF&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&oh=00_AQP_hT1B-B-TBikLzjs5-HyUiwpNJmAdco2oCheM0mtARQ&oe=6AFD5B57",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/118368942_10216866400643618_6497698453479919043_n.jpg?stp=dst-jpg_fb30_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=V-CKbDNlNZIQ7kNvwFGF2mK&_nc_oc=AdptDDvf7_9Z04YPZtJQoXLHKTHNQ4ek34WM1m14IKfA7KL05y6-NPiw5kybQIpyzjP1WKu3ZXhB-rbyjpkyD2SF&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&oh=00_AQP_hT1B-B-TBikLzjs5-HyUiwpNJmAdco2oCheM0mtARQ&oe=6AFD5B57"
+    },
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQPYb7VMxnghufI3v5NZpDqrW--eJiuQs39vpymxbt-1xLQ98zUkbcZm6nU79OgSigA2llDHf2b9q3seePVjPi8jqjqkyp4Qg2M.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=tnZ-gs_n_LAQ7kNvwGaejRE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuODAwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjozMzE3NzczMjMxNTczNzcsImFzc2V0X2FnZV9kYXlzIjoyMjY1LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&_nc_zt=28&oh=00_AQODGg58NSUx3ZKbBxpahj7jMHSIyJQ-uPey1zUuH1EMIg&oe=6AD7EB6B&bitrate=1187244&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/116884582_873477596510836_1621919991556309971_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ce42&_nc_ohc=NihPnnsZDEMQ7kNvwHs8Cor&_nc_oc=AdosElGCLUsXp717rCVC30IifKwMnHcUVidG2MMOqW7hEXDERDGLe_0tKTxr1C77UObMNUHY9ya6CGcisRxVCw-b&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&oh=00_AQPeHuLJnH1iA-jh_WRAK9SFAVF5M2OuKHWZp8YLOobBVg&oe=6ADBCEDB"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:36.437Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122116971597365604",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1054347337481801/",
+   "text": "Orange 🍊 Cream Soda 🥤  \n.\n.\n #reels #viralreels #fyp #viral #recipe #summer #summerdrinks\n.\n.\n Facebook for Creators 7-Eleven 7-ELEVEN 7-Eleven Philippines 7-Eleven Malaysia Mirinda Vietnam Mirinda Mirinda Arabia Mirinda Laos",
+   "createdAt": "2026-09-02T03:30:33.000Z",
+   "authorName": "Juicepy Pulpy",
+   "authorId": "61590968130046",
+   "authorUrl": "https://www.facebook.com/people/Juicepy-Pulpy/61590968130046/",
+   "reactionCount": 362,
+   "commentCount": 3,
+   "shareCount": 27,
+   "videoViewCount": null,
+   "videoDurationSec": 14,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPQ_Ex-tmqlFw3lMZrUih5hFxutbdW4JY2FdQbYYGIA3AkOW28okU0Zf8ZiPCQnH0GJWfr4JElQUsMjl5-oPxjFUcugu7Pci975VbvSGpGAAw.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=PXcKHGjND24Q7kNvwH-3KIu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4MTQ4NTU0NTQ4MTM4MzMyLCJhc3NldF9hZ2VfZGF5cyI6NDcsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=92205820ae68c96c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84ODQ1Njc0QjhGMzEzMTZBMzdCNUJENTVBOEMwNEM5Ql9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzJCNDkwRTI4MjhBNDYzMjEwNjFFOTVFQkQ2Q0UzNTlEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa4xcKswr2AZBUCKAJDMywXQCtEGJN0vGoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&_nc_zt=28&oh=00_AQOTvWqo2X2vxDGTXcfOhT65GvMMptsCWT5clvQSnUsMQA&oe=6ADBE13A&bitrate=1368685&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQPQ_Ex-tmqlFw3lMZrUih5hFxutbdW4JY2FdQbYYGIA3AkOW28okU0Zf8ZiPCQnH0GJWfr4JElQUsMjl5-oPxjFUcugu7Pci975VbvSGpGAAw.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=PXcKHGjND24Q7kNvwH-3KIu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4MTQ4NTU0NTQ4MTM4MzMyLCJhc3NldF9hZ2VfZGF5cyI6NDcsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=92205820ae68c96c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84ODQ1Njc0QjhGMzEzMTZBMzdCNUJENTVBOEMwNEM5Ql9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzJCNDkwRTI4MjhBNDYzMjEwNjFFOTVFQkQ2Q0UzNTlEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa4xcKswr2AZBUCKAJDMywXQCtEGJN0vGoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&_nc_zt=28&oh=00_AQOTvWqo2X2vxDGTXcfOhT65GvMMptsCWT5clvQSnUsMQA&oe=6ADBE13A&bitrate=1368685&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/791738084_1517642993465453_1788035274314711251_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=be8305&_nc_ohc=F4ZqDSZzwpgQ7kNvwG4z2nj&_nc_oc=AdpGhG4uZ7CJoBbW2TWWFjWHiCaaX5aTscsk1mAKJygvJGMyTVoTYboanUL_e0gqtp1nUJk4goyngSZce4VOV6fr&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=prUTkSGL3kzn01w9mk3Dwg&_nc_ss=70289&oh=00_AQO4sHvYgxhmiQeyFx8qllrX8K0Of1_2y_20o9eRMfgT8Q&oe=6ADBD2E0"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:36.444Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "29071365642465643",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1568101620986906/",
+   "text": "الحب كله ❤️❤️❤️ \nV7Egypt",
+   "createdAt": "2026-09-10T13:44:17.000Z",
+   "authorName": "Shaimaa Abd ElNasser",
+   "authorId": "100000567801752",
+   "authorUrl": null,
+   "reactionCount": 2,
+   "commentCount": 16,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 15,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQM1Iz4tywC_dkG6ufxhUyUhFUvJURdSSfCk3O9M9e_m0bVDrihKzhM4GJto7-BMClXgGP0QlWzjJfA1D6IISUZTedEo3b4o03I.mp4?strext=1&_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=oudpfLUUAJsQ7kNvwGMaFIz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNTc2LmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTYwMTU2NTcyMTM1MjY3NCwiYXNzZXRfYWdlX2RheXMiOjM4LCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&_nc_zt=28&oh=00_AQOLsnQGtl1PO6r75EIc-UdFwmVJCvB3Q1bpee35n4Wmfw&oe=6AD7CDCE&bitrate=225478&tag=av1_compressed_source",
+   "media": [
+    {
+     "type": "photo",
+     "url": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/805808521_28941026175489335_2159202421938515101_n.jpg?stp=dst-jpg_fb30_tt6&_nc_cat=111&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=ywSpWoAsoD0Q7kNvwHPVCmq&_nc_oc=Adq0ktixkHQC-V_0QbSRb-_2F7lL_gXVd2NLRbJC0Hb_wsmzVvG1UffmAqUK_1TaoHY&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&oh=00_AQMlBdTQKKqYNZjOwnnXWNMu4-FFxLj__pellkWfX8awFg&oe=6ADBBD38",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/805808521_28941026175489335_2159202421938515101_n.jpg?stp=dst-jpg_fb30_tt6&_nc_cat=111&ccb=1-7&_nc_sid=bd9a62&_nc_ohc=ywSpWoAsoD0Q7kNvwHPVCmq&_nc_oc=Adq0ktixkHQC-V_0QbSRb-_2F7lL_gXVd2NLRbJC0Hb_wsmzVvG1UffmAqUK_1TaoHY&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&oh=00_AQMlBdTQKKqYNZjOwnnXWNMu4-FFxLj__pellkWfX8awFg&oe=6ADBBD38"
+    },
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQM1Iz4tywC_dkG6ufxhUyUhFUvJURdSSfCk3O9M9e_m0bVDrihKzhM4GJto7-BMClXgGP0QlWzjJfA1D6IISUZTedEo3b4o03I.mp4?strext=1&_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=oudpfLUUAJsQ7kNvwGMaFIz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNTc2LmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTYwMTU2NTcyMTM1MjY3NCwiYXNzZXRfYWdlX2RheXMiOjM4LCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6MTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&_nc_zt=28&oh=00_AQOLsnQGtl1PO6r75EIc-UdFwmVJCvB3Q1bpee35n4Wmfw&oe=6AD7CDCE&bitrate=225478&tag=av1_compressed_source",
+     "thumbnailUrl": "https://scontent-lax7-1.xx.fbcdn.net/v/t15.5256-10/802308051_1709611766779544_7453135967609415367_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ce42&_nc_ohc=Yl5D95uMT2kQ7kNvwFrtj5-&_nc_oc=AdoKmXWQQV5EILSkfESfJuinEOO7p-qZW94cTgsFd2KFsLuHZFPTri-1vr2jphatYlM&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&oh=00_AQOTkY2cxQMOFWsMNvllUR1pyci1LVwzfrP86dMexoHUOg&oe=6ADBC044"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:40.668Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "147452721518630",
+   "postType": "reel",
+   "url": "https://www.facebook.com/V7Egypt/videos/519079183742515/",
+   "text": "Wide range of flavors to suit every taste! V7 vitamin sparkling drink is delicious, refreshing and 100% natural. \n\n#lifechanging #V7",
+   "createdAt": "2023-03-02T18:03:40.000Z",
+   "authorName": "V7Egypt",
+   "authorId": "100087617073692",
+   "authorUrl": "https://www.facebook.com/V7Egypt",
+   "reactionCount": 100,
+   "commentCount": 10,
+   "shareCount": 20,
+   "videoViewCount": null,
+   "videoDurationSec": 23,
+   "videoUrl": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQNKKvxI-23lAuR0XK5sYB7FzWvB9TrGQNbTCXGuZG3tzwGP7ecXwvmP2iVeE90FJYdOvFdv3t7y_eYEx8MUNYvS44jMlqH7Alo.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=AjnMKm_8JDgQ7kNvwE_2m16&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6NzU5MTUxMTM1NDQ4MTk0LCJhc3NldF9hZ2VfZGF5cyI6MTMyNiwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjIyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&_nc_zt=28&oh=00_AQMIl0UuxvBMYAwloww9CIXNubhSXw6gVK7Z8v4wAeylSw&oe=6AD7CBFB&bitrate=2304784&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQNKKvxI-23lAuR0XK5sYB7FzWvB9TrGQNbTCXGuZG3tzwGP7ecXwvmP2iVeE90FJYdOvFdv3t7y_eYEx8MUNYvS44jMlqH7Alo.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=AjnMKm_8JDgQ7kNvwE_2m16&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6NzU5MTUxMTM1NDQ4MTk0LCJhc3NldF9hZ2VfZGF5cyI6MTMyNiwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjIyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&_nc_zt=28&oh=00_AQMIl0UuxvBMYAwloww9CIXNubhSXw6gVK7Z8v4wAeylSw&oe=6AD7CBFB&bitrate=2304784&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t15.5256-10/624878559_1384156899614278_7443026237737222989_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ce42&_nc_ohc=CqhTa1Z9z6gQ7kNvwHToizD&_nc_oc=Ado9C-bDMUMPdhq36mJ_prQ5bUtgdq4GG2XA5_G0rcu67WlK6_jDSlvPr45aZ2WamCU&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=lkfaMTLUezIhhqq95OZF5w&_nc_ss=70289&oh=00_AQORqLtfAHILuyThTs_gB2BaW860cbeB7Wm5GI8YkVdJiA&oe=6ADBDAA1"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:40.765Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "580781624829652",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/583029391240524/",
+   "text": "2 new flavours - strawberry and cream and cream soda!! |\n\n#pepsi #pepsistrawberry #strawberrypepsi #newpepsi #newukfood #drinkreview #creamsoda #creamsodapepsi",
+   "createdAt": "2025-01-27T23:06:51.000Z",
+   "authorName": "Khoslaa",
+   "authorId": "100086934585531",
+   "authorUrl": "https://www.facebook.com/people/Khoslaa/100086934585531/",
+   "reactionCount": 167,
+   "commentCount": 26,
+   "shareCount": 5,
+   "videoViewCount": null,
+   "videoDurationSec": 65,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQOzAzpCpr6spMLhhjlCDIeLGi0udbNtEgnMiPwRWFUwGFOxNoEsgfvV1rKVpN4iAAbR3tu3M1j5I2rN1E1D6g9qvJX5P7rMTx4.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=VJCTssQw_BYQ7kNvwFszGu-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTE3NjgwNjEzMzc4MzkyNywiYXNzZXRfYWdlX2RheXMiOjYyOSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=frAJ43Qhk-BAVfvPQL9dkQ&_nc_ss=70289&_nc_zt=28&oh=00_AQOezx8ZuLofITWKHDY23CZqtpcaDCcXF0HbCyNpzbZTZw&oe=6AD7DB7B&bitrate=5979831&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQOzAzpCpr6spMLhhjlCDIeLGi0udbNtEgnMiPwRWFUwGFOxNoEsgfvV1rKVpN4iAAbR3tu3M1j5I2rN1E1D6g9qvJX5P7rMTx4.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=VJCTssQw_BYQ7kNvwFszGu-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTE3NjgwNjEzMzc4MzkyNywiYXNzZXRfYWdlX2RheXMiOjYyOSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=frAJ43Qhk-BAVfvPQL9dkQ&_nc_ss=70289&_nc_zt=28&oh=00_AQOezx8ZuLofITWKHDY23CZqtpcaDCcXF0HbCyNpzbZTZw&oe=6AD7DB7B&bitrate=5979831&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t51.29350-10/475387135_604829688915718_8499347529456822718_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=cb5bf7&_nc_ohc=ebFDG1zKNVgQ7kNvwH-5hKV&_nc_oc=AdqRBZZZiRp6D92YoMH8C-_pHM-7CbcU2gmHo1mOLIyVd3NTn5foZ7VTfce3SOloIUN0LNb0UZOCYZ8ad1plSHgl&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=frAJ43Qhk-BAVfvPQL9dkQ&_nc_ss=70289&oh=00_AQPBzl9ScSNjqgPyULZOHrqkIebrbFOf6Vh4gEro6IiRdg&oe=6ADBBD57"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:40.365Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "28737621945897918",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/947312991367080/",
+   "text": "POV: You saw the viral 7-Eleven coffee hack, so you made your own☕🍫🤎\n\nIngredients:\n🍦 ½ Selecta ice cream stick\n🥛 ½ Choco Bear Brand\n🍪 ½ Tiger biscuits\n☕ 1 bottle Kopiko Lucky Day\n🧊 1 cup of ice\n\nTotal damage: around ₱70 💸\n\nTikTok made me do it! HAHAHAHA 😂 Is it worth the ₱70? Let's find out! 🤭\n\n#711CoffeeHack #CoffeeHack #BudgetCoffee #TikTokMadeMeDoIt #fypシ",
+   "createdAt": "2026-10-15T12:22:38.000Z",
+   "authorName": "Mechelle Pagangpang - Javier",
+   "authorId": "100002304862934",
+   "authorUrl": "https://www.facebook.com/mechelle.pagangpang",
+   "reactionCount": 8,
+   "commentCount": 2,
+   "shareCount": 3,
+   "videoViewCount": null,
+   "videoDurationSec": 28,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQNi2-o7AMPfNiQTtvr8lmenbYokh-UKftqrvVS6-vXHLIwfcbtEYLWSgfgRhjLvoJRLoWZuazjVwoxDcTYgH-mupBPnp8NxS3RY2NEDsYl7SQ.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=4fRc2eolkJ0Q7kNvwGOebhu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExMDU2NTQwNjU1OTQ5NDEsImFzc2V0X2FnZV9kYXlzIjozLCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6MjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9cb4601f896df2bb&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yNTEwM0JGNEIxMkY0QkI5QjlFMjNGMzhGQTBGNTUwRV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI5Q0NCQkU2OTA3QjRGQzk5MERGMkMyN0ZDNTI5NDBBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb6iJjdxOX2AxUCKAJDMywXQDwqfvnbItEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZaeAQA&_nc_gid=frAJ43Qhk-BAVfvPQL9dkQ&_nc_ss=70289&_nc_zt=28&oh=00_AQN-T003uWqpDwupz5A2laOaG3Pml4c3zKQk-839SNQOCQ&oe=6ADBD36C&bitrate=1707489&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQNi2-o7AMPfNiQTtvr8lmenbYokh-UKftqrvVS6-vXHLIwfcbtEYLWSgfgRhjLvoJRLoWZuazjVwoxDcTYgH-mupBPnp8NxS3RY2NEDsYl7SQ.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=4fRc2eolkJ0Q7kNvwGOebhu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjExMDU2NTQwNjU1OTQ5NDEsImFzc2V0X2FnZV9kYXlzIjozLCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6MjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9cb4601f896df2bb&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yNTEwM0JGNEIxMkY0QkI5QjlFMjNGMzhGQTBGNTUwRV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI5Q0NCQkU2OTA3QjRGQzk5MERGMkMyN0ZDNTI5NDBBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb6iJjdxOX2AxUCKAJDMywXQDwqfvnbItEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZaeAQA&_nc_gid=frAJ43Qhk-BAVfvPQL9dkQ&_nc_ss=70289&_nc_zt=28&oh=00_AQN-T003uWqpDwupz5A2laOaG3Pml4c3zKQk-839SNQOCQ&oe=6ADBD36C&bitrate=1707489&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/830453352_1728941024879836_2721121582650044705_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ce42&_nc_ohc=O1iXH2DHkmkQ7kNvwHTxjMe&_nc_oc=Adq7RADeHrv2ZzZLp-hIGs6pblg7l3ODspbzBpG2J8JvKRjjgiuHMRypIcujbQkoZ_2hMbxVT5Kchs9Y7w-2TMWb&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=frAJ43Qhk-BAVfvPQL9dkQ&_nc_ss=70289&oh=00_AQO8-slscYO0jAa-MSQqksI9xnsjtzOka4BGzPbgBxKCsw&oe=6ADBC0D3"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:40.367Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "790667760763889",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/3032512076944179/",
+   "text": "a bevvy-heavy day but they were all DELICIOUS!!! orange creamiscles take me back to my orange julius childhood just loitering at the mall, ahhhh pre-cell phone days…. 🍋‍🟩💦🍊☕️🍒\n\n#drinks #beverage #refreshingdrinks #drinkrecipe #sparklingwater",
+   "createdAt": "2026-03-28T02:41:18.000Z",
+   "authorName": "Emily Perry",
+   "authorId": "100094620172199",
+   "authorUrl": "https://www.facebook.com/emilytheperry",
+   "reactionCount": 7984,
+   "commentCount": 151,
+   "shareCount": 78,
+   "videoViewCount": null,
+   "videoDurationSec": 105,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQPGCZZ5Bl-Orfnt4CZVsIw7OgA_EhzfE2ZekPocZR22Bunr-6Geuhzg6Vt9AvUavrmg5yLZaMO-LWRVps6fysaq6fRDims4aWL0BMs.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=8OE0hlHEC_gQ7kNvwGRu3oD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NTY1Njc5MTQxMDMxNTUsImFzc2V0X2FnZV9kYXlzIjoyMDUsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMDQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=b207013cfdf7a1ce&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83ODQ3Q0MxNEY3MEU4NERCODkzODE2MEI4MENEQTQ4OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzYzNDQ3ODA3RjJGNjEwREUyQzA4RTM2MTJDNEZFQjg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbmhb6-6NnlPxUCKAJDMywXQFomZmZmZmYYEmRhc2hfYmFzZWxpbmVfMV92MREAdQJl5p0BAA&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQNDHFx03Um3n-bbD8gni1KQrcRmDOr8gtAOp2dQVL7m8A&oe=6AD7ED37&bitrate=1472452&tag=dash_baseline_1_v1",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQPGCZZ5Bl-Orfnt4CZVsIw7OgA_EhzfE2ZekPocZR22Bunr-6Geuhzg6Vt9AvUavrmg5yLZaMO-LWRVps6fysaq6fRDims4aWL0BMs.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=8OE0hlHEC_gQ7kNvwGRu3oD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NTY1Njc5MTQxMDMxNTUsImFzc2V0X2FnZV9kYXlzIjoyMDUsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMDQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=b207013cfdf7a1ce&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83ODQ3Q0MxNEY3MEU4NERCODkzODE2MEI4MENEQTQ4OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzYzNDQ3ODA3RjJGNjEwREUyQzA4RTM2MTJDNEZFQjg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbmhb6-6NnlPxUCKAJDMywXQFomZmZmZmYYEmRhc2hfYmFzZWxpbmVfMV92MREAdQJl5p0BAA&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQNDHFx03Um3n-bbD8gni1KQrcRmDOr8gtAOp2dQVL7m8A&oe=6AD7ED37&bitrate=1472452&tag=dash_baseline_1_v1",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t51.82787-10/656050472_18568394938017562_6460731363025113664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=MOT4Bd1DrUwQ7kNvwGhlVlb&_nc_oc=Adr8Ar9SENa7qTGpXPREoV-Qofl-qB2n2YvT7rzNEtSFURIDXhQX9IaSmcRMS3Xt4w3WZzhnZERWNPuFg6vMtOzY&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&oh=00_AQN3zvcuA-JzzYO1Qw1qxHlRUqrjR-9BsSKvNugFVRBmhQ&oe=6ADBD810"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:46.264Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "900667362525024",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1413067443777734/",
+   "text": "Did you have the same reaction??? #shonensoda #creamsoda #shonen #viral #foryou #fyp #reel",
+   "createdAt": "2025-12-31T02:28:36.000Z",
+   "authorName": "Shonen Soda",
+   "authorId": "100077453067289",
+   "authorUrl": "https://www.facebook.com/ShonenSoda",
+   "reactionCount": 3753,
+   "commentCount": 6,
+   "shareCount": 17,
+   "videoViewCount": null,
+   "videoDurationSec": 20,
+   "videoUrl": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQNjq___FA8akrzj0jxU6BJDKNFLv94NOHwDJeDSGDnaYvBFHZR3nGZd7R60s8FvLLTo3bmpF6bWn9Iyl8mGCaq7U9wyUw5AC1s.mp4?strext=1&_nc_cat=101&_nc_sid=8bf8fe&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=8QmvWpil9ikQ7kNvwG7bI13&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6ODU1MDg0OTE3MTU5NzY1LCJhc3NldF9hZ2VfZGF5cyI6MjkyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQNIHO7YGGpi-w6ADxxBAURBxW2SPuY2Kbh3sgScsYoAmQ&oe=6AD7E3E1&bitrate=4193198&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQNjq___FA8akrzj0jxU6BJDKNFLv94NOHwDJeDSGDnaYvBFHZR3nGZd7R60s8FvLLTo3bmpF6bWn9Iyl8mGCaq7U9wyUw5AC1s.mp4?strext=1&_nc_cat=101&_nc_sid=8bf8fe&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=8QmvWpil9ikQ7kNvwG7bI13&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6ODU1MDg0OTE3MTU5NzY1LCJhc3NldF9hZ2VfZGF5cyI6MjkyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQNIHO7YGGpi-w6ADxxBAURBxW2SPuY2Kbh3sgScsYoAmQ&oe=6AD7E3E1&bitrate=4193198&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t51.71878-10/607498368_2186030082138442_6661629466616957003_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=50ce42&_nc_ohc=0Q4pq6vzRnkQ7kNvwHYwzUj&_nc_oc=AdroIeOxsxKd5mhWbObIx2FZ-eUyPLB-NZBBaGXk7Y0xc_odW7CxKLw_iQRM12ImFFfWuCzb_BSfR3dQO6-AiFa9&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&oh=00_AQO92aocS7jm1YJJ87PRrwoWdVJ08Q23trGjBsez4GI1Og&oe=6ADBBB9E"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:46.270Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "1562792225852349",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1244657423950155/",
+   "text": "Homemade Strawberry Cream Soda (aka strawberry vanilla bean soda) for episode 44 of Better Than Store-Bought! 🍓🥤",
+   "createdAt": "2026-03-17T14:54:41.000Z",
+   "authorName": "Crowded Kitchen",
+   "authorId": "100063647587146",
+   "authorUrl": "https://www.facebook.com/crowdedkitchen1",
+   "reactionCount": 27376,
+   "commentCount": 360,
+   "shareCount": 2470,
+   "videoViewCount": null,
+   "videoDurationSec": 27,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMPyvWo2DVqDQYTvRVOLa0IRP1uT2OBDMrMeWMXZBt_VqeHUJFa5Oxhbe9HL79N2yC_e3F-t4nLjhLmXxtIgnf89hSroKPbvszge2eiWg8Y-w.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=NW3QU_cTYxYQ7kNvwGO2gsK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4NDIzMTAwMzk3OTIwODYsImFzc2V0X2FnZV9kYXlzIjoyMTUsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8234d5cad45d9f79&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DMzQ1NUVDNjA3QjI4NjFDOTE4N0M3QjE5QzU3NEY4OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0EzNDJEMzA2MzA2QTkxQzRCNUJBNURCQjMwQzQ2RTg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACasp-e3x-TFBhUCKAJDMywXQDsiDEm6XjUYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQMQ1zmreoMLJT6lpLFHgXcvtYVbP9uBwFsZb6yiOvmiKw&oe=6ADBCCB7&bitrate=2464095&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMPyvWo2DVqDQYTvRVOLa0IRP1uT2OBDMrMeWMXZBt_VqeHUJFa5Oxhbe9HL79N2yC_e3F-t4nLjhLmXxtIgnf89hSroKPbvszge2eiWg8Y-w.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=NW3QU_cTYxYQ7kNvwGO2gsK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4NDIzMTAwMzk3OTIwODYsImFzc2V0X2FnZV9kYXlzIjoyMTUsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8234d5cad45d9f79&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DMzQ1NUVDNjA3QjI4NjFDOTE4N0M3QjE5QzU3NEY4OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0EzNDJEMzA2MzA2QTkxQzRCNUJBNURCQjMwQzQ2RTg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACasp-e3x-TFBhUCKAJDMywXQDsiDEm6XjUYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQMQ1zmreoMLJT6lpLFHgXcvtYVbP9uBwFsZb6yiOvmiKw&oe=6ADBCCB7&bitrate=2464095&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/653451647_906010375662494_8040016794755862866_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=be8305&_nc_ohc=nZZmipVVjJgQ7kNvwHIOJyX&_nc_oc=Adqmnf0SvU-n3HJXwuShWibl7L3Ndb5s4nek6qFB-gYK6Jx3YKhNLcp4GyK2n8FMbOjoFoEIV3e3_ed_NUmsv6Gr&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&oh=00_AQPYswLOUM8I6UF_vPX3vhvpkoIlxPRFDpFeYECRthaSeg&oe=6ADBB529"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:46.366Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122114901471367343",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1953618185303553/",
+   "text": "Frozen Pepsi Cream Soda gets a satisfying ASMR cut! 🧊🥤🔪 Listen to the crisp, crunchy sounds! ✨  #fypシviralシfypシ #foryoupageシ #cuttingasmr #cancutting #frozencan #asmrvideo #frozendrinks #relaxingsounds #fyp #oddlysatisfying",
+   "createdAt": "2026-08-12T04:00:48.000Z",
+   "authorName": "    Satisfying ASMR World",
+   "authorId": "61591020290845",
+   "authorUrl": "https://www.facebook.com/SatisfyingASMRWorld01",
+   "reactionCount": 72,
+   "commentCount": 1,
+   "shareCount": 2,
+   "videoViewCount": null,
+   "videoDurationSec": 10,
+   "videoUrl": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQOjHrzusXvJ5aoxv0wKtNaW_dmpr9-S0vAFtMIWeHjy2gFjyFRwnZmWc2Dydlc8PIxJv_CUxCaAg3QA7yM94A9wn0ydddpNonGBeLNUAtPzYA.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=qt2sGXm1xmMQ7kNvwE8yPTw&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjQ4NTA1MjIxNTg1NTYzNjgsImFzc2V0X2FnZV9kYXlzIjo2OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=caa7da10e5468c78&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8zNDQ3QTlDNDAyQkFEQUIwM0ZBOTI5MzdDOUMyNzU5QV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI0NEFFNDQ1QTY0ODM3QTJCOTU2Q0M5RTA4QzdBRUE0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACagk-OjxuGdERUCKAJDMywXQCQQ5WBBiTcYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQMZUJw8CgiUOSaS7i_DtK2ThYBdWgH5cuOP8-eA4w7etA&oe=6ADBCDD0&bitrate=1044369&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQOjHrzusXvJ5aoxv0wKtNaW_dmpr9-S0vAFtMIWeHjy2gFjyFRwnZmWc2Dydlc8PIxJv_CUxCaAg3QA7yM94A9wn0ydddpNonGBeLNUAtPzYA.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=qt2sGXm1xmMQ7kNvwE8yPTw&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjQ4NTA1MjIxNTg1NTYzNjgsImFzc2V0X2FnZV9kYXlzIjo2OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=caa7da10e5468c78&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8zNDQ3QTlDNDAyQkFEQUIwM0ZBOTI5MzdDOUMyNzU5QV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzI0NEFFNDQ1QTY0ODM3QTJCOTU2Q0M5RTA4QzdBRUE0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACagk-OjxuGdERUCKAJDMywXQCQQ5WBBiTcYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQMZUJw8CgiUOSaS7i_DtK2ThYBdWgH5cuOP8-eA4w7etA&oe=6ADBCDD0&bitrate=1044369&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/774191151_1532032795364349_8232481633619117729_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ce42&_nc_ohc=-JYYXFL28E0Q7kNvwG0zKvk&_nc_oc=Ado7RngD7s-9n5_IWsUxrlr7Tg8XOHuwouIlck8mKTRPgCsXgvod4lxEID2iOtsZLPj8-pmKcmwRJL3wZLTgGd1R&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&oh=00_AQPz77nBC4N6YW-XrXfk_mGR1QzBGEzXEenIV3KNx_uujg&oe=6ADBDC9E"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:46.368Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "925282626730164",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1876342246339561/",
+   "text": "Hes a solid green flag 🙋🏻‍♂️ #shonensoda #shonen #creamsoda #viral #foryou #fyp #reel",
+   "createdAt": "2026-01-31T02:05:57.000Z",
+   "authorName": "Shonen Soda",
+   "authorId": "100077453067289",
+   "authorUrl": "https://www.facebook.com/ShonenSoda",
+   "reactionCount": 626,
+   "commentCount": 2,
+   "shareCount": 2,
+   "videoViewCount": null,
+   "videoDurationSec": 21,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNzo6GXfNcUqp5en9icV0R3vxaU7Y4uuLPagKALYfgum9kPr3QO68L0FjrLSEEc4Ymk2q8J11hcX7vd4nx9Ow5qeaVQwcU7L9A.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=jDbHyFpBCQ4Q7kNvwGafGTM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTc4NjE1NTgzMDc1ODc3NDMsImFzc2V0X2FnZV9kYXlzIjoyNjEsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQP4wFfwxV74tl-xxsaF8vabhJBTXcn-DfBCTALD7EvoDg&oe=6AD7CB47&bitrate=3872703&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNzo6GXfNcUqp5en9icV0R3vxaU7Y4uuLPagKALYfgum9kPr3QO68L0FjrLSEEc4Ymk2q8J11hcX7vd4nx9Ow5qeaVQwcU7L9A.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=jDbHyFpBCQ4Q7kNvwGafGTM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTc4NjE1NTgzMDc1ODc3NDMsImFzc2V0X2FnZV9kYXlzIjoyNjEsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&_nc_zt=28&oh=00_AQP4wFfwxV74tl-xxsaF8vabhJBTXcn-DfBCTALD7EvoDg&oe=6AD7CB47&bitrate=3872703&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-3.xx.fbcdn.net/v/t51.71878-10/625158833_1241253951403206_5578554033796938419_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=50ce42&_nc_ohc=ggelci4pJdsQ7kNvwElNp4p&_nc_oc=Adq0Rt6Lm31iDKCSU1Lpvp2svIiPjAzi6njHncyOOyTaxgdxajw53RkIYIAg190vcBGrdrL9t0Aghi1xJqCLnapn&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=JS0vrDxPp_-6zJABIqMGsA&_nc_ss=70289&oh=00_AQPhxEtVyiP_sCBaRaAhmUoDCoLl1J-0j316Xk5Czl62fQ&oe=6ADBC8D3"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:46.369Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122155225988707280",
+   "postType": "reel",
+   "url": "https://www.facebook.com/61571218407126/videos/2532259920483040/",
+   "text": "5 ملحم بە 15هەزارە بە سعری جملە دەفرۆشین\n07511390573✅واتساب ڤایبەر\n07759257012✅️واتساب ڤایبەر\n بە بۆنەی بێ مەعاشی داشکانمان کرد\nمژدە مژدە😲 گەورەترین 😲داشکاندنمان کرد  بۆ مەلحەمە سەحریکە لەبەر ئەوی مەعاش نیە\n\nئاگادار بە!!!!!!!\nبە سعری جملە ملحمە دەفرۆشین بە مشتەریکانمان بۆیە لای ئیمە لە هەموو شوینێ هەرزانترە\n\n  بۆ داوا کردن وەرە تایبەت یان تەلەفون بکە \n\n  نرخی 5 پارچە  ملحم بە 15هەزارە\nگەیاندن بۆ هەموو شارو شارۆکەیک هەیە\nئەم ژمارانە واتساب  ڤایبەری لەسەرە نامە بنێرە \n \n\n❤( ئەم خوشکە بەڕێزە)❤ سوپاس بۆ خوای گەورە سوودی لە مەلحەمەکە  بینیوە ڤیدۆی بۆمان کردوە سوپاسی ئەکەین \nباشترین چارەسەر بۆ   نەخۆشی اکزیما سەدەفیە  باشترین کرێم ئێستا بەردەستە (مەلحەمە سحری)بۆ حەساسیەی پیست\n 🌿🌿🌿🌿🌿🌿👌👌👌👌👌👌\nئەم مەلحەمە خزم و کەسەکانم بەکاریان هێناوە تەجروبە کراوە زۆر  سوود بەخشە بێ زیانە دڵنیابە\n الحمدللە ئیشمان زۆر باشە سوپاس بۆ خوا خەڵکی\n زۆر لێمان ڕازیە \n👌👌👌👌👌👌👌🌿🌿🌿🌿🌿🌿\nچارەسەر هەموو کێشەکانی حەساسیەی پیست ئەکات  وەک........\nخورانی پیست زۆر\nسور بوونەوی پیست\nلە کاتی خورانی خوێن لەگەلیا دێت\n 🌿وشکە بیرۆ\n🌿تەڕە بیرۆ \n 🌿خورانی پیست\n🌿اکزیما\n🌿سەدەفیە\n🌿کەرووی پیست\n🌿 هیچ زیانی نیە بۆ پیست\n بە گرنتیە بە زەمانە تەجروبە کراوە %١٠٠  سروشتیە بێ زیانە إن شاءالله \n \n👇😲😲😲👇😲👇👇😲😲👇\n✔خۆتان دوور بکەن لە ئاو دوژمنی ئەو نەخۆشیانەیە  تفتی  یاخود تیژی😲 ترشی 😲شرینی😲  پیاز 😲سیر😲 کۆلا خواردنەوە غازیەکان😲بەهارات بە عام خراپە زۆر  پارێز بکەن لەم خواردنانە چاک دەبنەوە\nإن شاءالله وە سابونی مناڵ بەکار بهێنن چونکە مەوادی کیمیایی تیای نیە✅\n👌 چارەسەرە بە ئزنی اللە\n👆😲👆😲👆😲👆😲👆😲👆😲\n\n🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿🌿\n\n(چۆنێتی بەکارهێنان)  ئەم کرێمە شەوانە پێش خەوتن لە شوێنی مەبەست بدە  بە تەنکی بە  خەفیفی لێ بدە  پێش  ئەوەی  مەلحەمی تازەی لێ بدەیتەوە خاوێنی بکەوە ئینجا مەلحەمی تازەی لێ بدە\nتێبینی...   رۆژانە یەک جار بەس شەوان بەکاری بهێنە\n..🌿🌿🌿🌿🌿..............\n..🌿🌿🌿🌿🌿..............\nگەیاندنمان هەیە بۆ هەموو کوردستان و عێراق \n...........😲✔✅\nبۆ داواکردن تەلەفون بکە یان تەلەفون  بکە لە ڤایبەر یان واتساب \n    \n   07511390573 کۆڕەک \n07759257012 ئاسیا",
+   "createdAt": "2025-09-14T21:14:38.000Z",
+   "authorName": "سەنتەری سروشتی Santary Srwshty 2",
+   "authorId": "61571218407126",
+   "authorUrl": "https://www.facebook.com/people/%D8%B3%DB%95%D9%86%D8%AA%DB%95%D8%B1%DB%8C-%D8%B3%D8%B1%D9%88%D8%B4%D8%AA%DB%8C-Santary-Srwshty-2/61571218407126/",
+   "reactionCount": 349,
+   "commentCount": 83,
+   "shareCount": 4,
+   "videoViewCount": null,
+   "videoDurationSec": 52,
+   "videoUrl": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMnpawTwI-QUAi-4yaBG_ZT6mMSocOEmO3F9gCLZoGc1UMS3_cGRurgHVc1bJrGYPyikxH8xSPnWGAlABTz5heVxMuit7YbiX71zh3ArQ.mp4?_nc_cat=101&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=33hNAi9rNakQ7kNvwHdQLf_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MzA0MzM4NjYzOTE3NTA3NCwiYXNzZXRfYWdlX2RheXMiOjM5OSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjUxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQNAdTWAe0WZjy5b0M5w0Tekp_10qbGBQGE5dbiPeTrBug&oe=6ADBB1E5&bitrate=511472&tag=sve_sd",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMnpawTwI-QUAi-4yaBG_ZT6mMSocOEmO3F9gCLZoGc1UMS3_cGRurgHVc1bJrGYPyikxH8xSPnWGAlABTz5heVxMuit7YbiX71zh3ArQ.mp4?_nc_cat=101&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=33hNAi9rNakQ7kNvwHdQLf_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MzA0MzM4NjYzOTE3NTA3NCwiYXNzZXRfYWdlX2RheXMiOjM5OSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjUxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQNAdTWAe0WZjy5b0M5w0Tekp_10qbGBQGE5dbiPeTrBug&oe=6ADBB1E5&bitrate=511472&tag=sve_sd",
+     "thumbnailUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t15.5256-10/546668119_1306624954464115_6791227148382956646_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ce42&_nc_ohc=8Tbh6S7JXxkQ7kNvwH1Niuk&_nc_oc=Adob7EoIVM2QMD-Fux4pZdT9I_LTmVtThVeMsGNNtL3VH3osXWyo9tpCfJEjdejdDXU&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&oh=00_AQPXjZHqpMEOiyQX5HSl_yJ1RfTt2MkFlBuS2YyxvpyJLw&oe=6ADBB67A"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:48.265Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "936538842348292",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1453637163110140/",
+   "text": "کێکی کرێم کرامێل \n\nكوردى - عربى \n\nبۆ چینی یەکەم : ١ پەرداخ  شەکر لەسەر ئاگرێکی زۆر زۆر \nهێواش ئەتوێنینەوە .. \nئە یکەینە بنی قاڵبەکە ،، \n\nبۆ چینی دووەم : کرێم کرامیلەکە ئامادە دەکەین \nمن هی حازەریم بەکار هینا …\nدوپاکەت کرێم کرامیل \n٢ پەرداخ نیو شیرە بەتامەکەی @altunsamilk  @altunsamilk \n\nمن بە شیری گەرم گرتمەوە بۆی تۆزێ خەست ببێتەوە \nئیکەینە قالبەکەوە بەسەر شەکرە تواوەکەدا \n\nئنجا دەست دەکەین بە ئامادە کردنی چینی سێیەم کیکی قاوە ئاسای 💛💛\nکێکی قاوە :\nلە فیدۆکاندا  تەواوی هەنگاوەکان هەیە زۆر ئاسانە\n\n٢ کوپ ئارد \n١ كوپ  شیر وشک \n٢ کوپ ئاو )\n١ كوپ (زەیت + کەرە) \n١ كیس بیكن باودر \n١ كیس ڤانیلا\n٣ ھێلـــكە\n١ کووچکی قاوە خوێ \n٢ کەوچکی چێشت بیکن باودر \nکێکەکە ئەکەین بەسەر گیراوەی کرێم کەرەمێڵەکە ،، لە سەرەتادا تێکەڵ دەبن بەلام کێشە نیە خۆی لە فرنا جیا دەبێتەوە 🙈😁\nدواتر كێكەكە  بۆ ناو فڕن لەناو حەمامی ئاودا دایدەنێین بەدەرەجەی ١٨٠ ... بۆماوەی ٤٥ دەقە ....\n\nدوای ئەوەی برژا بۆ ماوەی ٣ سەعات دای بنێ انجا کاتی دەرهێنانی لە قالبەکە تۆزێ بنی قاڵبەکە گەرم بکە من ( خستمە ئاوی گەرم بۆی شەکرەکە بتوێتەوە بنی قالبەکە بەر بدا ) \nنۆشی گیانتان بێت \n\nکیکة كريم كراميل ( كيكة قدرة القادر ) \n\nالخطوة الاولى : \nنزوب كوب سكر على نار كتير هادية و نصبها فى القالب \n\nللطبقة الثانية : \nنجهز كريم كراميل . ظرفين كريم كراميل + كوبين و نص حليب حار و نصبها فوق سكر المذاب.. \n\nلطبقة",
+   "createdAt": "2026-04-27T13:36:50.000Z",
+   "authorName": "Shayma life style",
+   "authorId": "100079765553827",
+   "authorUrl": "https://www.facebook.com/people/Shayma-life-style/100079765553827/",
+   "reactionCount": 236,
+   "commentCount": 2,
+   "shareCount": 10,
+   "videoViewCount": null,
+   "videoDurationSec": 69,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQMF1kjGgxyI638oxRgoyXXlNPUQy8aa-6ClpaoAUvY76_D6IKdhVTITDWdFgtpeh_Nc9qVKY7mbHGruRaJkFcYHdL6lAYQE_CMZxtU.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=ugbZ2hUSXxUQ7kNvwHrQI0X&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTUwODc5OTQyMDgyNTYwNSwiYXNzZXRfYWdlX2RheXMiOjE3NCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=b46eedc02a9b6bcf&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85QjQyNEVFRTIwMkRENzI3MzlEQzEyM0E4RjNERjU5Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzM0NDRCMURBQkQ4NDQzNUMzOUIwOEZDQTU0MjBGOTk0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaKgKDY14-uBRUCKAJDMywXQFFAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdQJl5p0BAA&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQN9tFxwyy3cuAOzeHwlw4W7rA3Di2dYZ7BwaNZ2-iVwzw&oe=6AD7E45A&bitrate=2274930&tag=dash_baseline_1_v1",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQMF1kjGgxyI638oxRgoyXXlNPUQy8aa-6ClpaoAUvY76_D6IKdhVTITDWdFgtpeh_Nc9qVKY7mbHGruRaJkFcYHdL6lAYQE_CMZxtU.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=ugbZ2hUSXxUQ7kNvwHrQI0X&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTUwODc5OTQyMDgyNTYwNSwiYXNzZXRfYWdlX2RheXMiOjE3NCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=b46eedc02a9b6bcf&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85QjQyNEVFRTIwMkRENzI3MzlEQzEyM0E4RjNERjU5Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzM0NDRCMURBQkQ4NDQzNUMzOUIwOEZDQTU0MjBGOTk0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaKgKDY14-uBRUCKAJDMywXQFFAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdQJl5p0BAA&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQN9tFxwyy3cuAOzeHwlw4W7rA3Di2dYZ7BwaNZ2-iVwzw&oe=6AD7E45A&bitrate=2274930&tag=dash_baseline_1_v1",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.71878-10/683636737_996665493019040_7859425929144113672_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=KQDNgC6gp7UQ7kNvwHwOybp&_nc_oc=AdrZf9LVCDtXwwtgwjH5SLTIWApgenCau4mCKjvy-4EnQ9WaL9WeuoacpaJfX0yBr-c&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&oh=00_AQPLF-zaor4vprLK6V6Ir_9snGp2nKW3nTQN9fYHL5SiDw&oe=6ADBD019"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:48.365Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "586370090170350",
+   "postType": "reel",
+   "url": "https://www.facebook.com/KargayKamaran/videos/5918646234882862/",
+   "text": "دەسکی سمارت\n\nتازەترین دەسکی سمارت بۆ دەرگای ماڵەکانتان لە کارگەی کامەران. ئەم دەسکە دەتوانرێت کۆنترۆل بکرێت لە ڕێگەی مۆبایلە زیرەکەکانتان لە ڕێگای بلووتوث، پەنجە مۆر، کۆدی دەرگا، هەروەها بە کارتی تایبەت بە دەسکەکە خۆی دەکرێتەوە.\n\nکارگەی کامەران، نەک تەنها ستافەکەی بە ئەزموون و بە توانان، بەڵکو ئەو کەرسەتانەی کە بەکاریدەهێنن لە کاری ڕۆژانەیان کوالیتیەکی بەرز و گونجاوە.  \n\nناونیشان |  خوار کورد سیتی، بەرامبەر شاری باشوور\nژمارە تەلەفون \n0770 157 9888\n+ وشەی نرخ بنوسیت زانیاریت بۆدێت\n#شووشە #ئەلەمنیۆم #KK #kargaykamaran #suli #ماڵ #سکۆریت",
+   "createdAt": "2023-01-25T17:33:10.000Z",
+   "authorName": "Kargay Kamaran کارگەی کامەران",
+   "authorId": "100063920927303",
+   "authorUrl": "https://www.facebook.com/KargayKamaran",
+   "reactionCount": 797,
+   "commentCount": 150,
+   "shareCount": 1,
+   "videoViewCount": null,
+   "videoDurationSec": 61,
+   "videoUrl": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPkfBvGwuWVxdODG2P8WKPj1XuQlL1bTXJ1snVs7gBbVI9EKhsXWEPom-Ai3BcBiqxa-e_llIP2z1-hcUfhf06UZZgeLQ0aKFzHg6NeVncTkQ.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=TRUdIqjzm94Q7kNvwGMPDgB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjcwNzA5NDk1MDg1NTM5MywiYXNzZXRfYWdlX2RheXMiOjEzNjIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjo2MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=164cd5c21fb32378&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xMDQ5RDNCNTQ5RjMwNjZDMjBCOTc2ODRFOUQ0MzJBQV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhg1ZmJfcGVybWFuZW50LzEzMDYyMTM2NDY2MTg1NzNfODkwNzM4Njg0MTcyNjgwNjcyMS5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmwovy9avGwQIVAigCQzMsF0BOkEGJN0vHGBlkYXNoX2gyNjQtYmFzaWMtZ2VuMl83MjBwEQB1AmW2ngEA&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQOQA_rIBAT5pIisSchnW1NOVG08npO1h0TSWfG8jw130w&oe=6ADBD0C8&bitrate=733354&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQPkfBvGwuWVxdODG2P8WKPj1XuQlL1bTXJ1snVs7gBbVI9EKhsXWEPom-Ai3BcBiqxa-e_llIP2z1-hcUfhf06UZZgeLQ0aKFzHg6NeVncTkQ.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=TRUdIqjzm94Q7kNvwGMPDgB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjcwNzA5NDk1MDg1NTM5MywiYXNzZXRfYWdlX2RheXMiOjEzNjIsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjo2MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=164cd5c21fb32378&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xMDQ5RDNCNTQ5RjMwNjZDMjBCOTc2ODRFOUQ0MzJBQV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhg1ZmJfcGVybWFuZW50LzEzMDYyMTM2NDY2MTg1NzNfODkwNzM4Njg0MTcyNjgwNjcyMS5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmwovy9avGwQIVAigCQzMsF0BOkEGJN0vHGBlkYXNoX2gyNjQtYmFzaWMtZ2VuMl83MjBwEQB1AmW2ngEA&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQOQA_rIBAT5pIisSchnW1NOVG08npO1h0TSWfG8jw130w&oe=6ADBD0C8&bitrate=733354&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/327226303_1291933241363455_1009736864356157350_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=be8305&_nc_ohc=FOkXnttc_74Q7kNvwGqCaY-&_nc_oc=AdpJVwOQAMohIVMsfqvY5AW6BBq-aO8aSa9DezemKIaubCRupvBfI3oVD29ezfaROvU&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&oh=00_AQOH7MBeOe0C2dqszfPDWmxaWh-JsSDoS9Wn6m1nr5LVlw&oe=6ADBDADC"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:48.369Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "279735981307004",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1015685439790782/",
+   "text": "دروستكردنی کیکی سویس رول بە شوکلاتە \nئەگەر لە مالەوە میزانی بەردەست بیت باشتر وایە پێکهاتەکان بە گرام دابنیریت بەلام گەر بەردەست نیە بە کوپ قیاس بکەن بەشێوەی فیدیوەکە لە خوارەوە بووتانم نوسیوە \nپیداویستیەکان: \n٤ هێلکە \nکەمیک خوێ \n٢/٣ کوپ شەکر (120g)\n١ کیس فانیلیا \nنیو کوپ ئارد (90g)\nکاکاو نیو کوپ کەمیک کەمتر ( 30g)\n١ کەوچک چا بیکنک پاودر \n١/٣ کوپ شیر (50g)\n١/٣ کوپ زیت (50g)\nدەکریتە فرن بە پلە ١٨٠c بوو ماوەی ٢٥ خولەک \nدەتوانن لە یوتیوب (Seven Taste ) سەیری تەواوی فیدیوەکە بکەن \nکریم شانتی: \n١ کیس کریم شانتی \nنیو کوپ شیر \nصوص شوکلاتە : \n١٥٠گ شوکلاتە \n١ پاکەت خامە بجوک \n———————\nكيكة سويس رول \n٤ بيض\n١٢٠ غ سكر \nرشة ملح \n١ ظرف فانيليا \n٩٠ غ طحين (نصف كوب ) \n٣٠ غ كاكاو بودرة \n١ ملعقة شاي بيكنج باودر \n١/٣ كوب حليب (٥٠غ)\n١/٣ كوب زيت (٥٠غ) \nكريم شانتي :\n١ ظرف كريم شانتي \nنصف كوب حليب \nصوص شوكلاتة : \n١٢٠ غ شوكلاتة \n١ علبة صغيرة قشطة \n#dessert #desserts #chocolate #chocolatelover #chocolatecake #chocolatelovers #cakerecipe #swissroll #kurdistan #kurd #hawler #duhok #کوردستان #کورد #هەولێر #هەولێر_مهاباد_ئامێد_کرماشان_قامیشلی_کوبانی_ورمێ_سلێمانی_شەنگاڵ_سنە_سەقز_بۆکان_ئیلام_دهۆک_سەردەشت_نەغەدە_شنۆ_پیرانشار_کەرکوک_هەورامان #هەولێر_سلێمانی_دەهۆک_ڕانیه_کەرکووک_دەهۆک_دووکان_قەڵادزێ_شەقڵاوە_حەڵەبچه_دیاربەکر_دیاربکر_وان_کۆبانێ_عەفرین_کۆیە #دهوك #دهوك_ئاکڕێ_زاخو_ئامێدی_بەردەرەش_شێلادزێn",
+   "createdAt": "2023-07-24T14:18:38.000Z",
+   "authorName": "Seven taste حەوت تام",
+   "authorId": "100078118137777",
+   "authorUrl": "https://www.facebook.com/people/Seven-taste-%D8%AD%DB%95%D9%88%D8%AA-%D8%AA%D8%A7%D9%85/100078118137777/",
+   "reactionCount": 318,
+   "commentCount": 1,
+   "shareCount": 23,
+   "videoViewCount": null,
+   "videoDurationSec": 59,
+   "videoUrl": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQMNu2yQOvhyFRIEoh_9Q9M8AVmHsBFVfZrbm2eSRLC8ZjFMwwZ3vL5HQGMN_QcyNJ26f6b2qxQpah9zQfQBPvMh7WycsuDotYo.mp4?strext=1&_nc_cat=101&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=TC5U274aj-8Q7kNvwEikKoK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTIyMjc5NDI2ODQwOTg4OSwiYXNzZXRfYWdlX2RheXMiOjExODIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1OCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQOHMHkUtZJXAG7tJqL5VKTKqXk3ruKPG81JgoRRYCEgYQ&oe=6AD7BA4D&bitrate=4121852&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQMNu2yQOvhyFRIEoh_9Q9M8AVmHsBFVfZrbm2eSRLC8ZjFMwwZ3vL5HQGMN_QcyNJ26f6b2qxQpah9zQfQBPvMh7WycsuDotYo.mp4?strext=1&_nc_cat=101&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=TC5U274aj-8Q7kNvwEikKoK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTIyMjc5NDI2ODQwOTg4OSwiYXNzZXRfYWdlX2RheXMiOjExODIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1OCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&_nc_zt=28&oh=00_AQOHMHkUtZJXAG7tJqL5VKTKqXk3ruKPG81JgoRRYCEgYQ&oe=6AD7BA4D&bitrate=4121852&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.71878-10/498243364_1615627509126561_372098970432478394_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ce42&_nc_ohc=G6kVov1zFL4Q7kNvwHEyRgi&_nc_oc=Adq3meNJrdvF5Xv9RkmN2mgpuKtTqNIFVKEXd4RveleBXaYcmuM0LDMyP9JMdeVOdmY&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=FlRpDePsPM57X5CnkFlOBA&_nc_ss=70289&oh=00_AQPSN5m5V4LWsT-TuGL20yozf84isyoHnGFlzZeKAITM6g&oe=6ADBB9B9"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:48.370Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "350033850042738",
+   "postType": "reel",
+   "url": "https://www.facebook.com/metemgee/videos/1811451165723551/",
+   "text": "Cream Soda and Milk, the OG creamy beverage 🇬🇾 #creamylemonade #creamsodaandmilk #guyanese #guyanesefood #metemgee #condensedmilksoda #creamsodafloat",
+   "createdAt": "2021-07-24T15:27:53.000Z",
+   "authorName": "Metemgee",
+   "authorId": "100051083773945",
+   "authorUrl": "https://www.facebook.com/metemgee",
+   "reactionCount": 254,
+   "commentCount": 38,
+   "shareCount": 67,
+   "videoViewCount": null,
+   "videoDurationSec": 17,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m266/AQPCd6aDjwgRt_3FKLj2i3Wi7ne9KL64shgG7ht5jIgTLxXjdt4JYUgSkWLZYy0vPH2WyTjvQaP0b67ZGvcQpK4U562uEBDoHvE.mp4?strext=1&_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=85NFviGfa8gQ7kNvwEnZSZA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6Mzg4ODk2NjIzNzYwOTE3LCJhc3NldF9hZ2VfZGF5cyI6MTkxMiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&_nc_enc=UQDLMRka3ZcRvcmKeFzJsHEmKUNeXFzqXOrjJbDp5XvZ8gE5sw2YMBop6Jqs9gPpAXjtbMcH_CSLn6V9ZsTulilVoN4Qa4q-YgPYLL3fWip2_T7ft6A_z164SL4&oh=00_AQNMEk_qC8GCNUB68LQFCC1nSVo4OF3YJavknu0Hjl9aeg&oe=6AD7D14E&bitrate=3198424&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m266/AQPCd6aDjwgRt_3FKLj2i3Wi7ne9KL64shgG7ht5jIgTLxXjdt4JYUgSkWLZYy0vPH2WyTjvQaP0b67ZGvcQpK4U562uEBDoHvE.mp4?strext=1&_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=85NFviGfa8gQ7kNvwEnZSZA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6Mzg4ODk2NjIzNzYwOTE3LCJhc3NldF9hZ2VfZGF5cyI6MTkxMiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&_nc_enc=UQDLMRka3ZcRvcmKeFzJsHEmKUNeXFzqXOrjJbDp5XvZ8gE5sw2YMBop6Jqs9gPpAXjtbMcH_CSLn6V9ZsTulilVoN4Qa4q-YgPYLL3fWip2_T7ft6A_z164SL4&oh=00_AQNMEk_qC8GCNUB68LQFCC1nSVo4OF3YJavknu0Hjl9aeg&oe=6AD7D14E&bitrate=3198424&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/222634738_1811451722390162_8972422956788367889_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=50ce42&_nc_ohc=sgujwO5SXV4Q7kNvwEaxzso&_nc_oc=Adpxp62Iktyd48ue9zslacGu5SvSXRG3Xd-DT9mUjtF-BH3VxPxtb2K0NupV7arXvrFeweOXQSCt9kj6rQyMUKu4&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&oh=00_AQObYpxyEEvHw3cU-v4YVxoGPahb_Ru4Wo-cDjp7KdY1Xw&oe=6ADBE10D"
+    },
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m266/AQPCd6aDjwgRt_3FKLj2i3Wi7ne9KL64shgG7ht5jIgTLxXjdt4JYUgSkWLZYy0vPH2WyTjvQaP0b67ZGvcQpK4U562uEBDoHvE.mp4?strext=1&_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=85NFviGfa8gQ7kNvwEnZSZA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6Mzg4ODk2NjIzNzYwOTE3LCJhc3NldF9hZ2VfZGF5cyI6MTkxMiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&_nc_enc=UdLdEgx8_w6lEJuDZKQzm7Ojtmx9aD1ZLKYQMspniOIOMoXWweaT5f7jozFxZMhg4-i8rTY0OQ29adEMgEtfw1Yuo_rSEOe_anLyr55AaaVdOd4GMXW2N19F7hU&oh=00_AQNMEk_qC8GCNUB68LQFCC1nSVo4OF3YJavknu0Hjl9aeg&oe=6AD7D14E&bitrate=3198424&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/222634738_1811451722390162_8972422956788367889_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=50ce42&_nc_ohc=sgujwO5SXV4Q7kNvwEaxzso&_nc_oc=Adpxp62Iktyd48ue9zslacGu5SvSXRG3Xd-DT9mUjtF-BH3VxPxtb2K0NupV7arXvrFeweOXQSCt9kj6rQyMUKu4&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&oh=00_AQObYpxyEEvHw3cU-v4YVxoGPahb_Ru4Wo-cDjp7KdY1Xw&oe=6ADBE10D"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:51.365Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122126472513338576",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1126040219795080/",
+   "text": "🥤🥊 Vanilla Coke Can vs Cream Soda Can — USA Home Battle | One Winner, One Loser!",
+   "createdAt": "2026-10-15T06:03:59.000Z",
+   "authorName": "Drink Wars",
+   "authorId": "61590157306736",
+   "authorUrl": "https://www.facebook.com/people/Drink-Wars/61590157306736/",
+   "reactionCount": 5,
+   "commentCount": 0,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 10,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQP7GICRnB_W0k9mjaubf7IV3-NyYR4kAduBbLhO3oUz7F9dpBrC5HLNtvZbVFa2TxVm5j3VsMGceoH0nDKuoDjUeZxLA8-wDVVINdrM4uuRMQ.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=zSrMH5gAzIEQ7kNvwFLnf7b&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2ODI5NzIyNzk5MDI0ODIsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=4ebaaf9dd93ef723&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BODVBNURGOUQyQTA0RTI2ODgyNTM4QzA3RkJDNzI3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzg1QzBFMEExRUYxODRCN0ZCQzUzMzdGRUFFNzE5MTYyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACakxMjO8Kn9BRUCKAJDMywXQAkAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&oh=00_AQO_3rR8Caz-ak6wosGTUOTLG297suCaBPplYTNuvl21ZA&oe=6ADBD5B2&bitrate=1566448&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQP7GICRnB_W0k9mjaubf7IV3-NyYR4kAduBbLhO3oUz7F9dpBrC5HLNtvZbVFa2TxVm5j3VsMGceoH0nDKuoDjUeZxLA8-wDVVINdrM4uuRMQ.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=zSrMH5gAzIEQ7kNvwFLnf7b&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2ODI5NzIyNzk5MDI0ODIsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=4ebaaf9dd93ef723&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9BODVBNURGOUQyQTA0RTI2ODgyNTM4QzA3RkJDNzI3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzg1QzBFMEExRUYxODRCN0ZCQzUzMzdGRUFFNzE5MTYyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACakxMjO8Kn9BRUCKAJDMywXQAkAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&oh=00_AQO_3rR8Caz-ak6wosGTUOTLG297suCaBPplYTNuvl21ZA&oe=6ADBD5B2&bitrate=1566448&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/850032767_1766920831227635_6500665643975537501_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ce42&_nc_ohc=kkOZQ5h65WUQ7kNvwElmaDE&_nc_oc=AdphK7ek9BtdNMj8nYgDwLpLhyuu82z80i4U-gsuYr-71CCuVghMUFINZ66ABwwjWEt5GDznyKxynymUvsbc_sSs&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&oh=00_AQPLy1qF4kniSdYQNsngsRc1eMZK9o17QzziazDtCeaByA&oe=6ADBE3F7"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:51.366Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122181568322814708",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/5696126027279269/",
+   "text": "I can’t lie this one went crazyyyyy 10/10 must try for any blue v lovers!!!! #venergy #energydrinks #dirtysoda #specialtydrinks #barista",
+   "createdAt": "2026-10-18T05:21:29.000Z",
+   "authorName": "FIZZ Soda Shop",
+   "authorId": "61574441257244",
+   "authorUrl": "https://www.facebook.com/people/FIZZ-Soda-Shop/61574441257244/",
+   "reactionCount": 1,
+   "commentCount": 0,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 36,
+   "videoUrl": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQPDg5Mv2pCbX4s7QLMpBRLEyBl87koZw3ETONM00N0EkEeZWW4g3Uhq_o2-FUyhS-iXHtOOB02H94P87FZ-9JzV1Cx05B3x77IdOd7u7Q.mp4?_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=eDCrNcSQS3sQ7kNvwFVGhkX&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMzcxMzg0NTQxNzM3NDgzLCJhc3NldF9hZ2VfZGF5cyI6MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjM2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&oh=00_AQMwPKQC1hXM99Khy-3QNl5Zv69RwnxNg9QVN_TMGuffxA&oe=6ADBB267&bitrate=2943334&tag=progressive_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQPDg5Mv2pCbX4s7QLMpBRLEyBl87koZw3ETONM00N0EkEeZWW4g3Uhq_o2-FUyhS-iXHtOOB02H94P87FZ-9JzV1Cx05B3x77IdOd7u7Q.mp4?_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=eDCrNcSQS3sQ7kNvwFVGhkX&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMzcxMzg0NTQxNzM3NDgzLCJhc3NldF9hZ2VfZGF5cyI6MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjM2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&_nc_zt=28&oh=00_AQMwPKQC1hXM99Khy-3QNl5Zv69RwnxNg9QVN_TMGuffxA&oe=6ADBB267&bitrate=2943334&tag=progressive_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t51.82787-10/849291131_1371384841737453_904468590282925484_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3R-Vh74yu9IQ7kNvwFoZRuo&_nc_oc=AdqiwZo424B2HWT00Gnn-ytF0crRPzfqnp67GucBDz0lv-ZObWCxWe4HJCrwT0-HIJ3fN1cvqj11ihH6UOgLrzGA&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=iwbdhUOC49J9ahLXv4T_8Q&_nc_ss=70289&oh=00_AQNlNkwgcllpT6lHWFYxQsghFZc8BOPrdPWLxy1B1JvEvg&oe=6ADBC613"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:51.367Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122319441752201797",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1869468790886649/",
+   "text": "#maxplus \nکۆلێکشنی نوێ  مۆدێلاتی جیاواز\nسلێمانی .ناوبازاڕ بە ریدە کە کۆڵە ک مۆڵ\n07706037911\n07508189100\nگە یاندن هە یە\n#maxplus \n#baxdad_kirkuk_hawler_tkrit_slimane⁩⁩",
+   "createdAt": "2026-10-18T14:08:01.000Z",
+   "authorName": "MaaxPllus",
+   "authorId": "61556053934664",
+   "authorUrl": "https://www.facebook.com/people/MaaxPllus/61556053934664/",
+   "reactionCount": 6,
+   "commentCount": 3,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 14,
+   "videoUrl": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQO7KFmyMHI9MeXz-MtXUW3Qu2_6_OEcySst4Eq3CX9SSzj7YIFF3NcoZX9yjTMJVXreC3Hkw4Ab4m8zUTNFMkagBGUVD3JzLg7_xcNjsA.mp4?_nc_cat=105&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=y3piXWl5G7YQ7kNvwEd7vHh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMTEwMTU3MzY1MjAwNzQ5LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=no18TM8DzVlhXc-z2npBzA&_nc_ss=70289&_nc_zt=28&oh=00_AQPoQEGNyzGzHDYPDXW0w0pCFi231nGZ83HxEy7CjRhvag&oe=6ADBB521&bitrate=1209795&tag=progressive_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQO7KFmyMHI9MeXz-MtXUW3Qu2_6_OEcySst4Eq3CX9SSzj7YIFF3NcoZX9yjTMJVXreC3Hkw4Ab4m8zUTNFMkagBGUVD3JzLg7_xcNjsA.mp4?_nc_cat=105&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=y3piXWl5G7YQ7kNvwEd7vHh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoxMTEwMTU3MzY1MjAwNzQ5LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=no18TM8DzVlhXc-z2npBzA&_nc_ss=70289&_nc_zt=28&oh=00_AQPoQEGNyzGzHDYPDXW0w0pCFi231nGZ83HxEy7CjRhvag&oe=6ADBB521&bitrate=1209795&tag=progressive_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.82787-10/850185076_18099514691409869_6374050357471275254_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=Ib3lUqoUOJYQ7kNvwE8hRUj&_nc_oc=AdrbycW4zjprCbbrpqqMhldK2yKQEik_iBFMJXIY1xapHukgnd68BBlzy1qiCthz63M&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=no18TM8DzVlhXc-z2npBzA&_nc_ss=70289&oh=00_AQMH1jPgsCcDt_Dqo_mshbk0VmPyou28nJNi3XJDxhSZag&oe=6ADBBF70"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:52.170Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "4616165158707141",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/768356329603881/",
+   "text": "7-Eleven Philippines  Coffee hack you need to Try! COOKIES ‘N CREAM COFFEE FLOAT!☕️🤎\n\n #oreo #7elevendrinkhack #ArlaOrganicMilk #KopikoLuckyDay #selectaicecream",
+   "createdAt": "2026-05-24T12:11:21.000Z",
+   "authorName": "Bianca Calimag",
+   "authorId": "100009411072640",
+   "authorUrl": "https://www.facebook.com/bianca.calimag.2024",
+   "reactionCount": 119,
+   "commentCount": 4,
+   "shareCount": 14,
+   "videoViewCount": null,
+   "videoDurationSec": 73,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQNmk7hZjr0a5ninF3u14wO6HWmf4uLzZgCxFv_naByXLNo0UoufxY63A3zrSLnI2DhY9VtxzxgkdQOrwC1GWTIPEerlKeDOL5X4RIBgJBbdWw.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=AeBcP3UIHr4Q7kNvwHJpD2g&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjg2MzEzNTI3MDE2NDEwMywiYXNzZXRfYWdlX2RheXMiOjE0NywidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjczLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=dcaad5e55547e619&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yNDRCNEZCQTBCQUJDQTkzNDA1QUUxMzA0QUE1MDRCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzc2NEE4QTRFNkIxNkQxNEY0NzM2OTEyOTVCQUJCRDlGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaO2t7yisGIAxUCKAJDMywXQFJTMzMzMzMYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZaeAQA&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQPjC2RsKMqvH3BH4sCj0VfbQQwP6-mgWW_Z8CbtdpaemQ&oe=6ADBE3BA&bitrate=1777472&tag=dash_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQNmk7hZjr0a5ninF3u14wO6HWmf4uLzZgCxFv_naByXLNo0UoufxY63A3zrSLnI2DhY9VtxzxgkdQOrwC1GWTIPEerlKeDOL5X4RIBgJBbdWw.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=AeBcP3UIHr4Q7kNvwHJpD2g&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjg2MzEzNTI3MDE2NDEwMywiYXNzZXRfYWdlX2RheXMiOjE0NywidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjczLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=dcaad5e55547e619&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yNDRCNEZCQTBCQUJDQTkzNDA1QUUxMzA0QUE1MDRCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzc2NEE4QTRFNkIxNkQxNEY0NzM2OTEyOTVCQUJCRDlGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaO2t7yisGIAxUCKAJDMywXQFJTMzMzMzMYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZaeAQA&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQPjC2RsKMqvH3BH4sCj0VfbQQwP6-mgWW_Z8CbtdpaemQ&oe=6ADBE3BA&bitrate=1777472&tag=dash_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lga3-3.xx.fbcdn.net/v/t15.5256-10/708436930_771480135958167_669258406555264850_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=be8305&_nc_ohc=nlaqS6MviGkQ7kNvwGz1V7g&_nc_oc=AdraJgpktKHnqQqJ4U1WZFVqbRlp0XNv6fWSv_lwGRg-U9PwHC9BNrErO-KrrPE6hCrl5kJfbCYmRLtn2H9OdUG9&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&oh=00_AQP4QAnHmbrU6UWP6cyQZTEVCAn1fdILRRbDkELEbBkKzQ&oe=6ADBDCEE"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:54.670Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "951781257413634",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/903022549309923/",
+   "text": "Who says yummy lol #shonensoda #creamsoda #viral #foryou #fyp",
+   "createdAt": "2026-03-03T03:17:06.000Z",
+   "authorName": "Shonen Soda",
+   "authorId": "100077453067289",
+   "authorUrl": "https://www.facebook.com/ShonenSoda",
+   "reactionCount": 816,
+   "commentCount": 2,
+   "shareCount": 4,
+   "videoViewCount": null,
+   "videoDurationSec": 21,
+   "videoUrl": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQM5x9tgp8oiB3zGxx_xHfVEmIlDb0TwNVydxgDEmHQPcxtitQ1u67Hbjh73dEH__EikR_a_BJ9UAZ_FhSZRGU9cHjT4RrPDhu4.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=9fRXrC_71TUQ7kNvwGzmqJO&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTc4NjYyNzAyOTk1ODc3NDMsImFzc2V0X2FnZV9kYXlzIjoyMzAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQNDFJSQhA9ZUgyBIV3FPrIGbraAl3UtnB4nxqZaRXyGEw&oe=6AD7C98B&bitrate=3070643&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQM5x9tgp8oiB3zGxx_xHfVEmIlDb0TwNVydxgDEmHQPcxtitQ1u67Hbjh73dEH__EikR_a_BJ9UAZ_FhSZRGU9cHjT4RrPDhu4.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=9fRXrC_71TUQ7kNvwGzmqJO&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTc4NjYyNzAyOTk1ODc3NDMsImFzc2V0X2FnZV9kYXlzIjoyMzAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQNDFJSQhA9ZUgyBIV3FPrIGbraAl3UtnB4nxqZaRXyGEw&oe=6AD7C98B&bitrate=3070643&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t51.71878-10/645769841_910133951641185_1704858252160342933_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ce42&_nc_ohc=XXqIE1kBgYYQ7kNvwFCjnss&_nc_oc=Adp2uechfmt8-OOhUmpXcunDyiINXClxLX-ZFTik3eUNDCIQYJyLMloSUF8oPKmzPcE4FJUZpw-mKTnohRsKivc2&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&oh=00_AQPD3x3SSoaTm8QsQk_Oq7YiQSHey-3IZJJET03pnrNjNw&oe=6ADBAF9B"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:54.764Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122246073926011140",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/575366095516063/",
+   "text": "Let’s make an orange cream soda🍊🍦✨🫶🏻\n\n#soda #asmr #asmrsounds #drink #drinks #satisfying #satisfyingvideos #aesthetic #thatgirl #orange",
+   "createdAt": "2025-04-15T16:00:05.000Z",
+   "authorName": "Victoria Lightfoot ",
+   "authorId": "61550334212445",
+   "authorUrl": "https://www.facebook.com/people/Victoria-Lightfoot/61550334212445/",
+   "reactionCount": 1605,
+   "commentCount": 25,
+   "shareCount": 22,
+   "videoViewCount": null,
+   "videoDurationSec": 23,
+   "videoUrl": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m266/AQPqlKF7Unqx0zdKy_t5TdaEr4W31rg4Iyoh1Ds1lfJWuUosvW4l7My5xpaf2mvS8VPwwBHWJproqorXVxGxJl6mJUt0fm8h6Bg.mp4?strext=1&_nc_cat=104&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=3wqvHZfHwFMQ7kNvwEO9_UI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6OTM3MTk4NTUxNzgxNTc5LCJhc3NldF9hZ2VfZGF5cyI6NzQzLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQNMiUReqcGBlPbVr27czD_ynW4WQfmAMY4RynhnVcnMHw&oe=6AD7C4B2&bitrate=6550399&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m266/AQPqlKF7Unqx0zdKy_t5TdaEr4W31rg4Iyoh1Ds1lfJWuUosvW4l7My5xpaf2mvS8VPwwBHWJproqorXVxGxJl6mJUt0fm8h6Bg.mp4?strext=1&_nc_cat=104&_nc_sid=8bf8fe&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=3wqvHZfHwFMQ7kNvwEO9_UI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6OTM3MTk4NTUxNzgxNTc5LCJhc3NldF9hZ2VfZGF5cyI6NzQzLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQNMiUReqcGBlPbVr27czD_ynW4WQfmAMY4RynhnVcnMHw&oe=6AD7C4B2&bitrate=6550399&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lga3-1.xx.fbcdn.net/v/t51.29350-10/461953413_551200990657568_6985948138540686732_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cb5bf7&_nc_ohc=7z39Savp8y0Q7kNvwEMFOZF&_nc_oc=Adp3Z-SGWuEoBW_gjVvW2rsNV52DbzeV2B4i3ESBwQNjUaE3sKM2vZrqzSg4m0EMOfJsQpxA9d0BWEn3cRuHvpJ6&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=tg8RRbF5eRHARxW8mZaPBQ&_nc_ss=70289&oh=00_AQNYjRECj6F0650-5u3ds0y-GCj-A_x0uPpTSs1bHISnvQ&oe=6ADBDE3B"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 cream soda"
+   },
+   "scrapedAt": "2026-10-19T10:55:54.767Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122108643398865798",
+   "postType": "reel",
+   "url": "https://www.facebook.com/61575973941699/videos/1475610153883623/",
+   "text": "چاک کردنەوەی هەمو جۆرە لێدراوی و #چاڵ و #شوخت بە کەمترین کات و نرخ بە زەمان.\nسلێمانی ناوچەی پیشە سازی پشت گەراجی حجزەکە بەرامبەر دیاری ئەمریکی\n07704382229",
+   "createdAt": "2025-05-20T18:07:13.000Z",
+   "authorName": "Yasr.PDR ",
+   "authorId": "61575973941699",
+   "authorUrl": "https://www.facebook.com/people/YasrPDR/61575973941699/",
+   "reactionCount": 182,
+   "commentCount": 6,
+   "shareCount": 1,
+   "videoViewCount": null,
+   "videoDurationSec": 20,
+   "videoUrl": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQPtshKGftFiisdzFw1C4kxP5TOpHuw1QSCgC0YKx3VzU7HsCr3EXM1a3NV6xFKGblKv1zpcgqwxzOXOsLY3GWva6obQ_DgkmGA.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=mfZ1J2rHFpwQ7kNvwFEbL7v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjoxMjIyMjE3NDIyNjIwNTI4LCJhc3NldF9hZ2VfZGF5cyI6NTE2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=0HYJ3rL7qlaWfGdUgEubLQ&_nc_ss=70289&_nc_zt=28&oh=00_AQOd4IrMknUSBGLnJZecU5phY1VxsnfKV5_7UnXFiScQig&oe=6AD7D91B&bitrate=1585950&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQPtshKGftFiisdzFw1C4kxP5TOpHuw1QSCgC0YKx3VzU7HsCr3EXM1a3NV6xFKGblKv1zpcgqwxzOXOsLY3GWva6obQ_DgkmGA.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=mfZ1J2rHFpwQ7kNvwFEbL7v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjoxMjIyMjE3NDIyNjIwNTI4LCJhc3NldF9hZ2VfZGF5cyI6NTE2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=0HYJ3rL7qlaWfGdUgEubLQ&_nc_ss=70289&_nc_zt=28&oh=00_AQOd4IrMknUSBGLnJZecU5phY1VxsnfKV5_7UnXFiScQig&oe=6AD7D91B&bitrate=1585950&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t15.5256-10/499158850_1760763667840443_6063213116194490036_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=50ce42&_nc_ohc=8xsf_s2_am8Q7kNvwGb6AXW&_nc_oc=AdoVVlkuPeFwFWjz7varUAq0J3X0opObe7DYjFzV_tWrAIFr3SSCP9ysB3YhGDyNn1c&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=0HYJ3rL7qlaWfGdUgEubLQ&_nc_ss=70289&oh=00_AQMFV25JR4eTOD1Tlcdd6mUl75psBYujehAiLueac2QDuA&oe=6ADBCF0E"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:55:56.464Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122126039942305521",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/794770012509820/",
+   "text": "اراء الناس بمشروب ڤي سڤن من عروس الشمال - اربد\n\n#مشروب #ڤي_سڤن #مشروبات_بارده #اربد #مشروب_غازي #عصير #صيف",
+   "createdAt": "2024-07-19T11:57:02.000Z",
+   "authorName": "V7 Drink Jordan",
+   "authorId": "61559165652626",
+   "authorUrl": "https://www.facebook.com/V7Jordan",
+   "reactionCount": 42,
+   "commentCount": 4,
+   "shareCount": 4,
+   "videoViewCount": 620,
+   "videoDurationSec": 70,
+   "videoUrl": "https://video-atl3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQMK8OChnxODidb4ObgY72NQyRe3wIHU5nH7b3nbcEacQgIMzS-91rSHxO0F1j51vcSkNN0Apx88fm27oR3zV8yIRmwP2W_Fq4w.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-atl3-2.xx.fbcdn.net&_nc_ohc=Dzsk5au7a3IQ7kNvwH54nkP&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTQxNTUwMDQwMjQ3MzM2MiwiYXNzZXRfYWdlX2RheXMiOjgyMSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=MZn7Jidg9fXbCQ1ps4-DhA&_nc_ss=70289&_nc_zt=28&oh=00_AQM7BpizUfHLjQcDI9mYkr8HXYGIjiUWVdfiG8uLtHkrRA&oe=6AD7F08F&bitrate=5190754&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-atl3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQMK8OChnxODidb4ObgY72NQyRe3wIHU5nH7b3nbcEacQgIMzS-91rSHxO0F1j51vcSkNN0Apx88fm27oR3zV8yIRmwP2W_Fq4w.mp4?strext=1&_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-atl3-2.xx.fbcdn.net&_nc_ohc=Dzsk5au7a3IQ7kNvwH54nkP&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTQxNTUwMDQwMjQ3MzM2MiwiYXNzZXRfYWdlX2RheXMiOjgyMSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=MZn7Jidg9fXbCQ1ps4-DhA&_nc_ss=70289&_nc_zt=28&oh=00_AQM7BpizUfHLjQcDI9mYkr8HXYGIjiUWVdfiG8uLtHkrRA&oe=6AD7F08F&bitrate=5190754&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-atl3-1.xx.fbcdn.net/v/t51.29350-10/451730491_844733090921651_2826762462171727894_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s960x960&_nc_cat=109&ccb=1-7&_nc_sid=cb5bf7&_nc_ohc=5VheqmFdDDMQ7kNvwEv9TlS&_nc_oc=Ado-84ISeXwHf3PnEWGavOAoQzoedRt5rcnU_97uU4IiDsgZEmRpJUifeLCiEvu-mmXSaWdtuLYM2uTLHvDQr6ns&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=MZn7Jidg9fXbCQ1ps4-DhA&_nc_ss=70289&oh=00_AQPyI_dSwAl8Xgh3dfoVIhU7NV-rHIFfj0h4LMnGTlTDSg&oe=6ADBE308"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "ڤي سڤن"
+   },
+   "scrapedAt": "2026-10-19T10:55:59.267Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "1562212085221393",
+   "postType": "reel",
+   "url": "https://www.facebook.com/dr.akamsalah/videos/1249855276918585/",
+   "text": "🔥هۆلیوود سمایڵ بەبێ بچوککردنەوەی ددان🔥\n\nلە کلینیکەکەمان بە کەمترین لێگرتنی ددان و باشترین مەواد \n\nهۆلیود سمایلتان بۆ ئەنجام دەدەین👍\n\nHollywood smile\n\nد.ئاکام صڵاح\n\nابتسامە هولیود بترکیبات الایماکس\n\nبۆ زانیاری زیاتر تەنها لە کۆمێنت وشەی (نرخ) بنووسە\n\nلمعرفة السعر فقط أکتب کلمة (السعر) في التعلیق\n\nیاخود نامە بۆ پەیج بنێرن\n\nسەنتەری ددانی لیبرتی\n\nسلێمانی: ئیبراهیم پاشا، تەنیشت مزگەوتی سەلیم بەگ\n\n07709142424\n\n#کلینیک #ددان #سپیکردنەوە #خەندە #سلێمانی #هۆڵیود #سمایڵ #پڕکردنەوە #زڕگۆن #کیف #چاندن #چارەخواز#slemani #ddan #hollywoodsmile  #hollywoodsmile #hollywoodsmiledesign",
+   "createdAt": "2025-07-28T17:24:36.000Z",
+   "authorName": "پزیشکی ددان دکتۆر ئاکام صڵاح",
+   "authorId": "100042978501663",
+   "authorUrl": "https://www.facebook.com/dr.akamsalah",
+   "reactionCount": 143,
+   "commentCount": 27,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 47,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQMmQO8Rp5H6q3oF8zEVJL3TSy6NmlcMDcYs5dB-FzlAA3LDfIA74RsROiQ0x2g0a3CzZ6howyTvxDlWetB3BLQOKhYv-1yN9DY.mp4?strext=1&_nc_cat=102&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=AFr66b_McUwQ7kNvwES7lx8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjoyNjU0OTczNjkxNTA4MDAwLCJhc3NldF9hZ2VfZGF5cyI6NDQ3LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NDYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&_nc_zt=28&oh=00_AQNrJDrx_QzlHaI6ZyFOZdjzSvRmQ2kWVOBq_CysEzq1zw&oe=6AD7C714&bitrate=984799&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQMmQO8Rp5H6q3oF8zEVJL3TSy6NmlcMDcYs5dB-FzlAA3LDfIA74RsROiQ0x2g0a3CzZ6howyTvxDlWetB3BLQOKhYv-1yN9DY.mp4?strext=1&_nc_cat=102&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=AFr66b_McUwQ7kNvwES7lx8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjoyNjU0OTczNjkxNTA4MDAwLCJhc3NldF9hZ2VfZGF5cyI6NDQ3LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NDYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&_nc_zt=28&oh=00_AQNrJDrx_QzlHaI6ZyFOZdjzSvRmQ2kWVOBq_CysEzq1zw&oe=6AD7C714&bitrate=984799&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t15.5256-10/524380537_25041504738770354_2644263545758611883_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=50ce42&_nc_ohc=_WgFpPgyTZkQ7kNvwGexFEY&_nc_oc=AdqZ-AAE8C0mtA1NNCA06yu-ymMUVHuDzHF-etdhhzCANbOK_DA4-rMJa7JIJJAh1Bk&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&oh=00_AQOCzfT_TUMsl5YGGB_EllIZ6GFg5lZoPHSHlcyrIdMa-Q&oe=6ADBDF2E"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:03.869Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122286464888237975",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/912695821764632/",
+   "text": "منتج غالي و بديله الارخص 🎀\n@alrehabperfumes عطر كارميلو الرحاب \n@glowmark.skincare glow mark retinol b3 serum\n@dove.egypt dove sugar cookie showe gel\n@nutshellcare nutshell dara’s ice cream shower gel\n@larocheposay la roche posay retinol b3 serum\n@biodermaegypt  #viral\n#skincare #bodycare #skincareroutine #skincaretips",
+   "createdAt": "2026-04-05T19:23:15.000Z",
+   "authorName": "ايزيس رسمي",
+   "authorId": "61557139257832",
+   "authorUrl": "https://www.facebook.com/people/%D8%A7%D9%8A%D8%B2%D9%8A%D8%B3-%D8%B1%D8%B3%D9%85%D9%8A/61557139257832/",
+   "reactionCount": 6564,
+   "commentCount": 58,
+   "shareCount": 576,
+   "videoViewCount": null,
+   "videoDurationSec": 58,
+   "videoUrl": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQOPn9aLSAJaQdJLBqEFwcVtDA88eUxHWLAi-JI8JdvLPb4OZNiYzlkjQFRO0uBPdCLPDMO7TdNMyeIJLpYLTrwbqbkCrd7GrO24epI.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=fAXULbeA3e0Q7kNvwGuskbv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MTMzNDk0NzMzNTgzODgsImFzc2V0X2FnZV9kYXlzIjoxOTYsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=867cee7e3b115d2b&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8wNjQ5Njk3NkRCQTQ4RUZGOURBN0U0Qjc2N0UxMDFCMV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0VDNEQ0QUJFMUUwRTZCNjE0MjYxODhCRTFDOTY1QjhGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACboyMaBlobSPxUCKAJDMywXQEzMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdQJl5p0BAA&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&_nc_zt=28&oh=00_AQNy8zV9lhfUraxzjCEi8V67ZQd9PXlaYDZxT9rD2AhOxQ&oe=6AD7E726&bitrate=1505333&tag=dash_baseline_1_v1",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQOPn9aLSAJaQdJLBqEFwcVtDA88eUxHWLAi-JI8JdvLPb4OZNiYzlkjQFRO0uBPdCLPDMO7TdNMyeIJLpYLTrwbqbkCrd7GrO24epI.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=fAXULbeA3e0Q7kNvwGuskbv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MTMzNDk0NzMzNTgzODgsImFzc2V0X2FnZV9kYXlzIjoxOTYsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=867cee7e3b115d2b&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8wNjQ5Njk3NkRCQTQ4RUZGOURBN0U0Qjc2N0UxMDFCMV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0VDNEQ0QUJFMUUwRTZCNjE0MjYxODhCRTFDOTY1QjhGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACboyMaBlobSPxUCKAJDMywXQEzMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdQJl5p0BAA&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&_nc_zt=28&oh=00_AQNy8zV9lhfUraxzjCEi8V67ZQd9PXlaYDZxT9rD2AhOxQ&oe=6AD7E726&bitrate=1505333&tag=dash_baseline_1_v1",
+     "thumbnailUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t51.71878-10/659021257_1496905798730180_4020956759403956919_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=50ce42&_nc_ohc=RNv4z9CPxx8Q7kNvwHlOEJ1&_nc_oc=AdqsIAqymHJU2HRHrKLwbNIaPfyCiYeNZvWML8rxo35BYZBfaekFqr2oP7WtyQC6I14&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&oh=00_AQPVLUeI4cP8q1kQ0nkryo7-H9cm1PlLaIx-bQgUYmlZxQ&oe=6ADBC2C5"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:03.967Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122265633266167354",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1542822134068771/",
+   "text": "V Lemon takes lemon refreshment back to what it should be: Real bold lemon taste. Crisp fizz. 100% natural flavors. Zero caffeine. Now, It’s V Lemon. \n\n ڤي ليمون…الطبيعي في الليمون🍋🍋",
+   "createdAt": "2026-05-19T18:50:36.000Z",
+   "authorName": "V Super Soda",
+   "authorId": "61555020627449",
+   "authorUrl": "https://www.facebook.com/Vsupersoda",
+   "reactionCount": 2966,
+   "commentCount": 75,
+   "shareCount": 23,
+   "videoViewCount": null,
+   "videoDurationSec": 22,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNhgx4xbVtb4yUfTLO41Qh-zl4hV4yGwx81zc22WXnr-0_0sTNXW4Bg3IUeavhpeAkPxbs--sARKuvdvVhCG6_AdMi7ysDAnbw.mp4?strext=1&_nc_cat=110&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=6em8U19jLUIQ7kNvwEwb1m0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTkyMC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjEwMTExMzY4NTQ3MTQzNjAsImFzc2V0X2FnZV9kYXlzIjoxNTIsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&_nc_zt=28&oh=00_AQNNxf9mAXJmrsG-o4zilNh-pj9d7GHNuKgy4yk9tMtQfA&oe=6AD7D9F0&bitrate=2180069&tag=av1_compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNhgx4xbVtb4yUfTLO41Qh-zl4hV4yGwx81zc22WXnr-0_0sTNXW4Bg3IUeavhpeAkPxbs--sARKuvdvVhCG6_AdMi7ysDAnbw.mp4?strext=1&_nc_cat=110&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=6em8U19jLUIQ7kNvwEwb1m0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTkyMC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjEwMTExMzY4NTQ3MTQzNjAsImFzc2V0X2FnZV9kYXlzIjoxNTIsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&_nc_zt=28&oh=00_AQNNxf9mAXJmrsG-o4zilNh-pj9d7GHNuKgy4yk9tMtQfA&oe=6AD7D9F0&bitrate=2180069&tag=av1_compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/702143110_2399286970569225_983057291261033508_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=be8305&_nc_ohc=q5aMqaqFCzYQ7kNvwHdPXgu&_nc_oc=AdobLd7iAQXbeJvnzAKhUc1pYWYWaCD3yjoYpI0EXj7XJr090Zfy5Q5lCwjM9QcWinw&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=o0TtgV26rrE1wwWFwY2cmg&_nc_ss=70289&oh=00_AQPiml4tt26qVziFUnRutUWRH7TttfxNZLa81s_wwgHsAQ&oe=6ADBE038"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:04.065Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "141926638223191",
+   "postType": "reel",
+   "url": "https://www.facebook.com/100072421450113/videos/643659783430916/",
+   "text": "شانە خەیاڵیەکە\n😇😇😇\n\n🌸professional🌸\nLsd vibration hair straightener🤍 \nخاص الصالونات الحلاقة🖤\nStain hair colour straightener & curl📩📩\n\nئازیزان ئەم جارەش بەرهەمێکی بەسوودمان هێناوە و بە ئێوەی ئازیزی ئاشنا دەکەین \n💯💯 \nئەم بەرهەمە بە شانە سیحرێکە ناسراوە \nئێوەی خانم چیتر پێویستان بە مجەفیفە و ئووتوی قژ نامێنێ ئەگەر ئەم بەرهەمە بەکار بهێنن \nدووردەبن لە سوتانی قژ\n💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯\nئەم شانەیە تا پلەی گەرمی( ٩۸٠F) هەیە وە دەتوانی بە ویستی خۆت پلەکەی کەم و زیاد بکەیت \nبۆ داوا کردن و زانینی نرخ نامە بنێرن📩📩\n\n📲07736958131",
+   "createdAt": "2022-01-12T16:13:10.000Z",
+   "authorName": "Yara shopping",
+   "authorId": "100072421450113",
+   "authorUrl": "https://www.facebook.com/people/Yara-shopping/100072421450113/",
+   "reactionCount": 2508,
+   "commentCount": 883,
+   "shareCount": 14,
+   "videoViewCount": null,
+   "videoDurationSec": 7,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNwJX25VosdWUJ1iY5iRn6LDmxp27z5hsaCPlRqPeGhJrBJJhfTY5Q4O92t-0x9YmCyl-CA4xVO0kDA4NUt43CLT0Vb6g_TEfE.mp4?strext=1&_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=EuXcpcpvVgEQ7kNvwHwH-qE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNDgwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjo5MjQ5MDk0OTkxNTQyNzUsImFzc2V0X2FnZV9kYXlzIjoxNzQwLCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=vtTdRPpd2F__J8pcQa8cCg&_nc_ss=70289&_nc_zt=28&oh=00_AQOOpo4Oys-RZQaU9Xz14SF4m2ta_9qENk6DIWzPYAaLLg&oe=6AD7F019&bitrate=650220&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNwJX25VosdWUJ1iY5iRn6LDmxp27z5hsaCPlRqPeGhJrBJJhfTY5Q4O92t-0x9YmCyl-CA4xVO0kDA4NUt43CLT0Vb6g_TEfE.mp4?strext=1&_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=EuXcpcpvVgEQ7kNvwHwH-qE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNDgwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjo5MjQ5MDk0OTkxNTQyNzUsImFzc2V0X2FnZV9kYXlzIjoxNzQwLCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=vtTdRPpd2F__J8pcQa8cCg&_nc_ss=70289&_nc_zt=28&oh=00_AQOOpo4Oys-RZQaU9Xz14SF4m2ta_9qENk6DIWzPYAaLLg&oe=6AD7F019&bitrate=650220&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/271538857_643659936764234_8479674153700839437_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=vKy-h7_YNTcQ7kNvwHq61hM&_nc_oc=AdrXm0n_sqf4HsQNQjM-CP0lIaRnXwc-QrRAsM0JScV0L5LiRdEDBUFcCPigIGcWDAg&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=vtTdRPpd2F__J8pcQa8cCg&_nc_ss=70289&oh=00_AQMICV5TT5eM0iRfbvsmWPdMdMM_izNWFQnPlQ6ZcH1uVg&oe=6ADBB511"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:08.969Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122110249191370970",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1610341027464305/",
+   "text": "ڕۆژانە زوو زوو دەستەکانت بە ئاو و سابوون بشۆ بۆ ئەوەی میکرۆبەکان لە ناو بچن و نەبنە هۆی هەوکردن و نەخۆشی\n\n#health #soap #water #kurdistan #erbil",
+   "createdAt": "2026-07-28T17:00:54.000Z",
+   "authorName": "تەندروست بە",
+   "authorId": "61591129120309",
+   "authorUrl": "https://www.facebook.com/people/%D8%AA%DB%95%D9%86%D8%AF%D8%B1%D9%88%D8%B3%D8%AA-%D8%A8%DB%95/61591129120309/",
+   "reactionCount": 40,
+   "commentCount": 1,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 10,
+   "videoUrl": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQN8dhnjj8DzI6xqYk89RK7dcfWTC8vC633ByterpkmWSBemrkUPL3yGszSrRw6ex1rCReHAzlDm30rfEjrCOm6tvzclIR9lbmQ.mp4?strext=1&_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=G_QXggpfewAQ7kNvwGnbJtn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTAyMjE0NzYwNzEwMDQ4NiwiYXNzZXRfYWdlX2RheXMiOjgyLCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6MTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=vtTdRPpd2F__J8pcQa8cCg&_nc_ss=70289&_nc_zt=28&oh=00_AQNl9Aq4uzcbMVChd0gGJKVPGoonszfz7KiOrlbzElKQbw&oe=6AD7D1FC&bitrate=942691&tag=av1_compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQN8dhnjj8DzI6xqYk89RK7dcfWTC8vC633ByterpkmWSBemrkUPL3yGszSrRw6ex1rCReHAzlDm30rfEjrCOm6tvzclIR9lbmQ.mp4?strext=1&_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=G_QXggpfewAQ7kNvwGnbJtn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTAyMjE0NzYwNzEwMDQ4NiwiYXNzZXRfYWdlX2RheXMiOjgyLCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6MTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=vtTdRPpd2F__J8pcQa8cCg&_nc_ss=70289&_nc_zt=28&oh=00_AQNl9Aq4uzcbMVChd0gGJKVPGoonszfz7KiOrlbzElKQbw&oe=6AD7D1FC&bitrate=942691&tag=av1_compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/758153731_1351509593780228_3590932925550407591_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ce42&_nc_ohc=dZYD-d7GSr0Q7kNvwGX9F1Z&_nc_oc=AdrEq9SE9PWRrqF9z-p3G-r2XHIl_ZzJ7TeQ5jRBUBEFZ7LRWXqvIO7bx948VVU9BMc&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=vtTdRPpd2F__J8pcQa8cCg&_nc_ss=70289&oh=00_AQMmJCTCoNxrm3o9hsrQ0Oq5ZTQr6Iq3eHuFfDDw3ayt9w&oe=6ADBD6D7"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:09.064Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122323717490066759",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/2149183465668404/",
+   "text": "سعر ٥ الف\nتوصيل کل \nمحافظات 5 الف🔥\nمفرد و جملە ✅",
+   "createdAt": "2026-10-17T20:55:31.000Z",
+   "authorName": "Kayla store",
+   "authorId": "61552002793820",
+   "authorUrl": "https://www.facebook.com/people/Kayla-store/61552002793820/",
+   "reactionCount": 0,
+   "commentCount": 0,
+   "shareCount": 0,
+   "videoViewCount": null,
+   "videoDurationSec": 14,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQO43ZKNNgfEtA1jNpwuEpW-R6pLR91PVcC41tR35vwXU_PCOBlwT4Yk8rx7_4ejRGFiVN-l-RlwOp63N6PIhPbv7U9yx5CROkcQzjZ-OA.mp4?_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=e7lgsgSr0kgQ7kNvwE2fb34&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoyODg3NjI2ODg3NTM3NjI5NiwiYXNzZXRfYWdlX2RheXMiOjEsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=LazKhgg6gRU_YRxG-Nm62Q&_nc_ss=70289&_nc_zt=28&oh=00_AQMuHqkw2gHA3C9qs-_9YcIQPQR4myp6dqacqz7lu703Vg&oe=6ADBBE19&bitrate=1262007&tag=progressive_h264-basic-gen2_720p",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQO43ZKNNgfEtA1jNpwuEpW-R6pLR91PVcC41tR35vwXU_PCOBlwT4Yk8rx7_4ejRGFiVN-l-RlwOp63N6PIhPbv7U9yx5CROkcQzjZ-OA.mp4?_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=e7lgsgSr0kgQ7kNvwE2fb34&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl83MjBwIiwieHB2X2Fzc2V0X2lkIjoyODg3NjI2ODg3NTM3NjI5NiwiYXNzZXRfYWdlX2RheXMiOjEsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=LazKhgg6gRU_YRxG-Nm62Q&_nc_ss=70289&_nc_zt=28&oh=00_AQMuHqkw2gHA3C9qs-_9YcIQPQR4myp6dqacqz7lu703Vg&oe=6ADBBE19&bitrate=1262007&tag=progressive_h264-basic-gen2_720p",
+     "thumbnailUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t51.71878-10/850737878_1857311621927549_3375221943813637469_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=50ce42&_nc_ohc=rcf7JKRSju8Q7kNvwFKAg5m&_nc_oc=AdpEAtyF1-d9Bq1TkdfltcecKZIOjaajBS4owcQBqqNKPLlW-jy87JEGnwg6hLdzCng&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=LazKhgg6gRU_YRxG-Nm62Q&_nc_ss=70289&oh=00_AQOjW4NOBSsfBV6bLMxWhnrhEk8iOnGo4LXanFjpHsn7sw&oe=6ADBE136"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:14.270Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122113524459072076",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1785053992194874/",
+   "text": "لا ترش أكثر من ٣ رشات من العطر ده\nDon't overspray this fragrance. A very balanced milky creamy smooth gourmand perfume that is blended to perfection\nWhy not by Sedra perfumes \n#عطر #عطور #عطور_نيش",
+   "createdAt": "2025-11-24T14:52:44.000Z",
+   "authorName": "Husseinezzat",
+   "authorId": "61582162295069",
+   "authorUrl": "https://www.facebook.com/people/Husseinezzat/61582162295069/",
+   "reactionCount": 405,
+   "commentCount": 10,
+   "shareCount": 26,
+   "videoViewCount": null,
+   "videoDurationSec": 33,
+   "videoUrl": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQMRe4n61oj4Szho0I7avtoJuE5VAm3m17Latkb_LpLZWVUZngeurcRtLUeOCww6uZWpoW56qeOCb8-OiaLvPsvwiOGgoAq2mF4.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=LEujg6RfIgAQ7kNvwF1C3UN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6ODQwOTg5NTYyMDEzNTAwLCJhc3NldF9hZ2VfZGF5cyI6MzI4LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MzMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=LazKhgg6gRU_YRxG-Nm62Q&_nc_ss=70289&_nc_zt=28&oh=00_AQPymEegK6RcpD3_iiWSdwaBHbUsA8U4AsC7jQjzippwXQ&oe=6AD7ECB3&bitrate=3430897&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQMRe4n61oj4Szho0I7avtoJuE5VAm3m17Latkb_LpLZWVUZngeurcRtLUeOCww6uZWpoW56qeOCb8-OiaLvPsvwiOGgoAq2mF4.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=LEujg6RfIgAQ7kNvwF1C3UN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6ODQwOTg5NTYyMDEzNTAwLCJhc3NldF9hZ2VfZGF5cyI6MzI4LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MzMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=LazKhgg6gRU_YRxG-Nm62Q&_nc_ss=70289&_nc_zt=28&oh=00_AQPymEegK6RcpD3_iiWSdwaBHbUsA8U4AsC7jQjzippwXQ&oe=6AD7ECB3&bitrate=3430897&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax7-1.xx.fbcdn.net/v/t51.82787-10/586934433_18536877406009367_650690167095770349_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=50ce42&_nc_ohc=d8OdEKkg2O4Q7kNvwFDKbiw&_nc_oc=AdpBJ0gsY4ljkFy24-VirE2x5-bMijwnhnRhYnh_L1aLftELES1cVKDnsNFT65Z7e3M&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=LazKhgg6gRU_YRxG-Nm62Q&_nc_ss=70289&oh=00_AQMKnDX3H90lh3_eUr2wVY7i9BY7LcN7KXDtTk-xV7aCFg&oe=6ADBBF59"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:14.371Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "1622337185875549",
+   "postType": "reel",
+   "url": "https://www.facebook.com/dr.akamsalah/videos/1471410023936336/",
+   "text": "🔥 هۆلیوود سمایڵ لای ئێمە جیاوازە 🔥\n\nلە کلینیکەکەمان بە کەمترین لێگرتنی ددان و باشترین مەواد \n\nهۆلیود سمایلتان بۆ ئەنجام دەدەین👍\n\nHollywood smile\n\nد.ئاکام صڵاح\n\nابتسامە هولیود بترکیبات الایماکس\n\nبۆ زانیاری زیاتر تەنها لە کۆمێنت وشەی (نرخ) بنووسە\n\nلمعرفة السعر فقط أکتب کلمة (السعر) في التعلیق\n\nیاخود نامە بۆ پەیج بنێرن\n\nسەنتەری ددانی لیبرتی\n\nسلێمانی: ئیبراهیم پاشا، تەنیشت مزگەوتی سەلیم بەگ\n\n07709142424\n\n#کلینیک #ددان #سپیکردنەوە #خەندە #سلێمانی #هۆڵیود #سمایڵ #پڕکردنەوە #زڕگۆن #کیف #چاندن #چارەخواز#slemani #ddan #hollywoodsmile  #hollywoodsmile #hollywoodsmiledesign",
+   "createdAt": "2025-09-30T18:25:00.000Z",
+   "authorName": "پزیشکی ددان دکتۆر ئاکام صڵاح",
+   "authorId": "100042978501663",
+   "authorUrl": "https://www.facebook.com/dr.akamsalah",
+   "reactionCount": 132,
+   "commentCount": 69,
+   "shareCount": 3,
+   "videoViewCount": null,
+   "videoDurationSec": 23,
+   "videoUrl": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQMPjxl3E9vmGfUtB1UyYlepGWlcmphTMJbinaucyPdBJdHgGIvSSEHoY62XfM988NKFcfjJkrpUQ2vS49mcARImax9JpZm1C70.mp4?strext=1&_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=6rICNQrFCUUQ7kNvwHm4RL7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjo4NDIyODM1OTQ5NzkwNjgsImFzc2V0X2FnZV9kYXlzIjozODMsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=YEQQIkiftcHG25JWsl-gMw&_nc_ss=70289&_nc_zt=28&oh=00_AQN4hxBxlgqD2LlzCzJypI5_Dgz2QXKwFqTAQQYyZcgVuA&oe=6AD7E09F&bitrate=1300864&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQMPjxl3E9vmGfUtB1UyYlepGWlcmphTMJbinaucyPdBJdHgGIvSSEHoY62XfM988NKFcfjJkrpUQ2vS49mcARImax9JpZm1C70.mp4?strext=1&_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-lax3-2.xx.fbcdn.net&_nc_ohc=6rICNQrFCUUQ7kNvwHm4RL7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmNvbXByZXNzZWRfc291cmNlIiwieHB2X2Fzc2V0X2lkIjo4NDIyODM1OTQ5NzkwNjgsImFzc2V0X2FnZV9kYXlzIjozODMsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=YEQQIkiftcHG25JWsl-gMw&_nc_ss=70289&_nc_zt=28&oh=00_AQN4hxBxlgqD2LlzCzJypI5_Dgz2QXKwFqTAQQYyZcgVuA&oe=6AD7E09F&bitrate=1300864&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/556696750_1269990221836913_3427532038143436898_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=50ce42&_nc_ohc=wtfM6c_GujAQ7kNvwFyNnNG&_nc_oc=AdrA_D6oRI7USFV-0bFQJhK51auBDQ17Dd9VMf0QmMcuLchfOO0y_yzs28LyDqXeyQE&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=YEQQIkiftcHG25JWsl-gMw&_nc_ss=70289&oh=00_AQNqRWCapg1oQF3hLX5ORuk-cRM5W8fswdGA7zRRU2bDLw&oe=6ADBB96C"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:19.070Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122110229414917528",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/2006641626945924/",
+   "text": "✨ سپرای فۆمی جادوویی.. چارەسەری هەموو جۆرە پەڵە و پیسیەک! 🧼🧽\n✅نرخی 2 دانە 11 هەزارە\n✅نرخی 3 دانە 13 هەزارە\n‎✅نرخی 4 دانە 15 هەزارە\n‎✅نرخی 6 دانە 20 هەزارە\n🚗گەیاندن بێ بەرامبەرە بۆ هەموو کوردستان🚗\n\nئەگەر بێزار بوویت لە پەڵەی سەر کوشنەکانی سەیارەکەت، یان قەنەفە و فەرشی ماڵەکەت چەوری و تەپوتۆزی لێ نیشتووە، چیتر پێویستت بە شتن و ماندوێتی نییە!\nباشترین هاوڕێی پاکوخاوێنیتە:\n 🌟 بۆچی ئەم سپرایە جیاوازە؟\n پاککردنەوەی قووڵ (Deep Clean): فۆمە خەستەکەی دەچێتە ناو کونیلەکانی قوماش یان چەرم و پەڵە کۆنەکان لادەبات. 🛡️\n بۆنی لیمۆی فرێش: بۆنێکی زۆر خۆش و پاکی لیمۆ لە دوای خۆی جێدەهێڵێت. 🍋\n پارێزەری ڕەنگ: ماددەکەی زۆر نەرمە، زیان بە ڕەنگی کوشن یان قوماش ناگەیەنێت. ✨\n💡 بەکارهێنانی بۆ کوێیە؟\n✅ ناوماڵ: قەنەفە، فەرش، کەلوپەلی کارەبایی، جامی پەنجەرە و تەنانەت پێڵاویش! 🏠👟\n✅ ناو سەیارە: داشبوڵ، دەرگا، کوشنی قوماش و چەرم، و سەقفی سەیارە. 🚗\n⚠️ تێبینییەکی گرنگ بۆ کڕیارە ئازیزەکانمان (متمانەی ئێوە ئامانجمانە):\nبۆ پاراستنی شاشەی سەیارەکەت (LCD)، ئامۆژگاریتان دەکەین کە ئەم سپرایە و هیچ جۆرە سپرا و ماددەیەکی کیمیایی بۆ شاشەی سەیارە بەکارنەهێنن. شاشەکان زۆر هەستیارن و تەنها بە پەڕۆی مایکرۆفایبەر و کەمێک ئاو پاکیان بکەنەوە. ئەم سپرایە تایبەتە بۆ (کوشن، داشبوڵ، و قوماش) و لەوێدا باشترین ئەنجامتان پێ دەبەخشێت. 🚫🖥️\n📖 ڕێگەی بەکارهێنان:\n١- سپرایەکە بە باشی ڕاوەشێنە.\n٢- بڕشێنە سەر ئەو شوێنەی پەڵەکەی پێوەیە و ٣٠ بۆ ٦٠ چرکە چاوەڕێ بکە.\n٣- بە پەڕۆیەکی پاک یان فڵچە بیسڕەوە.. و تەواو! 😍\n📏 قەبارە: ٦٥٠ مل\n💰 نرخ: [لێرە نرخەکە بنووسە]\n🚖 گەیاندنمان هەیە بۆ هەموو شارەکان.\n📥 بۆ داواکردن ئێستا نامە بنێرە ی",
+   "createdAt": "2026-05-01T19:12:15.000Z",
+   "authorName": "1one shoping",
+   "authorId": "61577525841940",
+   "authorUrl": "https://www.facebook.com/people/1one-shoping/61577525841940/",
+   "reactionCount": 149,
+   "commentCount": 29,
+   "shareCount": 2,
+   "videoViewCount": null,
+   "videoDurationSec": 80,
+   "videoUrl": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNrOTLcbRpSvNwAYXNztVCarMIfcLZsYTD0QAbXJLhAWK--vngbd8TWjBiRNKmX_j07AcpJUFvKrqpBXh58sx3vbcBSzbbcvr8.mp4?strext=1&_nc_cat=105&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=kkU83SqRQYgQ7kNvwFZqp14&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6OTg4MjY1NDcwMzU5MzU3LCJhc3NldF9hZ2VfZGF5cyI6MTcwLCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6ODAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&_nc_zt=28&oh=00_AQMvpzyxCVaNWaI0z6aRbY7_HOl6uxJysbbvwdzuBoLRkw&oe=6ADBE0C1&bitrate=731087&tag=av1_compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax7-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNrOTLcbRpSvNwAYXNztVCarMIfcLZsYTD0QAbXJLhAWK--vngbd8TWjBiRNKmX_j07AcpJUFvKrqpBXh58sx3vbcBSzbbcvr8.mp4?strext=1&_nc_cat=105&_nc_sid=8bf8fe&_nc_ht=video-lax7-1.xx.fbcdn.net&_nc_ohc=kkU83SqRQYgQ7kNvwFZqp14&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6OTg4MjY1NDcwMzU5MzU3LCJhc3NldF9hZ2VfZGF5cyI6MTcwLCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6ODAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&_nc_zt=28&oh=00_AQMvpzyxCVaNWaI0z6aRbY7_HOl6uxJysbbvwdzuBoLRkw&oe=6ADBE0C1&bitrate=731087&tag=av1_compressed_source",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/685645004_1482782169888667_1008289070741674010_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=be8305&_nc_ohc=REH-x2S3X7YQ7kNvwG9okRE&_nc_oc=Adq1NappcqjxeM-zp8NKjWoUeHVdJpM9U7U_mtP-CPxeI0zEBBlSoeACjqs4p1wRiZg&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&oh=00_AQNdl_hpxP81wlIc7iGTTzsrEPHQx2VNFNaAytl7h8gqRg&oe=6ADBC15B"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:24.864Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122124958647231317",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/996474416311620/",
+   "text": "Tonight, V took a turn in the audience as he watched Gracie Abrams and Doja Cat perform at #VogueWorld: Hollywood. No stranger to a fashion show either, the BTS official star dressed in a look that could have easily appeared on the runway",
+   "createdAt": "2026-06-14T17:34:35.000Z",
+   "authorName": "yasser aldosarifanpage",
+   "authorId": "61586939532551",
+   "authorUrl": "https://www.facebook.com/people/yasser-aldosarifanpage/61586939532551/",
+   "reactionCount": 2478,
+   "commentCount": 28,
+   "shareCount": 77,
+   "videoViewCount": null,
+   "videoDurationSec": 14,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNxBgspwklkUlBUEEQoCIHe-dIYUlX-gn2fM1fpci3yuYRl8IQN7eLnBUhCrPT7CucRrLzfzsoczS7AWyvAuWDF9Udc_14h-y8.mp4?strext=1&_nc_cat=104&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=dhUC4gqayXgQ7kNvwESePpm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTAwMTk1MzU5OTA5NjM2OCwiYXNzZXRfYWdlX2RheXMiOjEyNiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&_nc_zt=28&oh=00_AQNjt5Og9Txyjywa8kP865JTacTUnUezZT9TZmiuw706kw&oe=6AD7CFBE&bitrate=1749009&tag=compressed_source",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNxBgspwklkUlBUEEQoCIHe-dIYUlX-gn2fM1fpci3yuYRl8IQN7eLnBUhCrPT7CucRrLzfzsoczS7AWyvAuWDF9Udc_14h-y8.mp4?strext=1&_nc_cat=104&_nc_sid=8bf8fe&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=dhUC4gqayXgQ7kNvwESePpm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTAwMTk1MzU5OTA5NjM2OCwiYXNzZXRfYWdlX2RheXMiOjEyNiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&_nc_zt=28&oh=00_AQNjt5Og9Txyjywa8kP865JTacTUnUezZT9TZmiuw706kw&oe=6AD7CFBE&bitrate=1749009&tag=compressed_source",
+     "thumbnailUrl": "https://scontent-lax7-1.xx.fbcdn.net/v/t51.82787-10/724225854_17919945852376517_4745967158764590241_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=50ce42&_nc_ohc=nAESwMht7fkQ7kNvwFtVBDi&_nc_oc=Adr8vCbx3Y_VLOb3Y5E8ceHBVNu1_egI07_l9WJqYPcSZdd5t0fIPk9v6_F41CV2ZPw&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&oh=00_AQNVlHoeC6iz2ZNcKLvqQwmzKe0H-kpNKGCLNHh3zOxBIQ&oe=6ADBBA6C"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:24.868Z"
+  },
+  {
+   "dataType": "post",
+   "postId": "122140577217123506",
+   "postType": "reel",
+   "url": "https://www.facebook.com/reel/1032407779141934/",
+   "text": "Tonight, V took a turn in the audience as he watched Gracie Abrams and Doja Cat perform at Hollywood. No stranger to a fashion show either, the BTS official star dressed in a look that could have easily appeared on the runway.",
+   "createdAt": "2026-06-18T18:00:35.000Z",
+   "authorName": "2007azo",
+   "authorId": "61583705182967",
+   "authorUrl": "https://www.facebook.com/people/2007azo/61583705182967/",
+   "reactionCount": 2679,
+   "commentCount": 5,
+   "shareCount": 27,
+   "videoViewCount": null,
+   "videoDurationSec": 10,
+   "videoUrl": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQN_eJI2DdyjPMYxT7MgG-vdjCPmGtxAK2IiNGasaJ0uyovqCRdmwDf0l9NjAwgbr2CaRqupN0o_NVDLbsUddesrIaxF79rldyMMZko.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=3kGuCbLKCZkQ7kNvwF5CHXq&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTM5NDYwODg3OTE2MTgzOCwiYXNzZXRfYWdlX2RheXMiOjEyMiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7bf947501adaf863&_nc_vs=HBkcFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EMTRDMjJGMDk5M0Q4QjE5RUYwOTUzRjRCRTU5Q0E5OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm3Me-7fWY-gQVAigCQzMsF0Ak7peNT987GBJkYXNoX2Jhc2VsaW5lXzNfdjERAHUCZeadAQA&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&_nc_zt=28&oh=00_AQOf_JGVaKwF2iC_jB9uktnip-2uwEbfduwQ_dZDU9Zr8A&oe=6AD7C58B&bitrate=0&tag=dash_baseline_3_v1",
+   "media": [
+    {
+     "type": "video",
+     "url": "https://video-lax3-1.xx.fbcdn.net/o1/v/t2/f2/m86/AQN_eJI2DdyjPMYxT7MgG-vdjCPmGtxAK2IiNGasaJ0uyovqCRdmwDf0l9NjAwgbr2CaRqupN0o_NVDLbsUddesrIaxF79rldyMMZko.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=video-lax3-1.xx.fbcdn.net&_nc_ohc=3kGuCbLKCZkQ7kNvwF5CHXq&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTM5NDYwODg3OTE2MTgzOCwiYXNzZXRfYWdlX2RheXMiOjEyMiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7bf947501adaf863&_nc_vs=HBkcFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EMTRDMjJGMDk5M0Q4QjE5RUYwOTUzRjRCRTU5Q0E5OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm3Me-7fWY-gQVAigCQzMsF0Ak7peNT987GBJkYXNoX2Jhc2VsaW5lXzNfdjERAHUCZeadAQA&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&_nc_zt=28&oh=00_AQOf_JGVaKwF2iC_jB9uktnip-2uwEbfduwQ_dZDU9Zr8A&oe=6AD7C58B&bitrate=0&tag=dash_baseline_3_v1",
+     "thumbnailUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.71878-10/725767355_1618270130301197_673735388250743827_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=msx8Uf9DxLAQ7kNvwHyCcLT&_nc_oc=AdpCN_SvzmrwF5bFIwaKlFuz9Ze9pnm0_4IDtYWVwXW2-Oi2kZyjBItgbNW8DKITB5s&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=h2Ogw2er0TmBGDluLgXCKA&_nc_ss=70289&oh=00_AQOjfqcd7AqalrWOD2acEYkLQdLt5CSEm7wzrXFqr_zdTw&oe=6ADBBFC4"
+    }
+   ],
+   "source": {
+    "kind": "video-search",
+    "target": "V7 كريم صودا"
+   },
+   "scrapedAt": "2026-10-19T10:56:24.870Z"
+  }
+ ]
+}

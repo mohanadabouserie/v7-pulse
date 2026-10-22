@@ -1,0 +1,1311 @@
+{
+ "input": {
+  "query": "V Cola",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "aHnzYwZJ2UJS1WcYl",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:26:53.016Z",
+  "finishedAt": "2026-10-19T08:27:03.889Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 17
+  },
+  "usageTotalUsd": 0.037450000000000004
+ },
+ "cost_usd": 0.2644,
+ "items": [
+  {
+   "post_id": "122184636728962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0fexTUvU4pqa2P5VqbH8zH1vsZDsGxyUL6UY16cjCVZsR182REunDpTPwQD3PsdgKl&id=61578860274085",
+   "message": "ចែករំលែកភាពរីករាយជាមួយ វី-កូឡា \n \nពេលវេលារីករាយបែបនេះមាន វី-កូឡា ត្រជាក់ៗ cheers ជុំគ្នា បង្កើនបរិយាកាសកាន់តែរីករាយ!\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#MondeSelection2026\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQPKJkQvDPfEDo9Bmdk_i5IY8eMuHVs4gNBiu7wztS7ukw&oe=6ADB94D5"
+   },
+   "timestamp": 1791950412,
+   "reactions_count": 1418,
+   "comments_count": 6,
+   "reshare_count": 19,
+   "reactions": {
+    "like": 1396,
+    "love": 17,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 5
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/832777289_122183724176962009_4057980846950835126_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ubozrWwnOicQ7kNvwGMXZX1&_nc_oc=AdoNMWGIkaIthLcqTI6gKZVu7ZcOvogAGmooKP0b_YofmGEOKrYEgSqpYDAoarojbuM&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQNYCCz3DGEXTSMckjIyXDQdBUaB7RMODZJLsoxb_5-tZg&oe=6ADBB1BF",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTg0NjM2NzI4OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTg0NjM2NzI4OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24637689875873698",
+     "url": "https://www.facebook.com/hashtag/mondeselection2026?__eep__=6",
+     "offset": 166,
+     "length": 19
+    },
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 186,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 203,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 226,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 247,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "947022958228265",
+   "url": "https://www.facebook.com/V7Egypt/posts/pfbid02smPtDG2JfcQHD4FnWpQEiiAsW3nA7pfmM5RBiqYVJYtAtv9fPbA1iMsqgj19XCY9l",
+   "message": "مصنع جديد، وطموح أكبر.\nعلامات V تواصل دعم الصناعة المصرية بافتتاح مصنع ڤيتاليتي الجديد الذراع الصناعي لمنتجات V Cola وV7، بحضور معالي رئيس الوزراء د. مصطفى مدبولي ووزير الصناعة م. خالد هاشم ورافقه اللواء/ عمرو الغريب محافظ المنوفية، وقيادات ومسئولي الشركة.\nمن مصر هدية لكل العالم.",
+   "author": {
+    "id": "100087617073692",
+    "name": "V7Egypt",
+    "url": "https://www.facebook.com/V7Egypt",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png_s50x50&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZnW7KNMckEQ7kNvwGTQ9Oc&_nc_oc=AdqxojtuHG35ipVxTk236ASd86zuYX9-wCJKL2S-Bcs-DWs2jnmYvUyT_4hYTtepGRE&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQMVhsV3qlBOC1O4nYM1cuXc42yTbb5v9lbCBvHWJWdEog&oe=6ADBB850"
+   },
+   "timestamp": 1778504147,
+   "reactions_count": 261,
+   "comments_count": 28,
+   "reshare_count": 12,
+   "reactions": {
+    "like": 139,
+    "love": 111,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 11
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/693663464_947020411561853_598993487553361369_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=54XRDw0JoMYQ7kNvwH51YOX&_nc_oc=AdpVtKp3riVEZYFDvjeyYIh2btzXJDPoldj6KRtbF9CuYnoF8GRTewikM3lsy8BnLx8&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQNKRBsJp1q9XEJhmwNzLE-9ySBNmndJ0QMoG2nQjobHGg&oe=6ADBB881",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6OTQ3MDIyOTU4MjI4MjY1",
+   "shares_id": "ZmVlZGJhY2s6OTQ3MDIyOTU4MjI4MjY1",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122183835062962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid022LXAD2Ua2wFWnimekwMjWGwgiJdtj8qfLFSPiH1yBbxegzdMLRpKR7FZqwFdGQXXl&id=61578860274085",
+   "message": "អនុមោទនា ពិធីបុណ្យកាន់បិណ្ឌ បិណ្ឌ១៣\n\nភ្ជុំបិណ្ឌឆ្នាំនេះ ទៅវត្តជាមួយ វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ 🇰🇭\nវី-កូឡា  គឺជាជម្រើសដ៏ស័ក្តិសមសម្រាប់ធ្វើជាតេយ្យទាន ប្រគេនព្រះសង្ឃ ក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ \nសម្រាប់បងប្អូនដែលត្រូវការភេសជ្ជៈជូនដល់ឱពុកម្តាយ បងប្អូន ក្រុមគ្រួសារ និងមិត្តភក្តិក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ កុំភ្លេចណាជាមួយនឹង វី-កូឡា\nវី-កូឡា  ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក \nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQPKJkQvDPfEDo9Bmdk_i5IY8eMuHVs4gNBiu7wztS7ukw&oe=6ADB94D5"
+   },
+   "timestamp": 1791514819,
+   "reactions_count": 363,
+   "comments_count": 6,
+   "reshare_count": 7,
+   "reactions": {
+    "like": 332,
+    "love": 28,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 3
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgzODM1MDYyOTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgzODM1MDYyOTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 488,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 505,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 528,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 549,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122178051764962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0C34b4xNjf7xPCr9UNxQrAFEQCAJRbXrhrh2Q43tvEEExnojJnnKkhioCqgWPVLmGl&id=61578860274085",
+   "message": "ឈុតប៉ុណ្ណឹងសម្រាប់ ៣ នាក់គ្រប់អត់ ?\n\nវី-កួឡា ត្រជាក់ៗក៏មាន សាច់អាំងឈ្ងុយឆ្ងាញ់ ម្ហូបទំនងៗពេញតុចឹងទៀត ខ្វះតែដៃគូដៃកងទេ \nមោះ ៣ នាក់ជុំគ្នាហី?\nចង់និយាយថា វី-កូឡា ញុំាជាមួយម្ហូបគ្រប់មុខ បង្កើនរសជាតិអាហារកាន់តែឆ្ងាញ់ ជាពិសេសញុំាជុំគ្នាចឹងទៀតកាន់តែឆ្ងាញ់ហ្មង៎!\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#MondeSelection2026\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQPKJkQvDPfEDo9Bmdk_i5IY8eMuHVs4gNBiu7wztS7ukw&oe=6ADB94D5"
+   },
+   "timestamp": 1788777482,
+   "reactions_count": 1796,
+   "comments_count": 4,
+   "reshare_count": 24,
+   "reactions": {
+    "like": 1763,
+    "love": 26,
+    "haha": 0,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 6
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/800086903_122178048230962009_5105675116520954434_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LTsQNRocUzoQ7kNvwGoKKSe&_nc_oc=Adpi8UwpQAjltnWNJpB3gSVSUr5gulVuuh_hCyGHLF4Lwg3e6_8_Z0zcIspXxqIG9Ag&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQNXRGFxuVaElE6GU4VZdm48PK2JMWfyW3cO96dboDm_fA&oe=6ADB9D95",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTc4MDUxNzY0OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTc4MDUxNzY0OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24637689875873698",
+     "url": "https://www.facebook.com/hashtag/mondeselection2026?__eep__=6",
+     "offset": 304,
+     "length": 19
+    },
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 324,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 341,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 364,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 385,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "10175692952090215",
+   "url": "https://www.facebook.com/zizoz/posts/pfbid0oMWwmdaWvoYM28K6pebMth7LRXX9AFJaa8ZptUN1NSGwPywMySBC4R6D4L34eHwwl",
+   "message": "الغطا البلاستيك بتاع ال v cola بقي بيقطع الاييد .. وبيطلع بالعافيه .. حد خد بالو .. ولا انا اللي حظي وحش",
+   "author": {
+    "id": "633170214",
+    "name": "Zizo Ashraf",
+    "url": "https://www.facebook.com/zizoz",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/548876118_10172641114050215_165831301511863797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=HR2LA6J9DioQ7kNvwE1pr1g&_nc_oc=AdpeFb27arKoFmCul4yT1fmBnf8ccp1JldjiGkfzQLn0ciGkrxyA6JZ_I9gULIgDPxs&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQMyk_Nlt9qITH797G5iZY27HOMnMP0WaQeW9VjqbITajw&oe=6ADBA20A"
+   },
+   "timestamp": 1790805157,
+   "reactions_count": 990,
+   "comments_count": 314,
+   "reshare_count": 29,
+   "reactions": {
+    "like": 541,
+    "love": 9,
+    "haha": 363,
+    "wow": 4,
+    "sad": 66,
+    "angry": 0,
+    "care": 7
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/825267386_10175692944215215_376828422950215658_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Ug6urBkQITsQ7kNvwH5UmC8&_nc_oc=Adp6xK6t4fbLBjoI5kHS2d7ObD0vbEk1w-UdrRQG-D1Pz-G0C8lFTwqFUslZPjdT6uo&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=P5oLGixycswACIbFCaFGEQ&_nc_ss=7e180&oh=00_AQPVAKoJemCWw3EhTL5Zh2Su2fJlwEj1QTyTznRuhA_w9Q&oe=6ADBB314",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTAxNzU2OTI5NTIwOTAyMTU=",
+   "shares_id": "ZmVlZGJhY2s6MTAxNzU2OTI5NTIwOTAyMTU=",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122180785082962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02wFKmaktVP6dtUKkye1AAU12oAExgbUVC1dKJ292R1XR3kJi3MMS8JEaZKrGBPwrml&id=61578860274085",
+   "message": "ថ្ងៃស្អែកឈប់សម្រាកមួយថ្ងៃ តស់ friend ទៅដើរលេង ញុំា វី-កូឡា ត្រជាក់ៗ ២ នាក់ហ្អី?\n\nពេលវេលារីករាយ ជាមួយនឹងទេសភាពស្រស់ស្អាតចឹង ខ្វះ វី-កូឡា ម៉េចបាន! វី-កូឡា ត្រជាក់ៗ cheers ជុំគ្នាបែបនេះ បង្កើនបរិយាកាសកាន់តែរីករាយ!\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#MondeSelection2026\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQPo1_U5QZZy72Ep3KgPB93ApAy6xfl41-7AQAEDgsv4FA&oe=6ADB94D5"
+   },
+   "timestamp": 1790136014,
+   "reactions_count": 313,
+   "comments_count": 1,
+   "reshare_count": 4,
+   "reactions": {
+    "like": 305,
+    "love": 7,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/796831854_122180633108962009_5473163556742309442_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CUeEXpG2_iQQ7kNvwHvBClx&_nc_oc=AdoetgWb5RtOqwOAlt72DwYIG_dJaoaibahkGojaS68yZVAG0V_Mx_5DVJDy1awQhes&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQPPNxPIp6F1htcEAuRC2Qlvulfw4djwgxEQ7fXddaSxqg&oe=6ADB8ADB",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgwNzg1MDgyOTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgwNzg1MDgyOTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24637689875873698",
+     "url": "https://www.facebook.com/hashtag/mondeselection2026?__eep__=6",
+     "offset": 373,
+     "length": 19
+    },
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 393,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 410,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 433,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 454,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "29214978448162614",
+   "url": "https://www.facebook.com/thabt2020/posts/pfbid029uSFhYko9uwUTbmaDf9UhkVdwHG2MMQfcWxz7gM42dzp3zYCTzdPxFjw752ymZrHl",
+   "message": "في البيزنس الفرص أحيانًا بتيجي مرة واحدة.\n\nوأحيانًا ما بتيجيش أصلًا.\n\nلسه شايف جزء من حلقة كريم السيد عن V Cola، وإزاي قدروا يستغلوا لحظة المقاطعة صح، ويتحولوا من براند موجود بقاله كام سنة لاسم الناس بتتكلم عنه وتدور عليه.\n\nنفس الفرصة تقريبًا كانت قدام سبيرو سباتس.\n\nبراند قديم جدًا، والناس عندها تجاهه نوستالجيا وحب وفضول. بس للأسف الفرصة ما اتاخدتش بالشكل الكافي، والانتشار ما استمرش، والمنتج ما بقاش متواجد بالشكل اللي يرضي السوق ولا حتى يرضي البراند نفسه.\n\nتحس انهم نفسهم قصير او فقدوا الشغف \n\nالفرق مش دايمًا في إن الفرصة تجيلك.\n\nالفرق في إنك تكون جاهز لما تيجي.\n\nجاهز بإنتاج.\nجاهز بتوزيع.\nجاهز بتسويق.\nجاهز بسرعة قرار.\nوجاهز إنك ما تخافش تكبر لما السوق يفتحلك الباب.\n\nاستغل الفرص ومتبقاش جبان \n\nوخليك زي V Cola.",
+   "author": {
+    "id": "100002315381450",
+    "name": "Thabet Elbatal",
+    "url": "https://www.facebook.com/thabt2020",
+    "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/508758003_24388393937487780_8156421215464432580_n.jpg?stp=cp6_dst-jpg_s50x50_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=sG4wq01QeAkQ7kNvwGvI5gY&_nc_oc=Adrb_2kVd1A19sCUMCf4kBxKN8Y2pK46YqUlI7KVH5DccSXtph1rwPXBPXp3ZKbss0E&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQN0INH8RjWN5lTlXkyTAy0Orpsk7mdNtFyspapS0p8nYw&oe=6ADB9E65"
+   },
+   "timestamp": 1791812636,
+   "reactions_count": 2,
+   "comments_count": 0,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 2,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/846301927_29214973054829820_5304823651641842484_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UHwhRMlOw3wQ7kNvwHt5wyI&_nc_oc=Adq0GLCA1BiosdJBejoF8Ef7fYSVZVcGdjYbJoJPY6KFnCx7n-cRjoE2D92OTJCFnFs&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQPLj-WduhdlxbaZkOuRlkANlJq3JkYXfX0NJWbjrwSn8A&oe=6ADBAC9F",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjkyMTQ5Nzg0NDgxNjI2MTQ=",
+   "shares_id": "ZmVlZGJhY2s6MjkyMTQ5Nzg0NDgxNjI2MTQ=",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122180482268962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02aPAgAEJwxQ8TnXGztBy3thgXPLoqEQVwUxQQ1XtNvTqjAwNmQdRUd65UXrAM2Qujl&id=61578860274085",
+   "message": "☀️មេឃក្តៅបែបនេះ បើមាន វី-កូឡា ត្រជាក់ៗមួយកែវ ដឹងតែស្រស់ស្រាយហ្មង៎! 🧊🥤\nវី-កូឡា កាន់តែត្រជាក់កាន់តែឆ្ងាញ់ ញុំាហើយត្រជាក់ចិត្ត ត្រជាក់ដល់បេះដូងតែម្តង!\n\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក\n\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQPo1_U5QZZy72Ep3KgPB93ApAy6xfl41-7AQAEDgsv4FA&oe=6ADB94D5"
+   },
+   "timestamp": 1789982793,
+   "reactions_count": 750,
+   "comments_count": 3,
+   "reshare_count": 10,
+   "reactions": {
+    "like": 735,
+    "love": 13,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/795431371_122180477810962009_5171188774472849481_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KLcPv9e_PSoQ7kNvwGXdBnF&_nc_oc=AdqiHgR7tPBFr2vw9i99XzuQt1X_NWWNUp_TL02Xkq_U7mjhItuP9RmmiXPBiDLsaWc&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQNW-HEz7NMmk_PI4cuztf2rozDxCHdkGhcaWgV7nUCmMw&oe=6ADBA9A9",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgwNDgyMjY4OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgwNDgyMjY4OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 313,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 330,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 353,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 374,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122183974604962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid08EEs3AJSVnhVLQEHzEoPpkSLKDvZx2Ki7ZDQwb5etU7qMAd8ZACsoZQQBjNdQgPBl&id=61578860274085",
+   "message": "អនុមោទនាពិធីបុណ្យភ្ជុំបិ​ណ្ឌ!\n\nក្នុងឱកាសពិធីបុណ្យភ្ជុំបិណ្ឌនេះ  វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ សូមជូនពរឲ្យបងប្អូនជួបតែសេចក្តីសុខ មានភាពរីករាយ មានសុភមង្គល គ្រប់ក្រុមគ្រួសារ ជោគជ័យគ្រប់ភារកិច្ច ហើយរាល់ការធ្វើដំណើរទៅទីជិតទីឆ្ងាយប្រកបដោយសុខសុវត្ថិភាព។\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQPo1_U5QZZy72Ep3KgPB93ApAy6xfl41-7AQAEDgsv4FA&oe=6ADB94D5"
+   },
+   "timestamp": 1791594001,
+   "reactions_count": 1320,
+   "comments_count": 5,
+   "reshare_count": 21,
+   "reactions": {
+    "like": 1266,
+    "love": 34,
+    "haha": 2,
+    "wow": 4,
+    "sad": 0,
+    "angry": 1,
+    "care": 13
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/836330151_122183668856962009_4327104249756964424_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xvMaWwa8534Q7kNvwHFZTZi&_nc_oc=AdqmLiN_pnneZ8MlJ_Bb1vLxYGJd2CZdM8jfH1aJTmAPjTsKPsmZxwLUAotC3d_ZIlo&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQOjtNWwNH1jKTIWSLxjm_DlMJTw76pPbj0ziFs7GrEc3w&oe=6ADBAB51",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgzOTc0NjA0OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgzOTc0NjA0OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 307,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 324,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 347,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 368,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122101953099502964",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02LHBcxFLzU9Wts2VnTtgaMzEm57s4FBWZZYPpfc4wD133uQ45nxAtt8RSTnKAPsKjl&id=61595088924834",
+   "message": "🇵🇸❤️ كاسكو بتكمل لدعم المقاطعة 🇪🇬🔥\n\nفي كاسكو، بنؤمن إن كل خطوة ليها معنى، وإن اختياراتنا بتفرق ❤️✊\n\nعلشان كده قررنا استبدال Pepsi بـ V Cola، استمرارًا لدعمنا للمقاطعة، وإيمانًا مننا إن التغيير بيبدأ بقرارات بسيطة لكن ليها تأثير كبير. 💪❤️\n\n🍔 نفس الطعم اللي بتحبوه\n🔥 نفس الجودة اللي متعودين عليها\n❤️ وموقف ثابت بنفتخر بيه\n\nكاسكو مش مجرد أكل… كاسكو موقف ومبدأ \n\n#KASCO #كاسكو #دعم_المقاطعة #المقاطعة #VCola #فلسطين #غزة #معا_لدعم_فلسطين #مطعم_كاسكو #اختياراتنا_بتفرق",
+   "author": {
+    "id": "61595088924834",
+    "name": "KASCO - كاسكو ",
+    "url": "https://www.facebook.com/people/KASCO-%D9%83%D8%A7%D8%B3%D9%83%D9%88/61595088924834/",
+    "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/831033109_122094894471502964_1860691710978398297_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=MfDpnW-m7JIQ7kNvwEzN513&_nc_oc=AdriEetCy-ZF5tb94CEQXhYv3KAPyNtJX4V273ijz0ZraIGs2ZFYgZg23LNYKKTnXaY&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQMgBBZNEpzSwxo6h0fJPvl5iNBVEoWymChe2Yhr_-mGuA&oe=6ADB9A1B"
+   },
+   "timestamp": 1791613882,
+   "reactions_count": 5,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 5,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/840520641_122101953051502964_6294618558082742613_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1mpYY5IpTeEQ7kNvwFn7z1V&_nc_oc=Ado7otVEM2iQgWOUIlTWk3jj7LKNYMCFFYFSIh4Tue7qy5heikh2vKyP9dCje36kodM&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQMeW9Y-9huCLCD08xrj22IoCUlRUakZ4nBOkY_EdtbPdw&oe=6ADBABC0",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTAxOTUzMDk5NTAyOTY0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTAxOTUzMDk5NTAyOTY0",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "330936050361534",
+     "url": "https://www.facebook.com/hashtag/kasco?__eep__=6",
+     "offset": 359,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "180938195387176",
+     "url": "https://www.facebook.com/hashtag/%D9%83%D8%A7%D8%B3%D9%83%D9%88?__eep__=6",
+     "offset": 366,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "1793708467326955",
+     "url": "https://www.facebook.com/hashtag/%D8%AF%D8%B9%D9%85_%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9?__eep__=6",
+     "offset": 373,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "448118178592320",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9?__eep__=6",
+     "offset": 387,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 397,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "430173807071766",
+     "url": "https://www.facebook.com/hashtag/%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86?__eep__=6",
+     "offset": 404,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "532087250169706",
+     "url": "https://www.facebook.com/hashtag/%D8%BA%D8%B2%D8%A9?__eep__=6",
+     "offset": 412,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "678137978927167",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B9%D8%A7_%D9%84%D8%AF%D8%B9%D9%85_%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86?__eep__=6",
+     "offset": 417,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "28689281104089295",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B7%D8%B9%D9%85_%D9%83%D8%A7%D8%B3%D9%83%D9%88?__eep__=6",
+     "offset": 434,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "23964950506475176",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%D9%86%D8%A7_%D8%A8%D8%AA%D9%81%D8%B1%D9%82?__eep__=6",
+     "offset": 446,
+     "length": 17
+    }
+   ]
+  },
+  {
+   "post_id": "122177720174962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02ZEspoDBkSE3ESJYQNJc9H8CfnDyuBX2LSNkthJ4PruEUaYP4SXvybwW2QpprGUScl&id=61578860274085",
+   "message": "ចុងសប្តាហ៍  តស់! ណាត់គ្នា Chill ជុំគ្នាជាមួយ វី-កូឡា ម្តងមើល៎! \n\nជុំគ្នា លេងហ្គេមសប្បាយៗ ញុំាម្ហូបឆ្ងាញ់ៗជុំគ្នាចឹង ខ្វះ វី-កូឡា ម៉េចបាន! វី-កូឡា ត្រជាក់ៗ cheers ជុំគ្នាបែបនេះ បង្កើនបរិយាកាសកាន់តែរីករាយ!\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#MondeSelection2026\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQPo1_U5QZZy72Ep3KgPB93ApAy6xfl41-7AQAEDgsv4FA&oe=6ADB94D5"
+   },
+   "timestamp": 1788580860,
+   "reactions_count": 3054,
+   "comments_count": 9,
+   "reshare_count": 18,
+   "reactions": {
+    "like": 3012,
+    "love": 39,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 3
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/797178615_122177715182962009_4116755320492342523_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2mFl-dC0M1cQ7kNvwGxXCM5&_nc_oc=Adol8u5-f47SjXV4Pl8b89neDSQghgHhDrkqSBY5r9NpAzTzmAFZqU-tSik-v4OLtBU&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=W6bdAU_tb8pTrMIl9ONzBQ&_nc_ss=7e180&oh=00_AQOtXx3qQXUo_I8NeCkKPTwpdicteZk8IXd90ttQxcBAVA&oe=6ADBBABC",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTc3NzIwMTc0OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTc3NzIwMTc0OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24637689875873698",
+     "url": "https://www.facebook.com/hashtag/mondeselection2026?__eep__=6",
+     "offset": 253,
+     "length": 19
+    },
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 273,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 290,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 313,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 334,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "26672876015712070",
+   "url": "https://www.facebook.com/reel/3015824281941532/",
+   "message": "تجربة V COLA دايت لمرضى السكر، خلي بالك من نفسك🥹\n#viral #reels #diabetes #مرضى_السكر #صحة",
+   "author": {
+    "id": "100002491001377",
+    "name": "Doc Mazzangr",
+    "url": "https://www.facebook.com/mazzangr",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/488589204_9433483586744581_532910417690786687_n.jpg?stp=cp6_dst-jpg_s50x50_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Uv6a56uwC4wQ7kNvwFz8yJd&_nc_oc=Adov_aTuYKjQhWSjOcS0fBGbzFmRlioQA7dnThr49WrxP-LCuLktsBjPDX7hx4PuBYg&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQM2bHZJ99sovC6WtM0anqKLTo_peD6SLnFunCSVvlUWsg&oe=6ADB9D51"
+   },
+   "timestamp": 1778597358,
+   "reactions_count": 3032,
+   "comments_count": 195,
+   "reshare_count": 76,
+   "reactions": {
+    "like": 2881,
+    "love": 123,
+    "haha": 1,
+    "wow": 4,
+    "sad": 4,
+    "angry": 1,
+    "care": 18
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t51.71878-10/689481200_969303185646516_5774769694871763851_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=vQiNrp-7OgMQ7kNvwEShS9e&_nc_oc=AdopwIUOEHBy-OHnBKtrw9d1QPEGKojK4hxgois4cqYj-jgTw7PEGLiVXEyy7TvBcMM&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQOaGv1fcPtHUekQMHaQRjMDzvVsoHZ-94d4cbrUXC4KjQ&oe=6ADBC137",
+   "video": "https://www.facebook.com/watch/?v=3015824281941532",
+   "video_thumbnail": "https://scontent-sjc3-1.xx.fbcdn.net/v/t51.71878-10/689481200_969303185646516_5774769694871763851_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=vQiNrp-7OgMQ7kNvwEShS9e&_nc_oc=AdopwIUOEHBy-OHnBKtrw9d1QPEGKojK4hxgois4cqYj-jgTw7PEGLiVXEyy7TvBcMM&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQOaGv1fcPtHUekQMHaQRjMDzvVsoHZ-94d4cbrUXC4KjQ&oe=6ADBC137",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjY2NzI4NzYwMTU3MTIwNzA=",
+   "shares_id": "ZmVlZGJhY2s6MjY2NzI4NzYwMTU3MTIwNzA=",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "372153486225602",
+     "url": "https://www.facebook.com/hashtag/viral?__eep__=6",
+     "offset": 49,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "496287913767926",
+     "url": "https://www.facebook.com/hashtag/reels?__eep__=6",
+     "offset": 56,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "508574419184922",
+     "url": "https://www.facebook.com/hashtag/diabetes?__eep__=6",
+     "offset": 63,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "313219968807910",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D8%B3%D9%83%D8%B1?__eep__=6",
+     "offset": 73,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "460680534003074",
+     "url": "https://www.facebook.com/hashtag/%D8%B5%D8%AD%D8%A9?__eep__=6",
+     "offset": 85,
+     "length": 4
+    }
+   ]
+  },
+  {
+   "post_id": "122177064374962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02GEGm75GfhzHgkJ5cN7mhXVuCXsKusVs5dgpSSQEojFKUTooqsZdiWDGWe9wRuoJDl&id=61578860274085",
+   "message": "☀️មេឃក្តៅបែបនេះ  ត្រូវតែមាន វី-កូឡា ត្រជាក់ៗ 🧊🥤\nវី-កូឡា កាន់តែត្រជាក់កាន់តែឆ្ងាញ់ ញុំាហើយត្រជាក់ដល់ចិត្ត ត្រជាក់ដល់បេះដូង ស្រស់្រសាយតែម្តង!\n\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQPJS6VmsGvnWbsERQq7QnRGHMpmKgsT59pIQmL6uwU27g&oe=6ADB94D5"
+   },
+   "timestamp": 1788162782,
+   "reactions_count": 2989,
+   "comments_count": 6,
+   "reshare_count": 15,
+   "reactions": {
+    "like": 2928,
+    "love": 52,
+    "haha": 4,
+    "wow": 2,
+    "sad": 1,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/788002191_122177060522962009_179493971659441318_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1W7hi4pM_MkQ7kNvwGNY1da&_nc_oc=AdqauQHfBwnZAGNCF7y8NMnfhS8lKtjiNEnbv2-QGY0x791ioCb8Nir81XhmWI8AJfw&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQO_DYq9K3DBuvAglqjQtBLVBZP3HDCa80DXZgpyhZBmQA&oe=6ADBAE77",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTc3MDY0Mzc0OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTc3MDY0Mzc0OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 191,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 208,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 231,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 252,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122184913412962009",
+   "url": "https://www.facebook.com/reel/1972281566800026/",
+   "message": "មីកូឡាញុំាជាមួយ វី-កូឡា ជាតិហ្មងហា៎!\n\nមីកូឡាល្បីប្រចាំខេត្តបាត់ដំបង ញុំាជាមួយ វី-កូឡា ដាក់ទឹកកកត្រជាក់ៗនិយាយពីថា ចាប់ជាតិគ្នាតែម្តង! \nវី-កូឡា ញុំាជាមួយអីក៏ត្រូវដែរ ជួយបង្កើនរសជាតិអាហារកាន់តែឆ្ងាញ់! \nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#MondeSelection2026\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQPJS6VmsGvnWbsERQq7QnRGHMpmKgsT59pIQmL6uwU27g&oe=6ADB94D5"
+   },
+   "timestamp": 1792120047,
+   "reactions_count": 351,
+   "comments_count": 6,
+   "reshare_count": 7,
+   "reactions": {
+    "like": 347,
+    "love": 4,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t15.5256-10/850699360_2290128041785098_1086605846236994512_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=be8305&_nc_ohc=5bN-4KKqY80Q7kNvwESkWBD&_nc_oc=AdorVJl_Pb2adF4GWeY3okHyKna9DSf0zYD4s6OGRARxHTqqO0MQiZf1CxzCVDG2_E8&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQNoN7yN9VNa0dbAiTjT2FJV7lbTC82Qir5aT9GHfgz6Pw&oe=6ADBA4F9",
+   "video": "https://www.facebook.com/watch/?v=1972281566800026",
+   "video_thumbnail": "https://scontent-sjc6-1.xx.fbcdn.net/v/t15.5256-10/850699360_2290128041785098_1086605846236994512_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=be8305&_nc_ohc=5bN-4KKqY80Q7kNvwESkWBD&_nc_oc=AdorVJl_Pb2adF4GWeY3okHyKna9DSf0zYD4s6OGRARxHTqqO0MQiZf1CxzCVDG2_E8&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQNoN7yN9VNa0dbAiTjT2FJV7lbTC82Qir5aT9GHfgz6Pw&oe=6ADBA4F9",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTg0OTEzNDEyOTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTg0OTEzNDEyOTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24637689875873698",
+     "url": "https://www.facebook.com/hashtag/mondeselection2026?__eep__=6",
+     "offset": 361,
+     "length": 19
+    },
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 381,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 398,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 421,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 442,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122118201135259336",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid021BMcM9g5FMXYEwFaYswAg3nwz4UsPRcPCPtiiWwUvyRcYQxK1w3dUaan457ZRKgAl&id=61587780084595",
+   "message": "🔥 Say YES to V Cola! 🔥\n\nDiscover the World’s First Caffeine-Free Cola with 100% Natural Flavors and an incredibly refreshing cola taste.\n\n🥤 Great Cola Taste\n🌿 100% Natural Flavors\n🚫 No Caffeine\n\nNow available across Malawi. Ask for V Super Soda Cola today!\n\n#SayYesToVCola #VSuperSoda #WorldsFirst #CaffeineFreeCola #NaturalFlavors #NutriNova #Malawi",
+   "author": {
+    "id": "61587780084595",
+    "name": "V7Malawi",
+    "url": "https://www.facebook.com/people/V7Malawi/61587780084595/",
+    "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/641435153_122094694755259336_4958722998738740815_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nGoypx-DpMUQ7kNvwHoV8qU&_nc_oc=Adqg5LL-VmfHyj2hVivWhuvEULLgyzM2krj8f_v8yNMTXnr94XSX8tjgZONBAm3rmLo&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQOEEZNfAJIA_fyn7meEHjwauuj7GO3olpfQ-TGsMGKVbg&oe=6ADBBFD4"
+   },
+   "timestamp": 1783876460,
+   "reactions_count": 984,
+   "comments_count": 32,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 728,
+    "love": 234,
+    "haha": 1,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 20
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/743261674_122118201267259336_1813625834524891063_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=k74ebnEr-gEQ7kNvwHj4XsW&_nc_oc=AdorkT21fsLyuYqw9KEWbduB5RvKyjfEG5vxukZjPKUmszYuZ3Uya1Z6PMH3ccawVDw&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQOZ_W7bet1mFU1NmQsco4OeXV6Q0nlpVidcA2k8G104vA&oe=6ADBA7EA",
+    "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/745235911_122118201321259336_3270152325825488166_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OhQ-TUWnRHYQ7kNvwG524UD&_nc_oc=AdpHOpIe6LgOe2IiIYTRjkwJf6GODP9Ih197fz7qQ4imBgrSy6_YX60MhEKYENu3sS4&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQNr5c-DKu46mi267W0Fqbh8Mml9LKTPR17dUoW4cDkpmQ&oe=6ADBA9BE",
+    "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/745907821_122118201375259336_1676710889654515749_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Mnva0Wi4Vg8Q7kNvwHkTEqe&_nc_oc=AdojZubnbU_yO7WYIznI8ENHWXZ47ozV_E6fJoBgWXs1fPNj1PH1PTLDh3L0guwv_oU&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQPI08Kf87ir5cTC7mRXl4051kC-mtvJRccuQFbdhFWW8A&oe=6ADB9B18"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTE4MjAxMTM1MjU5MzM2",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTE4MjAxMTM1MjU5MzM2",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "37536536972604234",
+     "url": "https://www.facebook.com/hashtag/sayyestovcola?__eep__=6",
+     "offset": 258,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "8216565948452213",
+     "url": "https://www.facebook.com/hashtag/vsupersoda?__eep__=6",
+     "offset": 273,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "239035562908466",
+     "url": "https://www.facebook.com/hashtag/worldsfirst?__eep__=6",
+     "offset": 285,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "138080376383779",
+     "url": "https://www.facebook.com/hashtag/caffeinefreecola?__eep__=6",
+     "offset": 298,
+     "length": 17
+    },
+    {
+     "type": "Hashtag",
+     "id": "427524954001069",
+     "url": "https://www.facebook.com/hashtag/naturalflavors?__eep__=6",
+     "offset": 316,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "367590650007139",
+     "url": "https://www.facebook.com/hashtag/nutrinova?__eep__=6",
+     "offset": 332,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "360021697447446",
+     "url": "https://www.facebook.com/hashtag/malawi?__eep__=6",
+     "offset": 343,
+     "length": 7
+    }
+   ]
+  },
+  {
+   "post_id": "122183887328962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02qw8hJq2VXAhwaKkJVhxGAMgHvAQoHKNijB7inBvzMe31d4FQmX9AZHgi6XuxsoyYl&id=61578860274085",
+   "message": "ម្ហូបពិសេសប្រចាំខេត្តបាត់ដំបងមានម្ហូបអ្វីខ្លះ?\n\nឮល្បីថាខេត្តបាត់ដំបង មាន មីកូឡា និងណែម ដែលឆ្ងាញ់  ហើយបើមានរបស់ឆ្ងាញ់ៗចឹង បានញុំាជាមួយ វី-កូឡា ដាក់ទឹកកកត្រជាក់ៗទៀត និយាយពីជាតិអើយជាតិ កុំភ្លេចជួបគ្នាឆាប់ៗណា អ្នកបាត់ដំបង!\n\nសូមរង់ចាំទស្សនា ម្ហូបពិសេសប្រចាំតំបន់  នៅថ្ងៃទី១០ ខែតុលា ឆ្នាំ២០២៦ លើកញ្ចក់ទូរទស្សន៍ជាតិកម្ពុជា និងគ្រប់បណ្តាញផ្សព្វផ្សាយផ្លូវការរបស់ទូរទស្សន៍ជាតិកម្ពុជា\n\nវី-កូឡា  ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក \nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQPJS6VmsGvnWbsERQq7QnRGHMpmKgsT59pIQmL6uwU27g&oe=6ADB94D5"
+   },
+   "timestamp": 1791544502,
+   "reactions_count": 146,
+   "comments_count": 1,
+   "reshare_count": 4,
+   "reactions": {
+    "like": 138,
+    "love": 6,
+    "haha": 1,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/825327744_122183875640962009_8166181353931501679_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=E7lFkR48CF0Q7kNvwGDMLOy&_nc_oc=Adrxswb2-_XqsT_LjvC_SrTtnD_Z4JVg8CjD4uaBcnO_Xb0uJeJ7rWA3qh78wAwm2mw&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQMUP37c-gA42PCLNFYzKe7tlb2Au5u9LRKcJjqrn-rulg&oe=6ADBBA58",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgzODg3MzI4OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgzODg3MzI4OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 520,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 537,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 560,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 581,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "4779761615633632",
+   "url": "https://www.facebook.com/geeboooo/posts/pfbid0149dzEQDFHumUdonKwXvXFN8K1r2hFUR5zbbxSsvTbFs1ps8L2WLiGAieFt7yayfl",
+   "message": "بديل المقاطعة المصرى v cola ❤️🇵🇸",
+   "author": {
+    "id": "100007995228656",
+    "name": "Mahmoud Nageeb",
+    "url": "",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/500706651_4210443295898803_943749388907440455_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=HPkcDzNN4UMQ7kNvwHYY7ac&_nc_oc=AdrZO0VMVaF1wlyrL-e-N8aSKQpH2KX8z3_yyOwzNJ9fUHvkSCejzDGGLgZ8fixUazQ&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQPoKO3nBgiS0LR9gEnTL_ZkPSMCqaMVtFR9PGPtdT3y0A&oe=6ADB8EE2"
+   },
+   "timestamp": 1791576972,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t15.5256-10/839389209_1150098124255698_1143982332813057477_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=be8305&_nc_ohc=Wcdyzo17UJ4Q7kNvwH7L3Cj&_nc_oc=AdoJjG49AECCFMo_fU2DSmuQcabu-y4lBcjRMWIeLK7DVHbu7z1P-FfXpNVtn-IZ1AY&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQOhSSWW_nWWfOl1IZ_XyVVY-5lyW6FX8cpKFgvF98ec5g&oe=6ADBB6D8",
+   "video": "https://www.facebook.com/watch/?v=2374066166742658",
+   "video_thumbnail": "https://scontent-sjc3-1.xx.fbcdn.net/v/t15.5256-10/839389209_1150098124255698_1143982332813057477_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=be8305&_nc_ohc=Wcdyzo17UJ4Q7kNvwH7L3Cj&_nc_oc=AdoJjG49AECCFMo_fU2DSmuQcabu-y4lBcjRMWIeLK7DVHbu7z1P-FfXpNVtn-IZ1AY&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQOhSSWW_nWWfOl1IZ_XyVVY-5lyW6FX8cpKFgvF98ec5g&oe=6ADBB6D8",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NDc3OTc2MTYxNTYzMzYzMg==",
+   "shares_id": "ZmVlZGJhY2s6NDc3OTc2MTYxNTYzMzYzMg==",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "1661519535330157",
+    "url": "https://www.facebook.com/reel/2374066166742658/",
+    "message": "هل ممكن شركة مصرية تنافس بيبسي وكوكاكولا؟",
+    "author": {
+     "id": "100044163803128",
+     "name": "Kareem Elsayed كريم السيد",
+     "url": "https://www.facebook.com/kareemelsayed",
+     "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/472355776_1158491762299606_6378710036383477442_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=HAgcbZVVyUcQ7kNvwHw6Mi_&_nc_oc=Adrk4ePOHJqXtVIMYSCvrfmRz5Q2FLfyeKZgensti76NBSpD0rFFXeepaWMzhj1eYBE&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=2HACUUDkl6ipu1Tz4LiA2g&_nc_ss=7e180&oh=00_AQMIoSXJUuftHbmCyFv8KmuO5mGCpuddnQ3tcZCW_FITdw&oe=6ADBA7E3"
+    }
+   }
+  },
+  {
+   "post_id": "122179731698962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0C2qvJYsBoWkEaZZP6zV1j9HVYNZrB9XkmGEuxFCXRvzWPaLFVY68wDkqtjefEiSKl&id=61578860274085",
+   "message": "ទម្រាំតែបានជុំគ្នា និយាយពីថារៀប Plan ចង់មួយលានដងហើយ!\n\nឥឡូវជុំគ្នាបានសម្រេចដាក់ម៉ា Trip ទៅសមុទ្រជុំគ្នាជាមួយ វី-កូឡា ឲ្យសប្បាយម្តងមើល៎!\nបរិយាកាសរីករាយ ជួបជុំបែបនេះ ខ្វះ វី-កូឡា ម៉េចបាន!\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#ourcolaourpride\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQPmAYAudU00xwx004k9-7YoxEA15H5XG3wkZnrHO7UAgw&oe=6ADB94D5"
+   },
+   "timestamp": 1789786805,
+   "reactions_count": 609,
+   "comments_count": 5,
+   "reshare_count": 9,
+   "reactions": {
+    "like": 600,
+    "love": 7,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 2
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/813698141_122179567616962009_3123615488312906560_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GNwXBZSLtr4Q7kNvwGmPzXJ&_nc_oc=AdpgrEEvjuEAmmGdyGAjvYSQqRxHNmSEwZedFsNctMQupoAWh-0YFjWhrVroB-TPdQ8&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQO5dzn83hfVOWmDbPDxlHJwYepmhG1AFM6uZ6eyhefI0w&oe=6ADB9581",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTc5NzMxNjk4OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTc5NzMxNjk4OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 347,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 364,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 385,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122181512048962009",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0daVpp9MYzaFQTEd9VbDh35FUgSUKU8LkWv16NBQDCSTjhxUkGHeACWov2Crd42cYl&id=61578860274085",
+   "message": "អនុមោទនាពិធីកាន់បិណ្ឌ \n\nភ្ជុំបិណ្ឌឆ្នាំនេះ ទៅវត្តជាមួយ វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ!\nវី-កូឡា  គឺជាជម្រើសដ៏ស័ក្តិសមសម្រាប់ធ្វើជាទេយ្យទាន ប្រគេនព្រះសង្ឃ ក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ \nវី-កូឡា  ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក \n\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ\nOur Cola. Our Pride.\n#MondeSelection2026\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwFJ1d-X&_nc_oc=Adq0xS7B3-icj8XY6-zlCKFQX-izd_4ZNpRTKE-QyqPBor20SHxr2zRwMzxv480TCIA&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQPmAYAudU00xwx004k9-7YoxEA15H5XG3wkZnrHO7UAgw&oe=6ADB94D5"
+   },
+   "timestamp": 1790474453,
+   "reactions_count": 1929,
+   "comments_count": 21,
+   "reshare_count": 40,
+   "reactions": {
+    "like": 1802,
+    "love": 112,
+    "haha": 1,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 13
+   },
+   "type": "post",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/820085097_122181049418962009_300102558269145416_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=y_0tDL4GIG4Q7kNvwFtbOty&_nc_oc=AdrjlferuvsKrhVqkIKh0sz4SyuAwMNRO2LEfN1qQfMFD4FAZZ97o1TX4wLMae1DYQE&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQNusI8AUFh63jxor2ev0tXC5m2qwAAKJG_bQwvzRWbIMQ&oe=6ADBAFB1",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTgxNTEyMDQ4OTYyMDA5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTgxNTEyMDQ4OTYyMDA5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "24637689875873698",
+     "url": "https://www.facebook.com/hashtag/mondeselection2026?__eep__=6",
+     "offset": 336,
+     "length": 19
+    },
+    {
+     "type": "Hashtag",
+     "id": "24026923123647051",
+     "url": "https://www.facebook.com/hashtag/ourcolaourpride?__eep__=6",
+     "offset": 356,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "24051342877883452",
+     "url": "https://www.facebook.com/hashtag/poweringlocaltogether?__eep__=6",
+     "offset": 373,
+     "length": 22
+    },
+    {
+     "type": "Hashtag",
+     "id": "24519182947749152",
+     "url": "https://www.facebook.com/hashtag/%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%83%E1%9E%98%E1%9F%84%E1%9E%91%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7?__eep__=6",
+     "offset": 396,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 417,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122101136271421755",
+   "url": "https://www.facebook.com/reel/1032240556363502/",
+   "message": "Summer just got more exciting.\n\nV Cola has kicked off a mysterious “Coming Soon” campaign, teasing the return of its magic taste with a summer surprise that has everyone guessing what’s next.\n\nV7 \n\n#TheBriefLine #VCola #Summer #ComingSoon #Campaign",
+   "author": {
+    "id": "61592652657225",
+    "name": "The Briefline",
+    "url": "https://www.facebook.com/people/The-Briefline/61592652657225/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/756873114_4110468675751538_1222634702894389817_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ifd89xjBBoQQ7kNvwFZrJGV&_nc_oc=AdqFaZOu9JmPqZBfLRUi9QlOFKfqViFtP1_R-ndjcAKtkZr5rwknePx9eUZKnWzicXc&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQOMLQ4_z4VyM7zuvoqz5Ne3bm1BZ91TTCaO74yP5bNOOQ&oe=6ADBB449"
+   },
+   "timestamp": 1785781367,
+   "reactions_count": 2,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t51.82787-10/762902540_17868711660651294_7323451313617845089_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3P_3c4M5WtEQ7kNvwHM4ji0&_nc_oc=AdrOEwPQgvfJMMmaCc0QkADCUxaIAj2b2PJx84-XLmGcl8QYDWWwMlLwW7hHe0G4pJk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQOe7shHj-La2yFqnyJMYq4_4s4yo2LMpEctDRRcsuTuzg&oe=6ADB9C3D",
+   "video": "https://www.facebook.com/watch/?v=1032240556363502",
+   "video_thumbnail": "https://scontent-sjc3-1.xx.fbcdn.net/v/t51.82787-10/762902540_17868711660651294_7323451313617845089_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ce42&_nc_ohc=3P_3c4M5WtEQ7kNvwHM4ji0&_nc_oc=AdrOEwPQgvfJMMmaCc0QkADCUxaIAj2b2PJx84-XLmGcl8QYDWWwMlLwW7hHe0G4pJk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=gx11LPFjgShY37FjpqNXbg&_nc_ss=7e180&oh=00_AQOe7shHj-La2yFqnyJMYq4_4s4yo2LMpEctDRRcsuTuzg&oe=6ADB9C3D",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTAxMTM2MjcxNDIxNzU1",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTAxMTM2MjcxNDIxNzU1",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "36473323552313505",
+     "url": "https://www.facebook.com/hashtag/thebriefline?__eep__=6",
+     "offset": 198,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "374453469341054",
+     "url": "https://www.facebook.com/hashtag/vcola?__eep__=6",
+     "offset": 212,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "193913567398978",
+     "url": "https://www.facebook.com/hashtag/summer?__eep__=6",
+     "offset": 219,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "159655200857900",
+     "url": "https://www.facebook.com/hashtag/comingsoon?__eep__=6",
+     "offset": 227,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "511294982266576",
+     "url": "https://www.facebook.com/hashtag/campaign?__eep__=6",
+     "offset": 239,
+     "length": 9
+    }
+   ]
+  }
+ ]
+}

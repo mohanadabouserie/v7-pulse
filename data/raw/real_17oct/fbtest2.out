@@ -1,0 +1,24 @@
+--- stage fbtest2, spent so far this cycle $33.0313, budget $14.00
+fbdeep_topapi_recent facebook-search-posts-scrape SUCCEEDED     30 items  $0.0002  (cap $0.20)  total $33.0315  events {'post-scraped': 30, 'post-details': 0}
+fbdeep_month_silentflow facebook-search-scraper      SUCCEEDED     19 items  $0.1968  (cap $0.10)  total $33.2281  events {'apify-actor-start': 1, 'apify-default-dataset-item': 15}
+fbdeep_silentflow_recent facebook-search-scraper      SUCCEEDED     33 items  $0.1968  (cap $0.20)  total $33.2281  events {'apify-actor-start': 1, 'apify-default-dataset-item': 33}
+fbdeep_silentflow_top facebook-search-scraper      SUCCEEDED     22 items  $0.1968  (cap $0.20)  total $33.2281  events {'apify-actor-start': 1, 'apify-default-dataset-item': 22}
+fbdeep_topapi_top facebook-search-posts-scrape SUCCEEDED     26 items  $0.2974  (cap $0.20)  total $33.3287  events {'post-scraped': 26, 'post-details': 0}
+fbgap_playcount  facebook-playcount-scraper   SUCCEEDED      5 items  $0.1178  (cap $0.05)  total $33.3459  events {'apify-actor-start': 4, 'apify-default-dataset-item': 1}
+fbgap_apifyposts facebook-posts-scraper       SUCCEEDED      8 items  $0.1178  (cap $0.10)  total $33.3459  events {'post': 8, 'actor-start': 1, 'filter-applied': 0}
+fbsp_sian: could not start: HTTP 400 b'{\n  "error": {\n    "type": "invalid-input",\n    "message": "Input is not valid: Items in input.bulkUrls at positions [0,1,2,3,4] do not contain valid URLs"\n  }\n}'
+fbsp_sian: could not start: HTTP 400 b'{\n  "error": {\n    "type": "invalid-input",\n    "message": "Input is not valid: Items in input.bulkUrls at positions [0,1,2,3,4] do not contain valid URLs"\n  }\n}'
+fbgap_reeldetails facebook-reels-details-scrap SUCCEEDED      5 items  $0.1178  (cap $0.05)  total $33.3459  events {'apify-actor-start': 1, 'row-result': 4}
+fbsp_piotr       facebook-video-transcript-sc SUCCEEDED      5 items  $0.0172  (cap $0.40)  total $33.3459  events {'apify-actor-start': 1, 'video': 5, 'transcript': 4, 'transcript-minute': 2}
+fbgap_topapi_details facebook-search-posts-scrape SUCCEEDED     10 items  $0.3146  (cap $0.08)  total $33.3459  events {'post-scraped': 0, 'post-details': 0}
+fbdeep_scrapeforge_top facebook-search-posts        SUCCEEDED     32 items  $0.4205  (cap $0.20)  total $33.4518  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbgap_danek      facebook-posts-fast          SUCCEEDED      8 items  $0.4203  (cap $0.05)  total $33.4518  events {'apify-actor-start': 1, 'apify-default-dataset-item': 6}
+fbsp_alpha       facebook-transcript-subtitle SUCCEEDED      5 items  $0.5057  (cap $0.05)  total $33.8516  events {'apify-actor-start': 1, 'result': 5}
+fbcm_apify       facebook-comments-scraper    SUCCEEDED     26 items  $0.5057  (cap $0.30)  total $33.8516  events {'comment': 26, 'actor-start': 1, 'filter-applied': 0}
+fbsp_invideo     video-transcriber            SUCCEEDED      5 items  $0.5128  (cap $0.30)  total $33.8588  events {'apify-default-dataset-item': 5, 'extra-10-minutes': 0}
+fbcm_thedoor     facebook-comment-scraper     SUCCEEDED     25 items  $0.4539  (cap $0.10)  total $33.9057  events {'apify-default-dataset-item': 25, 'apify-actor-start': 1}
+fbsp_codenest    facebook-video-transcript-sc SUCCEEDED      5 items  $0.5937  (cap $0.05)  total $33.9396  events None
+fbdeep_month_topapi facebook-search-posts-scrape SUCCEEDED     17 items  $0.9082  (cap $0.10)  total $33.9396  events {'post-scraped': 17, 'post-details': 0}
+fbpages_apify    facebook-pages-scraper       SUCCEEDED      5 items  $0.4878  (cap $0.08)  total $33.9396  events {'apify-default-dataset-item': 4, 'page': 0}
+fbsp_viral       video-transcriber            SUCCEEDED      5 items  $0.7890  (cap $0.40)  total $34.1349  events {'video-minute-transcribed': 8}
+--- stage fbtest2 done, spent this cycle $34.1349

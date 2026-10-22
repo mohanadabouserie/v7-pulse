@@ -1,0 +1,57 @@
+{
+ "input": {
+  "video_urls": [
+   "https://www.facebook.com/yosefpacha/posts/pfbid02miPrkMarZoLFWeXsvMBdXuD5yvv2BaRKN4RKEEoTfoMhDLhB4aCvgjPh56rujWBql",
+   "https://www.facebook.com/reel/1101243579554056/"
+  ]
+ },
+ "cap_usd": 0.21,
+ "run": {
+  "id": "0FFiJ28DZmrv2andZ",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:40:37.267Z",
+  "finishedAt": "2026-10-20T20:40:43.092Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "extra-10-minutes": 0
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.0001,
+ "items": [
+  {
+   "video_url": "https://www.facebook.com/reel/1101243579554056/",
+   "title": "اقرب طعم طبيعي لمشروب المقاطعه ڤى كولا وعليه عرض وليه غطه حاجه نضيفه كده | عروض ومشتريات البيت",
+   "description": "اقرب طعم طبيعي لمشروب المقاطعه ڤى كولا وعليه عرض وليه غطه حاجه نضيفه كده",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/843500246_1005576052554085_1569918970038051462_n.jpg?stp=dst-jpg_tt6&cstp=mx288x512&ctp=s288x512&_nc_cat=105&ccb=1-7&_nc_sid=be8305&_nc_ohc=hPZV85o-KV4Q7kNvwFedHwE&_nc_oc=AdpL8-DiFvuhh09b3RYioj55R6IdS4hyfIJXP-2p0TUte4KwbkXJud6ggcAGwno47Y4&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=cJVMWLYFHFNAoULpuEg2MA&_nc_ss=70289&oh=00_AQMlToLKvo3q8gl45G2fiJYl4yciU9ZSVTD3_AYWbErKjA&oe=6ADD8B70",
+   "duration": 27.34,
+   "transcript": [
+    {
+     "text": "بس يا جماعة في كولا دي طعمها جميلة او انا بحبها صراحة من بعد ما عملنا مؤطعة",
+     "start": 0.58,
+     "end": 5.78
+    },
+    {
+     "text": "انا كنت يعني كان اقرب لي طعمليهم وعجباني جدا",
+     "start": 5.78,
+     "end": 10.44
+    },
+    {
+     "text": "ديت في كولا ديت طعملة 300 ميلي ب15 جنيه في المحل",
+     "start": 12.02,
+     "end": 17.52
+    },
+    {
+     "text": "لاو ستور اذا كانت بيبسي او او اللي",
+     "start": 17.52,
+     "end": 22.62
+    },
+    {
+     "text": "هي السيبن كمام",
+     "start": 22.62,
+     "end": 24.68
+    }
+   ]
+  }
+ ]
+}

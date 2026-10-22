@@ -1,0 +1,328 @@
+{
+ "input": {
+  "query": "V7 كريم صودا",
+  "maxPages": 2
+ },
+ "cap_usd": 0.12,
+ "run": {
+  "id": "kbFDcLxPs98NAdok0",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T10:53:37.928Z",
+  "finishedAt": "2026-10-19T10:54:04.565Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 14,
+   "apify-actor-start": 4
+  },
+  "usageTotalUsd": 0.04609583555664619
+ },
+ "cost_usd": 0.7158,
+ "items": [
+  {
+   "type": "search_video",
+   "video_id": "1807300737278091",
+   "video_url": "https://www.facebook.com/reel/1807300737278091/",
+   "description": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "title": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "عبدالله فود",
+    "url": "https://www.facebook.com/people/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D9%81%D9%88%D8%AF/61574149360419/",
+    "is_verified": false,
+    "id": "61574149360419"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t15.5256-10/841057455_1434880035239004_1523373252633714826_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=WeB2X6Vib7IQ7kNvwHSscwx&_nc_oc=AdpHMqZazRDGsThYx1x7MiJkbU9sTbWG9zfH087rJNy1ZA9hlZ8iXAAhqLoNIGrpNs8&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQOhu8FgAcyvzWPqwUUW7S4yKh_67KENo1yHW5MLe8I1fw&oe=6ADBE393",
+   "time_and_views_raw": "8 Oct · 7.1K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 1,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video_reel",
+   "video_id": "408098612235658",
+   "video_url": "https://www.facebook.com/reel/408098612235658/",
+   "description": null,
+   "title": null,
+   "author": {
+    "__typename": "InstagramUserV2",
+    "id": "17841447797691908",
+    "name": "Rabbit Egypt",
+    "__isEntity": "InstagramUserV2",
+    "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Frabbit_eg&h=AUASwcLDTxzbu2Q6ZK32RIv26FpeWnBZMO4EHMTKZ5ZREoQXPiHwkrgR12dEqiMmgPJju54FdIA9_9xh4Zo8LcwqpsPJlfzKJy6nGa1LX1uc4XGG0yvPclXOola9g_YFXBdkVnqyFOYc8b4B-L3Nkqu-gA&s=1"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t51.29350-10/451510767_501757029080237_2902985054709138439_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=dfc7c9&_nc_ohc=eDC31lRvON0Q7kNvwHB-cCM&_nc_oc=Ado-8RD6-QYPF-Ar5ho1egstkRFt0-BagBLoktZ8PZsvtjtnorijFi01ki3oZKF50jU&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQNw4d1y26eA4VwDxJ9grnGIpBi59tkoPnq8zTLhuxrV5A&oe=6ADBADB5",
+   "time_and_views_raw": null,
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 3,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1067184879604205",
+   "video_url": "https://www.facebook.com/reel/1067184879604205/",
+   "description": "جديد داخل الهايبر كريم صودا 🥤❤️",
+   "title": "جديد داخل الهايبر كريم صودا 🥤❤️",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "هايبر عمرو وعلوي",
+    "url": "https://www.facebook.com/people/%D9%87%D8%A7%D9%8A%D8%A8%D8%B1-%D8%B9%D9%85%D8%B1%D9%88-%D9%88%D8%B9%D9%84%D9%88%D9%8A/100069711947567/",
+    "is_verified": false,
+    "id": "100069711947567"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t15.5256-10/785560936_2084083172225441_372027210410242472_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e3495b&_nc_ohc=C5C9zYMUx_gQ7kNvwHd4g2M&_nc_oc=Adr51id27VwWNOm_Av2Z7ccnls_EdsVlXQ7Nu97KFLadpSkv_ZKIskolhrKiRtX8ftI&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQOwquXgaaTMukKIlvDGZSZAx9UUgVl8iJlNeqtzD3kZYw&oe=6ADBDB8E",
+   "time_and_views_raw": "28 Aug · 4.8K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 5,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "971446712683305",
+   "video_url": "https://www.facebook.com/reel/971446712683305/",
+   "description": "أرخص أكل في مصر؟! جربت كبدة وسجق بـ 10 جنيه من عبقرينو + V7 كريم صودا الجديد! 😱 #عبدالله_فود",
+   "title": "أرخص أكل في مصر؟! جربت كبدة وسجق بـ 10 جنيه من عبقرينو + V7 كريم صودا الجديد! 😱 #عبدالله_فود",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "عبدالله فود",
+    "url": "https://www.facebook.com/people/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D9%81%D9%88%D8%AF/61574149360419/",
+    "is_verified": false,
+    "id": "61574149360419"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t15.5256-10/838160233_1488334680018915_3861947848290870351_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=sKH8imHPcOUQ7kNvwEEpk_S&_nc_oc=AdrFaiFvvyBUdMlXf4Ps1KU52vhqueZsagwhZG1uX-qFzdGIVcULdFBQo-MhSn5kOOs&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQNZ6iHubvk0kItCwdcN0RntUmoETkC8JKkJFdc2kbOVWQ&oe=6ADBAE4C",
+   "time_and_views_raw": "6 Oct · 11K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 7,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1734020404542001",
+   "video_url": "https://www.facebook.com/reel/1734020404542001/",
+   "description": "V7 cream soda 🤷‍♀️\n#v7 \n#creamsoda \n#كل_يوم_مشروب_جديد\n#yummy_yomna",
+   "title": "V7 cream soda 🤷‍♀️\n#v7 \n#creamsoda \n#كل_يوم_مشروب_جديد\n#yummy_yomna",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Yummy Yomna",
+    "url": "https://www.facebook.com/yummy.yomna",
+    "is_verified": false,
+    "id": "61564542608344"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t15.5256-10/819274478_1651398770158004_7587992104636529963_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e3495b&_nc_ohc=x6zYGUxEtywQ7kNvwHon4V1&_nc_oc=AdozTyC4KN1o_fC5fva5zmzljbIMgrjqZgoPNhmLVBzFrHohRv_J7GJK6KMM0F43dQQ&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQPJyIvHOLpd-3GEmj0qaervjro_aDjTdXUW-ptOF_Wtkg&oe=6ADBB7F6",
+   "time_and_views_raw": "23 Sep · 644 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 9,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2106087287448683",
+   "video_url": "https://www.facebook.com/reel/2106087287448683/",
+   "description": "",
+   "title": "جربت V7 كريم صودا لأول مرة 😂🥤",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Malek بلوجر",
+    "url": "https://www.facebook.com/people/Malek-%D8%A8%D9%84%D9%88%D8%AC%D8%B1/61589248462460/",
+    "is_verified": false,
+    "id": "61589248462460"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t15.5256-10/774886532_2128571958082001_4921701670640122558_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e3495b&_nc_ohc=w0LfI8bVCUAQ7kNvwECDv55&_nc_oc=AdptMaz6sqTnyj9hgOOS4Clu9aWFrTLhQx1d5kz77T5qqYfmQDCaXfot5EP7q52GYxQ&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQMTUlO2kouQqP1cUIZDii9ZSHN-HTK8WV92UlpXNZwuUw&oe=6ADBCB38",
+   "time_and_views_raw": "18 Aug · 91 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 11,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2479918585840156",
+   "video_url": "https://www.facebook.com/reel/2479918585840156/",
+   "description": "صودا كريم \nالاصلي",
+   "title": "صودا كريم \nالاصلي",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "ايلين السخني",
+    "url": "https://www.facebook.com/aylyn.alskhny.2025",
+    "is_verified": false,
+    "id": "100068532288511"
+   },
+   "thumbnail": "https://scontent-bos5-1.xx.fbcdn.net/v/t15.5256-10/751035243_978597801885409_1655223263979790074_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=kmwZGzul6sYQ7kNvwHHem7T&_nc_oc=AdrjBtw1AXWOoKSYlWi5GNRjogV0XBaNFWQ_-XYBA2eVNHXJJ3C4nDIo08kGofdb-gs&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_gid=FDZeOt4gx7HK6YCkZT3o2A&_nc_ss=70289&oh=00_AQNkmAPeRi1MxHY3SLxOQ2ora5eh_ScgzIC8EEYbzVyA1w&oe=6ADBE311",
+   "time_and_views_raw": "17 Jul · 1.1K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 1,
+   "position": 13,
+   "scraped_at": "2026-10-19T10:53:44.252Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1807300737278091",
+   "video_url": "https://www.facebook.com/reel/1807300737278091/",
+   "description": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "title": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "عبدالله فود",
+    "url": "https://www.facebook.com/people/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D9%81%D9%88%D8%AF/61574149360419/",
+    "is_verified": false,
+    "id": "61574149360419"
+   },
+   "thumbnail": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/841057455_1434880035239004_1523373252633714826_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=WeB2X6Vib7IQ7kNvwHgcNJ3&_nc_oc=AdrbGaSnTJcxEmoPrk4JaMiN1tHiLXsO-ZZ6nyt00UX2hPjuwu6u2P1W-dJkDUbjIho&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQPm_xsKPADeWPBk3bhz_C7kzsHQCdpkkNDgelgYSXQWOA&oe=6ADBE393",
+   "time_and_views_raw": "8 Oct · 7.1K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 8,
+   "scraped_at": "2026-10-19T10:54:04.442Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "408098612235658",
+   "video_url": "https://www.facebook.com/reel/408098612235658/",
+   "description": "",
+   "title": "منعتقدش لسه في حد مجربش V Super Soda و V7! بس يعني ايه صودا فيها ڤيتامينات و شايلين منها كافيين! يلا نعرف الحكاية كلها من كريم!\n#رابت_بتشجع_المحلي \n#رابت_في_٢٠_دقيقة",
+   "author": {
+    "__typename": "InstagramUserV2",
+    "__isActor": "InstagramUserV2",
+    "name": "Rabbit Egypt",
+    "username": "rabbit_eg",
+    "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Frabbit_eg&h=AUBX1r_Ulls8cuPjnIyT-TGREeAdyLqZZB5khrg8gZB4CabnRBwZaoaAEM3bESWvyMMQT2A9G0r1UcbFighm7gNj5XwhmkfspwU8hHifxW6axpw156w7WHQI_ieQHwZ7IXxkMuKZk4FZ13SAGg3DZHpcLg&s=1",
+    "id": "17841447797691908"
+   },
+   "thumbnail": "https://scontent-lga3-2.xx.fbcdn.net/v/t51.29350-15/451510767_501757029080237_2902985054709138439_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e3495b&_nc_ohc=eDC31lRvON0Q7kNvwFs3Jgj&_nc_oc=AdrgWT3UnnvhFX-xNqI4ogPLyrszbY9uEyE7XxSenb7YDFb56Rjjrmdx4SnikP2QlyA&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQPd6SGd2g-04k5pVJPjyAr3T_3L6XAdPx6H_-pKrucJ0A&oe=6ADBC071",
+   "time_and_views_raw": "17 Jul 2024",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 10,
+   "scraped_at": "2026-10-19T10:54:04.442Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1067184879604205",
+   "video_url": "https://www.facebook.com/reel/1067184879604205/",
+   "description": "جديد داخل الهايبر كريم صودا 🥤❤️",
+   "title": "جديد داخل الهايبر كريم صودا 🥤❤️",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "هايبر عمرو وعلوي",
+    "url": "https://www.facebook.com/people/%D9%87%D8%A7%D9%8A%D8%A8%D8%B1-%D8%B9%D9%85%D8%B1%D9%88-%D9%88%D8%B9%D9%84%D9%88%D9%8A/100069711947567/",
+    "is_verified": false,
+    "id": "100069711947567"
+   },
+   "thumbnail": "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/785560936_2084083172225441_372027210410242472_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e3495b&_nc_ohc=C5C9zYMUx_gQ7kNvwG-YcCg&_nc_oc=AdrsOvKjjJ9dQLoTTuqkyqwKQbLhnUtooew7MH8gc-7X3Wt-eDUxxYwON9bYHBjngmQ&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQPC12BxhxJM2YUyPwqYtIYyagVPJWBCCPIBvL5AwD2Tpg&oe=6ADBDB8E",
+   "time_and_views_raw": "28 Aug · 4.8K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 12,
+   "scraped_at": "2026-10-19T10:54:04.442Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "971446712683305",
+   "video_url": "https://www.facebook.com/reel/971446712683305/",
+   "description": "أرخص أكل في مصر؟! جربت كبدة وسجق بـ 10 جنيه من عبقرينو + V7 كريم صودا الجديد! 😱 #عبدالله_فود",
+   "title": "أرخص أكل في مصر؟! جربت كبدة وسجق بـ 10 جنيه من عبقرينو + V7 كريم صودا الجديد! 😱 #عبدالله_فود",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "عبدالله فود",
+    "url": "https://www.facebook.com/people/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D9%81%D9%88%D8%AF/61574149360419/",
+    "is_verified": false,
+    "id": "61574149360419"
+   },
+   "thumbnail": "https://scontent-lga3-3.xx.fbcdn.net/v/t15.5256-10/838160233_1488334680018915_3861947848290870351_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=sKH8imHPcOUQ7kNvwGFUNbz&_nc_oc=Adpzw9mwOfY4yrS7TfztiYyDIZ-hNysQHSn-Mxiva1ajP-XLTwT1QiYl52s0HCMUmoI&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQNRWJ-VdVJ8mnml3cki7wBnMwV3GXuR4nYOMg-Q92rOAw&oe=6ADBAE4C",
+   "time_and_views_raw": "6 Oct · 11K views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 14,
+   "scraped_at": "2026-10-19T10:54:04.506Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1734020404542001",
+   "video_url": "https://www.facebook.com/reel/1734020404542001/",
+   "description": "V7 cream soda 🤷‍♀️\n#v7 \n#creamsoda \n#كل_يوم_مشروب_جديد\n#yummy_yomna",
+   "title": "V7 cream soda 🤷‍♀️\n#v7 \n#creamsoda \n#كل_يوم_مشروب_جديد\n#yummy_yomna",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Yummy Yomna",
+    "url": "https://www.facebook.com/yummy.yomna",
+    "is_verified": false,
+    "id": "61564542608344"
+   },
+   "thumbnail": "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/819274478_1651398770158004_7587992104636529963_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e3495b&_nc_ohc=x6zYGUxEtywQ7kNvwH4brSh&_nc_oc=AdrzJO3LFw1wxsN8xSLb07LHOs_ooeYY2aOKfgXwjJejCGsyQKFoZ5EkM6TwgYe4KAI&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQPhHlYFKeMeSWebfUzi5ZyowcehJKKdBYaGc-kyQSfhZA&oe=6ADBB7F6",
+   "time_and_views_raw": "23 Sep · 644 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 16,
+   "scraped_at": "2026-10-19T10:54:04.506Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2106087287448683",
+   "video_url": "https://www.facebook.com/reel/2106087287448683/",
+   "description": "",
+   "title": "جربت V7 كريم صودا لأول مرة 😂🥤",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Malek بلوجر",
+    "url": "https://www.facebook.com/people/Malek-%D8%A8%D9%84%D9%88%D8%AC%D8%B1/61589248462460/",
+    "is_verified": false,
+    "id": "61589248462460"
+   },
+   "thumbnail": "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/774886532_2128571958082001_4921701670640122558_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e3495b&_nc_ohc=w0LfI8bVCUAQ7kNvwFSgVfs&_nc_oc=AdoqnI9Ge2Xzw-tt66pV1zmp86Cj3Ukxwh1_V9o5_UKUWRorwFXC0PkIGp0PFlvqnug&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQN71VzGgnmz04DSgYEzFy0ZeJJkY5huVXxs5sUIsjucUw&oe=6ADBCB38",
+   "time_and_views_raw": "18 Aug · 91 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 18,
+   "scraped_at": "2026-10-19T10:54:04.506Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "6466778370024262",
+   "video_url": "https://www.facebook.com/sa.ra.565058/videos/6466778370024262/",
+   "description": "كريم صودا الغلابه..",
+   "title": "كريم صودا الغلابه..",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "SA RA",
+    "url": null,
+    "is_verified": false,
+    "id": "100086574185581"
+   },
+   "thumbnail": "https://scontent-lga3-3.xx.fbcdn.net/v/t15.5256-10/560577068_2188321674911347_6749467352772557658_n.jpg?stp=c0.192.480.269a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=RQJan8-L6T4Q7kNvwGiS5RV&_nc_oc=AdoiYLLLzx-7mQkHqJX33p1xZ7Srv7eTpxLPqPDwb4La0E9Ta7nBwBHQWYb1iRerBWc&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=ef5tvsBZppLfIMxjLbk45A&_nc_ss=70289&oh=00_AQMH2PMpU9e0i1Wqh2VITacdPrjfKJHYy0XTE2krGZIG7w&oe=6ADBC94D",
+   "time_and_views_raw": "2 Aug 2023 · 843 views",
+   "source": "facebook_video_search",
+   "search_query": "V7 كريم صودا",
+   "page_number": 2,
+   "position": 20,
+   "scraped_at": "2026-10-19T10:54:04.506Z"
+  }
+ ]
+}

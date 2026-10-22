@@ -1,0 +1,25 @@
+{
+ "input": {
+  "search_type": "posts",
+  "keyword": "مشروب ڤي سڤن",
+  "only_reels": true,
+  "follow_post_scraping": true,
+  "results_limit": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.3,
+ "run": {
+  "id": "6mxT3lhldNR3FDO7V",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:23:53.366Z",
+  "finishedAt": "2026-10-19T11:24:17.385Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 0.0033623736710018583
+ },
+ "cost_usd": 0.0158,
+ "items": []
+}

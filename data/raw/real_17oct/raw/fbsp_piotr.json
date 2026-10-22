@@ -1,0 +1,347 @@
+{
+ "input": {
+  "pages": [],
+  "videoUrls": [
+   "https://www.facebook.com/reel/1807300737278091/",
+   "https://www.facebook.com/reel/1740716823817554/",
+   "https://www.facebook.com/reel/2258238494941774/",
+   "https://www.facebook.com/reel/1376978311275889/",
+   "https://www.facebook.com/reel/1130641049532209/"
+  ],
+  "transcribeWithAI": true,
+  "language": "auto",
+  "maxResults": 5
+ },
+ "cap_usd": 0.4,
+ "run": {
+  "id": "GiibymWlKwm5m1dHu",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:14:27.224Z",
+  "finishedAt": "2026-10-19T08:14:32.732Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "video": 5,
+   "transcript": 4,
+   "transcript-minute": 2
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.0172,
+ "items": [
+  {
+   "id": "1807300737278091",
+   "url": "https://www.facebook.com/reel/1807300737278091/",
+   "page": "61574149360419",
+   "description": "تجربة مشروب V7 كريم صودا.. هل يستحق كل هذه الضجة؟! 🥤👀#عبدالله_فود #مشروبات",
+   "createdAt": "2026-10-08T17:07:18.000Z",
+   "durationSeconds": 44.366,
+   "thumbnail": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/841057455_1434880035239004_1523373252633714826_n.jpg?stp=dst-jpg_tt6&cstp=mx617x1096&ctp=s960x960&_nc_cat=103&ccb=1-7&_nc_sid=be8305&_nc_ohc=WeB2X6Vib7IQ7kNvwEhSWDC&_nc_oc=Adr6uLVC2nmD2tY9OEIeH-A9ipH-VcKl2BzpdgJ8hOIAVq68e0_zdplKw43pDDChHUM&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=pOfGn3k7Eg-dT6LBiUAowA&_nc_ss=70289&oh=00_AQPygGqqzJ-9Y_Tg_8BsVF5Vk8IxbYEuFCndSJdPryUloA&oe=6ADBAB53",
+   "width": 1080,
+   "height": 1920,
+   "ownerId": "61574149360419",
+   "ownerName": "عبدالله فود",
+   "ownerVerified": false,
+   "ownerUrl": "https://www.facebook.com/people/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D9%81%D9%88%D8%AF/61574149360419/",
+   "ownerPicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/658385886_122169480656804978_8360333163127088821_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx704x709&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=6UMs19PT5lAQ7kNvwE-hYgC&_nc_oc=Adp1bhSTs8ClaCuRs0Iqq6KPnltN-SnXgIrAU1hLZMWpd3aC1RcGQCS0PzK1K_KEXDU&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=pOfGn3k7Eg-dT6LBiUAowA&_nc_ss=70289&oh=00_AQPYLoFmutpgvNKQqsdQJ6MyltvpJDcS8ZBmtO33QdCXkQ&oe=6ADBADA7",
+   "soundtrack": "‎عبدالله فود‎ · Original audio",
+   "isOriginalAudio": true,
+   "views": 15000,
+   "viewsText": "15K",
+   "reactions": 108,
+   "reactionsText": "108",
+   "availableCaptionLocales": [
+    "ar_AR"
+   ],
+   "transcriptIsTranslation": true,
+   "hasTranscript": true,
+   "transcriptSource": "platform",
+   "transcriptLanguage": "ar_AR",
+   "transcript": "جرب مشروب بي سفن كريم صودا بسعر خمستاشر جنيه. استأزنك يا جماعة مع اخوك عن طريق عمل اشتراك وعن طريق عمل لايك وتصلي على سيدنا النبي عليه الصلاة والسلام. ريحة فانيليا قوية. نصب كده ونقول بسم الله. كمية صودا كويسة قوي نقول بسم الله وندوق. بالنسبة لمشروب بي سفن كريم صودا فرقم واحد كمية الصودا يا جماعة هنا ممتازة وبتديك احساس بالانتعاش. تاني حاجة بقى اللي انت هتحسه هتحس وكأن حضرتك آآ بتاكل كده ايس كريم آآ فانيليا. اه والله. فانا بالنسبة لي انبسطت به جدا. فعشان كده بادي له تقييم عشرة من عشرة وعشر نجمات وختم الجودة وختم الاستمتاع وزي ما انت عايز تقول يا صديقي العزيز.",
+   "transcriptCues": [
+    {
+     "start": 0,
+     "end": 4.441,
+     "text": "جرب مشروب بي سفن كريم صودا بسعر خمستاشر جنيه. استأزنك يا جماعة"
+    },
+    {
+     "start": 4.441,
+     "end": 7.561,
+     "text": "مع اخوك عن طريق عمل اشتراك وعن طريق عمل لايك وتصلي على سيدنا"
+    },
+    {
+     "start": 7.561,
+     "end": 11.881,
+     "text": "النبي عليه الصلاة والسلام. ريحة فانيليا قوية. نصب كده ونقول بسم"
+    },
+    {
+     "start": 11.881,
+     "end": 19.361,
+     "text": "الله. كمية صودا كويسة قوي نقول بسم الله وندوق. بالنسبة لمشروب"
+    },
+    {
+     "start": 19.361,
+     "end": 24.641,
+     "text": "بي سفن كريم صودا فرقم واحد كمية الصودا يا جماعة هنا ممتازة"
+    },
+    {
+     "start": 24.641,
+     "end": 29.801,
+     "text": "وبتديك احساس بالانتعاش. تاني حاجة بقى اللي انت هتحسه هتحس"
+    },
+    {
+     "start": 29.801,
+     "end": 36.161,
+     "text": "وكأن حضرتك آآ بتاكل كده ايس كريم آآ فانيليا. اه والله. فانا"
+    },
+    {
+     "start": 36.161,
+     "end": 39.461,
+     "text": "بالنسبة لي انبسطت به جدا. فعشان كده بادي له تقييم عشرة من عشرة"
+    },
+    {
+     "start": 39.461,
+     "end": 43.181,
+     "text": "وعشر نجمات وختم الجودة وختم الاستمتاع وزي ما انت عايز تقول"
+    },
+    {
+     "start": 43.181,
+     "end": 45.961,
+     "text": "يا صديقي العزيز."
+    }
+   ],
+   "skippedReason": null,
+   "scrapedAt": "2026-10-19T08:14:29.597Z"
+  },
+  {
+   "id": "1740716823817554",
+   "url": "https://www.facebook.com/reel/1740716823817554/",
+   "page": "61579437650473",
+   "description": "جربت V7 كريم صودا الجديد.. المشروب اللي قالب الدنيا الصيف ده🥤🥰\n#V7_Cream_Soda\n#مشروبات_الصيف\n#تجربة_مشروبات",
+   "createdAt": "2026-08-15T21:58:30.000Z",
+   "durationSeconds": 78.051,
+   "thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/776163514_910358624991717_3345164319630147203_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s960x960&_nc_cat=106&ccb=1-7&_nc_sid=be8305&_nc_ohc=V-KG1cHiMu0Q7kNvwH4B7jN&_nc_oc=AdrWdXyI00xQ9-9KiKH1nGqbn8fKbaQaRe3WjQMxqFc3UuLG5Z1N6huP-2ubF-NHqo8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=41fh3AviNXZxea5GzE6-7w&_nc_ss=70289&oh=00_AQNfkHv4ULDVyfzVfS_30Zb0mPKSB_CBbP6fzYGd6bgMFQ&oe=6ADBAF16",
+   "width": 1080,
+   "height": 1920,
+   "ownerId": "61579437650473",
+   "ownerName": "مازن رامى غالي",
+   "ownerVerified": false,
+   "ownerUrl": "https://www.facebook.com/people/%D9%85%D8%A7%D8%B2%D9%86-%D8%B1%D8%A7%D9%85%D9%89-%D8%BA%D8%A7%D9%84%D9%8A/61579437650473/",
+   "ownerPicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/764720002_122170121258981255_588670506155033949_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx853x854&ctp=s40x40&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=RDXY5URPE4wQ7kNvwHeF51X&_nc_oc=AdqlvHtcoRtyeMERInMkp6U4JcJ3vRz0Go0z5_QNkCe4qW0nHl83lUkQGfcUXEIWdoI&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=41fh3AviNXZxea5GzE6-7w&_nc_ss=70289&oh=00_AQO3bZnN6senlAlXP7sGhGUEQh8mptDRyCW6-17-xve-KQ&oe=6ADBBD6B",
+   "soundtrack": "Armik · Coco Beach Cafe",
+   "isOriginalAudio": true,
+   "views": 1200,
+   "viewsText": "1.2K",
+   "reactions": 15,
+   "reactionsText": "15",
+   "availableCaptionLocales": [],
+   "transcriptIsTranslation": false,
+   "hasTranscript": true,
+   "transcriptSource": "ai",
+   "transcriptLanguage": "en",
+   "transcript": "Wow.",
+   "transcriptCues": [
+    {
+     "start": 48.695004,
+     "end": 49.175003,
+     "text": "Wow."
+    }
+   ],
+   "skippedReason": null,
+   "scrapedAt": "2026-10-19T08:14:30.128Z"
+  },
+  {
+   "id": "2258238494941774",
+   "url": "https://www.facebook.com/reel/2258238494941774/",
+   "page": "yallangrab26",
+   "description": "#يلاـنجرب ڤي سڤن كريم صودا",
+   "createdAt": "2026-08-26T17:40:11.000Z",
+   "durationSeconds": 82.408,
+   "thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/787715257_28202021499428856_136830274913727145_n.jpg?stp=dst-jpg_tt6&cstp=mx720x959&ctp=s720x959&_nc_cat=102&ccb=1-7&_nc_sid=be8305&_nc_ohc=I9m4oAuLIwQQ7kNvwFTi1Gr&_nc_oc=AdqDRjAhWu3obQbqKniGgwAWdJuPSrdDZK6tjM3eqDzKt1-wlgl-61JXwqGCVuG7OLs&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=zyUY33ALnjfvSgahTfrYtA&_nc_ss=70289&oh=00_AQNkTA3afvbbQ9UedBtojDhs0dW3Dw1QqV37miadoOOO6Q&oe=6ADB89FD",
+   "width": 720,
+   "height": 1280,
+   "ownerId": "61593967732248",
+   "ownerName": "يلا نجرب",
+   "ownerVerified": false,
+   "ownerUrl": "https://www.facebook.com/yallangrab26",
+   "ownerPicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/784787567_122204682344521171_8363795935105367377_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s40x40&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=KhZMYEFGhdUQ7kNvwFwXWj0&_nc_oc=AdqmHlNPlAQ9LpS4SancVoAeFz8o7SmLWDWUIH03WbJhB4DJ6z7Srkh8bBLGWZ39EBE&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=zyUY33ALnjfvSgahTfrYtA&_nc_ss=70289&oh=00_AQP5hz7Fz7OZ5qoYtNv7cIckDv3o-oLTWedgkhSzJQxZkw&oe=6ADB8AFA",
+   "soundtrack": "‎يلا نجرب‎ · Original audio",
+   "isOriginalAudio": true,
+   "views": 1300,
+   "viewsText": "1.3K",
+   "reactions": 14,
+   "reactionsText": "14",
+   "availableCaptionLocales": [
+    "ar_AR"
+   ],
+   "transcriptIsTranslation": true,
+   "hasTranscript": true,
+   "transcriptSource": "platform",
+   "transcriptLanguage": "ar_AR",
+   "transcript": "السلام عليكم. النهاردة هنجرب اجدد طعم نزل من. كريم صودا. الحقيقة دايما منتجاتها مميزة. بس مش كتير بيقدروا يزبطوا الطعم ده بالتحديد. بتمنى الطعم ده يطلع حلو ويكمل مع باقي الاطعمة المميزة اللي متعودين عليها من في سفن. المنتج سعره خمستاشر جنيه. شكل اللي كان لطيف. والوانه متناسقة. وبالنسبة للطعم فيلا نفتح وندوق مع بعض. مبدئيا ريحة الفانيليا مسيطرة جدا من البداية. الطعم هو مزيج ما بين اكتر من حاجة. انا حاسس بطعم فانيليا طعم بومبوني قوي جدا طعم بينا. وانت بتشرب هتحس بكل طعم من التلاتة بوضوح شديد. الطعم صناعي شوية. للي بيحب البينيا والفانيليا هيحبها لكن اللي ما بيفضلهمش. اعتقد انها مش هتعجبه. تقييمي لها ستة من عشرة. كالعادة ما تنسوش تعملوا لايك وفولو عشان يوصل لكم كل جديد. وما تنسوش تكتبوا لي في الكومنتات عاوزين نجرب ايه في الفيديوهات اللي جاية. والى اللقاء. ونتقابل في فيديو جديد.",
+   "transcriptCues": [
+    {
+     "start": 0,
+     "end": 6.541,
+     "text": "السلام عليكم. النهاردة هنجرب اجدد طعم نزل من. كريم صودا."
+    },
+    {
+     "start": 6.541,
+     "end": 11.641,
+     "text": "الحقيقة دايما منتجاتها مميزة. بس مش كتير بيقدروا يزبطوا الطعم"
+    },
+    {
+     "start": 11.641,
+     "end": 16.621,
+     "text": "ده بالتحديد. بتمنى الطعم ده يطلع حلو ويكمل مع باقي الاطعمة"
+    },
+    {
+     "start": 16.621,
+     "end": 20.581,
+     "text": "المميزة اللي متعودين عليها من في سفن. المنتج سعره خمستاشر"
+    },
+    {
+     "start": 20.581,
+     "end": 25.681,
+     "text": "جنيه. شكل اللي كان لطيف. والوانه متناسقة. وبالنسبة للطعم"
+    },
+    {
+     "start": 25.681,
+     "end": 29.361,
+     "text": "فيلا نفتح وندوق مع بعض."
+    },
+    {
+     "start": 31.501,
+     "end": 37.061,
+     "text": "مبدئيا ريحة الفانيليا مسيطرة جدا من البداية."
+    },
+    {
+     "start": 46.001,
+     "end": 52.781,
+     "text": "الطعم هو مزيج ما بين اكتر من حاجة. انا حاسس بطعم فانيليا طعم"
+    },
+    {
+     "start": 52.781,
+     "end": 59.381,
+     "text": "بومبوني قوي جدا طعم بينا. وانت بتشرب هتحس بكل طعم من التلاتة"
+    },
+    {
+     "start": 59.381,
+     "end": 65.261,
+     "text": "بوضوح شديد. الطعم صناعي شوية. للي بيحب البينيا والفانيليا"
+    },
+    {
+     "start": 65.261,
+     "end": 70.121,
+     "text": "هيحبها لكن اللي ما بيفضلهمش. اعتقد انها مش هتعجبه. تقييمي"
+    },
+    {
+     "start": 70.121,
+     "end": 74.141,
+     "text": "لها ستة من عشرة. كالعادة ما تنسوش تعملوا لايك وفولو عشان"
+    },
+    {
+     "start": 74.141,
+     "end": 77.561,
+     "text": "يوصل لكم كل جديد. وما تنسوش تكتبوا لي في الكومنتات عاوزين"
+    },
+    {
+     "start": 77.561,
+     "end": 81.501,
+     "text": "نجرب ايه في الفيديوهات اللي جاية. والى اللقاء. ونتقابل في"
+    },
+    {
+     "start": 81.501,
+     "end": 83.92099999999999,
+     "text": "فيديو جديد."
+    }
+   ],
+   "skippedReason": null,
+   "scrapedAt": "2026-10-19T08:14:30.921Z"
+  },
+  {
+   "id": "1130641049532209",
+   "url": "https://www.facebook.com/reel/1130641049532209/",
+   "page": "ananoor.amarlashin",
+   "description": "تريند صودا كريم من v7 + شوت اسبريسو🧋🍦\nحسا ان طلع تريند طعمو غريب جداا😂🤎\n\n.\n\n.\n\n#explorepage✨ #fypシ #viralreelsvideo❤️ #reel #instgram",
+   "createdAt": "2026-09-27T21:05:51.000Z",
+   "durationSeconds": 27.133,
+   "thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-10/825277269_18634678807030102_6707844536372442222_n.jpg?stp=dst-jpg_tt6&cstp=mx1026x1824&ctp=s960x960&_nc_cat=102&ccb=1-7&_nc_sid=50ce42&_nc_ohc=GRo1jxm_sVMQ7kNvwGG-BvU&_nc_oc=Ado5EX2HETsCs0QTv6kaoKOgsrtLreN8RXittaLgthIFZTXtnPep-NOqmtSM1Etmlu8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=a4pK80JMlKgL4jFw_JFzvQ&_nc_ss=70289&oh=00_AQN8wjlenTq7IXdBmBrmxQXbk6rVfPMg_PYcXGilXuemxQ&oe=6ADBABB2",
+   "width": 1080,
+   "height": 1920,
+   "ownerId": "100006139891859",
+   "ownerName": "Noor Amar",
+   "ownerVerified": false,
+   "ownerUrl": "https://www.facebook.com/ananoor.amarlashin",
+   "ownerPicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/846705017_4475481595999793_3054691207908152922_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M9EesbiWOr0Q7kNvwF_ymSW&_nc_oc=Adr9Y0Is0KmG7l8_AUtG_SYuNcsN6KQe0p1UmBGfK8Jk7jYXlWN_gOhwH-V1QtRY654&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=a4pK80JMlKgL4jFw_JFzvQ&_nc_ss=70289&oh=00_AQNa-kZ-e6eu9NpX76yQnONLhfRXqzZ9Tw22g2_PFVBeaw&oe=6ADBBDAE",
+   "soundtrack": "Noor Amar · Original audio",
+   "isOriginalAudio": true,
+   "views": 1800,
+   "viewsText": "1.8K",
+   "reactions": 24,
+   "reactionsText": "24",
+   "availableCaptionLocales": [
+    "ar_AR"
+   ],
+   "transcriptIsTranslation": true,
+   "hasTranscript": true,
+   "transcriptSource": "platform",
+   "transcriptLanguage": "ar_AR",
+   "transcript": "تسوى حلاوة عارف قلت ايه لو عدتها. حبيبي.",
+   "transcriptCues": [
+    {
+     "start": 0,
+     "end": 3.741,
+     "text": "تسوى حلاوة"
+    },
+    {
+     "start": 5.001,
+     "end": 9.361,
+     "text": "عارف قلت ايه"
+    },
+    {
+     "start": 15.001,
+     "end": 18.401,
+     "text": "لو عدتها."
+    },
+    {
+     "start": 21.501,
+     "end": 24.781,
+     "text": "حبيبي."
+    }
+   ],
+   "skippedReason": null,
+   "scrapedAt": "2026-10-19T08:14:31.508Z"
+  },
+  {
+   "id": "1376978311275889",
+   "url": "https://www.facebook.com/reel/1376978311275889/",
+   "page": "AkramTasteTest",
+   "description": "V7 CREAM SODA.\n.\nV7Egypt \n\n♦️ #akram_benefit\n\n \n#فى #سفن #كريم #صودا #مشروب #سناكس #اكسبلور #مصر\n#v7 #cream #soda #drink #egypt",
+   "createdAt": "2026-08-21T15:30:43.000Z",
+   "durationSeconds": 68.032,
+   "thumbnail": "https://scontent-iad3-1.xx.fbcdn.net/v/t15.5256-10/783589020_1761973244993702_6295319447613097683_n.jpg?stp=dst-jpg_tt6&cstp=mx1156x2048&ctp=s960x960&_nc_cat=110&ccb=1-7&_nc_sid=be8305&_nc_ohc=dzjrACF_KQUQ7kNvwH_Nwfv&_nc_oc=Adpk2RijKJrCqaYdAQgOvII6ZEo384OpUU-hvc2BIqyewftLDanXl6I9zOL05A3PiRU&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=GDtQb2Tdz1mgYD8CPExRMQ&_nc_ss=70289&oh=00_AQMVq44HXChGXUIK16fN7n5uzGDxyFpzC92fMmUKMdd0iQ&oe=6ADBA063",
+   "width": 1080,
+   "height": 1920,
+   "ownerId": "100063499043422",
+   "ownerName": "Akram Taste Test",
+   "ownerVerified": false,
+   "ownerUrl": "https://www.facebook.com/AkramTasteTest",
+   "ownerPicture": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/290831367_457238986402732_3206675382823830003_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx320x320&ctp=s40x40&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ftXFb_l8JL4Q7kNvwFFFMGU&_nc_oc=AdqDyWlkxglCk-natuDvHY9ZNinN-lCGWidRiDH-R5VuBzfSK_rF28AboRNAp4aaoPY&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=GDtQb2Tdz1mgYD8CPExRMQ&_nc_ss=70289&oh=00_AQMBOKigf09yENGj6o4W2sYMzEDigKsY-NAS7acDmFAZQg&oe=6ADB8A28",
+   "soundtrack": "Akram Taste Test · Original audio",
+   "isOriginalAudio": true,
+   "views": 2100,
+   "viewsText": "2.1K",
+   "reactions": 17,
+   "reactionsText": "17",
+   "availableCaptionLocales": [],
+   "transcriptIsTranslation": null,
+   "hasTranscript": false,
+   "transcriptSource": null,
+   "transcriptLanguage": null,
+   "transcript": null,
+   "transcriptCues": [],
+   "skippedReason": "The platform published no transcript for this reel — it may have no spoken audio.",
+   "scrapedAt": "2026-10-19T08:14:32.373Z"
+  }
+ ]
+}

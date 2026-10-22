@@ -1,0 +1,1340 @@
+{
+ "input": {
+  "query": "V7 Egypt",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "WGP3kNzxYCZbkwRwF",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:26:19.395Z",
+  "finishedAt": "2026-10-19T08:26:34.255Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 16
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.4253,
+ "items": [
+  {
+   "post_id": "1145083861182189",
+   "url": "https://www.facebook.com/haval.egypt/posts/pfbid02TQ7BLXzrdrkFJUvFGXxwYiEZJKuU2fQxciNTocw4iBA7szJqmUiXQ8fzNX3r2dfJl",
+   "message": "The HAVAL experience, captured in every moment.\n\nFrom test drives across the lineup to discovering the new V7 Hybrid and V7 Hi4, our Experience Day in Sokhna brought the thrill of driving closer than ever.\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+   "author": {
+    "id": "100070417562422",
+    "name": "Haval Egypt",
+    "url": "https://www.facebook.com/haval.egypt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMgbCyP0OFyAwYyLfyYzdxBd7TQpoutOeSDQep_vgZwsg&oe=6ADB9085"
+   },
+   "timestamp": 1791902696,
+   "reactions_count": 1566,
+   "comments_count": 10,
+   "reshare_count": 20,
+   "reactions": {
+    "like": 1497,
+    "love": 60,
+    "haha": 0,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 8
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/846394643_18112200947613220_8017506882385229466_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zbwAbcSxZ9sQ7kNvwHUtoj3&_nc_oc=AdoiDMAzPyWSMtrqiOSdZqcOlrjejSTsz2WGKBHybG9Fgw1pEfluGI2x_9YNHK3CgB32aWy2Zs0oQG34ucI0nScg&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQPBNDPMSIlFKSphJoOyMOrzng-hMJ03EQGqE4_UCLosyw&oe=6ADB9F56",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t51.82787-15/848615178_18112200827613220_6436019413251824892_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tCOE87ZEeWEQ7kNvwE1k22h&_nc_oc=Adp_fKeBXABO4gNija3pltA2WKL9TlUacUSKRCil8ClzIubqIRJ5qdc_e4_jwvrp4edH1E4U-JpB8ZoaPt6dxvYQ&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQOGOBEDKJDrnFa-qy3NUBqsU4H9OUUmQ7KX-iUeRWk1Fg&oe=6ADB8AC8",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/847181827_18112200860613220_2446385275030985747_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tJurzxYC-nIQ7kNvwHgNoaT&_nc_oc=AdpCOZD1ZYxroBhpIqWkK9JJkdglRw4mkvFcA5-HYTjSOAES9KX9HqzbiCBK8eE196sCK0LzH3Zu8Lm3v3PUp-zN&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQOyAmq0fsSrb2fXWv_X_yA5jR0sdBIWqeAnT2wdkaiCjw&oe=6ADB9A46",
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/846449701_18112200836613220_6243919208049763684_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9WljXpLfYE0Q7kNvwG_-Sg8&_nc_oc=AdoSgKRscoX_lSx2lielKPsTtmDXxW74HahhMAkaMAlOse9W-w79vYfKWvwBnOIBLCGgzZaUu11bUILYf_JvAYK9&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMK8tX-8yJnr2AzAF6p_UsWCYl717QmifSw-g4uork52Q&oe=6ADBB410",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/845354989_18112200851613220_6445038248452374944_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AzWTjGcU4z4Q7kNvwFzoZac&_nc_oc=AdrKonbVdI_5JfMn5XxA0uTBZQI074H2C6KbIXv0XYShnbO1PvJYAczAQqPkthx4hBT_trGOQySLmDu2TTgwelyx&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQP5uk6pb87knn4Y6dDFdk9i6QTmCO_QWQueGI_G67F1ig&oe=6ADBB019"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTE0NTA4Mzg2MTE4MjE4OQ==",
+   "shares_id": "ZmVlZGJhY2s6MTE0NTA4Mzg2MTE4MjE4OQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 237,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "10244319035820047",
+   "url": "https://www.facebook.com/gigi.mohamed.94/posts/pfbid0uzNbLbdCfNx413hxzBhzgqq76Daj33RVASqJ5SVBVWiXVhvBmUQFqR6tX9Nv1irpl",
+   "message": "⁨ Haval Experience Day ❤️‍🔥🦋\nA special Day with a Great Test Drive for Haval Models wiz The special New model Haval V7 in a day full of fun and joy ❤️🦋 \nهافال عملت يوم مميز لتجربة القيادة ، اننا نتحرك بكل موديلات هافال لغاية “دايرة كامب” العين السخنة ويتقدمنا نجمة اليوم Haval V7 عشان نعمل تجربة قيادة للعربية الجديدة ، احدث وحش انضم لاسطول هافال, مع انشطة والعاب ومغامرات وتجربة قيادة مريحة وجميلة ❤️\nSpecial thanks to ‪Haval Egypt‬ ‪gbautoeg‬eg Team for an amazing experience 😍 &‪Rada Public Relations‬r.co for a well organized day as always ❤️⁩",
+   "author": {
+    "id": "1503735941",
+    "name": "Gehad Abdel-Razek",
+    "url": "https://www.facebook.com/gigi.mohamed.94",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/763300785_10243567498512084_72235348536809824_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ed4_qK_mGQYQ7kNvwEjnQAk&_nc_oc=Adr-R9NqK2BdbtWkvuS2gQ_2d2axhfRfqRDCDYwr6_4xyUPLJlITOTd9CcKHBRt78eOrwjlS5zXSs9eHmKzpE7VT&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQPmf4lWwoJ3REoV46QwrV5XOwBHwSJS-iuSzX0Y4BpfgA&oe=6ADBC082"
+   },
+   "timestamp": 1790267536,
+   "reactions_count": 38,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 18,
+    "love": 20,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t51.82787-15/818552976_18134251231710876_5660216545473697346_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=91btBzysgWgQ7kNvwFNq6yc&_nc_oc=AdrHv0duzhZZBy5b7yBRz1zcYcdP0jCEaUJlQwAoqJQDInyUyiFgRUR4qm3HUvjOL_cYjXcPpUggG07VfWfEBWQh&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQOCDivUdWmH11jY44vFnwyuZGJ5gPRqUqHL7QCMAyhbeg&oe=6ADBA692",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/819482985_18134251324710876_5330475857365843912_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uopxrlfzDIEQ7kNvwGjPPde&_nc_oc=AdrswidzOQRWPci2rcpDMu6RpBMyJ1EvdhhF1EsPFhLgz6AIi9GUNc7rYMUhYyoG4cfzG100L62CxQjgpiAjAl0_&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQNZVf6QzVkbE48RoxH9jvDG2VQhpMY1pTIyuRMZsNPX-Q&oe=6ADBBFF3",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t51.82787-15/821637980_18134251255710876_1155418757019652953_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=t3VROfM6RHAQ7kNvwEn2pTS&_nc_oc=Adokkq6nUeW90PIuQKsIuLooSmIDK2u02ljlJQlzZ1dHCBv-EV0E-oiHZDVIuzs-SEp5zJ7Gyr4Cfjhw0CmLeVmj&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMNHFnFxYZFeHlYm3Ej6tASwTlmJyF0GjPBzydOzT6MZg&oe=6ADBACFC",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/821404965_18134251363710876_6568593012470075256_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=D_X8L81FTeMQ7kNvwH_Hm8A&_nc_oc=AdpEWo_CGOrxNhck5os2z1DB8_A-usOfwj7f3ZMDQlEvWV5aKKu_jjjLofofvN_C1tobnjXYW0DqAD9iW9NZ1i2G&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQML-xLhCIvAXO5PjSXzqoM-v1AD1UleFgRhiZiqzC659g&oe=6ADB90D7",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/821138549_18134251423710876_8835809603606078290_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ohO1qVBgOpYQ7kNvwHtQtid&_nc_oc=Adq6PVURmKXoaswnryuWSztVIlIMCx0n7nMLit-XsuwendqyzIREvbWSpT_tKKlNxvpE4XRykZ0Qh5JO2xS9pl--&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQN3jwTqn5aLFvXqXyancdqraFeYyCCr4E8CqznEmYDmew&oe=6ADBB8B7"
+   ],
+   "external_url": "http://r.co/",
+   "comments_id": "ZmVlZGJhY2s6MTAyNDQzMTkwMzU4MjAwNDc=",
+   "shares_id": "ZmVlZGJhY2s6MTAyNDQzMTkwMzU4MjAwNDc=",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBcYS8vci5jby86OkRlZmF1bHQ6OjoxMDI0NDMxOTAzNTgyMDA0Nzo=",
+     "url": "https://l.facebook.com/l.php?u=http%3A%2F%2Fr.co%2F&h=AUDf8W_YQIlQWybkmWqYt8RvIsLVBkUjd3KCTHDw1ZkM5LJ3q0pjaR_A0lg03ID7H1xNU6YWej4QEEigKhjnukaL96CnBdyokrK55Rel-YxTMg22JCvADqP8hVFgv4zMLOi0_nJnSGbUAYUvxfwQ-GWegwxg8-NU7CtS-aZHlouhd-R_kqtXgg&s=1",
+     "offset": 504,
+     "length": 4
+    }
+   ]
+  },
+  {
+   "post_id": "1126157676408141",
+   "url": "https://www.facebook.com/haval.egypt/posts/pfbid02N4Vm5yKnhrEkZYYtw2EWjhVeBW8ibc56xQes3a7AttEBa7o24Zq5QWfJA8DHjJGel",
+   "message": "Meet the new HAVAL V7 Plug-In Hybrid, combining bold design, powerful performance, and Hi4 AWD technology to take every drive further.\n\nPrice: 2,100,000 EGP\n\nTo The Chosen Ride.\n\nContact us on 15050 for more details.\nhttps://greatwall.eg\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+   "author": {
+    "id": "100070417562422",
+    "name": "Haval Egypt",
+    "url": "https://www.facebook.com/haval.egypt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMgbCyP0OFyAwYyLfyYzdxBd7TQpoutOeSDQep_vgZwsg&oe=6ADB9085"
+   },
+   "timestamp": 1790156519,
+   "reactions_count": 969,
+   "comments_count": 1,
+   "reshare_count": 5,
+   "reactions": {
+    "like": 940,
+    "love": 21,
+    "haha": 1,
+    "wow": 0,
+    "sad": 1,
+    "angry": 1,
+    "care": 5
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/819405680_18109286366613220_6946359342970093298_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZT2xzkBKVZ8Q7kNvwGeJpej&_nc_oc=AdpKKsOnAvGqQwIz4j9sc6x9HvG7Niz8z3kzFwrffzsPVSOahmwnu-k_lUmqe8B0jhU-MNjTFhtxzTUXhJig3pUt&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQN3jgNkg6LfkW4cFW3mz5cLSADtu1_HlqvreOpKCT9y3g&oe=6ADBBA10",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://greatwall.eg/",
+   "comments_id": "ZmVlZGJhY2s6MTEyNjE1NzY3NjQwODE0MQ==",
+   "shares_id": "ZmVlZGJhY2s6MTEyNjE1NzY3NjQwODE0MQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2dyZWF0d2FsbC5lZy86OkRlZmF1bHQ6OjoxMTI2MTU3Njc2NDA4MTQxOg==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreatwall.eg%2F&h=AUD2pMrCSNw7kOwnDM95LKEcHLEgrNGxjuCLZ-QGDa-Zn-E_K7sedjmiwZI4FiYuDUHcvJdAI4YdWVlym54Iz7aggKCixrL97-0fAURDUmngOi4UCcjkfYrR5cMPN6b8qOvEi2fSJxPgdyd0owWw3abY4GHMyHrB32RLPLSh2x93L43_-HEstA&s=1",
+     "offset": 217,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 269,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "1590007426500530",
+   "url": "https://www.facebook.com/ShereenCarEG/posts/pfbid023ZQ2DKfCi1SAAFUZdGiQ89zha4WEQLGgzs2HFoFLvgoGnAkJYaD9uUHYDA78syz2l",
+   "message": "🔥 الجديد وصل عند شيرين كار!\n\n                             🚘 HAVAL V7 Hybrid 2027\nمتوفرة الآن لدى شيرين كار، أحد أكبر الموزعين المعتمدين لـ HAVAL في مصر.\n\nلو مستني أحدث موديلات هافال الهجينة، دلوقتي تقدر تشوف HAVAL V7 Hybrid 2027 وتعرف كل التفاصيل بنفسك.\n\nزور أقرب فرع لشيرين كار أو تواصل معنا الآن لمعرفة التفاصيل، الأسعار، وأنظمة التقسيط، و احجز سيارتك\n\n📍124 شارع الميرغني - بجوار مدارس الأرمن كاثوليك - مصر الجديدة\n📍قطعة 1 مساكن شيراتون - شارع عبد الحميد بدوي - أمام هايبر ماركت نجمة هليوبوليس\n\n📞يمكنك التواصل مع مسؤولين خدمة العملاء علي الأرقام التالية\n\n01066133261\n01000766145\n\nمواعيد عمل الفروع و خدمة العملاء من الساعة 10صباحاً حتي 10مساءً🕘\n\n🏆Shereen Car | موزع معتمد لسيارات HAVAL في مصر | خبرة تتجاوز ال50 عاماً في سوق السيارات المصري\n\n‏HAVAL V7 Hybrid 2027 — متوفرة الآن في شيرين كار.\n\n#ShereenCar #شيرين_كار #HAVAL #HAVALEgypt #HAVALV7 #V7Hybrid #HAVALV72027 #هافال #هافال_V7 #Hybrid #موزع_معتمد #سيارات_مصر",
+   "author": {
+    "id": "100064738624325",
+    "name": "Shereen Car - شيرين كار",
+    "url": "https://www.facebook.com/ShereenCarEG",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/518301769_1177079041126706_6263713209147557866_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=8lZdq2jxayEQ7kNvwFkbtdy&_nc_oc=AdqwA-Kxc5e3EXK8BVg-A-taK_208xBI_TQduc85g0tknlXt43VEti57QXWNGSKjyCmQDbBp5HBwxcZL_RtLEWow&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQOqn5iIt2sRs_zH3aDHty-jQ-yo2WrSW-CyeWeAztaWuQ&oe=6ADBB5A3"
+   },
+   "timestamp": 1791420020,
+   "reactions_count": 3,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 2,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/839692353_1677677044367640_7763720891733141021_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=be8305&_nc_ohc=E7iQrbhDPkIQ7kNvwEW9CJ0&_nc_oc=AdobF4kn2zHjvQWFar37N1j_so0I2yVjH5Df6rcKBBcNSX64QjwpDObs8xFZkZ0zIyr9yDIA-ft7UjZOjHv8b4U3&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQNYD2KEgTnCBQwjtZoSRl7uvoiwh8em1s2gEWZpvEe16w&oe=6ADB9BF9",
+   "video": "https://www.facebook.com/watch/?v=2155275155064305",
+   "video_thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/839692353_1677677044367640_7763720891733141021_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=be8305&_nc_ohc=E7iQrbhDPkIQ7kNvwEW9CJ0&_nc_oc=AdobF4kn2zHjvQWFar37N1j_so0I2yVjH5Df6rcKBBcNSX64QjwpDObs8xFZkZ0zIyr9yDIA-ft7UjZOjHv8b4U3&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQNYD2KEgTnCBQwjtZoSRl7uvoiwh8em1s2gEWZpvEe16w&oe=6ADB9BF9",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTU5MDAwNzQyNjUwMDUzMA==",
+   "shares_id": "ZmVlZGJhY2s6MTU5MDAwNzQyNjUwMDUzMA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "697261510399805",
+     "url": "https://www.facebook.com/hashtag/shereencar?__eep__=6",
+     "offset": 795,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "729652353746129",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D9%8A%D8%B1%D9%8A%D9%86_%D9%83%D8%A7%D8%B1?__eep__=6",
+     "offset": 807,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 818,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "4038465529540114",
+     "url": "https://www.facebook.com/hashtag/havalegypt?__eep__=6",
+     "offset": 825,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "32040137525630807",
+     "url": "https://www.facebook.com/hashtag/havalv7?__eep__=6",
+     "offset": 837,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "588994611169792",
+     "url": "https://www.facebook.com/hashtag/v7hybrid?__eep__=6",
+     "offset": 846,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "27472724585735000",
+     "url": "https://www.facebook.com/hashtag/havalv72027?__eep__=6",
+     "offset": 856,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "590133307725559",
+     "url": "https://www.facebook.com/hashtag/%D9%87%D8%A7%D9%81%D8%A7%D9%84?__eep__=6",
+     "offset": 869,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "26328557116746679",
+     "url": "https://www.facebook.com/hashtag/%D9%87%D8%A7%D9%81%D8%A7%D9%84_v7?__eep__=6",
+     "offset": 876,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "562557223769274",
+     "url": "https://www.facebook.com/hashtag/hybrid?__eep__=6",
+     "offset": 886,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "502059666536908",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D9%88%D8%B2%D8%B9_%D9%85%D8%B9%D8%AA%D9%85%D8%AF?__eep__=6",
+     "offset": 894,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "407198682735564",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_%D9%85%D8%B5%D8%B1?__eep__=6",
+     "offset": 906,
+     "length": 11
+    }
+   ],
+   "attached_post": {
+    "post_id": "1139516275072281",
+    "url": "https://www.facebook.com/reel/2155275155064305/",
+    "message": "A day built around the HAVAL experience. \n\nFrom getting behind the wheel of the HAVAL lineup to discovering the new V7 in both Hybrid and Plug-in Hybrid, our Experience Day in Sokhna was all about experiencing HAVAL for yourself.\n\nHere’s a look back at the highlights.\n\nContact us on 15050 for more details.\nhttps://greatwall.eg\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+    "author": {
+     "id": "100070417562422",
+     "name": "Haval Egypt",
+     "url": "https://www.facebook.com/haval.egypt",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMgbCyP0OFyAwYyLfyYzdxBd7TQpoutOeSDQep_vgZwsg&oe=6ADB9085"
+    }
+   }
+  },
+  {
+   "post_id": "2853359875029658",
+   "url": "https://www.facebook.com/HossamFawzy24/posts/pfbid0218JFdUYPFbpN2BZ4soQU7ju2LQeFryBiqcMsaJap8qR7j7t85Eqzqo5B2cnJgGVQl",
+   "message": "✨ V7 Egypt | Ramadan Campaign 🌙\n\nتصميم إعلاني إبداعي لمنتج V7 Egypt\n🎨 غير رسمي — من تصميماتي الشخصية\n\nاستوحيت التصميم من أجواء رمضان مع إبراز المنتج والنكهات المختلفة بأسلوب إعلاني عصري ومميز. ❤️\n\n📌 هذا التصميم عمل إبداعي شخصي وليس تابعًا أو صادرًا رسميًا عن V7 Egypt.\n\n#V7Egypt #V7 #Ramadan #رمضان_كريم #تصميماتي #GraphicDesign #Advertisement #HMF",
+   "author": {
+    "id": "100010670202255",
+    "name": "Hossam Mohamed Fawzy",
+    "url": "https://www.facebook.com/HossamFawzy24",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/777303901_2825310664501246_1873574411240372723_n.png?stp=dst-png_s100x100&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=hN5u6p1p3EkQ7kNvwEnM2Zk&_nc_oc=Adrtwq99kJ0fPkWxUdS3yizZirjKJZvRpecNeMyIa1NEjIQ0gTfTgbX2P0Dp7Rkv_6w3EqcBmsOcFm4r4s2SlUXC&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQN5-bj5DfZfY461qF2yG64RKI2tj-AxoKrLvdImPUKeWQ&oe=6ADB8DC6"
+   },
+   "timestamp": 1789428895,
+   "reactions_count": 5,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 4,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/809586070_2853359451696367_7687586213551366649_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6ckjD0kb4xEQ7kNvwGoHgcj&_nc_oc=AdoBj3XXiAfnsYAfH4oWZSEOr0F0POTS1erpLJSIEsNzY3uk9lPGy7_vhObaKf9cJ24EzijXEs9V1rPixihRqvLa&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMVKjju_V-c9ZhJHEYMH0sY55Bsa7U4Y2TYAgwZPUrJTw&oe=6ADB91AD",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/809633244_2853359515029694_9218316322537488935_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DMSMpwyc-JwQ7kNvwHs4wg_&_nc_oc=AdrgLqWvACa-o_8Y13FYF9yD_z6hzreMtJ3QVxePNYlhEW8CIgAfIvxdgESB0CuLxavIcgrhN8dm2q6iwkiQfdZH&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQP4EbUXkNXCQEPu8SrdFQUfFYrBe-t0MHRa14qJtu--jg&oe=6ADB906E",
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/807868844_2853359611696351_7736672074097725160_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=f0maMeTlz9AQ7kNvwFMW75J&_nc_oc=AdqW_l_lQUKtDKSbcs5-q2JObmjVFn-WhQi3iPahbksN1HsEWvUuIGvQ2mNjWYFiGAztDNBDJuLVBTOb6qmydkuB&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQMgFi5N8dLda9qYCJdCGbt4Tncx7yYg1WJ0smIkNy123A&oe=6ADBA677",
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/809730275_2853359678363011_8326341890999977605_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=GDj0qQBLGxwQ7kNvwFbGWr1&_nc_oc=AdrDSQkl61mKc8Beh66-MxEQB7Om9t3pIL2lHxTE06pFcROQ6G09LN64bhFF_QarVvoWyFIN6W53PMHDH5JbdzOs&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQP7RPOBOIwzD3cdDfrAl84EJ0jWYrxs5aXpnL1tOzvgtQ&oe=6ADBA33E",
+    "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/809730274_2853359778363001_1669077665314024256_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MNeXHk7zlb4Q7kNvwE96xnn&_nc_oc=AdqOFCo6FTrMTqy5fbIAUL-EH7if8V61kw9_lnThh9DZliPHqfBe3UZRFFuVxBLNtQS7IEU_Ktobjio2qn06ERSR&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=DcSX5pprbSvFkgoYWQLd8A&_nc_ss=7c180&oh=00_AQPQT4oVUTSV3YwW6GBngxz7VXRbmKVU8_d7FSdP8pWuxA&oe=6ADB8ED4"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6Mjg1MzM1OTg3NTAyOTY1OA==",
+   "shares_id": "ZmVlZGJhY2s6Mjg1MzM1OTg3NTAyOTY1OA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "5294641703981170",
+     "url": "https://www.facebook.com/hashtag/v7egypt?__eep__=6",
+     "offset": 270,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "357157374403624",
+     "url": "https://www.facebook.com/hashtag/v7?__eep__=6",
+     "offset": 279,
+     "length": 3
+    },
+    {
+     "type": "Hashtag",
+     "id": "477104915677987",
+     "url": "https://www.facebook.com/hashtag/ramadan?__eep__=6",
+     "offset": 283,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "249427828535864",
+     "url": "https://www.facebook.com/hashtag/%D8%B1%D9%85%D8%B6%D8%A7%D9%86_%D9%83%D8%B1%D9%8A%D9%85?__eep__=6",
+     "offset": 292,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "470216243043536",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA%D9%8A?__eep__=6",
+     "offset": 304,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "105794802928852",
+     "url": "https://www.facebook.com/hashtag/graphicdesign?__eep__=6",
+     "offset": 314,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "283288031801327",
+     "url": "https://www.facebook.com/hashtag/advertisement?__eep__=6",
+     "offset": 329,
+     "length": 14
+    },
+    {
+     "type": "Hashtag",
+     "id": "406559292772808",
+     "url": "https://www.facebook.com/hashtag/hmf?__eep__=6",
+     "offset": 344,
+     "length": 4
+    }
+   ]
+  },
+  {
+   "post_id": "1120470143643561",
+   "url": "https://www.facebook.com/haval.egypt/posts/pfbid02mcc59ufVqkFm4jAmiknnkpCHcehoGCsnE9nv8Z54E5DmW2DBhcYCzfo5WcbbKjctl",
+   "message": "Step inside the new HAVAL V7 Hybrid, where refined comfort, smart technology, and premium details come together to elevate every drive.\n\nPrice: 1,825,000 EGP\n\nTo The Chosen Ride.\n\nContact us on 15050 for more details.\nhttps://greatwall.eg\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+   "author": {
+    "id": "100070417562422",
+    "name": "Haval Egypt",
+    "url": "https://www.facebook.com/haval.egypt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQOf7G4Bz1sblEbhZpc-SdsUqeJc7vHar9JKSAeZRpD30g&oe=6ADB9085"
+   },
+   "timestamp": 1789566332,
+   "reactions_count": 355,
+   "comments_count": 2,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 345,
+    "love": 9,
+    "haha": 0,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/813421156_18108308735613220_7477406468002609342_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rA1BU9-AJmgQ7kNvwGFC1_Q&_nc_oc=AdqE43MUQxrLBnfT-rQcSvWkolFQ28o8YRdJuoBJLyxb9KZ07brPOE21o-O3e6lrp7Z3QsEAu2KLAvg-cI-gUSR3&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQNgOViypDkNsg5hLE_mJzud_EANdTgOjLQUI1yt62XLKg&oe=6ADBBB30",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://greatwall.eg/",
+   "comments_id": "ZmVlZGJhY2s6MTEyMDQ3MDE0MzY0MzU2MQ==",
+   "shares_id": "ZmVlZGJhY2s6MTEyMDQ3MDE0MzY0MzU2MQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2dyZWF0d2FsbC5lZy86OkRlZmF1bHQ6OjoxMTIwNDcwMTQzNjQzNTYxOg==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreatwall.eg%2F&h=AUCX2liKhNKV_too4pwUxSpFJ9Y0jAp00mQdr_B23HFYAXqIXcZUAXYrBlyeDVM_42GPsymRVnaXrMoRR4MtB67tMXMyp61PbKbzFuZHAoAjPg2ar4hRjLgxBBeg4DZEj3ujO64vDuMe-5WKfGt3EoneNmFQMivs7ixo7zZb84Zs4eD-HUMxFA&s=1",
+     "offset": 218,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 270,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "1435590731861824",
+   "url": "https://www.facebook.com/groups/1355823153171916/permalink/1435590731861824/",
+   "message": "استفسار من فضلكم \nهي العربية فيها مصفحة اسفل الموتور؟\nوهل فيها تدوير عن بعد؟\nوشكرا لحضراتكم",
+   "author": {
+    "id": "1388946452960506",
+    "name": "ThrillingJackfruit3905",
+    "url": "",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35477-6/552788376_32036640175927224_4179630765723497800_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=1&ccb=1-7&_nc_sid=d7e6db&_nc_ohc=ZsBkklFoSM0Q7kNvwF7RgkP&_nc_oc=Adpnw5r0XdJ4nJZOn5BEtWi1VIyFOWd8ob_DHadxpq8JOs-VDbPbVjgJ_-nSgbqU8ZEeERjtf2Ml0_FCoJK15msy&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQMkTTfeXX8xBRihag3CWRd0MWOCM6dxOdy93RA_qRsYqg&oe=6ADBC04F"
+   },
+   "timestamp": 1791308537,
+   "reactions_count": 2,
+   "comments_count": 7,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 2,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQzNTU5MDczMTg2MTgyNA==",
+   "shares_id": "ZmVlZGJhY2s6MTQzNTU5MDczMTg2MTgyNA==",
+   "associated_group_id": "1355823153171916",
+   "author_title": "Haval Raptor V7 (Egypt )"
+  },
+  {
+   "post_id": "1438251824929048",
+   "url": "https://www.facebook.com/groups/1355823153171916/permalink/1438251824929048/",
+   "message": "ايه احسن لون للعربية الاخضر والا الابيض ولا لون تاني ويكون عملي\nحد عمل عتب للعربيه وكلفه كام \nواخبار العفشه ايه كويسه والا ناشفه \nواللي اشترو العربيه اجمالا رايهم ايه فيها",
+   "author": {
+    "id": "1116974490723993",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.35477-6/480295029_8309457052490122_5764708506034413611_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=Sue_9Hq2KvUQ7kNvwHyAjqp&_nc_oc=AdpvWwf9UCLsQan4UztI8h8qo8c_pCRWG20sJTSKNP5mcPnjJd30x_O_tJ5L_411GqkDZHPIjjqCU4uN_aE9Nm7K&_nc_zt=14&_nc_ht=scontent-iad3-2.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQPxQC-tbeEFdJNdXjKNM9HvXvvw9jRImXX44s9qoTypnQ&oe=6ADBAEED"
+   },
+   "timestamp": 1791560479,
+   "reactions_count": 5,
+   "comments_count": 13,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 5,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQzODI1MTgyNDkyOTA0OA==",
+   "shares_id": "ZmVlZGJhY2s6MTQzODI1MTgyNDkyOTA0OA==",
+   "associated_group_id": "1355823153171916",
+   "author_title": "Haval Raptor V7 (Egypt )"
+  },
+  {
+   "post_id": "1100618079024300",
+   "url": "https://www.facebook.com/reel/1103095435496800/",
+   "message": "The Haval V7 Hi 4 (AWD) full experience \n#havalv7 \n#4x4 \n#egypt \n#offroad \n#gwm",
+   "author": {
+    "id": "100072283544727",
+    "name": "Ahmed M. ElAdl-أحمد م. العدل",
+    "url": "https://www.facebook.com/ahmedmeladl82",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/782144623_1079139651172143_6880885012697557421_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=XEmmSX3KTrIQ7kNvwFNF1_Q&_nc_oc=Ado8UcVrkSnoorucDUT4oBaAosCuu71YS6pxdMSviKYhrNcAxFRnORlwLuWpr3mgLw4g_8pJ9G3HxqSsmDsoiYE9&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQPihJ4lr7kLwy9vrMrj0SJY11dtyv8Y9SxPWCWn_VnVyg&oe=6ADBA169"
+   },
+   "timestamp": 1789570421,
+   "reactions_count": 152,
+   "comments_count": 15,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 143,
+    "love": 8,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-10/813420977_18630120529032952_5244655966068362590_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=50ce42&_nc_ohc=4NXtr7ifgsUQ7kNvwFfo3WG&_nc_oc=AdprkStEfvpfNehvaiwKgZuN3lhGsJy52kk3KWyz974gDPpNoI5I7D-Wm0UQJ6WeTmMf3v5399YbmjhkeGKhMuW3&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQO8qtdXDq6GXfPIhT_yY0NEnOEkDuXgzKVSUITWQ5TjPQ&oe=6ADBA616",
+   "video": "https://www.facebook.com/watch/?v=1103095435496800",
+   "video_thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-10/813420977_18630120529032952_5244655966068362590_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=50ce42&_nc_ohc=4NXtr7ifgsUQ7kNvwFfo3WG&_nc_oc=AdprkStEfvpfNehvaiwKgZuN3lhGsJy52kk3KWyz974gDPpNoI5I7D-Wm0UQJ6WeTmMf3v5399YbmjhkeGKhMuW3&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQO8qtdXDq6GXfPIhT_yY0NEnOEkDuXgzKVSUITWQ5TjPQ&oe=6ADBA616",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTEwMDYxODA3OTAyNDMwMA==",
+   "shares_id": "ZmVlZGJhY2s6MTEwMDYxODA3OTAyNDMwMA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "32040137525630807",
+     "url": "https://www.facebook.com/hashtag/havalv7?__eep__=6",
+     "offset": 41,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "428624960557762",
+     "url": "https://www.facebook.com/hashtag/4x4?__eep__=6",
+     "offset": 51,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "490281974365249",
+     "url": "https://www.facebook.com/hashtag/egypt?__eep__=6",
+     "offset": 57,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "608939949119931",
+     "url": "https://www.facebook.com/hashtag/offroad?__eep__=6",
+     "offset": 65,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "264709156997191",
+     "url": "https://www.facebook.com/hashtag/gwm?__eep__=6",
+     "offset": 75,
+     "length": 4
+    }
+   ]
+  },
+  {
+   "post_id": "1125986149820826",
+   "url": "https://www.facebook.com/reel/2186799721907250/",
+   "message": "فلوج سريع عن\nHaval V7 AWD\n#4X4 \n#OFFROAD \n#egypt \n#camping \n#havalv7",
+   "author": {
+    "id": "100072283544727",
+    "name": "Ahmed M. ElAdl-أحمد م. العدل",
+    "url": "https://www.facebook.com/ahmedmeladl82",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/782144623_1079139651172143_6880885012697557421_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=XEmmSX3KTrIQ7kNvwFNF1_Q&_nc_oc=Ado8UcVrkSnoorucDUT4oBaAosCuu71YS6pxdMSviKYhrNcAxFRnORlwLuWpr3mgLw4g_8pJ9G3HxqSsmDsoiYE9&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQPihJ4lr7kLwy9vrMrj0SJY11dtyv8Y9SxPWCWn_VnVyg&oe=6ADBA169"
+   },
+   "timestamp": 1791989879,
+   "reactions_count": 26,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 24,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.71878-10/848892498_2516820202136764_4974923536647524156_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=t3GAjLMgnMYQ7kNvwEHwyi3&_nc_oc=AdqoyI2E6_VgbrqLrDXV1fNuclXrvnNdtHIlmvMuXbSSV2FfGFBQ2Yj7wkzrSdKNpZLO2T7owDKB9cZS53SOwdDS&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQOByrMSwz15aPQPlPZdU97ksWqXEYqeYWYoHx8xDxrvQg&oe=6ADBAA2D",
+   "video": "https://www.facebook.com/watch/?v=2186799721907250",
+   "video_thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.71878-10/848892498_2516820202136764_4974923536647524156_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=t3GAjLMgnMYQ7kNvwEHwyi3&_nc_oc=AdqoyI2E6_VgbrqLrDXV1fNuclXrvnNdtHIlmvMuXbSSV2FfGFBQ2Yj7wkzrSdKNpZLO2T7owDKB9cZS53SOwdDS&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=QjZgqLJdl6Eucwp9D--Prg&_nc_ss=7c180&oh=00_AQOByrMSwz15aPQPlPZdU97ksWqXEYqeYWYoHx8xDxrvQg&oe=6ADBAA2D",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTEyNTk4NjE0OTgyMDgyNg==",
+   "shares_id": "ZmVlZGJhY2s6MTEyNTk4NjE0OTgyMDgyNg==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "428624960557762",
+     "url": "https://www.facebook.com/hashtag/4x4?__eep__=6",
+     "offset": 26,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "608939949119931",
+     "url": "https://www.facebook.com/hashtag/offroad?__eep__=6",
+     "offset": 32,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "490281974365249",
+     "url": "https://www.facebook.com/hashtag/egypt?__eep__=6",
+     "offset": 42,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "143865832446925",
+     "url": "https://www.facebook.com/hashtag/camping?__eep__=6",
+     "offset": 50,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "32040137525630807",
+     "url": "https://www.facebook.com/hashtag/havalv7?__eep__=6",
+     "offset": 60,
+     "length": 8
+    }
+   ]
+  },
+  {
+   "post_id": "122226768404560395",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0tPYZPZjsPUXJ7cYWK7nSqkdTEBCAoK7qjHBcyS9BkF384qNzA4m1KaT4mTAyhttrl&id=61566811873709",
+   "message": "طرح سيارة هافال V7 في مصر \n\nتتوفر هافال V7 بنسختين؛ الأولى Hybrid بنظام دفع أمامي، والثانية Plug-in Hybrid بنظام دفع كلي للعجلات\n\nتأتي النسخة الهجينة HEV بنظام دفع أمامي، وتولد منظومتها قوة إجمالية تصل إلى 244 حصانًا وعزم دوران يبلغ 540 نيوتن متر، مع محرك سعة 1.5 لتر تيربو وناقل حركة هجين مخصص DHT ثنائي السرعات، بما يساهم في تحقيق استجابة سلسة وأداء متوازن في مختلف ظروف القيادة.\n\nأما نسخة Plug-in Hybrid فتقدم مستوى أعلى من الأداء والقدرات، مع نظام دفع كلي للعجلات وقوة إجمالية تبلغ 360 حصانًا، وعزم دوران يصل إلى 760 نيوتن متر متصل بناقل حركة هجين مخصص DHT رباعي السرعات، إلى جانب بطارية بسعة 27.54 كيلووات/ساعة.\n\nHybrid FWD: 1,825,000\nPlug-in hybrid AWD: 2,100,000 \n\nالمواصفات التفصيلية في أول تعليق \n\n#أخبار_السيارات | #أسعار_السيارات | #هافال | Haval Egypt",
+   "author": {
+    "id": "61566811873709",
+    "name": "Eslam Azzam - إسلام عزام",
+    "url": "https://www.facebook.com/people/Eslam-Azzam-%D8%A5%D8%B3%D9%84%D8%A7%D9%85-%D8%B9%D8%B2%D8%A7%D9%85/61566811873709/",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/541167561_122178796994560395_4200367848217098682_n.jpg?stp=dst-jpg_p100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=8qfpp8T_-u4Q7kNvwGXDnpp&_nc_oc=AdrrSn2cSkiNcmT3H-P289nCh6rZvj1qOQmmJK0FfVlPYIRUZc9vcQqd0pxQu6bqLBzoUxR2CEsimFI6mTP9J0Zt&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQPzHHS4xd0e-N21INBGVjxB8FQ_jgLhJB7_n2j2tkFCxA&oe=6ADBB626"
+   },
+   "timestamp": 1788961773,
+   "reactions_count": 0,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/797058451_122226768140560395_6155958353266226503_n.jpg?stp=dst-jpg_p261x260_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7gKVYvue9Q0Q7kNvwEKGYix&_nc_oc=AdqPK4B_QG05my2Obc9tNh6Vha8B6BPPagRjGbx9HToq12jG3zP0U7shXXP_0QmBqqLD5J2nqlu3jgtWHER329Oc&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQPEKBP0VKmkI_ArTahirdFnknLWGNyFAdxUizTU1zNSMA&oe=6ADB9B7E",
+    "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/797811415_122226768146560395_3288691226348203313_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lllnXrMMUz4Q7kNvwFoOn3S&_nc_oc=AdruPLFSmBe6Lhk3VSeR1XLF1TTxKsOsvHKdHgNKt3KjtDJxQQx3K6FGJUJmOFpufVvrvzWB1qWKzOv9mKynUXXP&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQPcu2GRC4aa05myoAZS7rteKbsaJSQZhlkfL1O7hLZ5Ew&oe=6ADB96A5"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjI2NzY4NDA0NTYwMzk1",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjI2NzY4NDA0NTYwMzk1",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "User",
+     "id": "100070417562422",
+     "url": "https://www.facebook.com/haval.egypt",
+     "offset": 752,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "368952266550442",
+     "url": "https://www.facebook.com/hashtag/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA?__eep__=6",
+     "offset": 707,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "687274721286944",
+     "url": "https://www.facebook.com/hashtag/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA?__eep__=6",
+     "offset": 725,
+     "length": 15
+    },
+    {
+     "type": "Hashtag",
+     "id": "590133307725559",
+     "url": "https://www.facebook.com/hashtag/%D9%87%D8%A7%D9%81%D8%A7%D9%84?__eep__=6",
+     "offset": 743,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122141300331087152",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xDTdFPMuqSfXdgkBQa5eBsLESQHmHDR8Q5t5u3LC3WfuLtNtYxYgobS3F98DBPjhl&id=61582614561762",
+   "message": "Hello group, We have on our website everything you need for car programing ! ⚙️🛠\n\nhttps://payhip.com/EcuRepair\n\n✍🏻 Write \"interested\" so I can send you all details too 💌\n\n🔥|(Packge)| All IMMO OFF Softwares , Find pin code , Airbag Software , Millage Software :\n🟢 https://payhip.com/b/YeXFB\n\n🔥 ToyoLex 3 MEK V7 ⭐️\n🟢 https://payhip.com/b/Et3RS\n\n🔥 Davinci for #egr #dtc #dpf remove :\n🟢 https://payhip.com/b/X4zdE\n\n🔥 IMMO EEPROM LOCATION software :\n🟢 https://payhip.com/b/Vx40y\n\n🔥 EGYPT PINOUT TOOL :\n🟢 https://payhip.com/b/DgiyP\n\n🔥 DUMP COLLECTION IMMO OFF FILE :\n🟢 https://payhip.com/b/QHZcf\n\n🔥 ECU Repair Helper E-Book, which contains the description and location of the component for many ECU\n🟢 https://payhip.com/b/V6KhJ\n\n🔥 IMMO Doctor V2.1 NɆ₩ ⩔ɆɌ$ƗØ₦  :\n🟢 https://payhip.com/b/oROcJ\n\n🔥 ECU Datasheet V2.0\nWith Electronic Components of Car ECUs and Additional Information \n🟢 https://payhip.com/b/iu5Fo\n\n🔥🔥🔥🔥 To buy all together with discount 25% :\n🟢 https://payhip.com/b/EP6wy\n\n⚫️ Join Our Whatsapp Group :\n\nhttps://chat.whatsapp.com/IH9Jw1fysVN1qrHaz0xaD5?s=cl&p=a&ilr=4\n\nOur Whatsapp :\n https://wa.me/+963932100648",
+   "author": {
+    "id": "61582614561762",
+    "name": "Omar Mastulo",
+    "url": "https://www.facebook.com/people/Omar-Mastulo/61582614561762/",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/799503724_122138787777087152_4979775072037746198_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=4IpaJWU9oKgQ7kNvwF9Z_T1&_nc_oc=AdqXl5tjkKFzWmb2ZCWiwZLUblg0GZbEk0sq4K3V_WCzMF7Wp_O3D63inLL7NiklSklLu-lYkwIZ0iiRn4nU66CA&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQO6sfH_DbKBq3E1SjuBtB_AJaQJQpUd9QnjhnISEoaFzw&oe=6ADBAE83"
+   },
+   "timestamp": 1792174295,
+   "reactions_count": 3,
+   "comments_count": 0,
+   "reshare_count": 41,
+   "reactions": {
+    "like": 3,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://payhip.com/EcuRepair",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTQxMzAwMzMxMDg3MTUy",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTQxMzAwMzMxMDg3MTUy",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vRWN1UmVwYWlyOjpEZWZhdWx0Ojo6MTIyMTQxMzAwMzMxMDg3MTUyOg==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2FEcuRepair&h=AUCHQX7hNOibILnjJmgMSgdE_I6NEKv2-OskfRJbSYnHdgLqdqc4L0uj4ye1VSkKDF3qiocQ4yWaxgl4mwInZyPiZGoiYauDOl61a9y71U21_0arsE755pxJcsW8ICVd7kDuAKtyxbiU7ygMu6czW5tgyAPao3OKRq13RYdIzCMBSJEOyTYQBNI&s=1",
+     "offset": 82,
+     "length": 28
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9ZZVhGQjo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FYeXFB&h=AUCejIFnBZCNrh7xZ19g-XEcQQgwTAXOzmf3XUQwAVeVaa99Q3RdvMqhXWMUU626J0KsonHv2tRr4p1rvPy-uLi951_RejmoREG6DqOUIZdM8-GGgOp2mUkS5czhyZiYnVSNkAq1vbFUxXdXm500U-Dnpuzth6U0LkpE4qk24bludNDZIBYywoc&s=1",
+     "offset": 263,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9FdDNSUzo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FEt3RS&h=AUD0cFYnLjCad3AIB2WDl_G7dbxy8dEuo30aHHgnIeJoc6yFTrOJiiAK16aJjWnagFdHwcrVgaOgcen45Q8afK6z4qCgln2D0itoIw-fJuodA22_q6y3G456VUXlKr1dXMpNKc9QfXxULmrTLZew0vJgSd0V10qQ6YB9Jo0vpOH6b1HwrJRBGLk&s=1",
+     "offset": 315,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9YNHpkRTo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FX4zdE&h=AUC4RsFCvQ-oaGyST7eDQ32jgwBxz0ELaGxQqt9847psB7Pv7FfmQfwLKfhz0AD3JquK1D8jz-iAXGH8iACU3VL1gMTvdyilQWfR9mP113EL2N8FDaGeIF2GozBuKik1FKrTs9WkX8l2c3HBFxhPOVXcZXosPnhm3piKfiuLAmpu9qLaWUZoeig&s=1",
+     "offset": 383,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9WeDQweTo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FVx40y&h=AUAvFgu7-SAGAv0G0iogWYvuAQgWVXAINvw6cUv2gVVwPnj8OeW18YsdvUQafUGL0fqoVml_X-5oM3nb3-0-sdGs_BWDtC7l1scUUmKkpHbL4VkmkiSJhTkmkHgMy-HCD4LC1NN5ZyHlZBrW5K3HOtfJYv8UJJWCi3Fa6p2_5Q3CMDlhPQw_too&s=1",
+     "offset": 447,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9EZ2l5UDo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FDgiyP&h=AUBRYBd0iICNZgv19iyyLiMpKL865wl9lhfBhVNSoaY7w2uM5N0AHKmekNLC5IJYRQtMXpbTBztBwrQKI2gWy5qR-0SLQLh1W_10SZPUgBgjJNKId0G-9SaOZm6r940fIs7k7vwtGNYPCe15XLefyk_P64XZ_VyadZ-hcM5DOcCo9HLxBHBloBI&s=1",
+     "offset": 499,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9RSFpjZjo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FQHZcf&h=AUCi455y9efmpLn1XwDldQ2-19sqKHI3aY71w4GzxLOcOz4GIfTZHQKbUU6zttRsk4FRW9EqK4fJkjIDW7Qi18PBSmgSDSnPIFs7nKnaFIltsZx0XbchylIk9d7o_rs0mEevKnObfBIxc4QAkjuAp1DmUKZbWZzwsrynzrXVvdWO7GdIZtaDN2I&s=1",
+     "offset": 563,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9WNktoSjo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FV6KhJ&h=AUDwvQVEhewFbAcsNgZVDmdFqEbURO_I1H7Dd2EzULYUy_pVmcygRarusc1-7Gs3cNif-6zZRcmpMyzNppaYAtK-3yelAijVg44D3utiRXsae553kNLi_pDURFzcPk-blA4850Clc97ngfrciW-AO5vIP4ifgo_q38weRnC5CpNKAYkTT9vChbI&s=1",
+     "offset": 695,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9vUk9jSjo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FoROcJ&h=AUDPvSDbCWUuJxy3Fh7pPBjJQUTPz-j1YQTVnKq67rg2kRCr-HlpOEKtSEPRHenTK-d9PtdRbSvz5zJeGMsGr3xTFsv17OQqFmyE3goEW3Gt5bJxfHGjRriSBR82TnamUsCABXlrefFe7QZ1mHrySaSE-X9Gvpkwfbv3S700EHlacnrUQxGd44E&s=1",
+     "offset": 759,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9pdTVGbzo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2Fiu5Fo&h=AUBKjMJUQ_QxdNd2jhL5GEp4483xAUCHXI599FhSE-NBZbjjfnFv7v9HLY3Eq5ctfRLWjI488rhleSy1TZHlRtN75SyDirGujc87Cr1C0l-SpwLs4V-tCtr68YgUjMHqCBuarZiGUvaM7sGtDwDUxW8DnB7s9F5Oui0ggCLNJnKI11wPU9H0UTU&s=1",
+     "offset": 877,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3BheWhpcC5jb20vYi9FUDZ3eTo6RGVmYXVsdDo6OjEyMjE0MTMwMDMzMTA4NzE1Mjo=",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fpayhip.com%2Fb%2FEP6wy&h=AUCOjJdaaGHNZfKQ2LZjlEP9h_Iih9UGrV6iKVl44B3gTVadrF1djY4yZqHTDct440xVQSgg0Ntg7js6N0Fju5tA3BtNz-cyzrXMWrxlkh_-CKRclLgVU_gpEO2qe9nYq7c6S0-O0yeu9tEKuVBkMTFWVyIFpHZYdO7G67tcsOHCzI5oxgQ1yvY&s=1",
+     "offset": 952,
+     "length": 26
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2NoYXQud2hhdHNhcHAuY29tL0lIOUp3MWZ5c1ZOMXFySGF6MHhhRDU/cz1jbCZwPWEmaWxyPTQ6OkRlZmF1bHQ6OjoxMjIxNDEzMDAzMzEwODcxNTI6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fchat.whatsapp.com%2FIH9Jw1fysVN1qrHaz0xaD5%3Fs%3Dcl%26p%3Da%26ilr%3D4&h=AUDHty2TCVPVy5cadugcpEXwicc-Bl4oTThr7v7f0FTIGORCxXblIhdGFVB7CcO_2l518PgKi6Trbhl6nzUZuIGc4Fpw7M13UgpR0x_QXDE34mrty1E8mjwjj1Wgy5cQOk5X2UJhd5kzGE7KdnwcWELFrn1KW8Lq4wF6ASdUVejDdVXAiKXTXyw&s=1",
+     "offset": 1010,
+     "length": 63
+    },
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3dhLm1lLys5NjM5MzIxMDA2NDg6OkRlZmF1bHQ6OjoxMjIxNDEzMDAzMzEwODcxNTI6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2F%2B963932100648&h=AUDzMFTBqZ8USQwZGocNTV97kIfQmaogo9kh4742M276lT-uTOfud8g7TNfHUZtjLWxUIMgtWV2XfPv1QajRAQs1DGz1ERkRs2tEypie7EQnio2GcF4N_UvnKav_KKjHpJM9lvGoQan-m_jjwK9Cmfz5QixpAze5bRRvxveLyj2lAXcm2UNJU0Y&s=1",
+     "offset": 1091,
+     "length": 27
+    },
+    {
+     "type": "Hashtag",
+     "id": "557007274333143",
+     "url": "https://www.facebook.com/hashtag/egr?__eep__=6",
+     "offset": 357,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "351765598265789",
+     "url": "https://www.facebook.com/hashtag/dtc?__eep__=6",
+     "offset": 362,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "421378241286014",
+     "url": "https://www.facebook.com/hashtag/dpf?__eep__=6",
+     "offset": 367,
+     "length": 4
+    }
+   ]
+  },
+  {
+   "post_id": "1126152129742029",
+   "url": "https://www.facebook.com/haval.egypt/posts/pfbid0D4h5Wr6nPZX7NCTfQ3Z8TvYRorZgxpBWPj35N4itGKz9bncfxnVCmZ5Yob5LY2x1l",
+   "message": "Premium comfort meets smart technology in the new HAVAL V7 Plug-In Hybrid, with a refined interior and thoughtful details designed to elevate every journey.\n\nPrice: 2,100,000 EGP\n\nTo The Chosen Ride.\n\nContact us on 15050 for more details.\nhttps://greatwall.eg\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+   "author": {
+    "id": "100070417562422",
+    "name": "Haval Egypt",
+    "url": "https://www.facebook.com/haval.egypt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQP1b2vR2B3XkPTfjWVf8gIQwB1J8Ap_2yR7cpSkn_30aw&oe=6ADB9085"
+   },
+   "timestamp": 1790155958,
+   "reactions_count": 791,
+   "comments_count": 2,
+   "reshare_count": 4,
+   "reactions": {
+    "like": 771,
+    "love": 18,
+    "haha": 1,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/799561572_1126151953075380_8357600768853568988_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NJdjMjJQo9IQ7kNvwG0QuRO&_nc_oc=AdqqZkL-n2MB-R5JdlMChMCOjOa8BsgUZfkaPR7JewYnYF5Bn7ECTR0XkcH-ObRLlMrJyr86A3V-EmXiTH2FPtJn&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQP4c56cccy2HLwsWFIrrAFPUyIlMDz96c3bR4jhA6YkMQ&oe=6ADBB187",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://greatwall.eg/",
+   "comments_id": "ZmVlZGJhY2s6MTEyNjE1MjEyOTc0MjAyOQ==",
+   "shares_id": "ZmVlZGJhY2s6MTEyNjE1MjEyOTc0MjAyOQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2dyZWF0d2FsbC5lZy86OkRlZmF1bHQ6OjoxMTI2MTUyMTI5NzQyMDI5Og==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreatwall.eg%2F&h=AUB495V9XIua9CmINQ1nS5Y307xhIDHerKilt_CnHT0ZNpo9FPTiOVRLkbzKzzSxVf2vZoIMuqLoqbacmXw84JHZlLsHtZnhQfBHri5GbCwHiBR_-oC5M7pT7gi6VsUkcmG5uO_djCbOxxsLBKkk78590ZtuVTLa--2ExJRYIXHQ7zUIQfNFUg&s=1",
+     "offset": 239,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 291,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "1089472833776520",
+   "url": "https://www.facebook.com/AutoZonemagazineArabia/posts/pfbid02abwmwwcaaJt2YiPeR73VxoKnZ7omTpKWf9Ejgg4ijW1aL5bvPghgf2cQDU8x75sfl",
+   "message": "تجربة قيادة هافال V7 الجديدة في العين السخنة!\n\nهافال V7  بتتقدم في مصر بنسختين Hybrid دفع أمامي بقوة 244 حصان و540 نيوتن متر، وPlug-in Hybrid  بنظام Hi4 ودفع كلي بقوة 360 حصان و760 نيوتن متر.\n\nوالنسخة الـPHEV بتضيف كمان قفل تفاضلي خلفي، مع تجهيزات زي شاشات 12.3 و15.6 بوصة، HUD، مقاعد أمامية بتدفئة وتهوية، سقف بانورامي، Apple CarPlay وAndroid Auto، شحن لاسلكي 50 واط وكاميرا رؤية محيطية 540 درجة.\n\nالعربية طولها حوالي 4.8 متر، ومساحة التخزين بتوصل لـ1404 لتر مع طي المقاعد، وضمانها 5 سنين أو 150 ألف كم، ومنظومة الهايبرد 8 سنين أو مليون كم.\n\nكل التفاصيل والصور في أول تعليق 👇👇\n\n#هافال\n#تجربة\n#العين_السخنة",
+   "author": {
+    "id": "100081414397837",
+    "name": "Auto Zone magazine - مجلة أوتو زوون",
+    "url": "https://www.facebook.com/AutoZonemagazineArabia",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/325439566_505819891674708_7620792113733403396_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=7W1ztQIbU8UQ7kNvwFewxAt&_nc_oc=AdrOqFZd8Wb7FIGDITaOCDGd-9sUyIhsgCntPyP4GLJvlZXYlbvYzCrG_pYkWM8D1lRhaVTIUAk-KNCNWwZJ69nz&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQPvZHnODXHVAImynXo5tUe4WBL6AqnMn5zzOjHKcHUPzg&oe=6ADBBEF8"
+   },
+   "timestamp": 1790166697,
+   "reactions_count": 16,
+   "comments_count": 1,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 15,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTA4OTQ3MjgzMzc3NjUyMA==",
+   "shares_id": "ZmVlZGJhY2s6MTA4OTQ3MjgzMzc3NjUyMA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "590133307725559",
+     "url": "https://www.facebook.com/hashtag/%D9%87%D8%A7%D9%81%D8%A7%D9%84?__eep__=6",
+     "offset": 579,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "403630533065906",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9?__eep__=6",
+     "offset": 586,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "481031211962543",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D8%B9%D9%8A%D9%86_%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9?__eep__=6",
+     "offset": 593,
+     "length": 13
+    }
+   ]
+  },
+  {
+   "post_id": "1120469403643635",
+   "url": "https://www.facebook.com/haval.egypt/posts/pfbid02UtiBuFW8qEKTcWdpELiewQXnYycwnkWhTC3Kn4AuFLNT3pQ2ZX4cEFWsQ98dYztWl",
+   "message": "Meet the new HAVAL V7 Hybrid, combining bold design, advanced hybrid technology, and confident performance to take every drive further.\n\nPrice: 1,825,000 EGP\n\nTo The Chosen Ride.\n\nContact us on 15050 for more details.\nhttps://greatwall.eg\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+   "author": {
+    "id": "100070417562422",
+    "name": "Haval Egypt",
+    "url": "https://www.facebook.com/haval.egypt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQP1b2vR2B3XkPTfjWVf8gIQwB1J8Ap_2yR7cpSkn_30aw&oe=6ADB9085"
+   },
+   "timestamp": 1789566291,
+   "reactions_count": 11,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 10,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/809730074_1120469140310328_822201515526536075_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hUfLF57gKz0Q7kNvwENj2UB&_nc_oc=AdpLfXO_FHsLTqtrXlh06VCfm8pnwUiL9QcpkPfJk69nr8uMCGTrYWHL0-JLAotRyrQyXRL52cbay_xNygV4wLgO&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQNFEdiTwUE9EOdOy43B6wRpTmR51Raz5RT_J-mEAshb6w&oe=6ADBA5E4",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://greatwall.eg/",
+   "comments_id": "ZmVlZGJhY2s6MTEyMDQ2OTQwMzY0MzYzNQ==",
+   "shares_id": "ZmVlZGJhY2s6MTEyMDQ2OTQwMzY0MzYzNQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2dyZWF0d2FsbC5lZy86OkRlZmF1bHQ6OjoxMTIwNDY5NDAzNjQzNjM1Og==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreatwall.eg%2F&h=AUAtxzooGM9Jli6edeRCUgoGptQHDMv2cf8FI1wonzOqoiDRAThzIJSknnHO-XHMD8pg6OWNFHAOM3X1xxaxU_BEf1uu78ALZHSt0QOyG35BZ1w2deZvzb43YMbPNnmUSNQiEeu_nQDs3gcR2JTNm9bgYNvAf9fErim1_B7IryPC2YHM_9AKtg&s=1",
+     "offset": 218,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 270,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "1430275885726642",
+   "url": "https://www.facebook.com/groups/1355823153171916/permalink/1430275885726642/",
+   "message": "🔥 هافال V7 HEV — حضور يخطف العين وأداء يعتمد عليه 🔥\n\nلو بتدور على SUV تجمع بين الفخامة، القوة، التكنولوجيا والاقتصاد في استهلاك الوقود… شوف هافال V7 👌\n\n🚘 المواصفات:\nمحرك 1.5 Turbo Hybrid\nقوة إجمالية 244 حصان\nعزم 540 نيوتن متر\nناقل حركة 2-Speed DHT\nدفع أمامي FWD\nمدى إجمالي يتجاوز 1000 كم\nجنوط رياضية 19 بوصة\nإضاءة خلفية LED\nشاشة ترفيه ومعلومات 15.6 بوصة\nدعم Apple CarPlay & Android Auto\nشحن لاسلكي سريع 50W\nمقاعد بخامات فاخرة مع تدفئة وتهوية\nتصميم SUV قوي ومميز جدًا 🔥 \n\n✨ العربية في الصور بنفس اللون والتجهيزات الظاهرة.\n📩 للتفاصيل والسعر والمعاينة\nتواصل علي الرقم 01063076500",
+   "author": {
+    "id": "100011703092258",
+    "name": "Mohamed Ehab",
+    "url": "",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=b224c7&_nc_ohc=IZeZjuD71-MQ7kNvwG-SSSI&_nc_oc=AdqIVKilEoPyhYXrp3wUirQ5CO6st0ckhHx0uwnEWpk8eRZ424QnEinU7mZGIlrt361snIT9jIfO4madnWNY4xDJ&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_ss=7c180&oh=00_AQPOGgYSTTJla1xJRlKyWeYrPvXqUFEq6UewVlWZsgiI7Q&oe=6AFD2F7A"
+   },
+   "timestamp": 1790787439,
+   "reactions_count": 2,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 2,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/825266278_2848557228877686_7298407418348568900_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=99BLj8Olu48Q7kNvwG5y54w&_nc_oc=AdoMNMYeG8svVDfDJhf1pGifDh6czO9q-RKuarRxQg--R4peSUdOqs27Y_z3e4rLA-7ZCPzJecaijG4G69MPy3rU&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=meMAJWe942QrnSI3Qjct2A&_nc_ss=7c180&oh=00_AQNYgGGVzcnYe9zq0YQNfzVYUZ3cMBPAsh4HUKmcuJVskw&oe=6ADB93C9",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQzMDI3NTg4NTcyNjY0Mg==",
+   "shares_id": "ZmVlZGJhY2s6MTQzMDI3NTg4NTcyNjY0Mg==",
+   "associated_group_id": "1355823153171916",
+   "author_title": "Haval Raptor V7 (Egypt )"
+  },
+  {
+   "post_id": "122136340689046092",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid036c6hZFZVDgLLEEDr4By4k3QQjahnGmWXVgCuQoh9tXoW1Hp3QzQRaHE3xkYiTjGDl&id=61581382774955",
+   "message": "🎯 لكل تجار الجملة، الماركت، وأصحاب شبكات التوزيع.. التشكيلة الكاملة من V7 متوفرة الآن بأقوى سعر في السوق! 🎯\n\nعايز منتج سريع الدوران وهامش ربحه مضمون؟ 🤔\nمؤسسة نجلاء البسيوني لتجارة الجملة بتوفرلك مشروب الطاقة والانتعاش V7 بجميع نكهاته المطلوبة في السوق في مكان واحد:\n\n🥤 V7 Super Soda Cola (الطلب الأول في السوق)\n🍇 Blueberry & 🍋 Lemon Mint\n🥥 Pinacolada & 🍎 Pomegranate\n\n💼 مميزات التعامل معانا:\n📦 توافر دائم للكميات: مفيش نقص في أي طعم، طلبك جاهز للتحميل فوراً.\n\n💰 أسعار خاصة وحصرية: خصومات تصاعدية ممتازة للكميات الكبيرة تضمن لك أعلى مكسب.\n\n🤝 شريك معتمد: التزام تام بمواعيد التسليم وجودة البضاعة.\n\nاملا مخزنك وتأكد من مكسبك مع أقوى مشروب في الصيف! 📈\n\n📞 للطلب والاستفسار عن كشف الأسعار وحجم الخصومات:\nتواصل معنا مباشرة عبر الهاتف أو الواتساب على الرقم: 01151937707\n\n#مؤسسة_نجلاء_البسيوني #تجارة_جملة #مواد_غذائية #V7_Egypt #تجار_مصر #سعر_جملة #توزيع #سوبر_ماركت #خصم_كميات",
+   "author": {
+    "id": "61581382774955",
+    "name": "جملة نجلاء البسيوني",
+    "url": "https://www.facebook.com/people/%D8%AC%D9%85%D9%84%D8%A9-%D9%86%D8%AC%D9%84%D8%A7%D8%A1-%D8%A7%D9%84%D8%A8%D8%B3%D9%8A%D9%88%D9%86%D9%8A/61581382774955/",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/685611875_122130822657046092_7566849801256995487_n.jpg?stp=c239.239.546.546a_dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=nSvoqorhL_gQ7kNvwGUcULn&_nc_oc=AdqSKgeFaX21IOUMIyLhC32yeAT6c01-B87xCXxKnL-DTvAOXzLZ_-miSbFTqvz7Jhl1HV916SY0rDwwzgBT-XOb&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=-ChKx5W8V1Ey_iZd0aB31g&_nc_ss=7c180&oh=00_AQMQ4wXhmjT6yWQ_xYwY-34BdOhz9SV46y0wpZh3XeB01A&oe=6ADBA025"
+   },
+   "timestamp": 1782996378,
+   "reactions_count": 42,
+   "comments_count": 26,
+   "reshare_count": 15,
+   "reactions": {
+    "like": 37,
+    "love": 5,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/736260989_122136340359046092_4937210495403847940_n.jpg?stp=dst-jpg_p552x414_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fJ1oU5YwLFAQ7kNvwFKEbPK&_nc_oc=Adq9h9p0jEjuyeM7OoO6DCTmrNAlYEz4a5m_Z5EBejCFb2Cor_gzKk1xV-AgECIP8425FBKkBskLaze062NUeDX8&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=-ChKx5W8V1Ey_iZd0aB31g&_nc_ss=7c180&oh=00_AQMTRvzBMfjDHtYnqQ9psg1Z-60HTKQ3SlWS5BuuV4Assw&oe=6ADBB3EE",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTM2MzQwNjg5MDQ2MDky",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTM2MzQwNjg5MDQ2MDky",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "27471678289157821",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9_%D9%86%D8%AC%D9%84%D8%A7%D8%A1_%D8%A7%D9%84%D8%A8%D8%B3%D9%8A%D9%88%D9%86%D9%8A?__eep__=6",
+     "offset": 763,
+     "length": 21
+    },
+    {
+     "type": "Hashtag",
+     "id": "442967202479542",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9_%D8%AC%D9%85%D9%84%D8%A9?__eep__=6",
+     "offset": 785,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "165316400298295",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D9%88%D8%A7%D8%AF_%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%D8%A9?__eep__=6",
+     "offset": 797,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "7227023377309340",
+     "url": "https://www.facebook.com/hashtag/v7_egypt?__eep__=6",
+     "offset": 810,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "658364197536475",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%AC%D8%A7%D8%B1_%D9%85%D8%B5%D8%B1?__eep__=6",
+     "offset": 820,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "502011426570402",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D8%B9%D8%B1_%D8%AC%D9%85%D9%84%D8%A9?__eep__=6",
+     "offset": 830,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "429414677139622",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D9%88%D8%B2%D9%8A%D8%B9?__eep__=6",
+     "offset": 840,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "510612172308193",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D9%88%D8%A8%D8%B1_%D9%85%D8%A7%D8%B1%D9%83%D8%AA?__eep__=6",
+     "offset": 847,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "3432155733496454",
+     "url": "https://www.facebook.com/hashtag/%D8%AE%D8%B5%D9%85_%D9%83%D9%85%D9%8A%D8%A7%D8%AA?__eep__=6",
+     "offset": 859,
+     "length": 10
+    }
+   ]
+  },
+  {
+   "post_id": "951617870973981",
+   "url": "https://www.facebook.com/Elfady22/posts/pfbid0Lb6VCi2C9qCGNF5vv4gjbexpFQNHoifRU94AUKVvv2QWLG6DfcA8BP1wWg9XPLmYl",
+   "message": "https://youtu.be/tNRFHvvzjfE?si=bZ3q2B5ZGVME4yx0",
+   "author": {
+    "id": "100083773312398",
+    "name": "El Fady Campany",
+    "url": "https://www.facebook.com/Elfady22",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/838947776_1083861244416309_6077423296652704857_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=3oVAfAbf9ekQ7kNvwEiIX5e&_nc_oc=Adqp0bRdPgtKp-uB3tuNBh7HBCynioOB6glcJ5Jz_bpGiRbtEsOrxi4FzQGGk9TXE1jrdvW4X8sqggq9WKkeNkx5&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=-ChKx5W8V1Ey_iZd0aB31g&_nc_ss=7c180&oh=00_AQP17atrQGi6-VALXFAEAu2MlXL6GSvqoL8UE1ePMndKew&oe=6ADBA89B"
+   },
+   "timestamp": 1777886790,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://youtu.be/tNRFHvvzjfE?si=bZ3q2B5ZGVME4yx0",
+   "comments_id": "ZmVlZGJhY2s6OTUxNjE3ODcwOTczOTgx",
+   "shares_id": "ZmVlZGJhY2s6OTUxNjE3ODcwOTczOTgx",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3lvdXR1LmJlL3ROUkZIdnZ6amZFP3NpPWJaM3EyQjVaR1ZNRTR5eDA6OkRlZmF1bHQ6Ojo5NTE2MTc4NzA5NzM5ODE6",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FtNRFHvvzjfE%3Fsi%3DbZ3q2B5ZGVME4yx0&h=AUBTBrDu3Qn6iEMPuc2dgklM7jmzCv92EZB_uwkO98JrTXIM_EqyBOdEKcpv_CJjo42otlw5fTG_6danNjRUow1AW3EWkp1sh7He4Pi4xMZGxFHWVAJngGyZ1WFls11MsWruC6ICCSZUs-R8zO_YVziwtwVuZfEBLZRmuxV_SwstM0zkicp87A&s=1",
+     "offset": 0,
+     "length": 48
+    }
+   ]
+  },
+  {
+   "post_id": "1115494357474473",
+   "url": "https://www.facebook.com/haval.egypt/posts/pfbid09DaLSoBDjKbi3nDu2yLJBnPK7n9tYRqfQbmirSR3mFxTnSUhwkzWq5QDrEfRrpd1l",
+   "message": "Power meets efficiency in the new HAVAL V7 Hybrid. With 244 HP, 540 NM of torque, and up to 1,000 km of average range, it’s built to take every drive further.\n\n8-year / 1,000,000 km warranty on high-voltage & EV components.\n\nPrice: 1,825,000 EGP\n\nTo The Chosen Ride.\n\nContact us on 15050 for more details.\nhttps://greatwall.eg\n\nHAVAL with Ghabbour Warranty\n\n#HAVAL",
+   "author": {
+    "id": "100070417562422",
+    "name": "Haval Egypt",
+    "url": "https://www.facebook.com/haval.egypt",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/424735060_425550466468869_4940278560198009906_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZFMPIS8rbgQ7kNvwHjggTM&_nc_oc=AdoLHQKuCSJK6VTgqB-yjz6YwVT65RCGVlZs6LxiNOegU84zjhDqKPq6SNWX2TE9gg81neriHSk9OYmlEmCHE80V&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=-ChKx5W8V1Ey_iZd0aB31g&_nc_ss=7c180&oh=00_AQPEuewsG92xnnh1Gx9VLOCZ1iPhxb4Bk8ZYAMLQ3EaCPw&oe=6ADB9085"
+   },
+   "timestamp": 1789055954,
+   "reactions_count": 2494,
+   "comments_count": 11,
+   "reshare_count": 8,
+   "reactions": {
+    "like": 2435,
+    "love": 49,
+    "haha": 2,
+    "wow": 0,
+    "sad": 1,
+    "angry": 0,
+    "care": 7
+   },
+   "type": "post",
+   "image": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/802858357_1115494314141144_4964085849281842464_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XR_UiOkUuqIQ7kNvwEeEe8W&_nc_oc=AdrakL7503a66bMoHbUZq1_O7Lk1WaicgQ5d0-vCYMIXP5hk-tBIRSftM6roM8A-HS8227Y8-CcmnfjUS5o1bcNa&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=-ChKx5W8V1Ey_iZd0aB31g&_nc_ss=7c180&oh=00_AQMeNo17wwdOz_4f8O4vHCZGxLigVpvF-Y-53REW60pprA&oe=6ADBC049",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "https://greatwall.eg/",
+   "comments_id": "ZmVlZGJhY2s6MTExNTQ5NDM1NzQ3NDQ3Mw==",
+   "shares_id": "ZmVlZGJhY2s6MTExNTQ5NDM1NzQ3NDQ3Mw==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "ExternalUrl",
+     "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2dyZWF0d2FsbC5lZy86OkRlZmF1bHQ6OjoxMTE1NDk0MzU3NDc0NDczOg==",
+     "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreatwall.eg%2F&h=AUAdd1a3xtJg12CAVsnfIendx9crkiZp3M8N25O721acMTEe7O8hRiCtVpdmVxfzhKmZOaIXwvAzn7L-OVcm4eYkDhe3SYpi2pl_s3uhsKqYwWbVU-PSiOINv_puocWd2bNcBxWivj3pJHePXpSLnlR0yuTYWxyj3h9QfPsDVceLHc68IvbUHg&s=1",
+     "offset": 306,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "545206682180592",
+     "url": "https://www.facebook.com/hashtag/haval?__eep__=6",
+     "offset": 358,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "1620982553372403",
+   "url": "https://www.facebook.com/elpostnewscom/posts/pfbid02ii6RVC7FNLRvTRsK3xsA3tsT5J4tWbHqBakSYis4Zs41sFpxfcA8BnMVoUA7kzvfl",
+   "message": "🚘 **هافال V7 تدخل السوق المصري بنسختين هجينتين.. والأسعار تبدأ من 1.825 مليون جنيه**\n\nكشفت هافال عن أسعار سيارتها الجديدة **V7** في مصر، والتي تُطرح بخيارين من منظومة الدفع الهجينة:\n\n🔹 **هافال V7 Hybrid FWD** — **1,825,000 جنيه**\n🔹 **هافال V7 Plug-in Hybrid AWD** — **2,100,000 جنيه**\n\nوتجمع هافال V7 بين تقنيات الدفع الهجين والتجهيزات الحديثة، فيما تأتي النسخة الأعلى بمنظومة **هجينة قابلة للشحن** مع **دفع كلي AWD**.\n\n📌 **التفاصيل الكاملة والأسعار عبر موقع البوست نيوز.**\n\n#هافال #هافالV7 #السيارات #السيارات_الهجينة #سيارات_مصر #البوست_نيوز",
+   "author": {
+    "id": "100063820206176",
+    "name": "البوست نيوز",
+    "url": "https://www.facebook.com/elpostnewscom",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/796746063_1617567613713897_4259120049457347585_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=u3by4P6eA4gQ7kNvwESwX2S&_nc_oc=Adqh41rGUgNVh8lCJ-x_s37-HjPwLpJxhWcnCMhLFd1yOq6sfFKWIbI-VtjTE1KVzuI4MZOvNCPV2Nx4MvLrqO5j&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=-ChKx5W8V1Ey_iZd0aB31g&_nc_ss=7c180&oh=00_AQNpv6seXtkWA20YbgJtiVYGutAh450NbVG-yY1hY97gjw&oe=6ADBB2F0"
+   },
+   "timestamp": 1788890941,
+   "reactions_count": 0,
+   "comments_count": 1,
+   "reshare_count": 2,
+   "reactions": {
+    "like": 0,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTYyMDk4MjU1MzM3MjQwMw==",
+   "shares_id": "ZmVlZGJhY2s6MTYyMDk4MjU1MzM3MjQwMw==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "590133307725559",
+     "url": "https://www.facebook.com/hashtag/%D9%87%D8%A7%D9%81%D8%A7%D9%84?__eep__=6",
+     "offset": 475,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "25248175041512586",
+     "url": "https://www.facebook.com/hashtag/%D9%87%D8%A7%D9%81%D8%A7%D9%84v7?__eep__=6",
+     "offset": 482,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "583559148321991",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA?__eep__=6",
+     "offset": 491,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "139454566254605",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D9%87%D8%AC%D9%8A%D9%86%D8%A9?__eep__=6",
+     "offset": 501,
+     "length": 17
+    },
+    {
+     "type": "Hashtag",
+     "id": "407198682735564",
+     "url": "https://www.facebook.com/hashtag/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_%D9%85%D8%B5%D8%B1?__eep__=6",
+     "offset": 519,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "2276310899065328",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D8%A8%D9%88%D8%B3%D8%AA_%D9%86%D9%8A%D9%88%D8%B2?__eep__=6",
+     "offset": 531,
+     "length": 12
+    }
+   ]
+  }
+ ]
+}

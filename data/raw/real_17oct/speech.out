@@ -1,0 +1,10 @@
+--- stage igprofiles, spent so far this cycle $16.7612, budget $14.00
+  igprofiles: 175 accounts without a follower count
+ig_profiles      instagram-profile-scraper    SUCCEEDED    175 items  $0.4002  (cap $0.57)  total $17.1614  events {'profile': 175, 'about-account': 0}
+--- stage igprofiles done, spent this cycle $17.1614
+--- stage igspeech, spent so far this cycle $17.1614, budget $14.00
+  igspeech_about: 163 reels, cap $1.15
+igspeech_about   instagram-transcripts-scrape SUCCEEDED    163 items  $0.7900  (cap $1.15)  total $17.9514  events {'apify-default-dataset-item': 163, 'speech2text': 187}
+  igspeech_tagged: 32 reels, cap $0.28
+igspeech_tagged  instagram-transcripts-scrape SUCCEEDED     32 items  $0.1922  (cap $0.28)  total $18.1436  events {'apify-default-dataset-item': 31, 'speech2text': 42}
+--- stage igspeech done, spent this cycle $18.1436

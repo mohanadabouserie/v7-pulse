@@ -1,0 +1,973 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1583808776758074/"
+   }
+  ],
+  "resultsLimit": 3,
+  "includeNestedComments": true
+ },
+ "cap_usd": 0.04,
+ "run": {
+  "id": "Ra1xMc762k61xLNn6",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-16T21:40:20.440Z",
+  "finishedAt": "2026-10-16T21:40:27.250Z",
+  "chargedEventCounts": {
+   "comment": 0,
+   "actor-start": 1,
+   "filter-applied": 0
+  },
+  "usageTotalUsd": 0.001
+ },
+ "cost_usd": 0.015,
+ "items": [
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=2614986309020195",
+   "commentId": "2614986309020195",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18yNjE0OTg2MzA5MDIwMTk1",
+   "date": "2026-09-10T17:38:16.000Z",
+   "text": "نلحق نجيب منها stock بقى عشان هتوحشنا😂❤️",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02p3vSCTNZdhZweYFhegb1Ty75LfAk1WUFJcGdg2pj17zpLkHDHG8HQF5xp9ec9KBKl",
+    "name": "Ahmed Wahied",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/701538277_1936728720341198_8142065341756233186_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s32x32&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0cXZi5AQL0Q7kNvwEzF974&_nc_oc=Adpq25yWsR4Kzi8MkbqgxJcFfvYhtoxQFPX1Uj9wS2_wsAyLutR_SxYv5-0qrSpgn2iWINNDAl9zRqE4c23ZrxsN&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQPWoUZPA4HuJx0_RSzkR2uppEQq_BpAMd7tFf3zruxIEA&oe=6AD85F1B"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/701538277_1936728720341198_8142065341756233186_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s40x40&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0cXZi5AQL0Q7kNvwEzF974&_nc_oc=Adpq25yWsR4Kzi8MkbqgxJcFfvYhtoxQFPX1Uj9wS2_wsAyLutR_SxYv5-0qrSpgn2iWINNDAl9zRqE4c23ZrxsN&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQPWoUZPA4HuJx0_RSzkR2uppEQq_BpAMd7tFf3zruxIEA&oe=6AD85F1B"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/701538277_1936728720341198_8142065341756233186_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s24x24&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0cXZi5AQL0Q7kNvwEzF974&_nc_oc=Adpq25yWsR4Kzi8MkbqgxJcFfvYhtoxQFPX1Uj9wS2_wsAyLutR_SxYv5-0qrSpgn2iWINNDAl9zRqE4c23ZrxsN&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQPWoUZPA4HuJx0_RSzkR2uppEQq_BpAMd7tFf3zruxIEA&oe=6AD85F1B"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Ahmed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/ahmed.wahied.908",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/ahmed.wahied.908",
+   "profilePicture": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/701538277_1936728720341198_8142065341756233186_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s32x32&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=t0cXZi5AQL0Q7kNvwEzF974&_nc_oc=Adpq25yWsR4Kzi8MkbqgxJcFfvYhtoxQFPX1Uj9wS2_wsAyLutR_SxYv5-0qrSpgn2iWINNDAl9zRqE4c23ZrxsN&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQPWoUZPA4HuJx0_RSzkR2uppEQq_BpAMd7tFf3zruxIEA&oe=6AD85F1B",
+   "profileId": "pfbid02p3vSCTNZdhZweYFhegb1Ty75LfAk1WUFJcGdg2pj17zpLkHDHG8HQF5xp9ec9KBKl",
+   "profileName": "Ahmed Wahied",
+   "likesCount": "1",
+   "commentsCount": 3,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=1549951109776869",
+   "commentId": "1549951109776869",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDk5NTExMDk3NzY4Njk=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18xNTQ5OTUxMTA5Nzc2ODY5",
+   "date": "2026-09-10T15:43:45.000Z",
+   "text": "احنا نلحق نخزن منها بقي ♥️♥️",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02sGnEBDix5Gm47iamhKbYJcoDMuvHjTdYeq27XsmkWwf5FVF8xPenJRw1rntMwLEWl",
+    "name": "Youssef Mohamed",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/806050711_1135935208996407_8346330092905240559_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=y7oXey6zIgcQ7kNvwGxDy9b&_nc_oc=AdrV2fUUpCcdFg7s66WjSfLFKhq21UINjR8nVAUCMQWHZKutPWVmw4dRHEsfgA35MiS4q472jplei5G0EjqbnKnx&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQMWUkncLX0D2ChwIqmpF6mJL1IpuEzMUPxk0-6l7PRk4Q&oe=6AD86284"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/806050711_1135935208996407_8346330092905240559_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=y7oXey6zIgcQ7kNvwGxDy9b&_nc_oc=AdrV2fUUpCcdFg7s66WjSfLFKhq21UINjR8nVAUCMQWHZKutPWVmw4dRHEsfgA35MiS4q472jplei5G0EjqbnKnx&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQMWUkncLX0D2ChwIqmpF6mJL1IpuEzMUPxk0-6l7PRk4Q&oe=6AD86284"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/806050711_1135935208996407_8346330092905240559_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=y7oXey6zIgcQ7kNvwGxDy9b&_nc_oc=AdrV2fUUpCcdFg7s66WjSfLFKhq21UINjR8nVAUCMQWHZKutPWVmw4dRHEsfgA35MiS4q472jplei5G0EjqbnKnx&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQMWUkncLX0D2ChwIqmpF6mJL1IpuEzMUPxk0-6l7PRk4Q&oe=6AD86284"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Youssef",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/youssef.mohamed.449060",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/youssef.mohamed.449060",
+   "profilePicture": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/806050711_1135935208996407_8346330092905240559_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx960x960&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=y7oXey6zIgcQ7kNvwGxDy9b&_nc_oc=AdrV2fUUpCcdFg7s66WjSfLFKhq21UINjR8nVAUCMQWHZKutPWVmw4dRHEsfgA35MiS4q472jplei5G0EjqbnKnx&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQMWUkncLX0D2ChwIqmpF6mJL1IpuEzMUPxk0-6l7PRk4Q&oe=6AD86284",
+   "profileId": "pfbid02sGnEBDix5Gm47iamhKbYJcoDMuvHjTdYeq27XsmkWwf5FVF8xPenJRw1rntMwLEWl",
+   "profileName": "Youssef Mohamed",
+   "likesCount": "1",
+   "commentsCount": 2,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=1890416365673788",
+   "commentId": "1890416365673788",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE4OTA0MTYzNjU2NzM3ODg=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18xODkwNDE2MzY1NjczNzg4",
+   "date": "2026-09-10T17:31:10.000Z",
+   "text": "الـCream Soda تستاهل ترجع كل صيف",
+   "author": {
+    "__typename": "User",
+    "id": "100012823381276",
+    "name": "Mohamed M Hashem",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/376238165_1777395039364592_3940544834012944793_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1242x1242&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=B0gMibVhfm0Q7kNvwFHHaRF&_nc_oc=Adr56H4GS6mHFOC4C_hRYI9P3t9ytO2OrHdwfBmdP_CcMeZJuN-gPFRrx7n6KcgTvfUG8lysht5Z-wVVLxU-rXaV&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQM3XNynGBnJHnII6kye353_-QyRsNzIGvqXeCFx4K0TSg&oe=6AD8887D"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/376238165_1777395039364592_3940544834012944793_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1242x1242&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=B0gMibVhfm0Q7kNvwFHHaRF&_nc_oc=Adr56H4GS6mHFOC4C_hRYI9P3t9ytO2OrHdwfBmdP_CcMeZJuN-gPFRrx7n6KcgTvfUG8lysht5Z-wVVLxU-rXaV&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQM3XNynGBnJHnII6kye353_-QyRsNzIGvqXeCFx4K0TSg&oe=6AD8887D"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/376238165_1777395039364592_3940544834012944793_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1242x1242&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=B0gMibVhfm0Q7kNvwFHHaRF&_nc_oc=Adr56H4GS6mHFOC4C_hRYI9P3t9ytO2OrHdwfBmdP_CcMeZJuN-gPFRrx7n6KcgTvfUG8lysht5Z-wVVLxU-rXaV&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQM3XNynGBnJHnII6kye353_-QyRsNzIGvqXeCFx4K0TSg&oe=6AD8887D"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/hashem.mohamed.39904",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/hashem.mohamed.39904",
+   "profilePicture": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/376238165_1777395039364592_3940544834012944793_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1242x1242&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=B0gMibVhfm0Q7kNvwFHHaRF&_nc_oc=Adr56H4GS6mHFOC4C_hRYI9P3t9ytO2OrHdwfBmdP_CcMeZJuN-gPFRrx7n6KcgTvfUG8lysht5Z-wVVLxU-rXaV&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=0laiIwecRtmVoBAezGoocA&_nc_ss=70289&oh=00_AQM3XNynGBnJHnII6kye353_-QyRsNzIGvqXeCFx4K0TSg&oe=6AD8887D",
+   "profileId": "100012823381276",
+   "profileName": "Mohamed M Hashem",
+   "likesCount": "1",
+   "commentsCount": 1,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=1549951109776869&reply_comment_id=1548750436522609",
+   "commentId": "1549951109776869",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDg3NTA0MzY1MjI2MDk=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18xNTQ4NzUwNDM2NTIyNjA5",
+   "date": "2026-09-10T19:28:22.000Z",
+   "text": "مبسوطين انها عجبتك🤩",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "id": "100087617073692",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwGGOgRF&_nc_oc=Adop2RbWDDoQ2gYoP12Ufnx8Ws7KmaLyP_0F9rx6HfEzWQGH2kW_7eArXYFVjOO1Z7E&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=MvKddse-dhGBBvHBI7AttQ&_nc_ss=70289&oh=00_AQNQF7EMEGNoc-EWrqOeS6Be5GYS8BJ430bDm2CQT8NDLA&oe=6AD86C90"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwGGOgRF&_nc_oc=Adop2RbWDDoQ2gYoP12Ufnx8Ws7KmaLyP_0F9rx6HfEzWQGH2kW_7eArXYFVjOO1Z7E&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=MvKddse-dhGBBvHBI7AttQ&_nc_ss=70289&oh=00_AQNQF7EMEGNoc-EWrqOeS6Be5GYS8BJ430bDm2CQT8NDLA&oe=6AD86C90"
+    },
+    "gender": "NEUTER",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/V7Egypt",
+    "work_info": null,
+    "is_verified": true,
+    "short_name": "V7Egypt",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/V7Egypt",
+   "profilePicture": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwGGOgRF&_nc_oc=Adop2RbWDDoQ2gYoP12Ufnx8Ws7KmaLyP_0F9rx6HfEzWQGH2kW_7eArXYFVjOO1Z7E&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=MvKddse-dhGBBvHBI7AttQ&_nc_ss=70289&oh=00_AQNQF7EMEGNoc-EWrqOeS6Be5GYS8BJ430bDm2CQT8NDLA&oe=6AD86C90",
+   "profileId": "100087617073692",
+   "profileName": "V7Egypt",
+   "likesCount": "0",
+   "commentsCount": 1,
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDk5NTExMDk3NzY4Njk=",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Youssef Mohamed",
+     "short_name": "Youssef",
+     "id": "pfbid02sGnEBDix5Gm47iamhKbYJcoDMuvHjTdYeq27XsmkWwf5FVF8xPenJRw1rntMwLEWl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDk5NTExMDk3NzY4Njk="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Youssef Mohamed",
+     "gender": "MALE",
+     "id": "pfbid02sGnEBDix5Gm47iamhKbYJcoDMuvHjTdYeq27XsmkWwf5FVF8xPenJRw1rntMwLEWl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDk5NTExMDk3NzY4Njk="
+   },
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=1549951109776869&reply_comment_id=860775287059263",
+   "commentId": "1549951109776869",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3Xzg2MDc3NTI4NzA1OTI2Mw==",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N184NjA3NzUyODcwNTkyNjM=",
+   "date": "2026-10-06T16:55:42.000Z",
+   "text": "V7Egypt بعتلكم رسالة ياريت حد يرد",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Mohamed Magdy",
+    "id": "pfbid02NkTztSdzyQChLnRzey3CBnAL1bY2dJYyfEq6gk34FhwbLfa2NCjBMuoKuoZWsxB4l",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGLxpdc&_nc_oc=AdrpD-KzOEr5U7mKZ4j5sGGp_zHAHgS_FFLzF2ljnv9ikN_u5hDHS-dZFW5xzeezfcM&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=MvKddse-dhGBBvHBI7AttQ&_nc_ss=70289&oh=00_AQOR-0NLiIrhxvQjkdXac38ILQrz3H6x3dQftHeWYqerHQ&oe=6AFA0F2C"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-phl2-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGLxpdc&_nc_oc=AdrpD-KzOEr5U7mKZ4j5sGGp_zHAHgS_FFLzF2ljnv9ikN_u5hDHS-dZFW5xzeezfcM&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=MvKddse-dhGBBvHBI7AttQ&_nc_ss=70289&oh=00_AQOR-0NLiIrhxvQjkdXac38ILQrz3H6x3dQftHeWYqerHQ&oe=6AFA0F2C"
+    },
+    "gender": "MALE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null,
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profilePicture": "https://scontent-phl2-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGLxpdc&_nc_oc=AdrpD-KzOEr5U7mKZ4j5sGGp_zHAHgS_FFLzF2ljnv9ikN_u5hDHS-dZFW5xzeezfcM&_nc_zt=24&_nc_ht=scontent-phl2-1.xx&_nc_gid=MvKddse-dhGBBvHBI7AttQ&_nc_ss=70289&oh=00_AQOR-0NLiIrhxvQjkdXac38ILQrz3H6x3dQftHeWYqerHQ&oe=6AFA0F2C",
+   "profileId": "pfbid02NkTztSdzyQChLnRzey3CBnAL1bY2dJYyfEq6gk34FhwbLfa2NCjBMuoKuoZWsxB4l",
+   "profileName": "Mohamed Magdy",
+   "likesCount": "0",
+   "threadingDepth": 2,
+   "replyToCommentId": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDk5NTExMDk3NzY4Njk=",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Youssef Mohamed",
+     "short_name": "Youssef",
+     "id": "pfbid02sGnEBDix5Gm47iamhKbYJcoDMuvHjTdYeq27XsmkWwf5FVF8xPenJRw1rntMwLEWl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDk5NTExMDk3NzY4Njk="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "V7Egypt",
+     "gender": "NEUTER",
+     "id": "100087617073692"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE1NDg3NTA0MzY1MjI2MDk="
+   },
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=1639845064462161",
+   "commentId": "1639845064462161",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTYzOTg0NTA2NDQ2MjE2MQ==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzE2Mzk4NDUwNjQ0NjIxNjE=",
+   "date": "2026-09-15T14:01:05.000Z",
+   "text": "ال pink lemonade تحفة بجد هو والرمان 😍❤️ اعملوا cherry cola بليز",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02fQDBbQ7vhmqiVoX66Liz3iBrRfi4G5x4B8HWh6EeRNKneEHzu9aFw4pHAYj1wTzBl",
+    "name": "Sarah El-Shamy",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/573543370_1900499617547392_3356859256484833530_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx864x852&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=-HKB-1GnLc0Q7kNvwE3l8AO&_nc_oc=AdpqcKTT0YuDvBCNQgMH4fbMRML3wYJZVso3qANnlOmRhognE_xeOin0xgcv6gpzHP1DJ_WEB6Ghax-oqhpvDHnc&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQP4kvVp_GtO6kmJopzkq5rpmHwUqnS4kxI2mZG8318qRA&oe=6AD854BA"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/573543370_1900499617547392_3356859256484833530_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx864x852&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=-HKB-1GnLc0Q7kNvwE3l8AO&_nc_oc=AdpqcKTT0YuDvBCNQgMH4fbMRML3wYJZVso3qANnlOmRhognE_xeOin0xgcv6gpzHP1DJ_WEB6Ghax-oqhpvDHnc&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQP4kvVp_GtO6kmJopzkq5rpmHwUqnS4kxI2mZG8318qRA&oe=6AD854BA"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/573543370_1900499617547392_3356859256484833530_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx864x852&ctp=s24x24&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=-HKB-1GnLc0Q7kNvwE3l8AO&_nc_oc=AdpqcKTT0YuDvBCNQgMH4fbMRML3wYJZVso3qANnlOmRhognE_xeOin0xgcv6gpzHP1DJ_WEB6Ghax-oqhpvDHnc&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQP4kvVp_GtO6kmJopzkq5rpmHwUqnS4kxI2mZG8318qRA&oe=6AD854BA"
+    },
+    "gender": "FEMALE",
+    "is_verified": false,
+    "short_name": "Sarah",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/573543370_1900499617547392_3356859256484833530_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx864x852&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=-HKB-1GnLc0Q7kNvwE3l8AO&_nc_oc=AdpqcKTT0YuDvBCNQgMH4fbMRML3wYJZVso3qANnlOmRhognE_xeOin0xgcv6gpzHP1DJ_WEB6Ghax-oqhpvDHnc&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQP4kvVp_GtO6kmJopzkq5rpmHwUqnS4kxI2mZG8318qRA&oe=6AD854BA",
+   "profileId": "pfbid02fQDBbQ7vhmqiVoX66Liz3iBrRfi4G5x4B8HWh6EeRNKneEHzu9aFw4pHAYj1wTzBl",
+   "profileName": "Sarah El-Shamy",
+   "likesCount": "1",
+   "commentsCount": 1,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=2082144325845463",
+   "commentId": "2082144325845463",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzIwODIxNDQzMjU4NDU0NjM=",
+   "date": "2026-07-14T09:23:51.000Z",
+   "text": "اجمد حاجا ساقعه بجد والله العظيم انا اول مره اكتب تعليق لشركه بس انا مدمنها بجد",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l",
+    "name": "Taha Essa Taha Essa",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwHfRP72&_nc_oc=AdrD-KFePseVMqXSJbv1R7ieWqhqX2AWPkNk2tneWmbUu7c7p4FLH1u6nIkOOX-oQxqCKu_FmShwrp-lTaS-g478&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQOfhonmWNzAqpvJuQD7RPY4URgW7L-WAMaKPhdGJkIb5A&oe=6AD87086"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s40x40&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwHfRP72&_nc_oc=AdrD-KFePseVMqXSJbv1R7ieWqhqX2AWPkNk2tneWmbUu7c7p4FLH1u6nIkOOX-oQxqCKu_FmShwrp-lTaS-g478&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQOfhonmWNzAqpvJuQD7RPY4URgW7L-WAMaKPhdGJkIb5A&oe=6AD87086"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s24x24&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwHfRP72&_nc_oc=AdrD-KFePseVMqXSJbv1R7ieWqhqX2AWPkNk2tneWmbUu7c7p4FLH1u6nIkOOX-oQxqCKu_FmShwrp-lTaS-g478&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQOfhonmWNzAqpvJuQD7RPY4URgW7L-WAMaKPhdGJkIb5A&oe=6AD87086"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Taha Essa",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/tahaessa.tahaessa",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/tahaessa.tahaessa",
+   "profilePicture": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwHfRP72&_nc_oc=AdrD-KFePseVMqXSJbv1R7ieWqhqX2AWPkNk2tneWmbUu7c7p4FLH1u6nIkOOX-oQxqCKu_FmShwrp-lTaS-g478&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQOfhonmWNzAqpvJuQD7RPY4URgW7L-WAMaKPhdGJkIb5A&oe=6AD87086",
+   "profileId": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l",
+   "profileName": "Taha Essa Taha Essa",
+   "likesCount": "2",
+   "commentsCount": 3,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=3281273125414203",
+   "commentId": "3281273125414203",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMzI4MTI3MzEyNTQxNDIwMw==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzMyODEyNzMxMjU0MTQyMDM=",
+   "date": "2026-07-05T00:02:02.000Z",
+   "text": "فين التوت ... و فين الكريز... و فين التوت و الكريز مع بعض .... و فين الخوخ... و فين اليوسفي ... و فين البرتقال ... و فين الجريب فرووووت",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02jCNuKyfaJ5sdqXynRjyv1oeRDrxudcN1VbzNEguU66Wph7wUXojBUdGqrRppNRrMl",
+    "name": "Ayman Yosri",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/322267625_1188032805474160_1925076056177898310_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx723x723&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=feCYIZ0k2ckQ7kNvwEdOBzA&_nc_oc=AdqTU0dPBEDrncjUp78CNOZ2yLlmiH8TNNRrSN3xteg3hDzgPzB8hSmzzvrGASFAC7IxJEHOsdxgHbSol7qliknk&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQNBzdVg6b_v0oFx3RWJtkQpoPKGBYD1icfFR6nVOAA0ww&oe=6AD86992"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/322267625_1188032805474160_1925076056177898310_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx723x723&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=feCYIZ0k2ckQ7kNvwEdOBzA&_nc_oc=AdqTU0dPBEDrncjUp78CNOZ2yLlmiH8TNNRrSN3xteg3hDzgPzB8hSmzzvrGASFAC7IxJEHOsdxgHbSol7qliknk&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQNBzdVg6b_v0oFx3RWJtkQpoPKGBYD1icfFR6nVOAA0ww&oe=6AD86992"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/322267625_1188032805474160_1925076056177898310_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx723x723&ctp=s24x24&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=feCYIZ0k2ckQ7kNvwEdOBzA&_nc_oc=AdqTU0dPBEDrncjUp78CNOZ2yLlmiH8TNNRrSN3xteg3hDzgPzB8hSmzzvrGASFAC7IxJEHOsdxgHbSol7qliknk&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQNBzdVg6b_v0oFx3RWJtkQpoPKGBYD1icfFR6nVOAA0ww&oe=6AD86992"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Ayman",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/322267625_1188032805474160_1925076056177898310_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx723x723&ctp=s32x32&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=feCYIZ0k2ckQ7kNvwEdOBzA&_nc_oc=AdqTU0dPBEDrncjUp78CNOZ2yLlmiH8TNNRrSN3xteg3hDzgPzB8hSmzzvrGASFAC7IxJEHOsdxgHbSol7qliknk&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=L-Vb1iKoGoJS6IOMGytlIA&_nc_ss=70289&oh=00_AQNBzdVg6b_v0oFx3RWJtkQpoPKGBYD1icfFR6nVOAA0ww&oe=6AD86992",
+   "profileId": "pfbid02jCNuKyfaJ5sdqXynRjyv1oeRDrxudcN1VbzNEguU66Wph7wUXojBUdGqrRppNRrMl",
+   "profileName": "Ayman Yosri",
+   "likesCount": "4",
+   "commentsCount": 1,
+   "comments": [],
+   "threadingDepth": 0,
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=1890416365673788&reply_comment_id=2105625250349601",
+   "commentId": "1890416365673788",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzIxMDU2MjUyNTAzNDk2MDE=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18yMTA1NjI1MjUwMzQ5NjAx",
+   "date": "2026-09-11T12:12:05.000Z",
+   "text": "Mohamed M Hashem \n😍💚",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "id": "100087617073692",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwFhbf2q&_nc_oc=Ado2_hWIMGL3A-7_20Lw8RbIXAgvpgu6YOKV2dsThDpp0527z5_jbM1RoblrlUm7kOrb5flZsyYLMs0vXvhaAue_&_nc_zt=24&_nc_ht=scontent.ftpa1-1.fna&_nc_gid=gIL4cZE-ft5FPjjWmEvetw&_nc_ss=70289&oh=00_AQO1cgjAxl4NbIrMAJYpXwSQV1s3HgmGzaGoFr5FPSzpYQ&oe=6AD86C90"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwFhbf2q&_nc_oc=Ado2_hWIMGL3A-7_20Lw8RbIXAgvpgu6YOKV2dsThDpp0527z5_jbM1RoblrlUm7kOrb5flZsyYLMs0vXvhaAue_&_nc_zt=24&_nc_ht=scontent.ftpa1-1.fna&_nc_gid=gIL4cZE-ft5FPjjWmEvetw&_nc_ss=70289&oh=00_AQO1cgjAxl4NbIrMAJYpXwSQV1s3HgmGzaGoFr5FPSzpYQ&oe=6AD86C90"
+    },
+    "gender": "NEUTER",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/V7Egypt",
+    "work_info": null,
+    "is_verified": true,
+    "short_name": "V7Egypt",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/V7Egypt",
+   "profilePicture": "https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwFhbf2q&_nc_oc=Ado2_hWIMGL3A-7_20Lw8RbIXAgvpgu6YOKV2dsThDpp0527z5_jbM1RoblrlUm7kOrb5flZsyYLMs0vXvhaAue_&_nc_zt=24&_nc_ht=scontent.ftpa1-1.fna&_nc_gid=gIL4cZE-ft5FPjjWmEvetw&_nc_ss=70289&oh=00_AQO1cgjAxl4NbIrMAJYpXwSQV1s3HgmGzaGoFr5FPSzpYQ&oe=6AD86C90",
+   "profileId": "100087617073692",
+   "profileName": "V7Egypt",
+   "likesCount": "0",
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE4OTA0MTYzNjU2NzM3ODg=",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Mohamed M Hashem",
+     "short_name": "Mohamed",
+     "id": "100012823381276"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE4OTA0MTYzNjU2NzM3ODg="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Mohamed M Hashem",
+     "gender": "MALE",
+     "id": "100012823381276"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE4OTA0MTYzNjU2NzM3ODg="
+   },
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=1639845064462161&reply_comment_id=2047274742629281",
+   "commentId": "1639845064462161",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA0NzI3NDc0MjYyOTI4MQ==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzIwNDcyNzQ3NDI2MjkyODE=",
+   "date": "2026-09-15T14:06:01.000Z",
+   "text": "مبسوطين ان منتجاتنا بتعجبك💚 اقتراحك وصل وشاركناه مع الإدارة للمراجعة🫰🏻",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "id": "100087617073692",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwE9rD_q&_nc_oc=AdpfB_0sicL20Ny8TG06h8u0XtP6LcKxOhHN3I2V7Kq-pNQUnjKOt00L2AjlWxE6BY2UIiA-heb8qOyTiSwJozK4&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=qnFFFUC2W8daju9FlMmSYA&_nc_ss=70289&oh=00_AQM-sSy7DTJZ6QXq4hlY0BlbwuUyEcgDzoZqBfeQJnxjmQ&oe=6AD86C90"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwE9rD_q&_nc_oc=AdpfB_0sicL20Ny8TG06h8u0XtP6LcKxOhHN3I2V7Kq-pNQUnjKOt00L2AjlWxE6BY2UIiA-heb8qOyTiSwJozK4&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=qnFFFUC2W8daju9FlMmSYA&_nc_ss=70289&oh=00_AQM-sSy7DTJZ6QXq4hlY0BlbwuUyEcgDzoZqBfeQJnxjmQ&oe=6AD86C90"
+    },
+    "gender": "NEUTER",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/V7Egypt",
+    "work_info": null,
+    "is_verified": true,
+    "short_name": "V7Egypt",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/V7Egypt",
+   "profilePicture": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwE9rD_q&_nc_oc=AdpfB_0sicL20Ny8TG06h8u0XtP6LcKxOhHN3I2V7Kq-pNQUnjKOt00L2AjlWxE6BY2UIiA-heb8qOyTiSwJozK4&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=qnFFFUC2W8daju9FlMmSYA&_nc_ss=70289&oh=00_AQM-sSy7DTJZ6QXq4hlY0BlbwuUyEcgDzoZqBfeQJnxjmQ&oe=6AD86C90",
+   "profileId": "100087617073692",
+   "profileName": "V7Egypt",
+   "likesCount": "1",
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTYzOTg0NTA2NDQ2MjE2MQ==",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Sarah El-Shamy",
+     "short_name": "Sarah",
+     "id": "pfbid02fQDBbQ7vhmqiVoX66Liz3iBrRfi4G5x4B8HWh6EeRNKneEHzu9aFw4pHAYj1wTzBl"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTYzOTg0NTA2NDQ2MjE2MQ=="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Sarah El-Shamy",
+     "gender": "FEMALE",
+     "id": "pfbid02fQDBbQ7vhmqiVoX66Liz3iBrRfi4G5x4B8HWh6EeRNKneEHzu9aFw4pHAYj1wTzBl"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTYzOTg0NTA2NDQ2MjE2MQ=="
+   },
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=2614986309020195&reply_comment_id=1648219756863187",
+   "commentId": "2614986309020195",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE2NDgyMTk3NTY4NjMxODc=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18xNjQ4MjE5NzU2ODYzMTg3",
+   "date": "2026-09-11T12:07:57.000Z",
+   "text": "Ahmed Wahied واضح إننا مش لوحدنا اللي هتوحشنا😂💚🥤",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "id": "100087617073692",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwEprpq2&_nc_oc=AdpxfR4HhzL-RD29BmEsEPkYXcvyRj6FauQ19ENZ1GJrvMT9pWkQDBb2zStmflPOToc&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQMC-LR3NUGHpuA2RfzmibB09a0nen7Y5zmUEiueyWmzwA&oe=6AD86C90"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwEprpq2&_nc_oc=AdpxfR4HhzL-RD29BmEsEPkYXcvyRj6FauQ19ENZ1GJrvMT9pWkQDBb2zStmflPOToc&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQMC-LR3NUGHpuA2RfzmibB09a0nen7Y5zmUEiueyWmzwA&oe=6AD86C90"
+    },
+    "gender": "NEUTER",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/V7Egypt",
+    "work_info": null,
+    "is_verified": true,
+    "short_name": "V7Egypt",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/V7Egypt",
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwEprpq2&_nc_oc=AdpxfR4HhzL-RD29BmEsEPkYXcvyRj6FauQ19ENZ1GJrvMT9pWkQDBb2zStmflPOToc&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQMC-LR3NUGHpuA2RfzmibB09a0nen7Y5zmUEiueyWmzwA&oe=6AD86C90",
+   "profileId": "100087617073692",
+   "profileName": "V7Egypt",
+   "likesCount": "0",
+   "commentsCount": 2,
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU=",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Ahmed Wahied",
+     "short_name": "Ahmed",
+     "id": "pfbid02p3vSCTNZdhZweYFhegb1Ty75LfAk1WUFJcGdg2pj17zpLkHDHG8HQF5xp9ec9KBKl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Ahmed Wahied",
+     "gender": "MALE",
+     "id": "pfbid02p3vSCTNZdhZweYFhegb1Ty75LfAk1WUFJcGdg2pj17zpLkHDHG8HQF5xp9ec9KBKl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU="
+   },
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=2614986309020195&reply_comment_id=1668100854885208",
+   "commentId": "2614986309020195",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE2NjgxMDA4NTQ4ODUyMDg=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18xNjY4MTAwODU0ODg1MjA4",
+   "date": "2026-10-06T14:30:51.000Z",
+   "text": "V7Egypt ممكن ارقام تواصل",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Mohamed Magdy",
+    "id": "pfbid02NkTztSdzyQChLnRzey3CBnAL1bY2dJYyfEq6gk34FhwbLfa2NCjBMuoKuoZWsxB4l",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGkIMtH&_nc_oc=AdqAEHWJPJUzROJpXE_UG92jh-sIM_-B7oq33uV3dsf72hMtV9VUxrvaY3CkySA_Q_A&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQNJGcY1sOEAkzaXzukmKDmvGc8ZQwGKYFXsufFzkGpJGA&oe=6AFA0F2C"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGkIMtH&_nc_oc=AdqAEHWJPJUzROJpXE_UG92jh-sIM_-B7oq33uV3dsf72hMtV9VUxrvaY3CkySA_Q_A&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQNJGcY1sOEAkzaXzukmKDmvGc8ZQwGKYFXsufFzkGpJGA&oe=6AFA0F2C"
+    },
+    "gender": "MALE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null,
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGkIMtH&_nc_oc=AdqAEHWJPJUzROJpXE_UG92jh-sIM_-B7oq33uV3dsf72hMtV9VUxrvaY3CkySA_Q_A&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQNJGcY1sOEAkzaXzukmKDmvGc8ZQwGKYFXsufFzkGpJGA&oe=6AFA0F2C",
+   "profileId": "pfbid02NkTztSdzyQChLnRzey3CBnAL1bY2dJYyfEq6gk34FhwbLfa2NCjBMuoKuoZWsxB4l",
+   "profileName": "Mohamed Magdy",
+   "likesCount": "0",
+   "threadingDepth": 2,
+   "replyToCommentId": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU=",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Ahmed Wahied",
+     "short_name": "Ahmed",
+     "id": "pfbid02p3vSCTNZdhZweYFhegb1Ty75LfAk1WUFJcGdg2pj17zpLkHDHG8HQF5xp9ec9KBKl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "V7Egypt",
+     "gender": "NEUTER",
+     "id": "100087617073692"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE2NDgyMTk3NTY4NjMxODc="
+   },
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/reel/1583808776758074/",
+   "commentUrl": "https://www.facebook.com/reel/1583808776758074/?comment_id=2614986309020195&reply_comment_id=1639813317641295",
+   "commentId": "2614986309020195",
+   "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE2Mzk4MTMzMTc2NDEyOTU=",
+   "feedbackId": "ZmVlZGJhY2s6MTA1MDMyOTkyNzg5NzU2N18xNjM5ODEzMzE3NjQxMjk1",
+   "date": "2026-10-06T14:31:13.000Z",
+   "text": "V7Egypt أقرب منفذ او موزع",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Mohamed Magdy",
+    "id": "pfbid02NkTztSdzyQChLnRzey3CBnAL1bY2dJYyfEq6gk34FhwbLfa2NCjBMuoKuoZWsxB4l",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGkIMtH&_nc_oc=AdqAEHWJPJUzROJpXE_UG92jh-sIM_-B7oq33uV3dsf72hMtV9VUxrvaY3CkySA_Q_A&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQNJGcY1sOEAkzaXzukmKDmvGc8ZQwGKYFXsufFzkGpJGA&oe=6AFA0F2C"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s24x24&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGkIMtH&_nc_oc=AdqAEHWJPJUzROJpXE_UG92jh-sIM_-B7oq33uV3dsf72hMtV9VUxrvaY3CkySA_Q_A&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQNJGcY1sOEAkzaXzukmKDmvGc8ZQwGKYFXsufFzkGpJGA&oe=6AFA0F2C"
+    },
+    "gender": "MALE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null,
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profilePicture": "https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-1/189295967_4663695516992356_8224808962483982088_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1948x1944&ctp=s32x32&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B5T0J7f0O_gQ7kNvwGkIMtH&_nc_oc=AdqAEHWJPJUzROJpXE_UG92jh-sIM_-B7oq33uV3dsf72hMtV9VUxrvaY3CkySA_Q_A&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=02h43yjyfnCgoq5AiHOreg&_nc_ss=70289&oh=00_AQNJGcY1sOEAkzaXzukmKDmvGc8ZQwGKYFXsufFzkGpJGA&oe=6AFA0F2C",
+   "profileId": "pfbid02NkTztSdzyQChLnRzey3CBnAL1bY2dJYyfEq6gk34FhwbLfa2NCjBMuoKuoZWsxB4l",
+   "profileName": "Mohamed Magdy",
+   "likesCount": "0",
+   "threadingDepth": 2,
+   "replyToCommentId": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU=",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Ahmed Wahied",
+     "short_name": "Ahmed",
+     "id": "pfbid02p3vSCTNZdhZweYFhegb1Ty75LfAk1WUFJcGdg2pj17zpLkHDHG8HQF5xp9ec9KBKl"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzI2MTQ5ODYzMDkwMjAxOTU="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "V7Egypt",
+     "gender": "NEUTER",
+     "id": "100087617073692"
+    },
+    "id": "Y29tbWVudDoxMDUwMzI5OTI3ODk3NTY3XzE2NDgyMTk3NTY4NjMxODc="
+   },
+   "facebookId": "1050329927897567",
+   "postTitle": "الصيف خلص...\nV7 Cream Soda\nراجعة تاني صيف 2027",
+   "pageAdLibrary": {
+    "id": "101110202816699",
+    "uri_token": "V7Egypt",
+    "woodhenge_creator_info": null
+   },
+   "inputUrl": "https://www.facebook.com/reel/1583808776758074/"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=3281273125414203&reply_comment_id=2050574945831616",
+   "commentId": "3281273125414203",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA1MDU3NDk0NTgzMTYxNg==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzIwNTA1NzQ5NDU4MzE2MTY=",
+   "date": "2026-07-05T09:32:18.000Z",
+   "text": "شكراً لمشاركة اقتراحاتك، تم إرسال اقتراحك للإدارة المختصة.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "id": "100087617073692",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwED9wgq&_nc_oc=AdpSVvMchffeE7-YdSveGMXH_dEfKz6Oj4vFisIgksubBrBK2xayTImn5bm-TmSzMgyC4ZZYb1rOXdZxD5jaX1ll&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=SLwoxQmGrlueyMWieBvnQA&_nc_ss=70289&oh=00_AQOlof1-KFE6MApx1D023mPuuI16qsU77rzitWI-vULa-g&oe=6AD86C90"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwED9wgq&_nc_oc=AdpSVvMchffeE7-YdSveGMXH_dEfKz6Oj4vFisIgksubBrBK2xayTImn5bm-TmSzMgyC4ZZYb1rOXdZxD5jaX1ll&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=SLwoxQmGrlueyMWieBvnQA&_nc_ss=70289&oh=00_AQOlof1-KFE6MApx1D023mPuuI16qsU77rzitWI-vULa-g&oe=6AD86C90"
+    },
+    "gender": "NEUTER",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/V7Egypt",
+    "work_info": null,
+    "is_verified": true,
+    "short_name": "V7Egypt",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/V7Egypt",
+   "profilePicture": "https://scontent.fagc1-2.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwED9wgq&_nc_oc=AdpSVvMchffeE7-YdSveGMXH_dEfKz6Oj4vFisIgksubBrBK2xayTImn5bm-TmSzMgyC4ZZYb1rOXdZxD5jaX1ll&_nc_zt=24&_nc_ht=scontent.fagc1-2.fna&_nc_gid=SLwoxQmGrlueyMWieBvnQA&_nc_ss=70289&oh=00_AQOlof1-KFE6MApx1D023mPuuI16qsU77rzitWI-vULa-g&oe=6AD86C90",
+   "profileId": "100087617073692",
+   "profileName": "V7Egypt",
+   "likesCount": "0",
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMzI4MTI3MzEyNTQxNDIwMw==",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Ayman Yosri",
+     "short_name": "Ayman",
+     "id": "pfbid02jCNuKyfaJ5sdqXynRjyv1oeRDrxudcN1VbzNEguU66Wph7wUXojBUdGqrRppNRrMl"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMzI4MTI3MzEyNTQxNDIwMw=="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Ayman Yosri",
+     "gender": "MALE",
+     "id": "pfbid02jCNuKyfaJ5sdqXynRjyv1oeRDrxudcN1VbzNEguU66Wph7wUXojBUdGqrRppNRrMl"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMzI4MTI3MzEyNTQxNDIwMw=="
+   },
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=2082144325845463&reply_comment_id=1364243945670930",
+   "commentId": "2082144325845463",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTM2NDI0Mzk0NTY3MDkzMA==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzEzNjQyNDM5NDU2NzA5MzA=",
+   "date": "2026-07-23T10:23:39.000Z",
+   "text": "ممتنين لدعمك و نتمنى نكون دايماً عند حسن ظنك❤️",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "V7Egypt",
+    "id": "100087617073692",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwGd4YPO&_nc_oc=Adr_rn7SheVmg5PlfBUPNJAWwiMN4MSLvbwLGAv5-MRz6pmn91Ln6eCqLlgL_nYlyTDWzrkh26btm5vIYCWkR_XZ&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQPFmM18jxkZiEtCG8A0Sn0mOyEQQ6iJKaeggXmLObFqCw&oe=6AD86C90"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s24x24&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwGd4YPO&_nc_oc=Adr_rn7SheVmg5PlfBUPNJAWwiMN4MSLvbwLGAv5-MRz6pmn91Ln6eCqLlgL_nYlyTDWzrkh26btm5vIYCWkR_XZ&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQPFmM18jxkZiEtCG8A0Sn0mOyEQQ6iJKaeggXmLObFqCw&oe=6AD86C90"
+    },
+    "gender": "NEUTER",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/V7Egypt",
+    "work_info": null,
+    "is_verified": true,
+    "short_name": "V7Egypt",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/V7Egypt",
+   "profilePicture": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png&cstp=mx709x709&ctp=s32x32&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=RuBIGnG_kIsQ7kNvwGd4YPO&_nc_oc=Adr_rn7SheVmg5PlfBUPNJAWwiMN4MSLvbwLGAv5-MRz6pmn91Ln6eCqLlgL_nYlyTDWzrkh26btm5vIYCWkR_XZ&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQPFmM18jxkZiEtCG8A0Sn0mOyEQQ6iJKaeggXmLObFqCw&oe=6AD86C90",
+   "profileId": "100087617073692",
+   "profileName": "V7Egypt",
+   "likesCount": "0",
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw==",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Taha Essa Taha Essa",
+     "short_name": "Taha Essa",
+     "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw=="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Taha Essa Taha Essa",
+     "gender": "MALE",
+     "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw=="
+   },
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=2082144325845463&reply_comment_id=1676044223474071",
+   "commentId": "2082144325845463",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTY3NjA0NDIyMzQ3NDA3MQ==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzE2NzYwNDQyMjM0NzQwNzE=",
+   "date": "2026-07-30T01:14:57.000Z",
+   "text": "Taha Essa Taha Essa السلام عليكم \nأنا رئيس الشركة ..بشكرك علي التعليق الجميل ده 🙏",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Mohamed Nour",
+    "id": "pfbid02MX3R6fQHycn7o3mUZx7SnPHcApFXoZ9Ztv1vEfDU295K7ZYqxnKjCnedowvEDjdRl",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/458493271_1038949834393082_6570903858974178787_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx589x589&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=PJco_gUPIHgQ7kNvwFuv-X1&_nc_oc=AdpBMcU277pyhHScTKNFpsFU1N7Rc89Sr02S3_dCOj8qyGHlsVmHnh6VVJpilp9IF0ekywROr-PzMEnHZOiBeOLX&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQMAFvt9AU2g-7a33b5BM5FE0DqTIOPJd6I4w9ThRiq3KQ&oe=6AD8674F"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/458493271_1038949834393082_6570903858974178787_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx589x589&ctp=s24x24&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=PJco_gUPIHgQ7kNvwFuv-X1&_nc_oc=AdpBMcU277pyhHScTKNFpsFU1N7Rc89Sr02S3_dCOj8qyGHlsVmHnh6VVJpilp9IF0ekywROr-PzMEnHZOiBeOLX&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQMAFvt9AU2g-7a33b5BM5FE0DqTIOPJd6I4w9ThRiq3KQ&oe=6AD8674F"
+    },
+    "gender": "MALE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/mohamed.nour.51520",
+    "work_info": null,
+    "is_verified": false,
+    "short_name": "Mohamed",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/mohamed.nour.51520",
+   "profilePicture": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/458493271_1038949834393082_6570903858974178787_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx589x589&ctp=s32x32&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=PJco_gUPIHgQ7kNvwFuv-X1&_nc_oc=AdpBMcU277pyhHScTKNFpsFU1N7Rc89Sr02S3_dCOj8qyGHlsVmHnh6VVJpilp9IF0ekywROr-PzMEnHZOiBeOLX&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQMAFvt9AU2g-7a33b5BM5FE0DqTIOPJd6I4w9ThRiq3KQ&oe=6AD8674F",
+   "profileId": "pfbid02MX3R6fQHycn7o3mUZx7SnPHcApFXoZ9Ztv1vEfDU295K7ZYqxnKjCnedowvEDjdRl",
+   "profileName": "Mohamed Nour",
+   "likesCount": "2",
+   "commentsCount": 1,
+   "threadingDepth": 1,
+   "replyToCommentId": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw==",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Taha Essa Taha Essa",
+     "short_name": "Taha Essa",
+     "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw=="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Taha Essa Taha Essa",
+     "gender": "MALE",
+     "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw=="
+   },
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl",
+   "commentUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02SVU2X9JBeGS4j2novqAmNw3C7629LCZXhMtE4hsum9eY1Wz1cmwRjDa797ZzAxsil?comment_id=2082144325845463&reply_comment_id=1575847150732925",
+   "commentId": "2082144325845463",
+   "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTU3NTg0NzE1MDczMjkyNQ==",
+   "feedbackId": "ZmVlZGJhY2s6OTgyMDQxMjI4MDU5NzcxXzE1NzU4NDcxNTA3MzI5MjU=",
+   "date": "2026-07-30T06:18:23.000Z",
+   "text": "Mohamed Nour شكرا جزيلا لحضرتك ومزيد من التقدم والنجاح",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Taha Essa Taha Essa",
+    "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwGC08Zy&_nc_oc=Adqpcrc5R0F2q4eu80PO7spoT9a3gsvDBDT0ECZfEkTLlVR-bzLapbk2yhu9Ul-bDHBrOCng4qhNAIuVrqKNOAG9&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQNHuxAazKbgjFQWU3Qx67uQr6XzWZxr_WRUHGpHGuHcew&oe=6AD87086"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s24x24&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwGC08Zy&_nc_oc=Adqpcrc5R0F2q4eu80PO7spoT9a3gsvDBDT0ECZfEkTLlVR-bzLapbk2yhu9Ul-bDHBrOCng4qhNAIuVrqKNOAG9&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQNHuxAazKbgjFQWU3Qx67uQr6XzWZxr_WRUHGpHGuHcew&oe=6AD87086"
+    },
+    "gender": "MALE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/tahaessa.tahaessa",
+    "work_info": null,
+    "is_verified": false,
+    "short_name": "Taha Essa",
+    "subscribe_status": "CANNOT_SUBSCRIBE"
+   },
+   "profileUrl": "https://www.facebook.com/tahaessa.tahaessa",
+   "profilePicture": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/844474647_2866597470382264_7218731654290778134_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1080x1094&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ot79E4OhNRIQ7kNvwGC08Zy&_nc_oc=Adqpcrc5R0F2q4eu80PO7spoT9a3gsvDBDT0ECZfEkTLlVR-bzLapbk2yhu9Ul-bDHBrOCng4qhNAIuVrqKNOAG9&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=Q97NketVG9jjTWTlVH49Mg&_nc_ss=70289&oh=00_AQNHuxAazKbgjFQWU3Qx67uQr6XzWZxr_WRUHGpHGuHcew&oe=6AD87086",
+   "profileId": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l",
+   "profileName": "Taha Essa Taha Essa",
+   "likesCount": "0",
+   "threadingDepth": 2,
+   "replyToCommentId": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw==",
+   "parentComment": {
+    "author": {
+     "__typename": "User",
+     "name": "Taha Essa Taha Essa",
+     "short_name": "Taha Essa",
+     "id": "pfbid0bt6g354QrVJEqfd8vthN64CoqzTSzKKYGYvKeFjRsS9DcL9Tx9M2fNTQdCJr5gD6l"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMjA4MjE0NDMyNTg0NTQ2Mw=="
+   },
+   "parentReply": {
+    "author": {
+     "__typename": "User",
+     "name": "Mohamed Nour",
+     "gender": "MALE",
+     "id": "pfbid02MX3R6fQHycn7o3mUZx7SnPHcApFXoZ9Ztv1vEfDU295K7ZYqxnKjCnedowvEDjdRl"
+    },
+    "id": "Y29tbWVudDo5ODIwNDEyMjgwNTk3NzFfMTY3NjA0NDIyMzQ3NDA3MQ=="
+   },
+   "facebookId": "982041228059771",
+   "postTitle": "Hello Summer. New Design.. Same great taste.",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "101110202816699"
+   },
+   "inputUrl": "https://www.facebook.com/V7Egypt/posts/pfbid02Sqn37RqfHGdQXGMrdMUNfqyzCZ4k91JY3yut9mMo5AHY1qrCj3pZwSrCyfGjN9Ajl"
+  }
+ ]
+}

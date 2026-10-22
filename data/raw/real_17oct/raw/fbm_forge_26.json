@@ -1,0 +1,1392 @@
+{
+ "input": {
+  "query": "V Cola",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "PnSKHOIunDI8z64al",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:39:03.668Z",
+  "finishedAt": "2026-10-19T11:39:39.062Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 20
+  },
+  "usageTotalUsd": 0.05185
+ },
+ "cost_usd": 1.2683,
+ "items": [
+  {
+   "post_id": "1627450182754900",
+   "type": "post",
+   "url": "https://www.facebook.com/VintageLosAngeles/posts/pfbid02tckwEsASHj11vEPnGE8Caum6vZXExbKUiUoUBewfVqpDbVExVh9XSY2HL848u8XNl",
+   "message": "There’s no mistaking this Los Angeles landmark. \n\nBuilt in 1939, the Coca-Cola Building at 1334 S. Central Avenue was designed by architect Robert V. Derrah to resemble a massive ocean liner—complete with porthole windows, sweeping curves, riveted surfaces and a ship-like bridge rising above the street.\n\nOne of the great examples of Streamline Moderne architecture in Los Angeles, the building has been turning heads for more than 85 years. Even an industrial bottling plant could have a little Hollywood glamour.\n\n📸 Bill Stuart",
+   "message_rich": "There’s no mistaking this Los Angeles landmark. \n\nBuilt in 1939, the Coca-Cola Building at 1334 S. Central Avenue was designed by architect Robert V. Derrah to resemble a massive ocean liner—complete with porthole windows, sweeping curves, riveted surfaces and a ship-like bridge rising above the street.\n\nOne of the great examples of Streamline Moderne architecture in Los Angeles, the building has been turning heads for more than 85 years. Even an industrial bottling plant could have a little Hollywood glamour.\n\n📸 Bill Stuart",
+   "timestamp": 1789960402,
+   "comments_count": 77,
+   "reactions_count": 1467,
+   "reshare_count": 53,
+   "reactions": {
+    "angry": 1,
+    "care": 6,
+    "haha": 1,
+    "like": 1178,
+    "love": 270,
+    "sad": 0,
+    "wow": 11
+   },
+   "author": {
+    "id": "100064698013363",
+    "name": "Vintage Los Angeles",
+    "url": "https://www.facebook.com/VintageLosAngeles",
+    "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/313106791_497592559074007_7716345478569477002_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=e6k5hWmBU24Q7kNvwGwO5rU&_nc_oc=AdrfOZ_EOZIFgH7eK4mf6KXl5tR7ZId0mLa0pe3R7cdeCDGwHqsiTJ4AGJSpJM2_98o&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQO2pCPrecx2KsJDsBMCaBDcK45d1f-h5QyUIFNrIT-cag&oe=6ADBEEEB",
+    "delegate_page_id": "121097987946929"
+   },
+   "authors": [
+    {
+     "id": "100064698013363",
+     "name": "Vintage Los Angeles",
+     "url": "https://www.facebook.com/VintageLosAngeles",
+     "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/313106791_497592559074007_7716345478569477002_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=e6k5hWmBU24Q7kNvwGwO5rU&_nc_oc=AdrfOZ_EOZIFgH7eK4mf6KXl5tR7ZId0mLa0pe3R7cdeCDGwHqsiTJ4AGJSpJM2_98o&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQO2pCPrecx2KsJDsBMCaBDcK45d1f-h5QyUIFNrIT-cag&oe=6ADBEEEB",
+     "delegate_page_id": "121097987946929"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-6/807949782_1627447919421793_5136378615842498345_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KwqWdRSovikQ7kNvwHLi4LG&_nc_oc=Adr-2X7rLO0vvYRMnrBDM5TEXuh570Wj2_NNnOt-aEJ4Lc9sDhp52GR2s_eJsx-Bvkc&_nc_zt=23&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQNDMCOyFTOhGo3vgQ78Ty6IF1wqglaLwrNDhrm8UPadmg&oe=6ADBDF83",
+    "height": 960,
+    "width": 860,
+    "id": "1627447906088461"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1627450182754900",
+   "shares_id": "1627450182754900",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122108185802698846",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1513429646890943/",
+   "message": "BTS V and Jungkook Own the Calvin Klein Campaign 💜✨ \n\nAn immense ocean of ARMY surrounded Stanford Stadium today, witnessing the complete sell-out of Calvin Klein collaboration merchandise, Taehyung's Coca-Cola campaign, and Jungkook's F&B business within hours. The rapid sales underscore the powerful global influence of BTS. We also explore the iconic Harley Davidson promotion and the affection shown between Taehyung and Jungkook. 💜\n\n#Shorts #BTS #Taekook #Taehyung #Jungkook #CalvinKlein #VEffect #btsarmy",
+   "message_rich": "BTS V and Jungkook Own the Calvin Klein Campaign 💜✨ \n\nAn immense ocean of ARMY surrounded Stanford Stadium today, witnessing the complete sell-out of Calvin Klein collaboration merchandise, Taehyung's Coca-Cola campaign, and Jungkook's F&B business within hours. The rapid sales underscore the powerful global influence of BTS. We also explore the iconic Harley Davidson promotion and the affection shown between Taehyung and Jungkook. 💜\n\n#Shorts #BTS #Taekook #Taehyung #Jungkook #CalvinKlein #VEffect #btsarmy",
+   "timestamp": 1778961304,
+   "comments_count": 104,
+   "reactions_count": 3085,
+   "reshare_count": 44,
+   "reactions": {
+    "angry": 2,
+    "care": 90,
+    "haha": 4,
+    "like": 2125,
+    "love": 859,
+    "sad": 0,
+    "wow": 5
+   },
+   "author": {
+    "id": "61570965386369",
+    "name": "V-Effect",
+    "url": "https://www.facebook.com/people/V-Effect/61570965386369/",
+    "profile_picture_url": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-1/726200677_122112992414698846_347806880387139597_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=W1_SWEX8mPsQ7kNvwHcOzQ9&_nc_oc=Adp2l0iWOFIm73Hw5tUXm0z52SLDCjx4zzkPS4hoGYDoqiyCAAu4b-jNeCvYOn9jmM4&_nc_zt=24&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQPZ7ZyqyYFdMNHFWk1HL1vt5gXnX4qTCAyFkQWaLtGGoA&oe=6ADBC054",
+    "delegate_page_id": "1144227875429812"
+   },
+   "authors": [
+    {
+     "id": "61570965386369",
+     "name": "V-Effect",
+     "url": "https://www.facebook.com/people/V-Effect/61570965386369/",
+     "profile_picture_url": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-1/726200677_122112992414698846_347806880387139597_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=W1_SWEX8mPsQ7kNvwHcOzQ9&_nc_oc=Adp2l0iWOFIm73Hw5tUXm0z52SLDCjx4zzkPS4hoGYDoqiyCAAu4b-jNeCvYOn9jmM4&_nc_zt=24&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQPZ7ZyqyYFdMNHFWk1HL1vt5gXnX4qTCAyFkQWaLtGGoA&oe=6ADBC054",
+     "delegate_page_id": "1144227875429812"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1513429646890943/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fkul1-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMVPO9TkwPspJ9YHpstf8R2dwPPUkkTsbvLzgQcGV0QrIfZ_LwrwJpTG86JoZrnaFOLkZ0nM5iCbc93UcCU053JW_dBY9cZCLjcB8FVMQ.mp4?_nc_cat=108&_nc_oc=AdqL-B0oSwbHFnu5MURm0pAe2QU490Q47nNW7oZRKC3jv6K0fT2U_1HavXAi7ODcdLg&_nc_sid=8bf8fe&_nc_ht=video.fkul1-1.fna.fbcdn.net&_nc_ohc=3eE3TkqMBRAQ7kNvwEoL1XH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6ODI3OTUwMTg2NjMyMjc1LCJhc3NldF9hZ2VfZGF5cyI6MTU1LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMPvghuMnV3PagReMQxJa6UQa_iIxmMGJ0jHxEVELjfzA&oe=6ADBC91E&bitrate=382117&tag=sve_sd",
+    "video_hd_file": "https://video.fkul1-1.fna.fbcdn.net/o1/v/t2/f2/m266/AQMlb_OJsN8ba37SzFgNQbEXV7AuBWs1CqWt6M8SK2gZq7mVLuQjppqyWS0dQnYqKZviKNtsd7ABj7GVVjmf1_M-P_aa6-c7C1E.mp4?strext=1&_nc_cat=101&_nc_oc=Adrajy_fl3cH_r5Hrbw-lVu-ERGYtW4OWKZNR9ZWaJET523RAd6kSlVr71d-CFs2Mws&_nc_sid=8bf8fe&_nc_ht=video.fkul1-1.fna.fbcdn.net&_nc_ohc=qB2EP0kydikQ7kNvwFPwX9z&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjgyNzk1MDE4NjYzMjI3NSwiYXNzZXRfYWdlX2RheXMiOjE1NSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjU1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMZD1KQUX2PfUNsQUeSUVYUMELPOaj0-mo_EHND1QcPdA&oe=6AD7E875&bitrate=1969924&tag=av1_compressed_source"
+   },
+   "video_thumbnail": "https://scontent.fkul1-1.fna.fbcdn.net/v/t15.5256-10/701623361_2299320937261447_6716944750839820166_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=d2b52d&_nc_ohc=57D-k9Xcn0cQ7kNvwEO4NqD&_nc_oc=AdpvTaTe90aYC-Yjo26Y2DedS_KNlk_bayVg9Af-FGm9cl_kMlJNdHQtp5oRHKTg1wg&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQMCPQONFEEELmeu-6a2MvwWtUfBBTfAcrypzT2cHU4xIw&oe=6ADBC31D",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122108185802698846",
+   "shares_id": "122108185802698846",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122293646756187307",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02FK637cMXRtEVSNZ7bHWPSBFNcA8DNYQqXnFEZvor5YGnsGTBZwLYT7LYs6LC1Z6Kl&id=61555619226575",
+   "message": "God 🙏bless😌 you soooooo much my BTS V ❤️🤗,you always grow up🫠like that🤗🤗,your army's😇support and love❤️always,forever and ever with you🤗🤗🥹🥹💝💝💝💝💝💖💖🌹☺️☺️🤭✨💫💯💯💯💯💯🥰💜💜💜💜💜💜❤️❤️❤️❤️❤️❤️❤️🤗🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿",
+   "message_rich": "God 🙏bless😌 you soooooo much my BTS V ❤️🤗,you always grow up🫠like that🤗🤗,your army's😇support and love❤️always,forever and ever with you🤗🤗🥹🥹💝💝💝💝💝💖💖🌹☺️☺️🤭✨💫💯💯💯💯💯🥰💜💜💜💜💜💜❤️❤️❤️❤️❤️❤️❤️🤗🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿",
+   "timestamp": 1790673927,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61555619226575",
+    "name": "Kajal Jaiswal",
+    "url": "https://www.facebook.com/people/Kajal-Jaiswal/61555619226575/",
+    "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/751563625_122284101392187307_817074947534188136_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ypZQHaDJTRUQ7kNvwHNnPmZ&_nc_oc=AdqS_NgYpq-EgvCqORdE6n_qawwSlLz3EujW_IVYbhNtsPNI1DTx8qVKOpBlVRsaqwI&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQPJ5G7JVSaUEgmg0rx2cMKVNsgTerSfXMRFzw0A11qibw&oe=6ADBDD70",
+    "delegate_page_id": "686774541178889"
+   },
+   "authors": [
+    {
+     "id": "61555619226575",
+     "name": "Kajal Jaiswal",
+     "url": "https://www.facebook.com/people/Kajal-Jaiswal/61555619226575/",
+     "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/751563625_122284101392187307_817074947534188136_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ypZQHaDJTRUQ7kNvwHNnPmZ&_nc_oc=AdqS_NgYpq-EgvCqORdE6n_qawwSlLz3EujW_IVYbhNtsPNI1DTx8qVKOpBlVRsaqwI&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQPJ5G7JVSaUEgmg0rx2cMKVNsgTerSfXMRFzw0A11qibw&oe=6ADBDD70",
+     "delegate_page_id": "686774541178889"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "3039533843057447",
+    "url": "https://www.facebook.com/thkim.yveontae/posts/pfbid0jtMMD5iZ2pfJwaApfWKogTmyqbCJrVpDD1JYj4G7F817Xw8gvN8b3YP6dUpc1c8ul",
+    "timestamp": null,
+    "message": "Kim Taehyung is currently a 12-time brand ambassador—and counting—truly a face that dominates the industry.  \n\n🔶NOTHING (new) \n🔸CELINE\n🔸CARTIER\n🔸COMPOSE COFFEE\n🔸COCA-COLA\n🔸CHAMPION\n🔸JINRO\n🔸PARADISE CITY\n🔸SIMINVEST\n🔸SNOWPEAK\n🔸TIRTIR\n🔸YUNTH\n\nNOTHING GLOBAL AMBASSADOR V  \nTAEHYUNG FOR NOTHING  \n#TAEHYUNGxNOTHING \n#VxNOTHING",
+    "photo_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-6/825267759_3039533823057449_2806553654599444095_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8hNXny032H8Q7kNvwH8QOwZ&_nc_oc=AdrG0wiW8kDvTxLu6D-lP9TsozOkXR5yFtd5uz_c_In9Uzaa1w124eC6j_3awuiIq30&_nc_zt=23&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOfzqokGE1vYHCHMBBFTpTry6oenUXTSBzOeNHsjYDgeA&oe=6ADBEDC0",
+    "author": {
+     "id": "100010025839263",
+     "name": "Thkim Yveontae",
+     "url": "https://www.facebook.com/thkim.yveontae"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/thkim.yveontae/posts/pfbid0jtMMD5iZ2pfJwaApfWKogTmyqbCJrVpDD1JYj4G7F817Xw8gvN8b3YP6dUpc1c8ul",
+   "text_format_metadata": null,
+   "comments_id": "122293646756187307",
+   "shares_id": "122293646756187307",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122301986954021335",
+   "type": "post",
+   "url": "https://www.facebook.com/min.pd.1993/posts/pfbid0cndVUG1Jv8ZyziBFTTgYKzAwemnhFqmg9JGJPBKKrFWdcryH3kLFigRuf3eY3ASNl",
+   "message": "V x Coca-cola in Jollibee\nPromo date : Oct 16-31, 2026\nARMYs!! check your nearest Jollibee! 💜\n\n#fypシ #Taehyung #BTS",
+   "message_rich": "V x Coca-cola in Jollibee\nPromo date : Oct 16-31, 2026\nARMYs!! check your nearest Jollibee! 💜\n\n#fypシ #Taehyung #BTS",
+   "timestamp": 1792156830,
+   "comments_count": 3,
+   "reactions_count": 12,
+   "reshare_count": 10,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 10,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "61550640053010",
+    "name": "Min PD",
+    "url": "https://www.facebook.com/min.pd.1993",
+    "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/846824798_122301738506021335_2148500918436066926_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=LKjF1TYXkT8Q7kNvwGoE0bU&_nc_oc=AdpHnVQBJSbG38Awg2vjf9d7yD89uxQhc7JpdGqSmngI7bGbPwDSon-HknNyCi7dYRM&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOGKcTJXBK--RFMalkv7XtXEEYYfLOr-7SUABOwZ4mrjA&oe=6ADBE236",
+    "delegate_page_id": "266363613234921"
+   },
+   "authors": [
+    {
+     "id": "61550640053010",
+     "name": "Min PD",
+     "url": "https://www.facebook.com/min.pd.1993",
+     "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/846824798_122301738506021335_2148500918436066926_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=LKjF1TYXkT8Q7kNvwGoE0bU&_nc_oc=AdpHnVQBJSbG38Awg2vjf9d7yD89uxQhc7JpdGqSmngI7bGbPwDSon-HknNyCi7dYRM&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOGKcTJXBK--RFMalkv7XtXEEYYfLOr-7SUABOwZ4mrjA&oe=6ADBE236",
+     "delegate_page_id": "266363613234921"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/851896855_122301986882021335_417075809750440385_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pbOpB7sBG1QQ7kNvwEHlYfM&_nc_oc=AdrZ8LPYDdBlLgqk_runThrz3z4qtkGceuM-37LHkh-8VGiO7JXr2cUHdWaxoYcrzVg&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOPQGkJXb-70U0vIBJK1TuXUEOSy4PGFwwUrTGxuJRBtA&oe=6ADBE8B0",
+     "url": null,
+     "id": "122301986876021335"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-6/853346423_122301986924021335_7483938433445845711_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UOH6n3SVtFgQ7kNvwGfvHZA&_nc_oc=AdqIsps_UFZkkXp7JavnIjzsXWy2hlePW5XzsRMYX2oacu8t08xDpnSg9vJr-6wlBe8&_nc_zt=23&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQPC2mDnoSTvT-LrUeZgqlYWao47dhYGA4WhwIwTpu9GAg&oe=6ADBEBD3",
+     "url": null,
+     "id": "122301986918021335"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122301986954021335",
+   "shares_id": "122301986954021335",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "2282327705659773",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/477862742772954/posts/2282327705659773/",
+   "message": "Tìm bạn nhận pick hộ Coca cola V và quạt nha.. chỗ tui không circle K không gì cả 🫠",
+   "message_rich": "Tìm bạn nhận pick hộ Coca cola V và quạt nha.. chỗ tui không circle K không gì cả 🫠",
+   "timestamp": 1790676612,
+   "comments_count": 10,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "1399780148895780",
+    "name": "ChummyPeacock9197",
+    "url": "https://www.facebook.com/1399780148895780",
+    "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.35477-6/554731074_24612100685106687_7948710436788729567_n.jpg?stp=cp0_dst-jpg_s110x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=d7e6db&_nc_ohc=eP24PnGwz4gQ7kNvwFG3vFt&_nc_oc=AdroKaSx5IcrwH_NdIax2D4WQsLdPHFBoy25kcbexPkNbYEpLeFD8hgC3YGk-szkH5w&_nc_zt=14&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQNb5h5ZyWrDr9zzQdI6IpdfN0e8ud5GzLwjZqFozn4PTQ&oe=6ADBC5AF",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "1399780148895780",
+     "name": "ChummyPeacock9197",
+     "url": "https://www.facebook.com/1399780148895780",
+     "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.35477-6/554731074_24612100685106687_7948710436788729567_n.jpg?stp=cp0_dst-jpg_s110x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=d7e6db&_nc_ohc=eP24PnGwz4gQ7kNvwFG3vFt&_nc_oc=AdroKaSx5IcrwH_NdIax2D4WQsLdPHFBoy25kcbexPkNbYEpLeFD8hgC3YGk-szkH5w&_nc_zt=14&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQNb5h5ZyWrDr9zzQdI6IpdfN0e8ud5GzLwjZqFozn4PTQ&oe=6ADBC5AF",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2282327705659773",
+   "shares_id": "2282327705659773",
+   "associated_group_id": "477862742772954",
+   "associated_group": {
+    "group_id": "477862742772954",
+    "name": "[BTS] GROUP NHƯỢNG ALBUM ,TRADE CARD , GOODS",
+    "url": "https://www.facebook.com/groups/477862742772954/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1425864149705145",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/officialmidjourney/posts/1425864149705145/",
+   "message": "Serving coca-cola since ancient times, Coca-Cola wins --chaos 10 --sref 1867744113 --stylize 150 --hd --v 8.2\n\n#mjbest_orient",
+   "message_rich": "Serving coca-cola since ancient times, Coca-Cola wins --chaos 10 --sref 1867744113 --stylize 150 --hd --v 8.2\n\n#mjbest_orient",
+   "timestamp": 1791479885,
+   "comments_count": 0,
+   "reactions_count": 16,
+   "reshare_count": 5,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 13,
+    "love": 3,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100090415728742",
+    "name": "The Prompter",
+    "url": "https://www.facebook.com/aibraingain",
+    "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/471400576_558682543822265_339406316462054566_n.png?stp=c261.64.627.628a_cp0_dst-png_s80x80&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=aKbmhkGRHmAQ7kNvwEkcAwW&_nc_oc=AdqbrzvZmaLrzcR25Aa514y7w0ZUj2B1UXCrAtIoWBlu6De_-oP9iuTyPu3BSBAWq-w&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOdTGKfhmazFRnRnDlP5NDZcjpIufCDb7eFsBHQZ6Ca-A&oe=6ADBDBC7",
+    "delegate_page_id": "100981542938486"
+   },
+   "authors": [
+    {
+     "id": "100090415728742",
+     "name": "The Prompter",
+     "url": "https://www.facebook.com/aibraingain",
+     "profile_picture_url": "https://scontent.fkul1-2.fna.fbcdn.net/v/t39.30808-1/471400576_558682543822265_339406316462054566_n.png?stp=c261.64.627.628a_cp0_dst-png_s80x80&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=aKbmhkGRHmAQ7kNvwEkcAwW&_nc_oc=AdqbrzvZmaLrzcR25Aa514y7w0ZUj2B1UXCrAtIoWBlu6De_-oP9iuTyPu3BSBAWq-w&_nc_zt=24&_nc_ht=scontent.fkul1-2.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOdTGKfhmazFRnRnDlP5NDZcjpIufCDb7eFsBHQZ6Ca-A&oe=6ADBDBC7",
+     "delegate_page_id": "100981542938486"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/842368313_1098116676545513_2696801518197635393_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=hkA3tvgbPTUQ7kNvwHO6T4M&_nc_oc=AdobAcOu-DrHA5flZtw4HNmMf-k5urEcMGEQpoWl8aOBsOUY0N4pbBGrkmOpec4sRfM&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQNgHyP4bbDQcRzIXf5vsMX49xXsdS_9CJLnhxzz3uGbGw&oe=6ADBBEF1",
+     "url": "https://www.facebook.com/photo.php?fbid=1098117413212106&set=gm.1425864133038480&type=3",
+     "id": "1098117413212106"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/840094544_1098116653212182_4053339172751169802_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=cTR2RFkhdZkQ7kNvwF9A2Xg&_nc_oc=AdotYVuZF4IknRIBOBWQ1O7zQ2-sZ_rPFVHLmtZE3_w8tf5fUCWfbdWKRPgXtzp7hXI&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQNN5BV_nQlKjXoo_ruy52ECdevbNmMSuXWwEfMIVkBOTQ&oe=6ADBDEE2",
+     "url": "https://www.facebook.com/photo.php?fbid=1098117409878773&set=gm.1425864136371813&type=3",
+     "id": "1098117409878773"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/843224975_1098116689878845_5081610033454688005_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=J2XgMRbrzu0Q7kNvwG_kKTz&_nc_oc=AdpVPnaP2NwlcFSbbparAejEWssPs9SEA03XLf1gUEBExdCEEkZwHd4WIpCc9Kebukk&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOd9JlWpkIhgCi7cNA27xTFxJqF2vPvDXzNcSIBhUol4w&oe=6ADBCF95",
+     "url": "https://www.facebook.com/photo.php?fbid=1098117419878772&set=gm.1425864139705146&type=3",
+     "id": "1098117419878772"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/839524713_1098116819878832_6259404536827940356_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=qVIeXPvuhvgQ7kNvwG4TFLz&_nc_oc=Adrv6uSWipk2UvrETufdQVZ_1F4Sj0Ja59tXVKcHWLdo-KhXRQSn0K8JZaoPDEte_Io&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQNfXviAIyJEKlUXL4MUdFAFG6Rk3VKy8kbxhf77sij56Q&oe=6ADBCB8B",
+     "url": "https://www.facebook.com/photo.php?fbid=1098117406545440&set=gm.1425864143038479&type=3",
+     "id": "1098117406545440"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fkul1-1.fna.fbcdn.net/v/t39.30808-6/840309540_1098116849878829_8968121978731951216_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Ho0GTC1UFZ4Q7kNvwGaCYa0&_nc_oc=Adr-xW41W-_4iy8hVHmpuOevKHcxogYUZSMcCEAm-gBHIHk0HNQWctcvtWCtcxG3FJk&_nc_zt=23&_nc_ht=scontent.fkul1-1.fna&_nc_gid=9M0mz88JNuvAIdD82FbHhg&_nc_ss=70289&oh=00_AQOvJWz3Bwo3Pe6eW2XAJoCgZbjmebe77Hit-Nn4OJAUBg&oe=6ADBEA77",
+     "url": "https://www.facebook.com/photo.php?fbid=1098117416545439&set=gm.1425864146371812&type=3",
+     "id": "1098117416545439"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1425864149705145",
+   "shares_id": "1425864149705145",
+   "associated_group_id": "395755276049376",
+   "associated_group": {
+    "group_id": "395755276049376",
+    "name": "Midjourney Official",
+    "url": "https://www.facebook.com/groups/officialmidjourney/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": 5,
+   "top_comments": []
+  },
+  {
+   "post_id": "122101953099502964",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02LHBcxFLzU9Wts2VnTtgaMzEm57s4FBWZZYPpfc4wD133uQ45nxAtt8RSTnKAPsKjl&id=61595088924834",
+   "message": "🇵🇸❤️ كاسكو بتكمل لدعم المقاطعة 🇪🇬🔥\n\nفي كاسكو، بنؤمن إن كل خطوة ليها معنى، وإن اختياراتنا بتفرق ❤️✊\n\nعلشان كده قررنا استبدال Pepsi بـ V Cola، استمرارًا لدعمنا للمقاطعة، وإيمانًا مننا إن التغيير بيبدأ بقرارات بسيطة لكن ليها تأثير كبير. 💪❤️\n\n🍔 نفس الطعم اللي بتحبوه\n🔥 نفس الجودة اللي متعودين عليها\n❤️ وموقف ثابت بنفتخر بيه\n\nكاسكو مش مجرد أكل… كاسكو موقف ومبدأ \n\n#KASCO #كاسكو #دعم_المقاطعة #المقاطعة #VCola #فلسطين #غزة #معا_لدعم_فلسطين #مطعم_كاسكو #اختياراتنا_بتفرق",
+   "message_rich": "🇵🇸❤️ كاسكو بتكمل لدعم المقاطعة 🇪🇬🔥\n\nفي كاسكو، بنؤمن إن كل خطوة ليها معنى، وإن اختياراتنا بتفرق ❤️✊\n\nعلشان كده قررنا استبدال Pepsi بـ V Cola، استمرارًا لدعمنا للمقاطعة، وإيمانًا مننا إن التغيير بيبدأ بقرارات بسيطة لكن ليها تأثير كبير. 💪❤️\n\n🍔 نفس الطعم اللي بتحبوه\n🔥 نفس الجودة اللي متعودين عليها\n❤️ وموقف ثابت بنفتخر بيه\n\nكاسكو مش مجرد أكل… كاسكو موقف ومبدأ \n\n#KASCO #كاسكو #دعم_المقاطعة #المقاطعة #VCola #فلسطين #غزة #معا_لدعم_فلسطين #مطعم_كاسكو #اختياراتنا_بتفرق",
+   "timestamp": 1791613882,
+   "comments_count": 1,
+   "reactions_count": 5,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 5,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61595088924834",
+    "name": "KASCO - كاسكو ",
+    "url": "https://www.facebook.com/people/KASCO-%D9%83%D8%A7%D8%B3%D9%83%D9%88/61595088924834/",
+    "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/831033109_122094894471502964_1860691710978398297_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=MfDpnW-m7JIQ7kNvwGvwXdX&_nc_oc=AdpQ_hefvbZRwIwCKtnmJSRh-tJvaIMJrrNbkI1AhcNUHTEi9G7VH_O4M4DqK4oxUwU&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMKISrz28AF50y38-vKptQ-mNU1gUwkL_uph6BQBSAc2Q&oe=6ADBD25B",
+    "delegate_page_id": "1371509536043181"
+   },
+   "authors": [
+    {
+     "id": "61595088924834",
+     "name": "KASCO - كاسكو ",
+     "url": "https://www.facebook.com/people/KASCO-%D9%83%D8%A7%D8%B3%D9%83%D9%88/61595088924834/",
+     "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/831033109_122094894471502964_1860691710978398297_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=MfDpnW-m7JIQ7kNvwGvwXdX&_nc_oc=AdpQ_hefvbZRwIwCKtnmJSRh-tJvaIMJrrNbkI1AhcNUHTEi9G7VH_O4M4DqK4oxUwU&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMKISrz28AF50y38-vKptQ-mNU1gUwkL_uph6BQBSAc2Q&oe=6ADBD25B",
+     "delegate_page_id": "1371509536043181"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/840520641_122101953051502964_6294618558082742613_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1mpYY5IpTeEQ7kNvwHBMLii&_nc_oc=Ado57AqUXk4Qz4PsadWeWMyQRZ2TQi1_byXgaUBtJ9XGwHfWTfpmRiVhaIF-IRUTsww&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQO0fNZwoHiYa4bZuX1GKq7lxponXNPwJb3f99fNz8trmg&oe=6ADBE400",
+    "height": 1536,
+    "width": 1024,
+    "id": "122101953045502964"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122101953099502964",
+   "shares_id": "122101953099502964",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122183974604962009",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid08EEs3AJSVnhVLQEHzEoPpkSLKDvZx2Ki7ZDQwb5etU7qMAd8ZACsoZQQBjNdQgPBl&id=61578860274085",
+   "message": "អនុមោទនាពិធីបុណ្យភ្ជុំបិ​ណ្ឌ!\n\nក្នុងឱកាសពិធីបុណ្យភ្ជុំបិណ្ឌនេះ  វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ សូមជូនពរឲ្យបងប្អូនជួបតែសេចក្តីសុខ មានភាពរីករាយ មានសុភមង្គល គ្រប់ក្រុមគ្រួសារ ជោគជ័យគ្រប់ភារកិច្ច ហើយរាល់ការធ្វើដំណើរទៅទីជិតទីឆ្ងាយប្រកបដោយសុខសុវត្ថិភាព។\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "message_rich": "អនុមោទនាពិធីបុណ្យភ្ជុំបិ​ណ្ឌ!\n\nក្នុងឱកាសពិធីបុណ្យភ្ជុំបិណ្ឌនេះ  វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ សូមជូនពរឲ្យបងប្អូនជួបតែសេចក្តីសុខ មានភាពរីករាយ មានសុភមង្គល គ្រប់ក្រុមគ្រួសារ ជោគជ័យគ្រប់ភារកិច្ច ហើយរាល់ការធ្វើដំណើរទៅទីជិតទីឆ្ងាយប្រកបដោយសុខសុវត្ថិភាព។\nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "timestamp": 1791594001,
+   "comments_count": 5,
+   "reactions_count": 1320,
+   "reshare_count": 21,
+   "reactions": {
+    "angry": 1,
+    "care": 13,
+    "haha": 2,
+    "like": 1266,
+    "love": 34,
+    "sad": 0,
+    "wow": 4
+   },
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwEiJIzz&_nc_oc=Adqa40LulQXbs0vVe5-FEwjEWD9YohmldxzGqaC1D-sn_ty4aIbyfjAo_f8Uqe1g0Q8&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQP6NwxnZ7JPVnpyCaM9f9J4CMUTfBGeToTH1bExWNhfeg&oe=6ADBCD15",
+    "delegate_page_id": "719134201287366"
+   },
+   "authors": [
+    {
+     "id": "61578860274085",
+     "name": "V-COLA",
+     "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+     "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwEiJIzz&_nc_oc=Adqa40LulQXbs0vVe5-FEwjEWD9YohmldxzGqaC1D-sn_ty4aIbyfjAo_f8Uqe1g0Q8&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQP6NwxnZ7JPVnpyCaM9f9J4CMUTfBGeToTH1bExWNhfeg&oe=6ADBCD15",
+     "delegate_page_id": "719134201287366"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/836330151_122183668856962009_4327104249756964424_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xvMaWwa8534Q7kNvwGpadO7&_nc_oc=Ado1zRWmyIKBxG2-li8nOAPzMoUP6iLRnjTcYDF0xkY4niqvGR2vNzfNMTTw5YAPNQk&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMlZuL07W24rOHYl7298nDK6M6jfW4xWQBLZ0V-pYHxIg&oe=6ADBE391",
+    "height": 1350,
+    "width": 1080,
+    "id": "122183974586962009"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122183974604962009",
+   "shares_id": "122183974604962009",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "4779761615633632",
+   "type": "post",
+   "url": "https://www.facebook.com/geeboooo/posts/pfbid0149dzEQDFHumUdonKwXvXFN8K1r2hFUR5zbbxSsvTbFs1ps8L2WLiGAieFt7yayfl",
+   "message": "بديل المقاطعة المصرى v cola ❤️🇵🇸",
+   "message_rich": "بديل المقاطعة المصرى v cola ❤️🇵🇸",
+   "timestamp": 1791576972,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100007995228656",
+    "name": "Mahmoud Nageeb",
+    "url": "https://www.facebook.com/100007995228656",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/500706651_4210443295898803_943749388907440455_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=HPkcDzNN4UMQ7kNvwFAu6RK&_nc_oc=AdpfJVwy7ci2fAR4iDEq8H6i3WF6s9EgFlu-YgNg-Wh3HewKoqKShXmC8EG0HeYEKOU&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQNOxyAB4Umneul5KnFJhYNApGg9isX9EZ44JfsYiq3hSw&oe=6ADBC722",
+    "delegate_page_id": "348180408387039"
+   },
+   "authors": [
+    {
+     "id": "100007995228656",
+     "name": "Mahmoud Nageeb",
+     "url": "https://www.facebook.com/100007995228656",
+     "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/500706651_4210443295898803_943749388907440455_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=HPkcDzNN4UMQ7kNvwFAu6RK&_nc_oc=AdpfJVwy7ci2fAR4iDEq8H6i3WF6s9EgFlu-YgNg-Wh3HewKoqKShXmC8EG0HeYEKOU&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQNOxyAB4Umneul5KnFJhYNApGg9isX9EZ44JfsYiq3hSw&oe=6ADBC722",
+     "delegate_page_id": "348180408387039"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "1661519535330157",
+    "url": "https://www.facebook.com/reel/2374066166742658/",
+    "timestamp": null,
+    "message": "هل ممكن شركة مصرية تنافس بيبسي وكوكاكولا؟",
+    "photo_url": null,
+    "author": {
+     "id": "100044163803128",
+     "name": "Kareem Elsayed كريم السيد",
+     "url": "https://www.facebook.com/kareemelsayed"
+    },
+    "video_url": "https://video-sjc6-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMcCGGjeujQBp9XVkrz8pxtSF3RIV_tkhOAhwtlYOdYaqKGUd118p73cDb6hSKLWz-nZad_BfugGYXJezTt5lxZ2xtkxg_HHunaggekwO0srA.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=video-sjc6-1.xx.fbcdn.net&_nc_ohc=k7lqxSToQwgQ7kNvwGaBmRm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE0MjA0MDkxNTM0MDM1MjMsImFzc2V0X2FnZV9kYXlzIjo5LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NjgzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7f8cae2956508284&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FNTkzQzRBMThGREI0MTU4OUREMjEyNDhCQkY5RDgyMl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzM3NkUyRERCOUFDRjRGMjI5QjM3ODZEMjk2QTE1QjgzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaG6rHw2PaFBRUCKAJDMywXQIVdzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&_nc_zt=28&oh=00_AQO69ro7ww7n_KYDEXGfZ0l57M7ediBdtZnFctOHUPWoEw&oe=6ADBD7D1&bitrate=1142986&tag=dash_h264-basic-gen2_720p",
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/reel/2374066166742658/",
+   "text_format_metadata": null,
+   "comments_id": "4779761615633632",
+   "shares_id": "4779761615633632",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1545736537587015",
+   "type": "post",
+   "url": "https://www.facebook.com/ESLSCAEgypt/posts/pfbid031s7Dew8yajTdroDAofNdVcLW8Rws4jSHgqRaNUx379xsYcqXcaNGj9ZjfLao9mEzl",
+   "message": "Meet Our Speaker | Eng. Mohamed Nour   \n\nWe are pleased to welcome Eng. Mohamed Nour, Co-Founder & CEO of Benefit for Healthy Food & Beverage (V7 & V Cola), as a distinguished speaker at the 4th Annual Executive Education Summit 2026!   \n\nBringing extensive leadership experience in entrepreneurship, brand building, and FMCG innovation, Eng. Mohamed Nour will contribute to the conversations shaping market strategy, scaling Egyptian consumer brands, and driving sustainable business growth.   \n\nJoin us for two days of inspiring insights, meaningful dialogue, and high-level networking with industry leaders.   \n\n📅 November 21–22, 2026\n📍 Royal Maxim Palace Kempinski – New Cairo   \n\n🎟️ Register now:\nhttps://lnkd.in/eEJk6vPx\n\n#ExecutiveEducationSummit2026 #EES2026 #ESLSCAUniversity #MohamedNour #V7 #VCola #FMCG #Leadership #Entrepreneurship",
+   "message_rich": "Meet Our Speaker | Eng. Mohamed Nour   \n\nWe are pleased to welcome Eng. Mohamed Nour, Co-Founder & CEO of Benefit for Healthy Food & Beverage (V7 & V Cola), as a distinguished speaker at the 4th Annual Executive Education Summit 2026!   \n\nBringing extensive leadership experience in entrepreneurship, brand building, and FMCG innovation, Eng. Mohamed Nour will contribute to the conversations shaping market strategy, scaling Egyptian consumer brands, and driving sustainable business growth.   \n\nJoin us for two days of inspiring insights, meaningful dialogue, and high-level networking with industry leaders.   \n\n📅 November 21–22, 2026\n📍 Royal Maxim Palace Kempinski – New Cairo   \n\n🎟️ Register now:\nhttps://lnkd.in/eEJk6vPx\n\n#ExecutiveEducationSummit2026 #EES2026 #ESLSCAUniversity #MohamedNour #V7 #VCola #FMCG #Leadership #Entrepreneurship",
+   "timestamp": 1791820625,
+   "comments_count": 1,
+   "reactions_count": 10,
+   "reshare_count": 3,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 9,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064520506994",
+    "name": "ESLSCA University Egypt",
+    "url": "https://www.facebook.com/ESLSCAEgypt",
+    "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/421942407_772611674899509_1750921351641523885_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=gBxgNWxY7L0Q7kNvwHOKbwd&_nc_oc=AdqxZtT99OldjyUZGczwSORB5dAlLaQJoL-HfRd1LvDb_vhi4rDtQI_Y5ETsUzu9uKY&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQOeXsJJc2QJaqVXwMBOVGMXKqJP4PRwz7coqyKo1OHFsg&oe=6ADBDC07",
+    "delegate_page_id": "110372265655509"
+   },
+   "authors": [
+    {
+     "id": "100064520506994",
+     "name": "ESLSCA University Egypt",
+     "url": "https://www.facebook.com/ESLSCAEgypt",
+     "profile_picture_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/421942407_772611674899509_1750921351641523885_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=gBxgNWxY7L0Q7kNvwHOKbwd&_nc_oc=AdqxZtT99OldjyUZGczwSORB5dAlLaQJoL-HfRd1LvDb_vhi4rDtQI_Y5ETsUzu9uKY&_nc_zt=24&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQOeXsJJc2QJaqVXwMBOVGMXKqJP4PRwz7coqyKo1OHFsg&oe=6ADBDC07",
+     "delegate_page_id": "110372265655509"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/844557191_1545727257587943_6327361192113156858_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1-y0_T76ANoQ7kNvwG_B0X2&_nc_oc=Adp8e-EYOrViryfFG8IUTlFofOB2FDB3sFxsTxo0ug508e3ND06_O7aMBPlYLac2mvg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQNoiTlHuGATL7F5oP9gXf0N5k7FJoRGYVF25b09-0CwIg&oe=6ADBC9A2",
+    "height": 1350,
+    "width": 1080,
+    "id": "1545727254254610"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1545736537587015",
+   "shares_id": "1545736537587015",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122183835062962009",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid022LXAD2Ua2wFWnimekwMjWGwgiJdtj8qfLFSPiH1yBbxegzdMLRpKR7FZqwFdGQXXl&id=61578860274085",
+   "message": "អនុមោទនា ពិធីបុណ្យកាន់បិណ្ឌ បិណ្ឌ១៣\n\nភ្ជុំបិណ្ឌឆ្នាំនេះ ទៅវត្តជាមួយ វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ 🇰🇭\nវី-កូឡា  គឺជាជម្រើសដ៏ស័ក្តិសមសម្រាប់ធ្វើជាតេយ្យទាន ប្រគេនព្រះសង្ឃ ក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ \nសម្រាប់បងប្អូនដែលត្រូវការភេសជ្ជៈជូនដល់ឱពុកម្តាយ បងប្អូន ក្រុមគ្រួសារ និងមិត្តភក្តិក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ កុំភ្លេចណាជាមួយនឹង វី-កូឡា\nវី-កូឡា  ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក \nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "message_rich": "អនុមោទនា ពិធីបុណ្យកាន់បិណ្ឌ បិណ្ឌ១៣\n\nភ្ជុំបិណ្ឌឆ្នាំនេះ ទៅវត្តជាមួយ វី-កូឡា ផលិតផលខ្មែរ រសជាតិនៃមោទនភាពជាតិ 🇰🇭\nវី-កូឡា  គឺជាជម្រើសដ៏ស័ក្តិសមសម្រាប់ធ្វើជាតេយ្យទាន ប្រគេនព្រះសង្ឃ ក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ \nសម្រាប់បងប្អូនដែលត្រូវការភេសជ្ជៈជូនដល់ឱពុកម្តាយ បងប្អូន ក្រុមគ្រួសារ និងមិត្តភក្តិក្នុងឱកាសបុណ្យភ្ជុំបិណ្ឌនេះ កុំភ្លេចណាជាមួយនឹង វី-កូឡា\nវី-កូឡា  ផលិតផលខ្មែរ ផលិតស្របតាមស្តង់ដារគុណភាព និងសុវត្ថិភាពខ្ពស់បំផុតទទួលស្គាល់កម្រិតពិភពលោក \nវី-កូឡា រសជាតិនៃមោទនភាពជាតិ!\nOur Cola. Our Pride.\n#ourcolaourpride\n#poweringlocaltogether\n#រសជាតិនៃមោទនភាពជាតិ\n#vcola",
+   "timestamp": 1791514819,
+   "comments_count": 6,
+   "reactions_count": 363,
+   "reshare_count": 7,
+   "reactions": {
+    "angry": 0,
+    "care": 3,
+    "haha": 0,
+    "like": 332,
+    "love": 28,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61578860274085",
+    "name": "V-COLA",
+    "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwEiJIzz&_nc_oc=Adqa40LulQXbs0vVe5-FEwjEWD9YohmldxzGqaC1D-sn_ty4aIbyfjAo_f8Uqe1g0Q8&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQP6NwxnZ7JPVnpyCaM9f9J4CMUTfBGeToTH1bExWNhfeg&oe=6ADBCD15",
+    "delegate_page_id": "719134201287366"
+   },
+   "authors": [
+    {
+     "id": "61578860274085",
+     "name": "V-COLA",
+     "url": "https://www.facebook.com/people/V-COLA/61578860274085/",
+     "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/532655617_122109486398962009_1756425054954349797_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2B1UkTWtLJQQ7kNvwEiJIzz&_nc_oc=Adqa40LulQXbs0vVe5-FEwjEWD9YohmldxzGqaC1D-sn_ty4aIbyfjAo_f8Uqe1g0Q8&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQP6NwxnZ7JPVnpyCaM9f9J4CMUTfBGeToTH1bExWNhfeg&oe=6ADBCD15",
+     "delegate_page_id": "719134201287366"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/836751852_122183715506962009_7108895894321795501_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4zKGoo0fn00Q7kNvwExwRVD&_nc_oc=AdpTLakMcSZ6Q5oTg9naDS7GCaN8nmehgt_OJNAXXOORrRBWzhtwE8fOKjPkj42VWuA&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQPIso_R_4SAQ855zIfh_O-zj2wUpNYld0TcDtBEJ1142g&oe=6ADBBC41",
+     "url": "https://www.facebook.com/photo.php?fbid=122183835026962009&set=a.122117638376962009&type=3",
+     "id": "122183835026962009"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/825327721_122183700338962009_6813687435465220172_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Cg3R8MmVcXIQ7kNvwFKFbph&_nc_oc=Adre-NkH6wzmFUrZbwXhwBfszrAEspGj-Zu-7wteZJVNDTAUKoCifZKJpi1xIIp_BvY&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMUH7cvBVCTbcf3MoGMaRnQCaTkUlfEk9PRmNmzhwoc8w&oe=6ADBB852",
+     "url": "https://www.facebook.com/photo.php?fbid=122183835014962009&set=a.122117638376962009&type=3",
+     "id": "122183835014962009"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/833913531_122183700296962009_5790156596942382387_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PlKgTGsNki0Q7kNvwGbgI_5&_nc_oc=Ado59EagVUKIasVJAZtXBmhJsTh7XviIJGg2ApI0jKg_mzQJyRrRz9jO4l6-CwVNAZs&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQNWtleaNfkDIVZqkk4MghM8S7ElF3QYlXvUEvS20pkdzQ&oe=6ADBCADB",
+     "url": "https://www.facebook.com/photo.php?fbid=122183835020962009&set=a.122117638376962009&type=3",
+     "id": "122183835020962009"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/836570926_122183700368962009_7133256230799777648_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uILR5_Jgv1gQ7kNvwFP2GsO&_nc_oc=AdqX187uvh3ypMwCe3A1dL7Acqe0WddxaM5NUx47VSnR6baiHL_PTcj33Pga-wiC7LM&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQOu05exMnW5gG1Oizz2Chj20rX_3KAsIPl40PI1zuzU6A&oe=6ADBD645",
+     "url": "https://www.facebook.com/photo.php?fbid=122183835008962009&set=a.122117638376962009&type=3",
+     "id": "122183835008962009"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122183835062962009",
+   "shares_id": "122183835062962009",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "1441883774640580",
+   "type": "post",
+   "url": "https://www.facebook.com/MadeInEG/posts/pfbid0oDmCA1MRB4B53cB4aj582kJzrQjZLh1KUE7YwPVf6ThmDR2QX85bL5s6ChREVCyhl",
+   "message": "تعرفون مشروبات V7Egypt و V cola \n\n💢 هذه علامات تجارية مصرية مملوكة لشركة «ڤيتاليتي»، التي افتتحنا مصنعها اليوم بمدينة السادات. \n💢 وقد بدأ هذا الاستثمار المصري الخالص مغامرةً في عام ٢٠٢١.\n💢 وارتكز حينها على الإنتاج لدى الآخرين، بنسبة مكون محلي  لم تتجاوز٢٠٪ ، وكانت القوة البشرية المُسيّرة للعمل لا تزيد عن ٢٠ فردًا. \n💢 أما اليوم ومع افتتاح المصنع الجديد، فقد بلغت نسبة المكون المحلي في منتجات الشركة ٩٥٪، ووصل عدد العاملين بها ٩٠٠ فرد، كما تُصدر منتجات الشركة الآن لـ ٤٨ دولة في ست قارات.\n💢 صنع هذا النجاح شُبان مصر، وأنتم أيضًا تستطيعون 👌\n💢 والآن أخبرونا: ما رأيكم في غطاء عبوات الشركة الواقي من الغبار؟ \n\n#صنع_في_مصر #تحيا_مصر #made_in_egypt",
+   "message_rich": "تعرفون مشروبات V7Egypt و V cola \n\n💢 هذه علامات تجارية مصرية مملوكة لشركة «ڤيتاليتي»، التي افتتحنا مصنعها اليوم بمدينة السادات. \n💢 وقد بدأ هذا الاستثمار المصري الخالص مغامرةً في عام ٢٠٢١.\n💢 وارتكز حينها على الإنتاج لدى الآخرين، بنسبة مكون محلي  لم تتجاوز٢٠٪ ، وكانت القوة البشرية المُسيّرة للعمل لا تزيد عن ٢٠ فردًا. \n💢 أما اليوم ومع افتتاح المصنع الجديد، فقد بلغت نسبة المكون المحلي في منتجات الشركة ٩٥٪، ووصل عدد العاملين بها ٩٠٠ فرد، كما تُصدر منتجات الشركة الآن لـ ٤٨ دولة في ست قارات.\n💢 صنع هذا النجاح شُبان مصر، وأنتم أيضًا تستطيعون 👌\n💢 والآن أخبرونا: ما رأيكم في غطاء عبوات الشركة الواقي من الغبار؟ \n\n#صنع_في_مصر #تحيا_مصر #made_in_egypt",
+   "timestamp": 1778525746,
+   "comments_count": 171,
+   "reactions_count": 2971,
+   "reshare_count": 167,
+   "reactions": {
+    "angry": 0,
+    "care": 79,
+    "haha": 3,
+    "like": 2125,
+    "love": 761,
+    "sad": 0,
+    "wow": 3
+   },
+   "author": {
+    "id": "100064569137490",
+    "name": "صنع في مصر - Made In Egypt",
+    "url": "https://www.facebook.com/MadeInEG",
+    "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/359511077_660240492804916_2870048741086638945_n.png?stp=cp0_dst-png_s80x80&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=cdMEsZJxheYQ7kNvwHE6UEc&_nc_oc=AdrN3xq5soB55iUyVtkLo4t8nSvkPT1BXF1HmzLWnXJen9j40oaYFB9bbOxSjr1RHyg&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMGtQHk8CFt7_ZGJeOBC1QSndAtChuCs3KKll_3sVMcfw&oe=6ADBD63C",
+    "delegate_page_id": "954946454589356"
+   },
+   "authors": [
+    {
+     "id": "100064569137490",
+     "name": "صنع في مصر - Made In Egypt",
+     "url": "https://www.facebook.com/MadeInEG",
+     "profile_picture_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-1/359511077_660240492804916_2870048741086638945_n.png?stp=cp0_dst-png_s80x80&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=cdMEsZJxheYQ7kNvwHE6UEc&_nc_oc=AdrN3xq5soB55iUyVtkLo4t8nSvkPT1BXF1HmzLWnXJen9j40oaYFB9bbOxSjr1RHyg&_nc_zt=24&_nc_ht=scontent-sjc6-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMGtQHk8CFt7_ZGJeOBC1QSndAtChuCs3KKll_3sVMcfw&oe=6ADBD63C",
+     "delegate_page_id": "954946454589356"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/696400388_1441881041307520_6344458592380362422_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FuJ4uIZzcPMQ7kNvwFSb62T&_nc_oc=AdqytGOhaO3YDA7coj7gk7RvKadcMhffgMJ-fx0cnCA1oEimMXqhethPllxLmnmzsT0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=S85pJ4NiX3ZzDbRKtvEKyA&_nc_ss=70289&oh=00_AQMBmxQMqNyvalffw5uiUP8X5aMXrbqHgDIDEML12Eka5w&oe=6ADBC358",
+    "height": 966,
+    "width": 914,
+    "id": "1441881037974187"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1441883774640580",
+   "shares_id": "1441883774640580",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2569111123542571",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/188888754898165/posts/2569111123542571/",
+   "message": "30 inch very large Coca-Cola Polor Bear. No rips but is dirty.",
+   "message_rich": "30 inch very large Coca-Cola Polor Bear. No rips but is dirty.",
+   "timestamp": 1778030510,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid02w1nMYrwY6qY9TqrHjMCPV5bfga2bfofJFLQx5mehDahPkUUtxmiyJZWWkEjNZTcql",
+    "name": "Jazmine Moyano",
+    "url": "https://www.facebook.com/jazmine.moyano.5",
+    "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/422887725_7164593996940039_5329886467919272695_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=XgyzIsCics4Q7kNvwGnu91J&_nc_oc=Adq-B80bwCBziQvXnPoYdfIm_b-i4ysE68OhX8aHeZ6ft5aPIF4mDoSzBEqI-aVeUaA&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQPaapXYUeyjXMq5aBSW7ctFNeqeDM_PfqRXyXTdJ1tctQ&oe=6ADBC1CE",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid02w1nMYrwY6qY9TqrHjMCPV5bfga2bfofJFLQx5mehDahPkUUtxmiyJZWWkEjNZTcql",
+     "name": "Jazmine Moyano",
+     "url": "https://www.facebook.com/jazmine.moyano.5",
+     "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/422887725_7164593996940039_5329886467919272695_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=XgyzIsCics4Q7kNvwGnu91J&_nc_oc=Adq-B80bwCBziQvXnPoYdfIm_b-i4ysE68OhX8aHeZ6ft5aPIF4mDoSzBEqI-aVeUaA&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQPaapXYUeyjXMq5aBSW7ctFNeqeDM_PfqRXyXTdJ1tctQ&oe=6ADBC1CE",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2569111123542571",
+   "shares_id": "2569111123542571",
+   "associated_group_id": "188888754898165",
+   "associated_group": {
+    "group_id": "188888754898165",
+    "name": "C.V. Craigslist",
+    "url": "https://www.facebook.com/groups/188888754898165/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2618394371947579",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/188888754898165/posts/2618394371947579/",
+   "message": "Vintage Buddy L pressed steel Coca-Cola delivery truck has a red and white color scheme. The toy truck has a plastic cab with a white steering wheel and a cracked front windshield. A pull-out metal ladder is on the side. Surface rust and paint wear are present on the metal body.",
+   "message_rich": "Vintage Buddy L pressed steel Coca-Cola delivery truck has a red and white color scheme. The toy truck has a plastic cab with a white steering wheel and a cracked front windshield. A pull-out metal ladder is on the side. Surface rust and paint wear are present on the metal body.",
+   "timestamp": 1782424447,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid02LNXziBKwxfQ8JVANm26RgqaLNJeaKZd1tKuQgHcWZ6EDbaRtL1yEgGXRmr4qe5NLl",
+    "name": "Melissa Hull",
+    "url": "https://www.facebook.com/pfbid02LNXziBKwxfQ8JVANm26RgqaLNJeaKZd1tKuQgHcWZ6EDbaRtL1yEgGXRmr4qe5NLl",
+    "profile_picture_url": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-1/475769787_10234709768634931_7402567948280466282_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_ymh7Gq7dYUQ7kNvwF7MHqG&_nc_oc=AdpQz5o_bY26s3SJl_pg0fKK5bTHYZhCAmQp5uF4XTV14OLseZz2UU0v3d10WXqJjZ4&_nc_zt=24&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQN8-Areye42bRad7aZ39W7-Xuq4m645VXfW9QTjGXVfJQ&oe=6ADBDF36",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid02LNXziBKwxfQ8JVANm26RgqaLNJeaKZd1tKuQgHcWZ6EDbaRtL1yEgGXRmr4qe5NLl",
+     "name": "Melissa Hull",
+     "url": "https://www.facebook.com/pfbid02LNXziBKwxfQ8JVANm26RgqaLNJeaKZd1tKuQgHcWZ6EDbaRtL1yEgGXRmr4qe5NLl",
+     "profile_picture_url": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-1/475769787_10234709768634931_7402567948280466282_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_ymh7Gq7dYUQ7kNvwF7MHqG&_nc_oc=AdpQz5o_bY26s3SJl_pg0fKK5bTHYZhCAmQp5uF4XTV14OLseZz2UU0v3d10WXqJjZ4&_nc_zt=24&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQN8-Areye42bRad7aZ39W7-Xuq4m645VXfW9QTjGXVfJQ&oe=6ADBDF36",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2618394371947579",
+   "shares_id": "2618394371947579",
+   "associated_group_id": "188888754898165",
+   "associated_group": {
+    "group_id": "188888754898165",
+    "name": "C.V. Craigslist",
+    "url": "https://www.facebook.com/groups/188888754898165/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1725755142416785",
+   "type": "post",
+   "url": "https://www.facebook.com/EvansHSCCBOE/posts/pfbid02aH3xit3Zy316jaCkWvwahJd7VAwG78FWv2ZNxp2qeRzRWznS7ihVCMtWMbaS1rk5l",
+   "message": "Our Evans High School Basketball Cheerleaders are kicking off their Coca-Cola Fundraiser, and we would love your support!\n\nThis is a great opportunity to stock up on your favorite beverages while helping our cheerleaders raise funds for the upcoming basketball season. We have a variety of drinks available by the case, including Coca-Cola, Sprite, Fanta, Dr. Pepper, Powerade, Body Armor, Minute Maid, Dasani, and more! Prices start at just $18 per case.\n\nPlease see the attached flyer for available products and pricing. If you're interested, you can place your order at https://ccboe.revtrak.net/high-schools/Evans-HS/Evans-HS-Athletics/evans-hs-cheer/evans-hs-basketball-cheer/#/v/ehs-basketball-cheer-coca-cola-fundraiser.\n\nGo Knights! 🖤 💛",
+   "message_rich": "Our Evans High School Basketball Cheerleaders are kicking off their Coca-Cola Fundraiser, and we would love your support!\n\nThis is a great opportunity to stock up on your favorite beverages while helping our cheerleaders raise funds for the upcoming basketball season. We have a variety of drinks available by the case, including Coca-Cola, Sprite, Fanta, Dr. Pepper, Powerade, Body Armor, Minute Maid, Dasani, and more! Prices start at just $18 per case.\n\nPlease see the attached flyer for available products and pricing. If you're interested, you can place your order at https://ccboe.revtrak.net/high-schools/Evans-HS/Evans-HS-Athletics/evans-hs-cheer/evans-hs-basketball-cheer/#/v/ehs-basketball-cheer-coca-cola-fundraiser.\n\nGo Knights! 🖤 💛",
+   "timestamp": 1791464242,
+   "comments_count": 0,
+   "reactions_count": 7,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 6,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100049469486180",
+    "name": "Evans High School",
+    "url": "https://www.facebook.com/EvansHSCCBOE",
+    "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/277773073_476891110636534_2845540516430569745_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=aNftAXwjgvsQ7kNvwEqVk98&_nc_oc=AdqoqBoloW1_p4-R4Rw2zkFbGNQrEww3QYjD7T2iGKKE0vlKNcPYzd6998jutCbSAhc&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQOtk9dvLpk8LK6yGjW5-NuL6R_xvRx1AG09KjP2TWITpA&oe=6ADBB898",
+    "delegate_page_id": "791837350906125"
+   },
+   "authors": [
+    {
+     "id": "100049469486180",
+     "name": "Evans High School",
+     "url": "https://www.facebook.com/EvansHSCCBOE",
+     "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/277773073_476891110636534_2845540516430569745_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=aNftAXwjgvsQ7kNvwEqVk98&_nc_oc=AdqoqBoloW1_p4-R4Rw2zkFbGNQrEww3QYjD7T2iGKKE0vlKNcPYzd6998jutCbSAhc&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQOtk9dvLpk8LK6yGjW5-NuL6R_xvRx1AG09KjP2TWITpA&oe=6ADBB898",
+     "delegate_page_id": "791837350906125"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-6/840020956_1725754292416870_2718124362477920951_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=k6iCiI44BYQQ7kNvwEz_rI0&_nc_oc=Adrxuc7ZnI4Tx4PmV86O7fU8mTJVvQpJhRJLhYSUXT652Ddmfsr0fXfqO-RwmQy_vyk&_nc_zt=23&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQN6Jx5Qo5Lzh79ZNj_IMVn6B31XQNum7_8iExteGSL6cg&oe=6ADBE97C",
+    "height": 1280,
+    "width": 989,
+    "id": "1725754289083537"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1725755142416785",
+   "shares_id": "1725755142416785",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1541061494700308",
+   "type": "post",
+   "url": "https://www.facebook.com/gdgoenkainternational/posts/pfbid0B6ZrV4QJExKTK2FnnSfSp5X3GV355Wt5PT7gF6XhJaG47YXr5baxhEHj9CNjMW1zl",
+   "message": "✨ Every experience outside the classroom is a step toward a brighter future.\n\nOur students from GD Goenka School, Knowledge Park V, Greater Noida West had an incredible learning experience at the Coca-Cola Happiness Factory, where they explored innovation, witnessed real-world production processes, and discovered how curiosity transforms into creativity.\n\nFrom interactive learning and behind-the-scenes insights to unforgettable moments with classmates, this educational visit inspired our young learners to think bigger, dream bolder, and embrace the world beyond textbooks.\n\nHere's a glimpse of a day filled with knowledge, exploration, and happiness 🌟\n\n#GDGoenkaSchool #KnowledgeParkV #GreaterNoidaWest #CocaColaHappinessFactory #EducationalVisit #ExperientialLearning #LearningBeyondClassroom #FutureLeaders #StudentLife #Innovation",
+   "message_rich": "✨ Every experience outside the classroom is a step toward a brighter future.\n\nOur students from GD Goenka School, Knowledge Park V, Greater Noida West had an incredible learning experience at the Coca-Cola Happiness Factory, where they explored innovation, witnessed real-world production processes, and discovered how curiosity transforms into creativity.\n\nFrom interactive learning and behind-the-scenes insights to unforgettable moments with classmates, this educational visit inspired our young learners to think bigger, dream bolder, and embrace the world beyond textbooks.\n\nHere's a glimpse of a day filled with knowledge, exploration, and happiness 🌟\n\n#GDGoenkaSchool #KnowledgeParkV #GreaterNoidaWest #CocaColaHappinessFactory #EducationalVisit #ExperientialLearning #LearningBeyondClassroom #FutureLeaders #StudentLife #Innovation",
+   "timestamp": 1785321062,
+   "comments_count": 0,
+   "reactions_count": 5,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 5,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063894160222",
+    "name": "G.D. Goenka International School , KP-V, Noida Extension",
+    "url": "https://www.facebook.com/gdgoenkainternational",
+    "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/548057102_1269554708517656_437431856113550520_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=j1jsU_IavTUQ7kNvwFgYhiE&_nc_oc=Adp31vG7MQIJsLmmbfJGDKFjcOA6GRYQfRR6xrJTlTtkt1cYwAsNWQuT3VqdL-Cuu_k&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNOOGKT_YgQt05Xv6vfZ7y_XksZmB4Ef2rn0gIbcNfXvA&oe=6ADBCD36",
+    "delegate_page_id": "1009166092617383"
+   },
+   "authors": [
+    {
+     "id": "100063894160222",
+     "name": "G.D. Goenka International School , KP-V, Noida Extension",
+     "url": "https://www.facebook.com/gdgoenkainternational",
+     "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/548057102_1269554708517656_437431856113550520_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=j1jsU_IavTUQ7kNvwFgYhiE&_nc_oc=Adp31vG7MQIJsLmmbfJGDKFjcOA6GRYQfRR6xrJTlTtkt1cYwAsNWQuT3VqdL-Cuu_k&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNOOGKT_YgQt05Xv6vfZ7y_XksZmB4Ef2rn0gIbcNfXvA&oe=6ADBCD36",
+     "delegate_page_id": "1009166092617383"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-6/758706841_1541060798033711_8166645761256533160_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jwEZKA0mzxcQ7kNvwF5t1AU&_nc_oc=AdpKDpqQhewtXPJg9InyJwE4vL0-htOGoxA5U_qp6SzGWmwMovpbROGAqac-kgfaTpo&_nc_zt=23&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNEYUuBRyy6o2JdNl-Xo3jtBihunCk-X87MSUXcsnXs-g&oe=6ADBBEEA",
+     "url": "https://www.facebook.com/photo.php?fbid=1541060754700382&set=a.445146814291787&type=3",
+     "id": "1541060754700382"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-6/760232779_1541060811367043_7364531950517445755_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=58bP3joib6YQ7kNvwEskHKZ&_nc_oc=AdrgRl0JeY9KhcY-_WlFEQeQxajN8lJlGQjZPGfuuEt3PIYXKgOZazWsbXUVAOXoR0U&_nc_zt=23&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQM1yjHb2XXsFTSR390Xcdv4Wt4_hcc1HP-FB5aSMZWgcw&oe=6ADBCA9F",
+     "url": "https://www.facebook.com/photo.php?fbid=1541060788033712&set=a.445146814291787&type=3",
+     "id": "1541060788033712"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-6/757683377_1541060804700377_1032728531440793370_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Zi9MOz83kD8Q7kNvwFSWGRK&_nc_oc=AdrAYFQ2tdEMJpFKhTbx2-gufElz2ExjX_RUYAOrViXgSPLlknCygef0QhzxBBSgjSM&_nc_zt=23&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQOtbHR7F_5Q-0NjumgLXtOKA41VFRbvIfX_QVKe_Itxcg&oe=6ADBDEF5",
+     "url": "https://www.facebook.com/photo.php?fbid=1541060778033713&set=a.445146814291787&type=3",
+     "id": "1541060778033713"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-6/758543299_1541060808033710_2334377631564313222_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=22xLo2zycTAQ7kNvwGK0T1J&_nc_oc=AdqJoGWj68RzuIavP7N7uUh4VjUhksGsnqWieL6DLZSG20zQHUsdZUls2Ma11iEUuMY&_nc_zt=23&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQMh-MpSmb5fZNpa8PF0nJOQJ7KLRLWg18EN9ZEqt5QTzg&oe=6ADBED30",
+     "url": "https://www.facebook.com/photo.php?fbid=1541060771367047&set=a.445146814291787&type=3",
+     "id": "1541060771367047"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-6/759420123_1541060801367044_810231114380662466_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=61VK5anf1CYQ7kNvwE5Hnx1&_nc_oc=AdoKXVQEBtwltdDNRoAJnAbixtwV4Bgrr2F5RajNXjhsYXZRhGv_rYGWaXCz6-HlxhU&_nc_zt=23&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNxwR8C-SSPnZ5Y91Ga7hwoxz1SaRvRSGXDu2vPZ4HJuw&oe=6ADBC4B9",
+     "url": "https://www.facebook.com/photo.php?fbid=1541060764700381&set=a.445146814291787&type=3",
+     "id": "1541060764700381"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1541061494700308",
+   "shares_id": "1541061494700308",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 6,
+   "top_comments": []
+  },
+  {
+   "post_id": "10237146740060762",
+   "type": "post",
+   "url": "https://www.facebook.com/rick.guggemos/posts/pfbid02XVRNAw37yuCrrvp3BxMdXzuReXaAaesHa3wxkrwyR4Rfhoxv2SDnV8FHW51tWtPMl",
+   "message": "To all of my fellow youngsters! \n\nRemember this song? \n\n",
+   "message_rich": "To all of my fellow youngsters! \n\nRemember this song? \n\n",
+   "timestamp": 1787635542,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0vNS6fY5gC5mL56mdKuiT3piTjdYy4vREMqKkoa6Fd9iYFpSjDE9h3LFQh5nRmU2Xl",
+    "name": "Rick Guggemos",
+    "url": "https://www.facebook.com/rick.guggemos",
+    "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/783354488_10237103497179717_753724174527824539_n.jpg?stp=c40.0.482.482a_cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=5f-fxpOasioQ7kNvwF1x2Q_&_nc_oc=AdqiJeVX8HP85Q12KjePdyDwvBpHvqon-GAAfYhkz9cn_a9sI45Q0fWPJoqEinyklfg&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNa2R4HHvzUDPfMXwIK_2xU0CkQKezPaa0M-1G-jhLjrg&oe=6ADBCCEB",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0vNS6fY5gC5mL56mdKuiT3piTjdYy4vREMqKkoa6Fd9iYFpSjDE9h3LFQh5nRmU2Xl",
+     "name": "Rick Guggemos",
+     "url": "https://www.facebook.com/rick.guggemos",
+     "profile_picture_url": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-1/783354488_10237103497179717_753724174527824539_n.jpg?stp=c40.0.482.482a_cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=5f-fxpOasioQ7kNvwF1x2Q_&_nc_oc=AdqiJeVX8HP85Q12KjePdyDwvBpHvqon-GAAfYhkz9cn_a9sI45Q0fWPJoqEinyklfg&_nc_zt=24&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNa2R4HHvzUDPfMXwIK_2xU0CkQKezPaa0M-1G-jhLjrg&oe=6ADBCCEB",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": "https://www.youtube.com/watch?v=1VM2eLhvsSM",
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "10237146740060762",
+   "shares_id": "10237146740060762",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122131949144989344",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0WKbsV4c94GS4omWuJdvUGEENupZVQ45ZkCFwG9uNy91e21KmtNB97UQrw4nmHisMl&id=61579680343912",
+   "message": "Honduras 🇭🇳 Vs 🇪🇸 España \n\nMundial de Sudáfrica 2010. \n\nEstadio Ellis Park (conocido por motivos de patrocinio como Coca-Cola Park), ubicado en la ciudad de Johannesburgo.\n\nEl encuentro se disputó el 21 de junio de 2010 y terminó con victoria para la selección española por 2-0, con un doblete de David Villa.\n\n#TBT #Sudafrica2010 #Honduras #España",
+   "message_rich": "Honduras 🇭🇳 Vs 🇪🇸 España \n\nMundial de Sudáfrica 2010. \n\nEstadio Ellis Park (conocido por motivos de patrocinio como Coca-Cola Park), ubicado en la ciudad de Johannesburgo.\n\nEl encuentro se disputó el 21 de junio de 2010 y terminó con victoria para la selección española por 2-0, con un doblete de David Villa.\n\n#TBT #Sudafrica2010 #Honduras #España",
+   "timestamp": 1791503824,
+   "comments_count": 0,
+   "reactions_count": 5,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 5,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61579680343912",
+    "name": "René V.",
+    "url": "https://www.facebook.com/people/Ren%C3%A9-V/61579680343912/",
+    "profile_picture_url": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-1/773580855_122124647966989344_4953232274775790601_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=8H9GfjqmrSAQ7kNvwEKhWxp&_nc_oc=Adpr66xDxH-8mOIWdJOdX5dZi4tZzX2APvplCFTumS3UlM_ckcYdxXTRcMiGiP5Jk4c&_nc_zt=24&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQMD1-MGQyyAWy4z5C7jvX72TqHJEkgMq8HZ8JkKBf_IBQ&oe=6ADBC240",
+    "delegate_page_id": "1090655770787019"
+   },
+   "authors": [
+    {
+     "id": "61579680343912",
+     "name": "René V.",
+     "url": "https://www.facebook.com/people/Ren%C3%A9-V/61579680343912/",
+     "profile_picture_url": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-1/773580855_122124647966989344_4953232274775790601_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=8H9GfjqmrSAQ7kNvwEKhWxp&_nc_oc=Adpr66xDxH-8mOIWdJOdX5dZi4tZzX2APvplCFTumS3UlM_ckcYdxXTRcMiGiP5Jk4c&_nc_zt=24&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQMD1-MGQyyAWy4z5C7jvX72TqHJEkgMq8HZ8JkKBf_IBQ&oe=6ADBC240",
+     "delegate_page_id": "1090655770787019"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-6/843411096_122131948376989344_1327518312409432312_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KSSwJUc8oZ0Q7kNvwFX72FE&_nc_oc=AdqayUtB4K3kpZPmyQrJUFOa-gugFB9hOht7rxJu7qKHS2mYzh3tLM5RuViEd0OiCMA&_nc_zt=23&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQPxSpOQ_2RV4lexcSJmN5qGOMQkYKffjef1KuZMiZkP3w&oe=6ADBEF2C",
+     "url": "https://www.facebook.com/photo.php?fbid=122131948364989344&set=a.122104274906989344&type=3",
+     "id": "122131948364989344"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-6/843240572_122131949054989344_2748810304121859658_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fDTX-_Y9_fwQ7kNvwHLoD2L&_nc_oc=AdqE6dCfXPx2HO_tDlt5nnxzT2RYW5t54UOKw11BGIywa-iQKkryA5lrSx1R0Hpjhs0&_nc_zt=23&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNWCsrn-QZBLbsAk5Sbt6N8hnN2O4gVOUyKsK0mPTVeuw&oe=6ADBCFB8",
+     "url": "https://www.facebook.com/photo.php?fbid=122131949048989344&set=a.122104274906989344&type=3",
+     "id": "122131949048989344"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-6/842574659_122131948796989344_8779941489612391351_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=uyPd5C5tymEQ7kNvwFMD34u&_nc_oc=AdrfeXCTP0tH1--fYk8mBduYcXhrlrzVOkVlARn8DIiBaL8EJ0rJdKP-ZspjU4-aAk4&_nc_zt=23&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQPEvmSoPOIt9wEQpi_f8MPgoy5rpm8i1D0quzWnKNH1TA&oe=6ADBD73F",
+     "url": "https://www.facebook.com/photo.php?fbid=122131948790989344&set=a.122104274906989344&type=3",
+     "id": "122131948790989344"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-2.fna.fbcdn.net/v/t39.30808-6/841651304_122131948406989344_672363372939123377_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JyhTnDbaDM4Q7kNvwGG-ZIX&_nc_oc=AdrHcGL2Moyy9yOTG9AxO0PbXCiXWb8Q85hjdFOcIXuaMR5GBpl3OoYvwe9GzhhZA8s&_nc_zt=23&_nc_ht=scontent.fbgw55-2.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQNO9xbc-NfMQMPidjCqClUrh3pcRtEbI-JZfVs_Db384w&oe=6ADBCE26",
+     "url": "https://www.facebook.com/photo.php?fbid=122131948394989344&set=a.122104274906989344&type=3",
+     "id": "122131948394989344"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbgw55-1.fna.fbcdn.net/v/t39.30808-6/840133727_122131948538989344_5354188926913528826_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VC07L0JkUEsQ7kNvwGFM-mm&_nc_oc=AdqioXmVv0waffWcnfADxruf6CAJOZ3vIXgJBVIpWIu6Ao_vXqIwT9alg1frlkpeo9U&_nc_zt=23&_nc_ht=scontent.fbgw55-1.fna&_nc_gid=Bus4g93RJ3kMdYkninrquA&_nc_ss=70289&oh=00_AQOk-uQtiTN3bLOHb11RVGfLfH2lZ7aAbHDXSLbvPdzGLg&oe=6ADBC07F",
+     "url": "https://www.facebook.com/photo.php?fbid=122131948532989344&set=a.122104274906989344&type=3",
+     "id": "122131948532989344"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122131949144989344",
+   "shares_id": "122131949144989344",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 17,
+   "top_comments": []
+  },
+  {
+   "post_id": "947022958228265",
+   "type": "post",
+   "url": "https://www.facebook.com/V7Egypt/posts/pfbid02smPtDG2JfcQHD4FnWpQEiiAsW3nA7pfmM5RBiqYVJYtAtv9fPbA1iMsqgj19XCY9l",
+   "message": "مصنع جديد، وطموح أكبر.\nعلامات V تواصل دعم الصناعة المصرية بافتتاح مصنع ڤيتاليتي الجديد الذراع الصناعي لمنتجات V Cola وV7، بحضور معالي رئيس الوزراء د. مصطفى مدبولي ووزير الصناعة م. خالد هاشم ورافقه اللواء/ عمرو الغريب محافظ المنوفية، وقيادات ومسئولي الشركة.\nمن مصر هدية لكل العالم.",
+   "message_rich": "مصنع جديد، وطموح أكبر.\nعلامات V تواصل دعم الصناعة المصرية بافتتاح مصنع ڤيتاليتي الجديد الذراع الصناعي لمنتجات V Cola وV7، بحضور معالي رئيس الوزراء د. مصطفى مدبولي ووزير الصناعة م. خالد هاشم ورافقه اللواء/ عمرو الغريب محافظ المنوفية، وقيادات ومسئولي الشركة.\nمن مصر هدية لكل العالم.",
+   "timestamp": 1778504147,
+   "comments_count": 28,
+   "reactions_count": 261,
+   "reshare_count": 12,
+   "reactions": {
+    "angry": 0,
+    "care": 11,
+    "haha": 0,
+    "like": 139,
+    "love": 111,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61555020627449",
+    "name": "V Super Soda",
+    "url": "https://www.facebook.com/Vsupersoda",
+    "profile_picture_url": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwFosvKR&_nc_oc=AdruPWUcDHeQngWV_tQvMc3B0BhlL7AoTG42R1yLzzjYSrBe6q9XWHGeDfWZQtpm5EQ&_nc_zt=24&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQNWE5IsWzTb84aLFuioodYfTXsGS4IlJASoaNpL-C-1_w&oe=6ADBBEA5",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "100087617073692",
+     "name": "V7Egypt",
+     "url": "https://www.facebook.com/V7Egypt",
+     "profile_picture_url": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-1/313404894_101110602816659_7138804010534591516_n.png?stp=cp0_dst-png_s80x80&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=2ZnW7KNMckEQ7kNvwE7Aa8Y&_nc_oc=AdrzwLOEJ6Hrp3QAbHg-2E50CuxaWY1ZD8tLpFuCZd3tB1leooNJl3c5Za4hBAuz8QA&_nc_zt=24&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQMmKHD7mVMNouo1enK1IThcEDX8VVKLW5q37Ny1nkSlPg&oe=6ADBB850",
+     "delegate_page_id": null
+    },
+    {
+     "id": "61581185522140",
+     "name": "V7flavoredmalt",
+     "url": "https://www.facebook.com/people/V7flavoredmalt/61581185522140/",
+     "profile_picture_url": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-1/550891412_122097600957039517_5924166416650233240_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=FRvSek4e1VMQ7kNvwGy3b0h&_nc_oc=AdqKp5eDJhJN4L1DuUfBcW-Qz-gPDnWRHjZHUf7x2iM1R024VCAusoyGWB1jRAKM62c&_nc_zt=24&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQOyhsKQmdSz7AfEj5txFmqFaooRGYBWno1v4h_gLiWydQ&oe=6ADBD4B0",
+     "delegate_page_id": null
+    },
+    {
+     "id": "61555020627449",
+     "name": "V Super Soda",
+     "url": "https://www.facebook.com/Vsupersoda",
+     "profile_picture_url": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwFosvKR&_nc_oc=AdruPWUcDHeQngWV_tQvMc3B0BhlL7AoTG42R1yLzzjYSrBe6q9XWHGeDfWZQtpm5EQ&_nc_zt=24&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQNWE5IsWzTb84aLFuioodYfTXsGS4IlJASoaNpL-C-1_w&oe=6ADBBEA5",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/693663464_947020411561853_598993487553361369_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=54XRDw0JoMYQ7kNvwH791jP&_nc_oc=AdqCUskYk0tfAEw92ibAqx9K3treAceOgPhZm-OUbJ8rsVL23fzGZ9udkZ51V8JpG8w&_nc_zt=23&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQM1sa6eKZtdXXW0LYtmSV7j9gShw1x0WimoOUv2Qs6qyw&oe=6ADBB881",
+    "height": 1365,
+    "width": 2048,
+    "id": "947020408228520"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "947022958228265",
+   "shares_id": "947022958228265",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1055361967249595",
+   "type": "post",
+   "url": "https://www.facebook.com/ZNKAluminij/posts/pfbid021AbJ6y2kb7Jf8qcviVLd1aUqeqK8dGNavdKFUqHFfTY1cDg7yeSkstJ3TVYvEFm6l",
+   "message": "⚽ Split 2026  |  Coca-Cola Cup 🏆\n🌩️ v finalu deklet je 2x počilo 💥💥\n\nZmagovalke mednarodnega finala Coca-Cola Cup 2026, ki se odvija v sklopu Plazma Sportske igre mladih v sodelovanju z Športne igre mladih Slovenia so postale - dekleta ŽNK Aluminij 🔥\n\nV velikem finalnem obračunu jubilejne 30. sezone iger smo spremljali dvoboj dveh odličnih ekip. ŽNK Aluminij je proti Čačku (Srbija) po zaostanku 0:1 uprizoril come back in dekleta so se sredi Splita razveselile velike mednarodne zmage🥇🇸🇮\n\n20:00 Aluminij ️ 2🆚1  Borac Čačak (SRB)\n🎯 strelka: 2x Lara\n\nA to še zdaleč ni vse.... za najboljši posameznici sta bili izbrani dve naši igralki:\n🧤 Lučka Janežič - naj vratarka\n💫 Lia Drevenšek - naj igralka\n\nčestitke dekletom za veliko zmago na vrhunskem mednarodnem finalu 👏👏👏 \n\n📸 spodaj še nekaj fotk iz dekliškega nogometnega finala Plazma Sportske igre mladih oz. Coca-Cola Cupa v Splitu.",
+   "message_rich": "⚽ Split 2026  |  Coca-Cola Cup 🏆\n🌩️ v finalu deklet je 2x počilo 💥💥\n\nZmagovalke mednarodnega finala Coca-Cola Cup 2026, ki se odvija v sklopu Plazma Sportske igre mladih v sodelovanju z Športne igre mladih Slovenia so postale - dekleta ŽNK Aluminij 🔥\n\nV velikem finalnem obračunu jubilejne 30. sezone iger smo spremljali dvoboj dveh odličnih ekip. ŽNK Aluminij je proti Čačku (Srbija) po zaostanku 0:1 uprizoril come back in dekleta so se sredi Splita razveselile velike mednarodne zmage🥇🇸🇮\n\n20:00 Aluminij ️ 2🆚1  Borac Čačak (SRB)\n🎯 strelka: 2x Lara\n\nA to še zdaleč ni vse.... za najboljši posameznici sta bili izbrani dve naši igralki:\n🧤 Lučka Janežič - naj vratarka\n💫 Lia Drevenšek - naj igralka\n\nčestitke dekletom za veliko zmago na vrhunskem mednarodnem finalu 👏👏👏 \n\n📸 spodaj še nekaj fotk iz dekliškega nogometnega finala Plazma Sportske igre mladih oz. Coca-Cola Cupa v Splitu.",
+   "timestamp": 1787231309,
+   "comments_count": 30,
+   "reactions_count": 203,
+   "reshare_count": 21,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 181,
+    "love": 22,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100083274049800",
+    "name": "ŽNK Aluminij",
+    "url": "https://www.facebook.com/ZNKAluminij",
+    "profile_picture_url": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-1/359858534_256230590496074_6326059224033138234_n.jpg?stp=c0.32.1095.1095a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=U4dWz9Ad-gkQ7kNvwE5qD_9&_nc_oc=AdrkrdqlJUdbtVzcnlyJsZxPkFLn7nzvFZmsCZovEDZwehyWPgkHCN7RyVV0e8uagEE&_nc_zt=24&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQN4TRevIAobRiD4RlXeKuEVgE__M6P_H6NrKoIdn_XuLQ&oe=6ADBCA11",
+    "delegate_page_id": "101755892597257"
+   },
+   "authors": [
+    {
+     "id": "100083274049800",
+     "name": "ŽNK Aluminij",
+     "url": "https://www.facebook.com/ZNKAluminij",
+     "profile_picture_url": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-1/359858534_256230590496074_6326059224033138234_n.jpg?stp=c0.32.1095.1095a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=U4dWz9Ad-gkQ7kNvwE5qD_9&_nc_oc=AdrkrdqlJUdbtVzcnlyJsZxPkFLn7nzvFZmsCZovEDZwehyWPgkHCN7RyVV0e8uagEE&_nc_zt=24&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQN4TRevIAobRiD4RlXeKuEVgE__M6P_H6NrKoIdn_XuLQ&oe=6ADBCA11",
+     "delegate_page_id": "101755892597257"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/780501251_1055354213917037_2891243708787590529_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EdCea8h1BNcQ7kNvwF9-vYs&_nc_oc=Adpm2ULgiMYrBSb-2Jj6eETVDZk6Ccw2auqdsgwhfN4UilatnmRDiy9lvaJJap3OnQM&_nc_zt=23&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQOTEHFFQ1FzN_bfF-b0UNGn6IHQQI1YYpbe-L1aBULrIQ&oe=6ADBCE87",
+     "url": "https://www.facebook.com/photo.php?fbid=1055361860582939&set=a.131298172989317&type=3",
+     "id": "1055361860582939"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/779048695_1055356517250140_7213849407255261163_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=njSgyEx6naQQ7kNvwHUI0vA&_nc_oc=AdpfWrc-CNrHpv3RkRVm9z1i0m2y1s_9Ss5x7HlEYVorsNxGl8f1r-mUanoQmoES1GM&_nc_zt=23&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQOCRrAsotph-m05KQ6ZjYTnhRKBBf3VH8Xp1a_r7vCsaQ&oe=6ADBEBC8",
+     "url": "https://www.facebook.com/photo.php?fbid=1055361863916272&set=a.131298172989317&type=3",
+     "id": "1055361863916272"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/779455103_1055721083880350_3477369392095447333_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=s_I-d76irlEQ7kNvwGHc35h&_nc_oc=AdoFKe1eIwUEeFqbSBpGDF41Jxh2NZpcBePlMdJ4HKv8Fr78fbdt5CXwAkEZct0yRwA&_nc_zt=23&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQM6Qppuw95kEcIQ_dTQxbtcrxmHzGrPf_PTV9IgdPp4Uw&oe=6ADBDC1C",
+     "url": "https://www.facebook.com/photo.php?fbid=1055721080547017&set=a.131298172989317&type=3",
+     "id": "1055721080547017"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/781525907_1055354570583668_2258962818097162014_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=spDday7SbFkQ7kNvwEayLlE&_nc_oc=AdplRMkzAv0WEQvbwBvMoIpfKEGJgZpLW5rPRyCU4b-HQX1yLgU0sdyinlo74kt4pxk&_nc_zt=23&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQMX9cXDBXWn-RW2HtLc-3oQLaInXarn8-1mChzCgwwo3A&oe=6ADBD74E",
+     "url": "https://www.facebook.com/photo.php?fbid=1055361870582938&set=a.131298172989317&type=3",
+     "id": "1055361870582938"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/782345017_1055354933916965_8259835073174487234_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RcZO7t8B97MQ7kNvwE6dzBe&_nc_oc=AdpM_uSy2Bp22m36rBvooGA6SoVpKVsCAHAf3Y3645QDsYELybsSjXYtk8lw6MygcEQ&_nc_zt=23&_nc_ht=scontent.fuio5-1.fna&_nc_gid=M6v7ffkbycj9s3EyUkBw2Q&_nc_ss=70289&oh=00_AQMaCWtOq73330IR671Vx5YfM7D2KpB3TWBtx0OOYr31ww&oe=6ADBD499",
+     "url": "https://www.facebook.com/photo.php?fbid=1055361873916271&set=a.131298172989317&type=3",
+     "id": "1055361873916271"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1055361967249595",
+   "shares_id": "1055361967249595",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 23,
+   "top_comments": []
+  }
+ ]
+}

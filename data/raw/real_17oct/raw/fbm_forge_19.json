@@ -1,0 +1,1406 @@
+{
+ "input": {
+  "query": "V7 بلوبيري",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "KMNOxkMzlPXkjV6SS",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:37:56.687Z",
+  "finishedAt": "2026-10-19T11:38:30.139Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.8871,
+ "items": [
+  {
+   "post_id": "122130670335243542",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid03VuQsJ3gGgKDgAkZ86oq6nSzZ5PVGeBgRchtsyqyaF8U96oGy79e2nEwTZKz7UjGl&id=61587306266839",
+   "message": "انتعاش الصيف الحقيقي يعني تلاقي كل اللي نفسك فيه في مكان واحد! 😎🥤\nجبنالك التشكيلة الكاملة من مشروبات V7 العالمية:\n✨ V7 Cola: طعم الكولا الأصلي لعشاق الكلاسيك.\nبجميع نكهاته عشان تختار الروقان اللي يناسب موودك (ليمون نعناع، بلوبيري، كولا، رمان)",
+   "message_rich": "انتعاش الصيف الحقيقي يعني تلاقي كل اللي نفسك فيه في مكان واحد! 😎🥤\nجبنالك التشكيلة الكاملة من مشروبات V7 العالمية:\n✨ V7 Cola: طعم الكولا الأصلي لعشاق الكلاسيك.\nبجميع نكهاته عشان تختار الروقان اللي يناسب موودك (ليمون نعناع، بلوبيري، كولا، رمان)",
+   "timestamp": 1786221198,
+   "comments_count": 1,
+   "reactions_count": 7,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 5,
+    "love": 2,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61587306266839",
+    "name": "جملة الهدى",
+    "url": "https://www.facebook.com/people/%D8%AC%D9%85%D9%84%D8%A9-%D8%A7%D9%84%D9%87%D8%AF%D9%89/61587306266839/",
+    "profile_picture_url": "https://scontent.fdxb3-1.fna.fbcdn.net/v/t39.30808-1/622551759_122095854087243542_3291261114850758454_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=PhLlnY0UD5AQ7kNvwHSqTAa&_nc_oc=Adr_2DERJME3vJttXGHKjZ-IrsB2MubtTyfwy8qJKv31z6pS1sDxT4E2cUMT8gcEuGA&_nc_zt=24&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQMY5AV__8YUFx9iW-M8lOiQieOjAHq8YVK0UHtt6AJqqw&oe=6ADBB85F",
+    "delegate_page_id": "974910345705917"
+   },
+   "authors": [
+    {
+     "id": "61587306266839",
+     "name": "جملة الهدى",
+     "url": "https://www.facebook.com/people/%D8%AC%D9%85%D9%84%D8%A9-%D8%A7%D9%84%D9%87%D8%AF%D9%89/61587306266839/",
+     "profile_picture_url": "https://scontent.fdxb3-1.fna.fbcdn.net/v/t39.30808-1/622551759_122095854087243542_3291261114850758454_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=PhLlnY0UD5AQ7kNvwHSqTAa&_nc_oc=Adr_2DERJME3vJttXGHKjZ-IrsB2MubtTyfwy8qJKv31z6pS1sDxT4E2cUMT8gcEuGA&_nc_zt=24&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQMY5AV__8YUFx9iW-M8lOiQieOjAHq8YVK0UHtt6AJqqw&oe=6ADBB85F",
+     "delegate_page_id": "974910345705917"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fdxb3-2.fna.fbcdn.net/v/t39.30808-6/767363721_122130670311243542_2433215972747277597_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cW1eFht5j6oQ7kNvwFGu_UY&_nc_oc=AdrBle__JnNyas25UiVhhd3UwPVa827aM4Gzyb-pu_ATzwVeacrkUkJtfUhvLEJrAtM&_nc_zt=23&_nc_ht=scontent.fdxb3-2.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQNyNBlHjZidspLrDptmBH5TvM_8k0k-9Ytd4a3okxYvJw&oe=6ADBEE6C",
+    "height": 600,
+    "width": 706,
+    "id": "122130670305243542"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122130670335243542",
+   "shares_id": "122130670335243542",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1110048614873676",
+   "type": "post",
+   "url": "https://www.facebook.com/Allouzitrading/posts/pfbid02ddfUt2yxKjE8RehYd72RHFepSf1ps3VTvYphKEM1AF42KYw3BESgawTzXGhgRyWql",
+   "message": "انتعاش لا يُقاوم مع تشكيلة مشروبات V7! 🥤✨\nنكهات طبيعية 100% تناسب جميع الأوقات:\n🔹 سوبر صودا: كولا، برتقال، ليمون (بدون كافيين).\n🔹 فوار بالفيتامينات: رمان، بلوبيري، بينا كولادا، وغيرها.\n🔹 شعير منكه: تفاح، وأناناس بالعسل.\n📍 متوفرة الآن لدى الوكيل المعتمد: اللوزي وبركات.\nللتواصل:\n📍 إدلب – سرمدا، الشارع العام\n📞 +905353722571\n📍 حلب – حلب الجديدة، آخر نزلة نفيسة بعد صيدلية الرعاية\n📞 +963933643955 | +963947175203\n\n#تجارة #جملة #سوريا #براندات #عالمية",
+   "message_rich": "انتعاش لا يُقاوم مع تشكيلة مشروبات V7! 🥤✨\nنكهات طبيعية 100% تناسب جميع الأوقات:\n🔹 سوبر صودا: كولا، برتقال، ليمون (بدون كافيين).\n🔹 فوار بالفيتامينات: رمان، بلوبيري، بينا كولادا، وغيرها.\n🔹 شعير منكه: تفاح، وأناناس بالعسل.\n📍 متوفرة الآن لدى الوكيل المعتمد: اللوزي وبركات.\nللتواصل:\n📍 إدلب – سرمدا، الشارع العام\n📞 +905353722571\n📍 حلب – حلب الجديدة، آخر نزلة نفيسة بعد صيدلية الرعاية\n📞 +963933643955 | +963947175203\n\n#تجارة #جملة #سوريا #براندات #عالمية",
+   "timestamp": 1789995603,
+   "comments_count": 3,
+   "reactions_count": 14,
+   "reshare_count": 11,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 11,
+    "love": 3,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100076056421135",
+    "name": "شركة اللوزي و بركات  التجارية",
+    "url": "https://www.facebook.com/Allouzitrading",
+    "profile_picture_url": "https://scontent.fdxb3-4.fna.fbcdn.net/v/t39.30808-1/724024667_1026039583274580_7148228454643941697_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DwIWmKnoT3gQ7kNvwHzGgCb&_nc_oc=AdpRZFEjA-pfYk7451F0Kw10tt4V2XsvyED8Lh8YRGMNa-a65xFagz1aQkAX3-gh4tU&_nc_zt=24&_nc_ht=scontent.fdxb3-4.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQM5iIN8EjXkSuY-rpqBpN0rs4Fz8t5b3vc9qy_Z-k3evw&oe=6ADBD1BD",
+    "delegate_page_id": "439872289747626"
+   },
+   "authors": [
+    {
+     "id": "100076056421135",
+     "name": "شركة اللوزي و بركات  التجارية",
+     "url": "https://www.facebook.com/Allouzitrading",
+     "profile_picture_url": "https://scontent.fdxb3-4.fna.fbcdn.net/v/t39.30808-1/724024667_1026039583274580_7148228454643941697_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DwIWmKnoT3gQ7kNvwHzGgCb&_nc_oc=AdpRZFEjA-pfYk7451F0Kw10tt4V2XsvyED8Lh8YRGMNa-a65xFagz1aQkAX3-gh4tU&_nc_zt=24&_nc_ht=scontent.fdxb3-4.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQM5iIN8EjXkSuY-rpqBpN0rs4Fz8t5b3vc9qy_Z-k3evw&oe=6ADBD1BD",
+     "delegate_page_id": "439872289747626"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb3-3.fna.fbcdn.net/v/t39.30808-6/799334025_1110046671540537_7669986967122414321_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XPhSftYr06EQ7kNvwHotOez&_nc_oc=AdoVVu7ykonUxkSxu8T_1w2E_EQ4tcwElY-q3WTmM0KfZEcv_NQVCLYZwYxO-CEBJRk&_nc_zt=23&_nc_ht=scontent.fdxb3-3.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQOiN0-ZBFph1btvTrca0sF3qOQTugi9PacgKRJLLxoqGQ&oe=6ADBD903",
+     "url": "https://www.facebook.com/photo.php?fbid=1110046668207204&set=a.939214418623764&type=3",
+     "id": "1110046668207204"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb3-1.fna.fbcdn.net/v/t39.30808-6/800450037_1110046698207201_1969432414438415185_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Fukji9Nq87sQ7kNvwFDCpRD&_nc_oc=AdqFppVYhq0ZScj24c44-yRBFGeKMBr9gLn0Zt9k05t7J3C7x9BhZk1nGvU4S4y0PK4&_nc_zt=23&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQPC3XEyqXy6B0J8aHoYS_3Yd2nYpKX1Na2ZLE0xSYLTAQ&oe=6ADBCC03",
+     "url": "https://www.facebook.com/photo.php?fbid=1110046691540535&set=a.939214418623764&type=3",
+     "id": "1110046691540535"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb3-2.fna.fbcdn.net/v/t39.30808-6/794413787_1110046718207199_2990110366380616292_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wTNWZ5bSfPAQ7kNvwGCN3kU&_nc_oc=Ado8Yd6QjE_wvTS4uAAe8Y87XudiflZA8GouiwbKVRFo2ejDIRl4S9Kjv-ZHTEVnA2w&_nc_zt=23&_nc_ht=scontent.fdxb3-2.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQOkRsP2AXYIfpBsvNCXZse5wMTKNs_I--eiuZUdJ5qA-Q&oe=6ADBD1E1",
+     "url": "https://www.facebook.com/photo.php?fbid=1110046711540533&set=a.939214418623764&type=3",
+     "id": "1110046711540533"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb3-4.fna.fbcdn.net/v/t39.30808-6/815766746_1110047798207091_4960905514406216766_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2d4lrg14F_IQ7kNvwGgF3gB&_nc_oc=AdpkURcS4q3RGGZlRIIzUh2kbQ179TRBBpI-BjFEo-o1CY9unFQQbq8Laq9GcjDPVXg&_nc_zt=23&_nc_ht=scontent.fdxb3-4.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQPYqHBaeCitnHMV1tGS1CGhuFgZpAJBu3dz-lmTZFvrHA&oe=6ADBD360",
+     "url": "https://www.facebook.com/photo.php?fbid=1110047791540425&set=a.939214418623764&type=3",
+     "id": "1110047791540425"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb3-1.fna.fbcdn.net/v/t39.30808-6/817903225_1110047808207090_9135151083019969997_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XUdKbEtPox4Q7kNvwGLS89X&_nc_oc=AdriCOr6LGD5BM8CbMsxMKSj39l13aVfJnI501L9b9WB3b5ZMTYlPESjb8amVzCeLaw&_nc_zt=23&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQPx3YaU-LWtyqVh6iyT386viwVBg2FO-Knz1tO5bWtlaQ&oe=6ADBE10E",
+     "url": "https://www.facebook.com/photo.php?fbid=1110047804873757&set=a.939214418623764&type=3",
+     "id": "1110047804873757"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1110048614873676",
+   "shares_id": "1110048614873676",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 11,
+   "top_comments": []
+  },
+  {
+   "post_id": "122217423032532336",
+   "type": "post",
+   "url": "https://www.facebook.com/cosmetique.luxry.laouinet/posts/pfbid0nbBGMMA21adHm8ZfAFcc3vhQaswZK3NKED6fKPUoGBVx1RmP28zM9xB74dcUd8Tnl",
+   "message": "ڤام بيوليلا 7 بياس ✌️👑😍\n610  الف \nالتوصيل مجاني ❤️",
+   "message_rich": "ڤام بيوليلا 7 بياس ✌️👑😍\n610  الف \nالتوصيل مجاني ❤️",
+   "timestamp": 1791629759,
+   "comments_count": 1,
+   "reactions_count": 72,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 2,
+    "haha": 0,
+    "like": 43,
+    "love": 27,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61565970105329",
+    "name": "Cosmétique Luxry Laouinet",
+    "url": "https://www.facebook.com/cosmetique.luxry.laouinet",
+    "profile_picture_url": "https://scontent.fdxb3-2.fna.fbcdn.net/v/t39.30808-1/556471272_122174549348532336_902406634064065271_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-6SRHTZ1MrgQ7kNvwHdq1SY&_nc_oc=AdqHbTqgH7hnDXrj2O4FSFgLM6AmKanE5Jr_ku54P1tKy9AtfmjJHEO5ypgS_vzywVw&_nc_zt=24&_nc_ht=scontent.fdxb3-2.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQMVWYf8nFULMC-RnMFLTJqjcWzPIVnEnfDMm9m6bqhFdQ&oe=6ADBB83F",
+    "delegate_page_id": "417805754758152"
+   },
+   "authors": [
+    {
+     "id": "61565970105329",
+     "name": "Cosmétique Luxry Laouinet",
+     "url": "https://www.facebook.com/cosmetique.luxry.laouinet",
+     "profile_picture_url": "https://scontent.fdxb3-2.fna.fbcdn.net/v/t39.30808-1/556471272_122174549348532336_902406634064065271_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-6SRHTZ1MrgQ7kNvwHdq1SY&_nc_oc=AdqHbTqgH7hnDXrj2O4FSFgLM6AmKanE5Jr_ku54P1tKy9AtfmjJHEO5ypgS_vzywVw&_nc_zt=24&_nc_ht=scontent.fdxb3-2.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQMVWYf8nFULMC-RnMFLTJqjcWzPIVnEnfDMm9m6bqhFdQ&oe=6ADBB83F",
+     "delegate_page_id": "417805754758152"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fdxb3-4.fna.fbcdn.net/v/t39.30808-6/842977400_122217423002532336_3843209092862183919_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Sc8URggY1bgQ7kNvwH2e_RU&_nc_oc=AdqYT1eF4RXB81VpVURAdo-2G83Stj1PlvQi9fjWtwQkoAG65N4oxqQ2mh_hysAxx9k&_nc_zt=23&_nc_ht=scontent.fdxb3-4.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQNmCsQfSeMrmp983nLya3v138LhmNl4_uZ_hCLc2JWs8Q&oe=6ADBD926",
+    "height": 1155,
+    "width": 1066,
+    "id": "122217422996532336"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122217423032532336",
+   "shares_id": "122217423032532336",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122135701407176056",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1785588163567101/",
+   "message": "متوفرة بي 7 الوان 🦾🦾🦾🦾🦾💞💕💕💕خامة ممتازة 🫤🫤🫤🫤😝🥳😝🥳🥰🥰",
+   "message_rich": "متوفرة بي 7 الوان 🦾🦾🦾🦾🦾💞💕💕💕خامة ممتازة 🫤🫤🫤🫤😝🥳😝🥳🥰🥰",
+   "timestamp": 1792009377,
+   "comments_count": 0,
+   "reactions_count": 18,
+   "reshare_count": 10,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 16,
+    "love": 2,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61585281693729",
+    "name": "بوتيك شوقي بشيشي للحجاب والڨندورة",
+    "url": "https://www.facebook.com/people/%D8%A8%D9%88%D8%AA%D9%8A%D9%83-%D8%B4%D9%88%D9%82%D9%8A-%D8%A8%D8%B4%D9%8A%D8%B4%D9%8A-%D9%84%D9%84%D8%AD%D8%AC%D8%A7%D8%A8-%D9%88%D8%A7%D9%84%DA%A8%D9%86%D8%AF%D9%88%D8%B1%D8%A9/61585281693729/",
+    "profile_picture_url": "https://scontent.fdxb3-3.fna.fbcdn.net/v/t39.30808-1/761573925_122128899951176056_5984539123277220012_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=uekWfQBJIg8Q7kNvwEKdMR_&_nc_oc=Adpm3igs3CCpU0zGUOVnBsyLAzeZpquAiJHzhWLEScx4xoNxDBHd9pb5NIN4-FRJGcs&_nc_zt=24&_nc_ht=scontent.fdxb3-3.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQNK7tWNIyQm8QS-x1CyHdCfZIGWaMIGpvK9lECM8oxhfg&oe=6ADBE3A9",
+    "delegate_page_id": "931456506717991"
+   },
+   "authors": [
+    {
+     "id": "61585281693729",
+     "name": "بوتيك شوقي بشيشي للحجاب والڨندورة",
+     "url": "https://www.facebook.com/people/%D8%A8%D9%88%D8%AA%D9%8A%D9%83-%D8%B4%D9%88%D9%82%D9%8A-%D8%A8%D8%B4%D9%8A%D8%B4%D9%8A-%D9%84%D9%84%D8%AD%D8%AC%D8%A7%D8%A8-%D9%88%D8%A7%D9%84%DA%A8%D9%86%D8%AF%D9%88%D8%B1%D8%A9/61585281693729/",
+     "profile_picture_url": "https://scontent.fdxb3-3.fna.fbcdn.net/v/t39.30808-1/761573925_122128899951176056_5984539123277220012_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=uekWfQBJIg8Q7kNvwEKdMR_&_nc_oc=Adpm3igs3CCpU0zGUOVnBsyLAzeZpquAiJHzhWLEScx4xoNxDBHd9pb5NIN4-FRJGcs&_nc_zt=24&_nc_ht=scontent.fdxb3-3.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQNK7tWNIyQm8QS-x1CyHdCfZIGWaMIGpvK9lECM8oxhfg&oe=6ADBE3A9",
+     "delegate_page_id": "931456506717991"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1785588163567101/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fdxb3-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOh-AFx5dQmW7OhK2m61Ek8BVz8U9aUlORqXsJGOBYL-3srLyf0Hy18MwiVi8zSIdJOvT6aOkQSAGzulvOGkbgMrPSrsIjJ3GsWBjHviQ.mp4?_nc_cat=110&_nc_oc=AdqPDoYfue-ZQF9EfwWqLws_aB4w-RuAAGIhuVbr0qXGE2pI46w7Z6TzW4Skmf2PdlQ&_nc_sid=8bf8fe&_nc_ht=video.fdxb3-1.fna.fbcdn.net&_nc_ohc=iMJfh3Ugao8Q7kNvwF6keGT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTY2NzQ4NzM5ODE4NzY3MywiYXNzZXRfYWdlX2RheXMiOjQsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoyMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQOXoM5gBKgaFED_hBeew13j56Xzs3cKvYB_dpldS36JRQ&oe=6ADBE03C&bitrate=316572&tag=sve_sd",
+    "video_hd_file": "https://video.fdxb3-3.fna.fbcdn.net/o1/v/t2/f2/m366/AQPt5ZVjC60jJMkvUON8FAm3Xz8uL28bfKJwQfNZZwETHGbB_yDl_5JAkwzOOPfVR-rGcMeC_lycK-f3-Di1K0bk_AuQrx6DZISBRGtFW2BlGg.mp4?_nc_cat=106&_nc_oc=Adrwt3bc75NKsskJvKWSGGESfSLS9GsajWkKsFg8FmcfL931QchX8ERQTD-yrN6rXdE&_nc_sid=5e9851&_nc_ht=video.fdxb3-3.fna.fbcdn.net&_nc_ohc=z0VnhbanFXcQ7kNvwFH__hk&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2Njc0ODczOTgxODc2NzMsImFzc2V0X2FnZV9kYXlzIjo0LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=1323f51015bf773&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83QUEwMjRCQTgyMjE0RThBODZFOENBRDcxNUMyNUZGN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzRERTAzMTc0RDFERDQyMUNCMUNBRjFFMzU1Mjg5NjYyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACayysqgxaT2BRUCKAJDMywXQDaZmZmZmZoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQOu-S1vTD-WXh_EOJow9cCPccTA3rmp2y8_cit-Qam_Bw&oe=6ADBEEBA&bitrate=1226547&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fdxb3-4.fna.fbcdn.net/v/t15.5256-10/848714617_1588436939000032_8741932820062798091_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_aid=0&_nc_ohc=Mfj7VMoXlUQQ7kNvwHQiDa_&_nc_oc=AdrhKmzUduIaDW9_OeEC3K-j8oeKhJ7McKxNbcQYfJtU-ypanL0j_gLJUMQnJm5nCSQ&_nc_zt=23&_nc_ht=scontent.fdxb3-4.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQOWQCCqdkr1YmhH6UMXUI5nf3zFA6T025xs_h2cScMDLg&oe=6ADBC379",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122135701407176056",
+   "shares_id": "122135701407176056",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122233212632450908",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0gb8DMSpHJ3FC4sWLhuYdK7FzFdssUbuqDR7xD2daqfvTm9PbCDQDLBneMujPL3m9l&id=61563527250139",
+   "message": "🔥🥤 الانتعاش ليه طعم تاني مع V7! 😍\n\nاختار مزاجك من تشكيلتنا المميزة 💥\n🫐 بلوبيري\n🍍 بينا كولادا\n🍋 ليمون بالنعناع\n❤️ رمان\n✨ ونكهات مميزة تديك انتعاش من أول رشفة!\n\n❄️ ساقعة ومنعشة… مناسبة للحر والمشاوير واللمة الحلوة 😋🔥\n\n📍 موجودة دلوقتي في ماركت أبو حمادة\n⭐ الجودة والاختيار الصح… عند أبو حمادة دايمًا!\n\n#ماركت_أبو_حمادة #V7 #مشروبات_V7 #انتعاش #مشروبات_باردة #صيفك_مع_أبو_حمادة #أبو_حمادة_ماركت",
+   "message_rich": "🔥🥤 الانتعاش ليه طعم تاني مع V7! 😍\n\nاختار مزاجك من تشكيلتنا المميزة 💥\n🫐 بلوبيري\n🍍 بينا كولادا\n🍋 ليمون بالنعناع\n❤️ رمان\n✨ ونكهات مميزة تديك انتعاش من أول رشفة!\n\n❄️ ساقعة ومنعشة… مناسبة للحر والمشاوير واللمة الحلوة 😋🔥\n\n📍 موجودة دلوقتي في ماركت أبو حمادة\n⭐ الجودة والاختيار الصح… عند أبو حمادة دايمًا!\n\n#ماركت_أبو_حمادة #V7 #مشروبات_V7 #انتعاش #مشروبات_باردة #صيفك_مع_أبو_حمادة #أبو_حمادة_ماركت",
+   "timestamp": 1787659865,
+   "comments_count": 0,
+   "reactions_count": 2,
+   "reshare_count": 59,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61563527250139",
+    "name": "ماركت ابو حماده",
+    "url": "https://www.facebook.com/people/%D9%85%D8%A7%D8%B1%D9%83%D8%AA-%D8%A7%D8%A8%D9%88-%D8%AD%D9%85%D8%A7%D8%AF%D9%87/61563527250139/",
+    "profile_picture_url": "https://scontent.fdxb3-1.fna.fbcdn.net/v/t39.30808-1/644086180_122198643512450908_6007787005626739017_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=i8TAL350lAAQ7kNvwFsXrsq&_nc_oc=AdrxomSERMWc0nzM1SGlpJxsnBfuydmhiaxXkcL1QvoDu4Welf4f7K9WbWR9iYg1K6g&_nc_zt=24&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQNjhST3AYFWjr57Vt0MLe_iSF9hLzRGQWDDk85cqCPOaw&oe=6ADBD1C5",
+    "delegate_page_id": "365384323330351"
+   },
+   "authors": [
+    {
+     "id": "61563527250139",
+     "name": "ماركت ابو حماده",
+     "url": "https://www.facebook.com/people/%D9%85%D8%A7%D8%B1%D9%83%D8%AA-%D8%A7%D8%A8%D9%88-%D8%AD%D9%85%D8%A7%D8%AF%D9%87/61563527250139/",
+     "profile_picture_url": "https://scontent.fdxb3-1.fna.fbcdn.net/v/t39.30808-1/644086180_122198643512450908_6007787005626739017_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=i8TAL350lAAQ7kNvwFsXrsq&_nc_oc=AdrxomSERMWc0nzM1SGlpJxsnBfuydmhiaxXkcL1QvoDu4Welf4f7K9WbWR9iYg1K6g&_nc_zt=24&_nc_ht=scontent.fdxb3-1.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQNjhST3AYFWjr57Vt0MLe_iSF9hLzRGQWDDk85cqCPOaw&oe=6ADBD1C5",
+     "delegate_page_id": "365384323330351"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fdxb3-2.fna.fbcdn.net/v/t39.30808-6/784075677_122233212560450908_2730589463433148976_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6WGmXwTjvMkQ7kNvwEOgeCX&_nc_oc=Ado1q5R08DdlCaOLn3ZLmolBoRIPAgRvNnDnVSz8ow67WmjclHD_KSOIaNHMmXe2Ox0&_nc_zt=23&_nc_ht=scontent.fdxb3-2.fna&_nc_gid=u169WGjcAILH7mhnbJvW3w&_nc_ss=70289&oh=00_AQPMSjKvZtP86fPXdCo1wuCDKpasUM-1OATtm3kwDieg6Q&oe=6ADBBEC3",
+    "height": 1672,
+    "width": 941,
+    "id": "122233212554450908"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122233212632450908",
+   "shares_id": "122233212632450908",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122144906835356030",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02s3TZDSCrAoZH6UB3ngs2ANscMaGK1NG4X8mAUnQFxfPV96Fu5GR9H5XMFZfGq4D3l&id=61590680924096",
+   "message": "مشروب V7 منعش بنكهات متنوعة، يتميز بمذاقه الخفيف وتشكيلة نكهات تناسب مختلف الأذواق. 🥤✨\n🔥 السعر فقط 2 شيكل 🔥\n📍 متوفر الآن في مركز صباح للتسوق\nدير البلح – شارع البركة – جنوب مفترق الـ17\n🛒 مرّ علينا واختار نكهتك المفضلة 😍",
+   "message_rich": "مشروب V7 منعش بنكهات متنوعة، يتميز بمذاقه الخفيف وتشكيلة نكهات تناسب مختلف الأذواق. 🥤✨\n🔥 السعر فقط 2 شيكل 🔥\n📍 متوفر الآن في مركز صباح للتسوق\nدير البلح – شارع البركة – جنوب مفترق الـ17\n🛒 مرّ علينا واختار نكهتك المفضلة 😍",
+   "timestamp": 1791127819,
+   "comments_count": 0,
+   "reactions_count": 15,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 15,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61590680924096",
+    "name": "مركز صبَّاح للتسوق",
+    "url": "https://www.facebook.com/people/%D9%85%D8%B1%D9%83%D8%B2-%D8%B5%D8%A8%D9%91%D9%8E%D8%A7%D8%AD-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/61590680924096/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/756526587_122123364459356030_8185789358698646622_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ky2ZuX1IEfAQ7kNvwHuiiIs&_nc_oc=Adqrgmeqmhexgj3pvK6AT1GYg7mXVbIab9syAW0i1k9RIMi9vi-8SxFuCFeRyHyuMuHpJlRBh5IOy4_UIvlUc4vj&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQMYZEZJxmT91p34zwnCdbdwz71ZjHd4eqKcwKbPaDmJKg&oe=6ADBEA39",
+    "delegate_page_id": "1230246056832084"
+   },
+   "authors": [
+    {
+     "id": "61590680924096",
+     "name": "مركز صبَّاح للتسوق",
+     "url": "https://www.facebook.com/people/%D9%85%D8%B1%D9%83%D8%B2-%D8%B5%D8%A8%D9%91%D9%8E%D8%A7%D8%AD-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/61590680924096/",
+     "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/756526587_122123364459356030_8185789358698646622_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ky2ZuX1IEfAQ7kNvwHuiiIs&_nc_oc=Adqrgmeqmhexgj3pvK6AT1GYg7mXVbIab9syAW0i1k9RIMi9vi-8SxFuCFeRyHyuMuHpJlRBh5IOy4_UIvlUc4vj&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQMYZEZJxmT91p34zwnCdbdwz71ZjHd4eqKcwKbPaDmJKg&oe=6ADBEA39",
+     "delegate_page_id": "1230246056832084"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/834223993_122144906787356030_790878179849721945_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ATKODLt2qoIQ7kNvwHj3aN7&_nc_oc=AdpTKeFMNLQpVswwSvBo2NcRbPBgLglb6rCG3L48ZkDr_P-WO7isN_433yLBa-PvlquzGSBOnsi2TdT8xHv5LmUp&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQOjepubOv0Tf7nZzjv-r7zBq1fzX73EZmyoq7syBAuJ0A&oe=6ADBD2D7",
+    "height": 1080,
+    "width": 1080,
+    "id": "122144906781356030"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122144906835356030",
+   "shares_id": "122144906835356030",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "946097671613073",
+   "type": "post",
+   "url": "https://www.facebook.com/blueberry.media.iq/posts/pfbid02tQkB8a9EAiysCkdBxswEBukbYaaHAgQeeb97amHMoZDzBTyFuvse2eoCj5uAdUi6l",
+   "message": "هل تعلم أن الكوالا يقضي معظم يومه نائماً؟\nهذا الكائن الهادئ قد ينام حتى 22 ساعة يومياً، ولا يستيقظ إلا لفترة قصيرة لتناول طعامه… ثم يعود إلى سباته من جديد.\n\nالأمر ليس كسلاً كما يبدو، بل استراتيجية بقاء ذكية.\nفالكوالا يعتمد على أوراق الأوكالبتوس، وهي منخفضة الطاقة وصعبة الهضم، ما يدفع جسمه لتقليل استهلاك الطاقة إلى الحد الأدنى.\n\nالنوم الطويل هنا ليس رفاهية… بل سرّ الاستمرار.\n\n#كوالا #حيوانات #معلومات #ثقافة \n#بلوبيري",
+   "message_rich": "هل تعلم أن الكوالا يقضي معظم يومه نائماً؟\nهذا الكائن الهادئ قد ينام حتى 22 ساعة يومياً، ولا يستيقظ إلا لفترة قصيرة لتناول طعامه… ثم يعود إلى سباته من جديد.\n\nالأمر ليس كسلاً كما يبدو، بل استراتيجية بقاء ذكية.\nفالكوالا يعتمد على أوراق الأوكالبتوس، وهي منخفضة الطاقة وصعبة الهضم، ما يدفع جسمه لتقليل استهلاك الطاقة إلى الحد الأدنى.\n\nالنوم الطويل هنا ليس رفاهية… بل سرّ الاستمرار.\n\n#كوالا #حيوانات #معلومات #ثقافة \n#بلوبيري",
+   "timestamp": 1777539817,
+   "comments_count": 1,
+   "reactions_count": 11,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 1,
+    "like": 9,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100086385465994",
+    "name": "Blueberry Media - بلوبيري ميديا",
+    "url": "https://www.facebook.com/blueberry.media.iq",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+    "delegate_page_id": "109561371926820"
+   },
+   "authors": [
+    {
+     "id": "100086385465994",
+     "name": "Blueberry Media - بلوبيري ميديا",
+     "url": "https://www.facebook.com/blueberry.media.iq",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+     "delegate_page_id": "109561371926820"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t51.82787-15/683616441_18038986271790084_4452427822725151580_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8MD9Hj619fgQ7kNvwFDetga&_nc_oc=Adq4CV_gOzP-Sat_NZRKngaEdG3BX01u3lrYiL2WnmJ3ggeI6xC9KTg-op6msYtDMlMhUcqrIZi__DoBFrWq2evd&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQNoSiOX2WX_t3hmgc2EW9-Uti6c7iIahtMxvbpJWjnZCA&oe=6ADBCAB4",
+    "height": 1350,
+    "width": 1080,
+    "id": "946097648279742"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "946097671613073",
+   "shares_id": "946097671613073",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1021016707454502",
+   "type": "post",
+   "url": "https://www.facebook.com/blueberry.media.iq/posts/pfbid02yfmZJd7m6zXUk3tGuabrrEwpSMnHmfiwLrgAimDWWNv3diFMY4JvKx2w5yWTYyBPl",
+   "message": "ناسا تعلن فتح باب التطوع لـ4 أشخاص للمشاركة في مهمة محاكاة للحياة على المريخ، ضمن برنامج يهدف إلى دراسة التحديات التي قد يواجهها رواد الفضاء في الرحلات المستقبلية إلى الكوكب الأحمر.\n\nوسيعيش المشاركون داخل بيئة معزولة تحاكي ظروف المريخ لمدة 378 يومًا (نحو عام)، مقابل أجر مادي، على أن تسبق المهمة فترة تدريب واستعداد، لتصل مدة المشاركة الإجمالية إلى نحو 14 شهرًا.\n\nوتهدف المهمة إلى جمع بيانات حول الجوانب الصحية والنفسية والأداء البشري، بما يدعم خطط ناسا لإرسال بعثات مأهولة إلى المريخ في المستقبل. ومن المقرر أن تبدأ المهمة في أغسطس/آب 2027، فيما يقتصر التقديم على المواطنين الأمريكيين أو المقيمين الدائمين الذين يستوفون الشروط المحددة.\n\n#blueberryoqp",
+   "message_rich": "ناسا تعلن فتح باب التطوع لـ4 أشخاص للمشاركة في مهمة محاكاة للحياة على المريخ، ضمن برنامج يهدف إلى دراسة التحديات التي قد يواجهها رواد الفضاء في الرحلات المستقبلية إلى الكوكب الأحمر.\n\nوسيعيش المشاركون داخل بيئة معزولة تحاكي ظروف المريخ لمدة 378 يومًا (نحو عام)، مقابل أجر مادي، على أن تسبق المهمة فترة تدريب واستعداد، لتصل مدة المشاركة الإجمالية إلى نحو 14 شهرًا.\n\nوتهدف المهمة إلى جمع بيانات حول الجوانب الصحية والنفسية والأداء البشري، بما يدعم خطط ناسا لإرسال بعثات مأهولة إلى المريخ في المستقبل. ومن المقرر أن تبدأ المهمة في أغسطس/آب 2027، فيما يقتصر التقديم على المواطنين الأمريكيين أو المقيمين الدائمين الذين يستوفون الشروط المحددة.\n\n#blueberryoqp",
+   "timestamp": 1785183206,
+   "comments_count": 209,
+   "reactions_count": 599,
+   "reshare_count": 4,
+   "reactions": {
+    "angry": 1,
+    "care": 4,
+    "haha": 2,
+    "like": 576,
+    "love": 14,
+    "sad": 0,
+    "wow": 2
+   },
+   "author": {
+    "id": "100086385465994",
+    "name": "Blueberry Media - بلوبيري ميديا",
+    "url": "https://www.facebook.com/blueberry.media.iq",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+    "delegate_page_id": "109561371926820"
+   },
+   "authors": [
+    {
+     "id": "100086385465994",
+     "name": "Blueberry Media - بلوبيري ميديا",
+     "url": "https://www.facebook.com/blueberry.media.iq",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+     "delegate_page_id": "109561371926820"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/756724674_18052111142790084_88734078698206201_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=iTvwW4PHHngQ7kNvwGmOTZ1&_nc_oc=Adpwm3Mi3lzL_WxI-0Q5fvu2OqWAqZa42u3YwE0LU-uXiAjfcx0aUPr6z9Sl_eY6TQv68b4DEHIuv4p7RfJwUO9T&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQO7Z5DEST3ipq2B_EsTFgjGr7x16G-w-kLTgJeWFeHfiA&oe=6ADBCAFF",
+    "height": 1350,
+    "width": 1080,
+    "id": "1021016684121171"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1021016707454502",
+   "shares_id": "1021016707454502",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1025181583704681",
+   "type": "post",
+   "url": "https://www.facebook.com/blueberry.media.iq/posts/pfbid0wjB56ttHPQ18LS3iyi7uZQwPoZjrvEJXmxidMkecxCbZbuXxvGuTm2xu7oHg2v1il",
+   "message": "وجّه الوكيل الأقدم لوزارة الداخلية حسين العوادي، باتخاذ إجراءات قانونية عاجلة ورادعة بحق ضابط وثلاثة منتسبين، على خلفية اتهامهم بالاعتـ/ـداء على إحدى الموقوفات داخل أحد مراكز الشرطة في محافظة الديوانية. \n\nوأكد العوادي، بحسب بيان الوزارة، أن وزارة الداخلية لن تتهاون مع أي انتهاك يمس كرامة الإنسان أو يخالف القانون، موجهاً بإحالة المتهمين إلى الجهات التحقيقية والقضائية المختصة، واتخاذ أقصى الإجراءات القانونية والإدارية بحق كل من يثبت تورطه. \n\nوشدد على أن هذه الأفعال، في حال ثبوتها، لا تمثل مبادئ وزارة الداخلية ولا أخلاقيات رجل الشرطة، مؤكداً أن القانون سيُطبق على الجميع دون استثناء، فيما تتواصل الإجراءات التحقيقية والقضائية لكشف جميع ملابسات القضية ومحاسبة المسؤولين عنها.\n\n#وزارة_الداخلية\n#blueberryoqp",
+   "message_rich": "وجّه الوكيل الأقدم لوزارة الداخلية حسين العوادي، باتخاذ إجراءات قانونية عاجلة ورادعة بحق ضابط وثلاثة منتسبين، على خلفية اتهامهم بالاعتـ/ـداء على إحدى الموقوفات داخل أحد مراكز الشرطة في محافظة الديوانية. \n\nوأكد العوادي، بحسب بيان الوزارة، أن وزارة الداخلية لن تتهاون مع أي انتهاك يمس كرامة الإنسان أو يخالف القانون، موجهاً بإحالة المتهمين إلى الجهات التحقيقية والقضائية المختصة، واتخاذ أقصى الإجراءات القانونية والإدارية بحق كل من يثبت تورطه. \n\nوشدد على أن هذه الأفعال، في حال ثبوتها، لا تمثل مبادئ وزارة الداخلية ولا أخلاقيات رجل الشرطة، مؤكداً أن القانون سيُطبق على الجميع دون استثناء، فيما تتواصل الإجراءات التحقيقية والقضائية لكشف جميع ملابسات القضية ومحاسبة المسؤولين عنها.\n\n#وزارة_الداخلية\n#blueberryoqp",
+   "timestamp": 1785595252,
+   "comments_count": 36,
+   "reactions_count": 514,
+   "reshare_count": 17,
+   "reactions": {
+    "angry": 2,
+    "care": 0,
+    "haha": 3,
+    "like": 497,
+    "love": 9,
+    "sad": 2,
+    "wow": 1
+   },
+   "author": {
+    "id": "100086385465994",
+    "name": "Blueberry Media - بلوبيري ميديا",
+    "url": "https://www.facebook.com/blueberry.media.iq",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+    "delegate_page_id": "109561371926820"
+   },
+   "authors": [
+    {
+     "id": "100086385465994",
+     "name": "Blueberry Media - بلوبيري ميديا",
+     "url": "https://www.facebook.com/blueberry.media.iq",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+     "delegate_page_id": "109561371926820"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/757305454_18052867967790084_5006784583058531850_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MzrTqUaZR7AQ7kNvwFrYsYe&_nc_oc=AdpL-Yem5gXVY6aoarCMFXFlFNYz6X15058GF9KXzsGSQtGlXAPfSDn5i7d4tYaHx8eIV2_27ucmnkTrBZuAcKJ2&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQOdd3cb8CDyy3BxmJEKKAZ-OYIgk5u3ASijec2iya2ihg&oe=6ADBD65D",
+    "height": 1350,
+    "width": 1080,
+    "id": "1025181557038017"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1025181583704681",
+   "shares_id": "1025181583704681",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1090072270548945",
+   "type": "post",
+   "url": "https://www.facebook.com/blueberry.media.iq/posts/pfbid02efqcohqmrZovjXcaNn8rhKEwv8ANtHrDgpoZvSJaCX7M5Mi9mFfFWcBob7gMLL4el",
+   "message": "قرر مجلس الوزراء العراقي إعفاء المواد الغذائية والأدوية المستوردة من الرسوم الكمركية، على أن يسري القرار اعتباراً من 7 تشرين الأول 2026، بحسب بيان المكتب الإعلامي لرئيس مجلس الوزراء.\n\nويشمل القرار المواد الغذائية والأدوية المستوردة، في خطوة تتعلق بالرسوم المفروضة على هذه السلع عند الاستيراد.\n\nولم تتضمن التقارير المنشورة تفاصيل إضافية بشأن آلية تنفيذ الإعفاء أو شروطه أو ما إذا كانت هناك فئات محددة مستثناة منه.\n\n#Blueberry_Media #Blueberry_Media_IQ",
+   "message_rich": "قرر مجلس الوزراء العراقي إعفاء المواد الغذائية والأدوية المستوردة من الرسوم الكمركية، على أن يسري القرار اعتباراً من 7 تشرين الأول 2026، بحسب بيان المكتب الإعلامي لرئيس مجلس الوزراء.\n\nويشمل القرار المواد الغذائية والأدوية المستوردة، في خطوة تتعلق بالرسوم المفروضة على هذه السلع عند الاستيراد.\n\nولم تتضمن التقارير المنشورة تفاصيل إضافية بشأن آلية تنفيذ الإعفاء أو شروطه أو ما إذا كانت هناك فئات محددة مستثناة منه.\n\n#Blueberry_Media #Blueberry_Media_IQ",
+   "timestamp": 1791925506,
+   "comments_count": 0,
+   "reactions_count": 10,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 10,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100086385465994",
+    "name": "Blueberry Media - بلوبيري ميديا",
+    "url": "https://www.facebook.com/blueberry.media.iq",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+    "delegate_page_id": "109561371926820"
+   },
+   "authors": [
+    {
+     "id": "100086385465994",
+     "name": "Blueberry Media - بلوبيري ميديا",
+     "url": "https://www.facebook.com/blueberry.media.iq",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+     "delegate_page_id": "109561371926820"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/846754331_18064394429790084_8023377870722091320_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bFoIVEqYEJ0Q7kNvwE9nowi&_nc_oc=AdpVLrL9QEEhkxOmKzXMRRP2HDzdUj0vKT06gSOLxM9AkZAiokaJqalgDLRQHphxpnRvcJG1c69V8PDKatH9F_6u&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPUgTXFyLaGxKJNzF51ubBXbnb-oKKOW7S3l5u_0qGkXQ&oe=6ADBD38B",
+    "height": 1350,
+    "width": 1080,
+    "id": "1090072233882282"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1090072270548945",
+   "shares_id": "1090072270548945",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1045100938379412",
+   "type": "post",
+   "url": "https://www.facebook.com/blueberry.media.iq/posts/pfbid02o6t5a1uTFkW951qzRAPaA8MgPesMhPmZf1yYnshE9NXm6aV5yPcF6ZcUc8r4qhGVl",
+   "message": "عقد مجلس الوزراء جلسته الاعتيادية برئاسة رئيس مجلس الوزراء، وأصدر خلالها حزمة من القرارات شملت ملفات الصناعة والضرائب والتعليم والأمن السيبراني والزراعة، أبرزها:\n\n⭕️ تخفيض الرسوم الكمركية على المواد الأولية الداخلة في الصناعات المحلية إلى 1%.\n\n⭕️ تخفيض الرسوم الكمركية على الخطوط الإنتاجية ومستلزمات الإنتاج إلى 1% للمشروعات الصناعية.\n\n⭕️ تأجيل التحاسب الضريبي لأصحاب المولدات الأهلية لغاية 1 تشرين الثاني المقبل.\n\n⭕️ تصويب قرار يتعلق بالالتزامات التعاقدية للمحافظات غير المنتظمة بإقليم وتخصيصات تنمية الأقاليم والبترودولار.\n\n⭕️ استثناء شركة تسويق النفط \"سومو\" من إجراءات تقليص الإنفاق المتعلقة بنفقات الإيفادات.\n\n⭕️ تمويل مكتب رئيس مجلس الوزراء بمبلغ 5.3 مليار دينار لدعم المركز الوطني للأمن السيبراني.\n\n⭕️ الموافقة على مشروع قانون الجر/ائم الدولية وإحالته إلى مجلس النواب.\n\n⭕️ استثناء وزارة الزراعة من بعض تعليمات تنفيذ العقود العامة لتسريع شحن مبيدات مكافحة سوسة النخيل الحمراء.\n\n⭕️ منح طلبة الثالث المتوسط والسادس الإعدادي، الراسبين بما لا يزيد على 4 مواد، فرصة امتحانية واحدة ضمن دور خاص للعام الدراسي 2025-2026.\n\n#مجلس_الوزراء #رئيس_الوزراء #علي_الزيدي\n#blueberryoqp",
+   "message_rich": "عقد مجلس الوزراء جلسته الاعتيادية برئاسة رئيس مجلس الوزراء، وأصدر خلالها حزمة من القرارات شملت ملفات الصناعة والضرائب والتعليم والأمن السيبراني والزراعة، أبرزها:\n\n⭕️ تخفيض الرسوم الكمركية على المواد الأولية الداخلة في الصناعات المحلية إلى 1%.\n\n⭕️ تخفيض الرسوم الكمركية على الخطوط الإنتاجية ومستلزمات الإنتاج إلى 1% للمشروعات الصناعية.\n\n⭕️ تأجيل التحاسب الضريبي لأصحاب المولدات الأهلية لغاية 1 تشرين الثاني المقبل.\n\n⭕️ تصويب قرار يتعلق بالالتزامات التعاقدية للمحافظات غير المنتظمة بإقليم وتخصيصات تنمية الأقاليم والبترودولار.\n\n⭕️ استثناء شركة تسويق النفط \"سومو\" من إجراءات تقليص الإنفاق المتعلقة بنفقات الإيفادات.\n\n⭕️ تمويل مكتب رئيس مجلس الوزراء بمبلغ 5.3 مليار دينار لدعم المركز الوطني للأمن السيبراني.\n\n⭕️ الموافقة على مشروع قانون الجر/ائم الدولية وإحالته إلى مجلس النواب.\n\n⭕️ استثناء وزارة الزراعة من بعض تعليمات تنفيذ العقود العامة لتسريع شحن مبيدات مكافحة سوسة النخيل الحمراء.\n\n⭕️ منح طلبة الثالث المتوسط والسادس الإعدادي، الراسبين بما لا يزيد على 4 مواد، فرصة امتحانية واحدة ضمن دور خاص للعام الدراسي 2025-2026.\n\n#مجلس_الوزراء #رئيس_الوزراء #علي_الزيدي\n#blueberryoqp",
+   "timestamp": 1787590476,
+   "comments_count": 36,
+   "reactions_count": 1024,
+   "reshare_count": 19,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 9,
+    "like": 1005,
+    "love": 8,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "100086385465994",
+    "name": "Blueberry Media - بلوبيري ميديا",
+    "url": "https://www.facebook.com/blueberry.media.iq",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+    "delegate_page_id": "109561371926820"
+   },
+   "authors": [
+    {
+     "id": "100086385465994",
+     "name": "Blueberry Media - بلوبيري ميديا",
+     "url": "https://www.facebook.com/blueberry.media.iq",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/788461500_1050806987808807_5317428719131773970_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9oDNx4_z39wQ7kNvwF8o3WG&_nc_oc=Ado7ICRj46pmgwkNaCSQmxB3pVrlESx_d0RK6GLM3VbxJmlKyxsv910-1TLOzW_DPrThdOAfQNGiloPtW2wnI0Rs&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQPAr4-FiSM3B1K2aukRTTOMwwZiZpqdzNK0hV57lq01FQ&oe=6ADBD61D",
+     "delegate_page_id": "109561371926820"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/786287798_18056746154790084_3642108676606514015_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xDj70bshncwQ7kNvwGT085e&_nc_oc=AdrBqsUB8Lcs0OmOadLAISQ8v-GALJGKFTkW7LetgaNrDLOcss99OAGD_vwbF5Q6Otjsg8cZZ2zT48Z8tuEIvwgp&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=Mn-z14P1KylhIZFE7IIKkQ&_nc_ss=70289&oh=00_AQM-Jrl2InlNsE82Z6_PMgM1xV18Nu18s9SvunMxCvUp5g&oe=6ADBBEE2",
+    "height": 1350,
+    "width": 1080,
+    "id": "1045100915046081"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1045100938379412",
+   "shares_id": "1045100938379412",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "4598926160385505",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1728978764046940/posts/4598926160385505/",
+   "message": "نبيع ولا نبدل بايفون 7 بلوس نقي ونزيد حاجة قليلة",
+   "message_rich": "نبيع ولا نبدل بايفون 7 بلوس نقي ونزيد حاجة قليلة",
+   "timestamp": 1791474647,
+   "comments_count": 10,
+   "reactions_count": 2,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "1626274189221566",
+    "name": "Anonymous participant",
+    "url": "https://www.facebook.com/1626274189221566",
+    "profile_picture_url": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.35477-6/480471783_9158392237563761_4042862335136844668_n.jpg?stp=cp0_dst-jpg_s110x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=5dqTN68dx-wQ7kNvwFP-7Ow&_nc_oc=AdoY3lbsOAtg3eIB4hDXK4zIisSDII5ygL-1R92CxxG0zc7QewAr4FjI8-SLbiGmHvY&_nc_zt=14&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQMY6kg1mrsRPLsSV1HDpbZCFeHlAcXcFBZke6Vt3B7rXw&oe=6ADBE01F",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "1626274189221566",
+     "name": "Anonymous participant",
+     "url": "https://www.facebook.com/1626274189221566",
+     "profile_picture_url": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.35477-6/480471783_9158392237563761_4042862335136844668_n.jpg?stp=cp0_dst-jpg_s110x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=5dqTN68dx-wQ7kNvwFP-7Ow&_nc_oc=AdoY3lbsOAtg3eIB4hDXK4zIisSDII5ygL-1R92CxxG0zc7QewAr4FjI8-SLbiGmHvY&_nc_zt=14&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQMY6kg1mrsRPLsSV1HDpbZCFeHlAcXcFBZke6Vt3B7rXw&oe=6ADBE01F",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.30808-6/841012971_1097518776503276_2940173454034963431_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=NBShYPsECgQQ7kNvwF_hpVt&_nc_oc=Adq74xGR1Foyu8jePtRjqzyrz_w82QR1urOoAhZfqggmrl5jt2OOitsnpr8Fi6VdWyI&_nc_zt=23&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQP2Jx8ACCn8ZnYjW3sZcQ1-xDsZmW4rYVWX0R4kcKMrtA&oe=6ADBC8D3",
+     "url": "https://www.facebook.com/1626274189221566/photos/gm.4598926153718839/1097518766503277/?type=3",
+     "id": "1097518766503277"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-6/840901127_1097518756503278_7674986684988846055_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=d3S42kct8GsQ7kNvwFqh6no&_nc_oc=Adp1WIN9vPgXKUykGEdElqsG92UYAb9ZsCu5_acX_UPDtqot6z-5NJsDKBHCq8rVqw4&_nc_zt=23&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOTCkFyITM46T3H2VsktuXEV3S8s9nx-Yhf15fiLPhw_Q&oe=6ADBE3E4",
+     "url": "https://www.facebook.com/1626274189221566/photos/gm.4598926157052172/1097518739836613/?type=3",
+     "id": "1097518739836613"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.30808-6/838783176_1097518823169938_8771160962734252406_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=GjVzuTwwdv4Q7kNvwHC7xR7&_nc_oc=AdrUtmY71tCuifQs-g1nPNAK0qzz--7IUtIHqzBQIYc3ijMlnZpqzKsKUw02fyBtl8o&_nc_zt=23&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNe4JN6NkTXggUe7Fw7vUH23GgJC6O4o74ihalZBsJ20Q&oe=6ADBBF1F",
+     "url": "https://www.facebook.com/1626274189221566/photos/gm.4598926150385506/1097518806503273/?type=3",
+     "id": "1097518806503273"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-6/840288022_1097518769836610_3265192455614107169_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=XgmKQr9mabYQ7kNvwFc5kjl&_nc_oc=AdrpDisMxCUFYzkorwVFETdVqfvPtvNTK5XRH_a5a5sAGFF16bIGYlUtE-2QHw_a_HQ&_nc_zt=23&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOx0z6H5UcJmhaIJSJ7Rgx93yIj4bm6bXBqQaZ_9rqLQg&oe=6ADBDC24",
+     "url": "https://www.facebook.com/1626274189221566/photos/gm.4598926147052173/1097518749836612/?type=3",
+     "id": "1097518749836612"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.30808-6/840659483_1097518703169950_2506354477429499508_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=djX3k6rHi3wQ7kNvwEYXHhe&_nc_oc=AdokrU9S5PDmgfMHEFqNZeVRR7up4hsf8cHhUZqJHHX6CwcD1kAGYBq-rZ7Xxe2snOw&_nc_zt=23&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNOEov_gNPyOsyz4EfIeQUA8b-7agI5KvEZMTv1Ez7MuQ&oe=6ADBD069",
+     "url": "https://www.facebook.com/1626274189221566/photos/gm.4598926140385507/1097518696503284/?type=3",
+     "id": "1097518696503284"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "4598926160385505",
+   "shares_id": "4598926160385505",
+   "associated_group_id": "1728978764046940",
+   "associated_group": {
+    "group_id": "1728978764046940",
+    "name": "بيع وشراء (دلالة) €$ البويرة وضوحيها",
+    "url": "https://www.facebook.com/groups/1728978764046940/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": 8,
+   "top_comments": []
+  },
+  {
+   "post_id": "4538035296525474",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/2963906233938396/posts/4538035296525474/",
+   "message": null,
+   "message_rich": null,
+   "timestamp": 1791711187,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064073950080",
+    "name": "بلوبيری Blue Berry",
+    "url": "https://www.facebook.com/BluePerry",
+    "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-1/474785839_1025306459615143_1074987658372875584_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DnNQiBfE_eYQ7kNvwHGfMPR&_nc_oc=Adourfity8NxANa-NpdKx2o2LA-QZRsiq7owtqAbjlCb4leTjOXI7vx-8ZSB_j-aFZo&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNZgqgxG9wcFPpIY20hSBF00DBvOnEGiJpsQwEtvoHQ2w&oe=6ADBEDEF",
+    "delegate_page_id": "253150032265591"
+   },
+   "authors": [
+    {
+     "id": "100064073950080",
+     "name": "بلوبيری Blue Berry",
+     "url": "https://www.facebook.com/BluePerry",
+     "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-1/474785839_1025306459615143_1074987658372875584_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DnNQiBfE_eYQ7kNvwHGfMPR&_nc_oc=Adourfity8NxANa-NpdKx2o2LA-QZRsiq7owtqAbjlCb4leTjOXI7vx-8ZSB_j-aFZo&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNZgqgxG9wcFPpIY20hSBF00DBvOnEGiJpsQwEtvoHQ2w&oe=6ADBEDEF",
+     "delegate_page_id": "253150032265591"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "1531678828977901",
+    "url": "https://www.facebook.com/BluePerry/posts/pfbid02KWBuoWkk981NcGt8pgUQZ2xzan4iAAHnYyCYJ1YziuASttrBD7AMJATKTpX59QpBl",
+    "timestamp": null,
+    "message": "عروض بداية الأسبوع من بلو بيري 🔥 الحق عرضك قبل ما يفوتك! 😍 📩 اطلب دلوقتي وخلي الحلو علينا! 🍰\nللتواصل والدليفيري🛵🛵🛵\n010 11092230 \n01150190291\nاو نورنا في الملاحه القديمه شارع المزدلفة خلف مستشفى ابن سينا بشارعين بجوار مسجد احباب الرسول 💙💙",
+    "photo_url": null,
+    "author": {
+     "id": "100064073950080",
+     "name": "بلوبيری Blue Berry",
+     "url": "https://www.facebook.com/BluePerry"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/BluePerry/posts/pfbid02KWBuoWkk981NcGt8pgUQZ2xzan4iAAHnYyCYJ1YziuASttrBD7AMJATKTpX59QpBl",
+   "text_format_metadata": null,
+   "comments_id": "4538035296525474",
+   "shares_id": "4538035296525474",
+   "associated_group_id": "2963906233938396",
+   "associated_group": {
+    "group_id": "2963906233938396",
+    "name": "السويس بيتنا الكبير 🏠",
+    "url": "https://www.facebook.com/groups/2963906233938396/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "4247917342172183",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1561342637496347/posts/4247917342172183/",
+   "message": null,
+   "message_rich": null,
+   "timestamp": 1791884426,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064073950080",
+    "name": "بلوبيری Blue Berry",
+    "url": "https://www.facebook.com/BluePerry",
+    "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-1/474785839_1025306459615143_1074987658372875584_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DnNQiBfE_eYQ7kNvwHGfMPR&_nc_oc=Adourfity8NxANa-NpdKx2o2LA-QZRsiq7owtqAbjlCb4leTjOXI7vx-8ZSB_j-aFZo&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNZgqgxG9wcFPpIY20hSBF00DBvOnEGiJpsQwEtvoHQ2w&oe=6ADBEDEF",
+    "delegate_page_id": "253150032265591"
+   },
+   "authors": [
+    {
+     "id": "100064073950080",
+     "name": "بلوبيری Blue Berry",
+     "url": "https://www.facebook.com/BluePerry",
+     "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-1/474785839_1025306459615143_1074987658372875584_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DnNQiBfE_eYQ7kNvwHGfMPR&_nc_oc=Adourfity8NxANa-NpdKx2o2LA-QZRsiq7owtqAbjlCb4leTjOXI7vx-8ZSB_j-aFZo&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNZgqgxG9wcFPpIY20hSBF00DBvOnEGiJpsQwEtvoHQ2w&oe=6ADBEDEF",
+     "delegate_page_id": "253150032265591"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "1533604495452001",
+    "url": "https://www.facebook.com/BluePerry/posts/pfbid0Zq4V5sKNSyFqKF2gW9GRr3Ez61F5PRcZ7nByFwSRjHMsiZe8BjiY4sb1Wi2ZkoN2l",
+    "timestamp": null,
+    "message": "الحق عروض بلو بيري قبل ما تخلص! 💥🫐\n🍰 حلاوة تستاهل.. وعروض متتعوضش!\n📩 اطلب دلوقتي وخلي الحلو علينا! 💙\nللتواصل والدليفيري🛵🛵🛵\n010 11092230 \n01150190291\nاو نورنا في الملاحه القديمه شارع المزدلفة خلف مستشفى ابن سينا بشارعين بجوار مسجد احباب الرسول 💙💙",
+    "photo_url": null,
+    "author": {
+     "id": "100064073950080",
+     "name": "بلوبيری Blue Berry",
+     "url": "https://www.facebook.com/BluePerry"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/BluePerry/posts/pfbid0Zq4V5sKNSyFqKF2gW9GRr3Ez61F5PRcZ7nByFwSRjHMsiZe8BjiY4sb1Wi2ZkoN2l",
+   "text_format_metadata": null,
+   "comments_id": "4247917342172183",
+   "shares_id": "4247917342172183",
+   "associated_group_id": "1561342637496347",
+   "associated_group": {
+    "group_id": "1561342637496347",
+    "name": "كراكيب السويس والأربعين (البوب)",
+    "url": "https://www.facebook.com/groups/1561342637496347/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2216087912507697",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1403422433774253/posts/2216087912507697/",
+   "message": "امبريزا 7/7\nسوبر كاملة \nللمداكشة على غيار عادي\nبالشام",
+   "message_rich": "امبريزا 7/7\nسوبر كاملة \nللمداكشة على غيار عادي\nبالشام",
+   "timestamp": 1784642005,
+   "comments_count": 94,
+   "reactions_count": 105,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 99,
+    "love": 5,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100005613491002",
+    "name": "Amro Habbal",
+    "url": "https://www.facebook.com/amro.hb.9",
+    "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-1/363359108_2236190926578002_5644797371588135123_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=i-QLZzqdyhcQ7kNvwEAxnuH&_nc_oc=Adr2kbB_jOuRWXEDCBsUVCVrHTnyh_a5WTZveZsRmDgXPdnG7if6dOWBJl8Un4atnGE&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNJVQBxOBmJnWiw0xqWw4BRnAr7JlLdEfCRY2y1fgIhCA&oe=6ADBD5F5",
+    "delegate_page_id": "683503424844823"
+   },
+   "authors": [
+    {
+     "id": "100005613491002",
+     "name": "Amro Habbal",
+     "url": "https://www.facebook.com/amro.hb.9",
+     "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-1/363359108_2236190926578002_5644797371588135123_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=i-QLZzqdyhcQ7kNvwEAxnuH&_nc_oc=Adr2kbB_jOuRWXEDCBsUVCVrHTnyh_a5WTZveZsRmDgXPdnG7if6dOWBJl8Un4atnGE&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQNJVQBxOBmJnWiw0xqWw4BRnAr7JlLdEfCRY2y1fgIhCA&oe=6ADBD5F5",
+     "delegate_page_id": "683503424844823"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "image_file_uri": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.30808-6/750797563_3134946473369105_8531683228074350031_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=oHMTJqvG3AIQ7kNvwF26ZCp&_nc_oc=AdrLT2nkUMw-7K1o97h3tsewMgPQCXZkgLbrzk80wBiGf4UBP83g-o903SifIbs_rr8&_nc_zt=23&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOn_Vvo4hyAFlU_EFBM-iVXKEs2YGKRkwWBH4NTXs5hHA&oe=6ADBD06A",
+     "url": "https://www.facebook.com/3134943973369355",
+     "id": "3134943973369355"
+    },
+    {
+     "image_file_uri": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-6/749377908_3134945430035876_8254072914069736563_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=r1ZDjSir68MQ7kNvwGGE_LV&_nc_oc=AdpR-dw8dSeNJ5tU8T3HepF_54xc8hfQe7gXdNkCfLVWLF7n0BzvXdKPQls9uRPPgCY&_nc_zt=23&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQMIjS41JqfgHVDf24dw7ngdNwHJEfvqOLIQjtVkDjht8Q&oe=6ADBC0E7",
+     "url": "https://www.facebook.com/3134943980036021",
+     "id": "3134943980036021"
+    },
+    {
+     "image_file_uri": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.30808-6/751447931_3134946790035740_6384864765025202489_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8G6_SyDaqIEQ7kNvwH7gR_K&_nc_oc=AdrhdjyXMywu8K64Ofv4NsK6GJzC2piwP1pOnTmxXefd_yURJD5MLj_SJ5DBqJ1Szw0&_nc_zt=23&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQMJUKijOrt4UEoAzly2QBEAKSJj3C_mSvQLid8ibVA5bQ&oe=6ADBCED5",
+     "url": "https://www.facebook.com/3134944346702651",
+     "id": "3134944346702651"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2216087912507697",
+   "shares_id": "2216087912507697",
+   "associated_group_id": "1403422433774253",
+   "associated_group": {
+    "group_id": "1403422433774253",
+    "name": "سوبارو سوريا (subaru group)",
+    "url": "https://www.facebook.com/groups/1403422433774253/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "28184639854461653",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1558811707471163/posts/28184639854461653/",
+   "message": "V52017\nبريليانس عداد 90000\nكامله بصمه بدون دهانات\nفي مرمه رفرف شمال تكيف تلاجه مش محتاجه مصاريف",
+   "message_rich": "V52017\nبريليانس عداد 90000\nكامله بصمه بدون دهانات\nفي مرمه رفرف شمال تكيف تلاجه مش محتاجه مصاريف",
+   "timestamp": 1786139856,
+   "comments_count": 51,
+   "reactions_count": 23,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 23,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid035WRsP6YsygRGS9DNaLkc7saW8JBBqBqJaUBEMRrdLt2F9BiE6tAfHX87H3pTX1nLl",
+    "name": "مصطفى جمال أبراهيم الأصفر",
+    "url": "https://www.facebook.com/mstfy.jmal.abrahym.alasfr",
+    "profile_picture_url": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t1.6435-1/131921298_872281363310664_19994438336171927_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oWjWCv6B428Q7kNvwHC4CN7&_nc_oc=AdqttEYuljX-P1zu7N6msMNso8aOAfQE3s3seH7xC8m8YvYEqeWvhRhvLgi4oxQrFWA&_nc_zt=24&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOeNuwustR1j2k1PfV92KKEtbXsJw8pn-lYgPawd5y8BA&oe=6AFD7F59",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid035WRsP6YsygRGS9DNaLkc7saW8JBBqBqJaUBEMRrdLt2F9BiE6tAfHX87H3pTX1nLl",
+     "name": "مصطفى جمال أبراهيم الأصفر",
+     "url": "https://www.facebook.com/mstfy.jmal.abrahym.alasfr",
+     "profile_picture_url": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t1.6435-1/131921298_872281363310664_19994438336171927_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oWjWCv6B428Q7kNvwHC4CN7&_nc_oc=AdqttEYuljX-P1zu7N6msMNso8aOAfQE3s3seH7xC8m8YvYEqeWvhRhvLgi4oxQrFWA&_nc_zt=24&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOeNuwustR1j2k1PfV92KKEtbXsJw8pn-lYgPawd5y8BA&oe=6AFD7F59",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-6/769007834_2225947187944068_1166749753727622311_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=hafnbNGmEGwQ7kNvwF87DHE&_nc_oc=Adr91rKkNZdi0vtmu6rM0LON1nm-mpauFb9yTcAfBuN-WMZaYF2bO9zJxdTCrR_HFxA&_nc_zt=23&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQPw5h0njRVP_LL_uM-79Kv1M1RJWSpbCGVbIx2ElqN5TQ&oe=6ADBE5E4",
+     "url": "https://www.facebook.com/photo.php?fbid=2225947184610735&set=gm.28184639824461656&type=3",
+     "id": "2225947184610735"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-6/769222297_2225947257944061_6205103250578817355_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=6cpYHcDYvRsQ7kNvwFut4p6&_nc_oc=AdodS52X20O6wYLx-nN1OsNA0fkAFVdSf8ImE-aW1Z1URbH5T_nRlYYyM8yTK_Mwnw8&_nc_zt=23&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQPYddhLJUNJjX6hD-aiv4LQUCNiivwNdq4d1hs0-H1RdA&oe=6ADBBB1B",
+     "url": "https://www.facebook.com/photo.php?fbid=2225947254610728&set=gm.28184639851128320&type=3",
+     "id": "2225947254610728"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-2.fna.fbcdn.net/v/t39.30808-6/768949705_2225947314610722_6716298766724797878_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=FsJHEHzj8KQQ7kNvwF0l4J7&_nc_oc=AdpAyngVrW71MXmw9WLL3NtnhCTMgALq89YM1ld67gkvbl0uruejmkn4zfz9eLY7ZJk&_nc_zt=23&_nc_ht=scontent.fbsr18-2.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQP0L7fGCv9Toii3LuqEkDqyMIf6DsDk7Iypsc9MsXv96Q&oe=6ADBD646",
+     "url": "https://www.facebook.com/photo.php?fbid=2225947311277389&set=gm.28184639847794987&type=3",
+     "id": "2225947311277389"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t39.30808-6/768949244_2225947357944051_8134126130420715014_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=yKigulw5OigQ7kNvwG0CqBb&_nc_oc=AdpXiK0vCJepMVcqIO05oQB5Zs7HSZXMT2YSiuo2rcRhYG7dWr2bM3wCO0XpGIbnWio&_nc_zt=23&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOm9ay_mN1aFzEBheZJNg0N4OlQmFFM-6sk_nrshWPAHQ&oe=6ADBD76B",
+     "url": "https://www.facebook.com/photo.php?fbid=2225947354610718&set=gm.28184639844461654&type=3",
+     "id": "2225947354610718"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "28184639854461653",
+   "shares_id": "28184639854461653",
+   "associated_group_id": "1558811707471163",
+   "associated_group": {
+    "group_id": "1558811707471163",
+    "name": "اصحاب السيارة بريليانس V5",
+    "url": "https://www.facebook.com/groups/1558811707471163/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "3024990124510129",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/866488263693670/posts/3024990124510129/",
+   "message": null,
+   "message_rich": null,
+   "timestamp": 1792100085,
+   "comments_count": 0,
+   "reactions_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100016006958447",
+    "name": "محمد العراقي",
+    "url": "https://www.facebook.com/100016006958447",
+    "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t1.6435-1/107698772_723932194817006_9038072595538332326_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=fONmL-lf9K8Q7kNvwGGv_ol&_nc_oc=Adrw5Y_3yILTyw_97Ih8GQnwJt6LfjmVef_0EdoW1vVGNYwK20tODwiTtQWWJdf5t4U&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOPnN90vVAj9IyS9QOF3sy2Blfl5hzFOR5q4iU_dQWt3g&oe=6AFD71F6",
+    "delegate_page_id": "105540759016955"
+   },
+   "authors": [
+    {
+     "id": "100016006958447",
+     "name": "محمد العراقي",
+     "url": "https://www.facebook.com/100016006958447",
+     "profile_picture_url": "https://scontent.fbsr18-1.fna.fbcdn.net/v/t1.6435-1/107698772_723932194817006_9038072595538332326_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=fONmL-lf9K8Q7kNvwGGv_ol&_nc_oc=Adrw5Y_3yILTyw_97Ih8GQnwJt6LfjmVef_0EdoW1vVGNYwK20tODwiTtQWWJdf5t4U&_nc_zt=24&_nc_ht=scontent.fbsr18-1.fna&_nc_gid=LVGCoEjlNNzhcPJahBPRMQ&_nc_ss=70289&oh=00_AQOPnN90vVAj9IyS9QOF3sy2Blfl5hzFOR5q4iU_dQWt3g&oe=6AFD71F6",
+     "delegate_page_id": "105540759016955"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "1626785505900408",
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0Zorose1rEieEUanqK3Wg9C6tfCp2ZuvMXDXTfoEaxefjJ5fBkmWPRocpa7n7HUzNl&id=100057069235327",
+    "timestamp": null,
+    "message": "#بلوك  B7 يرحب بكم..❤😍\nتم و بفضل لله. تم تنضيف وتعطير شقه الاخ الراقي( عادل العذاري المحترم ) #بلوكB7 عماره 704. مساحه 100 متر.مدة العمل 6 ساعات امنياتنا و دعواتنا للاخ عادل العذاري ان يجد الخير و السعاده في سكنه الجديد. تحياتي لكم الاستفسار مراسلة واتساب او اتصل على الرقم 07715638487",
+    "photo_url": null,
+    "author": {
+     "id": "100057069235327",
+     "name": "الاصدقاء للخدمات المتكاملة للتنضيف",
+     "url": "https://www.facebook.com/people/%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D9%82%D8%A7%D8%A1-%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%D8%A9-%D9%84%D9%84%D8%AA%D9%86%D8%B6%D9%8A%D9%81/100057069235327/"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0Zorose1rEieEUanqK3Wg9C6tfCp2ZuvMXDXTfoEaxefjJ5fBkmWPRocpa7n7HUzNl&id=100057069235327",
+   "text_format_metadata": null,
+   "comments_id": "3024990124510129",
+   "shares_id": "3024990124510129",
+   "associated_group_id": "866488263693670",
+   "associated_group": {
+    "group_id": "866488263693670",
+    "name": "كروب مدينة بسماية السكنية",
+    "url": "https://www.facebook.com/groups/866488263693670/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122101548111327374",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02i2Loaf2PHCTLzXUYtJ3R4uVvycjEbyURHxzia2VctbAjhpG4RY8xwJCWyrue7Ehyl&id=61589821221758",
+   "message": "عرض 7 تبلوهات ب100ج",
+   "message_rich": "عرض 7 تبلوهات ب100ج",
+   "timestamp": 1780231538,
+   "comments_count": 5,
+   "reactions_count": 3,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 2,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61589821221758",
+    "name": "Wode Wode",
+    "url": "https://www.facebook.com/people/Wode-Wode/61589821221758/",
+    "profile_picture_url": "https://scontent.febl5-2.fna.fbcdn.net/v/t39.30808-1/696907918_122093402199327374_5946772666140341972_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=8yCXbTYl1AgQ7kNvwG3iKhe&_nc_oc=Adqa3WsuV_SYOoXE52jZFzcsdvLjnsZMRxFnH8F0VMkRsDICsp50UZhQddFgQFP7Yy8&_nc_zt=24&_nc_ht=scontent.febl5-2.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQNr8crk-4b4JxaSk2X90FK608QsmE4r-8oMwELqRgL7fg&oe=6ADBDF86",
+    "delegate_page_id": "1168414529678258"
+   },
+   "authors": [
+    {
+     "id": "61589821221758",
+     "name": "Wode Wode",
+     "url": "https://www.facebook.com/people/Wode-Wode/61589821221758/",
+     "profile_picture_url": "https://scontent.febl5-2.fna.fbcdn.net/v/t39.30808-1/696907918_122093402199327374_5946772666140341972_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=8yCXbTYl1AgQ7kNvwG3iKhe&_nc_oc=Adqa3WsuV_SYOoXE52jZFzcsdvLjnsZMRxFnH8F0VMkRsDICsp50UZhQddFgQFP7Yy8&_nc_zt=24&_nc_ht=scontent.febl5-2.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQNr8crk-4b4JxaSk2X90FK608QsmE4r-8oMwELqRgL7fg&oe=6ADBDF86",
+     "delegate_page_id": "1168414529678258"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-6/710351542_122101548087327374_4773170465006021202_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=sW4WGqkP7QAQ7kNvwGFWOGS&_nc_oc=AdryAy1L3YWMuZ4CLNEQEPxsiWLq6tu-M2aYQ8hBkuJGNKT93Mo0VhSpMSKRAB-riIw&_nc_zt=23&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQN_jhcfrXmUCIYu9laFgEpn2-tSAKqvxZlAuyzMuG1EqQ&oe=6ADBDDD7",
+    "height": 524,
+    "width": 381,
+    "id": "122101548081327374"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122101548111327374",
+   "shares_id": "122101548111327374",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122306576168063979",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid05i1Qu2MKFV4fKrVCCuh8MgqP6QfzHqiwjo8Fzv8AQ8xwFRhfJ4xxbmQAUECU1sMPl&id=61551919392226",
+   "message": "بلوك فيات 1.7 std",
+   "message_rich": "بلوك فيات 1.7 std",
+   "timestamp": 1784750950,
+   "comments_count": 3,
+   "reactions_count": 11,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 11,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61551919392226",
+    "name": "Pièces Fiat",
+    "url": "https://www.facebook.com/people/Pi%C3%A8ces-Fiat/61551919392226/",
+    "profile_picture_url": "https://scontent.febl5-2.fna.fbcdn.net/v/t39.30808-1/568626914_122266298420063979_7105290402997718164_n.jpg?stp=c119.0.721.721a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=2g9CtVPFab0Q7kNvwEjMTrL&_nc_oc=AdpGTNSaCFNJY0HCvy-9Kii93US6O3AH-UK6BoLrUY9XGZqvCBcXMAHK21dD9i63-Vw&_nc_zt=24&_nc_ht=scontent.febl5-2.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQOtV8P9lgBpMRCFlAJEMpbx1uN4cWTjqleXZ_qNXOoicA&oe=6ADBD6D0",
+    "delegate_page_id": "754151801114952"
+   },
+   "authors": [
+    {
+     "id": "61551919392226",
+     "name": "Pièces Fiat",
+     "url": "https://www.facebook.com/people/Pi%C3%A8ces-Fiat/61551919392226/",
+     "profile_picture_url": "https://scontent.febl5-2.fna.fbcdn.net/v/t39.30808-1/568626914_122266298420063979_7105290402997718164_n.jpg?stp=c119.0.721.721a_cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=2g9CtVPFab0Q7kNvwEjMTrL&_nc_oc=AdpGTNSaCFNJY0HCvy-9Kii93US6O3AH-UK6BoLrUY9XGZqvCBcXMAHK21dD9i63-Vw&_nc_zt=24&_nc_ht=scontent.febl5-2.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQOtV8P9lgBpMRCFlAJEMpbx1uN4cWTjqleXZ_qNXOoicA&oe=6ADBD6D0",
+     "delegate_page_id": "754151801114952"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-6/751883614_122306575574063979_3091180314885294094_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=c1APiU8goGsQ7kNvwGOR5n_&_nc_oc=AdoDHMRfTk27tNi8rhFUolYbDaiBTauM9yDQsblCAS67NwtAwRhw60xmPxXQMISh744&_nc_zt=23&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQOOeMJvPiTY9gu84mkEss9tUpikODq2FDm1Nsw-SggOIA&oe=6ADBE35F",
+     "url": "https://www.facebook.com/photo.php?fbid=122306575568063979&set=a.122254312358063979&type=3",
+     "id": "122306575568063979"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.febl5-2.fna.fbcdn.net/v/t39.30808-6/752022564_122306575616063979_493098875639090637_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qtrua_hXR8UQ7kNvwEOz3xz&_nc_oc=AdpDR6u2TjLjpLuGKkzkuQyX940i3LyT37BWy_5yOwGHbcDZe89pn9UbkCypBjGtjr0&_nc_zt=23&_nc_ht=scontent.febl5-2.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQMhkZdX1Iq9oijqfFjLbWNePZ6ERViv4QhRmLyGXTfRKw&oe=6ADBDA09",
+     "url": "https://www.facebook.com/photo.php?fbid=122306575610063979&set=a.122254312358063979&type=3",
+     "id": "122306575610063979"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122306576168063979",
+   "shares_id": "122306576168063979",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "3831115377029188",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1938788989595179/posts/3831115377029188/",
+   "message": "سلام هيقر v7للبيع بلوني 2008 0561815423",
+   "message_rich": "سلام هيقر v7للبيع بلوني 2008 0561815423",
+   "timestamp": 1789676551,
+   "comments_count": 11,
+   "reactions_count": 86,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 86,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid02Dpp2hW7a22vBo4wc5QHuy8Zb2AjM7Gr8NNoaiFAhdvGnCc9dZtWZFTifZVQNQDQnl",
+    "name": "Anis Anis",
+    "url": "https://www.facebook.com/people/Anis-Anis/pfbid02Dpp2hW7a22vBo4wc5QHuy8Zb2AjM7Gr8NNoaiFAhdvGnCc9dZtWZFTifZVQNQDQnl/",
+    "profile_picture_url": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-1/794145011_122124033543388932_4703056985929272278_n.jpg?stp=c0.36.1080.1080a_cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=uxQfpqwm2ikQ7kNvwEAObOO&_nc_oc=AdpsevpA4VgIHq4Jb_4sG3bY2VBP0xKgNVvrl1GuNyGMytFHQ4LtbLNPKtW7QhYja-k&_nc_zt=24&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQOeRVt4K1p3IVjH_P6irABEE9g_DGozMHGP6-j-x03bdw&oe=6ADBDB31",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid02Dpp2hW7a22vBo4wc5QHuy8Zb2AjM7Gr8NNoaiFAhdvGnCc9dZtWZFTifZVQNQDQnl",
+     "name": "Anis Anis",
+     "url": "https://www.facebook.com/people/Anis-Anis/pfbid02Dpp2hW7a22vBo4wc5QHuy8Zb2AjM7Gr8NNoaiFAhdvGnCc9dZtWZFTifZVQNQDQnl/",
+     "profile_picture_url": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-1/794145011_122124033543388932_4703056985929272278_n.jpg?stp=c0.36.1080.1080a_cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=uxQfpqwm2ikQ7kNvwEAObOO&_nc_oc=AdpsevpA4VgIHq4Jb_4sG3bY2VBP0xKgNVvrl1GuNyGMytFHQ4LtbLNPKtW7QhYja-k&_nc_zt=24&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQOeRVt4K1p3IVjH_P6irABEE9g_DGozMHGP6-j-x03bdw&oe=6ADBDB31",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-6/814735405_122126775795388932_1307585079931723841_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Am7lQ8Sx9g4Q7kNvwEU0EaY&_nc_oc=AdoARoGURS6f9YPQ0UHcN44IU3mlEU9Fsq_ClyeCUXvymqWXSFza-PsKYTjbX0Prx5k&_nc_zt=23&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQOVaZS7j8WM9qP0e2GcUDh9OstmxW6b-7oeyUi-aHKLYA&oe=6ADBDD73",
+     "url": "https://www.facebook.com/photo.php?fbid=122126775789388932&set=gm.3831115367029189&type=3",
+     "id": "122126775789388932"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-6/814779703_122126775849388932_2840264917581219083_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=1_JoQM97jFcQ7kNvwE9IaS_&_nc_oc=Adr5S4gpZHa-X2MkwWlD-sfYrBtGk-Rjr6E6HX-SaY_kt0ea-9lyEKJsa9LO7Yh32nU&_nc_zt=23&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQPAPtVbJaFVimQYnfmAgqRtw1V3EldWfhavBTEEKSGD8w&oe=6ADBC450",
+     "url": "https://www.facebook.com/photo.php?fbid=122126775837388932&set=gm.3831115370362522&type=3",
+     "id": "122126775837388932"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.febl5-1.fna.fbcdn.net/v/t39.30808-6/800842613_122126775891388932_1482557420291566458_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=ThQ5QgvAGPYQ7kNvwF8nXU7&_nc_oc=Ado_Hf180tYZTKH_-JFIk_kO2ArfwGRk6TnZVfNPXuQjJJMUMNatQQILn3S6SzYG74A&_nc_zt=23&_nc_ht=scontent.febl5-1.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQMniz3_DitPfzXvOcuUT8srBCKXkgP6nrOyy1JeY-NBaA&oe=6ADBDD78",
+     "url": "https://www.facebook.com/photo.php?fbid=122126775873388932&set=gm.3831115380362521&type=3",
+     "id": "122126775873388932"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.febl5-2.fna.fbcdn.net/v/t39.30808-6/814584734_122126775843388932_9201102088317784641_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=YPBT7PQD7pUQ7kNvwERCp0X&_nc_oc=AdrB-DjGnhD5cbibYDTXK2mlx9M-gIf9eBCdHhZg9k-CWjYDTwcuZ7L0aqiLpajVfUY&_nc_zt=23&_nc_ht=scontent.febl5-2.fna&_nc_gid=N2hDipvxlG12mFySvcY1-g&_nc_ss=70289&oh=00_AQMsnzCe7ghYb3ppMB3gu4ZpOJR8v9NANRes9CfEp6M6BA&oe=6ADBD557",
+     "url": "https://www.facebook.com/photo.php?fbid=122126775813388932&set=gm.3831115373695855&type=3",
+     "id": "122126775813388932"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "3831115377029188",
+   "shares_id": "3831115377029188",
+   "associated_group_id": "1938788989595179",
+   "associated_group": {
+    "group_id": "1938788989595179",
+    "name": "بيع وشراء الحافلات عبر التراب الوطني",
+    "url": "https://www.facebook.com/groups/1938788989595179/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": 4,
+   "top_comments": []
+  }
+ ]
+}

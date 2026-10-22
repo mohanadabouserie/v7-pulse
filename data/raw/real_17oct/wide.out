@@ -1,0 +1,21 @@
+--- stage wide, spent so far this cycle $12.2631, budget $14.00
+ig_tagged_v7     instagram-tagged-scraper     SUCCEEDED    180 items  $0.3381  (cap $0.45)  total $12.6012  events {'post': 168}
+ig_tagged_vss    instagram-tagged-scraper     SUCCEEDED     60 items  $0.1246  (cap $0.15)  total $12.7258  events {'post': 60}
+ig_kw_wide       instagram-keyword-posts-scra SUCCEEDED    381 items  $0.8308  (cap $0.75)  total $13.5566  events {'post-result': 363, 'filtered-search-page': 46}
+google_ig        google-search-scraper        SUCCEEDED     50 items  $0.1096  (cap $0.50)  total $13.6662  events {'search-page-scraped': 40, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+google_tt        google-search-scraper        SUCCEEDED     32 items  $0.0831  (cap $0.50)  total $13.7493  events {'search-page-scraped': 25, 'ai-overview-scraped': 0, 'ai-mode-result-scraped': 0, 'perplexity-ai-result-scraped': 0, 'chatgpt-result-scraped': 0, 'copilot-result-scraped': 0, 'gemini-result-scraped': 0, 'lead-scraped': 0, 'lead-email-verified': 0, 'ads-scraped': 0, 'website-content-scraped': 0, 'apify-actor-start': 1}
+  google_ig: 159 post links, 108 new inside the window
+ig_google_posts  instagram-post-scraper       SUCCEEDED    108 items  $0.2831  (cap $0.37)  total $14.0324  events {'post': 107, 'post-details': 107, 'music-data': 0}
+  google_tt: 92 post links, 83 new inside the window
+tt_google_posts  tiktok-scraper               SUCCEEDED     83 items  $0.2443  (cap $0.50)  total $14.2767  events {'result': 83, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 0, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+fb_search_12     facebook-posts-search        SUCCEEDED     30 items  $0.0962  (cap $0.12)  total $14.3729  events {'result-item': 30, 'init': 1}
+fb_search_13     facebook-posts-search        SUCCEEDED      3 items  $0.0000  (cap $0.12)  total $14.3729  events {'result-item': 0, 'init': 1}
+fb_search_14     facebook-posts-search        SUCCEEDED     20 items  $0.0091  (cap $0.12)  total $14.3820  events {'result-item': 20, 'init': 1}
+fb_search_15     facebook-posts-search        SUCCEEDED     30 items  $0.0991  (cap $0.12)  total $14.5291  events {'result-item': 30, 'init': 1}
+fb_search_16     facebook-posts-search        SUCCEEDED     30 items  $0.0930  (cap $0.12)  total $14.6221  events {'result-item': 30, 'init': 1}
+fb_search_17     facebook-posts-search        SUCCEEDED     30 items  $0.0361  (cap $0.12)  total $14.6582  events {'result-item': 30, 'init': 1}
+x_extra          twitter-x-data-tweet-scraper SUCCEEDED    136 items  $0.0840  (cap $0.08)  total $14.7422  events {'apify-default-dataset-item': 136}
+tt_tags_wide     tiktok-scraper               SUCCEEDED    101 items  $0.4053  (cap $0.50)  total $15.1474  events {'result': 101, 'filter-applied': 0, 'popularity-filter-applied': 0, 'follower-dataset-item': 0, 'mobile-filter-sorting-applied': 0, 'video-download': 0, 'comment-dataset-item': 0, 'scrape-as-in-country': 101, 'transcription-minute': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'actor-start': 1}
+tt_wide: skipped, only $0.45 of the $15.60 budget left (needs a $0.50 cap)
+yt_recent        youtube-scraper              SUCCEEDED     76 items  $0.2252  (cap $0.35)  total $15.3726  events {'result': 75, 'date-filter': 0, 'ai-video-description': 0, 'ai-video-summary': 0, 'transcribeMinute': 0}
+--- stage wide done, spent this cycle $15.3726

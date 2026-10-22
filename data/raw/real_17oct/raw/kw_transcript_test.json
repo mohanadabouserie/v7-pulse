@@ -1,0 +1,544 @@
+{
+ "input": {
+  "bulkUrls": [
+   "https://www.instagram.com/p/DeRGJd2gP0M/",
+   "https://www.instagram.com/reel/Db0cx1pMQ37/",
+   "https://www.instagram.com/p/DbymwFMIxIz/"
+  ],
+  "resultsLimit": 3
+ },
+ "cap_usd": 0.05,
+ "run": {
+  "id": "89ea7Zx3YWdYTfZ4A",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T22:51:03.591Z",
+  "finishedAt": "2026-10-18T22:51:46.252Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 3,
+   "speech2text": 5
+  },
+  "usageTotalUsd": 0.0205
+ },
+ "cost_usd": 0.016,
+ "items": [
+  {
+   "url": "https://www.instagram.com/p/DeRGJd2gP0M/",
+   "code": "DeRGJd2gP0M",
+   "pk": "4004008582516374796",
+   "id": "POLARIS_4004008582516374796",
+   "title": "هل ممكن مشروب مصري ينافس بيبسي وكوكاكولا؟",
+   "img": "",
+   "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m367/AQNjlejGjqQ-tFd9oBJLnYSENxx1L6_KyAb-OJ-0am1pb0Af3AtVqYrnap83RC6EnsmJb26KWpxrVeOsZkbg1qF1qfCZ64giIDVDwEc.mp4?_nc_cat=101&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=2jWH3jOYRjAQ7kNvwG9ryCS&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfcjJldmV2cDktcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxODM4MDkxMjgwNjYyNjAwLCJhc3NldF9hZ2VfZGF5cyI6OSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE3NywiYml0cmF0ZSI6MTcxODE0NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=jcxqfq0icdfKQJDILntOWA&_nc_ss=70689&_nc_zt=28&oh=00_AQPd-KJvwRFqscDqvpgfv0fMp46iESWc0f6RuQ9HQ6xuLg&oe=6ADB34EA",
+   "audioUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m78/AQNRB41M6tiInLPVCDL1MzYNTtF6w5zLr9VCkXApZk7TmR7P9zqtHl3qL1fjEfcqhhHGxC8YiZlixUTMpYPkmPo4Jyw02SU1-A-O0ts.mp4?_nc_cat=101&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=fluUJrn_bmkQ7kNvwGEUxsE&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxODM4MDkxMjgwNjYyNjAwLCJhc3NldF9hZ2VfZGF5cyI6OSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE3NywiYml0cmF0ZSI6NjQwNzEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=jcxqfq0icdfKQJDILntOWA&_nc_ss=70689&_nc_zt=28&oh=00_AQOovvoTH2zP7MMXr6kjH8kIz1hO2KQEl5IoGl-EV4brQA&oe=6AD71926",
+   "duration": 177.194672,
+   "createTime": 1791535204,
+   "likeCount": 23139,
+   "commentCount": 305,
+   "userPk": "2103794523",
+   "userName": "kareemelsayed",
+   "userFullName": "Kareem Elsayed",
+   "avatarUri": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-19/589842571_18520913986066524_8840135086417138127_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=105&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=rQjEgF1QFyUQ7kNvwG2-6aO&_nc_oc=AdphCtdfTGwS6DNQJP45bnAFJnqLmU1_PDnjfW2y10uZKCgj0PkEj8_xSd659Q6xuyc&_nc_zt=24&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_gid=jcxqfq0icdfKQJDILntOWA&_nc_ss=70689&oh=00_AQMcM35HUGL-rP4Wiq_vbJWfKlwAv6tvhIT1u2YUOpTOtA&oe=6ADB200E",
+   "text": "عشان الكندي توصل هنا في انجلترا الموضوع ما كانش سهل الكندي شكلها عادي بس الحقيقة اللي جواها مش بس طعم جواها قصة احنا الشركة تقتنا عمليها لمصر قصة مصنع انتقل الانتاجية كان في الساعة بقى مليون متر تمويت علبة في اليوم وقصة ناس وقصة فكرة بدأت من مصر بقى شركة مصرية 100% تخش تبقى ثالث أكبر شركة في العالم وصلت لحد هنا في انجلترا تقدر تشتري دي 7 طب ايه اللي جواها فعلا ازاي شركة مصرية قدرت تدخل المنافسة مع أسماء عالمية كبيرة في الفيديو ده هتشوفوا تفاصيل عمرها ما بتتشرح الغرفة اللي وراية بقى دي دي بيبقى فيها سر الخلط جمعنا الخامات دي وحطناها في الملتج بتاعها اكتر حاجة بتسعد الواحد ان انت تبقى مروح بالليل بيتك وانك عارف ان في ألف أسرة بيوتهم مفتوح في انجلترا بالتحديد في لندن واحد من السوبر ماركت العادية اللي انت ممكن تروحها في لندن تقدر تخش تشتري بي 7 بلا في انجلترا بالتحديد عندها معايير الجودة والاختبارات والحاجات دي كلها مهمة جداً فعشان الكن دي توصل وتحط على الرف وتتبقى في سور ماركت اكيد في قصة فاحنا محتاجين منروح مصر عشان نعرف القصة دي يلا بيتك بص احنا عبارة عن مجموعة من الناس بروفيشنالز في شركات مالتي ناشنالز انا عسابي مثال انا اشتغلت 30 سنة في اكبر شركة مشروبات في العالم قررنا ان احنا نعمل حاجة برايفيت بيزنس تكون مصري 100% والشركة تكون مبنية على فاليوز بحيث نحس بسعادة ان احنا وما بنسمعش الناس طاقة السلبية مصر بتكبر وبتكبر كمان في البيزنس قالنا فرصة ندخل مكان مش اي حد بيدخله مصنع V7 المكان اللي المشروب ده بيتعامل فيه من اول لحظة الكونسلت بتاعنا كان هو ان احنا قلنا اول حاجة الكافيين تاني حاجة السكريات الزيادة قوي تالت حاجة المواد الصناعية والحاجات الارتفيشال والحاجات دي كلها فاحنا اخدنا بوليسي في الشركة لازم يكون الشركة كلها كافيين فري وتحتوي على فيتامينس الجسم الانسان بيحتاجها وتالت حاجة ان كل المواد عندنا بتاعت الفليفر كلها 100% ناتش الفليفر انتظر في البزنس اول انتو تابلوها دلوقتي البيزنس ده مساطر عليه شركات كبيرة طوله الوقت اخر 120 سنة عشان تثبت للناس ان فيه شركة مصرية قادرة ان هي تعمل منتج بأعلى لفل من الكواليتي وبيعدي كمان كل الشركات المالتناشنال ده كان تحدي صعب بس احنا وصلنا له الحمدلله احنا عندنا اهم عنصر في الشركة واعلى رتب في الشركة هو كوالداريكتور الشركة فالكوالداريكتور الشركة هي دي الحاجة اللي بتعمل الديفرنشيشن بيننا ومن غيرنا الحمدلله",
+   "segments": [
+    {
+     "start": 0,
+     "end": 2.2,
+     "text": " عشان الكندي توصل هنا في انجلترا"
+    },
+    {
+     "start": 2.2,
+     "end": 3.66,
+     "text": " الموضوع ما كانش سهل"
+    },
+    {
+     "start": 3.66,
+     "end": 5.44,
+     "text": " الكندي شكلها عادي"
+    },
+    {
+     "start": 5.78,
+     "end": 8.3,
+     "text": " بس الحقيقة اللي جواها مش بس طعم"
+    },
+    {
+     "start": 13.55,
+     "end": 14.99,
+     "text": " جواها قصة"
+    },
+    {
+     "start": 14.99,
+     "end": 16.65,
+     "text": " احنا الشركة تقتنا عمليها لمصر"
+    },
+    {
+     "start": 17.05,
+     "end": 17.83,
+     "text": " قصة مصنع"
+    },
+    {
+     "start": 17.83,
+     "end": 20.13,
+     "text": " انتقل الانتاجية كان في الساعة"
+    },
+    {
+     "start": 20.13,
+     "end": 21.89,
+     "text": " بقى مليون متر تمويت علبة في اليوم"
+    },
+    {
+     "start": 21.89,
+     "end": 24.81,
+     "text": " وقصة ناس وقصة فكرة بدأت من مصر"
+    },
+    {
+     "start": 24.81,
+     "end": 27.13,
+     "text": " بقى شركة مصرية 100% تخش"
+    },
+    {
+     "start": 27.13,
+     "end": 28.43,
+     "text": " تبقى ثالث أكبر شركة في العالم"
+    },
+    {
+     "start": 28.43,
+     "end": 31.35,
+     "text": " وصلت لحد هنا في انجلترا تقدر تشتري"
+    },
+    {
+     "start": 31.35,
+     "end": 32.21,
+     "text": " دي 7"
+    },
+    {
+     "start": 32.21,
+     "end": 34.05,
+     "text": " طب ايه اللي جواها فعلا"
+    },
+    {
+     "start": 34.05,
+     "end": 36.71,
+     "text": " ازاي شركة مصرية قدرت تدخل"
+    },
+    {
+     "start": 36.71,
+     "end": 38.31,
+     "text": " المنافسة مع أسماء عالمية كبيرة"
+    },
+    {
+     "start": 38.31,
+     "end": 40.25,
+     "text": " في الفيديو ده هتشوفوا"
+    },
+    {
+     "start": 40.25,
+     "end": 41.95,
+     "text": " تفاصيل عمرها ما بتتشرح"
+    },
+    {
+     "start": 41.95,
+     "end": 44.69,
+     "text": " الغرفة اللي وراية بقى دي دي بيبقى فيها سر الخلط"
+    },
+    {
+     "start": 44.69,
+     "end": 46.71,
+     "text": " جمعنا الخامات دي وحطناها"
+    },
+    {
+     "start": 46.71,
+     "end": 48.37,
+     "text": " في الملتج بتاعها اكتر حاجة"
+    },
+    {
+     "start": 48.37,
+     "end": 50.01,
+     "text": " بتسعد الواحد ان انت تبقى"
+    },
+    {
+     "start": 50.01,
+     "end": 52.23,
+     "text": " مروح بالليل بيتك وانك عارف ان في"
+    },
+    {
+     "start": 52.23,
+     "end": 53.91,
+     "text": " ألف أسرة بيوتهم مفتوح"
+    },
+    {
+     "start": 53.91,
+     "end": 60.54,
+     "text": " في انجلترا بالتحديد"
+    },
+    {
+     "start": 60.54,
+     "end": 61.62,
+     "text": " في لندن"
+    },
+    {
+     "start": 61.62,
+     "end": 63.56,
+     "text": " واحد من السوبر ماركت العادية اللي انت"
+    },
+    {
+     "start": 63.56,
+     "end": 65.2,
+     "text": " ممكن تروحها في لندن"
+    },
+    {
+     "start": 65.2,
+     "end": 66.76,
+     "text": " تقدر تخش تشتري"
+    },
+    {
+     "start": 68.16,
+     "end": 69.16,
+     "text": " بي 7"
+    },
+    {
+     "start": 69.16,
+     "end": 71.66,
+     "text": " بلا في انجلترا بالتحديد عندها"
+    },
+    {
+     "start": 71.66,
+     "end": 75.06,
+     "text": " معايير الجودة والاختبارات والحاجات دي كلها مهمة جداً"
+    },
+    {
+     "start": 75.06,
+     "end": 77.04,
+     "text": " فعشان الكن دي توصل وتحط على الرف"
+    },
+    {
+     "start": 77.04,
+     "end": 79.02,
+     "text": " وتتبقى في سور ماركت اكيد في قصة"
+    },
+    {
+     "start": 79.02,
+     "end": 80.8,
+     "text": " فاحنا محتاجين منروح مصر"
+    },
+    {
+     "start": 80.8,
+     "end": 82.26,
+     "text": " عشان نعرف القصة دي"
+    },
+    {
+     "start": 82.82,
+     "end": 83.52,
+     "text": " يلا بيتك"
+    },
+    {
+     "start": 85.47,
+     "end": 87.61,
+     "text": " بص احنا عبارة عن مجموعة من"
+    },
+    {
+     "start": 87.61,
+     "end": 90.53,
+     "text": " الناس بروفيشنالز في شركات مالتي ناشنالز"
+    },
+    {
+     "start": 90.53,
+     "end": 92.37,
+     "text": " انا عسابي مثال انا اشتغلت"
+    },
+    {
+     "start": 92.37,
+     "end": 94.95,
+     "text": " 30 سنة في اكبر شركة مشروبات في العالم"
+    },
+    {
+     "start": 94.95,
+     "end": 96.15,
+     "text": " قررنا ان احنا"
+    },
+    {
+     "start": 96.69,
+     "end": 98.37,
+     "text": " نعمل حاجة برايفيت بيزنس"
+    },
+    {
+     "start": 98.37,
+     "end": 100.83,
+     "text": " تكون مصري 100% والشركة"
+    },
+    {
+     "start": 100.83,
+     "end": 102.79,
+     "text": " تكون مبنية على فاليوز بحيث نحس"
+    },
+    {
+     "start": 102.79,
+     "end": 103.67,
+     "text": " بسعادة ان احنا"
+    },
+    {
+     "start": 105.33,
+     "end": 106.77,
+     "text": " وما بنسمعش"
+    },
+    {
+     "start": 106.77,
+     "end": 109.09,
+     "text": " الناس طاقة السلبية مصر بتكبر"
+    },
+    {
+     "start": 109.09,
+     "end": 109.85,
+     "text": " وبتكبر"
+    },
+    {
+     "start": 110.79,
+     "end": 112.25,
+     "text": " كمان في البيزنس"
+    },
+    {
+     "start": 114.3,
+     "end": 115.74,
+     "text": " قالنا فرصة ندخل مكان"
+    },
+    {
+     "start": 115.92,
+     "end": 117.24,
+     "text": " مش اي حد بيدخله"
+    },
+    {
+     "start": 118.68,
+     "end": 119.94,
+     "text": " مصنع V7"
+    },
+    {
+     "start": 119.94,
+     "end": 122.26,
+     "text": " المكان اللي المشروب ده بيتعامل فيه"
+    },
+    {
+     "start": 122.26,
+     "end": 123.5,
+     "text": " من اول لحظة"
+    },
+    {
+     "start": 123.5,
+     "end": 124.9,
+     "text": " الكونسلت بتاعنا كان"
+    },
+    {
+     "start": 124.9,
+     "end": 127.8,
+     "text": " هو ان احنا قلنا اول حاجة"
+    },
+    {
+     "start": 127.8,
+     "end": 130.08,
+     "text": " الكافيين تاني حاجة السكريات"
+    },
+    {
+     "start": 130.08,
+     "end": 132.56,
+     "text": " الزيادة قوي تالت حاجة المواد الصناعية"
+    },
+    {
+     "start": 132.56,
+     "end": 134.04,
+     "text": " والحاجات الارتفيشال"
+    },
+    {
+     "start": 134.56,
+     "end": 135.64,
+     "text": " والحاجات دي كلها"
+    },
+    {
+     "start": 135.64,
+     "end": 137.38,
+     "text": " فاحنا اخدنا بوليسي في الشركة"
+    },
+    {
+     "start": 137.38,
+     "end": 139.46,
+     "text": " لازم يكون الشركة كلها كافيين فري"
+    },
+    {
+     "start": 140.38,
+     "end": 142.9,
+     "text": " وتحتوي على فيتامينس الجسم الانسان بيحتاجها"
+    },
+    {
+     "start": 142.9,
+     "end": 144.32,
+     "text": " وتالت حاجة"
+    },
+    {
+     "start": 144.32,
+     "end": 146.42,
+     "text": " ان كل المواد عندنا"
+    },
+    {
+     "start": 146.42,
+     "end": 148.4,
+     "text": " بتاعت الفليفر كلها 100%"
+    },
+    {
+     "start": 148.4,
+     "end": 150.56,
+     "text": " ناتش الفليفر"
+    },
+    {
+     "start": 150.56,
+     "end": 152.16,
+     "text": " انتظر في البزنس اول انتو تابلوها دلوقتي"
+    },
+    {
+     "start": 152.16,
+     "end": 154.4,
+     "text": " البيزنس ده مساطر عليه شركات كبيرة"
+    },
+    {
+     "start": 154.4,
+     "end": 156.4,
+     "text": " طوله الوقت اخر 120 سنة"
+    },
+    {
+     "start": 156.4,
+     "end": 158.8,
+     "text": " عشان تثبت للناس ان فيه شركة مصرية"
+    },
+    {
+     "start": 158.8,
+     "end": 160.46,
+     "text": " قادرة ان هي تعمل منتج"
+    },
+    {
+     "start": 160.46,
+     "end": 162.56,
+     "text": " بأعلى لفل من الكواليتي وبيعدي"
+    },
+    {
+     "start": 162.56,
+     "end": 164.18,
+     "text": " كمان كل الشركات المالتناشنال"
+    },
+    {
+     "start": 164.18,
+     "end": 166.36,
+     "text": " ده كان تحدي صعب بس احنا وصلنا له الحمدلله"
+    },
+    {
+     "start": 166.36,
+     "end": 169.02,
+     "text": " احنا عندنا اهم عنصر في الشركة"
+    },
+    {
+     "start": 169.02,
+     "end": 170.58,
+     "text": " واعلى رتب في الشركة"
+    },
+    {
+     "start": 170.58,
+     "end": 171.9,
+     "text": " هو كوالداريكتور الشركة"
+    },
+    {
+     "start": 171.9,
+     "end": 174.24,
+     "text": " فالكوالداريكتور الشركة"
+    },
+    {
+     "start": 174.24,
+     "end": 176,
+     "text": " هي دي الحاجة اللي بتعمل الديفرنشيشن"
+    },
+    {
+     "start": 176,
+     "end": 177.14,
+     "text": " بيننا ومن غيرنا الحمدلله"
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-18T22:51:30.979Z"
+  },
+  {
+   "url": "https://www.instagram.com/reel/Db0cx1pMQ37/",
+   "code": "Db0cx1pMQ37",
+   "pk": "3959916542521576955",
+   "id": "POLARIS_3959916542521576955",
+   "title": "⁨\tV7 cream soda🩵\nخطييييييييرة🩵\n‪@v7egypt‬ \n@breadfast \n\n#trending #reels #v7 #creamsoda #drinks⁩",
+   "img": "",
+   "videoUrl": "https://scontent-iad3-1.cdninstagram.com/o1/v/t2/f2/m367/AQOonmLljx94Y4sR4P_LvDq1U_8vWb7pFcg4bgJJCw5IJZ0J75uZLMR_L8XmtezSN9lVdlYYCLOnDg6idsVy-P-zFYjsvK0mFsFsFZ8.mp4?_nc_cat=110&_nc_sid=9ca052&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=BT7p3QLM7CIQ7kNvwEPMoud&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfcjJldmV2cDktcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxOTg1MDQ3OTY4ODEyOTgxLCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMywiYml0cmF0ZSI6MjkxNjM3OSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=QvR6IfiNVqoIkiF9V3DMxg&_nc_ss=70689&_nc_zt=28&oh=00_AQOdHiAWKuLiLs3_brK9e6Izx3txP9Kfvs9QbeyJQ81Otg&oe=6ADB10D3",
+   "audioUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m78/AQNo0v7Q9cqQwHX_TKs1zSxnm5exdsSGAP-SxStVDdjNpGZ4c8nE4jeEUVfbMWYGtg1-Kk0BzlSugjuC8BEhLb_oIyg8cf4wmtqnz3w.mp4?_nc_cat=109&_nc_sid=9ca052&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=nASJQ-AnPfcQ7kNvwGG8DvB&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxOTg1MDQ3OTY4ODEyOTgxLCJhc3NldF9hZ2VfZGF5cyI6NzAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMywiYml0cmF0ZSI6Njc2NDAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=QvR6IfiNVqoIkiF9V3DMxg&_nc_ss=70689&_nc_zt=28&oh=00_AQO98Bozl_k_BbZxJounbyp2o7BTXLEM2dACT9ntNCq7Sg&oe=6AD73B3E",
+   "duration": 23.241724,
+   "createTime": 1786278938,
+   "likeCount": 5945,
+   "commentCount": 67,
+   "userPk": "564346698",
+   "userName": "esraa_abuelnile",
+   "userFullName": "E S R A A",
+   "avatarUri": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-19/796332393_18652683406058699_7668778068925061040_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=105&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=1u2_U-QcwhEQ7kNvwG73k65&_nc_oc=Adoh4GmzxM5H5oGrwurxsYRCJjVsUis6YD-Qrlc1CsDAfuo_tcdWbsa7WyfFEAbv-88&_nc_zt=24&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_gid=QvR6IfiNVqoIkiF9V3DMxg&_nc_ss=70689&oh=00_AQPK4e6UTU-4DWmicvJzZX2ktlfYef4Bl8i30pHEND4stw&oe=6ADB220D",
+   "text": "بجمال",
+   "segments": [
+    {
+     "start": 0,
+     "end": 1.04,
+     "text": " بجمال"
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-18T22:51:37.248Z"
+  },
+  {
+   "url": "https://www.instagram.com/p/DbymwFMIxIz/",
+   "code": "DbymwFMIxIz",
+   "pk": "3959397452286726707",
+   "id": "POLARIS_3959397452286726707",
+   "title": "الكريم صودا رجعت تاني 🤩🤩",
+   "img": "",
+   "videoUrl": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m367/AQMnA1arglMu9T5Aieg3-UbVUiAryWEea260GXVxnZ-grt2QJpEC9nczJxN2opNOdJk5LB_tuhmPBdkqKCwHU6qNQedBJjKXYvGGGeY.mp4?_nc_cat=106&_nc_sid=9ca052&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=ZdvtEniDzI4Q7kNvwEKQ5Ej&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfcjJldmV2cDktcjFnZW4ydnA5X3E4MCIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxNjcxMjEzMzk4MzQwNjQxLCJhc3NldF9hZ2VfZGF5cyI6NzEsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo5LCJiaXRyYXRlIjo0MjcyODIwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=urGKTg6baPK5xTFRjmF9Ug&_nc_ss=70689&_nc_zt=28&oh=00_AQODlY_gGXdZf-mIvsSedolBOMvrD3IWcSrFHcUQ8oqQgw&oe=6ADB3517",
+   "audioUrl": "https://scontent-iad3-2.cdninstagram.com/o1/v/t2/f2/m78/AQOqy3AHW_g2nZ9M-yiQddkY8uY3Cc2_Emxr9BSGrrLu1V5Pj9Gqga4a9d_UjBt3b9B-ItoBI-hMizbOIHN1g3AHsw7IiknC0I8xKDo.mp4?_nc_cat=111&_nc_sid=9ca052&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_ohc=Ud5F1IkGK5QQ7kNvwGI6xjQ&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjpudWxsLCJvaWxfdXJsZ2VuX2FwcF9pZCI6OTM2NjE5NzQzMzkyNDU5LCJjbGllbnRfbmFtZSI6ImlnIiwieHB2X2Fzc2V0X2lkIjoxNjcxMjEzMzk4MzQwNjQxLCJhc3NldF9hZ2VfZGF5cyI6NzEsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjo5LCJiaXRyYXRlIjo0OTYzMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=urGKTg6baPK5xTFRjmF9Ug&_nc_ss=70689&_nc_zt=28&oh=00_AQMQ51ExuDtMQIRcnzdn4GNjeA4MWMRLi2HJqYdUgrhe8Q&oe=6AD74478",
+   "duration": 9.533334,
+   "createTime": 1786217150,
+   "likeCount": 2353,
+   "commentCount": 60,
+   "userPk": "60629886401",
+   "userName": "itscheetos_",
+   "userFullName": "CHEETOS",
+   "avatarUri": "https://scontent-iad6-1.cdninstagram.com/v/t51.2885-19/434576514_1185460989496283_7852344893540313986_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=102&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40ODkuQzMifQ%3D%3D&_nc_ohc=VaunK6NF5G4Q7kNvwFTtOZ2&_nc_oc=AdrfLv19G0v6msNq3GlQeskvkWXLT5wHzGEMRDMa1YdEqJ7x_Vg-zPzeb81c9j8pZTA&_nc_zt=24&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ss=70689&oh=00_AQMwdhe9j8cOlRqMfqNCSiRfnjxSjZkzAEmblGvGLBiqpQ&oe=6ADB2941",
+   "text": "عرفيني كريم سودا بتاع الزمان؟ في كولا رجعوها تاني واو هي هي بالضبط طعم الكارامل مع سودا تحفة جربوها وقلوا رأيك",
+   "segments": [
+    {
+     "start": 0,
+     "end": 1.54,
+     "text": " عرفيني كريم سودا بتاع الزمان؟"
+    },
+    {
+     "start": 1.54,
+     "end": 2.76,
+     "text": " في كولا رجعوها تاني"
+    },
+    {
+     "start": 4.8,
+     "end": 5.26,
+     "text": " واو"
+    },
+    {
+     "start": 5.26,
+     "end": 6.34,
+     "text": " هي هي بالضبط"
+    },
+    {
+     "start": 6.34,
+     "end": 8.52,
+     "text": " طعم الكارامل مع سودا تحفة"
+    },
+    {
+     "start": 8.52,
+     "end": 9.52,
+     "text": " جربوها وقلوا رأيك"
+    }
+   ],
+   "errMsg": "",
+   "timestamp": "2026-10-18T22:51:45.863Z"
+  }
+ ]
+}

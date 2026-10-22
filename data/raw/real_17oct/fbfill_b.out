@@ -1,0 +1,7 @@
+--- stage fbfill, spent so far this cycle $68.3607, budget $14.00
+  fbfill: 43 videos without views, 86 videos to transcribe, 66 pages, 43 posts with about 493 comments
+fbf_plays_202610191508 facebook-playcount-scraper   SUCCEEDED     43 items  $0.8200  (cap $0.27)  total $69.1807  events {'apify-actor-start': 4, 'apify-default-dataset-item': 42}
+fbcm_door_202610191508 facebook-comment-scraper     SUCCEEDED    348 items  $0.8200  (cap $0.42)  total $69.1807  events {'apify-default-dataset-item': 318, 'apify-actor-start': 2}
+fbf_pages_202610191508 facebook-pages-scraper       SUCCEEDED     66 items  $2.0262  (cap $0.75)  total $70.3869  events {'apify-default-dataset-item': 64, 'page': 0}
+fbf_speech_202610191508 video-transcriber            SUCCEEDED     51 items  $2.2179  (cap $4.62)  total $70.5786  events {'apify-default-dataset-item': 50, 'extra-10-minutes': 0}
+--- stage fbfill done, spent this cycle $70.5786

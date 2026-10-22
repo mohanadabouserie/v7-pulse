@@ -1,0 +1,64 @@
+--- stage fbreels, spent so far this cycle $59.4572, budget $14.00
+fbr_alien_01     facebook-search-scraper      SUCCEEDED      0 items  $0.0158  (cap $0.30)  total $59.4730  events {'apify-actor-start': 1, 'apify-default-dataset-item': 0}
+fbr_alien_06     facebook-search-scraper      SUCCEEDED     19 items  $0.3506  (cap $0.30)  total $59.8078  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_02     facebook-search-scraper      SUCCEEDED     20 items  $0.9299  (cap $0.30)  total $60.3872  events {'apify-actor-start': 1, 'apify-default-dataset-item': 18}
+fbr_alien_04     facebook-search-scraper      SUCCEEDED     20 items  $1.1368  (cap $0.30)  total $60.5940  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_05     facebook-search-scraper      SUCCEEDED     20 items  $1.2770  (cap $0.30)  total $60.7342  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_00     facebook-search-scraper      SUCCEEDED     20 items  $1.4754  (cap $0.30)  total $60.9326  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_07     facebook-search-scraper      SUCCEEDED     20 items  $1.6285  (cap $0.30)  total $61.1016  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_09     facebook-search-scraper      SUCCEEDED      6 items  $1.0091  (cap $0.30)  total $61.3963  events {'apify-actor-start': 1, 'apify-default-dataset-item': 3}
+fbr_alien_03     facebook-search-scraper      SUCCEEDED     20 items  $2.1796  (cap $0.30)  total $61.6368  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_10     facebook-search-scraper      SUCCEEDED     20 items  $1.2387  (cap $0.30)  total $61.8327  events {'apify-actor-start': 1, 'apify-default-dataset-item': 17}
+fbr_alien_12     facebook-search-scraper      SUCCEEDED     20 items  $1.1701  (cap $0.30)  total $62.1027  events {'apify-actor-start': 1, 'apify-default-dataset-item': 18}
+fbr_alien_13     facebook-search-scraper      SUCCEEDED     20 items  $1.0011  (cap $0.30)  total $62.1027  events {'apify-actor-start': 1, 'apify-default-dataset-item': 20}
+fbr_alien_11     facebook-search-scraper      SUCCEEDED     20 items  $1.6709  (cap $0.30)  total $62.4051  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_alien_14     facebook-search-scraper      SUCCEEDED     20 items  $1.5356  (cap $0.30)  total $62.6747  events {'apify-actor-start': 1, 'apify-default-dataset-item': 19}
+fbr_google       google-short-videos          SUCCEEDED    353 items  $5.4904  (cap $1.40)  total $64.9476  events {'video': 353, 'search': 30, 'apify-actor-start': 1}
+Traceback (most recent call last):
+  File "/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/collect.py", line 984, in <module>
+    "includeNestedComments": False}, round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_FB)
+
+  File "/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/collect.py", line 943, in stage_fbreels
+    parallel(todo, BUDGET_FBREEL)
+  File "/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/collect.py", line 627, in parallel
+    list(ex.map(one, todo))
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/collect.py", line 623, in one
+    run(name, actor, body, cap, n, budget=budget)
+  File "/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/collect.py", line 70, in run
+    r = api('GET', f"/actor-runs/{r['id']}")['data']
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/collect.py", line 39, in api
+    return json.load(urllib.request.urlopen(req, timeout=timeout))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 502: Bad Gateway

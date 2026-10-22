@@ -1,0 +1,32 @@
+--- stage igcover, spent so far this cycle $22.7346, budget $14.00
+ig_google_months: already collected, skipped
+  ig_google_months: 1036 post links, 18 new inside the window
+ig_google2_posts: already collected, skipped
+ig_tagged_v7_full: already collected, skipped
+ig_tags2         instagram-hashtag-scraper    SUCCEEDED    110 items  $0.2553  (cap $0.70)  total $22.9899  events {'result': 110}
+ig_kw_wide2      instagram-keyword-posts-scra SUCCEEDED    261 items  $0.5311  (cap $0.60)  total $23.5210  events {'post-result': 261, 'filtered-search-page': 31}
+--- stage igcover done, spent this cycle $23.5210
+--- stage igkw, spent so far this cycle $23.5210, budget $14.00
+igkw_20260420_00: already collected, skipped
+igkw_20260420_01: already collected, skipped
+igkw_20260420_02: already collected, skipped
+igkw_20260420_03: already collected, skipped
+igkw_20260420_04: already collected, skipped
+igkw_20260420_05: already collected, skipped
+igkw_20260420_06: already collected, skipped
+igkw_20260420_07: already collected, skipped
+igkw_20260420_08: already collected, skipped
+igkw_20260420_09: already collected, skipped
+igkw_20260420_10: already collected, skipped
+igkw_20260420_11: already collected, skipped
+igkw_20260420_12: already collected, skipped
+igkw_20260420_13: already collected, skipped
+igkw_20260420_14: already collected, skipped
+igreels_20260420_00 instagram-reels-search-scrap SUCCEEDED     42 items  $0.0242  (cap $0.12)  total $23.5452  events {'item': 41, 'apify-actor-start': 1, 'reel-checked': 17}
+igreels_20260420_01 instagram-reels-search-scrap SUCCEEDED     37 items  $0.0184  (cap $0.12)  total $23.5636  events {'item': 35, 'apify-actor-start': 1, 'reel-checked': 9}
+igreels_20260420_02 instagram-reels-search-scrap SUCCEEDED     39 items  $0.0236  (cap $0.12)  total $23.5872  events {'item': 38, 'apify-actor-start': 1, 'reel-checked': 19}
+igreels_20260420_03 instagram-reels-search-scrap SUCCEEDED     30 items  $0.0184  (cap $0.12)  total $23.6056  events {'item': 29, 'apify-actor-start': 1, 'reel-checked': 18}
+igreels_20260420_04 instagram-reels-search-scrap SUCCEEDED      3 items  $0.0022  (cap $0.12)  total $23.6091  events {'item': 0, 'apify-actor-start': 1, 'reel-checked': 6}
+  igkw: 36 posts to re-fetch for a missing caption or likes
+igkw_20260420_refetch: already collected, skipped
+--- stage igkw done, spent this cycle $23.6091

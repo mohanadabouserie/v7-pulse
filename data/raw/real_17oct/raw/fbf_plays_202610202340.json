@@ -1,0 +1,30 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/yosefpacha/posts/pfbid02miPrkMarZoLFWeXsvMBdXuD5yvv2BaRKN4RKEEoTfoMhDLhB4aCvgjPh56rujWBql"
+   }
+  ]
+ },
+ "cap_usd": 0.06,
+ "run": {
+  "id": "I59xNQobhhSAl8es2",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:40:36.763Z",
+  "finishedAt": "2026-10-20T20:40:38.438Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 4,
+   "apify-default-dataset-item": 1
+  },
+  "usageTotalUsd": 0.0002
+ },
+ "cost_usd": 0.0001,
+ "items": [
+  {
+   "url": "https://www.facebook.com/yosefpacha/posts/pfbid02miPrkMarZoLFWeXsvMBdXuD5yvv2BaRKN4RKEEoTfoMhDLhB4aCvgjPh56rujWBql",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  }
+ ]
+}

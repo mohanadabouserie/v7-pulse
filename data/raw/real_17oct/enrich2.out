@@ -1,0 +1,18 @@
+--- stage igspeech, spent so far this cycle $25.3928, budget $14.00
+  igspeech_about_202610190625: 100 reels, cap $0.75
+igspeech_about_202610190625 instagram-transcripts-scrape SUCCEEDED    100 items  $0.5036  (cap $0.75)  total $25.8964  events {'apify-default-dataset-item': 99, 'speech2text': 115}
+  igspeech_tagged_202610190625: 8 reels, cap $0.10
+igspeech_tagged_202610190625 instagram-transcripts-scrape SUCCEEDED      8 items  $0.0386  (cap $0.10)  total $25.9350  events {'apify-default-dataset-item': 6, 'speech2text': 7}
+--- stage igspeech done, spent this cycle $25.9350
+--- stage igprofiles, spent so far this cycle $25.9350, budget $14.00
+  igprofiles: 110 accounts without a follower count
+ig_profiles_202610190635 instagram-profile-scraper    SUCCEEDED    110 items  $0.2620  (cap $0.38)  total $26.1970  events {'profile': 109, 'about-account': 0}
+--- stage igprofiles done, spent this cycle $26.1970
+--- stage igvisfetch, spent so far this cycle $26.1970, budget $14.00
+  igvisfetch: 82 posts (80 about V7, 2 to check)
+vis_posts_202610190636 instagram-post-scraper       SUCCEEDED     82 items  $0.1901  (cap $0.30)  total $26.3871  events {'post': 79, 'post-details': 79, 'music-data': 0}
+--- stage igvisfetch done, spent this cycle $26.3871
+--- stage igcomments, spent so far this cycle $26.3871, budget $14.00
+  igcomments: 251 posts, about 4386 comments
+igcm_202610190646 instagram-comments-scraper   SUCCEEDED   1221 items  $0.6108  (cap $2.90)  total $26.9979  events {'apify-actor-start': 1, 'apify-default-dataset-item': 1221}
+--- stage igcomments done, spent this cycle $26.9979

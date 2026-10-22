@@ -1,0 +1,22 @@
+{
+ "input": {
+  "query": "V7 soda",
+  "maxResults": 10,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.12,
+ "run": {
+  "id": "Lc4hqu1I8ufCEcdme",
+  "status": "ABORTED",
+  "startedAt": "2026-10-19T07:57:00.321Z",
+  "finishedAt": "2026-10-19T07:57:02.320Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "apify-actor-start": 2
+  },
+  "usageTotalUsd": 0.09
+ },
+ "cost_usd": 0.0922,
+ "items": []
+}

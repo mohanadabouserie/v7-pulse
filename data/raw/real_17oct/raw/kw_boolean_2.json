@@ -1,0 +1,23 @@
+{
+ "input": {
+  "searchQuery": "\"ڤي سڤن\"",
+  "resultsLimit": 10,
+  "contentType": "posts_and_reels",
+  "oldestPostDate": "2026-04-20",
+  "newestPostDate": "2026-10-16"
+ },
+ "cap_usd": 0.1,
+ "run": {
+  "id": "obJb3i3XARthKQchY",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T22:17:05.240Z",
+  "finishedAt": "2026-10-18T22:17:29.164Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "search-page": 3
+  },
+  "usageTotalUsd": 0.02
+ },
+ "cost_usd": 0.02,
+ "items": []
+}

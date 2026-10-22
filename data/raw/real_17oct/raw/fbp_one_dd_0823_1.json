@@ -1,0 +1,23 @@
+{
+ "input": {
+  "query": "ڤي كولا",
+  "resultsCount": 10,
+  "searchType": "latest",
+  "startDate": "2026-08-23",
+  "endDate": "2026-08-23"
+ },
+ "cap_usd": 0.09,
+ "run": {
+  "id": "7VVGjqUf1KvnLUeYe",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T14:26:38.604Z",
+  "finishedAt": "2026-10-20T14:27:49.916Z",
+  "chargedEventCounts": {
+   "result-item": 0,
+   "init": 1
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.289,
+ "items": []
+}

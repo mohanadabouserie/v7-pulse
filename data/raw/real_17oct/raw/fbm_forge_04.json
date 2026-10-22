@@ -1,0 +1,350 @@
+{
+ "input": {
+  "query": "ڤي سڤن رمان",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "bHCqI0cbY49sBjhXR",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:35:49.165Z",
+  "finishedAt": "2026-10-19T11:36:19.802Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.5995,
+ "items": [
+  {
+   "post_id": "122112016089429383",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2122918421596571/",
+   "message": "من أحلي روايات اللي قرأتها🥹.....",
+   "message_rich": "من أحلي روايات اللي قرأتها🥹.....",
+   "timestamp": 1787676563,
+   "comments_count": 114,
+   "reactions_count": 3642,
+   "reshare_count": 35,
+   "reactions": {
+    "angry": 1,
+    "care": 33,
+    "haha": 2,
+    "like": 3409,
+    "love": 179,
+    "sad": 16,
+    "wow": 2
+   },
+   "author": {
+    "id": "61592881499747",
+    "name": "روايات بالعربي",
+    "url": "https://www.facebook.com/people/%D8%B1%D9%88%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/61592881499747/",
+    "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/762372918_122097786375429383_6335718346734066324_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=wHJkrRWttl0Q7kNvwFiKtAi&_nc_oc=Adoj1PmOJu0vrOWpfe93hYpkapFSttBAYkQQmISu9JrUi66HOH82kLJC8Ztd-DqlBKs&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPCjiXnlEnUvrE5XIT49q75GwBFKnqxuYipjU4iBYR-rg&oe=6ADBCEEC",
+    "delegate_page_id": "1285292941327594"
+   },
+   "authors": [
+    {
+     "id": "61592881499747",
+     "name": "روايات بالعربي",
+     "url": "https://www.facebook.com/people/%D8%B1%D9%88%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/61592881499747/",
+     "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/762372918_122097786375429383_6335718346734066324_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=wHJkrRWttl0Q7kNvwFiKtAi&_nc_oc=Adoj1PmOJu0vrOWpfe93hYpkapFSttBAYkQQmISu9JrUi66HOH82kLJC8Ztd-DqlBKs&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPCjiXnlEnUvrE5XIT49q75GwBFKnqxuYipjU4iBYR-rg&oe=6ADBCEEC",
+     "delegate_page_id": "1285292941327594"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2122918421596571/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fbio1-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNAeKVf48S3Wt4W1AltO9AQZ7w1HfoqWQ7ZiFWTB3Jb7YnypdwDIv3GoP3p7dXtDGcTj-KldbCiPjXae-B2ZRbKrlHR7TsaJyrKLGNa-g.mp4?_nc_cat=111&_nc_oc=AdqO6AVuQJEwRKomjH3GX7LANZ3lEzUEQ6DZUXSgome1DbqQeEUNnGI01zhV25YYaEQ&_nc_sid=8bf8fe&_nc_ht=video.fbio1-1.fna.fbcdn.net&_nc_ohc=fQJ0-DLXNWkQ7kNvwFN75ua&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjAwMTIyNDQ4MDU5Njc3MywiYXNzZXRfYWdlX2RheXMiOjU0LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMhZB8-lU8GWcY1mzk1hX8Dx1pbByExWe3kYMNal2-3ew&oe=6ADBC2D3&bitrate=238460&tag=sve_sd",
+    "video_hd_file": "https://video.fbio1-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOXLurq-lDqxjRmkSW2GmFrnSmvMgSeYc40NdYSUhxyBjwPUMSINZrzLEz2UCGSylwjVeOgbgOI65PtlKbty__HkkGNxZGMp6tYfl_rKpSE5A.mp4?_nc_cat=110&_nc_oc=AdrEYfI3xjdJcVBW8tCKCq9WE4s8yOM2oP2S6_wt-ScLjr0l3r9vYlqBzviek0REz9A&_nc_sid=5e9851&_nc_ht=video.fbio1-1.fna.fbcdn.net&_nc_ohc=QAj4NDItzSsQ7kNvwEa9DJU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIwMDEyMjQ0ODA1OTY3NzMsImFzc2V0X2FnZV9kYXlzIjo1NCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=6e570913aae52d06&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xODQ2RTAyQkExQ0IzMjM3NjQxM0EyNDQwNTFGMzU4OF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U3NDc4OTkwQTQzRTQ5RjA5RkIxOUJEMjI2NEI2MDlDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbKjMGkzIaOBxUCKAJDMywXQDJMzMzMzM0YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMfw6YJKo0XjHwz5yEo8YUHhhGYTkeCLz8sm3Ak6YKERA&oe=6ADBB74E&bitrate=891346&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fbio1-1.fna.fbcdn.net/v/t15.5256-10/784250613_1683210483322035_6187626377845368138_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Up2Gu42hnqAQ7kNvwExxDeI&_nc_oc=Adp1asmgwIxuXL3hvnLyY7Rf8vJRKmJMdourZufcpCoqkoVbbu0BRtzXH0TRnL5c9pg&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQOyZj0LqGxTbdYsdkc84PbkYynE5urltMPjCOO7yp0-ZA&oe=6ADBEC0F",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122112016089429383",
+   "shares_id": "122112016089429383",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1512263854278495",
+   "type": "post",
+   "url": "https://www.facebook.com/aseeralkotb/posts/pfbid021kEE1PVLXZBHN3KBuZ9S1LaKoq7U4hLqwgasWuPNtuzMvU6hCq4297yojAYMbm3dl",
+   "message": "📚 من رواية: البرنامج \n🖋 سوزان يونج\n🖋ترجمة: أميرة أحمد",
+   "message_rich": "📚 من رواية: البرنامج \n🖋 سوزان يونج\n🖋ترجمة: أميرة أحمد",
+   "timestamp": 1783951265,
+   "comments_count": 20,
+   "reactions_count": 4769,
+   "reshare_count": 100,
+   "reactions": {
+    "angry": 0,
+    "care": 75,
+    "haha": 1,
+    "like": 3991,
+    "love": 694,
+    "sad": 8,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064846834028",
+    "name": "عصير الكتب",
+    "url": "https://www.facebook.com/aseeralkotb",
+    "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/848547513_1604708348367378_4546968138612591624_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=zD0smNR8AgAQ7kNvwEkZWI5&_nc_oc=AdoHPfa4uThawGJhF0mh11nUN32b6elj56x6AcY9hztgG7bHhTA7aOP0rgPMXhu4GCM&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQNo7NQMBtrJXgyGtaoSXUBFF13KhXfmxe7uDyHcc5qgAA&oe=6ADBE92B",
+    "delegate_page_id": "172347592971775"
+   },
+   "authors": [
+    {
+     "id": "100064846834028",
+     "name": "عصير الكتب",
+     "url": "https://www.facebook.com/aseeralkotb",
+     "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/848547513_1604708348367378_4546968138612591624_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=zD0smNR8AgAQ7kNvwEkZWI5&_nc_oc=AdoHPfa4uThawGJhF0mh11nUN32b6elj56x6AcY9hztgG7bHhTA7aOP0rgPMXhu4GCM&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQNo7NQMBtrJXgyGtaoSXUBFF13KhXfmxe7uDyHcc5qgAA&oe=6ADBE92B",
+     "delegate_page_id": "172347592971775"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/744954536_1511761217662092_2489849279095945811_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QdLtzHiq2XsQ7kNvwFJUEPu&_nc_oc=AdrMkKrSJrYlLpO7pypxQ0Lu2L9BdYT5f2YHXIJrUL672FA5ZShu80mdPRpEaP0P_dY&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPnwNj2ABMvuhYx_LiFIyEW0q6i5pydfdEvRfJMBpU3lw&oe=6ADBD6D3",
+    "height": 1080,
+    "width": 1080,
+    "id": "1512263834278497"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1512263854278495",
+   "shares_id": "1512263854278495",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1846556346785790",
+   "type": "post",
+   "url": "https://www.facebook.com/malak.ferdjioui.2025/posts/pfbid0yipyVX9cXeoeUn5CWyQFBa4XZGLEzFNFVBFAun92nX4XDUGVUHXQPo5mraRpkjYFl",
+   "message": "رواية Vile Bodies (أجساد دنيئة)\nللكاتب البريطاني إيفلين ووه \nتاريخ الكتابة: عام 1929–1930\nنشرت: عام 1930\nترجمت لأول مرة إلى العربية: عام 2026 عبر دار الكاتب الجزائرية بقلم الكاتبة والمترجمة الجزائرية ملاك فرجيوي\nتصنيفها الأدبي: رواية اجتماعية كلاسيكية تنتمي إلى الأدب الساخر والكوميديا السوداء. ويتجلى فيها أسلوب ووه المميز في: جمل قصيرة حادة، وحوارات متقطعة، وتقلبات مفاجئة في الحبكة، وتهكم هادئ يخفي وراءه نقدا عميقا. \nملخص الأحداث: \nتدور أحداث رواية Vile Bodies (أجساد دنيئة) في مدينة لندن في أواخر عشرينيات القرن العشرين. إذ يهجو ووه في روايته المجتمع البريطاني بعد الحرب العالمية الأولى ويسخر منه. منتقدا الجيل الشاب المعروف تاريخيا بـ \"الشباب اللامعين\" (Bright Young Things) عبر تسليط الضوء على مجموعة من الشبان والشابات الذين عرفوا في الصحافة بحفلاتهم الصاخبة وعلاقتهم السطحية المتقلبة وسعيهم الدائم للتسلية والشهرة.\nتتمحور أحداث الرواية حول آدم فينويك سايمز، الكاتب والصحفي الشاب الذي يريد الزواج من حبيبته نينا بلونت، ليصطدم هذا الزواج بسلسلة من العقبات والمفارقات العبثية تحول دون إتمامه؛ إذ عند عودة آدم من باريس تصادر مذكراته التي كان سيتم نشرها من قبل موظف الجمارك (و….)، مما يؤدي إلى تعطيل الزواج وفشل خططه المالية. فيحاول آدم جمع المال اللازم للزواج، وفي حين يبدو أنه يقترب من تحقيق هدفه، تنقلب الأحداث باستمرار بسبب (…) وسوء الحظ وتصرفات الآخرين. فنراه يتورط في سلسلة من المواقف التي تكشف مدى سلبيته تجاه ظروف حياته وانسياقه خلف الأحداث بإرادة هشة تشبه هشاشة بيئته الاجتماعية ودون مبادئ متينة، حيث تتداخل الأموال والعلاقات والمظاهر الصحفية في حياة يكاد ينعدم فيها الاستقرار.\nكما تظهر في الرواية شخصيات عديدة، من بينها الآنسة رنسيبل، والرائد المخمور، واللورد والليدي ميترولاند، والسيدة آيب و\"ملائكتها\"، والسيدة لوتي كرامب إلى جانب شخصيات صحفية واجتماعية أخرى تجعل من كل حادثة مادة للهو أو النميمة. ويبدو أن الجميع يتحركون بسرعة، لكنهم لا يتقدمون نحو غاية واضحة.\nتظهر الرواية أيضا الفارق الفكري والثقافي وتضارب المبادئ بين الجيل القديم وجيل الشباب فنرى نظرة تهكمية ساخطة ومشفقة من كبار السن بمختلف طبقات المجتمع نحو الشباب الطائش غير المسؤول اللاهث نحو التسلية والمتعة والشهرة \nومع تطور أحداث الرواية، نرى تغيرا في المزاج العام إذ يتحول من الكوميديا الصاخبة إلى شعور قاتم بالفراغ. وفي نهايتها، تظهر (…) في مشهد عبثي يكشف لنا الفرق بين عالم كان يتعامل مع الحياة باعتبارها حفلة لا تنتهي، وعالم يواجه فجأة عنفا لا يمكن احتواؤه بالمظاهر أو الأخبار الصحفية.\nبعض الاقتباسات:\n* وكأن مجرد صياغة أفكارنا في بضع كلمات يحل أكبر المشاكل ويجعلها بسيطة ومرتبة \n* وما الذي يريدون حربًا من أجله على أي حال؟ إن لم يكن أحد يرغب فيها فمن سيجبرهم عليها؟ \n* لا تنشأ الحروب في أيامنا هذه لأن الناس يريدونها. إننا نتوق للسلام…\n* هل شعرت من قبل بأن كل أمور حياتك لم يعد بوسعها الاستمرار بأي شكل من الأشكال؟ \n* ما فائدة أن تحب شخصًا إن لم تكن تثق به؟ \n* إنها تساوي عندي العالم وما فيه. ..كنت سأخوض النار وأشق البحار من أجل تلك الفتاة.",
+   "message_rich": "رواية Vile Bodies (أجساد دنيئة)\nللكاتب البريطاني إيفلين ووه \nتاريخ الكتابة: عام 1929–1930\nنشرت: عام 1930\nترجمت لأول مرة إلى العربية: عام 2026 عبر دار الكاتب الجزائرية بقلم الكاتبة والمترجمة الجزائرية ملاك فرجيوي\nتصنيفها الأدبي: رواية اجتماعية كلاسيكية تنتمي إلى الأدب الساخر والكوميديا السوداء. ويتجلى فيها أسلوب ووه المميز في: جمل قصيرة حادة، وحوارات متقطعة، وتقلبات مفاجئة في الحبكة، وتهكم هادئ يخفي وراءه نقدا عميقا. \nملخص الأحداث: \nتدور أحداث رواية Vile Bodies (أجساد دنيئة) في مدينة لندن في أواخر عشرينيات القرن العشرين. إذ يهجو ووه في روايته المجتمع البريطاني بعد الحرب العالمية الأولى ويسخر منه. منتقدا الجيل الشاب المعروف تاريخيا بـ \"الشباب اللامعين\" (Bright Young Things) عبر تسليط الضوء على مجموعة من الشبان والشابات الذين عرفوا في الصحافة بحفلاتهم الصاخبة وعلاقتهم السطحية المتقلبة وسعيهم الدائم للتسلية والشهرة.\nتتمحور أحداث الرواية حول آدم فينويك سايمز، الكاتب والصحفي الشاب الذي يريد الزواج من حبيبته نينا بلونت، ليصطدم هذا الزواج بسلسلة من العقبات والمفارقات العبثية تحول دون إتمامه؛ إذ عند عودة آدم من باريس تصادر مذكراته التي كان سيتم نشرها من قبل موظف الجمارك (و….)، مما يؤدي إلى تعطيل الزواج وفشل خططه المالية. فيحاول آدم جمع المال اللازم للزواج، وفي حين يبدو أنه يقترب من تحقيق هدفه، تنقلب الأحداث باستمرار بسبب (…) وسوء الحظ وتصرفات الآخرين. فنراه يتورط في سلسلة من المواقف التي تكشف مدى سلبيته تجاه ظروف حياته وانسياقه خلف الأحداث بإرادة هشة تشبه هشاشة بيئته الاجتماعية ودون مبادئ متينة، حيث تتداخل الأموال والعلاقات والمظاهر الصحفية في حياة يكاد ينعدم فيها الاستقرار.\nكما تظهر في الرواية شخصيات عديدة، من بينها الآنسة رنسيبل، والرائد المخمور، واللورد والليدي ميترولاند، والسيدة آيب و\"ملائكتها\"، والسيدة لوتي كرامب إلى جانب شخصيات صحفية واجتماعية أخرى تجعل من كل حادثة مادة للهو أو النميمة. ويبدو أن الجميع يتحركون بسرعة، لكنهم لا يتقدمون نحو غاية واضحة.\nتظهر الرواية أيضا الفارق الفكري والثقافي وتضارب المبادئ بين الجيل القديم وجيل الشباب فنرى نظرة تهكمية ساخطة ومشفقة من كبار السن بمختلف طبقات المجتمع نحو الشباب الطائش غير المسؤول اللاهث نحو التسلية والمتعة والشهرة \nومع تطور أحداث الرواية، نرى تغيرا في المزاج العام إذ يتحول من الكوميديا الصاخبة إلى شعور قاتم بالفراغ. وفي نهايتها، تظهر (…) في مشهد عبثي يكشف لنا الفرق بين عالم كان يتعامل مع الحياة باعتبارها حفلة لا تنتهي، وعالم يواجه فجأة عنفا لا يمكن احتواؤه بالمظاهر أو الأخبار الصحفية.\nبعض الاقتباسات:\n* وكأن مجرد صياغة أفكارنا في بضع كلمات يحل أكبر المشاكل ويجعلها بسيطة ومرتبة \n* وما الذي يريدون حربًا من أجله على أي حال؟ إن لم يكن أحد يرغب فيها فمن سيجبرهم عليها؟ \n* لا تنشأ الحروب في أيامنا هذه لأن الناس يريدونها. إننا نتوق للسلام…\n* هل شعرت من قبل بأن كل أمور حياتك لم يعد بوسعها الاستمرار بأي شكل من الأشكال؟ \n* ما فائدة أن تحب شخصًا إن لم تكن تثق به؟ \n* إنها تساوي عندي العالم وما فيه. ..كنت سأخوض النار وأشق البحار من أجل تلك الفتاة.",
+   "timestamp": 1792182138,
+   "comments_count": 18,
+   "reactions_count": 24,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 10,
+    "love": 14,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100042943277035",
+    "name": "Malak Ferdjioui",
+    "url": "https://www.facebook.com/malak.ferdjioui.2025",
+    "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/475796227_1338585677582862_7000462566024614699_n.jpg?stp=c7.0.628.628a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=cIVNW39nbcMQ7kNvwEyTHVl&_nc_oc=Adrw0oqTXZfhdStlqGC02SOar8jdFVE9WzNjQjadW-2I9Hq8Fheuvs1gZhGCer8Ke3Y&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPCwppuUNC247E6A5kD5qlHKVBC9fXoZirsIW_Rm9o6ug&oe=6ADBDBBB",
+    "delegate_page_id": "702341909624479"
+   },
+   "authors": [
+    {
+     "id": "100042943277035",
+     "name": "Malak Ferdjioui",
+     "url": "https://www.facebook.com/malak.ferdjioui.2025",
+     "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/475796227_1338585677582862_7000462566024614699_n.jpg?stp=c7.0.628.628a_cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=cIVNW39nbcMQ7kNvwEyTHVl&_nc_oc=Adrw0oqTXZfhdStlqGC02SOar8jdFVE9WzNjQjadW-2I9Hq8Fheuvs1gZhGCer8Ke3Y&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPCwppuUNC247E6A5kD5qlHKVBC9fXoZirsIW_Rm9o6ug&oe=6ADBDBBB",
+     "delegate_page_id": "702341909624479"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/854046653_1846556480119110_4186817677826109307_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Eu9MBPgdpcwQ7kNvwE7JYyz&_nc_oc=AdpMrZKX19ML6FJgSySb__s3QrME5MKZsTUJwGsOqENGZhqTTkK9JPQxJZrLjBcxKtA&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPusB87x5VU1WD595BJJRfUWSWNLtAUHXTGPuY7eTfJlw&oe=6ADBE1CC",
+     "url": "https://www.facebook.com/photo.php?fbid=1846554523452639&set=a.154227009352074&type=3",
+     "id": "1846554523452639"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/853231424_1846556503452441_8003187368615135210_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ioxkHf6z8ogQ7kNvwG3jfMB&_nc_oc=AdrsIjXLn6Zf-x671fsP02tzdyWM9JR1b47p4yb68n5JqyWG91XT5effXLseY4WK9uc&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQM7rkI_qda_KU9GclqySvkHnowSep31OwY4hm1oGyAGXg&oe=6ADBD327",
+     "url": "https://www.facebook.com/photo.php?fbid=1846554606785964&set=a.154227009352074&type=3",
+     "id": "1846554606785964"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/852101483_1846554526785972_5312763177445660449_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Xjed4ezbIZMQ7kNvwGxHJkT&_nc_oc=AdrvhuXqRq-269kaCtzCyXMmt66UE0DLMrb0My1A4KAvgKtfpH2I84uU-LghjjXrito&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQMD9QUkKlAh60dRcYu-5Xz5r7KIq3i9AzPRetIX0p_LNw&oe=6ADBE30A",
+     "url": "https://www.facebook.com/photo.php?fbid=1846554513452640&set=a.154227009352074&type=3",
+     "id": "1846554513452640"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/854534122_1846554626785962_4905907757849627967_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CQP2qS5yoBEQ7kNvwGF4-3l&_nc_oc=AdqvbWIElRiellyd29IBv0QYNF21zEyH-8WljA9qzTBIwhnOtK1cHA-rGhDTisrjb5w&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPDa7Af3pqCAgTqxpNON6TY5Dtg18O8nepQO03gM7eefg&oe=6ADBDF0E",
+     "url": "https://www.facebook.com/photo.php?fbid=1846554623452629&set=a.154227009352074&type=3",
+     "id": "1846554623452629"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1846556346785790",
+   "shares_id": "1846556346785790",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "122101695795491250",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02VDGzyhopeuMKrae1W2xE3y5751Whjv5ycUYju7Q6FtDnpBAmKZSXwHamQaV3Ppcel&id=61594737517715",
+   "message": "🆕️بوستر جديد لمانهو جديدة اسمها  \"Yes, I'm a villainess, but I'm not just an ordinary villainess🍷.\" \nوالمقرر عرضها الشهر المقبل 🍷\n\nالتصنيف :فانتازيا/شوجو/دراما/انتقام/حماس🍷\n\nالقصة : \n\n_فان تاين إيدلو أدفيرغن ،الأميرة الدوقية لعائلة أدفيرغن الملكية المرموقة يتم اتهامها بأفعال شنيعة لم تفعلها مما يؤدي ذالك إلى خسارة حياتها وإع/دامها ظلما ...تعود الأميرة فان تاين في حياة أخرى وذالك بالإنتقام ممن سلبوا سعادتها وتسببوا في أذيتها فهل ستنجو فان تاين من شرور أعدائها؟ أم أن الإ/عدام مصيرها من جديد؟\n\nالمانهو تجمع بين الفانتازيا والغموض والإثارة والتشويق حيث سنرى فيها كلاما وأحداث وعبر من الواقع🍷\n\nترقبن الأخبار القادمة☕",
+   "message_rich": "🆕️بوستر جديد لمانهو جديدة اسمها  \"Yes, I'm a villainess, but I'm not just an ordinary villainess🍷.\" \nوالمقرر عرضها الشهر المقبل 🍷\n\nالتصنيف :فانتازيا/شوجو/دراما/انتقام/حماس🍷\n\nالقصة : \n\n_فان تاين إيدلو أدفيرغن ،الأميرة الدوقية لعائلة أدفيرغن الملكية المرموقة يتم اتهامها بأفعال شنيعة لم تفعلها مما يؤدي ذالك إلى خسارة حياتها وإع/دامها ظلما ...تعود الأميرة فان تاين في حياة أخرى وذالك بالإنتقام ممن سلبوا سعادتها وتسببوا في أذيتها فهل ستنجو فان تاين من شرور أعدائها؟ أم أن الإ/عدام مصيرها من جديد؟\n\nالمانهو تجمع بين الفانتازيا والغموض والإثارة والتشويق حيث سنرى فيها كلاما وأحداث وعبر من الواقع🍷\n\nترقبن الأخبار القادمة☕",
+   "timestamp": 1790711286,
+   "comments_count": 1,
+   "reactions_count": 25,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 4,
+    "haha": 0,
+    "like": 0,
+    "love": 21,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61594737517715",
+    "name": "𝓣𝓱𝓮 𝓦𝓻𝓲𝓽𝓮𝓻 𝓕𝓪𝓽𝓲",
+    "url": "https://www.facebook.com/people/%F0%9D%93%A3%F0%9D%93%B1%F0%9D%93%AE-%F0%9D%93%A6%F0%9D%93%BB%F0%9D%93%B2%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%BB-%F0%9D%93%95%F0%9D%93%AA%F0%9D%93%BD%F0%9D%93%B2/61594737517715/",
+    "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/829324822_122101700307491250_57884758786118117_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=bFRhFnz7QEAQ7kNvwF71sG5&_nc_oc=AdofDa5RjvW4SfipLwumDU4P11B0TTI7BpWPP64iFNwI6FNHSavJ3CsfAkU9axVuLHU&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQMXlfmRcd7KgPvEgYDQeGSaetH0f1LBJJ_LfOuhctfUuA&oe=6ADBDE93",
+    "delegate_page_id": "1352630524605878"
+   },
+   "authors": [
+    {
+     "id": "61594737517715",
+     "name": "𝓣𝓱𝓮 𝓦𝓻𝓲𝓽𝓮𝓻 𝓕𝓪𝓽𝓲",
+     "url": "https://www.facebook.com/people/%F0%9D%93%A3%F0%9D%93%B1%F0%9D%93%AE-%F0%9D%93%A6%F0%9D%93%BB%F0%9D%93%B2%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%BB-%F0%9D%93%95%F0%9D%93%AA%F0%9D%93%BD%F0%9D%93%B2/61594737517715/",
+     "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/829324822_122101700307491250_57884758786118117_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=bFRhFnz7QEAQ7kNvwF71sG5&_nc_oc=AdofDa5RjvW4SfipLwumDU4P11B0TTI7BpWPP64iFNwI6FNHSavJ3CsfAkU9axVuLHU&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQMXlfmRcd7KgPvEgYDQeGSaetH0f1LBJJ_LfOuhctfUuA&oe=6ADBDE93",
+     "delegate_page_id": "1352630524605878"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/825356408_122101695771491250_3485457586076451654_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f727a1&_nc_ohc=IyxnAGPziEIQ7kNvwGHcvQN&_nc_oc=Adrezmc_rzSBOzkG653O_W7vfGKg-65m2rpd03zfO-8pkHjdfZUwWK9KMIJnRt2XAzw&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQMe119IUyqMS0UYlk7n4Tl9DNoUb1pZwlfoPtPCaEi0MQ&oe=6ADBCF63",
+    "height": 1152,
+    "width": 2048,
+    "id": "122101695765491250"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122101695795491250",
+   "shares_id": "122101695795491250",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122184677660959904",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02Y69cU9QMN45E22tGk1ebg2hxAVerYFU6vRX9rGnY8JcEe4FHpjYtRgm4NxnRcr2vl&id=61578797140207",
+   "message": "🌟 بی‌نوایان\n\n👤 نویسنده: ویکتور هوگو\n🌍 مترجمان: نسرین تولایی و ناهید ملکی\n🏢 ناشر: نشر نگاه\n📚 جلد: دو جلد، سخت، لبه‌رنگی\n\n📝 درباره کتاب:\n«بی‌نوایان» شاهکار جاودانه ویکتور هوگو، داستانی عمیق درباره عدالت، عشق، رنج، بخشش و امید است. این رمان با روایت زندگی ژان والژان، تصویری فراموش‌نشدنی از مبارزه انسان با فقر، بی‌عدالتی و سختی‌های زندگی ارائه می‌دهد و از ماندگارترین آثار ادبیات جهان به شمار می‌رود.\n\n🎭 ژانر:\nرمان • کلاسیک • تاریخی • اجتماعی\n\n📖 بخشی از کتاب:\n«حتی تاریک‌ترین شب نیز سرانجام به پایان می‌رسد و خورشید دوباره طلوع می‌کند.»\n\n💵 قیمت: ۸۰۰ افغانی\n\n━━━━━━━━━━━━━━\n\n🚚 دلیوری رایگان در کابل\n📦 ارسال به تمام ۳۴ ولایت افغانستان\n📲 ثبت سفارش از طریق واتساپ: +93778333657\n\n🌹 سپاس از اینکه با خرید کتاب، از کتابفروشی کوثر و فرهنگ مطالعه حمایت می‌کنید.\n\n#کتابفروشی_کوثر\n#بی_نوایان\n#ویکتور_هوگو\n#نشر_نگاه\n#ادبیات_کلاسیک",
+   "message_rich": "🌟 بی‌نوایان\n\n👤 نویسنده: ویکتور هوگو\n🌍 مترجمان: نسرین تولایی و ناهید ملکی\n🏢 ناشر: نشر نگاه\n📚 جلد: دو جلد، سخت، لبه‌رنگی\n\n📝 درباره کتاب:\n«بی‌نوایان» شاهکار جاودانه ویکتور هوگو، داستانی عمیق درباره عدالت، عشق، رنج، بخشش و امید است. این رمان با روایت زندگی ژان والژان، تصویری فراموش‌نشدنی از مبارزه انسان با فقر، بی‌عدالتی و سختی‌های زندگی ارائه می‌دهد و از ماندگارترین آثار ادبیات جهان به شمار می‌رود.\n\n🎭 ژانر:\nرمان • کلاسیک • تاریخی • اجتماعی\n\n📖 بخشی از کتاب:\n«حتی تاریک‌ترین شب نیز سرانجام به پایان می‌رسد و خورشید دوباره طلوع می‌کند.»\n\n💵 قیمت: ۸۰۰ افغانی\n\n━━━━━━━━━━━━━━\n\n🚚 دلیوری رایگان در کابل\n📦 ارسال به تمام ۳۴ ولایت افغانستان\n📲 ثبت سفارش از طریق واتساپ: +93778333657\n\n🌹 سپاس از اینکه با خرید کتاب، از کتابفروشی کوثر و فرهنگ مطالعه حمایت می‌کنید.\n\n#کتابفروشی_کوثر\n#بی_نوایان\n#ویکتور_هوگو\n#نشر_نگاه\n#ادبیات_کلاسیک",
+   "timestamp": 1784722868,
+   "comments_count": 0,
+   "reactions_count": 11,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 9,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61578797140207",
+    "name": "کتابفروشی آنلاین کوثر",
+    "url": "https://www.facebook.com/people/%DA%A9%D8%AA%D8%A7%D8%A8%D9%81%D8%B1%D9%88%D8%B4%DB%8C-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%DA%A9%D9%88%D8%AB%D8%B1/61578797140207/",
+    "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/536286895_122116564706959904_3022305357597269668_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=BUzCDbUg72wQ7kNvwGE4jsS&_nc_oc=Adq9lFa5KRnMxfPA2Up8bweNKAslWT3Ld_h9ZLWzTwwoTRIhZ10ijzH13XYTCl55Bls&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPZmVqDbdRn7bLGO-1L1oESYLYsJZwTp8dQUVSt9sRszQ&oe=6ADBDC39",
+    "delegate_page_id": "703288626208964"
+   },
+   "authors": [
+    {
+     "id": "61578797140207",
+     "name": "کتابفروشی آنلاین کوثر",
+     "url": "https://www.facebook.com/people/%DA%A9%D8%AA%D8%A7%D8%A8%D9%81%D8%B1%D9%88%D8%B4%DB%8C-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%DA%A9%D9%88%D8%AB%D8%B1/61578797140207/",
+     "profile_picture_url": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-1/536286895_122116564706959904_3022305357597269668_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=BUzCDbUg72wQ7kNvwGE4jsS&_nc_oc=Adq9lFa5KRnMxfPA2Up8bweNKAslWT3Ld_h9ZLWzTwwoTRIhZ10ijzH13XYTCl55Bls&_nc_zt=24&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQPZmVqDbdRn7bLGO-1L1oESYLYsJZwTp8dQUVSt9sRszQ&oe=6ADBDC39",
+     "delegate_page_id": "703288626208964"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/753247901_122184677558959904_2982112065373320612_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_YcRJbemflEQ7kNvwEsMekK&_nc_oc=AdoRBrb5fNnFVXywnWEvb-gXs5y53KeqsPN9ts8_B9Eq8_imdZH6EgnB4SYoY_t1t4E&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQN9OWgQ2cQMaqqV1JUGJ0zXkIB6pZJwzODgqzk5eZwMOw&oe=6ADBC314",
+     "url": "https://www.facebook.com/photo.php?fbid=122184677552959904&set=a.122104832702959904&type=3",
+     "id": "122184677552959904"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fbio1-1.fna.fbcdn.net/v/t39.30808-6/749419764_122184677636959904_1177020100788249542_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=F_HmzQcL02EQ7kNvwHT6ugV&_nc_oc=Adr6X1cDPIEWQfuFYipdV-glhjV6pra97M9AE1YPV9QYMRWUL0ts1JFwp000QKmreus&_nc_zt=23&_nc_ht=scontent.fbio1-1.fna&_nc_gid=N1WgtzMfmK74CtlkMyzWeA&_nc_ss=70289&oh=00_AQOyAUgSGFXHwBNZS8lcNRQ7Fo-iddUNq3Iplg_6cmp_Wg&oe=6ADBBE74",
+     "url": "https://www.facebook.com/photo.php?fbid=122184677630959904&set=a.122104832702959904&type=3",
+     "id": "122184677630959904"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122184677660959904",
+   "shares_id": "122184677660959904",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  }
+ ]
+}

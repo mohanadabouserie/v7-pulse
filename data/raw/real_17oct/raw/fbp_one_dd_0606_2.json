@@ -1,0 +1,23 @@
+{
+ "input": {
+  "query": "V7 كريم صودا",
+  "resultsCount": 10,
+  "searchType": "latest",
+  "startDate": "2026-06-06",
+  "endDate": "2026-06-06"
+ },
+ "cap_usd": 0.09,
+ "run": {
+  "id": "g7pyo6ahBrFgqsebK",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T14:23:44.219Z",
+  "finishedAt": "2026-10-20T14:23:46.392Z",
+  "chargedEventCounts": {
+   "result-item": 0,
+   "init": 1
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.0,
+ "items": []
+}

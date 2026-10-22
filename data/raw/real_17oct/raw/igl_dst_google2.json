@@ -1,0 +1,344 @@
+{
+ "input": {
+  "queries": "https://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F15%2F2026%2Ccd_max%3A8%2F21%2F2026\nhttps://www.google.com/search?q=%22%40v7egypt%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F12%2F2026%2Ccd_max%3A8%2F12%2F2026\nhttps://www.google.com/search?q=%22%40v7egypt%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F9%2F2026%2Ccd_max%3A8%2F9%2F2026\nhttps://www.google.com/search?q=%22V+Cola%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F12%2F2026%2Ccd_max%3A8%2F12%2F2026",
+  "maxPagesPerQuery": 1,
+  "countryCode": "eg"
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "q1J7exHHn2mQtBgBl",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:56:34.663Z",
+  "finishedAt": "2026-10-20T10:57:16.425Z",
+  "chargedEventCounts": {
+   "search-page-scraped": 2,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 0.00505
+ },
+ "cost_usd": 0.0051,
+ "items": [
+  {
+   "searchQuery": {
+    "term": "\"@v7egypt\" site:instagram.com",
+    "url": "http://www.google.com/search?q=%22%40v7egypt%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F12%2F2026%2Ccd_max%3A8%2F12%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%40v7egypt%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F12%2F2026%2Ccd_max%3A8%2F12%2F2026",
+   "hasNextPage": true,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "V7 Cream Soda  | Honest Review الكريم الصودا الطالعه ترند ...",
+     "websiteTitle": "Instagram · mo_theexplorer_",
+     "url": "https://www.instagram.com/reel/Db8GDicImSq/",
+     "displayedUrl": "80+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "V7 is bringing a little nostalgia back this summer. 🥤☀️ ...",
+     "websiteTitle": "Instagram · campaignpulse",
+     "url": "https://www.instagram.com/p/Db8TXVToBrs/",
+     "displayedUrl": "5 likes",
+     "description": "V7 is bringing a little nostalgia back this summer. @v7egypt August 12. Refreshing with 100% natural flavors as always 💛 … new summer flavors ☀️✨💯🥰🤫",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "It gets cooler as you sip! ❄️🍋‍🟩 For 7UP ICY COOL Mojito ...",
+     "websiteTitle": "Instagram · michaelessamart",
+     "url": "https://www.instagram.com/p/Db7zjurjetf/",
+     "displayedUrl": "320+ likes",
+     "description": "@v7egypt x @plushstudioseg summer of colors new colorful packaging for v7 ... @v7egypt new summer flavors ☀️✨       @cffagency #summerofcolors · View ...Read more",
+     "emphasizedKeywords": [
+      "v7egypt",
+      "v7egypt"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "الكريم صودا اللي مغرقة الدنيا  #drinks #summer #creamsoda ...",
+     "websiteTitle": "Instagram · mesh.reviewers",
+     "url": "https://www.instagram.com/reel/Db8kt6OoR9y/",
+     "displayedUrl": "360+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    },
+    {
+     "title": "جربت V Cola Cream Soda لأول مرة  الطعم مختلف عن الكولا ...",
+     "websiteTitle": "Instagram · rana.nasr111",
+     "url": "https://www.instagram.com/reel/Db7_P5joNJ3/",
+     "displayedUrl": "10+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 5
+    },
+    {
+     "title": "Cream Soda + Espresso?  أيوه… جربناها.  الكريم صودا ...",
+     "websiteTitle": "Instagram · tuludimtu.eg",
+     "url": "https://www.instagram.com/reel/Db8GSOdiGUW/",
+     "displayedUrl": "10+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 6
+    },
+    {
+     "title": "مين لسه مجربش cream soda من ڤي كولا؟ هتلاقيها دلوقتي في ...",
+     "websiteTitle": "Instagram · jojopfs",
+     "url": "https://www.instagram.com/reel/Db8eq3_NLSw/",
+     "displayedUrl": "50+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 7
+    },
+    {
+     "title": "THE BEST OF Local Sodas @v7egypt VS @spirospathiseg ...",
+     "websiteTitle": "Instagram · lifeoflouda",
+     "url": "https://www.instagram.com/reel/Db8zfObOBQp/",
+     "displayedUrl": "90+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 8
+    },
+    {
+     "title": "سن كولا طعم ينعرف وانتعاش يكمل أي لحظة ويضبط المود تماماً!  # ...",
+     "websiteTitle": "Instagram · gsc.kuwait",
+     "url": "https://www.instagram.com/reel/Db8y6SboO90/",
+     "displayedUrl": "10+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 9
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/tjoCUCmF4mjtfjcwA/records/h00037idMwZEHV5-0.html?signature=16WizNURuYU23iW2OD2QW"
+  },
+  {
+   "searchQuery": {
+    "term": "\"V Cola\" site:instagram.com",
+    "url": "http://www.google.com/search?q=%22V+Cola%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F12%2F2026%2Ccd_max%3A8%2F12%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22V+Cola%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F12%2F2026%2Ccd_max%3A8%2F12%2F2026",
+   "hasNextPage": false,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "عملنا الـ V60 بـ V-Cola!  تفتكر ممكن تجرّبها؟",
+     "websiteTitle": "Instagram · socotracoffee.eg",
+     "url": "https://www.instagram.com/reel/Db8i_NRN56T/",
+     "displayedUrl": "70+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "جربت V Cola Cream Soda لأول مرة  الطعم مختلف عن الكولا ...",
+     "websiteTitle": "Instagram · rana.nasr111",
+     "url": "https://www.instagram.com/reel/Db7_P5joNJ3/",
+     "displayedUrl": "10+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "الكريم صودا اللي مغرقة الدنيا  #drinks #summer #creamsoda ...",
+     "websiteTitle": "Instagram · mesh.reviewers",
+     "url": "https://www.instagram.com/reel/Db8kt6OoR9y/",
+     "displayedUrl": "360+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "مين لسه مجربش cream soda من ڤي كولا؟ هتلاقيها دلوقتي في ...",
+     "websiteTitle": "Instagram · jojopfs",
+     "url": "https://www.instagram.com/reel/Db8eq3_NLSw/",
+     "displayedUrl": "50+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    },
+    {
+     "title": "It gets cooler as you sip! ❄️🍋‍🟩 For 7UP ICY COOL Mojito ...",
+     "websiteTitle": "Instagram · michaelessamart",
+     "url": "https://www.instagram.com/p/Db7zjurjetf/",
+     "displayedUrl": "320+ likes",
+     "description": "18 likes. zizo_pixels. V Cola, Summer Edition, Cream Soda. @v7egypt · View all 12 comments · August 24 · visual_theory_ai's profile picture · visual_theory_ai.Read more",
+     "emphasizedKeywords": [
+      "V Cola"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 5
+    },
+    {
+     "title": "THE BEST OF Local Sodas @v7egypt VS @spirospathiseg ...",
+     "websiteTitle": "Instagram · lifeoflouda",
+     "url": "https://www.instagram.com/reel/Db8zfObOBQp/",
+     "displayedUrl": "90+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 6
+    },
+    {
+     "title": "Latest for @closeupegypt Director : @mohamedelwy_ 1st ad",
+     "websiteTitle": "Instagram · lynx.castingagency",
+     "url": "https://www.instagram.com/reel/Db9EeDBKZd8/",
+     "displayedUrl": "10+ likes  ·  2 months ago",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 7
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/tjoCUCmF4mjtfjcwA/records/yUgFW8YdElHy8Jw-0.html?signature=1FJHetsf1RAZm5PlxZQ9i"
+  },
+  {
+   "searchQuery": {
+    "term": "\"@v7egypt\" site:instagram.com",
+    "url": "http://www.google.com/search?q=%22%40v7egypt%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F9%2F2026%2Ccd_max%3A8%2F9%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%40v7egypt%22+site%3Ainstagram.com&tbs=cdr%3A1%2Ccd_min%3A8%2F9%2F2026%2Ccd_max%3A8%2F9%2F2026",
+   "hasNextPage": false,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/tjoCUCmF4mjtfjcwA/records/cdV2R824dIsD5dC-0.html?signature=AjkXF4g6J5bSKppYn2Qn"
+  },
+  {
+   "searchQuery": {
+    "term": "\"ڤي كولا\" site:facebook.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F15%2F2026%2Ccd_max%3A8%2F21%2F2026",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "US",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D9%83%D9%88%D9%84%D8%A7%22+site%3Afacebook.com&tbs=cdr%3A1%2Ccd_min%3A8%2F15%2F2026%2Ccd_max%3A8%2F21%2F2026",
+   "hasNextPage": false,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "V COLA… فخر مصري بطعم يستحق التجربة 🔥 لما بنتكلم ...",
+     "websiteTitle": "Facebook · بضائع - Goods",
+     "url": "https://www.facebook.com/61576716801219/posts/-v-cola-%D9%81%D8%AE%D8%B1-%D9%85%D8%B5%D8%B1%D9%8A-%D8%A8%D8%B7%D8%B9%D9%85-%D9%8A%D8%B3%D8%AA%D8%AD%D9%82-%D8%A7%D9%84%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D9%84%D9%85%D8%A7-%D8%A8%D9%86%D8%AA%D9%83%D9%84%D9%85-%D8%B9%D9%86-v-cola-%D8%A5%D8%AD%D9%86%D8%A7-%D9%85%D8%B4-%D8%A8%D9%86%D8%AA%D9%83%D9%84%D9%85-%D8%B9%D9%86-%D9%85%D8%B4%D8%B1%D9%88%D8%A8/122184752738890560/",
+     "displayedUrl": "7 reactions",
+     "description": "لكن الفخر مش بس في الاسم… الفخر كمان في المنتج نفسه. فى كولا بتقدم تجربة كولا بطعم مميز ومنعش، تجمع بين النكهة اللي بنحبها والإحساس المنعش اللي بيكمل كل وجبة ...Read more",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/tjoCUCmF4mjtfjcwA/records/mHoJ1MeI5WtKbzV-0.html?signature=WM8C6YidnJqUi98FhhI5"
+  }
+ ]
+}

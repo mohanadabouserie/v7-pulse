@@ -1,0 +1,54 @@
+{
+ "input": {
+  "searchQueries": [
+   "V7 رمان",
+   "V7 بلوبيري",
+   "V7 شعير"
+  ],
+  "maxReelsPerTerm": 30,
+  "maxReels": 90,
+  "newerThan": "2026-04-20"
+ },
+ "cap_usd": 0.12,
+ "run": {
+  "id": "waXEP8LAsgPCO5cX0",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T15:54:38.073Z",
+  "finishedAt": "2026-10-20T15:54:51.308Z",
+  "chargedEventCounts": {
+   "item": 0,
+   "apify-actor-start": 1,
+   "reel-checked": 3
+  },
+  "usageTotalUsd": 0.0021850000000000003
+ },
+ "cost_usd": 0.1382,
+ "items": [
+  {
+   "ok": false,
+   "errorCode": "NO_RESULTS",
+   "error": "No Reels were returned for this search term.",
+   "_notice": "This record is diagnostic only and is never charged.",
+   "sourceQuery": "V7 رمان",
+   "sourceHashtag": null
+  },
+  {
+   "ok": false,
+   "errorCode": "NO_RESULTS",
+   "error": "No Reels for this search term passed your filters.",
+   "_notice": "This record is diagnostic only and is never charged.",
+   "details": "3 Reel(s) were checked for this term and left out, each billed as a reel checked and left out. Nothing was charged for this row.",
+   "reelsCheckedOut": 3,
+   "sourceQuery": "V7 بلوبيري",
+   "sourceHashtag": null
+  },
+  {
+   "ok": false,
+   "errorCode": "NO_RESULTS",
+   "error": "No Reels were returned for this search term.",
+   "_notice": "This record is diagnostic only and is never charged.",
+   "sourceQuery": "V7 شعير",
+   "sourceHashtag": null
+  }
+ ]
+}

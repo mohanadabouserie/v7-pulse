@@ -1,0 +1,1221 @@
+{
+ "input": {
+  "query": "ڤيسڤن",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "PePvICzQl8mfgmLqK",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:35:23.714Z",
+  "finishedAt": "2026-10-19T11:35:48.262Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.0254,
+ "items": [
+  {
+   "post_id": "27782155084737872",
+   "type": "post",
+   "url": "https://www.facebook.com/abdullah.a.agha/posts/pfbid025s56Cd6SsQtf4rVCZBeMpPTtEbAYUtxMQKvG8YS3TuW5LNwffCnCUvRTSJXS69yVl",
+   "message": "Glad to have accompanied the Head of the EU Liaison Office during an official meeting with H.E. Safeen Dizayee, Head of the Department of Foreign Relations, where discussions focused on strengthening cooperation between the Kurdistan Region and the European Union, as well as recent regional developments.",
+   "message_rich": "Glad to have accompanied the Head of the EU Liaison Office during an official meeting with H.E. Safeen Dizayee, Head of the Department of Foreign Relations, where discussions focused on strengthening cooperation between the Kurdistan Region and the European Union, as well as recent regional developments.",
+   "timestamp": 1784727408,
+   "comments_count": 3,
+   "reactions_count": 31,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 25,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0PiGuGw8JKS81BCJvnfsWhUf2pddBE63Tn9gT8PhY8krzZN1TZe3tNvLXdwTVhd8Sl",
+    "name": "Abdullah Asoss Agha",
+    "url": "https://www.facebook.com/abdullah.a.agha",
+    "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-1/69895385_2485453678168028_2032607424749240320_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Ik20_aBwl3sQ7kNvwFT4kAx&_nc_oc=Adog8_MhxXMYJrV76vx5IRrjX0KVKhwT9vOsIskmi0aPCxZaivyz-VyegSCRP3Sl5oFSI1vwQv94_D_dslxL9J2m&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQOOyStZ1ZWZkuajHfTAYXPWjwfu3fmWkrjtskYz1xwJjw&oe=6AFD74B6",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0PiGuGw8JKS81BCJvnfsWhUf2pddBE63Tn9gT8PhY8krzZN1TZe3tNvLXdwTVhd8Sl",
+     "name": "Abdullah Asoss Agha",
+     "url": "https://www.facebook.com/abdullah.a.agha",
+     "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-1/69895385_2485453678168028_2032607424749240320_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Ik20_aBwl3sQ7kNvwFT4kAx&_nc_oc=Adog8_MhxXMYJrV76vx5IRrjX0KVKhwT9vOsIskmi0aPCxZaivyz-VyegSCRP3Sl5oFSI1vwQv94_D_dslxL9J2m&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQOOyStZ1ZWZkuajHfTAYXPWjwfu3fmWkrjtskYz1xwJjw&oe=6AFD74B6",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "1598527744964467",
+    "url": "https://www.facebook.com/KRG.DFR.Official/posts/pfbid0365r8X7Vv4SY5tHsbiruGLm2bgELjpEWBn1AZ7Usf39VGJfM3sx4L8gpCwNBiL9hel",
+    "timestamp": null,
+    "message": "بەرپرسى فەرمانگەی پەیوەندییەکانی دەرەوە پێشوازى لە بەرپرسی نووسینگەى پەیوەندییەکانى یەکێتى ئەوروپا لە هەرێم کرد\n\nئەمڕۆ چوارشەممە، 22 تەمووز 2026، سەفین موحسین دزەیی، بەرپرسى فەرمانگەی پەیوەندییەکانی دەرەوە، پێشوازى لە رادۆ بۆتوم، بەرپرسی نووسینگەى پەیوەندییەکانى یەکێتى ئەوروپا لە هەرێم کرد. \n\nلەکۆبوونەوەکەدا هەردوولا باسیان لە پتەوکردنی پەیوەندییە دووقۆڵیەکانى نێوان هەرێمى کوردستان و یەکێتى ئەوروپا کرد و جەختیان لە هەماهەنگی زیاتر کردەوە لەو بوارانەى کە جێگەى بایەخی هەردوولان.\n\nپرسە ناوخۆییەکانى هەرێمى کوردستان و پەیوەندییەکانى نێوان هەولێر و بەغدا و دوایین پێشهاتەکانى ناوچەکە تاوتوێ کرا.",
+    "photo_url": null,
+    "author": {
+     "id": "100044217710173",
+     "name": "فەرمانگەی پەیوەندییەکانی دەرەوە -Department of Foreign Relations",
+     "url": "https://www.facebook.com/KRG.DFR.Official"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/KRG.DFR.Official/posts/pfbid0365r8X7Vv4SY5tHsbiruGLm2bgELjpEWBn1AZ7Usf39VGJfM3sx4L8gpCwNBiL9hel",
+   "text_format_metadata": null,
+   "comments_id": "27782155084737872",
+   "shares_id": "27782155084737872",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "3666001826884510",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0xkUXxwhuVZk1Ci1XcECZmMyH51pA1R1v1vjU3bjRdXbNLpBaaS49vXvsnbLqdo99l&id=100004241860406",
+   "message": "Some people think that my appearance and success are a threat to their position. \n\n But I tell them: Rest assured, I have come to rewrite my story, not to replace anyone. The fabric I bought was cut only to my height. I sewed it for myself, not for the tailor.",
+   "message_rich": "Some people think that my appearance and success are a threat to their position. \n\n But I tell them: Rest assured, I have come to rewrite my story, not to replace anyone. The fabric I bought was cut only to my height. I sewed it for myself, not for the tailor.",
+   "timestamp": 1785932328,
+   "comments_count": 0,
+   "reactions_count": 4,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 1,
+    "love": 3,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0Fryevmzn7A8sfLtvEszM8Ge16eomajWQhdxWRdpaS36uXc3XNvBYkTn9BoP2Ln1hl",
+    "name": "Memo Yetkin",
+    "url": "https://www.facebook.com/people/Memo-Yetkin/pfbid0Fryevmzn7A8sfLtvEszM8Ge16eomajWQhdxWRdpaS36uXc3XNvBYkTn9BoP2Ln1hl/",
+    "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-1/649796791_3508206369330724_3154464297313740510_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=uozXghm8u6oQ7kNvwF9ANK2&_nc_oc=Adrkk-NKUZGsaMWFAJbmuvDBb3kvdqgH32Qy09FDeVJ8jEj5BCYB7dnZSBlMFeX8C4EtxlBboGgLnJeuOraZvNtE&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQMPVjK24rMOeyvKAdfSuX4frBIE1QvzH3VXOZhcrD3b2w&oe=6ADBE5F1",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0Fryevmzn7A8sfLtvEszM8Ge16eomajWQhdxWRdpaS36uXc3XNvBYkTn9BoP2Ln1hl",
+     "name": "Memo Yetkin",
+     "url": "https://www.facebook.com/people/Memo-Yetkin/pfbid0Fryevmzn7A8sfLtvEszM8Ge16eomajWQhdxWRdpaS36uXc3XNvBYkTn9BoP2Ln1hl/",
+     "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-1/649796791_3508206369330724_3154464297313740510_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=uozXghm8u6oQ7kNvwF9ANK2&_nc_oc=Adrkk-NKUZGsaMWFAJbmuvDBb3kvdqgH32Qy09FDeVJ8jEj5BCYB7dnZSBlMFeX8C4EtxlBboGgLnJeuOraZvNtE&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQMPVjK24rMOeyvKAdfSuX4frBIE1QvzH3VXOZhcrD3b2w&oe=6ADBE5F1",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "10238774519960541",
+    "url": "https://www.facebook.com/harmenahmed/posts/pfbid02YFsNyRDPq4t1ZAFj6DnGoQAfHVLNrD4xhS1XGgCRhM86T5sFhxMwwzUBnCHCC6fXl",
+    "timestamp": null,
+    "message": "هەندێک کەس وا دەزانن دەرکەوتن و سەرکەوتنی ( من ) هەڕەشەیە بۆ سەر پێگەی ئەوان. \n\nبەڵام پێیان دەڵێم: دڵنیابە، من هاتووم بۆ ئەوەی چیرۆکی خۆم بنووسمەوە، نەک جێگەی کەس بگرم , ئەو قوماشەی کڕیومە، تەنیا بە باڵای خۆمدا بڕاوە ، بۆ خۆمم دووریوە نەک بۆ بەرگدروو .\n\nHinek kes wiha dizanin ku derketin û serkeftina (min) gefek e li ser pêgeha wan.\n\nLê belê ez ji wan re dibêjim: Piştrast bin, ez hatime da ku çîroka xwe binivîsim, ne ku cihê kesekî bigirim. Ew qumaşê ku min kiriye, bi tenê li gor bejna min hatiye birîn; min ji bo xwe dirûtiye, ne ji bo dirûtingehan.\"",
+    "photo_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/764006301_10238774519040518_5588547899410120687_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u_Q6RiabH1EQ7kNvwGvmUPd&_nc_oc=AdoyxeJ0_Pfwt7-LOEmOoqSmM1gc58-1azeGC2ZpjXYT0896uYDruSI0JdMRs5UzoVLPe5AdSABZz6AHVc70z2b4&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQOZ-_xi5aeUuLzqCJmUgMnqVhFLy_1q7APx54x0sQLjxw&oe=6ADBBA5D",
+    "author": {
+     "id": "1201492672",
+     "name": "Harmn Ahmad",
+     "url": "https://www.facebook.com/1201492672"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/harmenahmed/posts/pfbid02YFsNyRDPq4t1ZAFj6DnGoQAfHVLNrD4xhS1XGgCRhM86T5sFhxMwwzUBnCHCC6fXl",
+   "text_format_metadata": null,
+   "comments_id": "3666001826884510",
+   "shares_id": "3666001826884510",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2183718849077371",
+   "type": "post",
+   "url": "https://www.facebook.com/Hemn.luqman.16/posts/pfbid07cRFUgkMzV4nN4NspEUxyhQvWsbvRBru66pYGcwJdf9yDxskQivnkTzfAKLUZ8rjl",
+   "message": "Leaders for leading the future. 🌺",
+   "message_rich": "Leaders for leading the future. 🌺",
+   "timestamp": 1783866533,
+   "comments_count": 12,
+   "reactions_count": 19,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 13,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0aHbh77ic3UrbbxaaBiu2dz8LE72X1cmvb2Wvpm5rVBACHzEUkoAB1SzaLAufvEKjl",
+    "name": "Hemn Luqman",
+    "url": "https://www.facebook.com/Hemn.luqman.16",
+    "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-1/400960161_1466783797437550_2440762170876273570_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=haOHTbswo94Q7kNvwFPhoog&_nc_oc=Adp6l-Q-8MZ1ikb_0-Xb1UoDLhS5n_PmOsyg9sadf9G4Ug0FgknxX0a08gdXmMfghpYR8NzQc5Lezivs8MdM99z0&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQNwt3zPnSThAtH6FctjIJInlI2EM617gxB42I5UPzjCQw&oe=6ADBD525",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0aHbh77ic3UrbbxaaBiu2dz8LE72X1cmvb2Wvpm5rVBACHzEUkoAB1SzaLAufvEKjl",
+     "name": "Hemn Luqman",
+     "url": "https://www.facebook.com/Hemn.luqman.16",
+     "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-1/400960161_1466783797437550_2440762170876273570_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=haOHTbswo94Q7kNvwFPhoog&_nc_oc=Adp6l-Q-8MZ1ikb_0-Xb1UoDLhS5n_PmOsyg9sadf9G4Ug0FgknxX0a08gdXmMfghpYR8NzQc5Lezivs8MdM99z0&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQNwt3zPnSThAtH6FctjIJInlI2EM617gxB42I5UPzjCQw&oe=6ADBD525",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "122329698704053387",
+    "url": "https://www.facebook.com/lpskg.kalar/posts/pfbid02CGvzehy3yCMXE8Zprt7C97ZdBhHMCGZuYuURARRjxjhrFXKu1wP2s5B2rwxfUsGWl",
+    "timestamp": null,
+    "message": "#کۆبونەوەی_دەستەی_گشتی_لیدەرس \nبەڕۆژبوون، زامنی مانەوەی هەر دامەزراوەیەکە بە بەهێزی.\n\nلیدەرس لە شاری هەڵەبجە کۆبونەوەی دەستەی گشتی ئەنجامدا و کۆبونەوەکەی تایبەت کرد بە خستنەڕوو و شرۆڤەی پلانی ستراتیژی لیدەرس تا ساڵی ٢٠٣٠.\n\nپلانەکە بەهەماهەنگی دامەزراوەی نێودەوڵەتی ولیام گلاسەر و بەستانداردەکانی قوتابخانەی کوالیتی گلاسەری نوسراوە.",
+    "photo_url": null,
+    "author": {
+     "id": "61551601631486",
+     "name": "باخچە وقوتابخانەی لیدەرسی ناحكومی- كەلار::Leaders School & Kg-Kalar",
+     "url": "https://www.facebook.com/lpskg.kalar"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/lpskg.kalar/posts/pfbid02CGvzehy3yCMXE8Zprt7C97ZdBhHMCGZuYuURARRjxjhrFXKu1wP2s5B2rwxfUsGWl",
+   "text_format_metadata": null,
+   "comments_id": "2183718849077371",
+   "shares_id": "2183718849077371",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "10244703276700661",
+   "type": "post",
+   "url": "https://www.facebook.com/kerstin.spriesterbach/posts/pfbid0MdVHtnPZYTpJXXrFaErQsW66dw7jZqyHKoPeEQeLq3TJMZN4iZCpmVoKN5civjosl",
+   "message": "Thank you Dr for your time and for the great cooperation 🙏🏻",
+   "message_rich": "Thank you Dr for your time and for the great cooperation 🙏🏻",
+   "timestamp": 1780422791,
+   "comments_count": 14,
+   "reactions_count": 114,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 3,
+    "haha": 0,
+    "like": 90,
+    "love": 21,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0hJWsSFrs9VKJU4579S64LkkDFEKFJhta5avS14UvW4M4jSvUERgF7qmH59TmyACWl",
+    "name": "Kerstin Spriesterbach",
+    "url": "https://www.facebook.com/pfbid0hJWsSFrs9VKJU4579S64LkkDFEKFJhta5avS14UvW4M4jSvUERgF7qmH59TmyACWl",
+    "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-1/124162958_10225073881258043_4230657966799959984_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YuyfE5qbPWkQ7kNvwE4oUbo&_nc_oc=AdpJUY4uWB5EM-3terRWgT2uVAAvgiKH32bBk4vkPZNiVx6gA4-kgSmQwMd6DZC2jKjJy9KYniWAsnszkFzCJ3OT&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQPg55nbeLYYxzhM20lzKtmRrcDXZSElJm0WsYJrvlV3-A&oe=6AFD84FE",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0hJWsSFrs9VKJU4579S64LkkDFEKFJhta5avS14UvW4M4jSvUERgF7qmH59TmyACWl",
+     "name": "Kerstin Spriesterbach",
+     "url": "https://www.facebook.com/pfbid0hJWsSFrs9VKJU4579S64LkkDFEKFJhta5avS14UvW4M4jSvUERgF7qmH59TmyACWl",
+     "profile_picture_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-1/124162958_10225073881258043_4230657966799959984_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=YuyfE5qbPWkQ7kNvwE4oUbo&_nc_oc=AdpJUY4uWB5EM-3terRWgT2uVAAvgiKH32bBk4vkPZNiVx6gA4-kgSmQwMd6DZC2jKjJy9KYniWAsnszkFzCJ3OT&_nc_zt=24&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQPg55nbeLYYxzhM20lzKtmRrcDXZSElJm0WsYJrvlV3-A&oe=6AFD84FE",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": {
+    "post_id": "2286718695494573",
+    "url": "https://www.facebook.com/kanar.fadhilhidayat/posts/pfbid02EDXYKf6h7sdQgo4UKUnY9g2i9sv4m4cy6q926bijQNy9Cy6jMdUYGft5YDgmKoZYl",
+    "timestamp": null,
+    "message": "ئەمڕۆ ١-٦-٢٠٢٦ پێشوازیمان کرد لە بەڕێز کێرستن قونسوڵی ئابوری و پەرەپێدانی ووڵاتی ئەڵمانیا لە هەرێمی کوردستان.\nبەخێر هاتنەوەمان کرد کە چەند ماوەیەک بە هۆی شەڕ لە ناوچەکە گەڕابۆوە بۆ ئەڵمانیا.\nگفتوگۆی چڕمان کرد لەسەر هەماهەنگی و کاری داهاتومان پێکەوە. جەختمان کردەوە لە پێویسیمان بە هاوکاری ووڵاتی ئەڵمانیا و بە پلانێکی چڕ و بە هاوکاری لایەنە پەیوەندیدارەکانی حکومەت پێویستە هاوکاری و بەرنامەی تایبەت بە هەموو ناوچەکانی هەرێم هەبێت.",
+    "photo_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/710986212_2286718665494576_8753432862970357412_n.jpg?stp=cp6_dst-jpg_s1080x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j54B67eKHIIQ7kNvwHOdqsZ&_nc_oc=AdoKbVxSUML4sXDLw-OyFu6vWtXswMsrHdb6oyn0_S6AwlSe-8J4ABGWCcrGktHNaxvztwA6cD6QQH_m4AJ8KVGr&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=NMC56EFBt3-PIeNsiMSjKQ&_nc_ss=70289&oh=00_AQNwIGH6G9xDY4DyU8gvxs1rfiWpGzHRCvegmNojGC07Mg&oe=6ADBE9B1",
+    "author": {
+     "id": "pfbid02Vh8CA9dFYjvsP7ttxMdE1b6danjaP47nzZqUUqcGUEpg3f9j3huVAyUq8HT6ka2jl",
+     "name": "Kanar Fadhil Hidayat",
+     "url": "https://www.facebook.com/kanar.fadhilhidayat"
+    },
+    "video_url": null,
+    "album_url": null
+   },
+   "attached_post_url": "https://www.facebook.com/kanar.fadhilhidayat/posts/pfbid02EDXYKf6h7sdQgo4UKUnY9g2i9sv4m4cy6q926bijQNy9Cy6jMdUYGft5YDgmKoZYl",
+   "text_format_metadata": null,
+   "comments_id": "10244703276700661",
+   "shares_id": "10244703276700661",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1355026443468691",
+   "type": "post",
+   "url": "https://www.facebook.com/USCGErbil/posts/pfbid02Cc3UeB3cS5tYqveP3CCfhms8iWXX1p6zmSUyMP72y7pTt25LoKX5skCSzRqE9nSAl",
+   "message": "بە توندی سەرکۆنەی هێرشکردنە سەر دۆست و هاوبەشی بەنرخی کوردمان، مەسرور بارزانی، سەرۆک وەزیرانی #هەرێمی_کوردستان و نووسینگەکەی لە هەولێر دەکەین. ئەم جۆرە دەستدرێژییە بۆ سەر هاوپەیمانانی #کوردی جێی متمانەمان قبووڵنەکراوە و هەڕەشەیەکی ڕاستەوخۆیە بۆ سەر سەقامگیریی ناوچەکە. چاوپۆشی یا بێدەنگی لەم دوژمنکارییانە ناکەین. بە تەواوی پاڵپشتیی سەرکردایەتیی سەرۆک وەزیران عەلی زەیدی دەکەین لە گەڕاندنەوەی سەروەریی تەواوەتیی #عێراق و دڵنیابوونەوە لەوەی کە سەرجەم چەک و هێزە ئەمنییەکان لەژێر دەسەڵاتی دەوڵەتی عێراقدا دەمێننەوە. - باڵیۆز تۆم باراک\n\nWe strongly condemn the attack on our friend and valued Kurdish partner, Kurdistan Region Prime Minister @masrourbarzani , and his office in Erbil. Such aggression against our trusted Kurdish allies is unacceptable and a direct threat to regional stability. We will not condone or tolerate these hostilities. We fully support Prime Minister Ali al-Zaidi’s leadership in restoring Iraq’s full sovereignty and ensuring all weapons and security forces remain under the authority of the Iraqi state.  - Ambassador Tom Barrack\n\n#USCGERBIL\nU.S. Embassy Baghdad",
+   "message_rich": "بە توندی سەرکۆنەی هێرشکردنە سەر دۆست و هاوبەشی بەنرخی کوردمان، مەسرور بارزانی، سەرۆک وەزیرانی #هەرێمی_کوردستان و نووسینگەکەی لە هەولێر دەکەین. ئەم جۆرە دەستدرێژییە بۆ سەر هاوپەیمانانی #کوردی جێی متمانەمان قبووڵنەکراوە و هەڕەشەیەکی ڕاستەوخۆیە بۆ سەر سەقامگیریی ناوچەکە. چاوپۆشی یا بێدەنگی لەم دوژمنکارییانە ناکەین. بە تەواوی پاڵپشتیی سەرکردایەتیی سەرۆک وەزیران عەلی زەیدی دەکەین لە گەڕاندنەوەی سەروەریی تەواوەتیی #عێراق و دڵنیابوونەوە لەوەی کە سەرجەم چەک و هێزە ئەمنییەکان لەژێر دەسەڵاتی دەوڵەتی عێراقدا دەمێننەوە. - باڵیۆز تۆم باراک\n\nWe strongly condemn the attack on our friend and valued Kurdish partner, Kurdistan Region Prime Minister @masrourbarzani , and his office in Erbil. Such aggression against our trusted Kurdish allies is unacceptable and a direct threat to regional stability. We will not condone or tolerate these hostilities. We fully support Prime Minister Ali al-Zaidi’s leadership in restoring Iraq’s full sovereignty and ensuring all weapons and security forces remain under the authority of the Iraqi state.  - Ambassador Tom Barrack\n\n#USCGERBIL\nU.S. Embassy Baghdad",
+   "timestamp": 1786986677,
+   "comments_count": 30,
+   "reactions_count": 588,
+   "reshare_count": 11,
+   "reactions": {
+    "angry": 0,
+    "care": 5,
+    "haha": 10,
+    "like": 546,
+    "love": 27,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100068840455556",
+    "name": "U.S. Consulate General Erbil",
+    "url": "https://www.facebook.com/USCGErbil",
+    "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/518337163_1037475855223753_7911501832877604993_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rZegZajn5TMQ7kNvwGZ0Lox&_nc_oc=AdpSAQuBDuTbDDdqV0R_rsTFqI74rAMB_mt_HzJvm-cu5t_miqpZir6ZE-6TCz4Fwzs&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNRrV380ry1dYREaU_OlWGXWQg-57ENwFkCD5GLOA6M2A&oe=6ADBE4AA",
+    "delegate_page_id": "133439963658698"
+   },
+   "authors": [
+    {
+     "id": "100068840455556",
+     "name": "U.S. Consulate General Erbil",
+     "url": "https://www.facebook.com/USCGErbil",
+     "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/518337163_1037475855223753_7911501832877604993_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rZegZajn5TMQ7kNvwGZ0Lox&_nc_oc=AdpSAQuBDuTbDDdqV0R_rsTFqI74rAMB_mt_HzJvm-cu5t_miqpZir6ZE-6TCz4Fwzs&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNRrV380ry1dYREaU_OlWGXWQg-57ENwFkCD5GLOA6M2A&oe=6ADBE4AA",
+     "delegate_page_id": "133439963658698"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fdxb5-1.fna.fbcdn.net/v/t39.30808-6/778258762_1355023676802301_8093272961862265180_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uAeRKsBg3mUQ7kNvwE1WzNR&_nc_oc=AdpX9fBYperiobwMPv5gThBN9PMin523-CjSzZbGOxe2NVQa89YLsI_UwYE9eVLHs8I&_nc_zt=23&_nc_ht=scontent.fdxb5-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQM7YxRUM4KblWlRf0_jmDR_9UEJVYyOPiji-S2gbSp8bA&oe=6ADBC413",
+    "height": 539,
+    "width": 1280,
+    "id": "1355023670135635"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1355026443468691",
+   "shares_id": "1355026443468691",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1561346976003887",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid04HE5JAd3hx8jmR5mN8et8RSheipeLVEbrAMua4W9xZxS1KAKyb7Y3sTwiCSxuhbFl&id=100063857974726",
+   "message": "پیرۆزە پیرۆزە پیرۆزە 👏🏻\n\nهەڵبژاردەی دێرینەکانی گەرمیان یەکەمین سەرکەوتن و 3+ خاڵیان بەدەست هێنا\n\nخولی هەڵبژاردەی دێرینەکانی کورستان\n\nهـ دێرینەکانی گەرمیان 2 - 1 هـ دێرینەکانی ڕاپەرین\n\nتۆماری گۆڵەکان 🆒\n\nهەڵمەت عادل ⚽️\nئەرکان ڕەحیم ⚽️\n\n#چۆمان_نەجم",
+   "message_rich": "پیرۆزە پیرۆزە پیرۆزە 👏🏻\n\nهەڵبژاردەی دێرینەکانی گەرمیان یەکەمین سەرکەوتن و 3+ خاڵیان بەدەست هێنا\n\nخولی هەڵبژاردەی دێرینەکانی کورستان\n\nهـ دێرینەکانی گەرمیان 2 - 1 هـ دێرینەکانی ڕاپەرین\n\nتۆماری گۆڵەکان 🆒\n\nهەڵمەت عادل ⚽️\nئەرکان ڕەحیم ⚽️\n\n#چۆمان_نەجم",
+   "timestamp": 1786034347,
+   "comments_count": 23,
+   "reactions_count": 243,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 2,
+    "haha": 0,
+    "like": 237,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063857974726",
+    "name": "Choman Photographar چۆمان نةجم",
+    "url": "https://www.facebook.com/people/Choman-Photographar-%DA%86%DB%86%D9%85%D8%A7%D9%86-%D9%86%D8%A9%D8%AC%D9%85/100063857974726/",
+    "profile_picture_url": "https://scontent.fshj1-1.fna.fbcdn.net/v/t39.30808-1/619669332_1386452726826647_3031639340169726184_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=uQf3Yx52JNwQ7kNvwG3U_YH&_nc_oc=Adpkq41Et5yuSnFNeg9fm_Rntt3to6bL1zupIejcdq5s6mEGvmQ7rN_hQZf9cJKAlkg&_nc_zt=24&_nc_ht=scontent.fshj1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPUE0M5fS8v03mqOIOuiGs38ldvt_Ewri7lCSHDkYECnw&oe=6ADBCDF5",
+    "delegate_page_id": "144781649704095"
+   },
+   "authors": [
+    {
+     "id": "100063857974726",
+     "name": "Choman Photographar چۆمان نةجم",
+     "url": "https://www.facebook.com/people/Choman-Photographar-%DA%86%DB%86%D9%85%D8%A7%D9%86-%D9%86%D8%A9%D8%AC%D9%85/100063857974726/",
+     "profile_picture_url": "https://scontent.fshj1-1.fna.fbcdn.net/v/t39.30808-1/619669332_1386452726826647_3031639340169726184_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=uQf3Yx52JNwQ7kNvwG3U_YH&_nc_oc=Adpkq41Et5yuSnFNeg9fm_Rntt3to6bL1zupIejcdq5s6mEGvmQ7rN_hQZf9cJKAlkg&_nc_zt=24&_nc_ht=scontent.fshj1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPUE0M5fS8v03mqOIOuiGs38ldvt_Ewri7lCSHDkYECnw&oe=6ADBCDF5",
+     "delegate_page_id": "144781649704095"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb5-1.fna.fbcdn.net/v/t39.30808-6/767222389_1561349542670297_783584350794638336_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3wLR4I4rBjoQ7kNvwF7Lua9&_nc_oc=AdoWHLvj83xUnkPxPghKMOQicX3iDqqbXbhTnv8HiEg-hnQDMcFFxKa6rYtr7nt9kF8&_nc_zt=23&_nc_ht=scontent.fdxb5-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQOvTJBgiJw2sWh5U-8YYgUcEhdEYpWp7Y_QK6i4nxweZg&oe=6ADBC049",
+     "url": "https://www.facebook.com/photo.php?fbid=1561349529336965&set=a.784123077059618&type=3",
+     "id": "1561349529336965"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-6/765872369_1561349572670294_1898952744458404665_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=B7HAOBoyly0Q7kNvwGclz2c&_nc_oc=AdqWxHq3dLWhssK816j5TjxRQZ1u09kqokCLzV8t4JGDoxYKpN1iiwdKlg0e2ImGRU4&_nc_zt=23&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPb_TnOeoVFjpF8ytX4XQsEY8OE7H-ZoYYnNU-rkk0WGw&oe=6ADBD1BB",
+     "url": "https://www.facebook.com/photo.php?fbid=1561349556003629&set=a.784123077059618&type=3",
+     "id": "1561349556003629"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1561346976003887",
+   "shares_id": "1561346976003887",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "1611734307409132",
+   "type": "post",
+   "url": "https://www.facebook.com/mabastkazhawy89/posts/pfbid02Mftar26SXs47zXJMAXHDyP3UCp3m1ug4jAUaePDpVWAhPnK517D5GsCcXyjDrNqcl",
+   "message": "🎙لوتکەی متمانە بە دادپەروەری خوایی ڕوانگەیەک بۆ قوڵایی ئایەتی (وَعَسَىٰ أَن تَكۡرَهُوا۟ شَیۡـࣰٔا وَهُوَ خَیۡرࣱ لَّكُمۡ..)\n📜یاسا قورئانیەکان: ٤\n\nکەناڵی تیلگرام: https://t.me/mabastkazhawy",
+   "message_rich": "🎙لوتکەی متمانە بە دادپەروەری خوایی ڕوانگەیەک بۆ قوڵایی ئایەتی (وَعَسَىٰ أَن تَكۡرَهُوا۟ شَیۡـࣰٔا وَهُوَ خَیۡرࣱ لَّكُمۡ..)\n📜یاسا قورئانیەکان: ٤\n\nکەناڵی تیلگرام: https://t.me/mabastkazhawy",
+   "timestamp": 1787310498,
+   "comments_count": 4,
+   "reactions_count": 115,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 102,
+    "love": 13,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100057177348008",
+    "name": "مەبەست کاژاوی",
+    "url": "https://www.facebook.com/100057177348008",
+    "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/698817442_1523749832874247_269964481960295219_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=DvCfcsEuCa8Q7kNvwFHNG76&_nc_oc=AdrzIfEjncLl3vTF0oE7ux-4BD66TK1ftHId27APN0c5w3xqhx7Cu86gXH_DfcEr01U&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQO0tjVEUOogAlDKYxyS9GiCdVdTHNexKsvt066NtY8Wbg&oe=6ADBC62B",
+    "delegate_page_id": "128282803696449"
+   },
+   "authors": [
+    {
+     "id": "100057177348008",
+     "name": "مەبەست کاژاوی",
+     "url": "https://www.facebook.com/100057177348008",
+     "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/698817442_1523749832874247_269964481960295219_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=DvCfcsEuCa8Q7kNvwFHNG76&_nc_oc=AdrzIfEjncLl3vTF0oE7ux-4BD66TK1ftHId27APN0c5w3xqhx7Cu86gXH_DfcEr01U&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQO0tjVEUOogAlDKYxyS9GiCdVdTHNexKsvt066NtY8Wbg&oe=6ADBC62B",
+     "delegate_page_id": "128282803696449"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fshj1-1.fna.fbcdn.net/v/t39.30808-6/778972392_1611734267409136_4095713214914629801_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=w0amQI0ACXIQ7kNvwEHAIvl&_nc_oc=AdrDMKt9UHDXGSr4gS3M5iga50M7cnUC9P6ydIepJizORVZfvXphUQUOQIyi0Xl8swY&_nc_zt=23&_nc_ht=scontent.fshj1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQP-ismVU4E_nSmhBQ-BbV-AM8ie9iPYdORdJ8PiElUmxg&oe=6ADBCB0A",
+    "height": 872,
+    "width": 1600,
+    "id": "1611734260742470"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1611734307409132",
+   "shares_id": "1611734307409132",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1743564231104593",
+   "type": "post",
+   "url": "https://www.facebook.com/barzanipost/posts/pfbid02UvtsZJbdQ4emajaetN6cJFTx2ZAbAyNz7ag5q2XMtge7MDeebmaBYKoUb3GnzTNJl",
+   "message": "سەعاتی سفڕ دیاریکراوە شەڕ دەستپێدەکات🔴\nزانیاری لە کۆمێنت⬇",
+   "message_rich": "سەعاتی سفڕ دیاریکراوە شەڕ دەستپێدەکات🔴\nزانیاری لە کۆمێنت⬇",
+   "timestamp": 1791571710,
+   "comments_count": 8,
+   "reactions_count": 305,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 302,
+    "love": 1,
+    "sad": 0,
+    "wow": 2
+   },
+   "author": {
+    "id": "100063530992698",
+    "name": "بارزانـی پۆســــــت",
+    "url": "https://www.facebook.com/barzanipost",
+    "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/291650438_2875241899444719_3260817587137374169_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nmHffV-cctUQ7kNvwEK3b5n&_nc_oc=AdqOmGhgtey0rFm8v0yPgaUa2JaVf1136hM6oZhq_OKBCyKO5efurBjAsOexOLuyLPg&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPS9AwKC3EvnpVgKw2jbZ6m0184Bi49z4f90eDwEKNncg&oe=6ADBE805",
+    "delegate_page_id": "1450052161963707"
+   },
+   "authors": [
+    {
+     "id": "100063530992698",
+     "name": "بارزانـی پۆســــــت",
+     "url": "https://www.facebook.com/barzanipost",
+     "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/291650438_2875241899444719_3260817587137374169_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=nmHffV-cctUQ7kNvwEK3b5n&_nc_oc=AdqOmGhgtey0rFm8v0yPgaUa2JaVf1136hM6oZhq_OKBCyKO5efurBjAsOexOLuyLPg&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPS9AwKC3EvnpVgKw2jbZ6m0184Bi49z4f90eDwEKNncg&oe=6ADBE805",
+     "delegate_page_id": "1450052161963707"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fshj1-1.fna.fbcdn.net/v/t39.30808-6/833862883_1743568664437483_1443847382170006823_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xJGCdOt8gewQ7kNvwHAjdAw&_nc_oc=Adrf2LaGLL8ZKK3ShuLl23zcL2pW6TacMAX_6ayuIczx6DEXzjD4BfIIsudychw5SC4&_nc_zt=23&_nc_ht=scontent.fshj1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQMh9ujUSEbGbMZ9SnCPfQUBZttqk1m4uEPKAbahddyHSA&oe=6ADBED7F",
+    "height": 1350,
+    "width": 1080,
+    "id": "1743568661104150"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1743564231104593",
+   "shares_id": "1743564231104593",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2313869562743769",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1436086947188706/posts/2313869562743769/",
+   "message": "کار ساخت پل در نزدیکی منار تاریخی جام در ولایت غور، با حمایت مالی بنیاد الیف و همکاری کارشناسان ملی و بین‌المللی تکمیل شد؛ این پل برای تسهیل دسترسی و حفاظت از منار در برابر خطر سیلاب ساخته شده است. هم‌زمان، روند مرمت و استحکام‌بخشی منار تاریخی جام با حمایت مالی بنیاد الیف و از سوی بنیاد آغاخان ادامه دارد.",
+   "message_rich": "کار ساخت پل در نزدیکی منار تاریخی جام در ولایت غور، با حمایت مالی بنیاد الیف و همکاری کارشناسان ملی و بین‌المللی تکمیل شد؛ این پل برای تسهیل دسترسی و حفاظت از منار در برابر خطر سیلاب ساخته شده است. هم‌زمان، روند مرمت و استحکام‌بخشی منار تاریخی جام با حمایت مالی بنیاد الیف و از سوی بنیاد آغاخان ادامه دارد.",
+   "timestamp": 1792086714,
+   "comments_count": 0,
+   "reactions_count": 6,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 6,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61582946906747",
+    "name": "Ahmad S. Aimaq",
+    "url": "https://www.facebook.com/people/Ahmad-S-Aimaq/61582946906747/",
+    "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/854887914_122138816781098230_7081324635989420693_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=XiD7pYMrhxIQ7kNvwGOP15-&_nc_oc=Adri8XFQKZy9jrVO9BNACeHckphh2RnTSvG9JGExoXRKMmQTD7uT0Q4o0pFi0eZFpbI&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPRiWTIgY3TMaVbU-N4ZUiPlDZFZL5rXT4clPU6kb2owQ&oe=6ADBC442",
+    "delegate_page_id": "781908531681493"
+   },
+   "authors": [
+    {
+     "id": "61582946906747",
+     "name": "Ahmad S. Aimaq",
+     "url": "https://www.facebook.com/people/Ahmad-S-Aimaq/61582946906747/",
+     "profile_picture_url": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-1/854887914_122138816781098230_7081324635989420693_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=XiD7pYMrhxIQ7kNvwGOP15-&_nc_oc=Adri8XFQKZy9jrVO9BNACeHckphh2RnTSvG9JGExoXRKMmQTD7uT0Q4o0pFi0eZFpbI&_nc_zt=24&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPRiWTIgY3TMaVbU-N4ZUiPlDZFZL5rXT4clPU6kb2owQ&oe=6ADBC442",
+     "delegate_page_id": "781908531681493"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fshj1-1.fna.fbcdn.net/v/t39.30808-6/844139858_122138528871098230_8652115825187598617_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=0Ge6V7A2b10Q7kNvwEoGKiV&_nc_oc=Adqvl9hBK6qUuDTrR-D7-0GEaWQreDrS2KaT9fiRvKCodPPiBq1orLe5ilnA74orRWM&_nc_zt=23&_nc_ht=scontent.fshj1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNIQ2zlt5YHiWJGh1eouT03ZXxsPwLc1JLIUeilpGqrag&oe=6ADBBCDB",
+    "height": 1245,
+    "width": 1660,
+    "id": "122138528985098230"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2313869562743769",
+   "shares_id": "2313869562743769",
+   "associated_group_id": "1436086947188706",
+   "associated_group": {
+    "group_id": "1436086947188706",
+    "name": "نرخ دقیق لحظه ای سرای شهزاده کابل",
+    "url": "https://www.facebook.com/groups/1436086947188706/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1735888254144916",
+   "type": "post",
+   "url": "https://www.facebook.com/salah.goran.75033/posts/pfbid02sqytrY5jpK3ki3Fq1gxrKkZV6ZtxCUNTxfoCb7AzMuAovkmSyeAFdeXMouRd3K6al",
+   "message": "#به‌رێوه‌به‌رایه‌تی گشتی حه‌ج و عومڕه‌ ناوی مامۆستایانی #ده‌رچوو بۆ پرۆسه‌ی حه‌جی 2027 بڵاو ده‌كاته‌وه‌\n\n#ئه‌مرۆ پێنج شه‌ممه‌ به‌رواری 24/9/2026 تیروپشك بۆ #ناوی مامۆستایانی ئایینی ئه‌نجام درا كه‌ بۆ ساڵی 2027 #وه‌كوو مورشد به‌شداری پرۆسه‌ی حه‌ج ده‌كه‌ن.\n#به‌م بۆنه‌یه‌وه‌ ( شێخ وریا مه‌ولانا خالد بالیسانی )،  #به‌رێوه‌به‌ری گشتی حه‌ج و عومره‌ به‌ وه‌كاله‌ت پیرۆزبایی #له‌ مامۆستایانی ده‌رچوو ده‌كات و هیوای سه‌ركه‌وتنیان بۆ #ده‌خوازێت و ئه‌و مامۆستایانه‌ی كه‌ ناویان ده‌رنه‌چووه‌ #ده‌توانن بۆ ساڵانی داهاتوو داواكاری پێشكه‌ش بكه‌ن .",
+   "message_rich": "#به‌رێوه‌به‌رایه‌تی گشتی حه‌ج و عومڕه‌ ناوی مامۆستایانی #ده‌رچوو بۆ پرۆسه‌ی حه‌جی 2027 بڵاو ده‌كاته‌وه‌\n\n#ئه‌مرۆ پێنج شه‌ممه‌ به‌رواری 24/9/2026 تیروپشك بۆ #ناوی مامۆستایانی ئایینی ئه‌نجام درا كه‌ بۆ ساڵی 2027 #وه‌كوو مورشد به‌شداری پرۆسه‌ی حه‌ج ده‌كه‌ن.\n#به‌م بۆنه‌یه‌وه‌ ( شێخ وریا مه‌ولانا خالد بالیسانی )،  #به‌رێوه‌به‌ری گشتی حه‌ج و عومره‌ به‌ وه‌كاله‌ت پیرۆزبایی #له‌ مامۆستایانی ده‌رچوو ده‌كات و هیوای سه‌ركه‌وتنیان بۆ #ده‌خوازێت و ئه‌و مامۆستایانه‌ی كه‌ ناویان ده‌رنه‌چووه‌ #ده‌توانن بۆ ساڵانی داهاتوو داواكاری پێشكه‌ش بكه‌ن .",
+   "timestamp": 1790265609,
+   "comments_count": 0,
+   "reactions_count": 70,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 70,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100031712752607",
+    "name": "Salah Goran",
+    "url": "https://www.facebook.com/salah.goran.75033",
+    "profile_picture_url": "https://scontent.fdxb5-1.fna.fbcdn.net/v/t39.30808-1/475863335_1275707786829634_9220169175863397714_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=uvAAPTzyLqIQ7kNvwHPFV8u&_nc_oc=Adqa4j3J9HVmGH3M1dgjrk0MhFZL6NS2efUIowHMgxYxPl7b86qGL2IBhXl6VIgKkv0&_nc_zt=24&_nc_ht=scontent.fdxb5-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNSxWeFEB3XKP2kW5-d4brsp6_ZrwppAIvOuWImYxB4Dg&oe=6ADBBE00",
+    "delegate_page_id": "248179411721692"
+   },
+   "authors": [
+    {
+     "id": "100031712752607",
+     "name": "Salah Goran",
+     "url": "https://www.facebook.com/salah.goran.75033",
+     "profile_picture_url": "https://scontent.fdxb5-1.fna.fbcdn.net/v/t39.30808-1/475863335_1275707786829634_9220169175863397714_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=uvAAPTzyLqIQ7kNvwHPFV8u&_nc_oc=Adqa4j3J9HVmGH3M1dgjrk0MhFZL6NS2efUIowHMgxYxPl7b86qGL2IBhXl6VIgKkv0&_nc_zt=24&_nc_ht=scontent.fdxb5-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNSxWeFEB3XKP2kW5-d4brsp6_ZrwppAIvOuWImYxB4Dg&oe=6ADBBE00",
+     "delegate_page_id": "248179411721692"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb2-1.fna.fbcdn.net/v/t39.30808-6/797841635_1735888010811607_7008541582361682529_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LUlbraTOvMAQ7kNvwFU8tQY&_nc_oc=AdoXkXNTRF4_L8EAsyaZydhNohvlKM4G9mS-vIhtGbfe4VgSpi3pZtSADRN79aMvjg0&_nc_zt=23&_nc_ht=scontent.fdxb2-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQMvLtjYZ4UOFgB-cyoRIfcJ1jTMo_EqgT0kdNCKAkGvAg&oe=6ADBD80E",
+     "url": "https://www.facebook.com/photo.php?fbid=1735888007478274&set=a.107311353669289&type=3",
+     "id": "1735888007478274"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb5-1.fna.fbcdn.net/v/t39.30808-6/817176659_1735888060811602_729605792953699153_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cc-zqC5F4fsQ7kNvwHsBdzf&_nc_oc=Adpp4N_22-RKZkF_4bqQr3Hu4lODNmogdzVp0H27BN-qrabRoYdguBpYv4rjd96jSq8&_nc_zt=23&_nc_ht=scontent.fdxb5-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQMLaxn2c7dMqSmbyq65FYdJuy_LBFrVnJ27WOoPqYPfdQ&oe=6ADBC840",
+     "url": "https://www.facebook.com/photo.php?fbid=1735888057478269&set=a.107311353669289&type=3",
+     "id": "1735888057478269"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-6/799441258_1735888110811597_6290989120756468029_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1rsy3VAlXyQQ7kNvwG_SoMd&_nc_oc=AdpP9ajrvydl8wJgqIz4NfmMc0MGyllOLtlolxuj6kyzhljY3rZ3Fj29vvPa5w3G0mQ&_nc_zt=23&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNKoBBnuaUwZeyJl58KBmPcfamU4rE1Ahyq-JI_Z8yAXg&oe=6ADBDBE9",
+     "url": "https://www.facebook.com/photo.php?fbid=1735888100811598&set=a.107311353669289&type=3",
+     "id": "1735888100811598"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-6/796098789_1735888157478259_6184501852784080476_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=d-1cb0mVpq8Q7kNvwHqW7nL&_nc_oc=AdqhmIk-cJleB5Md21gwEtJKO8mbyFrpwdNbn-sMIvhPcCQDIELUT6JqPPUHUlktZSg&_nc_zt=23&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQNe76vwpJd2TL9GOLyKJ51k9Yf-D3lyN_ci3Z4bvZrkcA&oe=6ADBE93A",
+     "url": "https://www.facebook.com/photo.php?fbid=1735888154144926&set=a.107311353669289&type=3",
+     "id": "1735888154144926"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fdxb1-1.fna.fbcdn.net/v/t39.30808-6/815797925_1735888230811585_5708482278960775443_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8pGJpFt4958Q7kNvwHdDfHx&_nc_oc=AdqFAbKvCL4B8Aha6U3D2qHvFVMVqivStVY62X3_wmlWkcp3Xgx-2893uZPmIvktQhs&_nc_zt=23&_nc_ht=scontent.fdxb1-1.fna&_nc_gid=CYceTqpgs1fhG61RQ1gQzw&_nc_ss=70289&oh=00_AQPVoOvbMlEQ7bUw_8NyLSNbllcCFjTc7d3T-kUYWC4PmA&oe=6ADBB73C",
+     "url": "https://www.facebook.com/photo.php?fbid=1735888224144919&set=a.107311353669289&type=3",
+     "id": "1735888224144919"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1735888254144916",
+   "shares_id": "1735888254144916",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 5,
+   "top_comments": []
+  },
+  {
+   "post_id": "2394212601107909",
+   "type": "post",
+   "url": "https://www.facebook.com/rozha2504/posts/pfbid02s6Wuw7LYAXF5xiaANP2nXJTgir2umR9TMrYNHZiWJC3V1NzWSvuVa51aRPBFmfXtl",
+   "message": "فۆتۆ؛ ڕۆژا",
+   "message_rich": "فۆتۆ؛ ڕۆژا",
+   "timestamp": 1789905504,
+   "comments_count": 18,
+   "reactions_count": 103,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 2,
+    "haha": 0,
+    "like": 86,
+    "love": 15,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100015575766605",
+    "name": "ڕۆژا ناسر کاکەمەد",
+    "url": "https://www.facebook.com/rozha2504",
+    "profile_picture_url": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-1/547874570_2080665195795986_68708305090001768_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ykwttWjEGfgQ7kNvwFxHjWm&_nc_oc=AdrMlel6LhWRmwpg4lXHa2EOl6UmugQzZx02XLnPsApRTuR17EV8Q_Oleeyx8DCJBEU&_nc_zt=24&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPF5ela4EFugISsbsdDlxq0jvq-aKos3T3G3vkZBqCqJA&oe=6ADBCF97",
+    "delegate_page_id": "479912518549911"
+   },
+   "authors": [
+    {
+     "id": "100015575766605",
+     "name": "ڕۆژا ناسر کاکەمەد",
+     "url": "https://www.facebook.com/rozha2504",
+     "profile_picture_url": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-1/547874570_2080665195795986_68708305090001768_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ykwttWjEGfgQ7kNvwFxHjWm&_nc_oc=AdrMlel6LhWRmwpg4lXHa2EOl6UmugQzZx02XLnPsApRTuR17EV8Q_Oleeyx8DCJBEU&_nc_zt=24&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPF5ela4EFugISsbsdDlxq0jvq-aKos3T3G3vkZBqCqJA&oe=6ADBCF97",
+     "delegate_page_id": "479912518549911"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-6/818384766_2394210731108096_4784256490733962291_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dmLCIMNb1LkQ7kNvwHVIxJy&_nc_oc=AdoZwmRVJdAlzFbLvyuVTtxzpkKezNaKvIuyjWS6P3gITcJ_iUtzrly8suK8Xxj7SlU&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPq0Sx0J-5R5lpBhq26jtWWIGtNBVPWf6KIgtea4pe4Dg&oe=6ADBE302",
+     "url": "https://www.facebook.com/photo.php?fbid=2394210724441430&set=a.112121962650329&type=3",
+     "id": "2394210724441430"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-6/818384465_2394210864441416_6513944534048180938_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mIP5dtEIkCYQ7kNvwGbc6qG&_nc_oc=Ado-rg-CIC4odYsBW-Od3orlpFdD2D0o0UkjF5xtb24IzNdVdIpWTNjDm8upBpfmn38&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPd6V-u1eL--jFfJWP3HXWXFaQ1TXwTPDAjgA9kXhbaGg&oe=6ADBE04F",
+     "url": "https://www.facebook.com/photo.php?fbid=2394210861108083&set=a.112121962650329&type=3",
+     "id": "2394210861108083"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-6/818384539_2394211057774730_2721223860527009523_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KicQwijdavYQ7kNvwE_XrmP&_nc_oc=Adr7T-jLzxQ0twTs1DaAsQ9kXgJfY7lb6GkwFT3cB6c-XYpur58ZkeymBMrcfnzPs2w&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQN6xdUVbmsasOYfr0sEQ7RpV7EXGucVyiY-oE6tH6AgFg&oe=6ADBE4AC",
+     "url": "https://www.facebook.com/photo.php?fbid=2394211051108064&set=a.112121962650329&type=3",
+     "id": "2394211051108064"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-6/807684382_2394211477774688_6392239721378224736_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qT5AquRIu80Q7kNvwFangDc&_nc_oc=Adq5xIu6EjyS1JWlanvmUTL0MHdYxAv7CBLJqEGRWF1IcHObPkCZ2jaRoWQGqHuIRWU&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQMLAmnjfP-rCAICcRncCMJNQywqJuryz-Zl2TrWy-3NhA&oe=6ADBE0BF",
+     "url": "https://www.facebook.com/photo.php?fbid=2394211474441355&set=a.112121962650329&type=3",
+     "id": "2394211474441355"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-6/818384633_2394211607774675_5869993960780232582_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4nZaUSrZ8t4Q7kNvwH0kEtJ&_nc_oc=Adp5BLGjOc_Tt3oRwp5lwsHUtI0sKad-8VerFHSfUfUIgbjt2ipexlQ0LyhZAB7jeMo&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPOHXfSos2OKVw21kPxbuIe0HzbQ7lN1hWcHzaIVnKIWw&oe=6ADBDB3C",
+     "url": "https://www.facebook.com/photo.php?fbid=2394211604441342&set=a.112121962650329&type=3",
+     "id": "2394211604441342"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2394212601107909",
+   "shares_id": "2394212601107909",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 13,
+   "top_comments": []
+  },
+  {
+   "post_id": "1518982866914632",
+   "type": "post",
+   "url": "https://www.facebook.com/Ivan.Hassib/posts/pfbid0tKPrqs4S7ENcztCFS2Xymj4mUgKbpNN4kPGHd6hDNMBP4JUV3P8TY9LnaiNYxar9l",
+   "message": "مسرور بارزاني: دعمنا لبغداد مرتبط بتطبيق الدستور وواهمٌ من يظن كوردستان لقمة سائغة",
+   "message_rich": "مسرور بارزاني: دعمنا لبغداد مرتبط بتطبيق الدستور وواهمٌ من يظن كوردستان لقمة سائغة",
+   "timestamp": 1791229475,
+   "comments_count": 28,
+   "reactions_count": 1093,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 9,
+    "haha": 0,
+    "like": 1013,
+    "love": 70,
+    "sad": 1,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064087988316",
+    "name": "إيفان حسيب - Ivan Hassib",
+    "url": "https://www.facebook.com/Ivan.Hassib",
+    "profile_picture_url": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-1/344039308_703736798194810_4070301246001553257_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=mIijWf2QZzoQ7kNvwENShLQ&_nc_oc=AdrxjEWSNK0M4zDYlJ2UFh-hzp4lsXkBtVNFvu74faKdOicIkZsz4YryyV5VmQ7Ay9s&_nc_zt=24&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPwqvGXks0dMfcneycWfrKIKRE4rLpdAMy1NpUy754dmQ&oe=6ADBB803",
+    "delegate_page_id": "122340137840309"
+   },
+   "authors": [
+    {
+     "id": "100064087988316",
+     "name": "إيفان حسيب - Ivan Hassib",
+     "url": "https://www.facebook.com/Ivan.Hassib",
+     "profile_picture_url": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-1/344039308_703736798194810_4070301246001553257_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=mIijWf2QZzoQ7kNvwENShLQ&_nc_oc=AdrxjEWSNK0M4zDYlJ2UFh-hzp4lsXkBtVNFvu74faKdOicIkZsz4YryyV5VmQ7Ay9s&_nc_zt=24&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQPwqvGXks0dMfcneycWfrKIKRE4rLpdAMy1NpUy754dmQ&oe=6ADBB803",
+     "delegate_page_id": "122340137840309"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-6/837200330_1518982876914631_8004405083043285371_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ET4ixIeXOUEQ7kNvwFqnhnq&_nc_oc=AdoRD3eJ1jgaUO6G3L14w_3jhM-iPBOuqCHuj3xsMBEUA4WwRZJl42Y7SdA0pCKx6Z8&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQOPsTsQsNKfa1JqwgT_VQ5BYV5I5PCMkJw3gB7qBiBihA&oe=6ADBD0AF",
+    "height": 1335,
+    "width": 1080,
+    "id": "1518982846914634"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1518982866914632",
+   "shares_id": "1518982866914632",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1354134610154256",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/984447281079132/",
+   "message": "ڕێباز حەملان: وەزیری دارایی عێراق وتویەتی ئەو 120 ملیار دینارەم لە هەرێمی کوردستان دەوێت",
+   "message_rich": "ڕێباز حەملان: وەزیری دارایی عێراق وتویەتی ئەو 120 ملیار دینارەم لە هەرێمی کوردستان دەوێت",
+   "timestamp": 1782812301,
+   "comments_count": 7,
+   "reactions_count": 66,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 10,
+    "like": 55,
+    "love": 0,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "100066731880517",
+    "name": "Esta",
+    "url": "https://www.facebook.com/Esta.krd",
+    "profile_picture_url": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-1/671140113_1289882173246167_3846116458239313663_n.jpg?stp=c275.275.1498.1498a_cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ob78hyACO34Q7kNvwHHMaMp&_nc_oc=AdqXAHfNcpeQx8v_RcQlsZIYGh0DT2DBVntTO6s0UFPmbR_2sS_CmivVE9AzJXjdq74&_nc_zt=24&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQOaLU2Rzf4Kj1at2hpCuJLjQrLej06LYXDrxYDl7hI6Lg&oe=6ADBC94F",
+    "delegate_page_id": "269187783194393"
+   },
+   "authors": [
+    {
+     "id": "100066731880517",
+     "name": "Esta",
+     "url": "https://www.facebook.com/Esta.krd",
+     "profile_picture_url": "https://scontent.fgig29-1.fna.fbcdn.net/v/t39.30808-1/671140113_1289882173246167_3846116458239313663_n.jpg?stp=c275.275.1498.1498a_cp0_dst-jpg_s80x80_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ob78hyACO34Q7kNvwHHMaMp&_nc_oc=AdqXAHfNcpeQx8v_RcQlsZIYGh0DT2DBVntTO6s0UFPmbR_2sS_CmivVE9AzJXjdq74&_nc_zt=24&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQOaLU2Rzf4Kj1at2hpCuJLjQrLej06LYXDrxYDl7hI6Lg&oe=6ADBC94F",
+     "delegate_page_id": "269187783194393"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/984447281079132/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fgig29-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQN5i8HRNyYCUEkSMZu5IIvMEMQf4SF9SZ2cN3NCnhdo6ykYGjbCcHn7bj2FkumMcJxmzlbZ1DgDWwRFe1SJ09mDQ01-iNbcVOerA_r6Aw.mp4?_nc_cat=104&_nc_oc=AdqAaBXSGycAdFIbVFtssNOKjuNNd0Ulrrmjo4MY_f5Edej75ZhNqspajKURoemx2Go&_nc_sid=8bf8fe&_nc_ht=video.fgig29-1.fna.fbcdn.net&_nc_ohc=pqQlqXw4KskQ7kNvwFfnWmd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI1MTYxMDE5NjkxMzA5MCwiYXNzZXRfYWdlX2RheXMiOjExMSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjkxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMfYR8ewG4Z81gmGn7JSSwK6h6HPFloPLkf_Yl8iRiuPg&oe=6ADBB82A&bitrate=314483&tag=sve_sd",
+    "video_hd_file": "https://video.fgig29-1.fna.fbcdn.net/o1/v/t2/f2/m266/AQPwZqxT2159Ta_FT8gPTu1p85Y-yzB5k-YFNVIVXHYxlINA8d5RklZLVqDdVYD4Cn1JtxQnXh8hTgDUudN_PI8H6vkb1-rCUiI.mp4?strext=1&_nc_cat=100&_nc_oc=AdpsOyCBMa1QE_ZsHcnRepJwCRIpN01s2pke3D7PB1l0Ys9wmghjnlMKbJ97mv2JjTI&_nc_sid=8bf8fe&_nc_ht=video.fgig29-1.fna.fbcdn.net&_nc_ohc=D_hqNWr3LN4Q7kNvwFCUzty&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjEyNTE2MTAxOTY5MTMwOTAsImFzc2V0X2FnZV9kYXlzIjoxMTEsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo5MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQMeI5PBUcoFm5LVj38Aqmye409QjxJIBGKF2EZiH6B4xA&oe=6AD7CBEA&bitrate=1840251&tag=av1_compressed_source"
+   },
+   "video_thumbnail": "https://scontent.fgig29-1.fna.fbcdn.net/v/t15.5256-10/736384495_984601367730390_700948587938710559_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=d2b52d&_nc_ohc=5HQ55y1clcgQ7kNvwHptRnY&_nc_oc=Adpmpnd3njSlI1KbdZljaYzotABwymQbes1T7LHB7yNhFQ4YscpATZo1J6wBgECuUL8&_nc_zt=23&_nc_ht=scontent.fgig29-1.fna&_nc_gid=oy-Nu7av1dAqvqAEJoZcbQ&_nc_ss=70289&oh=00_AQOuIWJjreYT8dD1XMb_zQKHwVe2iS5TQcTXSyKMWT6YSA&oe=6ADBBAFF",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1354134610154256",
+   "shares_id": "1354134610154256",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122108845731483180",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/1651540793351066/",
+   "message": "کورتکراوەی یاریەکەی عێراق و کۆیت \n\n #عیراق #کویت",
+   "message_rich": "کورتکراوەی یاریەکەی عێراق و کۆیت \n\n #عیراق #کویت",
+   "timestamp": 1790458635,
+   "comments_count": 1,
+   "reactions_count": 66,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 66,
+    "love": 0,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61594495422483",
+    "name": "Yari",
+    "url": "https://www.facebook.com/Yariplay",
+    "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/833113525_122112133653483180_8559367920821967948_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Eh1EqH7ErtEQ7kNvwHJlT6a&_nc_oc=AdpfMxOvmvD7d5-08wf3PbJnKUJMcZeXf_0Sknfsfl_WYM07BjmyB7GWIu49MtBs8B0&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQPe9SOl8C_cGtEfJHqo5XPVxUAeZckkh9UWTFXLdY0Rrw&oe=6ADBC523",
+    "delegate_page_id": "1364087580119940"
+   },
+   "authors": [
+    {
+     "id": "61594495422483",
+     "name": "Yari",
+     "url": "https://www.facebook.com/Yariplay",
+     "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/833113525_122112133653483180_8559367920821967948_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Eh1EqH7ErtEQ7kNvwHJlT6a&_nc_oc=AdpfMxOvmvD7d5-08wf3PbJnKUJMcZeXf_0Sknfsfl_WYM07BjmyB7GWIu49MtBs8B0&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQPe9SOl8C_cGtEfJHqo5XPVxUAeZckkh9UWTFXLdY0Rrw&oe=6ADBC523",
+     "delegate_page_id": "1364087580119940"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/1651540793351066/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video.fvca4-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMw7_CfIoplE3pv4yCxSz6OY0URwdsGi0-7LW8a6oWWuEaYamEiUqqFrX4rASt0fJfqP7UrG4uGgwFzWIGA8Mlg8O0X_rWfu5plOci_5A.mp4?_nc_cat=105&_nc_oc=AdoiT0YtoXzP_Uwuz106MqrwaKBMrehiy-ijYCvbTVRUpFaE65U74ozqr6FM9gmOK0E&_nc_sid=8bf8fe&_nc_ht=video.fvca4-1.fna.fbcdn.net&_nc_ohc=zvma5e0HS4YQ7kNvwEyJ0MF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTgxMDA5MDE5Njg0NTg4NCwiYXNzZXRfYWdlX2RheXMiOjIyLCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NDM5LCJ3YXRjaF90aW1lX3MiOjgyMTExLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQOF4I4Kl0CQazA2ErCbSwu4Sp18XvXqoef4S5OzrBqa2w&oe=6ADBBD7D&bitrate=208091&tag=sve_sd",
+    "video_hd_file": "https://video.fvca4-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQOChl2DuO1nha5ri9l-dZXPt3M1txqZFlTiFYD1h9fQcghmGVUQ-s3UtUqmyS8IBEIsrY5ewU-fNjfDz3tZXUSy-cpirrSQtGvuueg73eQfmA.mp4?_nc_cat=101&_nc_oc=Adqi9eLHecIxBRJqGxzUezGshtAwmu_vnsxxBo7HdKEv0Cmx0icy9rVDH-L3uZupW0M&_nc_sid=5e9851&_nc_ht=video.fvca4-1.fna.fbcdn.net&_nc_ohc=lq5aQ60rv4oQ7kNvwE-7cFb&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MTAwOTAxOTY4NDU4ODQsImFzc2V0X2FnZV9kYXlzIjoyMiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjQzOSwid2F0Y2hfdGltZV9zIjo4MjExMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=70267a76a419ba8b&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yMzQzRDVDNzg3MjJEMEI3QjdFMkJDMzlEQzIzNjY4RV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzEzNDlDOTNEOEIzODZEN0RBNDQxOEYwNUFDMUNEOUJBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb4lI7zjpG3BhUCKAJDMywXQHt4hysCDEoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQOJ_LAev1KT03SosYw1TAHjkk_1R0zsvBuGaXh6KD42cw&oe=6ADBC3E3&bitrate=573640&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent.fvca4-1.fna.fbcdn.net/v/t15.5256-10/825797151_1624679535782433_4226822834166234179_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=TRKjmOBJlvIQ7kNvwH2Zjgg&_nc_oc=Ado-Gqeq-cUAvDMX7IBmzI1ZOyhqGviJwfLBA2e3O7eKH0ZIt4HLlcMHrfwDps5gWD0&_nc_zt=23&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQOcXzJs1MbiL8Z5hxE3g_WxO_eX56tkqfRt30ThjiyO3g&oe=6ADBDB6F",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122108845731483180",
+   "shares_id": "122108845731483180",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "4422471534732887",
+   "type": "post",
+   "url": "https://www.facebook.com/mamosta.mariwan.3/posts/pfbid0GCkAehF5yrPNPfLPUNobLafjp3bmShjSjWZmzWD74Z7L6RR2KAxQSiTRsbB7dn38l",
+   "message": "زۆرمان غافڵ و بێ ئاگاین لەوەی لەپێشمانە و بۆی بەڕێوەین",
+   "message_rich": "زۆرمان غافڵ و بێ ئاگاین لەوەی لەپێشمانە و بۆی بەڕێوەین",
+   "timestamp": 1790772943,
+   "comments_count": 8,
+   "reactions_count": 91,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 86,
+    "love": 2,
+    "sad": 3,
+    "wow": 0
+   },
+   "author": {
+    "id": "100009102524031",
+    "name": "م.مريوان شارباژیرى",
+    "url": "https://www.facebook.com/mamosta.mariwan.3",
+    "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/450542802_3658010994512282_3594318345577354386_n.jpg?stp=c13.0.903.903a_cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=tDzX2wxLgRoQ7kNvwEYcZte&_nc_oc=AdoSmakDzq2i8v3qlnPr1tZxoGMNgyMElKGCxVbT1i2FoLyevouhotJWb8P3VqYkbDs&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQNOrXlsnFYzzX_oHH1bXfvCA36I1hW4z-El7W3UjyGVag&oe=6ADBD7FD",
+    "delegate_page_id": "633760823156173"
+   },
+   "authors": [
+    {
+     "id": "100009102524031",
+     "name": "م.مريوان شارباژیرى",
+     "url": "https://www.facebook.com/mamosta.mariwan.3",
+     "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/450542802_3658010994512282_3594318345577354386_n.jpg?stp=c13.0.903.903a_cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=tDzX2wxLgRoQ7kNvwEYcZte&_nc_oc=AdoSmakDzq2i8v3qlnPr1tZxoGMNgyMElKGCxVbT1i2FoLyevouhotJWb8P3VqYkbDs&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQNOrXlsnFYzzX_oHH1bXfvCA36I1hW4z-El7W3UjyGVag&oe=6ADBD7FD",
+     "delegate_page_id": "633760823156173"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-6/828391763_4422471441399563_1270122133238747759_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gwNocfWM1RMQ7kNvwGD_xAi&_nc_oc=AdrIvaq0vqQ-g0oeM0_jYUqkBaKEYEKGv5rtV9ghhZWVJE3vQurS5YQnvJfmqR_q7IA&_nc_zt=23&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQMml8r_CoOOx5qOi5t84NPUCHTONgl1uagxcZmXzqaDSA&oe=6ADBC671",
+    "height": 1920,
+    "width": 1080,
+    "id": "4422471438066230"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "4422471534732887",
+   "shares_id": "4422471534732887",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1589521629633561",
+   "type": "post",
+   "url": "https://www.facebook.com/architecturecriticism/posts/pfbid02U4z9cggd8h3BpTUCPsw78eUSbZNHd3wRA4YWwCaRLmcbfoGgkhp93iY6KTWJ2J1ml",
+   "message": "چاوپێکەوتنی تەلارساز هێمن شيرزاد بەريوەبەری دیسکی ڕێکخراوی کاف لەگەڵ شێخی ئابووری کەناڵی ڕووداو، دەربارەی دیزاینی سۆلار لە لایەنە شێوەسازییەوە، گونجاندنیان لەسەربانی گەرەک و بینای سەر شۆستەکان، بەجۆریک نارێکی و ناشرینی دروستنەکات \n\n#eif\n#erbil_international_fair\nڤدیۆی چاوپێکەوتنەکە لەیەکەم کۆمێنتە",
+   "message_rich": "چاوپێکەوتنی تەلارساز هێمن شيرزاد بەريوەبەری دیسکی ڕێکخراوی کاف لەگەڵ شێخی ئابووری کەناڵی ڕووداو، دەربارەی دیزاینی سۆلار لە لایەنە شێوەسازییەوە، گونجاندنیان لەسەربانی گەرەک و بینای سەر شۆستەکان، بەجۆریک نارێکی و ناشرینی دروستنەکات \n\n#eif\n#erbil_international_fair\nڤدیۆی چاوپێکەوتنەکە لەیەکەم کۆمێنتە",
+   "timestamp": 1788164403,
+   "comments_count": 0,
+   "reactions_count": 26,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 24,
+    "love": 2,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100057272177736",
+    "name": "ڕەخنەی تەلارسازی",
+    "url": "https://www.facebook.com/architecturecriticism",
+    "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/327125176_589454035852339_6459400454561068901_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ioXljTq-3MQQ7kNvwH9kyTa&_nc_oc=AdpeQ-9ryOC2YwANzneAG-94OE534huTLUlIxq-3qH-UVaZgOcSbPtwPbgWKFh4UCi0&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQN2_HHKli1o7fIp4RGw1HY5ete_oTd0gWRp370XnlkcKQ&oe=6ADBDF4A",
+    "delegate_page_id": "1698551613514086"
+   },
+   "authors": [
+    {
+     "id": "100057272177736",
+     "name": "ڕەخنەی تەلارسازی",
+     "url": "https://www.facebook.com/architecturecriticism",
+     "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/327125176_589454035852339_6459400454561068901_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ioXljTq-3MQQ7kNvwH9kyTa&_nc_oc=AdpeQ-9ryOC2YwANzneAG-94OE534huTLUlIxq-3qH-UVaZgOcSbPtwPbgWKFh4UCi0&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQN2_HHKli1o7fIp4RGw1HY5ete_oTd0gWRp370XnlkcKQ&oe=6ADBDF4A",
+     "delegate_page_id": "1698551613514086"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-6/787044928_1589521726300218_888934610197050542_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j_BnOUWEBtgQ7kNvwH7wFYd&_nc_oc=AdqtT2nWI_fF1nFh_NobCBMNj5c22yotjSpC7TbiomFqYeAv5nR1N_N0HsUl1LhCotA&_nc_zt=23&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQN_8lE7WwEXF7ptcQ6Dz1Q83qRYa1jpdW82oe2QlbstYg&oe=6ADBB784",
+     "url": "https://www.facebook.com/photo.php?fbid=1589514762967581&set=a.669075961678137&type=3",
+     "id": "1589514762967581"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-6/790562688_1589521719633552_824653586122293064_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=b89Svoz10TUQ7kNvwEUooDJ&_nc_oc=Adpt61Mxt1Zo_nl6HOko0pscG3mRvDQM0OL8Yk-Pr8_YxSpEfP9mq9R4uRu3qEoEAbU&_nc_zt=23&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQP_6VUF3Xrl6EwziLORIAf9Wj_Hox-FdOBtX_k4GAZSRQ&oe=6ADBBF6A",
+     "url": "https://www.facebook.com/photo.php?fbid=1589514789634245&set=a.669075961678137&type=3",
+     "id": "1589514789634245"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1589521629633561",
+   "shares_id": "1589521629633561",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "1859486248736103",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/393391225345620/posts/1859486248736103/",
+   "message": "بســـــــــــم #الله الرحمن الرحيـــــــم \n#خــوا چاڪـترین #پارێزەره هەر ئەو میهرەبانترینی #میهرەبانانە .\n\n       ســورة #يوســـف  64",
+   "message_rich": "بســـــــــــم #الله الرحمن الرحيـــــــم \n#خــوا چاڪـترین #پارێزەره هەر ئەو میهرەبانترینی #میهرەبانانە .\n\n       ســورة #يوســـف  64",
+   "timestamp": 1791102804,
+   "comments_count": 0,
+   "reactions_count": 133,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 116,
+    "love": 16,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100075767193093",
+    "name": "علی عبداللە",
+    "url": "https://www.facebook.com/lybdall.343204",
+    "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/262012923_101012552434318_595155603584632211_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=mQCb3cq4YqEQ7kNvwE1DLw1&_nc_oc=AdpEVjr_sKiPCcbPYob8mYROeLR_iKLO1MIFHMKRGJDpfOTlJA7JdYU8wUlFb5hQ2Wc&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQM2Dz2MarNaWboA4P0nrBRgaAWfI643EI7XVTznsiwHlQ&oe=6ADBC5EF",
+    "delegate_page_id": "690990364094014"
+   },
+   "authors": [
+    {
+     "id": "100075767193093",
+     "name": "علی عبداللە",
+     "url": "https://www.facebook.com/lybdall.343204",
+     "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/262012923_101012552434318_595155603584632211_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=mQCb3cq4YqEQ7kNvwE1DLw1&_nc_oc=AdpEVjr_sKiPCcbPYob8mYROeLR_iKLO1MIFHMKRGJDpfOTlJA7JdYU8wUlFb5hQ2Wc&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQM2Dz2MarNaWboA4P0nrBRgaAWfI643EI7XVTznsiwHlQ&oe=6ADBC5EF",
+     "delegate_page_id": "690990364094014"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-6/833106999_1107849345083962_3897144349744091393_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8uZSElxVXKoQ7kNvwG2UpZe&_nc_oc=AdpYOMU3f1C5b2-Gtgbd1YqGn0AkyXTEuEUsdjvNUhOrQMcKEOgbaRzkIsaKSjIfBRk&_nc_zt=23&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQOsV21DeayYvjHMQJ2y1Iq46chFzQdUZnQ61CXiWK_SlA&oe=6ADBCA83",
+    "height": 1519,
+    "width": 1080,
+    "id": "1107849341750629"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1859486248736103",
+   "shares_id": "1859486248736103",
+   "associated_group_id": "393391225345620",
+   "associated_group": {
+    "group_id": "393391225345620",
+    "name": "مامۆستا سۆران عبدالکریم",
+    "url": "https://www.facebook.com/groups/393391225345620/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2487035991701879",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/1634063716999115/posts/2487035991701879/",
+   "message": "علم الدنمارك.. أقدم علم وطني مستخدم باستمرار في العالم، وترتبط أسطورته بعام 1219م 🇩🇰\n\n علم الدنمارك 🇩🇰، المعروف باسم «دانيبروغ – Dannebrog»، ويُعد وفق موسوعة غينيس للأرقام القياسية أقدم علم وطني مستخدم بصورة مستمرة في العالم.\n\n كيف يبدو؟\nخلفية حمراء يتوسطها صليب أبيض إسكندنافي، وهو التصميم الذي أصبح رمزًا مميزًا للدنمارك، وأصبح لاحقًا نموذجًا لعدد من أعلام دول الشمال الأوروبي.\n\n⚔️ أسطورة سقوط العلم من السماء\nتقول الرواية الدنماركية الشهيرة إنه في 15 يونيو/حزيران 1219م، وأثناء معركة ليندانيسه Lyndanisse في إستونيا الحالية، كان الجيش الدنماركي بقيادة الملك فالديمار الثاني المنتصر يواجه وضعًا صعبًا.\n\nوفجأة – وفق الأسطورة – سقط من السماء راية حمراء تحمل صليبًا أبيض، فاعتبرها الدنماركيون علامة إلهية، واستعادوا قوتهم وانتصروا في المعركة.\n\nومن هنا ارتبطت الراية بالملك والدولة الدنماركية. 🇩🇰\n\n⚠️ لكن هل سقط العلم فعلًا من السماء؟\n\nلا يوجد دليل تاريخي معاصر يثبت وقوع هذه الحادثة كما ترويها الأسطورة. وتوضح مصادر دنماركية رسمية أن قصة سقوط العلم من السماء ظهرت في المصادر التاريخية بعد ذلك بقرون، في أوائل القرن السادس عشر.\n\nكما أن فكرة الراية ذات الصليب الأبيض على خلفية حمراء كانت معروفة في أوروبا خلال العصور الوسطى، خصوصًا في سياق الحملات الصليبية.\n\nأما ارتباط هذا التصميم بالدنمارك تحديدًا، فتظهر أدلة تاريخية عليه بوضوح أكبر منذ القرن الرابع عشر.\n\n📜 هل بقي شكله كما هو منذ 1219؟\nحتى لو كانت جذور الرمز تعود إلى العصور الوسطى، فإن الشكل الحديث للعلم لم يكن ثابتًا بكل تفاصيله طوال 800 سنة.\n\nوتشير موسوعة غينيس إلى أن التصميم الحالي ذي الصليب الأبيض على الأحمر اعتُمد في 1625م، بينما حُدد شكله المستطيل المعروف اليوم بصورة أوضح في 1748م.\n\n👑 من علم ملكي إلى رمز للشعب\nلفترة طويلة كان «دانيبروغ» مرتبطًا بالملك والدولة والجيش، بل إن استخدامه من قبل عامة الناس كان مقيدًا في فترات من التاريخ.\n\nلكن خلال القرن التاسع عشر، وخصوصًا مع تنامي القومية الدنماركية والحروب مع ألمانيا، أصبح العلم أكثر حضورًا في الحياة اليومية، ثم تحول إلى أحد أقوى رموز الهوية الوطنية الدنماركية.\n\n🎂 والأغرب؟ الدنماركيون يستخدمون علمهم في المناسبات السعيدة!\n\nفي الدنمارك لا يقتصر العلم على المباني الحكومية والمناسبات الرسمية.\n\nيمكن أن تراه على:\n🎂 كعكات أعياد الميلاد\n🎄 أشجار عيد الميلاد\n🏠 المنازل والحدائق\n⚽ تشجيع المنتخبات الرياضية\n🎉 الاحتفالات والمناسبات الوطنية\n⚰️ وحتى في مراسم الجنازات، حيث يُرفع نصف سارية تعبيرًا عن الحزن.\n\nولهذا أصبح العلم حاضرًا بشكل لافت في الحياة اليومية للدنماركيين.\n\n📅 15 يونيو.. يوم العلم\nيُعرف 15 يونيو في الدنمارك باسم يوم فالديمار – Valdemarsdag، ويرتبط تقليديًا بتاريخ معركة ليندانيسه وقصة سقوط العلم الأسطورية.\n\nومنذ 1913م أصبح هذا اليوم مرتبطًا سنويًا بالاحتفال بالعلم.\n\n فهل هو فعلًا أقدم علم في العالم؟\nبحسب Guinness World Records، فإن علم الدنمارك هو أقدم علم وطني مستخدم بصورة مستمرة، مع الإشارة إلى أن أقدم الأدلة المؤكدة على استخدامه تعود إلى العصور الوسطى، وليس بالضرورة إلى يوم المعركة عام 1219م.\n\nالدنمارك في سطور.. معلومات سريعة:\n📍 الاسم الرسمي: مملكة الدنمارك\n🏙️ العاصمة: كوبنهاغن\n🌍 الموقع: شمال أوروبا، وهي إحدى الدول الإسكندنافية\n📐 المساحة: نحو 42,900 كم² للدنمارك الأوروبية، دون احتساب غرينلاند وجزر فارو\n👥 عدد السكان: نحو 6 ملايين نسمة\n🗣️ اللغة الرسمية: الدنماركية\n💰 العملة: الكرونة الدنماركية (DKK)\n👑 نظام الحكم: ملكية دستورية وديمقراطية برلمانية\n👑 رأس الدولة: الملك فريدريك العاشر\n🏛️ البرلمان: Folketinget «الفولكتينغ» ويتكون من 179 عضوًا\nـ🇪🇺 عضو في الاتحاد الأوروبي: منذ 1973\n🛂 عضو في منطقة شنغن: منذ 2001\n🌐 عضو في حلف الناتو: منذ تأسيسه عام 1949\n🏝️ مملكة الدنمارك تضم: الدنمارك، وغرينلاند، وجزر فارو، مع تمتعهما بحكم ذاتي واسع.\n🚲 من أشهر ما تتميز به: ثقافة ركوب الدراجات والطاقة المتجددة والاقتصاد البحري.\n🌊 الجغرافيا: تتكون الدنمارك من شبه جزيرة يوتلاند وأكثر من 400 جزيرة مسماة.\n🌬️ الطاقة: تُعد طاقة الرياح من أهم مصادر الطاقة في البلاد.\n📚 من أشهر أبنائها: الكاتب والروائي هانس كريستيان أندرسن، صاحب «الحورية الصغيرة» و«البطة القبيحة».\n\nوتشير البيانات الرسمية إلى أن مساحة الدنمارك الأوروبية تبلغ نحو 42,925 كم²، ويبلغ عدد سكانها قرابة 6 ملايين نسمة، بينما تضم مملكة الدنمارك أيضًا غرينلاند وجزر فارو.\n\n❓ السؤال لك:\nهل كنت تعرف أن العلم الدنماركي يُعد أقدم علم وطني مستخدم باستمرار في العالم؟ 👇\n\n#الدنمارك 🇩🇰 #علم_الدنمارك #دانيبروغ #Dannebrog #تاريخ #جغرافيا #معلومات_تاريخية #هل_تعلم #حقائق #أوروبا #أعلام_العالم #تاريخ_أوروبا",
+   "message_rich": "علم الدنمارك.. أقدم علم وطني مستخدم باستمرار في العالم، وترتبط أسطورته بعام 1219م 🇩🇰\n\n علم الدنمارك 🇩🇰، المعروف باسم «دانيبروغ – Dannebrog»، ويُعد وفق موسوعة غينيس للأرقام القياسية أقدم علم وطني مستخدم بصورة مستمرة في العالم.\n\n كيف يبدو؟\nخلفية حمراء يتوسطها صليب أبيض إسكندنافي، وهو التصميم الذي أصبح رمزًا مميزًا للدنمارك، وأصبح لاحقًا نموذجًا لعدد من أعلام دول الشمال الأوروبي.\n\n⚔️ أسطورة سقوط العلم من السماء\nتقول الرواية الدنماركية الشهيرة إنه في 15 يونيو/حزيران 1219م، وأثناء معركة ليندانيسه Lyndanisse في إستونيا الحالية، كان الجيش الدنماركي بقيادة الملك فالديمار الثاني المنتصر يواجه وضعًا صعبًا.\n\nوفجأة – وفق الأسطورة – سقط من السماء راية حمراء تحمل صليبًا أبيض، فاعتبرها الدنماركيون علامة إلهية، واستعادوا قوتهم وانتصروا في المعركة.\n\nومن هنا ارتبطت الراية بالملك والدولة الدنماركية. 🇩🇰\n\n⚠️ لكن هل سقط العلم فعلًا من السماء؟\n\nلا يوجد دليل تاريخي معاصر يثبت وقوع هذه الحادثة كما ترويها الأسطورة. وتوضح مصادر دنماركية رسمية أن قصة سقوط العلم من السماء ظهرت في المصادر التاريخية بعد ذلك بقرون، في أوائل القرن السادس عشر.\n\nكما أن فكرة الراية ذات الصليب الأبيض على خلفية حمراء كانت معروفة في أوروبا خلال العصور الوسطى، خصوصًا في سياق الحملات الصليبية.\n\nأما ارتباط هذا التصميم بالدنمارك تحديدًا، فتظهر أدلة تاريخية عليه بوضوح أكبر منذ القرن الرابع عشر.\n\n📜 هل بقي شكله كما هو منذ 1219؟\nحتى لو كانت جذور الرمز تعود إلى العصور الوسطى، فإن الشكل الحديث للعلم لم يكن ثابتًا بكل تفاصيله طوال 800 سنة.\n\nوتشير موسوعة غينيس إلى أن التصميم الحالي ذي الصليب الأبيض على الأحمر اعتُمد في 1625م، بينما حُدد شكله المستطيل المعروف اليوم بصورة أوضح في 1748م.\n\n👑 من علم ملكي إلى رمز للشعب\nلفترة طويلة كان «دانيبروغ» مرتبطًا بالملك والدولة والجيش، بل إن استخدامه من قبل عامة الناس كان مقيدًا في فترات من التاريخ.\n\nلكن خلال القرن التاسع عشر، وخصوصًا مع تنامي القومية الدنماركية والحروب مع ألمانيا، أصبح العلم أكثر حضورًا في الحياة اليومية، ثم تحول إلى أحد أقوى رموز الهوية الوطنية الدنماركية.\n\n🎂 والأغرب؟ الدنماركيون يستخدمون علمهم في المناسبات السعيدة!\n\nفي الدنمارك لا يقتصر العلم على المباني الحكومية والمناسبات الرسمية.\n\nيمكن أن تراه على:\n🎂 كعكات أعياد الميلاد\n🎄 أشجار عيد الميلاد\n🏠 المنازل والحدائق\n⚽ تشجيع المنتخبات الرياضية\n🎉 الاحتفالات والمناسبات الوطنية\n⚰️ وحتى في مراسم الجنازات، حيث يُرفع نصف سارية تعبيرًا عن الحزن.\n\nولهذا أصبح العلم حاضرًا بشكل لافت في الحياة اليومية للدنماركيين.\n\n📅 15 يونيو.. يوم العلم\nيُعرف 15 يونيو في الدنمارك باسم يوم فالديمار – Valdemarsdag، ويرتبط تقليديًا بتاريخ معركة ليندانيسه وقصة سقوط العلم الأسطورية.\n\nومنذ 1913م أصبح هذا اليوم مرتبطًا سنويًا بالاحتفال بالعلم.\n\n فهل هو فعلًا أقدم علم في العالم؟\nبحسب Guinness World Records، فإن علم الدنمارك هو أقدم علم وطني مستخدم بصورة مستمرة، مع الإشارة إلى أن أقدم الأدلة المؤكدة على استخدامه تعود إلى العصور الوسطى، وليس بالضرورة إلى يوم المعركة عام 1219م.\n\nالدنمارك في سطور.. معلومات سريعة:\n📍 الاسم الرسمي: مملكة الدنمارك\n🏙️ العاصمة: كوبنهاغن\n🌍 الموقع: شمال أوروبا، وهي إحدى الدول الإسكندنافية\n📐 المساحة: نحو 42,900 كم² للدنمارك الأوروبية، دون احتساب غرينلاند وجزر فارو\n👥 عدد السكان: نحو 6 ملايين نسمة\n🗣️ اللغة الرسمية: الدنماركية\n💰 العملة: الكرونة الدنماركية (DKK)\n👑 نظام الحكم: ملكية دستورية وديمقراطية برلمانية\n👑 رأس الدولة: الملك فريدريك العاشر\n🏛️ البرلمان: Folketinget «الفولكتينغ» ويتكون من 179 عضوًا\nـ🇪🇺 عضو في الاتحاد الأوروبي: منذ 1973\n🛂 عضو في منطقة شنغن: منذ 2001\n🌐 عضو في حلف الناتو: منذ تأسيسه عام 1949\n🏝️ مملكة الدنمارك تضم: الدنمارك، وغرينلاند، وجزر فارو، مع تمتعهما بحكم ذاتي واسع.\n🚲 من أشهر ما تتميز به: ثقافة ركوب الدراجات والطاقة المتجددة والاقتصاد البحري.\n🌊 الجغرافيا: تتكون الدنمارك من شبه جزيرة يوتلاند وأكثر من 400 جزيرة مسماة.\n🌬️ الطاقة: تُعد طاقة الرياح من أهم مصادر الطاقة في البلاد.\n📚 من أشهر أبنائها: الكاتب والروائي هانس كريستيان أندرسن، صاحب «الحورية الصغيرة» و«البطة القبيحة».\n\nوتشير البيانات الرسمية إلى أن مساحة الدنمارك الأوروبية تبلغ نحو 42,925 كم²، ويبلغ عدد سكانها قرابة 6 ملايين نسمة، بينما تضم مملكة الدنمارك أيضًا غرينلاند وجزر فارو.\n\n❓ السؤال لك:\nهل كنت تعرف أن العلم الدنماركي يُعد أقدم علم وطني مستخدم باستمرار في العالم؟ 👇\n\n#الدنمارك 🇩🇰 #علم_الدنمارك #دانيبروغ #Dannebrog #تاريخ #جغرافيا #معلومات_تاريخية #هل_تعلم #حقائق #أوروبا #أعلام_العالم #تاريخ_أوروبا",
+   "timestamp": 1788512946,
+   "comments_count": 0,
+   "reactions_count": 43,
+   "reshare_count": 3,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 39,
+    "love": 3,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "100009612463547",
+    "name": "Kamar Daoud",
+    "url": "https://www.facebook.com/100009612463547",
+    "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/471303090_3777857792544599_5525120938267351307_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=4EIHkCbihmMQ7kNvwEcv5VG&_nc_oc=AdrYB_0BQPaFgGazsboTZIgIOtTNddLvYXmQJjUHq6YYzq3zE4MSI4cWPoIzB_xY84w&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQO-XA1ka5gFCs541iVHvDj6raX2ANxMvN1I_uNCYcTk2A&oe=6ADBCB73",
+    "delegate_page_id": "1005414309313935"
+   },
+   "authors": [
+    {
+     "id": "100009612463547",
+     "name": "Kamar Daoud",
+     "url": "https://www.facebook.com/100009612463547",
+     "profile_picture_url": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-1/471303090_3777857792544599_5525120938267351307_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=4EIHkCbihmMQ7kNvwEcv5VG&_nc_oc=AdrYB_0BQPaFgGazsboTZIgIOtTNddLvYXmQJjUHq6YYzq3zE4MSI4cWPoIzB_xY84w&_nc_zt=24&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQO-XA1ka5gFCs541iVHvDj6raX2ANxMvN1I_uNCYcTk2A&oe=6ADBCB73",
+     "delegate_page_id": "1005414309313935"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fvca4-1.fna.fbcdn.net/v/t39.30808-6/791248588_4364305000566539_629455499811755545_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=rcQeuIIetEwQ7kNvwE0ihcF&_nc_oc=AdoC9illarHQ3li1Jm1PsyxftS7WTYrV9FQA0EXaON22yb6mSMRG3zSIuyt_7ecWudM&_nc_zt=23&_nc_ht=scontent.fvca4-1.fna&_nc_gid=nOfWUjIG2lmbfXUlD999sg&_nc_ss=70289&oh=00_AQNmkfCzBZsbVeKpFtozSo9nHTHZAM_x0MXs9CtXMvt0sA&oe=6ADBCF27",
+    "height": 1350,
+    "width": 1080,
+    "id": "4364304990566540"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2487035991701879",
+   "shares_id": "2487035991701879",
+   "associated_group_id": "1634063716999115",
+   "associated_group": {
+    "group_id": "1634063716999115",
+    "name": "جغرافيا قمر للأرض",
+    "url": "https://www.facebook.com/groups/1634063716999115/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  }
+ ]
+}

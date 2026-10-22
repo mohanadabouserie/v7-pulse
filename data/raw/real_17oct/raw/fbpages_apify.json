@@ -1,0 +1,358 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/MaxABco"
+   },
+   {
+    "url": "https://www.facebook.com/AkramTasteTest"
+   },
+   {
+    "url": "https://www.facebook.com/cairo360"
+   },
+   {
+    "url": "https://www.facebook.com/SeoudiSupermarket"
+   },
+   {
+    "url": "https://www.facebook.com/TalabatEG"
+   }
+  ]
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "mViGb6gQrrzCeBZS8",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:14:53.181Z",
+  "finishedAt": "2026-10-19T08:15:35.458Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 4,
+   "page": 0
+  },
+  "usageTotalUsd": 0.0328
+ },
+ "cost_usd": 0.4878,
+ "items": [
+  {
+   "facebookUrl": "https://www.facebook.com/MaxABco",
+   "categories": [
+    "Page",
+    "App page"
+   ],
+   "info": [
+    "‎Maxab - مكسب‎. 111,970 followers",
+    "938 talking about this. ‎تطبيق مكسب هو أول منصة تربط بين تجار التجزئة والموردين لتسهيل طلب بضاعة المحلات بأسهل طريقة..."
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "Maxab - مكسب",
+   "pageId": "100063905241251",
+   "pageName": "MaxABco",
+   "pageUrl": "https://www.facebook.com/MaxABco",
+   "intro": "تطبيق مكسب هو أول منصة تربط بين تجار التجزئة والموردين لتسهيل طلب بضاعة المحلات بأسهل طريقة وأسرع وقت",
+   "websites": [
+    "https://tiktok.com/@maxab_egypt",
+    "https://youtube.com/@MaxABEgypt",
+    "https://www.maxab.io/"
+   ],
+   "phone": "+20 15425",
+   "alternativeSocialMedia": "https://youtube.com/@MaxABEgypt",
+   "website": "https://www.maxab.io/",
+   "followers": 111970,
+   "followings": 2,
+   "profilePictureUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s200x200&_nc_cat=106&ccb=1-7&_nc_sid=f907e8&_nc_ohc=E_TZ7JEkYw0Q7kNvwGWxTNh&_nc_oc=Adq0z5tzXD-f-H0JPn79rNd0h5_Fi3uCpCK1-2W93rUYvKpEbhe_Omgi0v_8SobsZeXcfrHRJDNoWAojAQzFR8h3&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=2MKlsl09jm6UBrI8Qta4lw&_nc_ss=70289&oh=00_AQNSkozzLYxAupkAOAHWCGlV3ZAdwwdFl59oP96WGqWgzg&oe=6ADBAD5C",
+   "coverPhotoUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.99422-6/813386890_1815976639402609_5681091965984387997_n.png?stp=dst-jpg_tt6&cstp=mx1234x467&ctp=s960x960&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_u0x23EpNZgQ7kNvwGe3QHZ&_nc_oc=AdpThdu0VzNvuhEID-lkzHkMlIPZ6c8gNVgUmiyxe_s-7_IUOixGLfmXOjy_mMrsgwN6ixWoioww2V48ZeR6gLGd&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=Tk-EjzSH20aifQw-SplAkQ&_nc_ss=70289&oh=00_AQO-8P0U6UU9_64kfEJBs6wH-hjJ_bkwu9wSDQbqEGNchA&oe=6ADBAA6F",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=1291854982954664&set=a.372697114870460",
+   "category": "App page",
+   "tiktok": [
+    {
+     "username": "maxab_egypt",
+     "url": "https://tiktok.com/@maxab_egypt"
+    }
+   ],
+   "youtube": [
+    {
+     "username": "MaxABEgypt",
+     "url": "https://youtube.com/@MaxABEgypt"
+    }
+   ],
+   "anniversary": "November 17, 2018",
+   "creation_date": "November 22, 2019",
+   "ad_status": "This Page is currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "alternativeSocialMedia": "https://youtube.com/@MaxABEgypt",
+    "profilePictureUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s200x200&_nc_cat=106&ccb=1-7&_nc_sid=f907e8&_nc_ohc=E_TZ7JEkYw0Q7kNvwGWxTNh&_nc_oc=Adq0z5tzXD-f-H0JPn79rNd0h5_Fi3uCpCK1-2W93rUYvKpEbhe_Omgi0v_8SobsZeXcfrHRJDNoWAojAQzFR8h3&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=2MKlsl09jm6UBrI8Qta4lw&_nc_ss=70289&oh=00_AQNSkozzLYxAupkAOAHWCGlV3ZAdwwdFl59oP96WGqWgzg&oe=6ADBAD5C",
+    "coverPhotoUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.99422-6/813386890_1815976639402609_5681091965984387997_n.png?stp=dst-jpg_tt6&cstp=mx1234x467&ctp=s960x960&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_u0x23EpNZgQ7kNvwGe3QHZ&_nc_oc=AdpThdu0VzNvuhEID-lkzHkMlIPZ6c8gNVgUmiyxe_s-7_IUOixGLfmXOjy_mMrsgwN6ixWoioww2V48ZeR6gLGd&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=Tk-EjzSH20aifQw-SplAkQ&_nc_ss=70289&oh=00_AQO-8P0U6UU9_64kfEJBs6wH-hjJ_bkwu9wSDQbqEGNchA&oe=6ADBAA6F",
+    "category": "App page",
+    "tiktok": [
+     {
+      "username": "maxab_egypt",
+      "url": "https://tiktok.com/@maxab_egypt"
+     }
+    ],
+    "youtube": [
+     {
+      "username": "MaxABEgypt",
+      "url": "https://youtube.com/@MaxABEgypt"
+     }
+    ],
+    "anniversary": "November 17, 2018",
+    "ad_status": "This Page is currently running ads."
+   },
+   "facebookId": "100063905241251",
+   "pageAdLibrary": {
+    "id": "100398661440632",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/cairo360",
+   "categories": [
+    "Page",
+    "Website"
+   ],
+   "info": [
+    "Cairo 360. 238,596 followers",
+    "9,602 talking about this. www.Cairo360.com is Cairo's leading guide to going out, and staying in! Discover this amazing..."
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "Cairo 360",
+   "pageId": "100044293096770",
+   "pageName": "cairo360",
+   "pageUrl": "https://www.facebook.com/cairo360",
+   "intro": "www.Cairo360.com is Cairo's leading guide to going out, and staying in! Discover this amazing city where opportunities for entertainment are endless.\n\nFor the Cairo 360 experience in Arabic head to www.facebook.com/cairo360ar.",
+   "websites": [
+    "http://www.Cairo360.com/"
+   ],
+   "phone": "+20 2 25211233",
+   "email": "info@cairo360.com",
+   "website": "http://www.Cairo360.com/",
+   "followers": 238596,
+   "followings": 21,
+   "profilePictureUrl": "https://scontent-det1-1.xx.fbcdn.net/v/t39.30808-1/274921363_5062311443807259_7581086536073810774_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s200x200&_nc_cat=102&ccb=1-7&_nc_sid=f907e8&_nc_ohc=-S762kw2LZ8Q7kNvwHY4Hk8&_nc_oc=Adp60A2UZdT01KxaxERxVhX_D01MrtMoxQ_RTGanPj1r4vJaBmts5KH98wGF9oAgOJHA9T6daixPVLzSF5b4hyKw&_nc_zt=24&_nc_ht=scontent-det1-1.xx&_nc_gid=0qDOs6zdeWpk_uY8ZFd3Pg&_nc_ss=73289&oh=00_AQNmiI8oLOLFbiZraRwi7hVd2jTY9CMLxvdk8G4wB2c3tQ&oe=6ADB9C5F",
+   "coverPhotoUrl": "https://scontent-det1-1.xx.fbcdn.net/v/t39.30808-6/475904983_1158443315642094_7402886117147348990_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x899&ctp=s960x960&_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-B_yX7HorekQ7kNvwH6RT0X&_nc_oc=AdqYey8I9hMjfpvUKjMcvIwmr5mZEdSiks0QmkpU9-z0dQjQWSAYiv8Z09DmRHJpoeXiYNY9xYrc2Knrh1jNpUeC&_nc_zt=23&_nc_ht=scontent-det1-1.xx&_nc_gid=vSb25XmkWMCWdkkJKyBGbw&_nc_ss=73289&oh=00_AQOEWBKBMOVU4aZZBsj_TTRxHQd3xuDuJq2mJGWxepHEIA&oe=6ADBBAFD",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=795847478568348&set=a.795847475235015",
+   "category": "Website",
+   "creation_date": "September 2, 2010",
+   "ad_status": "This Page isn't currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "profilePictureUrl": "https://scontent-det1-1.xx.fbcdn.net/v/t39.30808-1/274921363_5062311443807259_7581086536073810774_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s200x200&_nc_cat=102&ccb=1-7&_nc_sid=f907e8&_nc_ohc=-S762kw2LZ8Q7kNvwHY4Hk8&_nc_oc=Adp60A2UZdT01KxaxERxVhX_D01MrtMoxQ_RTGanPj1r4vJaBmts5KH98wGF9oAgOJHA9T6daixPVLzSF5b4hyKw&_nc_zt=24&_nc_ht=scontent-det1-1.xx&_nc_gid=0qDOs6zdeWpk_uY8ZFd3Pg&_nc_ss=73289&oh=00_AQNmiI8oLOLFbiZraRwi7hVd2jTY9CMLxvdk8G4wB2c3tQ&oe=6ADB9C5F",
+    "coverPhotoUrl": "https://scontent-det1-1.xx.fbcdn.net/v/t39.30808-6/475904983_1158443315642094_7402886117147348990_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x899&ctp=s960x960&_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-B_yX7HorekQ7kNvwH6RT0X&_nc_oc=AdqYey8I9hMjfpvUKjMcvIwmr5mZEdSiks0QmkpU9-z0dQjQWSAYiv8Z09DmRHJpoeXiYNY9xYrc2Knrh1jNpUeC&_nc_zt=23&_nc_ht=scontent-det1-1.xx&_nc_gid=vSb25XmkWMCWdkkJKyBGbw&_nc_ss=73289&oh=00_AQOEWBKBMOVU4aZZBsj_TTRxHQd3xuDuJq2mJGWxepHEIA&oe=6ADBBAFD",
+    "category": "Website",
+    "ad_status": "This Page isn't currently running ads."
+   },
+   "facebookId": "100044293096770",
+   "pageAdLibrary": {
+    "id": "144470402258079",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/TalabatEG",
+   "categories": [
+    "Page",
+    "Internet company"
+   ],
+   "info": [
+    "Talabat. 2,315,957 followers",
+    "13,371 talking about this. talabat, the #1 Food & Groceries online ordering Service."
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "Talabat",
+   "pageId": "100064362984617",
+   "pageName": "TalabatEG",
+   "pageUrl": "https://www.facebook.com/TalabatEG",
+   "intro": "talabat, the #1 Food & Groceries online ordering Service.",
+   "websites": [
+    "https://www.talabat.com/egypt"
+   ],
+   "website": "https://www.talabat.com/egypt",
+   "followers": 2315923,
+   "profilePictureUrl": "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-1/657346698_1481136700708415_4059290607539568773_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=1&ccb=1-7&_nc_sid=f907e8&_nc_ohc=U5TBTj9sp38Q7kNvwGg3JtV&_nc_oc=Adp-hfuCRT0BxoQSFqxjBW5ldcacazfNkWEwBb3wdS06eMYcaQfvBwd4UM8aDNd-KDsKaTf9y43wLaUeY7DZRPfA&_nc_zt=24&_nc_ht=scontent.fsac1-2.fna&_nc_gid=yg4kqguByVcVC-ndspSpNw&_nc_ss=73289&oh=00_AQMZio8SPZvj1bNr8ScKhhTFuehXK-PCxFRXc4V3CalTdw&oe=6ADB913E",
+   "coverPhotoUrl": "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.99422-6/791388731_994691016924700_4670753475147682773_n.png?stp=dst-jpg_tt6&cstp=mx820x360&ctp=s820x360&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=2u2Ul8QU7BwQ7kNvwF9ulqX&_nc_oc=AdqYJU_1PNrwfc4tW--rAQNmG_RBtUeqeJ9NEnq-v4SamnPqYSjpikQ6cEhZnK5Mw2iXjtICSiOWqdnAbxRUORI2&_nc_zt=14&_nc_ht=scontent.fsac1-2.fna&_nc_gid=Q9uxoYVENCBaSWKP-0rEwQ&_nc_ss=73289&oh=00_AQNijyGqCpn4ezRVi-4bOUfEphWOWgwufVSVeSLnmt3D6w&oe=6ADBAD8F",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=1481136920708393&set=a.604369548385139",
+   "category": "Internet company",
+   "creation_date": "April 1, 2010",
+   "ad_status": "This Page is currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "profilePictureUrl": "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-1/657346698_1481136700708415_4059290607539568773_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=1&ccb=1-7&_nc_sid=f907e8&_nc_ohc=U5TBTj9sp38Q7kNvwGg3JtV&_nc_oc=Adp-hfuCRT0BxoQSFqxjBW5ldcacazfNkWEwBb3wdS06eMYcaQfvBwd4UM8aDNd-KDsKaTf9y43wLaUeY7DZRPfA&_nc_zt=24&_nc_ht=scontent.fsac1-2.fna&_nc_gid=yg4kqguByVcVC-ndspSpNw&_nc_ss=73289&oh=00_AQMZio8SPZvj1bNr8ScKhhTFuehXK-PCxFRXc4V3CalTdw&oe=6ADB913E",
+    "coverPhotoUrl": "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.99422-6/791388731_994691016924700_4670753475147682773_n.png?stp=dst-jpg_tt6&cstp=mx820x360&ctp=s820x360&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=2u2Ul8QU7BwQ7kNvwF9ulqX&_nc_oc=AdqYJU_1PNrwfc4tW--rAQNmG_RBtUeqeJ9NEnq-v4SamnPqYSjpikQ6cEhZnK5Mw2iXjtICSiOWqdnAbxRUORI2&_nc_zt=14&_nc_ht=scontent.fsac1-2.fna&_nc_gid=Q9uxoYVENCBaSWKP-0rEwQ&_nc_ss=73289&oh=00_AQNijyGqCpn4ezRVi-4bOUfEphWOWgwufVSVeSLnmt3D6w&oe=6ADBAD8F",
+    "category": "Internet company",
+    "ad_status": "This Page is currently running ads."
+   },
+   "facebookId": "100064362984617",
+   "pageAdLibrary": {
+    "id": "111363292222657",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/SeoudiSupermarket",
+   "categories": [
+    "Page",
+    "Supermarket"
+   ],
+   "info": [
+    "Seoudi Supermarket, Al Jizah. 361,481 followers",
+    "1,980 talking about this",
+    "140 were here. SEOUDI was established back in 1938, now being one of the..."
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "Seoudi Supermarket | Al Jizah",
+   "address": "Landmark Mall, Plot 4&9 El-Mehwar El-Markazy, Sheikh Zayed Entrance 2, Al Jizah, Egypt, 16176",
+   "pageId": "100082257354370",
+   "pageName": "SeoudiSupermarket",
+   "pageUrl": "https://www.facebook.com/SeoudiSupermarket",
+   "intro": "SEOUDI was established back in 1938, now being one of the leading supermarkets across the Egyptian retail industry since then it has been known for its unique shopping experience and customer satisfaction with 26 branches all over Cairo & the North Coast",
+   "websites": [
+    "https://maps.google.com/maps?q=30.03000891%2C30.99482417%28Landmark+Mall%2C+Plot+4%269+El-Mehwar+El-Markazy%2C+Sheikh+Zayed+Entrance+2%2C+Al+Jizah%2C+Egypt%29&hl=en",
+    "https://www.instagram.com/seoudisupermarket",
+    "https://bit.ly/3Jpe1EW"
+   ],
+   "CONFIRMED_OWNER_LABEL": "United Grocers",
+   "email": "contactus@seoudisupermarket.com",
+   "alternativeSocialMedia": "https://www.instagram.com/seoudisupermarket",
+   "website": "https://bit.ly/3Jpe1EW",
+   "services": "In-store pickup",
+   "followers": 361481,
+   "followings": 14,
+   "profilePictureUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/326973754_703327364671016_6795377518126705590_n.jpg?stp=dst-jpg_tt6&cstp=mx707x707&ctp=s200x200&_nc_cat=111&ccb=1-7&_nc_sid=f907e8&_nc_ohc=SNsBn_AkPSAQ7kNvwEj5Cde&_nc_oc=AdqAWA1KWV-cmQwTTaIYQjHEHqwbY_xIRLnhcEdkwD_CtJntmTqhsXZvZXT1DVEwWHw&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=TctSwJoKwXZzmrmQC0SLMQ&_nc_ss=73289&oh=00_AQPEgVtV1uIGJL4feMpn3mz_PwJMheT1QtKp9NLVf89OUg&oe=6ADB9974",
+   "coverPhotoUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/474775450_607638535321386_205604488177491996_n.jpg?stp=dst-jpg_tt6&cstp=mx2302x876&ctp=s2048x2048&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=17bP2luOHN8Q7kNvwGTxyjI&_nc_oc=Adrw1qrcdV15AylxfYyc-1p6XDbgwSOQNhm_xopgjYL_4IAlysNXlUx_DLQRpHfaR0o&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=d3wY0w8XJC8Fn8oI4a-P3g&_nc_ss=73289&oh=00_AQPfLsDDevcTNRNZIVS4XuKzajlCIbGzJsiE3WYy1pzMeA&oe=6ADB92E7",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=172732618811982&set=a.172732578811986",
+   "category": "Supermarket",
+   "addressUrl": "https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=30.030008912483%2C+30.994824171394&FORM=FBKPL1&name=Landmark+Mall%2C+Plot+4%269+El-Mehwar+El-Markazy%2C+Sheikh+Zayed+Entrance+2%2C+Al+Jizah%2C+Egypt%2C+16176&mkt=en-US",
+   "business_service_area": "Giza Governorate · Cairo, Cairo Governorate, Egypt",
+   "instagram": [
+    {
+     "username": "seoudisupermarket",
+     "url": "https://www.instagram.com/seoudisupermarket"
+    }
+   ],
+   "business_hours": "Open now",
+   "business_services": "In-store pickup",
+   "creation_date": "December 9, 2019",
+   "ad_status": "This Page isn't currently running ads.",
+   "confirmed_owner": "United Grocers is responsible for this Page.",
+   "additionalProperties": {
+    "messenger": null,
+    "address": "Landmark Mall, Plot 4&9 El-Mehwar El-Markazy, Sheikh Zayed Entrance 2, Al Jizah, Egypt, 16176",
+    "CONFIRMED_OWNER_LABEL": "United Grocers",
+    "alternativeSocialMedia": "https://www.instagram.com/seoudisupermarket",
+    "services": "In-store pickup",
+    "profilePictureUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/326973754_703327364671016_6795377518126705590_n.jpg?stp=dst-jpg_tt6&cstp=mx707x707&ctp=s200x200&_nc_cat=111&ccb=1-7&_nc_sid=f907e8&_nc_ohc=SNsBn_AkPSAQ7kNvwEj5Cde&_nc_oc=AdqAWA1KWV-cmQwTTaIYQjHEHqwbY_xIRLnhcEdkwD_CtJntmTqhsXZvZXT1DVEwWHw&_nc_zt=24&_nc_ht=scontent-lax3-2.xx&_nc_gid=TctSwJoKwXZzmrmQC0SLMQ&_nc_ss=73289&oh=00_AQPEgVtV1uIGJL4feMpn3mz_PwJMheT1QtKp9NLVf89OUg&oe=6ADB9974",
+    "coverPhotoUrl": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/474775450_607638535321386_205604488177491996_n.jpg?stp=dst-jpg_tt6&cstp=mx2302x876&ctp=s2048x2048&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=17bP2luOHN8Q7kNvwGTxyjI&_nc_oc=Adrw1qrcdV15AylxfYyc-1p6XDbgwSOQNhm_xopgjYL_4IAlysNXlUx_DLQRpHfaR0o&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=d3wY0w8XJC8Fn8oI4a-P3g&_nc_ss=73289&oh=00_AQPfLsDDevcTNRNZIVS4XuKzajlCIbGzJsiE3WYy1pzMeA&oe=6ADB92E7",
+    "category": "Supermarket",
+    "addressUrl": "https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=30.030008912483%2C+30.994824171394&FORM=FBKPL1&name=Landmark+Mall%2C+Plot+4%269+El-Mehwar+El-Markazy%2C+Sheikh+Zayed+Entrance+2%2C+Al+Jizah%2C+Egypt%2C+16176&mkt=en-US",
+    "business_service_area": "Giza Governorate · Cairo, Cairo Governorate, Egypt",
+    "instagram": [
+     {
+      "username": "seoudisupermarket",
+      "url": "https://www.instagram.com/seoudisupermarket"
+     }
+    ],
+    "business_hours": "Open now",
+    "business_services": "In-store pickup",
+    "ad_status": "This Page isn't currently running ads.",
+    "confirmed_owner": "United Grocers is responsible for this Page."
+   },
+   "facebookId": "100082257354370",
+   "pageAdLibrary": {
+    "id": "113092666842589",
+    "pamv_comms_data": null
+   }
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/AkramTasteTest",
+   "categories": [
+    "Page",
+    "Blogger"
+   ],
+   "info": [
+    "Akram Taste Test. 5,915 followers",
+    "184 talking about this. ‎بتاع ريفيوهات 😋‎"
+   ],
+   "likes": 0,
+   "messenger": null,
+   "title": "Akram Taste Test",
+   "pageId": "100063499043422",
+   "pageName": "AkramTasteTest",
+   "pageUrl": "https://www.facebook.com/AkramTasteTest",
+   "intro": "بتاع ريفيوهات 😋",
+   "websites": [
+    "https://www.instagram.com/akramtastetest",
+    "https://tiktok.com/@akramtastetest",
+    "https://youtube.com/@akramtastetest?utm_source=facebook&utm_medium=confirmed_link_feature",
+    "https://www.facebook.com/akramesaiegh"
+   ],
+   "email": "akramtastetest@gmail.com",
+   "alternativeSocialMedia": "https://youtube.com/@akramtastetest?utm_source=facebook&utm_medium=confirmed_link_feature",
+   "website": "https://www.facebook.com/akramesaiegh",
+   "rating": "Not yet rated (0 reviews)",
+   "followers": 5915,
+   "followings": 265,
+   "profilePictureUrl": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/290831367_457238986402732_3206675382823830003_n.jpg?stp=dst-jpg_tt6&cstp=mx320x320&ctp=s200x200&_nc_cat=107&ccb=1-7&_nc_sid=f907e8&_nc_ohc=ftXFb_l8JL4Q7kNvwGZapP6&_nc_oc=AdpAnixCi_ofSucTJ5s83gd64u7xeh3sXlAHL-8LgXGwfyNGPxLAp5YTkIUDqBb7blE&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Eh6x7j51w36Uo1g3vfekUQ&_nc_ss=70289&oh=00_AQM2Q7wssHNbVCDkwkn2wzNh92HYBbEIodoGta9uLQGQ7w&oe=6ADB8A28",
+   "coverPhotoUrl": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/473590541_1159330232860267_4731803774756401893_n.jpg?stp=dst-jpg_tt6&cstp=mx820x312&ctp=s820x312&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o6nGRKIlw0YQ7kNvwGlvd11&_nc_oc=AdrsP10FxPIk5YtBRnmInQfaJI9_GGEi0Rc-0JkT4qgeBCkd-nhfm733SIKvUN-fUiw&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=fvucmgGfYDGm49hmWCfYfA&_nc_ss=70289&oh=00_AQOBMUW49hMVc07JKYpIxLjPNQrWDlQog_528997Bxbmbg&oe=6ADB8F40",
+   "profilePhoto": "https://www.facebook.com/photo/?fbid=457238996402731&set=a.457238939736070",
+   "ratingCount": 0,
+   "category": "Blogger",
+   "instagram": [
+    {
+     "username": "akramtastetest",
+     "url": "https://www.instagram.com/akramtastetest"
+    }
+   ],
+   "tiktok": [
+    {
+     "username": "akramtastetest",
+     "url": "https://tiktok.com/@akramtastetest"
+    }
+   ],
+   "youtube": [
+    {
+     "username": "akramtastetest",
+     "url": "https://youtube.com/@akramtastetest?utm_source=facebook&utm_medium=confirmed_link_feature"
+    }
+   ],
+   "ratings": "Not yet rated (0 reviews)",
+   "creation_date": "February 9, 2021",
+   "ad_status": "This Page isn't currently running ads.",
+   "additionalProperties": {
+    "messenger": null,
+    "alternativeSocialMedia": "https://youtube.com/@akramtastetest?utm_source=facebook&utm_medium=confirmed_link_feature",
+    "profilePictureUrl": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/290831367_457238986402732_3206675382823830003_n.jpg?stp=dst-jpg_tt6&cstp=mx320x320&ctp=s200x200&_nc_cat=107&ccb=1-7&_nc_sid=f907e8&_nc_ohc=ftXFb_l8JL4Q7kNvwGZapP6&_nc_oc=AdpAnixCi_ofSucTJ5s83gd64u7xeh3sXlAHL-8LgXGwfyNGPxLAp5YTkIUDqBb7blE&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=Eh6x7j51w36Uo1g3vfekUQ&_nc_ss=70289&oh=00_AQM2Q7wssHNbVCDkwkn2wzNh92HYBbEIodoGta9uLQGQ7w&oe=6ADB8A28",
+    "coverPhotoUrl": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/473590541_1159330232860267_4731803774756401893_n.jpg?stp=dst-jpg_tt6&cstp=mx820x312&ctp=s820x312&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o6nGRKIlw0YQ7kNvwGlvd11&_nc_oc=AdrsP10FxPIk5YtBRnmInQfaJI9_GGEi0Rc-0JkT4qgeBCkd-nhfm733SIKvUN-fUiw&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=fvucmgGfYDGm49hmWCfYfA&_nc_ss=70289&oh=00_AQOBMUW49hMVc07JKYpIxLjPNQrWDlQog_528997Bxbmbg&oe=6ADB8F40",
+    "category": "Blogger",
+    "instagram": [
+     {
+      "username": "akramtastetest",
+      "url": "https://www.instagram.com/akramtastetest"
+     }
+    ],
+    "tiktok": [
+     {
+      "username": "akramtastetest",
+      "url": "https://tiktok.com/@akramtastetest"
+     }
+    ],
+    "youtube": [
+     {
+      "username": "akramtastetest",
+      "url": "https://youtube.com/@akramtastetest?utm_source=facebook&utm_medium=confirmed_link_feature"
+     }
+    ],
+    "ratings": "Not yet rated (0 reviews)",
+    "ad_status": "This Page isn't currently running ads."
+   },
+   "facebookId": "100063499043422",
+   "pageAdLibrary": {
+    "id": "149956623546259",
+    "pamv_comms_data": null
+   }
+  }
+ ]
+}

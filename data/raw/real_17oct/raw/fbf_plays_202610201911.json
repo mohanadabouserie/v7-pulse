@@ -1,0 +1,246 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/reel/1536732451785100/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1034607699200249/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/3317947875067848/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/811983721977393/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/4453226931659408/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1022752177378903/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1294815039441359/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1294691159496219/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1650068472731695/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1034352292251497/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/4533067006975177/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1330769668952331/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/993864169763187/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/2220167651889295/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1613265637137134/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1493948402745791/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1577247747209838/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/2220339918707643/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/987892707257251/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/2191063755002002/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/887805930731943/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1413617577397863/"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1313054371886357/"
+   },
+   {
+    "url": "https://www.facebook.com/yosefpacha/posts/pfbid02miPrkMarZoLFWeXsvMBdXuD5yvv2BaRKN4RKEEoTfoMhDLhB4aCvgjPh56rujWBql"
+   },
+   {
+    "url": "https://www.facebook.com/reel/1101243579554056/"
+   }
+  ]
+ },
+ "cap_usd": 0.18,
+ "run": {
+  "id": "CrNzdAq7JIIBZCLcx",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T16:11:13.301Z",
+  "finishedAt": "2026-10-20T16:12:19.468Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 4,
+   "apify-default-dataset-item": 24
+  },
+  "usageTotalUsd": 0.09620000000000001
+ },
+ "cost_usd": 1.3823,
+ "items": [
+  {
+   "url": "https://www.facebook.com/reel/1536732451785100/",
+   "video_id": "1536732451785100",
+   "play_count": 404,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1294815039441359/",
+   "video_id": "1294815039441359",
+   "play_count": 484,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1650068472731695/",
+   "video_id": "1650068472731695",
+   "play_count": 52225,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1034607699200249/",
+   "video_id": "1034607699200249",
+   "play_count": 48717,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/3317947875067848/",
+   "video_id": "3317947875067848",
+   "play_count": 11317,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/4453226931659408/",
+   "video_id": "4453226931659408",
+   "play_count": 235,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/4533067006975177/",
+   "video_id": "4533067006975177",
+   "play_count": 1572,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1493948402745791/",
+   "video_id": "1493948402745791",
+   "play_count": 2262,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/993864169763187/",
+   "video_id": "993864169763187",
+   "play_count": 394,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1330769668952331/",
+   "video_id": "1330769668952331",
+   "play_count": 19525,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1613265637137134/",
+   "video_id": "1613265637137134",
+   "play_count": 5354,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1022752177378903/",
+   "video_id": "1022752177378903",
+   "play_count": 31113,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/yosefpacha/posts/pfbid02miPrkMarZoLFWeXsvMBdXuD5yvv2BaRKN4RKEEoTfoMhDLhB4aCvgjPh56rujWBql",
+   "video_id": null,
+   "play_count": null,
+   "status": "invalid_video_id"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1313054371886357/",
+   "video_id": "1313054371886357",
+   "play_count": 2140,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1413617577397863/",
+   "video_id": "1413617577397863",
+   "play_count": 507,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1101243579554056/",
+   "video_id": "1101243579554056",
+   "play_count": 541,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/2220339918707643/",
+   "video_id": "2220339918707643",
+   "play_count": 394,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/987892707257251/",
+   "video_id": "987892707257251",
+   "play_count": 460,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1294691159496219/",
+   "video_id": "1294691159496219",
+   "play_count": 112,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/811983721977393/",
+   "video_id": "811983721977393",
+   "play_count": 19877,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1034352292251497/",
+   "video_id": "1034352292251497",
+   "play_count": 49138,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/2191063755002002/",
+   "video_id": "2191063755002002",
+   "play_count": 501,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/1577247747209838/",
+   "video_id": "1577247747209838",
+   "play_count": 2080,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/2220167651889295/",
+   "video_id": "2220167651889295",
+   "play_count": 398,
+   "status": "ok"
+  },
+  {
+   "url": "https://www.facebook.com/reel/887805930731943/",
+   "video_id": "887805930731943",
+   "play_count": 1522,
+   "status": "ok"
+  }
+ ]
+}

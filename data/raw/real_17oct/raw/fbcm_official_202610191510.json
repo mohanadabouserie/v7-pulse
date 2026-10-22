@@ -1,0 +1,343 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"
+   }
+  ],
+  "resultsLimit": 100,
+  "includeNestedComments": false
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "coiXfEkcEw7HvXh60",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T12:10:47.198Z",
+  "finishedAt": "2026-10-19T12:10:52.201Z",
+  "chargedEventCounts": {
+   "comment": 0,
+   "actor-start": 1,
+   "filter-applied": 0
+  },
+  "usageTotalUsd": 0.001
+ },
+ "cost_usd": 0.035,
+ "items": [
+  {
+   "facebookUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l",
+   "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=1423472132948966",
+   "commentId": "1423472132948966",
+   "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8xNDIzNDcyMTMyOTQ4OTY2",
+   "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfMTQyMzQ3MjEzMjk0ODk2Ng==",
+   "date": "2026-08-01T19:37:42.000Z",
+   "text": "البوست ده طبعا مش هيوصل لناس كتير بسبب الخوارزميات\nفـ رجاءً لو شوفت البوست تفاعل معاه بأي شكل يعجبك \nيمكن الهدف من البوست يوصل لناس أكتر بسببك",
+   "author": {
+    "__typename": "User",
+    "id": "1085470736",
+    "name": "Taher Montasser",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s24x24&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Taher",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/TMA.Designer",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/TMA.Designer",
+   "profilePicture": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A",
+   "profileId": "1085470736",
+   "profileName": "Taher Montasser",
+   "likesCount": "5",
+   "threadingDepth": 0,
+   "facebookId": "10233748945400451",
+   "postTitle": "لسة خارج حالا من أولاد رجب وحصل موقف خلاني طاير م الفرحة\nانا راجع من كفر الشيخ للقاهرة ووقفت فـ بنزينة شبرا بنها\nفدخلت أولاد رجب اجيب حاجة اشربها ففضلت أدور على حاجة مش مقاطعه لحد مالقيت تلاجة مليانه V-Cola فجيبت واحدة \nوبعدين وانا واقف عند الكاشير بحاسب جه واحد واقف جنبي وكان جايب اتنين Pepsi فلما شافني بحاسب وجايب V-Cola لاقيته بصلي كدة وكأنه اتحرج وراح جري ع التلاجة اللي جاب منها وساب الحاجات اللي جابها وراح ع التلاجة التانية واشترى V-Cola\nبصوا هي حاجة ممكن تبان لبعض الناس تافهه\nبس انا بالنسبالي .. إنه لأمرٌ عظيم 👌😁\n#طاهر_منتصر \nV Super Soda",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "103095325943453"
+   },
+   "inputUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l",
+   "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=3029412277395457",
+   "commentId": "3029412277395457",
+   "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8zMDI5NDEyMjc3Mzk1NDU3",
+   "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfMzAyOTQxMjI3NzM5NTQ1Nw==",
+   "date": "2026-08-01T20:05:25.000Z",
+   "text": "والله با اخ طاهر انا مقاطع بفضل الله من اول الحرب ولو هاموت مش هاجيب حاجة كقاطعة لدرجة بركب مواصلات وانزل حي تاني عشان اجيب علبة كاتشب مصري او ازازة توب كولا  ، امس كنت هاموت من العطش ورحت محل لقيته كله بيبسي وكولا وعمال ادور في التلاجات لقيت v cola  فجبتها وانا معرفش هي مقااطعة ولا لأ فسألت البياع لقيت طفل جميل صغير قالي لا يا عمو  مش مقاطعة واحنا بنجيبه والله فرحت جدا وعزمته على واخدة وخرجت معاه من  الماركت وكأنه صديقي رغم اني شغلي في المعمار ومتبهدل بس الولد كان وجهه مسرور مبسوط ان حد بيشاركه شيء ايجابي",
+   "author": {
+    "__typename": "User",
+    "id": "100055747321532",
+    "name": "Ahmed Alhmahmy",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/495608001_1203318308203069_7467158645361173546_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx466x466&ctp=s32x32&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=mhMbYcUyOY4Q7kNvwE9d4kT&_nc_oc=AdrsgVV-ekMeuE7gNhQ4Y37154lP9r2bB9rHD72ORtAt2i--P0x9o41KjhSARl7I5mo&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQM6-4UQpPWIHxxRaXFLmUsZH5ARupoz3zg5wGyORxo7vQ&oe=6ADBD7BB"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/495608001_1203318308203069_7467158645361173546_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx466x466&ctp=s40x40&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=mhMbYcUyOY4Q7kNvwE9d4kT&_nc_oc=AdrsgVV-ekMeuE7gNhQ4Y37154lP9r2bB9rHD72ORtAt2i--P0x9o41KjhSARl7I5mo&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQM6-4UQpPWIHxxRaXFLmUsZH5ARupoz3zg5wGyORxo7vQ&oe=6ADBD7BB"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/495608001_1203318308203069_7467158645361173546_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx466x466&ctp=s24x24&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=mhMbYcUyOY4Q7kNvwE9d4kT&_nc_oc=AdrsgVV-ekMeuE7gNhQ4Y37154lP9r2bB9rHD72ORtAt2i--P0x9o41KjhSARl7I5mo&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQM6-4UQpPWIHxxRaXFLmUsZH5ARupoz3zg5wGyORxo7vQ&oe=6ADBD7BB"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Ahmed",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/ahmed.hmahmy.598214",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/ahmed.hmahmy.598214",
+   "profilePicture": "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-1/495608001_1203318308203069_7467158645361173546_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx466x466&ctp=s32x32&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=mhMbYcUyOY4Q7kNvwE9d4kT&_nc_oc=AdrsgVV-ekMeuE7gNhQ4Y37154lP9r2bB9rHD72ORtAt2i--P0x9o41KjhSARl7I5mo&_nc_zt=24&_nc_ht=scontent-mia3-3.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQM6-4UQpPWIHxxRaXFLmUsZH5ARupoz3zg5wGyORxo7vQ&oe=6ADBD7BB",
+   "profileId": "100055747321532",
+   "profileName": "Ahmed Alhmahmy",
+   "likesCount": "1",
+   "commentsCount": 1,
+   "comments": [
+    {
+     "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=3029412277395457&reply_comment_id=928409093632552",
+     "commentId": "3029412277395457",
+     "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV85Mjg0MDkwOTM2MzI1NTI=",
+     "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfOTI4NDA5MDkzNjMyNTUy",
+     "date": "2026-08-01T21:50:27.000Z",
+     "text": "Ahmed Alhmahmy يا جمالك يا أخي 🥰",
+     "author": {
+      "__typename": "User",
+      "__isActor": "User",
+      "name": "Taher Montasser",
+      "id": "1085470736",
+      "profile_picture_depth_0": {
+       "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+      },
+      "profile_picture_depth_0_increased": {
+       "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+      },
+      "profile_picture_depth_1": {
+       "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s24x24&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+      },
+      "gender": "MALE",
+      "is_verified": false,
+      "short_name": "Taher",
+      "subscribe_status": "CANNOT_SUBSCRIBE",
+      "__isEntity": "User",
+      "url": "https://www.facebook.com/TMA.Designer",
+      "work_info": null
+     },
+     "profileUrl": "https://www.facebook.com/TMA.Designer",
+     "profilePicture": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A",
+     "profileId": "1085470736",
+     "profileName": "Taher Montasser",
+     "likesCount": "0",
+     "threadingDepth": 1,
+     "parentReply": {
+      "author": {
+       "__typename": "User",
+       "name": "Ahmed Alhmahmy",
+       "gender": "MALE",
+       "id": "100055747321532"
+      },
+      "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8zMDI5NDEyMjc3Mzk1NDU3"
+     }
+    }
+   ],
+   "threadingDepth": 0,
+   "facebookId": "10233748945400451",
+   "postTitle": "لسة خارج حالا من أولاد رجب وحصل موقف خلاني طاير م الفرحة\nانا راجع من كفر الشيخ للقاهرة ووقفت فـ بنزينة شبرا بنها\nفدخلت أولاد رجب اجيب حاجة اشربها ففضلت أدور على حاجة مش مقاطعه لحد مالقيت تلاجة مليانه V-Cola فجيبت واحدة \nوبعدين وانا واقف عند الكاشير بحاسب جه واحد واقف جنبي وكان جايب اتنين Pepsi فلما شافني بحاسب وجايب V-Cola لاقيته بصلي كدة وكأنه اتحرج وراح جري ع التلاجة اللي جاب منها وساب الحاجات اللي جابها وراح ع التلاجة التانية واشترى V-Cola\nبصوا هي حاجة ممكن تبان لبعض الناس تافهه\nبس انا بالنسبالي .. إنه لأمرٌ عظيم 👌😁\n#طاهر_منتصر \nV Super Soda",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "103095325943453"
+   },
+   "inputUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l",
+   "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=1542375970084634",
+   "commentId": "1542375970084634",
+   "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8xNTQyMzc1OTcwMDg0NjM0",
+   "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfMTU0MjM3NTk3MDA4NDYzNA==",
+   "date": "2026-08-01T20:29:31.000Z",
+   "text": "💪🏼",
+   "author": {
+    "__typename": "User",
+    "id": "100002493417434",
+    "name": "Mostafa ELbehiry",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/640925406_26022270687439356_5063227343874750694_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx939x943&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=jxjdKVXGCmkQ7kNvwHMkSKT&_nc_oc=AdoopL483KDcwXBnAMnoRSigjE5ZjC-cSeq1JgN4mmHj0YvaQ6A7fljA5j6ouSgqwZ8&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMEyTyoxT3awgCViSSjHQJklVCjGo6k-buikq8qP3RE5g&oe=6ADBE056"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/640925406_26022270687439356_5063227343874750694_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx939x943&ctp=s40x40&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=jxjdKVXGCmkQ7kNvwHMkSKT&_nc_oc=AdoopL483KDcwXBnAMnoRSigjE5ZjC-cSeq1JgN4mmHj0YvaQ6A7fljA5j6ouSgqwZ8&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMEyTyoxT3awgCViSSjHQJklVCjGo6k-buikq8qP3RE5g&oe=6ADBE056"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/640925406_26022270687439356_5063227343874750694_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx939x943&ctp=s24x24&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=jxjdKVXGCmkQ7kNvwHMkSKT&_nc_oc=AdoopL483KDcwXBnAMnoRSigjE5ZjC-cSeq1JgN4mmHj0YvaQ6A7fljA5j6ouSgqwZ8&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMEyTyoxT3awgCViSSjHQJklVCjGo6k-buikq8qP3RE5g&oe=6ADBE056"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Mostafa",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": "https://www.facebook.com/Mostafa.Elbehiry",
+    "work_info": null
+   },
+   "profileUrl": "https://www.facebook.com/Mostafa.Elbehiry",
+   "profilePicture": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/640925406_26022270687439356_5063227343874750694_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx939x943&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=jxjdKVXGCmkQ7kNvwHMkSKT&_nc_oc=AdoopL483KDcwXBnAMnoRSigjE5ZjC-cSeq1JgN4mmHj0YvaQ6A7fljA5j6ouSgqwZ8&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMEyTyoxT3awgCViSSjHQJklVCjGo6k-buikq8qP3RE5g&oe=6ADBE056",
+   "profileId": "100002493417434",
+   "profileName": "Mostafa ELbehiry",
+   "likesCount": "1",
+   "threadingDepth": 0,
+   "facebookId": "10233748945400451",
+   "postTitle": "لسة خارج حالا من أولاد رجب وحصل موقف خلاني طاير م الفرحة\nانا راجع من كفر الشيخ للقاهرة ووقفت فـ بنزينة شبرا بنها\nفدخلت أولاد رجب اجيب حاجة اشربها ففضلت أدور على حاجة مش مقاطعه لحد مالقيت تلاجة مليانه V-Cola فجيبت واحدة \nوبعدين وانا واقف عند الكاشير بحاسب جه واحد واقف جنبي وكان جايب اتنين Pepsi فلما شافني بحاسب وجايب V-Cola لاقيته بصلي كدة وكأنه اتحرج وراح جري ع التلاجة اللي جاب منها وساب الحاجات اللي جابها وراح ع التلاجة التانية واشترى V-Cola\nبصوا هي حاجة ممكن تبان لبعض الناس تافهه\nبس انا بالنسبالي .. إنه لأمرٌ عظيم 👌😁\n#طاهر_منتصر \nV Super Soda",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "103095325943453"
+   },
+   "inputUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"
+  },
+  {
+   "facebookUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l",
+   "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=2916298115399148",
+   "commentId": "2916298115399148",
+   "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8yOTE2Mjk4MTE1Mzk5MTQ4",
+   "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfMjkxNjI5ODExNTM5OTE0OA==",
+   "date": "2026-08-01T22:01:38.000Z",
+   "text": "المبدء يا صديقي والثبات عليه\nنزلت اجازه مصر وانا من ابوتيج اسيوط وفي محل كشري في وش محطه القطار اسمه الزعيم عجبني جدا والشاب اللي واقف ذوق جدا جدا اول مره انا واولادي اكلنا ورحنا نجيب ميه من الثلاجه كلها اكوافينا واعتذرت وقولت ميه من الحنفيه كولدير عادي وتأتي مره بنتي مريم وضحت الموقف وان كمان ثلاجه الحاجه الساقعه كلها مقاطعه \n   اخر مره قبل السفر لاقيت ميه وحاجه ساقعه مصريه وقالي الزبون المحترم بأخلاقه يفرض علينا نحترم أمنياته وكان طلب من الاداره ينزلو من شركات مش مقاطعه فرحتي وفرحت اولادي كانه انتصار والله ً\n     في محترمين كتير جدا جدا واللي مع القضيه من قبل ٧ اكتوبر دا بالنسبه ليه شي عادي بس مع اولادي كان مؤثر \nاسعد الله اوقاتك اخوي طاهر",
+   "author": {
+    "__typename": "User",
+    "id": "pfbid02SeeAyscZ9Kg1sQga7zAAUZgzzCmvgxYogbBD63EmBJXnVYxcwjUaM82jQezcEX8Vl",
+    "name": "Emad Maky",
+    "__isActor": "User",
+    "profile_picture_depth_0": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/850808956_28673552272301227_8591045810500208332_n.avif?stp=cp6_dst-avif&cstp=mx1125x1125&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=i_jPUnzkcLwQ7kNvwEUTcMX&_nc_oc=AdqqLpkpnTP3Cyf28Lp4v-O01Kr7IVNLf32ct2-iTDEs89QFELeWdRA5XCPZ6lTLm78&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMkzn4V0_bfqUHGXZpOuDllp20fHEtHLY3EiAqA2J9nFQ&oe=6ADBF0C8"
+    },
+    "profile_picture_depth_0_increased": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/850808956_28673552272301227_8591045810500208332_n.avif?stp=cp6_dst-avif&cstp=mx1125x1125&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=i_jPUnzkcLwQ7kNvwEUTcMX&_nc_oc=AdqqLpkpnTP3Cyf28Lp4v-O01Kr7IVNLf32ct2-iTDEs89QFELeWdRA5XCPZ6lTLm78&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMkzn4V0_bfqUHGXZpOuDllp20fHEtHLY3EiAqA2J9nFQ&oe=6ADBF0C8"
+    },
+    "profile_picture_depth_1": {
+     "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/850808956_28673552272301227_8591045810500208332_n.avif?stp=cp6_dst-avif&cstp=mx1125x1125&ctp=s24x24&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=i_jPUnzkcLwQ7kNvwEUTcMX&_nc_oc=AdqqLpkpnTP3Cyf28Lp4v-O01Kr7IVNLf32ct2-iTDEs89QFELeWdRA5XCPZ6lTLm78&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMkzn4V0_bfqUHGXZpOuDllp20fHEtHLY3EiAqA2J9nFQ&oe=6ADBF0C8"
+    },
+    "gender": "MALE",
+    "is_verified": false,
+    "short_name": "Emad",
+    "subscribe_status": "CANNOT_SUBSCRIBE",
+    "__isEntity": "User",
+    "url": null,
+    "work_info": null
+   },
+   "profilePicture": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/850808956_28673552272301227_8591045810500208332_n.avif?stp=cp6_dst-avif&cstp=mx1125x1125&ctp=s32x32&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=i_jPUnzkcLwQ7kNvwEUTcMX&_nc_oc=AdqqLpkpnTP3Cyf28Lp4v-O01Kr7IVNLf32ct2-iTDEs89QFELeWdRA5XCPZ6lTLm78&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMkzn4V0_bfqUHGXZpOuDllp20fHEtHLY3EiAqA2J9nFQ&oe=6ADBF0C8",
+   "profileId": "pfbid02SeeAyscZ9Kg1sQga7zAAUZgzzCmvgxYogbBD63EmBJXnVYxcwjUaM82jQezcEX8Vl",
+   "profileName": "Emad Maky",
+   "likesCount": "2",
+   "commentsCount": 2,
+   "comments": [
+    {
+     "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=2916298115399148&reply_comment_id=1810828623618869",
+     "commentId": "2916298115399148",
+     "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8xODEwODI4NjIzNjE4ODY5",
+     "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfMTgxMDgyODYyMzYxODg2OQ==",
+     "date": "2026-08-02T13:50:17.000Z",
+     "text": "Emad Maky ماشاء الله\nربنا يبارك فيك وفي اولادك وفي ادارة المطعم المحترمين 💜",
+     "author": {
+      "__typename": "User",
+      "__isActor": "User",
+      "name": "Taher Montasser",
+      "id": "1085470736",
+      "profile_picture_depth_0": {
+       "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+      },
+      "profile_picture_depth_0_increased": {
+       "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+      },
+      "profile_picture_depth_1": {
+       "uri": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s24x24&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A"
+      },
+      "gender": "MALE",
+      "is_verified": false,
+      "short_name": "Taher",
+      "subscribe_status": "CANNOT_SUBSCRIBE",
+      "__isEntity": "User",
+      "url": "https://www.facebook.com/TMA.Designer",
+      "work_info": null
+     },
+     "profileUrl": "https://www.facebook.com/TMA.Designer",
+     "profilePicture": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-1/825292553_10234386603741511_5868987723695087449_n.jpg?stp=c146.38.956.955a_cp0_dst-jpg_tt6&cstp=mx956x955&ctp=s32x32&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Wg3F8zuhC5kQ7kNvwGo4-uy&_nc_oc=AdouUg6MC1_eacJkW6SexSPbDcGTYZXa_M3wFX1WKnaOsz7z-qwZFNk1F-JG9nGxGbM&_nc_zt=24&_nc_ht=scontent-mia5-1.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQPKy1U29E6zNskby-qV3YvPlrkGqE09mC5bnIL2QA1fqQ&oe=6ADBDE7A",
+     "profileId": "1085470736",
+     "profileName": "Taher Montasser",
+     "likesCount": "0",
+     "threadingDepth": 1,
+     "parentReply": {
+      "author": {
+       "__typename": "User",
+       "name": "Emad Maky",
+       "gender": "MALE",
+       "id": "pfbid02SeeAyscZ9Kg1sQga7zAAUZgzzCmvgxYogbBD63EmBJXnVYxcwjUaM82jQezcEX8Vl"
+      },
+      "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8yOTE2Mjk4MTE1Mzk5MTQ4"
+     }
+    },
+    {
+     "commentUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l?comment_id=2916298115399148&reply_comment_id=1067775259042956",
+     "commentId": "2916298115399148",
+     "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8xMDY3Nzc1MjU5MDQyOTU2",
+     "feedbackId": "ZmVlZGJhY2s6MTAyMzM3NDg5NDU0MDA0NTFfMTA2Nzc3NTI1OTA0Mjk1Ng==",
+     "date": "2026-08-02T14:30:21.000Z",
+     "text": "Emad Maky ماشاء الله اللهم بارك",
+     "author": {
+      "__typename": "User",
+      "__isActor": "User",
+      "name": "Hussien Eldaly",
+      "id": "100052408843240",
+      "profile_picture_depth_0": {
+       "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/747723348_1557002809389999_6080469393751348873_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=YnVQV2hoibcQ7kNvwFnGHQ-&_nc_oc=AdoRpUdMDbJOI4GynnuQW6Y61O4kASl8hTTXwY4w-CLolN2qIGod6aEt-NoKV6KYIoU&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMKWtSywfXuj5o0ACr8hqnMb_9ioOtufAAAcMZulUDhyQ&oe=6ADBBF7A"
+      },
+      "profile_picture_depth_0_increased": {
+       "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/747723348_1557002809389999_6080469393751348873_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s40x40&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=YnVQV2hoibcQ7kNvwFnGHQ-&_nc_oc=AdoRpUdMDbJOI4GynnuQW6Y61O4kASl8hTTXwY4w-CLolN2qIGod6aEt-NoKV6KYIoU&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMKWtSywfXuj5o0ACr8hqnMb_9ioOtufAAAcMZulUDhyQ&oe=6ADBBF7A"
+      },
+      "profile_picture_depth_1": {
+       "uri": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/747723348_1557002809389999_6080469393751348873_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s24x24&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=YnVQV2hoibcQ7kNvwFnGHQ-&_nc_oc=AdoRpUdMDbJOI4GynnuQW6Y61O4kASl8hTTXwY4w-CLolN2qIGod6aEt-NoKV6KYIoU&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMKWtSywfXuj5o0ACr8hqnMb_9ioOtufAAAcMZulUDhyQ&oe=6ADBBF7A"
+      },
+      "gender": "MALE",
+      "is_verified": false,
+      "short_name": "Hussien",
+      "subscribe_status": "CANNOT_SUBSCRIBE",
+      "__isEntity": "User",
+      "url": "https://www.facebook.com/hussien.eldaly.165",
+      "work_info": null
+     },
+     "profileUrl": "https://www.facebook.com/hussien.eldaly.165",
+     "profilePicture": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-1/747723348_1557002809389999_6080469393751348873_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1254x1254&ctp=s32x32&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=YnVQV2hoibcQ7kNvwFnGHQ-&_nc_oc=AdoRpUdMDbJOI4GynnuQW6Y61O4kASl8hTTXwY4w-CLolN2qIGod6aEt-NoKV6KYIoU&_nc_zt=24&_nc_ht=scontent-mia3-2.xx&_nc_gid=7MKkXjxS0eIcYfy1BO34tA&_nc_ss=70289&oh=00_AQMKWtSywfXuj5o0ACr8hqnMb_9ioOtufAAAcMZulUDhyQ&oe=6ADBBF7A",
+     "profileId": "100052408843240",
+     "profileName": "Hussien Eldaly",
+     "likesCount": "0",
+     "threadingDepth": 1,
+     "parentReply": {
+      "author": {
+       "__typename": "User",
+       "name": "Emad Maky",
+       "gender": "MALE",
+       "id": "pfbid02SeeAyscZ9Kg1sQga7zAAUZgzzCmvgxYogbBD63EmBJXnVYxcwjUaM82jQezcEX8Vl"
+      },
+      "id": "Y29tbWVudDoxMDIzMzc0ODk0NTQwMDQ1MV8yOTE2Mjk4MTE1Mzk5MTQ4"
+     }
+    }
+   ],
+   "threadingDepth": 0,
+   "facebookId": "10233748945400451",
+   "postTitle": "لسة خارج حالا من أولاد رجب وحصل موقف خلاني طاير م الفرحة\nانا راجع من كفر الشيخ للقاهرة ووقفت فـ بنزينة شبرا بنها\nفدخلت أولاد رجب اجيب حاجة اشربها ففضلت أدور على حاجة مش مقاطعه لحد مالقيت تلاجة مليانه V-Cola فجيبت واحدة \nوبعدين وانا واقف عند الكاشير بحاسب جه واحد واقف جنبي وكان جايب اتنين Pepsi فلما شافني بحاسب وجايب V-Cola لاقيته بصلي كدة وكأنه اتحرج وراح جري ع التلاجة اللي جاب منها وساب الحاجات اللي جابها وراح ع التلاجة التانية واشترى V-Cola\nبصوا هي حاجة ممكن تبان لبعض الناس تافهه\nبس انا بالنسبالي .. إنه لأمرٌ عظيم 👌😁\n#طاهر_منتصر \nV Super Soda",
+   "pageAdLibrary": {
+    "is_business_page_active": false,
+    "id": "103095325943453"
+   },
+   "inputUrl": "https://www.facebook.com/TMA.Designer/posts/pfbid02ZTDb47UHLn8tvr7QKHVssULaiH71n4sUBVza2Etdad9WXviAjHNS6MAHNvmzgXv2l"
+  }
+ ]
+}

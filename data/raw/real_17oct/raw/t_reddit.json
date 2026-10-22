@@ -1,0 +1,28 @@
+{
+ "input": {
+  "searches": [
+   "V7 soda"
+  ],
+  "searchPosts": true,
+  "searchComments": false,
+  "sort": "new",
+  "maxItems": 3,
+  "maxPostCount": 3,
+  "maxComments": 0,
+  "postDateLimit": "2026-04-20"
+ },
+ "cap_usd": 0.05,
+ "run": {
+  "id": "en2eZvXbF9jla735e",
+  "status": "FAILED",
+  "startedAt": "2026-10-16T21:43:50.743Z",
+  "finishedAt": "2026-10-16T21:44:00.428Z",
+  "chargedEventCounts": {
+   "result": 0,
+   "actor-start-gb": 0
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.009,
+ "items": []
+}

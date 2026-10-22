@@ -1,0 +1,92 @@
+{
+ "input": {
+  "query": "V7 كريم صودا",
+  "search_type": "posts",
+  "max_posts": 10,
+  "start_date": "2026-08-15",
+  "end_date": "2026-08-15"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "fES0LwpMvUm0fOJ6x",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T10:58:34.027Z",
+  "finishedAt": "2026-10-20T10:58:41.207Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.017,
+ "items": [
+  {
+   "post_id": "1468728611948205",
+   "url": "https://www.facebook.com/Family.Hypermarket/posts/pfbid025yBq5CzvhYreSVXtmqk3bUsPQ84GB7yxtP8LC6QevWQw5jU1DMtMZsXgPL3Jyb7hl",
+   "message": "جديد جديد🤩🤩سفن صودا كريم V7 Cream Soda \nطعم لا يقاوم متوفرة الان في العيلة هايبر ماركت.",
+   "author": {
+    "id": "100064332390440",
+    "name": "العيلة هايبر ماركت",
+    "url": "https://www.facebook.com/Family.Hypermarket",
+    "profile_picture_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-1/301528123_441639297990480_5222658605504752019_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=9iWQesm2hzMQ7kNvwEgg-w8&_nc_oc=Adrvz1YvjZOA1HsP8twNe-WJ7ZpecZgtHQEPpBVrVfRU0qeQ0AA1TjfzlEn-lUuL0FwOgQPglMupwbVrvWIaYtgg&_nc_zt=24&_nc_ht=scontent-dfw6-1.xx&_nc_gid=DhKa2PHiChvQAVzCS0y3_w&_nc_ss=7b180&oh=00_AQMQsL-8XMMzglYaUVwtRVyPlnIm0mIslpI9C4tCyEg06g&oe=6ADD1159"
+   },
+   "timestamp": 1786797823,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/770919260_1468727558614977_7776596586919609190_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YsmogIajkusQ7kNvwGxkvQM&_nc_oc=Adqq3N0PPQ97Xo8GzQ4M65_gHPS9a8vWl2HDTorR4CAuX5YzgZbsWXa52wvIp5_-SwqGcHDHwfG4aNuqa6HOiRfh&_nc_zt=23&_nc_ht=scontent-dfw5-2.xx&_nc_gid=DhKa2PHiChvQAVzCS0y3_w&_nc_ss=7b180&oh=00_AQNrHC76i7cZ3uQt5OeH7DrJqAK_qtaqPNNaWDlOTPru1w&oe=6ADD21BD",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQ2ODcyODYxMTk0ODIwNQ==",
+   "shares_id": "ZmVlZGJhY2s6MTQ2ODcyODYxMTk0ODIwNQ==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122172496868733537",
+   "url": "https://www.facebook.com/strwbyry.shwrt.kyk.2025/posts/pfbid0VBrjuXY1rmYi2yMDnPH1689RUwWgdvXHdBBLS9tdVhecBvVmhnuj8JYEzS1oFY8Vl",
+   "message": "محتاجة 50 شخص عادي مش بلوجر يحلفلي إنها حلوة وإن دا مش كامبين",
+   "author": {
+    "id": "61572006127178",
+    "name": "ستروبيري شورت كيك",
+    "url": "",
+    "profile_picture_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-1/843461337_122178350318733537_1918183494851016406_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Rfg7ZkOB6uoQ7kNvwEBR_1g&_nc_oc=Adow1FtHAG6FWGqeQQ8lAR-G_VTkXKdxbxuYs_9bRAiIWa6mcc-u8E_Y0rrRNXWy0th-mEW3AdOzyi99vUzU8i1s&_nc_zt=24&_nc_ht=scontent-dfw6-1.xx&_nc_gid=DhKa2PHiChvQAVzCS0y3_w&_nc_ss=7b180&oh=00_AQNBkYWFG9hMkqgCkAityZc4vSah_b4SnqYq4nVWIzVhlg&oe=6ADD2B4A"
+   },
+   "timestamp": 1786828378,
+   "reactions_count": 208,
+   "comments_count": 167,
+   "reshare_count": 29,
+   "reactions": {
+    "like": 32,
+    "love": 5,
+    "haha": 169,
+    "wow": 1,
+    "sad": 1,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/773240409_122172496838733537_3214314746213326234_n.jpg?stp=dst-jpg_p843x403_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4xZi2nVLEfkQ7kNvwHprjG1&_nc_oc=AdoI76WGqgu_lEDKA_gdEq6J_f5HW-VwHTpfu8nqzr91_6ewwO2IjjARcPScBJeMZam2Rclr2NljsO17CKPdS0ji&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&_nc_gid=DhKa2PHiChvQAVzCS0y3_w&_nc_ss=7b180&oh=00_AQOPLQ2hZWsv4P8DnbbLBT1VrsDcliFcA4p9sUrNDka1EA&oe=6ADD001C",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTcyNDk2ODY4NzMzNTM3",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTcyNDk2ODY4NzMzNTM3",
+   "associated_group_id": ""
+  }
+ ]
+}

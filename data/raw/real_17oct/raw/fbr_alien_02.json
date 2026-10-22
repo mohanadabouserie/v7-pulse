@@ -1,0 +1,620 @@
+{
+ "input": {
+  "search_type": "posts",
+  "keyword": "ڤي كولا",
+  "only_reels": true,
+  "follow_post_scraping": true,
+  "results_limit": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.3,
+ "run": {
+  "id": "fclH3gvJRKEr76NtH",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:23:53.345Z",
+  "finishedAt": "2026-10-19T11:24:50.803Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 18
+  },
+  "usageTotalUsd": 0.19818748683859574
+ },
+ "cost_usd": 0.9299,
+ "items": [
+  {
+   "author": null,
+   "post_id": "1854906199252462",
+   "action_id": "ZmVlZGJhY2s6MTIyMjY4NTQyNDU2MTY3MzU0",
+   "text": "عربية ڤي كولا بتلف مصر عشان نوصل العلم لكل مكان ونشجع بلدنا.\nمن الساعة 4:30 العصر لـ 12:30 بالليل ولحد يوم ٢١/٦ ، أعرف إحنا موجودين فين وتعالي شجع مصر مع ڤي كولا!\n\n١٤/٦ مصر الجديدة – الميريلاند\n١٥/٦ القاهرة الجديدة – التسعين الجنوبي\n١٦/٦ مدينة نصر – الحديقة الدولية \n١٧/٦ المقطم  - شارع ٩ \n١٨/٦ المعادي – جراند مول \n١٩/٦ الزمالك – فندق أم كلثوم\n٢٠/٦ المهندسين  - عصائر فرغلي \n٢١/٦ الشيخ زايد  - بجانب أركان بلازا",
+   "create_time": 1781457440000,
+   "post_url": "https://www.facebook.com/reel/1854906199252462",
+   "like_count": 86,
+   "comment_count": 3,
+   "share_count": 13,
+   "view_count": 6000,
+   "reaction_map": [],
+   "play_count": 6000,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQOyK_1hbjKdEF7Hz5FjZucOTkjMaIC7N3VfZJwym0VC2B7bhbzum56eRJoevA5LZMU8pytT3bhpXScqJypzT9Lr1hUEgkoLlUtNRzE.mp4?_nc_cat=105&_nc_sid=9ca052&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=w2mMOS4cdEEQ7kNvwGlYi7H&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxODU0OTA2MTk5MjUyNDYyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyNjY0MjUxNjMwNjM4NTkwLCJhc3NldF9hZ2VfZGF5cyI6MTI2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MzQsImJpdHJhdGUiOjIxMDUwMjIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=DMvxd2iNberul8rfj51wJg&_nc_ss=70289&_nc_zt=28&oh=00_AQPz4qIG2fIXKDYH5w1-vfiWHu3mL7KrB4J-8XSMKY27rg&oe=6ADBD1F2"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/724516419_1318758557054628_8688059841104093678_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=110&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=kS5ecFA16bUQ7kNvwH_ZYzW&_nc_oc=AdrGEt_T7xnQoWyiF1P0DFoNfi0HCWSQNbLl7akXA5J9XVlQvIgEN8GBedkEzOral2c&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=DMvxd2iNberul8rfj51wJg&_nc_ss=70289&oh=00_AQMaTTFfP8WOySfhk6CIhWzcNmoXSE0jkp8NUFg93yc9bw&oe=6ADBC25E"
+   ],
+   "durationInSec": [
+    34.367
+   ],
+   "type": "video",
+   "author_username": "V Super Soda",
+   "author_user_id": "61555020627449",
+   "author_profile_url": "https://www.facebook.com/Vsupersoda",
+   "author_avatar": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1600x1600&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwFZM7wA&_nc_oc=Ado0YIipYrk98h1tlN-39-uWZA28fNbGElV-YcLplu7PVl46O8uL3Z67JlZCiAte62s&_nc_zt=24&_nc_ht=scontent-lga3-1.xx&_nc_gid=DMvxd2iNberul8rfj51wJg&_nc_ss=70289&oh=00_AQPXxVavg4eh11PcuQbtSGnDVoSQs3aFHp6V8j05GQ87EA&oe=6ADBBEA5",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "984120887839730",
+   "action_id": "ZmVlZGJhY2s6MTQ2MDQzODk5NjA5OTk3NA==",
+   "text": "⁨ ⁨ بنرفع العلم مع ڤي كولا V Super Soda V7Egypt 🇪🇬\n و بنّادي على كل نوادي مصر ترفع العلم!⁩⁩",
+   "create_time": 1781546867000,
+   "post_url": "https://www.facebook.com/reel/984120887839730",
+   "like_count": 211,
+   "comment_count": 18,
+   "share_count": 27,
+   "view_count": 8000,
+   "reaction_map": [],
+   "play_count": 8000,
+   "image_list": [],
+   "video_list": [
+    "https://video-dfw5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNYrotbxilOVqywFYDVNtLKygZzpBySTCvbWRYqGzbhlg_1uj_swvje2T5T8c4dg0KiYoR2rMz1jVaM-3h0YLS0kNcrJQpktjX1Axw.mp4?_nc_cat=111&_nc_sid=9ca052&_nc_ht=video-dfw5-1.xx.fbcdn.net&_nc_ohc=SLZD3qOOj0QQ7kNvwGJMvKS&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5LTRfcTkwIiwidmlkZW9faWQiOjk4NDEyMDg4NzgzOTczMCwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6ODcyMjAwNzMyNTk5MDA0LCJhc3NldF9hZ2VfZGF5cyI6MTI1LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NDAsImJpdHJhdGUiOjQ4MTU3NTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=MotvDcFT-1UmtLPhdIk_HA&_nc_ss=70289&_nc_zt=28&oh=00_AQNdintU2QSGecJobKVlEtVcPtTlvwu973CD0Vnj-Ek-hw&oe=6ADBC9E0"
+   ],
+   "video_cover_image": [
+    "https://scontent-dfw5-1.xx.fbcdn.net/v/t15.5256-10/723331049_1018138534021712_1192846126962213193_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x720&ctp=s1280x720&_nc_cat=105&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=QkKYAPphkCwQ7kNvwFTs4kK&_nc_oc=Adokr1kLkDDUjEvMrAasfiK-ofB74zhgHHmcgHSvLXfoYs7g7w-U1gD8AimyoBI3dEo&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=MotvDcFT-1UmtLPhdIk_HA&_nc_ss=70289&oh=00_AQO8nXFA7rs58v5mmGF8Xk2yO9wiTTzDvBKBeA5qqtM1Iw&oe=6ADBC4CB"
+   ],
+   "durationInSec": [
+    40
+   ],
+   "type": "video",
+   "author_username": "OC Club",
+   "author_user_id": "100064016624177",
+   "author_profile_url": "https://www.facebook.com/occ.egyptpage",
+   "author_avatar": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-1/301576220_460979266045957_3665211302811179050_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1005x1017&ctp=s40x40&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=dzyGGY23YegQ7kNvwFbwR__&_nc_oc=AdqIOpxNRCgY-dj7ke6bswYiRVoh62bkpemtlipOjgrw4Iu90huyPLkCbfv3Q3YWq4U&_nc_zt=24&_nc_ht=scontent-dfw6-2.xx&_nc_gid=MotvDcFT-1UmtLPhdIk_HA&_nc_ss=70289&oh=00_AQNwlyMps0bhgdJnsIDUhovXR7Q_g18uTGwcX9Bbj2Vhfg&oe=6ADBD569",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1335221125444964",
+   "action_id": "ZmVlZGJhY2s6MTIyMjY3MTU4MzE2MTY3MzU0",
+   "text": "مفيش غيره بيجمعنا 🇪🇬\nعلشان كده رفعنا علم مصر على كل عبوات و عربيات ڤي كولا\n\nڤي كولا وطلبات رفعوا علم مصر…\nودلوقتي بننادي على مصر ترفع العلم",
+   "create_time": 1780397248000,
+   "post_url": "https://www.facebook.com/reel/1335221125444964",
+   "like_count": 13771,
+   "comment_count": 188,
+   "share_count": 138,
+   "view_count": 19000000,
+   "reaction_map": [],
+   "play_count": 19000000,
+   "image_list": [],
+   "video_list": [
+    "https://video-arn2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMK-8GhAZmoHrbtKV6zuUGsXIIFfnheZxdxcY_bBokKiIlMUmtvGccCxVOQm72FLW22-8qxeI67oCQj0ePPoQSKVNMlHHOsUg5YNcA.mp4?_nc_cat=108&_nc_sid=9ca052&_nc_ht=video-arn2-1.xx.fbcdn.net&_nc_ohc=CL96dBI0AcAQ7kNvwFaaRNT&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5LWFkc19xOTAiLCJ2aWRlb19pZCI6MTMzNTIyMTEyNTQ0NDk2NCwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MTY2MzEyOTY1NDk5Mzc5NCwiYXNzZXRfYWdlX2RheXMiOjEzOSwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE5LCJiaXRyYXRlIjoxNDg0MTAyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=1fuM2GZfzSFH_TovNfzXIA&_nc_ss=70289&_nc_zt=28&oh=00_AQMoEsE3SNLOX30DJQIUQTMkrcGsbYZnM5eT2isYY0XM0Q&oe=6ADBE9A1"
+   ],
+   "video_cover_image": [
+    "https://scontent-arn2-1.xx.fbcdn.net/v/t15.5256-10/715464099_2084168115497212_5369443927016640716_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=100&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=HO2yE3xyzxIQ7kNvwEXCD9s&_nc_oc=Adou-5590IjZfPBNNLdkNJiMWanwupqt9eSrp5dGC_qOXVeeAHUlPWw0zalwAZB_IFY&_nc_zt=23&_nc_ht=scontent-arn2-1.xx&_nc_gid=1fuM2GZfzSFH_TovNfzXIA&_nc_ss=70289&oh=00_AQN8C8luI1eVWvm_UO_s0b7spiKwsxeLfTCaNJpqXzJxXQ&oe=6ADBCF01"
+   ],
+   "durationInSec": [
+    19.64
+   ],
+   "type": "video",
+   "author_username": "V Super Soda",
+   "author_user_id": "61555020627449",
+   "author_profile_url": "https://www.facebook.com/Vsupersoda",
+   "author_avatar": "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1600x1600&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwGYb27r&_nc_oc=AdoHEDh8DyXiVViGEspStDpFI7nbVtORtZpZdVC40kqmXPInSP6B5jx-RtDRdKmt7y0&_nc_zt=24&_nc_ht=scontent-arn2-1.xx&_nc_gid=1fuM2GZfzSFH_TovNfzXIA&_nc_ss=70289&oh=00_AQMoNCac1nmU1jcNRneXCD8UVWlwJTAXdIIxnqiakXofag&oe=6ADBBEA5",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "746937948479271",
+   "action_id": "ZmVlZGJhY2s6MTIyMjY3MjY4MjkwMTY3MzU0",
+   "text": "من إيد لإيد.. علم مصر بيجمعنا 🇪🇬\nڤي كولا بتنادي على Seoudi Supermarket  يرفعوا العلم!",
+   "create_time": 1780487830000,
+   "post_url": "https://www.facebook.com/reel/746937948479271",
+   "like_count": 87,
+   "comment_count": 38,
+   "share_count": 5,
+   "view_count": 18000,
+   "reaction_map": [],
+   "play_count": 18000,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQNbSRGgHlq5SLRLRIk2PXD1l0MxVi6Ck7zWGKMb9tUlHLi6VKckSPYiS1yig1NGsAG5SqA7dqa7f9QcLR6iPRBedAwOUUKUwjWWc5k.mp4?_nc_cat=107&_nc_sid=9ca052&_nc_ht=video-lga3-2.xx.fbcdn.net&_nc_ohc=_8z_x4uE-eUQ7kNvwG9jRIi&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjo3NDY5Mzc5NDg0NzkyNzEsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE3MTAzNjAxODM2MTUxNzgsImFzc2V0X2FnZV9kYXlzIjoxMzgsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4LCJiaXRyYXRlIjo1NDY2MDgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=BThlQnVNZRU2tP54MZLHEw&_nc_ss=70289&_nc_zt=28&oh=00_AQNaw915p2pDBedVGdG1-AYUw6SIiva9iJUHWxzccSwr4g&oe=6ADBE9A4"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-3.xx.fbcdn.net/v/t15.5256-10/715353832_1004108862304083_358913093379640402_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=106&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=W7tclI4E5yQQ7kNvwFK2RIM&_nc_oc=AdoDpYpNtFQThbde64LzGffrTOxdfiD0TCtXFN5CEliFeRpyi0nnIKypbSi3HeIJbm0&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=BThlQnVNZRU2tP54MZLHEw&_nc_ss=70289&oh=00_AQMHBHGBSxyy3lgxszk1HP2znJSYB3W3W2-4fA1XYEIJCg&oe=6ADBE95A"
+   ],
+   "durationInSec": [
+    8.066
+   ],
+   "type": "video",
+   "author_username": "V Super Soda",
+   "author_user_id": "61555020627449",
+   "author_profile_url": "https://www.facebook.com/Vsupersoda",
+   "author_avatar": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1600x1600&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwE-9kEw&_nc_oc=Adpwi7Bs_eOmtQYd5nlLdlkcIyGCnV3xe1pnPZ9WVfXeGLzGpN9jL99VFNgjWJVjbyg&_nc_zt=24&_nc_ht=scontent-lga3-1.xx&_nc_gid=BThlQnVNZRU2tP54MZLHEw&_nc_ss=70289&oh=00_AQOje75ArbkAx4zTRODuIqgE1x9uLiAguQT65sOOITVxLQ&oe=6ADBBEA5",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "2200926540675422",
+   "action_id": "ZmVlZGJhY2s6MTQ5MTcxNTg5NjMzNDM4MQ==",
+   "text": "بدأت من ڤي كولا،\nو كملت مع سعودي،\nو لحد ما وصلت لزبادو. 🇪🇬\n\nو كان لازم نرد \nو نرفع علم مصر \nعلشان نقف ورا منتخبنا \n\n  انتظروا زبادو في كاس العالم 🏆 🇪🇬",
+   "create_time": 1780998993000,
+   "post_url": "https://www.facebook.com/reel/2200926540675422",
+   "like_count": 6,
+   "comment_count": 1,
+   "share_count": 0,
+   "view_count": 2000,
+   "reaction_map": [],
+   "play_count": 2000,
+   "image_list": [],
+   "video_list": [
+    "https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQMZan_5jNbVUcmgxXYiZnNlxj9GZD3dV-DNOKXlTGjrgVEL_HPzQc4I5LH4fL-ZOxW4c7hD4Yg2hBYhpytxnvDigTFB7wmhtfVJ5rzcb3IOwg.mp4?_nc_cat=105&_nc_sid=9ca052&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=ZjCGagAtI4MQ7kNvwFSVl2E&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoyMjAwOTI2NTQwNjc1NDIyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo0MjAwNjQ2OTYzNTk5MzUzLCJhc3NldF9hZ2VfZGF5cyI6MTMyLCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6OCwiYml0cmF0ZSI6MTU0MTMwOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=klAR5G1FwwBu_ovGA31NGQ&_nc_ss=70289&_nc_zt=28&oh=00_AQMsYEl0hGd8d43H29OfaOHqtJD1PyfdAWiFBzaIHGAW7Q&oe=6ADBC5A7"
+   ],
+   "video_cover_image": [
+    "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/719050499_1317617909809814_1748841040528381948_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=100&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=1dKjC0kMI0cQ7kNvwEhkZhv&_nc_oc=Adoa681t8U0yLg5oy8YCkuve7l5MAbccmuN6pnCYa9cdNKc-HsMHHlgGWTPqkDk5EYs&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=klAR5G1FwwBu_ovGA31NGQ&_nc_ss=70289&oh=00_AQPTPQrJbjj8P2_Roj81D1Y1Z4zHZZERxuEv8qdMgySS8w&oe=6ADBDAC3"
+   ],
+   "durationInSec": [
+    8.458
+   ],
+   "type": "video",
+   "author_username": "Juhayna Zabado - جهينه زبادو",
+   "author_user_id": "100064879532527",
+   "author_profile_url": "https://www.facebook.com/JuhaynaZabado",
+   "author_avatar": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/327352051_729041398947084_1966030541158606834_n.png?stp=c8.0.610.610a_cp0_dst-png&cstp=mx610x610&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=NR53r7FTRRwQ7kNvwEo_Yse&_nc_oc=AdqZEZMWLMkB4bQxPEejsfBLGdwyopymHkTZloMrDJN85AdHpFWK7kq34F2l_0dZXcM&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=klAR5G1FwwBu_ovGA31NGQ&_nc_ss=70289&oh=00_AQM8PC5PauEX1buPSCvZfNQytCFg-XpkI9Sb6IxMN_iSNw&oe=6ADBD2CB",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1688718745742153",
+   "action_id": "ZmVlZGJhY2s6OTkxMzI5OTIzNjE4OTEw",
+   "text": "بدأت من ڤي كولا على الكان، وكبرت مع سعودي على الكيس…\nودلوقتي الدور على سبادز وزبادو.\n\nمن حد لحد، ومن شارع لشارع،\nعلم مصر بيرفرف في كل حتة.\n\nيلا نرفع علم مصر\n \nرقم التسجيل الضريبي: ٢٧٤١٦٩١٩٣\n\nWhat started with V Cola on a can grew bigger with Seoudi on a bag.\nFrom one brand to another.\nFrom one street to the next.\nOne flag, carried further every step of the way.\n\nNow Seoudi is inviting Spuds and Zabado to join in.\n\nLet’s raise Egypt’s flag.\n\nTax Registration Number: 274169193",
+   "create_time": 1780568659000,
+   "post_url": "https://www.facebook.com/reel/1688718745742153",
+   "like_count": 1629,
+   "comment_count": 82,
+   "share_count": 55,
+   "view_count": 201000,
+   "reaction_map": [],
+   "play_count": 201000,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQM48lqztF5rP4pFuTIsGPhnu9hBtqMC4spTAKiFaSji_yF7kkLYPT6Bysf8SYnBPbS2KYB0Fa9_4UxGOLVfQYfR-rHf6b2d19DVQDU.mp4?_nc_cat=103&_nc_sid=9ca052&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=2xQHMHWmjXoQ7kNvwG7Xxcz&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxNjg4NzE4NzQ1NzQyMTUzLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxNTMzODE3NTcxNDIxNzQwLCJhc3NldF9hZ2VfZGF5cyI6MTM3LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6MzEsImJpdHJhdGUiOjIwNDk4NTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=OoWpjluRFjBaxs8lNdsbpA&_nc_ss=70289&_nc_zt=28&oh=00_AQPLuze_Tp7z-tjwnYaZJb2nBalXQzM8YY5KC2R2sCe0xA&oe=6ADBEB4C"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/715830081_1558134792320672_4626502879696971423_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=107&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=3S0oi09aL8MQ7kNvwFKX77k&_nc_oc=Adpe2laUDV2qsbIb2OV6v6sM6nYxYHfsOuvsYetLk8ZvQX4051DtnCtGf60sCK9_9-o&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=OoWpjluRFjBaxs8lNdsbpA&_nc_ss=70289&oh=00_AQNbQyeSzOe1-yoMxCf4QvopIdixWWMEIXPXs-aRSzWjjQ&oe=6ADBE015"
+   ],
+   "durationInSec": [
+    31.133
+   ],
+   "type": "video",
+   "author_username": "Seoudi Supermarket",
+   "author_user_id": "100082257354370",
+   "author_profile_url": "https://www.facebook.com/SeoudiSupermarket",
+   "author_avatar": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/326973754_703327364671016_6795377518126705590_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx707x707&ctp=s40x40&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=SNsBn_AkPSAQ7kNvwH973jD&_nc_oc=Adr-X4fRMYHPMIcBI3L4F0-jg2x_KZlMjUhyOJuMS55UEzRrGswJhLLt-lsG2IqI38Q&_nc_zt=24&_nc_ht=scontent-lga3-1.xx&_nc_gid=OoWpjluRFjBaxs8lNdsbpA&_nc_ss=70289&oh=00_AQOws28dVLJ64jdCh_Ihe471QpeHvM0aSYrvtUFRwzegiQ&oe=6ADBD1B4",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1129137396585759",
+   "action_id": "ZmVlZGJhY2s6MTIyMTM3OTI4Nzc1MDY2MjAz",
+   "text": "سمعت عن عرض الديو ولا لسه 😉\n٢ دابل سماش و ٢ فرايز و ٢ ڤي-كولا بسعر خطير من Four bros 🔥\n\nألحق اطلب دلوقت ومتضيعش الوقت 😎",
+   "create_time": 1792066269000,
+   "post_url": "https://www.facebook.com/reel/1129137396585759",
+   "like_count": 14,
+   "comment_count": 4,
+   "share_count": 0,
+   "view_count": 2000,
+   "reaction_map": [],
+   "play_count": 2000,
+   "image_list": [],
+   "video_list": [
+    "https://video-dfw6-1.xx.fbcdn.net/o1/v/t2/f2/m367/AQP_YbKArJWlq9KZtniGbrxYXLvupNwCTBuu0jbVWzeH7ByVl9N-j9FstN7kRcSZOehs1umwE3NzAT4f2OHMMsPVHseFEpNJfK4M_hw.mp4?_nc_cat=101&_nc_sid=9ca052&_nc_ht=video-dfw6-1.xx.fbcdn.net&_nc_ohc=IQFW9AOMjFMQ7kNvwEyrAaW&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxMTI5MTM3Mzk2NTg1NzU5LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMTMzOTc1MDYyNDQ5NTkxLCJhc3NldF9hZ2VfZGF5cyI6MywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjMxLCJiaXRyYXRlIjoyNTkzODgyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=y3a2gCed_cfLZTvYVe3jbA&_nc_ss=70289&_nc_zt=28&oh=00_AQOe6Gy_W95hyih3rEecRL2cLaxFkv-qshiepPBfOQ3zWg&oe=6ADBDFAA"
+   ],
+   "video_cover_image": [
+    "https://scontent-dfw6-1.xx.fbcdn.net/v/t51.71878-10/848891607_1852958889205898_8991923441081885003_n.jpg?stp=dst-jpg_tt6&cstp=mx640x1136&ctp=s640x1136&_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=iAbxPURsZnQQ7kNvwEyNJ6G&_nc_oc=Adrgoxszxh1CQN7qglLVGyZQoYHxsoOoQyQR4JLV0BVCkIbo0Z0gmukSBt-KQZbfQTs&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&_nc_gid=y3a2gCed_cfLZTvYVe3jbA&_nc_ss=70289&oh=00_AQOzudalelbAmYNjQxWI_BgbDrUsyOVBvEyMbYE7xwjfPg&oe=6ADBBE90"
+   ],
+   "durationInSec": [
+    31.466
+   ],
+   "type": "video",
+   "author_username": "Four Bros Burger",
+   "author_user_id": "61581986098978",
+   "author_profile_url": "https://www.facebook.com/fourbroseg",
+   "author_avatar": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-1/638150497_122118208527066203_3713616179195577275_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1417x1417&ctp=s40x40&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=73Mg2nKGBeAQ7kNvwGbayXE&_nc_oc=Adqx6ly4NZQ1YX8E01smWythoXld7M5L6ansOOKsr7KeoB1NfI6jAhvAcXyVFP8AnqQ&_nc_zt=24&_nc_ht=scontent-dfw6-1.xx&_nc_gid=y3a2gCed_cfLZTvYVe3jbA&_nc_ss=70289&oh=00_AQNebR-yos8Lz8g7YL_RliSrfd0LxAiOdHqNC7GUcILhXg&oe=6ADBC247",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "4492671071011453",
+   "action_id": "ZmVlZGJhY2s6MTIyMTEwNDc1MzE5MjkzMzIz",
+   "text": "كولا... الكلاسيكية بدون تنازلات 🥤😎\n\n#جربها_ماحتغيّرها\n#جو_جرين\nCola... the classic, without compromise 🥤😎\n\n#SwitchUpDontLookBack\u000b\n#GoGreen",
+   "create_time": 1783079993000,
+   "post_url": "https://www.facebook.com/reel/4492671071011453",
+   "like_count": 3587,
+   "comment_count": 3,
+   "share_count": 11,
+   "view_count": 166000,
+   "reaction_map": [],
+   "play_count": 166000,
+   "image_list": [],
+   "video_list": [],
+   "video_cover_image": [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/736857962_1321982093481076_264452828800335104_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=107&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=OKzw6Kn-jvwQ7kNvwGMhTZe&_nc_oc=AdoStrQ9PNuxbYFdsRfbKJNyXseTiqj66aK1CwqrW3xP7gWJXfoKnUeCQmZdmb-QWYU&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=d3eQ_Ao-eOp-f5uP5nTU2Q&_nc_ss=70289&oh=00_AQO9kVlCk4mlDWD1GO2ly086FlXE4JabR9L4a61Z3Np4Zg&oe=6ADBB75E"
+   ],
+   "durationInSec": [
+    16.17
+   ],
+   "type": "video",
+   "author_username": "Green Saudi Arabia",
+   "author_user_id": "61588799690403",
+   "author_profile_url": "https://www.facebook.com/Green.SaudiArabia",
+   "author_avatar": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-1/727572591_122108972619293323_2378995706047055868_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx320x320&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=1zc6JYzUgP4Q7kNvwFOZG70&_nc_oc=Adp_4ttQBpLklA7J1KmOekM3Wbik6NqpH5BuiHAX7zqJSFfd06q2wJEKMmbH8QkOKuw&_nc_zt=24&_nc_ht=scontent-lga3-3.xx&_nc_gid=d3eQ_Ao-eOp-f5uP5nTU2Q&_nc_ss=70289&oh=00_AQPLyaIKWPy2Zufw2UXsZXela4siirhqqNVt7SZf8kPyjA&oe=6ADBC2FB",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "3047587612093946",
+   "action_id": "ZmVlZGJhY2s6MTIyMjY5ODE2NDkwMTY3MzU0",
+   "text": "شجّع مصر مع ڤي كولا وBreadfast 🇪🇬\nأكتر 10 أشخاص هيطلبوا ڤي كولا من Breadfast هيكسبوا:\nG3 Scooter\nPS 5\nJBL \nو جوائز تانية كتير\n\nالعرض ساري من 15 يونيو حتى 27 يونيو.\nتُطبق الشروط والأحكام.\nRegistration Number: 278",
+   "create_time": 1782380194000,
+   "post_url": "https://www.facebook.com/reel/3047587612093946",
+   "like_count": 19,
+   "comment_count": 0,
+   "share_count": 0,
+   "view_count": 1000,
+   "reaction_map": [],
+   "play_count": 1000,
+   "image_list": [],
+   "video_list": [
+    "https://video-atl3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPRMPdjo4YyYcL8oQFh9rt-gTzlR-DaNaBuXjL1xPAtuUPaMjqfDiRjeobAVAUeOT70LsC9zMrgnbM7Q-f43KsCySpUFlHUnsfZEpvEDNS4Pw.mp4?_nc_cat=103&_nc_sid=9ca052&_nc_ht=video-atl3-1.xx.fbcdn.net&_nc_ohc=3YG4Ai1MUzAQ7kNvwHG3rjs&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjozMDQ3NTg3NjEyMDkzOTQ2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyNzI5NjY4MzEzNjY4MzU4NCwiYXNzZXRfYWdlX2RheXMiOjExNiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjI2LCJiaXRyYXRlIjo1NTQyMTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=iD4Y6fOf_w6cfDubzxAITw&_nc_ss=70289&_nc_zt=28&oh=00_AQNQptz7kY-dfBakkstvALiAvN8pFlj_f3HMHD-E7_BoiA&oe=6ADBE15D"
+   ],
+   "video_cover_image": [
+    "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/731365833_1558795209015226_7994475081659400750_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=_e-T6GVPU1cQ7kNvwFeFj-U&_nc_oc=AdrNCh2zgBMMR7vcSF6io_ypRtBiwZtz0hYVdCPhnvFbJjRSTlAC7ZB3HDTpSXNpcVM&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=iD4Y6fOf_w6cfDubzxAITw&_nc_ss=70289&oh=00_AQMaby0m51V5mklA7aFzumNhmecYb4Q_Joqks3_TQh-pLw&oe=6ADBEC58"
+   ],
+   "durationInSec": [
+    26.25
+   ],
+   "type": "video",
+   "author_username": "V Super Soda",
+   "author_user_id": "61555020627449",
+   "author_profile_url": "https://www.facebook.com/Vsupersoda",
+   "author_avatar": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1600x1600&ctp=s40x40&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwH4Gpr9&_nc_oc=AdqGCh5aNzsQxvyVyy7mowConLfmVITS75yyfdmWRlthaAEPdbupXkcgjC_TD73QFh8&_nc_zt=24&_nc_ht=scontent-atl3-1.xx&_nc_gid=iD4Y6fOf_w6cfDubzxAITw&_nc_ss=70289&oh=00_AQOzXGjcaljlBBd0qv-ksKCNdpnLLmKW0KzZ_2OX4e3qWw&oe=6ADBBEA5",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "27796543173349798",
+   "action_id": "ZmVlZGJhY2s6MTY3MzE1MDYzMTQ4NDI1Ng==",
+   "text": "بيتزا وسط من اختيارك + ميلك شيك أو ڤي كولا\nابتداءً من ١٣٠ جنيه بس 🔥\n\nفاضل بس تطلب.\n\nاختار الـMedium اللي على مزاجك، وكملها بالميلك شيك.\n\nبتبدأ من 130 جنيه بس. 🔥",
+   "create_time": 1787224830000,
+   "post_url": "https://www.facebook.com/reel/27796543173349798",
+   "like_count": 52,
+   "comment_count": 0,
+   "share_count": 0,
+   "view_count": 61000,
+   "reaction_map": [],
+   "play_count": 61000,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNfKLv-5Odw-_ZkW4hzAKs0FEPcnEZ9TlfRHGgJuPBIXpRWXJ6iE0QIQQWffYFEih22Cy6IRCLxnSFeW5tvHncUpFHmr33L6n7dbsU.mp4?_nc_cat=103&_nc_sid=9ca052&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=XKM8ZOC0-ckQ7kNvwHepEcw&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5LWFkc19xOTAiLCJ2aWRlb19pZCI6Mjc3OTY1NDMxNzMzNDk3OTgsIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE4MjY4MzU1NzgzNjUyOTAsImFzc2V0X2FnZV9kYXlzIjo2MCwidmlfdXNlY2FzZV9pZCI6MTIzNzMsImR1cmF0aW9uX3MiOjQyLCJiaXRyYXRlIjoxMDI0MTU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=KqwQTqpS_i350g99sNLnIw&_nc_ss=70289&_nc_zt=28&oh=00_AQOSGWVXcR4dlF-XC7Azv-B0aVjJtWm0qlFz0h3j_kA3BQ&oe=6ADBB4B8"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/778485727_27790668783938893_8687753105676796621_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=p960x960&_nc_cat=105&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=FVH3yFev5XMQ7kNvwELw5Cb&_nc_oc=AdqkLyy2RGLzwSDdCjXFAihUTau4JHVCLXVByJswVZm3Fk9w8U2HRFOFjTKB50nBPQM&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=KqwQTqpS_i350g99sNLnIw&_nc_ss=70289&oh=00_AQMQ9g68A3HiQITRm-IDM1hJRg6OHcWH6fPVfJYJxbxYVw&oe=6ADBC6FD"
+   ],
+   "durationInSec": [
+    42.041
+   ],
+   "type": "video",
+   "author_username": "Hi 5 Pizza",
+   "author_user_id": "100063680065330",
+   "author_profile_url": "https://www.facebook.com/Hi5pizzaeg",
+   "author_avatar": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-1/643825440_1511036091029045_292937499397417733_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1200x1200&ctp=s40x40&_nc_cat=102&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=agePTsGzMqgQ7kNvwFO8eYU&_nc_oc=AdqjTBztNqw4Sts3_nFP30nUdab2yxYczGVv_JoCqqChwi9Er7joPrGtAah_68ovA9A&_nc_zt=24&_nc_ht=scontent-lga3-3.xx&_nc_gid=KqwQTqpS_i350g99sNLnIw&_nc_ss=70289&oh=00_AQO66nYUMBCo6oxBGsqAQmV6C8fM7le6w0GecoHf06nMNA&oe=6ADBE30D",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1105899048794210",
+   "action_id": "ZmVlZGJhY2s6MTExMDE3NzU3MTM2ODMxNg==",
+   "text": "صندوق #بيبسي 330مل ب 45 شيكل فقط 🔥",
+   "create_time": 1789218882000,
+   "post_url": "https://www.facebook.com/reel/1105899048794210",
+   "like_count": 337,
+   "comment_count": 10,
+   "share_count": 4,
+   "view_count": 31000,
+   "reaction_map": [],
+   "play_count": 31000,
+   "image_list": [],
+   "video_list": [
+    "https://video-dfw6-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQNl6DYvFl7hDH-_oK8X_OCdj3tYLYn4fZlv0nfup0-7f7tji-tW9jkj41SBXirTZfwB4LcxPE5LSsLa5qUQayegF9u65D_c6dM_D1M.mp4?_nc_cat=108&_nc_sid=9ca052&_nc_ht=video-dfw6-2.xx.fbcdn.net&_nc_ohc=n5Udd0WazWIQ7kNvwFue0K6&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxMTA1ODk5MDQ4Nzk0MjEwLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMDcyOTgyNzg4NzY1NTIwLCJhc3NldF9hZ2VfZGF5cyI6MzYsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxNiwiYml0cmF0ZSI6MTQ0OTQ0NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=3HQ7eQiJboNKuJn3FuMD8Q&_nc_ss=70289&_nc_zt=28&oh=00_AQOgw8lD-jUeATYNPMfNfE04EGwrEKPSQssuzeqKhnpdUg&oe=6ADBD0A5"
+   ],
+   "video_cover_image": [
+    "https://scontent-dfw5-1.xx.fbcdn.net/v/t15.5256-10/806365640_1566340441154242_6797089483580175702_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=106&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=KHRkKraTkQgQ7kNvwGZxqSb&_nc_oc=AdrUeJAvzbpbji3uijB6qzYu5DGh4SJ4kHZ_dwOIf1GS_vsYdXZTcH6f2VKUwmUQlAI&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=3HQ7eQiJboNKuJn3FuMD8Q&_nc_ss=70289&oh=00_AQOgwjIbFP86uen604VxbhvUCqgaCPcUDEM2hsyY91c8jw&oe=6ADBE09C"
+   ],
+   "durationInSec": [
+    16.717
+   ],
+   "type": "video",
+   "author_username": "سوبر ماركت الطيبات Tibat Supr",
+   "author_user_id": "100071282513438",
+   "author_profile_url": "https://www.facebook.com/tibatsuper",
+   "author_avatar": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-1/306994923_194207496298666_1256695491734779164_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1435x1451&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ejfq7V9uXD4Q7kNvwH-KsCS&_nc_oc=Adq4fu3rlnbBdxjBZs1A2aUyN0Qo08GkVL6M_VkzbzgJOSEKS_b5tJmRdNvlR2O2YWM&_nc_zt=24&_nc_ht=scontent-dfw5-1.xx&_nc_gid=3HQ7eQiJboNKuJn3FuMD8Q&_nc_ss=70289&oh=00_AQOp5_oIwkS-J3ifxd1qiYISKG-htTJSj3ZDIeEYgyCkSg&oe=6ADBD710",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1508366414415457",
+   "action_id": "ZmVlZGJhY2s6MTQ5ODkyNjcxODkzNjkzNw==",
+   "text": "ڤي كولا نادت… وأوسكار كان حاضر 🇪🇬❤️\n\nبنقولها من القلب: كلنا هنشجع ونرفع علم مصر، وبنشجع كل منتج مصري 💪✨\n\nOscar × Vcola\nمع بعض نشجع مصر 🇪🇬\n\nVcola called… and Oscar showed up 🇪🇬❤️\n\nFrom the heart, we’re all cheering for Egypt and raising the Egyptian flag, while proudly supporting every Egyptian product 💪✨\n\nOscar × Vcola\nTogether, we cheer for Egypt 🇪🇬\n\n#شجع_مصر  #منتجات_مصرية  #oscar  #vcola  #منتخب_مصر #cheerforegypt #egyptianproducts    #EgyptNationalTeam \n\nTax ID Number: 200-139-495",
+   "create_time": 1781541515000,
+   "post_url": "https://www.facebook.com/reel/1508366414415457",
+   "like_count": 102,
+   "comment_count": 1,
+   "share_count": 6,
+   "view_count": 14000,
+   "reaction_map": [],
+   "play_count": 14000,
+   "image_list": [],
+   "video_list": [
+    "https://video-ord5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMn1ueEZnYoWLFPRtJEVic_6fjiJreoCOqv5uDd1An_MlIyK768fRm-NkwXqaLEpBx4xE_62-8Xgpa4ZkenOSAGasPnaoM7HG3wv3g.mp4?_nc_cat=101&_nc_sid=9ca052&_nc_ht=video-ord5-1.xx.fbcdn.net&_nc_ohc=4RFyD1jkoKYQ7kNvwHcJwQB&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxNTA4MzY2NDE0NDE1NDU3LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo5NDY3MDI2ODUwNzkwNTgsImFzc2V0X2FnZV9kYXlzIjoxMjUsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjoxNCwiYml0cmF0ZSI6MzMzOTE1NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=pHEWNRq0mimL0gTSWIrNJg&_nc_ss=70289&_nc_zt=28&oh=00_AQMMpE0FM9YxYxs6eELKU_fuxU1Mh9H1LgZvGsuT6OXEdg&oe=6ADBDED2"
+   ],
+   "video_cover_image": [
+    "https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/724795142_1622200925534187_2053523942656436511_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=106&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=siGFRbxdmnsQ7kNvwHRS4mO&_nc_oc=AdqU3LpKxXWkTzn2fJ88SR_MqXOzTlP-CwmNBhsLCzglkXymaipHupRb1Z58JV6pLhU&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=pHEWNRq0mimL0gTSWIrNJg&_nc_ss=70289&oh=00_AQMkqtPjL7QhX5a9D835mQqjrbMdVBpHyKrzUvckDfvtgA&oe=6ADBB4AE"
+   ],
+   "durationInSec": [
+    14.556
+   ],
+   "type": "video",
+   "author_username": "Oscar Grand Stores",
+   "author_user_id": "100064588697974",
+   "author_profile_url": "https://www.facebook.com/oscargrandstores",
+   "author_avatar": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/497787310_1135383691957910_1642047746469603358_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx2048x2048&ctp=s40x40&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=wEPuE09zAbsQ7kNvwEUu5dm&_nc_oc=Adq_Uk7YkGPBS9Mpqiv7_Ex0hIE4X1MSkMR40KUwuZ95_Z32nfHE7sXA8APX2qwsGEc&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=pHEWNRq0mimL0gTSWIrNJg&_nc_ss=70289&oh=00_AQN-eAyDx9ojlQTDz8xE0HIBNKJSo3ga3fXGkOrJpC0nsA&oe=6ADBD07D",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1815621246264589",
+   "action_id": "ZmVlZGJhY2s6MTUzMzU4ODQxODc4NjcyMA==",
+   "text": "المطبخ مش بس قطعة ديكور، ده مكان بيعكس راحتك❤️\nوعلشان هو مصنوع بجودة عالية وخامات تعيش، ده بيدينا ثقة كبيرة في كل لحظة تسلم المطبخ لعملائنا 😊\n\nلو عايز تعرف تفاصيل أكتر عن المطابخ اللي بنقدمها أو حابب تشوف تصاميم مختلفة أبعتلنا وهنرد عليكم 📩\n\nوكل أعمالنا بتتنفذ على أيد مهندسين متخصصين من أول مرحلة التصميم لمرحلة التنفيذ والتركيب 😍 \n\nشركتنا بتقدم جميع أنواع خامات ( مطابخ -دريسنج روم -وحدات تي ڤي - وحدات حمام - حوائط ديكور - شبابيك - بديل رخام - بديل خشب )\n\nأحجزي مطبخك وأستفيدي بعروض Ahmed Elnozamy kitchen ابعتلنا رسالة أو كومنت وأحنا هنكلمك 👇 \n\nمع Ahmed Elnozamy kitchen أحلام مطبخك هتبقي حقيقة 💯\n\n- سجل إعجابك بالصفحة وتابعنا علشان توصلك كل العروض 📩\n\n- للتواصل والاستفسارات (مكالمات أو واتساب):\n📲 01273276283\n\n📍العنوان :- المنزلة دقهلية",
+   "create_time": 1788010058000,
+   "post_url": "https://www.facebook.com/reel/1815621246264589",
+   "like_count": 281,
+   "comment_count": 41,
+   "share_count": 9,
+   "view_count": 46000,
+   "reaction_map": [],
+   "play_count": 46000,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQOzay5RqgNC_yuDibhgQwDKMy_L-wE4yXlQ8H_T95BfQ0Ldy4gY8w4F2lYdMMO3SqrgSw9EbwvyNmc_CTCMw-iq5F4SVBchiOwOSIM.mp4?_nc_cat=106&_nc_sid=9ca052&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=ALuKTM9HxCEQ7kNvwH2UEat&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxODE1NjIxMjQ2MjY0NTg5LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxNTY1Njc4MjQ4NTczNjk2LCJhc3NldF9hZ2VfZGF5cyI6NTAsInZpX3VzZWNhc2VfaWQiOjEyMzczLCJkdXJhdGlvbl9zIjo2OSwiYml0cmF0ZSI6MjIzNzU1NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Qps7YDWu-1NFtskFpI6u9w&_nc_ss=70289&_nc_zt=28&oh=00_AQN6uFD3XC16QO7avWI6jKSqkTRsf0m-HVQ7wbDoSFOIMQ&oe=6ADBD9CF"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/788259205_1762325268341080_3027922392617913707_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=111&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=cEvKmLpEteMQ7kNvwEDY9HY&_nc_oc=AdqPaDxxp9UjRGBddrHajdO9-NZvaPCbyo0oB8PIqBu7rduNByQwQ5BySLQUDfQdoF8&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=Qps7YDWu-1NFtskFpI6u9w&_nc_ss=70289&oh=00_AQMizmcMlDFpquJZAUA3kvAL-fzjQ70eNDXqPRNlsPOYyg&oe=6ADBDC3B"
+   ],
+   "durationInSec": [
+    69.2
+   ],
+   "type": "video",
+   "author_username": "Nozamytall kitchen Ahmed elnozamy",
+   "author_user_id": "100064067282034",
+   "author_profile_url": "https://www.facebook.com/people/Nozamytall-kitchen-Ahmed-elnozamy/100064067282034/",
+   "author_avatar": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/308422069_466405158838390_7133562817720560634_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx959x959&ctp=s40x40&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=hMSWVadQp8oQ7kNvwGgKXW-&_nc_oc=AdrQP0636DcBmiBxfVNCmvUbGNQLeAS9kRx3b3i2TY9Q3cGShBPrHclyTIxnJvJAtCM&_nc_zt=24&_nc_ht=scontent-lga3-1.xx&_nc_gid=Qps7YDWu-1NFtskFpI6u9w&_nc_ss=70289&oh=00_AQNHvj2wJJiTLrChMeEz6412FLd-UaKDSdcPn63XPQa9FA&oe=6ADBB72C",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1680170363630176",
+   "action_id": "ZmVlZGJhY2s6MTIyMjYxODI3NTAyMDU2OTcw",
+   "text": "\"السي ڤي مجرد تفاصيل.. الأهم إنو الضيافة عجبتني 🌚✨.. مين بتعرفوا بيجرؤ يعملها بمقابلة الشغل؟\"\n#صباغ_فود # يوميات_موظف\n📞 للطلب والتواصل: 0933305571",
+   "create_time": 1791657692000,
+   "post_url": "https://www.facebook.com/reel/1680170363630176",
+   "like_count": 26,
+   "comment_count": 5,
+   "share_count": 0,
+   "view_count": 1000,
+   "reaction_map": [],
+   "play_count": 1000,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-3.xx.fbcdn.net/o1/v/t2/f2/m366/AQNTKpx72cq-m0CF9owNgENRSR6p0sNIr_OFySS9mV__1fnvALsrMxfaDEid7CHd4IHXPqZkailN9l0TfjoeVfF_6mMenTY3uSn49U_PkuWmJQ.mp4?_nc_cat=108&_nc_sid=9ca052&_nc_ht=video-lga3-3.xx.fbcdn.net&_nc_ohc=YbMWZb8f94oQ7kNvwH0kkol&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxNjgwMTcwMzYzNjMwMTc2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxMDkyMzg4MjY2OTgzMTAyLCJhc3NldF9hZ2VfZGF5cyI6OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjIyLCJiaXRyYXRlIjo4NjA4MDMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=xkxGBUbAuFHJUJ90xW3CIw&_nc_ss=70289&_nc_zt=28&oh=00_AQO71AB0_99z8oxmLG8RxS6GuG_dD53S2Zffvf9Gz36OKQ&oe=6ADBD814"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t15.5256-10/842101628_2146871979589875_3793621289747564765_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s720x1280&_nc_cat=110&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=ZSmrtT6QrPQQ7kNvwH5ehWI&_nc_oc=Adoog9e6wSIAKia2LTTM9C4Nflj_CJZjRseWkyo4WQHc4w9B0qK9Fc-Cau4FwOecIdk&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=xkxGBUbAuFHJUJ90xW3CIw&_nc_ss=70289&oh=00_AQN0zmeD3v-L1pPXMGa-xE4lpDLGi-Yu-FPy-zg-UcZ-AQ&oe=6ADBEADA"
+   ],
+   "durationInSec": [
+    22.337
+   ],
+   "type": "video",
+   "author_username": "Sabbagh Food ",
+   "author_user_id": "61551709118224",
+   "author_profile_url": "https://www.facebook.com/people/Sabbagh-Food/61551709118224/",
+   "author_avatar": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/490532725_122203968896056970_6937285013281398582_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx1120x1120&ctp=s40x40&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=PFA7WqY7MKcQ7kNvwHmR_2u&_nc_oc=AdqNeBWsD1IrV6yM1sGvs8pBigD9eV21eDTnXgeUrhyUt5vvTwYZA1ytX4rfhigAD8k&_nc_zt=24&_nc_ht=scontent-lga3-1.xx&_nc_gid=xkxGBUbAuFHJUJ90xW3CIw&_nc_ss=70289&oh=00_AQPmlizcex6_GtYxCq78mgUoTJSHOc5IlWiopy5x0IBWDg&oe=6ADBD735",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1960539891219242",
+   "action_id": "ZmVlZGJhY2s6MTIyMTA4MjA0MDc4ODgxMTQ5",
+   "text": "🔥 لما الشاورما تبقى تجربة مش مجرد أكلة … يبقى لازم تختار الصح\n\nدلوقتي عندك 3 عروض تقيلة معمولين عشان يشبعوك ويكسبوك الطعم الحقيقي 👇\n\n🥙 العرض الأول\nساندوتش شاورما سوري + بطاطس + بيج كولا + طحينة + ثومية + مخلل + كاتشب\nكل ده بـ 95 جنيه بس ! 😍\n\n🥙 العرض التاني\n2 ساندوتش شاورما عادي + ڤي كولا + طحينة + ثومية + مخلل + كاتشب\nوجبة تشبعك وتظبط مزاجك بـ 160 جنيه 😍\n\n🧀 العرض الثالث ( لعشاق الجبنة و الفخامة ) 🔥\nشاورما نابلسي بالموتزريلا + ڤي كولا + سلطة ذرة مايونيز + سلطة تركي + مخلل + كاتشب\nتجربة تقيلة بـ 185 جنيه بس 😍\n\n⏳ العرض لفترة محدودة\n📲 اطلب دلوقتي واستلم أسرع من ما تتخيل\n\nالعنوان📍\nمدينة نصر - ٢٤ شارع طرابلس متفرع من عباس العقاد \nللاستفسار والطلب : \n☎️ 01030750361 ☎️⁩⁩⁩⁩",
+   "create_time": 1777049253000,
+   "post_url": "https://www.facebook.com/reel/1960539891219242",
+   "like_count": 21,
+   "comment_count": 2,
+   "share_count": 3,
+   "view_count": 0,
+   "reaction_map": [],
+   "play_count": 0,
+   "image_list": [],
+   "video_list": [
+    "https://video-dfw6-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMrbR67GZ1RgbbObwxSZ9SZCQ-hrzbyD9jxnLAEc7OAMUbfnWCu9hV_GTv5kjnAP14tIVf0qQmFpzr2ptQJOio1l8kD74RusajtK1sM0HaR3A.mp4?_nc_cat=103&_nc_sid=9ca052&_nc_ht=video-dfw6-1.xx.fbcdn.net&_nc_ohc=PYzNm-nlyNsQ7kNvwFq7ats&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjoxOTYwNTM5ODkxMjE5MjQyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjo3NTg2NjE1MjcyMTU1NTksImFzc2V0X2FnZV9kYXlzIjoxNzcsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo1MywiYml0cmF0ZSI6MTQxNzg1MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=78hf1OvR5M2VQNsS_H5Wng&_nc_ss=70289&_nc_zt=28&oh=00_AQNvFeigc9ila4ifuG8Fslqo5q1HrCagCe2p0VLy_IY5PA&oe=6ADBB785"
+   ],
+   "video_cover_image": [
+    "https://scontent-dfw6-1.xx.fbcdn.net/v/t15.5256-10/674575879_3716684601818173_8785144881191939888_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=101&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=QtiQYfXP1RgQ7kNvwG0TTVy&_nc_oc=AdoPqRE4BScRtBiIl3Zbi5DwPkko11HP51ty8VCxs2jXt0pB9a_Mt_s3OQjwk8KnlnU&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&_nc_gid=78hf1OvR5M2VQNsS_H5Wng&_nc_ss=70289&oh=00_AQMFrNJKABV7uGDK6bLN056P1x-kd_9JTDD5jLARMoVpgw&oe=6ADBCFA5"
+   ],
+   "durationInSec": [
+    53.933
+   ],
+   "type": "video",
+   "author_username": "مطعم الأمراء ",
+   "author_user_id": "61576434476689",
+   "author_profile_url": "https://www.facebook.com/people/%D9%85%D8%B7%D8%B9%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D8%A7%D8%A1/61576434476689/",
+   "author_avatar": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-1/655004311_26483700657932055_4315169187340473399_n.jpg?stp=c0.0.1434.1434a_cp0_dst-jpg_tt6&cstp=mx1434x1434&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=FDaUTuherr4Q7kNvwEsvmYo&_nc_oc=AdoD81ASmwflyKRLPuR29opQXwfmWQN_eKceNixLHED_OUrdRF0qIaWhgn5kULGj5tI&_nc_zt=24&_nc_ht=scontent-dfw5-2.xx&_nc_gid=78hf1OvR5M2VQNsS_H5Wng&_nc_ss=70289&oh=00_AQMartxO74QXKDsaXLIr5aHj-YEt62Zr45XLPUgKszEBcw&oe=6ADBC7E6",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "26689177420716651",
+   "action_id": "ZmVlZGJhY2s6MjUyMjY2MDQ0MTQ3ODkzOQ==",
+   "text": "🌟شبلو مدلع كل حبايبه💃💃\n🌟ركز ف التفاصيل وبص على الجمال 🥵\n🌟شبلو حاسس بيك و عملك عروض مش هتلاقي زيها في مكان تانى 😘😘\nالكريبات عندنا في #شبلو بتتكلم عن نفسها 😎\n🌟العرض الاول كريب نص كيلو+ كريب نوتيلا هديه ❤️‍🔥\n🌟 العرض التاني كريب ميكس دروب من #شبلو معاه فرايز و ڤي كولا هديه 🥰\n🌟العرض التالت اشتري  اي 2 كريب من اختيارك + كريب بانيه هديه 🔥\nيلا مستني ايه اطلبنا دلوقتي كومنت نبعتلك المنيو و تفاصيل العروض\n📌العنوان : طنطا - الصاغه أمام صالون عثمان \n📌 كومنت و نبعتلك المنيو\n🏎️ ديلفري :01009291565-01212656871\n#شبلو  دوق هتدوب 🔥😋",
+   "create_time": 1777418900000,
+   "post_url": "https://www.facebook.com/reel/26689177420716651",
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "view_count": 0,
+   "reaction_map": [],
+   "play_count": 0,
+   "image_list": [],
+   "video_list": [],
+   "video_cover_image": [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t15.5256-10/681884065_1514496013667700_3876445341611011337_n.jpg?stp=dst-jpg_tt6&cstp=mx848x478&ctp=s848x478&_nc_cat=100&ccb=1-7&_nc_sid=117846&_nc_ohc=zYD4nG4sk4AQ7kNvwHeT4Lq&_nc_oc=Ado66FpllZgyHzGDzUdEC5tUyrycLiWgQvVRvCSnJiqZid4-3l--M1YsJ40KP8veMnE&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=zzlU3Z6rNYv2jixrnRsT9Q&_nc_ss=70289&oh=00_AQOQntKHC3O1AL2pKJWiEP2NTgNHKmaZcUOe3P2_I5nADQ&oe=6ADBDB98"
+   ],
+   "durationInSec": [
+    16.533
+   ],
+   "type": "video",
+   "author_username": "Omar Asaid",
+   "author_user_id": "100007466981157",
+   "author_profile_url": "https://www.facebook.com/ana.kemo.5243817",
+   "author_avatar": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-1/331573525_586562653370669_4307914761138469902_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx954x960&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=hssaoLqZ4ukQ7kNvwFWuM-b&_nc_oc=AdpeYS45hI52JsvX35WLxa8dpCreVI-etFZl73cxfNPeI7h9G4ZCvKzzXDVo0iLJAAg&_nc_zt=24&_nc_ht=scontent-lga3-3.xx&_nc_gid=zzlU3Z6rNYv2jixrnRsT9Q&_nc_ss=70289&oh=00_AQP-WisoHe7jNMMmuT5Ekmj7DEHhzJcN-eRmVm8q2o7TUw&oe=6ADBCBFD",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "3767104270098092",
+   "action_id": "ZmVlZGJhY2s6MzYyNjcxMjU5MzI5MDI2MDI=",
+   "text": "🌟شبلو مدلع كل حبايبه💃💃\n🌟ركز ف التفاصيل وبص على الجمال 🥵\n🌟شبلو حاسس بيك و عملك عروض مش هتلاقي زيها في مكان تانى 😘😘\nالكريبات عندنا في #شبلو بتتكلم عن نفسها 😎\n🌟العرض الاول كريب نص كيلو+ كريب نوتيلا هديه ❤️‍🔥\n🌟 العرض التاني كريب ميكس دروب من #شبلو معاه فرايز و ڤي كولا هديه 🥰\n🌟العرض التالت اشتري  اي 3 كريب من اختيارك + كريب بانيه هديه 🔥\nيلا مستني ايه اطلبنا دلوقتي كومنت نبعتلك المنيو و تفاصيل العروض\n📌العنوان : طنطا - الصاغه أمام صالون عثمان \n📌 كومنت و نبعتلك المنيو\n🏎️ ديلفري :01009291565-01212656871\n#شبلو  دوق هتدوب 🔥😋",
+   "create_time": 1781232809000,
+   "post_url": "https://www.facebook.com/reel/3767104270098092",
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "view_count": 0,
+   "reaction_map": [],
+   "play_count": 0,
+   "image_list": [],
+   "video_list": [],
+   "video_cover_image": [
+    "https://scontent-dfw5-1.xx.fbcdn.net/v/t15.5256-10/721309654_866511576501963_766096646187814661_n.jpg?stp=dst-jpg_tt6&cstp=mx848x480&ctp=s848x480&_nc_cat=111&ccb=1-7&_nc_sid=117846&_nc_ohc=rdkTtRbLbL0Q7kNvwFAUjSf&_nc_oc=AdrVO2B7h9fPBGpZXmtb-3tOWJjqCe_IbEQGfV1xvyETuu6C75LoPvIqifYWqmjSm7A&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=OLw8aR7SHfJRtniV5Au1dA&_nc_ss=70289&oh=00_AQOhF-nHQE8yAjGcrmv7IwB77JmtAkpX9dKMMC2uJD579g&oe=6ADBD868"
+   ],
+   "durationInSec": [
+    16.556
+   ],
+   "type": "video",
+   "author_username": "Omar Asaid",
+   "author_user_id": "100007466981157",
+   "author_profile_url": "https://www.facebook.com/ana.kemo.5243817",
+   "author_avatar": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-1/331573525_586562653370669_4307914761138469902_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx954x960&ctp=s40x40&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=hssaoLqZ4ukQ7kNvwGO2azR&_nc_oc=Adq5u0EjDuRMD5SinR7u-PhMHxulOXslDueTAczXgHUk8A_cUaBDZPpemNWrVhT0kaM&_nc_zt=24&_nc_ht=scontent-dfw5-2.xx&_nc_gid=OLw8aR7SHfJRtniV5Au1dA&_nc_ss=70289&oh=00_AQM73eoZz_VjduZNPb46Yd_xWmuixRlbdmSefMdNod17vA&oe=6ADBCBFD",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "1034485352955526",
+   "action_id": "ZmVlZGJhY2s6MTM3ODU5NDc0Nzc3Njk4Mw==",
+   "text": "تبي توفر 389 ريال ؟؟ \nعروض اليوم الوطني من ڤي شيب وصلت التطبيق 🤍🇸🇦\nحمل التطبيق واختار باقتك وابدأ اشتراكك اليوم 👏🏻👏🏻",
+   "create_time": 1790329924000,
+   "post_url": "https://www.facebook.com/reel/1034485352955526",
+   "like_count": 2,
+   "comment_count": 0,
+   "share_count": 0,
+   "view_count": 0,
+   "reaction_map": [],
+   "play_count": 0,
+   "image_list": [],
+   "video_list": [
+    "https://video-lga3-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOc5rcCz0j5B5C1UaWc7UH36CVqQODipyHxLwqh5eNlsAZPM2GZIhJEE9v13pUoi1tJLtsGiS_K4D2YMeh-Zz9UDi0lzF3Cpq8CIsY.mp4?_nc_cat=111&_nc_sid=9ca052&_nc_ht=video-lga3-1.xx.fbcdn.net&_nc_ohc=NbaCWMgeqKYQ7kNvwFlMi2G&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5X3E5MCIsInZpZGVvX2lkIjoxMDM0NDg1MzUyOTU1NTI2LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoxODY4NDM4MTA3NjQ4MTExLCJhc3NldF9hZ2VfZGF5cyI6MjQsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjoyNSwiYml0cmF0ZSI6MjgxNjA0NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=a3vud2XxntyXznSfBeZ_eQ&_nc_ss=70289&_nc_zt=28&oh=00_AQMxbA9hymC8KDYjJv6AWe92WvQslaWjBA76omDysyKSzw&oe=6ADBB478"
+   ],
+   "video_cover_image": [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t51.71878-10/820431641_1068527752633033_8145718718697749992_n.jpg?stp=dst-jpg_tt6&cstp=mx640x1136&ctp=s640x1136&_nc_cat=101&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Pt7PsSvNLgsQ7kNvwGL1qac&_nc_oc=AdpNwZc_CiZvhLf2ci09Kp_yXoOsn-gU9WtzFC4g10pyzyZZgkdvUGamK4UCUjNIJ2E&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=a3vud2XxntyXznSfBeZ_eQ&_nc_ss=70289&oh=00_AQNRk-a8Ct91SAupgfIsTBiQe0D8w6W0RWuK9XvXwz1gcQ&oe=6ADBB927"
+   ],
+   "durationInSec": [
+    25.401
+   ],
+   "type": "video",
+   "author_username": "V.shape",
+   "author_user_id": "100068794128365",
+   "author_profile_url": "https://www.facebook.com/people/Vshape/100068794128365/",
+   "author_avatar": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-1/277783608_282952954007840_13286714019404888_n.png?stp=cp0_dst-png&cstp=mx1290x1290&ctp=s40x40&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=a2gZwOMwu-QQ7kNvwFsdpL9&_nc_oc=AdoumKgGT1taCIt59yacDgvBIIdUNsQ7r5CMhHVpADY6bx5h0jmzF4icrVduBatj-F4&_nc_zt=24&_nc_ht=scontent-lga3-3.xx&_nc_gid=a3vud2XxntyXznSfBeZ_eQ&_nc_ss=70289&oh=00_AQONeLXIlcelrQdQXrG0Hw53R_Rds16I_TAvwARWQO0k8w&oe=6ADBE97D",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "3462233043948904",
+   "action_id": "ZmVlZGJhY2s6MTEyMTY2MzI2NzEzNjA1OQ==",
+   "text": "⚡ **تخيّل لو علبة ڤي كولا قدرت تغيّر مودك في ثانية! 🥤🔥**\n\nمن لحظة عادية في المكتب… لعالم مليان انتعاش وطاقة! 🌊🍋\n\nإعلان إبداعي لمنتج **V Cola**، بفكرة سينمائية وتنفيذ بالذكاء الاصطناعي، من أول المشاهد لحد ظهور المنتج بشكل يخطف العين. 🎬✨\n\n**V Cola… افتحها، وانتعش، وغيّر مودك! 💚**\n\n🎨 بتحب تشوف منتجك في إعلان مختلف ومش تقليدي؟\nأنا بقدّم أفكار إعلانية وتصميمات ومحتوى بصري يساعد البراند بتاعك يلفت الانتباه.\n\n📩 ابعتلي رسالة ونحوّل فكرتك لإعلان يستحق المشاهدة!\n\n#VCola #AICommercial #AIAds #إعلانات_بالذكاء_الاصطناعي #موشن_جرافيك #صناعة_الإعلانات",
+   "create_time": 1791564254000,
+   "post_url": "https://www.facebook.com/reel/3462233043948904",
+   "like_count": 14,
+   "comment_count": 12,
+   "share_count": 0,
+   "view_count": 0,
+   "reaction_map": [],
+   "play_count": 0,
+   "image_list": [],
+   "video_list": [
+    "https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m367/AQPHqm_m6IB6y5IzYb4c4XOEwllVAwl4U_bzpAsJR9YZLSQ96J-DwRtTHO9NhMDJ2CZc12gVqAL-Ojc3-rTfNE4wKaBrsXwmuoShanv6lNRNAg.mp4?_nc_cat=110&_nc_sid=9ca052&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=2IFT6-QNhwkQ7kNvwEEEWze&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfNzIwcCIsInZpZGVvX2lkIjozNDYyMjMzMDQzOTQ4OTA0LCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyMjMwNzMwMjAxMTk3Njk0LCJhc3NldF9hZ2VfZGF5cyI6OSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjMwLCJiaXRyYXRlIjoxNzY0NzgyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=_leWNbN-sFjWu-6uLgswBQ&_nc_ss=70289&_nc_zt=28&oh=00_AQPoESyjVNWW59eXlKMhtMISTBL2fsEDTHqx1ErugHh3qQ&oe=6ADBCD86"
+   ],
+   "video_cover_image": [
+    "https://scontent-ord5-2.xx.fbcdn.net/v/t51.71878-10/841903563_3966936683614736_2039823152163430176_n.jpg?stp=dst-jpg_tt6&cstp=mx640x1136&ctp=s640x1136&_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=ED1_SReEv0UQ7kNvwEah_t3&_nc_oc=Ado9UPGpBNhPFzsBsOCirzLZcMLKgqzfnDiXKM7tcQr16VcBSLvUVddIRbsPcv9mWBE&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=_leWNbN-sFjWu-6uLgswBQ&_nc_ss=70289&oh=00_AQNZZy_Fd7JA3jgAsacyG-Co10KDLyd8EtUX9yzW9FlpjA&oe=6ADBCC12"
+   ],
+   "durationInSec": [
+    30.293
+   ],
+   "type": "video",
+   "author_username": "Amr Ezz El Arab",
+   "author_user_id": "100078771871473",
+   "author_profile_url": "https://www.facebook.com/amr.ezz.el.arab.2025",
+   "author_avatar": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/581002845_848556151113440_5979628521768116701_n.jpg?stp=c179.25.1667.1667a_cp0_dst-jpg_tt6&cstp=mx1667x1667&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=-XzVqkFNrY4Q7kNvwG5z710&_nc_oc=AdqWZx5SE-L4XMl5Crq3cZp9Y8dmcDdmdJxvR-SCGi24d7OlRaCwDCZIk7B5xa4p7o8&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=_leWNbN-sFjWu-6uLgswBQ&_nc_ss=70289&oh=00_AQMxn4UCDE9P4KCwvTIw2u3tRHPGERKX-rU5QZvtY0mP-w&oe=6ADBC508",
+   "comments": []
+  },
+  {
+   "author": null,
+   "post_id": "27802049832795839",
+   "action_id": "ZmVlZGJhY2s6MTIyMjM0OTY3MDMyMzIyNzg1",
+   "text": "🔥 السوبر سماش رجع يفكّركم بنفسه! 🍔\n\nوبـ 130 جنيه بس 😮‍💨🔥\nتاخد:\n🍔 سماش سنجل\n🥗 كولسلو\n🍟 باكيت بطاطس\n🥤 ڤي كولا\n\nوجبة كاملة تشبعك وتظبط مزاجك…\nكل ده بـ 130 جنيه بس! ❤️‍🔥\n\nلو لسه مجربتش السوبر سماش، دي إشارتك 👀🔥\n\n📍 مدينة 15 مايو – مجاورة 36 – السوق التجاري\nبجوار أسواق الوليد",
+   "create_time": 1786363764000,
+   "post_url": "https://www.facebook.com/reel/27802049832795839",
+   "like_count": 114,
+   "comment_count": 11,
+   "share_count": 0,
+   "view_count": 0,
+   "reaction_map": [],
+   "play_count": 0,
+   "image_list": [],
+   "video_list": [
+    "https://video-ord5-2.xx.fbcdn.net/o1/v/t2/f2/m366/AQNqkU40nBF9yFyMnoS0qiQSNDJPe7wygUbyog02h-I6hXAtgA9XLn-b6tpD-l9GFbiuxXrNyx02czsY1kwhvRjL2EHyDuWlOlcWbY8.mp4?_nc_cat=103&_nc_sid=9ca052&_nc_ht=video-ord5-2.xx.fbcdn.net&_nc_ohc=Q71syQn8FDEQ7kNvwH9SzF8&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJhdjEtcjFnZW4ydnA5LWFkc19xOTAiLCJ2aWRlb19pZCI6Mjc4MDIwNDk4MzI3OTU4MzksIm9pbF91cmxnZW5fYXBwX2lkIjowLCJjbGllbnRfbmFtZSI6InVua25vd24iLCJ4cHZfYXNzZXRfaWQiOjE5OTExMDUyMjE1MzgwNTksImFzc2V0X2FnZV9kYXlzIjo2OSwidmlfdXNlY2FzZV9pZCI6MTIzNzMsImR1cmF0aW9uX3MiOjM1LCJiaXRyYXRlIjoyMTc3Mjc5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=GVKa0jjlDoFufm_8gumLGg&_nc_ss=70289&_nc_zt=28&oh=00_AQPJrgu1pUVuA5eOM2aYR5jrEp9lOqEGJqW9WkTgrsCIng&oe=6ADBE268"
+   ],
+   "video_cover_image": [
+    "https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/770584584_1070074715409353_6385938288486533052_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=p960x960&_nc_cat=108&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=4ToQxTDhJrsQ7kNvwH_BZAz&_nc_oc=AdrHB6WYyLpSinRAStb15OEkgHwFG7XrgN9fQbrjRhmjns1XJni_nqUZwxN7gvLBfQQ&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=GVKa0jjlDoFufm_8gumLGg&_nc_ss=70289&oh=00_AQPHuqdEMc8tzlR8ETUdOoRHNwjJ3DW0t_PpOpFgsjz6mA&oe=6ADBD622"
+   ],
+   "durationInSec": [
+    35.2
+   ],
+   "type": "video",
+   "author_username": "Sizzle Fried Chicken & Burger",
+   "author_user_id": "61559683555212",
+   "author_profile_url": "https://www.facebook.com/SizzleFriedChickenandBurger",
+   "author_avatar": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/693634868_122224947326322785_7455246474614004343_n.jpg?stp=cp0_dst-jpg_tt6&cstp=mx421x421&ctp=s40x40&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=strWIjIChokQ7kNvwGsfmEk&_nc_oc=Adqj8yzL90DEMFrS27EGEP8CCbjyA8uGZMWe2dTl52jZKQ_nRpMB5oOJU3RHShJS2h8&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=GVKa0jjlDoFufm_8gumLGg&_nc_ss=70289&oh=00_AQPkiVO0Id07u0SnIDnzVCN3aCJveo-aD55YzGZnTq0MXA&oe=6ADBD135",
+   "comments": []
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "input": {
+  "startUrls": [
+   "https://www.instagram.com/reels/audio/27762052746747139/",
+   "https://www.instagram.com/reels/audio/40046659618266325/"
+  ],
+  "maxItems": 20
+ },
+ "cap_usd": 0.1,
+ "run": {
+  "id": "0XEvH9nRuzreiOy3o",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T02:12:52.407Z",
+  "finishedAt": "2026-10-19T02:12:58.208Z",
+  "chargedEventCounts": {
+   "dataset-item": 0,
+   "audio-query": 2,
+   "user-query": 0,
+   "location-query": 0,
+   "tag-query": 0,
+   "single-item-query": 0,
+   "story-query": 0
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.01,
+ "items": [
+  {
+   "inputSource": "https://www.instagram.com/reels/audio/40046659618266325/",
+   "type": "post",
+   "id": "4005530262158925867",
+   "code": "DeWgI0dD2Ar",
+   "url": "https://www.instagram.com/p/DeWgI0dD2Ar/",
+   "createdAt": "2026-10-11T11:01:16.000Z",
+   "likeCount": 1941,
+   "commentCount": 80,
+   "isAvailable": true,
+   "caption": "V Orange is here 🍊 !برتقان أوي بقى",
+   "isLikeAndViewCountsDisabled": false,
+   "isPinned": true,
+   "isPaidPartnership": false,
+   "owner": {
+    "id": "63898967344",
+    "username": "vsupersoda",
+    "fullName": "VSuperSoda",
+    "profilePicUrl": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-19/742243822_17962853235135345_7032718141705365647_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gEX8FNGtbUr7k7YnRGwXm9AarS3MLonBiqscm4qufhozYlsvRoEvAnH2KRINWHYQpU&_nc_ohc=-MH16HpT2B4Q7kNvwGQymIO&_nc_gid=ZVdQ6tDKbiA9tFsbbqZYUg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=GO69PSxxkzuuHtE-AI8oy5HjO5lhbmNDAQAB1501500j-ccb7-5&oh=00_AQP7XaTCnnqn-RPP0JK8xZT3APw0S-D2kEpKSFpoqy0Edg&oe=6ADB37F8&_nc_sid=10d13b",
+    "isPrivate": false,
+    "isVerified": true
+   },
+   "coowners": [
+    {
+     "id": "53424513137",
+     "username": "v7egypt",
+     "fullName": "V7",
+     "profilePicUrl": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-19/741475297_18057124319777138_8720484173555272400_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MDkuYzIifQ&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gEX8FNGtbUr7k7YnRGwXm9AarS3MLonBiqscm4qufhozYlsvRoEvAnH2KRINWHYQpU&_nc_ohc=QUL9e0LCxn0Q7kNvwGuBzuK&_nc_gid=ZVdQ6tDKbiA9tFsbbqZYUg&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=GOEDMixy0b7g2yZAANCKLRonYgV5bmNDAQAB1501500j-ccb7-5&oh=00_AQObSCP6sFxdrfQI9Kp_BtB0Uw-gvP7E-J6nxdz7qKM4sQ&oe=6ADB5504&_nc_sid=10d13b",
+     "isPrivate": false,
+     "isVerified": true
+    }
+   ],
+   "location": null,
+   "isCarousel": false,
+   "isVideo": true,
+   "video": {
+    "id": "17977084014135345v",
+    "url": "https://scontent-arn2-1.cdninstagram.com/o1/v/t2/f2/m86/AQPXVkGFCD_HBnQh7m6d5Tzz4kCq4FMj2BkXla8k4AUKNoDdNOoTrq4MwCLcWpQqzpMzZUC3UM4jOQdU7tplw9fVuTdoFWib59tlpGg.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_ohc=1o5L92uXf_UQ7kNvwEkRPMB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQUQuQzIuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NzcwODM2OTAxMzUzNDUsImFzc2V0X2FnZV9kYXlzIjo3LCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6NDcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=b2e5a916207c6057&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85RUFDRTQ2MzVBNTk0RjI3OUQzN0Q3MDgzQzAxOTI5MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzlEQTkxMzc0QzMyMzRERUU5RkQ4NERGQ0Y2RjY5REFCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbivJX3_oPvPxUCKAJDMiwXQEeAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdfAHZazBAQA&_nc_gid=ZVdQ6tDKbiA9tFsbbqZYUg&_nc_ss=7c3ba&_nc_zt=28&oh=00_AQMILOt6Jazo-mGGPv0vCKsXeF7ZHQabQUezoZCNnnH5Ig&oe=6AD75458",
+    "width": 720,
+    "height": 1280,
+    "duration": 47.018,
+    "playCount": 990756,
+    "igPlayCount": 994719,
+    "fbPlayCount": 0
+   },
+   "image": {
+    "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/843353492_17977084026135345_6605824369294706268_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=101&ig_cache_key=NDAwNTUzMDI2MjE1ODkyNTg2NzE3OTc3MDg0MDIzMTM1MzQ1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzIifQ%3D%3D&_nc_ohc=VxrFRYKm0bsQ7kNvwE-gPjA&_nc_oc=AdrZZYeFa01Vm0ky6TKQbUZ0Z2XjeINFHx9UoxYZUDEmY3oqBJpX0a1GZZtmjXuG4Dk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=ZVdQ6tDKbiA9tFsbbqZYUg&_nc_ss=7c3ba&oh=00_AQMhv23z1zMxdV8AyOS3QZ04sSLHOQg6rQQjJWwh3QlxDg&oe=6ADB3502",
+    "width": 360,
+    "height": 640
+   },
+   "audio": null
+  },
+  {
+   "inputSource": "https://www.instagram.com/reels/audio/27762052746747139/",
+   "type": "post",
+   "id": "3957716885305505391",
+   "code": "DbsoonOMzZv",
+   "url": "https://www.instagram.com/p/DbsoonOMzZv/",
+   "createdAt": "2026-08-06T11:45:57.000Z",
+   "likeCount": 4534,
+   "commentCount": 197,
+   "isAvailable": true,
+   "caption": "Say hello to our NEW Summer Edition, V7 Cream Soda is here!",
+   "isLikeAndViewCountsDisabled": false,
+   "isPinned": false,
+   "isPaidPartnership": false,
+   "owner": {
+    "id": "53424513137",
+    "username": "v7egypt",
+    "fullName": "V7",
+    "profilePicUrl": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-19/741475297_18057124319777138_8720484173555272400_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43MDkuYzIifQ&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2gEGxyCRihPfOrfcIiR-NboqxBwU8vogdKEObJjlYPaj4a1r4UBOTqSrlKNKyDLqH-uoTQ8s164NWOYIYwlpU3Jv&_nc_ohc=QUL9e0LCxn0Q7kNvwEUhDRu&_nc_gid=a4fKE9X5_PbK2jYY_o5WjQ&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=GOEDMixy0b7g2yZAANCKLRonYgV5bmNDAQAB1501500j-ccb7-5&oh=00_AQMGRgZCERtlyrvn0SgNvOR6W_Z3tCZV_Vn7AgtoOxuyQA&oe=6ADB5504&_nc_sid=10d13b",
+    "isPrivate": false,
+    "isVerified": true
+   },
+   "coowners": null,
+   "location": null,
+   "isCarousel": false,
+   "isVideo": true,
+   "video": {
+    "id": "2040807609863144v",
+    "url": "https://scontent-cph2-1.cdninstagram.com/o1/v/t2/f2/m86/AQMGoGMJ9a-uU079lfoTaWBWJ-dKgGn1U5ie-avELGLLIfsRODAeje_z-eeQeenU8E5PJbLwrWBmu9gdBGTYF0QzVp0tI4Rs5A_KgbY.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_ohc=wP7arq9pmroQ7kNvwGcCBa2&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQUQuQzIuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjA0MDgwNjMzNjUyOTkzOCwiYXNzZXRfYWdlX2RheXMiOjczLCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=7b301b5521a4cc37&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82MDRGNzgzNzQxMjBCOTNEOTA5NzA0RDM0RUIzNjg4N192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0JFNEMzMEUzRDg1NzJCMDY0MUY1RkY4NzNDNzM1RjhFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACakmPSLyIagBxUCKAJDMiwXQDtqfvnbItEYEmRhc2hfYmFzZWxpbmVfMV92MREAdfAHZazBAQA&_nc_gid=a4fKE9X5_PbK2jYY_o5WjQ&_nc_ss=7c3ba&_nc_zt=28&oh=00_AQOPjObecUDgxonCHb5A3w4saStTqEW94SG7DRTfZofiNg&oe=6AD76F06",
+    "width": 720,
+    "height": 1280,
+    "duration": 27.416,
+    "playCount": 1695320,
+    "igPlayCount": 1695320,
+    "fbPlayCount": 0
+   },
+   "image": {
+    "url": "https://scontent-cph2-1.cdninstagram.com/v/t51.82787-15/763618016_18061890176777138_9099677763726202576_n.jpg?stp=dst-jpg_e15_p360x360_tt6&_nc_cat=103&ig_cache_key=Mzk1NzcxNjg4NTMwNTUwNTM5MTE4MDYxODkwMTczNzc3MTM4.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMiJ9&_nc_ohc=pUflT87oKX4Q7kNvwH_UotN&_nc_oc=AdpHZSTAqu-pAgHrV7k52d2pGRvMknn4Eu-5JKnXuSTriAhfupQosjXa6TbM7uSrSzuFHAcSnHjHqtZ8y0pMlePA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=a4fKE9X5_PbK2jYY_o5WjQ&_nc_ss=7c3ba&oh=00_AQNe7CjbUTOOiN3SpsR2plhXB6G49VP0XuP1nMVZdqOXMg&oe=6ADB3DB0",
+    "width": 360,
+    "height": 640
+   },
+   "audio": null
+  }
+ ]
+}

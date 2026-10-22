@@ -1,0 +1,339 @@
+{
+ "input": {
+  "queries": "\"ڤي سڤن\" site:instagram.com\n\"ڤي سڤن\" site:tiktok.com",
+  "quickDateRange": "m6",
+  "countryCode": "eg",
+  "maxPagesPerQuery": 1
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "1SKbpvlQnHCsuJuao",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-18T14:40:13.935Z",
+  "finishedAt": "2026-10-18T14:40:41.416Z",
+  "chargedEventCounts": {
+   "search-page-scraped": 2,
+   "ai-overview-scraped": 0,
+   "ai-mode-result-scraped": 0,
+   "perplexity-ai-result-scraped": 0,
+   "chatgpt-result-scraped": 0,
+   "copilot-result-scraped": 0,
+   "gemini-result-scraped": 0,
+   "lead-scraped": 0,
+   "lead-email-verified": 0,
+   "ads-scraped": 0,
+   "website-content-scraped": 0,
+   "apify-actor-start": 1
+  },
+  "usageTotalUsd": 0.00255
+ },
+ "cost_usd": 0.0027,
+ "items": [
+  {
+   "searchQuery": {
+    "term": "\"ڤي سڤن\" site:instagram.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Ainstagram.com&gl=eg&tbs=qdr%3Am6",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "EG",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Ainstagram.com&gl=eg&tbs=qdr%3Am6",
+   "hasNextPage": true,
+   "serpProviderCode": "O",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "V7 Cream Soda #wheretoeat #wheretoeategypt #fy #products",
+     "websiteTitle": "Instagram · mon3esh.zone",
+     "url": "https://www.instagram.com/reel/DcEggQTDv2C/",
+     "displayedUrl": "أكثر من ٣٫٤ ألف معجب  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "\"كريم صودا من ڤي سڤن منتج جديد تعالوا نجربه  #review #cola ...",
+     "websiteTitle": "Instagram · ran281185",
+     "url": "https://www.instagram.com/ran281185/reel/DcOyNIhMaBu/?hl=hi",
+     "displayedUrl": "أكثر من ١٠ معجب  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "Cream soda vs strawberry cheesecake",
+     "websiteTitle": "Instagram · jessy_tastes",
+     "url": "https://www.instagram.com/reel/Db3JaWOq4mb/",
+     "displayedUrl": "أكثر من ١٫٩ ألف معجب  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "V7 CREAM SODA. . @v7egypt التجربة دى من إقتراح",
+     "websiteTitle": "Instagram · akramtastetest",
+     "url": "https://www.instagram.com/reel/DcTqdX9Cfoy/",
+     "displayedUrl": "أكثر من ١٠ معجب  ·  قبل شهر واحد",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    },
+    {
+     "title": "مشروب غازي من مصل الحليب",
+     "websiteTitle": "Instagram · saudiattractions",
+     "url": "https://www.instagram.com/reel/DaQ3SlrsfKX/",
+     "displayedUrl": "أكثر من ٢٢٠ معجب  ·  قبل ٣ أشهر",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 5
+    },
+    {
+     "title": "الكريم صودا اللي مغرقة الدنيا  #drinks #summer #creamsoda ...",
+     "websiteTitle": "Instagram · mesh.reviewers",
+     "url": "https://www.instagram.com/reel/Db8kt6OoR9y/",
+     "displayedUrl": "أكثر من ٣٦٠ معجب  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 6
+    },
+    {
+     "title": "ڤي أوراااانچ ..  @v7egypt",
+     "websiteTitle": "Instagram",
+     "url": "https://www.instagram.com/reel/DeeGK0fMZeZ/",
+     "displayedUrl": "أكثر من ٥٩٠ معجب  ·  قبل ٤ أيام",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 7
+    },
+    {
+     "title": "كريم ڤي سڤن",
+     "websiteTitle": "Instagram · haj_abaas74",
+     "url": "https://www.instagram.com/p/DdjtK85kTln/",
+     "displayedUrl": "معجب واحد",
+     "description": "كريم ڤي سڤن · كريم من بايو اكوا النباتي V7 كريم يشتغل على 7 فوائد للبشرة ❤️ · كريم من بايو اكوا النباتي V7 كريم يشتغل على 7 فوائد للبشرة ❤️ · كريم من بايو اكوا ...",
+     "emphasizedKeywords": [
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 8
+    },
+    {
+     "title": "جربت V Cola Cream Soda لأول مرة  الطعم مختلف عن الكولا ...",
+     "websiteTitle": "Instagram · rana.nasr111",
+     "url": "https://www.instagram.com/reel/Db7_P5joNJ3/",
+     "displayedUrl": "أكثر من ١٠ معجب  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 9
+    },
+    {
+     "title": "شوفتلها كميه فيديوهات قولت اني هشرب حاجه مافيش زيها طلعت دوا ...",
+     "websiteTitle": "Instagram · sayed_elswaify",
+     "url": "https://www.instagram.com/p/DcRHM48Cg99/",
+     "displayedUrl": "أكثر من ٣٠ معجب  ·  قبل شهر واحد",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 10
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/VGcDfwDWzl9ko4d6Z/records/QSTvX1bOSHrxvu2-0.html?signature=gn6mcvfkYggaSXty07X0"
+  },
+  {
+   "searchQuery": {
+    "term": "\"ڤي سڤن\" site:tiktok.com",
+    "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Atiktok.com&gl=eg&tbs=qdr%3Am6",
+    "device": "DESKTOP",
+    "page": 1,
+    "type": "SEARCH",
+    "domain": "google.com",
+    "countryCode": "EG",
+    "languageCode": null,
+    "locationUule": null,
+    "resultsPerPage": 10
+   },
+   "url": "http://www.google.com/search?q=%22%DA%A4%D9%8A+%D8%B3%DA%A4%D9%86%22+site%3Atiktok.com&gl=eg&tbs=qdr%3Am6",
+   "hasNextPage": true,
+   "serpProviderCode": "L",
+   "relatedQueries": [],
+   "paidResults": [],
+   "paidProducts": [],
+   "organicResults": [
+    {
+     "title": "Rania Amerأكلة وضحكة - V7 Cream Soda Review: A Taste Test",
+     "websiteTitle": "TikTok · Rania Amerأكلة وضحكة",
+     "url": "https://www.tiktok.com/@raniaamer1111/video/7674596568447634709",
+     "displayedUrl": "أكثر من ١ ألف مشاهدة  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 1
+    },
+    {
+     "title": "تفعيل وتعطيل ميزة تنسيم النوافذ في هاڤال V7",
+     "websiteTitle": "TikTok · PartAndMoreest | بارت اند مور",
+     "url": "https://www.tiktok.com/@partandmoreest/video/7674635140932439316",
+     "displayedUrl": "أكثر من ٧٧٫٥ ألف مشاهدة  ·  قبل شهرين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 2
+    },
+    {
+     "title": "‏دي مصر نوياها الليلة... يلا يا مصر 🇪🇬",
+     "websiteTitle": "TikTok",
+     "url": "https://www.tiktok.com/@v7.egypt/video/7655766695897845012",
+     "displayedUrl": "https://www.tiktok.com › video",
+     "description": "٢٦‏/٠٦‏/٢٠٢٦ — عشان ١٠٠٪؜ طعم طبيعي ومليان ڤيتامينات وفيه كل اللي أنت محتاجه ڤي سڤن .. ... ڤي سڤن, مشروبات باردة جديدة, refreshment drink 100% natural, aromatherapy ...",
+     "emphasizedKeywords": [
+      "ڤي سڤن",
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 3
+    },
+    {
+     "title": "منتجات الحماية الداخلية للهافال V7. - ربلات الحماية لداخلبة هافال ...",
+     "websiteTitle": "TikTok · PartAndMoreest | بارت اند مور",
+     "url": "https://www.tiktok.com/@partandmoreest/video/7697564776066665748",
+     "displayedUrl": "أكثر من ١٤٨٫٦ ألف مشاهدة  ·  قبل يوم واحد",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 4
+    },
+    {
+     "title": "4 طرق لعمل عصير الليمون المنعش للصيف",
+     "websiteTitle": "TikTok · gigidisheszahra",
+     "url": "https://www.tiktok.com/@gigidisheszahra/video/7658789066023947527",
+     "displayedUrl": "أكثر من ٧٠٫٨ ألف مشاهدة  ·  قبل ٣ أشهر",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 5
+    },
+    {
+     "title": "Rehab Farouk - صوص ل النقنقه لذيذ من @domty",
+     "websiteTitle": "TikTok · Rehab Farouk",
+     "url": "https://www.tiktok.com/@rehabfarouk03/video/7692489505122635029",
+     "displayedUrl": "أكثر من ٨٠٫١ ألف مشاهدة  ·  قبل أسبوعين",
+     "description": "",
+     "emphasizedKeywords": [],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 6
+    },
+    {
+     "title": "دراجات #بايكر - Dr. Abdullah (@saudi.rider)",
+     "websiteTitle": "TikTok",
+     "url": "https://www.tiktok.com/@saudi.rider/video/7666855472569371925",
+     "displayedUrl": "https://www.tiktok.com › video",
+     "description": "٢٦‏/٠٧‏/٢٠٢٦ — تقرير مفصل لمواصفات هافال ڤي سڤن الجديده من جريت وول موتورز @جريت وول السعودية @GWM Middle East #haval #v7 #newcar - إعلان. اكتشف مواصفات هافال V7 ...",
+     "emphasizedKeywords": [
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 7
+    },
+    {
+     "title": "طبعا الكشاف يجي من اصل السيارة...",
+     "websiteTitle": "TikTok",
+     "url": "https://www.tiktok.com/@partandmoreest/video/7678385486041238805",
+     "displayedUrl": "https://www.tiktok.com › video",
+     "description": "... ڤي سڤن -\".‏original sound - PartAndMoreest | بارت اند مور ... ڤي سڤن -. كثير ماكان يدري عن هذا الكشاف    .. - - طبعا الكشاف يجي من.",
+     "emphasizedKeywords": [
+      "ڤي سڤن",
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 8
+    },
+    {
+     "title": "علامات طبلون السيارة هافال",
+     "websiteTitle": "TikTok",
+     "url": "https://www.tiktok.com/discover/%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA-%D8%B7%D8%A8%D9%84%D9%88%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9-%D9%87%D8%A7%D9%81%D8%A7%D9%84",
+     "displayedUrl": "https://www.tiktok.com › Discover",
+     "description": "قبل ٦ أيام — منتجات الحماية الداخلية للهافال V7  ✨. - ربلات الحماية لداخلبة هافال ڤي سڤن • ربل حماية منطقة الكونسول • ربل حماية الجيوب الجانبية • ربل فريم حماية الشاشة",
+     "emphasizedKeywords": [
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 9
+    },
+    {
+     "title": "فى كولا كريم صودا",
+     "websiteTitle": "TikTok",
+     "url": "https://www.tiktok.com/discover/%D9%81%D9%89-%D9%83%D9%88%D9%84%D8%A7-%D9%83%D8%B1%D9%8A%D9%85-%D8%B5%D9%88%D8%AF%D8%A7",
+     "displayedUrl": "https://www.tiktok.com › Discover",
+     "description": "٢٤‏/٠٨‏/٢٠٢٦ — ڤي سڤن كريم صودا #review · #drink · #foodtiktok · #تجارب · الصوت الأصلي - Rania Amerأكلة وضحكة. 31تسجيلات الإعجاب. 6تعليقات. 4المشاركات. Review of 7UP ...",
+     "emphasizedKeywords": [
+      "ڤي سڤن"
+     ],
+     "siteLinks": [],
+     "productInfo": {},
+     "type": "organic",
+     "position": 10
+    }
+   ],
+   "suggestedResults": [],
+   "peopleAlsoAsk": [],
+   "customData": null,
+   "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/VGcDfwDWzl9ko4d6Z/records/kOv0GbAXn6M5n8C-0.html?signature=KrCctqbyaT3sOpIeNcXQ"
+  }
+ ]
+}

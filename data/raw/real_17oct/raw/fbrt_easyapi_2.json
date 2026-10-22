@@ -1,0 +1,20 @@
+{
+ "input": {
+  "query": "V7 cream soda",
+  "maxItems": 20
+ },
+ "cap_usd": 0.2,
+ "run": {
+  "id": "s0gHfSEnbNvmsKrlU",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T10:54:20.029Z",
+  "finishedAt": "2026-10-19T10:54:32.683Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "apify-actor-start": 2
+  },
+  "usageTotalUsd": 0.18088867595392466
+ },
+ "cost_usd": 0.4975,
+ "items": []
+}

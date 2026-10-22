@@ -1,0 +1,142 @@
+{
+ "mode": "fill",
+ "since": "2026-04-20",
+ "until": "2026-10-16",
+ "tag": "202610201911",
+ "started": "2026-10-20T19:11:08",
+ "jobs": {},
+ "problems": [
+  "fill steps, 1 run not started: fbcm_door_202610201911 (over the budget line)"
+ ],
+ "standbys": [],
+ "errors": [],
+ "steps": [
+  {
+   "step": "normalize",
+   "ok": true,
+   "seconds": 3,
+   "last": "V7 replies: 644 | replies linked: 1050"
+  },
+  {
+   "step": "label",
+   "ok": true,
+   "seconds": 0,
+   "last": "done: 18777 labels in labels.json, 0 batches failed. Run again to retry what is missing."
+  },
+  {
+   "step": "fill fbfill",
+   "ok": true
+  },
+  {
+   "step": "fill fbfill2",
+   "ok": true
+  },
+  {
+   "step": "fill fbviews",
+   "ok": true
+  },
+  {
+   "step": "fill fbnames",
+   "ok": true
+  },
+  {
+   "step": "fill igspeech",
+   "ok": true
+  },
+  {
+   "step": "fill igprofiles",
+   "ok": true
+  },
+  {
+   "step": "fill igcomments",
+   "ok": true
+  },
+  {
+   "step": "fill igcomments2",
+   "ok": true
+  },
+  {
+   "step": "fill igvisfetch",
+   "ok": true
+  },
+  {
+   "step": "pictures, Instagram",
+   "ok": true,
+   "seconds": 505,
+   "last": "media saved for 87 posts in /home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/vis"
+  },
+  {
+   "step": "pictures, Facebook",
+   "ok": true,
+   "seconds": 365,
+   "last": "media saved for 43 Facebook posts in /home/mohanad/My_Laptop/D_Data/Jobs/Current/9. V7 Social Media Project/data/raw/real_17oct/vis"
+  },
+  {
+   "step": "read pictures",
+   "ok": true,
+   "seconds": 13166,
+   "last": "133/133 fb_v993864169763187: V7 True | A hand holds up a V7 Pink Lemonade can in a living room."
+  },
+  {
+   "step": "normalize again",
+   "ok": true,
+   "seconds": 5,
+   "last": "V7 replies: 644 | replies linked: 1050"
+  },
+  {
+   "step": "label again",
+   "ok": true,
+   "seconds": 323,
+   "last": "done: 19634 labels in labels.json, 0 batches failed. Run again to retry what is missing."
+  },
+  {
+   "step": "build",
+   "ok": true,
+   "seconds": 2,
+   "last": "injected into V7_Pulse_Dashboard.html"
+  },
+  {
+   "step": "images",
+   "ok": true,
+   "seconds": 217,
+   "last": "68 saved now, 15 failed; 907 images in all, 7330 KB"
+  },
+  {
+   "step": "embed images",
+   "ok": true,
+   "seconds": 1,
+   "last": "injected into V7_Pulse_Dashboard.html"
+  },
+  {
+   "step": "test test_v25",
+   "ok": true,
+   "seconds": 38,
+   "last": "FAIL 0"
+  },
+  {
+   "step": "test test_v29",
+   "ok": true,
+   "seconds": 25,
+   "last": "FAIL 0"
+  },
+  {
+   "step": "test test_v30",
+   "ok": true,
+   "seconds": 27,
+   "last": "FAIL 0"
+  },
+  {
+   "step": "test test_v31",
+   "ok": true,
+   "seconds": 11,
+   "last": "FAIL 0"
+  }
+ ],
+ "spent_before": 83.1375,
+ "limit": 100,
+ "budget_line": 88.1375,
+ "spent": 4.0459,
+ "spent_after": 87.1834,
+ "finished": "2026-10-20T23:39:56",
+ "not_started": 0
+}

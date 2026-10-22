@@ -1,0 +1,203 @@
+{
+ "input": {
+  "query": "ڤي سڤن",
+  "maxResults": 10,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.5,
+ "run": {
+  "id": "xmzVEuUxZNdVteuzN",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T07:58:08.248Z",
+  "finishedAt": "2026-10-19T07:58:18.381Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 7,
+   "apify-actor-start": 2
+  },
+  "usageTotalUsd": 0.18
+ },
+ "cost_usd": 0.4345,
+ "items": [
+  {
+   "type": "search_video",
+   "video_id": "2258238494941774",
+   "video_url": "https://www.facebook.com/reel/2258238494941774/",
+   "description": "#يلاـنجرب ڤي سڤن كريم صودا",
+   "title": "#يلاـنجرب ڤي سڤن كريم صودا",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "يلا نجرب",
+    "url": "https://www.facebook.com/yallangrab26",
+    "is_verified": false,
+    "id": "61593967732248"
+   },
+   "thumbnail": "https://scontent-lax3-1.xx.fbcdn.net/v/t15.5256-10/787715257_28202021499428856_136830274913727145_n.jpg?stp=c0.289.720.403a_dst-jpg_s403x403_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e3495b&_nc_ohc=I9m4oAuLIwQQ7kNvwHwNDwV&_nc_oc=AdpruI_FjiGtu18gBCiCVaV6EkjHx7iklFJcUvqevA05jKOoLyCLyfZqJ9BxkUEhJms&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQPV035ro-VFdrcDopAKDGTUESvXLNLG01TgArBxH0vPqQ&oe=6ADB89FD",
+   "time_and_views_raw": "26 Aug · 68 views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1775614050349136",
+   "video_url": "https://www.facebook.com/reel/1775614050349136/",
+   "description": "ئەڵقەی 6 هەمووی",
+   "title": "ئەڵقەی 6 هەمووی",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Sirwan Drama",
+    "url": "https://www.facebook.com/people/Sirwan-Drama/61594812615198/",
+    "is_verified": false,
+    "id": "61594812615198"
+   },
+   "thumbnail": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/838651120_2170869506975176_5432385883049235757_n.jpg?stp=c0.289.720.403a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=lTaeT_C4q6IQ7kNvwGvbScX&_nc_oc=AdqHSsfA-IE-UjYyaImXk9OOIiOl2t9GA0PWxCeMuycMZJT1Gp7_4kjhU5bV5E8TxIk&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQPb0Zn4Fk94xaYiFPT9jL5iDQIWC4vXIufcIQqrWgKEWQ&oe=6ADB90B7",
+   "time_and_views_raw": "6 Oct · 3.7K views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1520807033188862",
+   "video_url": "https://www.facebook.com/reel/1520807033188862/",
+   "description": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood.\nKnown for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
+   "title": "Tonight, V stepped into the crowd, taking in live performances at Vogue World: Hollywood.\nKnown for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "تلاوات القرآن",
+    "url": "https://www.facebook.com/people/%D8%AA%D9%84%D8%A7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86/61584679107673/",
+    "is_verified": false,
+    "id": "61584679107673"
+   },
+   "thumbnail": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.71878-15/851829193_2151192802456322_7937775194006666081_n.jpg?stp=c0.144.358.200a_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=q01kq7fpb5sQ7kNvwGUicM7&_nc_oc=AdqX--_-_VTnH_iImqKAC6NuYszBtqDAKC_wgZEj0Px0n3riykCpLLBS37FYNOIes0Y&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQOk-oK0QKOjaFFYgkuFx6S4ke2C0kEpIKEKKDYC-0msHA&oe=6ADBB42F",
+   "time_and_views_raw": "16 Oct · 17K views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "917234948111617",
+   "video_url": "https://www.facebook.com/reel/917234948111617/",
+   "description": "⁨ لحاف شتوی فروو نفر 5 قطعە vip🔥💯\nلحاف 170*230\nشرشف لاستيك 120*200*30\nقطعتين وجه مخده 50*70\nقطعة واحدة وجه كوشة 45*45\nسعر 50 الف⁩",
+   "title": "⁨ لحاف شتوی فروو نفر 5 قطعە vip🔥💯\nلحاف 170*230\nشرشف لاستيك 120*200*30\nقطعتين وجه مخده 50*70\nقطعة واحدة وجه كوشة 45*45\nسعر 50 الف⁩",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Sivanhome",
+    "url": "https://www.facebook.com/Peshangaysivan",
+    "is_verified": false,
+    "id": "61590725807583"
+   },
+   "thumbnail": "https://scontent-lax3-2.xx.fbcdn.net/v/t51.82787-15/790425052_18167129185459112_4136678520046337005_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e3495b&_nc_ohc=RrOyuaUPEJ0Q7kNvwFN1DuU&_nc_oc=AdqacGVXZ1NdYkZqllYnfEeJhHQuAV929bTWC7rTsVp5QnCJjjAPkYdC4rOHYYTijmE&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQM37H2dVpB9SKMu6E0p_4vk2o3ZeBX6nKIg8z6x0tbhaQ&oe=6ADB9FA0",
+   "time_and_views_raw": "1 Sep · 17K views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2450591835417231",
+   "video_url": "https://www.facebook.com/reel/2450591835417231/",
+   "description": "V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
+   "title": "V stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Creater Eidts",
+    "url": "https://www.facebook.com/people/Creater-Eidts/61589470422122/",
+    "is_verified": false,
+    "id": "61589470422122"
+   },
+   "thumbnail": "https://scontent-lax3-1.xx.fbcdn.net/v/t51.71878-15/757305635_1539311044607409_3034118484942054622_n.jpg?stp=c0.157.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e3495b&_nc_ohc=Z2g7d2678moQ7kNvwFNYhPX&_nc_oc=Adr2LeW5GpB8qm-7Su4ACxCGsdQiNY4Sv9oYxTJzT824tifE7P9WHGbu8YF-bws08x0&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQNmgdEE-uSf2eLVUlum36OT8O-oUoXmIW5xuniyUdBV0w&oe=6ADB8EF5",
+   "time_and_views_raw": "26 Jul · 404K views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "900864452636855",
+   "video_url": "https://www.facebook.com/reel/900864452636855/",
+   "description": "شو الفرق بين شخص ما بحب دموعك ينزلو لأنهن غالين وشخص يبغاكي تبكي  مشان ترتاحين وما تكتمي 🥺🥺 \nV stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.\n#Taehyung",
+   "title": "شو الفرق بين شخص ما بحب دموعك ينزلو لأنهن غالين وشخص يبغاكي تبكي  مشان ترتاحين وما تكتمي 🥺🥺 \nV stepped into the crowd, taking in live performances at Vogue World: Hollywood. Known for his own standout fashion moments, he kept it effortlessly stylish in a look worthy of the runway.\n#Taehyung",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Roz Julit",
+    "url": "https://www.facebook.com/rozjulit",
+    "is_verified": false,
+    "id": "61584149341512"
+   },
+   "thumbnail": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/770774330_1326215715955341_7337992051816457579_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=i04CqgIpmeAQ7kNvwFwzyQp&_nc_oc=Adqf0OrlSBh9M25zNAftJD86ah4WG7fIM48fftMpVOKqHeKhFK1jeA0TwjGd-_7S2cs&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQONXfQdkIGXoDjS5EOEufRllkkzGi4O-ZfqTiuBraARGw&oe=6ADBB26B",
+   "time_and_views_raw": "10 Aug · 92K views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "4084632221751514",
+   "video_url": "https://www.facebook.com/reel/4084632221751514/",
+   "description": "Chờ ..",
+   "title": "Chờ ..",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "Hanh Chi",
+    "url": "https://www.facebook.com/hanh.chi.100",
+    "is_verified": false,
+    "id": "100008128306987"
+   },
+   "thumbnail": "https://scontent-lax3-2.xx.fbcdn.net/v/t15.5256-10/628649598_1398951004571192_1752669294813265105_n.jpg?stp=c0.289.720.403a_dst-jpg_s403x403_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=UlWj21VjHzMQ7kNvwH_v8_l&_nc_oc=AdqX2qFjm-kf85i2prqffZItNUU_l4sukZZpH2urn0xS0wFCCJQGEjthzT72w3V3mSI&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=JvJExbQRj6sC16rr4sDQ9g&_nc_ss=70289&oh=00_AQPPzAa0MUI3oh3U1vMvKi-ndgZXlhbA23JELIasHqutZw&oe=6ADB99CE",
+   "time_and_views_raw": "7 Feb · 330 views",
+   "scrapedAt": "2026-10-19T07:58:14.704Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "2097728681127648",
+   "video_url": "https://www.facebook.com/reel/2097728681127648/",
+   "description": "زۆرترین پارەی باوکتان پێتانی داوە چەندە لە کۆمێنت بنووسن 👇\n\n#viral #fyp\n#trending\n#foryou #animation",
+   "title": "زۆرترین پارەی باوکتان پێتانی داوە چەندە لە کۆمێنت بنووسن 👇\n\n#viral #fyp\n#trending\n#foryou #animation",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "کورد ڤێرس",
+    "url": "https://www.facebook.com/people/%DA%A9%D9%88%D8%B1%D8%AF-%DA%A4%DB%8E%D8%B1%D8%B3/61592079501627/",
+    "is_verified": false,
+    "id": "61592079501627"
+   },
+   "thumbnail": "https://scontent-iad3-1.xx.fbcdn.net/v/t15.5256-10/741693618_2448619695646271_5654399063198517299_n.jpg?stp=c0.289.720.403a_dst-jpg_s403x403_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e3495b&_nc_ohc=pVIJKrb4FJoQ7kNvwEHKLzX&_nc_oc=AdrmqyRaBb0Ba8D3QMvLpXfR3YSbnCR1_j5qPZIlv-1yN1y0F-fHHgIUezdoDsdeKT8&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=wZwvoEVMA6ViJV443x__PQ&_nc_ss=70289&oh=00_AQPpLV8OU1z0FTebIIj5X3A0xSGsSbO7i9DqvBazPnOlgA&oe=6ADBBA23",
+   "time_and_views_raw": "20 Jul · 20K views",
+   "scrapedAt": "2026-10-19T07:58:18.295Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "1071757600733753",
+   "video_url": "https://www.facebook.com/dilo.jan.39589149/videos/1071757600733753/",
+   "description": "لای ئێوە چی پێدەڵێن ؟",
+   "title": "لای ئێوە چی پێدەڵێن ؟",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "هەنگوینی شاز",
+    "url": "https://www.facebook.com/dilo.jan.39589149",
+    "is_verified": false,
+    "id": "100063911271902"
+   },
+   "thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/566268958_786203834309616_7268228801951411858_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e3495b&_nc_ohc=Sd4P9kLGZPgQ7kNvwHtzZQa&_nc_oc=AdqqDKiQ08GtAEmeWqTPTUVsk4IoGVE3B3lAC6U_mFKWoQ8gmQGfoc0ypQ3gH8a4ceE&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=wZwvoEVMA6ViJV443x__PQ&_nc_ss=70289&oh=00_AQP8NqH1yaUdNZUU3M3srVtinpO8_TKH_jRlMO1ZdDr7AA&oe=6ADBA73C",
+   "time_and_views_raw": "1 Feb 2024 · 5K views",
+   "scrapedAt": "2026-10-19T07:58:18.295Z"
+  },
+  {
+   "type": "search_video",
+   "video_id": "948945331607702",
+   "video_url": "https://www.facebook.com/reel/948945331607702/",
+   "description": "فێڵی ئێستای سەردەم بەناوی ماڕکە و بڕاند پارە ڕووتانەوەیە ... بەهیوای سوود💡\n\n.  #زانیاری  #هەواڵ  #مێژوو #ئامۆژگاری",
+   "title": "فێڵی ئێستای سەردەم بەناوی ماڕکە و بڕاند پارە ڕووتانەوەیە ... بەهیوای سوود💡\n\n.  #زانیاری  #هەواڵ  #مێژوو #ئامۆژگاری",
+   "author": {
+    "__typename": "User",
+    "__isActor": "User",
+    "name": "دەروازەی زانیاری",
+    "url": "https://www.facebook.com/darwazayzanyari",
+    "is_verified": false,
+    "id": "61572045075154"
+   },
+   "thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/825722458_1093035430012442_1640648207711047314_n.jpg?stp=c0.434.1080.605a_dst-jpg_s403x403_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e3495b&_nc_ohc=iG4KdUn-xEgQ7kNvwEAeNTG&_nc_oc=Adqo-s4CC5lP2uT7owjKpL-rFLAyd4oqUuYhWdc7FOefJjcUni2jAelgYydWJvyGnpY&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=wZwvoEVMA6ViJV443x__PQ&_nc_ss=70289&oh=00_AQPOenkeQvEw7xN_MdDSqL_MwFTHsDqx99zVSzz4yZlaWA&oe=6ADB9738",
+   "time_and_views_raw": "26 Sep · 80K views",
+   "scrapedAt": "2026-10-19T07:58:18.295Z"
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "input": {
+  "postUrls": [
+   "https://www.instagram.com/p/DeP7yeNjRKn/",
+   "https://www.instagram.com/p/DeP88JoDUZv/",
+   "https://www.instagram.com/p/Dc7OSujCKIT/",
+   "https://www.instagram.com/p/DcduDFviuty/",
+   "https://www.instagram.com/p/DcEDmH8Midl/",
+   "https://www.instagram.com/p/Db31GyEuJUW/",
+   "https://www.instagram.com/p/DaxnY-AMvyK/",
+   "https://www.instagram.com/p/DYR4-0GtSXO/",
+   "https://www.instagram.com/p/DXpQh2dji2q/",
+   "https://www.instagram.com/p/DXrIUbMlzkZ/",
+   "https://www.instagram.com/p/DX_4CClF5Ng/",
+   "https://www.instagram.com/p/DX9_WSUsUwe/",
+   "https://www.instagram.com/p/DXrURkMoMCT/",
+   "https://www.instagram.com/p/DXujKBQkURQ/",
+   "https://www.instagram.com/p/DYAHWxdCI_H/",
+   "https://www.instagram.com/p/DbjdjRHEcK4/",
+   "https://www.instagram.com/reel/DcT2CInMcIJ/",
+   "https://www.instagram.com/reel/DZVlIYxkyMN/",
+   "https://www.instagram.com/reel/Da9yKUWDqTk/",
+   "https://www.instagram.com/reel/DcOVzGCkWmi/"
+  ],
+  "maxCommentsPerPost": 100,
+  "sortOrder": "popular"
+ },
+ "cap_usd": 0.1,
+ "run": {
+  "id": "we2WCUSlhI9l7tFBa",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-20T20:42:32.474Z",
+  "finishedAt": "2026-10-20T20:42:35.320Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.007,
+ "items": []
+}

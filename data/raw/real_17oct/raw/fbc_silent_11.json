@@ -1,0 +1,963 @@
+{
+ "input": {
+  "query": "ڤي ليمون",
+  "search_type": "posts",
+  "max_posts": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.07,
+ "run": {
+  "id": "9qI7fQbOpDJbb48vV",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T08:23:45.643Z",
+  "finishedAt": "2026-10-19T08:24:15.868Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 16
+  },
+  "usageTotalUsd": 0.035250000000000004
+ },
+ "cost_usd": 0.3256,
+ "items": [
+  {
+   "post_id": "122266503410167354",
+   "url": "https://www.facebook.com/reel/4663361057225870/",
+   "message": "Eid feels lighter with good company and a lemoned refresh 🍋 V Lemon. 100% natural flavors. Real lemon taste.\n\nڤي ليمون…الطبيعي في الليمون 🍋🍋",
+   "author": {
+    "id": "61555020627449",
+    "name": "V Super Soda",
+    "url": "https://www.facebook.com/Vsupersoda",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwE78izf&_nc_oc=Adotj_PQcb9yp2ikH7ctYekwFj90itEq909DJH205DKlEmVJN9QUQwLEnjV8kwyjkr1HKIfzfx-3gx78LZ87Tt2c&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQO3Cjgg5xCMdRkZF1eFpU1xU-GrBXo_dgmRu-DHxW1UHw&oe=6ADBBEA5"
+   },
+   "timestamp": 1779886913,
+   "reactions_count": 33,
+   "comments_count": 3,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 27,
+    "love": 4,
+    "haha": 0,
+    "wow": 1,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/707826861_2421244408393808_5090710919083012804_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=be8305&_nc_ohc=Dm_Mxhk2ATEQ7kNvwGzWlLF&_nc_oc=AdrrHeaNOia6UAhHLmHng9j1jPYCIN0vq1fskYRKkr1hxBFmmR_l_9dCFjaOVk3U94udCqDfBhhGAjNXN-901gLH&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQNMvjI8zG8iNLL7aZjFYqDf6faRR6D4U9ky8UyrNrrSow&oe=6ADBB24B",
+   "video": "https://www.facebook.com/watch/?v=4663361057225870",
+   "video_thumbnail": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/707826861_2421244408393808_5090710919083012804_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=be8305&_nc_ohc=Dm_Mxhk2ATEQ7kNvwGzWlLF&_nc_oc=AdrrHeaNOia6UAhHLmHng9j1jPYCIN0vq1fskYRKkr1hxBFmmR_l_9dCFjaOVk3U94udCqDfBhhGAjNXN-901gLH&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQNMvjI8zG8iNLL7aZjFYqDf6faRR6D4U9ky8UyrNrrSow&oe=6ADBB24B",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjY2NTAzNDEwMTY3MzU0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjY2NTAzNDEwMTY3MzU0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "26871726752519777",
+   "url": "https://www.facebook.com/hsham.jwkr/posts/pfbid02J6wGzjERS9W51JBZDWFXsQowMEHXKm6nYx2B9M3bt4BojRPc9inexSVqqyEpsN5vl",
+   "message": "افضل طعم.. الليمون لايم بالشكل الجديد والطعم الرائع ،👍👍💪👍💪💪💪💯",
+   "author": {
+    "id": "pfbid02KiRN7SvbxbLXxVcCyw6SBX241DYeRmTQVerizzRdFn3aC6Tg61M3T62ubfqjT5ecl",
+    "name": "هشام جوكر",
+    "url": "https://www.facebook.com/hsham.jwkr",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/399078834_6809591099159972_4438341507390711460_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=rsEpNuLVYPIQ7kNvwHK_4OZ&_nc_oc=AdqJ4IXx1pEe8golJ2QMfqmORQ6CI0V0X1KriAVcAW-2B_kYVvpAczyWPWM9_iBg296PFCDuTJ-fAbKGWUIIskOg&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQNjJjLu2cc64BtaaDuflrCqX-GCKUrDI3i3rbAMFkne3Q&oe=6ADBAB4D"
+   },
+   "timestamp": 1779377937,
+   "reactions_count": 1,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/702494405_1709408453385012_6665190410354650095_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=be8305&_nc_ohc=-hld9lNC9LcQ7kNvwFK_zQz&_nc_oc=AdrKtjFdCxe5CMt1Y3aBH0aGrlrzPD3abXkI6LGdR1jctDjuY-iUTkSj2qVCpIydUFaEdt8c-R846s_uHA-ahHVA&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQPtZj2G-Nk5PUYzeLbr8syWW26_kmfpo5PJEd8wPGrA0g&oe=6ADB9897",
+   "video": "https://www.facebook.com/watch/?v=980588638052299",
+   "video_thumbnail": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/702494405_1709408453385012_6665190410354650095_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=be8305&_nc_ohc=-hld9lNC9LcQ7kNvwFK_zQz&_nc_oc=AdrKtjFdCxe5CMt1Y3aBH0aGrlrzPD3abXkI6LGdR1jctDjuY-iUTkSj2qVCpIydUFaEdt8c-R846s_uHA-ahHVA&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQPtZj2G-Nk5PUYzeLbr8syWW26_kmfpo5PJEd8wPGrA0g&oe=6ADB9897",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjY4NzE3MjY3NTI1MTk3Nzc=",
+   "shares_id": "ZmVlZGJhY2s6MjY4NzE3MjY3NTI1MTk3Nzc=",
+   "associated_group_id": "",
+   "attached_post": {
+    "post_id": "122265691250167354",
+    "url": "https://www.facebook.com/reel/980588638052299/",
+    "message": "It’s now V Lemon. Real bold lemon taste in every can.\n100% natural flavors. Zero caffeine.\n\nڤي ليمون…الطبيعي في الليمون🍋🍋",
+    "author": {
+     "id": "61555020627449",
+     "name": "V Super Soda",
+     "url": "https://www.facebook.com/Vsupersoda",
+     "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwE78izf&_nc_oc=Adotj_PQcb9yp2ikH7ctYekwFj90itEq909DJH205DKlEmVJN9QUQwLEnjV8kwyjkr1HKIfzfx-3gx78LZ87Tt2c&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQO3Cjgg5xCMdRkZF1eFpU1xU-GrBXo_dgmRu-DHxW1UHw&oe=6ADBBEA5"
+    }
+   }
+  },
+  {
+   "post_id": "122101282281330744",
+   "url": "https://www.facebook.com/reel/1218588910244219/",
+   "message": "في الليمون يعيد انتعاش الليمون إلى ما يجب أن يكون عليه: طعم الليمون الجريء الحقيقي. كريسب فيز. نكهات طبيعية 100%. صفر كافيين. الآن، إنه في ليمون.\n\n ڤي ليمون…الطبيعي في الليمون🍋🍋",
+   "author": {
+    "id": "61589922341073",
+    "name": "v7 Latakia",
+    "url": "https://www.facebook.com/people/v7-Latakia/61589922341073/",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/702325042_122097624441330744_4982986379233878028_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=SwNnlG28Fa8Q7kNvwFCuvje&_nc_oc=AdqEmeizifyJ_qgDHkFtuKzcSZyBtkP9cxJ7LX9acD8AJjg1mgK6xUCP-kE-ZvRiTRvg9eYEp92UVHhPDGLKeiVo&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQO18QkFWGKv0wgOueYY02LPJQamnhi1ppzeGt8qbqvGNg&oe=6ADB9088"
+   },
+   "timestamp": 1780304525,
+   "reactions_count": 15,
+   "comments_count": 0,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 15,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/710279761_991803746799759_2374575162798959628_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=z3kNRndb4k8Q7kNvwHJKsao&_nc_oc=Ado3JOkKmCDSB51NGN-q2W3Qit4w5nIGb1XtdbquwCjos0MgZzN3nDtg79YJPtrhSm8d9gdW4B5_pi41pgwYnup_&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQPJOJ-p0a0_VTeKuuGjDC4mGwsavRphZqZ6yIhcFaVcng&oe=6ADB9961",
+   "video": "https://www.facebook.com/watch/?v=1218588910244219",
+   "video_thumbnail": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/710279761_991803746799759_2374575162798959628_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=z3kNRndb4k8Q7kNvwHJKsao&_nc_oc=Ado3JOkKmCDSB51NGN-q2W3Qit4w5nIGb1XtdbquwCjos0MgZzN3nDtg79YJPtrhSm8d9gdW4B5_pi41pgwYnup_&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQPJOJ-p0a0_VTeKuuGjDC4mGwsavRphZqZ6yIhcFaVcng&oe=6ADB9961",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTAxMjgyMjgxMzMwNzQ0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTAxMjgyMjgxMzMwNzQ0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122265633266167354",
+   "url": "https://www.facebook.com/reel/1542822134068771/",
+   "message": "V Lemon takes lemon refreshment back to what it should be: Real bold lemon taste. Crisp fizz. 100% natural flavors. Zero caffeine. Now, It’s V Lemon. \n\n ڤي ليمون…الطبيعي في الليمون🍋🍋",
+   "author": {
+    "id": "61555020627449",
+    "name": "V Super Soda",
+    "url": "https://www.facebook.com/Vsupersoda",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/414557980_122096877608167354_1665072820308559353_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=kPha1dzE8vgQ7kNvwE78izf&_nc_oc=Adotj_PQcb9yp2ikH7ctYekwFj90itEq909DJH205DKlEmVJN9QUQwLEnjV8kwyjkr1HKIfzfx-3gx78LZ87Tt2c&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQO3Cjgg5xCMdRkZF1eFpU1xU-GrBXo_dgmRu-DHxW1UHw&oe=6ADBBEA5"
+   },
+   "timestamp": 1779216636,
+   "reactions_count": 2966,
+   "comments_count": 75,
+   "reshare_count": 23,
+   "reactions": {
+    "like": 2598,
+    "love": 315,
+    "haha": 5,
+    "wow": 2,
+    "sad": 1,
+    "angry": 3,
+    "care": 42
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/702143110_2399286970569225_983057291261033508_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=be8305&_nc_ohc=q5aMqaqFCzYQ7kNvwHAKsPn&_nc_oc=AdpDwqurHikIKpu7LiwFnnE7UquKzHZ16hJLGgnKQGR8MJz11aawizXqlsZ_SjdqfRy61U9AroysNiQeoUGikzIw&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQOLw08HXVQ8rBKbfBSIBl-h-NCiTpy3moOG_VoBQWhqvw&oe=6ADBA7F8",
+   "video": "https://www.facebook.com/watch/?v=1542822134068771",
+   "video_thumbnail": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/702143110_2399286970569225_983057291261033508_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=be8305&_nc_ohc=q5aMqaqFCzYQ7kNvwHAKsPn&_nc_oc=AdpDwqurHikIKpu7LiwFnnE7UquKzHZ16hJLGgnKQGR8MJz11aawizXqlsZ_SjdqfRy61U9AroysNiQeoUGikzIw&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQOLw08HXVQ8rBKbfBSIBl-h-NCiTpy3moOG_VoBQWhqvw&oe=6ADBA7F8",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMjY1NjMzMjY2MTY3MzU0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMjY1NjMzMjY2MTY3MzU0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "2194917081127066",
+   "url": "https://www.facebook.com/groups/158996274719167/permalink/2194917081127066/",
+   "message": "***كما وعدناكم بنشر السجلات الفرعية التابعه للقرار الوزارى 62 وهى سجلات اللجان الخمس وسجل القيادة وسجل الموهوبين وسجل المتفوقين وسجل المتاخرين تفصيلا وما هو الهدف العام من انشاء السجل والهدف الاستراتيجى للسجل والهدف الاجرائى من السجل وخطط اللجان كما وردت بادلة القرار واكتفينا بالفصل والمدرسة منها وكيف نوضع البرنامج الزمنى للجنة من خلال الخطة ومتى نعقد اجتماع اللجنة الشهرى كما تناولنا سجل القادة وعرفنا القائد والقيادة ونبذه عن القادة وما هى مهارات القادة والهدف من العمل معهم وصفاتهم وكذلك الموهوبين والمتفوقين والمتاخرين اتمنى ان ينول العمل رضاكم ويكون نواه استرشاديه لاعمالكم تقبلوا تحياتى          تم نشر تلك الصور بصيغة بيدى اف على ايقونة الملفات  بالملتقى***\n\n***اخوكم ***\n\n***عبدالرحمن حسن لبيب ***\n\n***موجه اول تربية اجتماعية ***\n\n***ادارة طهطا التعليمية سابقا***",
+   "author": {
+    "id": "100002070128896",
+    "name": "عبد الرحمن حسن لبيب",
+    "url": "https://www.facebook.com/bdalrhmnhsnlbyb",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/712471711_27029414526710853_3923476994888254637_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_ohc=zaX3uKkuEnUQ7kNvwFKWoJR&_nc_oc=AdrDRlF45SEjKHezsgQEbULFtaIgMZg6kNHK79A96bUjCRJVZdOQNzGRkIqon5KI1ZLub9Xx9GoLpiFEntxGLina&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQMr5tSoVwyuJC-itc_81QTALlexso3qYtG26CAnrvoZ9g&oe=6ADBB39D"
+   },
+   "timestamp": 1787812848,
+   "reactions_count": 13,
+   "comments_count": 0,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 13,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": [
+    "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/786315426_28023655763953386_7453356276588883187_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=BU39dsxXDisQ7kNvwEdcKcT&_nc_oc=Ado1YMVqp0WroN7K374836rbvqXJ4QNnHPf5qZxO27PeIYUZDdq7UR85gq4Z2evXHVBBh1DETomGQGJffxwZgBDJ&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQPoF8tq8ZhaaSBDHPVVmVkz_5ZgPTrGotTjtzbABL0beg&oe=6ADBB728",
+    "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/785584744_28023656250620004_5234411944352261261_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=zCp-lzxWW04Q7kNvwEqbeyT&_nc_oc=AdrAhOqsX5GrwvhMrq3Qj07N2xV-gXmKN_GhiL3ZdxGsp_1nihDNw-mB6jhE3ovk-YcU2WbehXvoMDwE-r3476FU&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQO_ZliuJ3ILMDVVTD7GcKagTivKs7BCnLI-I56KKlBa3A&oe=6ADBB7A5",
+    "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/786454007_28023655907286705_4013906755502565505_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=YP6Il095f88Q7kNvwHVzTQV&_nc_oc=AdoIFbVAUZDdvs4bWdOuZbdAOdg6CIZlHImbdjlb9Q_3I-k-BCpeb_KAltmrGg_AxqUIyAR7N2uL64vhFHZFnIE5&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQNcvmlf2Sxd19LVKlCkW5-1FYUPsMO71wiiS6AoNROzFA&oe=6ADB8D43",
+    "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/785762805_28023656067286689_8196983966118672201_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=BtGfMRPlOjYQ7kNvwGgu63H&_nc_oc=AdqhaSOdP0k7bJbu2iJPgCf4mJowxEi8RiKoMWU4F7nP31MNAPoCjKfr0SWIvupqvbaehg_4NAopf9sR8fUr3VEG&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQOCnr4OJzNdEfs1b266tQHaMgDuFl01sKfrf4mSWm9-vQ&oe=6ADBBEB6",
+    "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/786563129_28023657723953190_8255054115898340793_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=YT70aWPjTM8Q7kNvwG0M4aK&_nc_oc=AdpaPA-NB9RVlZp5rm4iKQ4NosrO8fIzbZqd8xm1J4W3CNwQoR6vcS87iFa60wzdU2TUBHhnkS6aBAlK717St8Tb&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQO25NMJsjcvkrvT3m1zY_dRIUPduNRPUM226F8PrJc-BA&oe=6ADBB793"
+   ],
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjE5NDkxNzA4MTEyNzA2Ng==",
+   "shares_id": "ZmVlZGJhY2s6MjE5NDkxNzA4MTEyNzA2Ng==",
+   "associated_group_id": "221247438057283",
+   "author_title": "ملتقى الاخصائيين المتميزين بطهطا",
+   "attached_post": {
+    "post_id": "3322364154612247",
+    "url": "https://www.facebook.com/groups/Moltka.Elaksiain/permalink/3322364154612247/",
+    "message": "***كما وعدناكم بنشر السجلات الفرعية التابعه للقرار الوزارى 62 وهى سجلات اللجان الخمس وسجل القيادة وسجل الموهوبين وسجل المتفوقين وسجل المتاخرين تفصيلا وما هو الهدف العام من انشاء السجل والهدف الاستراتيجى للسجل والهدف الاجرائى من السجل وخطط اللجان كما وردت بادلة القرار واكتفينا بالفصل والمدرسة منها وكيف نوضع البرنامج الزمنى للجنة من خلال الخطة ومتى نعقد اجتماع اللجنة الشهرى كما تناولنا سجل القادة وعرفنا القائد والقيادة ونبذه عن القادة وما هى مهارات القادة والهدف من العمل معهم وصفاتهم وكذلك الموهوبين والمتفوقين والمتاخرين اتمنى ان ينول العمل رضاكم ويكون نواه استرشاديه لاعمالكم تقبلوا تحياتى          تم نشر تلك الصور بصيغة بيدى اف على ايقونة الملفات  بالملتقى***\n\n***اخوكم ***\n\n***عبدالرحمن حسن لبيب ***\n\n***موجه اول تربية اجتماعية ***\n\n***ادارة طهطا التعليمية سابقا***",
+    "author": {
+     "id": "100002070128896",
+     "name": "عبد الرحمن حسن لبيب",
+     "url": "https://www.facebook.com/bdalrhmnhsnlbyb",
+     "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/712471711_27029414526710853_3923476994888254637_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_ohc=zaX3uKkuEnUQ7kNvwFKWoJR&_nc_oc=AdrDRlF45SEjKHezsgQEbULFtaIgMZg6kNHK79A96bUjCRJVZdOQNzGRkIqon5KI1ZLub9Xx9GoLpiFEntxGLina&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=NEWh8QAWLbACLHprAwZD8A&_nc_ss=72180&oh=00_AQMr5tSoVwyuJC-itc_81QTALlexso3qYtG26CAnrvoZ9g&oe=6ADBB39D"
+    }
+   }
+  },
+  {
+   "post_id": "1378425591054960",
+   "url": "https://www.facebook.com/baitnakhder/posts/pfbid02TEpmoJr1itPyabtEyxoEespnGDQb7hoCmZvLeH545oxC8nk9cd9gejPejG2QA2Jnl",
+   "message": "ليمون ماير الأمريكي في الزيداب نهر النيل 🔥🍋 العملاق العطري.. ليمون \"ماير\" الأمريكي بوزن قياسي!\nهل سبق لك أن رأيت ليمونة واحدة تزن قرابة النصف كيلوغرام؟ 🤯 بروف فيصل يشاركنا الفيديو ❤️🔥\nكما تشاهدون في الصورة تزن هذه الثمرة الرائعة من ليمون \"ماير\" (Meyer Lemon)413 غراماً. \nهذا الوزن يجعلها قطعة مميزة ونادرة، ويُظهر مدى غزارة وفخامة إنتاج هذا الصنف في الظروف المثالية.\nولكن، السر في ليمون ماير ليس فقط في حجمه المثير للإعجاب، بل في جوهره:\n😋 طعم المذاق الفاخر:\n\"ماير\" هو هجين طبيعي ساحر يجمع بين الليمون والبرتقال الحلو (الماندارين). طعمه أقل حموضة وأكثر حلاوةبكثير من الليمون العادي، مما يجعله مثالياً للعصائر الطازجة والحلويات الفاخرة التي يفضلها الطهاة العالميون.\n⚖️ لماذا يعتبر ثقيلاً؟\nبسبب قشرته الناعمة والرقيقة جداً، الثمرة تكون \"مليانة بركة\". فبفضل غياب اللب السميك، تملأ العصير النقي كل فراغ داخل القشرة، مما يمنحك كمية عصير هائلة ومضاعفة مقارنة بالليمون التقليدي ذي القشرة السميكة.\n📐 الحجم والقشرة:\nكما هو واضح في الصورة، تتميز الثمرة بشكلها المستدير الأنيق وقشرتها الملساء اللامعة التي تميل للون الذهبي الدافئ عند النضج.\n✨ باختصار:إذا كنت تبحث عن التميز والكمية والجودة في ثمرة واحدة، فلا بد أن تجرب ليمون ماير الأسطوري!\n#حمضيات #ليمون_ماير #وزن_قياسي #زراعة_متميزة #عصير_فريش #جودة_زراعية #مبادرة_بيتنا_أخضر #علي_دياب_في_الزيداب #مشتل_ترست #مشتل_طارق_بانقا #بروف_فيصل",
+   "author": {
+    "id": "100066625964587",
+    "name": "مبادرة بيتنا أخضر",
+    "url": "https://www.facebook.com/baitnakhder",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/308178656_427648416132687_6578326803148674596_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=U0yPmzb6AeQQ7kNvwHpgjRU&_nc_oc=AdoJC6e36sb78zL7oaUsmbVZh38ERO-DXDqd1ou-_K5OsxfXLENNHuqH2GK2vG96JEg35SZySkPBB1pFprZ7ZGXV&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQPsca2WjhupAwsFGDjeMLOuXjUYeUiilPF2pAath5AnMA&oe=6ADB9CE1"
+   },
+   "timestamp": 1782999219,
+   "reactions_count": 1425,
+   "comments_count": 203,
+   "reshare_count": 42,
+   "reactions": {
+    "like": 1244,
+    "love": 156,
+    "haha": 1,
+    "wow": 8,
+    "sad": 0,
+    "angry": 0,
+    "care": 16
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/737674990_1378423907721795_6561836424036690666_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QT3mgZjOsy4Q7kNvwH2SjGM&_nc_oc=AdoNXsXLdItSANxbb6sU4w6id76AmC-0DvOAkFnLw_1gfV10RP7MuX6mruoe9Ck2PIZL1f-JTWFRqA7m1ETtm-gE&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQNYgNH0IJtqd3j467t9FSsZ-gTyAq5r7VUT_j2ZP65yDQ&oe=6ADBB1CF",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTM3ODQyNTU5MTA1NDk2MA==",
+   "shares_id": "ZmVlZGJhY2s6MTM3ODQyNTU5MTA1NDk2MA==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "424280784326345",
+     "url": "https://www.facebook.com/hashtag/%D8%AD%D9%85%D8%B6%D9%8A%D8%A7%D8%AA?__eep__=6",
+     "offset": 1129,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "1822091997821417",
+     "url": "https://www.facebook.com/hashtag/%D9%84%D9%8A%D9%85%D9%88%D9%86_%D9%85%D8%A7%D9%8A%D8%B1?__eep__=6",
+     "offset": 1137,
+     "length": 11
+    },
+    {
+     "type": "Hashtag",
+     "id": "2928226713897464",
+     "url": "https://www.facebook.com/hashtag/%D9%88%D8%B2%D9%86_%D9%82%D9%8A%D8%A7%D8%B3%D9%8A?__eep__=6",
+     "offset": 1149,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "3675528029146597",
+     "url": "https://www.facebook.com/hashtag/%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9_%D9%85%D8%AA%D9%85%D9%8A%D8%B2%D8%A9?__eep__=6",
+     "offset": 1160,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "384988271604951",
+     "url": "https://www.facebook.com/hashtag/%D8%B9%D8%B5%D9%8A%D8%B1_%D9%81%D8%B1%D9%8A%D8%B4?__eep__=6",
+     "offset": 1174,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "6505181386248439",
+     "url": "https://www.facebook.com/hashtag/%D8%AC%D9%88%D8%AF%D8%A9_%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9?__eep__=6",
+     "offset": 1185,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "3214072262006141",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9_%D8%A8%D9%8A%D8%AA%D9%86%D8%A7_%D8%A3%D8%AE%D8%B6%D8%B1?__eep__=6",
+     "offset": 1198,
+     "length": 18
+    },
+    {
+     "type": "Hashtag",
+     "id": "27265549603085509",
+     "url": "https://www.facebook.com/hashtag/%D8%B9%D9%84%D9%8A_%D8%AF%D9%8A%D8%A7%D8%A8_%D9%81%D9%8A_%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D8%A7%D8%A8?__eep__=6",
+     "offset": 1217,
+     "length": 20
+    },
+    {
+     "type": "Hashtag",
+     "id": "27374062832254879",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%AA%D9%84_%D8%AA%D8%B1%D8%B3%D8%AA?__eep__=6",
+     "offset": 1238,
+     "length": 10
+    },
+    {
+     "type": "Hashtag",
+     "id": "27637253652557828",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%AA%D9%84_%D8%B7%D8%A7%D8%B1%D9%82_%D8%A8%D8%A7%D9%86%D9%82%D8%A7?__eep__=6",
+     "offset": 1249,
+     "length": 16
+    },
+    {
+     "type": "Hashtag",
+     "id": "2069173496448218",
+     "url": "https://www.facebook.com/hashtag/%D8%A8%D8%B1%D9%88%D9%81_%D9%81%D9%8A%D8%B5%D9%84?__eep__=6",
+     "offset": 1266,
+     "length": 10
+    }
+   ]
+  },
+  {
+   "post_id": "122097851439433169",
+   "url": "https://www.facebook.com/lem.0.on/posts/pfbid02Y7ExJAx6eVX3meewTUPEKg2eEmcj5svkn1h9FVPiRWinWfUHx3UuPcxCEKsGd6Q1l",
+   "message": "أترك أثرا هنا .\n#lemon\n#ليمون",
+   "author": {
+    "id": "61592995077069",
+    "name": "لَـيْـمُـون",
+    "url": "https://www.facebook.com/lem.0.on",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/763671752_122096267181433169_1508612721407457221_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=seMb4emZBzMQ7kNvwEjA8EO&_nc_oc=AdqmqpjSNQssnOYtA_1i2UeXLMB8jIwPHqDWWMOGLi8WMupMVBAnn4JTvSayHw-6Tqg_IU9UL2AlmQ6RPPvOizwE&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQP1pSsPEzYOkPNYQ-fRjFe7AvZdTcdP3DlKG4z1tWR_zg&oe=6ADBA331"
+   },
+   "timestamp": 1786045935,
+   "reactions_count": 1,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/766194612_122097851373433169_3896935619523598338_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gpbMbl2yvyMQ7kNvwEbxhQq&_nc_oc=Adr6cOhRmXUtvbCfqEDlvKizqzubuyy85IkwFAV6hweLou5BvHTbuiqgn-kSOkQnzKfO9Gd13TiwvuR21_UErtMY&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQP2ib2KIbyO0lHeMpjNlnunpezb8hRrvEgMYWPSR04Brw&oe=6ADB8E19",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMDk3ODUxNDM5NDMzMTY5",
+   "shares_id": "ZmVlZGJhY2s6MTIyMDk3ODUxNDM5NDMzMTY5",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "141345826034740",
+     "url": "https://www.facebook.com/hashtag/lemon?__eep__=6",
+     "offset": 16,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "225159264295371",
+     "url": "https://www.facebook.com/hashtag/%D9%84%D9%8A%D9%85%D9%88%D9%86?__eep__=6",
+     "offset": 23,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "1461625202678073",
+   "url": "https://www.facebook.com/feba.adco/posts/pfbid031Aosxv13BDE1P6Cyx969TSy4JsbnzX84LuHTLcwQzPnghj8eNEBv7xZig9v8WrJfl",
+   "message": "أغسل المواعين دلوقتي ولا بعدين؟ 😅\nكل ما تستني أكتر، الدهون وبقايا الأكل بتحتاج مجهود أكتر.\nمع فيبا ليمون 4 كيلو، خلّصي مواعينك بكفاءة وسيبي المطبخ نضيف وراكي. 🍋",
+   "author": {
+    "id": "100064918200829",
+    "name": "Feba",
+    "url": "https://www.facebook.com/feba.adco",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/216983839_4201677356578370_6326045349586701601_n.png?stp=cp0_dst-png_s50x50&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=qd2ywgWYnXkQ7kNvwE8UQxf&_nc_oc=AdrLo190egYQgXulSvHflQW75QySudw-kDogJfAjI7ts1URCTzcx-f3MlkQ-GzBtJegDmNegaaGBDm4tB9VOEcCb&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQN1cXvIA8ou8zB0iShCn37hYk8x-mILfRPM0NTQPvIfVw&oe=6ADBBC2F"
+   },
+   "timestamp": 1787581504,
+   "reactions_count": 123,
+   "comments_count": 136,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 108,
+    "love": 6,
+    "haha": 3,
+    "wow": 0,
+    "sad": 0,
+    "angry": 6,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/784767095_1460668166107110_8757598000054268413_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=CbNAVqKcKFQQ7kNvwHMJCLQ&_nc_oc=Ado8G6AmMUziPJQ1u6HUfvEfKzpHGGLqfmagvBPLWPwb5S-HpVLk6X4Vwc26_k3rTRFjkf54-Yge8mxLCKBitduG&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQPfl1P_7n1IQ8slWVGvmRNtgTvIGbTvCAM_H-UdF5zuSw&oe=6ADBABB9",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTQ2MTYyNTIwMjY3ODA3Mw==",
+   "shares_id": "ZmVlZGJhY2s6MTQ2MTYyNTIwMjY3ODA3Mw==",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "122144764989187635",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0SzJMvLj3quxGsUWwdCBxHLKZaXzhoEKxQLxN8J8JSZCTBD6P89aWtFjPnXYipVXZl&id=61585629052813",
+   "message": "#حمضيات #ليمون",
+   "author": {
+    "id": "61585629052813",
+    "name": "هذا من فضل ربي",
+    "url": "https://www.facebook.com/people/%D9%87%D8%B0%D8%A7-%D9%85%D9%86-%D9%81%D8%B6%D9%84-%D8%B1%D8%A8%D9%8A/61585629052813/",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/603758169_122093793555187635_1613293034260452943_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oDMCk74SNlAQ7kNvwE9aExL&_nc_oc=AdrtatbkSygRz8Pm5Pt3O6xB3N3EFDxqxPB69BVP-EUOn8Lf9PsjvV8ZbXYwnGNdVfGMq1G0jCv0r0wzcKXPrQ6a&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQPwuIlK4P3z52o-tcvy8uJeN1gDWJIJ78TOTDFavnLZ-w&oe=6ADB8BA2"
+   },
+   "timestamp": 1791238473,
+   "reactions_count": 1,
+   "comments_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 1,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/838404675_122144764965187635_2212267929414202434_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kLa8GWdAvDEQ7kNvwHIA906&_nc_oc=Adq9PgeX-UxldWMIhZYSt-qz5i32HIAsY7rtFcu2Ul3ki1oncIhH0bmLdZRuCR4RsaVOS2BR4HCsxCvJl09yg2Uj&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQO7NKH0Qs42yZN4oqCoPk_7nPYsqLeR-VJLgz9w2XBCJA&oe=6ADBB059",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTQ0NzY0OTg5MTg3NjM1",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTQ0NzY0OTg5MTg3NjM1",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "424280784326345",
+     "url": "https://www.facebook.com/hashtag/%D8%AD%D9%85%D8%B6%D9%8A%D8%A7%D8%AA?__eep__=6",
+     "offset": 0,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "225159264295371",
+     "url": "https://www.facebook.com/hashtag/%D9%84%D9%8A%D9%85%D9%88%D9%86?__eep__=6",
+     "offset": 8,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "122141147421243842",
+   "url": "https://www.facebook.com/reel/1700458914390526/",
+   "message": "🍋 علاش شجرة الليمون تاعك ما تثمرش؟\n\nالسبب مشي ديما نقص السماد! 👀\nالشجرة تحتاج ضوء كافي ☀️ + سقي متوازن 💧 + تغذية مناسبة 🌱.\n\nإذا وفّرتلها هاذ 3، راح تساعدها على التزهير والعقد والإثمار 🍋🔥\n\n📌 تابعنا لمزيد من أسرار الأشجار والنباتات.\n#ليمون #شجرة_الليمون #إثمار #تزهير #أشجار_مثمره #مشتلة_السلام",
+   "author": {
+    "id": "61587315268278",
+    "name": "مشتلة السلام",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/625681836_122095812819243842_711373076615000495_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=108&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yBAoukVkjiIQ7kNvwFMXdHk&_nc_oc=Adqa9WLj1i8KU2Szri4QvUCaLd1lUf0KHyUg5lBeaBvmyV1ztW3IlHHStFs0o2IDjTfYs22PovkTZaUMA6bjiAwN&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQOh79cR25MFIFjsnmfj1bIONZ4rioZpYQq_hODB77XI7Q&oe=6ADBAF92"
+   },
+   "timestamp": 1789326051,
+   "reactions_count": 1594,
+   "comments_count": 959,
+   "reshare_count": 23,
+   "reactions": {
+    "like": 1563,
+    "love": 22,
+    "haha": 1,
+    "wow": 0,
+    "sad": 0,
+    "angry": 2,
+    "care": 6
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/809209065_1857210198578333_8822296507986278394_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=50ce42&_nc_ohc=rsEVc3l9EKMQ7kNvwE6o1l7&_nc_oc=AdoWPUSib8qzq_jwLGn6GpPIeTQUpkiGnN2Imryk-5_R8Khv2TqXKW8GnBTvDae4-7gAe7a4BwgBhhMVk0kvhjAk&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQPAwIg45oce0gTbmv4AN09Vyu4Uk-HHKVOp7wuIa14hMw&oe=6ADB9D1F",
+   "video": "https://www.facebook.com/watch/?v=1700458914390526",
+   "video_thumbnail": "https://scontent-phx1-1.xx.fbcdn.net/v/t15.5256-10/809209065_1857210198578333_8822296507986278394_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=50ce42&_nc_ohc=rsEVc3l9EKMQ7kNvwE6o1l7&_nc_oc=AdoWPUSib8qzq_jwLGn6GpPIeTQUpkiGnN2Imryk-5_R8Khv2TqXKW8GnBTvDae4-7gAe7a4BwgBhhMVk0kvhjAk&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQPAwIg45oce0gTbmv4AN09Vyu4Uk-HHKVOp7wuIa14hMw&oe=6ADB9D1F",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTQxMTQ3NDIxMjQzODQy",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTQxMTQ3NDIxMjQzODQy",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "225159264295371",
+     "url": "https://www.facebook.com/hashtag/%D9%84%D9%8A%D9%85%D9%88%D9%86?__eep__=6",
+     "offset": 231,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "152868471556575",
+     "url": "https://www.facebook.com/hashtag/%D8%B4%D8%AC%D8%B1%D8%A9_%D8%A7%D9%84%D9%84%D9%8A%D9%85%D9%88%D9%86?__eep__=6",
+     "offset": 238,
+     "length": 13
+    },
+    {
+     "type": "Hashtag",
+     "id": "500398443414538",
+     "url": "https://www.facebook.com/hashtag/%D8%A5%D8%AB%D9%85%D8%A7%D8%B1?__eep__=6",
+     "offset": 252,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "666821863410271",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%B2%D9%87%D9%8A%D8%B1?__eep__=6",
+     "offset": 259,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "761178923893100",
+     "url": "https://www.facebook.com/hashtag/%D8%A3%D8%B4%D8%AC%D8%A7%D8%B1_%D9%85%D8%AB%D9%85%D8%B1%D9%87?__eep__=6",
+     "offset": 266,
+     "length": 12
+    },
+    {
+     "type": "Hashtag",
+     "id": "5573550396032466",
+     "url": "https://www.facebook.com/hashtag/%D9%85%D8%B4%D8%AA%D9%84%D8%A9_%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85?__eep__=6",
+     "offset": 279,
+     "length": 13
+    }
+   ]
+  },
+  {
+   "post_id": "2231140820838025",
+   "url": "https://www.facebook.com/groups/158996274719167/permalink/2231140820838025/",
+   "message": "🤌ارجو من الزميل الاخصائي الاجتماعي ان ينفذ مسابقه الفصل المثالي ويكون بالشروط الاتيه \n#التفوق الدراسي/ لا اعني ان يكون منهم الطالب الاول على المدرسه ولكن يكون اعلى متوسط درجات \n#التعاون داخل الفصل/من خلال \nتفعيل برنامج التكافل العلمي وهو مساعده طالب متفوق يطالب ضعيف \n.برنامج التكافل الاجتماعي ونقصد به التشاركيه في خدمه الزميل الذي نسي احد ادواته \n. برنامج التكافل الاخلاقي باحتواء التلميذ المعرض للتسرب او الحدوث مشاكل\n#نظافه الفصل وصيانه الاثاث \n#تزيين الفصل/ بلوحات بها بعض القيم والارشادات وايضا لوحات التعليميه مصممه ليد الطلبه \n#اعلى نسبه حضور في المدرسه \n#اقل نسبه مشاكل تصدر منه\n#المشاركه الفعاله في الانشطه المدرسيه \n#تنفيذ افكار مشتركه تخدم المجتمع المدرسي",
+   "author": {
+    "id": "100006133566662",
+    "name": "مؤمن النحاس",
+    "url": "https://www.facebook.com/moamen.elnhas",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/396996258_3476918285855923_8966938648926740022_n.jpg?stp=c7.0.540.540a_cp0_dst-jpg_s50x50_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=QBiEzy9P3NMQ7kNvwFfH7ad&_nc_oc=AdrdmOg141eoACfbAUKFXgJlDTTZz9Rxup1CVAmmtsa_h5Eksr-rLZhrtF84tTPlwyX7pIeeiO19fL1qTqob94e1&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=Em4WbsnTT02Bx_Dk4Co-MA&_nc_ss=72180&oh=00_AQPLVRPpbwd2X3h_RRgUXrozCfOQuwKnTygqaD9T7Q5qIQ&oe=6ADB98D4"
+   },
+   "timestamp": 1790930629,
+   "reactions_count": 27,
+   "comments_count": 2,
+   "reshare_count": 3,
+   "reactions": {
+    "like": 27,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MjIzMTE0MDgyMDgzODAyNQ==",
+   "shares_id": "ZmVlZGJhY2s6MjIzMTE0MDgyMDgzODAyNQ==",
+   "associated_group_id": "158996274719167",
+   "author_title": "عمر عفيفي ليمون للتربية الاجتماعية والاتحادات الطلابية",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "241857652624732",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D8%AA%D9%81%D9%88%D9%82?__eep__=6",
+     "offset": 86,
+     "length": 7
+    },
+    {
+     "type": "Hashtag",
+     "id": "367118120069260",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86?__eep__=6",
+     "offset": 177,
+     "length": 8
+    },
+    {
+     "type": "Hashtag",
+     "id": "445755848839635",
+     "url": "https://www.facebook.com/hashtag/%D9%86%D8%B8%D8%A7%D9%81%D9%87?__eep__=6",
+     "offset": 421,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "156360704533113",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D8%B2%D9%8A%D9%8A%D9%86?__eep__=6",
+     "offset": 449,
+     "length": 6
+    },
+    {
+     "type": "Hashtag",
+     "id": "129400950582266",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D8%B9%D9%84%D9%89?__eep__=6",
+     "offset": 535,
+     "length": 5
+    },
+    {
+     "type": "Hashtag",
+     "id": "550068345033561",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%82%D9%84?__eep__=6",
+     "offset": 563,
+     "length": 4
+    },
+    {
+     "type": "Hashtag",
+     "id": "289432371188759",
+     "url": "https://www.facebook.com/hashtag/%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D9%87?__eep__=6",
+     "offset": 588,
+     "length": 9
+    },
+    {
+     "type": "Hashtag",
+     "id": "398326753597258",
+     "url": "https://www.facebook.com/hashtag/%D8%AA%D9%86%D9%81%D9%8A%D8%B0?__eep__=6",
+     "offset": 627,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "5649075101983774",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5649075101983774/",
+   "message": "شباب اولا  بعتزر اني داخل بمحهول لاسباب خاصه\nالمهم عندي افانتي منفوخ عايز بس بطاريه واغير الزيت بقدر اجاسفهم المشكله ترخيص منتهى ورخصتي باقي ليها شهر لو رفعت علامه التاكسي بقدر اشتغل بيها ولا رايكم شنو عايز ادخل من العربيه  قاعده ساي\nانا شغال ف العربي شغل تجاره ولسه الوضع ماظابط يعني يوم ظابط ويوم مظوط وشغلي بخلص المغرب عايز ادردق باقي اليوم",
+   "author": {
+    "id": "1127753924609309",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/480471783_9158392237563761_4042862335136844668_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=5dqTN68dx-wQ7kNvwFkaBS5&_nc_oc=AdopR9l5p2Lgtg4IAuhFuPDiRL8ejJO58mALa77Vubh07SoiM2M3hfQm9c3md-rLEO_ko_G5h671fCbVdC0sEw5G&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=f8h_E39a_T_veGbgMLbuhA&_nc_ss=72180&oh=00_AQOodXXOysY7W4UxzxbKJuoa6HhnPftaKmN7vFgcUAJ_bA&oe=6ADBA7DF"
+   },
+   "timestamp": 1787589091,
+   "reactions_count": 41,
+   "comments_count": 21,
+   "reshare_count": 1,
+   "reactions": {
+    "like": 40,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTY0OTA3NTEwMTk4Mzc3NA==",
+   "shares_id": "ZmVlZGJhY2s6NTY0OTA3NTEwMTk4Mzc3NA==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  },
+  {
+   "post_id": "5710158365875447",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5710158365875447/",
+   "message": "مطلوب عربية صغيره من كوبر للجزيرة الكاملين خش بي سعرك ونوع عربيتك",
+   "author": {
+    "id": "1105620598590820",
+    "name": "LavenderBison6199",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/554828481_24971261345800580_2063210103405351601_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=d7e6db&_nc_ohc=IKGdlxoxsc4Q7kNvwFV7Oj8&_nc_oc=AdrhpWdLo-n1NVvqChdw_Y5QJSZXud59bY49G95W5CMdHKCgcvSM23CF651pKVG29TCzqlhDPVvUQ0xuvoqJV7uq&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=f8h_E39a_T_veGbgMLbuhA&_nc_ss=72180&oh=00_AQNljTwTVxiMm6wNA-6idsnf4sNc9J3qKBHDAVjVcOSBTg&oe=6ADBAF12"
+   },
+   "timestamp": 1791565223,
+   "reactions_count": 14,
+   "comments_count": 23,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 14,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTcxMDE1ODM2NTg3NTQ0Nw==",
+   "shares_id": "ZmVlZGJhY2s6NTcxMDE1ODM2NTg3NTQ0Nw==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  },
+  {
+   "post_id": "1676801860679515",
+   "url": "https://www.facebook.com/diniz.bir/posts/pfbid0249MxGMP7RwYfvGQa3de8MuavmJrJJmpUxwH7dWXkE2wax38gWKyffGpXns4n9PVZl",
+   "message": "عشاق الليمون ❤️❤️\n#ليمون 🍋🍋🍋",
+   "author": {
+    "id": "pfbid02UuFrpGH1UQMhkRNiDLLJodb7FLqusPsF1KwWFPQScp1HDjLneDkvth3JyHvKPWRnl",
+    "name": "Diniz Bir",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/672341170_1519986706361032_8039983529998243944_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aIc_MANJZYUQ7kNvwHyxAA1&_nc_oc=AdpzzYFLu6qiNl844H5ZGO_oyw_IxYK_qdo8T-Ffs7s8phmYuqxNxlbqPykYu2vijePjl0epMIrNRsfBhdIqnxBt&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=f8h_E39a_T_veGbgMLbuhA&_nc_ss=72180&oh=00_AQN_gBGA6xe0PNIg_q9g6dkamYQbapz_zbmuO7yKa40gcQ&oe=6ADB9C95"
+   },
+   "timestamp": 1791825769,
+   "reactions_count": 28,
+   "comments_count": 6,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 17,
+    "love": 10,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTY3NjgwMTg2MDY3OTUxNQ==",
+   "shares_id": "ZmVlZGJhY2s6MTY3NjgwMTg2MDY3OTUxNQ==",
+   "associated_group_id": "",
+   "message_rich": [
+    {
+     "type": "Hashtag",
+     "id": "225159264295371",
+     "url": "https://www.facebook.com/hashtag/%D9%84%D9%8A%D9%85%D9%88%D9%86?__eep__=6",
+     "offset": 18,
+     "length": 6
+    }
+   ]
+  },
+  {
+   "post_id": "5691679161056701",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5691679161056701/",
+   "message": "ي جماعه شغل الأمجاداات اليومين دي كيف .\nعلما بأنو طولت شديد من شغلو \nمفكر اشتري لي واحده واشتغل بيها \nولا أفضل اشتري صالووون ؟؟",
+   "author": {
+    "id": "1185156725592788",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/480601864_23875370292052714_2305713118741625887_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=1KqYC6UaO7QQ7kNvwHtnQXn&_nc_oc=AdrS9gnDkKRYKikCSlHSQQcsLnBuAyXcYpQL4U0Tg-mY8p0JNfz8dgBPZfvH8MS7PobwplhIqX2xEclhX3HmCyhO&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=f8h_E39a_T_veGbgMLbuhA&_nc_ss=72180&oh=00_AQN4PydycGd9b57RBy1sgkEaWXM7JwIATyl4vxBto0BfJQ&oe=6ADB942F"
+   },
+   "timestamp": 1790447839,
+   "reactions_count": 13,
+   "comments_count": 7,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 13,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTY5MTY3OTE2MTA1NjcwMQ==",
+   "shares_id": "ZmVlZGJhY2s6NTY5MTY3OTE2MTA1NjcwMQ==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  },
+  {
+   "post_id": "122119292211284934",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0FeCaaJLFKphTqCxB1gP54SEFQV8wSyPz92j65gWAHsVLbL1rH1oZbsMHG7Di83VRl&id=61588548033959",
+   "message": "اليوم دخلت ع المول و شفت شب واقف بالبهو امام براد الكولا ،\n سحب وحدة ڤي كولا و غبا ، \nو رج أخد ڤي صودا و ع تمو طبا\nو كمان وحدة ڤي سڤن ليمون بالنعناع كرعا و تعبا\nو لحقا ب ڤي سڤن شعير تفاح و مانزلت الا فاضية كبا\nو لما مد إيدوا ع الرمان سألته ماشاء الله كل هاد عطشان و ماارتويت او كل هاد ال ڤي سڤن طيبة و ما بنشبع منها .\nفقال أنو أبوه عاش ٩٥ سنة .\nقلتله ماشاء الله من كتر ما كركع كويظيظ ڤي سڤن  يعني .\nفقال : لأنو ما كان يحشر حالوا بشي ما بيعنيه .\n\nبس السؤال : ليييييش شرب كل هدول يعني؟!!!",
+   "author": {
+    "id": "61588548033959",
+    "name": "v7 aleppo",
+    "url": "https://www.facebook.com/people/v7-aleppo/61588548033959/",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-1/719548583_122114235363284934_301569450308675615_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=68-q2aRbLhAQ7kNvwEvpWco&_nc_oc=AdqHqTR1UAQc8tzzKiRjjYMfdY2pxSBKA5NxK_liTyi77mww1g3QXNrxQZsU461Pf3bVUMb_E-EQBWZOzkodnZH4&_nc_zt=24&_nc_ht=scontent-phx1-1.xx&_nc_gid=f8h_E39a_T_veGbgMLbuhA&_nc_ss=72180&oh=00_AQN7tn-YRkOEIOW91d63CYVM4GTFHb2y8lpJuIF3eMgIEw&oe=6ADB9298"
+   },
+   "timestamp": 1786209097,
+   "reactions_count": 21,
+   "comments_count": 3,
+   "reshare_count": 5,
+   "reactions": {
+    "like": 20,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 1
+   },
+   "type": "post",
+   "image": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.30808-6/767068682_122119292187284934_3433858195226214870_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bsh-PbUiGD4Q7kNvwEAZAAt&_nc_oc=AdpsCr-ts3biyys0hvlqB86c4fVUFLERekxtLXzQnaxL8-yDSZDsenX2aiMOVHcA9QdD955aGVfLDNrmnXz9mMw0&_nc_zt=23&_nc_ht=scontent-phx1-1.xx&_nc_gid=f8h_E39a_T_veGbgMLbuhA&_nc_ss=72180&oh=00_AQN1rbU9HSyC8xM8ryZCQzQ1GLmcSKt_paeWlYk7mKp1Fw&oe=6ADB9240",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6MTIyMTE5MjkyMjExMjg0OTM0",
+   "shares_id": "ZmVlZGJhY2s6MTIyMTE5MjkyMjExMjg0OTM0",
+   "associated_group_id": ""
+  },
+  {
+   "post_id": "5716093731948577",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5716093731948577/",
+   "message": "انا اكتر حاجه ندمت عليها في البلد دي انو شلت سلاح ضد اخواني السودانيين وقاتلت علي اساس عندنا دولة لكن مع الاسف والله نحن كرامتنا في الارض",
+   "author": {
+    "id": "1429742429249425",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/480601864_23875370292052714_2305713118741625887_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=1KqYC6UaO7QQ7kNvwHtnQXn&_nc_oc=AdrS9gnDkKRYKikCSlHSQQcsLnBuAyXcYpQL4U0Tg-mY8p0JNfz8dgBPZfvH8MS7PobwplhIqX2xEclhX3HmCyhO&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=dPlzPu2aMTZtDBvVZnpOgA&_nc_ss=72180&oh=00_AQNpa8UgL16wqMjCqjAyapcMm934ZIRf0DPDtiNkc7FdJw&oe=6ADB942F"
+   },
+   "timestamp": 1791921725,
+   "reactions_count": 63,
+   "comments_count": 38,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 44,
+    "love": 4,
+    "haha": 4,
+    "wow": 0,
+    "sad": 11,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTcxNjA5MzczMTk0ODU3Nw==",
+   "shares_id": "ZmVlZGJhY2s6NTcxNjA5MzczMTk0ODU3Nw==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  },
+  {
+   "post_id": "5698401937051090",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5698401937051090/",
+   "message": "منشور مؤقت  :\nعندنا طالب جاب 210 في الشهادة المتوسطة\nلكن رسوب مادتين\nالموقف شنو.!!!؟؟؟",
+   "author": {
+    "id": "1089521417306671",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/480471783_9158392237563761_4042862335136844668_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=5dqTN68dx-wQ7kNvwFkaBS5&_nc_oc=AdopR9l5p2Lgtg4IAuhFuPDiRL8ejJO58mALa77Vubh07SoiM2M3hfQm9c3md-rLEO_ko_G5h671fCbVdC0sEw5G&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=dPlzPu2aMTZtDBvVZnpOgA&_nc_ss=72180&oh=00_AQNk00GhnzC_VRIMF7bqFPL1LntVUPFYPRfdGDQQf9sJ2A&oe=6ADBA7DF"
+   },
+   "timestamp": 1790852214,
+   "reactions_count": 35,
+   "comments_count": 42,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 33,
+    "love": 2,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTY5ODQwMTkzNzA1MTA5MA==",
+   "shares_id": "ZmVlZGJhY2s6NTY5ODQwMTkzNzA1MTA5MA==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  },
+  {
+   "post_id": "5714260918798525",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5714260918798525/",
+   "message": "يا جماعة عندي عربيتي كانت مسروقه من الدعامة وياداب صلحتها وعايز ارجع بيها وما فيها لوحات لو لقوني ناس المرور الاجراء بكون شنو",
+   "author": {
+    "id": "481042148419287",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/480424763_9499112296775885_2098664702354381518_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=oG_DmDtV9oAQ7kNvwFPqnCE&_nc_oc=AdqU5snano4bmtcJY-dNXIDfHp-xkCTylHSapBFFzfSqDUmUMJfX32teg5tnZlLlmwvxoS8-DhWn0P_SMX5hIesH&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=dPlzPu2aMTZtDBvVZnpOgA&_nc_ss=72180&oh=00_AQPT2j0JRkAD42eAXjA14WUvqGdin7STJVdnzzswSQWY3Q&oe=6ADBA013"
+   },
+   "timestamp": 1791816655,
+   "reactions_count": 23,
+   "comments_count": 27,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 22,
+    "love": 1,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTcxNDI2MDkxODc5ODUyNQ==",
+   "shares_id": "ZmVlZGJhY2s6NTcxNDI2MDkxODc5ODUyNQ==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  },
+  {
+   "post_id": "5707345396156744",
+   "url": "https://www.facebook.com/groups/2486356218255694/permalink/5707345396156744/",
+   "message": "البنزين وين في شارع الوادي",
+   "author": {
+    "id": "1932872431501280",
+    "name": "Anonymous participant",
+    "url": "",
+    "profile_picture_url": "https://scontent-phx1-1.xx.fbcdn.net/v/t39.35477-6/480601864_23875370292052714_2305713118741625887_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=1&ccb=1-7&_nc_sid=6f313d&_nc_ohc=1KqYC6UaO7QQ7kNvwHtnQXn&_nc_oc=AdrS9gnDkKRYKikCSlHSQQcsLnBuAyXcYpQL4U0Tg-mY8p0JNfz8dgBPZfvH8MS7PobwplhIqX2xEclhX3HmCyhO&_nc_zt=14&_nc_ht=scontent-phx1-1.xx&_nc_gid=dPlzPu2aMTZtDBvVZnpOgA&_nc_ss=72180&oh=00_AQNpa8UgL16wqMjCqjAyapcMm934ZIRf0DPDtiNkc7FdJw&oe=6ADB942F"
+   },
+   "timestamp": 1791391078,
+   "reactions_count": 23,
+   "comments_count": 6,
+   "reshare_count": 0,
+   "reactions": {
+    "like": 23,
+    "love": 0,
+    "haha": 0,
+    "wow": 0,
+    "sad": 0,
+    "angry": 0,
+    "care": 0
+   },
+   "type": "post",
+   "image": "",
+   "video": "",
+   "video_thumbnail": "",
+   "video_view_count": 0,
+   "album_preview": null,
+   "external_url": "",
+   "comments_id": "ZmVlZGJhY2s6NTcwNzM0NTM5NjE1Njc0NA==",
+   "shares_id": "ZmVlZGJhY2s6NTcwNzM0NTM5NjE1Njc0NA==",
+   "associated_group_id": "2486356218255694",
+   "author_title": "تجمع رحالين ترحال ليمون قو فرس"
+  }
+ ]
+}

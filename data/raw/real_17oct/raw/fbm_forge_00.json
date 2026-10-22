@@ -1,0 +1,905 @@
+{
+ "input": {
+  "query": "ڤي سڤن",
+  "search_type": "posts",
+  "max_results": 20,
+  "start_date": "2026-04-20",
+  "end_date": "2026-10-16"
+ },
+ "cap_usd": 0.08,
+ "run": {
+  "id": "bynOBWiQuB0Q1NM4w",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-19T11:35:23.661Z",
+  "finishedAt": "2026-10-19T11:36:03.118Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 1,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 5e-05
+ },
+ "cost_usd": 0.6249,
+ "items": [
+  {
+   "post_id": "1491641712975989",
+   "type": "post",
+   "url": "https://www.facebook.com/MaxABco/posts/pfbid034WL4J3PgF9PHNxhn1xhFM1Hh6CB5UTH2HN25jgL8KGp5bSSXWxvHmVPxSpdrjNXul",
+   "message": "كل منتجات ڤي سڤن متوفرة على مكسب!🤩👌\nدلوقتي تقدر تطلب كل منتجات ڤي سڤن لأول مرة من على مكسب وانت قاعد في محلك  وبأحسن الأسعار, كل اللى عليك انك تطلب كل الكمية اللى انت محتجها من قسم طلبات, وهتوصلك لحد باب محلك.😉\n✅اطلب دلوقتي : https://bit.ly/4tnxSI0",
+   "message_rich": "كل منتجات ڤي سڤن متوفرة على مكسب!🤩👌\nدلوقتي تقدر تطلب كل منتجات ڤي سڤن لأول مرة من على مكسب وانت قاعد في محلك  وبأحسن الأسعار, كل اللى عليك انك تطلب كل الكمية اللى انت محتجها من قسم طلبات, وهتوصلك لحد باب محلك.😉\n✅اطلب دلوقتي : https://bit.ly/4tnxSI0",
+   "timestamp": 1777906867,
+   "comments_count": 6,
+   "reactions_count": 271,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 1,
+    "care": 0,
+    "haha": 0,
+    "like": 264,
+    "love": 6,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100063905241251",
+    "name": "Maxab - مكسب",
+    "url": "https://www.facebook.com/MaxABco",
+    "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=E_TZ7JEkYw0Q7kNvwGePUPm&_nc_oc=AdrE7N4ZyJ4PUl0lLypObWdOMUiB591rcKwX-rTxkVPI3FiwIMKIchQ8lZYnhQujSn8&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQOHUSV4MDrsmxoW-zshkfkHqQrlbKDVac7GRuAw6yx9Cg&oe=6ADBE59C",
+    "delegate_page_id": "100398661440632"
+   },
+   "authors": [
+    {
+     "id": "100063905241251",
+     "name": "Maxab - مكسب",
+     "url": "https://www.facebook.com/MaxABco",
+     "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/547343015_1291854986287997_3314290840391578039_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=E_TZ7JEkYw0Q7kNvwGePUPm&_nc_oc=AdrE7N4ZyJ4PUl0lLypObWdOMUiB591rcKwX-rTxkVPI3FiwIMKIchQ8lZYnhQujSn8&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQOHUSV4MDrsmxoW-zshkfkHqQrlbKDVac7GRuAw6yx9Cg&oe=6ADBE59C",
+     "delegate_page_id": "100398661440632"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/690677221_1492258779580949_7504210105683653496_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=yFLBuc8KWokQ7kNvwFjud7i&_nc_oc=Adp7nZ-n5LZUJvFNdVltcBPMxgjxxAEuKparhQKgiQrVNlb3BxAesDy8I4nObKblhIk&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQMg0SFq6YFWMd3bVEkN4pKmhuys68Ql4KW90AabcA-6dA&oe=6ADBCA5A",
+    "height": 1080,
+    "width": 1080,
+    "id": "1492258776247616"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1491641712975989",
+   "shares_id": "1491641712975989",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "4748188958744625",
+   "type": "post",
+   "url": "https://www.facebook.com/nancy.wahba.104/posts/pfbid02AGd5xsB5FrEGSH5cXhQLyAHEgcrr8f2bLRwMZ87joF1St3CVoLWiwSPmmfoiVzcEl",
+   "message": "المشروب ده جامد بس\nبصراحه طعمه حلو اوي \nCream Soda\nو نازل \nSummer Edition ❤️\nبرافو 🤩 \nڤي سڤن",
+   "message_rich": "المشروب ده جامد بس\nبصراحه طعمه حلو اوي \nCream Soda\nو نازل \nSummer Edition ❤️\nبرافو 🤩 \nڤي سڤن",
+   "timestamp": 1787759677,
+   "comments_count": 39,
+   "reactions_count": 95,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 8,
+    "haha": 2,
+    "like": 47,
+    "love": 37,
+    "sad": 0,
+    "wow": 1
+   },
+   "author": {
+    "id": "100006607020273",
+    "name": "NaNcy Wahba",
+    "url": "https://www.facebook.com/100006607020273",
+    "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/829940979_4787145544848966_1690251227376475315_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=FPm_uL1Lw1UQ7kNvwH6vmG7&_nc_oc=AdpMRhJEN8SGdNXXknQ7XJ6edIbgdFo3lOxf7KV_qYyrH8BqWGIk_B5l2Gfypx6YQ8k&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQNtM_QFsOuertEMG3ZOzmRztIjLnf_Cvvbegw11kMrwkg&oe=6ADBB936",
+    "delegate_page_id": "102942215916920"
+   },
+   "authors": [
+    {
+     "id": "100006607020273",
+     "name": "NaNcy Wahba",
+     "url": "https://www.facebook.com/100006607020273",
+     "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/829940979_4787145544848966_1690251227376475315_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=FPm_uL1Lw1UQ7kNvwH6vmG7&_nc_oc=AdpMRhJEN8SGdNXXknQ7XJ6edIbgdFo3lOxf7KV_qYyrH8BqWGIk_B5l2Gfypx6YQ8k&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQNtM_QFsOuertEMG3ZOzmRztIjLnf_Cvvbegw11kMrwkg&oe=6ADBB936",
+     "delegate_page_id": "102942215916920"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/787797531_4748181512078703_8305854289967537804_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KFQGc6PLbpIQ7kNvwFvNkL1&_nc_oc=AdohduZ6DAeTcnijgAxj98RhadG-SUuLqe5NYY6G0KoHJnBWSOrTwFo3KjcV-DgN2oo&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQM5OMUCK4f0mjKziyqFNXuoRUly5XLmv9aCwSBFPo3RnA&oe=6ADBD299",
+     "url": "https://www.facebook.com/photo.php?fbid=4748181508745370&set=a.1375659439330944&type=3",
+     "id": "4748181508745370"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/787405912_4748189345411253_3185485902008408965_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=anJnke-MDT0Q7kNvwFxqhJx&_nc_oc=AdooHgzWT99z9oaTjQ5wFnYdikfOgoj4YCOr6r582ulqb5f6dhAj-Xh0y6Yk5OnaZJU&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQOyj6UYoACmKZLToVQVY7stAAN8R8911_2D5MhcGeI5Lg&oe=6ADBC588",
+     "url": "https://www.facebook.com/photo.php?fbid=4748188868744634&set=a.1375659439330944&type=3",
+     "id": "4748188868744634"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "4748188958744625",
+   "shares_id": "4748188958744625",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 2,
+   "top_comments": []
+  },
+  {
+   "post_id": "2502166536969895",
+   "type": "post",
+   "url": "https://www.facebook.com/groups/602561013597133/posts/2502166536969895/",
+   "message": "ازيكم مساء الخير \nتعاملت من قريب مع سوبرماركت بنده بعد ترشيح قوي من بعض الاعضاء ولكن التجربة سلبيه حتى بعد ما اديتهم اكتر من فرصه واقربها امبارح. طبعا هو اول حاجه  محفوظه بيقولها بعد   صباح الخير الاوردر هياخد من ساعتين لتلات ساعات والتوصيل ٢٥ ج \nتمام اوك اتفقنا \nالثلاث ساعات ممكن يىصلوا لخمس ساعات عادي و بسبب بسبط انهم انصلوا عشان في حاجه مش موجوده وحضرتك مردتيش \nعلى اساس انا مربوطه جنب التليفون عشان سعادتهم ارد عليهم في لحظتها \nبعد ماتكتشف ان في رقم كلمك تلات مرات تتصل تشوف مين يطلع همه لان الرقم اصلا مش هو انت كلمته فانت اصلا اما يتصلوا مفروض تعرف ان ده بنده \nطيب نعم ايوه ياافندم في بعض الاشياء مش موجوده \nامبارح حرفيا ٨٠٪؜ من الاوردر مش موجود ؟!\nومحتاج مني موافقه على البديل !!!\nتم الموافقه على كل البدايل عشان انجز مهو ساعتين عدو !!\nطالبه نوع مشروب غازي ماكسي صغير وماكده عليه وهو اكد عليا  ان الانواع الموجوده كذا وكذا واخترت وتمام فله\nاللحمه المفرومه اي نوع يامدام الارخص ياباشا قال اوك\nكرتونه مياه نوع الفلاني كش موجوده في تلاتين نوع غيرها اخترت واحد!!\nبعد ساعتين من الاتصال وبعد ماقربت انسى ان اصلا في اوردر يوصلني \nولا ازازه ماكسي كله ڤي سڤن  ؟! \nاللحمه المفرومه الاغلى\nكرتونه مياه مجتش اصلا \nغير حاجات طالبه منها علبتين وصلني علبه وحاجه مرار صراحه\nوعليه تم الغاء التعامل مع بنده نهائي وشكرا",
+   "message_rich": "ازيكم مساء الخير \nتعاملت من قريب مع سوبرماركت بنده بعد ترشيح قوي من بعض الاعضاء ولكن التجربة سلبيه حتى بعد ما اديتهم اكتر من فرصه واقربها امبارح. طبعا هو اول حاجه  محفوظه بيقولها بعد   صباح الخير الاوردر هياخد من ساعتين لتلات ساعات والتوصيل ٢٥ ج \nتمام اوك اتفقنا \nالثلاث ساعات ممكن يىصلوا لخمس ساعات عادي و بسبب بسبط انهم انصلوا عشان في حاجه مش موجوده وحضرتك مردتيش \nعلى اساس انا مربوطه جنب التليفون عشان سعادتهم ارد عليهم في لحظتها \nبعد ماتكتشف ان في رقم كلمك تلات مرات تتصل تشوف مين يطلع همه لان الرقم اصلا مش هو انت كلمته فانت اصلا اما يتصلوا مفروض تعرف ان ده بنده \nطيب نعم ايوه ياافندم في بعض الاشياء مش موجوده \nامبارح حرفيا ٨٠٪؜ من الاوردر مش موجود ؟!\nومحتاج مني موافقه على البديل !!!\nتم الموافقه على كل البدايل عشان انجز مهو ساعتين عدو !!\nطالبه نوع مشروب غازي ماكسي صغير وماكده عليه وهو اكد عليا  ان الانواع الموجوده كذا وكذا واخترت وتمام فله\nاللحمه المفرومه اي نوع يامدام الارخص ياباشا قال اوك\nكرتونه مياه نوع الفلاني كش موجوده في تلاتين نوع غيرها اخترت واحد!!\nبعد ساعتين من الاتصال وبعد ماقربت انسى ان اصلا في اوردر يوصلني \nولا ازازه ماكسي كله ڤي سڤن  ؟! \nاللحمه المفرومه الاغلى\nكرتونه مياه مجتش اصلا \nغير حاجات طالبه منها علبتين وصلني علبه وحاجه مرار صراحه\nوعليه تم الغاء التعامل مع بنده نهائي وشكرا",
+   "timestamp": 1779842919,
+   "comments_count": 24,
+   "reactions_count": 28,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 1,
+    "like": 25,
+    "love": 0,
+    "sad": 1,
+    "wow": 1
+   },
+   "author": {
+    "id": "100062552932069",
+    "name": "Salwa Rawash",
+    "url": "https://www.facebook.com/salwa.rawash",
+    "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/839095900_1451279253633825_5835998073059057417_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=wW8Xl3vw8_sQ7kNvwFCHSkj&_nc_oc=Adpp9Jdtq-S_GUQiiWaFQgxC1qZFXDhCH4hfsBPKmGWn43ipYTPuVC37t6ckmu1EXIc&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQPehNK5fYbCOLDa9T4gy7OHa4ZT7ZDvKkQW8mhJuhE3ZA&oe=6ADBD86C",
+    "delegate_page_id": "662629843603308"
+   },
+   "authors": [
+    {
+     "id": "100062552932069",
+     "name": "Salwa Rawash",
+     "url": "https://www.facebook.com/salwa.rawash",
+     "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/839095900_1451279253633825_5835998073059057417_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=wW8Xl3vw8_sQ7kNvwFCHSkj&_nc_oc=Adpp9Jdtq-S_GUQiiWaFQgxC1qZFXDhCH4hfsBPKmGWn43ipYTPuVC37t6ckmu1EXIc&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQPehNK5fYbCOLDa9T4gy7OHa4ZT7ZDvKkQW8mhJuhE3ZA&oe=6ADBD86C",
+     "delegate_page_id": "662629843603308"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2502166536969895",
+   "shares_id": "2502166536969895",
+   "associated_group_id": "602561013597133",
+   "associated_group": {
+    "group_id": "602561013597133",
+    "name": "الجروب الرسمي لملاك مدينة الرحاب",
+    "url": "https://www.facebook.com/groups/602561013597133/",
+    "work_foreign_entity_info": null,
+    "is_multi_company_group": false,
+    "work_official_status": "UNOFFICIAL"
+   },
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1544660730797008",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02XgtTNDHTTbQmhUEg5kv8fdkjbNNMTPhUxEGNjJ8SC3seTrAvz5nNC59CEFpg2jWFl&id=100057592863562",
+   "message": "⚡️🔥 ڤي سڤن جميع الاطعم✅\n\nلو بتدور على مشروب يظبط يومك ويكمل معاك كل وقت… ڤي سڤن موجود🥰\n\n✨ طعم مميز\n🔥 اختيار مناسب لكل وقت\n📦 متوفرة بكميات للجملة والقطاعي☑️\n\n📞 للتواصل والطلبات:\n01029798866\n01024102099\n\n📲 تليجرام:\nhttps://t.me/futurecompanyeldakhlia\n\n📍 موقعنا:\nhttps://maps.apple/p/NnueazMWDXX_B4",
+   "message_rich": "⚡️🔥 ڤي سڤن جميع الاطعم✅\n\nلو بتدور على مشروب يظبط يومك ويكمل معاك كل وقت… ڤي سڤن موجود🥰\n\n✨ طعم مميز\n🔥 اختيار مناسب لكل وقت\n📦 متوفرة بكميات للجملة والقطاعي☑️\n\n📞 للتواصل والطلبات:\n01029798866\n01024102099\n\n📲 تليجرام:\nhttps://t.me/futurecompanyeldakhlia\n\n📍 موقعنا:\nhttps://maps.apple/p/NnueazMWDXX_B4",
+   "timestamp": 1789059548,
+   "comments_count": 0,
+   "reactions_count": 1,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 0,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100057592863562",
+    "name": "شركة فيوتشر للاستيراد والتصدير",
+    "url": "https://www.facebook.com/people/%D8%B4%D8%B1%D9%83%D8%A9-%D9%81%D9%8A%D9%88%D8%AA%D8%B4%D8%B1-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1/100057592863562/",
+    "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/760701475_1509428514320230_2254437893512695546_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=hH4q7hF4MxQQ7kNvwGlRIhU&_nc_oc=AdpeYcAx3HeF-WZsI0b7uMiiBYJwjoao-rR8nlPyytZs7yfuAa-IoL7yU5rTivUpJdk&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQNQdy4CkMnkY5QnF54n6AOtLre6ohj876Io-60jw3qUHQ&oe=6ADBDEF4",
+    "delegate_page_id": "112798067159404"
+   },
+   "authors": [
+    {
+     "id": "100057592863562",
+     "name": "شركة فيوتشر للاستيراد والتصدير",
+     "url": "https://www.facebook.com/people/%D8%B4%D8%B1%D9%83%D8%A9-%D9%81%D9%8A%D9%88%D8%AA%D8%B4%D8%B1-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1/100057592863562/",
+     "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/760701475_1509428514320230_2254437893512695546_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=hH4q7hF4MxQQ7kNvwGlRIhU&_nc_oc=AdpeYcAx3HeF-WZsI0b7uMiiBYJwjoao-rR8nlPyytZs7yfuAa-IoL7yU5rTivUpJdk&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQNQdy4CkMnkY5QnF54n6AOtLre6ohj876Io-60jw3qUHQ&oe=6ADBDEF4",
+     "delegate_page_id": "112798067159404"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/802822886_1544661097463638_2212770780296482400_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=V3pXaYj1y98Q7kNvwHUFdFs&_nc_oc=Ado2Xy6JazaMHVvgpcZUiU4gVndKSrseyYqn_vYhUyVxg5JW24x9CAcEMlXyJ6ZyQBQ&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQNreF6j5A1rzMQoHBmcKyq2GtRXpWS9Da-83cXOw1IXDw&oe=6ADBBB11",
+     "url": "https://www.facebook.com/photo.php?fbid=1544659454130469&set=a.504407651488993&type=3",
+     "id": "1544659454130469"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/802467878_1544661084130306_6482297801246047842_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5RFz0XTv-u4Q7kNvwF2S_bG&_nc_oc=AdoJV63dpveYFEJjaojP6RH3hxlNDVbXP7OGXFnbuVPKDQhZIi0iPWhxRSaHYJiQzgw&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQOF2o7eivNBIMewj72FT46kC7n4OOHhMrtjgeQWW8HqqQ&oe=6ADBE0FC",
+     "url": "https://www.facebook.com/photo.php?fbid=1544659490797132&set=a.504407651488993&type=3",
+     "id": "1544659490797132"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/801939770_1544661170796964_2278658623368193974_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gwKVFKQ1HdMQ7kNvwF4v-cK&_nc_oc=Ado_Z2sCKH_vKGlUxxmYltqZxX_hJQWAEgAOKzsfOqHRoPLoNubPSnVQNc_mIrqTEBY&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQOGLN4SKffBphCSoMSZSlmxF2OsRGBbwMQfXApvRZbp-A&oe=6ADBE459",
+     "url": "https://www.facebook.com/photo.php?fbid=1544659554130459&set=a.504407651488993&type=3",
+     "id": "1544659554130459"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/802966746_1544661220796959_7513520225688765236_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bBsTJ5F5BkoQ7kNvwFkcTe0&_nc_oc=AdpR0kP09NRg9N3vBHBMtYrDkphjrDxXofbRCXH6C01G5SEFGyuCsXS8Mn-Zr2vRGyA&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQPEQtEZBrDSruy-5voM8ZaPRjJ5coOv8itufdxt1640eA&oe=6ADBCD7B",
+     "url": "https://www.facebook.com/photo.php?fbid=1544659614130453&set=a.504407651488993&type=3",
+     "id": "1544659614130453"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/802712668_1544661250796956_553750746093703353_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zGfFmFvqPAIQ7kNvwHvIwXD&_nc_oc=AdopIgR3ySR1ZOSdNfmxNGmktskIcdA-vOollCVsq7xkaDhy3kR_oWswpdz1fnUwWuQ&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQPSIjnqRh--JVcyAWyGr6HGwUWurVrjEGSRiSHUpl63Rw&oe=6ADBC7F5",
+     "url": "https://www.facebook.com/photo.php?fbid=1544659644130450&set=a.504407651488993&type=3",
+     "id": "1544659644130450"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1544660730797008",
+   "shares_id": "1544660730797008",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 7,
+   "top_comments": []
+  },
+  {
+   "post_id": "122134510635030226",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0MUyE2yX98ZZMC3JYeGqn9p3SnS2UcwEzFsuQAcJ57kj94cc37sWp3r6LACKXwxLEl&id=61580906801719",
+   "message": "ڤي سڤن.. اللي كلنا بنحبه ❤️\n\nمش بس لأنه سهل علينا المقاطعة، لكن كمان علشان جودته البريميوم وطعمه المنعش اللي مفيش عليه كلام 😍\n\n🎉 عرض خاص من النهارده وحتى يوم الخميس:\n\nاشترِ 5 عبوات وخد الـ6 مجانًا 🎁\n\nسارع بالعرض قبل نفاد الكمية!\n\n📌 مع خالد ماركت .. دايماً كسبان 💯\n\nدليفري 🛵 : 01025794322",
+   "message_rich": "ڤي سڤن.. اللي كلنا بنحبه ❤️\n\nمش بس لأنه سهل علينا المقاطعة، لكن كمان علشان جودته البريميوم وطعمه المنعش اللي مفيش عليه كلام 😍\n\n🎉 عرض خاص من النهارده وحتى يوم الخميس:\n\nاشترِ 5 عبوات وخد الـ6 مجانًا 🎁\n\nسارع بالعرض قبل نفاد الكمية!\n\n📌 مع خالد ماركت .. دايماً كسبان 💯\n\nدليفري 🛵 : 01025794322",
+   "timestamp": 1780991021,
+   "comments_count": 2,
+   "reactions_count": 9,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 2,
+    "haha": 0,
+    "like": 4,
+    "love": 3,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61580906801719",
+    "name": "خــالــد مــاركــت",
+    "url": "https://www.facebook.com/people/%D8%AE%D9%80%D9%80%D8%A7%D9%84%D9%80%D9%80%D8%AF-%D9%85%D9%80%D9%80%D8%A7%D8%B1%D9%83%D9%80%D9%80%D8%AA/61580906801719/",
+    "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/551086611_122100029541030226_5845200068647975252_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=kg_zUAEx6sUQ7kNvwElv4aj&_nc_oc=AdqWWivm-96T-OAwiIWpo0Tt-fBunq5zwQDeuEa6sOrgJZus3Wu_qta_qtu-pdNO6zo&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQMImKR9qQMYiX4w0B8snXo8BjuVNtJ7ks1mGFJcq9XlGA&oe=6ADBEDD1",
+    "delegate_page_id": "835252769663967"
+   },
+   "authors": [
+    {
+     "id": "61580906801719",
+     "name": "خــالــد مــاركــت",
+     "url": "https://www.facebook.com/people/%D8%AE%D9%80%D9%80%D8%A7%D9%84%D9%80%D9%80%D8%AF-%D9%85%D9%80%D9%80%D8%A7%D8%B1%D9%83%D9%80%D9%80%D8%AA/61580906801719/",
+     "profile_picture_url": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-1/551086611_122100029541030226_5845200068647975252_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=kg_zUAEx6sUQ7kNvwElv4aj&_nc_oc=AdqWWivm-96T-OAwiIWpo0Tt-fBunq5zwQDeuEa6sOrgJZus3Wu_qta_qtu-pdNO6zo&_nc_zt=24&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQMImKR9qQMYiX4w0B8snXo8BjuVNtJ7ks1mGFJcq9XlGA&oe=6ADBEDD1",
+     "delegate_page_id": "835252769663967"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fpoz4-1.fna.fbcdn.net/v/t39.30808-6/719202876_122134510611030226_2095061493186311841_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mRge-Ujr-_YQ7kNvwHztJPS&_nc_oc=Adp4VQrDJILWKFgnUgPcEMC08W7rQYRs0Gtsiay2LBCKlTkoiSKxDvsQFHy3NKJhTas&_nc_zt=23&_nc_ht=scontent.fpoz4-1.fna&_nc_gid=VThKXLsywaTOO949wXMMLg&_nc_ss=70289&oh=00_AQM2-brHMn5jTdtnlR9NX1TaHvaNjlgPo69bCZzUT3y8zA&oe=6ADBEEA9",
+    "height": 1415,
+    "width": 1600,
+    "id": "122134510605030226"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122134510635030226",
+   "shares_id": "122134510635030226",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1566063982204716",
+   "type": "post",
+   "url": "https://www.facebook.com/AlJaroushi0/posts/pfbid02MTYpb7oudKKc6VwMvsLTP2GKbmNiFA5oVwMp6Lyxqa31drGDjTJAGAY2mJ6zT5sGl",
+   "message": "عرض خاااص ✨✨🤩✨🤩 \nمشروب غازي ✨ ڤي سڤن ✨ 250 ملى 😮😮 \nالسعر 🔥🔥🔥 1.75 دينار 🔥🔥🔥 \nالعنوان السلمانى الشرقي شارع البث \nيوجد لدينا خدمات مصرفية موبي كاش وادفعلى ويسر باي وان باي بطقات مصرفية",
+   "message_rich": "عرض خاااص ✨✨🤩✨🤩 \nمشروب غازي ✨ ڤي سڤن ✨ 250 ملى 😮😮 \nالسعر 🔥🔥🔥 1.75 دينار 🔥🔥🔥 \nالعنوان السلمانى الشرقي شارع البث \nيوجد لدينا خدمات مصرفية موبي كاش وادفعلى ويسر باي وان باي بطقات مصرفية",
+   "timestamp": 1790249681,
+   "comments_count": 4,
+   "reactions_count": 210,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 208,
+    "love": 2,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100064033869555",
+    "name": "محل أبناء الجروشي للمواد الغذائية",
+    "url": "https://www.facebook.com/AlJaroushi0",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/294314946_431725782305214_1383828647028776843_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=V11YwBhqfp4Q7kNvwFk6i39&_nc_oc=Adoef7DnnjesjjDeLwYTiut-9sFR8bQPa2MU7zn-bjrb0ixzi0LneiJKnw_dyo8z5Ik&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQN-JhOQ1dYWnR_U5VDRj8dSE4hDOmT0hV71VWvbqxxMgQ&oe=6ADBBAC5",
+    "delegate_page_id": "111413550620793"
+   },
+   "authors": [
+    {
+     "id": "100064033869555",
+     "name": "محل أبناء الجروشي للمواد الغذائية",
+     "url": "https://www.facebook.com/AlJaroushi0",
+     "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/294314946_431725782305214_1383828647028776843_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=V11YwBhqfp4Q7kNvwFk6i39&_nc_oc=Adoef7DnnjesjjDeLwYTiut-9sFR8bQPa2MU7zn-bjrb0ixzi0LneiJKnw_dyo8z5Ik&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQN-JhOQ1dYWnR_U5VDRj8dSE4hDOmT0hV71VWvbqxxMgQ&oe=6ADBBAC5",
+     "delegate_page_id": "111413550620793"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/799503722_1566063955538052_2800158010407530514_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9jGs1ApaGtkQ7kNvwEMnA5D&_nc_oc=AdpDuyuYd_f4SqFC3keKHOsb65LuGFtFjrg8IqBfZe2-N_WVR6UvzGBUz_snLil5iNI&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQMprdkUPSYF3LGSAFwcdbt-O-v9ePhd2R6ZK8hja1y9jw&oe=6ADBCD3F",
+    "height": 1440,
+    "width": 1080,
+    "id": "1566063948871386"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1566063982204716",
+   "shares_id": "1566063982204716",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "1025346510171617",
+   "type": "post",
+   "url": "https://www.facebook.com/MasrTimes/posts/pfbid0kWpzW1SNwqEjxc36uEfcgknwZRX4wWekGgECAUcZmKYqYkHbfwGiyoy4iiGUzwRNl",
+   "message": "رئيس الوزراء يفتتح مصنع جديد لشركة V7 للمشروبات الغازية \"ڤي سڤن\" بمدينة السادات",
+   "message_rich": "رئيس الوزراء يفتتح مصنع جديد لشركة V7 للمشروبات الغازية \"ڤي سڤن\" بمدينة السادات",
+   "timestamp": 1778489052,
+   "comments_count": 2,
+   "reactions_count": 39,
+   "reshare_count": 4,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 38,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "100080888337388",
+    "name": "مصر تايمز - Masr Times",
+    "url": "https://www.facebook.com/MasrTimes",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/657581418_983754364330832_5755760486045126976_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ur_07j34dVoQ7kNvwFRbC6U&_nc_oc=AdrovX3ZzKQt-mT9QZOelOAxXJNJHpSsvClzshhKcndNo4NBMBVGNryFZo_et37GnMg&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQNKwnqO2AwwSEIjaj9sKRFWaNO09OM_oBIdNK20qFCNWQ&oe=6ADBEDC1",
+    "delegate_page_id": "102269705774431"
+   },
+   "authors": [
+    {
+     "id": "100080888337388",
+     "name": "مصر تايمز - Masr Times",
+     "url": "https://www.facebook.com/MasrTimes",
+     "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/657581418_983754364330832_5755760486045126976_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=Ur_07j34dVoQ7kNvwFRbC6U&_nc_oc=AdrovX3ZzKQt-mT9QZOelOAxXJNJHpSsvClzshhKcndNo4NBMBVGNryFZo_et37GnMg&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQNKwnqO2AwwSEIjaj9sKRFWaNO09OM_oBIdNK20qFCNWQ&oe=6ADBEDC1",
+     "delegate_page_id": "102269705774431"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/695660414_1025345920171676_5446529473773865832_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xhPr187lwAUQ7kNvwHiYnh4&_nc_oc=AdrqcHAV79sGeP3-JSpnsuPFg_L4G--k0CyC7RZ7Pcpxzz_5R8iECznML4GsKDoOn7g&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQMMwvj0xKWM95QbdXPkJyNNWhKtKbnjBvnV75KjplJG9Q&oe=6ADBE620",
+     "url": "https://www.facebook.com/photo.php?fbid=1025345916838343&set=a.164975136208763&type=3",
+     "id": "1025345916838343"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/697053474_1025346063504995_8902816002989007350_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HDnp9BEGcAcQ7kNvwHk3Z05&_nc_oc=AdracdV4SycS01Eylh50GIK-nY2_gugA5MxCD5jjFnT7jbHehRns6T2nGjlcmBTaXEI&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQNm-xpCr4M9I052s43HNjmesIK-YKPaDAc6lI5hjvHLyA&oe=6ADBE2CF",
+     "url": "https://www.facebook.com/photo.php?fbid=1025346060171662&set=a.164975136208763&type=3",
+     "id": "1025346060171662"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/697065580_1025346236838311_1069824848588835865_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rYD-gZ6mt0oQ7kNvwHBuB3b&_nc_oc=AdolOD3lLSqgJ8EumvqCTX7qFoOy4QiXBbt0ocbDnm9KjowAHS-t4EONmvrFY8vltxI&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQMyXS16LKLLCiVJiVJLMPqRSw0eRQUYlcSXHZpf33qkKg&oe=6ADBC25B",
+     "url": "https://www.facebook.com/photo.php?fbid=1025346233504978&set=a.164975136208763&type=3",
+     "id": "1025346233504978"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/696886514_1025346413504960_1025193523537718204_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_TLTsyuTerIQ7kNvwHHkywQ&_nc_oc=Adq-vnBX-ZGoYO492J4IsegR3-vF0_3WBdNXMZgKqsJX37QfM_v9r_zP1lAt_lyikLg&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQOkcssWJX4L9CQEYKa1MUh9RqULKY4VPLJpiUSfZTGskg&oe=6ADBCCAE",
+     "url": "https://www.facebook.com/photo.php?fbid=1025346406838294&set=a.164975136208763&type=3",
+     "id": "1025346406838294"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "1025346510171617",
+   "shares_id": "1025346510171617",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 4,
+   "top_comments": []
+  },
+  {
+   "post_id": "122122375179257847",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02WEaTqkdSm3iNKXHXiJAS6tDXnz5B8A1zjCcwAAJR5rNzyVa1yLDqtxRHWkqQ8PfKl&id=61587735430142",
+   "message": "📌 ولأنها المفضلة عند كتيييير  🫣💚 لازم اعملها بوست وحدها 😌💯\n⭕ (ڤي سڤن كولا) من أول دايت لحد باقي النكهات 😊",
+   "message_rich": "📌 ولأنها المفضلة عند كتيييير  🫣💚 لازم اعملها بوست وحدها 😌💯\n⭕ (ڤي سڤن كولا) من أول دايت لحد باقي النكهات 😊",
+   "timestamp": 1785578358,
+   "comments_count": 0,
+   "reactions_count": 13,
+   "reshare_count": 1,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 11,
+    "love": 1,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61587735430142",
+    "name": "هايبر الطارق",
+    "url": "https://www.facebook.com/people/%D9%87%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D8%B1%D9%82/61587735430142/",
+    "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/627954367_122100631461257847_5659819996626563174_n.jpg?stp=c29.29.442.442a_cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rm8TW4Yb0ikQ7kNvwEXN8gU&_nc_oc=Adrm7hizZjiIDmNyNn4nDNlkuuTzHxLScz1-NptaZdZzPZsfC3K4t0s108Wzxt5FoI0&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQOQyVJsU7zs-VJ6BfWRYhR3iI5YJXa91XqXkdtIuevRtQ&oe=6ADBD875",
+    "delegate_page_id": "967769553093750"
+   },
+   "authors": [
+    {
+     "id": "61587735430142",
+     "name": "هايبر الطارق",
+     "url": "https://www.facebook.com/people/%D9%87%D8%A7%D9%8A%D8%A8%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D8%B1%D9%82/61587735430142/",
+     "profile_picture_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-1/627954367_122100631461257847_5659819996626563174_n.jpg?stp=c29.29.442.442a_cp0_dst-jpg_s80x80_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=rm8TW4Yb0ikQ7kNvwEXN8gU&_nc_oc=Adrm7hizZjiIDmNyNn4nDNlkuuTzHxLScz1-NptaZdZzPZsfC3K4t0s108Wzxt5FoI0&_nc_zt=24&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQOQyVJsU7zs-VJ6BfWRYhR3iI5YJXa91XqXkdtIuevRtQ&oe=6ADBD875",
+     "delegate_page_id": "967769553093750"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/761590830_122122374987257847_6014542880081204532_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MdK26eEfcRcQ7kNvwE2rK0k&_nc_oc=Adpi58YukLCjHtlcrUn3xcJkD53-vVODEkT1OcFUb5Ohy6Wpo5OFHVH--JJTTSh6kS0&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQOpeUwfb4iBRoztf5rqm0uhC_9y2R07K77zgRbL7Li0kQ&oe=6ADBDCE3",
+     "url": "https://www.facebook.com/photo.php?fbid=122122374981257847&set=a.122104744779257847&type=3",
+     "id": "122122374981257847"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/762812809_122122375029257847_2166626828825986859_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vzQCOdclkjcQ7kNvwEYLMZh&_nc_oc=AdoR5XD9D-GuHkjQNZetPiyHODYPshYoTIZAyJMtRlgB90INOchBdNyhnDJrxPQx4io&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQN8L_0-IA3i5vrbWFudscTA756LWNtiVzWzrkw50zG1hA&oe=6ADBD16B",
+     "url": "https://www.facebook.com/photo.php?fbid=122122375023257847&set=a.122104744779257847&type=3",
+     "id": "122122375023257847"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/763098532_122122375071257847_8695059875834001588_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PvUG4Ew_hfwQ7kNvwGgsWbT&_nc_oc=AdpdNb41YsrpOulHgre3PEOasvDMfse4vdsurt-kPADoB5pk7KTjArPseByL30j9NTg&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQN5hmD3B2GS9TxeQBI9OF10ZJ5Bf4FWkfwMJOujD9_FHA&oe=6ADBE781",
+     "url": "https://www.facebook.com/photo.php?fbid=122122375065257847&set=a.122104744779257847&type=3",
+     "id": "122122375065257847"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/762846990_122122375113257847_3819649216385019552_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Gc99PgitzAQ7kNvwFYFUCd&_nc_oc=Adopv6jzTV3Sd2WjVsF_LJECfhpsSG78kOQfa62iTZ7OpwfDqS82VK8j2It8Iny8N6g&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQMUuNNuOu8XyjB9bQcDZZN2iR-xud96hgrZLYy3mOAhiA&oe=6ADBE2B8",
+     "url": "https://www.facebook.com/photo.php?fbid=122122375107257847&set=a.122104744779257847&type=3",
+     "id": "122122375107257847"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/762944614_122122375155257847_6533167472131726199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AH4r8WPcN-sQ7kNvwHwQc5c&_nc_oc=AdpziwEjE1iWOJZ4_N2K6Nl08qtw-jAmjD0Tlsy8eN_JYZuYIepRJDz5SXKGGxb3UAQ&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQN9aasUtN-tGwfg0JftdAu-Sf-DO8rdyD4WSkRu7saENg&oe=6ADBBC62",
+     "url": "https://www.facebook.com/photo.php?fbid=122122375149257847&set=a.122104744779257847&type=3",
+     "id": "122122375149257847"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122122375179257847",
+   "shares_id": "122122375179257847",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 5,
+   "top_comments": []
+  },
+  {
+   "post_id": "122094593721465591",
+   "type": "post",
+   "url": "https://www.facebook.com/reel/2258238494941774/",
+   "message": "#يلاـنجرب ڤي سڤن كريم صودا",
+   "message_rich": "#يلاـنجرب ڤي سڤن كريم صودا",
+   "timestamp": 1787766011,
+   "comments_count": 3,
+   "reactions_count": 14,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 8,
+    "love": 5,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61593967732248",
+    "name": "يلا نجرب",
+    "url": "https://www.facebook.com/yallangrab26",
+    "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/784787567_122204682344521171_8363795935105367377_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=KhZMYEFGhdUQ7kNvwFfHqRc&_nc_oc=AdpGSn1D2Pk3uc8MELq-0kswoCAaeQekecj5UFRV-cKMVcuqAENWJtRMC_Wx0qHXQ0Q&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQPkYCyH2xxP0Ql2pjV-EbnogBzWLUVYLCrK8RPuHu12sQ&oe=6ADBC33A",
+    "delegate_page_id": "1189537190919868"
+   },
+   "authors": [
+    {
+     "id": "61593967732248",
+     "name": "يلا نجرب",
+     "url": "https://www.facebook.com/yallangrab26",
+     "profile_picture_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/784787567_122204682344521171_8363795935105367377_n.jpg?stp=cp0_dst-jpg_s80x80_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=KhZMYEFGhdUQ7kNvwFfHqRc&_nc_oc=AdpGSn1D2Pk3uc8MELq-0kswoCAaeQekecj5UFRV-cKMVcuqAENWJtRMC_Wx0qHXQ0Q&_nc_zt=24&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQPkYCyH2xxP0Ql2pjV-EbnogBzWLUVYLCrK8RPuHu12sQ&oe=6ADBC33A",
+     "delegate_page_id": "1189537190919868"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": "https://www.facebook.com/reel/2258238494941774/",
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": {
+    "video_sd_file": "https://video-iad6-1.xx.fbcdn.net/o1/v/t2/f2/m412/AQP55D6u5x2aRd8DgAK1DK6J_uEM04jTpY1I9Vre8pDvJk-y6WSMvniRyFxtxpwaWpsKXNUzDZINYJvM9OVz90xHiCTeqcWhjNBFd1hUWA.mp4?_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-iad6-1.xx.fbcdn.net&_nc_ohc=ZlycwtD_7qIQ7kNvwEsUxO-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjE0MjM4NTUzMDAyMDE1OSwiYXNzZXRfYWdlX2RheXMiOjUzLCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6ODIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&_nc_zt=28&oh=00_AQPZjEOo_f59tgtoMUTK-k4qtA9Nth_iZTzyBaK2C9H7JA&oe=6ADBE871&bitrate=434092&tag=sve_sd",
+    "video_hd_file": "https://video-iad6-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQN9jgNaqV_g_GWxCaMpb2GmUYdevc7hZj336gyLA_2_2lY8pAFi4lfEx6DrCg-YxQz4esMeYbu5myuPOlQxbiiJU-5X7ofvGqPHlqTqwBEyUQ.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=video-iad6-1.xx.fbcdn.net&_nc_ohc=eENmMDTeAjEQ7kNvwH4c40L&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIxNDIzODU1MzAwMjAxNTksImFzc2V0X2FnZV9kYXlzIjo1MywidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjgyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=26bbf45d1a769773&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xMkY2MUE4NEVGODE0MTAyOTBEMzZBRjVDMjY0MDg2NF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0U0NEY0MkYyODJGQjhEQTkzNzM0RkI4NTdFN0Y2MjlCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb-hOmHoJ_OBxUCKAJDMywXQFSZmZmZmZoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&_nc_zt=28&oh=00_AQM9uu_3UrSZs8PnGB0f69JJSz1zLvh6Bg9MqJ6RvZKU8w&oe=6ADBE82D&bitrate=2098249&tag=dash_h264-basic-gen2_720p"
+   },
+   "video_thumbnail": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/787715257_28202021499428856_136830274913727145_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=d2b52d&_nc_ohc=zVyV_lmHM14Q7kNvwFSOd5O&_nc_oc=AdrWSZTAPzO4DyWH8agT8rf3WJe5ty3RvitIGdfY5IbFJwfy3W3UeAxwilMFGsuO54A&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQN-qg9uVy4bnuxSa1mURWM72bg0inuVbpnAofVRzvEDqg&oe=6ADBC23D",
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122094593721465591",
+   "shares_id": "122094593721465591",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122115391364691158",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02pJfeckpYKauiah658e3LW1ftt7KwZfZ537rhtcH7Ufek45eKr9F5Gt6yiKkciPRxl&id=61570734757676",
+   "message": "The grand opening of SEVEN Abha, the first destination by Saudi Entertainment Ventures | SEVEN, was held in the presence of His Royal Highness Prince Turki bin Talal, Governor of the Aseer Region.\nWe are proud to manage this landmark event alongside Ruwwad Events company, delivering the opening ceremony and playing a part in bringing this milestone celebration to life.\n\nحفل إفتتاح مشروع سڤن أبها الترفيهي, أولى مشروعات شركة سڤن بالمملكة بحضور صاحب السمو الملكي الأمير تركي بن طلال أمير منطقة عسير.\nتفخر \"آي ڤي ماستر\" بالتعاون مع شركة رواد لإدارة حفل الافتتاح. \nفخورين بأن كنا جزء من نجاح هذا الحفل.\n#AVMaster #سڤن_أبها #عوالمها_بهجة #رؤية_المملكة_2030",
+   "message_rich": "The grand opening of SEVEN Abha, the first destination by Saudi Entertainment Ventures | SEVEN, was held in the presence of His Royal Highness Prince Turki bin Talal, Governor of the Aseer Region.\nWe are proud to manage this landmark event alongside Ruwwad Events company, delivering the opening ceremony and playing a part in bringing this milestone celebration to life.\n\nحفل إفتتاح مشروع سڤن أبها الترفيهي, أولى مشروعات شركة سڤن بالمملكة بحضور صاحب السمو الملكي الأمير تركي بن طلال أمير منطقة عسير.\nتفخر \"آي ڤي ماستر\" بالتعاون مع شركة رواد لإدارة حفل الافتتاح. \nفخورين بأن كنا جزء من نجاح هذا الحفل.\n#AVMaster #سڤن_أبها #عوالمها_بهجة #رؤية_المملكة_2030",
+   "timestamp": 1786128301,
+   "comments_count": 0,
+   "reactions_count": 49,
+   "reshare_count": 2,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 45,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61570734757676",
+    "name": "AV Master Trading LLC",
+    "url": "https://www.facebook.com/people/AV-Master-Trading-LLC/61570734757676/",
+    "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/731068478_122111390732691158_1104849765675373388_n.jpg?stp=c447.447.1154.1154a_cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ulOuoRl_EyAQ7kNvwHTJRWc&_nc_oc=AdoOTsIBySu4eCXM39-VQ5dHGT0FwA51lfw5Na1bMIn2JJlpy7WP5M4_Ftuh9oX2zuo&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQO_bsiRVEAnAgrWfF9wL_zaDv0iRPKhO5HKQVdUlFiBkA&oe=6ADBBBA6",
+    "delegate_page_id": "1146959868492351"
+   },
+   "authors": [
+    {
+     "id": "61570734757676",
+     "name": "AV Master Trading LLC",
+     "url": "https://www.facebook.com/people/AV-Master-Trading-LLC/61570734757676/",
+     "profile_picture_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/731068478_122111390732691158_1104849765675373388_n.jpg?stp=c447.447.1154.1154a_cp0_dst-jpg_s80x80_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ulOuoRl_EyAQ7kNvwHTJRWc&_nc_oc=AdoOTsIBySu4eCXM39-VQ5dHGT0FwA51lfw5Na1bMIn2JJlpy7WP5M4_Ftuh9oX2zuo&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQO_bsiRVEAnAgrWfF9wL_zaDv0iRPKhO5HKQVdUlFiBkA&oe=6ADBBBA6",
+     "delegate_page_id": "1146959868492351"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": [
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/741857344_122115390980691158_9166917639913545594_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SuzhEhVWHO8Q7kNvwHhlBCo&_nc_oc=AdrOkI-e6Fj_vJZvwap3_b9dUY1ggLtkVv5xtsEg4GWumqGBtV0icTnxgqQp0SSgpt0&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQNFURxGcgDU-NUqguOZOxy3PNWhArZozPGtPbvQo9G9qA&oe=6ADBBF52",
+     "url": "https://www.facebook.com/photo.php?fbid=122115390968691158&set=a.122115391358691158&type=3",
+     "id": "122115390968691158"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/770688469_122115391034691158_2831774023893043120_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DdzedqXY4wwQ7kNvwEEsrtI&_nc_oc=AdrOlOVv-ZqRy-P9u6LH1SqQ3c7LYF90rtYIQo3hdT9egOxXt1hCNHtQ2e_6H9rz_Xs&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQNmLg1dL5JWB1Kut43qOCSD_xQCuhYvp-Fo4QU2VWx4hQ&oe=6ADBE150",
+     "url": "https://www.facebook.com/photo.php?fbid=122115391028691158&set=a.122115391358691158&type=3",
+     "id": "122115391028691158"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/769309528_122115391076691158_3825727658080685328_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YuPu9qycYHEQ7kNvwHG2wGP&_nc_oc=AdqOQIhN_pHAsKt-DtTmDavvXt_v-StCssObO7tqefzFculmK6nT31SINU0ZUyjwSW8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQOHvZ_rgWvXtLwBHHlLo95PHtYQ_UZR_iC1SlFWh-8TfA&oe=6ADBE2AD",
+     "url": "https://www.facebook.com/photo.php?fbid=122115391070691158&set=a.122115391358691158&type=3",
+     "id": "122115391070691158"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/768310410_122115391118691158_1659586753118540044_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UAa6Qo4INk4Q7kNvwHxAwGn&_nc_oc=AdpNqaG95HMsaa6Fzti8Zt1wWcRo59Y31yQD4M0wmh6TE2hg6DHbq1NacYcrPPxtg5M&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQNT9njcKJowlUnRI-aV5FmrsM6c8TcNE1bhNYs-gA7fVA&oe=6ADBD3A2",
+     "url": "https://www.facebook.com/photo.php?fbid=122115391112691158&set=a.122115391358691158&type=3",
+     "id": "122115391112691158"
+    },
+    {
+     "type": "photo",
+     "image_file_uri": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/768844437_122115391160691158_1470964306340402309_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4xKlCUYJsB4Q7kNvwFhrvrO&_nc_oc=AdrbXnLfH5sqZDYVmdQ1HrP0g2AKgc81LLJxP_D70ogX7KPFdQYxBsE-O8Ja4m3rFpQ&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=VyPtOwCrnAC4tAmPTxdccA&_nc_ss=70289&oh=00_AQMLa2M9BD1kn5Cu_Ac3-kxBEaWKPuURoV-jNVdyvqYWJw&oe=6ADBC8C8",
+     "url": "https://www.facebook.com/photo.php?fbid=122115391154691158&set=a.122115391358691158&type=3",
+     "id": "122115391154691158"
+    }
+   ],
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122115391364691158",
+   "shares_id": "122115391364691158",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": 9,
+   "top_comments": []
+  },
+  {
+   "post_id": "122114965791312331",
+   "type": "post",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02WFEShjWzVKt2iSBE9VzmXvbhss2KG1gatCBJEvCrPmUVdRxPufbfZVpqXZ2ZkaYcl&id=61589369932554",
+   "message": "20/7/2026\n2:46 \nلربما لم أعتد أن أتكلم في مثل تلك الأمور.. \nلكنني سأشاركه على أية حال.. \nلَكم أشتاق لذكرى معينة عالقة في ذهني... واهًا لو تعود مجددا.. \nأذكرُ حين كنتُ طفلة.. عندما كنتُ أقِفُ مع أُمي بِجِوار الشاطئ. \nنشاهدُ ارتطامَ الأمواجِ...أمسِكُ يدَها و تُمْسِكُ يدي،نضحك،نُشاهِد الغيوم البيضاء المتجمعة كحلوى قطنية... هكذا كان تشبيهها للغيوم. \nلا زِلنَا نكرر تلك العادة سويًا حتى الآن نعم،ولكنني أشعر بشيء مختلف... ما هو؟ لا أعلم. \nهل اختلف لون البحر؟أم شكل المدينة؟ أم نحن لسنا نحن؟ \nلكن تلك عادة أحبُ تكرارها.. وأتمنى أن تظل تتكر إلى آخر نفس في حياتي. \n-حَفظَكي الله يا أُمي،و اللهم احفظني لها.",
+   "message_rich": "20/7/2026\n2:46 \nلربما لم أعتد أن أتكلم في مثل تلك الأمور.. \nلكنني سأشاركه على أية حال.. \nلَكم أشتاق لذكرى معينة عالقة في ذهني... واهًا لو تعود مجددا.. \nأذكرُ حين كنتُ طفلة.. عندما كنتُ أقِفُ مع أُمي بِجِوار الشاطئ. \nنشاهدُ ارتطامَ الأمواجِ...أمسِكُ يدَها و تُمْسِكُ يدي،نضحك،نُشاهِد الغيوم البيضاء المتجمعة كحلوى قطنية... هكذا كان تشبيهها للغيوم. \nلا زِلنَا نكرر تلك العادة سويًا حتى الآن نعم،ولكنني أشعر بشيء مختلف... ما هو؟ لا أعلم. \nهل اختلف لون البحر؟أم شكل المدينة؟ أم نحن لسنا نحن؟ \nلكن تلك عادة أحبُ تكرارها.. وأتمنى أن تظل تتكر إلى آخر نفس في حياتي. \n-حَفظَكي الله يا أُمي،و اللهم احفظني لها.",
+   "timestamp": 1784505466,
+   "comments_count": 0,
+   "reactions_count": 5,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 1,
+    "haha": 0,
+    "like": 0,
+    "love": 4,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "61589369932554",
+    "name": "ڤيڤيان ڤي",
+    "url": "https://www.facebook.com/people/%DA%A4%D9%8A%DA%A4%D9%8A%D8%A7%D9%86-%DA%A4%D9%8A/61589369932554/",
+    "profile_picture_url": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-1/837776370_122128591341312331_3265947214545182374_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=bvFy2df3bvoQ7kNvwEiGX5z&_nc_oc=Adqa6AJxjN2fwySpONSHNmHsS_s8gd8qQXSGLb9OQXOCinU6iFNWTlFlDoWYBhsqzRY&_nc_zt=24&_nc_ht=scontent.fric1-2.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQPRyVEmzVTkHscfEjx222zGFQ3nx0nhFYvSsg4K5FPuGw&oe=6ADBCE76",
+    "delegate_page_id": "1140296495828769"
+   },
+   "authors": [
+    {
+     "id": "61589369932554",
+     "name": "ڤيڤيان ڤي",
+     "url": "https://www.facebook.com/people/%DA%A4%D9%8A%DA%A4%D9%8A%D8%A7%D9%86-%DA%A4%D9%8A/61589369932554/",
+     "profile_picture_url": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-1/837776370_122128591341312331_3265947214545182374_n.jpg?stp=cp0_dst-jpg_p80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=bvFy2df3bvoQ7kNvwEiGX5z&_nc_oc=Adqa6AJxjN2fwySpONSHNmHsS_s8gd8qQXSGLb9OQXOCinU6iFNWTlFlDoWYBhsqzRY&_nc_zt=24&_nc_ht=scontent.fric1-2.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQPRyVEmzVTkHscfEjx222zGFQ3nx0nhFYvSsg4K5FPuGw&oe=6ADBCE76",
+     "delegate_page_id": "1140296495828769"
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fric1-2.fna.fbcdn.net/v/t39.30808-6/751219811_122114965767312331_7710141129451648289_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AMXcgTIdstMQ7kNvwHB1JhY&_nc_oc=Adpw_oubmjC7CJ4JDmJCi4ZK4KuoS7ao8dDt8Cv8pl1yuvMtzrQCdvo4I-4kwk96GRg&_nc_zt=23&_nc_ht=scontent.fric1-2.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQN2MpU5SnsiIE4Eks6ZgZb5mGTTj04ex9hfOue-XXcAUg&oe=6ADBDBE8",
+    "height": 1080,
+    "width": 1080,
+    "id": "122114965761312331"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122114965791312331",
+   "shares_id": "122114965791312331",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "2675063012951389",
+   "type": "post",
+   "url": "https://www.facebook.com/vevyaan.fares/posts/pfbid02rgVPiXJ7vZZu59QmJyqoqCbZ4QRRhNbiEH7zJ4XoZfeVuCtzDHTqdg4YXmL5rBkrl",
+   "message": "انا كنت حريصه اوي اني مظهرش حاجات زي دي مراعاه لمشاعر اي حد مامته مش معاه\nكتبت البوست في وقت انفعالي مبسوطه فيه و بعدين قولت لا هعمله ليا لوحدي\n\nالله يرحمك يا ماما والله الله يرحمك و يهنيكي بحق الهنا اللي عيشتيني فيه",
+   "message_rich": "انا كنت حريصه اوي اني مظهرش حاجات زي دي مراعاه لمشاعر اي حد مامته مش معاه\nكتبت البوست في وقت انفعالي مبسوطه فيه و بعدين قولت لا هعمله ليا لوحدي\n\nالله يرحمك يا ماما والله الله يرحمك و يهنيكي بحق الهنا اللي عيشتيني فيه",
+   "timestamp": 1787495898,
+   "comments_count": 15,
+   "reactions_count": 55,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 0,
+    "haha": 0,
+    "like": 9,
+    "love": 13,
+    "sad": 33,
+    "wow": 0
+   },
+   "author": {
+    "id": "100013431485951",
+    "name": "ڤي ڤيان",
+    "url": "https://www.facebook.com/vevyaan.fares",
+    "profile_picture_url": "https://scontent.fric1-1.fna.fbcdn.net/v/t39.30808-1/790847251_2683091708815186_2608036247562674042_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=AaRyNRIqot4Q7kNvwGbei--&_nc_oc=AdrgskNTNdyK0qhwm1Ed_ivWzKpKy8nevZELtV8n4AwxqpyuNz0w4lY9bDMOUgFHMHs&_nc_zt=24&_nc_ht=scontent.fric1-1.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQMg2TK-V4xMYaQADjCf0GqOJSE1dMTXTvIyd9Zo10X1kg&oe=6ADBCF1F",
+    "delegate_page_id": "285062194697553"
+   },
+   "authors": [
+    {
+     "id": "100013431485951",
+     "name": "ڤي ڤيان",
+     "url": "https://www.facebook.com/vevyaan.fares",
+     "profile_picture_url": "https://scontent.fric1-1.fna.fbcdn.net/v/t39.30808-1/790847251_2683091708815186_2608036247562674042_n.jpg?stp=cp6_dst-jpg_s80x80_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=AaRyNRIqot4Q7kNvwGbei--&_nc_oc=AdrgskNTNdyK0qhwm1Ed_ivWzKpKy8nevZELtV8n4AwxqpyuNz0w4lY9bDMOUgFHMHs&_nc_zt=24&_nc_ht=scontent.fric1-1.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQMg2TK-V4xMYaQADjCf0GqOJSE1dMTXTvIyd9Zo10X1kg&oe=6ADBCF1F",
+     "delegate_page_id": "285062194697553"
+    }
+   ],
+   "author_title": null,
+   "image": null,
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "2675063012951389",
+   "shares_id": "2675063012951389",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  },
+  {
+   "post_id": "122170260518422315",
+   "type": "post",
+   "url": "https://www.facebook.com/photo/?fbid=122170260518422315&set=a.122095291334422315",
+   "message": "‏الأنسـان أثَـر وأنـا أثـري حِنـيتـي🩷🩷🩷🩷🩷🩷🩷🎀..))\".",
+   "message_rich": "‏الأنسـان أثَـر وأنـا أثـري حِنـيتـي🩷🩷🩷🩷🩷🩷🩷🎀..))\".",
+   "timestamp": 1788383355,
+   "comments_count": 22,
+   "reactions_count": 125,
+   "reshare_count": 0,
+   "reactions": {
+    "angry": 0,
+    "care": 33,
+    "haha": 0,
+    "like": 4,
+    "love": 88,
+    "sad": 0,
+    "wow": 0
+   },
+   "author": {
+    "id": "pfbid0AygoNHrVkpAcytT8it3avqn766FyX599VTjdw7pvLnpZsUQzFWskgMBgcahNCenrl",
+    "name": "طيبة آدهم سڤيان",
+    "url": "https://www.facebook.com/people/%D8%B7%D9%8A%D8%A8%D8%A9-%D8%A2%D8%AF%D9%87%D9%85-%D8%B3%DA%A4%D9%8A%D8%A7%D9%86/pfbid0AygoNHrVkpAcytT8it3avqn766FyX599VTjdw7pvLnpZsUQzFWskgMBgcahNCenrl/",
+    "profile_picture_url": "https://scontent.fric1-1.fna.fbcdn.net/v/t39.30808-1/848535910_122173018916422315_9061959730111058069_n.jpg?stp=c0.22.661.661a_cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=4GlohR28HroQ7kNvwEEweIT&_nc_oc=Adq4EJ0Ab2Pub9SAwU2o7x7ipzf48Z6eLMm44a7Lof80N4G9hzBQmo5uX9erl6LFOFE&_nc_zt=24&_nc_ht=scontent.fric1-1.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQMn5M7G5rm5zpTfwX2dFvoOyM4kFVJrRx-xIhdYb61SGA&oe=6ADBCC68",
+    "delegate_page_id": null
+   },
+   "authors": [
+    {
+     "id": "pfbid0AygoNHrVkpAcytT8it3avqn766FyX599VTjdw7pvLnpZsUQzFWskgMBgcahNCenrl",
+     "name": "طيبة آدهم سڤيان",
+     "url": "https://www.facebook.com/people/%D8%B7%D9%8A%D8%A8%D8%A9-%D8%A2%D8%AF%D9%87%D9%85-%D8%B3%DA%A4%D9%8A%D8%A7%D9%86/pfbid0AygoNHrVkpAcytT8it3avqn766FyX599VTjdw7pvLnpZsUQzFWskgMBgcahNCenrl/",
+     "profile_picture_url": "https://scontent.fric1-1.fna.fbcdn.net/v/t39.30808-1/848535910_122173018916422315_9061959730111058069_n.jpg?stp=c0.22.661.661a_cp0_dst-jpg_s80x80_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=4GlohR28HroQ7kNvwEEweIT&_nc_oc=Adq4EJ0Ab2Pub9SAwU2o7x7ipzf48Z6eLMm44a7Lof80N4G9hzBQmo5uX9erl6LFOFE&_nc_zt=24&_nc_ht=scontent.fric1-1.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQMn5M7G5rm5zpTfwX2dFvoOyM4kFVJrRx-xIhdYb61SGA&oe=6ADBCC68",
+     "delegate_page_id": null
+    }
+   ],
+   "author_title": null,
+   "image": {
+    "uri": "https://scontent.fric1-1.fna.fbcdn.net/v/t39.30808-6/790226652_122170260488422315_7898861936801346729_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=YfPwoV8Zy7wQ7kNvwEgHsC4&_nc_oc=AdreIjrh2rjOytfdPrdPyoLSA3RMkKGK8dZbCcixYQ1-CCFiRKM0_zgUNifOWOS8AtE&_nc_zt=23&_nc_ht=scontent.fric1-1.fna&_nc_gid=oyzenMwzihcy0_ugNrBuzA&_nc_ss=70289&oh=00_AQPh2LEXopkGWr_-tFcP3ZCF2GFxzPWezhLe-6vK9FZKlA&oe=6ADBE98C",
+    "height": 960,
+    "width": 720,
+    "id": "122170260518422315"
+   },
+   "video": null,
+   "video_view_count": null,
+   "album_preview": null,
+   "video_files": null,
+   "video_thumbnail": null,
+   "external_url": null,
+   "attached_event": null,
+   "attached_group": null,
+   "attached_post": null,
+   "attached_post_url": null,
+   "text_format_metadata": null,
+   "comments_id": "122170260518422315",
+   "shares_id": "122170260518422315",
+   "associated_group_id": null,
+   "associated_group": null,
+   "images_count": null,
+   "top_comments": []
+  }
+ ]
+}
