@@ -210,4 +210,56 @@ code, led, rep, out, files = scenario({}, [], code=WIDE)
 w = json.loads(out.split('WIDE ', 1)[1].splitlines()[0]) if 'WIDE ' in out else {}
 check('a short video is transcribed only when a keyword search over a long window found it (not a one-day search, a link or an account feed)',
       w == {'fbp_one_dd_0815_1': False, 'fbc_one_00': True, 'fbc_apify_00': True, 'fbp_sf_gw_links': False, 'fbp_ap_acct_t1': False}, (w, out[-300:]))
+# 24 Oct (DECISIONS #178): thedoor returned a shared post's comments for the share, and the dashboard showed them under the share
+SHARES = r'''
+import json, pathlib
+import collect as C, comment_check as K, normalize as N, pipeline as P
+share = {'id': 'fb:1', 'url': 'https://www.facebook.com/x/posts/1', 'date': '2026-10-13T12:00:00Z', 'comments': 2, 'is_share': True, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
+plain = {'id': 'fb:2', 'url': 'https://www.facebook.com/y/posts/2', 'date': '2026-10-01T12:00:00Z', 'comments': 3, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
+odd = {'id': 'fb:3', 'url': 'https://www.facebook.com/z/posts/3', 'date': '2026-10-12T12:00:00Z', 'comments': 4, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
+out = {'reason': [K.reason(share, ['2026-10-14T00:00:00Z'], 'thedoor'), K.reason(share, ['2026-10-14T00:00:00Z'], 'apify'),
+                  K.reason(odd, ['2026-10-10T09:00:00Z', '2026-10-12T13:00:00Z'], 'apify'), K.reason(plain, ['2026-10-02T00:00:00Z'] * 60, 'apify'),
+                  K.reason(plain, ['2026-10-02T00:00:00Z'] * 3 + [1791000000], 'thedoor')]}
+# the cheap scraper is never asked for a share's comments
+C._fb_public = lambda: ([share, plain, odd], {p['id']: {'about': True} for p in (share, plain, odd)})
+sent = []
+C.parallel = lambda todo, line: sent.extend(todo)
+C.stage_fbfill()
+out['door_asked'] = [u for name, actor, inp, cap, n in sent if 'thedoor' in actor for u in inp['postUrls']]
+# Apify's own scraper gets the share and the post whose thedoor comments are older than it, not the post whose comments fit
+row = lambda u, t: {'id': t, 'post_url': u, 'timestamp': t, 'text': 'x', 'author_name': 'a'}
+json.dump({'input': {'postUrls': [plain['url'], odd['url']]}, 'items': [row(plain['url'], 1791000000), row(odd['url'], 1791000000)]},
+          open(C.RAW / 'fbcm_door_t.json', 'w'))
+C._fb_commented = lambda: set()
+asked = []
+C.run = lambda name, actor, inp, *a, **k: asked.append((actor, sorted(s['url'] for s in inp['startUrls'])))
+C.stage_fbfill2()
+out['official_asked'] = asked
+# normalize keeps only the comments that fit their post, and lists the rest
+N.RAW = C.RAW
+for p in (share, plain, odd):
+    N.ITEMS[p['id']] = dict(p, found_by=['t'])
+json.dump({'input': {}, 'items': [row(share['url'], 1781000000), row(plain['url'], 1791000000), row(odd['url'], 1781000000)]}, open(C.RAW / 'fbcm_door_t.json', 'w'))
+N.fb_ugc_comments()
+out['kept'] = sorted(i['parent'] for i in N.ITEMS.values() if i['kind'] == 'comment')
+out['rejected'] = sorted(r['post'] for r in N.REJECTS)
+# the pipeline's report names the rejected posts
+P.HERE = C.RAW.parent
+json.dump({'rejects': N.REJECTS}, open(P.HERE / 'comment_rejects.json', 'w'))
+rep = {'problems': [], 'started_ts': 0}
+P.report_rejects(rep)
+out['problems'] = rep['problems']
+print('SHARES ' + json.dumps(out))
+'''
+code, led, rep, out, files = scenario({}, [], code=SHARES)
+s = json.loads(out.split('SHARES ', 1)[1].splitlines()[0]) if 'SHARES ' in out else {}
+r = s.get('reason') or [None] * 5
+check('a share’s comments from thedoor are rejected; from Apify’s own scraper they are checked like any other', bool(r[0]) and r[1] is None, (r, out[-400:]))
+check('comments older than their post are rejected, so are far more than the post shows; comments that fit pass',
+      bool(r[2]) and 'older than the post' in r[2] and bool(r[3]) and r[4] is None, r)
+check('shares are never sent to thedoor', s.get('door_asked') == ['https://www.facebook.com/y/posts/2', 'https://www.facebook.com/z/posts/3'], s.get('door_asked'))
+check('Apify’s own scraper is asked for the share and for the post whose thedoor comments were rejected, not for the one whose comments fit',
+      s.get('official_asked') == [['apify~facebook-comments-scraper', ['https://www.facebook.com/x/posts/1', 'https://www.facebook.com/z/posts/3']]], s.get('official_asked'))
+check('normalize keeps the comments that fit and lists the rest', s.get('kept') == ['fb:2'] and s.get('rejected') == ['fb:1', 'fb:3'], (s.get('kept'), s.get('rejected')))
+check('the run report names the rejected posts', s.get('problems') and 'rejected as not their post' in s['problems'][0] and 'fb:1' in s['problems'][0], s.get('problems'))
 print('FAIL', fails)

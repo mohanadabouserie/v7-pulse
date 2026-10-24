@@ -915,7 +915,7 @@ def stage_fbfill():
       also the videos whose text is too short to tell what they're about;
     - the followers and category of the pages, creators, businesses and news outlets that posted (Apify's page scraper, USD 0.0082 a page);
     - the comments under them, up to 100 a post (thedoor, USD 0.0005 a comment); fbfill2 sends the posts it returns nothing for to
-      Apify's own comment scraper."""
+      Apify's own comment scraper. Shares never go to thedoor: it returns the shared post's comments (comment_check.py, DECISIONS #178)."""
     posts, labels = _fb_public()
     about = lambda i: (labels.get(i['id']) or {}).get('about')
     tag = time.strftime('%Y%m%d%H%M')
@@ -935,9 +935,10 @@ def stage_fbfill():
     done_cm = set()
     for f in RAW.glob('fbcm_*.json'):
         done_cm |= {x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') for x in json.load(open(f, encoding='utf-8'))['items']}
-    cm = [i for i in posts if about(i) and (i.get('comments') or 0) > 0 and i['url'] not in done_cm]
+    cm = [i for i in posts if about(i) and (i.get('comments') or 0) > 0 and i['url'] not in done_cm and not i.get('is_share')]   # shares: fbfill2
     n_cm = sum(min(i['comments'], 100) for i in cm)
-    log(f'  fbfill: {len(noviews)} videos without views, {len(nosp)} videos to transcribe, {len(page_urls)} pages, {len(cm)} posts with about {n_cm} comments')
+    log(f'  fbfill: {len(noviews)} videos without views, {len(nosp)} videos to transcribe, {len(page_urls)} pages, {len(cm)} posts with about {n_cm} comments'
+        f' (shares go to Apify\'s comment scraper in fbfill2)')
     todo = []
     if noviews:
         todo.append(('fbf_plays_' + tag, FB_PLAYS, {"startUrls": [{"url": i['url']} for i in noviews]}, round(len(noviews) * 0.004 * 1.3 + 0.05, 2), len(noviews)))
@@ -1077,18 +1078,47 @@ def stage_igshortstest():
 BUDGET_IGST = 73.00   # 19 Oct: the Instagram short-videos test may spend up to here on the meter (71.08 spent before it)
 
 
+def _fb_commented():
+    """The posts that already have comments in items.json (normalize.py keeps only the sets comment_check.py passes)."""
+    return {i['parent'] for i in json.load(open(HERE / 'items.json', encoding='utf-8'))['items'] if i['kind'] == 'comment'}
+
+
 def stage_fbfill2():
-    """19 Oct: the posts thedoor returned no comments for get them from Apify's own comment scraper (USD 0.0023 a comment), up to 100 a post."""
+    """Apify's own comment scraper (USD 0.0023 a comment, up to 100 a post) for:
+    - 19 Oct: the posts thedoor returned no comments for;
+    - 24 Oct (DECISIONS #178): shares, which never go to thedoor, and the posts whose thedoor comments comment_check.py rejects (comments
+      older than the post, or far more than the post shows). Each post is asked for once."""
+    import comment_check
     posts, labels = _fb_public()
-    got = set()
-    for f in RAW.glob('fbcm_*.json'):
-        got |= {(x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') or '') for x in json.load(open(f, encoding='utf-8'))['items']}
-    asked = set()   # only what thedoor was asked for and returned nothing (20 Oct: a thedoor run skipped for the budget sent 53 posts here at 4.6 times the price)
+    has = _fb_commented()
+    asked = set()   # what thedoor was asked for (20 Oct: a thedoor run skipped for the budget sent 53 posts here at 4.6 times the price)
+    door = collections.defaultdict(list)   # post link -> the times of the comments thedoor returned for it
     for f in RAW.glob('fbcm_door_*.json'):
-        asked |= set((json.load(open(f, encoding='utf-8')).get('input') or {}).get('postUrls') or [])
-    cm = [i for i in posts if (labels.get(i['id']) or {}).get('about') and (i.get('comments') or 0) > 0 and i['url'] not in got and i['url'] in asked]
+        body = json.load(open(f, encoding='utf-8'))
+        asked |= set((body.get('input') or {}).get('postUrls') or [])
+        for x in body['items']:
+            door[comment_check.key(x.get('post_url'))].append(x.get('timestamp') or x.get('comment_time'))
+    official = set()
+    for f in RAW.glob('fbcm_official_*.json'):
+        official |= {s.get('url') for s in (json.load(open(f, encoding='utf-8')).get('input') or {}).get('startUrls') or []}
+    why = collections.Counter()
+
+    def needs(i):
+        if not (labels.get(i['id']) or {}).get('about') or not (i.get('comments') or 0) or i['url'] in official or i['id'] in has:
+            return False
+        if i.get('is_share'):
+            why['shares'] += 1; return True
+        if i['url'] not in asked:
+            return False                          # thedoor first (stage_fbfill)
+        got = door.get(comment_check.key(i['url']))
+        if not got:
+            why['thedoor returned nothing'] += 1; return True
+        if comment_check.reason(i, got, 'thedoor'):
+            why['thedoor\'s comments rejected'] += 1; return True
+        return False
+    cm = [i for i in posts if needs(i)]
     n = sum(min(i['comments'], 100) for i in cm)
-    log(f'  fbfill2: {len(cm)} posts thedoor returned no comments for, about {n} comments')
+    log(f'  fbfill2: {len(cm)} posts ({", ".join("%s %d" % kv for kv in why.items()) or "none"}), about {n} comments')
     if cm:
         run('fbcm_official_' + time.strftime('%Y%m%d%H%M'), FB_COMMENTS, {"startUrls": [{"url": i['url']} for i in cm], "resultsLimit": 100,
                                                                            "includeNestedComments": False}, round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_FB)

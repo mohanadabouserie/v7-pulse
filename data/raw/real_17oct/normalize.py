@@ -11,6 +11,8 @@ Usage: python3 normalize.py
 """
 import collections, datetime, json, os, pathlib, re
 
+import comment_check   # does a scraper's set of comments belong to its post? (DECISIONS #178)
+
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = HERE / 'raw'
 SINCE, UNTIL = os.environ.get('V7_SINCE', '2026-04-20'), os.environ.get('V7_UNTIL', '2026-10-16')   # the window (pipeline.py can set it)
@@ -101,6 +103,8 @@ def add(it, run):
             old.setdefault('media', {})['images'] = it['media']['images']
         if it.get('duration') and not old.get('duration'):
             old['duration'] = it['duration']
+        if it.get('is_share') and not old.get('is_share'):   # 24 Oct: one scraper's row may not say it's a share while another's does
+            old['is_share'] = True
         for k, v in (it.get('author') or {}).items():
             if (old.get('author') or {}).get(k) in (None, '') and v not in (None, ''):
                 old.setdefault('author', {})[k] = v
@@ -568,7 +572,7 @@ def fb_ugc():
             fb_post({'id': fb_key(p.get('postId'), p.get('url')), 'date': iso(p.get('timestamp')), 'text': clean(p.get('text')), 'url': p.get('url'),
                      'author': {'name': u.get('name') or (p.get('pageName') or {}).get('name'), 'id': u.get('id'), 'url': u.get('profileUrl')},
                      'likes': num(p.get('likes')), 'comments': num(p.get('comments')), 'shares': num(p.get('shares')), 'views': num(p.get('videoPostViewCount')),
-                     'fmt': fb_fmt(p.get('url'), None, bool(p.get('isVideo')), len([i for i in imgs if i])),
+                     'fmt': fb_fmt(p.get('url'), None, bool(p.get('isVideo')), len([i for i in imgs if i])), 'is_share': bool(p.get('sharedPost')),
                      'media': {'cover': next((m.get('thumbnail') for m in med if m.get('thumbnail')), None), 'video': None, 'images': [i for i in imgs if i]},
                      'query': ((body.get('input') or {}).get('categories') or [None])[0]}, f.stem)
     for p, run in [(p, f.stem) for f in fb_files(*FB_HEADPLY_FILES) for p in json.load(open(f, encoding='utf-8'))['items']]:   # headply: exact times and counts
@@ -637,9 +641,14 @@ def fb_one_item(p, body):
             'media': {'cover': None, 'video': vids[0].get('url') if vids else None, 'images': imgs}, 'query': (body.get('input') or {}).get('query')}
 
 
+REJECTS = []   # 24 Oct: sets of comments that aren't their post's (comment_check.py), written to comment_rejects.json
+
+
 def fb_ugc_comments():
     """19 Oct: comments under public Facebook posts about V7 (thedoor first, Apify's own scraper for the posts it returned nothing for),
-    anonymous like the others; V7's own pages count as V7's replies."""
+    anonymous like the others; V7's own pages count as V7's replies.
+    24 Oct: each run's comments for a post are kept only if comment_check.py finds they can be that post's (DECISIONS #178)."""
+    sets = collections.defaultdict(list)   # (run, scraper, post id) -> its comments
     by_url = {}
     for it in ITEMS.values():
         if it['pl'] == 'fb' and it['kind'] == 'post' and it['src'] == 'ugc':
@@ -659,7 +668,7 @@ def fb_ugc_comments():
                   'author': {'name': name, 'id': c.get('author_id'), 'url': c.get('author_profile_url')}, 'likes': num(c.get('reactions_count')),
                   'comments': num(c.get('replies_count')), 'shares': None, 'views': None, 'by_v7': fb_own(name, c.get('author_profile_url'), c.get('author_id')),
                   'has_media': bool(c.get('media') or c.get('image_url'))}
-            add(it, f.stem)
+            sets[(f.stem, 'thedoor', pid)].append(it)
     for f in sorted(RAW.glob('fbcm_official_*.json')):
         for c in json.load(open(f, encoding='utf-8'))['items']:
             pid = parent(c.get('facebookUrl') or c.get('inputUrl'))
@@ -667,10 +676,19 @@ def fb_ugc_comments():
             if not cid or not pid:
                 WHY_OUT['FB comment on an unknown post'] += 1; continue
             name = c.get('profileName') or ''
-            add({'id': 'fbc:' + str(cid), 'kind': 'comment', 'src': 'ugc', 'pl': 'fb', 'parent': pid, 'date': iso(c.get('date')), 'text': clean(c.get('text')),
-                 'url': c.get('commentUrl') or c.get('facebookUrl'), 'author': {'name': name, 'id': c.get('profileId'), 'url': c.get('profileUrl')},
+            sets[(f.stem, 'apify', pid)].append({'id': 'fbc:' + str(cid), 'kind': 'comment', 'src': 'ugc', 'pl': 'fb', 'parent': pid, 'date': iso(c.get('date')),
+                 'text': clean(c.get('text')), 'url': c.get('commentUrl') or c.get('facebookUrl'), 'author': {'name': name, 'id': c.get('profileId'), 'url': c.get('profileUrl')},
                  'likes': num(c.get('likesCount')), 'comments': num(c.get('commentsCount')), 'shares': None, 'views': None,
-                 'by_v7': fb_own(name, c.get('profileUrl'), c.get('profileId')), 'has_media': bool(c.get('attachments'))}, f.stem)
+                 'by_v7': fb_own(name, c.get('profileUrl'), c.get('profileId')), 'has_media': bool(c.get('attachments'))})
+    for (run, scraper, pid), its in sets.items():
+        post = ITEMS[pid]
+        why = comment_check.reason(post, [i['date'] for i in its], scraper)
+        if why:
+            REJECTS.append({'post': pid, 'url': post.get('url'), 'run': run, 'scraper': scraper, 'comments': len(its), 'why': why})
+            WHY_OUT['FB comments that are not their post’s (comment_check.py)'] += len(its)
+            continue
+        for it in its:
+            add(it, run)
 
 
 def fb_extras():
@@ -728,6 +746,9 @@ if __name__ == '__main__':
     out = list(ITEMS.values())
     json.dump({'made': datetime.date.today().isoformat(), 'window': [SINCE, UNTIL], 'items': out}, open(HERE / 'items.json', 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0)
+    json.dump({'made': datetime.date.today().isoformat(), 'rejects': REJECTS}, open(HERE / 'comment_rejects.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    for r in REJECTS:
+        print('comments rejected: %s (%s, %d comments): %s' % (r['post'], r['run'], r['comments'], r['why']))
     c = collections.Counter((i['src'], i['kind'], i['pl']) for i in out)
     for k in sorted(c):
         print('%-7s %-8s %-3s %5d' % (k + (c[k],)))

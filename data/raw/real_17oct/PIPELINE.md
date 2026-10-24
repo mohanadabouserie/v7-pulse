@@ -96,3 +96,10 @@ needs, first:
 
 The schedule files are ready in `deploy/` (`v7pulse-pipeline.service`, `v7pulse-pipeline.timer`, `v7pulse-pipeline-weekly.timer`)
 and are not installed.
+
+## Comments must belong to their post (24 Oct, DECISIONS #178)
+
+thedoor's comment scraper returns a shared post's comments under the share's link. So shares go only to Apify's own comment scraper,
+every set of comments is checked by `comment_check.py` before `normalize.py` keeps it (rejects in `comment_rejects.json`), `fbfill2`
+asks Apify's scraper for the rejected posts once, and the run report names them. `tests/test_pipeline.py` covers it.
+

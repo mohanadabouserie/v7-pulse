@@ -8,6 +8,8 @@ V7 Pulse is a social listening and market dashboard for **V7**, an Egyptian vita
 3. `CHANGELOG.md`: what changed and when, newest at the bottom.
 4. `DESIGN.md`: the V7 brand design system. Every visual change follows it.
 
+**Pending work** waiting on the user (the Apify token, then the share comments and the missing pictures, with the exact steps): `PROJECT_MEMORY.md` section 11, "Waiting on the user".
+
 ## Keep them current
 After every change (dashboard edit, publish, data pull, new finding, user decision), in the same turn and before reporting back:
 - add an entry to `CHANGELOG.md` (date, version, what changed, files touched);
@@ -223,6 +225,7 @@ The site must keep working wherever it's hosted (GitHub Pages now; perhaps V7's 
 - Runs started together (`parallel()`) each hold their cap against the budget line until they end (`collect.run`, DECISIONS #160).
 - One-day Facebook searches pad their results with that day's other posts: only about a quarter are about V7. So a short-caption video is transcribed only when a keyword search over a long window found it (`collect.wide_search`, DECISIONS #164), and the comment fallbacks only take what the cheap scraper was asked about and missed (#165).
 - scrapesmith (cheap Instagram comments) returned nothing for all 89 posts on 20 Oct; `igcomments2` sends those to Apify's own scraper.
+- Facebook shares: thedoor's comment scraper returns the **shared post's** comments under the share's link (24 Oct, 14 shares, 500 comments). Shares never go to thedoor; every comment set passes `comment_check.py` before `normalize.py` keeps it, rejects are in `comment_rejects.json` and go to Apify's scraper (`fbfill2`) (DECISIONS #178). Test a new scraper on every kind of post it will get (shares, reels, group posts), not a few plain ones.
 - The Hashtags view drops generic tags by prefix (`GENERIC_RX`: #fyp, #foryou, #viral, #explore and their variants).
 - Images: `fetch_media.py` downloads one for every post in the dashboard that has an image link, and `build_media.py` links every downloaded one (no budget since DECISIONS #170; until then 6,000 KB embedded, for the claude.ai limit). `test_v23.py` still holds the page under 13 MB.
 - The artifact publish guard (claude.ai, retired; the escaping is kept and still tested):

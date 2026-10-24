@@ -365,6 +365,17 @@ def step(rep, label, cmd, timeout=7200):
     return r.returncode == 0
 
 
+def report_rejects(rep):
+    """24 Oct (DECISIONS #178): comments a scraper returned for a post that can't be that post's (comment_check.py; normalize.py lists them
+    in comment_rejects.json and leaves them out). Only this run's are reported; stage_fbfill2 asks Apify's own scraper for those posts."""
+    p = HERE / 'comment_rejects.json'
+    rej = json.load(open(p, encoding='utf-8')).get('rejects', []) if p.exists() else []
+    new = [r for r in rej if (C.RAW / (r['run'] + '.json')).exists() and (C.RAW / (r['run'] + '.json')).stat().st_mtime >= rep['started_ts']]
+    if new:
+        rep['problems'].append('comments rejected as not their post\'s on %d post%s (%s): %s' % (
+            len(new), '' if len(new) == 1 else 's', ', '.join(sorted({r['scraper'] for r in new})), '; '.join('%s %s' % (r['post'], r['why']) for r in new[:5])))
+
+
 def chain(opts, rep):
     py, venv = sys.executable, str(ROOT / 'data' / '.venv' / 'bin' / 'python')
     for b in ('BUDGET', 'BUDGET_IG', 'BUDGET_FB', 'BUDGET_SPEECH', 'BUDGET_IGKW', 'BUDGET_FBREEL', 'BUDGET_FBMORE'):   # the fill stages obey this run's line
@@ -392,6 +403,7 @@ def chain(opts, rep):
     step(rep, 'pictures, Facebook', [venv, 'vis_media.py', '--fb'])
     step(rep, 'read pictures', [py, 'vis_read.py'])
     ok = step(rep, 'normalize again', [py, 'normalize.py']) and step(rep, 'label again', [py, 'label.py'])
+    report_rejects(rep)
     if ok and not opts.no_build:
         if step(rep, 'build', [py, 'build_real.py', '--inject']):
             step(rep, 'images', [py, 'fetch_media.py'])
