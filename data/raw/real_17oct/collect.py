@@ -1078,6 +1078,32 @@ def stage_igshortstest():
 BUDGET_IGST = 73.00   # 19 Oct: the Instagram short-videos test may spend up to here on the meter (71.08 spent before it)
 
 
+def stage_fbshareorigins():
+    """25 Oct (DECISIONS #179): the posts that public shares about V7 point to, fetched by link (danek, USD 0.0023 a post) when the
+    collection doesn't have them, so their comments can be collected under the right post. thedoor had returned these posts' comments
+    for the shares (comment_check.py, #178), and they were dropped for want of their post. The originals then go through normalize.py
+    (dropped if outside the window) and label.py like any post; fbfill and fbfill2 collect their comments. Each link is asked for once."""
+    import comment_check
+    posts, labels = _fb_public()
+    have_ids = {i['id'] for i in posts}
+    have_urls = {comment_check.key(u) for i in posts for u in [i.get('url')] + i.get('urls', []) if u}
+    asked = set()
+    for f in RAW.glob('fbd_posts_shared_*.json'):
+        asked |= {x.get('url') for x in (json.load(open(f, encoding='utf-8')).get('input') or {}).get('direct_urls') or []}
+    todo = {}
+    for i in posts:
+        u = i.get('shared_url')
+        if not (i.get('is_share') and u and (labels.get(i['id']) or {}).get('about')):
+            continue
+        if ('fb:' + i['shared_id'] if i.get('shared_id') else None) in have_ids or comment_check.key(u) in have_urls or u in asked:
+            continue
+        todo.setdefault(u, i['id'])
+    log(f'  fbshareorigins: {len(todo)} shared posts not in the collection')
+    if todo:
+        run('fbd_posts_shared_' + time.strftime('%Y%m%d%H%M'), FB_POST_LINK, {"direct_urls": [{"url": u} for u in sorted(todo)]},
+            round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
+
+
 def _fb_commented():
     """The posts that already have comments in items.json (normalize.py keeps only the sets comment_check.py passes)."""
     return {i['parent'] for i in json.load(open(HERE / 'items.json', encoding='utf-8'))['items'] if i['kind'] == 'comment'}
@@ -1300,7 +1326,7 @@ def stage_accounts():
                round(len(fb) * 15 * 0.005 * 1.3 + 0.05, 2), len(fb) * 15)], BUDGET_IDEAS)
 
 
-STAGES = {'igrepeat': stage_igrepeat, 'accounts': stage_accounts, 'fbdays': stage_fbdays, 'gweeks': stage_gweeks, 'slicefetch': stage_slicefetch, 'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+STAGES = {'igrepeat': stage_igrepeat, 'accounts': stage_accounts, 'fbdays': stage_fbdays, 'gweeks': stage_gweeks, 'slicefetch': stage_slicefetch, 'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbshareorigins': stage_fbshareorigins, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

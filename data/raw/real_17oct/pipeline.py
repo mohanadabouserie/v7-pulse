@@ -122,7 +122,7 @@ JOBS = [   # actors: the main one first, then standbys with the same output form
     Job('ig_google_web', {SWEEP, WEEKLY}, ['ig_google'], 'ig_phrases', {SWEEP: 3, WEEKLY: 1}, "Google's site search of instagram.com (pages per query)"),
     Job('ig_hashtags', {SWEEP, WEEKLY}, ['ig_hashtags'], 'ig_tags', {SWEEP: 30, WEEKLY: 15}, 'hashtags'),
 ]
-FILL = ['fbfill', 'fbfill2', 'fbviews', 'fbnames', 'igspeech', 'igprofiles', 'igcomments', 'igcomments2', 'igvisfetch']   # collect.py stages
+FILL = ['fbshareorigins', 'fbfill', 'fbfill2', 'fbviews', 'fbnames', 'igspeech', 'igprofiles', 'igcomments', 'igcomments2', 'igvisfetch']   # collect.py stages
 QUICK_TESTS = ['test_v25', 'test_v29', 'test_v30', 'test_v31']
 
 

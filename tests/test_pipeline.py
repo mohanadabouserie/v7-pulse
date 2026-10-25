@@ -163,6 +163,7 @@ FILL = r'''
 import json
 import pipeline as P
 C = P.C
+P.HERE = C.RAW.parent   # the reports read this run's files, not the real collection's
 P.step = lambda rep, label, cmd, timeout=7200: rep['steps'].append({'step': label, 'ok': True}) or True   # no normalize, label or build
 C.stage_t_over = lambda: C.parallel([('fbf_speech_t', 'invideoiq~video-transcriber', {'video_urls': []}, 0.9, 1)], C.BUDGET_FB)
 C.stage_t_refused = lambda: C.run('fbf_pages_t', 'apify~facebook-pages-scraper', {'startUrls': []}, 0.05, budget=C.BUDGET_FB)
@@ -262,4 +263,25 @@ check('Apify’s own scraper is asked for the share and for the post whose thedo
       s.get('official_asked') == [['apify~facebook-comments-scraper', ['https://www.facebook.com/x/posts/1', 'https://www.facebook.com/z/posts/3']]], s.get('official_asked'))
 check('normalize keeps the comments that fit and lists the rest', s.get('kept') == ['fb:2'] and s.get('rejected') == ['fb:1', 'fb:3'], (s.get('kept'), s.get('rejected')))
 check('the run report names the rejected posts', s.get('problems') and 'rejected as not their post' in s['problems'][0] and 'fb:1' in s['problems'][0], s.get('problems'))
+# 25 Oct (DECISIONS #179): the posts that shares point to are fetched by link when the collection doesn't have them, once
+ORIGINS = r'''
+import json
+import collect as C
+have = {'id': 'fb:9', 'url': 'https://www.facebook.com/page/posts/9', 'pl': 'fb'}
+s1 = {'id': 'fb:1', 'url': 'https://www.facebook.com/a/posts/1', 'is_share': True, 'shared_url': 'https://www.facebook.com/page/posts/9', 'shared_id': '9'}
+s2 = {'id': 'fb:2', 'url': 'https://www.facebook.com/b/posts/2', 'is_share': True, 'shared_url': 'https://www.facebook.com/other/posts/7', 'shared_id': '7'}
+s3 = {'id': 'fb:3', 'url': 'https://www.facebook.com/c/posts/3', 'is_share': True, 'shared_url': 'https://www.facebook.com/off/posts/5', 'shared_id': '5'}
+labels = {'fb:1': {'about': True}, 'fb:2': {'about': True}, 'fb:3': {'about': False}}
+C._fb_public = lambda: ([have, s1, s2, s3], labels)
+asked = []
+C.run = lambda name, actor, inp, *a, **k: asked.append((name.rsplit('_', 1)[0], actor, [x['url'] for x in inp['direct_urls']]))
+C.stage_fbshareorigins()
+json.dump({'input': {'direct_urls': [{'url': 'https://www.facebook.com/other/posts/7'}]}, 'items': []}, open(C.RAW / 'fbd_posts_shared_t.json', 'w'))
+C.stage_fbshareorigins()
+print('ORIGINS ' + json.dumps(asked))
+'''
+code, led, rep, out, files = scenario({}, [], code=ORIGINS)
+o = json.loads(out.split('ORIGINS ', 1)[1].splitlines()[0]) if 'ORIGINS ' in out else None
+check('a share’s original post is fetched by link when the collection lacks it, not when it has it or the share isn’t about V7, and only once',
+      o == [['fbd_posts_shared', 'danek~facebook-posts-fast', ['https://www.facebook.com/other/posts/7']]], (o, out[-300:]))
 print('FAIL', fails)

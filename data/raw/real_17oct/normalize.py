@@ -105,6 +105,9 @@ def add(it, run):
             old['duration'] = it['duration']
         if it.get('is_share') and not old.get('is_share'):   # 24 Oct: one scraper's row may not say it's a share while another's does
             old['is_share'] = True
+        for k in ('shared_url', 'shared_id'):   # 25 Oct: the post a share points to
+            if it.get(k) and not old.get(k):
+                old[k] = it[k]
         for k, v in (it.get('author') or {}).items():
             if (old.get('author') or {}).get(k) in (None, '') and v not in (None, ''):
                 old.setdefault('author', {})[k] = v
@@ -555,6 +558,8 @@ def fb_ugc():
                      'url': url, 'author': {'name': a.get('name'), 'id': a.get('id'), 'url': a.get('url')}, 'likes': num(p.get('reactions_count')),
                      'comments': num(p.get('comments_count')), 'shares': num(p.get('reshare_count')), 'views': fb_count(plays),
                      'fmt': fb_fmt(url, p.get('type'), bool(video or p.get('video_id')), len(set(imgs))), 'is_share': bool(p.get('attached_post')),
+                     'shared_url': p.get('attached_post_url') or (p.get('attached_post') or {}).get('url') if isinstance(p.get('attached_post'), dict) or p.get('attached_post_url') else None,
+                     'shared_id': str((p.get('attached_post') or {}).get('post_id') or '') or None if isinstance(p.get('attached_post'), dict) else None,
                      'media': {'cover': p.get('video_thumbnail') or p.get('thumbnail_uri') or None, 'video': video, 'images': list(dict.fromkeys(imgs))},
                      'query': (body.get('input') or {}).get('query')}, f.stem)
     for f in fb_files(*FB_ONE_FILES):                                             # scraper_one (the 17 Oct format) and fetch_cat
@@ -573,6 +578,7 @@ def fb_ugc():
                      'author': {'name': u.get('name') or (p.get('pageName') or {}).get('name'), 'id': u.get('id'), 'url': u.get('profileUrl')},
                      'likes': num(p.get('likes')), 'comments': num(p.get('comments')), 'shares': num(p.get('shares')), 'views': num(p.get('videoPostViewCount')),
                      'fmt': fb_fmt(p.get('url'), None, bool(p.get('isVideo')), len([i for i in imgs if i])), 'is_share': bool(p.get('sharedPost')),
+                     'shared_url': (p.get('sharedPost') or {}).get('url') if isinstance(p.get('sharedPost'), dict) else None,
                      'media': {'cover': next((m.get('thumbnail') for m in med if m.get('thumbnail')), None), 'video': None, 'images': [i for i in imgs if i]},
                      'query': ((body.get('input') or {}).get('categories') or [None])[0]}, f.stem)
     for p, run in [(p, f.stem) for f in fb_files(*FB_HEADPLY_FILES) for p in json.load(open(f, encoding='utf-8'))['items']]:   # headply: exact times and counts
@@ -638,6 +644,8 @@ def fb_one_item(p, body):
             'author': {'name': a.get('name'), 'id': a.get('id'), 'url': a.get('url') or a.get('profileUrl')}, 'likes': num(p.get('reactionsCount')),
             'comments': num(p.get('commentsCount')), 'shares': num(p.get('sharesCount')), 'views': None,
             'fmt': fb_fmt(p.get('url'), None, bool(vids), len(imgs)), 'is_share': bool(p.get('isReshare')),
+            'shared_url': (p.get('sharedPost') or {}).get('url') if isinstance(p.get('sharedPost'), dict) else None,   # 25 Oct: the post that was shared
+            'shared_id': str((p.get('sharedPost') or {}).get('postId') or '') or None if isinstance(p.get('sharedPost'), dict) else None,
             'media': {'cover': None, 'video': vids[0].get('url') if vids else None, 'images': imgs}, 'query': (body.get('input') or {}).get('query')}
 
 

@@ -1250,3 +1250,13 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Tests:** all 26 dashboard suites pass on the dashboard and on `docs/index.html`; `test_pipeline.py` passes with the 6 new checks. **Published** at the user's request ("yes", 24 Oct).
 - **Files:** `data/raw/real_17oct/comment_check.py` (new), `normalize.py`, `collect.py`, `pipeline.py`, `comment_rejects.json` (new), `items.json`, `real_dashboard.json`, `V7_Pulse_Dashboard.html` (Version 38 saved in `archive/dashboard_versions/`), `docs/index.html`, `tests/test_pipeline.py`, the notes.
 
+### Pipeline: the posts that shares point to (25 Oct 2026)
+- **Why:** of the 500 comments rejected from 14 shares (Version 39), 97 found their original post in the collection; about 380 were dropped because the post they were written under had never been collected. Mahmoud asked to collect those posts, and to keep treating each share as a post with its own details and comments.
+- **What changed** (DECISIONS #179): `normalize.py` keeps `shared_url` and `shared_id` on every share (305 shares, all with a link, 284 with an id); new `collect.py fbshareorigins` fetches by link the shared posts the collection lacks (shares about V7 only, each link once), and runs first among `pipeline.py`'s fill steps; `tests/test_pipeline.py` checks it.
+- **Waiting for the Apify token:** `fbshareorigins` would fetch 25 posts (about USD 0.06, cap 0.13), then their comments and the 14 shares' own comments follow (runbook in `PROJECT_MEMORY.md` section 11). The dashboard is unchanged until then.
+- **Files:** `data/raw/real_17oct/normalize.py`, `collect.py`, `pipeline.py`, `items.json`, `tests/test_pipeline.py`, the notes.
+
+### Pipeline: duplicates by post id only (26 Oct 2026)
+- **Why:** Mahmoud asked for the duplicate check done by hand for the shared posts to run every time. A check flagging the same author, place and text within 10 minutes (answered "same" or "different" by a person) was built and run: 91 pairs, then 20 once cross-posts in other groups, events and subreddits were left out, none of them one post saved twice (different formats or like counts). He: cross-posts are separate posts, don't flag them, and drop that check.
+- **What stays** (DECISIONS #180): the same post id is one item; `fbshareorigins` skips a shared post already collected by id or link. The flagging, `possible_duplicates.json` and `duplicate_decisions.json` were removed again before being pushed. `tests/test_pipeline.py`: the fill-steps check no longer reads the real collection's files.
+- **Files:** `tests/test_pipeline.py`, the notes.
