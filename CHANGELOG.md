@@ -1285,3 +1285,8 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Missing pictures:** fresh links for 536 posts (USD 1.40); 293 saved at first. A matching bug (pfbid links hold no post number) left 244 Facebook results unused: fixed by matching on ids and reusing results from the last 2 days (#193), recovered at no cost. `tests/test_pipeline.py`: reuse, the 2-tries limit, and the videos-inside-posts step.
 - **Facebook pictures stored as {'uri': …}:** danek's and silentflow's rows often give `image` as an object, which `media_links.py` and `normalize.py` read only as a link. Fixed in both: 168 more pictures recovered from the saved results at no cost (1,489 in all, from 972 that morning), and 379 Facebook posts now keep their picture links from the searches.
 
+### Version 40: the dashboard rebuilt with the 26 Oct data (26 Oct 2026)
+- **What changes on the page:** public posts about V7 1,438 to 1,444 (about 10 new, mostly the shared posts fetched through their shares, among them Magdy Khalefa's 19.6K-like post and Mohamad Gawdat's original of the share Mahmoud found; 3 dropped, shares whose shared posts aren't about V7); comments 9,916 to 10,140; public posts with a picture 638 to 1,071 (1,394 images in the page's map); a few posts fetched again show slightly updated counts. The page is 5.96 MB.
+- **Tests:** all 26 dashboard suites pass on the dashboard and on `docs/index.html`. **Published** at the user's request ("publish", 26 Oct).
+- **Files:** `V7_Pulse_Dashboard.html` (Version 39 saved in `archive/dashboard_versions/`), `docs/index.html`, `docs/media/`, `data/raw/real_17oct/real_dashboard.json`, `labels.json`, the notes.
+
