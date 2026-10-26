@@ -1,0 +1,41 @@
+{
+ "input": {
+  "video_urls": [
+   "https://www.facebook.com/reel/1700113094476794/"
+  ]
+ },
+ "cap_usd": 0.15,
+ "run": {
+  "id": "nVxHXZdwHELoJrjzz",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-26T00:07:33.341Z",
+  "finishedAt": "2026-10-26T00:07:38.574Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "extra-10-minutes": 0
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.0002,
+ "items": [
+  {
+   "video_url": "https://www.facebook.com/reel/1700113094476794/",
+   "title": "18 reactions · 3 comments | عصير شعير طبيعي بنكهة الأناناس و محلى بالعسل مع فيتامين D . #بس_دقت_علقت v7 aleppo v super soda | حلب يا عشقي الأبدي",
+   "description": "عصير شعير طبيعي بنكهة الأناناس و محلى بالعسل مع فيتامين D .\n#بس_دقت_علقت\n\nv7 aleppo\nv super soda",
+   "thumbnail": "https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/723110185_798257029919369_5102801908560290680_n.jpg?stp=dst-jpg_tt6&cstp=mx360x640&ctp=s360x640&_nc_cat=106&ccb=1-7&_nc_sid=50ce42&_nc_ohc=56h1asPeY3EQ7kNvwH9rstw&_nc_oc=AdrDwZ_X2SBz_1DWWx2KBl4r1l_dnGHsLoe5vVpVSu5hijUHCPTU-ebUejHdkUW4wW0&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=MfpJ0fdZ30u8Y8r9uyksYA&_nc_ss=70289&oh=00_AQNmaKvKprxOSPr2pXnkeEiIQdceKMZ-NBARyvu4Lr924A&oe=6AE4541F",
+   "duration": 18.69,
+   "transcript": [
+    {
+     "text": "Outro",
+     "start": 0,
+     "end": 10.14
+    },
+    {
+     "text": "Music",
+     "start": 10.14,
+     "end": 10.58
+    }
+   ]
+  }
+ ]
+}

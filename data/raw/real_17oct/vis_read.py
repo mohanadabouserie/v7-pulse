@@ -5,7 +5,17 @@ Usage: python3 vis_read.py [shortcode …]   (default: every folder in vis/ with
 import concurrent.futures, json, os, pathlib, shutil, subprocess, sys, threading, time
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
-CLI = shutil.which('claude') or str(next(pathlib.Path.home().glob('.nvm/versions/node/*/bin/claude'), ''))
+CLI = shutil.which('claude') or next((str(p) for p in [pathlib.Path.home() / '.local' / 'bin' / 'claude', *pathlib.Path.home().glob('.nvm/versions/node/*/bin/claude')] if p.exists()), '')
+
+
+def oauth_token():
+    """26 Oct: a long-lived sign-in token (`claude setup-token`) in .env.claude at the repo root, for runs that can't reach the macOS
+    Keychain, where an interactive /login keeps its key. Never printed."""
+    p = ROOT / '.env.claude'
+    for line in (p.read_text(encoding='utf-8').splitlines() if p.exists() else []):
+        if line.startswith('CLAUDE_CODE_OAUTH_TOKEN=') and line.split('=', 1)[1].strip():
+            return line.split('=', 1)[1].strip()
+    return os.environ.get('CLAUDE_CODE_OAUTH_TOKEN')
 SIGNIN = ROOT / 'bot' / 'state' / 'claude'
 OUT = HERE / 'vis_read.json'
 RULES = """You read the images of one public Instagram or Facebook post (its photos, or frames taken every 2 seconds from its video, with the cover first)
@@ -34,6 +44,8 @@ def read(code):
     imgs = imgs[:7]                                   # an album: its first 7 photos
     env = {'HOME': str(pathlib.Path.home()), 'LANG': 'C.UTF-8', 'CLAUDE_CONFIG_DIR': str(SIGNIN),
            'PATH': os.pathsep.join([os.path.dirname(CLI), '/usr/local/bin', '/usr/bin', '/bin'])}
+    if oauth_token():
+        env['CLAUDE_CODE_OAUTH_TOKEN'] = oauth_token()
     cmd = [CLI, '-p', '--output-format', 'json', '--model', 'claude-opus-5-5', '--effort', 'low', '--tools', 'Read', '--allowedTools', 'Read',
            '--strict-mcp-config', '--mcp-config', '{"mcpServers":{}}', '--no-session-persistence', '--system-prompt', RULES, '--json-schema', json.dumps(SCHEMA)]
     prompt = 'Read these images of one post, in this order, then answer:\n' + '\n'.join(str(d / i) for i in imgs)

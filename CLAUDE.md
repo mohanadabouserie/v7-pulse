@@ -62,6 +62,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - `.env.anthropic` with `ANTHROPIC_API_KEY=…`, for `data/noon_llm.py`.
   - `.env.meta` with `META_SYSTEM_USER_TOKEN=…`, when V7 connects its Facebook and Instagram accounts.
   - `.env.telegram` with `TELEGRAM_BOT_TOKEN=…` and `TELEGRAM_JOIN_CODE=…`, for the Telegram bot (the plain `telegram_key` file is ignored too).
+  - `.env.claude` with `CLAUDE_CODE_OAUTH_TOKEN=…` (made by `claude setup-token`, valid a year, on the user's personal Claude plan): `label.py` and `vis_read.py` use it, so they run without the macOS Keychain, including from Claude Code's sandbox. On Mahmoud's Mac (26 Oct) the Claude Code CLI is at `~/.local/bin/claude`. Never print the token.
 
 ## The dashboard code
 - **One IIFE.** Nothing is global, so tests read the page through the DOM, not through JS variables.
@@ -208,6 +209,7 @@ The site must keep working wherever it's hosted (GitHub Pages now; perhaps V7's 
 - Facebook gives the same post a post id (the searches) and a video id (/reel/<id>, /videos/<id>); `normalize.py` links them (`FB_ALIAS`) so it's counted once.
 - Facebook reels: Facebook's own reel and video searches return mostly the same reels; Google's short-videos search limited to Facebook (`simple.actor/google-short-videos`, platform facebook) finds reels they don't. Use both (DECISIONS #149).
 - Facebook media links expire within days, and some return a login page: `vis_media.py` refuses files that aren't images (DECISIONS #151).
+- Media links name the file server nearest the scraper (abroad), and some don't resolve from Egypt; they also expire within days. `media_links.py` downloads through the general server names first and refreshes expired links by the post's link (`--refresh-usd`, DECISIONS #181). Instagram accounts that answer "restricted_page" can't be read logged out at all.
 - Apify's API can return a 502 mid-stage; `collect.py`'s `api()` retries reads. If a stage still stops, save the started run's items by its id instead of starting it again.
 - Facebook hashtags: Apify's hashtag scraper returns "Empty or private data". Apify's video search returns some broken rows (`facebook.comundefined`). The public-group search (lofomachines) failed after 62 posts. invideoiq charges USD 0.035 more for each 10 minutes past the first.
 - dami_studio's Reels search delivers at most 100 reels a run, so `igkw` splits the keywords into runs of three.

@@ -1,0 +1,521 @@
+{
+ "input": {
+  "video_urls": [
+   "https://www.facebook.com/watch/?v=958096936982763",
+   "https://www.facebook.com/watch/?v=941585345576663",
+   "https://www.facebook.com/watch/?v=1555337632816426",
+   "https://www.facebook.com/watch/?v=1257193832877309"
+  ]
+ },
+ "cap_usd": 0.18,
+ "run": {
+  "id": "C5Pe6KgNjBL4lVsjC",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-26T00:49:39.377Z",
+  "finishedAt": "2026-10-26T00:49:48.128Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 4,
+   "extra-10-minutes": 0
+  },
+  "usageTotalUsd": 0.14
+ },
+ "cost_usd": 0.007,
+ "items": [
+  {
+   "video_url": "https://www.facebook.com/watch/?v=1555337632816426",
+   "title": "Chai Paratha Express on Reels",
+   "description": "",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/704558351_973555052120446_4301900924490916263_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=s960x960&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=oNSyoYiJzTgQ7kNvwGyxQUE&_nc_oc=Adq08tYbVC5YTqDcVcUSP-2LXB2ewcLNwic5xu9DdA7Prk0KCRUiTu_BsF9qb-qSzVc&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=s6hsrw5o0G25stOFdq3bWw&_nc_ss=70289&oh=00_AQOZ4wHvwB3arLo6Q5nZH9tWbFgu_6QCi6iHUaix4n3SlA&oe=6AE47236",
+   "duration": 47.808,
+   "transcript": [
+    {
+     "text": "What is the new thing?",
+     "start": 0,
+     "end": 1.28
+    },
+    {
+     "text": "I have a new Egyptian drink that has a great flavor.",
+     "start": 1.7,
+     "end": 5.6
+    },
+    {
+     "text": "There is a pina colada, real cola, lemonade and",
+     "start": 6.1,
+     "end": 12.04
+    },
+    {
+     "text": "anargar.",
+     "start": 12.04,
+     "end": 13.24
+    },
+    {
+     "text": "You have to try this with a pineapple and a pineapple.",
+     "start": 14.02,
+     "end": 18.9
+    },
+    {
+     "text": "It's 7 flavors.",
+     "start": 19.2,
+     "end": 20.72
+    },
+    {
+     "text": "And apple and apple.",
+     "start": 20.5,
+     "end": 22.6
+    },
+    {
+     "text": "And some honey and sugar.",
+     "start": 23.14,
+     "end": 25.26
+    },
+    {
+     "text": "Some sugar and chai and chai express are available.",
+     "start": 25.56,
+     "end": 27.88
+    },
+    {
+     "text": "warm warm and warm.",
+     "start": 28,
+     "end": 29.36
+    },
+    {
+     "text": "We have been drinking with cold water.",
+     "start": 29.44,
+     "end": 30.68
+    },
+    {
+     "text": "What's the name?",
+     "start": 31.08,
+     "end": 32.16
+    },
+    {
+     "text": "The name is V7.",
+     "start": 32.38,
+     "end": 34.18
+    },
+    {
+     "text": "Oh, V8.",
+     "start": 34.2,
+     "end": 35.76
+    },
+    {
+     "text": "People are going to drive V8 and V7.",
+     "start": 35.02,
+     "end": 36.84
+    },
+    {
+     "text": "It's a V7.",
+     "start": 36.38,
+     "end": 38.08
+    },
+    {
+     "text": "It's an Egyptian drink.",
+     "start": 38.08,
+     "end": 39
+    },
+    {
+     "text": "We should support this brand.",
+     "start": 38.66,
+     "end": 40.34
+    },
+    {
+     "text": "And we support all of our brands.",
+     "start": 41.7,
+     "end": 43.7
+    },
+    {
+     "text": "So, we support this brand.",
+     "start": 43.46,
+     "end": 45.32
+    },
+    {
+     "text": "Thank you.",
+     "start": 45.08,
+     "end": 46.02
+    },
+    {
+     "text": "Chai Prat Express.",
+     "start": 46.12,
+     "end": 47.08
+    },
+    {
+     "text": "Thank you.",
+     "start": 46.7,
+     "end": 47.54
+    }
+   ]
+  },
+  {
+   "video_url": "https://www.facebook.com/watch/?v=941585345576663",
+   "title": "Chai Paratha Express on Reels",
+   "description": "",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/704558351_973555052120446_4301900924490916263_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=s960x960&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=oNSyoYiJzTgQ7kNvwGyxQUE&_nc_oc=Adq08tYbVC5YTqDcVcUSP-2LXB2ewcLNwic5xu9DdA7Prk0KCRUiTu_BsF9qb-qSzVc&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=cIcxhpo5Ag0_J3sk4IMlqg&_nc_ss=70289&oh=00_AQOzUJ4fJ8MZoP_1C1nYy33EgQ3P0sb6WPmALPT2mmp-3A&oe=6AE47236",
+   "duration": 47.808,
+   "transcript": [
+    {
+     "text": "What is the new thing?",
+     "start": 0,
+     "end": 1.28
+    },
+    {
+     "text": "I have a new Egyptian drink that has a great flavor.",
+     "start": 1.7,
+     "end": 5.6
+    },
+    {
+     "text": "There is a pina colada, real cola, lemonade and",
+     "start": 6.1,
+     "end": 12.04
+    },
+    {
+     "text": "anargar.",
+     "start": 12.04,
+     "end": 13.24
+    },
+    {
+     "text": "You have to try this with a pineapple and a pineapple.",
+     "start": 14.02,
+     "end": 18.9
+    },
+    {
+     "text": "It's 7 flavors.",
+     "start": 19.2,
+     "end": 20.72
+    },
+    {
+     "text": "And apple and apple.",
+     "start": 20.5,
+     "end": 22.6
+    },
+    {
+     "text": "And some honey and sugar.",
+     "start": 23.14,
+     "end": 25.26
+    },
+    {
+     "text": "Some sugar and chai and chai express are available.",
+     "start": 25.56,
+     "end": 27.88
+    },
+    {
+     "text": "warm warm and warm.",
+     "start": 28,
+     "end": 29.36
+    },
+    {
+     "text": "We have been drinking with cold water.",
+     "start": 29.44,
+     "end": 30.68
+    },
+    {
+     "text": "What's the name?",
+     "start": 31.08,
+     "end": 32.16
+    },
+    {
+     "text": "The name is V7.",
+     "start": 32.38,
+     "end": 34.18
+    },
+    {
+     "text": "Oh, V8.",
+     "start": 34.2,
+     "end": 35.76
+    },
+    {
+     "text": "People are going to drive V8 and V7.",
+     "start": 35.02,
+     "end": 36.84
+    },
+    {
+     "text": "It's a V7.",
+     "start": 36.38,
+     "end": 38.08
+    },
+    {
+     "text": "It's an Egyptian drink.",
+     "start": 38.08,
+     "end": 39
+    },
+    {
+     "text": "We should support this brand.",
+     "start": 38.66,
+     "end": 40.34
+    },
+    {
+     "text": "And we support all of our brands.",
+     "start": 41.7,
+     "end": 43.7
+    },
+    {
+     "text": "So, we support this brand.",
+     "start": 43.46,
+     "end": 45.32
+    },
+    {
+     "text": "Thank you.",
+     "start": 45.08,
+     "end": 46.02
+    },
+    {
+     "text": "Chai Prat Express.",
+     "start": 46.12,
+     "end": 47.08
+    },
+    {
+     "text": "Thank you.",
+     "start": 46.7,
+     "end": 47.54
+    }
+   ]
+  },
+  {
+   "video_url": "https://www.facebook.com/watch/?v=958096936982763",
+   "title": "Chai Paratha Express on Reels",
+   "description": "",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/704558351_973555052120446_4301900924490916263_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=s960x960&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=oNSyoYiJzTgQ7kNvwGyxQUE&_nc_oc=Adq08tYbVC5YTqDcVcUSP-2LXB2ewcLNwic5xu9DdA7Prk0KCRUiTu_BsF9qb-qSzVc&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=HyM7FnaYpzP4ekf73I_oHg&_nc_ss=70289&oh=00_AQOUPkcWSgtTwqdfGh0dEKDjF0upyYQ0s9eqHNHj87PE4g&oe=6AE47236",
+   "duration": 47.808,
+   "transcript": [
+    {
+     "text": "What is the new thing?",
+     "start": 0,
+     "end": 1.28
+    },
+    {
+     "text": "I have a new Egyptian drink that has a great flavor.",
+     "start": 1.7,
+     "end": 5.6
+    },
+    {
+     "text": "There is a pina colada, real cola, lemonade and",
+     "start": 6.1,
+     "end": 12.04
+    },
+    {
+     "text": "anargar.",
+     "start": 12.04,
+     "end": 13.24
+    },
+    {
+     "text": "You have to try this with a pineapple and a pineapple.",
+     "start": 14.02,
+     "end": 18.9
+    },
+    {
+     "text": "It's 7 flavors.",
+     "start": 19.2,
+     "end": 20.72
+    },
+    {
+     "text": "And apple and apple.",
+     "start": 20.5,
+     "end": 22.6
+    },
+    {
+     "text": "And some honey and sugar.",
+     "start": 23.14,
+     "end": 25.26
+    },
+    {
+     "text": "Some sugar and chai and chai express are available.",
+     "start": 25.56,
+     "end": 27.88
+    },
+    {
+     "text": "warm warm and warm.",
+     "start": 28,
+     "end": 29.36
+    },
+    {
+     "text": "We have been drinking with cold water.",
+     "start": 29.44,
+     "end": 30.68
+    },
+    {
+     "text": "What's the name?",
+     "start": 31.08,
+     "end": 32.16
+    },
+    {
+     "text": "The name is V7.",
+     "start": 32.38,
+     "end": 34.18
+    },
+    {
+     "text": "Oh, V8.",
+     "start": 34.2,
+     "end": 35.76
+    },
+    {
+     "text": "People are going to drive V8 and V7.",
+     "start": 35.02,
+     "end": 36.84
+    },
+    {
+     "text": "It's a V7.",
+     "start": 36.38,
+     "end": 38.08
+    },
+    {
+     "text": "It's an Egyptian drink.",
+     "start": 38.08,
+     "end": 39
+    },
+    {
+     "text": "We should support this brand.",
+     "start": 38.66,
+     "end": 40.34
+    },
+    {
+     "text": "And we support all of our brands.",
+     "start": 41.7,
+     "end": 43.7
+    },
+    {
+     "text": "So, we support this brand.",
+     "start": 43.46,
+     "end": 45.32
+    },
+    {
+     "text": "Thank you.",
+     "start": 45.08,
+     "end": 46.02
+    },
+    {
+     "text": "Chai Prat Express.",
+     "start": 46.12,
+     "end": 47.08
+    },
+    {
+     "text": "Thank you.",
+     "start": 46.7,
+     "end": 47.54
+    }
+   ]
+  },
+  {
+   "video_url": "https://www.facebook.com/watch/?v=1257193832877309",
+   "title": "Chai Paratha Express on Reels",
+   "description": "",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/704558351_973555052120446_4301900924490916263_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=s960x960&_nc_cat=107&ccb=1-7&_nc_sid=50ce42&_nc_ohc=oNSyoYiJzTgQ7kNvwGyxQUE&_nc_oc=Adq08tYbVC5YTqDcVcUSP-2LXB2ewcLNwic5xu9DdA7Prk0KCRUiTu_BsF9qb-qSzVc&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=Xzek9zgBuEhlAITxVmUNOQ&_nc_ss=70289&oh=00_AQOEyktECWJKWl-s-BM3mJr2_xxLkWoRyaJjI2oZERsJjg&oe=6AE47236",
+   "duration": 47.808,
+   "transcript": [
+    {
+     "text": "What is the new thing?",
+     "start": 0,
+     "end": 1.28
+    },
+    {
+     "text": "I have a new Egyptian drink that has a great flavor.",
+     "start": 1.7,
+     "end": 5.6
+    },
+    {
+     "text": "There is a pina colada, real cola, lemonade and",
+     "start": 6.1,
+     "end": 12.04
+    },
+    {
+     "text": "anargar.",
+     "start": 12.04,
+     "end": 13.24
+    },
+    {
+     "text": "You have to try this with a pineapple and a pineapple.",
+     "start": 14.02,
+     "end": 18.9
+    },
+    {
+     "text": "It's 7 flavors.",
+     "start": 19.2,
+     "end": 20.72
+    },
+    {
+     "text": "And apple and apple.",
+     "start": 20.5,
+     "end": 22.6
+    },
+    {
+     "text": "And some honey and sugar.",
+     "start": 23.14,
+     "end": 25.26
+    },
+    {
+     "text": "Some sugar and chai and chai express are available.",
+     "start": 25.56,
+     "end": 27.88
+    },
+    {
+     "text": "warm warm and warm.",
+     "start": 28,
+     "end": 29.36
+    },
+    {
+     "text": "We have been drinking with cold water.",
+     "start": 29.44,
+     "end": 30.68
+    },
+    {
+     "text": "What's the name?",
+     "start": 31.08,
+     "end": 32.16
+    },
+    {
+     "text": "The name is V7.",
+     "start": 32.38,
+     "end": 34.18
+    },
+    {
+     "text": "Oh, V8.",
+     "start": 34.2,
+     "end": 35.76
+    },
+    {
+     "text": "People are going to drive V8 and V7.",
+     "start": 35.02,
+     "end": 36.84
+    },
+    {
+     "text": "It's a V7.",
+     "start": 36.38,
+     "end": 38.08
+    },
+    {
+     "text": "It's an Egyptian drink.",
+     "start": 38.08,
+     "end": 39
+    },
+    {
+     "text": "We should support this brand.",
+     "start": 38.66,
+     "end": 40.34
+    },
+    {
+     "text": "And we support all of our brands.",
+     "start": 41.7,
+     "end": 43.7
+    },
+    {
+     "text": "So, we support this brand.",
+     "start": 43.46,
+     "end": 45.32
+    },
+    {
+     "text": "Thank you.",
+     "start": 45.08,
+     "end": 46.02
+    },
+    {
+     "text": "Chai Prat Express.",
+     "start": 46.12,
+     "end": 47.08
+    },
+    {
+     "text": "Thank you.",
+     "start": 46.7,
+     "end": 47.54
+    }
+   ]
+  }
+ ]
+}

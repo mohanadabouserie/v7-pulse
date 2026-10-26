@@ -122,7 +122,7 @@ JOBS = [   # actors: the main one first, then standbys with the same output form
     Job('ig_google_web', {SWEEP, WEEKLY}, ['ig_google'], 'ig_phrases', {SWEEP: 3, WEEKLY: 1}, "Google's site search of instagram.com (pages per query)"),
     Job('ig_hashtags', {SWEEP, WEEKLY}, ['ig_hashtags'], 'ig_tags', {SWEEP: 30, WEEKLY: 15}, 'hashtags'),
 ]
-FILL = ['fbshareorigins', 'fbfill', 'fbfill2', 'fbviews', 'fbnames', 'igspeech', 'igprofiles', 'igcomments', 'igcomments2', 'igvisfetch']   # collect.py stages
+FILL = ['fbshareorigins', 'fbfill', 'fbinner', 'fbfill2', 'fbviews', 'fbnames', 'igspeech', 'igprofiles', 'igcomments', 'igcomments2', 'igvisfetch']   # collect.py stages
 QUICK_TESTS = ['test_v25', 'test_v29', 'test_v30', 'test_v31']
 
 
@@ -376,6 +376,12 @@ def report_rejects(rep):
             len(new), '' if len(new) == 1 else 's', ', '.join(sorted({r['scraper'] for r in new})), '; '.join('%s %s' % (r['post'], r['why']) for r in new[:5])))
 
 
+def left(rep):
+    """26 Oct (DECISIONS #181): what's left under this run's line, for fresh media links when old ones expired (vis_media.py, fetch_media.py)."""
+    usd = round(rep['budget_line'] - C.spent(), 2)
+    return ['--refresh-usd', str(usd)] if usd > 0.01 else []
+
+
 def chain(opts, rep):
     py, venv = sys.executable, str(ROOT / 'data' / '.venv' / 'bin' / 'python')
     for b in ('BUDGET', 'BUDGET_IG', 'BUDGET_FB', 'BUDGET_SPEECH', 'BUDGET_IGKW', 'BUDGET_FBREEL', 'BUDGET_FBMORE'):   # the fill stages obey this run's line
@@ -399,14 +405,15 @@ def chain(opts, rep):
     vis = sorted(C.RAW.glob('vis_posts_*.json'), key=lambda p: p.stat().st_mtime)
     new_vis = [str(p) for p in vis if p.stat().st_mtime >= rep['started_ts']]
     if new_vis:
-        step(rep, 'pictures, Instagram', [venv, 'vis_media.py'] + new_vis)
-    step(rep, 'pictures, Facebook', [venv, 'vis_media.py', '--fb'])
+        step(rep, 'pictures, Instagram', [venv, 'vis_media.py'] + new_vis + left(rep))
+    step(rep, 'pictures, Facebook', [venv, 'vis_media.py', '--fb'] + left(rep))
+    step(rep, 'pictures, new posts about V7', [venv, 'vis_media.py', '--new'] + left(rep))   # 26 Oct: checked again with their pictures (DECISIONS #183)
     step(rep, 'read pictures', [py, 'vis_read.py'])
     ok = step(rep, 'normalize again', [py, 'normalize.py']) and step(rep, 'label again', [py, 'label.py'])
     report_rejects(rep)
     if ok and not opts.no_build:
         if step(rep, 'build', [py, 'build_real.py', '--inject']):
-            step(rep, 'images', [py, 'fetch_media.py'])
+            step(rep, 'images', [py, 'fetch_media.py'] + left(rep))
             step(rep, 'embed images', [py, str(HERE.parent / 'media_13oct' / 'build_media.py'), '--inject'])
             for t in QUICK_TESTS:
                 step(rep, 'test ' + t, [py, str(ROOT / 'tests' / (t + '.py'))], timeout=900)

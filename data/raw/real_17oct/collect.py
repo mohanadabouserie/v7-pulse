@@ -600,18 +600,18 @@ def _ig_public(about_only=True):
 
 
 def stage_igcomments():
-    """19 Oct (DECISIONS #141): the comments under the public Instagram posts about V7, up to 100 a post, most liked first (scrapesmith).
+    """19 Oct (DECISIONS #141): the comments under the public Instagram posts about V7, every comment, most liked first (scrapesmith; up to 100 a post until 26 Oct, DECISIONS #191).
     They add what people say about V7 under other people's posts. Posts already done are skipped."""
     posts, _ = _ig_public()
     done = set()
     for f in RAW.glob('igcm_*.json'):
         done |= {(x.get('postUrl') or '').rstrip('/').split('/')[-1] for x in json.load(open(f, encoding='utf-8'))['items']}
     todo = [i for i in posts if (i.get('comments') or 0) > 0 and i['id'][3:] not in done]
-    n = sum(min(i['comments'], 100) for i in todo)
+    n = sum(i['comments'] for i in todo)
     log(f'  igcomments: {len(todo)} posts, about {n} comments')
     if todo:
         tag = time.strftime('%Y%m%d%H%M')
-        run('igcm_' + tag, IG_CM_CHEAP, {"postUrls": [i['url'] for i in todo], "maxCommentsPerPost": 100, "sortOrder": "popular"},
+        run('igcm_' + tag, IG_CM_CHEAP, {"postUrls": [i['url'] for i in todo], "maxCommentsPerPost": cm_limit(todo), "sortOrder": "popular"},
             round(n * 0.0005 * 1.3 + 0.05, 2), n + 50, budget=BUDGET_IG)
 
 
@@ -636,7 +636,7 @@ def stage_igvisfetch():
 
 def stage_igcomments2():
     """19 Oct: scrapesmith returned nothing for 137 of 251 posts (DECISIONS #141), so the posts with no comments collected get them from
-    Apify's own comment scraper (USD 0.0023 a comment), up to 100 a post."""
+    Apify's own comment scraper (USD 0.0023 a comment), every comment (up to 100 a post until 26 Oct)."""
     posts, _ = _ig_public()
     done = set()
     for f in RAW.glob('igcm_*.json'):
@@ -646,10 +646,10 @@ def stage_igcomments2():
         if not f.stem.startswith('igcm_official'):
             asked |= {u.rstrip('/').split('/')[-1] for u in (json.load(open(f, encoding='utf-8')).get('input') or {}).get('postUrls') or []}
     todo = [i for i in posts if (i.get('comments') or 0) > 0 and i['id'][3:] not in done and i['id'][3:] in asked]
-    n = sum(min(i['comments'], 100) for i in todo)
+    n = sum(i['comments'] for i in todo)
     log(f'  igcomments2: {len(todo)} posts scrapesmith returned no comments for, about {n} comments')
     if todo:
-        run('igcm_official_' + time.strftime('%Y%m%d%H%M'), IG_COMMENTS, {"directUrls": [i['url'] for i in todo], "resultsLimit": 100, "includeNestedComments": False},
+        run('igcm_official_' + time.strftime('%Y%m%d%H%M'), IG_COMMENTS, {"directUrls": [i['url'] for i in todo], "resultsLimit": cm_limit(todo), "includeNestedComments": False},
             round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_IG)
 
 
@@ -866,6 +866,12 @@ def stage_fbdetails():
         run('fbd_posts', FB_POST_LINK, {"direct_urls": [{"url": u} for u in links]}, round(len(links) * 0.00233 * 1.3 + 0.05, 2), len(links), budget=BUDGET_FB)
 
 
+def cm_limit(posts):
+    """26 Oct (DECISIONS #191): no limit on comments per post (it was 100). A scraper takes one number for all its posts, so it gets the
+    largest comment count among them, with room for comments added since the count was read."""
+    return max([int((i.get('comments') or 0) * 1.1) + 20 for i in posts] + [100])
+
+
 def _fb_public():
     items = json.load(open(HERE / 'items.json', encoding='utf-8'))['items']
     labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
@@ -914,7 +920,7 @@ def stage_fbfill():
     - what's said in reels and videos (invideoiq's transcriber, USD 0.035 a video; it read all five test reels, Facebook's own captions three);
       also the videos whose text is too short to tell what they're about;
     - the followers and category of the pages, creators, businesses and news outlets that posted (Apify's page scraper, USD 0.0082 a page);
-    - the comments under them, up to 100 a post (thedoor, USD 0.0005 a comment); fbfill2 sends the posts it returns nothing for to
+    - the comments under them, all of them (thedoor, USD 0.0005 a comment; up to 100 a post until 26 Oct, DECISIONS #191); fbfill2 sends the posts it returns nothing for to
       Apify's own comment scraper. Shares never go to thedoor: it returns the shared post's comments (comment_check.py, DECISIONS #178)."""
     posts, labels = _fb_public()
     about = lambda i: (labels.get(i['id']) or {}).get('about')
@@ -922,7 +928,10 @@ def stage_fbfill():
     tried = attempts()   # 19 Oct (pipeline.py): a video or page asked for before and not returned isn't paid for again and again
     # a short caption that can't tell is transcribed only when a keyword search over a long window found the video (20 Oct: the one-day
     # searches and Google's links brought 52 off-topic short videos into one speech run; DATESLICE_TEST.md)
-    vids = [i for i in posts if i.get('fmt') in ('Reel', 'Video') and (about(i) or (len(i.get('text') or '') < 30 and any(wide_search(r) for r in i.get('found_by') or [])))]
+    # 26 Oct (DECISIONS #188): never a share: its video is the shared post's, which gets its speech and plays once, as its own post
+    # 26 Oct (DECISIONS #190): a post fetched because it was shared (fbshareorigins) gets its speech whatever its first label
+    shared_orig = lambda i: any(str(r).startswith('fbd_posts_shared_') for r in i.get('found_by') or [])
+    vids = [i for i in posts if i.get('fmt') in ('Reel', 'Video') and not i.get('is_share') and (about(i) or shared_orig(i) or (len(i.get('text') or '') < 30 and any(wide_search(r) for r in i.get('found_by') or [])))]
     done_sp = set()
     for f in RAW.glob('fbf_speech_*.json'):
         done_sp |= {(x.get('video_url') or x.get('url') or '').split('?')[0].rstrip('/') for x in json.load(open(f, encoding='utf-8'))['items']}
@@ -936,7 +945,7 @@ def stage_fbfill():
     for f in RAW.glob('fbcm_*.json'):
         done_cm |= {x.get('post_url') or x.get('facebookUrl') or x.get('inputUrl') for x in json.load(open(f, encoding='utf-8'))['items']}
     cm = [i for i in posts if about(i) and (i.get('comments') or 0) > 0 and i['url'] not in done_cm and not i.get('is_share')]   # shares: fbfill2
-    n_cm = sum(min(i['comments'], 100) for i in cm)
+    n_cm = sum(i['comments'] for i in cm)
     log(f'  fbfill: {len(noviews)} videos without views, {len(nosp)} videos to transcribe, {len(page_urls)} pages, {len(cm)} posts with about {n_cm} comments'
         f' (shares go to Apify\'s comment scraper in fbfill2)')
     todo = []
@@ -947,7 +956,7 @@ def stage_fbfill():
     if page_urls:
         todo.append(('fbf_pages_' + tag, FB_PAGES, {"startUrls": [{"url": u} for u in page_urls]}, round(len(page_urls) * 0.0082 * 1.3 + 0.05, 2), len(page_urls)))
     if cm:
-        todo.append(('fbcm_door_' + tag, FB_CM_CHEAP, {"postUrls": [i['url'] for i in cm], "targetComments": 100, "includeReplies": False,
+        todo.append(('fbcm_door_' + tag, FB_CM_CHEAP, {"postUrls": [i['url'] for i in cm], "targetComments": cm_limit(cm), "includeReplies": False,
                                                        "orderingMode": "MOST_RELEVANT"}, round(n_cm * 0.0005 * 1.3 + 0.10, 2), n_cm + 50))
     parallel(todo, BUDGET_FB)
 
@@ -1079,7 +1088,8 @@ BUDGET_IGST = 73.00   # 19 Oct: the Instagram short-videos test may spend up to 
 
 
 def stage_fbshareorigins():
-    """25 Oct (DECISIONS #179): the posts that public shares about V7 point to, fetched by link (danek, USD 0.0023 a post) when the
+    """25 Oct (DECISIONS #179): the posts that public shares point to (since 26 Oct every new share's, so a share whose sharer wrote
+    only "😍" is judged by what it shares, DECISIONS #187; shares collected before then only when about V7), fetched by link (danek, USD 0.0023 a post) when the
     collection doesn't have them, so their comments can be collected under the right post. thedoor had returned these posts' comments
     for the shares (comment_check.py, #178), and they were dropped for want of their post. The originals then go through normalize.py
     (dropped if outside the window) and label.py like any post; fbfill and fbfill2 collect their comments. Each link is asked for once."""
@@ -1090,10 +1100,12 @@ def stage_fbshareorigins():
     asked = set()
     for f in RAW.glob('fbd_posts_shared_*.json'):
         asked |= {x.get('url') for x in (json.load(open(f, encoding='utf-8')).get('input') or {}).get('direct_urls') or []}
+    base_p = HERE / 'vis_baseline.json'   # 26 Oct (DECISIONS #187): every new share, whatever its first label; older ones only when about V7
+    base = set(json.load(open(base_p, encoding='utf-8'))['posts']) if base_p.exists() else set()
     todo = {}
     for i in posts:
         u = i.get('shared_url')
-        if not (i.get('is_share') and u and (labels.get(i['id']) or {}).get('about')):
+        if not (i.get('is_share') and u and (i['id'] not in base or (labels.get(i['id']) or {}).get('about'))):
             continue
         if ('fb:' + i['shared_id'] if i.get('shared_id') else None) in have_ids or comment_check.key(u) in have_urls or u in asked:
             continue
@@ -1104,13 +1116,62 @@ def stage_fbshareorigins():
             round(len(todo) * 0.00233 * 1.3 + 0.05, 2), len(todo), budget=BUDGET_FB)
 
 
+def video_ids(row):
+    """The ids of the videos inside an Apify Facebook posts row (its media, attachments or nested parts typed Video)."""
+    out = []
+    def walk(x):
+        if isinstance(x, dict):
+            if x.get('__typename') == 'Video' and x.get('id'):
+                out.append(str(x['id']))
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    walk(row)
+    return list(dict.fromkeys(out))
+
+
+def stage_fbinner():
+    """26 Oct (DECISIONS #192): speech for the videos inside Facebook posts whose link is a post, not a video: a /posts/, permalink.php or
+    group link holding one or more videos, often with photos. The speech scraper reads a video's own page, not the post's, and returned
+    nothing for these. So: Apify's posts scraper reads each post (USD 0.0047 a post) and gives its videos' ids; each video's own link
+    (facebook.com/watch/?v=<id>) goes to the speech scraper (USD 0.035 a video); fbinner_<tag>.json maps each post to its videos, and
+    normalize.py gives the post the speech of all of them. Never a share (#188); each post once."""
+    import comment_check
+    posts, labels = _fb_public()
+    about = lambda i: (labels.get(i['id']) or {}).get('about') or any(str(r).startswith('fbd_posts_shared_') for r in i.get('found_by') or [])
+    done = set()
+    for f in RAW.glob('fbinner_*.json'):
+        done |= {x['post'] for x in json.load(open(f, encoding='utf-8'))['items']}
+    todo = [i for i in posts if i.get('fmt') in ('Video', 'Reel') and not i.get('is_share') and not i.get('speech') and about(i)
+            and not re.search(r'/reel/|/videos/|watch/?\?v=', i['url']) and i['url'] not in done]
+    log(f'  fbinner: {len(todo)} posts with videos inside a post link')
+    if not todo:
+        return
+    tag = time.strftime('%Y%m%d%H%M')
+    rows = run('fbinnerposts_' + tag, FB_POSTS,   # not fbinner_*: those are the post-to-video maps
+               {"startUrls": [{"url": i['url']} for i in todo], "resultsLimit": len(todo)},
+               round(len(todo) * 0.0047 * 1.3 + 0.05, 2), len(todo) + 2, budget=BUDGET_FB) or []
+    by_post = {}
+    for r in rows:
+        u = next((i['url'] for i in todo if comment_check.key(i['url']) in (comment_check.key(r.get('facebookUrl')), comment_check.key(r.get('inputUrl')))), None)
+        if u:
+            by_post[u] = ['https://www.facebook.com/watch/?v=' + v for v in video_ids(r)]
+    json.dump({'input': {'posts': [i['url'] for i in todo]}, 'items': [{'post': u, 'videos': v} for u, v in by_post.items()]},
+              open(RAW / ('fbinner_' + tag + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    vids = sorted({v for vs in by_post.values() for v in vs})
+    if vids:
+        run('fbf_speech_inner_' + tag, FB_SPEECH, {"video_urls": vids}, round(len(vids) * 0.035 * 1.5 + 0.10, 2), len(vids) + 2, budget=BUDGET_FB)
+
+
 def _fb_commented():
     """The posts that already have comments in items.json (normalize.py keeps only the sets comment_check.py passes)."""
     return {i['parent'] for i in json.load(open(HERE / 'items.json', encoding='utf-8'))['items'] if i['kind'] == 'comment'}
 
 
 def stage_fbfill2():
-    """Apify's own comment scraper (USD 0.0023 a comment, up to 100 a post) for:
+    """Apify's own comment scraper (USD 0.0023 a comment, every comment since 26 Oct) for:
     - 19 Oct: the posts thedoor returned no comments for;
     - 24 Oct (DECISIONS #178): shares, which never go to thedoor, and the posts whose thedoor comments comment_check.py rejects (comments
       older than the post, or far more than the post shows). Each post is asked for once."""
@@ -1143,10 +1204,10 @@ def stage_fbfill2():
             why['thedoor\'s comments rejected'] += 1; return True
         return False
     cm = [i for i in posts if needs(i)]
-    n = sum(min(i['comments'], 100) for i in cm)
+    n = sum(i['comments'] for i in cm)
     log(f'  fbfill2: {len(cm)} posts ({", ".join("%s %d" % kv for kv in why.items()) or "none"}), about {n} comments')
     if cm:
-        run('fbcm_official_' + time.strftime('%Y%m%d%H%M'), FB_COMMENTS, {"startUrls": [{"url": i['url']} for i in cm], "resultsLimit": 100,
+        run('fbcm_official_' + time.strftime('%Y%m%d%H%M'), FB_COMMENTS, {"startUrls": [{"url": i['url']} for i in cm], "resultsLimit": cm_limit(cm),
                                                                            "includeNestedComments": False}, round(n * 0.0023 * 1.2 + 0.05, 2), n + 50, budget=BUDGET_FB)
 
 
@@ -1326,7 +1387,7 @@ def stage_accounts():
                round(len(fb) * 15 * 0.005 * 1.3 + 0.05, 2), len(fb) * 15)], BUDGET_IDEAS)
 
 
-STAGES = {'igrepeat': stage_igrepeat, 'accounts': stage_accounts, 'fbdays': stage_fbdays, 'gweeks': stage_gweeks, 'slicefetch': stage_slicefetch, 'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbshareorigins': stage_fbshareorigins, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
+STAGES = {'igrepeat': stage_igrepeat, 'accounts': stage_accounts, 'fbdays': stage_fbdays, 'gweeks': stage_gweeks, 'slicefetch': stage_slicefetch, 'igshortstest': stage_igshortstest, 'fbmore': stage_fbmore, 'fbreels': stage_fbreels, 'fbreeldetails': stage_fbreeldetails, 'fbreeltest': stage_fbreeltest, 'fbnames': stage_fbnames, 'fbviews': stage_fbviews, 'fbfill2': stage_fbfill2, 'fbshareorigins': stage_fbshareorigins, 'fbinner': stage_fbinner, 'fbfill': stage_fbfill, 'fbdetails': stage_fbdetails, 'fbcover': stage_fbcover, 'fbtest2': stage_fbtest2, 'fbtest': stage_fbtest, 'igcomments2': stage_igcomments2, 'igcomments': stage_igcomments, 'igvisfetch': stage_igvisfetch, 'igcover': stage_igcover, 'covtest': stage_covtest, 'vistest2': stage_vistest2, 'vistest': stage_vistest, 'igspeech': stage_igspeech, 'igprofiles': stage_igprofiles, 'transcripttest': stage_transcripttest, 'refetchtest': stage_refetchtest, 'igkw': stage_igkw, 'kwdeep': stage_kwdeep, 'kwtest': stage_kwtest, 'ttkw': stage_ttkw, 'ytc': stage_ytc, 'ytcheck': stage_ytcheck, 'test': stage_test, 'own': stage_own, 'comments': stage_comments, 'abroad': stage_abroad, 'ugc': stage_ugc, 'test2': stage_test2, 'wide': stage_wide,
           'test3': stage_test3}
 
 if __name__ == '__main__':

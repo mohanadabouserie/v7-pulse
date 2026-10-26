@@ -1,0 +1,30 @@
+{
+ "input": {
+  "startUrls": [
+   {
+    "url": "https://www.facebook.com/reel/1700113094476794/"
+   }
+  ]
+ },
+ "cap_usd": 0.06,
+ "run": {
+  "id": "xF2BXow3p7OB14I1a",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-26T00:07:32.862Z",
+  "finishedAt": "2026-10-26T00:07:37.396Z",
+  "chargedEventCounts": {
+   "apify-actor-start": 4,
+   "apify-default-dataset-item": 0
+  },
+  "usageTotalUsd": 0.0002
+ },
+ "cost_usd": 0.0002,
+ "items": [
+  {
+   "url": "https://www.facebook.com/reel/1700113094476794/",
+   "video_id": "1700113094476794",
+   "play_count": 427,
+   "status": "ok"
+  }
+ ]
+}

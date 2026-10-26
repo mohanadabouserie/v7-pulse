@@ -551,7 +551,8 @@ def fb_ugc():
             vfile = (p.get('video_files') or {}).get('video_sd_file') if isinstance(p.get('video_files'), dict) else None
             reps = [r.get('base_url') or r.get('url') for r in p.get('representations') or [] if isinstance(r, dict) and 'video' in str(r.get('mime_type', 'video'))]
             video = vfile or (p.get('video') if isinstance(p.get('video'), str) and p.get('video').startswith('http') else None) or (reps[0] if reps else None)
-            imgs = [u for u in ([p.get('image')] if isinstance(p.get('image'), str) and p.get('image') else []) + [u for u in album if u]
+            img1 = p.get('image') if isinstance(p.get('image'), str) else (p.get('image') or {}).get('uri') if isinstance(p.get('image'), dict) else None   # 26 Oct: often {'uri': …}
+            imgs = [u for u in ([img1] if img1 else []) + [u for u in album if u]
                     + [x if isinstance(x, str) else (x or {}).get('uri') or (x or {}).get('url') for x in p.get('images') or []] if u]
             plays = p.get('video_view_count') or p.get('play_count_text')
             fb_post({'id': fb_key(p.get('post_id'), url, p.get('video_id')), 'date': iso(p['timestamp']), 'text': clean(p.get('message') or p.get('description')),
@@ -709,9 +710,17 @@ def fb_extras():
                 plays[str(x['video_id'])] = fb_count(x['play_count'])
     for f in sorted(RAW.glob('fbf_speech_*.json')):
         for x in json.load(open(f, encoding='utf-8'))['items']:
-            t = clean(x.get('transcript') or x.get('text') or '')
+            t = x.get('transcript') or x.get('text') or ''
+            if isinstance(t, list):   # 26 Oct: some transcripts come as timed pieces [{'text': …, 'start': …}, …]
+                t = ' '.join(str(p.get('text', '')) if isinstance(p, dict) else str(p) for p in t)
+            t = clean(t)
             u = x.get('video_url') or x.get('url') or x.get('input_url') or ''
-            if t and u: speech[u.split('?')[0].rstrip('/')] = t
+            if t and u: speech[u if 'watch' in u else u.split('?')[0].rstrip('/')] = t   # watch/?v=<id> keeps its id (26 Oct)
+    for f in sorted(RAW.glob('fbinner_*.json')):   # 26 Oct (DECISIONS #192): a post gets the speech of the videos inside it
+        for m in json.load(open(f, encoding='utf-8'))['items']:
+            said = list(dict.fromkeys(speech[v] for v in m['videos'] if v in speech))
+            if said:
+                speech.setdefault(m['post'].split('?')[0].rstrip('/') if 'story_fbid' not in m['post'] else m['post'], ' | '.join(said))
     for f in sorted(RAW.glob('fbf_pages_*.json')):
         for x in json.load(open(f, encoding='utf-8'))['items']:
             for u in (x.get('facebookUrl'), x.get('pageUrl'), x.get('inputUrl')):
@@ -726,8 +735,9 @@ def fb_extras():
         if pc and not it.get('views'):
             it['views'] = max(pc); n_p += 1
         for u in [it.get('url')] + it.get('urls', []):
-            if u and u.split('?')[0].rstrip('/') in speech:
-                it['speech'] = speech[u.split('?')[0].rstrip('/')]; n_s += 1; break
+            k = u if u and 'story_fbid' in u else (u or '').split('?')[0].rstrip('/')   # permalink.php links keep their post id (26 Oct)
+            if u and k in speech:
+                it['speech'] = speech[k]; n_s += 1; break
         a = it.get('author') or {}
         pg = pages.get((a.get('url') or '').split('?')[0].rstrip('/').lower())
         if pg:
@@ -743,10 +753,10 @@ def seen():
     res = json.load(open(p, encoding='utf-8')) if p.exists() else {}
     n = 0
     for it in ITEMS.values():
-        r = (res.get(it['id'][3:]) if it['pl'] == 'ig' else res.get('fb_' + it['id'][3:]) if it['pl'] == 'fb' else None) if it['kind'] == 'post' else None
+        r = (res.get(it['id'][3:]) if it['pl'] == 'ig' else res.get(it['pl'] + '_' + it['id'][3:]) if it['pl'] in ('fb', 'tt', 'yt') else None) if it['kind'] == 'post' else None   # 26 Oct: TikTok and YouTube too
         if r:
             it['seen'] = {k: r[k] for k in ('text', 'shows', 'v7_visible', 'products')}; n += 1
-    print('pictures read for %d Instagram and Facebook posts' % n)
+    print('pictures read for %d posts' % n)
 
 
 if __name__ == '__main__':

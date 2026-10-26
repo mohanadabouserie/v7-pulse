@@ -1,0 +1,56 @@
+{
+ "input": {
+  "video_urls": [
+   "https://www.facebook.com/watch/?v=39993507656914935",
+   "https://www.facebook.com/watch/?v=931779909585470"
+  ]
+ },
+ "cap_usd": 0.12,
+ "run": {
+  "id": "P6Ub5mZtFMT6G9CdP",
+  "status": "SUCCEEDED",
+  "startedAt": "2026-10-26T00:55:48.273Z",
+  "finishedAt": "2026-10-26T00:55:53.343Z",
+  "chargedEventCounts": {
+   "apify-default-dataset-item": 0,
+   "extra-10-minutes": 0
+  },
+  "usageTotalUsd": 0
+ },
+ "cost_usd": 0.0,
+ "items": [
+  {
+   "video_url": "https://www.facebook.com/watch/?v=931779909585470",
+   "title": "Top One on Reels",
+   "description": "",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/821623760_1468672875408376_2011155963278240312_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s960x960&_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=ZAgg2iqy2jcQ7kNvwFFYM1V&_nc_oc=AdrqJzE2Y9jPP-qDg91jvLvVSkuQlVdMi8n5YZbOVxvNy9Tew9dt_PndnfX9OvRPN04&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=6KMeUbo2LXYx6FvKRCEhcw&_nc_ss=70289&oh=00_AQPGa7Y4Mm4CMl99Tz3zdAbzEjnCw4IBtVHhLlVD90RFvw&oe=6AE4640A",
+   "duration": 19.567,
+   "transcript": [
+    {
+     "text": "Music",
+     "start": 0,
+     "end": 0.9
+    }
+   ]
+  },
+  {
+   "video_url": "https://www.facebook.com/watch/?v=39993507656914935",
+   "title": "Top One on Reels",
+   "description": "",
+   "thumbnail": "https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/821409776_1089453847142296_6832661991683903185_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1920&ctp=s960x960&_nc_cat=103&ccb=1-7&_nc_sid=50ce42&_nc_ohc=dWzJ26X5jZsQ7kNvwFYNQMv&_nc_oc=AdpzXoIfqcQLUVAF2_JNJWBinAAS5JBJVUqVSWJ9ojJhfMv5ArxD6UWe8fEfACJtmj4&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=e4ko6NYzf6mZ4IZo5CSKSA&_nc_ss=70289&oh=00_AQNV1WXPGne1seEf9mCFs80h8a2gJrpvQXtiujw7WRL2TA&oe=6AE49003",
+   "duration": 15.233,
+   "transcript": [
+    {
+     "text": "Субтитры",
+     "start": 0,
+     "end": 5
+    },
+    {
+     "text": "подогнал «Симон»",
+     "start": 5,
+     "end": 5.06
+    }
+   ]
+  }
+ ]
+}

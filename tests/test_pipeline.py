@@ -23,6 +23,10 @@ ROWS = {   # one valid row in each scraper's output format
     'topapi~facebook-search-posts-scraper': {'post_id': '113', 'url': 'https://www.facebook.com/a/posts/113', 'timestamp': 1786817284, 'message': 'V7'},
     'scraper_one~facebook-posts-search': {'postId': '221', 'url': 'https://www.facebook.com/b/posts/221', 'timestamp': 1786817284000, 'postText': 'V7'},
     'fetch_cat~facebook-post-search-scraper': {'postId': '222', 'url': 'https://www.facebook.com/b/posts/222', 'timestamp': 1786817284000, 'postText': 'V7'},
+    'apify~facebook-posts-scraper': {'facebookUrl': 'https://www.facebook.com/shop/posts/pfbid0ABC', 'url': 'https://www.facebook.com/shop/posts/pfbid0XYZ',
+                                     'media': [{'__typename': 'Photo', 'id': '1'}, {'__typename': 'Video', 'id': '777000111'}]},
+    'apify~instagram-post-scraper': {'shortCode': 'ABC123', 'url': 'https://www.instagram.com/p/ABC123/', 'displayUrl': 'https://scontent.cdninstagram.com/new.jpg',
+                                     'videoUrl': 'https://scontent.cdninstagram.com/new.mp4'},
 }
 
 
@@ -215,18 +219,21 @@ check('a short video is transcribed only when a keyword search over a long windo
 SHARES = r'''
 import json, pathlib
 import collect as C, comment_check as K, normalize as N, pipeline as P
-share = {'id': 'fb:1', 'url': 'https://www.facebook.com/x/posts/1', 'date': '2026-10-13T12:00:00Z', 'comments': 2, 'is_share': True, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
+share = {'id': 'fb:1', 'url': 'https://www.facebook.com/x/posts/1', 'date': '2026-10-13T12:00:00Z', 'comments': 2, 'is_share': True, 'pl': 'fb', 'kind': 'post', 'src': 'ugc', 'fmt': 'Video'}
 plain = {'id': 'fb:2', 'url': 'https://www.facebook.com/y/posts/2', 'date': '2026-10-01T12:00:00Z', 'comments': 3, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
 odd = {'id': 'fb:3', 'url': 'https://www.facebook.com/z/posts/3', 'date': '2026-10-12T12:00:00Z', 'comments': 4, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
 out = {'reason': [K.reason(share, ['2026-10-14T00:00:00Z'], 'thedoor'), K.reason(share, ['2026-10-14T00:00:00Z'], 'apify'),
                   K.reason(odd, ['2026-10-10T09:00:00Z', '2026-10-12T13:00:00Z'], 'apify'), K.reason(plain, ['2026-10-02T00:00:00Z'] * 60, 'apify'),
                   K.reason(plain, ['2026-10-02T00:00:00Z'] * 3 + [1791000000], 'thedoor')]}
 # the cheap scraper is never asked for a share's comments
-C._fb_public = lambda: ([share, plain, odd], {p['id']: {'about': True} for p in (share, plain, odd)})
+orig = {'id': 'fb:8', 'url': 'https://www.facebook.com/reel/88888888/', 'date': '2026-10-10T12:00:00Z', 'comments': 0, 'pl': 'fb', 'kind': 'post', 'src': 'ugc',
+        'fmt': 'Reel', 'text': '😂', 'found_by': ['fbd_posts_shared_t']}
+C._fb_public = lambda: ([share, plain, odd, orig], dict({p['id']: {'about': True} for p in (share, plain, odd)}, **{'fb:8': {'about': False}}))
 sent = []
 C.parallel = lambda todo, line: sent.extend(todo)
 C.stage_fbfill()
 out['door_asked'] = [u for name, actor, inp, cap, n in sent if 'thedoor' in actor for u in inp['postUrls']]
+out['speech_asked'] = [u for name, actor, inp, cap, n in sent if 'transcriber' in actor for u in inp['video_urls']]
 # Apify's own scraper gets the share and the post whose thedoor comments are older than it, not the post whose comments fit
 row = lambda u, t: {'id': t, 'post_url': u, 'timestamp': t, 'text': 'x', 'author_name': 'a'}
 json.dump({'input': {'postUrls': [plain['url'], odd['url']]}, 'items': [row(plain['url'], 1791000000), row(odd['url'], 1791000000)]},
@@ -258,6 +265,8 @@ r = s.get('reason') or [None] * 5
 check('a share’s comments from thedoor are rejected; from Apify’s own scraper they are checked like any other', bool(r[0]) and r[1] is None, (r, out[-400:]))
 check('comments older than their post are rejected, so are far more than the post shows; comments that fit pass',
       bool(r[2]) and 'older than the post' in r[2] and bool(r[3]) and r[4] is None, r)
+check('a share’s video is never sent for speech; a post fetched because it was shared is, even when its first label says not about V7 (DECISIONS #188, #190)',
+      s.get('speech_asked', []) == ['https://www.facebook.com/reel/88888888/'], s.get('speech_asked'))
 check('shares are never sent to thedoor', s.get('door_asked') == ['https://www.facebook.com/y/posts/2', 'https://www.facebook.com/z/posts/3'], s.get('door_asked'))
 check('Apify’s own scraper is asked for the share and for the post whose thedoor comments were rejected, not for the one whose comments fit',
       s.get('official_asked') == [['apify~facebook-comments-scraper', ['https://www.facebook.com/x/posts/1', 'https://www.facebook.com/z/posts/3']]], s.get('official_asked'))
@@ -271,17 +280,109 @@ have = {'id': 'fb:9', 'url': 'https://www.facebook.com/page/posts/9', 'pl': 'fb'
 s1 = {'id': 'fb:1', 'url': 'https://www.facebook.com/a/posts/1', 'is_share': True, 'shared_url': 'https://www.facebook.com/page/posts/9', 'shared_id': '9'}
 s2 = {'id': 'fb:2', 'url': 'https://www.facebook.com/b/posts/2', 'is_share': True, 'shared_url': 'https://www.facebook.com/other/posts/7', 'shared_id': '7'}
 s3 = {'id': 'fb:3', 'url': 'https://www.facebook.com/c/posts/3', 'is_share': True, 'shared_url': 'https://www.facebook.com/off/posts/5', 'shared_id': '5'}
-labels = {'fb:1': {'about': True}, 'fb:2': {'about': True}, 'fb:3': {'about': False}}
-C._fb_public = lambda: ([have, s1, s2, s3], labels)
+s4 = {'id': 'fb:4', 'url': 'https://www.facebook.com/d/posts/4', 'is_share': True, 'shared_url': 'https://www.facebook.com/new/posts/6', 'shared_id': '6'}
+labels = {'fb:1': {'about': True}, 'fb:2': {'about': True}, 'fb:3': {'about': False}, 'fb:4': {'about': False}}
+import pathlib; C.HERE = pathlib.Path(C.RAW).parent
+json.dump({'posts': ['fb:9', 'fb:1', 'fb:2', 'fb:3']}, open(C.HERE / 'vis_baseline.json', 'w'))
+C._fb_public = lambda: ([have, s1, s2, s3, s4], labels)
 asked = []
 C.run = lambda name, actor, inp, *a, **k: asked.append((name.rsplit('_', 1)[0], actor, [x['url'] for x in inp['direct_urls']]))
 C.stage_fbshareorigins()
-json.dump({'input': {'direct_urls': [{'url': 'https://www.facebook.com/other/posts/7'}]}, 'items': []}, open(C.RAW / 'fbd_posts_shared_t.json', 'w'))
+json.dump({'input': {'direct_urls': [{'url': 'https://www.facebook.com/new/posts/6'}, {'url': 'https://www.facebook.com/other/posts/7'}]}, 'items': []}, open(C.RAW / 'fbd_posts_shared_t.json', 'w'))
 C.stage_fbshareorigins()
 print('ORIGINS ' + json.dumps(asked))
 '''
 code, led, rep, out, files = scenario({}, [], code=ORIGINS)
 o = json.loads(out.split('ORIGINS ', 1)[1].splitlines()[0]) if 'ORIGINS ' in out else None
-check('a share’s original post is fetched by link when the collection lacks it, not when it has it or the share isn’t about V7, and only once',
-      o == [['fbd_posts_shared', 'danek~facebook-posts-fast', ['https://www.facebook.com/other/posts/7']]], (o, out[-300:]))
+check('a share’s original post is fetched by link when the collection lacks it: for every new share (DECISIONS #187), for an older one only when about V7; not when it’s already in, and only once',
+      o == [['fbd_posts_shared', 'danek~facebook-posts-fast', ['https://www.facebook.com/new/posts/6', 'https://www.facebook.com/other/posts/7']]], (o, out[-300:]))
+# 26 Oct (DECISIONS #192): the videos inside a post link get speech through each video's own link
+INNER = r"""
+import json
+import collect as C
+p = {'id': 'fb:5', 'url': 'https://www.facebook.com/shop/posts/pfbid0ABC', 'fmt': 'Video', 'pl': 'fb', 'kind': 'post', 'src': 'ugc', 'found_by': ['x']}
+r = {'id': 'fb:6', 'url': 'https://www.facebook.com/reel/123456789/', 'fmt': 'Reel', 'pl': 'fb', 'kind': 'post', 'src': 'ugc', 'found_by': ['x']}
+sh = dict(p, id='fb:7', url='https://www.facebook.com/x/posts/pfbid0SH', is_share=True)
+C._fb_public = lambda: ([p, r, sh], {'fb:5': {'about': True}, 'fb:6': {'about': True}, 'fb:7': {'about': True}})
+asked = []
+real = C.run
+def fake(name, actor, inp, *a, **k):
+    asked.append((actor, inp)); return real(name, actor, inp, *a, **k)
+C.run = fake
+C.stage_fbinner()
+C.stage_fbinner()
+m = json.load(open(next(C.RAW.glob('fbinner_*.json'))))['items']
+print('INNER ' + json.dumps({'asked': [(a, i.get('startUrls') or i.get('video_urls')) for a, i in asked], 'map': m}))
+"""
+code, led, rep, out, files = scenario({}, [], code=INNER)
+n = json.loads(out.split('INNER ', 1)[1].splitlines()[0]) if 'INNER ' in out else {}
+check('a post link holding a video: Apify’s posts scraper finds the video, its own link goes for speech, once; not a reel link, not a share (DECISIONS #192)',
+      n.get('asked') == [['apify~facebook-posts-scraper', [{'url': 'https://www.facebook.com/shop/posts/pfbid0ABC'}]], ['invideoiq~video-transcriber', ['https://www.facebook.com/watch/?v=777000111']]]
+      and n.get('map') == [{'post': 'https://www.facebook.com/shop/posts/pfbid0ABC', 'videos': ['https://www.facebook.com/watch/?v=777000111']}], (n, out[-300:]))
+# 26 Oct (DECISIONS #184): the second check drops a new post with no V7 in its pictures, speech or caption by name
+CHECK2 = r'''
+import json
+import label as L
+L.HERE = __import__('pathlib').Path(__import__('collect').RAW).parent
+json.dump({'posts': ['fb:old']}, open(L.HERE / 'vis_baseline.json', 'w'))
+P = lambda i, **k: dict({'id': i, 'kind': 'post', 'src': 'ugc', 'pl': 'fb', 'text': ''}, **k)
+items = {'fb:flavour': P('fb:flavour', text='البينك ليمونيد بيليق مع الفول؟', seen={'v7_visible': False, 'text': ''}),
+         'fb:can': P('fb:can', text='cold drinks', seen={'v7_visible': True}),
+         'fb:speech': P('fb:speech', text='review', speech='دي سفن كريم صودا بسعر 15'),
+         'fb:caption': P('fb:caption', text='Buffalo combo with V Cola', seen={'v7_visible': False}),
+         'fb:nopics': P('fb:nopics', text='Pink Lemonade'),
+         'fb:old': P('fb:old', text='Pink Lemonade', seen={'v7_visible': False}),
+         'fb:o1': P('fb:o1', text='Pink Lemonade with fava beans?'), 'fb:o2': P('fb:o2', text='V7 Cream Soda review'),
+         'fb:s1': P('fb:s1', text='sugarr ❤️', is_share=True, shared_id='o1'), 'fb:s2': P('fb:s2', text='😍', is_share=True, shared_id='o2'),
+         'fb:s3': P('fb:s3', text='my V7 favourite', is_share=True, shared_id='o1'),
+         'fb:txt': P('fb:txt', text='Pink Lemonade is the best', fmt='Text'), 'x:vcola': P('x:vcola', pl='x', text='ڤي كولا احسن من بيبسي', fmt='Text')}
+labels = {k: {'about': True} for k in items}
+labels['fb:o1'] = {'about': False}
+n = L.second_check(items, labels)
+print('CHECK2 ' + json.dumps({'n': n, 'about': {k: v['about'] for k, v in labels.items()}}))
+'''
+code, led, rep, out, files = scenario({}, [], code=CHECK2)
+c = json.loads(out.split('CHECK2 ', 1)[1].splitlines()[0]) if 'CHECK2 ' in out else {}
+check('the second check drops a new post with only a flavour name; keeps a V7 can, V7 in the speech, V7 named in the caption, a post not yet checked and an old post',
+      {k: c.get('about', {}).get(k) for k in ('fb:flavour', 'fb:can', 'fb:speech', 'fb:caption', 'fb:nopics', 'fb:old')}
+      == {'fb:flavour': False, 'fb:can': True, 'fb:speech': True, 'fb:caption': True, 'fb:nopics': True, 'fb:old': True}, (c, out[-300:]))
+check('a text post naming only a flavour is dropped at once; one naming V Cola stays (DECISIONS #186)',
+      {k: c.get('about', {}).get(k) for k in ('fb:txt', 'x:vcola')} == {'fb:txt': False, 'x:vcola': True}, c.get('about'))
+check('a new share follows the post it shares: dropped when that post isn’t about V7, kept when it is, kept when the sharer names V7 (DECISIONS #185)',
+      {k: c.get('about', {}).get(k) for k in ('fb:s1', 'fb:s2', 'fb:s3')} == {'fb:s1': False, 'fb:s2': True, 'fb:s3': True}, c.get('about'))
+# 26 Oct (DECISIONS #181): media files through the platforms' general server names; links that expired are refreshed, at most twice a post
+MEDIA = r"""
+import http.server, json, threading
+import media_links as M
+class H(http.server.BaseHTTPRequestHandler):
+    def log_message(self, *a): pass
+    def do_GET(self):
+        code = 403 if 'old' in self.path else 200
+        self.send_response(code); self.end_headers()
+        if code == 200: self.wfile.write(b'\xff\xd8\xff img')
+srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), H); threading.Thread(target=srv.serve_forever, daemon=True).start()
+base = 'http://127.0.0.1:%d/' % srv.server_address[1]
+out = {'ig': M.candidates('https://instagram.fcps4-1.fna.fbcdn.net/v/x.jpg?oe=1'), 'fb': M.candidates('https://scontent-atl3-1.xx.fbcdn.net/v/y.jpg?oe=2'),
+       'other': M.candidates('https://i.ytimg.com/vi/z/hq.jpg')}
+out['ok'] = M.download(base + 'fresh.jpg', pause=0) == b'\xff\xd8\xff img'
+try:
+    M.download(base + 'old.jpg', pause=0); out['expired'] = False
+except M.Expired:
+    out['expired'] = True
+post = 'https://www.instagram.com/p/ABC123/'
+out['reuse'] = [M.refresh([(post, 'ig')], 0.5).get(post, {}).get('video') for _ in range(3)]
+import collect as C
+out['runs_after_reuse'] = len(list(C.RAW.glob('vis_posts_refresh_*.json')))
+out['refresh'] = [M.refresh([(post, 'ig')], 0.5, reuse_days=0).get(post, {}).get('video') for _ in range(2)]
+print('MEDIA ' + json.dumps(out))
+"""
+code, led, rep, out, files = scenario({}, [], code=MEDIA)
+m = json.loads(out.split('MEDIA ', 1)[1].splitlines()[0]) if 'MEDIA ' in out else {}
+check('media links: the general server name first, then the link as given; other hosts untouched',
+      m.get('ig') == ['https://scontent.cdninstagram.com/v/x.jpg?oe=1', 'https://instagram.fcps4-1.fna.fbcdn.net/v/x.jpg?oe=1']
+      and m.get('fb') == ['https://scontent.xx.fbcdn.net/v/y.jpg?oe=2', 'https://scontent-atl3-1.xx.fbcdn.net/v/y.jpg?oe=2']
+      and m.get('other') == ['https://i.ytimg.com/vi/z/hq.jpg'], (m, out[-300:]))
+check('a refused link is reported as expired; a working one downloads', m.get('ok') is True and m.get('expired') is True, m)
+check('fresh links fetched in the last 2 days are reused, not paid for again', m.get('reuse') == ['https://scontent.cdninstagram.com/new.mp4'] * 3 and m.get('runs_after_reuse') == 1, m)
+check('without a reusable result, a post is asked for fresh links at most twice', m.get('refresh') == ['https://scontent.cdninstagram.com/new.mp4', None], m.get('refresh'))
 print('FAIL', fails)

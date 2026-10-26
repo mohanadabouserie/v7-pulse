@@ -862,3 +862,20 @@
 2026-10-20 23:44  igcm_official_202610202342 instagram-comment-scraper    SUCCEEDED     20 items  $0.0438  (cap $0.27)  total $87.3387  events {'comment': 20}
 2026-10-20 23:44    igvisfetch: 3 posts (2 about V7, 1 to check)
 2026-10-20 23:44  vis_posts_202610202344 instagram-post-scraper       SUCCEEDED      3 items  $0.0069  (cap $0.06)  total $87.3456  events {'post': 3, 'post-details': 3, 'music-data': 0}
+2026-10-26 03:07    fbfill: 1 videos without views, 1 videos to transcribe, 2 pages, 8 posts with about 235 comments (shares go to Apify's comment scraper in fbfill2)
+2026-10-26 03:07  fbf_plays_202610260307 facebook-playcount-scraper   SUCCEEDED      1 items  $0.0002  (cap $0.06)  total $87.5797  events {'apify-actor-start': 4, 'apify-default-dataset-item': 0}
+2026-10-26 03:07  fbf_speech_202610260307 video-transcriber            SUCCEEDED      1 items  $0.0002  (cap $0.15)  total $87.5797  events {'apify-default-dataset-item': 0, 'extra-10-minutes': 0}
+2026-10-26 03:07  fbf_pages_202610260307 facebook-pages-scraper       SUCCEEDED      2 items  $0.0002  (cap $0.07)  total $87.5797  events {'apify-default-dataset-item': 0, 'page': 0}
+2026-10-26 03:08  fbcm_door_202610260307 facebook-comment-scraper     SUCCEEDED    234 items  $0.1071  (cap $0.25)  total $87.6867  events {'apify-default-dataset-item': 180, 'apify-actor-start': 1}
+2026-10-26 03:36  vis_posts_refresh_20261026032432_179838 instagram-post-scraper       SUCCEEDED    261 items  $0.5866  (cap $0.83)  total $88.3389  events {'post': 261, 'post-details': 261, 'music-data': 0}
+2026-10-26 03:43  fbd_posts_refresh_20261026034353_985936: skipped, only $0.05 of the $88.67 budget left (needs a $0.06 cap)
+2026-10-26 03:44  fbd_posts_refresh_20261026034406_388539 facebook-posts-fast          SUCCEEDED      3 items  $0.0373  (cap $0.06)  total $88.6685  events {'apify-actor-start': 1, 'apify-default-dataset-item': 3}
+2026-10-26 03:48  fbp_mixedtest_20261026034833 facebook-posts-scraper       SUCCEEDED      3 items  $0.0140  (cap $0.08)  total $88.8084  events {'post': 0, 'actor-start': 1, 'filter-applied': 0}
+2026-10-26 03:49  fbf_speech_mixed_20261026034909 video-transcriber            SUCCEEDED      0 items  $0.0117  (cap $0.18)  total $88.8400  events {'apify-default-dataset-item': 0, 'extra-10-minutes': 0}
+2026-10-26 03:50  fbf_speech_mixed2_20261026034938 video-transcriber            SUCCEEDED      4 items  $0.0070  (cap $0.18)  total $88.8657  events {'apify-default-dataset-item': 4, 'extra-10-minutes': 0}
+2026-10-26 03:54  fbd_posts_refresh_20261026032432_179838 facebook-posts-fast          SUCCEEDED    275 items  $0.8136  (cap $0.90)  total $89.1525  events {'apify-actor-start': 1, 'apify-default-dataset-item': 275}
+2026-10-26 03:56  fbf_speech_inner_20261026035547 video-transcriber            SUCCEEDED      2 items  $0.0000  (cap $0.12)  total $89.1552  events {'apify-default-dataset-item': 0, 'extra-10-minutes': 0}
+2026-10-26 04:05  vis_posts_refresh_20261026040523_862294: skipped, only $0.01 of the $89.24 budget left (needs a $0.06 cap)
+2026-10-26 04:05  fbd_posts_refresh_20261026040523_862294: skipped, only $0.01 of the $89.24 budget left (needs a $0.08 cap)
+2026-10-26 04:13  vis_posts_refresh_20261026041319_971703: skipped, only $0.01 of the $89.24 budget left (needs a $0.06 cap)
+2026-10-26 04:13  fbd_posts_refresh_20261026041319_971703: skipped, only $0.01 of the $89.24 budget left (needs a $0.08 cap)
