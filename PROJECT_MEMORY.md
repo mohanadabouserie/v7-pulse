@@ -574,6 +574,7 @@ Mahmoud: many limits were set for testing on a small budget; at launch the budge
   - their policy for reposting customers' content.
 
 **Waiting on the user**
+- **Speech to text (29 Oct, DECISIONS #194):** ElevenLabs Scribe v2 is set up (`.env.elevenlabs`, Mahmoud's account, free plan) and tested on 5 TikToks (`stt_elevenlabs.py test`): far closer to the speech than invideoiq. To decide: use it in place of invideoiq for Facebook and Instagram speech (about USD 0.004 a minute), and for TikTok videos without TikTok subtitles.
 - Keep the real data fresh: `data/raw/real_17oct/pipeline.py` does it in one command (`run --mode sweep` over the whole window, or `daily` and `weekly` once the window rolls). USD 12.65 is left under the USD 100 limit until 15 Nov (above USD 19 is overage).
   - Before a schedule (DECISIONS #154): the dashboard's window rolls forward past 16 Oct (`END`, the dates in the copy, the tests that pin them), V7's own posts and their comments are refreshed too, and the user approves the spending and a monthly line.
   - By the plan's caps (Facebook pads its results, so most runs cost close to them): daily searches up to USD 2.29 a day and weekly ones up to USD 6.39 a week, so up to about USD 97 a month for both. One weekly run of every route costs up to about USD 38 a month. The gap fillers add a few dollars a month.

@@ -1290,3 +1290,11 @@ The user asked for an expert UI/UX pass over every page and element, with real A
 - **Tests:** all 26 dashboard suites pass on the dashboard and on `docs/index.html`. **Published** at the user's request ("publish", 26 Oct).
 - **Files:** `V7_Pulse_Dashboard.html` (Version 39 saved in `archive/dashboard_versions/`), `docs/index.html`, `docs/media/`, `data/raw/real_17oct/real_dashboard.json`, `labels.json`, the notes.
 
+### Speech-to-text test: ElevenLabs Scribe v2 (29 Oct 2026)
+- **New:** `data/raw/real_17oct/stt_elevenlabs.py` (`test`: 5 TikToks with TikTok's Arabic subtitles, Scribe v2's text and the word difference against them); results in `raw/stt_elevenlabs_test_20261029003747.json`. Key in `.env.elevenlabs` (git-ignored). USD 0.023 of ElevenLabs credit; no Apify spending.
+- **Result:** Scribe 30–66% word difference from TikTok's subtitles, invideoiq 71–100%; Scribe's text reads close to the speech and names the products (DECISIONS #194). Not yet used by the pipeline.
+
+### Speech-to-text test: Munsit (29 Oct 2026)
+- **New:** `data/raw/real_17oct/stt_munsit.py` (`test`: the 5 TikToks three ways, run with `data/.venv/bin/python` for ffmpeg); results in `raw/stt_munsit_test_20261029011944.json`. Key in `.env.munsit` (git-ignored). 2,164 Munsit credits (free plan); no Apify spending.
+- **Result:** transcripts as close as ElevenLabs', and with hotwords it names the products; its sentiment option misreads the reviews, its gender option is right (DECISIONS #195). Not yet used by the pipeline.
+- **ElevenLabs again, with the product names (keyterms):** `stt_elevenlabs.py test --keyterms`, results in `raw/stt_elevenlabs_test_keyterms_20261029012748.json`, USD 0.028 (DECISIONS #196).
