@@ -1,0 +1,43 @@
+{
+ "text": "جبت لكم ال V7 Cream Soda الجديدة عشان نجربها سوا. ندوق بقى. That's some serious gummi shit طعمها سكوب آيس كريم فانيلا هي صودا. definitely worth it لو لقيتوها بقى هاتوها. هروح أنا بقى أكمل دي وعندي 2 كمان أبقى خلاص من آخر اليوم. سلام.",
+ "choices": [
+  {
+   "a": "عشان نجربها",
+   "b": "عشان أجربها",
+   "kept": "عشان نجربها",
+   "why": "fits 'سوا' (together)",
+   "unsure": false
+  },
+  {
+   "a": "يدوق بقى",
+   "b": "ندوق بقى",
+   "kept": "ندوق بقى",
+   "why": "first person plural fits context",
+   "unsure": false
+  },
+  {
+   "a": "That's some serious gummi shit",
+   "b": "سم سيرز جوميشي",
+   "kept": "That's some serious gummi shit",
+   "why": "B is a phonetic garble of the same English phrase",
+   "unsure": true
+  },
+  {
+   "a": "هي صودا",
+   "b": "ليها صودا",
+   "kept": "هي صودا",
+   "why": "reads as 'it's vanilla ice cream soda'",
+   "unsure": true
+  },
+  {
+   "a": "آخر يوم",
+   "b": "آخر اليوم",
+   "kept": "آخر اليوم",
+   "why": "'end of the day' is the natural phrase",
+   "unsure": false
+  }
+ ],
+ "url": "https://www.tiktok.com/@sensawyy/video/7672000531979586834",
+ "elevenlabs": "جبت لكم ال V7 كريم صودا الجديدة عشان نجربها سوا. يدوق بقى. That's some serious gummi shit طعمها سكوب أيس كريم فانيلا هي صودا definitely worth it. لو لقيتوها بقى هاتوها. هروح أنا بقى أكمل دي وعندي اتنين كمان أبقى خلاص من آخر يوم. سلام.",
+ "munsit": " جبتلكم v7 cream soda جديدة عشان أجربها سوا. ندوق بقى. سم سيرز جوميشي طعمها سكوب آيس كريم فانيلا ليها صودا. definitely worth it لو لقيتوها بقى هاتوها. هروح أنا بقى أكمل دي وعندي اثنين كمان أبقى خلاص من آخر اليوم. سلام."
+}

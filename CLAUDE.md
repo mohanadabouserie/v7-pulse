@@ -10,6 +10,8 @@ V7 Pulse is a social listening and market dashboard for **V7**, an Egyptian vita
 
 **Pending work** waiting on the user (the Apify token, then the share comments and the missing pictures, with the exact steps): `PROJECT_MEMORY.md` section 11, "Waiting on the user".
 
+**Changes waiting for one real run** (29 Oct): Mahmoud tests all changes together in one paid refresh. Every change that needs a real run, and every fix to data already collected, goes in `data/raw/real_17oct/PENDING_RUN.md` as it is made.
+
 ## Keep them current
 After every change (dashboard edit, publish, data pull, new finding, user decision), in the same turn and before reporting back:
 - add an entry to `CHANGELOG.md` (date, version, what changed, files touched);
@@ -62,6 +64,7 @@ After every change (dashboard edit, publish, data pull, new finding, user decisi
   - `.env.anthropic` with `ANTHROPIC_API_KEY=…`, for `data/noon_llm.py`.
   - `.env.meta` with `META_SYSTEM_USER_TOKEN=…`, when V7 connects its Facebook and Instagram accounts.
   - `.env.telegram` with `TELEGRAM_BOT_TOKEN=…` and `TELEGRAM_JOIN_CODE=…`, for the Telegram bot (the plain `telegram_key` file is ignored too).
+  - `.env.elevenlabs` with `ELEVENLABS_API_KEY=…` (Mahmoud's ElevenLabs account, 29 Oct): the speech to text for new posts (`stt_elevenlabs.py`, DECISIONS #197). `.env.munsit` holds a Munsit key from a test, not used by the pipeline.
   - `.env.claude` with `CLAUDE_CODE_OAUTH_TOKEN=…` (made by `claude setup-token`, valid a year, on the user's personal Claude plan): `label.py` and `vis_read.py` use it, so they run without the macOS Keychain, including from Claude Code's sandbox. On Mahmoud's Mac (26 Oct) the Claude Code CLI is at `~/.local/bin/claude`. Never print the token.
 
 ## The dashboard code
@@ -148,7 +151,7 @@ The site must keep working wherever it's hosted (GitHub Pages now; perhaps V7's 
      - `ytc`: YouTube comments (apidojo) on V7's videos and on the public videos about V7.
      - `igkw`: Instagram keyword search (apidojo + dami_studio, re-fetch by link). `igprofiles`: follower counts. `igspeech`: what's said in reels (speech to text); `label.py` labels reels again once they have speech.
      - 19 Oct (Version 29): `igcover` (Google one month at a time, every post tagging @v7egypt since 20 Apr, 8 more hashtags, a seemuapps sample; with `igkw --since 2026-04-20`), `igcomments` then `igcomments2` (comments under the public Instagram posts about V7: scrapesmith, then Apify's own scraper for the posts it returned nothing for), `igvisfetch` (fresh media links for the posts whose pictures are read). `vistest`, `vistest2` and `covtest` were the tests.
-     - 19 Oct (Version 30), Facebook (`FB_KEYWORD_SCRAPERS.md`, `fbtest_report.py`): `fbtest` and `fbtest2` were the tests; `fbcover` (30 keywords on silentflow, scraper_one and Apify's search, the reel search, three video searches, public groups, Google month by month), `fbdetails` (new reels, videos and Google links by link, danek), `fbfill` (plays, speech with invideoiq, page followers, comments with thedoor), `fbfill2` (Apify's comment scraper for the posts thedoor missed), `fbviews` (plays of video posts behind post links). Then `vis_media.py --fb` and `vis_read.py`.
+     - 19 Oct (Version 30), Facebook (`FB_KEYWORD_SCRAPERS.md`, `fbtest_report.py`): `fbtest` and `fbtest2` were the tests; `fbcover` (30 keywords on silentflow, scraper_one and Apify's search, the reel search, three video searches, public groups, Google month by month), `fbdetails` (new reels, videos and Google links by link, danek), `fbfill` (plays, speech with invideoiq until 29 Oct, ElevenLabs since, page followers, comments with thedoor), `fbfill2` (Apify's comment scraper for the posts thedoor missed), `fbviews` (plays of video posts behind post links). Then `vis_media.py --fb` and `vis_read.py`.
      - Version 31: `fbreeltest` and `fbreeldetails` (13 reel searches compared, `fbreel_report.py`), `fbreels` (Google's short videos limited to Facebook and alien_force's reels-only search, new reels by link), `fbmore` (scrapeforge and fetch_cat on all 30 keywords), `fbnames` (account names a search row lacked).
      - Pictures: `vis_media.py` (run with `data/.venv/bin/python`, which has ffmpeg) downloads photos and a frame every 2 seconds of a video into `vis/`; `vis_read.py` has Claude Code (bot's sign-in, Read tool only) write the text on them and what they show to `vis_read.json`. `normalize.py` attaches it as `seen` and `label.py` labels the post again (`vs`).
   2. `yt_pages.py`: exact dates for V7's YouTube videos from their public pages (free).

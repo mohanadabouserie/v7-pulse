@@ -7,7 +7,7 @@ import http.server, json, os, pathlib, shutil, subprocess, sys, tempfile, thread
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PIPE = ROOT / 'data' / 'raw' / 'real_17oct' / 'pipeline.py'
-FAKE_APIFY, FAKE_TG = 'fake-apify-token-31337', '987654:fake-telegram-token-abcdefghijklmnop'
+FAKE_APIFY, FAKE_TG, FAKE_EL = 'fake-apify-token-31337', '987654:fake-telegram-token-abcdefghijklmnop', 'fake-elevenlabs-key-4242'
 fails = 0
 
 
@@ -24,14 +24,14 @@ ROWS = {   # one valid row in each scraper's output format
     'scraper_one~facebook-posts-search': {'postId': '221', 'url': 'https://www.facebook.com/b/posts/221', 'timestamp': 1786817284000, 'postText': 'V7'},
     'fetch_cat~facebook-post-search-scraper': {'postId': '222', 'url': 'https://www.facebook.com/b/posts/222', 'timestamp': 1786817284000, 'postText': 'V7'},
     'apify~facebook-posts-scraper': {'facebookUrl': 'https://www.facebook.com/shop/posts/pfbid0ABC', 'url': 'https://www.facebook.com/shop/posts/pfbid0XYZ',
-                                     'media': [{'__typename': 'Photo', 'id': '1'}, {'__typename': 'Video', 'id': '777000111'}]},
+                                     'media': [{'__typename': 'Photo', 'id': '1'}, {'__typename': 'Video', 'id': '777000111', 'length_in_second': 40}]},
     'apify~instagram-post-scraper': {'shortCode': 'ABC123', 'url': 'https://www.instagram.com/p/ABC123/', 'displayUrl': 'https://scontent.cdninstagram.com/new.jpg',
                                      'videoUrl': 'https://scontent.cdninstagram.com/new.mp4'},
 }
 
 
 class Fake:
-    behavior, usage, limit, calls, runs, sent, gets502, posts = {}, 1.0, 100.0, [], {}, [], set(), []
+    behavior, usage, limit, calls, runs, sent, gets502, posts, el = {}, 1.0, 100.0, [], {}, [], set(), [], []
 
 
 class Apify(http.server.BaseHTTPRequestHandler):
@@ -63,7 +63,13 @@ class Apify(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
         path = urllib.parse.urlparse(self.path).path
         Fake.calls.append(('POST', path))
-        n = int(self.headers.get('Content-Length') or 0); self.rfile.read(n)
+        n = int(self.headers.get('Content-Length') or 0); body = self.rfile.read(n)
+        if path == '/v1/speech-to-text':   # 29 Oct: the stand-in for ElevenLabs (DECISIONS #197)
+            text = body.decode('utf-8', 'replace')
+            src = text.split('name="source_url"\r\n\r\n', 1)[1].split('\r\n', 1)[0] if 'name="source_url"' in text else None
+            Fake.el.append({'source_url': src, 'file': 'name="file"' in text, 'keyterms': text.count('name="keyterms"'),
+                            'key_ok': self.headers.get('xi-api-key') == FAKE_EL})
+            return self.reply(200, {'text': 'ده V7 كريم صودا', 'language_code': 'ara', 'words': [{'text': 'ده', 'end': 12.0}]})
         if path.startswith('/v2/acts/') and path.endswith('/runs'):
             actor = path.split('/')[3]
             b = Fake.behavior.get(actor, 'ok')
@@ -105,7 +111,7 @@ apify, tg = serve(Apify), serve(Telegram)
 
 
 def scenario(behavior, args, usage=1.0, limit=100.0, seed_ledger=None, lock=False, code=None):
-    Fake.behavior, Fake.usage, Fake.limit, Fake.calls, Fake.runs, Fake.sent, Fake.gets502, Fake.posts = behavior, usage, limit, [], {}, [], set(), []
+    Fake.behavior, Fake.usage, Fake.limit, Fake.calls, Fake.runs, Fake.sent, Fake.gets502, Fake.posts, Fake.el = behavior, usage, limit, [], {}, [], set(), [], []
     tmp = pathlib.Path(tempfile.mkdtemp(prefix='v7pipe-'))
     for d in ('raw', 'state', 'bot'):
         (tmp / d).mkdir()
@@ -116,7 +122,8 @@ def scenario(behavior, args, usage=1.0, limit=100.0, seed_ledger=None, lock=Fals
         (tmp / 'state' / 'pipeline.lock').write_text(str(os.getpid()))
     env = dict(os.environ, APIFY_API_TOKEN=FAKE_APIFY, APIFY_API_BASE='http://127.0.0.1:%d/v2' % apify.server_address[1], V7_RAW=str(tmp / 'raw'),
                V7_RUNLOG=str(tmp / 'run.log'), V7_PIPELINE_STATE=str(tmp / 'state'), V7_BOT_STATE=str(tmp / 'bot'), V7_POLL='0.02', V7_RETRY_WAIT='0.02',
-               V7_TG_API='http://127.0.0.1:%d' % tg.server_address[1], TELEGRAM_BOT_TOKEN=FAKE_TG)
+               V7_TG_API='http://127.0.0.1:%d' % tg.server_address[1], TELEGRAM_BOT_TOKEN=FAKE_TG,
+               ELEVENLABS_API='http://127.0.0.1:%d/v1/speech-to-text' % apify.server_address[1], ELEVENLABS_API_KEY=FAKE_EL)
     cmd = [sys.executable, '-c', code] if code else [sys.executable, str(PIPE)] + args
     r = subprocess.run(cmd, capture_output=True, text=True, env=env, cwd=str(PIPE.parent), timeout=300)
     ledger = json.loads((tmp / 'state' / 'pipeline_ledger.json').read_text()) if (tmp / 'state' / 'pipeline_ledger.json').exists() else []
@@ -135,7 +142,7 @@ check('healthy runs: both searches succeed on their main scraper', code == 0 and
 check('no standby is used when nothing failed', rep.get('standbys') == [] and rep.get('problems') == [], rep.get('problems'))
 check('the admin gets a Telegram message, and only the admin', len(Fake.sent) == 1 and Fake.sent[0][1].get('chat_id') == '4242', Fake.sent)
 check('the message says everything ran', 'Everything ran without a problem' in (Fake.sent[0][1].get('text') if Fake.sent else ''), Fake.sent[:1])
-check('no token is written to any file or printed', FAKE_APIFY not in files + out and FAKE_TG not in files + out)
+check('no token is written to any file or printed', FAKE_APIFY not in files + out and FAKE_TG not in files + out and FAKE_EL not in files + out)
 
 code, led, rep, out, files = scenario({'silentflow~facebook-search-scraper': 'fail'}, ONE + ['--jobs', 'fb_posts_sf'])
 check('a failed run goes to the standby scraper', [(r['actor'], r['status'], r.get('standby_for')) for r in led] == [('silentflow', 'FAILED', None), ('scrapeforge', 'SUCCEEDED', 'silentflow')], led)
@@ -229,11 +236,12 @@ out = {'reason': [K.reason(share, ['2026-10-14T00:00:00Z'], 'thedoor'), K.reason
 orig = {'id': 'fb:8', 'url': 'https://www.facebook.com/reel/88888888/', 'date': '2026-10-10T12:00:00Z', 'comments': 0, 'pl': 'fb', 'kind': 'post', 'src': 'ugc',
         'fmt': 'Reel', 'text': '😂', 'found_by': ['fbd_posts_shared_t']}
 C._fb_public = lambda: ([share, plain, odd, orig], dict({p['id']: {'about': True} for p in (share, plain, odd)}, **{'fb:8': {'about': False}}))
-sent = []
+sent, spoke = [], []
 C.parallel = lambda todo, line: sent.extend(todo)
+C.el_speech = lambda kind, jobs: spoke.extend(j['link'] if isinstance(j, dict) else j[0] for j in jobs)
 C.stage_fbfill()
 out['door_asked'] = [u for name, actor, inp, cap, n in sent if 'thedoor' in actor for u in inp['postUrls']]
-out['speech_asked'] = [u for name, actor, inp, cap, n in sent if 'transcriber' in actor for u in inp['video_urls']]
+out['speech_asked'] = spoke + [u for name, actor, inp, cap, n in sent if 'transcriber' in actor for u in inp['video_urls']]
 # Apify's own scraper gets the share and the post whose thedoor comments are older than it, not the post whose comments fit
 row = lambda u, t: {'id': t, 'post_url': u, 'timestamp': t, 'text': 'x', 'author_name': 'a'}
 json.dump({'input': {'postUrls': [plain['url'], odd['url']]}, 'items': [row(plain['url'], 1791000000), row(odd['url'], 1791000000)]},
@@ -312,13 +320,49 @@ C.run = fake
 C.stage_fbinner()
 C.stage_fbinner()
 m = json.load(open(next(C.RAW.glob('fbinner_*.json'))))['items']
-print('INNER ' + json.dumps({'asked': [(a, i.get('startUrls') or i.get('video_urls')) for a, i in asked], 'map': m}))
+import normalize as N
+N.RAW = C.RAW
+N.ITEMS.clear(); N.ITEMS['fb:5'] = dict(p, urls=[])
+N.fb_extras()
+print('INNER ' + json.dumps({'asked': [(a, i.get('startUrls') or i.get('video_urls')) for a, i in asked], 'map': m, 'speech': N.ITEMS['fb:5'].get('speech')}))
 """
 code, led, rep, out, files = scenario({}, [], code=INNER)
 n = json.loads(out.split('INNER ', 1)[1].splitlines()[0]) if 'INNER ' in out else {}
 check('a post link holding a video: Apify’s posts scraper finds the video, its own link goes for speech, once; not a reel link, not a share (DECISIONS #192)',
-      n.get('asked') == [['apify~facebook-posts-scraper', [{'url': 'https://www.facebook.com/shop/posts/pfbid0ABC'}]], ['invideoiq~video-transcriber', ['https://www.facebook.com/watch/?v=777000111']]]
-      and n.get('map') == [{'post': 'https://www.facebook.com/shop/posts/pfbid0ABC', 'videos': ['https://www.facebook.com/watch/?v=777000111']}], (n, out[-300:]))
+      n.get('asked') == [['apify~facebook-posts-scraper', [{'url': 'https://www.facebook.com/shop/posts/pfbid0ABC'}]]]
+      and n.get('map')[0].get('seconds') == {'https://www.facebook.com/watch/?v=777000111': 40.0}
+      and [e['source_url'] for e in Fake.el] == ['https://www.facebook.com/watch/?v=777000111']
+      and [{k: m[k] for k in ('post', 'videos')} for m in n.get('map', [])] == [{'post': 'https://www.facebook.com/shop/posts/pfbid0ABC', 'videos': ['https://www.facebook.com/watch/?v=777000111']}], (n, Fake.el, out[-300:]))
+check('ElevenLabs reads the video by its link with the product names and the key in its header; normalize gives the post its speech (DECISIONS #197)',
+      Fake.el and Fake.el[0]['keyterms'] > 50 and Fake.el[0]['key_ok'] and n.get('speech') == 'ده V7 كريم صودا', (Fake.el, n.get('speech')))
+# 29 Oct (DECISIONS #197): ElevenLabs for new Instagram reels (their video file), TikTok (from its page) and YouTube (by link); old posts left alone
+STT = r'''
+import json, pathlib
+import collect as C, media_links as M, stt_elevenlabs as S, normalize as N
+C.HERE = pathlib.Path(C.RAW).parent
+P = lambda i, pl, url, **k: dict({'id': i, 'pl': pl, 'url': url, 'kind': 'post', 'src': 'ugc', 'fmt': 'Reel', 'found_by': ['x'], 'views': 1}, **k)
+items = [P('ig:ABC123', 'ig', 'https://www.instagram.com/p/ABC123/'), P('ig:OLD1', 'ig', 'https://www.instagram.com/p/OLD1/'),
+         P('tt:71', 'tt', 'https://www.tiktok.com/@a/video/71', fmt='Video'), P('yt:Y1', 'yt', 'https://www.youtube.com/shorts/Y1', fmt='Video'),
+         P('tt:72', 'tt', 'https://www.tiktok.com/@a/video/72', fmt='Video', speech='already'), P('yt:Y2', 'yt', 'https://www.youtube.com/shorts/Y2', fmt='Video')]
+json.dump({'items': items}, open(C.HERE / 'items.json', 'w'))
+json.dump({i['id']: {'about': i['id'] != 'yt:Y2'} for i in items}, open(C.HERE / 'labels.json', 'w'))
+json.dump({'posts': ['ig:OLD1']}, open(C.HERE / 'vis_baseline.json', 'w'))
+M.download = lambda url, **k: b'video bytes'
+S.tiktok_page = lambda url: (b'tiktok video', None)
+C.stage_igspeech(); C.stage_ttytspeech()
+C.stage_igspeech(); C.stage_ttytspeech()   # a second run asks for nothing again
+N.RAW = C.RAW
+N.ITEMS.clear(); N.ITEMS.update({i['id']: dict(i) for i in items})
+N.extras(); N.ttyt_speech()
+print('STT ' + json.dumps({k: v.get('speech') for k, v in N.ITEMS.items()}))
+'''
+code, led, rep, out, files = scenario({}, [], code=STT)
+st = json.loads(out.split('STT ', 1)[1].splitlines()[0]) if 'STT ' in out else {}
+check('ElevenLabs reads a new Instagram reel from its video file, a TikTok from its page and YouTube by link, once each; not an old post, one that has speech, or one not about V7',
+      sorted((bool(e['file']), e['source_url']) for e in Fake.el) == [(False, 'https://www.youtube.com/shorts/Y1'), (True, None), (True, None)]
+      and st == {'ig:ABC123': 'ده V7 كريم صودا', 'ig:OLD1': None, 'tt:71': 'ده V7 كريم صودا', 'yt:Y1': 'ده V7 كريم صودا', 'tt:72': 'already', 'yt:Y2': None},
+      (Fake.el, st, out[-400:]))
+check('fresh Instagram links come from Apify at about USD 0.0023 a reel; no transcriber scraper is started', [a for a, c in Fake.posts] == ['apify~instagram-post-scraper'], Fake.posts)
 # 26 Oct (DECISIONS #184): the second check drops a new post with no V7 in its pictures, speech or caption by name
 CHECK2 = r'''
 import json
@@ -385,4 +429,60 @@ check('media links: the general server name first, then the link as given; other
 check('a refused link is reported as expired; a working one downloads', m.get('ok') is True and m.get('expired') is True, m)
 check('fresh links fetched in the last 2 days are reused, not paid for again', m.get('reuse') == ['https://scontent.cdninstagram.com/new.mp4'] * 3 and m.get('runs_after_reuse') == 1, m)
 check('without a reusable result, a post is asked for fresh links at most twice', m.get('refresh') == ['https://scontent.cdninstagram.com/new.mp4', None], m.get('refresh'))
+# 29 Oct (DECISIONS #200): replies under public posts are linked to the comment they answer, and Claude reads them with it
+REPLIES = r"""
+import json, sys
+import collect as C, normalize as N
+sys.argv = ['label.py']
+import label as L
+N.RAW = C.RAW
+fb = {'id': 'fb:1', 'url': 'https://www.facebook.com/a/posts/1', 'date': '2026-10-01T12:00:00Z', 'comments': 3, 'pl': 'fb', 'kind': 'post', 'src': 'ugc'}
+ig = {'id': 'ig:ABC123', 'url': 'https://www.instagram.com/p/ABC123/', 'date': '2026-10-01T12:00:00Z', 'comments': 2, 'pl': 'ig', 'kind': 'post', 'src': 'ugc'}
+N.ITEMS.clear(); N.ITEMS.update({'fb:1': dict(fb, found_by=['t'], urls=[]), 'ig:ABC123': dict(ig, found_by=['t'], urls=[])})
+row = lambda i, url, d, text: {'id': i, 'facebookUrl': fb['url'], 'commentUrl': url, 'threadingDepth': d, 'date': '2026-10-02T00:00:00Z', 'text': text, 'profileName': 'x'}
+json.dump({'input': {}, 'items': [row('A1', fb['url'] + '?comment_id=111', 0, 'where can I buy V7 in Alexandria?'),
+                                  row('A2', fb['url'] + '?comment_id=111&reply_comment_id=222', 1, 'Carrefour has it')]}, open(C.RAW / 'fbcm_official_t.json', 'w'))
+json.dump({'input': {}, 'items': [{'id': '501', 'postUrl': ig['url'], 'text': 'too sweet', 'timestamp': '2026-10-02T00:00:00Z', 'ownerUsername': 'a',
+                                   'replies': [{'id': '502', 'text': 'same', 'timestamp': '2026-10-02T01:00:00Z', 'ownerUsername': 'b'}]}]}, open(C.RAW / 'igcm_official_t.json', 'w'))
+N.fb_ugc_comments(); N.ig_ugc_comments()
+items = N.ITEMS
+print('REPLIES ' + json.dumps({'fb': items.get('fbc:A2', {}).get('reply_to'), 'ig': items.get('igc:502', {}).get('reply_to'),
+                               'payload': L.payload(items['fbc:A2'], items).get('answers')}))
+"""
+code, led, rep, out, files = scenario({}, [], code=REPLIES)
+rp = json.loads(out.split('REPLIES ', 1)[1].splitlines()[0]) if 'REPLIES ' in out else {}
+check('a reply under a public post is linked to the comment it answers (Facebook by its thread link, Instagram nested), and Claude reads it with that comment',
+      rp.get('fb') == 'fbc:A1' and rp.get('ig') == 'igc:501' and rp.get('payload') == {'by': 'someone', 'text': 'where can I buy V7 in Alexandria?'}, (rp, out[-500:]))
+# 29 Oct (DECISIONS #201): a long unclear video is read 3 minutes first, the rest only if they talk about drinks or V7
+SAMPLE = r"""
+import json, pathlib, subprocess, tempfile
+import stt_elevenlabs as S
+tmp = pathlib.Path(tempfile.mkdtemp())
+long = tmp / 'long.mp4'
+subprocess.run([S.ffmpeg(), '-loglevel', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=16000:cl=mono', '-t', '400', str(long)], check=True)
+rows = S.speech('fbf_speech', [{'link': 'https://www.facebook.com/reel/1/', 'src': str(long), 'unclear': True},
+                               {'link': 'https://www.facebook.com/reel/2/', 'src': 'https://www.facebook.com/reel/2/', 'unclear': True},
+                               {'link': 'https://www.facebook.com/reel/3/', 'src': 'https://www.facebook.com/reel/3/', 'unclear': True, 'seconds': 40},
+                               {'link': 'https://www.facebook.com/reel/4/', 'src': 'https://www.facebook.com/reel/4/'}])
+print('SAMPLE ' + json.dumps({'len': S.length(long), 'rows': [(r['video_url'], r.get('read')) for r in rows],
+                              'words': [bool(S.PROMISING.search(x)) for x in ('النهارده هنجرب مشروب جديد', 'the V7 cream soda', 'الحلقة الحادية عشر من المسلسل', 'Granny! They are bad guys!')]}))
+"""
+code, led, rep, out, files = scenario({}, [], code=SAMPLE)
+sm = json.loads(out.split('SAMPLE ', 1)[1].splitlines()[0]) if 'SAMPLE ' in out else {}
+check('a long unclear video is read 3 minutes first, then the rest when they talk about drinks or V7; an unclear link of unknown length is left out; a short one and a known one are read by link',
+      int(sm.get('len') or 0) == 400 and [r[0][-2] for r in sm.get('rows', [])] == ['1', '3', '4'] and 'then the rest' in (sm['rows'][0][1] or '')
+      and [(e['file'], e['source_url']) for e in Fake.el] == [(True, None), (True, None), (False, 'https://www.facebook.com/reel/3/'), (False, 'https://www.facebook.com/reel/4/')], (sm, Fake.el, out[-400:]))
+check('drink talk counts as promising, a drama or a series does not', sm.get('words') == [True, True, False, False], sm.get('words'))
+# 29 Oct (DECISIONS #202): a "maybe" post's inner video is read by link when the posts scraper says it's 15 minutes or less
+LEN = r'''
+import json
+import collect as C, stt_elevenlabs as S
+print('LEN ' + json.dumps({'len': C.video_lengths({'media': [{'__typename': 'Video', 'id': '9', 'playable_duration_in_ms': 61000}, {'__typename': 'Video', 'id': '8'}]}),
+       'rows': [r['video_url'] for r in S.speech('fbf_speech', [{'link': 'https://www.facebook.com/watch/?v=1', 'src': 'https://www.facebook.com/watch/?v=1', 'unclear': True, 'seconds': 600, 'max_seconds': 900},
+                                                                 {'link': 'https://www.facebook.com/watch/?v=2', 'src': 'https://www.facebook.com/watch/?v=2', 'unclear': True, 'seconds': 2000, 'max_seconds': 900}])]}))
+'''
+code, led, rep, out, files = scenario({}, [], code=LEN)
+ln = json.loads(out.split('LEN ', 1)[1].splitlines()[0]) if 'LEN ' in out else {}
+check('a maybe post’s inner video is read whole up to 15 minutes, left out above; its length comes from the posts scraper (seconds or milliseconds)',
+      ln.get('len') == {'9': 61.0} and ln.get('rows') == ['https://www.facebook.com/watch/?v=1'], (ln, out[-300:]))
 print('FAIL', fails)

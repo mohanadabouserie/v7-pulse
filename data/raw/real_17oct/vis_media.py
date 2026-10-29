@@ -186,7 +186,8 @@ def new_posts():
     labels = json.load(open(HERE / 'labels.json', encoding='utf-8'))
     base = set(json.load(open(BASELINE, encoding='utf-8'))['posts']) if BASELINE.exists() else set()
     shared_orig = lambda i: any(str(r).startswith('fbd_posts_shared_') for r in i.get('found_by') or [])   # DECISIONS #190
-    todo = [i for i in items if i['kind'] == 'post' and i['src'] == 'ugc' and i['id'] not in base and ((labels.get(i['id']) or {}).get('about') or shared_orig(i))
+    todo = [i for i in items if i['kind'] == 'post' and i['src'] == 'ugc' and i['id'] not in base
+            and ((labels.get(i['id']) or {}).get('about') or (labels.get(i['id']) or {}).get('maybe') or shared_orig(i))   # maybe: DECISIONS #198
             and i['pl'] in ('fb', 'ig', 'tt', 'yt') and i.get('fmt') != 'Text']
     ids = {i['id'] for i in items}
     urls = {u.split('?')[0].rstrip('/') for i in items if i['kind'] == 'post' for u in [i.get('url')] + i.get('urls', []) if u}

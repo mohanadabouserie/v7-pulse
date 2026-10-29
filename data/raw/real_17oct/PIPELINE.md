@@ -32,7 +32,7 @@ The user asked for it ("make the pipeline robust") after Versions 29 to 31 close
 2. **Links fetched by link:** reels, videos and posts that Google and the reel searches return as bare links, when the collection
    doesn't have them yet: Facebook with danek (standby: Apify's posts scraper), Instagram with Apify's post scraper.
 3. **The chain:** `normalize.py`, `label.py` (Claude), the gap fillers in `collect.py` (`fbfill`, `fbfill2`, `fbviews`, `fbnames`,
-   `igspeech`, `igprofiles`, `igcomments`, `igcomments2`, `igvisfetch`), the pictures (`vis_media.py`, `vis_read.py`), `normalize.py`
+   `igspeech`, `ttytspeech`, `igprofiles`, `igcomments`, `igcomments2`, `igvisfetch`), the pictures (`vis_media.py`, `vis_read.py`), `normalize.py`
    and `label.py` again, `build_real.py --inject`, `fetch_media.py`, `build_media.py --inject`, and the quick tests
    (`test_v25`, `test_v29`, `test_v30`, `test_v31`).
 4. **Report and alert:** `pipeline_runs/<time>.json` and `.md`, and a Telegram message to the bot's admin.

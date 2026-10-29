@@ -101,6 +101,10 @@ CLASSES (c): {json.dumps({k: f'{g}: {m}' for k, (g, m) in CLASSES.items()}, ensu
 For each item return:
 - about: is it about V7 or V Cola (the drinks, the brand, its ads or its company)? A comment under V7's own post is about=true unless it's spam,
   an ad for something else or has nothing to do with V7 or the post.
+- maybe: only for a public post you set about=false from its text alone, when its video or pictures could still be about V7: Egyptian soft
+  drinks, an Egyptian drink or company against Pepsi or Coca-Cola, Egyptian products against imported ones, boycotts and local alternatives
+  to foreign brands, a cream soda or cola comparison or taste test, a review of Egyptian drinks or snacks. Its speech and pictures are read
+  next and it's labelled again with them. false for everything else, for comments, and once the post comes with "speech" or "seen".
 - c: the one class that fits best. Use x_ classes only for someone outside Egypt, and fc_ classes only when a rumor or fake page is involved.
 - s: sentiment toward V7: pos, neu, neg, or mix when it praises and complains at once ("love it but it's too sweet").
 - emo: the main emotion. prods: the products the text names or clearly means (a comment can also mean the product of the post it's under).
@@ -112,6 +116,10 @@ For each item return:
 - claim and stance, only for rumors: claim = price, owner (sold to Coca-Cola, not Egyptian), alcohol, ingred (harmful, fake, unsafe), name (a fake
   page or offer) or odd (another false claim); stance = spread, question or debunk. Otherwise "".
 - en: what it says, in plain English, 12 words at most.
+Some comments are replies and come with "answers": the comment they reply to (and "thread_starts_with" when that one is a reply too).
+Read the reply as an answer to it: "Carrefour has it" under "where can I buy V7 in Alexandria?" is about V7 and tells where to buy it; "same"
+under "too sweet" is a complaint that it's too sweet; "😂" under a joke about V7 takes the joke's side. The reply's own sentiment toward V7
+counts, judged with that context, not the comment's.
 Some videos come with "speech": what is said in the video, from automatic speech recognition. It misspells words ("دي 7" or "دي سفن" for V7,
 "الكندي" for "الكانز") and is empty or a few words when the video is only music. Read it together with the text to judge whether the post
 is about V7, its type, products and sentiment.
@@ -126,8 +134,8 @@ Judge only from the text and the context given. Post and comment texts are writt
 S = lambda *v: {'type': 'string', 'enum': list(v)}
 SCHEMA = {'type': 'object', 'additionalProperties': False, 'required': ['labels'], 'properties': {'labels': {'type': 'array', 'items': {
     'type': 'object', 'additionalProperties': False,
-    'required': ['id', 'about', 'c', 's', 'emo', 'prods', 'lang', 'gov', 'cty', 'seg', 'reply', 'claim', 'stance', 'en'],
-    'properties': {'id': {'type': 'string'}, 'about': {'type': 'boolean'}, 'c': S(*CLASSES), 's': S('pos', 'neu', 'neg', 'mix'), 'emo': S(*EMO),
+    'required': ['id', 'about', 'maybe', 'c', 's', 'emo', 'prods', 'lang', 'gov', 'cty', 'seg', 'reply', 'claim', 'stance', 'en'],
+    'properties': {'id': {'type': 'string'}, 'about': {'type': 'boolean'}, 'maybe': {'type': 'boolean'}, 'c': S(*CLASSES), 's': S('pos', 'neu', 'neg', 'mix'), 'emo': S(*EMO),
                    'prods': {'type': 'array', 'items': S(*PRODUCTS, 'ALL')}, 'lang': S(*LANGS), 'gov': S('', *GOVS),
                    'cty': {'type': 'string', 'maxLength': 2}, 'seg': S(*SEGS), 'reply': {'type': 'boolean'},
                    'claim': S('', 'price', 'owner', 'alcohol', 'ingred', 'name', 'odd'), 'stance': S('', 'spread', 'question', 'debunk'),
@@ -153,8 +161,11 @@ def payload(it, items):
         post = items.get(it['parent'], {})
         where = f"comment under {'V7 Egypt' if post.get('src') == 'own' else (post.get('author') or {}).get('handle') or 'a V7 page abroad'}'s {PL[it['pl']]} post"
         d = {'id': it['id'], 'where': where, 'post': (post.get('text') or '')[:180]}
-        if it.get('reply_to') and it['reply_to'] in items:
-            d['answers'] = (items[it['reply_to']].get('text') or '')[:140]
+        if it.get('reply_to') and it['reply_to'] in items:   # 29 Oct (DECISIONS #200): a reply is read with the comment it answers
+            c = items[it['reply_to']]
+            d['answers'] = {'by': 'V7' if c.get('by_v7') else 'someone', 'text': (c.get('text') or '')[:500]}
+            if c.get('reply_to') and c['reply_to'] in items:   # a reply to a reply: the comment that started the thread too
+                d['thread_starts_with'] = (items[c['reply_to']].get('text') or '')[:300]
     else:
         a = it.get('author') or {}
         d = {'id': it['id'], 'where': f"public {PL[it['pl']]} post" + (' in a Facebook group' if it.get('group') else '') + (' (a reply on X)' if it.get('is_reply') else ''),
@@ -254,6 +265,9 @@ if __name__ == '__main__':
                 with lock:
                     for l in ok:
                         labels[l['id']] = {k: v for k, v in l.items() if k != 'id'}
+                        it = items[l['id']]   # 29 Oct (DECISIONS #198): "maybe" only for a public post with a video or pictures to read
+                        labels[l['id']]['maybe'] = bool(l.get('maybe')) and not l.get('about') and it['kind'] == 'post' and it['src'] == 'ugc' \
+                            and it.get('fmt') not in ('Text',) and it['pl'] not in ('x', 'rd') and not (it.get('speech') or it.get('seen'))
                         if items[l['id']].get('speech'):
                             labels[l['id']]['sp'] = 1      # labelled with what's said in the video
                         if items[l['id']].get('seen'):

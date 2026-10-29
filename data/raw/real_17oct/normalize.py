@@ -367,7 +367,7 @@ def ago_text(day, approx, ran):
 
 
 def yt_comments():
-    for name in ('yt_comments_own', 'yt_comments_public'):
+    for name in ['yt_comments_own', 'yt_comments_public'] + sorted(f.stem for f in RAW.glob('yt_comments_replies_*.json')):   # replies: DECISIONS #200
         body = json.load(open(RAW / (name + '.json'), encoding='utf-8')) if (RAW / (name + '.json')).exists() else {'items': [], 'run': {}}
         ran = (body.get('run') or {}).get('startedAt') or '2026-10-18'
         for c in body['items']:
@@ -428,10 +428,18 @@ def ig_ugc_comments():
             cid = c.get('commentId') or c.get('id')       # scrapesmith names it commentId, Apify's own scraper id
             if not cid or pid not in ITEMS:
                 WHY_OUT['IG comment on an unknown post'] += 1; continue
-            u = c.get('username') or c.get('ownerUsername') or ''
-            add({'id': 'igc:' + str(cid), 'kind': 'comment', 'src': ITEMS[pid]['src'], 'pl': 'ig', 'parent': pid, 'date': iso(c.get('timestamp')),
-                 'text': clean(c.get('text')), 'url': c.get('commentUrl') or ITEMS[pid]['url'], 'author': {'name': u, 'handle': u, 'verified': bool(c.get('isVerified'))},
-                 'likes': num(c.get('likesCount')), 'comments': num(c.get('repliesCount')), 'shares': None, 'views': None, 'by_v7': u.lower() in OWN_IG | ABROAD_IG}, f.stem)
+            def one(x, reply_to=None):
+                u = x.get('username') or x.get('ownerUsername') or (x.get('owner') or {}).get('username') or ''
+                it = {'id': 'igc:' + str(x.get('commentId') or x.get('id')), 'kind': 'comment', 'src': ITEMS[pid]['src'], 'pl': 'ig', 'parent': pid, 'date': iso(x.get('timestamp')),
+                      'text': clean(x.get('text')), 'url': x.get('commentUrl') or ITEMS[pid]['url'], 'author': {'name': u, 'handle': u, 'verified': bool(x.get('isVerified'))},
+                      'likes': num(x.get('likesCount')), 'comments': num(x.get('repliesCount')), 'shares': None, 'views': None, 'by_v7': u.lower() in OWN_IG | ABROAD_IG}
+                m = re.search(r'/c/(\d+)/r/(\d+)', x.get('commentUrl') or '')   # 29 Oct (DECISIONS #200): a reply's link names the comment it answers
+                reply_to = reply_to or ('igc:' + m.group(1) if m else None) or ('igc:' + str(x['parentCommentId']) if x.get('parentCommentId') else None)
+                if reply_to: it['reply_to'] = reply_to
+                add(it, f.stem)
+            one(c)
+            for r in c.get('replies') or []:   # Apify's scraper with includeNestedComments lists a comment's replies under it
+                one(r, 'igc:' + str(cid))
 
 
 # ---------------------------------------------------------------- 19 Oct: Facebook from every route (collect.py fbcover, fbdetails, fbfill)
@@ -653,6 +661,13 @@ def fb_one_item(p, body):
 REJECTS = []   # 24 Oct: sets of comments that aren't their post's (comment_check.py), written to comment_rejects.json
 
 
+def fb_thread(it, url, depth):
+    """29 Oct (DECISIONS #200): a Facebook comment link names its thread (comment_id=) and, for a reply, the reply (reply_comment_id=)."""
+    top = re.search(r'[?&]comment_id=(\d+)', url)
+    it['_top'] = top.group(1) if top else None
+    it['_reply'] = bool(re.search(r'reply_comment_id=\d+', url)) or depth > 0 or bool(it.get('reply_to'))
+
+
 def fb_ugc_comments():
     """19 Oct: comments under public Facebook posts about V7 (thedoor first, Apify's own scraper for the posts it returned nothing for),
     anonymous like the others; V7's own pages count as V7's replies.
@@ -677,6 +692,9 @@ def fb_ugc_comments():
                   'author': {'name': name, 'id': c.get('author_id'), 'url': c.get('author_profile_url')}, 'likes': num(c.get('reactions_count')),
                   'comments': num(c.get('replies_count')), 'shares': None, 'views': None, 'by_v7': fb_own(name, c.get('author_profile_url'), c.get('author_id')),
                   'has_media': bool(c.get('media') or c.get('image_url'))}
+            par = c.get('parent_id') or c.get('parent_comment_id') or c.get('reply_to_id') or c.get('replied_to_id')   # 29 Oct (DECISIONS #200)
+            if par: it['reply_to'] = 'fbc:' + str(par)
+            fb_thread(it, c.get('comment_url') or '', num(c.get('depth') or c.get('level')) or 0)
             sets[(f.stem, 'thedoor', pid)].append(it)
     for f in sorted(RAW.glob('fbcm_official_*.json')):
         for c in json.load(open(f, encoding='utf-8'))['items']:
@@ -689,6 +707,7 @@ def fb_ugc_comments():
                  'text': clean(c.get('text')), 'url': c.get('commentUrl') or c.get('facebookUrl'), 'author': {'name': name, 'id': c.get('profileId'), 'url': c.get('profileUrl')},
                  'likes': num(c.get('likesCount')), 'comments': num(c.get('commentsCount')), 'shares': None, 'views': None,
                  'by_v7': fb_own(name, c.get('profileUrl'), c.get('profileId')), 'has_media': bool(c.get('attachments'))})
+            fb_thread(sets[(f.stem, 'apify', pid)][-1], c.get('commentUrl') or '', num(c.get('threadingDepth')) or 0)   # 29 Oct (DECISIONS #200)
     for (run, scraper, pid), its in sets.items():
         post = ITEMS[pid]
         why = comment_check.reason(post, [i['date'] for i in its], scraper)
@@ -696,7 +715,11 @@ def fb_ugc_comments():
             REJECTS.append({'post': pid, 'url': post.get('url'), 'run': run, 'scraper': scraper, 'comments': len(its), 'why': why})
             WHY_OUT['FB comments that are not their post’s (comment_check.py)'] += len(its)
             continue
+        tops = {(it['_top'], pid): it['id'] for it in its if it.get('_top') and not it.get('_reply')}
         for it in its:
+            if it.pop('_reply', False) and not it.get('reply_to') and tops.get((it.get('_top'), pid)):
+                it['reply_to'] = tops[(it['_top'], pid)]   # a Facebook reply answers the top comment of its thread
+            it.pop('_top', None)
             add(it, run)
 
 
@@ -747,6 +770,21 @@ def fb_extras():
     print('Facebook: plays on %d posts, speech on %d, page followers on %d' % (n_p, n_s, n_f))
 
 
+def ttyt_speech():
+    """29 Oct (DECISIONS #197): what's said in TikTok and YouTube videos (ElevenLabs, collect.py ttytspeech)."""
+    speech = {}
+    for f in sorted(RAW.glob('ttyt_speech_*.json')):
+        for x in json.load(open(f, encoding='utf-8'))['items']:
+            t = clean(x.get('text'))
+            if x.get('url') and t:
+                speech[x['url']] = t
+    n = 0
+    for it in ITEMS.values():
+        if it['pl'] in ('tt', 'yt') and it['kind'] == 'post' and it.get('url') in speech:
+            it['speech'] = speech[it['url']]; n += 1
+    print('speech attached to %d TikTok and YouTube posts' % n)
+
+
 def seen():
     """19 Oct: what Claude read in a post's pictures (vis_read.json): the text written on them, what they show, whether V7 is visible."""
     p = HERE / 'vis_read.json'
@@ -760,7 +798,7 @@ def seen():
 
 
 if __name__ == '__main__':
-    own_posts(); comments(); fb_aliases(); ugc(); fb_ugc(); yt_comments(); ig_ugc_comments(); fb_ugc_comments(); extras(); fb_extras(); seen()
+    own_posts(); comments(); fb_aliases(); ugc(); fb_ugc(); yt_comments(); ig_ugc_comments(); fb_ugc_comments(); extras(); fb_extras(); ttyt_speech(); seen()
     out = list(ITEMS.values())
     json.dump({'made': datetime.date.today().isoformat(), 'window': [SINCE, UNTIL], 'items': out}, open(HERE / 'items.json', 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0)
